@@ -1,0 +1,2032 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM",
+				"LLK",
+				"VGM"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"MM": "IMR",
+				"VGM": "IMR",
+				"TftYP": "IMR",
+				"GoS": "IMR",
+				"MFF": "IMR",
+				"HftT": "IMR",
+				"MTF": "IMR",
+				"LLK": "IMR",
+				"SKT": "IMR"
+			}
+		},
+		"internalCopies": [
+			"monster"
+		]
+	},
+	"monster": [
+		{
+			"name": "\"The Demogorgon\"",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 53,
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 123,
+				"formula": "13d12 + 39"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 17,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Giant",
+				"Orc"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Two Heads",
+					"entries": [
+						"Der Ettin ist im Vorteil bei Weisheitspr\u00fcfungen (Wahrnehmung) und bei Rettungsw\u00fcrfen gegen {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} und Schl\u00e4ge {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Wakeful",
+					"entries": [
+						"Wenn einer der K\u00f6pfe des Ettins schl\u00e4ft, ist sein anderer Kopf wach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Ettin macht zwei Angriffe: einen mit seiner Streitaxt und einen mit seinem Morgenstern."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 8} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 2d8 + 5}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 8} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 2d8 + 5}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"Der rechte Kopf des Ettins st\u00f6\u00dft Feuer in einem 30-Fu\u00df-Kegel aus. Jede Kreatur in diesem Bereich muss einen {@dc 14} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 45 ({@damage 10d8}) Feuerschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"Der linke Kopf des Ettins st\u00f6\u00dft eine eisige Explosion in einem 30 Fu\u00df hohen Kegel aus. Jede Kreatur in diesem Bereich muss einen {@dc 14} Konstitutionswettkampf ablegen und erleidet bei einem misslungenen Wurf 45 ({@damage 10d8}) K\u00e4lteschaden, bei einem erfolgreichen Wurf halb so viel Schaden."
+					]
+				},
+				{
+					"name": "Gaze",
+					"entries": [
+						"Der Ettin richtet seinen magischen Blick auf eine Kreatur, die er im Umkreis von 120 Fu\u00df sehen kann. Dieses Ziel muss einen {@dc 14} Weisheitswurf ablegen. Wenn das Ziel nicht {@condition incapacitated} ist, kann es seine Augen abwenden, um dem Blick zu entgehen und den Schutzwurf automatisch zu bestehen. Wenn das Ziel dies tut, kann es den Ettin bis zum Beginn des n\u00e4chsten Zuges des Ettins nicht sehen. Wenn das Ziel den \u00c4tin in der Zwischenzeit ansieht, muss es den Schutzwurf sofort wiederholen.",
+						"Wenn das Ziel den Schutz nicht besteht, erleidet es einen der folgenden Effekte nach Wahl des Ettins oder nach dem Zufallsprinzip:"
+					]
+				},
+				{
+					"name": "Beguiling Gaze",
+					"entries": [
+						"Das Ziel ist {@condition stunned} bis zum Beginn des n\u00e4chsten Zuges des Ettins oder bis der Ettin nicht mehr in Sichtweite ist."
+					]
+				},
+				{
+					"name": "Hypnotic Gaze",
+					"entries": [
+						"Das Ziel ist bis zum Beginn des n\u00e4chsten Zuges des Ettins {@condition charmed} vom Ettin entfernt. Der Ettin entscheidet, wie das {@condition charmed} Ziel seine Aktionen, Reaktionen und Bewegungen einsetzt."
+					]
+				},
+				{
+					"name": "Insanity Gaze",
+					"entries": [
+						"Das Ziel erleidet die Wirkung des {@spell confusion} Zaubers, ohne einen Rettungswurf zu machen. Der Effekt h\u00e4lt bis zum Beginn des n\u00e4chsten Zuges des Ettins an. Der Ettin muss sich nicht auf den Zauberspruch konzentrieren."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI",
+				"O"
+			],
+			"damageTags": [
+				"C",
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated",
+				"stunned"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Andras",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 31,
+			"_copy": {
+				"name": "Assassin",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the assassin",
+						"with": "Andras",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Keen Hearing and Sight",
+							"entries": [
+								"Andras hat einen Vorteil bei Weisheitspr\u00fcfungen ({@skill Perception}), die auf H\u00f6ren oder Sehen basieren."
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Shortsword",
+							"items": {
+								"name": "Shortsword",
+								"entries": [
+									"{@atk mw} {@hit 6} auf Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stichschaden, und das Ziel muss einen {@dc 11} Konstitutionsschutzwurf bestehen oder mit Werrattenlykanthropie verflucht werden."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Light Crossbow",
+							"items": {
+								"name": "Light Crossbow",
+								"entries": [
+									"{@atk rw} {@hit 6} auf Treffer, Reichweite 80/320 Fu\u00df, ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stichschaden, und das Ziel muss einen {@dc 11} Konstitutionsschutzwurf bestehen oder mit Werratten-Lykanthropie verflucht werden."
+								]
+							}
+						}
+					]
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"languages": [
+				"Common",
+				"Giant Owl"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Barbatos",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 52,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"animal handling": "+5",
+				"deception": "+3",
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"passive": 13,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Barbatos ist ein Zauberwirker der Stufe 6. Seine Zauberf\u00e4higkeit ist Weisheit (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er hat die folgenden Waldl\u00e4uferzauber vorbereitet:"
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell ensnaring strike}",
+								"{@spell hail of thorns}",
+								"{@spell hunter's mark}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell locate animals or plants}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Rust Monster Cloak",
+					"entries": [
+						"Jede nichtmagische Waffe aus Metall, die Barbatos trifft, korrodiert. Nachdem die Waffe Schaden verursacht hat, erh\u00e4lt sie einen permanenten und kumulativen Malus von -1 auf Schadensw\u00fcrfe. Wenn der Malus auf -5 f\u00e4llt, wird die Waffe zerst\u00f6rt. Nichtmagische Munition aus Metall, die Barbatos trifft, wird zerst\u00f6rt, nachdem sie Schaden verursacht hat."
+					]
+				},
+				{
+					"name": "Heart of the Troll",
+					"entries": [
+						"Barbatos erh\u00e4lt zu Beginn seines Zuges 10 Trefferpunkte zur\u00fcck. Wenn Barbatos S\u00e4ure- oder Feuerschaden erleidet, funktioniert diese Eigenschaft zu Beginn von Barbatos' n\u00e4chstem Zug nicht mehr. Barbatos stirbt nur, wenn er seinen Zug mit 0 Trefferpunkten beginnt und sich nicht regeneriert."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Barbatos f\u00fchrt zwei Angriffe mit dem Knochen-Kurzschwert aus."
+					]
+				},
+				{
+					"name": "Bone Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} auf Treffer, Reichweite 80/320 Fu\u00df, ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stichschaden, und das Ziel muss einen {@dc 13} Konstitutions-Sicherungswurf bestehen oder 1 Stunde lang {@condition poisoned} sein. Wenn der Rettungswurf um 5 oder mehr misslingt, ist das Ziel ebenfalls {@condition unconscious}. Das Ziel erlangt das Bewusstsein wieder, wenn es Schaden erleidet oder wenn eine andere Kreatur eine Aktion durchf\u00fchrt, um es zu sch\u00fctteln."
+					]
+				},
+				{
+					"name": "Cloak Sweep",
+					"entries": [
+						"Barbatos korrodiert ein nichtmagisches Eisenmetallobjekt, das er in einem Umkreis von 5 Fu\u00df um sich herum sehen kann. Wenn der Gegenstand nicht getragen wird, zerst\u00f6rt die Ber\u00fchrung einen W\u00fcrfel von 1 Fu\u00df Kantenl\u00e4nge. Wenn der Gegenstand von einer Kreatur getragen wird, kann die Kreatur einen {@dc 12} Geschicklichkeitswurf machen, um Barbatos' Ber\u00fchrung zu vermeiden.",
+						"Handelt es sich bei dem ber\u00fchrten Gegenstand um eine Metallr\u00fcstung oder einen Metallschild, der getragen oder mitgef\u00fchrt wird, erleidet er einen permanenten und kumulativen Abzug von 1 auf den AC, den er bietet. Eine R\u00fcstung, die auf einen AC-Wert von 10 reduziert ist, oder ein Schild, der auf einen Bonus von +0 f\u00e4llt, wird zerst\u00f6rt. Handelt es sich bei dem ber\u00fchrten Gegenstand um eine gehaltene Metallwaffe, so rostet diese wie in Barbatos' Eigenschaft Rostmonsterumhang beschrieben."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"unconscious"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Brain in Iron",
+			"source": "IMR",
+			"page": 48,
+			"_copy": {
+				"name": "Brain in a Jar",
+				"source": "LLK",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "brain in a jar",
+						"with": "brain in iron"
+					}
+				}
+			},
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"speed": {
+				"walk": 20
+			}
+		},
+		{
+			"name": "Dwarven Worker",
+			"source": "IMR",
+			"page": 15,
+			"_copy": {
+				"name": "Cultist",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "cultist",
+						"with": "worker",
+						"flags": "i"
+					}
+				}
+			},
+			"action": [
+				{
+					"name": "Pick or Hammer",
+					"entries": [
+						"{@atk mw} {@hit 3} auf Treffer, Reichweite 5 ft., eine Kreatur. {@h}4 ({@damage 1d6 + 1}) Schaden durch Wucht oder Stich."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			]
+		},
+		{
+			"name": "Enhanced Medusa",
+			"alias": [
+				"Daoud's Living Lanthor"
+			],
+			"source": "IMR",
+			"page": 47,
+			"_copy": {
+				"name": "Medusa",
+				"source": "MM"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Die angeborene F\u00e4higkeit der Medusa zur Zauberei ist Charisma (Zauberschutz {@dc 13}). Die Medusa kann von Natur aus die folgenden Zauber wirken, die keine materiellen Komponenten ben\u00f6tigen:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"Wenn eine Kreatur, die die Augen der Medusa sehen kann, ihren Zug innerhalb von 30 Fu\u00df um die Medusa beginnt, kann die Medusa sie zwingen, einen {@dc 14} Konstitutionsrettungswurf zu machen, wenn die Medusa nicht {@condition incapacitated} ist und die Kreatur sehen kann. Wenn der Rettungswurf um 5 oder mehr misslingt, ist die Kreatur sofort {@condition petrified}. Andernfalls beginnt eine Kreatur, die den Schutzwurf nicht besteht, sich in Metall, Holz oder Porzellan (nach Wahl der Medusa) zu verwandeln und ist {@condition restrained}. Die {@condition restrained} Kreatur muss den Rettungswurf am Ende ihrer n\u00e4chsten Runde wiederholen, wobei sie bei einem Fehlschlag zu {@condition petrified} wird oder der Effekt bei einem Erfolg beendet wird. Die Versteinerung h\u00e4lt an, bis die Kreatur durch den {@spell greater restoration}-Zauber oder andere Magie befreit wird.",
+						"Wenn eine Kreatur nicht \u00fcberrascht wird, kann sie ihre Augen abwenden, um den Rettungswurf zu Beginn ihres Zuges zu vermeiden. Wenn die Kreatur dies tut, kann sie die Medusa bis zum Beginn ihres n\u00e4chsten Zuges nicht mehr sehen, dann kann sie ihre Augen wieder abwenden. Wenn die Kreatur die Medusa in der Zwischenzeit ansieht, muss sie den Schutzwurf sofort wiederholen.",
+						"Wenn sich die Medusa in einem Umkreis von 30 Fu\u00df auf einer polierten Oberfl\u00e4che spiegelt und sich in einem Bereich mit hellem Licht befindet, wird die Medusa aufgrund ihres Fluchs von ihrem eigenen Blick beeinflusst."
+					]
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			]
+		},
+		{
+			"name": "Grandfather Oak",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 5,
+			"_copy": {
+				"name": "Treant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the treant",
+						"with": "Grandfather Oak",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Pacifying Spores (3/Day)",
+							"entries": [
+								"Die Gro\u00dfv\u00e4terliche Eiche schleudert Sporen auf ein Wesen, das sie im Umkreis von einem Meter sieht. Das Ziel muss einen {@dc 17} Konstitutionswettkampf bestehen oder 1 Minute lang {@condition stunned} gel\u00e4hmt sein. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg f\u00fcr es selbst endet."
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Lynx Creatlach",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 54,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"tiefling"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"str": "+7",
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				"psychic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Das Kristallauge von Lynx ist eine magisch geschrumpfte Kristallkugel des wahren Sehens. Einer ihrer Z\u00e4hne ist ein umgestalteter Ring der Gedankenabschirmung, w\u00e4hrend ein anderer mit Magie versehen wurde, um sie unter einen permanenten {@spell Nystul's magic aura} Zauber zu stellen, der die Magie dieser Gegenst\u00e4nde verbirgt und ihre wahre Natur vor Magie oder Merkmalen verbirgt, die Untote erkennen k\u00f6nnen."
+					]
+				},
+				{
+					"name": "Aversion of Fire",
+					"entries": [
+						"Wenn Lynx Feuerschaden erleidet, hat sie bis zum Ende ihres n\u00e4chsten Zuges einen Nachteil bei Angriffsw\u00fcrfen und F\u00e4higkeits\u00fcberpr\u00fcfungen."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Lynx ist immun gegen jeden Zauber oder Effekt, der ihre Form ver\u00e4ndern w\u00fcrde."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Immer wenn Lynx Blitzschaden erleidet, erleidet sie keinen Schaden und erh\u00e4lt stattdessen eine Anzahl von Trefferpunkten zur\u00fcck, die dem verursachten Blitzschaden entspricht."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Luchs hat einen Vorteil bei Rettungsw\u00fcrfen gegen Zauber und andere magische Effekte."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Lynx erh\u00e4lt zu Beginn ihres Zuges 10 Trefferpunkte zur\u00fcck. Wenn sie Feuer- oder Strahlungsschaden erleidet, funktioniert diese Eigenschaft zu Beginn ihres n\u00e4chsten Zuges nicht mehr. Der K\u00f6rper von Lynx wird nur dann zerst\u00f6rt, wenn sie ihren Zug mit 0 Trefferpunkten beginnt und sich nicht regeneriert."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"Lynx ist immun gegen Effekte, die Untote verwandeln."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lynx f\u00fchrt zwei Kurzschwertangriffe aus."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d6 + 4}) Stich-Schaden."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Regeneration",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Moghadam",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 55,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "19d8 + 19"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 13,
+			"int": 19,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+5",
+				"int": "+8",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+8",
+				"insight": "+7",
+				"medicine": "+7"
+			},
+			"passive": 13,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Dwarvish",
+				"Infernal",
+				"Undercommon"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Moghadam ist ein Zauberwirker der Stufe 18. Seine Zauberf\u00e4higkeit ist Intelligenz (Zauberschutz {@dc 16}, {@hit 8} um mit Zauberangriffen zu treffen). Er hat die folgenden Kunstfertigkeitszauber vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell dancing lights}",
+								"{@spell light}",
+								"{@spell message}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell comprehend languages}",
+								"{@spell cure wounds}",
+								"{@spell grease}",
+								"{@spell identify}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell invisibility}",
+								"{@spell heat metal}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell flame arrows|XGE}",
+								"{@spell hypnotic pattern}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell fabricate}",
+								"{@spell stone shape}",
+								"{@spell stoneskin}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell creation}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Moghadam verf\u00fcgt \u00fcber {@item Ruinblade|IMR} (siehe Anhang C)."
+					]
+				},
+				{
+					"name": "Artificial Mind",
+					"entries": [
+						"Moghadam kann einen k\u00fcnstlichen Geist als schwebendes spektrales Abbild des juwelenbesetzten Sch\u00e4dels eines {@creature demilich} manifestieren. Moghadam kann mit diesem Geist telepathisch kommunizieren, ihn bis zu 300 Fu\u00df weit weg von ihm schicken und durch ihn sehen und h\u00f6ren."
+					]
+				},
+				{
+					"name": "Infoportation (1/Day)",
+					"entries": [
+						"Moghadam kann sich in einen unbesetzten Raum neben seinem k\u00fcnstlichen Geist teleportieren."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ruinblade",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}9 ({@damage 2d6 + 2}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Blight (1/Day)",
+					"entries": [
+						"W\u00e4hrend er {@item Ruinblade|IMR} f\u00fchrt, kann Moghadam den Zauber {@spell blight} ({@dc 15}) wirken."
+					]
+				},
+				{
+					"name": "Disintegrate (1/7 Days)",
+					"entries": [
+						"W\u00e4hrend er {@item Ruinblade|IMR} einsetzt, kann Moghadam den Zauber {@spell disintegrate} gegen jedes nichtmagische Objekt oder jede magische Kraftkreation wirken."
+					]
+				},
+				{
+					"name": "Information Overload {@recharge 5}",
+					"entries": [
+						"Moghadam \u00fcberlastet die Gedanken einer Kreatur im Umkreis von 5 Fu\u00df um sich selbst oder seinen k\u00fcnstlichen Geist. Das Ziel muss einen {@dc 16} Intelligenzschutzwurf bestehen oder 22 ({@damage 4d8 + 4}) psychischen Schaden erleiden, und der n\u00e4chste Angriffswurf gegen das Ziel vor dem Ende von Moghadams n\u00e4chstem Zug hat Vorteil."
+					]
+				}
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"D",
+				"I",
+				"U"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CA"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Neo-Otyugh",
+			"source": "IMR",
+			"page": 75,
+			"size": [
+				"H"
+			],
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 150,
+				"formula": "12d12 + 72"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 11,
+			"con": 22,
+			"int": 12,
+			"wis": 13,
+			"cha": 6,
+			"save": {
+				"con": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Otyugh"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"Die angeborene F\u00e4higkeit des Neo-Notyughs zur Zauberei ist Intelligenz (Zauberschutz {@dc 12}). Er kann von Natur aus die folgenden Zauber wirken und ben\u00f6tigt daf\u00fcr keine Komponenten:"
+					],
+					"will": [
+						"{@spell detect thoughts}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell command}",
+							"{@spell hold person}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Limited Telepathy",
+					"entries": [
+						"Der Otyugh kann auf magische Weise einfache Botschaften und Bilder an jede Kreatur im Umkreis von 120 Fu\u00df \u00fcbermitteln, die eine Sprache versteht. Diese Form der Telepathie erlaubt es der empfangenden Kreatur nicht, telepathisch zu antworten."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Neo-Notyugh macht drei Angriffe: einen mit seinem Biss und zwei mit seinen Tentakeln."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} Treffer, Reichweite 10 ft., ein Ziel. {@h}16 ({@damage 2d10 + 5}) Stich-Schaden. Handelt es sich bei dem Ziel um eine Kreatur, muss sie einen {@dc 17} Konstitutions-Sicherungswurf gegen Krankheit bestehen oder {@condition poisoned} werden, bis die Krankheit geheilt ist. Alle 24 Stunden, die vergehen, muss das Ziel den Rettungswurf wiederholen, wobei sein Trefferpunktemaximum bei einem Fehlschlag um 5 ({@dice 1d10}) reduziert wird. Bei einem Erfolg ist die Krankheit geheilt. Das Ziel stirbt, wenn die Krankheit sein Trefferpunkte-Maximum auf 0 reduziert. Diese Reduzierung des Trefferpunkte-Maximums des Ziels h\u00e4lt an, bis die Krankheit geheilt ist."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 8} bis zum Treffer, Reichweite 15 Fu\u00df, ein Ziel. {@h}10 ({@damage 1d10 + 5}) Schaden durch Wucht. Wenn das Ziel gro\u00df oder kleiner ist, ist es {@condition grappled} (Flucht {@dc 16}) und {@condition restrained}, bis der Haltegriff endet. Der Neo-Notyugh hat zwei Tentakel, von denen jeder ein Ziel packen kann."
+					]
+				},
+				{
+					"name": "Tentacle Slam",
+					"entries": [
+						"Der Neo-Notyugh schleudert Kreaturen {@condition grappled} in seiner N\u00e4he gegeneinander oder gegen eine feste Oberfl\u00e4che. Jede Kreatur muss einen {@dc 16} Konstitutionsschutzwurf bestehen oder 15 ({@damage 3d6 + 5}) Wuchtschaden erleiden und bis zum Ende des n\u00e4chsten Zuges des Neo-Notyughs {@condition stunned} sein. Bei einem erfolgreichen Schutzwurf erleidet das Ziel die H\u00e4lfte des Wuchtschadens und ist nicht {@condition stunned}."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained",
+				"stunned"
+			],
+			"conditionInflictSpell": [
+				"paralyzed",
+				"prone"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Seodra",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 41,
+			"_copy": {
+				"name": "Noble",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the noble",
+						"with": "Seodra",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Earth Walk",
+								"entries": [
+									"Seodra can move across difficult terrain made of earth or stone without expending extra movement."
+								]
+							},
+							{
+								"name": "Treasure Sense",
+								"entries": [
+									"Seodra can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 feet of her."
+								]
+							}
+						]
+					}
+				}
+			},
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Primordial"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			]
+		},
+		{
+			"name": "Sir Ursas",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 56,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+5"
+			},
+			"passive": 11,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Sir Ursas tr\u00e4gt einen Ring zur Abschirmung des Geistes und einen Plattenpanzer mit Feuerwiderstand."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"Sir Ursas hat einen Vorteil bei Rettungsw\u00fcrfen gegen das Wesen {@condition frightened}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"Eine Nahkampfwaffe f\u00fcgt einen zus\u00e4tzlichen W\u00fcrfel ihres Schadens zu, wenn Sir Ursas mit ihr trifft (in seinem Angriff enthalten)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sir Ursas f\u00fchrt drei Nahkampfangriffe oder zwei Fernkampfangriffe aus."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}11 ({@damage 2d6 + 4}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} auf Treffer, Reichweite 5 Fu\u00df und Reichweite 20/60 Fu\u00df, ein Ziel. {@h}11 ({@damage 2d6 + 4}) Stich-Schaden, oder 13 ({@damage 2d8 + 4}) Stich-Schaden, wenn mit zwei H\u00e4nden als Nahkampfangriff eingesetzt."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 7} auf Treffer, Reichweite 5 ft., ein Ziel. {@h}9 ({@damage 2d4 + 4}) Wuchtschaden, und wenn das Ziel eine mittlere oder kleinere Kreatur ist, muss es einen {@dc 15} St\u00e4rkeschutzwurf bestehen oder wird {@condition prone} umgesto\u00dfen."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Sir Ursas addiert 3 zu seinem AC gegen einen Nahkampfangriff, der ihn treffen w\u00fcrde. Um dies zu tun, muss er den Angreifer sehen und eine Nahkampfwaffe f\u00fchren."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Skeletal Giant Owl",
+			"source": "IMR",
+			"page": 33,
+			"_copy": {
+				"name": "Giant Owl",
+				"source": "MM"
+			},
+			"type": "undead",
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			]
+		},
+		{
+			"name": "Skeletal Owlbear",
+			"source": "IMR",
+			"page": 36,
+			"_copy": {
+				"name": "Owlbear",
+				"source": "MM"
+			},
+			"type": "undead",
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			]
+		},
+		{
+			"name": "Skeletal Polar Bear",
+			"source": "IMR",
+			"page": 34,
+			"_copy": {
+				"name": "Polar Bear",
+				"source": "MM"
+			},
+			"type": "undead",
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			]
+		},
+		{
+			"name": "Skeletal Two-Headed Owlbear",
+			"source": "IMR",
+			"page": 36,
+			"_copy": {
+				"name": "Two-Headed Owlbear",
+				"source": "IMR"
+			},
+			"type": "undead",
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			]
+		},
+		{
+			"name": "Stolos",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 33,
+			"_copy": {
+				"name": "Warlock of the Great Old One",
+				"source": "VGM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the warlock",
+						"with": "Stolos",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"action": [
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 3} Treffer, Reichweite 5 ft., ein Ziel. {@h}8 ({@damage 2d6 + 1}) Hiebschaden."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Tarnhem",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 19,
+			"_copy": {
+				"name": "Balor",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the balor",
+						"with": "Tarnhem",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Fist of Retribution",
+							"entries": [
+								"{@atk mw} {@hit 14} auf Treffer, Reichweite 10 Fu\u00df, ein Ziel. {@h}13 ({@damage 2d4 + 8}) Schaden durch Wucht plus 7 ({@damage 2d6}) Feuerschaden."
+							]
+						}
+					}
+				}
+			},
+			"damageTags": [
+				"B",
+				"F",
+				"L",
+				"S"
+			]
+		},
+		{
+			"name": "Thessalar",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 57,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "19d8 + 19"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 13,
+			"int": 19,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+5",
+				"int": "+8",
+				"wis": "+7"
+			},
+			"skill": {
+				"animal handling": "+7",
+				"arcana": "+8",
+				"insight": "+7",
+				"medicine": "+7"
+			},
+			"passive": 13,
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Primordial"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Thessalar ist ein Zauberwirker der Stufe 18. Seine Zauberf\u00e4higkeit ist Intelligenz (Zauberschutz {@dc 16}, {@hit 8} um mit Zauberangriffen zu treffen). Er hat die folgenden Kunstfertigkeitszauber vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell message}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell alarm}",
+								"{@spell cure wounds}",
+								"{@spell identify}",
+								"{@spell ray of sickness}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell Melf's acid arrow}",
+								"{@spell web}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell haste}",
+								"{@spell stinking cloud}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell blight}",
+								"{@spell Mordenkainen's faithful hound}",
+								"{@spell Otiluke's resilient sphere}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell cloudkill}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Thessalar schwingt einen {@item +1 dagger}, der mit {@item Thessaltoxin|IMR|thessaltoxin poison} beschichtet ist (siehe Anhang C)."
+					]
+				},
+				{
+					"name": "Alchemical Homunculus",
+					"entries": [
+						"Thessalar wird von seinem {@creature Thessalar's homunculus|IMR} begleitet. Wenn der Zauber {@spell mending} auf ihn gewirkt wird, erh\u00e4lt der Homunkulus {@dice 2d6} Trefferpunkte zur\u00fcck."
+					]
+				},
+				{
+					"name": "Healing Toxicity",
+					"entries": [
+						"Jeder magische Gegenstand, der Trefferpunkte wiederherstellt und auf eine Stich- oder Hiebwaffe aufgetragen werden kann (ein Trank, eine Salbe usw.), f\u00fcgt Thessalar bei einem Treffer mit dieser Waffe zus\u00e4tzlichen Schaden in H\u00f6he der Menge zu, die der Gegenstand normalerweise heilen w\u00fcrde."
+					]
+				},
+				{
+					"name": "Greater Restoration (1/Day)",
+					"entries": [
+						"Thessalar kann {@spell greater restoration} wirken, wenn er Zugang zu {@item Alchemist's Supplies|phb|alchemical supplies} hat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}3 ({@damage 1d4 + 1}) Stichschaden, und das Ziel muss einen {@dc 15} Konstitutions-Sicherungswurf bestehen. Bei einem misslungenen Schutzwurf wird das Ziel wie vom {@spell polymorph}-Zauber betroffen und verwandelt sich in eine zuf\u00e4llige {@filter beast|bestiary|type=beast|miscellaneous=!swarm} oder eine Kreatur, die es in den letzten 24 Stunden gesehen hat (nach Wahl des DM). Dieser Effekt h\u00e4lt an, bis das Ziel eine lange Ruhepause beendet hat."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"P"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CA"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Thessalar's Homunculus",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 35,
+			"_copy": {
+				"name": "Homunculus",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Acidic Spittle",
+							"entries": [
+								"{@atk rw} {@hit 4} auf Treffer, Reichweite 30ft, ein Ziel. {@h}5 ({@damage 1d6 + 2}) S\u00e4ureschaden."
+							]
+						}
+					}
+				}
+			},
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Thessalheart Construct",
+			"source": "IMR",
+			"page": 86,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d4 + 2"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 4,
+			"dex": 15,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"darkvision 60"
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Telepathic Bond",
+					"entries": [
+						"Das Konstrukt befindet sich zwar auf derselben Dimension wie sein Meister, kann ihm aber auf magische Weise mitteilen, was es wahrnimmt, und die beiden k\u00f6nnen telepathisch kommunizieren."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} auf Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}1 Hiebschaden, und das Ziel muss einen {@dc 10} Konstitutions-Sicherungswurf bestehen oder 1 Minute lang {@condition poisoned} leiden. Misslingt der Rettungswurf um 5 oder mehr, wird das Ziel stattdessen {@condition poisoned} f\u00fcr 5 ({@dice 1d10}) Minuten und {@condition unconscious} solange {@condition poisoned} auf diese Weise angegriffen."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"unconscious"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Thessalkraken",
+			"source": "IMR",
+			"page": 87,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"titan"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 207,
+				"formula": "18d12 + 90"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 60
+			},
+			"str": 24,
+			"dex": 11,
+			"con": 20,
+			"int": 19,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"str": "+12",
+				"dex": "+5",
+				"con": "+10",
+				"int": "+9",
+				"wis": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"acid",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"languages": [
+				"understands Abyssal",
+				"Celestial",
+				"Infernal",
+				"and Primordial but can't speak",
+				"telepathy 120 ft."
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Die Thessalkraken k\u00f6nnen Luft und Wasser atmen."
+					]
+				},
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"Der Thessalkraken ignoriert schwieriges Gel\u00e4nde, und magische Effekte k\u00f6nnen seine Geschwindigkeit nicht verringern oder ihn {@condition restrained} werden lassen. Er kann 5 Fu\u00df Bewegung aufwenden, um aus nichtmagischen Fesseln zu entkommen oder {@condition grappled} zu sein."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Thessalkrake macht eine Biss-Attacke und zwei Tentakel-Attacken. Er kann jede Tentakel-Attacke durch einen Einsatz von \"Schleudern\" ersetzen."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}20 ({@damage 3d8 + 7}) Stich-Schaden plus 5 ({@damage 1d10}) S\u00e4ure-Schaden. Handelt es sich bei dem Ziel um eine Kreatur mittlerer oder kleinerer Gr\u00f6\u00dfe {@condition grappled}, die vom Thessalkraken verschluckt wird, endet der Greifhaken. W\u00e4hrend des Verschluckens ist die Kreatur {@condition blinded} und {@condition restrained}, sie hat totale Deckung vor Angriffen und anderen Effekten au\u00dferhalb des Thessalkraken und erleidet 21 ({@damage 6d6}) S\u00e4ureschaden zu Beginn jeder Runde des Thessalkraken.",
+						"Wenn der Thessalkrake in einer einzigen Runde 35 oder mehr Schaden durch eine Kreatur in seinem Inneren erleidet, muss er am Ende dieser Runde einen {@dc 23} Konstitutionsrettungswurf bestehen oder alle verschluckten Kreaturen wieder ausw\u00fcrgen, die dann {@condition prone} in einen Raum innerhalb von 10 Fu\u00df um den Thessalkraken fallen. Wenn der Thessalkrake stirbt, wird eine verschluckte Kreatur nicht mehr {@condition restrained} von ihm gehalten und kann mit einer Bewegungszeit von 10 Fu\u00df aus dem Leichnam entkommen, indem sie {@condition prone} verl\u00e4sst."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 12} Treffer, Reichweite 20 ft., ein Ziel. {@h}17 ({@damage 3d6 + 7}) Hiebschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 16}). Bis zum Ende des Haltegriffs ist das Ziel {@condition restrained}. Der Thessalkraken hat zehn Tentakel, von denen jeder ein Ziel packen kann."
+					]
+				},
+				{
+					"name": "Fling",
+					"entries": [
+						"Ein mittelgro\u00dfes oder kleineres Objekt, das vom Thessalkraken gehalten wird oder eine Kreatur {@condition grappled}, wird bis zu 40 Fu\u00df in eine zuf\u00e4llige Richtung geworfen und umgesto\u00dfen {@condition prone}. Wenn das geworfene Ziel auf eine feste Oberfl\u00e4che trifft, erleidet es 3 ({@damage 1d6}) Wuchtschaden pro 10 Fu\u00df, die es geworfen wurde. Wenn das Ziel auf eine andere Kreatur geworfen wird, muss diese Kreatur einen {@dc 16} Schutzwurf auf Geschicklichkeit bestehen oder den gleichen Schaden erleiden und umgeworfen werden {@condition prone}."
+					]
+				},
+				{
+					"name": "Acid Saliva {@recharge 5}",
+					"entries": [
+						"Der Thessalkrake spuckt einen S\u00e4ureklumpen auf einen Punkt, den er im Umkreis von 60 Fu\u00df sehen kann. Jede Kreatur im Umkreis von 10 Fu\u00df um diesen Punkt muss einen {@dc 18} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 22 ({@damage 4d10}) S\u00e4ureschaden, bei einem erfolgreichen Schutzwurf die H\u00e4lfte des Schadens."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Tentacle Attack",
+					"entries": [
+						"Der Thessalkrake f\u00fchrt einen Tentakelangriff aus."
+					]
+				},
+				{
+					"name": "Fling",
+					"entries": [
+						"Der Thessalkrake benutzt Fling."
+					]
+				},
+				{
+					"name": "Ink Cloud (Costs 3 Actions)",
+					"entries": [
+						"Unter Wasser st\u00f6\u00dft der Thessalkraken eine Tintenwolke in einem Radius von 60 Fu\u00df aus. Die Wolke breitet sich um Ecken herum aus, und dieser Bereich ist f\u00fcr andere Kreaturen als den Thessalkraken stark verdunkelt. Jede Kreatur au\u00dfer dem Thessalkraken, die ihren Zug dort beendet, muss einen {@dc 18} Konstitutionsschutzwurf bestehen und erleidet bei einem misslungenen Schutzwurf 16 ({@damage 3d10}) Giftschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden. Eine starke Str\u00f6mung vertreibt die Wolke, die ansonsten am Ende des n\u00e4chsten Zuges des Thessalkraken verschwindet."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Thessalkraken",
+				"source": "IMR"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"CS",
+				"I",
+				"P",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Tiefling Muralist",
+			"source": "IMR",
+			"page": 17,
+			"_copy": {
+				"name": "Cultist",
+				"source": "MM",
+				"_trait": {
+					"name": "Tiefling",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "cultist",
+						"with": "muralist"
+					}
+				}
+			},
+			"languageTags": [
+				"C",
+				"I",
+				"X"
+			],
+			"spellcastingTags": [
+				"I"
+			]
+		},
+		{
+			"name": "Two-Headed Crocodile",
+			"source": "IMR",
+			"page": 89,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+2"
+			},
+			"passive": 12,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"Das zweik\u00f6pfige Krokodil kann seinen Atem 15 Minuten lang anhalten."
+					]
+				},
+				{
+					"name": "Two Heads",
+					"entries": [
+						"Das zweik\u00f6pfige Krokodil ist im Vorteil bei Weisheitspr\u00fcfungen (Wahrnehmung) und bei Rettungsw\u00fcrfen gegen {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} und Sto\u00dfen {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Wakeful",
+					"entries": [
+						"Wenn einer der K\u00f6pfe des Krokodils schl\u00e4ft, ist der andere Kopf wach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Das zweik\u00f6pfige Krokodil f\u00fchrt mit seinem Biss zwei Angriffe aus."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d10 + 2}) Stichschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 12}). Bis zum Ende des Haltegriffs ist das Ziel {@condition restrained}, und der Kopf des Krokodils kann kein anderes Ziel bei\u00dfen."
+					]
+				}
+			],
+			"traitTags": [
+				"Hold Breath"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Two-Headed Owlbear",
+			"source": "IMR",
+			"page": 90,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d10 + 21"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 17,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60"
+			],
+			"passive": 13,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Two Heads",
+					"entries": [
+						"Der zweik\u00f6pfige Eulenb\u00e4r ist im Vorteil bei Weisheitspr\u00fcfungen (Wahrnehmung) und bei Rettungsw\u00fcrfen gegen {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} und Sto\u00dfen {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Wakeful",
+					"entries": [
+						"Wenn einer der K\u00f6pfe des Eulenb\u00e4ren schl\u00e4ft, ist sein anderer Kopf wach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der zweik\u00f6pfige Eulenb\u00e4r f\u00fchrt drei Angriffe aus: zwei mit seinen Schn\u00e4beln und einen mit seinen Klauen."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 1d10 + 5}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 2d8 + 5}) Hiebschaden."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		}
+	]
+}

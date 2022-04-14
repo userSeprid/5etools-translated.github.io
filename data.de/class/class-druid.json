@@ -1,0 +1,5073 @@
+{
+	"_meta": {
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		}
+	},
+	"class": [
+		{
+			"name": "Druid",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$wis_mod$>",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					{
+						"proficiency": "{@item shield|phb|shields}",
+						"full": "shields (druids will not wear armor or use shields made of metal)"
+					}
+				],
+				"weapons": [
+					"{@item club|phb|clubs}",
+					"{@item dagger|phb|daggers}",
+					"{@item dart|phb|darts}",
+					"{@item javelin|phb|javelins}",
+					"{@item mace|phb|maces}",
+					"{@item quarterstaff|phb|quarterstaffs}",
+					"{@item scimitar|phb|scimitars}",
+					"{@item sickle|phb|sickles}",
+					"{@item sling|phb|slings}",
+					"{@item spear|phb|spears}"
+				],
+				"tools": [
+					"{@item Herbalism kit|PHB}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"animal handling",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"religion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
+					"{@item Leather armor|phb}, an {@item explorer's pack|phb}, and a {@item druidic focus|phb}"
+				],
+				"goldAlternative": "{@dice 2d4 \u00d7 10|2d4 \u00d7 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"scimitar|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee"
+							}
+						]
+					},
+					{
+						"_": [
+							"Leather armor|phb",
+							"explorer's pack|phb",
+							"druidic focus|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						{
+							"proficiency": "{@item shield|phb|shields}",
+							"full": "shields (druids will not wear armor or use shields made of metal)"
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Druid}"
+					],
+					"rows": [
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Druid}",
+						"{@filter 2nd|spells|level=2|class=Druid}",
+						"{@filter 3rd|spells|level=3|class=Druid}",
+						"{@filter 4th|spells|level=4|class=Druid}",
+						"{@filter 5th|spells|level=5|class=Druid}",
+						"{@filter 6th|spells|level=6|class=Druid}",
+						"{@filter 7th|spells|level=7|class=Druid}",
+						"{@filter 8th|spells|level=8|class=Druid}",
+						"{@filter 9th|spells|level=9|class=Druid}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Druidic|Druid||1",
+				"Spellcasting|Druid||1",
+				"Cantrip Versatility|Druid||1|UAClassFeatureVariants",
+				"Wild Shape|Druid||2",
+				"Wild Companion|Druid||2|UAClassFeatureVariants",
+				"Wild Companion|Druid||2|TCE",
+				{
+					"classFeature": "Druid Circle|Druid||2",
+					"gainSubclassFeature": true
+				},
+				"Wild Shape Improvement|Druid||4",
+				"Ability Score Improvement|Druid||4",
+				"Proficiency Versatility|Druid||4|UAClassFeatureVariants",
+				"Cantrip Versatility|Druid||4|TCE",
+				{
+					"classFeature": "Druid Circle feature|Druid||6",
+					"gainSubclassFeature": true
+				},
+				"Wild Shape Improvement|Druid||8",
+				"Ability Score Improvement|Druid||8",
+				"Proficiency Versatility|Druid||8|UAClassFeatureVariants",
+				{
+					"classFeature": "Druid Circle feature|Druid||10",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Druid||12",
+				"Proficiency Versatility|Druid||12|UAClassFeatureVariants",
+				{
+					"classFeature": "Druid Circle feature|Druid||14",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Druid||16",
+				"Proficiency Versatility|Druid||16|UAClassFeatureVariants",
+				"Timeless Body|Druid||18",
+				"Beast Spells|Druid||18",
+				"Ability Score Improvement|Druid||19",
+				"Proficiency Versatility|Druid||19|UAClassFeatureVariants",
+				"Archdruid|Druid||20"
+			],
+			"subclassTitle": "Druid Circle",
+			"fluff": [
+				{
+					"name": "Druid",
+					"type": "section",
+					"entries": [
+						"Eine Elfe, die einen knorrigen, mit Stechpalmen umrankten Stab hochh\u00e4lt, beschw\u00f6rt die Wut des Sturms herauf und ruft explosive Blitze herab, um die fackeltragenden Orks, die ihren Wald bedrohen, zu vernichten.",
+						"Auf einem hohen Ast hockt ein Mensch in Leopardengestalt und sp\u00e4ht aus dem Dschungel auf die seltsame Konstruktion eines Tempels des b\u00f6sen Elements Luft, um die Aktivit\u00e4ten der Kultisten genau zu beobachten.",
+						"Ein Halbelf schwingt eine Klinge aus purem Feuer und st\u00fcrzt sich auf eine Masse von Skelettsoldaten, um die unnat\u00fcrliche Magie zu zerst\u00f6ren, die den widerlichen Kreaturen den sp\u00f6ttischen Anschein von Leben verleiht.",
+						"Ob sie nun die elementaren Kr\u00e4fte der Natur anrufen oder den Kreaturen der Tierwelt nacheifern, Druiden verk\u00f6rpern die Widerstandsf\u00e4higkeit, die List und die Wut der Natur. Sie erheben keinen Anspruch auf die Beherrschung der Natur, sondern sehen sich selbst als Ausl\u00e4ufer des unbeugsamen Willens der Natur.",
+						{
+							"type": "entries",
+							"name": "Power of Nature",
+							"entries": [
+								"Druiden verehren die Natur \u00fcber alles und beziehen ihre Zauberspr\u00fcche und anderen magischen Kr\u00e4fte entweder aus der Kraft der Natur selbst oder von einer Naturgottheit. Viele Druiden verfolgen eher eine mystische Spiritualit\u00e4t der transzendenten Vereinigung mit der Natur als die Hingabe an eine g\u00f6ttliche Entit\u00e4t, w\u00e4hrend andere G\u00f6ttern der wilden Natur, Tieren oder Elementarkr\u00e4ften dienen. Die alten druidischen Traditionen werden manchmal als Alter Glaube bezeichnet, im Gegensatz zur Anbetung von G\u00f6ttern in Tempeln und Schreinen.",
+								"Druidenzauber orientieren sich an der Natur und den Tieren - der Macht der Z\u00e4hne und Klauen, der Sonne und des Mondes, des Feuers und des Sturms. Druiden erlangen auch die F\u00e4higkeit, Tiergestalten anzunehmen, und einige Druiden besch\u00e4ftigen sich besonders intensiv mit dieser Praxis, bis hin zu dem Punkt, dass sie die Tiergestalt ihrer nat\u00fcrlichen Gestalt vorziehen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Preserve the Balance",
+							"entries": [
+								"F\u00fcr Druiden befindet sich die Natur in einem prek\u00e4ren Gleichgewicht. Die vier Elemente, aus denen eine Welt besteht - Luft, Erde, Feuer und Wasser - m\u00fcssen im Gleichgewicht bleiben. Sollte ein Element die Macht \u00fcber die anderen erlangen, k\u00f6nnte die Welt zerst\u00f6rt, in eine der elementaren Dimensionen gezogen und in ihre Bestandteile zerlegt werden. Daher lehnen Druiden Kulte des Elementaren B\u00f6sen und andere ab, die ein Element unter Ausschluss der anderen f\u00f6rdern.",
+								"Druiden befassen sich auch mit dem empfindlichen \u00f6kologischen Gleichgewicht, das das Leben von Pflanzen und Tieren erh\u00e4lt, und mit der Notwendigkeit, dass zivilisierte Menschen in Harmonie mit der Natur und nicht gegen sie leben. Druiden akzeptieren, was in der Natur grausam ist, und sie hassen, was unnat\u00fcrlich ist, einschlie\u00dflich Anomalien (wie Betrachter und Gedankenfluter) und Untote (wie Zombies und Vampire). Druiden f\u00fchren manchmal Raubz\u00fcge gegen solche Kreaturen an, besonders wenn die Monster in das Gebiet der Druiden eindringen.",
+								"Druiden bewachen oft heilige St\u00e4tten oder wachen \u00fcber Regionen mit unber\u00fchrter Natur. Wenn jedoch eine gro\u00dfe Gefahr auftaucht, die das Gleichgewicht der Natur oder das Land, das sie sch\u00fctzen, bedroht, \u00fcbernehmen Druiden als Abenteurer eine aktivere Rolle im Kampf gegen die Bedrohung."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Druid",
+							"entries": [
+								"Wenn du einen Druiden erschaffst, \u00fcberlege dir, warum dein Charakter so eng mit der Natur verbunden ist. Vielleicht lebt dein Charakter in einer Gesellschaft, in der der Alte Glaube noch floriert, oder er wurde von einem Druiden aufgezogen, nachdem er in den Tiefen eines Waldes ausgesetzt wurde. Vielleicht hatte dein Charakter eine dramatische Begegnung mit den Geistern der Natur, bei der er einem riesigen Adler oder einem schrecklichen Wolf gegen\u00fcberstand und diese Erfahrung \u00fcberlebte. Vielleicht wurde dein Charakter w\u00e4hrend eines epischen Sturms oder eines Vulkanausbruchs geboren, was als Zeichen daf\u00fcr gedeutet wurde, dass es Teil seines Schicksals ist, Druide zu werden.",
+								"Warst du schon immer ein Abenteurer als Teil deiner druidischen Berufung, oder hast du zuerst Zeit als H\u00fcter eines heiligen Hains oder einer heiligen Quelle verbracht? Vielleicht wurde deine Heimat vom B\u00f6sen besudelt, und du hast ein Leben als Abenteurer aufgenommen, in der Hoffnung, eine neue Heimat oder ein neues Ziel zu finden.",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"Du kannst schnell einen Druiden werden, wenn du die folgenden Vorschl\u00e4ge befolgst: Erstens sollte Weisheit dein h\u00f6chster F\u00e4higkeitswert sein, gefolgt von Konstitution. Zweitens w\u00e4hle den {@background hermit} Hintergrund."
+									]
+								}
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Sacred Plants and Wood",
+							"entries": [
+								"Ein Druide h\u00e4lt bestimmte Pflanzen f\u00fcr heilig, insbesondere Erle, Esche, Birke, Holunder, Hasel, Stechpalme, Wacholder, Mistel, Eiche, Eberesche, Weide und Eibe. Druiden verwenden solche Pflanzen oft als Teil eines Zauberfokus, indem sie Eichen- oder Eibenst\u00fccke oder Mistelzweige einbinden.",
+								"Ebenso verwendet ein Druide diese H\u00f6lzer, um andere Gegenst\u00e4nde wie Waffen und Schilde herzustellen. Eibe wird mit Tod und Wiedergeburt assoziiert, daher k\u00f6nnen daraus Waffengriffe f\u00fcr Krumms\u00e4bel oder Sicheln hergestellt werden. Esche wird mit Leben und Eiche mit St\u00e4rke assoziiert. Diese H\u00f6lzer eignen sich hervorragend f\u00fcr Stiele oder ganze Waffen wie Keulen oder Quarterstaffs sowie f\u00fcr Schilde. Erle wird mit Luft assoziiert und kann f\u00fcr Wurfwaffen wie Pfeile oder Speere verwendet werden.",
+								"Druiden aus Regionen, in denen es die hier beschriebenen Pflanzen nicht gibt, haben andere Pflanzen gew\u00e4hlt, die \u00e4hnliche Verwendungszwecke haben, z. B. k\u00f6nnte ein Druide aus einer W\u00fcstenregion den Yucca-Baum und Kaktuspflanzen sch\u00e4tzen."
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Druids and the Gods",
+							"entries": [
+								"Einige Druiden verehren die Kr\u00e4fte der Natur selbst, aber die meisten Druiden sind einer der vielen Naturgottheiten gewidmet, die im Multiversum verehrt werden (die Listen der G\u00f6tter in Anhang B enthalten viele solcher Gottheiten). Die Verehrung dieser Gottheiten wird oft als eine uralte Tradition angesehen, die \u00e4lter ist als der Glaube der Kleriker und der verst\u00e4dterten V\u00f6lker. Tats\u00e4chlich wird der druidische Glaube in der Welt von Greyhawk der Alte Glaube genannt, und er hat viele Anh\u00e4nger unter den Bauern, F\u00f6rstern, Fischern und anderen, die eng mit der Natur leben. Diese Tradition umfasst die Verehrung der Natur als eine urspr\u00fcngliche Kraft, die nicht personifiziert werden kann, aber auch die Verehrung von Beory, der Mutter von Oerth, sowie Anh\u00e4nger von Obad-Hai, Ehlonna und Ulaa.",
+								"In den Welten von Greyhawk und den Vergessenen Reichen sind druidische Zirkel normalerweise nicht mit dem Glauben an eine einzelne Naturgottheit verbunden. Ein bestimmter Zirkel in den Vergessenen Reichen kann zum Beispiel Druiden umfassen, die Silvanus, Mielikki, Eldath, Chauntea oder sogar die rauen G\u00f6tter des Zorns verehren: Talos, Malar, Auril und Umberlee. Diese Naturg\u00f6tter werden oft als der Erste Zirkel bezeichnet, der erste unter den Druiden, und die meisten Druiden betrachten sie alle (auch die gewaltt\u00e4tigen) als verehrungsw\u00fcrdig.",
+								"Die Druiden von Eberron haben einen animistischen Glauben, der nichts mit der Souver\u00e4nen Heerschar, den Dunklen Sechs oder einer der anderen Religionen der Welt zu tun hat. Sie glauben, dass jedes Lebewesen und jedes Naturph\u00e4nomen - Sonne, Mond, Wind, Feuer und die Welt selbst - einen Geist hat. Ihre Zauberspr\u00fcche sind also ein Mittel, um mit diesen Geistern zu kommunizieren und sie zu beherrschen. Die verschiedenen druidischen Sekten vertreten jedoch unterschiedliche Philosophien \u00fcber das richtige Verh\u00e4ltnis dieser Geister zueinander und zu den Kr\u00e4ften der Zivilisation. Die Aschegebundenen glauben zum Beispiel, dass arkane Magie eine Abscheulichkeit gegen die Natur ist, die Kinder des Winters verehren die Kr\u00e4fte des Todes und die Torw\u00e4chter bewahren uralte Traditionen, die die Welt vor dem Eindringen von Aberrationen sch\u00fctzen sollen."
+							]
+						}
+					],
+					"source": "PHB",
+					"page": 64
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Selbst im Tod spielt jedes Gesch\u00f6pf seine Rolle bei der Aufrechterhaltung des Gro\u00dfen Gleichgewichts. Doch nun w\u00e4chst ein Ungleichgewicht, eine Kraft, die versucht, die Natur zu beherrschen. Dies ist das zerst\u00f6rerische Verhalten der sterblichen Rassen. Je weiter sie sich von der Natur entfernen, desto verderblicher wird ihr Einfluss. Als Druiden versuchen wir vor allem, zu sch\u00fctzen und zu erziehen, um das Gro\u00dfe Gleichgewicht zu bewahren, aber es gibt Zeiten, in denen wir uns gegen die Gefahr erheben und sie ausl\u00f6schen m\u00fcssen."
+							],
+							"by": "Safhran, archdruid"
+						},
+						"Druiden sind die H\u00fcter der nat\u00fcrlichen Welt, und man sagt, dass ein Druide mit der Zeit zur Stimme der Natur wird, die die Wahrheit spricht, die zu subtil ist, als dass die allgemeine Bev\u00f6lkerung sie h\u00f6ren k\u00f6nnte. Viele, die Druiden werden, stellen fest, dass sie sich von Natur aus zur Natur hingezogen f\u00fchlen; ihre Kr\u00e4fte, Zyklen und Bewegungen erf\u00fcllen ihren Geist und ihre Seele mit Verwunderung und Einsicht. Viele Weise und Weisen haben die Natur studiert und B\u00e4nde \u00fcber ihr Geheimnis und ihre Macht geschrieben, aber Druiden sind eine besondere Art von Wesen: An einem bestimmten Punkt beginnen sie, diese nat\u00fcrlichen Kr\u00e4fte zu verk\u00f6rpern, indem sie magische Ph\u00e4nomene hervorbringen, die sie mit dem Geist der Natur und dem Fluss des Lebens verbinden. Wegen ihrer seltsamen und geheimnisvollen Macht werden Druiden von den Menschen um sie herum oft verehrt, gemieden oder als gef\u00e4hrlich angesehen.",
+						"Dein Druiden-Charakter k\u00f6nnte ein wahrer Verehrer der Natur sein, einer, der die Zivilisation schon immer verschm\u00e4ht hat und Trost in der Wildnis gefunden hat. Oder dein Charakter k\u00f6nnte ein Kind der Stadt sein, das nun danach strebt, die zivilisierte Welt mit der Wildnis in Einklang zu bringen. Du kannst die folgenden Abschnitte nutzen, um deinen Druiden auszuf\u00fcllen, unabh\u00e4ngig davon, wie dein Charakter zu diesem Beruf gekommen ist.",
+						{
+							"type": "entries",
+							"name": "Treasured Item",
+							"entries": [
+								"Manche Druiden tragen einen oder mehrere Gegenst\u00e4nde bei sich, die ihnen heilig sind oder eine tiefe pers\u00f6nliche Bedeutung haben. Solche Gegenst\u00e4nde sind nicht unbedingt magisch, aber jeder einzelne ist ein Objekt, dessen Bedeutung den Geist und das Herz des Druiden mit einem tiefgr\u00fcndigen Konzept oder einer spirituellen Einstellung verbindet.",
+								"Wenn du dich entscheidest, was der Lieblingsgegenstand deines Charakters ist, denke dar\u00fcber nach, ihm eine Entstehungsgeschichte zu geben: Wie bist du zu dem Gegenstand gekommen, und warum ist er wichtig f\u00fcr dich?",
+								{
+									"type": "table",
+									"caption": "Treasured Item",
+									"colLabels": [
+										"{@dice d6}",
+										"Treasured Item"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Ein Zweig vom Versammlungsbaum, der in der Mitte deines Dorfes steht"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Ein Fl\u00e4schchen mit Wasser aus der Quelle eines heiligen Flusses"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Besondere Kr\u00e4uter in einem B\u00fcndel zusammengebunden"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Eine kleine Bronzeschale mit eingravierten Tierbildern"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Eine Rassel aus einem getrockneten K\u00fcrbis und Stechpalmenbeeren"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Eine goldene Miniatursichel, die du von deinem Mentor erhalten hast"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Guiding Aspects",
+							"entries": [
+								"Viele Druiden f\u00fchlen eine starke Verbindung zu einem bestimmten Aspekt der nat\u00fcrlichen Welt, wie z.B. einem Gew\u00e4sser, einem Tier, einer Baumart oder einer anderen Art von Pflanze. Sie identifizieren sich mit dem von ihnen gew\u00e4hlten Aspekt; durch sein Verhalten oder seine Natur ist er ein Vorbild, dem sie nacheifern wollen.",
+								{
+									"type": "table",
+									"caption": "Guiding Aspects",
+									"colLabels": [
+										"{@dice d6}",
+										"Guiding Aspects"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Eiben erinnern daran, Geist und Seele zu erneuern, das Alte absterben zu lassen und das Neue entstehen zu lassen."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Eichen stehen f\u00fcr Kraft und Vitalit\u00e4t, und die Meditation unter einer Eiche erf\u00fcllt K\u00f6rper und Geist mit Entschlossenheit und St\u00e4rke."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Das endlose Flie\u00dfen des Flusses erinnert Sie an die gro\u00dfe Weite der Welt. Sie versuchen, die langfristigen Interessen der Natur im Auge zu behalten."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Das Meer ist ein st\u00e4ndiger, aufgew\u00fchlter Kessel voller Kraft und Chaos und erinnert dich daran, dass du Ver\u00e4nderungen akzeptieren musst, um dich in der Welt behaupten zu k\u00f6nnen."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Die V\u00f6gel am Himmel sind der Beweis daf\u00fcr, dass auch die kleinsten Lebewesen \u00fcberleben k\u00f6nnen, wenn sie sich nicht zu sehr in die Quere kommen."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Wie die Aktionen des Wolfes zeigen, ist die St\u00e4rke eines Einzelnen nichts im Vergleich zur Macht des Rudels."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mentors",
+							"entries": [
+								"Es ist nicht ungew\u00f6hnlich, dass angehende Druiden Ausbilder oder \u00c4lteste aufsuchen (oder von ihnen aufgesucht werden), die ihnen die Grundlagen ihrer magischen K\u00fcnste beibringen. Die meisten Druiden, die von einem Mentor lernen, beginnen ihre Ausbildung in jungen Jahren, und der Mentor spielt eine wichtige Rolle bei der Ausbildung der Einstellungen und \u00dcberzeugungen eines Sch\u00fclers.",
+								"Wenn deine Figur von jemand anderem ausgebildet wurde, wer oder was war diese Person und wie war die Beziehung? Hat dein Mentor dir eine bestimmte Sichtweise vermittelt oder deine Herangehensweise an das Erreichen der Ziele deines gew\u00e4hlten Weges anderweitig beeinflusst?",
+								{
+									"type": "table",
+									"caption": "Mentors",
+									"colLabels": [
+										"{@dice d6}",
+										"Mentors"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Ihr Mentor war ein weiser Baumbewohner, der Sie gelehrt hat, in Jahren und Jahrzehnten zu denken und nicht in Tagen oder Monaten."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Du wurdest von einer Dryade unterrichtet, die \u00fcber ein schlummerndes Portal zum Abyss wachte. W\u00e4hrend deiner Ausbildung wurdest du damit beauftragt, nach versteckten Bedrohungen f\u00fcr die Welt Ausschau zu halten."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Dein Tutor interagierte mit dir immer in der Gestalt eines Falken. Du hast die humanoide Form des Tutors nie gesehen."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Du warst einer von mehreren jungen Leuten, die von einem alten Druiden betreut wurden, bis einer deiner Mitsch\u00fcler eure Gruppe verriet und deinen Meister t\u00f6tete."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Ihr Mentor ist Ihnen bisher nur in Visionen erschienen, Sie sind ihm noch nicht begegnet, und Sie sind sich nicht sicher, ob es eine solche Person in sterblicher Form gibt."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Dein Mentor war ein Werb\u00e4r, der dich gelehrt hat, alle Lebewesen mit dem gleichen Respekt zu behandeln."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Learning Beast Shapes",
+							"entries": [
+								"Die Funktion \"Wilde Form\" im Spielerhandbuch erlaubt es dir, dich in ein Tier zu verwandeln, das du gesehen hast. Diese Regel gibt dir eine enorme Flexibilit\u00e4t, die es dir leicht macht, eine Reihe von Bestienformen f\u00fcr dich anzuh\u00e4ufen, aber du musst dich an die Einschr\u00e4nkungen in der Tabelle \"Bestienformen\" in diesem Buch halten.",
+								"Wenn du als Druide der 2. Stufe die Wilde Gestalt erlangst, fragst du dich vielleicht, welche Tiere du bereits gesehen hast. Die folgenden Tabellen ordnen die Tiere aus dem Monsterhandbuch nach den wahrscheinlichsten Umgebungen der Tiere. \u00dcberlege dir die Umgebung, in der dein Druide aufgewachsen ist, und sieh dann in der entsprechenden Tabelle nach, um eine Liste der Tiere zu erhalten, die dein Druide bis zur 2. Stufe wahrscheinlich gesehen hat.",
+								"Diese Tabellen k\u00f6nnen dir und deinem DM auch dabei helfen, herauszufinden, welche Tiere du auf deinen Reisen sehen k\u00f6nntest. Dar\u00fcber hinaus enthalten die Tabellen den Herausforderungswert jeder Bestie und vermerken, ob eine Bestie eine Flug- oder Schwimmgeschwindigkeit hat. Diese Informationen helfen dir dabei, herauszufinden, ob du dich qualifizierst, die Form dieser Bestie anzunehmen.",
+								"Die Tabellen enthalten alle individuellen Bestien, die f\u00fcr die Wilde Form (bis zu einem Schwierigkeitsgrad von 1) oder das Merkmal Kreisformen des Mondkreises (bis zu einem Schwierigkeitsgrad von 6) in Frage kommen.",
+								{
+									"type": "table",
+									"caption": "Arctic",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Owl}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant owl}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Brown bear}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Polar bear}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Saber-toothed tiger}",
+											"\u2014"
+										],
+										[
+											"6",
+											"{@creature Mammoth}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Coast",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Crab}",
+											"Swim"
+										],
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant crab}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Plesiosaurus}",
+											"Swim"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Desert",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Cat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Jackal}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Scorpion}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Vulture}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Camel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Flying snake}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Mule}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant vulture}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"3",
+											"{@creature Giant scorpion}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Forest",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Baboon}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Badger}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Cat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Deer}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Owl}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Flying snake}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant rat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Giant weasel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Mastiff}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Boar}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Elk}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant badger}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant bat}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant frog}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant owl}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Panther}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Wolf}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Ape}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Black bear}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant wasp}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Brown bear}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Dire wolf}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Tiger}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant boar}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Grassland",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Cat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Deer}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Goat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Jackal}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Vulture}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Flying snake}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant weasel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Axe beak}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Boar}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Elk}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Panther} (Leopard)",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Riding horse}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Wolf}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant goat}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant wasp}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant vulture}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Tiger}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Allosaurus}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant boar}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Rhinoceros}",
+											"\u2014"
+										],
+										[
+											"3",
+											"{@creature Ankylosaurus}",
+											"\u2014"
+										],
+										[
+											"4",
+											"{@creature Elephant}",
+											"\u2014"
+										],
+										[
+											"5",
+											"{@creature Triceratops}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Hill",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Baboon}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Goat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Raven}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Vulture}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant weasel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Mastiff}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Mule}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Axe beak}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Boar}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Elk}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant owl}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Panther} (puma)",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Wolf}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant goat}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Brown bear}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Dire wolf}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant boar}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Mountain",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Goat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon}",
+											"Fly"
+										],
+										[
+											"1/2",
+											"{@creature Giant goat}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Saber-toothed tiger}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Swamp",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Rat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Raven}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant rat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant frog}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/2",
+											"{@creature Crocodile}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"5",
+											"{@creature Giant crocodile}",
+											"Swim"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Underdark",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Giant fire beetle}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Giant rat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant bat}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant centipede}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Polar bear} (H\u00f6hlenb\u00e4r)",
+											"Swim"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Underwater",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Quipper}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/2",
+											"{@creature Giant sea horse}",
+											"Swim"
+										],
+										[
+											"1/2",
+											"{@creature Reef shark}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant octopus}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Hunter shark}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Plesiosaurus}",
+											"Swim"
+										],
+										[
+											"3",
+											"{@creature Killer whale}",
+											"Swim"
+										],
+										[
+											"5",
+											"{@creature Giant shark}",
+											"Swim"
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE",
+					"page": 21
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Circle of the Land",
+			"shortName": "Land",
+			"source": "PHB",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 68,
+			"srd": true,
+			"additionalSpells": [
+				{
+					"name": "Arctic",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"hold person",
+							"spike growth"
+						],
+						"5": [
+							"sleet storm",
+							"slow"
+						],
+						"7": [
+							"freedom of movement",
+							"ice storm"
+						],
+						"9": [
+							"commune with nature",
+							"cone of cold"
+						]
+					}
+				},
+				{
+					"name": "Coast",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"mirror image",
+							"misty step"
+						],
+						"5": [
+							"water breathing",
+							"water walk"
+						],
+						"7": [
+							"control water",
+							"freedom of movement"
+						],
+						"9": [
+							"conjure elemental",
+							"scrying"
+						]
+					}
+				},
+				{
+					"name": "Desert",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"blur",
+							"silence"
+						],
+						"5": [
+							"create food and water",
+							"protection from energy"
+						],
+						"7": [
+							"blight",
+							"hallucinatory terrain"
+						],
+						"9": [
+							"insect plague",
+							"wall of stone"
+						]
+					}
+				},
+				{
+					"name": "Forest",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"barkskin",
+							"spider climb"
+						],
+						"5": [
+							"call lightning",
+							"plant growth"
+						],
+						"7": [
+							"divination",
+							"freedom of movement"
+						],
+						"9": [
+							"commune with nature",
+							"tree stride"
+						]
+					}
+				},
+				{
+					"name": "Grassland",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"invisibility",
+							"pass without trace"
+						],
+						"5": [
+							"daylight",
+							"haste"
+						],
+						"7": [
+							"divination",
+							"freedom of movement"
+						],
+						"9": [
+							"dream",
+							"insect plague"
+						]
+					}
+				},
+				{
+					"name": "Mountain",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"spider climb",
+							"spike growth"
+						],
+						"5": [
+							"lightning bolt",
+							"meld into stone"
+						],
+						"7": [
+							"stone shape",
+							"stoneskin"
+						],
+						"9": [
+							"passwall",
+							"wall of stone"
+						]
+					}
+				},
+				{
+					"name": "Swamp",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"darkness",
+							"Melf's acid arrow"
+						],
+						"5": [
+							"water walk",
+							"stinking cloud"
+						],
+						"7": [
+							"freedom of movement",
+							"locate creature"
+						],
+						"9": [
+							"insect plague",
+							"scrying"
+						]
+					}
+				},
+				{
+					"name": "Underdark",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=Druid"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"spider climb",
+							"web"
+						],
+						"5": [
+							"gaseous form",
+							"stinking cloud"
+						],
+						"7": [
+							"greater invisibility",
+							"stone shape"
+						],
+						"9": [
+							"cloudkill",
+							"insect plague"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of the Land|Druid||Land||2",
+				"Land's Stride|Druid||Land||6",
+				"Nature's Ward|Druid||Land||10",
+				"Nature's Sanctuary|Druid||Land||14"
+			]
+		},
+		{
+			"name": "Circle of the Moon",
+			"shortName": "Moon",
+			"source": "PHB",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 69,
+			"additionalSpells": [
+				{
+					"known": {
+						"14": [
+							"alter self"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of the Moon|Druid||Moon||2",
+				"Primal Strike|Druid||Moon||6",
+				"Elemental Wild Shape|Druid||Moon||10",
+				"Thousand Forms|Druid||Moon||14"
+			]
+		},
+		{
+			"name": "Circle of Dreams (UA)",
+			"shortName": "Dreams (UA)",
+			"source": "UADruid",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"Circle of Dreams|Druid||Dreams (UA)|UADruid|2",
+				"Hearth of Moonlight and Shadow|Druid||Dreams (UA)|UADruid|6",
+				"Hidden Paths|Druid||Dreams (UA)|UADruid|10",
+				"Purifying Light|Druid||Dreams (UA)|UADruid|14"
+			]
+		},
+		{
+			"name": "Circle of the Shepherd (UA)",
+			"shortName": "Shepherd (UA)",
+			"source": "UADruid",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"Circle of the Shepherd|Druid||Shepherd (UA)|UADruid|2",
+				"Mighty Summoner|Druid||Shepherd (UA)|UADruid|6",
+				"Guardian Spirit|Druid||Shepherd (UA)|UADruid|10",
+				"Faithful Summons|Druid||Shepherd (UA)|UADruid|14"
+			]
+		},
+		{
+			"name": "Circle of Twilight (UA)",
+			"shortName": "Twilight (UA)",
+			"source": "UADruid",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassFeatures": [
+				"Circle of Twilight|Druid||Twilight (UA)|UADruid|2",
+				"Speech Beyond the Grave|Druid||Twilight (UA)|UADruid|6",
+				"Watcher at the Threshold|Druid||Twilight (UA)|UADruid|10",
+				"Paths of the Dead|Druid||Twilight (UA)|UADruid|14"
+			]
+		},
+		{
+			"name": "Circle of the Shepherd v2 (UA)",
+			"shortName": "Shepherd v2 (UA)",
+			"source": "UARevisedClassOptions",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"Circle of the Shepherd v2|Druid||Shepherd v2 (UA)|UARevisedClassOptions|2",
+				"Mighty Summoner|Druid||Shepherd v2 (UA)|UARevisedClassOptions|6",
+				"Guardian Spirit|Druid||Shepherd v2 (UA)|UARevisedClassOptions|10",
+				"Faithful Summons|Druid||Shepherd v2 (UA)|UARevisedClassOptions|14"
+			]
+		},
+		{
+			"name": "Circle of Dreams",
+			"shortName": "Dreams",
+			"source": "XGE",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 22,
+			"subclassFeatures": [
+				"Circle of Dreams|Druid||Dreams|XGE|2",
+				"Hearth of Moonlight and Shadow|Druid||Dreams|XGE|6",
+				"Hidden Paths|Druid||Dreams|XGE|10",
+				"Walker in Dreams|Druid||Dreams|XGE|14"
+			]
+		},
+		{
+			"name": "Circle of the Shepherd",
+			"shortName": "Shepherd",
+			"source": "XGE",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 23,
+			"subclassFeatures": [
+				"Circle of the Shepherd|Druid||Shepherd|XGE|2",
+				"Mighty Summoner|Druid||Shepherd|XGE|6",
+				"Guardian Spirit|Druid||Shepherd|XGE|10",
+				"Faithful Summons|Druid||Shepherd|XGE|14"
+			]
+		},
+		{
+			"name": "Circle of Spores (UA)",
+			"shortName": "Spores (UA)",
+			"source": "UAThreeSubclasses",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"gentle repose",
+							"ray of enfeeblement"
+						],
+						"5": [
+							"animate dead",
+							"gaseous form"
+						],
+						"7": [
+							"blight",
+							"confusion"
+						],
+						"9": [
+							"cloudkill",
+							"contagion"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of Spores (UA)|Druid||Spores (UA)|UAThreeSubclasses|2",
+				"Fungal Infestation|Druid||Spores (UA)|UAThreeSubclasses|6",
+				"Spreading Spores|Druid||Spores (UA)|UAThreeSubclasses|10",
+				"Fungal Body|Druid||Spores (UA)|UAThreeSubclasses|14"
+			]
+		},
+		{
+			"name": "Circle of Wildfire (UA)",
+			"shortName": "Wildfire (UA)",
+			"source": "UAClericDruidWizard",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 2,
+			"isReprinted": true,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"locate animals or plants",
+							"scorching ray"
+						],
+						"5": [
+							"fireball",
+							"plant growth"
+						],
+						"7": [
+							"aura of life",
+							"fire shield"
+						],
+						"9": [
+							"flame strike",
+							"raise dead"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of Wildfire|Druid||Wildfire (UA)|UAClericDruidWizard|2",
+				"Enhanced Bond|Druid||Wildfire (UA)|UAClericDruidWizard|6",
+				"Flames of Life|Druid||Wildfire (UA)|UAClericDruidWizard|10",
+				"Blazing Endurance|Druid||Wildfire (UA)|UAClericDruidWizard|14"
+			]
+		},
+		{
+			"name": "Circle of the Stars (UA)",
+			"shortName": "Stars (UA)",
+			"source": "UA2020SubclassesPt3",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 3,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"Circle of the Stars|Druid||Stars (UA)|UA2020SubclassesPt3|2",
+				"Cosmic Omen|Druid||Stars (UA)|UA2020SubclassesPt3|6",
+				"Full of Stars|Druid||Stars (UA)|UA2020SubclassesPt3|10",
+				"Star Flare|Druid||Stars (UA)|UA2020SubclassesPt3|14"
+			]
+		},
+		{
+			"name": "Circle of Spores",
+			"shortName": "Spores",
+			"source": "TCE",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"chill touch#c"
+						]
+					},
+					"prepared": {
+						"3": [
+							"blindness/deafness",
+							"gentle repose"
+						],
+						"5": [
+							"animate dead",
+							"gaseous form"
+						],
+						"7": [
+							"blight",
+							"confusion"
+						],
+						"9": [
+							"cloudkill",
+							"contagion"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of Spores|Druid||Spores|TCE|2",
+				"Fungal Infestation|Druid||Spores|TCE|6",
+				"Spreading Spores|Druid||Spores|TCE|10",
+				"Fungal Body|Druid||Spores|TCE|14"
+			]
+		},
+		{
+			"name": "Circle of Stars",
+			"shortName": "Stars",
+			"source": "TCE",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 38,
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"guidance#c"
+						]
+					},
+					"prepared": {
+						"2": [
+							"guiding bolt"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of Stars|Druid||Stars|TCE|2",
+				"Cosmic Omen|Druid||Stars|TCE|6",
+				"Twinkling Constellations|Druid||Stars|TCE|10",
+				"Full of Stars|Druid||Stars|TCE|14"
+			]
+		},
+		{
+			"name": "Circle of Wildfire",
+			"shortName": "Wildfire",
+			"source": "TCE",
+			"className": "Druid",
+			"classSource": "PHB",
+			"page": 39,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"2": [
+							"burning hands",
+							"cure wounds"
+						],
+						"3": [
+							"flaming sphere",
+							"scorching ray"
+						],
+						"5": [
+							"plant growth",
+							"revivify"
+						],
+						"7": [
+							"aura of life",
+							"fire shield"
+						],
+						"9": [
+							"flame strike",
+							"mass cure wounds"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of Wildfire|Druid||Wildfire|TCE|2",
+				"Enhanced Bond|Druid||Wildfire|TCE|6",
+				"Cauterizing Flames|Druid||Wildfire|TCE|10",
+				"Blazing Revival|Druid||Wildfire|TCE|14"
+			]
+		},
+		{
+			"name": "Mage of Prismari (UA)",
+			"shortName": "Prismari (UA)",
+			"source": "UA2021MagesOfStrixhaven",
+			"className": "Druid",
+			"classSource": "PHB",
+			"_copy": {
+				"name": "Mage of Prismari (UA)",
+				"shortName": "Prismari (UA)",
+				"source": "UA2021MagesOfStrixhaven",
+				"className": "Generic",
+				"classSource": "Generic",
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"name": "Mage of Witherbloom (UA)",
+			"shortName": "Witherbloom (UA)",
+			"source": "UA2021MagesOfStrixhaven",
+			"className": "Druid",
+			"classSource": "PHB",
+			"_copy": {
+				"name": "Mage of Witherbloom (UA)",
+				"shortName": "Witherbloom (UA)",
+				"source": "UA2021MagesOfStrixhaven",
+				"className": "Generic",
+				"classSource": "Generic",
+				"_preserve": {
+					"page": true
+				}
+			}
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Cantrip Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 4,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 1,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 1st-level druid feature (enhances Spellcasting)}",
+				"Immer wenn du eine Stufe in dieser Klasse aufsteigst, kannst du einen Zaubertrick, den du mit dieser Zauberfertigkeit erlernt hast, durch einen anderen Zaubertrick aus der Liste der Druidenzauber ersetzen."
+			]
+		},
+		{
+			"name": "Druidic",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 1,
+			"entries": [
+				"Du kennst {@language Druidic}, die geheime Sprache der Druiden. Du kannst diese Sprache sprechen und sie benutzen, um versteckte Botschaften zu hinterlassen. Du und andere, die diese Sprache kennen, erkennen eine solche Nachricht automatisch. Andere erkennen das Vorhandensein der Nachricht mit einer erfolgreichen DC 15 Weisheitspr\u00fcfung ({@skill Perception}), k\u00f6nnen sie aber nicht ohne Magie entziffern."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 1,
+			"entries": [
+				"Indem du auf die g\u00f6ttliche Essenz der Natur selbst zur\u00fcckgreifst, kannst du Zauberspr\u00fcche wirken, um diese Essenz nach deinem Willen zu formen. Siehe {@book chapter 10|PHB|10} f\u00fcr die allgemeinen Regeln der Zauberei und {@book chapter 11|PHB|11} f\u00fcr die {@filter druid spell list|spells|class=druid}.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"Auf Stufe 1 kennst du zwei Zaubertricks deiner Wahl aus der {@filter druid spell list|spells|level=0|class=druid}. Auf h\u00f6heren Stufen erlernst du weitere Druidenzaubertricks deiner Wahl, wie in der Spalte Bekannte Zaubertricks der Druidentabelle angegeben."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"Die Druidentabelle zeigt, wie viele Zauberslots du hast, um deine {@filter druid spells|spells|class=druid} der 1. Stufe und h\u00f6her zu wirken. Um einen dieser Druidenzauber zu wirken, musst du einen Slot der Stufe des Zaubers oder h\u00f6her verbrauchen. Du erh\u00e4ltst alle verbrauchten Zauberslots zur\u00fcck, wenn du eine lange Pause beendest.",
+						"Du bereitest die Liste der Druidenzauber vor, die du wirken kannst, indem du sie aus der Liste der Druidenzauber ausw\u00e4hlst. Wenn du dies tust, w\u00e4hlst du eine Anzahl von Druidenzaubern, die deinem Weisheitsmodifikator + deiner Druidenstufe entspricht (mindestens ein Zauber). Die Zauber m\u00fcssen eine Stufe haben, f\u00fcr die du Zauberschlitze besitzt.",
+						"Wenn du zum Beispiel ein Druide der 3. Stufe bist, hast du vier Zauberpl\u00e4tze der 1. Stufe und zwei der 2. Stufe. Mit einer Weisheit von 16 kann deine Liste der vorbereiteten Zauber sechs Zauber der 1. oder 2. Stufe in beliebiger Kombination enthalten. Wenn du den Zauber der 1. Stufe {@spell cure wounds} vorbereitest, kannst du ihn mit einem Zauberplatz der 1. oder 2. Stufe wirken. Das Wirken des Zaubers entfernt ihn nicht aus deiner Liste der vorbereiteten Zauber.",
+						"Du kannst auch deine Liste der vorbereiteten Zauber \u00e4ndern, wenn du eine lange Pause beendest. Die Vorbereitung einer neuen Liste von Druidenzaubern erfordert Zeit f\u00fcr Gebet und Meditation: mindestens 1 Minute pro Zauberstufe f\u00fcr jeden Zauber auf deiner Liste."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Weisheit ist deine Zauberf\u00e4higkeit f\u00fcr deine Druidenzauber, da sich deine Magie auf deine Hingabe und deine Verbundenheit mit der Natur st\u00fctzt. Du verwendest deine Weisheit immer dann, wenn sich ein Zauber auf deine Zauberf\u00e4higkeit bezieht. Au\u00dferdem verwendest du deinen Weisheitsmodifikator, wenn du den Schutzwurf-DC f\u00fcr einen von dir gewirkten Druidenzauber festlegst und wenn du einen Angriffswurf mit einem Druidenzauber machst.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"Du kannst einen Druidenzauber als Ritual wirken, wenn der Zauber das Ritual-Tag hat und du den Zauber vorbereitet hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"Du kannst eine {@item druidic focus|phb} als Zauberfokus f\u00fcr deine Druidenzauber verwenden."
+					]
+				}
+			]
+		},
+		{
+			"name": "Druid Circle",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 2,
+			"entries": [
+				"Auf der 2. Stufe w\u00e4hlst du einen Druidenkreis aus der Liste der verf\u00fcgbaren Kreise aus. Deine Wahl gew\u00e4hrt dir auf der 2. Stufe und erneut auf der 6."
+			]
+		},
+		{
+			"name": "Wild Companion",
+			"source": "TCE",
+			"page": 35,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 2,
+			"isClassFeatureVariant": true,
+			"consumes": {
+				"name": "Wild Shape"
+			},
+			"entries": [
+				"{@i 2nd-level druid {@variantrule optional class features|tce|optional feature}}",
+				"Du erh\u00e4ltst die F\u00e4higkeit, einen Geist zu beschw\u00f6ren, der eine Tiergestalt annimmt: Als Aktion kannst du einen Einsatz deiner Eigenschaft \"Wilde Form\" aufwenden, um den Zauber {@spell find familiar} zu wirken, ohne materielle Komponenten.",
+				"Wenn du den Zauber auf diese Weise wirkst, ist der Vertraute eine Fee statt einer Bestie, und der Vertraute verschwindet nach einer Anzahl von Stunden, die der H\u00e4lfte deiner Druidenstufe entspricht."
+			]
+		},
+		{
+			"name": "Wild Companion",
+			"source": "UAClassFeatureVariants",
+			"page": 4,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 2,
+			"isClassFeatureVariant": true,
+			"consumes": {
+				"name": "Wild Shape"
+			},
+			"entries": [
+				"{@i 2nd-level druid feature (enhances Wild Shape)}",
+				"Du erh\u00e4ltst die F\u00e4higkeit, einen Geist zu beschw\u00f6ren, der eine Tiergestalt annimmt: Als Aktion kannst du einen Einsatz deiner Eigenschaft \"Wilde Form\" aufwenden, um den Zauber {@spell find familiar} zu wirken, ohne materielle Komponenten.",
+				"Wenn du den Zauber auf diese Weise wirkst, ist der Vertraute eine Fee statt einer Bestie, und der Vertraute verschwindet nach einer Anzahl von Stunden, die der H\u00e4lfte deiner Druidenstufe entspricht."
+			]
+		},
+		{
+			"name": "Wild Shape",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 2,
+			"entries": [
+				"Ab der 2. Stufe kannst du deine Aktion nutzen, um auf magische Weise die Gestalt eines Tieres anzunehmen, das du schon einmal gesehen hast. Du kannst diese F\u00e4higkeit zweimal einsetzen. Du kannst verbrauchte Eins\u00e4tze wiederherstellen, wenn du eine kurze oder lange Pause machst.",
+				"Deine Druidenstufe bestimmt die Bestien, in die du dich verwandeln kannst, wie in der Tabelle Bestienformen gezeigt. Auf Stufe 2 kannst du dich zum Beispiel in jede Bestie verwandeln, die einen Herausforderungswert von 1/4 oder weniger hat und nicht fliegen oder schwimmen kann.",
+				{
+					"type": "table",
+					"caption": "Beast Shapes",
+					"colLabels": [
+						"Level",
+						"Max. CR",
+						"Limitations",
+						"Example"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-5",
+						"col-3"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+							"Keine Flug- oder Schwimmgeschwindigkeit",
+							"Wolf"
+						],
+						[
+							"4th",
+							"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"Keine Fluggeschwindigkeit",
+							"Krokodil"
+						],
+						[
+							"8th",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+							"\u2014",
+							"Riesenadler"
+						]
+					]
+				},
+				"Du kannst f\u00fcr eine Anzahl von Stunden, die der H\u00e4lfte deiner Druidenstufe (abgerundet) entspricht, in einer Bestienform bleiben. Danach kehrst du in deine normale Form zur\u00fcck, es sei denn, du verbrauchst einen weiteren Einsatz dieser Eigenschaft. Du kannst fr\u00fcher in deine normale Form zur\u00fcckkehren, indem du eine Bonusaktion in deinem Zug verwendest. Du kehrst automatisch zur\u00fcck, wenn du {@condition unconscious} f\u00e4llst, auf 0 Trefferpunkte sinkst oder stirbst.",
+				"W\u00e4hrend Sie sich verwandeln, gelten die folgenden Regeln:",
+				{
+					"type": "list",
+					"items": [
+						"Deine Spielstatistiken werden durch die Statistiken der Kreatur ersetzt, aber du beh\u00e4ltst deine Ausrichtung, deine Pers\u00f6nlichkeit und deine Intelligenz-, Weisheits- und Charisma-Werte. Du beh\u00e4ltst auch alle deine Fertigkeits- und Rettungswurf-Fertigkeiten, zus\u00e4tzlich zu denen der Kreatur. Wenn die Kreatur dieselbe Fertigkeit wie du hat und der Bonus in ihrem Stat-Block h\u00f6her ist als deiner, verwende den Bonus der Kreatur anstelle deines Bonus. Wenn die Kreatur irgendwelche legend\u00e4ren oder H\u00f6hlen-Aktionen hat, kannst du sie nicht verwenden.",
+						"Wenn du dich verwandelst, nimmst du die Trefferpunkte und Trefferw\u00fcrfel des Tieres an. Wenn du in deine normale Form zur\u00fcckkehrst, erh\u00e4ltst du wieder die Anzahl der Trefferpunkte, die du vor der Verwandlung hattest. Wenn du jedoch zur\u00fcckkehrst, weil du auf 0 Trefferpunkte gefallen bist, wird jeglicher \u00fcbersch\u00fcssige Schaden auf deine normale Form \u00fcbertragen. Wenn du zum Beispiel 10 Schaden in der Tierform nimmst und nur noch 1 Trefferpunkt \u00fcbrig hast, kehrst du zur\u00fcck und nimmst 9 Schaden. Solange der \u00fcbersch\u00fcssige Schaden deine normale Form nicht auf 0 Trefferpunkte reduziert, wirst du nicht umgeworfen {@condition unconscious}.",
+						"Die Verwandlung unterbricht jedoch nicht die Konzentration auf einen bereits gewirkten Zauber und hindert dich auch nicht daran, Aktionen auszuf\u00fchren, die Teil eines bereits gewirkten Zaubers sind, wie z.B. {@spell call lightning}, die du bereits gewirkt hast.",
+						"Du beh\u00e4ltst die Vorteile aller Eigenschaften deiner Klasse, deines Volkes oder einer anderen Quelle und kannst sie nutzen, wenn die neue Form k\u00f6rperlich dazu in der Lage ist. Allerdings kannst du keinen deiner besonderen Sinne nutzen, wie z.B. {@sense darkvision}, es sei denn, deine neue Form hat diesen Sinn ebenfalls.",
+						"Du w\u00e4hlst, ob deine Ausr\u00fcstung in deinem Raum zu Boden f\u00e4llt, mit deiner neuen Form verschmilzt oder von ihr getragen wird. Getragene Ausr\u00fcstung funktioniert normal, aber der DM entscheidet, ob es f\u00fcr die neue Form praktisch ist, ein Ausr\u00fcstungsteil zu tragen, basierend auf der Form und Gr\u00f6\u00dfe der Kreatur. Deine Ausr\u00fcstung \u00e4ndert weder Gr\u00f6\u00dfe noch Form, um sich der neuen Form anzupassen, und jede Ausr\u00fcstung, die die neue Form nicht tragen kann, muss entweder zu Boden fallen oder mit ihr verschmelzen. Ausr\u00fcstung, die mit der Form verschmilzt, hat keine Wirkung, bis du die Form verl\u00e4sst."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"Wenn du die 4. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Cantrip Versatility",
+			"source": "TCE",
+			"page": 35,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 4th-level druid {@variantrule optional class features|tce|optional feature}}",
+				"Immer wenn du eine Stufe in dieser Klasse erreichst, die die F\u00e4higkeitspunktverbesserung gew\u00e4hrt, kannst du einen Zaubertrick, den du durch die Zauberei dieser Klasse gelernt hast, durch einen anderen Zaubertrick aus dem {@filter druid spell list|spells|level=0|class=Druid} ersetzen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 4th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Wild Shape Improvement",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"Auf der 4. Stufe verbessert sich deine Wildform wie in der Tabelle Bestienformen angegeben."
+			]
+		},
+		{
+			"name": "Druid Circle feature",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 6,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du eine von deinem Druidenzirkel gew\u00e4hrte Eigenschaft."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"Wenn du die 8. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 8,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 8th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Wild Shape Improvement",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"Auf der 8. Stufe verbessert sich deine Wildform wie in der Tabelle Bestienformen angegeben."
+			]
+		},
+		{
+			"name": "Druid Circle feature",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 10,
+			"entries": [
+				"Auf der 10. Stufe erh\u00e4ltst du eine Eigenschaft, die durch deine Druidenkreis-Eigenschaft gew\u00e4hrt wird."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 12,
+			"entries": [
+				"Wenn du die 12. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 12,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 12th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Druid Circle feature",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 14,
+			"entries": [
+				"Auf der 14. Stufe erh\u00e4ltst du eine Eigenschaft, die durch deine Druidenkreis-Eigenschaft gew\u00e4hrt wird."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 16,
+			"entries": [
+				"Wenn du die 16. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 16,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 16th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Beast Spells",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 18,
+			"entries": [
+				"Ab der 18. Stufe kannst du viele deiner Druidenzauber in jeder beliebigen Gestalt wirken, die du mit Wilde Form annimmst. Du kannst die somatischen und verbalen Komponenten eines Druidenzaubers ausf\u00fchren, w\u00e4hrend du in einer Tiergestalt bist, aber du bist nicht in der Lage, materielle Komponenten bereitzustellen."
+			]
+		},
+		{
+			"name": "Timeless Body",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 18,
+			"entries": [
+				"Ab der 18. Stufe l\u00e4sst dich die Urmagie, \u00fcber die du verf\u00fcgst, langsamer altern: F\u00fcr alle 10 Jahre, die vergehen, altert dein K\u00f6rper nur um 1 Jahr."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 19,
+			"entries": [
+				"Wenn du die 19. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 19,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 19th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Archdruid",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 20,
+			"entries": [
+				"Ab Stufe 20 kannst du deine Wilde Form unbegrenzt oft einsetzen.",
+				"Zus\u00e4tzlich kannst du die verbalen und somatischen Komponenten deiner Druidenzauber ignorieren, ebenso wie alle materiellen Komponenten, die keine Kosten verursachen und nicht von einem Zauber verbraucht werden. Diesen Vorteil erh\u00e4ltst du sowohl in deiner normalen Form als auch in deiner Bestienform aus Wilde Form."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of the Land",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Land",
+			"subclassSource": "PHB",
+			"level": 2,
+			"entries": [
+				"Der Zirkel des Landes besteht aus Mystikern und Weisen, die uraltes Wissen und Riten durch eine weitreichende m\u00fcndliche Tradition bewahren. Diese Druiden treffen sich in heiligen Kreisen aus B\u00e4umen oder stehenden Steinen, um uralte Geheimnisse zu fl\u00fcstern {@language Druidic}. Die weisesten Mitglieder des Zirkels stehen den Gemeinschaften, die dem Alten Glauben anh\u00e4ngen, als Hohepriester vor und dienen den Herrschern dieser V\u00f6lker als Berater. Als Mitglied dieses Zirkels wird deine Magie von dem Land beeinflusst, in dem du in die geheimnisvollen Riten des Zirkels eingeweiht wurdest.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Cantrip|Druid||Land||2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Natural Recovery|Druid||Land||2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Land||2"
+				}
+			]
+		},
+		{
+			"name": "Bonus Cantrip",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Land",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Du lernst einen zus\u00e4tzlichen Druiden-Zaubertrick deiner Wahl. Dieser Zaubertrick wird nicht auf die Anzahl der Druiden-Zaubertricks angerechnet, die du kennst."
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Land",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Deine mystische Verbindung zum Land verleiht dir die F\u00e4higkeit, bestimmte Zauber zu wirken. Auf der 3., 5., 7. und 9. Stufe erh\u00e4ltst du Zugang zu Zirkelzaubern, die mit dem Land verbunden sind, in dem du Druide geworden bist. W\u00e4hle dieses Land - Arktis, K\u00fcste, W\u00fcste, Wald, Grasland, Gebirge, Sumpf oder Underdark - und konsultiere die zugeh\u00f6rige Liste der Zauberspr\u00fcche.",
+				"Sobald ihr Zugang zu einem Zirkelzauber erhaltet, k\u00f6nnt ihr ihn immer vorbereiten, und er z\u00e4hlt nicht zu der Anzahl der Zauber, die ihr pro Tag vorbereiten k\u00f6nnt. Wenn ihr Zugang zu einem Zauber erhaltet, der nicht auf der Liste der Druidenzauber steht, ist dieser Zauber dennoch ein Druidenzauber f\u00fcr euch.",
+				{
+					"type": "table",
+					"caption": "Arctic",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell hold person}, {@spell spike growth}"
+						],
+						[
+							"5th",
+							"{@spell sleet storm}, {@spell slow}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement}, {@spell ice storm}"
+						],
+						[
+							"9th",
+							"{@spell commune with nature}, {@spell cone of cold}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Coast",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell mirror image}, {@spell misty step}"
+						],
+						[
+							"5th",
+							"{@spell water breathing}, {@spell water walk}"
+						],
+						[
+							"7th",
+							"{@spell control water}, {@spell freedom of movement}"
+						],
+						[
+							"9th",
+							"{@spell conjure elemental}, {@spell scrying}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Desert",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell blur}, {@spell silence}"
+						],
+						[
+							"5th",
+							"{@spell create food and water}, {@spell protection from energy}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell hallucinatory terrain}"
+						],
+						[
+							"9th",
+							"{@spell insect plague}, {@spell wall of stone}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Forest",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell barkskin}, {@spell spider climb}"
+						],
+						[
+							"5th",
+							"{@spell call lightning}, {@spell plant growth}"
+						],
+						[
+							"7th",
+							"{@spell divination}, {@spell freedom of movement}"
+						],
+						[
+							"9th",
+							"{@spell commune with nature}, {@spell tree stride}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Grassland",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell invisibility}, {@spell pass without trace}"
+						],
+						[
+							"5th",
+							"{@spell daylight}, {@spell haste}"
+						],
+						[
+							"7th",
+							"{@spell divination}, {@spell freedom of movement}"
+						],
+						[
+							"9th",
+							"{@spell dream}, {@spell insect plague}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Mountain",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell spider climb}, {@spell spike growth}"
+						],
+						[
+							"5th",
+							"{@spell lightning bolt}, {@spell meld into stone}"
+						],
+						[
+							"7th",
+							"{@spell stone shape}, {@spell stoneskin}"
+						],
+						[
+							"9th",
+							"{@spell passwall}, {@spell wall of stone}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Swamp",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell darkness}, {@spell Melf's acid arrow}"
+						],
+						[
+							"5th",
+							"{@spell water walk}, {@spell stinking cloud}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement}, {@spell locate creature}"
+						],
+						[
+							"9th",
+							"{@spell insect plague}, {@spell scrying}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Underdark",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell spider climb}, {@spell web}"
+						],
+						[
+							"5th",
+							"{@spell gaseous form}, {@spell stinking cloud}"
+						],
+						[
+							"7th",
+							"{@spell greater invisibility}, {@spell stone shape}"
+						],
+						[
+							"9th",
+							"{@spell cloudkill}, {@spell insect plague}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Natural Recovery",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Land",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Ab der 2. Stufe kannst du einen Teil deiner magischen Energie zur\u00fcckgewinnen, indem du in Meditation sitzt und mit der Natur kommunizierst. W\u00e4hrend einer kurzen Ruhepause w\u00e4hlst du verbrauchte Zauberslots aus, um dich zu erholen. Die kombinierte Stufe der Zauberslots darf nicht h\u00f6her als die H\u00e4lfte deiner Druidenstufe sein (aufgerundet), und keiner der Slots darf die 6. Stufe oder h\u00f6her sein. Du kannst diese F\u00e4higkeit erst wieder nutzen, wenn du eine lange Ruhepause beendet hast.",
+				"Als Druide der 4. Stufe k\u00f6nnt ihr zum Beispiel bis zu zwei Stufen an Zauberslots wiederherstellen, entweder einen Slot der 2."
+			]
+		},
+		{
+			"name": "Land's Stride",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Land",
+			"subclassSource": "PHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab der 6. Stufe kostet dich die Bewegung durch nichtmagisches, schwieriges Gel\u00e4nde keine zus\u00e4tzliche Bewegung. Du kannst auch durch nichtmagische Pflanzen gehen, ohne von ihnen verlangsamt zu werden und ohne Schaden zu nehmen, wenn sie Dornen, Stacheln oder eine \u00e4hnliche Gefahr haben.",
+				"Au\u00dferdem hast du einen Vorteil bei Schutzw\u00fcrfen gegen Pflanzen, die magisch erschaffen oder manipuliert wurden, um die Bewegung zu behindern, wie z.B. Pflanzen, die durch den Zauber {@spell entangle} erschaffen wurden."
+			]
+		},
+		{
+			"name": "Nature's Ward",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Land",
+			"subclassSource": "PHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Wenn du die 10. Stufe erreichst, kannst du nicht {@condition charmed} oder {@condition frightened} von Elementaren oder Feen angegriffen werden und bist immun gegen Gift und Krankheiten."
+			]
+		},
+		{
+			"name": "Nature's Sanctuary",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Land",
+			"subclassSource": "PHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Wenn du die 14. Stufe erreichst, sp\u00fcren Kreaturen der nat\u00fcrlichen Welt deine Verbundenheit mit der Natur und z\u00f6gern, dich anzugreifen. Wenn dich ein Tier oder eine Pflanzenkreatur angreift, muss diese Kreatur einen Weisheitswurf gegen den Schutz-DC deines Druidenzaubers machen. Bei einem misslungenen Schutzwurf muss die Kreatur ein anderes Ziel w\u00e4hlen, oder der Angriff geht automatisch daneben. Bei einem erfolgreichen Schutzwurf ist die Kreatur f\u00fcr 24 Stunden immun gegen diesen Effekt.",
+				"Die Kreatur ist sich dieses Effekts bewusst, bevor sie ihren Angriff gegen dich ausf\u00fchrt."
+			]
+		},
+		{
+			"name": "Circle of the Moon",
+			"source": "PHB",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "PHB",
+			"level": 2,
+			"entries": [
+				"Druiden des Zirkels des Mondes sind grimmige W\u00e4chter der Wildnis. Ihr Orden versammelt sich bei Vollmond, um Neuigkeiten auszutauschen und Warnungen weiterzugeben. Sie halten sich in den tiefsten Gegenden der Wildnis auf, wo sie wochenlang unterwegs sein k\u00f6nnen, bevor sie einem anderen humanoiden Wesen begegnen, geschweige denn einem anderen Druiden.",
+				"Ein Druide dieses Zirkels ist wandelbar wie der Mond und kann in einer Nacht als Raubkatze umherstreifen, am n\u00e4chsten Tag als Adler \u00fcber die Baumwipfel fliegen und in B\u00e4rengestalt durch das Unterholz st\u00fcrmen, um ein eindringendes Monster zu vertreiben. Die Wildnis liegt dem Druiden im Blut.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Combat Wild Shape|Druid||Moon||2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Forms|Druid||Moon||2"
+				}
+			]
+		},
+		{
+			"name": "Circle Forms",
+			"source": "PHB",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Die Riten deines Zirkels verleihen dir die F\u00e4higkeit, dich in gef\u00e4hrlichere Tierformen zu verwandeln. Ab der 2. Stufe kannst du deine Wilde Form benutzen, um dich in ein {@filter beast with a challenge rating as high as 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm} zu verwandeln (du ignorierst die Spalte Max. CR der Tabelle Bestienformen, musst dich aber an die anderen Einschr\u00e4nkungen dort halten).",
+				"Ab der 6. Stufe kannst du dich in eine Bestie verwandeln, deren Schwierigkeitsgrad so hoch ist wie deine Druidenstufe geteilt durch 3, abgerundet.",
+				{
+					"type": "table",
+					"caption": "Circle of the Moon Beast Shapes",
+					"colLabels": [
+						"Level",
+						"Max. CR",
+						"Limitations"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-8"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+							"Keine Flug- oder Schwimmgeschwindigkeit"
+						],
+						[
+							"4th",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"Keine Fluggeschwindigkeit"
+						],
+						[
+							"6th",
+							"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"Keine Fluggeschwindigkeit"
+						],
+						[
+							"8th",
+							"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"9th",
+							"{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"12th",
+							"{@filter 4|bestiary|challenge rating=[&0;&4]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"15th",
+							"{@filter 5|bestiary|challenge rating=[&0;&5]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"18th",
+							"{@filter 6|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Combat Wild Shape",
+			"source": "PHB",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Du erh\u00e4ltst die F\u00e4higkeit, die Wilde Form in deinem Zug als Bonusaktion und nicht als Aktion einzusetzen.",
+				"Au\u00dferdem kannst du, w\u00e4hrend du durch Wilde Form verwandelt wirst, eine Bonusaktion nutzen, um einen Zauberslot auszugeben, um {@dice 1d8} Trefferpunkte pro Stufe des ausgegebenen Zauberslots wiederzuerlangen."
+			]
+		},
+		{
+			"name": "Primal Strike",
+			"source": "PHB",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "PHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab der 6. Stufe z\u00e4hlen deine Angriffe in Bestiengestalt als magisch, um Widerstand und Immunit\u00e4t gegen nichtmagische Angriffe und Schaden zu \u00fcberwinden."
+			]
+		},
+		{
+			"name": "Elemental Wild Shape",
+			"source": "PHB",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "PHB",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Wild Shape",
+				"amount": 2
+			},
+			"entries": [
+				"Auf der 10. Stufe kannst du zwei Eins\u00e4tze von Wilde Form gleichzeitig aufwenden, um dich in einen {@creature air elemental}, einen {@creature earth elemental}, einen {@creature fire elemental} oder einen {@creature water elemental} zu verwandeln."
+			]
+		},
+		{
+			"name": "Thousand Forms",
+			"source": "PHB",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "PHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Mit der 14. Stufe hast du gelernt, Magie einzusetzen, um deine k\u00f6rperliche Form auf subtilere Weise zu ver\u00e4ndern. Du kannst den Zauber {@spell alter self} nach Belieben wirken."
+			]
+		},
+		{
+			"name": "Circle of Spores",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 2,
+			"entries": [
+				"Druiden des Sporenkreises finden Sch\u00f6nheit im Verfall und sehen in Schimmel und anderen Pilzen die F\u00e4higkeit, lebloses Material in reichlich, wenn auch etwas seltsames, Leben zu verwandeln.",
+				"Diese Druiden glauben, dass Leben und Tod Teil eines gro\u00dfen Kreislaufs sind, wobei das eine zum anderen f\u00fchrt und dann wieder zur\u00fcck. Der Tod ist nicht das Ende des Lebens, sondern ein Zustandswechsel, bei dem das Leben in eine neue Form \u00fcbergeht.",
+				"Druiden dieses Kreises haben ein komplexes Verh\u00e4ltnis zu den Untoten. Im Gegensatz zu den meisten anderen Druiden sehen sie nichts Falsches im Untod, den sie als Begleiter des Lebens und des Todes betrachten. Aber diese Druiden glauben, dass der nat\u00fcrliche Zyklus am ges\u00fcndesten ist, wenn jedes Segment davon lebendig ist und sich ver\u00e4ndert. Untote, die versuchen, alles Leben durch den Untod zu ersetzen, oder die versuchen, den \u00dcbergang zur letzten Ruhe zu vermeiden, verletzen den Zyklus und m\u00fcssen vereitelt werden.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Spores|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Halo of Spores|Druid||Spores|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Symbiotic Entity|Druid||Spores|TCE|2"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Deine symbiotische Verbindung zu Pilzen und deine F\u00e4higkeit, den Kreislauf von Leben und Tod anzuzapfen, gew\u00e4hrt dir Zugang zu bestimmten Zaubern. Auf der 2. Stufe erlernst du den {@spell chill touch} Zaubertrick. Auf der 3., 5., 7. und 9. Stufe erh\u00e4ltst du Zugang zu den Zaubern, die f\u00fcr diese Stufe in der Tabelle der Zauber des Sporenkreises aufgef\u00fchrt sind.",
+				"Sobald ihr Zugang zu einem dieser Zauber erhaltet, habt ihr ihn immer vorbereitet und er z\u00e4hlt nicht zu der Anzahl der Zauber, die ihr pro Tag vorbereiten k\u00f6nnt. Wenn ihr Zugang zu einem Zauber erhaltet, der nicht auf der Liste der Druidenzauber steht, ist dieser Zauber dennoch ein Druidenzauber f\u00fcr euch.",
+				{
+					"type": "table",
+					"caption": "Circle of Spores Spells",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell blindness/deafness}, {@spell gentle repose}"
+						],
+						[
+							"5th",
+							"{@spell animate dead}, {@spell gaseous form}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell confusion}"
+						],
+						[
+							"9th",
+							"{@spell cloudkill}, {@spell contagion}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Halo of Spores",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Ab der 2. Stufe bist du von unsichtbaren, nekrotischen Sporen umgeben, die harmlos sind, bis du sie auf eine Kreatur in deiner N\u00e4he losl\u00e4sst. Wenn sich eine Kreatur, die du sehen kannst, in einen Raum innerhalb von 10 Fu\u00df um dich herum bewegt oder dort ihren Zug beginnt, kannst du deine Reaktion nutzen, um dieser Kreatur {@damage 1d4} nekrotischen Schaden zuzuf\u00fcgen, es sei denn, ihr gelingt ein Konstitutions-Erhaltungswurf gegen deinen Zauber-Save-DC. Der nekrotische Schaden erh\u00f6ht sich auf {@dice 1d6} auf der 6. Stufe, {@dice 1d8} auf der 10. Stufe und {@dice 1d10} auf der 14. Stufe."
+			]
+		},
+		{
+			"name": "Symbiotic Entity",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"name": "Wild Shape"
+			},
+			"entries": [
+				"Auf der 2. Stufe erh\u00e4ltst du die F\u00e4higkeit, Magie in deine Sporen zu kanalisieren. Als Aktion kannst du einen Einsatz deines Merkmals \"Wilde Form\" aufwenden, um diese Sporen zu erwecken, anstatt dich in eine Bestienform zu verwandeln, und du erh\u00e4ltst 4 tempor\u00e4re Trefferpunkte f\u00fcr jede Stufe, die du in dieser Klasse hast. W\u00e4hrend dieses Merkmal aktiv ist, erh\u00e4ltst du die folgenden Vorteile:",
+				{
+					"type": "list",
+					"items": [
+						"Wenn du mit deinem Halo der Sporen Schaden verursachst, wirfst du den Schadensw\u00fcrfel ein zweites Mal und addierst ihn zur Gesamtsumme.",
+						"Deine Angriffe mit Nahkampfwaffen f\u00fcgen jedem Ziel, das sie treffen, zus\u00e4tzlichen {@damage 1d6} nekrotischen Schaden zu."
+					]
+				},
+				"Diese Vorteile halten 10 Minuten lang an, bis du alle diese tempor\u00e4ren Trefferpunkte verlierst oder bis du deine Wilde Form erneut einsetzt."
+			]
+		},
+		{
+			"name": "Fungal Infestation",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erhalten deine Sporen die F\u00e4higkeit, eine Leiche zu befallen und zu beleben. Wenn ein Tier oder ein Humanoid der Gr\u00f6\u00dfe Klein oder Mittel im Umkreis von 10 Fu\u00df um dich herum stirbt, kannst du deine Reaktion nutzen, um es zu beleben, wodurch es sich sofort mit 1 Trefferpunkt erhebt. Die Kreatur nutzt den {@creature zombie} Stat-Block auf {@book Monster Manual|MM}. Sie bleibt 1 Stunde lang belebt, danach bricht sie zusammen und stirbt.",
+				"Im Kampf ist der Zombie sofort nach dir an der Reihe. Er gehorcht deinen mentalen Befehlen und kann nur die Aktion {@action Attack} ausf\u00fchren, bei der er einen Nahkampfangriff macht.",
+				"Du kannst diese F\u00e4higkeit so oft einsetzen, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal), und du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendest."
+			]
+		},
+		{
+			"name": "Spreading Spores",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Auf der 10. Stufe erh\u00e4ltst du die F\u00e4higkeit, ein Gebiet mit t\u00f6dlichen Sporen zu bes\u00e4en. Als Bonusaktion, w\u00e4hrend deine Eigenschaft Symbiotische Entit\u00e4t aktiv ist, kannst du Sporen bis zu 30 Fu\u00df weit wegschleudern, wo sie 1 Minute lang in einem W\u00fcrfel von 10 Fu\u00df aufgewirbelt werden. Die Sporen verschwinden vorzeitig, wenn du diese Eigenschaft erneut verwendest, wenn du sie als Bonusaktion ablegst oder wenn deine Eigenschaft Symbiotische Entit\u00e4t nicht mehr aktiv ist.",
+				"Immer wenn sich eine Kreatur in den W\u00fcrfel bewegt oder ihren Zug dort beginnt, erleidet diese Kreatur deinen Sporenhalo-Schaden, es sei denn, der Kreatur gelingt ein Konstitutions-Sicherungswurf gegen deinen Zauber-Save-DC. Eine Kreatur kann diesen Schaden h\u00f6chstens einmal pro Zug erleiden.",
+				"Solange der Sporenw\u00fcrfel bestehen bleibt, kannst du deine Sporenhalo-Reaktion nicht einsetzen."
+			]
+		},
+		{
+			"name": "Fungal Body",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab Stufe 14 ver\u00e4ndern dich die Pilzsporen in deinem K\u00f6rper: Du kannst nicht {@condition blinded}, {@condition deafened}, {@condition frightened} oder {@condition poisoned} sein und jeder kritische Treffer gegen dich z\u00e4hlt stattdessen als normaler Treffer, es sei denn, du bist {@condition incapacitated}."
+			]
+		},
+		{
+			"name": "Circle of Stars",
+			"source": "TCE",
+			"page": 38,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars",
+			"subclassSource": "TCE",
+			"level": 2,
+			"entries": [
+				"Der Sternenkreis erm\u00f6glicht es Druiden, die Macht des Sternenlichts zu nutzen. Diese Druiden haben seit jeher die himmlischen Muster verfolgt und dabei Geheimnisse entdeckt, die in den Konstellationen verborgen sind. Indem sie diese Geheimnisse enth\u00fcllen und verstehen, versucht der Sternenkreis, die Kr\u00e4fte des Kosmos nutzbar zu machen.",
+				"Viele Druiden dieses Kreises f\u00fchren Aufzeichnungen \u00fcber die Konstellationen und die Auswirkungen der Sterne auf die Welt. Einige Gruppen dokumentieren diese Beobachtungen an megalithischen St\u00e4tten, die als r\u00e4tselhafte Bibliotheken der \u00dcberlieferung dienen. Diese Aufbewahrungsorte k\u00f6nnen die Form von Steinkreisen, Pyramiden, Petroglyphen und unterirdischen Tempeln annehmen - jede Konstruktion, die haltbar genug ist, um das heilige Wissen des Kreises sogar vor einem gro\u00dfen Kataklysmus zu sch\u00fctzen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Star Map|Druid||Stars|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Starry Form|Druid||Stars|TCE|2"
+				}
+			]
+		},
+		{
+			"name": "Star Map",
+			"source": "TCE",
+			"page": 38,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Stars feature}",
+				"Du hast im Rahmen deiner himmlischen Studien eine Sternenkarte erstellt. Sie ist ein winziger Gegenstand und kann als Zauberfokus f\u00fcr deine Druidenzauber dienen. Du bestimmst ihre Form, indem du auf der Tabelle Sternenkarte w\u00fcrfelst oder eine w\u00e4hlst.",
+				{
+					"type": "table",
+					"caption": "Star Map",
+					"colLabels": [
+						"d6",
+						"Map Form"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Eine Schriftrolle mit Darstellungen von Sternbildern"
+						],
+						[
+							"2",
+							"Eine Steintafel mit feinen Bohrl\u00f6chern"
+						],
+						[
+							"3",
+							"Ein gesprenkeltes Eulenb\u00e4rfell, mit erhabenen Zeichen versehen"
+						],
+						[
+							"4",
+							"Eine Sammlung von Karten in einem Ebenholzeinband"
+						],
+						[
+							"5",
+							"Ein Kristall, der sternf\u00f6rmige Muster projiziert, wenn er vor ein Licht gehalten wird"
+						],
+						[
+							"6",
+							"Glasscheiben, auf denen Sternbilder abgebildet sind"
+						]
+					]
+				},
+				"Wenn Sie diese Karte besitzen, haben Sie folgende Vorteile:",
+				{
+					"type": "list",
+					"items": [
+						"Du kennst den {@spell guidance} Zaubertrick.",
+						"Du hast den Zauber {@spell guiding bolt} vorbereitet. Er z\u00e4hlt f\u00fcr dich als Druidenzauber und wird nicht auf die Anzahl der Zauber angerechnet, die du vorbereitet haben kannst.",
+						"Du kannst {@spell guiding bolt} wirken, ohne einen Zauberslot zu verbrauchen. Du kannst dies so oft tun, wie es deinem Fertigkeitsbonus entspricht, und du erh\u00e4ltst alle verbrauchten Zauber wieder, wenn du eine lange Pause machst."
+					]
+				},
+				"Wenn du die Karte verlierst, kannst du eine 1-st\u00fcndige Zeremonie durchf\u00fchren, um auf magische Weise einen Ersatz zu erschaffen. Diese Zeremonie kann w\u00e4hrend einer kurzen oder langen Pause durchgef\u00fchrt werden und zerst\u00f6rt die vorherige Karte."
+			]
+		},
+		{
+			"name": "Starry Form",
+			"source": "TCE",
+			"page": 38,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"name": "Wild Shape"
+			},
+			"entries": [
+				"{@i 2nd-level Circle of the Stars feature}",
+				"Als Bonusaktion kannst du einen Einsatz deiner Eigenschaft Wilde Form aufwenden, um eine Sternenform anzunehmen, anstatt dich in eine Bestie zu verwandeln.",
+				"In deiner Sternenform beh\u00e4ltst du deine Spielstatistiken bei, aber dein K\u00f6rper wird leuchtend; deine Gelenke schimmern wie Sterne, und leuchtende Linien verbinden sie wie auf einer Sternenkarte. Diese Form verstr\u00f6mt helles Licht in einem Radius von 10 Fu\u00df und ged\u00e4mpftes Licht in einem weiteren Radius von 10 Fu\u00df. Die Form h\u00e4lt 10 Minuten lang an. Sie endet vorzeitig, wenn du sie ablegst (keine Aktion erforderlich), {@condition incapacitated} bist, stirbst oder diese Eigenschaft erneut benutzt.",
+				"Immer wenn du deine Sternenform annimmst, w\u00e4hlst du, welche der folgenden Konstellationen auf deinem K\u00f6rper schimmert; deine Wahl gibt dir bestimmte Vorteile, w\u00e4hrend du in der Form bist:",
+				{
+					"type": "entries",
+					"name": "Archer",
+					"entries": [
+						"Eine Konstellation eines Bogensch\u00fctzen erscheint auf dir. Wenn du diese Form aktivierst und als Bonusaktion in deinen folgenden Z\u00fcgen, solange sie andauert, kannst du einen Fernkampf-Zauberangriff durchf\u00fchren, bei dem du einen leuchtenden Pfeil auf eine Kreatur im Umkreis von 60 Fu\u00df schleuderst. Bei einem Treffer verursacht der Angriff Strahlungsschaden in H\u00f6he von {@dice 1d8} + deinem Weisheitsmodifikator."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Chalice",
+					"entries": [
+						"Immer wenn du einen Zauber mit einem Zauberplatz wirkst, der einer Kreatur Trefferpunkte zur\u00fcckgibt, kannst du oder eine andere Kreatur im Umkreis von 30 Fu\u00df Trefferpunkte in H\u00f6he von {@dice 1d8} + deinem Weisheitsmodifikator zur\u00fcckgewinnen."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon",
+					"entries": [
+						"Wenn du eine Intelligenz- oder Weisheits\u00fcberpr\u00fcfung oder einen Konstitutionsschutzwurf machst, um die Konzentration auf einen Zauber aufrechtzuerhalten, kannst du einen Wurf von 9 oder weniger auf {@dice d20} als 10 behandeln."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cosmic Omen",
+			"source": "TCE",
+			"page": 38,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of the Stars feature}",
+				"Immer wenn du eine lange Ruhepause beendest, kannst du deine Sternenkarte nach Omen befragen. Wenn du dies tust, w\u00fcrfelst du. Bis du deine n\u00e4chste lange Ruhepause beendest, erh\u00e4ltst du Zugang zu einer besonderen Reaktion, je nachdem, ob du eine gerade oder eine ungerade Zahl gew\u00fcrfelt hast:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Weal (even)",
+							"entry": "Immer wenn eine Kreatur, die du im Umkreis von 30 Fu\u00df sehen kannst, im Begriff ist, einen Angriffswurf, einen Rettungswurf oder eine F\u00e4higkeitspr\u00fcfung zu machen, kannst du deine Reaktion nutzen, um einen {@dice d6} zu w\u00fcrfeln und die gew\u00fcrfelte Zahl zur Gesamtzahl hinzuzuf\u00fcgen."
+						},
+						{
+							"type": "item",
+							"name": "Woe (odd)",
+							"entry": "Immer wenn eine Kreatur, die du im Umkreis von 30 Fu\u00df sehen kannst, im Begriff ist, einen Angriffswurf, einen Rettungswurf oder eine F\u00e4higkeitspr\u00fcfung zu machen, kannst du deine Reaktion nutzen, um einen {@dice d6} zu w\u00fcrfeln und die gew\u00fcrfelte Zahl von der Summe abzuziehen."
+						}
+					]
+				},
+				"Du kannst diese Reaktion so oft einsetzen, wie es deinem Fertigkeitsbonus entspricht, und du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendet hast."
+			]
+		},
+		{
+			"name": "Twinkling Constellations",
+			"source": "TCE",
+			"page": 38,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars",
+			"subclassSource": "TCE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Stars feature}",
+				"Die Konstellationen deiner Sternengestalt verbessern sich. {@dice 1d8} des Bogensch\u00fctzen und des Kelches wird {@dice 2d8}, und w\u00e4hrend der Drache aktiv ist, hast du eine Fluggeschwindigkeit von 20 Fu\u00df und kannst schweben.",
+				"Au\u00dferdem kannst du zu Beginn jeder deiner Runden in deiner Sternengestalt die Konstellation \u00e4ndern, die auf deinem K\u00f6rper schimmert."
+			]
+		},
+		{
+			"name": "Full of Stars",
+			"source": "TCE",
+			"page": 38,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Stars feature}",
+				"W\u00e4hrend du in deiner Sternengestalt bist, wirst du teilweise k\u00f6rperlos und bist resistent gegen Wucht-, Stich- und Hiebschaden."
+			]
+		},
+		{
+			"name": "Circle of Wildfire",
+			"source": "TCE",
+			"page": 39,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire",
+			"subclassSource": "TCE",
+			"level": 2,
+			"entries": [
+				"Die Druiden des Zirkels des wilden Feuers wissen, dass Zerst\u00f6rung manchmal der Vorl\u00e4ufer der Sch\u00f6pfung ist, wenn z.B. ein Waldbrand das sp\u00e4tere Wachstum f\u00f6rdert. Diese Druiden sind mit einem Urgeist verbunden, der sowohl zerst\u00f6rerische als auch sch\u00f6pferische Kr\u00e4fte in sich birgt, so dass die Druiden kontrollierte Flammen erzeugen k\u00f6nnen, die das eine wegbrennen, aber das andere zum Leben erwecken.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Wildfire|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Summon Wildfire Spirit|Druid||Wildfire|TCE|2"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "TCE",
+			"page": 39,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of Wildfire feature}",
+				"Du bist mit einem Wildfeuergeist, einem Urwesen der Sch\u00f6pfung und Zerst\u00f6rung, verbunden. Deine Verbindung mit diesem Geist gew\u00e4hrt dir Zugang zu einigen Zaubern, wenn du bestimmte Stufen in dieser Klasse erreichst, wie in der Tabelle Zauber des Zirkels des Wildfeuers angegeben.",
+				"Sobald ihr Zugang zu einem dieser Zauber erhaltet, habt ihr ihn immer vorbereitet und er z\u00e4hlt nicht zu der Anzahl der Zauber, die ihr pro Tag vorbereiten k\u00f6nnt. Wenn ihr Zugang zu einem Zauber erhaltet, der nicht auf der Liste der Druidenzauber steht, ist dieser Zauber dennoch ein Druidenzauber f\u00fcr euch.",
+				{
+					"type": "table",
+					"caption": "Circle of Wildfire Spells",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell burning hands}, {@spell cure wounds}"
+						],
+						[
+							"3rd",
+							"{@spell flaming sphere}, {@spell scorching ray}"
+						],
+						[
+							"5th",
+							"{@spell plant growth}, {@spell revivify}"
+						],
+						[
+							"7th",
+							"{@spell aura of life}, {@spell fire shield}"
+						],
+						[
+							"9th",
+							"{@spell flame strike}, {@spell mass cure wounds}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Summon Wildfire Spirit",
+			"source": "TCE",
+			"page": 39,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"name": "Wild Shape"
+			},
+			"entries": [
+				"{@i 2nd-level Circle of Wildfire feature}",
+				"Du kannst den an deine Seele gebundenen Urgeist beschw\u00f6ren. Als Aktion kannst du einen Einsatz deiner Eigenschaft Wilde Form aufwenden, um deinen Wildfeuergeist zu beschw\u00f6ren, anstatt eine Bestienform anzunehmen.",
+				"Der Geist erscheint in einem unbesetzten Raum deiner Wahl, den du im Umkreis von 30 Fu\u00df um dich herum sehen kannst. Jede Kreatur im Umkreis von 10 Fu\u00df um den Geist (au\u00dfer dir), wenn er erscheint, muss einen Schutzwurf gegen den Schutz-DC deines Zaubers bestehen oder erleidet {@damage 2d6} Feuerschaden.",
+				"Der Geist ist dir und deinen Begleitern gegen\u00fcber freundlich gesinnt und gehorcht deinen Befehlen. Siehe die Spielstatistiken dieser Kreatur im Statutenblock {@creature Wildfire Spirit|TCE}, der an mehreren Stellen deinen Fertigkeitsbonus (PB) verwendet. Du bestimmst das Aussehen des Geistes. Manche Geister haben die Form einer humanoiden Gestalt aus knorrigen \u00c4sten, die mit Flammen bedeckt sind, w\u00e4hrend andere wie Bestien aussehen, die in Feuer geh\u00fcllt sind.",
+				"Im Kampf teilt der Geist deine Initiative, aber er ist sofort nach dir an der Reihe. Die einzige Aktion, die er in seinem Zug ausf\u00fchrt, ist die Aktion {@action Dodge}, es sei denn, du nimmst in deinem Zug eine Bonusaktion, um ihm eine andere Aktion zu befehlen. Diese Aktion kann eine aus seinem Statutenblock oder eine andere Aktion sein. Wenn du {@condition incapacitated} bist, kann der Geist jede beliebige Aktion ausf\u00fchren, nicht nur {@action Dodge}.",
+				"Der Geist manifestiert sich f\u00fcr 1 Stunde, bis er auf 0 Trefferpunkte reduziert ist, bis du diese Eigenschaft benutzt, um den Geist erneut zu beschw\u00f6ren, oder bis du stirbst."
+			]
+		},
+		{
+			"name": "Enhanced Bond",
+			"source": "TCE",
+			"page": 39,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of Wildfire feature}",
+				"Jedes Mal, wenn du einen Zauber wirkst, der Feuerschaden verursacht oder Trefferpunkte wiederherstellt, w\u00e4hrend dein Wildfeuergeist beschworen ist, wirf einen {@dice d8} und du erh\u00e4ltst einen Bonus in H\u00f6he der gew\u00fcrfelten Zahl auf einen Schadens- oder Heilungswurf des Zaubers.",
+				"Wenn du einen Zauber mit einer anderen Reichweite als \"Ich\" wirkst, kann der Zauber au\u00dferdem von dir oder deinem Wildfeuergeist ausgehen."
+			]
+		},
+		{
+			"name": "Cauterizing Flames",
+			"source": "TCE",
+			"page": 39,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire",
+			"subclassSource": "TCE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of Wildfire feature}",
+				"Du erh\u00e4ltst die F\u00e4higkeit, den Tod in magische Flammen zu verwandeln, die heilen oder verbrennen k\u00f6nnen. Wenn eine kleine oder gr\u00f6\u00dfere Kreatur im Umkreis von 30 Fu\u00df von dir oder deinem Wildfeuergeist stirbt, entsteht eine harmlose Spektralflamme im Raum der toten Kreatur und flackert dort 1 Minute lang. Wenn eine Kreatur, die du sehen kannst, diesen Raum betritt, kannst du deine Reaktion nutzen, um die Spektralflamme dort zu l\u00f6schen und die Kreatur entweder zu heilen oder ihr Feuerschaden zuzuf\u00fcgen. Die Heilung oder der Schaden entspricht {@dice 2d10} + deinem Weisheitsmodifikator.",
+				"Du kannst diese Reaktion so oft einsetzen, wie es deinem Fertigkeitsbonus entspricht, und du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendet hast."
+			]
+		},
+		{
+			"name": "Blazing Revival",
+			"source": "TCE",
+			"page": 39,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of Wildfire feature}",
+				"Die Bindung an deinen Wildfeuergeist kann dich vor dem Tod retten. Wenn sich der Geist in einem Umkreis von 120 Fu\u00df um dich befindet, wenn du auf 0 Trefferpunkte reduziert wirst und dadurch st\u00fcrzt {@condition unconscious}, kannst du den Geist dazu bringen, auf 0 Trefferpunkte zu fallen. Du erh\u00e4ltst dann die H\u00e4lfte deiner Trefferpunkte zur\u00fcck und stehst sofort wieder auf.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Circle of the Stars",
+			"source": "UA2020SubclassesPt3",
+			"page": 3,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars (UA)",
+			"subclassSource": "UA2020SubclassesPt3",
+			"level": 2,
+			"entries": [
+				"Der Kreis der Sterne ist eine uralte Linie, die es Druiden erm\u00f6glicht, die Macht des Sternenlichts zu nutzen. Diese Druiden haben seit jeher die himmlischen Muster verfolgt und dabei Geheimnisse entdeckt, die in den Konstellationen verborgen sind. Indem sie diese Geheimnisse enth\u00fcllen und verstehen, versucht der Kreis der Sterne, die Kr\u00e4fte des Kosmos nutzbar zu machen.",
+				"Viele Druiden dieses Kreises f\u00fchren detaillierte Aufzeichnungen \u00fcber die Sterne und ihre Auswirkungen auf die Welt. Einige Gruppen dokumentieren diese Beobachtungen an megalithischen St\u00e4tten, die als r\u00e4tselhafte Bibliotheken der \u00dcberlieferung dienen. Diese Aufbewahrungsorte k\u00f6nnen die Form von Steinkreisen, Pyramiden, Petroglyphen und unterirdischen Tempeln annehmen - jede Konstruktion, die haltbar genug ist, um das heilige Wissen des Kreises sogar vor einem gro\u00dfen Kataklysmus zu sch\u00fctzen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Star Map|Druid||Stars (UA)|UA2020SubclassesPt3|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Starry Form|Druid||Stars (UA)|UA2020SubclassesPt3|2"
+				}
+			]
+		},
+		{
+			"name": "Star Map",
+			"source": "UA2020SubclassesPt3",
+			"page": 3,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars (UA)",
+			"subclassSource": "UA2020SubclassesPt3",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Stars feature}",
+				"Du hast eine Sternenkarte als Teil deines Himmelsstudiums erstellt. Die Karte ist ein winziges Objekt und kann als Zauberfokus f\u00fcr deine Druidenzauber dienen. Du entscheidest, welche Form das Objekt annimmt, oder du kannst es durch W\u00fcrfeln auf der Tabelle Sternenkarte bestimmen.",
+				{
+					"type": "table",
+					"caption": "Star Map",
+					"colLabels": [
+						"d6",
+						"Map Form"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Eine Schriftrolle aus lebendem Holz, die sich an den Himmelsk\u00f6rpern ausrichtet"
+						],
+						[
+							"2",
+							"Eine Steintafel mit feinen Bohrl\u00f6chern"
+						],
+						[
+							"3",
+							"Ein gesprenkeltes Eulenb\u00e4rfell, mit erhabenen Zeichen versehen"
+						],
+						[
+							"4",
+							"Eine Sammlung von Karten in einem Ebenholzeinband"
+						],
+						[
+							"5",
+							"Ein Kristall, der sternf\u00f6rmige Muster projiziert, wenn er vor ein Licht gehalten wird"
+						],
+						[
+							"6",
+							"Geh\u00e4rtete Glasscheiben, die sich ausrichten, um Sternbilder darzustellen"
+						]
+					]
+				},
+				"Wenn du deine Karte verlierst, kannst du eine 1-st\u00fcndige Zeremonie durchf\u00fchren, um auf magische Weise einen Ersatz zu schaffen. Diese Zeremonie kann w\u00e4hrend einer kurzen oder langen Pause durchgef\u00fchrt werden und zerst\u00f6rt die vorherige Karte.",
+				"Du kannst die Zauber {@spell augury} und {@spell guiding bolt} wirken, ohne einen Zauberslot zu verbrauchen und ohne den Zauber vorzubereiten, vorausgesetzt, du verwendest die Sternenkarte als Zauberfokus. Du kannst einen Zauber von der Karte auf diese Weise so oft wirken, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal), und du erh\u00e4ltst alle verbrauchten Anwendungen zur\u00fcck, wenn du eine lange Ruhepause beendest."
+			]
+		},
+		{
+			"name": "Starry Form",
+			"source": "UA2020SubclassesPt3",
+			"page": 3,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars (UA)",
+			"subclassSource": "UA2020SubclassesPt3",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"name": "Wild Shape"
+			},
+			"entries": [
+				"{@i 2nd-level Circle of the Stars feature}",
+				"Du erh\u00e4ltst die F\u00e4higkeit, die Macht der Konstellationen zu nutzen, um deine Form zu ver\u00e4ndern. Als Aktion kannst du einen Einsatz deiner Eigenschaft Wilde Form aufwenden, um eine Sternenform anzunehmen, anstatt dich in eine Bestie zu verwandeln.",
+				"In deiner Sternenform beh\u00e4ltst du deine Spielstatistiken bei, aber dein K\u00f6rper nimmt eine leuchtende, stern\u00e4hnliche Qualit\u00e4t an; deine Gelenke schimmern wie Sterne, und leuchtende Linien verbinden sie wie auf einer Sternenkarte. Diese Form strahlt helles Licht in einem Radius von 10 Fu\u00df und schwaches Licht in einem weiteren Radius von 10 Fu\u00df aus. Die Form h\u00e4lt 10 Minuten an oder bis du {@condition incapacitated} bist.",
+				"Immer wenn du deine Sternenform annimmst, w\u00e4hlst du, welche der folgenden Konstellationen auf deinem K\u00f6rper schimmert; deine Wahl gibt dir bestimmte Vorteile, w\u00e4hrend du in der Form bist:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Chalice",
+							"entry": "Immer wenn du einen Zauber mit einem Zauberplatz wirkst, der einer Kreatur Trefferpunkte zur\u00fcckgibt, kannst du oder eine andere Kreatur im Umkreis von 30 Fu\u00df Trefferpunkte in H\u00f6he von {@dice 1d8} + der H\u00e4lfte deiner Stufe in dieser Klasse zur\u00fcckgewinnen."
+						},
+						{
+							"type": "item",
+							"name": "Archer",
+							"entry": "Eine Konstellation eines Bogensch\u00fctzen erscheint auf dir. Du erh\u00e4ltst eine Bonusaktion, mit der du einen Fernkampf-Zauberangriff durchf\u00fchren kannst, bei dem du einen leuchtenden Pfeil auf eine Kreatur schleuderst, die du im Umkreis von 60 Fu\u00df sehen kannst. Bei einem Treffer verursacht der Angriff Strahlungsschaden in H\u00f6he von {@dice 1d8} + deinem Weisheitsmodifikator."
+						},
+						{
+							"type": "item",
+							"name": "Dragon",
+							"entry": "Wenn du eine Intelligenz- oder Weisheits\u00fcberpr\u00fcfung oder einen Konstitutionsschutzwurf machst, um die Konzentration auf einen Zauber aufrechtzuerhalten, kannst du einen Wurf von 9 oder weniger auf {@dice d20} als 10 behandeln."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cosmic Omen",
+			"source": "UA2020SubclassesPt3",
+			"page": 3,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars (UA)",
+			"subclassSource": "UA2020SubclassesPt3",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of the Stars feature}",
+				"Du lernst, deine Sternenkarte zu benutzen, um den Willen des Kosmos zu erahnen. Immer wenn du eine lange Pause beendest, kannst du deine Sternenkarte nach Omen befragen. Wenn du das tust, w\u00fcrfelst du einen {@dice d6}. Du erh\u00e4ltst eines der folgenden m\u00f6glichen Omen, je nachdem, ob du eine gerade oder eine ungerade Zahl auf {@dice d6} gew\u00fcrfelt hast:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Weal (even)",
+							"entry": "Immer wenn eine Kreatur, die du im Umkreis von 30 Fu\u00df sehen kannst, einen Angriffswurf, einen Rettungswurf oder eine F\u00e4higkeitspr\u00fcfung durchf\u00fchrt, kannst du als Reaktion eine {@dice d6} w\u00fcrfeln und die gew\u00fcrfelte Zahl zur Gesamtzahl addieren."
+						},
+						{
+							"type": "item",
+							"name": "Woe (odd)",
+							"entry": "Immer wenn eine Kreatur, die du im Umkreis von 30 Fu\u00df sehen kannst, einen Angriffswurf, einen Rettungswurf oder eine F\u00e4higkeitspr\u00fcfung durchf\u00fchrt, kannst du als Reaktion eine {@dice d6} w\u00fcrfeln und die gew\u00fcrfelte Zahl von der Summe abziehen."
+						}
+					]
+				},
+				"Du kannst diese Reaktion so oft einsetzen, wie es deinem Weisheitsmodifikator entspricht, und du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendet hast."
+			]
+		},
+		{
+			"name": "Full of Stars",
+			"source": "UA2020SubclassesPt3",
+			"page": 3,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars (UA)",
+			"subclassSource": "UA2020SubclassesPt3",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Stars feature}",
+				"W\u00e4hrend deine Eigenschaft Sternengestalt aktiv ist, wirst du teilweise k\u00f6rperlos, was dir Widerstand gegen Wucht-, Stich- und Hiebschaden verleiht."
+			]
+		},
+		{
+			"name": "Star Flare",
+			"source": "UA2020SubclassesPt3",
+			"page": 3,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Stars (UA)",
+			"subclassSource": "UA2020SubclassesPt3",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Stars feature}",
+				"Deine Verbindung zum Kosmos erlaubt es dir, brillantes Sternenlicht zu beschw\u00f6ren. Als Aktion beschw\u00f6rst du einen Lichtsto\u00df in einer Sph\u00e4re mit einem Radius von 30 Fu\u00df, die auf einen Punkt zentriert ist, den du im Umkreis von 120 Fu\u00df sehen kannst. Du kannst jede willige Kreatur in der Sph\u00e4re sofort in einen unbesetzten Raum im Umkreis von 30 Fu\u00df teleportieren. Jede in der Sph\u00e4re verbliebene Kreatur muss einen Konstitutions-Erhaltungswurf gegen den Schutz-DC deines Zaubers bestehen oder {@damage 4d10} Strahlungsschaden erleiden und bis zum Ende deines n\u00e4chsten Zuges {@condition blinded} sein.",
+				"Wenn du diese Aktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause beendet hast oder einen Zauberslot der Stufe 5 oder h\u00f6her verbraucht hast, um sie erneut zu benutzen."
+			]
+		},
+		{
+			"name": "Circle of Wildfire",
+			"source": "UAClericDruidWizard",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 2,
+			"entries": [
+				"Druiden, die dem Zirkel des Wildfeuers angeh\u00f6ren, wissen um die Notwendigkeit der Zerst\u00f6rung, z. B. wie ein Waldbrand das Wachstum f\u00f6rdert. Diese Druiden verbinden sich mit einem Urgeist, der zerst\u00f6rerische Tendenzen in sich tr\u00e4gt, und k\u00f6nnen so ihre Macht nutzen, um kontrollierte Flammen zu erzeugen, die die Vermehrung und das Wachstum von Flora und Fauna f\u00f6rdern.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Wildfire (UA)|UAClericDruidWizard|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Summon Wildfire|Druid||Wildfire (UA)|UAClericDruidWizard|2"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "UAClericDruidWizard",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of Wildfire feature}",
+				"Du hast eine mystische Verbindung mit einem Wildfeuergeist, einem Urwesen der Sch\u00f6pfung und der Zerst\u00f6rung, geschlossen. Deine Verbindung mit diesem Geist gew\u00e4hrt dir Zugang zu bestimmten Zaubern. Auf Stufe 2 erlernst du den Zaubertrick Feuerblitz.",
+				"Wenn ihr bestimmte Stufen in dieser Klasse erreicht, erhaltet ihr Zugang zu den Zaubern, die f\u00fcr diese Stufe in der Tabelle der Zauber des Zirkels des wilden Feuers aufgelistet sind. Sobald ihr Zugang zu einem dieser Zauber erhaltet, habt ihr ihn immer vorbereitet, und er z\u00e4hlt nicht zu der Anzahl der Zauber, die ihr pro Tag vorbereiten k\u00f6nnt. Wenn ihr Zugang zu einem Zauber erhaltet, der nicht in der Liste der Druidenzauber auftaucht, ist dieser Zauber f\u00fcr euch trotzdem ein Druidenzauber.",
+				{
+					"type": "table",
+					"caption": "Circle of Wildfire Spells",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell locate animals or plants}, {@spell scorching ray}"
+						],
+						[
+							"5th",
+							"{@spell fireball}, {@spell plant growth}"
+						],
+						[
+							"7th",
+							"{@spell aura of life}, {@spell fire shield}"
+						],
+						[
+							"9th",
+							"{@spell flame strike}, {@spell raise dead}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Summon Wildfire",
+			"source": "UAClericDruidWizard",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"name": "Wild Shape"
+			},
+			"entries": [
+				"{@i 2nd-level Circle of Wildfire feature}",
+				"Du kannst den an deine Seele gebundenen Urgeist beschw\u00f6ren. Als Aktion kannst du einen Einsatz deiner Eigenschaft Wilde Form aufwenden, um deine {@creature wildfire spirit|UAClericDruidWizard} zu beschw\u00f6ren, anstatt eine Bestienform anzunehmen.",
+				"Der Geist erscheint in einem unbesetzten Raum deiner Wahl, den du im Umkreis von 30 Fu\u00df um dich herum sehen kannst. Jede Kreatur im Umkreis von 10 Fu\u00df um den Geist (au\u00dfer dir), wenn er erscheint, muss einen Schutzwurf gegen den Schutz-DC deines Zaubers bestehen oder erleidet {@damage 2d10} Feuerschaden.",
+				"Der Feuergeist ist dir und deinen Begleitern gegen\u00fcber freundlich gesinnt und gehorcht deinen Befehlen. Die Spielstatistiken dieser Kreatur findest du im Statuenblock des Feuergeistes. Du bestimmst das Aussehen des Geistes. Manche Geister haben die Form einer humanoiden Gestalt aus knorrigen \u00c4sten, die mit Flammen bedeckt sind, w\u00e4hrend andere wie Bestien aussehen, die von Feuer umh\u00fcllt sind.",
+				"Die einzige Aktion, die er in seinem Zug ausf\u00fchrt, ist die Aktion {@action Dodge}, es sei denn, du nimmst eine Bonusaktion in deinem Zug, um ihm zu befehlen, eine der Aktionen in seinem Statuenblock auszuf\u00fchren oder die Aktion {@action Dash}, {@action Disengage}, {@action Help} oder {@action Hide} auszuf\u00fchren.",
+				"Der Geist des wilden Feuers manifestiert sich f\u00fcr 1 Stunde, bis er auf 0 Trefferpunkte reduziert ist oder bis du deine Wilde Form erneut einsetzt."
+			]
+		},
+		{
+			"name": "Enhanced Bond",
+			"source": "UAClericDruidWizard",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of Wildfire feature}",
+				"Die Verbindung mit deinem Geist des wilden Feuers verbessert deine Zerst\u00f6rungs- und Wiederherstellungszauber. Immer wenn du einen Zauber wirkst, der Feuerschaden verursacht oder Trefferpunkte wiederherstellt, w\u00e4hrend dein Geist des wilden Feuers beschworen ist, wirfst du einen {@dice d8} und erh\u00e4ltst einen Bonus auf einen Wurf des Zaubers in H\u00f6he der gew\u00fcrfelten Zahl. Wenn du au\u00dferdem einen Zauber mit einer anderen Reichweite als \"Ich\" wirkst, kann der Zauber von dir oder deinem Geist des wilden Feuers ausgehen."
+			]
+		},
+		{
+			"name": "Flames of Life",
+			"source": "UAClericDruidWizard",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of Wildfire feature}",
+				"Du erh\u00e4ltst die F\u00e4higkeit, den Tod in Flammen der Lebenskraft zu verwandeln. Wenn eine kleine oder gr\u00f6\u00dfere Kreatur, die du sehen kannst, in einem Umkreis von 30 Fu\u00df um dich oder deinen Wildfeuergeist stirbt, kannst du deine Reaktion nutzen, um urspr\u00fcngliche Flammen aus dem K\u00f6rper entspringen zu lassen. Wenn eine Kreatur, die du sehen kannst, diese Flammen ber\u00fchrt, erh\u00e4lt die Kreatur Trefferpunkte zur\u00fcck oder erleidet Feuerschaden (nach deiner Wahl) in H\u00f6he von {@dice 2d10} + deinem Weisheitsmodifikator. Die Flammen verschwinden, nachdem eine Kreatur sie ber\u00fchrt hat oder nach 1 Minute. Du kannst diese F\u00e4higkeit so oft nutzen, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal). Du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause machst."
+			]
+		},
+		{
+			"name": "Blazing Endurance",
+			"source": "UAClericDruidWizard",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wildfire (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of Wildfire feature}",
+				"Wenn du auf 0 Trefferpunkte f\u00e4llst und nicht sofort stirbst, f\u00e4llst du stattdessen auf 1 Trefferpunkt und erh\u00e4ltst vor\u00fcbergehend Trefferpunkte in H\u00f6he des F\u00fcnffachen deiner Druidenstufe, und jede Kreatur deiner Wahl im Umkreis von 30 Fu\u00df, die du sehen kannst, erleidet Feuerschaden in H\u00f6he von {@dice 2d10} + deiner Druidenstufe.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Circle of Dreams",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (UA)",
+			"subclassSource": "UADruid",
+			"level": 2,
+			"entries": [
+				"Druiden, die Mitglieder des Zirkels der Tr\u00e4ume sind, stammen aus Regionen, die eine starke Verbindung zum Feenreich haben. Da die Druiden \u00fcber die nat\u00fcrliche Welt wachen, ist es nur nat\u00fcrlich, dass sie sich mit den Feen der guten Seite verb\u00fcnden. Diese Druiden versuchen, die Welt mit Fr\u00f6hlichkeit und Licht zu erf\u00fcllen. Ihre Magie heilt Wunden und bringt Freude in niedergeschlagene Herzen, und die Reiche, die sie sch\u00fctzen, sind leuchtende, fruchtbare Orte.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Balm of the Summer Court|Druid||Dreams (UA)|UADruid|2"
+				}
+			]
+		},
+		{
+			"name": "Balm of the Summer Court",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (UA)",
+			"subclassSource": "UADruid",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Auf der 2. Stufe wirst du von den Segnungen des Sommerhofs durchdrungen. Du bist eine Quelle der Energie, die m\u00fcden F\u00fc\u00dfen Erleichterung verschafft und Verletzungen heilt. Du verf\u00fcgst \u00fcber einen Vorrat an Feen-Energie, der durch eine Anzahl von {@dice d6} repr\u00e4sentiert wird, die deiner Druidenstufe entspricht.",
+				"Als Bonusaktion kannst du einen Verb\u00fcndeten w\u00e4hlen, den du im Umkreis von 120 Fu\u00df sehen kannst, und eine Anzahl von W\u00fcrfeln ausgeben, die der H\u00e4lfte deiner Druidenstufe oder weniger entspricht. Wirf die ausgegebenen W\u00fcrfel und addiere sie. Das Ziel erh\u00e4lt eine Anzahl von Trefferpunkten zur\u00fcck, die der Gesamtzahl entspricht. Das Ziel erh\u00e4lt au\u00dferdem 1 tempor\u00e4ren Trefferpunkt pro ausgegebenem W\u00fcrfel, und seine Geschwindigkeit erh\u00f6ht sich um 5 Fu\u00df pro ausgegebenem W\u00fcrfel. Die Geschwindigkeitserh\u00f6hung h\u00e4lt 1 Minute lang an.",
+				"Du erh\u00e4ltst die verbrauchten W\u00fcrfel zur\u00fcck, wenn du eine lange Pause beendest."
+			]
+		},
+		{
+			"name": "Hearth of Moonlight and Shadow",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (UA)",
+			"subclassSource": "UADruid",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab Stufe 6 ist dein Zuhause dort, wo du dein Lager aufgeschlagen hast. W\u00e4hrend einer kurzen oder langen Ruhepause kannst du die schattenhafte Macht des Gloaming Court beschw\u00f6ren, um dein Lager vor Eindringlingen zu sch\u00fctzen. Zu Beginn der Ruhepause erschaffst du einen Bereich mit einem Radius von 30 Fu\u00df. Innerhalb dieses Bereichs erhalten du und deine Verb\u00fcndeten einen Bonus von +5 auf Weisheitspr\u00fcfungen ({@skill Perception}), um Kreaturen zu entdecken, und jegliches Licht von offenen Flammen (Lagerfeuer, Fackeln und dergleichen) ist au\u00dferhalb des Bereichs nicht sichtbar. Diese Effekte enden, wenn die Ruhepause beendet ist oder wenn du den Bereich verl\u00e4sst."
+			]
+		},
+		{
+			"name": "Hidden Paths",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (UA)",
+			"subclassSource": "UADruid",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Auf der 10. Stufe kannst du die verborgenen, unvorhersehbaren magischen Pfade nutzen, die manche Feen benutzen, um den Raum in einem Wimpernschlag zu durchqueren. Wenn du an der Reihe bist, kannst du dich bis zu 30 Fu\u00df weit an einen Ort teleportieren, den du sehen kannst. Jeder Fu\u00df dieser Teleportation kostet dich 1 Fu\u00df deiner Bewegung.",
+				"Du kannst diese F\u00e4higkeit auch nutzen, um jemanden zu teleportieren: Als Aktion kannst du einen willigen Verb\u00fcndeten, den du ber\u00fchrst, bis zu 30 Fu\u00df weit zu einem Punkt teleportieren, den du sehen kannst.",
+				"Sobald du eine der beiden Optionen benutzt - dich selbst oder einen Verb\u00fcndeten zu teleportieren - kannst du diese Option erst wieder nach {@dice 1d4} Runden benutzen."
+			]
+		},
+		{
+			"name": "Purifying Light",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (UA)",
+			"subclassSource": "UADruid",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Auf der 14. Stufe erlaubt dir die Gunst des Sommerhofs, Zauber zu beenden, die dich und deine Verb\u00fcndeten behindern. Wenn du einen Zauber mit einem Zauberschlitz wirkst und er dir oder einem Verb\u00fcndeten in diesem Zug Trefferpunkte zur\u00fcckgibt, kannst du gleichzeitig die geheilte Kreatur mit Bannmagie anvisieren, indem du einen Zauberschlitz mit einer Stufe verwendest, die dem Schlitz entspricht, der zum Wirken des Heilzaubers verwendet wurde.",
+				"Wenn der Heilzauber auf mehr als eine Kreatur abzielt, kannst du diese Eigenschaft auf mehrere Kreaturen gleichzeitig anwenden, wobei du pro Kreatur einen Einsatz dieser Eigenschaft verbrauchst."
+			]
+		},
+		{
+			"name": "Circle of the Shepherd",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd (UA)",
+			"subclassSource": "UADruid",
+			"level": 2,
+			"entries": [
+				"Druiden des Zirkels der Hirten kommunizieren mit den Geistern der Tiere. Diese Druiden erkennen zwar an, dass alle Lebewesen eine Rolle in der nat\u00fcrlichen Welt spielen, konzentrieren sich aber auf den Schutz der Tiere. Hirten, wie sie genannt werden, sehen die Tiere als ihre Sch\u00fctzlinge an. Sie wehren Monster ab, die die nat\u00fcrlichen Lebewesen bedrohen, tadeln J\u00e4ger, die mehr Beute als n\u00f6tig erlegen, und verhindern, dass die Zivilisation in Lebensr\u00e4ume und Pfade eindringt, die f\u00fcr die Wanderungen der Tiere notwendig sind. Viele dieser Druiden sind am gl\u00fccklichsten fernab von St\u00e4dten und D\u00f6rfern, zufrieden damit, ihre Tage in der Gesellschaft von wilden Tieren zu verbringen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spirit Bond|Druid||Shepherd (UA)|UADruid|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Beast Speech|Druid||Shepherd (UA)|UADruid|2"
+				}
+			]
+		},
+		{
+			"name": "Beast Speech",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd (UA)",
+			"subclassSource": "UADruid",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Auf der 2. Stufe erh\u00e4ltst du die F\u00e4higkeit, dich mit Tieren zu unterhalten. Die Tiere k\u00f6nnen deine Sprache verstehen, und du erh\u00e4ltst die F\u00e4higkeit, ihre Ger\u00e4usche und Bewegungen in erkennbare Worte und S\u00e4tze zu entschl\u00fcsseln. Den meisten Tieren fehlt die Intelligenz, um komplexe Konzepte zu vermitteln oder zu verstehen, aber ein freundliches Tier kann weitergeben, was es in der j\u00fcngsten Vergangenheit gesehen oder geh\u00f6rt hat.",
+				"Diese F\u00e4higkeit verschafft dir keine besondere Freundschaft mit Bestien, aber du kannst diese F\u00e4higkeit mit Geschenken und anderen Gunstbezeugungen kombinieren, um dich bei ihnen beliebt zu machen, wie bei jedem anderen Nicht-Spieler-Charakter auch."
+			]
+		},
+		{
+			"name": "Spirit Bond",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd (UA)",
+			"subclassSource": "UADruid",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Ab der 2. Stufe erh\u00e4ltst du die F\u00e4higkeit, Tiergeister herbeizurufen und sie zu benutzen, um die Welt um dich herum zu beeinflussen. Als Bonusaktion beschw\u00f6rst du auf magische Weise einen mittelgro\u00dfen Geist in einen unbesetzten Raum, den du im Umkreis von 60 Fu\u00df sehen kannst. Der Geist erzeugt eine Aura in einem Radius von 30 Fu\u00df um sich herum, er nimmt seinen Platz nicht ein, er ist unbeweglich und z\u00e4hlt weder als Kreatur noch als Gegenstand.",
+				"Der Geist bleibt 1 Minute lang erhalten und kann erst nach einer kurzen oder langen Pause wieder eingesetzt werden.",
+				"Die Beschaffenheit der Aura h\u00e4ngt von der Art des Geistes ab, den du aus den unten aufgef\u00fchrten Optionen beschw\u00f6rst.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Bear",
+							"entries": [
+								"Der B\u00e4rengeist schenkt dir und deinen Verb\u00fcndeten seine Macht und Ausdauer. Du und deine Verb\u00fcndeten, die sich in der Aura befinden, wenn der Geist erscheint, erhalten vor\u00fcbergehend Trefferpunkte in H\u00f6he von 5 + deiner Druidenstufe. Au\u00dferdem erhalten du und deine Verb\u00fcndeten einen Vorteil auf St\u00e4rkeproben und St\u00e4rkew\u00fcrfe, solange ihr euch in der Aura befindet."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Hawk",
+							"entries": [
+								"Der Falkengeist ist ein vollendeter J\u00e4ger, der deine Feinde mit seinem scharfen Blick markiert. Du und deine Verb\u00fcndeten erhalten Vorteil bei Angriffsw\u00fcrfen auf Distanz gegen Ziele in der Aura des Geistes."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Wolf",
+							"entries": [
+								"Der Wolfsgeist verleiht dir und deinen Verb\u00fcndeten seine pr\u00e4zisen Sinne, w\u00e4hrend deine Magie den Mitgliedern deines Rudels zugute kommt. Du und deine Verb\u00fcndeten erhalten einen Vorteil bei allen F\u00e4higkeitspr\u00fcfungen, um Kreaturen in der Aura des Geistes aufzusp\u00fcren. Wenn du au\u00dferdem einen Zauber mit einem Zauberplatz wirkst, der allen Personen innerhalb oder au\u00dferhalb der Aura Trefferpunkte zur\u00fcckgibt, erh\u00e4lt jeder deiner Verb\u00fcndeten in der Aura ebenfalls Trefferpunkte in H\u00f6he deiner Druidenstufe zur\u00fcck."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mighty Summoner",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd (UA)",
+			"subclassSource": "UADruid",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du die F\u00e4higkeit, m\u00e4chtige Tiere zu beschw\u00f6ren. Jedes Tier, das durch deine Zauber beschworen oder erschaffen wird, erh\u00e4lt zwei Vorteile: Sein Trefferpunkte-Maximum erh\u00f6ht sich um 2 pro Trefferw\u00fcrfel, und der Schaden seiner nat\u00fcrlichen Waffen wird als magisch angesehen, um Immunit\u00e4t und Widerstand gegen nichtmagische Angriffe und Schaden zu \u00fcberwinden."
+			]
+		},
+		{
+			"name": "Guardian Spirit",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd (UA)",
+			"subclassSource": "UADruid",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Auf der 10. Stufe erh\u00e4ltst du die Dienste eines Geistes, der \u00fcber dich wacht und dich vor Schaden bewahrt. Immer wenn du eine lange Pause beendest, erh\u00e4ltst du die Vorteile eines {@spell death ward} Zaubers. Die Dauer des Zaubers wird auf 24 Stunden verl\u00e4ngert."
+			]
+		},
+		{
+			"name": "Faithful Summons",
+			"source": "UADruid",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd (UA)",
+			"subclassSource": "UADruid",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab der 14. Stufe sch\u00fctzen dich die bestialischen Geister, mit denen du kommunizierst, wenn du verwundbar bist. Wenn deine Trefferpunkte auf 0 sinken oder du gegen deinen Willen {@condition incapacitated} bist, kannst du sofort die Vorteile von {@spell conjure animals} nutzen, als ob der Zauber mit einem Zauberslot der 9. Stufe gewirkt worden w\u00e4re. Er beschw\u00f6rt vier Bestien deiner Wahl, die den Herausforderungsgrad 2 oder niedriger haben. Die beschworenen Bestien erscheinen in einem Umkreis von 20 Fu\u00df um dich. Wenn sie keine Befehle von dir erhalten, sch\u00fctzen sie dich vor Schaden und greifen deine Feinde an. Der Zauber h\u00e4lt 1 Stunde lang an.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Circle of Twilight",
+			"source": "UADruid",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Twilight (UA)",
+			"subclassSource": "UADruid",
+			"level": 2,
+			"entries": [
+				"Der Zirkel der D\u00e4mmerung versucht, untote Kreaturen zu vernichten und den nat\u00fcrlichen Kreislauf von Leben und Tod, der den Kosmos beherrscht, zu bewahren. Ihre Magie erlaubt es ihnen, die Grenze zwischen Leben und Tod zu manipulieren und so ihre Feinde zur letzten Ruhe zu schicken, w\u00e4hrend sie ihre Verb\u00fcndeten vor diesem Schicksal bewahren.",
+				"Diese Druiden suchen L\u00e4ndereien auf, die vom Untod befleckt sind. Solche Orte sind d\u00fcster und ahnungsvoll. Einst lebendige W\u00e4lder werden zu d\u00fcsteren, geisterhaften Orten ohne Tiere und voller Pflanzen, die einen langsamen, schleichenden Tod sterben. Der Zirkel des Zwielichts geht an solche Orte, um den Untod zu vertreiben und das Leben wiederherzustellen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Harvest's Scythe|Druid||Twilight (UA)|UADruid|2"
+				}
+			]
+		},
+		{
+			"name": "Harvest's Scythe",
+			"source": "UADruid",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Twilight (UA)",
+			"subclassSource": "UADruid",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Ab der 2. Stufe lernst du, die Lebensenergie anderer Kreaturen zu entwirren und zu ernten. Du kannst deine Zauber verst\u00e4rken, um Kreaturen die Lebenskraft zu entziehen. Du verf\u00fcgst \u00fcber einen Energiepool, der durch eine Anzahl von {@dice d10}repr\u00e4sentiert wird, die deiner Druidenstufe entspricht.",
+				"Wenn du f\u00fcr einen Zauber Schaden w\u00fcrfelst, kannst du diesen Schaden erh\u00f6hen, indem du W\u00fcrfel aus dem Pool ausgibst. Du kannst eine Anzahl von W\u00fcrfeln ausgeben, die der H\u00e4lfte deiner Druidenstufe oder weniger entspricht. Wirf die ausgegebenen W\u00fcrfel und f\u00fcge sie dem Schaden als nekrotischen Schaden hinzu. Wenn du eine oder mehrere feindliche Kreaturen mit einem auf diese Weise verst\u00e4rkten Zauber t\u00f6test, erh\u00e4ltst du oder ein Verb\u00fcndeter deiner Wahl, den du im Umkreis von 30 Fu\u00df sehen kannst, 2 Trefferpunkte pro ausgegebenem W\u00fcrfel, um den Schaden des Zaubers zu erh\u00f6hen, oder 5 Trefferpunkte pro W\u00fcrfel, wenn mindestens eine der get\u00f6teten Kreaturen untot war.",
+				"Du erh\u00e4ltst die verbrauchten W\u00fcrfel zur\u00fcck, wenn du eine lange Pause beendest."
+			]
+		},
+		{
+			"name": "Speech Beyond the Grave",
+			"source": "UADruid",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Twilight (UA)",
+			"subclassSource": "UADruid",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du die F\u00e4higkeit, auf der Suche nach Wissen \u00fcber den Schleier des Todes hinauszugelangen. Mit dieser Eigenschaft kannst du {@spell speak with dead} ohne materielle Komponenten wirken und du verstehst, was das Ziel dieser Wirkung sagt. Es kann deine Fragen verstehen, selbst wenn ihr keine gemeinsame Sprache habt oder es nicht intelligent genug ist, um zu sprechen.",
+				"Wenn Sie diese Funktion verwenden, k\u00f6nnen Sie sie erst wieder nach einer kurzen oder langen Pause nutzen."
+			]
+		},
+		{
+			"name": "Watcher at the Threshold",
+			"source": "UADruid",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Twilight (UA)",
+			"subclassSource": "UADruid",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Auf der 10. Stufe erh\u00e4ltst du Resistenz gegen nekrotischen und strahlenden Schaden. Solange du nicht {@condition incapacitated} bist, hat au\u00dferdem jeder Verb\u00fcndete im Umkreis von 30 Fu\u00df von dir einen Vorteil bei Rettungsw\u00fcrfen zum Tod."
+			]
+		},
+		{
+			"name": "Paths of the Dead",
+			"source": "UADruid",
+			"page": 2,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Twilight (UA)",
+			"subclassSource": "UADruid",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Auf der 14. Stufe erlaubt dir deine Beherrschung des Todes, die Pfade zu beschreiten, die von Geistern und anderen Geistern benutzt werden. Mit dieser Eigenschaft kannst du {@spell etherealness} wirken. Sobald der Zauber endet, kannst du ihn mit dieser Eigenschaft nicht erneut wirken, bis du eine kurze oder lange Pause beendet hast."
+			]
+		},
+		{
+			"name": "Circle of the Shepherd v2",
+			"source": "UARevisedClassOptions",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 2,
+			"entries": [
+				"Druiden des Zirkels des Hirten stehen in Verbindung mit den Geistern der Natur, insbesondere mit den Geistern der Tiere und der Feen, und rufen diese Geister um Hilfe an. Diese Druiden erkennen an, dass alle Lebewesen eine Rolle in der nat\u00fcrlichen Welt spielen, doch konzentrieren sie sich auf den Schutz von Tieren und Feenwesen, die sich nur schwer selbst verteidigen k\u00f6nnen. Die Hirten, wie sie genannt werden, betrachten solche Kreaturen als ihre Sch\u00fctzlinge. Sie wehren Monster ab, die sie bedrohen, tadeln J\u00e4ger, die mehr Beute als n\u00f6tig t\u00f6ten, und verhindern, dass die Zivilisation in die Lebensr\u00e4ume seltener Tiere und in den den Feen heiligen St\u00e4tten eindringt. Viele dieser Druiden sind am gl\u00fccklichsten fernab von St\u00e4dten und D\u00f6rfern, wo sie ihre Tage in der Gesellschaft von Tieren und den Feenwesen der Wildnis verbringen.",
+				"Die Mitglieder dieses Zirkels werden zu Abenteurern, um sich Kr\u00e4ften entgegenzustellen, die ihre Sch\u00fctzlinge bedrohen, oder um nach Wissen und Macht zu suchen, die ihnen helfen, ihre Sch\u00fctzlinge besser zu sch\u00fctzen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Speech of the Woods|Druid||Shepherd v2 (UA)|UARevisedClassOptions|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spirit Totem|Druid||Shepherd v2 (UA)|UARevisedClassOptions|2"
+				}
+			]
+		},
+		{
+			"name": "Speech of the Woods",
+			"source": "UARevisedClassOptions",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Auf Stufe 2 erh\u00e4ltst du die F\u00e4higkeit, mit Bestien und vielen Feen zu sprechen.",
+				"Du lernst sprechen, lesen und schreiben {@language Sylvan}. Au\u00dferdem k\u00f6nnen die Tiere deine Sprache verstehen, und du erh\u00e4ltst die F\u00e4higkeit, ihre Ger\u00e4usche und Bewegungen zu entschl\u00fcsseln. Den meisten Tieren fehlt die Intelligenz, um komplexe Konzepte zu vermitteln oder zu verstehen, aber ein freundliches Tier kann dir mitteilen, was es in der j\u00fcngsten Vergangenheit gesehen oder geh\u00f6rt hat. Diese F\u00e4higkeit gew\u00e4hrt dir keine besondere Freundschaft mit den Tieren, aber du kannst diese F\u00e4higkeit mit Geschenken kombinieren, um dich bei ihnen beliebt zu machen, wie du es bei jedem Nicht-Spieler-Charakter tun w\u00fcrdest."
+			]
+		},
+		{
+			"name": "Spirit Totem",
+			"source": "UARevisedClassOptions",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Ab der 2. Stufe erh\u00e4ltst du die F\u00e4higkeit, Naturgeister herbeizurufen und sie zu nutzen, um die Welt um dich herum zu beeinflussen. Als Bonusaktion kannst du auf magische Weise einen unk\u00f6rperlichen Geist an einen Punkt beschw\u00f6ren, den du im Umkreis von 60 Fu\u00df sehen kannst. Der Geist erzeugt eine Aura in einem Radius von 30 Fu\u00df um diesen Punkt. Er z\u00e4hlt weder als Kreatur noch als Gegenstand, obwohl er das spektrale Aussehen der Kreatur hat, die er repr\u00e4sentiert.",
+				"Als Bonusaktion kannst du den Geist bis zu 60 Fu\u00df weit zu einem Punkt bewegen, den du sehen kannst.",
+				"Der Geist bleibt 1 Minute lang erhalten und kann erst nach einer kurzen oder langen Pause wieder eingesetzt werden.",
+				"Die Wirkung der Aura des Geistes h\u00e4ngt von der Art des Geistes ab, den du aus den folgenden Optionen beschw\u00f6rst.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Bear Spirit",
+							"entries": [
+								"Der B\u00e4rengeist schenkt dir und deinen Verb\u00fcndeten seine Macht und Ausdauer. Jede Kreatur deiner Wahl, die sich in der Aura befindet, wenn der Geist erscheint, erh\u00e4lt vor\u00fcbergehend Trefferpunkte in H\u00f6he von 5 + deiner Druidenstufe. Au\u00dferdem erhalten du und deine Verb\u00fcndeten einen Vorteil auf St\u00e4rkeproben und St\u00e4rkew\u00fcrfe, solange ihr euch in der Aura befindet."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Hawk Spirit",
+							"entries": [
+								"Wenn eine Kreatur einen Angriffswurf gegen ein Ziel macht, das sich in der Aura des Geistes befindet, kannst du deine Reaktion einsetzen, um diesem Angriffswurf einen Vorteil zu gew\u00e4hren."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Unicorn Spirit",
+							"entries": [
+								"Der Geist des Einhorns verleiht denen, die sich in seiner N\u00e4he befinden, seinen Schutz. Du und deine Verb\u00fcndeten erhalten einen Vorteil auf alle F\u00e4higkeitsproben, um Kreaturen in der Aura des Geistes aufzusp\u00fcren. Wenn du au\u00dferdem einen Zauber mit einem Zauberspruch-Slot wirkst, der einer Person innerhalb oder au\u00dferhalb der Aura Trefferpunkte zur\u00fcckgibt, erh\u00e4lt jede Kreatur deiner Wahl in der Aura ebenfalls Trefferpunkte in H\u00f6he deiner Druidenstufe zur\u00fcck."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mighty Summoner",
+			"source": "UARevisedClassOptions",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf Stufe 6 erh\u00e4ltst du die F\u00e4higkeit, m\u00e4chtige Bestien und Feen zu beschw\u00f6ren. Jede Bestie oder Fee, die durch deine Zauber beschworen oder erschaffen wird, erh\u00e4lt zwei Vorteile:",
+				{
+					"type": "list",
+					"items": [
+						"Die Kreatur erscheint mit mehr Trefferpunkten als normal: 2 zus\u00e4tzliche Trefferpunkte pro Trefferw\u00fcrfel, den sie hat.",
+						"Der Schaden seiner nat\u00fcrlichen Waffen gilt als magisch, wenn es darum geht, Immunit\u00e4t und Resistenz gegen nichtmagische Angriffe und Schaden zu \u00fcberwinden."
+					]
+				}
+			]
+		},
+		{
+			"name": "Guardian Spirit",
+			"source": "UARevisedClassOptions",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Auf der 10. Stufe besch\u00fctzt dein Geistertotem die Bestien und Feen, die du mit deiner Magie herbeirufst. Wenn ein Tier oder eine Fee, das/die du mit einem Zauber beschworen oder erschaffen hast, seinen/ihren Zug in der Aura deines Geistertotems beendet, erh\u00e4lt diese Kreatur eine Anzahl von Trefferpunkten zur\u00fcck, die der H\u00e4lfte deiner Druidenstufe entspricht."
+			]
+		},
+		{
+			"name": "Faithful Summons",
+			"source": "UARevisedClassOptions",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab der 14. Stufe sch\u00fctzen dich die Naturgeister, mit denen du kommunizierst, wenn du am wehrlosesten bist. Wenn du auf 0 Trefferpunkte reduziert wirst oder gegen deinen Willen {@condition incapacitated} bist, kannst du sofort die Vorteile von {@spell conjure animals} nutzen, als ob er mit einem Zauberslot der 9. Stufe gewirkt worden w\u00e4re. Er beschw\u00f6rt vier Bestien deiner Wahl, die einen Herausforderungswert von 2 oder niedriger haben. Die beschworenen Bestien erscheinen in einem Umkreis von 20 Fu\u00df um dich. Wenn sie keine Befehle von dir erhalten, sch\u00fctzen sie dich vor Schaden und greifen deine Feinde an. Der Zauber h\u00e4lt 1 Stunde lang an, ohne dass du dich konzentrieren musst, oder bis du ihn abbrichst (keine Aktion erforderlich).",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Circle of Spores (UA)",
+			"source": "UAThreeSubclasses",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores (UA)",
+			"subclassSource": "UAThreeSubclasses",
+			"level": 2,
+			"entries": [
+				"Druiden des Sporenkreises finden Sch\u00f6nheit im Verfall. Sie sehen in Schimmel und anderen Pilzen die F\u00e4higkeit, lebloses Material in reichhaltiges, wenn auch etwas seltsames Leben zu verwandeln. Diese Druiden glauben, dass Leben und Tod Teile eines gro\u00dfen Kreislaufs sind, wobei das eine zum anderen f\u00fchrt und dann wieder zur\u00fcck. Der Tod ist nicht das Ende des Lebens, sondern ein Zustandswechsel, bei dem sich das Leben in eine neue Form verwandelt. Druiden dieses Kreises haben eine komplexe Beziehung zu den Untoten. Im Gegensatz zu den meisten anderen Druiden sehen sie nichts Falsches im Untod, den sie als Begleiter von Leben und Tod betrachten. Diese Druiden glauben jedoch, dass der nat\u00fcrliche Kreislauf am ges\u00fcndesten ist, wenn jedes Segment davon lebendig ist und sich ver\u00e4ndert. Untote, die versuchen, alles Leben durch den Untod zu ersetzen oder sich vor der endg\u00fcltigen Ruhe zu dr\u00fccken, verletzen den Kreislauf und m\u00fcssen zur\u00fcckgeschlagen werden.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Spores (UA)|UAThreeSubclasses|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Halo of Spores|Druid||Spores (UA)|UAThreeSubclasses|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Symbiotic Entity|Druid||Spores (UA)|UAThreeSubclasses|2"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "UAThreeSubclasses",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores (UA)",
+			"subclassSource": "UAThreeSubclasses",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Deine symbiotische Verbindung zu Pilzen und deine F\u00e4higkeit, den Kreislauf von Leben und Tod anzuzapfen, gew\u00e4hrt dir Zugang zu bestimmten Zaubern. Auf der 1. Stufe erlernst du den {@spell chill touch} Zaubertrick. Auf der 3., 5., 7. und 9. Stufe erh\u00e4ltst du Zugang zu den Zaubern, die f\u00fcr diese Stufe in der Tabelle der Zauber des Sporenkreises aufgef\u00fchrt sind.",
+				"Sobald ihr Zugang zu einem dieser Zauber erhaltet, habt ihr ihn immer vorbereitet und er z\u00e4hlt nicht zu der Anzahl der Zauber, die ihr pro Tag vorbereiten k\u00f6nnt. Wenn ihr Zugang zu einem Zauber erhaltet, der nicht auf der Liste der Druidenzauber steht, ist dieser Zauber dennoch ein Druidenzauber f\u00fcr euch.",
+				{
+					"type": "table",
+					"caption": "Circle of Spores Spells",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell gentle repose}, {@spell ray of enfeeblement}"
+						],
+						[
+							"5th",
+							"{@spell animate dead}, {@spell gaseous form}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell confusion}"
+						],
+						[
+							"9th",
+							"{@spell cloudkill}, {@spell contagion}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Halo of Spores",
+			"source": "UAThreeSubclasses",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores (UA)",
+			"subclassSource": "UAThreeSubclasses",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Ab der 2. Stufe kannst du giftige Sporen auf andere Kreaturen schleudern. Dazu verwendest du deine Reaktion in deinem Zug, um einer Kreatur, die du im Umkreis von 10 Fu\u00df sehen kannst, 3 Giftschaden zuzuf\u00fcgen. Dieser Schaden erh\u00f6ht sich auf 6 auf der 6. Stufe, 9 auf der 10. Stufe und 12 auf der 14."
+			]
+		},
+		{
+			"name": "Symbiotic Entity",
+			"source": "UAThreeSubclasses",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores (UA)",
+			"subclassSource": "UAThreeSubclasses",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Auf Stufe 2 erh\u00e4ltst du die F\u00e4higkeit, Magie in die Sporen zu leiten, die dich durchdringen.",
+				"Wenn du deine Eigenschaft \"Wilde Form\" einsetzt, kannst du diese Sporen erwecken, anstatt dich zu verwandeln. Wenn du dies tust, erh\u00e4ltst du 3 tempor\u00e4re Trefferpunkte pro Stufe in dieser Klasse, der Schaden deiner Eigenschaft \"Halo der Sporen\" verdoppelt sich und deine Nahkampfwaffenangriffe f\u00fcgen jedem getroffenen Ziel zus\u00e4tzlichen {@damage 1d6} Giftschaden zu. Diese Vorteile halten 10 Minuten lang an oder bis du deine \"Wilde Form\" erneut einsetzt."
+			]
+		},
+		{
+			"name": "Fungal Infestation",
+			"source": "UAThreeSubclasses",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores (UA)",
+			"subclassSource": "UAThreeSubclasses",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erhalten deine Sporen die F\u00e4higkeit, einen humanoiden Leichnam zu befallen und zu beleben.",
+				"Wenn du einen Humanoiden mit deinem Sporenhalo t\u00f6test, erhebt sich die Kreatur am Ende deines Zuges als {@creature zombie}. Sie hat 1 Trefferpunkt. Im Kampf ist sie sofort nach dir an der Reihe. Sie gehorcht deinen mentalen Befehlen und die einzige Aktion, die sie ausf\u00fchren kann, ist die Aktion {@action Attack}, bei der sie einen Nahkampfangriff ausf\u00fchrt. Sie bleibt 1 Stunde lang beseelt, danach bricht sie zusammen und stirbt."
+			]
+		},
+		{
+			"name": "Spreading Spores",
+			"source": "UAThreeSubclasses",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores (UA)",
+			"subclassSource": "UAThreeSubclasses",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Auf der 10. Stufe erh\u00e4ltst du die F\u00e4higkeit, ein Gebiet mit t\u00f6dlichen Sporen zu bes\u00e4en. Als Bonusaktion schleuderst du Pilzsporen bis zu 30 Fu\u00df weit weg, wo sie 1 Minute lang in einem W\u00fcrfel von 10 Fu\u00df umherwirbeln. Solange der Sporenw\u00fcrfel besteht, kannst du deine Eigenschaft Halo der Sporen nicht einsetzen, aber jede Kreatur, die ihren Zug in dem W\u00fcrfel beginnt, erleidet Schaden durch deinen Halo der Sporen. Der Sporenw\u00fcrfel verschwindet vorzeitig, wenn du diese Eigenschaft erneut einsetzt."
+			]
+		},
+		{
+			"name": "Fungal Body",
+			"source": "UAThreeSubclasses",
+			"page": 1,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Spores (UA)",
+			"subclassSource": "UAThreeSubclasses",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab Stufe 14 ver\u00e4ndern dich die Pilzsporen in deinem K\u00f6rper: Du kannst nicht {@condition blinded}, {@condition deafened}, {@condition frightened} oder {@condition poisoned} sein, und wenn ein Angriff einen kritischen Treffer gegen dich erzielt, f\u00fcgt er dir keinen zus\u00e4tzlichen Schaden zu."
+			]
+		},
+		{
+			"name": "Circle of Dreams",
+			"source": "XGE",
+			"page": 22,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams",
+			"subclassSource": "XGE",
+			"level": 2,
+			"entries": [
+				"Druiden, die Mitglieder des Zirkels der Tr\u00e4ume sind, stammen aus Regionen, die eine starke Verbindung zum Feenreich und seinen traum\u00e4hnlichen Reichen haben. Da die Druiden \u00fcber die nat\u00fcrliche Welt wachen, ist es nur nat\u00fcrlich, dass sie sich mit den Feen der guten Seite verb\u00fcnden. Diese Druiden versuchen, die Welt mit traumhaften Wundern zu erf\u00fcllen. Ihre Magie heilt Wunden und bringt Freude in niedergeschlagene Herzen, und die Reiche, die sie besch\u00fctzen, sind leuchtende, fruchtbare Orte, an denen Traum und Wirklichkeit miteinander verschmelzen und an denen die M\u00fcden Ruhe finden k\u00f6nnen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Balm of the Summer Court|Druid||Dreams|XGE|2"
+				}
+			]
+		},
+		{
+			"name": "Balm of the Summer Court",
+			"source": "XGE",
+			"page": 22,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams",
+			"subclassSource": "XGE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Auf der 2. Stufe wirst du von den Segnungen des Sommerhofs durchdrungen. Du bist eine Quelle der Energie, die dich von Verletzungen erholt. Du verf\u00fcgst \u00fcber einen Pool an Feen-Energie, der durch eine Anzahl von {@dice d6} repr\u00e4sentiert wird, die deiner Druidenstufe entspricht.",
+				"Als Bonusaktion kannst du eine Kreatur w\u00e4hlen, die du im Umkreis von 120 Fu\u00df sehen kannst, und eine Anzahl dieser W\u00fcrfel ausgeben, die der H\u00e4lfte deiner Druidenstufe oder weniger entspricht. Wirf die ausgegebenen W\u00fcrfel und addiere sie. Das Ziel erh\u00e4lt eine Anzahl von Trefferpunkten zur\u00fcck, die der Gesamtzahl entspricht. Au\u00dferdem erh\u00e4lt das Ziel 1 tempor\u00e4ren Trefferpunkt pro ausgegebenem W\u00fcrfel.",
+				"Du erh\u00e4ltst alle verbrauchten W\u00fcrfel zur\u00fcck, wenn du eine lange Pause beendest."
+			]
+		},
+		{
+			"name": "Hearth of Moonlight and Shadow",
+			"source": "XGE",
+			"page": 22,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams",
+			"subclassSource": "XGE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe kann dein Zuhause \u00fcberall sein, wo du bist. W\u00e4hrend einer kurzen oder langen Ruhepause kannst du die schattenhafte Macht des Gloaming Court beschw\u00f6ren, um deine Ruhepause zu bewachen. Zu Beginn der Ruhepause ber\u00fchrst du einen Punkt im Raum und eine unsichtbare Sph\u00e4re der Magie mit einem Radius von 30 Fu\u00df erscheint, die auf diesen Punkt zentriert ist. Vollst\u00e4ndige Deckung blockiert die Sph\u00e4re.",
+				"W\u00e4hrend du dich in der Sph\u00e4re aufh\u00e4ltst, erhalten du und deine Verb\u00fcndeten einen Bonus von +5 auf Geschicklichkeits- ({@skill Stealth}) und Weisheitspr\u00fcfungen ({@skill Perception}), und das Licht offener Flammen in der Sph\u00e4re (Lagerfeuer, Fackeln oder \u00e4hnliches) ist au\u00dferhalb der Sph\u00e4re nicht sichtbar.",
+				"Die Kugel verschwindet am Ende der Pause oder wenn Sie die Kugel verlassen."
+			]
+		},
+		{
+			"name": "Hidden Paths",
+			"source": "XGE",
+			"page": 22,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams",
+			"subclassSource": "XGE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Ab der 10. Stufe kannst du die verborgenen, magischen Pfade nutzen, die manche Feen verwenden, um den Raum im Handumdrehen zu durchqueren. Als Bonusaktion in deinem Zug kannst du dich bis zu 60 Fu\u00df weit in einen unbesetzten Raum teleportieren, den du sehen kannst. Alternativ dazu kannst du deine Aktion nutzen, um eine willige Kreatur, die du ber\u00fchrst, bis zu 30 Fu\u00df weit in einen unbesetzten Raum zu teleportieren, den du sehen kannst.",
+				"Du kannst diese F\u00e4higkeit so oft einsetzen, wie es deinem Weisheitsmodifikator entspricht (mindestens einmal), und du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendest."
+			]
+		},
+		{
+			"name": "Walker in Dreams",
+			"source": "XGE",
+			"page": 22,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams",
+			"subclassSource": "XGE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Auf der 14. Stufe verleiht dir die Magie des Feenreichs die F\u00e4higkeit, geistig oder k\u00f6rperlich durch Trauml\u00e4nder zu reisen.",
+				"Wenn du eine kurze Ruhepause beendest, kannst du einen der folgenden Zauber wirken, ohne einen Zauberslot zu verbrauchen oder materielle Komponenten zu ben\u00f6tigen: {@spell dream} (mit dir als Bote), {@spell scrying} oder {@spell teleportation circle}.",
+				"Diese Anwendung von {@spell teleportation circle} ist etwas Besonderes. Anstatt ein Portal zu einer permanenten {@spell teleportation circle} zu \u00f6ffnen, \u00f6ffnet er ein Portal zum letzten Ort, an dem du eine lange Pause in deiner aktuellen Dimension beendet hast. Wenn du in deiner aktuellen Dimension keine lange Pause gemacht hast, schl\u00e4gt der Zauber fehl, ist aber nicht umsonst.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Circle of the Shepherd",
+			"source": "XGE",
+			"page": 23,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd",
+			"subclassSource": "XGE",
+			"level": 2,
+			"entries": [
+				"Druiden des Zirkels des Hirten stehen in Verbindung mit den Geistern der Natur, insbesondere mit den Geistern der Tiere und der Feen, und rufen diese Geister um Hilfe an. Diese Druiden erkennen an, dass alle Lebewesen eine Rolle in der nat\u00fcrlichen Welt spielen, doch konzentrieren sie sich auf den Schutz von Tieren und Feenwesen, die sich nur schwer selbst verteidigen k\u00f6nnen. Die Hirten, wie sie genannt werden, betrachten solche Kreaturen als ihre Sch\u00fctzlinge. Sie wehren Monster ab, die sie bedrohen, tadeln J\u00e4ger, die mehr Beute als n\u00f6tig t\u00f6ten, und verhindern, dass die Zivilisation in die Lebensr\u00e4ume seltener Tiere und in den den Feen heiligen St\u00e4tten eindringt. Viele dieser Druiden sind am gl\u00fccklichsten fernab von St\u00e4dten und D\u00f6rfern, wo sie ihre Tage in der Gesellschaft von Tieren und den Feenwesen der Wildnis verbringen.",
+				"Die Mitglieder dieses Zirkels werden zu Abenteurern, um sich Kr\u00e4ften entgegenzustellen, die ihre Sch\u00fctzlinge bedrohen, oder um nach Wissen und Macht zu suchen, die ihnen helfen, ihre Sch\u00fctzlinge besser zu sch\u00fctzen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Speech of the Woods|Druid||Shepherd|XGE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spirit Totem|Druid||Shepherd|XGE|2"
+				}
+			]
+		},
+		{
+			"name": "Speech of the Woods",
+			"source": "XGE",
+			"page": 23,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd",
+			"subclassSource": "XGE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Auf Stufe 2 erh\u00e4ltst du die F\u00e4higkeit, mit Bestien und vielen Feen zu sprechen.",
+				"Du lernst sprechen, lesen und schreiben {@language Sylvan}. Au\u00dferdem k\u00f6nnen die Tiere deine Sprache verstehen, und du erh\u00e4ltst die F\u00e4higkeit, ihre Ger\u00e4usche und Bewegungen zu entschl\u00fcsseln. Den meisten Tieren fehlt die Intelligenz, um komplexe Konzepte zu vermitteln oder zu verstehen, aber ein freundliches Tier kann dir mitteilen, was es in der j\u00fcngsten Vergangenheit gesehen oder geh\u00f6rt hat. Diese F\u00e4higkeit gew\u00e4hrt dir keine Freundschaft mit den Tieren, aber du kannst diese F\u00e4higkeit mit Geschenken kombinieren, um dich bei ihnen beliebt zu machen, wie du es bei jedem Nicht-Spieler-Charakter tun w\u00fcrdest."
+			]
+		},
+		{
+			"name": "Spirit Totem",
+			"source": "XGE",
+			"page": 23,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd",
+			"subclassSource": "XGE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Ab Stufe 2 kannst du Naturgeister herbeirufen, um die Welt um dich herum zu beeinflussen. Als Bonusaktion kannst du auf magische Weise einen k\u00f6rperlosen Geist an einen Punkt beschw\u00f6ren, den du im Umkreis von 60 Fu\u00df sehen kannst. Der Geist erzeugt eine Aura in einem Radius von 30 Fu\u00df um diesen Punkt. Er z\u00e4hlt weder als Kreatur noch als Gegenstand, obwohl er das spektrale Aussehen der Kreatur hat, die er repr\u00e4sentiert.",
+				"Als Bonusaktion kannst du den Geist bis zu 60 Fu\u00df weit zu einem Punkt bewegen, den du sehen kannst.",
+				"Der Geist h\u00e4lt 1 Minute lang an oder bis du {@condition incapacitated} bist. Wenn du diese Funktion benutzt, kannst du sie erst wieder nach einer kurzen oder langen Pause einsetzen.",
+				"Die Wirkung der Aura des Geistes h\u00e4ngt von der Art des Geistes ab, den du aus den folgenden Optionen beschw\u00f6rst.",
+				{
+					"type": "entries",
+					"name": "Bear Spirit",
+					"entries": [
+						"Der B\u00e4rengeist schenkt dir und deinen Verb\u00fcndeten seine Macht und Ausdauer. Jede Kreatur deiner Wahl, die sich in der Aura befindet, wenn der Geist erscheint, erh\u00e4lt vor\u00fcbergehend Trefferpunkte in H\u00f6he von 5 + deiner Druidenstufe. Au\u00dferdem erhalten du und deine Verb\u00fcndeten einen Vorteil auf St\u00e4rkeproben und St\u00e4rkew\u00fcrfe, solange ihr euch in der Aura befindet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hawk Spirit",
+					"entries": [
+						"Der Falkengeist ist ein vollendeter J\u00e4ger, der dich und deine Verb\u00fcndeten mit seiner scharfen Sicht unterst\u00fctzt. Wenn eine Kreatur einen Angriffswurf gegen ein Ziel in der Aura des Geistes macht, kannst du deine Reaktion einsetzen, um diesem Angriffswurf einen Vorteil zu gew\u00e4hren. Au\u00dferdem haben du und deine Verb\u00fcndeten einen Vorteil bei Weisheitspr\u00fcfungen ({@skill Perception}), solange ihr euch in der Aura befindet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unicorn Spirit",
+					"entries": [
+						"Der Geist des Einhorns verleiht seinen Schutz an alle, die sich in seiner N\u00e4he befinden. Du und deine Verb\u00fcndeten erhalten einen Vorteil bei allen F\u00e4higkeitspr\u00fcfungen, um Kreaturen in der Aura des Geistes aufzusp\u00fcren. Wenn du au\u00dferdem einen Zauber mit einem Zauberplatz wirkst, der einer Kreatur innerhalb oder au\u00dferhalb der Aura Trefferpunkte zur\u00fcckgibt, erh\u00e4lt jede Kreatur deiner Wahl in der Aura ebenfalls Trefferpunkte in H\u00f6he deiner Druidenstufe zur\u00fcck."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mighty Summoner",
+			"source": "XGE",
+			"page": 23,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd",
+			"subclassSource": "XGE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab der 6. Stufe sind die von dir beschworenen Bestien und Feen widerstandsf\u00e4higer als normal. Jede Bestie oder Fee, die durch einen von dir gewirkten Zauber beschworen oder erschaffen wird, erh\u00e4lt die folgenden Vorteile:",
+				{
+					"type": "list",
+					"items": [
+						"Die Kreatur erscheint mit mehr Trefferpunkten als normal: 2 zus\u00e4tzliche Trefferpunkte pro Trefferw\u00fcrfel, den sie hat.",
+						"Der Schaden seiner nat\u00fcrlichen Waffen gilt als magisch, wenn es darum geht, Immunit\u00e4t und Resistenz gegen nichtmagische Angriffe und Schaden zu \u00fcberwinden."
+					]
+				}
+			]
+		},
+		{
+			"name": "Guardian Spirit",
+			"source": "XGE",
+			"page": 23,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd",
+			"subclassSource": "XGE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Ab der 10. Stufe besch\u00fctzt dein Geistertotem die Bestien und Feen, die du mit deiner Magie herbeirufst. Wenn ein Tier oder eine Fee, das/die du mit einem Zauber beschworen oder erschaffen hast, seinen/ihren Zug in der Aura deines Geistertotems beendet, erh\u00e4lt diese Kreatur eine Anzahl von Trefferpunkten zur\u00fcck, die der H\u00e4lfte deiner Druidenstufe entspricht."
+			]
+		},
+		{
+			"name": "Faithful Summons",
+			"source": "XGE",
+			"page": 23,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Shepherd",
+			"subclassSource": "XGE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab der 14. Stufe sch\u00fctzen dich die Naturgeister, mit denen du kommunizierst, wenn du am wehrlosesten bist. Wenn du auf 0 Trefferpunkte reduziert wirst oder gegen deinen Willen {@condition incapacitated} bist, kannst du sofort die Vorteile von {@spell conjure animals} nutzen, als ob er mit einem Zauberslot der 9. Stufe gewirkt worden w\u00e4re. Er beschw\u00f6rt vier Bestien deiner Wahl, die einen Herausforderungswert von 2 oder niedriger haben. Die beschworenen Bestien erscheinen in einem Umkreis von 20 Fu\u00df um dich. Wenn sie keine Befehle von dir erhalten, sch\u00fctzen sie dich vor Schaden und greifen deine Feinde an. Der Zauber h\u00e4lt 1 Stunde lang an, ohne dass du dich konzentrieren musst, oder bis du ihn abbrichst (keine Aktion erforderlich).",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		}
+	]
+}

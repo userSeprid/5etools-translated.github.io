@@ -1,0 +1,1266 @@
+{
+	"trap": [
+		{
+			"name": "Bear Trap",
+			"source": "XGE",
+			"page": 113,
+			"trapHazType": "SMPL",
+			"tier": 1,
+			"threat": "dangerous",
+			"effect": [
+				"{@atk mw} {@hit 8} to hit, triggering creature. Hit: 5 ({@dice 1d10}) piercing damage. This attack can't gain advantage or disadvantage. A creature hit by the trap has its speed reduced to 0. It can't move until it breaks free of the trap, which requires a successful DC 15 Strength check by the creature or another creature adjacent to the trap."
+			],
+			"trigger": [
+				"A creature that steps on the bear trap triggers it."
+			],
+			"countermeasures": [
+				"A successful DC 10 Wisdom ({@skill Perception}) check reveals the trap. A successful DC 10 Dexterity check using {@item thieves' tools|phb} disables it."
+			],
+			"entries": [
+				"Eine B\u00e4renfalle sieht aus wie ein eisernes Maul, das beim Betreten zuschnappt und das Bein des Tieres festh\u00e4lt. Die Falle ist mit Stacheln im Boden verankert, so dass das Opfer bewegungsunf\u00e4hig ist."
+			]
+		},
+		{
+			"name": "Collapsing Roof",
+			"source": "DMG",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Bei dieser Falle wird ein Stolperdraht verwendet, um die St\u00fctzen zum Einsturz zu bringen, die einen instabilen Teil einer Decke an Ort und Stelle halten.",
+				"Der Stolperdraht befindet sich 5 cm \u00fcber dem Boden und spannt sich zwischen zwei St\u00fctzbalken. Der DC zum Aufsp\u00fcren des Stolperdrahtes betr\u00e4gt 10. Ein erfolgreicher DC 15 Geschicklichkeits-Check mit {@item thieves' tools|phb} schaltet den Stolperdraht harmlos aus. Ein Charakter ohne {@item thieves' tools|phb} kann diesen Check mit einer beliebigen scharfen Waffe oder einem scharfen Werkzeug mit Nachteil durchf\u00fchren. Bei einer misslungenen Probe wird die Falle ausgel\u00f6st.",
+				"Jeder, der die Balken inspiziert, kann leicht feststellen, dass sie lediglich verkeilt sind. Mit einer Aktion kann ein Charakter einen Balken umsto\u00dfen, wodurch die Falle ausgel\u00f6st wird.",
+				"Die Decke \u00fcber dem Stolperdraht ist in schlechtem Zustand, und jeder, der sie sieht, kann erkennen, dass sie einsturzgef\u00e4hrdet ist.",
+				"Wenn die Falle ausgel\u00f6st wird, st\u00fcrzt die instabile Decke ein. Jede Kreatur, die sich in dem Bereich unter der instabilen Decke aufh\u00e4lt, muss einen Rettungswurf von DC 15 auf Geschicklichkeit bestehen und erleidet bei einem misslungenen Rettungswurf 22 ({@dice 4d10}) Wuchtschaden, bei einem erfolgreichen Wuchtschaden die H\u00e4lfte davon. Sobald die Falle ausgel\u00f6st wird, f\u00fcllt sich der Boden des Bereichs mit Schutt und wird zu schwierigem Gel\u00e4nde."
+			]
+		},
+		{
+			"name": "Crossbow Trap",
+			"source": "XGE",
+			"page": 113,
+			"trapHazType": "SMPL",
+			"tier": 1,
+			"threat": "dangerous",
+			"effect": [
+				"The trap makes two attacks against the triggering creature. {@atk rw} {@hit 8} to hit, two attacks; Hit: 5 ({@dice 1d10}) piercing damage on a hit. This attack can't gain advantage or disadvantage."
+			],
+			"trigger": [
+				"A creature that walks through the trip wire triggers the trap."
+			],
+			"countermeasures": [
+				"A successful DC 15 Wisdom ({@skill Perception}) check reveals the trip wire. A successful DC 15 Dexterity check using {@item thieves' tools|phb} disables the trip wire, and a check with a total of 5 or lower triggers the trap."
+			],
+			"entries": [
+				"Die Armbrustfalle ist bei Kobolden und anderen Kreaturen, die ihre H\u00f6hlen mit Fallen verteidigen, sehr beliebt. Sie besteht aus einem Stolperdraht, der \u00fcber einen Gang gespannt und mit zwei versteckten schweren Armbr\u00fcsten verbunden ist. Die Armbr\u00fcste sind so ausgerichtet, dass sie auf jeden, der den Stolperdraht st\u00f6rt, den Gang hinunterschie\u00dfen."
+			]
+		},
+		{
+			"name": "Death Fog Trap",
+			"source": "RtG",
+			"page": 19,
+			"trapHazType": "SMPL",
+			"tier": 2,
+			"threat": "dangerous",
+			"effect": [
+				"The doors slam shut and lock as a poisonous cloud (treat as a {@dc 15} {@spell cloudkill} spell) fills the room."
+			],
+			"trigger": [
+				"The burial niches are disturbed by thieves or desecrators."
+			],
+			"countermeasures": [
+				"A successful DC 15 Wisdom ({@skill Perception}) check notes arcane runes on the back of the doors and in the burial niches. A successful DC 15 Intelligence ({@skill Arcana}) check realizes that they are tied to a conjuration ward. The runes can be destroyed with dispel magic (DC 15 or cast at 5th level), which disperses the cloud."
+			],
+			"entries": [
+				"Die Knochen der Verstorbenen werden mit einem Schutzschild versehen, um Diebe auszuschlie\u00dfen."
+			]
+		},
+		{
+			"name": "Falling Net",
+			"source": "DMG",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Bei dieser Falle wird \u00fcber einen Stolperdraht ein von der Decke h\u00e4ngendes Netz ausgel\u00f6st.",
+				"Der Stolperdraht befindet sich 15 cm \u00fcber dem Boden und wird zwischen zwei S\u00e4ulen oder B\u00e4umen gespannt. Das Netz ist durch Spinnweben oder Laub verdeckt. Der DC, um den Stolperdraht und das Netz zu entdecken, betr\u00e4gt 10. Ein erfolgreicher DC 15 Geschicklichkeits-Check mit Diebeswerkzeug durchbricht den Stolperdraht harmlos. Ein Charakter, der kein Diebeswerkzeug besitzt, kann diese Pr\u00fcfung mit einer beliebigen scharfen Waffe oder einem scharfen Werkzeug mit Nachteil durchf\u00fchren. Bei einer misslungenen Probe wird die Falle ausgel\u00f6st.",
+				"Wenn die Falle ausgel\u00f6st wird, wird das Netz freigegeben und deckt einen Bereich von 10 Fu\u00df im Quadrat ab. Diejenigen, die sich in diesem Bereich aufhalten, werden unter dem Netz gefangen und {@condition restrained}, und diejenigen, die einen DC 10 St\u00e4rkeschutzwurf nicht bestehen, werden ebenfalls {@condition prone} niedergeschlagen.",
+				"Eine Kreatur kann ihre Aktion nutzen, um eine DC 10 St\u00e4rke\u00fcberpr\u00fcfung zu machen und sich selbst oder eine andere Kreatur in ihrer Reichweite bei einem Erfolg zu befreien. Das Netz hat AC 10 und 20 Trefferpunkte.",
+				"Wenn du dem Netz 5 Hiebschaden zuf\u00fcgst (AC 10), wird ein 5-Fu\u00df-Quadratmeter gro\u00dfer Teil des Netzes zerst\u00f6rt und jede darin gefangene Kreatur befreit."
+			]
+		},
+		{
+			"name": "Falling Portcullis",
+			"source": "XGE",
+			"page": 113,
+			"trapHazType": "SMPL",
+			"tier": 1,
+			"threat": "moderate",
+			"effect": [
+				"An iron portcullis drops from the ceiling, blocking an exit or a passageway."
+			],
+			"trigger": [
+				"A creature that steps on the pressure plate triggers the trap."
+			],
+			"countermeasures": [
+				"A successful DC 20 Wisdom ({@skill Perception}) check reveals the pressure plate. A successful DC 20 Dexterity check using {@item thieves' tools|phb} disables it, and a check with a total of 5 or lower triggers the trap."
+			],
+			"entries": [
+				"Manche Leute, die Kerker bauen, wie z. B. verr\u00fcckte Zauberer auf der Suche nach neuen Opfern, haben nicht die Absicht, ihren Besuchern eine einfache Flucht zu erm\u00f6glichen. Eine Fallgitterfalle kann besonders raffiniert sein, wenn sie ein Fallgitter in einiger Entfernung von der Druckplatte, die die Falle ausl\u00f6st, fallen l\u00e4sst. Obwohl sich die Falle tief im Kerker befindet, verschlie\u00dft das Fallgitter den Kerkereingang, der Hunderte von Metern entfernt ist, was bedeutet, dass die Abenteurer nicht wissen, dass sie in der Falle sitzen, bis sie sich entschlie\u00dfen, den Ausgang aufzusuchen."
+			]
+		},
+		{
+			"name": "Fiery Blast Trap",
+			"source": "XGE",
+			"page": 113,
+			"trapHazType": "SMPL",
+			"tier": 2,
+			"threat": "dangerous",
+			"effect": [
+				"A 15-foot cube of fire erupts, covering the pressure plate and the area around it. Each creature in the area must make a DC 15 Dexterity saving throw, taking 24 ({@dice 7d6}) fire damage on a failed save, or half as much damage on a successful one."
+			],
+			"trigger": [
+				"The temple of Pyremius, a god of fire, is threatened by thieves who seek to steal the fire opals displayed there by the priests in tribute to their god. A mosaic on the floor of the entryway to the inner sanctum delivers a fiery rebuke to intruders."
+			],
+			"countermeasures": [
+				"A successful DC 15 Wisdom ({@skill Perception}) check reveals the presence of ash and faint burn marks in the area affected by this trap. A successful DC 15 Intelligence ({@skill Religion}) check enables a creature to destroy the trap by defacing a key rune on the perimeter of the mosaic that is within reach; failing this check causes the trap to activate. A successful {@spell dispel magic} (DC 15) cast on the runes destroys the trap."
+			],
+			"entries": [
+				"Jeder, der auf das Mosaik tritt, l\u00e4sst Feuer ausbrechen. Diejenigen, die die heiligen Symbole des Pyremius offen tragen, l\u00f6sen diese Falle nicht aus."
+			]
+		},
+		{
+			"name": "Fire-Breathing Statue",
+			"source": "DMG",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MAG",
+			"entries": [
+				"Diese Falle wird aktiviert, wenn ein Eindringling auf eine versteckte Druckplatte tritt, die einen magischen Flammenstrahl aus einer nahe gelegenen Statue freisetzt. Die Statue kann alles M\u00f6gliche darstellen, einschlie\u00dflich eines Drachens oder eines Zauberers, der einen Zauber wirkt.",
+				"Der DC liegt bei 15, um die Druckplatte sowie schwache Brandspuren auf dem Boden und an den W\u00e4nden zu erkennen. Ein Zauber oder ein anderer Effekt, der das Vorhandensein von Magie wahrnehmen kann, wie z.B. Magie erkennen, enth\u00fcllt eine Aura von Beschw\u00f6rungsmagie um die Statue.",
+				"Die Falle wird aktiviert, wenn ein Gewicht von mehr als 20 Pfund auf die Druckplatte gelegt wird, wodurch die Statue einen 30 Fu\u00df langen Feuerkegel ausl\u00f6st. Jede Kreatur, die sich in dem Feuer befindet, muss einen Rettungswurf von DC 13 auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Rettungswurf 22 ({@dice 4d10}) Feuerschaden, bei einem erfolgreichen die H\u00e4lfte.",
+				"Das Verkeilen eines Eisenspie\u00dfes oder eines anderen Gegenstandes unter der Druckplatte verhindert, dass die Falle aktiviert wird. Ein erfolgreicher {@spell dispel magic} (DC 13) Zauber auf die Statue zerst\u00f6rt die Falle."
+			]
+		},
+		{
+			"name": "Malfunctioning Phase Transference Emitter",
+			"source": "AZfyT",
+			"page": 9,
+			"trapHazType": "CMPX",
+			"tier": 1,
+			"threat": "dangerous",
+			"trigger": [
+				"The trap has already been sprung once the power switch was thrown."
+			],
+			"initiative": 3,
+			"eActive": [
+				"The Phase Transference Emitter is overloading. Both the emitter's ray and the coil matrix are dangerous. The emitter's housing is extremely hot from the massive influx of electricity.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Phase Beam (Initiative 20)",
+							"entry": "Der Phasenstrahl schie\u00dft auf eine zuf\u00e4llige Kreatur im Raum. Der Strahl hat einen Bonus von {@hit +5} auf den Angriffswurf. Bei einem Treffer werden das Ziel und seine gesamte Ausr\u00fcstung f\u00fcr eine Minute sowohl {@condition invisible} als auch k\u00f6rperlos. Die einzige Bewegungsm\u00f6glichkeit des Ziels ist eine Fluggeschwindigkeit von 10 Fu\u00df. Das Ziel ist resistent gegen nichtmagischen Schaden und hat einen Vorteil bei Schutzw\u00fcrfen auf St\u00e4rke, Geschicklichkeit und Konstitution. Das Ziel kann durch feste Oberfl\u00e4chen und Fl\u00fcssigkeiten hindurchgehen. Das Ziel kann nicht fallen und bleibt in der Luft schweben, auch wenn es {@condition stunned} oder anderweitig {@condition incapacitated} ist. Solange der Phasenstrahl auf das Ziel einwirkt, kann es Objekte und Kreaturen, die nicht vom Phasenstrahl betroffen sind, nicht manipulieren, physisch angreifen oder mit ihnen interagieren. Das Ziel kann immer noch sprechen und zaubern."
+						},
+						{
+							"type": "item",
+							"name": "Coil Discharge (Initiative 10)",
+							"entry": "Lichtb\u00f6gen aus Elektrizit\u00e4t blitzen aus der Matrix. Jede Kreatur im Umkreis von 30 Fu\u00df um die Energiematrix muss einen Rettungswurf von DC 11 auf Geschicklichkeit machen oder 10 ({@damage 3d6}) Blitzschaden erleiden."
+						}
+					]
+				}
+			],
+			"eDynamic": [
+				"As time passes, the device becomes more erratic and eventually explodes.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Phase Beam Fires More Often",
+							"entry": "Ab seinem vierten Zug greift der Phasenstrahl sowohl auf Initiative 10 als auch auf Initiative 20 an."
+						},
+						{
+							"type": "item",
+							"name": "Room Heats Up",
+							"entry": "Die W\u00e4rme des Strahlers bringt den Raum auf unertr\u00e4gliche Temperaturen. Zu Beginn des dritten Zuges der Falle ist die Temperatur des Raumes sp\u00fcrbar h\u00f6her. Zu Beginn der sechsten Runde der Falle auf Initiative 20 m\u00fcssen alle Kreaturen einen Konstitutionsschutzwurf mit DC 10 bestehen oder eine Stufe von {@condition exhaustion} gewinnen. Kreaturen, die eine mittlere oder schwere R\u00fcstung tragen, haben bei diesem Rettungswurf einen Nachteil, und Kreaturen mit Feuerimmunit\u00e4t oder -resistenz m\u00fcssen diesen Rettungswurf nicht machen. Dieser Rettungswurf wird zu Beginn der neunten Runde der Falle auf Initiative 20 mit DC 13 wiederholt."
+						},
+						{
+							"type": "item",
+							"name": "Explosion",
+							"entry": "Zu Beginn der zehnten Runde der Falle \u00fcberl\u00e4dt sich das gesamte System und die Energiematrix explodiert, wodurch alle Personen im Raum 35 ({@damage 10d6}) Feuerschaden erleiden, die gesamte Einrichtung einen Kurzschluss erleidet und ein Azorius-Einsatzteam ausgesandt wird, um herauszufinden, was passiert ist. Die Falle ist zerst\u00f6rt, ebenso wie Delrims Aussichten, die Prism-Universit\u00e4t jemals abzuschlie\u00dfen."
+						}
+					]
+				}
+			],
+			"eConstant": [
+				"The emitter and power coil matrix are both dangerous to be near.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Coil Discharge",
+							"entry": "Jede Kreatur, die ihren Zug in einem Umkreis von 5 Fu\u00df um die Energiematrix beendet, muss einen Rettungswurf von DC 11 auf Geschicklichkeit machen oder 7 ({@damage 2d6}) Blitzschaden erleiden. Kreaturen, die eine Metallr\u00fcstung tragen, haben einen Nachteil bei diesem Rettungswurf."
+						},
+						{
+							"type": "item",
+							"name": "Emitter Heat",
+							"entry": "Der Emitter f\u00fchlt sich hei\u00df an. Jede Kreatur, die den Strahler ber\u00fchrt, erleidet 3 ({@damage 1d6}) Feuerschaden."
+						}
+					]
+				}
+			],
+			"countermeasures": [
+				"There are ways to thwart the trap's active elements and prevent the explosion from occurring.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Phase Beam",
+							"entry": "Die Charaktere k\u00f6nnen die Abschusssequenz des Strahls vorwegnehmen, das Drehgelenk sperren oder die Stromkabel, die den Emitter mit der Energiematrix verbinden, durchtrennen."
+						},
+						{
+							"type": "itemSub",
+							"name": "Intelligence (Investigation), DC 15",
+							"entry": "Als Aktion kann eine Kreatur, die den Emitter sehen kann, eine Intelligenz\u00fcberpr\u00fcfung ({@skill Investigation}) durchf\u00fchren. Ein erfolgreicher Check bedeutet, dass die Kreatur nun die Abschusssequenz des Emitters vorhersehen kann. Angriffe mit Phasenstrahlen, die auf diese Kreatur zielen, haben einen Nachteil."
+						},
+						{
+							"type": "itemSub",
+							"name": "Dexterity check using thieves' tools or Strength check, DC 15",
+							"entry": "Die Kreaturen k\u00f6nnen versuchen, das Drehgelenk des Senders zu arretieren, um den Strahl nur auf einen Punkt zu richten, so dass der Strahl leicht umgangen werden kann. Ein erfolgreicher Test bedeutet, dass der Angriff mit dem Phasenstrahl als deaktiviert gilt. Kreaturen, die dies versuchen, m\u00fcssen den Emitter ber\u00fchren und erleiden dadurch Hitzeschaden."
+						},
+						{
+							"type": "itemSub",
+							"name": "Attack",
+							"entry": "Als Aktion kann eine Kreatur eines der zehn Stromkabel durchtrennen, die mit dem Emitter verbunden sind. Jedes Stromkabel hat AC 5 und 3 Trefferpunkte. F\u00fcr je zwei durchtrennte Stromkabel (abrunden) verringert sich der Angriffsbonus des Phasenstrahls um 1. Sobald das zehnte Stromkabel durchtrennt ist, h\u00f6rt der Emitter auf zu funktionieren und der Phasenstrahl-Angriff sowie das W\u00e4rmekonstantelement des Emitters werden deaktiviert."
+						},
+						{
+							"type": "item",
+							"name": "Coil Discharge",
+							"entry": "Die Spulen k\u00f6nnen ausgeschaltet werden, indem die Magie, die ihre Energie verst\u00e4rkt, aufgel\u00f6st oder deaktiviert wird oder indem die Stromquelle abgeschaltet wird."
+						},
+						{
+							"type": "itemSub",
+							"name": "Intelligence (Arcana), DC 15",
+							"entry": "Die Magie, die die Machtmatrix verst\u00e4rkt, kann mit drei erfolgreichen Checks deaktiviert werden. Alternativ kann sie mit einem erfolgreichen Wurf von {@spell dispel magic} (DC 13), der auf die Spulen zielt, deaktiviert werden. Wenn die Spulen deaktiviert werden, werden auch die Entladungselemente der Spulen und das dynamische Element der Explosion deaktiviert. Der Emitter ist immer noch aktiv und erh\u00e4lt etwas Energie von der Matrix. Kreaturen, die dies versuchen, unterliegen dem konstanten Element der Spulenentladung, wenn sie ihren Zug neben der Energiematrix beenden."
+						},
+						{
+							"type": "itemSub",
+							"name": "Shut off the main power cable",
+							"entry": "An der Wand in der N\u00e4he der Energiematrix befindet sich ein mit Mizzium verst\u00e4rktes Metallgeh\u00e4use, das den Hauptschalter f\u00fcr die Matrix enth\u00e4lt. Er kann mit einer erfolgreichen DC 10 Weisheitspr\u00fcfung ({@skill Perception}) entdeckt werden, wenn jemand nach etwas anderem Bemerkenswertem im Labor sucht. Sie ist sicher verschlossen und erfordert zwei erfolgreiche DC 20 Geschicklichkeits\u00fcberpr\u00fcfungen mit {@item thieves' tools|phb}, zwei erfolgreiche DC 16 Intelligenz ({@skill Arcana}) \u00dcberpr\u00fcfungen oder 20 Punkte Schaden mit einer magischen Waffe, um sie aufzubrechen. Nach dem \u00d6ffnen kann ein Schalter bet\u00e4tigt werden, um die Matrix abzuschalten und alle Elemente der Falle zu deaktivieren."
+						}
+					]
+				}
+			],
+			"entries": [
+				"Der gest\u00f6rte Phasen\u00fcbergangsemitter besteht aus zwei Hauptkomponenten. Die Energiebatterie ist eine 10 Fu\u00df lange, kreisf\u00f6rmige Matrix aus Leitspulen, die \u00fcber ein sicheres Stromkabel direkt mit einem Generator verbunden ist. Die Spulen haben zehn Knotenpunkte, die mit einem gro\u00dfen, drei Meter hohen zylindrischen Stahlsender verbunden sind, der an einem Drehgelenk befestigt ist."
+			]
+		},
+		{
+			"name": "Net Trap",
+			"source": "XGE",
+			"page": 113,
+			"trapHazType": "SMPL",
+			"tier": 1,
+			"threat": "dangerous",
+			"effect": [
+				"A net covering a 10-foot-by-10-foot area centered on the trip wire falls to the floor as a bell rings. Any creature fully within this area must succeed on a DC 15 Dexterity saving throw or be {@condition restrained}. A creature can use its action to make a DC 10 Strength check to try to free itself or another creature in the net. Dealing 5 slashing damage to the net (AC 10, 20hp) also frees a creature without harming the creature."
+			],
+			"trigger": [
+				"A trip wire strung across a hallway is rigged to a large net. If the trip wire is broken, the net falls on intruders. An iron bell is also rigged to the trip wire. It rings when the trap activates, alerting nearby guards."
+			],
+			"countermeasures": [
+				"A successful DC 15 Wisdom ({@skill Perception}) check reveals the trip wire and the net. A successful DC 15 Dexterity check using {@item thieves' tools|phb} disables the trip wire without causing the net to drop or the bell to ring; failing the check causes the trap to activate."
+			],
+			"entries": [
+				"Goblins mit ihrer Neigung, ihre Feinde zu versklaven, bevorzugen Fallen, die Eindringlinge unversehrt lassen, damit die Opfer in den Minen oder anderswo eingesetzt werden k\u00f6nnen."
+			]
+		},
+		{
+			"name": "Path of Blades",
+			"source": "XGE",
+			"page": 118,
+			"trapHazType": "CMPX",
+			"tier": 1,
+			"threat": "dangerous",
+			"trigger": [
+				"This trap activates as soon as a non-undead creature enters the hallway, and it remains active while any non-undead creature is within the hall."
+			],
+			"initiative": 3,
+			"eActive": [
+				"The Path of Blades includes a set of whirling blades along the first 80 feet of the trap, crushing pillars that slam down from the ceiling to the floor before rising back up to the ceiling in the next 50 feet, and a rune of fear in its final 30 feet.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Whirling Blades (Initiative 20)",
+							"entry": "Die Klingen greifen jede Kreatur in den ersten 80 Fu\u00df des Ganges an, mit einem Bonus von +5 auf den Angriffswurf und einem Hiebschaden von 11 ({@dice 2d10}) bei einem Treffer."
+						},
+						{
+							"type": "item",
+							"name": "Crushing Pillars (Initiative 10)",
+							"entry": "Jede Kreatur, die sich in dem 50 Fu\u00df langen Bereich jenseits der ersten 80 Fu\u00df des Ganges befindet, muss einen Rettungswurf von DC 15 in Geschicklichkeit ablegen. Bei einem misslungenen Schutzwurf erleidet die Kreatur 11 ({@dice 2d10}) Wuchtschaden und wird umgeworfen {@condition prone}. Bei einem erfolgreichen Schutzwurf erleidet die Kreatur halb so viel Schaden und wird nicht umgeworfen {@condition prone}."
+						},
+						{
+							"type": "item",
+							"name": "Rune of Fear (Initiative 10)",
+							"entry": "Jede Kreatur in dem 30 Fu\u00df langen Bereich jenseits der Zermalmenden S\u00e4ulen muss einen Weisheitswurf von DC 15 machen. Bei einem misslungenen Rettungswurf wird die Kreatur durch die Rune zu {@condition frightened} und muss sofort ihre Reaktion nutzen, um ihre Geschwindigkeit in Richtung der S\u00e4ulen zu erh\u00f6hen. Die {@condition frightened} Kreatur kann sich nicht n\u00e4her an das andere Ende des Ganges heranbewegen, bis sie ihre Aktion nutzt, um einen DC 15 Weisheitswurf zu machen, der bei einem Erfolg den {@condition frightened} Zustand f\u00fcr sie selbst beendet."
+						}
+					]
+				}
+			],
+			"eDynamic": [
+				"The blades and the rune become more dangerous the longer the trap remains active.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Blades Accelerate",
+							"entry": "Die Klingen bewegen sich mit zunehmender Geschwindigkeit und werden erst langsamer, wenn sie ein Ziel treffen. Jedes Mal, wenn die Klingen einen Angriff verfehlen, wird ihr n\u00e4chster Angriff schwieriger zu vermeiden. Nach jedem Fehlschlag erh\u00f6ht sich der Angriffsbonus der Klingen um 2 und ihr Schaden um 3 ({@dice 1d6}). Diese Vorteile gelten so lange, bis die Klingen ein Ziel treffen, danach sind die Werte wieder normal."
+						},
+						{
+							"type": "item",
+							"name": "Rune's Defense",
+							"entry": "Durch die Manipulation der Rune der Angst wird die Kraft der Falle erh\u00f6ht. Jede erfolgreiche Probe auf einen Versuch, die Rune zu deaktivieren, erh\u00f6ht den Schaden der Klingen und der Zermalmungss\u00e4ulen um 5 ({@dice 1d10}) und erh\u00f6ht den Schutzwurf-DC der Rune um 1."
+						}
+					]
+				}
+			],
+			"eConstant": [
+				"The Whirling Blades and the Rune of Fear affect each creature that ends its turn in an area affected by these elements.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Whirling Blades",
+							"entry": "Jede Kreatur, die ihren Zug im Bereich der Klingen beendet, wird von einem Angriff getroffen: +5 Angriffsbonus; 5 (1d10) Hiebschaden bei einem Treffer."
+						},
+						{
+							"type": "item",
+							"name": "Rune of Fear",
+							"entry": "Jede Kreatur, die ihren Zug innerhalb von 30 Fu\u00df vom Ende des Korridors beendet, muss einen Rettungswurf gegen den Effekt der Rune der Angst machen."
+						}
+					]
+				}
+			],
+			"countermeasures": [
+				"Each of the trap's active elements can be thwarted by particular countermeasures.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Whirling Blades",
+							"entry": "Die Charaktere k\u00f6nnen die Klingen zertr\u00fcmmern, ihre Bestandteile besch\u00e4digen oder erkennen, wie sie ihnen ausweichen k\u00f6nnen. Die Klingen sind deaktiviert, wenn ihr Angriffsbonus auf -8 reduziert ist. M\u00f6glichkeiten, diesen Wert zu verringern, werden unten beschrieben."
+						},
+						{
+							"type": "itemSub",
+							"name": "Intelligence (Investigation), DC 15",
+							"entry": "Als Aktion kann eine Kreatur, die die Klingen sehen kann, eine Intelligenz\u00fcberpr\u00fcfung ({@skill Investigation}) durchf\u00fchren. Ein erfolgreicher Check bedeutet, dass der Charakter gelernt hat, die Bewegung der Klingen zu antizipieren, und dass die Angriffe der Klingen gegen die Kreatur einen Nachteil haben, solange sie nicht {@condition incapacitated} ist."
+						},
+						{
+							"type": "itemSub",
+							"name": "Attack",
+							"entry": "Eine Kreatur in der N\u00e4he kann einen Angriff vorbereiten, um eine der Klingen zu treffen, w\u00e4hrend sie vorbeizieht. Die Klinge erh\u00e4lt einen Vorteil bei ihrem Angriff gegen die Kreatur. Die Kreatur greift dann an. Jede Klinge hat AC 15 und 15 Trefferpunkte. Die Zerst\u00f6rung einer Klinge verringert den Angriffsbonus der Wirbelnden Klingen um 2."
+						},
+						{
+							"type": "itemSub",
+							"name": "Dexterity check using thieves' tools, DC 15",
+							"entry": "Kreaturen k\u00f6nnen {@item thieves' tools|phb} in dem von den Klingen angegriffenen Bereich verwenden, um ihren Mechanismus zu durchkreuzen. Ein erfolgreicher Check reduziert den Angriffsbonus der Wirbelnden Klingen um 2."
+						},
+						{
+							"type": "item",
+							"name": "Crushing Pillars",
+							"entry": "Die S\u00e4ulen sind nicht anf\u00e4llig f\u00fcr Gegenma\u00dfnahmen."
+						},
+						{
+							"type": "item",
+							"name": "Rune of Fear",
+							"entry": "Die Rune kann mit drei erfolgreichen DC 15 Intelligenz ({@skill Arcana}) \u00dcberpr\u00fcfungen deaktiviert werden. Jede Pr\u00fcfung erfordert eine Aktion. Eine Kreatur muss sich am Ende des Ganges befinden, um die Pr\u00fcfung zu versuchen, und nur eine Kreatur kann gleichzeitig an dieser Aufgabe arbeiten. Sobald eine Kreatur eine Pr\u00fcfung zu diesem Zweck versucht, kann kein anderer Charakter dies bis zum Ende des n\u00e4chsten Zuges dieser Kreatur tun. Alternativ kann die Rune mit drei erfolgreichen Zaubern von {@spell dispel magic} (DC 13), die auf die Rune gerichtet sind, deaktiviert werden."
+						}
+					]
+				}
+			],
+			"entries": [
+				"Das Grab von K\u00f6nig Alexander und K\u00f6nigin Zenobia liegt versteckt in einer Pyramide, die den Ort der verlorenen Stadt Cynidicea markiert. Der Eingang zu ihrem Grab ist ein langer, mit Fallen gespickter Gang, der nur durch raffiniert versteckte Geheimt\u00fcren zug\u00e4nglich ist. Der Korridor ist 20 Fu\u00df breit und 160 Fu\u00df lang. Er ist gr\u00f6\u00dftenteils frei. Nach 80 Fu\u00df ist der Boden gebrochen und rissig und wird bis zur 130-Fu\u00df-Marke zu einem schwierigen Terrain."
+			]
+		},
+		{
+			"name": "Pit Trap",
+			"source": "XGE",
+			"page": 114,
+			"trapHazType": "SMPL",
+			"tier": 1,
+			"threat": "moderate",
+			"effect": [
+				"The triggering creature must make a DC 10 Dexterity saving throw. On a successful save, the creature catches itself on the pit's edge or instinctively steps back. On a failed save, the creature falls into the pit and takes 3 ({@dice 1d6}) bludgeoning damage from the fall."
+			],
+			"trigger": [
+				"Anyone who steps on the canvas might fall into the pit."
+			],
+			"countermeasures": [
+				"A successful DC 10 Wisdom ({@skill Perception}) check reveals the presence of the canvas and the 1-foot-wide ledge around the edges of the pit where it is safe to travel."
+			],
+			"entries": [
+				"Die einfachste aller Fallen besteht aus einem 10 Fu\u00df tiefen Loch im Boden, das durch eine zerfledderte Plane verdeckt ist, die mit Bl\u00e4ttern und Schmutz bedeckt ist, um wie fester Boden auszusehen. Diese Art von Falle ist n\u00fctzlich, um den Eingang zu einer Monsterh\u00f6hle zu blockieren, und hat in der Regel schmale Vorspr\u00fcnge an den Seiten, damit man sich um sie herum bewegen kann."
+			]
+		},
+		{
+			"name": "Pits",
+			"source": "DMG",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Simple Pit",
+					"entries": [
+						"Eine einfache Grubenfalle ist ein in den Boden gegrabenes Loch. Das Loch wird mit einem gro\u00dfen Tuch abgedeckt, das am Rand der Grube verankert und mit Schmutz und Schutt getarnt wird.",
+						"Der DC zum Erkennen der Grube betr\u00e4gt 10. Jeder, der auf das Tuch tritt, f\u00e4llt hindurch und zieht das Tuch in die Grube, wobei er Schaden entsprechend der Tiefe der Grube erleidet (normalerweise 10 Fu\u00df, aber manche Gruben sind tiefer)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hidden Pit",
+					"entries": [
+						"Eine erfolgreiche DC 15 Weisheitspr\u00fcfung ({@skill Perception}) stellt fest, dass der Bereich des Bodens, der die Grube abdeckt, nicht betreten wird. Ein erfolgreicher DC 15 Intelligenz ({@skill Investigation}) Check ist notwendig, um zu best\u00e4tigen, dass der eingeschlossene Bodenabschnitt tats\u00e4chlich die Abdeckung einer Grube ist.",
+						"Wenn eine Kreatur auf den Deckel tritt, schwingt dieser wie eine Fallt\u00fcr auf, so dass der Eindringling in die darunter liegende Grube st\u00fcrzt. Die Grube ist normalerweise 10 oder 20 Fu\u00df tief, kann aber auch tiefer sein.",
+						"Sobald die Grubenfalle entdeckt wird, kann ein Eisenspie\u00df oder ein \u00e4hnlicher Gegenstand zwischen dem Deckel der Grube und dem umliegenden Boden verkeilt werden, so dass sich der Deckel nicht mehr \u00f6ffnen l\u00e4sst und die Grube sicher durchquert werden kann. Der Deckel kann auch mit dem Zauber {@spell arcane lock} oder \u00e4hnlicher Magie geschlossen gehalten werden."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Locking Pit",
+					"entries": [
+						"Diese Falle ist identisch mit einer versteckten Grubenfalle, mit einer wichtigen Ausnahme: Die Fallt\u00fcr, die die Grube abdeckt, ist federbelastet. Nachdem eine Kreatur in die Grube gefallen ist, schnappt der Deckel zu und schlie\u00dft das Opfer ein.",
+						"Ein erfolgreicher DC-20-St\u00e4rkecheck ist notwendig, um den Deckel aufzuhebeln. Der Deckel kann auch aufgeschlagen werden (ermittle die Statistik des Deckels anhand der Richtlinien in Kapitel 8). Ein Charakter in der Grube kann auch versuchen, den Federmechanismus von innen mit einem DC 15 Geschicklichkeits-Check unter Verwendung von Diebeswerkzeugen zu deaktivieren, vorausgesetzt, der Mechanismus ist erreichbar und der Charakter kann sehen.",
+						"In manchen F\u00e4llen wird die Grube durch einen Mechanismus (meist hinter einer Geheimt\u00fcr in der N\u00e4he versteckt) ge\u00f6ffnet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spiked Pit",
+					"entries": [
+						"Diese Grubenfalle ist eine einfache, versteckte oder verschlie\u00dfbare Grubenfalle mit gesch\u00e4rften Holz- oder Eisendornen am Boden. Eine Kreatur, die in die Grube f\u00e4llt, erleidet 11 ({@dice 2d10}) Stich-Schaden durch die Stacheln, zus\u00e4tzlich zu dem Fallschaden. Noch fiesere Versionen haben Gift auf die Stacheln geschmiert. In diesem Fall muss jeder, der von den Stacheln Stichschaden erleidet, zus\u00e4tzlich einen DC 13 Konstitutionsschutzwurf ablegen. Bei einem misslungenen Schutzwurf erleidet er 22 ({@dice 4d10}) Giftschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+					]
+				}
+			]
+		},
+		{
+			"name": "Poison Darts",
+			"source": "DMG",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Wenn eine Kreatur auf eine versteckte Druckplatte tritt, schie\u00dfen Giftpfeile aus federbelasteten oder unter Druck stehenden R\u00f6hren, die geschickt in die umgebenden W\u00e4nde eingelassen sind. Ein Gebiet kann mehrere Druckplatten umfassen, von denen jede mit einem eigenen Satz Pfeile ausgestattet ist.",
+				"Die winzigen L\u00f6cher in den W\u00e4nden sind durch Staub und Spinnweben verdeckt oder geschickt zwischen Flachreliefs, Wandmalereien oder Fresken versteckt, die die W\u00e4nde schm\u00fccken. Der DC, um sie zu entdecken, betr\u00e4gt 15. Mit einem erfolgreichen DC 15 Intelligenz ({@skill Investigation}) kann ein Charakter das Vorhandensein der Druckplatte aus den Unterschieden zwischen dem M\u00f6rtel und dem Stein, mit dem sie hergestellt wurde, und dem umgebenden Boden ableiten. Das Verkeilen eines Eisenspie\u00dfes oder eines anderen Gegenstandes unter der Druckplatte verhindert, dass die Falle aktiviert wird. Das Ausstopfen der L\u00f6cher mit Stoff oder Wachs verhindert, dass die darin enthaltenen Pfeile abgeschossen werden k\u00f6nnen.",
+				"Die Falle wird aktiviert, wenn ein Gewicht von mehr als 20 Pfund auf die Druckplatte gelegt wird und vier Pfeile freigesetzt werden. Jeder Pfeil f\u00fchrt einen Fernkampfangriff mit einem Bonus von +8 gegen ein zuf\u00e4lliges Ziel im Umkreis von 10 Fu\u00df um die Druckplatte aus (die Sicht ist f\u00fcr diesen Angriffswurf irrelevant). (Ein getroffenes Ziel erleidet 2 ({@dice 1d4}) Stichschaden und muss einen Konstitutionsschutzwurf von DC 15 bestehen. Bei einem misslungenen Schutzwurf erleidet es 11 ({@dice 2d10}) Giftschaden, bei einem erfolgreichen Schutzwurf die H\u00e4lfte des Schadens."
+			]
+		},
+		{
+			"name": "Poison Needle",
+			"source": "DMG",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Eine vergiftete Nadel ist im Schloss einer Schatztruhe oder in einem anderen Gegenstand versteckt, den eine Kreatur \u00f6ffnen k\u00f6nnte. Wird die Truhe ohne den richtigen Schl\u00fcssel ge\u00f6ffnet, springt die Nadel heraus und gibt eine Dosis Gift ab.",
+				"Wenn die Falle ausgel\u00f6st wird, ragt die Nadel 3 Zoll gerade aus dem Schloss heraus. Eine Kreatur in Reichweite erleidet 1 Stichschaden und 11 ({@dice 2d10}) Giftschaden und muss einen Konstitutionsschutzwurf von DC 15 bestehen oder 1 Stunde lang {@condition poisoned} sein.",
+				"Eine erfolgreiche DC 20 Intelligenz\u00fcberpr\u00fcfung ({@skill Investigation}) erlaubt es einem Charakter, das Vorhandensein der Falle aus den Ver\u00e4nderungen zu schlie\u00dfen, die am Schloss vorgenommen wurden, um die Nadel unterzubringen.",
+				"Eine erfolgreiche DC 15 Geschicklichkeits\u00fcberpr\u00fcfung mit {@item thieves' tools|phb} entsch\u00e4rft die Falle und entfernt die Nadel aus dem Schloss. Ein erfolgloser Versuch, das Schloss zu knacken, l\u00f6st die Falle aus."
+			]
+		},
+		{
+			"name": "Poison Needle Trap",
+			"source": "XGE",
+			"page": 114,
+			"trapHazType": "SMPL",
+			"tier": 1,
+			"threat": "deadly",
+			"effect": [
+				"The triggering creature must make a DC 20 Constitution saving throw. On a failed save, the creature takes 14 ({@dice 4d6}) poison damage and is {@condition poisoned} for 10 minutes. While {@condition poisoned} in this way, the creature is {@condition paralyzed}. On a successful save, the creature takes half as much damage and isn't {@condition poisoned}."
+			],
+			"trigger": [
+				"Anyone attempting to pick or open the lock triggers the trap."
+			],
+			"countermeasures": [
+				"A successful DC 20 Wisdom ({@skill Perception}) check reveals the needle, but only if a character inspects the lock. A successful DC 20 Dexterity check using {@item thieves' tools|phb} disables the needle, and a check with a total of 10 or lower triggers the trap."
+			],
+			"entries": [
+				"Eine winzige, vergiftete Nadel, die in einem Schloss versteckt ist, ist ein gutes Mittel, um Diebe von der Pl\u00fcnderung eines Hortes abzuhalten. Eine solche Falle wird normalerweise in einer Truhe oder in der T\u00fcr zu einer Schatzkammer angebracht."
+			]
+		},
+		{
+			"name": "Poisoned Tempest",
+			"source": "XGE",
+			"page": 120,
+			"trapHazType": "CMPX",
+			"tier": 3,
+			"threat": "deadly",
+			"trigger": [
+				"This trap activates when a ruby is pried from one of the statues. Each statue's mouth slides open, revealing a 1-foot-wide pipe that runs down its throat."
+			],
+			"initiative": 3,
+			"eActive": [
+				"The trap fills the room with poison and other deadly effects.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Locked Doors (Initiative 20)",
+							"entry": "Die vier T\u00fcren zu diesem Raum fallen zu und werden durch Magie verriegelt. Dieser Effekt wird nur einmal aktiviert, n\u00e4mlich dann, wenn die Falle zum ersten Mal ausgel\u00f6st wird."
+						},
+						{
+							"type": "item",
+							"name": "Poison Gas (Initiative 20)",
+							"entry": "Giftgas flutet den Raum. Jede Kreatur im Raum muss einen Konstitutionsschutzwurf von DC 20 ablegen und erleidet bei einem misslungenen Schutzwurf 33 ({@dice 6d10}) Giftschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+						},
+						{
+							"type": "item",
+							"name": "Tempest (Initiative 10)",
+							"entries": [
+								"Luft und Gas str\u00f6men aus der Falle. Wirf einen W\u00fcrfel und sieh in der folgenden Tabelle nach.",
+								{
+									"type": "table",
+									"caption": "Tempest Effects",
+									"colLabels": [
+										"d6",
+										"Effect"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1",
+											"Halluzinogenes Gas verwirrt den Geist und die Sinne. Alle Intelligenz- und Weisheitsproben, die in dem Raum gemacht werden, haben einen Nachteil, bis das Element Sturm wieder aktiviert wird."
+										],
+										[
+											"2",
+											"Explosives Gas f\u00fcllt den Raum. Wenn jemand eine offene Flamme in die Hand nimmt, verursacht dies eine Explosion. Alle Kreaturen in dem Bereich m\u00fcssen einen Rettungswurf mit DC 20 Geschicklichkeit ablegen und erleiden bei einem misslungenen Rettungswurf 22 ({@dice 4d10}) Feuerschaden, bei einem erfolgreichen Versuch halb so viel Schaden. Die Flamme wird dann gel\u00f6scht."
+										],
+										[
+											"3",
+											"Schw\u00e4cher werdendes Gas f\u00fcllt den Raum. Alle St\u00e4rke- und Geschicklichkeitspr\u00fcfungen, die in diesem Raum durchgef\u00fchrt werden, haben einen Nachteil, bis sich das Element Sturm wieder aktiviert."
+										],
+										[
+											"4",
+											"Buffende Winde zwingen jede Kreatur im Raum dazu, einen DC 20 St\u00e4rkewurf zu bestehen oder um {@condition prone} geschw\u00e4cht zu werden."
+										],
+										[
+											"5",
+											"Rauch f\u00fcllt den Raum. Die Sichtweite wird auf 1 Fu\u00df reduziert, bis das Element Sturm das n\u00e4chste Mal aktiviert wird."
+										],
+										[
+											"6",
+											"Gift \u00fcberflutet den Raum und zwingt die Kreaturen zu Rettungsw\u00fcrfen wie bei dem Element Giftgas."
+										]
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"eDynamic": [
+				"The longer the poison gas remains in the room, the more lethal it becomes.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Increased Potency",
+							"entry": "Der Schaden des Elements Giftgas erh\u00f6ht sich jede Runde nach seiner Aktivierung um 11 ({@dice 2d10}), bis zu einem Maximum von 55 ({@dice 10d10})."
+						}
+					]
+				}
+			],
+			"countermeasures": [
+				"There are a few ways that the trap can be overcome.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Open the Doors",
+							"entry": "Der schnellste Weg, die Falle zu umgehen, ist, die T\u00fcren zu \u00f6ffnen, aber sie sind mit Magie gesichert. Um die T\u00fcren zu \u00f6ffnen, muss ein Charakter zun\u00e4chst eine DC 20 Weisheitsprobe ({@skill Perception}) ablegen, um den Schlie\u00dfmechanismus zu finden. Ein erfolgreicher DC 20 Intelligenz ({@skill Arcana}) Check ist dann erforderlich, um die Sph\u00e4re der Kraft, die das Schloss umgibt, zu deaktivieren ({@spell dispel magic} ist dagegen unwirksam). Ein erfolgreicher DC 20 Geschicklichkeits-Check mit Diebeswerkzeug knackt das Schloss. Schlie\u00dflich ist ein erfolgreicher DC 20 St\u00e4rke ({@skill Athletics}) Check n\u00f6tig, um die T\u00fcr aufzudr\u00fccken. Jede Pr\u00fcfung erfordert eine Aktion."
+						},
+						{
+							"type": "item",
+							"name": "Disable the Statues",
+							"entry": "Eine Statue kann au\u00dfer Gefecht gesetzt werden, indem der Gasfluss aus ihrem Mund blockiert wird. Es ist keine gute Idee, eine Statue schwer zu besch\u00e4digen, denn dadurch bleiben die Gas\u00f6ffnungen offen. Eine Statue auf 0 Trefferpunkte zu reduzieren (AC 17; 20 PS; Resistenz gegen Feuer, Stich- und Hiebschaden; immun gegen Gift und psychischen Schaden) oder einen erfolgreichen DC-20-St\u00e4rkecheck zu machen, um sie zu zerbrechen, zerbricht die Statue und erh\u00f6ht den Giftgasschaden um 5 ({@dice 1d10}). Eine erfolgreiche DC 20-Geschicklichkeitsprobe mit Diebeswerkzeug oder eine erfolgreiche DC 15-St\u00e4rkeprobe, um die Statue mit einem Mantel oder einem \u00e4hnlichen Gegenstand zu verdecken, verringert den Giftschaden um 5 ({@dice 1d10}). Sobald ein Charakter die Pr\u00fcfung bestanden hat, muss jemand neben der Statue bleiben, um sie zu blockieren. Wenn alle vier Statuen auf diese Weise blockiert sind, wird die Falle deaktiviert."
+						}
+					]
+				}
+			],
+			"entries": [
+				"Diese teuflische Falle wurde gebaut, um Eindringlinge auszuschalten, die in einen Yuan-ti-Tempel eindringen. Bei der Falle handelt es sich um einen Raum von 60 Fu\u00df Seitenl\u00e4nge mit 5 Fu\u00df breiten Steint\u00fcren in der Mitte jeder Wand. In jeder Ecke des Raums steht eine 10 Fu\u00df hohe Statue einer gro\u00dfen Schlange, die sich zusammengerollt hat und zum Angriff bereit ist. Die Augen in jeder Statue sind Rubine im Wert von 200 gp pro St\u00fcck."
+			]
+		},
+		{
+			"name": "Rolling Sphere",
+			"source": "DMG",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Wenn 20 oder mehr Pfund Druck auf die Druckplatte dieser Falle ausge\u00fcbt werden, \u00f6ffnet sich eine versteckte Fallt\u00fcr in der Decke und gibt eine rollende Kugel aus massivem Stein mit einem Durchmesser von 10 Fu\u00df frei.",
+				"Mit einer erfolgreichen DC 15 Weisheitspr\u00fcfung ({@skill Perception}) kann ein Charakter die Fallt\u00fcr und die Druckplatte entdecken.",
+				"Eine Durchsuchung des Bodens mit einer erfolgreichen DC 15 Intelligenzpr\u00fcfung ({@skill Investigation}) offenbart Variationen im M\u00f6rtel und Stein, die das Vorhandensein der Druckplatte verraten. Die gleiche Pr\u00fcfung, die bei der Inspektion der Decke durchgef\u00fchrt wird, zeigt Variationen im Mauerwerk, die die Fallt\u00fcr verraten. Das Verkeilen eines Eisenspie\u00dfes oder eines anderen Gegenstandes unter der Druckplatte verhindert, dass die Falle aktiviert wird.",
+				"Um die Sph\u00e4re zu aktivieren, m\u00fcssen alle anwesenden Kreaturen die Initiative w\u00fcrfeln. Die Kugel w\u00fcrfelt die Initiative mit einem Bonus von {@hit +8}. Wenn sie an der Reihe ist, bewegt sie sich 60 Fu\u00df in einer geraden Linie.",
+				"Die Kugel kann sich durch die R\u00e4ume von Kreaturen bewegen, und Kreaturen k\u00f6nnen sich durch ihren Raum bewegen, wobei sie ihn wie schwieriges Terrain behandeln. Immer wenn die Kugel den Raum einer Kreatur betritt oder eine Kreatur ihren Raum betritt, w\u00e4hrend sie rollt, muss diese Kreatur einen Rettungswurf von DC 15 auf Geschicklichkeit bestehen oder 55 ({@dice 10d10}) Wuchtschaden erleiden und umgesto\u00dfen werden {@condition prone}.",
+				"Die Kugel bleibt stehen, wenn sie auf eine Wand oder ein \u00e4hnliches Hindernis trifft. Sie kann nicht um Ecken gehen, aber clevere Kerkerbauer bauen sanfte, kurvige Kurven in nahegelegene Passagen ein, die es der Kugel erm\u00f6glichen, sich weiter zu bewegen.",
+				"Als Aktion kann eine Kreatur im Umkreis von 5 Fu\u00df um die Sph\u00e4re versuchen, sie mit einer St\u00e4rkepr\u00fcfung von DC 20 zu verlangsamen. Bei einem erfolgreichen Check wird die Geschwindigkeit der Kugel um 15 Fu\u00df reduziert. Wenn die Geschwindigkeit der Kugel auf 0 sinkt, h\u00f6rt sie auf, sich zu bewegen und stellt keine Bedrohung mehr dar."
+			]
+		},
+		{
+			"name": "Scything Blade Trap",
+			"source": "XGE",
+			"page": 114,
+			"trapHazType": "SMPL",
+			"tier": 2,
+			"threat": "dangerous",
+			"effect": [
+				"Each Medium or larger creature in a 5-foot-wide, 20-foot-long area must make a DC 15 Dexterity saving throw, taking 14 ({@dice 4d6}) slashing damage on a failed save, or half as much damage on a successful one."
+			],
+			"trigger": [
+				"When the lever is pulled, the trap activates."
+			],
+			"countermeasures": [
+				"The lever isn't hidden. A successful DC 15 Wisdom ({@skill Perception}) check involving the surfaces in the trap's area of effect reveals scrape marks and bloodstains on the walls and floor. A successful DC 15 Dexterity check using {@item thieves' tools|phb} disables the lever."
+			],
+			"entries": [
+				"Diese Falle verwendet bewegliche Klingen, die durch eine Kammer nach unten fegen und jeden in der N\u00e4he bedrohen. Normalerweise wird eine Sensenklingenfalle durch Bet\u00e4tigung eines Hebels oder einer anderen einfachen Vorrichtung aktiviert. Kobolde m\u00f6gen diese Art von Fallen besonders, da sie gr\u00f6\u00dfere Kreaturen ausschalten k\u00f6nnen."
+			]
+		},
+		{
+			"name": "Sleep of Ages Trap",
+			"source": "XGE",
+			"page": 114,
+			"trapHazType": "SMPL",
+			"tier": 3,
+			"threat": "deadly",
+			"effect": [
+				"When activated, this trap casts a {@spell sleep} spell centered on the pressure plate, using a 9th-level spell slot."
+			],
+			"trigger": [
+				"Stepping on the pressure plate triggers this trap."
+			],
+			"countermeasures": [
+				"A successful DC 20 Wisdom ({@skill Perception}) check reveals the pressure plate. A successful DC 20 Intelligence ({@skill Arcana}) check made within 5 feet of the pressure plate disables the trap, and a check with a total of 10 or lower triggers it. A successful {@spell dispel magic} (DC 19) cast on the pressure plate destroys the trap."
+			],
+			"entries": [
+				"Wenn eine Falle aus dem Schlaf der Zeitalter aktiviert wird, entfesselt eine Druckplatte einen Zauber, der Eindringlinge in einen tiefen Schlaf zu versetzen droht. Die W\u00e4chter des Kerkers k\u00f6nnen sich dann leichter der Schl\u00e4fer entledigen."
+			]
+		},
+		{
+			"name": "Sphere of Annihilation",
+			"source": "DMG",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MAG",
+			"entries": [
+				"Magische, undurchdringliche Dunkelheit f\u00fcllt den klaffenden Mund eines in die Wand gehauenen Steingesichts. Der Mund hat einen Durchmesser von 2 Fu\u00df und ist ungef\u00e4hr kreisf\u00f6rmig. Aus ihm dringt kein Ton, kein Licht kann sein Inneres erhellen, und jede Materie, die in ihn eindringt, wird sofort vernichtet.",
+				"Eine erfolgreiche DC 20 Intelligenzpr\u00fcfung ({@skill Arcana}) offenbart, dass der Mund eine Sph\u00e4re der Vernichtung enth\u00e4lt, die nicht kontrolliert oder bewegt werden kann. Ansonsten ist sie identisch mit einem normalen {@item sphere of annihilation}, wie in Kapitel 7, \"Sch\u00e4tze\", beschrieben. Einige Versionen der Falle enthalten eine Verzauberung, die auf das steinerne Gesicht gelegt wird, so dass bestimmte Kreaturen einen \u00fcberw\u00e4ltigenden Drang versp\u00fcren, sich ihm zu n\u00e4hern und in seinen Mund zu kriechen. Dieser Effekt entspricht ansonsten dem Sympathie-Aspekt des {@spell antipathy/sympathy}-Zaubers.",
+				"Ein erfolgreicher {@spell dispel magic} (DC 18) beseitigt diese Verzauberung."
+			]
+		},
+		{
+			"name": "Sphere of Crushing Doom",
+			"source": "XGE",
+			"page": 119,
+			"trapHazType": "CMPX",
+			"tier": 2,
+			"threat": "deadly",
+			"trigger": [
+				"This trap activates as soon as the door leading to the jester's coffin is opened. A magic portal opens at the northern end of the hallway and disgorges an enormous steel sphere, which hurtles down the slope. When it reaches the bottom of the slope, a second portal briefly appears and teleports the sphere back to the top of the slope to begin the process again."
+			],
+			"initiative": 1,
+			"initiativeNote": "but see the dynamic element below",
+			"eActive": [
+				"Although the trap is complex in nature, it has a single active element. That's all it needs.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Sphere of Crushing Doom (Initiative 10)",
+							"entry": "Das aktive Element der Falle ist eine Stahlkugel, die fast die gesamte Breite des Ganges ausf\u00fcllt und in ihrem Zug bis zum unteren Ende des Abhangs rollt. Jede Kreatur, die sich im Weg der Kugel befindet, muss einen DC-20-St\u00e4rkewurf ablegen. Bei einem misslungenen Schutzwurf erleidet die Kreatur 22 ({@dice 4d10}) Wuchtschaden und wird umgeworfen {@condition prone}. Bei einem erfolgreichen Schutzwurf erleidet die Kreatur halb so viel Schaden und wird nicht umgeworfen {@condition prone}. Objekte, die die Kugel blockieren, wie z.B. eine beschworene Wand, erleiden durch den Aufprall maximalen Schaden."
+						}
+					]
+				}
+			],
+			"eDynamic": [
+				"The longer it rolls, the more lethal the sphere becomes.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Speed Kills",
+							"entry": "Nach ihrem Zug gewinnt die Kugel an Geschwindigkeit, was durch eine Erh\u00f6hung ihres Schadens um 11 ({@dice 2d10}) dargestellt wird. Solange ihr Schaden 55 ({@dice 10d10}) oder mehr betr\u00e4gt, agiert sie auf Initiative Z\u00e4hlung 20 und 10."
+						}
+					]
+				}
+			],
+			"countermeasures": [
+				"The trap can be neutralized either by stopping the sphere or preventing it from teleporting.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Stop the Sphere",
+							"entry": "Das Aufhalten der Kugel ist die einfachste M\u00f6glichkeit, die Falle zu unterbrechen. Eine Kraftwand kann dies leicht tun, ebenso wie jedes Objekt, das sich in ihrem Weg befindet und genug Trefferpunkte hat, um den Schaden der Kugel zu absorbieren, ohne zerst\u00f6rt zu werden."
+						},
+						{
+							"type": "item",
+							"name": "Disrupt the Portals",
+							"entries": [
+								"Jedes Portal kann mit drei erfolgreichen DC 20 Intelligenz\u00fcberpr\u00fcfungen ({@skill Arcana}) neutralisiert werden, aber der Prozess der Analyse eines Portals, um es zu zerst\u00f6ren, braucht Zeit. Schwache Runen an der Decke und im Boden an beiden Enden des Ganges sind an der Funktion der Portale beteiligt. Eine Kreatur muss zun\u00e4chst eine Aktion verwenden, um eine Reihe von Runen zu untersuchen, und dann mit einer weiteren Aktion versuchen, die Runen zu zerst\u00f6ren. Jede erfolgreiche Pr\u00fcfung reduziert den Schaden der Kugel um 11 ({@dice 2d10}), da die gest\u00f6rte Kugel auf ihrem Weg durch das defekte Portal an Geschwindigkeit verliert.",
+								"Alternativ kann eine Gruppe von Runen mit drei erfolgreichen Zaubern von {@spell dispel magic} (DC 19), die auf eine beliebige Rune der Gruppe zielen, deaktiviert werden.",
+								"Wird das s\u00fcdliche Portal zerst\u00f6rt, prallt die Kugel gegen die S\u00fcdwand und kommt zum Stillstand. Sie blockiert die T\u00fcr zur Gruft, aber die Figuren k\u00f6nnen entkommen."
+							]
+						}
+					]
+				}
+			],
+			"entries": [
+				"Der Hofnarr ersann eine t\u00f6dliche Falle, um jeden zu vereiteln, der seine magische Narrenkappe stehlen wollte. Das Grab des Hofnarren befindet sich am Ende eines 10 Fu\u00df breiten und 150 Fu\u00df langen Ganges, der steil von Norden nach S\u00fcden abf\u00e4llt. Der Eingang zur Gruft ist eine T\u00fcr an der \u00f6stlichen Wand am unteren Ende des Abhangs, am s\u00fcdlichen Ende des Ganges."
+			]
+		}
+	],
+	"hazard": [
+		{
+			"name": "Avalanche",
+			"source": "IDRotF",
+			"page": 10,
+			"trapHazType": "WLD",
+			"entries": [
+				"Die folgenden Regeln k\u00f6nnen sowohl f\u00fcr Steinschlag als auch f\u00fcr Lawinen angewendet werden.",
+				"Eine Lawine ist eine Masse aus Schnee und Ger\u00f6ll, die schnell einen Berghang hinunterst\u00fcrzt. Eine typische Lawine ist 300 Fu\u00df breit, 150 Fu\u00df lang und 30 Fu\u00df dick. Lebewesen im Pfad einer Lawine k\u00f6nnen ihr ausweichen oder entkommen, wenn sie sich in der N\u00e4he des Randes befinden, aber einer Lawine zu entkommen ist fast unm\u00f6glich.",
+				"Wenn eine Lawine ausgel\u00f6st wird, m\u00fcssen alle Kreaturen in der N\u00e4he die Initiative w\u00fcrfeln. Zweimal pro Runde, bei Initiative 10 und 0, bewegt sich die Lawine 300 Fu\u00df weit, bis sie sich nicht mehr bewegen kann. Wenn sich eine Lawine bewegt, bewegt sich jede Kreatur in ihrem Raum mit und f\u00e4llt {@condition prone}, und die Kreatur muss einen Schutzwurf auf St\u00e4rke DC 15 ablegen. Bei einem misslungenen Schutzwurf erleidet sie {@dice 1d10} Wuchtschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden.",
+				"Wenn eine Lawine zum Stillstand kommt, setzt sich der Schnee ab und begr\u00e4bt Lebewesen unter sich. Eine auf diese Weise begrabene Kreatur ist {@condition blinded} und {@condition restrained} und hat totale Deckung. Die Kreatur gewinnt eine Stufe von {@condition exhaustion} f\u00fcr alle 5 Minuten, die sie im Schnee begraben ist. Sie kann versuchen, sich als Aktion auszugraben, indem sie die Oberfl\u00e4che durchbricht und den Zustand der Blindheit und Fesselung mit einem erfolgreichen DC 15 St\u00e4rke ({@skill Athletics}) Check beendet. Eine Kreatur, die diese Pr\u00fcfung dreimal nicht besteht, kann nicht mehr versuchen, sich selbst auszugraben.",
+				"Eine Kreatur, die nicht gefesselt oder {@condition incapacitated} ist, kann 1 Minute damit verbringen, eine andere Kreatur zu befreien, die im Schnee begraben ist. Sobald die Kreatur befreit ist, ist sie nicht mehr von der Lawine geblendet oder gefesselt."
+			]
+		},
+		{
+			"name": "Avalanche",
+			"source": "TCE",
+			"page": 169,
+			"trapHazType": "WLD",
+			"entries": [
+				"Eine typische Lawine (oder ein Bergsturz) ist 300 Fu\u00df breit, 150 Fu\u00df lang und 30 Fu\u00df dick. Kreaturen im Pfad einer Lawine k\u00f6nnen ihr ausweichen oder entkommen, wenn sie sich in der N\u00e4he des Randes befinden, aber es ist fast unm\u00f6glich, ihr zu entkommen.",
+				"Wenn eine Lawine ausgel\u00f6st wird, m\u00fcssen alle Kreaturen in der N\u00e4he die Initiative w\u00fcrfeln. Zweimal pro Runde, bei Initiative 10 und 0, bewegt sich die Lawine 300 Fu\u00df weit, bis sie sich nicht mehr bewegen kann. Wenn sich eine Lawine bewegt, bewegt sich jede Kreatur in ihrem Raum mit und f\u00e4llt {@condition prone}, und die Kreatur muss einen Schutzwurf auf St\u00e4rke DC 15 ablegen. Bei einem misslungenen Schutzwurf erleidet sie {@dice 1d10} Wuchtschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden.",
+				"Wenn eine Lawine zum Stillstand kommt, setzen sich der Schnee und andere Tr\u00fcmmer ab und begraben Lebewesen. Eine auf diese Weise versch\u00fcttete Kreatur ist {@condition blinded} und {@condition restrained}, und sie hat totale Deckung. Die Kreatur gewinnt 1 Stufe von {@condition exhaustion} f\u00fcr alle 5 Minuten, die sie versch\u00fcttet ist. Sie kann versuchen, sich als Aktion auszugraben, indem sie die Oberfl\u00e4che durchbricht und die {@condition blinded} und {@condition restrained} Zust\u00e4nde mit einem erfolgreichen DC 15 St\u00e4rke ({@skill Athletics}) Check beendet. Eine Kreatur, die diese Pr\u00fcfung dreimal nicht besteht, kann nicht mehr versuchen, sich selbst auszugraben.",
+				"Eine Kreatur, die nicht {@condition restrained} oder {@condition incapacitated} ist, kann 1 Minute damit verbringen, eine versch\u00fcttete Kreatur zu befreien. Sobald die Kreatur befreit ist, wird sie nicht mehr {@condition blinded} oder {@condition restrained} von der Lawine erfasst."
+			]
+		},
+		{
+			"name": "Blizzard",
+			"source": "IDRotF",
+			"page": 10,
+			"trapHazType": "WTH",
+			"entries": [
+				"Die Schneest\u00fcrme, die Icewind Dale verw\u00fcsten und die Reisenden auf dem Gebirgspass heimsuchen, sind ein Spiegelbild von Aurils selbst auferlegter Isolation. Ein Schneesturm in Icewind Dale dauert in der Regel {@dice 2d4} Stunden, und wann immer die Charaktere in einen solchen geraten, gelten die folgenden Regeln, bis er endet.",
+				"Der heulende Wind eines Schneesturms schr\u00e4nkt das Geh\u00f6r auf eine Reichweite von 100 Fu\u00df ein und f\u00fchrt zu Nachteilen bei Angriffsw\u00fcrfen mit Fernkampfwaffen. Er verursacht au\u00dferdem einen Nachteil bei Weisheitsw\u00fcrfen ({@skill Perception}), die sich auf das Geh\u00f6r verlassen. Der Wind l\u00f6scht offene Flammen, vertreibt Nebel, verwischt Spuren im Schnee und macht das Fliegen mit nichtmagischen Mitteln fast unm\u00f6glich. Eine Kreatur f\u00e4llt am Ende ihrer Runde, wenn sie mit nichtmagischen Mitteln fliegt und nicht schweben kann.",
+				"Die Sichtweite in einem Schneesturm ist auf 30 Fu\u00df reduziert. Kreaturen ohne Schutzbrille oder anderen Augenschutz haben aufgrund des Schneetreibens einen Nachteil bei Weisheitspr\u00fcfungen ({@skill Perception}), die sich auf die Sicht verlassen.",
+				"Jede Kreatur, die sich in einem Schneesturm auf einen Zauber konzentriert, muss am Ende ihres Zuges einen Schutzwurf der Konstitution (DC 10) bestehen oder ihre Konzentration auf den Zauber verlieren, es sei denn, die Kreatur ist vor den Elementen gesch\u00fctzt (z.B. in einem Iglu).",
+				{
+					"type": "entries",
+					"name": "Veering Off Course",
+					"id": "01f",
+					"entries": [
+						"W\u00e4hrend einer Reise durch einen Schneesturm kann man leicht vom Kurs abkommen, und es ist auch leicht m\u00f6glich, dass Gruppenmitglieder voneinander getrennt werden, weshalb es am kl\u00fcgsten ist, an Ort und Stelle zu bleiben und zu warten, bis der Schneesturm vor\u00fcber ist.",
+						"Wenn die Charaktere w\u00e4hrend eines Schneesturms reisen, sollen die Spieler ein Gruppenmitglied als Navigator bestimmen. Am Ende jeder Stunde der Reise durch den Schneesturm macht der DM eine DC 15 Weisheitspr\u00fcfung ({@skill Survival}) im Namen des Navigators. Bei einer erfolgreichen Pr\u00fcfung bleibt die Gruppe auf Kurs. Bei einer misslungenen Pr\u00fcfung kommt die Gruppe vom Kurs ab und ist ihrem Ziel nicht n\u00e4her als zu Beginn der Stunde. Wenn die Pr\u00fcfung um 5 oder mehr Punkte scheitert und die Gruppenmitglieder nicht aneinander gebunden sind, geht ein zuf\u00e4llig bestimmtes Gruppenmitglied im Schneesturm verloren und wird von den anderen getrennt. Wenn die Gruppe versucht, ihr vermisstes Mitglied wiederzufinden, m\u00fcssen die Gruppenmitglieder (einschlie\u00dflich des Vermissten) am Ende jeder Stunde eine Gruppenpr\u00fcfung auf Weisheit DC 15 ({@skill Survival}) ablegen. Wenn diese Gruppen\u00fcberpr\u00fcfung erfolgreich ist, wird das vermisste Gruppenmitglied gefunden, aber es gibt keinen Fortschritt auf dem Weg zum geplanten Ziel der Gruppe in dieser Stunde. Die Gruppenpr\u00fcfung kann nach jeder Stunde der Suche nach dem vermissten Gruppenmitglied wiederholt werden."
+					]
+				}
+			]
+		},
+		{
+			"name": "Brown Mold",
+			"source": "DMG",
+			"page": 105,
+			"entries": [
+				"Brauner Schimmel ern\u00e4hrt sich von W\u00e4rme und entzieht allem, was ihn umgibt, W\u00e4rme. Ein Fleck mit braunem Schimmel bedeckt in der Regel ein 10-Fu\u00df-Quadrat, und die Temperatur im Umkreis von 30 Fu\u00df ist immer eisig.",
+				"Wenn sich eine Kreatur zum ersten Mal in einem Zug innerhalb von 5 Fu\u00df um die Form bewegt oder ihren Zug dort beginnt, muss sie einen DC 12 Konstitutionsschutzwurf machen und erleidet bei einem Fehlversuch 22 ({@dice 4d10}) K\u00e4lteschaden.",
+				"Brauner Schimmel ist immun gegen Feuer, und jede Feuerquelle, die sich in einem Umkreis von 5 Fu\u00df um einen Fleck befindet, bewirkt, dass er sich sofort in Richtung des Feuers ausdehnt und einen Bereich von 10 Fu\u00df im Quadrat abdeckt (wobei sich die Feuerquelle in der Mitte dieses Bereichs befindet). Ein Fleck mit braunem Schimmel, der einem Effekt ausgesetzt ist, der K\u00e4lteschaden verursacht, wird sofort zerst\u00f6rt."
+			]
+		},
+		{
+			"name": "Demon Ichor",
+			"source": "BGDIA",
+			"page": 78,
+			"entries": [
+				"D\u00e4monischer Speichel ist das, was nach dem Tod eines D\u00e4mons zur\u00fcckbleibt. Es ist eine Reduktion von d\u00e4monischem Blut, Eingeweiden und K\u00f6rperfl\u00fcssigkeiten mit der Konsistenz und dem Geruch von Galle.",
+				"In Avernus sterben so viele D\u00e4monen, dass sich aus ihrem Ichor T\u00fcmpel und kleine Seen bilden. Obwohl der Ichor auf den meisten Dimensionen der Existenz harmlos ist, kann er Kreaturen in den unteren Dimensionen verderben. Teufel und andere Kreaturen haben Wege gefunden, den D\u00e4monensaft in Ritualen zu verwenden und die Leistung von h\u00f6llischen Kriegsmaschinen zu verbessern (wie in {@adventure appendix B|BGDIA|11} beschrieben).",
+				"Wenn eine Kreatur in Avernus direkt mit D\u00e4monensaft in Ber\u00fchrung kommt, muss sie einen Konstitutionsschutzwurf von DC 10 ablegen. Unholde, S\u00e4ufer, Pflanzen und Untote schaffen diesen Rettungswurf automatisch. Bei einem misslungenen Schutzwurf wird die Kreatur durch den Ichor magisch verformt, was durch W\u00fcrfeln auf der Tabelle Fleischverformung bestimmt wird. Ein Zauber, der einen Fluch aufhebt, beendet alle mit dem Ichor zusammenh\u00e4ngenden Verformungseffekte auf eine Kreatur.",
+				{
+					"type": "entries",
+					"name": "Ichor-Coated Weapons",
+					"entries": [
+						"D\u00e4monischer Speichel ist klebrig genug, um an den meisten Waffen zu haften. Eine Kreatur in Avernus, die durch eine mit D\u00e4monensaft beschichtete Waffe Schaden erleidet, erleidet eine fleischzerst\u00f6rende Verwandlung, wenn ihr der Rettungswurf (wie oben beschrieben) misslingt. Nachdem die Waffe ihr Ziel getroffen hat, ist sie nicht mehr mit D\u00e4monenschorf \u00fcberzogen."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Flesh Warping",
+					"colLabels": [
+						"d100",
+						"Effect"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"01\u201305",
+							"Die Farbe der Haare, Augen und Haut des Ziels wird blau, rot, gelb oder gemustert."
+						],
+						[
+							"06\u201310",
+							"Die Augen der Zielperson ragen an den Enden der Stiele aus dem Kopf heraus."
+						],
+						[
+							"11\u201315",
+							"Den H\u00e4nden des Ziels wachsen Klauen, die als Dolche verwendet werden k\u00f6nnen."
+						],
+						[
+							"16\u201320",
+							"Ein Bein des Ziels wird l\u00e4nger als das andere, wodurch seine Gehgeschwindigkeit um 10 Fu\u00df verringert wird."
+						],
+						[
+							"21\u201325",
+							"Die Augen des Ziels werden zu Leuchtfeuern, die einen 15-Fu\u00df-Kegel mit schwachem Licht f\u00fcllen, wenn sie ge\u00f6ffnet sind."
+						],
+						[
+							"26\u201330",
+							"Ein Paar Fl\u00fcgel, entweder gefedert oder aus Leder, sprie\u00dfen aus dem R\u00fccken des Ziels und verleihen ihm eine Fluggeschwindigkeit von 30 Fu\u00df."
+						],
+						[
+							"31\u201335",
+							"Die Ohren des Ziels rei\u00dfen sich von seinem Kopf los und huschen davon; das Ziel ist {@condition deafened}."
+						],
+						[
+							"36\u201340",
+							"Zwei der Z\u00e4hne der Zielperson verwandeln sich in Hauer."
+						],
+						[
+							"41\u201345",
+							"Die Haut des Ziels wird schorfig, was ihm einen +1-Bonus auf AC gew\u00e4hrt, aber sein Charisma um 2 reduziert (auf ein Minimum von 1)."
+						],
+						[
+							"46\u201350",
+							"Die Arme und Beine der Zielperson tauschen ihren Platz, so dass sich die Zielperson nicht bewegen kann, es sei denn, sie kriecht."
+						],
+						[
+							"51\u201355",
+							"Die Arme des Ziels werden zu Tentakeln mit Fingern an den Enden, die seine Reichweite um 5 Fu\u00df erh\u00f6hen."
+						],
+						[
+							"56\u201360",
+							"Die Beine des Ziels werden unglaublich lang und federnd und erh\u00f6hen seine Gehgeschwindigkeit um 10 Fu\u00df."
+						],
+						[
+							"61\u201365",
+							"Der Zielperson w\u00e4chst ein peitschenartiger Schwanz, den sie als Peitsche benutzen kann."
+						],
+						[
+							"66\u201370",
+							"Die Augen des Ziels werden schwarz, und es gewinnt {@sense darkvision} bis zu einer Reichweite von 120 Fu\u00df."
+						],
+						[
+							"71\u201375",
+							"Das Ziel schwillt an und verdreifacht sein Gewicht."
+						],
+						[
+							"76\u201380",
+							"Das Ziel wird d\u00fcnn und skelettartig, sein Gewicht halbiert sich."
+						],
+						[
+							"81\u201385",
+							"Der Kopf der Zielperson verdoppelt seine Gr\u00f6\u00dfe."
+						],
+						[
+							"86\u201390",
+							"Die Ohren des Ziels werden zu Fl\u00fcgeln und verleihen ihm eine Fluggeschwindigkeit von 5 Fu\u00df."
+						],
+						[
+							"91\u201395",
+							"Der K\u00f6rper des Ziels wird ungew\u00f6hnlich br\u00fcchig, wodurch das Ziel anf\u00e4llig f\u00fcr Wucht-, Stich- und Hiebschaden wird."
+						],
+						[
+							"96\u201300",
+							"Dem Ziel w\u00e4chst ein weiterer Kopf, wodurch es einen Vorteil bei Schutzw\u00fcrfen gegen {@condition charmed}, {@condition frightened} oder {@condition stunned} hat."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Desecrated Ground",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WLD",
+			"entries": [
+				"Einige Friedh\u00f6fe und Katakomben sind von den unsichtbaren Spuren des alten B\u00f6sen durchdrungen. Ein entweihter Bereich kann beliebig gro\u00df sein, und ein {@spell detect evil and good}-Zauber, der in Reichweite gewirkt wird, enth\u00fcllt seine Pr\u00e4senz.",
+				"Untote, die auf entweihtem Boden stehen, sind bei allen Rettungsw\u00fcrfen im Vorteil.",
+				"Eine Phiole mit {@item holy water (flask)|phb|holy water} reinigt einen 10 Fu\u00df gro\u00dfen Bereich entweihten Bodens, wenn sie darauf gestreut wird, und ein {@spell hallow}-Zauber reinigt entweihten Boden innerhalb seines Bereichs."
+			]
+		},
+		{
+			"name": "Extreme Cold",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WTH",
+			"entries": [
+				"Immer wenn die Temperatur bei oder unter 0 Grad Fahrenheit liegt, muss eine Kreatur, die der K\u00e4lte ausgesetzt ist, am Ende jeder Stunde einen Rettungswurf der Konstitution DC 10 bestehen oder eine Stufe von {@condition exhaustion} gewinnen. Kreaturen mit einer Resistenz oder Immunit\u00e4t gegen K\u00e4lteschaden gelingt der Rettungswurf automatisch, ebenso wie Kreaturen, die Kleidung f\u00fcr kaltes Wetter tragen (dicke M\u00e4ntel, Handschuhe und dergleichen) und Kreaturen, die von Natur aus an kaltes Klima angepasst sind."
+			]
+		},
+		{
+			"name": "Extreme Heat",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WTH",
+			"entries": [
+				"Wenn die Temperatur bei oder \u00fcber 100 Grad Fahrenheit liegt, muss eine Kreatur, die der Hitze ausgesetzt ist und keinen Zugang zu trinkbarem Wasser hat, am Ende jeder Stunde einen Konstitutionsrettungswurf bestehen oder eine Stufe von {@condition exhaustion} gewinnen. Der DC betr\u00e4gt 5 f\u00fcr die erste Stunde und erh\u00f6ht sich um 1 f\u00fcr jede weitere Stunde.",
+				"Kreaturen, die eine mittelschwere oder schwere R\u00fcstung tragen oder in schwere Kleidung gekleidet sind, haben einen Nachteil bei diesem Rettungswurf. Kreaturen mit Resistenz oder Immunit\u00e4t gegen Feuerschaden gelingt der Rettungswurf automatisch, ebenso wie Kreaturen, die von Natur aus an hei\u00dfes Klima angepasst sind."
+			]
+		},
+		{
+			"name": "Falling into Water",
+			"source": "TCE",
+			"page": 170,
+			"trapHazType": "WLD",
+			"entries": [
+				"Eine Kreatur, die in Wasser oder eine andere Fl\u00fcssigkeit f\u00e4llt, kann ihre Reaktion nutzen, um einen DC 15 St\u00e4rke- ({@skill Athletics}) oder Geschicklichkeits-Check ({@skill Acrobatics}) zu machen, um mit dem Kopf oder den F\u00fc\u00dfen zuerst an die Oberfl\u00e4che zu kommen. Bei einem erfolgreichen Check wird der Schaden, der durch den Sturz entsteht, halbiert."
+			]
+		},
+		{
+			"name": "Falling onto a Creature",
+			"source": "TCE",
+			"page": 170,
+			"trapHazType": "WLD",
+			"entries": [
+				"Wenn eine Kreatur in den Raum einer zweiten Kreatur f\u00e4llt und keiner von beiden ein Winzling ist, muss die zweite Kreatur einen Rettungswurf von DC 15 auf Geschicklichkeit bestehen oder von der fallenden Kreatur getroffen werden, und jeglicher Schaden, der aus dem Fall resultiert, wird gleichm\u00e4\u00dfig zwischen ihnen aufgeteilt. Die getroffene Kreatur wird ebenfalls um {@condition prone} gesto\u00dfen, es sei denn, sie ist zwei oder mehr Gr\u00f6\u00dfen gr\u00f6\u00dfer als die fallende Kreatur."
+			]
+		},
+		{
+			"name": "Flame Storm",
+			"source": "TCE",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"Ru\u00dfige Gewitterwolken, durchzogen von roten und orangefarbenen Blitzen, lassen einen Schwall feuriger Tropfen fallen. Jede Kreatur, die in den brennenden Regen ger\u00e4t, erleidet zu Beginn jeder ihrer Runden {@dice 2d6} Feuerschaden. Die Tr\u00f6pfchen entz\u00fcnden alle brennbaren Gegenst\u00e4nde, die nicht getragen werden; andernfalls brennen die Tr\u00f6pfchen sofort aus. Der Rauch, der Ru\u00df, das Knistern und das leise Br\u00fcllen des Sturms verursachen einen Nachteil bei Weisheitsw\u00fcrfen ({@skill Perception}) und Distanzangriffsw\u00fcrfen.",
+				"Ein Flammensturm dauert in der Regel {@dice 2d4} Minuten, obwohl die entstehenden Gewitterwolken tagelang anhalten und mehrere Flammenst\u00fcrme erzeugen k\u00f6nnen."
+			]
+		},
+		{
+			"name": "Flaywind",
+			"source": "TCE",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"\u00dcbernat\u00fcrlich starke Winde - wie die aus Dimensionen wie Pandemonium oder Minethys, der dritten Ebene von Carceri - k\u00f6nnen Flaywinds hervorrufen. Ein Flaywind ist ein intensiver Sandsturm, der neben Sand und Ger\u00f6ll auch gro\u00dfe Felsen und andere Tr\u00fcmmer aufwirbelt. Das Gebiet innerhalb des Sturms ist stark verdunkelt, und eine Kreatur, die dem Sturm ausgesetzt ist, erleidet zu Beginn jeder ihrer Runden {@dice 1d4} Hiebschaden. Nur eine gute Deckung oder ein Unterschlupf bietet Schutz vor dem herumfliegenden Ger\u00f6ll.",
+				"Ein Flaywind hinterl\u00e4sst {@dice 4d6} Fu\u00df Sand oder Ger\u00f6ll in seinem Kielwasser. Eine erfolgreiche DC 15 Intelligenz- ({@skill Arcana}) oder ({@skill Nature}) oder Weisheitspr\u00fcfung ({@skill Survival}) erm\u00f6glicht es einem Charakter, einen Fahnensturm 1 Minute vor seinem Auftreten zu erkennen, so dass er Zeit hat, Schutz zu suchen. Ein Gei\u00dfelwind dauert normalerweise {@dice 1d4 \u00d7 10} Stunden."
+			]
+		},
+		{
+			"name": "Frigid Water",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WLD",
+			"entries": [
+				"Eine Kreatur kann f\u00fcr eine Anzahl von Minuten, die ihrem Konstitutionswert entspricht, in eiskaltes Wasser getaucht werden, bevor sie irgendwelche negativen Auswirkungen erleidet. F\u00fcr jede weitere Minute, die die Kreatur in eiskaltem Wasser verbringt, muss sie einen Konstitutions-Erhaltungswurf von DC 10 bestehen oder eine Stufe von {@condition exhaustion} gewinnen. Kreaturen mit Resistenz oder Immunit\u00e4t gegen K\u00e4lteschaden bestehen den Rettungswurf automatisch, ebenso wie Kreaturen, die von Natur aus an das Leben in eiskaltem Wasser angepasst sind."
+			]
+		},
+		{
+			"name": "Green Slime",
+			"source": "DMG",
+			"page": 105,
+			"entries": [
+				"Dieser s\u00e4urehaltige Schleim verschlingt Fleisch, organisches Material und Metall bei Kontakt. Er ist leuchtend gr\u00fcn, nass und klebrig und haftet in Flecken an W\u00e4nden, B\u00f6den und Decken.",
+				"Ein Fleck aus gr\u00fcnem Schleim bedeckt ein 5-Fu\u00df-Quadrat, hat {@sense blindsight} bis zu einer Reichweite von 30 Fu\u00df und f\u00e4llt von W\u00e4nden und Decken, wenn er eine Bewegung unter sich entdeckt. Dar\u00fcber hinaus hat er keine F\u00e4higkeit, sich zu bewegen. Eine Kreatur, die sich der Anwesenheit des Schleims bewusst ist, kann vermeiden, von ihm getroffen zu werden, indem sie einen erfolgreichen Rettungswurf mit DC 10 Geschicklichkeit absolviert. Andernfalls kann dem Schleim nicht ausgewichen werden, wenn er f\u00e4llt.",
+				"Eine Kreatur, die mit dem gr\u00fcnen Schleim in Ber\u00fchrung kommt, erleidet 5 ({@dice 1d10}) S\u00e4ureschaden. Die Kreatur erleidet diesen Schaden zu Beginn jeder ihrer Runden erneut, bis der Schleim abgekratzt oder zerst\u00f6rt wird. Gegen Holz oder Metall verursacht gr\u00fcner Schleim jede Runde 11 ({@dice 2d10}) S\u00e4ureschaden, und jede nichtmagische Waffe oder jedes nichtmagische Werkzeug aus Holz oder Metall, das zum Abkratzen des Schleims verwendet wird, wird effektiv zerst\u00f6rt.",
+				"Sonnenlicht, jeder Effekt, der Krankheiten heilt, und jeder Effekt, der K\u00e4lte-, Feuer- oder Strahlungsschaden verursacht, zerst\u00f6rt einen Fleck gr\u00fcnen Schleims."
+			]
+		},
+		{
+			"name": "Heavy Precipitation",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WTH",
+			"entries": [
+				"Alles in einem Gebiet mit starkem Regen oder starkem Schneefall ist leicht verdunkelt und Kreaturen in diesem Gebiet haben einen Nachteil bei Weisheitspr\u00fcfungen ({@skill Perception}), die sich auf die Sicht verlassen. Starker Regen l\u00f6scht auch offene Flammen und benachteiligt Weisheit ({@skill Perception}), die sich auf das H\u00f6ren verlassen."
+			]
+		},
+		{
+			"name": "High Altitude",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "ENV",
+			"entries": [
+				"Reisen in H\u00f6hen von 10.000 Fu\u00df oder mehr \u00fcber dem Meeresspiegel sind f\u00fcr ein Lebewesen, das atmen muss, wegen des geringeren Sauerstoffgehalts in der Luft sehr anstrengend. Jede Stunde, die eine solche Kreatur in gro\u00dfer H\u00f6he verbringt, z\u00e4hlt als 2 Stunden, um zu bestimmen, wie lange die Kreatur reisen kann.",
+				"Atmende Lebewesen k\u00f6nnen sich an eine gro\u00dfe H\u00f6he gew\u00f6hnen, indem sie 30 Tage oder mehr in dieser H\u00f6he verbringen. Atmende Lebewesen k\u00f6nnen sich nicht an H\u00f6hen \u00fcber 20.000 Fu\u00df akklimatisieren, es sei denn, sie sind in einer solchen Umgebung heimisch."
+			]
+		},
+		{
+			"name": "Improvised Damage",
+			"source": "DMG",
+			"page": 249,
+			"trapHazType": "GEN",
+			"entries": [
+				"In manchen F\u00e4llen m\u00fcssen Sie den Schaden spontan feststellen. Die Tabelle \"Schaden improvisieren\" gibt dir Vorschl\u00e4ge, wie du das machen kannst.",
+				{
+					"type": "table",
+					"caption": "Improvising Damage",
+					"colLabels": [
+						"Dice",
+						"Examples"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"{@dice 1d10}",
+							"Von Kohlen verbrannt, von einem umst\u00fcrzenden B\u00fccherregal getroffen, von einer Giftnadel gestochen"
+						],
+						[
+							"{@dice 2d10}",
+							"Vom Blitz getroffen werden, in eine Feuergrube stolpern"
+						],
+						[
+							"{@dice 4d10}",
+							"In einem einst\u00fcrzenden Tunnel von herabfallenden Tr\u00fcmmern getroffen werden und in ein S\u00e4urefass stolpern"
+						],
+						[
+							"{@dice 10d10}",
+							"Von verdichteten W\u00e4nden zerdr\u00fcckt, von wirbelnden Stahlklingen getroffen, durch einen Lavastrom watend"
+						],
+						[
+							"{@dice 18d10}",
+							"In Lava getaucht werden, von einer abst\u00fcrzenden fliegenden Festung getroffen werden"
+						],
+						[
+							"{@dice 24d10}",
+							"Sturz in einen Feuerstrudel auf der Elementarebene des Feuers, Zerquetschen im Rachen einer gottgleichen Kreatur oder eines mondgro\u00dfen Monsters"
+						]
+					]
+				},
+				"Die Tabelle Schadensschwere und Stufe ist ein Leitfaden daf\u00fcr, wie t\u00f6dlich diese Schadenszahlen f\u00fcr Charaktere verschiedener Stufen sind. Vergleichen Sie die Stufe eines Charakters mit dem zugef\u00fcgten Schaden, um den Schweregrad des Schadens abzusch\u00e4tzen.",
+				{
+					"type": "table",
+					"caption": "Damage Severity and Level",
+					"colLabels": [
+						"Character Level",
+						"Setback",
+						"Dangerous",
+						"Deadly"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"1st-4th",
+							"{@dice 1d10}",
+							"{@dice 2d10}",
+							"{@dice 4d10}"
+						],
+						[
+							"5th-10th",
+							"{@dice 2d10}",
+							"{@dice 4d10}",
+							"{@dice 10d10}"
+						],
+						[
+							"11th-16th",
+							"{@dice 4d10}",
+							"{@dice 10d10}",
+							"{@dice 18d10}"
+						],
+						[
+							"17th-20th",
+							"{@dice 10d10}",
+							"{@dice 18d10}",
+							"{@dice 24d10}"
+						]
+					]
+				},
+				"Schaden, der ausreicht, um einen {@b setback} zu verursachen, stellt f\u00fcr Charaktere der gezeigten Stufe selten ein Todesrisiko dar, aber ein stark geschw\u00e4chter Charakter k\u00f6nnte durch diesen Schaden niedergestreckt werden.",
+				"Im Gegensatz dazu stellen {@b dangerous} Schadenswerte eine erhebliche Bedrohung f\u00fcr schw\u00e4chere Charaktere dar und k\u00f6nnten einen Charakter der gezeigten Stufe m\u00f6glicherweise t\u00f6ten, wenn diesem Charakter viele Trefferpunkte fehlen.",
+				"Wie der Name schon sagt, reicht {@b deadly} Schaden aus, um einen Charakter der angezeigten Stufe auf 0 Trefferpunkte fallen zu lassen. Diese Schadensstufe kann selbst starke Charaktere sofort t\u00f6ten, wenn sie bereits verwundet sind."
+			]
+		},
+		{
+			"name": "Necrotic Tempest",
+			"source": "TCE",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"St\u00fcrme, die von der Essenz des Todes durchdrungen sind, ziehen mit dunklen Wolken auf, in denen sich grinsende Totenk\u00f6pfe und knochenwei\u00dfe Blitze zeigen. Jede Kreatur, die dem Sturm ausgesetzt ist und kein Konstrukt oder Untoter ist, muss am Ende jeder Minute einen Konstitutionswettkampf mit DC 13 bestehen oder {@dice 3d6} nekrotischen Schaden erleiden.",
+				"Eine Kreatur, die in einem nekrotischen Sturm stirbt, erhebt sich als {@creature skeleton} oder {@creature zombie} (deine Wahl) {@dice 1d10} Minuten sp\u00e4ter.",
+				" Ein nekrotischer Sturm dauert {@dice 1d4} Stunden und l\u00e4sst die Ernte verdorren und die Brunnen f\u00fcr {@dice 1d4} Tage nach seinem Vorbeiziehen ungenie\u00dfbar."
+			]
+		},
+		{
+			"name": "Quicksand",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WLD",
+			"entries": [
+				"Eine Treibsandgrube bedeckt den Boden auf einer Fl\u00e4che von etwa 10 Fu\u00df im Quadrat und ist in der Regel 10 Fu\u00df tief. Wenn eine Kreatur das Gebiet betritt, sinkt sie {@dice 1d4+1} Fu\u00df in den Treibsand ein und wird {@condition restrained}. Zu Beginn jeder Runde der Kreatur sinkt sie um weitere {@dice 1d4} Fu\u00df ein. Solange die Kreatur nicht vollst\u00e4ndig im Treibsand versunken ist, kann sie entkommen, indem sie ihre Aktion nutzt und eine St\u00e4rkeprobe besteht. Der DC ist 10 plus die Anzahl der F\u00fc\u00dfe, die die Kreatur im Treibsand versunken ist. Eine Kreatur, die vollst\u00e4ndig im Treibsand versunken ist, kann nicht atmen (siehe die {@book suffocation|phb|8|suffocating} Regeln im {@i Player's Handbook}).",
+				"Eine Kreatur kann eine andere Kreatur in ihrer Reichweite aus einer Treibsandgrube herausziehen, indem sie ihre Aktion einsetzt und eine St\u00e4rkepr\u00fcfung besteht. Der DC betr\u00e4gt 5 plus die Anzahl der F\u00fc\u00dfe, die die Zielkreatur in den Treibsand gesunken ist."
+			]
+		},
+		{
+			"name": "Razorvine",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WLD",
+			"entries": [
+				"Die Razorvine ist eine Pflanze, die in wilden Kn\u00e4ueln und Hecken w\u00e4chst. Es klammert sich auch an den Seiten von Geb\u00e4uden und anderen Oberfl\u00e4chen wie Efeu. Eine 10 Fu\u00df hohe, 10 Fu\u00df breite und 5 Fu\u00df dicke Wand oder Hecke aus Razorvine hat AC 11, 25 Trefferpunkte und ist immun gegen Wucht-, Stich- und psychischen Schaden.",
+				"Wenn eine Kreatur zum ersten Mal in einer Runde direkt mit Rasierklinge in Ber\u00fchrung kommt, muss die Kreatur einen Rettungswurf von DC 10 auf Geschicklichkeit bestehen oder 5 ({@dice 1d10}) Hiebschaden durch die blasenartigen Dornen der Rasierklinge erleiden."
+			]
+		},
+		{
+			"name": "Rot Grub",
+			"source": "VGM",
+			"page": 208,
+			"otherSources": [
+				{
+					"source": "MPMM",
+					"page": 237
+				}
+			],
+			"entries": [
+				"Fadenw\u00fcrmer sind fingergro\u00dfe Maden, die sich von lebenden und toten Tieren ern\u00e4hren, aber auch auf Pflanzen \u00fcberleben k\u00f6nnen. Sie befallen Leichen und Haufen von Verwesungsmaterial und greifen jeden an, der sie st\u00f6rt. Nachdem sie sich in ein Lebewesen eingegraben haben, fressen sie sich instinktiv zu den lebenswichtigen Teilen vor.",
+				"F\u00e4ulniserreger schrecken vor Flammen zur\u00fcck, und Feuer ist die Hauptwaffe gegen F\u00e4ulniserreger, sobald sie sich in einem K\u00f6rper befinden. Magie, die Gift neutralisiert, kann sie auch aufhalten, bevor sie ihren Wirt t\u00f6ten.",
+				{
+					"type": "entries",
+					"name": "Single Rot Grub",
+					"page": 237,
+					"entries": [
+						"Die Engerlinge stellen sowohl einzeln als auch in Schw\u00e4rmen eine Gefahr dar. Siehe {@creature swarm of rot grubs|MPMM|stat block} f\u00fcr die Mechanik eines Schwarmes von F\u00e4ulnismaden. Eine einzelne F\u00e4ulnismotte hat keinen Stat-Block.",
+						"Jede Kreatur, die mit einer einzelnen F\u00e4ulnisraupe in Ber\u00fchrung kommt, muss einen {@dc 10} Konstitutionsschutzwurf bestehen oder {@condition poisoned} sein, da sich die Raupe in die Kreatur eingr\u00e4bt. Die {@condition poisoned} Kreatur erleidet am Ende jeder ihrer Runden 3 ({@damage 1d6}) Giftschaden. Immer wenn die {@condition poisoned} Kreatur Feuerschaden erleidet, kann sie den Rettungswurf wiederholen und bei einem Erfolg den Effekt f\u00fcr sich selbst beenden. Wenn die {@condition poisoned} Kreatur ihren Zug mit 0 Trefferpunkten beendet, stirbt sie, da die F\u00e4ulnismotte sie t\u00f6tet."
+					]
+				}
+			]
+		},
+		{
+			"name": "Russet Mold",
+			"source": "VGM",
+			"page": 196,
+			"otherSources": [
+				{
+					"source": "MPMM",
+					"page": 252
+				}
+			],
+			"entries": [
+				"Nur wenige wissen mit Sicherheit, woher der Rotschimmel stammt. Ein historischer Bericht erz\u00e4hlt von Abenteurern, die in einem Gebirge Rotschimmel und {@filter vegepygmies|bestiary|search=vegepygmy} in einem seltsamen Metallverlies voller seltsamen Lebens entdeckten. Eine andere Geschichte besagt, dass Forscher den Rotschimmel in einem Krater fanden, den eine Sternschnuppe hinterlassen hatte, und dass {@creature Vegepygmy|MPMM|vegepygmies} den Wald in der N\u00e4he befallen hatten.",
+				"Der Schimmelpilz ist nur an dunklen, warmen und feuchten Orten zu finden. Schimmel, der sich auf einem Metallgegenstand ausbreitet, kann mit Rost verwechselt werden, und eine erfolgreiche {@dc 15} Intelligenz- ({@skill Nature}) oder Weisheitspr\u00fcfung ({@skill Survival}) ist erforderlich, um ihn zu identifizieren.",
+				{
+					"type": "entries",
+					"name": "Effects of the Mold",
+					"entries": [
+						"Jede Kreatur, die sich dem Rotbraunen Schimmel auf weniger als 5 Fu\u00df n\u00e4hert, muss einen {@dc 13} Konstitutionsschutzwurf machen, da der Schimmel einen Schwall Sporen ausst\u00f6\u00dft. Bei einem misslungenen Schutzwurf ist die Kreatur {@condition poisoned}. Solange sie auf diese Weise {@condition poisoned} ist, erleidet die Kreatur zu Beginn jeder ihrer Runden 7 ({@damage 2d6}) Giftschaden. Die Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg f\u00fcr sie selbst endet. Jede Magie, die Gift neutralisiert oder Krankheit heilt, t\u00f6tet den Befall. Eine Kreatur, die durch den Schimmelpilz auf 0 Trefferpunkte reduziert wurde, stirbt. Wenn es sich bei der toten Kreatur um eine Bestie, einen Riesen oder einen Humanoiden handelt, schl\u00fcpfen 24 Stunden sp\u00e4ter ein oder mehrere Vegepygm\u00e4en aus ihrem K\u00f6rper: einer aus einem kleinen Leichnam, zwei aus einem mittleren Leichnam, vier aus einem gro\u00dfen Leichnam, acht aus einem riesigen Leichnam oder sechzehn aus einem gargantuanischen Leichnam."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Destroying the Mold",
+					"entries": [
+						"Ru\u00dftaupilze sind schwer zu bek\u00e4mpfen, da Waffen und die meisten Arten von Sch\u00e4den ihnen nichts anhaben k\u00f6nnen. Effekte, die S\u00e4ure-, Nekrosen- oder Strahlungsschaden verursachen, t\u00f6ten 1 Quadratfu\u00df Rotschimmel pro 1 verursachten Schaden. Ein Pfund Salz, eine Gallone Alkohol oder Magie, die Krankheiten heilt, t\u00f6tet Rotschimmel in einem quadratischen Bereich, der 10 Fu\u00df auf einer Seite misst. Sonnenlicht t\u00f6tet jeden Rotbrauenschimmel im Bereich des Lichts ab."
+					]
+				}
+			]
+		},
+		{
+			"name": "Slippery Ice",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WLD",
+			"entries": [
+				"Glatteis ist ein schwieriges Terrain. Wenn sich eine Kreatur zum ersten Mal in einer Runde auf rutschiges Eis bewegt, muss sie eine Geschicklichkeitsprobe DC 10 ({@skill Acrobatics}) bestehen oder {@condition prone} fallen."
+			]
+		},
+		{
+			"name": "Strong Wind",
+			"source": "DMG",
+			"page": 110,
+			"trapHazType": "WTH",
+			"entries": [
+				"Starker Wind f\u00fchrt zu Nachteilen bei Angriffsw\u00fcrfen mit Fernkampfwaffen und Weisheitspr\u00fcfungen ({@skill Perception}), die sich auf das Geh\u00f6r verlassen. Ein starker Wind l\u00f6scht auch offene Flammen, vertreibt Nebel und macht das Fliegen mit nichtmagischen Mitteln fast unm\u00f6glich. Eine fliegende Kreatur, die sich in einem starken Wind befindet, muss am Ende ihrer Runde landen oder f\u00e4llt.",
+				"Ein starker Wind in einer W\u00fcste kann einen Sandsturm erzeugen, der einen Nachteil bei Weisheitsproben ({@skill Perception}) verursacht, die sich auf die Sicht verlassen."
+			]
+		},
+		{
+			"name": "Thin Ice",
+			"source": "DMG",
+			"page": 111,
+			"trapHazType": "WLD",
+			"entries": [
+				"D\u00fcnnes Eis hat eine Gewichtstoleranz von 3d10 \u00d7 10 Pfund pro 10-Fu\u00df-Quadratfl\u00e4che. Wann immer das Gesamtgewicht auf einer Fl\u00e4che aus d\u00fcnnem Eis die Toleranz \u00fcberschreitet, bricht das Eis in diesem Bereich. Alle Kreaturen auf gebrochenem Eis fallen hindurch."
+			]
+		},
+		{
+			"name": "Thrym's Howl",
+			"source": "TCE",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"Diese eiskalten Schneest\u00fcrme treiben eine Wand aus Wind und Schnee wie ein lebendiger Gletscher. Der Sturm projiziert {@hazard extreme cold} (siehe die {@book Dungeon Master's Guide|DMG}). Aufgrund des heulenden Windes und der dichten blau-wei\u00dfen Eispartikel ist das Gebiet im Sturm stark verdunkelt, und Angriffsw\u00fcrfe und Weisheitsw\u00fcrfe ({@skill Perception}) in diesem Gebiet haben einen Nachteil.",
+				"Jede Kreatur, die zu Beginn ihres Zuges dem Sturm ausgesetzt ist, erleidet {@dice 2d6} K\u00e4lteschaden und kann ihre Trefferpunkte erst wiedererlangen, wenn sie mindestens 1 Stunde in einer warmen Umgebung verbringt. Eine Kreatur, die im Sturm stirbt, friert fest. Kreaturen, die immun gegen K\u00e4lteschaden sind, sind immun gegen die Auswirkungen des Sturms und k\u00f6nnen innerhalb des Sturms normal sehen.",
+				"Das Heulen von Thrym dauert normalerweise {@dice 2d10} Stunden."
+			]
+		},
+		{
+			"name": "Webs",
+			"source": "DMG",
+			"page": 105,
+			"entries": [
+				"Riesenspinnen weben dicke, klebrige Netze \u00fcber G\u00e4nge und auf dem Boden von Gruben, um Beute zu fangen. Diese mit Netzen gef\u00fcllten Gebiete sind schwieriges Terrain. Au\u00dferdem muss eine Kreatur, die ein mit Spinnennetzen \u00fcbers\u00e4tes Gebiet zum ersten Mal in ihrem Zug betritt oder ihren Zug dort beginnt, einen Rettungswurf von DC 12 in Geschicklichkeit bestehen, oder sie wird von den Spinnennetzen {@condition restrained}. Eine {@condition restrained} Kreatur kann mit ihrer Aktion versuchen zu entkommen, indem sie einen erfolgreichen DC 12 St\u00e4rke- ({@skill Athletics}) oder Geschicklichkeitstest ({@skill Acrobatics}) ablegt.",
+				"Jeder 10-Fu\u00df-W\u00fcrfel aus riesigen Spinnweben hat AC 10, 15 Trefferpunkte, Verwundbarkeit gegen Feuer und Immunit\u00e4t gegen Wucht-, Stich- und psychischen Schaden."
+			]
+		},
+		{
+			"name": "Yellow Mold",
+			"source": "DMG",
+			"page": 105,
+			"entries": [
+				"Der gelbe Schimmel w\u00e4chst an dunklen Stellen, und ein Fleck bedeckt ein Quadrat von 5 Fu\u00df. Bei Ber\u00fchrung st\u00f6\u00dft der Schimmelpilz eine Sporenwolke aus, die einen 10-Fu\u00df-W\u00fcrfel ausf\u00fcllt, der vom Schimmelpilz ausgeht. Jede Kreatur in diesem Gebiet muss einen Konstitutionsschutzwurf von DC 15 bestehen oder 11 ({@dice 2d10}) Giftschaden erleiden und 1 Minute lang {@condition poisoned} werden. Solange sie auf diese Weise {@condition poisoned} ist, erleidet die Kreatur zu Beginn jeder ihrer Runden 5 ({@dice 1d10}) Giftschaden. Die Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem erfolgreichen Rettungswurf f\u00fcr sie selbst endet.",
+				"Sonnenlicht oder Brandsch\u00e4den jeglicher Art zerst\u00f6ren einen Fleck mit gelbem Schimmel sofort."
+			]
+		}
+	]
+}

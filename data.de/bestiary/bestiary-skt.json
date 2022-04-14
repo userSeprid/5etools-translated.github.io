@@ -1,0 +1,7727 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
+		"otherSources": {
+			"monster": {
+				"MM": "SKT"
+			}
+		}
+	},
+	"monster": [
+		{
+			"name": "Aarakocra Simulacrum",
+			"source": "SKT",
+			"page": 188,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"aarakocra"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 6,
+				"formula": "3d4"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 50
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 11,
+			"wis": 12,
+			"cha": 11,
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Auran",
+				"Aarakocra"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Dive Attack",
+					"entries": [
+						"Wenn der Aarakocra fliegt und mindestens 30 Fu\u00df direkt auf ein Ziel zust\u00fcrzt und es dann mit einem Nahkampfangriff trifft, f\u00fcgt der Angriff dem Ziel zus\u00e4tzlich 3 ({@dice 1d6}) Schaden zu."
+					]
+				},
+				{
+					"name": "Simulacra",
+					"entries": [
+						"Wenn ein Simulakrum auf 0 Trefferpunkte f\u00e4llt oder von einem erfolgreichen {@spell dispel magic} Zauber ({@dc 17}) getroffen wird, verwandelt es sich in Eis und Schnee und wird zerst\u00f6rt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Talon",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}4 ({@damage 1d4 + 2}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} auf Treffer, Reichweite 5 ft. oder 30/120 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Summon Air Elemental",
+					"entries": [
+						"F\u00fcnf Aarakocra, die sich im Umkreis von 30 Fu\u00df voneinander befinden, k\u00f6nnen auf magische Weise ein Luftelementar beschw\u00f6ren. Jeder der f\u00fcnf muss seine Aktion und Bewegung in drei aufeinanderfolgenden Runden nutzen, um einen Lufttanz aufzuf\u00fchren, und muss dabei seine Konzentration aufrechterhalten (als ob er sich auf einen Zauber konzentrieren w\u00fcrde). Wenn alle f\u00fcnf ihre dritte Runde des Tanzes beendet haben, erscheint das Elementar in einem unbesetzten Raum innerhalb von 60 Fu\u00df um sie herum. Es ist freundlich zu ihnen und gehorcht ihren gesprochenen Befehlen. Es bleibt f\u00fcr 1 Stunde, bis es selbst oder alle seine Beschw\u00f6rer sterben oder bis einer seiner Beschw\u00f6rer es als Bonusaktion entl\u00e4sst. Ein Beschw\u00f6rer kann den Tanz erst nach einer kurzen Ruhepause erneut ausf\u00fchren. Wenn das Elementar in die Dimension der Luft zur\u00fcckkehrt, kann jeder Aarakocra im Umkreis von 5 Fu\u00df mit ihm zur\u00fcckkehren."
+					]
+				}
+			],
+			"languageTags": [
+				"AU",
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Alastrah",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 197,
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"type": "giant",
+			"alignment": [
+				"N"
+			],
+			"str": 14,
+			"languages": [
+				"Giant"
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel. {@h}4 ({@damage 1d4 + 2}) Schaden durch Wucht."
+					]
+				}
+			],
+			"languageTags": [
+				"GI"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Augrek Brighthelm",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 247,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shield dwarf"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 15,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"Augrek hat einen Vorteil bei Rettungsw\u00fcrfen gegen Gift."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Der stellvertretende Sheriff Augrek bewacht das s\u00fcdwestliche Tor von Bryn Shander und hei\u00dft Besucher in der Stadt willkommen. Sie hat ein gutes Herz.",
+						"Ideal: \"Mit einem freundlichen Wort kommst du im Leben weiter als mit einer Axt\".",
+						"Bond: \"Bryn Shander ist mein Zuhause. Es ist meine Aufgabe, sie zu besch\u00fctzen.\"",
+						"Makel: \"Ich bin Hals \u00fcber Kopf in Sheriff Southwell verliebt. Eines Tages hoffe ich, ihn zu heiraten.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d8 + 2}) Wuchtschaden, oder 7 ({@damage 1d10 + 2}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} bis Treffer, Reichweite 100/400 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d10}) Stich-Schaden. Augrek tr\u00e4gt zehn Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Axe of Mirabar Soldier",
+			"source": "SKT",
+			"page": 98,
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "veteran",
+						"with": "soldier"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"Der Soldat f\u00fchrt zwei Angriffe mit der Streitaxt aus. Wenn er eine Handaxt gezogen hat, kann er auch eine Handaxt-Attacke durchf\u00fchren."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Longsword",
+							"items": {
+								"name": "Battleaxe",
+								"entries": [
+									"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}7 ({@damage 1d8 + 3}) Hiebschaden, oder 8 ({@damage 1d10 + 3}) Hiebschaden, wenn mit zwei H\u00e4nden eingesetzt."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Shortsword",
+							"items": {
+								"name": "Handaxe",
+								"entries": [
+									"{@atk mw,rw} {@hit 5} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Hiebschaden."
+								]
+							}
+						}
+					]
+				}
+			},
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"con": 16,
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"THW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Beldora",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 249,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Illuskan"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 16,
+			"wis": 12,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+3",
+				"investigation": "+5",
+				"perception": "+5",
+				"persuasion": "+5"
+			},
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Halfling"
+			],
+			"trait": [
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Beldora ist ein Mitglied der Harpyien, die mit ihrem Verstand und ihrer Schlauheit \u00fcberlebt. Sie sieht aus wie eine Obdachlose, aber sie ist eine \u00dcberlebensk\u00fcnstlerin, die vor materiellem Reichtum zur\u00fcckschreckt.",
+						"Ideal: \"Wir sollten uns alle bem\u00fchen, einander zu helfen\"",
+						"Bond: \"Ich riskiere mein Leben, um die Machtlosen zu sch\u00fctzen.\"",
+						"Schw\u00e4che: \"Ich l\u00fcge die Leute gerne an. Das macht das Leben interessanter, oder?\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} als Treffer, Reichweite 30/120 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden. Beldora tr\u00e4gt zehn Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Duck and Cover",
+					"entries": [
+						"Beldora addiert 2 zu ihrem AC gegen einen Fernkampfangriff, der sie treffen w\u00fcrde. Um dies zu tun, muss Beldora den Angreifer sehen und darf nicht {@condition grappled} oder {@condition restrained} entfernt sein."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"H"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Braxow",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 207,
+			"_copy": {
+				"name": "Stone Giant",
+				"source": "MM"
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Chief Guh",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 140,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 9,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 160,
+				"formula": "10d12 + 40"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 21,
+			"dex": 1,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Giant",
+				"Goblin"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Riese f\u00fchrt zwei Angriffe mit der Gro\u00dfkeule oder zwei unbewaffnete Angriffe aus."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 8} Treffer, Reichweite 10 ft., ein Ziel. {@h}18 ({@damage 3d8 + 5}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Unarmed Attack",
+					"entries": [
+						"{@atk mw} {@hit 8} Treffer, Reichweite 10 ft., ein Ziel. {@h}12 ({@damage 3d4 + 5}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} bis zum Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}21 ({@damage 3d10 + 5}) Schaden durch Wucht."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"GO"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Chief Kartha-Kaya",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 173,
+			"_copy": {
+				"name": "Yakfolk Warrior",
+				"source": "SKT",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the yakfolk",
+						"with": "Chief Kartha",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"H\u00e4uptling Kartha f\u00fchrt zwei Angriffe aus, entweder mit seinem Flammenzungen-Gro\u00dfschwert oder seinem Langbogen."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Flame Tongue Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}18 ({@damage 4d6 + 4}) Hiebschaden plus 7 ({@damage 2d6}) Feuerschaden."
+								]
+							}
+						}
+					]
+				}
+			},
+			"hp": {
+				"average": 70,
+				"formula": "8d10 + 16"
+			},
+			"cr": "4",
+			"damageTags": [
+				"F",
+				"P",
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Cinderhild",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 182,
+			"_copy": {
+				"name": "Ogre",
+				"source": "MM"
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				9
+			],
+			"int": 12,
+			"wis": 12,
+			"senses": null,
+			"passive": 11,
+			"immune": [
+				"fire"
+			],
+			"action": [
+				{
+					"name": "Golden Pin",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}9 ({@damage 2d4 + 4}) Stich-Schaden."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Claugiyliamatar",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 96,
+			"otherSources": [
+				{
+					"source": "DC"
+				},
+				{
+					"source": "SLW"
+				},
+				{
+					"source": "SDW"
+				}
+			],
+			"_copy": {
+				"name": "Ancient Green Dragon",
+				"source": "MM"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Claugiyliamatar wirkt einen der folgenden Zauber, die keine materiellen Komponenten ben\u00f6tigen und Charisma als Zauberf\u00e4higkeit verwenden (Zauberschutz {@dc 19}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell druidcraft}",
+						"{@spell speak with animals}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell animal messenger}",
+							"{@spell cure wounds}",
+							"{@spell dispel magic}",
+							"{@spell entangle}",
+							"{@spell invisibility}"
+						],
+						"1e": [
+							"{@spell blight}",
+							"{@spell legend lore} (cast as 1 action)",
+							"{@spell locate creature}",
+							"{@spell pass without trace}",
+							"{@spell protection from energy}",
+							"{@spell true seeing}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Clockwork Mule",
+			"source": "SKT",
+			"page": 162,
+			"_copy": {
+				"name": "Mule",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Maintainable",
+							"entries": [
+								"Die Reparatur von 1 Trefferpunkt Schaden am Uhrwerk-Maultier dauert 1 Stunde und erfordert Ersatzteile, die in einer gro\u00dfen Stadt f\u00fcr 20 Gp gekauft werden k\u00f6nnen. Wenn das Maultier auf 0 Trefferpunkte f\u00e4llt, ist es zerst\u00f6rt und nicht mehr zu reparieren."
+							]
+						}
+					}
+				}
+			},
+			"type": "construct",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Cog",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 209,
+			"_copy": {
+				"name": "Hill Giant",
+				"source": "MM"
+			},
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Count Thullen",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 198,
+			"_copy": {
+				"name": "Cloud Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Thullen",
+						"flags": "i"
+					},
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Thullen ist ein Zauberwirker der Stufe 9. Seine Zauberf\u00e4higkeit ist Weisheit (Zauberschutz {@dc 15}, {@hit 7} um mit Zauberangriffen zu treffen). Er hat die folgenden Druidenzauber vorbereitet:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell druidcraft}",
+										"{@spell mending}",
+										"{@spell produce flame}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell entangle}",
+										"{@spell thunderwave}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell animal messenger}",
+										"{@spell barkskin}",
+										"{@spell gust of wind}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell call lightning}",
+										"{@spell conjure animals}",
+										"{@spell speak with plants}"
+									]
+								},
+								"4": {
+									"slots": 3,
+									"spells": [
+										"{@spell freedom of movement}",
+										"{@spell grasping vine}"
+									]
+								},
+								"5": {
+									"slots": 1,
+									"spells": [
+										"{@spell conjure elemental}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 16,
+					"condition": "with {@spell barkskin}",
+					"braces": true
+				}
+			],
+			"int": 14,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Druidic",
+				"Giant"
+			],
+			"cr": "10",
+			"languageTags": [
+				"C",
+				"DR",
+				"DU",
+				"GI"
+			],
+			"spellcastingTags": [
+				"CD",
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Countess Sansuri",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 192,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d12 + 96"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 22,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Auran",
+				"Common",
+				"Giant"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Sansuris angeborene F\u00e4higkeit zur Zauberei ist Charisma. Sie kann von Natur aus die folgenden Zauber wirken, die keine materiellen Komponenten ben\u00f6tigen:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell fog cloud}",
+						"{@spell light}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell feather fall}",
+							"{@spell fly}",
+							"{@spell misty step}",
+							"{@spell telekinesis}"
+						],
+						"1e": [
+							"{@spell control weather}",
+							"{@spell gaseous form}"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Sansuri wirkt einen der folgenden Zauber, f\u00fcr die keine materiellen Komponenten ben\u00f6tigt werden und die Intelligenz als Zauberfertigkeit verwenden (Zauberschutz {@dc 15}; {@hit 7}, um mit Zauberangriffen zu treffen):"
+					],
+					"will": [
+						"{@spell mage hand}",
+						"{@spell message}",
+						"{@spell prestidigitation}",
+						"{@spell ray of frost}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell arcane lock}",
+							"{@spell gust of wind}",
+							"{@spell invisibility}",
+							"{@spell magic missile}",
+							"{@spell unseen servant}"
+						],
+						"1e": [
+							"{@spell globe of invulnerability}",
+							"{@spell haste}",
+							"{@spell hypnotic pattern}",
+							"{@spell ice storm}",
+							"{@spell lightning bolt}",
+							"{@spell Mordenkainen's sword}",
+							"{@spell wall of force}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Sansuri hat einen Vorteil bei Weisheitspr\u00fcfungen ({@skill Perception}), die auf Geruch beruhen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fling",
+					"entries": [
+						"Sansuri versucht, eine kleine oder mittlere Kreatur im Umkreis von 10 Fu\u00df zu werfen. Das Ziel muss einen {@dc 20} Geschicklichkeitswurf bestehen oder wird bis zu 60 Fu\u00df horizontal in eine von Sansuri gew\u00e4hlte Richtung geschleudert und landet {@condition prone}, wobei es {@dice 1d8} Wuchtschaden pro 10 Fu\u00df erleidet."
+					]
+				},
+				{
+					"name": "Wind Aura",
+					"entries": [
+						"Eine magische Aura aus Wind umgibt Sansuri. Die Aura ist eine Kugel mit einem Radius von 10 Fu\u00df, die so lange anh\u00e4lt, wie Sansuri seine Konzentration darauf aufrecht erh\u00e4lt (als ob er sich auf einen Zauber konzentrieren w\u00fcrde). W\u00e4hrend die Aura in Kraft ist, erh\u00e4lt Sansuri einen Bonus von +2 auf seinen AC gegen Angriffe mit Fernkampfwaffen und alle offenen Flammen innerhalb der Aura werden gel\u00f6scht, es sei denn, sie sind magisch."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sansuri f\u00fchrt zwei Speerangriffe aus."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 12} Treffer, Reichweite 10 ft., ein Ziel. {@h}21 ({@damage 3d8 + 8}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 12} bis zum Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}30 ({@damage 4d10 + 8}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated",
+				"invisible"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Crag Cat",
+			"source": "SKT",
+			"page": 240,
+			"otherSources": [
+				{
+					"source": "IDRotF"
+				}
+			],
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 34,
+				"formula": "4d10 + 12"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 16,
+			"int": 4,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"stealth": "+7",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Nondetection",
+					"entries": [
+						"Die Katze kann nicht durch Wahrsagemagie anvisiert oder entdeckt werden und auch nicht durch magische Hellseher wahrgenommen werden."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"Wenn sich die Katze mindestens 20 Fu\u00df geradeaus auf eine Kreatur zubewegt und sie dann im selben Zug mit einem Klauenangriff trifft, muss das Ziel einen DC13-St\u00e4rke-Schutzwurf bestehen oder wird umgesto\u00dfen {@condition prone}. Wenn das Ziel {@condition prone} ist, kann die Katze eine Biss-Attacke gegen es als Bonus-Aktion durchf\u00fchren."
+					]
+				},
+				{
+					"name": "Spell Turning",
+					"entries": [
+						"Die Katze hat einen Vorteil bei Rettungsw\u00fcrfen gegen jeden Zauber, der nur auf die Katze zielt (nicht auf ein Gebiet). Wenn der Rettungswurf der Katze gelingt und der Zauber auf Stufe 7 oder niedriger ist, hat der Zauber keine Wirkung auf die Katze und zielt stattdessen auf den Zaubernden."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}8 ({@damage 1d10 + 3}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 3}) Hiebschaden."
+					]
+				}
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Cressaro",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 193,
+			"_copy": {
+				"name": "Cloud Giant",
+				"source": "MM"
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item bracers of defense}"
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Cryovain",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 165,
+			"_copy": {
+				"name": "Adult White Dragon",
+				"source": "MM"
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Darathra Shendrel",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 253,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Chondathan"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"skill": {
+				"history": "+2",
+				"intimidation": "+4",
+				"investigation": "+2",
+				"perception": "+2",
+				"persuasion": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"Darathra hat Vorteil bei Rettungsw\u00fcrfen gegen Wesen {@condition frightened}"
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Als Lordprotektor von Triboar und Geheimagent der Harpers hat Darathra einen Eid geschworen, die Stadt zu verteidigen. Sie nimmt ihre Pflicht sehr ernst. Zus\u00e4tzlich zu ihrer Ausr\u00fcstung hat Darathra ein ungepanzertes Schlachtpferd namens Buster.",
+						"Ideal: \"Gute Menschen sollten jede Chance haben, frei von Tyrannei zu gedeihen.",
+						"Bond: \"Ich werde mein Leben geben, um Triboar und seine B\u00fcrger zu sch\u00fctzen.\"",
+						"Schw\u00e4che: \"Ich weigere mich, klein beizugeben. Schubs mich, und ich schubs zur\u00fcck.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Darthra f\u00fchrt zwei Nahkampfangriffe aus."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}10 ({@damage 2d6 + 3}) Hiebschaden"
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} bis Treffer, Reichweite 100/400 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d10}) Stich-Schaden. Darathra tr\u00e4gt zwanzig Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Darz Helgar",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 253,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Illuskan"
+					}
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 15,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2",
+				"sleight of hand": "+4",
+				"stealth": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"trait": [
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Darz f\u00fcgt 7 ({@dice 2d6}) zus\u00e4tzlichen Schaden zu, wenn er ein Ziel mit einem Waffenangriff trifft und einen Vorteil beim Angriffswurf hat, oder wenn sich das Ziel innerhalb von 5 Fu\u00df um einen Verb\u00fcndeten von Darz befindet, der nicht {@condition incapacitated} ist, und Darz keinen Nachteil beim Angriffswurf hat."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"In seiner Jugend war Darz Mitglied der Diebesgilde von Xanathar in Waterdeep. Nachdem er f\u00fcr seine Verbrechen zehn Jahre im Gef\u00e4ngnis gesessen hatte, brach er alle Verbindungen zur Stadt ab und zog in den Norden, um als Lagerverwalter zu arbeiten.",
+						"Ideal: \"Du kannst vor deiner Vergangenheit davonlaufen, aber du kannst dich nicht vor ihr verstecken.\"",
+						"Bond: \"Ich habe mir auf Triboar ein neues Leben aufgebaut. Diesmal werde ich nicht weglaufen. \"",
+						"Makel: \"Ich bereue nichts. Ich tue alles, was n\u00f6tig ist, um zu \u00fcberleben.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 4} als Treffer, Reichweite 30/120 Fu\u00df, ein Ziel. {@h}4 ({@damage 1d4 + 2}) stechender Schaden. Darz tr\u00e4gt zwanzig Schleudersteine bei sich."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Deadstone Cleft Stone Giant",
+			"source": "SKT",
+			"page": 146,
+			"_copy": {
+				"name": "Stone Giant",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Olach Morrah",
+							"entries": [
+								"Der Riese meditiert 1 Stunde lang, w\u00e4hrend der er nichts anderes tun kann. Am Ende der Stunde, vorausgesetzt, die Meditation des Riesen wurde nicht unterbrochen, wird er f\u00fcr 8 Stunden zu {@condition petrified}. Nach Ablauf dieser Zeit ist der Riese nicht mehr versteinert und erlangt f\u00fcr die n\u00e4chsten 24 Stunden einen Zittersinn bis zu einer Reichweite von 30 Fu\u00df sowie ein gewisses Ma\u00df an angeborenen Zauberf\u00e4higkeiten."
+							]
+						}
+					}
+				}
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Die angeborene F\u00e4higkeit des Riesen zur Zauberei ist Weisheit. Er kann von Natur aus die folgenden Zauber wirken und ben\u00f6tigt daf\u00fcr keine materiellen Komponenten:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell meld into stone}",
+							"{@spell stone shape}"
+						],
+						"1e": [
+							"{@spell stoneskin}",
+							"{@spell time stop}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Duchess Brimskarda",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 185,
+			"_copy": {
+				"name": "Fire Giant",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Special Equipment",
+							"entries": [
+								"Brimskarda tr\u00e4gt einen {@item potion of invisibility} bei sich, den sie in ihrer ersten Runde im Kampf ausschenkt."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Rock",
+						"items": {
+							"name": "Iron Cauldron",
+							"entries": [
+								"{@atk rw} {@hit 11} bis Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}29 ({@damage 4d10 + 7}) Schaden durch Wucht."
+							]
+						}
+					}
+				}
+			},
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"dragon-scale dress"
+					]
+				}
+			],
+			"int": 14,
+			"languages": [
+				"Common",
+				"Giant",
+				"Goblin"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"GO"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Duke Zalto",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 184,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 221,
+				"formula": "13d12 + 78"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 23,
+			"int": 10,
+			"wis": 14,
+			"cha": 13,
+			"save": {
+				"dex": "+3",
+				"con": "+10",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"resist": [
+				"lightning"
+			],
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Giant"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Zalto verursacht doppelten Schaden an Objekten und Strukturen."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Zalto tr\u00e4gt eine {@item ring of lightning resistance}."
+					]
+				},
+				{
+					"name": "Tackle",
+					"entries": [
+						"Wenn Zalto zum ersten Mal in einer Runde den Raum eines Gegners betritt, muss dieser einen {@dc 19} St\u00e4rkeschutzwurf bestehen oder wird {@condition prone} niedergeschlagen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Zalto f\u00fchrt zwei Maulattacken durch."
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 11} Treffer, Reichweite 10 ft., ein Ziel. {@h}28 ({@damage 6d6 + 7}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 11} bis Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}29 ({@damage 4d10 + 7}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Duvessa Shane",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 248,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Illuskan"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 11,
+			"con": 10,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"persuasion": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Giant",
+				"Orc"
+			],
+			"trait": [
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Duvessa ist die Tochter eines wasserdhavischen H\u00e4ndlers und einer Tavernenwirtin. Sie hat das Verhandlungstalent ihrer Mutter und den Charme ihres Vaters. Als erste Frau, die das Amt der Stadtsprecherin von Bryn Shander bekleidet, und noch dazu eine junge, hat sie viel zu beweisen.",
+						"Ideal: \"Die Menschen in Icewind Dale sind \u00dcberlebensk\u00fcnstler. Sie k\u00f6nnen jeden Sturm \u00fcberstehen.\"",
+						"Bond: \"Meine Mutter hat mich gelehrt, was es hei\u00dft, eine gute F\u00fchrungskraft zu sein. Ich werde sie nicht entt\u00e4uschen.\"",
+						"Schw\u00e4che: \"Ich gebe in einem Konflikt keinen Zentimeter nach\"."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 2} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}2 ({@damage 1d4}) Stich-Schaden. Duvessa tr\u00e4gt nur einen Dolch bei sich."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Duvessa addiert 2 zu ihrem AC gegen einen Nahkampfangriff, der sie treffen w\u00fcrde. Um dies zu tun, muss Duvessa den Angreifer sehen und eine Nahkampfwaffe f\u00fchren."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"GI",
+				"O"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Eigeron's Ghost",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 129,
+			"_copy": {
+				"name": "Ghost",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Rejuvenation",
+							"entries": [
+								"Wird er zerst\u00f6rt, bildet sich der Geist nach 24 Stunden neu. Um den Geist wirklich zu zerst\u00f6ren, m\u00fcssen die Charaktere Eigerons Geist zur Ruhe bringen, indem sie Blagothkus t\u00f6ten."
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "removeArr",
+							"names": "Horrifying Visage"
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Possession {@recharge}",
+							"items": {
+								"name": "Possession {@recharge}",
+								"entries": [
+									"Ein Humanoider oder Riese, den der Geist im Umkreis von 5 Fu\u00df sehen kann, muss einen DC 13 Charisma-Wahlwurf bestehen, um nicht von dem Geist besessen zu werden; der Geist verschwindet dann und das Ziel ist {@condition incapacitated} und verliert die Kontrolle \u00fcber seinen K\u00f6rper. Der Geist kontrolliert nun den K\u00f6rper, beraubt das Ziel aber nicht seines Bewusstseins. Der Geist kann von keinem Angriff, Zauber oder anderen Effekt getroffen werden, au\u00dfer von solchen, die Untote verwandeln, und er beh\u00e4lt seine Ausrichtung, Intelligenz, Weisheit, Charisma und Immunit\u00e4t gegen {@condition charmed} und {@condition frightened}. Ansonsten verwendet er die Statistiken des besessenen Ziels, erh\u00e4lt aber keinen Zugang zu dessen Wissen, Klassenmerkmalen oder Fertigkeiten.",
+									"Die Besessenheit dauert an, bis der K\u00f6rper auf 0 Trefferpunkte f\u00e4llt, der Geist sie als Bonusaktion beendet oder der Geist durch einen Effekt wie den {@spell dispel evil and good}-Zauber verwandelt oder vertrieben wird. Wenn die Besessenheit endet, taucht der Geist in einem unbesetzten Raum innerhalb von 5 Fu\u00df um den K\u00f6rper wieder auf. Das Ziel ist 24 Stunden lang immun gegen die Besessenheit dieses Geistes, nachdem es den Rettungswurf bestanden hat oder die Besessenheit endet. Wenn eine Kreatur, die von dem Geist besessen ist, gewaltsam aus dem Auge von Annam entfernt wird, wird der Geist von seinem Wirt vertrieben und formt sich in der Mitte dieses Raumes neu."
+								]
+							}
+						}
+					]
+				}
+			},
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"G"
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d12"
+			},
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Rejuvenation"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Elister",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 154,
+			"_copy": {
+				"name": "Priest",
+				"source": "MM",
+				"_trait": {
+					"name": "Rock Gnome",
+					"source": "PHB"
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Elister ist ein Zauberwirker der Stufe 5. Seine Zauberfertigkeit ist Weisheit (Zauberschutz {@dc 13}, {@hit 5} Trefferquote bei Zauberangriffen). Elister hat die folgenden Klerikerzauber vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell sanctuary}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell spiritual weapon}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell create food and water}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"G",
+				"X"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Felbarren Dwarf",
+			"source": "SKT",
+			"page": 79,
+			"_copy": {
+				"name": "Guard",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Felgolos",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 192,
+			"_copy": {
+				"name": "Adult Bronze Dragon",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the dragon",
+						"with": "Felgolos",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Ghelryn Foehammer",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 255,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "dwarf",
+						"prefix": "shield"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item breastplate|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d8 + 12"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 18,
+			"dex": 7,
+			"con": 17,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+2",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"Ghelryn hat einen Vorteil bei Rettungsw\u00fcrfen gegen Gift."
+					]
+				},
+				{
+					"name": "Giant Slayer",
+					"entries": [
+						"Jeder Waffenangriff, den Ghelryn gegen einen Riesen f\u00fchrt, verursacht bei einem Treffer zus\u00e4tzlich 7 ({@dice 2d6}) Schaden."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Der Schmied Ghelryn hat ein gutes Herz, aber er hasst Orks und Riesen - er hasst sie mit feuriger Leidenschaft. Er h\u00e4lt es f\u00fcr die heilige Pflicht aller Zwerge, ihnen den Sch\u00e4del einzuschlagen!",
+						"Ideal: \"Es ist die Pflicht eines jeden Zwerges, ein Verm\u00e4chtnis zu hinterlassen.\"",
+						"Bond: \"Ich stehe f\u00fcr den Clan Foehammer und die gesamte Zwergenwelt.\"",
+						"Schw\u00e4che: \"Ich laufe nie vor einem Kampf davon, vor allem nicht, wenn es darum geht, Orks oder Riesen zu t\u00f6ten.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ghelryn f\u00fchrt zwei Angriffe mit der Streitaxt aus."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}8 ({@damage 1d8 + 4}) Hiebschaden, oder 9 ({@damage 1d10 + 4}) Hiebschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Giant Raven",
+			"source": "SKT",
+			"page": 66,
+			"_copy": {
+				"name": "Giant Vulture",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "vulture",
+						"with": "raven"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Great Chief Halric Bonesnapper",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 89,
+			"_copy": {
+				"name": "Berserker",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the berserker",
+						"with": "Halric",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hp": {
+				"average": 99,
+				"formula": "9d8 + 27"
+			},
+			"languages": [
+				"Bothii",
+				"Common"
+			],
+			"action": [
+				{
+					"name": "Greataxe +1",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 1d12 + 4}) Hiebschaden."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Harshnag",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 120,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item +3 plate armor}"
+					]
+				}
+			],
+			"hp": {
+				"average": 204,
+				"formula": "12d12 + 60"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 9,
+			"con": 21,
+			"int": 9,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"con": "+9",
+				"wis": "+4",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+4"
+			},
+			"passive": 13,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"Wenn Harshnag ein Rettungswurf misslingt, kann er stattdessen w\u00e4hlen, ob er erfolgreich ist."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Weighted Net",
+					"entries": [
+						"{@atk rw} {@hit 5} Treffer, Reichweite 20/60 Fu\u00df, eine kleine, mittlere oder gro\u00dfe Kreatur. {@h}Das Ziel ist {@condition restrained}, bis es aus dem Netz entkommt. Jede Kreatur kann ihre Aktion nutzen, um eine {@dc 17}-St\u00e4rkeprobe zu machen, um sich selbst oder eine andere Kreatur im Netz zu befreien; bei einem Erfolg wird der Effekt beendet. Wenn du dem Netz 15 Hiebschaden zuf\u00fcgst (AC 12), wird das Netz zerst\u00f6rt und das Ziel befreit."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Riese f\u00fchrt zwei Angriffe mit der Gro\u00dfaxt aus."
+					]
+				},
+				{
+					"name": "Gurt's Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 11} auf Treffer, Reichweite 10 Fu\u00df, ein Ziel. {@h}26 ({@damage 3d12 + 7}) Hiebschaden, oder 39 ({@damage 5d12 + 7}) Hiebschaden, wenn das Ziel ein Mensch ist."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 9} bis zum Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}28 ({@damage 4d10 + 6}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Hellenhild",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 207,
+			"_copy": {
+				"name": "Frost Giant",
+				"source": "MM"
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Huge Stone Golem",
+			"source": "SKT",
+			"page": 153,
+			"_copy": {
+				"name": "Stone Golem",
+				"source": "MM"
+			},
+			"size": [
+				"H"
+			],
+			"hp": {
+				"average": 195,
+				"formula": "17d12 + 85"
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Hulking Crab",
+			"source": "SKT",
+			"page": 240,
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 76,
+				"formula": "8d12 + 24"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 19,
+			"dex": 8,
+			"con": 16,
+			"int": 3,
+			"wis": 11,
+			"cha": 3,
+			"skill": {
+				"stealth": "+2"
+			},
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"passive": 10,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Die Krabbe kann Luft und Wasser atmen."
+					]
+				},
+				{
+					"name": "Shell Camouflage",
+					"entries": [
+						"W\u00e4hrend die Krabbe bewegungslos mit ihren Augenstielen und Zangen dicht am K\u00f6rper anliegt, \u00e4hnelt sie einer nat\u00fcrlichen Formation oder einem Ger\u00f6llhaufen. Eine Kreatur im Umkreis von 30 Fu\u00df kann ihre wahre Natur mit einer erfolgreichen {@dc 15} Intelligenz-(Natur)-\u00dcberpr\u00fcfung erkennen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Die Krabbe f\u00fchrt zwei Angriffe mit ihren Klauen aus."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 10 ft., ein Ziel. {@h}20 ({@damage 3d10 + 4}) Wuchtschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 15}). Die Krabbe hat zwei Klauen, von denen jede nur ein Ziel packen kann."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Hydia Moonmusk",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 148,
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the gladiator",
+						"with": "Hydia",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"languages": [
+				"Bothii",
+				"Common"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Ice Spider",
+			"source": "SKT",
+			"page": 127,
+			"_copy": {
+				"name": "Giant Spider",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Web {@recharge 5}",
+						"items": {
+							"name": "Icy Web {@recharge 5}",
+							"entries": [
+								"{@atk rw} {@hit 5} auf Treffer, Reichweite 30/60 Fu\u00df, eine Kreatur. {@h}Das Ziel ist {@condition restrained} von Gurtband umgeben und erleidet zu Beginn jeder seiner Runden 1 K\u00e4lteschaden. Als Aktion kann das {@condition restrained}-Ziel eine DC-12-St\u00e4rkeprobe ablegen und bei einem Erfolg das Gurtband zerrei\u00dfen. Das Gurtband kann auch angegriffen und zerst\u00f6rt werden (AC 10; HP 5; Verwundbarkeit gegen Feuerschaden; Immunit\u00e4t gegen Gift und psychischen Schaden)."
+							]
+						}
+					}
+				}
+			},
+			"resist": [
+				"cold"
+			],
+			"damageTags": [
+				"C",
+				"I",
+				"P"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Ice Spider Queen",
+			"source": "SKT",
+			"page": 128,
+			"_copy": {
+				"name": "Giant Spider",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Cold Aura",
+							"entries": [
+								"Jede Kreatur, die ihren Zug innerhalb von 5 Fu\u00df um die Spinne beginnt, erleidet 5 ({@damage 2d4}) K\u00e4lteschaden."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Web {@recharge 5}",
+						"items": {
+							"name": "Icy Web {@recharge 5}",
+							"entries": [
+								"{@atk rw} {@hit 5} auf Treffer, Reichweite 30/60 Fu\u00df, eine Kreatur. {@h}Das Ziel ist {@condition restrained} von einem Gurtband umgeben und erleidet zu Beginn jeder seiner Runden 2 ({@damage 1d4}) K\u00e4lteschaden. Als Aktion kann das {@condition restrained}-Ziel einen DC-12-St\u00e4rkecheck ablegen, bei dem es das Gurtband bei einem Erfolg zerrei\u00dft. Das Gurtband kann auch angegriffen und zerst\u00f6rt werden (AC 10; Hp 5; Verwundbarkeit gegen Feuerschaden; Immunit\u00e4t gegen Gift und psychischen Schaden)."
+							]
+						}
+					}
+				}
+			},
+			"hp": {
+				"average": 44,
+				"formula": "4d10 + 4"
+			},
+			"resist": [
+				"cold"
+			],
+			"cr": "2",
+			"damageTags": [
+				"C",
+				"I",
+				"P"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Imperator Uthor",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 209,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Uthor",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"Uthor f\u00fchrt zwei Angriffe mit dem Dreizack aus."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Trident of Fish Command",
+								"entries": [
+									"{@atk mw} {@hit 14} bis zum Treffer, Reichweite 10 Fu\u00df, ein Ziel. {@h}19 ({@damage 3d6 + 9}) Stich-Schaden, oder ({@damage 3d8 + 9}) Stich-Schaden, wenn mit zwei H\u00e4nden eingesetzt."
+								]
+							}
+						}
+					]
+				}
+			},
+			"hp": {
+				"average": 272,
+				"formula": "20d12 + 100"
+			},
+			"damageTags": [
+				"B",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Isendraug",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 164,
+			"_copy": {
+				"name": "Adult White Dragon",
+				"source": "MM"
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Iymrith",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 241,
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 481,
+				"formula": "26d20 + 208"
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 29,
+			"dex": 10,
+			"con": 27,
+			"int": 18,
+			"wis": 17,
+			"cha": 21,
+			"save": {
+				"dex": "+7",
+				"con": "+15",
+				"wis": "+10",
+				"cha": "+12"
+			},
+			"skill": {
+				"perception": "+17",
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 27,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Giant",
+				"Terran"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Iymrith wirkt einen der folgenden Zauber, f\u00fcr die keine Zauberkomponenten ben\u00f6tigt werden und die Charisma als Zauberf\u00e4higkeit verwenden (Zauberschutz {@dc 20}):"
+					],
+					"daily": {
+						"1e": [
+							"{@spell detect magic}",
+							"{@spell dispel magic}",
+							"{@spell ice storm}",
+							"{@spell stone shape}",
+							"{@spell teleport}"
+						]
+					},
+					"footerEntries": [
+						"When she casts her {@spell stone shape} spell, Iymrith can shape the targeted stone into a living {@creature gargoyle} instead of altering the stone as described in the spell's description. This transformation is permanent and can't be reversed or dispelled."
+					],
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Wenn Iymrith ein Rettungswurf misslingt, kann sie stattdessen einen Erfolg w\u00e4hlen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Iymrith kann ihre furchterregende Pr\u00e4senz einsetzen. Sie f\u00fchrt dann drei Angriffe aus: einen mit ihrem Biss und zwei mit ihren Klauen."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 16} auf Treffer, Reichweite 15 Fu\u00df, ein Ziel. {@h}20 ({@damage 2d10 + 9}) Stichschaden plus 11 ({@damage 2d10}) Blitzschaden."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 16} Treffer, Reichweite 10 ft., ein Ziel. {@h}16 ({@damage 2d6 + 9}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 16} bis zum Treffer, Reichweite 20 Fu\u00df, ein Ziel. {@h}18 ({@damage 2d8 + 9}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Jede Kreatur von Iymriths Wahl, die sich im Umkreis von 120 Fu\u00df um Iymrith befindet und ihn wahrnimmt, muss einen {@dc 20} Weisheitsschutzwurf bestehen oder wird 1 Minute lang {@condition frightened}. Eine Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg f\u00fcr sie selbst endet. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt f\u00fcr sie endet, ist die Kreatur f\u00fcr die n\u00e4chsten 24 Stunden immun gegen Iymriths furchterregende Anwesenheit."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"Iymrith st\u00f6\u00dft Blitze in einer 120 Fu\u00df langen Linie aus, die 10 Fu\u00df breit ist. Jede Kreatur in dieser Linie muss einen {@dc 23} Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutzwurf 88 ({@damage 16d10}) Blitzschaden, bei einem erfolgreichen Schutzwurf halb so viel."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Iymrith verwandelt sich auf magische Weise in eine Frau {@creature storm giant} oder zur\u00fcck in ihre wahre Gestalt. Sie kehrt in ihre wahre Form zur\u00fcck, wenn sie stirbt. Jegliche Ausr\u00fcstung, die sie tr\u00e4gt, wird von der neuen Form absorbiert oder getragen (nach Iymriths Wahl).",
+						"In der Form des Sturmriesen beh\u00e4lt Iymrith ihre Ausrichtung, Trefferpunkte, Trefferw\u00fcrfel, die F\u00e4higkeit zu sprechen, Fertigkeiten, legend\u00e4re Resistenzen, H\u00f6hlenaktionen und die Werte f\u00fcr Intelligenz, Weisheit und Charisma sowie diese Aktion. Ansonsten werden ihre Statistiken durch die der neuen Form ersetzt."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"Iymrith macht eine Weisheits\u00fcberpr\u00fcfung ({@skill Perception})."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"Iymrith f\u00fchrt einen Schwanzangriff aus."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"Iymrith schl\u00e4gt mit den Fl\u00fcgeln. Jede Kreatur im Umkreis von 15 Fu\u00df um Iymrith muss einen {@dc 24} Geschicklichkeitswurf bestehen oder 16 ({@damage 2d6 + 9}) Wuchtschaden erleiden und {@condition prone} umgeworfen werden. Iymrith kann dann bis zur H\u00e4lfte ihrer Fluggeschwindigkeit fliegen."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Blue Dragon",
+				"source": "MM"
+			},
+			"dragonCastingColor": "blue",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"GI",
+				"T"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"blinded",
+				"prone",
+				"restrained"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Jarl Storvald",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 165,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"barding scraps"
+					]
+				}
+			],
+			"hp": {
+				"average": 189,
+				"formula": "12d12 + 60"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 9,
+			"con": 21,
+			"int": 9,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+8",
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+9",
+				"perception": "+6"
+			},
+			"passive": 13,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Giant",
+				"Giant Owl"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Storvald wirkt einen der folgenden Zauber, die keine materiellen Komponenten ben\u00f6tigen und Weisheit als Zauberf\u00e4higkeit verwenden:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell jump}",
+							"{@spell locate animals or plants}",
+							"{@spell locate object}",
+							"{@spell water breathing}",
+							"{@spell water walk}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"name": "Weighted Net",
+					"entries": [
+						"{@atk rw} {@hit 5} Treffer, Reichweite 20/60 Fu\u00df, eine kleine, mittlere oder gro\u00dfe Kreatur. {@h}Das Ziel ist {@condition restrained}, bis es aus dem Netz entkommt. Jede Kreatur kann ihre Aktion nutzen, um eine {@dc 17}-St\u00e4rkeprobe zu machen, um sich selbst oder eine andere Kreatur im Netz zu befreien; bei einem Erfolg wird der Effekt beendet. Wenn du dem Netz 15 Hiebschaden zuf\u00fcgst (AC 12), wird das Netz zerst\u00f6rt und das Ziel befreit."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Riese f\u00fchrt zwei Angriffe mit der Gro\u00dfaxt aus."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 9} Treffer, Reichweite 10 ft., ein Ziel. {@h}25 ({@damage 3d12 + 6}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 9} bis zum Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}28 ({@damage 4d10 + 6}) Schaden durch Wucht."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"OTH"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Jasper Dimmerchasm",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 184,
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Jasper",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"Jasper f\u00fchrt zwei Angriffe mit der Streitaxt aus. Wenn er eine Handaxt gezogen hat, kann er auch einen Handaxt-Angriff ausf\u00fchren."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Longsword",
+							"items": {
+								"name": "Battleaxe",
+								"entries": [
+									"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}7 ({@damage 1d8 + 3}) Hiebschaden, oder 8 ({@damage 1d10 + 3}) Hiebschaden, wenn mit zwei H\u00e4nden eingesetzt."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Shortsword",
+							"items": {
+								"name": "Handaxe",
+								"entries": [
+									"{@atk mw,rw} {@hit 5} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Hiebschaden."
+								]
+							}
+						}
+					]
+				}
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"THW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Kaaltar",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 197,
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"type": "giant",
+			"alignment": [
+				"N"
+			],
+			"str": 14,
+			"languages": [
+				"Giant"
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel. {@h}4 ({@damage 1d4 + 2}) Schaden durch Wucht."
+					]
+				}
+			],
+			"languageTags": [
+				"GI"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Kella Darkhope",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 25,
+			"_copy": {
+				"name": "Spy",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the spy",
+						"with": "Kella",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Khaspere Drylund",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 216,
+			"_copy": {
+				"name": "Noble",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the noble",
+						"with": "Khaspere",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "King Hekaton",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 222,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 330,
+				"formula": "20d12 + 100"
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 50
+			},
+			"str": 29,
+			"dex": 14,
+			"con": 20,
+			"int": 16,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"str": "+14",
+				"con": "+10",
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+8",
+				"athletics": "+14",
+				"history": "+8",
+				"perception": "+9"
+			},
+			"passive": 19,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Die angeborene F\u00e4higkeit des Riesen zur Zauberei ist Charisma (Zauberschutz {@dc 17}). Er kann von Natur aus die folgenden Zauber wirken und ben\u00f6tigt daf\u00fcr keine materiellen Komponenten:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell feather fall}",
+						"{@spell levitate}",
+						"{@spell light}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell control weather}",
+							"{@spell water breathing}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Hekaton kann Luft und Wasser atmen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hekaton f\u00fchrt zwei unterbrochene Kettenangriffe aus."
+					]
+				},
+				{
+					"name": "Broken Chain",
+					"entries": [
+						"{@atk mw} {@hit 14} Treffer, Reichweite 10 ft., ein Ziel. {@h}18 ({@damage 3d6 + 9}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Ballista",
+					"entries": [
+						"{@atk rw} {@hit 6} bis zum Treffer, Reichweite 120/480 Fu\u00df, ein Ziel. {@h}18 ({@damage 3d10 + 2}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Lightning Strike {@recharge 5}",
+					"entries": [
+						"Hekaton schleudert einen magischen Blitz auf einen Punkt, den er innerhalb von 500 Fu\u00df Entfernung sehen kann. Jede Kreatur im Umkreis von 10 Fu\u00df um diesen Punkt muss einen {@dc 17} Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutzwurf 54 ({@damage 12d8}) Blitzschaden, bei einem erfolgreichen Schutzwurf halb so viel."
+					]
+				},
+				{
+					"name": "Thunderous Stomp {@recharge}",
+					"entries": [
+						"Hekaton stampft auf den Boden und l\u00f6st einen Donnerschlag aus. Alle anderen Kreaturen im Umkreis von 15 Fu\u00df um ihn m\u00fcssen einen {@dc 17} Konstitutionsschutzwurf bestehen oder 33 ({@damage 6d10}) Donnerschaden erleiden und bis zum Beginn von Hekatons n\u00e4chster Runde {@condition deafened} sein. Bei einem erfolgreichen Schutzwurf erleidet die Kreatur halb so viel Schaden und ist nicht {@condition deafened}. Der Donnerschlag ist bis zu einer Reichweite von 1.200 Fu\u00df zu h\u00f6ren."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Klauth",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 95,
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 546,
+				"formula": "28d20 + 252"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 80
+			},
+			"str": 30,
+			"dex": 10,
+			"con": 29,
+			"int": 18,
+			"wis": 15,
+			"cha": 23,
+			"save": {
+				"dex": "+8",
+				"con": "+17",
+				"wis": "+10",
+				"cha": "+14"
+			},
+			"skill": {
+				"perception": "+16",
+				"stealth": "+8"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 26,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Klauth wirkt einen der folgenden Zauber, die keine materiellen Komponenten ben\u00f6tigen und Charisma als Zauberf\u00e4higkeit verwenden (Zauberschutz {@dc 22}):"
+					],
+					"will": [
+						"{@spell comprehend languages}",
+						"{@spell detect magic}",
+						"{@spell mage hand}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell darkness}",
+							"{@spell detect thoughts}",
+							"{@spell ice storm}"
+						],
+						"1e": [
+							"{@spell banishment}",
+							"{@spell cloudkill}",
+							"{@spell disintegrate}",
+							"{@spell etherealness}",
+							"{@spell find the path} (cast as 1 action)",
+							"{@spell greater invisibility}",
+							"{@spell haste}",
+							"{@spell locate object}",
+							"{@spell mass suggestion}",
+							"{@spell mirage arcane} (cast as 1 action)",
+							"{@spell prismatic spray}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Wenn Klauth ein Rettungswurf misslingt, kann er stattdessen einen Erfolg w\u00e4hlen."
+					]
+				},
+				{
+					"name": "Dual Wand Wielder",
+					"entries": [
+						"Wenn Klauth zwei Zauberst\u00e4be bei sich tr\u00e4gt, kann er mit einer Aktion 1 Ladung von jedem Zauberstab verbrauchen, wodurch die Effekte beider Zauberst\u00e4be gleichzeitig ausgel\u00f6st werden."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Klauth tr\u00e4gt ein {@item wand of fireballs} und ein {@item wand of lightning bolts}, und er tr\u00e4gt ein {@item ring of cold resistance}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Klauth kann seine furchterregende Pr\u00e4senz einsetzen. Er f\u00fchrt dann drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} auf Treffer, Reichweite 15 Fu\u00df, ein Ziel. {@h}21 ({@damage 2d10 + 10}) Stichschaden plus 14 ({@damage 4d6}) Feuerschaden."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 17} Treffer, Reichweite 10 ft., ein Ziel. {@h}17 ({@damage 2d6 + 10}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 17} bis zum Treffer, Reichweite 20 Fu\u00df, ein Ziel. {@h}19 ({@damage 2d8 + 10}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Jede Kreatur von Klauths Wahl, die sich in einem Umkreis von 120 Fu\u00df von Klauth befindet und ihn wahrnimmt, muss einen {@dc 21} Weisheitswurf bestehen oder wird 1 Minute lang {@condition frightened}. Eine Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg f\u00fcr sie selbst endet. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt f\u00fcr sie endet, ist die Kreatur f\u00fcr die n\u00e4chsten 24 Stunden immun gegen Klauths furchterregende Anwesenheit."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"Klauth st\u00f6\u00dft das Feuer in einem 90 Fu\u00df hohen Kegel aus. Jede Kreatur in diesem Bereich muss einen {@dc 24} Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutzwurf 91 ({@damage 26d6}) Feuerschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"Klauth macht einen Weisheitscheck ({@skill Perception})."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"Klauth macht einen Schwanzangriff."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"Klauth schl\u00e4gt mit den Fl\u00fcgeln. Jede Kreatur im Umkreis von 15 Fu\u00df um Klauth muss einen {@dc 25} Geschicklichkeitswurf bestehen oder 17 ({@damage 2d6 + 10}) Wuchtschaden erleiden und {@condition prone} umgeworfen werden. Klauth kann dann bis zur H\u00e4lfte seiner Fluggeschwindigkeit fliegen."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Red Dragon",
+				"source": "MM"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"incapacitated",
+				"poisoned",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"charmed",
+				"incapacitated",
+				"invisible",
+				"petrified",
+				"restrained"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Knight of the Mithral Shield",
+			"source": "SKT",
+			"page": 79,
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Possessed",
+							"entries": [
+								"Solange der Ritter von Yakfolk besessen ist, ist seine Ausrichtung rechtschaffen b\u00f6se und er kann Yikaria (die Sprache des Yakfolk) sprechen."
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Warhammer",
+								"entries": [
+									"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 3}) Wuchtschaden, oder 8 ({@damage 1d10 + 3}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+								]
+							}
+						}
+					]
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Lifferlas",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 250,
+			"size": [
+				"H"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d12 + 14"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 19,
+			"dex": 6,
+			"con": 15,
+			"int": 10,
+			"wis": 10,
+			"cha": 7,
+			"passive": 10,
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"languages": [
+				"Common"
+			],
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"Solange Lifferlas unbeweglich bleibt, ist er von einem normalen Baum nicht zu unterscheiden."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Ein Druide der Smaragd-Enklave erweckte den Baum Lifferlas mit einem Zauberspruch. Goldenfields ist seine Heimat, die Menschen dort seine Freunde. Kinder schnitzen gerne ihre Namen und Initialen in seinen K\u00f6rper und h\u00e4ngen sich an seine \u00c4ste, und er ist gl\u00fccklich damit.",
+						"Ideal: \"Ich bin da, um die Menschen und Pflanzen von Goldenfields zu sch\u00fctzen.\"",
+						"Bond: \"Kinder sind wunderbar. Ich w\u00fcrde alles tun, damit sie sich gl\u00fccklich und sicher f\u00fchlen.\"",
+						"Schw\u00e4che: \"Ich kann mir die Namen der Leute nicht merken und verwechsle sie oft.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lifferlas f\u00fchrt zwei Schl\u00e4ge aus."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} Treffer, Reichweite 10 ft., ein Ziel. {@h}14 ({@damage 3d6 + 4}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Maegera the Dawn Titan",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 241,
+			"size": [
+				"G"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 341,
+				"formula": "22d20 + 110"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 21,
+			"dex": 22,
+			"con": 20,
+			"int": 10,
+			"wis": 10,
+			"cha": 19,
+			"save": {
+				"con": "+12",
+				"wis": "+7",
+				"cha": "+11"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Ignan"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Maegera wirkt {@spell fireball} (Zauberschutz {@dc 19}), ben\u00f6tigt keine materiellen Komponenten und verwendet Charisma als Zauberf\u00e4higkeit."
+					],
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Empowered Attacks",
+					"entries": [
+						"Maegeras Schleuderangriffe werden als magisch behandelt, um Widerstand und Immunit\u00e4t gegen Schaden durch nichtmagische Angriffe zu \u00fcberwinden."
+					]
+				},
+				{
+					"name": "Fire Aura",
+					"entries": [
+						"Zu Beginn jeder Runde von Maegera erleidet jede Kreatur im Umkreis von 30 Fu\u00df 35 ({@damage 10d6}) Feuerschaden, und entflammbare Gegenst\u00e4nde in der Aura, die nicht getragen werden, entz\u00fcnden sich. Eine Kreatur erleidet au\u00dferdem 35 ({@damage 10d6}) Feuerschaden, wenn sie Maegera ber\u00fchrt oder mit einem Nahkampfangriff trifft, w\u00e4hrend sie sich in einem Umkreis von 10 Fu\u00df befindet, und eine Kreatur erleidet diesen Schaden das erste Mal in einem Zug, in dem sich Maegera in ihren Raum bewegt. Nichtmagische Waffen, die Maegera treffen, werden sofort durch Feuer zerst\u00f6rt, nachdem sie ihr Schaden zugef\u00fcgt haben."
+					]
+				},
+				{
+					"name": "Fire Form",
+					"entries": [
+						"Maegera kann in den Raum eines feindlichen Wesens eindringen und sich dort aufhalten. Sie kann sich durch einen bis zu 1 Zoll breiten Raum bewegen, ohne sich zu quetschen, wenn Feuer durch diesen Raum dringen k\u00f6nnte."
+					]
+				},
+				{
+					"name": "Illumination",
+					"entries": [
+						"Maegera spendet helles Licht in einem Radius von 120 Fu\u00df und schwaches Licht in einem weiteren Radius von 120 Fu\u00df."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Maegera hat einen Vorteil bei Rettungsw\u00fcrfen gegen Zauber und andere magische Effekte."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Maegera f\u00fchrt drei Schl\u00e4ge aus."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 12} auf Treffer, Reichweite 15 Fu\u00df, ein Ziel. {@h}15 ({@damage 3d6 + 5}) Schaden durch Wucht plus 35 ({@damage 10d6}) Feuerschaden"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Quench Magic",
+					"entries": [
+						"Maegera zielt auf eine Kreatur, die sie im Umkreis von 60 Fu\u00df sehen kann. Jede Resistenz oder Immunit\u00e4t gegen Feuerschaden, die das Ziel durch einen Zauber oder magischen Gegenstand erlangt, wird unterdr\u00fcckt. Der Effekt h\u00e4lt bis zum Ende von Maegeras n\u00e4chstem Zug an."
+					]
+				},
+				{
+					"name": "Smoke Cloud (Costs 2 Actions)",
+					"entries": [
+						"Maegera st\u00f6\u00dft eine wogende Wolke aus hei\u00dfem Rauch und Glut aus, die einen W\u00fcrfel von 60 Fu\u00df ausf\u00fcllt. Jede Kreatur in diesem Bereich erleidet 11 ({@damage 2d10}) Feuerschaden. Die Wolke h\u00e4lt bis zum Ende von Maegeras n\u00e4chstem Zug an. Kreaturen, die sich vollst\u00e4ndig in der Wolke befinden, sind {@condition blinded} und k\u00f6nnen nicht gesehen werden."
+					]
+				},
+				{
+					"name": "Create Fire Elemental (Costs 3 Actions)",
+					"entries": [
+						"Die Trefferpunkte von Maegera werden um 50 reduziert, als Teil der Trennung und wird zu einem {@creature fire elemental} mit 102 Trefferpunkten. Das Feuerelement erscheint in einem unbesetzten Raum innerhalb von 15 Fu\u00df um Maegera und wirkt auf Maegeras Initiative. Maegera kann diese Aktion nicht nutzen, wenn sie 50 Trefferpunkte oder weniger hat. Das Feuerelement gehorcht Maegeras Befehlen und k\u00e4mpft, bis es zerst\u00f6rt wird."
+					]
+				}
+			],
+			"traitTags": [
+				"Illumination",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"IG"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Markham Southwell",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 248,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Turami"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 13,
+			"con": 14,
+			"int": 11,
+			"wis": 16,
+			"cha": 14,
+			"skill": {
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"trait": [
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Sheriff Markham von Bryn Shander ist ein st\u00e4mmiger, sympathischer Mann, der wenig Worte macht. Nichts ist f\u00fcr ihn wichtiger als der Schutz von Icewind Dale. Er beurteilt andere nach ihren Taten, nicht nach ihren Worten.",
+						"Ideal: \"Alle Menschen verdienen es, mit W\u00fcrde behandelt zu werden\".",
+						"Bond: \"Duvessa ist eine nat\u00fcrliche Anf\u00fchrerin, aber sie braucht Hilfe. Das ist meine Aufgabe.\"",
+						"Schw\u00e4che: \"Ich vergrabe meine Gef\u00fchle und habe kein Interesse an Smalltalk\"."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Markham f\u00fchrt zwei Nahkampfangriffe aus."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}6 ({@damage 1d8 + 2}) Hiebschaden, oder 7 ({@damage 1d10 + 2}) Hiebschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} bis zum Treffer, Reichweite 100/400 Fu\u00df, ein Ziel. {@h}6 ({@damage 1d10 + 1}) Stich-Schaden. Markham tr\u00e4gt zwanzig Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Miros Xelbrin",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 251,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Damaran"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"intimidation": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"trait": [
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Gastwirt Miros ist eine pensionierte Jahrmarktsattraktion, die wegen ihres tonnenf\u00f6rmigen K\u00f6rpers und der dicken, wei\u00dfen Haare, die Arme, Brust, R\u00fccken und Kopf bedecken, \"der Yeti\" genannt wird. Wenn Goldenfields leidet, leidet auch sein Gesch\u00e4ft, und so setzt er alles daran, das Gel\u00e4nde zu sch\u00fctzen.",
+						"Ideal: \"Wie die Smaragd-Enklave glaube auch ich, dass Zivilisation und Wildnis lernen m\u00fcssen, nebeneinander zu existieren.\"",
+						"Bond: \"Machen Sie sich \u00fcber mich lustig, so viel Sie wollen, aber sprechen Sie nicht schlecht \u00fcber mein Gasthaus oder meine Mitarbeiter.\"",
+						"Schw\u00e4che: \"Wenn mich etwas aufregt, neige ich dazu, in Wut zu geraten\"."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bear Hug",
+					"entries": [
+						"{@atk mw} {@hit 5} auf Treffer, Reichweite 5 ft., eine Kreatur. {@h}5 ({@damage 1d4 + 3}) Wuchtschaden und das Ziel {@condition grappled} (entkommt {@dc 13}) und erleidet zu Beginn jeder von Miros' Runden 5 ({@damage 1d4 + 3}) Wuchtschaden, bis der Haltegriff endet. Miros kann keine Angriffe ausf\u00fchren, w\u00e4hrend er eine Kreatur im Griff hat."
+					]
+				},
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d4 + 1}) Schaden durch Wucht"
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} bis Treffer, Reichweite 100/400 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d10}) Stich-Schaden. Miros tr\u00e4gt zehn Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mirran",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 207,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Mirran",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"skill": {
+				"arcana": "+8",
+				"athletics": "+14",
+				"deception": "+9",
+				"history": "+8",
+				"perception": "+9",
+				"performance": "+9"
+			},
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Morak Ur'gray",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 31,
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Narbeck Horn",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 114,
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the knight",
+						"with": "Narbeck",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Greatsword",
+						"items": {
+							"name": "Greataxe",
+							"entries": [
+								"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}9 ({@damage 1d12 + 3}) Hiebschaden."
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Narth Tezrin",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 254,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Tethyrian"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"insight": "+4",
+				"investigation": "+3",
+				"perception": "+6",
+				"persuasion": "+5"
+			},
+			"passive": 16,
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"In jedem seiner Spielz\u00fcge kann Narth eine Bonusaktion nutzen, um die Aktionen \"Hetzen\", \"Ausweichen\" oder \"Verstecken\" auszuf\u00fchren."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Narth verkauft Ausr\u00fcstung an Abenteurer, und auch er ist abenteuerlustig. Der L\u00f6wenschild Coster bezahlt ihn gut, aber er sehnt sich danach, sich einen Namen zu machen. Gleichzeitig f\u00fchrt er ein Gesch\u00e4ft mit seiner Partnerin Alaestra und wei\u00df, dass sie ihm nicht verzeihen w\u00fcrde, wenn er davonliefe und nie zur\u00fcckkehrte.",
+						"Ideal: \"Je gr\u00f6\u00dfer das Risiko, desto gr\u00f6\u00dfer die Belohnung\".",
+						"Bond: \"Ich verehre meine Kollegin Alestra und m\u00f6chte sie mit etwas beeindrucken\".",
+						"Schw\u00e4che: \"Ich riskiere Leib und Leben, um eine Legende zu werden...\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} als Treffer, Reichweite 30/120 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden. Narth tr\u00e4gt zwanzig Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Naxene Drathkala",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 252,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Turami"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				10,
+				{
+					"ac": 13,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 11,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"skill": {
+				"arcana": "+5",
+				"history": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Naxene wirkt einen der folgenden Zauber, wobei er Intelligenz als Zauberf\u00e4higkeit verwendet (Zauberschutz {@dc 13}; {@hit 5} um mit Zauberangriffen zu treffen):"
+					],
+					"will": [
+						"{@spell fire bolt} ({@damage 1d10} fire damage)",
+						"{@spell light}",
+						"{@spell mage hand}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell mage armor}",
+							"{@spell magic missile}",
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Die Ernten von Goldenfields sind f\u00fcr Waterdeep \u00fcberlebenswichtig, weshalb der W\u00e4chterorden der Magier und Besch\u00fctzer Naxene geschickt hat, um sicherzustellen, dass die Tempelfarm angemessen verteidigt wird. Anfangs empfand sie die Aufgabe als Strafe, doch jetzt sch\u00e4tzt sie die Ruhe und den Frieden.",
+						"Ideal: \"Es gibt kein Problem, das nicht mit Magie gel\u00f6st werden kann.\"",
+						"Bond: \"Ich habe gro\u00dfen Respekt vor Lady Laeral Silberhand von Waterdeep. Sie und die Lords' Alliance werden die dringend ben\u00f6tigte Ordnung in dieses gesetzlose Land bringen.\"",
+						"Schw\u00e4che: \"Ich bin zu klug, um mich zu irren\"."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 1} Treffer, Reichweite 5 ft., eine Kreatur. {@h}2 ({@damage 1d6 - 1}) Wuchtschaden, oder 3 ({@damage 1d8 - 1}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Nimir",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 256,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Nimir",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Roleplaying Information",
+							"entries": [
+								"Nimir ist ein einf\u00fchlsamer, ausgeglichener Sturmriese, der glaubt, dass ein dauerhaftes B\u00fcndnis zwischen Riesen und kleinen Menschen die Welt sicherer und aufgekl\u00e4rter machen kann. Er glaubt, dass es weise von K\u00f6nig Hekaton war, Prinzessin Serissa zu seiner Thronfolgerin zu machen, und es k\u00e4me ihm nie in den Sinn, ihre Befehle in Frage zu stellen.",
+								"Ideal: \"Es ist die Pflicht der Gro\u00dfen, die Kleinen zu sch\u00fctzen\".",
+								"Bond: \"Ich w\u00fcrde mein Leben geben, um meinen K\u00f6nig und seine k\u00f6nigliche Linie zu verteidigen.\"",
+								"Fehler: \"Ich stelle Befehle nie in Frage\"."
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"skill": {
+				"athletics": "+14",
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Der Riese wirkt einen der folgenden Zauber, f\u00fcr die keine materiellen Zauberkomponenten ben\u00f6tigt werden und die Charisma als Zauberf\u00e4higkeit verwenden (Zauberschutz {@dc 17}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell levitate}",
+						"{@spell light}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell control weather} (cast as 1 action)",
+							"{@spell water breathing}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Noori",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 127,
+			"_copy": {
+				"name": "Berserker",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the berserker",
+						"with": "Noori",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"skill": {
+				"stealth": "+3",
+				"survival": "+2"
+			},
+			"languages": [
+				"Bothii",
+				"Common"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Nym",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 207,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Nym",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"skill": {
+				"arcana": "+8",
+				"athletics": "+14",
+				"deception": "+9",
+				"history": "+8",
+				"perception": "+9",
+				"performance": "+9"
+			},
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Ogre Goblin Hucker",
+			"source": "SKT",
+			"page": 50,
+			"_copy": {
+				"name": "Ogre",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Goblin Projectile",
+							"entries": [
+								"{@atk rw} {@hit 3} zu treffen, Reichweite 150/600 ft. (kann Ziele innerhalb von 30 Fu\u00df um den Hucker nicht treffen), ein Ziel. Treffer: 5 ({@damage 2d4}) Wuchtschaden oder 10 ({@damage 4d4}) Stichschaden, wenn das Projektil einen Stachelhelm tr\u00e4gt. {@i Hit or Miss:} Das Goblingeschoss erleidet {@damage 1d6} Wuchtschaden pro 10 Fu\u00df, die es durch die Luft fliegt (maximal {@damage 20d6})."
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Oren Yogilvy",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 252,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"strongheart halfling"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d6 + 2"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 8,
+			"dex": 13,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 16,
+			"skill": {
+				"perception": "+2",
+				"performance": "+7",
+				"persuasion": "+5"
+			},
+			"passive": 12,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Halfling"
+			],
+			"trait": [
+				{
+					"name": "Halfling Nimbleness",
+					"entries": [
+						"Oren kann sich durch den Raum eines jeden Wesens bewegen, das gr\u00f6\u00dfer ist als er selbst."
+					]
+				},
+				{
+					"name": "Lucky",
+					"entries": [
+						"Wenn Oren bei einem Angriffswurf, einer F\u00e4higkeitspr\u00fcfung oder einem Rettungswurf eine 1 w\u00fcrfelt, kann er den W\u00fcrfel neu werfen und muss den neuen Wurf verwenden."
+					]
+				},
+				{
+					"name": "Stout Resilience",
+					"entries": [
+						"Oren hat Vorteil bei Rettungsw\u00fcrfen gegen Gift"
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Oren kam nach Nurthfurrow's End auf der Suche nach leichter Arbeit und fand sie. Er singt f\u00fcr sein Abendbrot, trinkt wie ein Fisch und wandert nachts \u00fcber die Felder und denkt sich neue Texte aus, um die anderen G\u00e4ste des Gasthauses zu unterhalten. Von Zeit zu Zeit sorgt Oren gerne f\u00fcr Unruhe, aber er hat keinen b\u00f6sen Knochen im Leib.",
+						"Ideal: \"Musik ist Nahrung f\u00fcr die Seele\".",
+						"Bond: \"Sie hatten mich schon bei \"Darf ich Sie auf einen Drink einladen\".",
+						"Fehler: \"Ich habe ein Talent daf\u00fcr, mich in Gefahr zu bringen. Gut, dass ich Gl\u00fcck habe!\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}3 ({@damage 1d4 + 1}) Stich-Schaden. Duvessa tr\u00e4gt nur einen Dolch bei sich."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"H"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Orlekto",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 256,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Orlekto",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Roleplaying Information",
+							"entries": [
+								"Orlekto ist in Prinzessin Mirran verliebt und m\u00f6chte, dass sie K\u00f6nigin auf dem Wyrmskull-Thron wird. (Wenn Mirran tot ist, will Orlekto sie r\u00e4chen.) Wenn sich die Gelegenheit bietet, Hekaton oder Serissa zu beseitigen, ergreift Orlekto sie. Bis dahin verbirgt er seine verr\u00e4terische Natur.",
+								"Ideal: \"Sturmriesen sollten die Welt regieren. Schwache Anf\u00fchrer haben zugelassen, dass Drachen und andere stehlen, was die G\u00f6tter uns gegeben haben!\"",
+								"Bond: \"Ich diene Prinzessin Mirran und nur ihr.\"",
+								"Schw\u00e4che: \"F\u00fcr Mirrans Liebe oder meine Rache w\u00fcrde ich meinen K\u00f6nig und meine Ehre verraten.\""
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"skill": {
+				"athletics": "+14",
+				"deception": "+14",
+				"perception": "+9"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Der Riese wirkt einen der folgenden Zauber, f\u00fcr die keine materiellen Zauberkomponenten ben\u00f6tigt werden und die Charisma als Zauberf\u00e4higkeit verwenden (Zauberschutz {@dc 17}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell levitate}",
+						"{@spell light}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell control weather} (cast as 1 action)",
+							"{@spell water breathing}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Orok",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 115,
+			"_copy": {
+				"name": "Kobold",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the kobold",
+						"with": "Orok",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "removeArr",
+						"names": "Sunlight Sensitivity"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"senses": null,
+			"languages": [
+				"Bothii",
+				"Common"
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Othovir",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 255,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Illuskan"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				10,
+				{
+					"ac": 13,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 10,
+			"con": 13,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"persuasion": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Othovir wirkt einen der folgenden Zauber, wobei er Charisma als Zauberf\u00e4higkeit einsetzt (Zauberschutz {@dc 13}; {@hit 5} um mit Zauberangriffen zu treffen):"
+					],
+					"will": [
+						"{@spell fire bolt} ({@damage 1d10} fire damage)",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell mage armor}",
+							"{@spell thunderwave}",
+							"{@spell witch bolt}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Othovir ist ein begabter Harnischmacher, der nicht \u00fcber seine Familie oder seine Herkunft spricht. Ihm geht es um sein Gesch\u00e4ft, seine Kunden und seinen guten Namen.",
+						"Ideal: \"Finde heraus, was du gut kannst, und tue es mit deinem ganzen K\u00f6nnen.",
+						"Bond: \"Ich werde nicht zulassen, dass mein Name beschmutzt wird.\"",
+						"Schw\u00e4che: \"Ich werde w\u00fctend, wenn andere in meinem Privatleben herumschn\u00fcffeln\"."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 2} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}4 ({@damage 1d8}) Stich-Schaden."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Othovir addiert 2 zu seinem AC gegen einen Nahkampfangriff, der ihn treffen w\u00fcrde. Um dies zu tun, muss Othovir den Angreifer sehen und eine Nahkampfwaffe f\u00fchren."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Pig",
+			"source": "SKT",
+			"page": 143,
+			"_copy": {
+				"name": "Boar",
+				"source": "MM"
+			},
+			"hp": {
+				"average": 5,
+				"formula": "1d8 + 1"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"cr": "0",
+			"trait": null,
+			"action": null,
+			"traitTags": [],
+			"miscTags": [],
+			"hasToken": true
+		},
+		{
+			"name": "Pow Ming",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 216,
+			"_copy": {
+				"name": "Mage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mage",
+						"with": "Pow",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Special Equipment",
+							"entries": [
+								"Pow tr\u00e4gt eine {@item bag of holding} und ein {@item robe of serpents|skt} mit sechs Schlangen."
+							]
+						}
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Pow ist ein Zauberwirker der Stufe 9. Ihre Zauberf\u00e4higkeit ist Intelligenz (Zauberschutz {@dc 14}, {@hit 6} um mit Zauberangriffen zu treffen). Pow hat die folgenden Zauberspr\u00fcche vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell suggestion}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell cone of cold}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Purple Wormling",
+			"source": "SKT",
+			"page": 242,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d10 + 15"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 16,
+			"dex": 7,
+			"con": 16,
+			"int": 1,
+			"wis": 6,
+			"cha": 2,
+			"senses": [
+				"blindsight 30 ft.",
+				"tremorsense 30 ft."
+			],
+			"passive": 8,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Wurm hat zwei Angriffe: einen mit seinem Biss und einen mit seinem Stachel."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 5}) Stich-Schaden. Wenn das Ziel eine kleine oder kleinere Kreatur ist, muss es einen {@dc 13} Schutzwurf auf Geschicklichkeit bestehen oder vom Wurm verschluckt werden. Eine verschluckte Kreatur ist {@condition blinded} und {@condition restrained}, sie hat totale Deckung vor Angriffen und anderen Effekten au\u00dferhalb des Wurmlings und erleidet zu Beginn jeder Runde des Wurmlings 3 ({@damage 1d6}) S\u00e4ureschaden.",
+						"Wenn der Wurmling in einer einzigen Runde 10 oder mehr Schaden durch eine Kreatur in seinem Inneren erleidet, muss der Wurmling am Ende dieser Runde einen {@dc 21} Konstitutionsrettungswurf bestehen oder alle verschluckten Kreaturen erbrechen, die dann {@condition prone} in einen Raum innerhalb von 10 Fu\u00df um den Wurmling fallen. Wenn der Wurmling stirbt, wird eine verschluckte Kreatur nicht l\u00e4nger {@condition restrained} von ihm gehalten und kann dem Leichnam entkommen, indem sie 5 Fu\u00df Bewegung verwendet und {@condition prone} verl\u00e4sst."
+					]
+				},
+				{
+					"name": "Tail Stinger",
+					"entries": [
+						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., eine Kreatur. {@h}5 ({@damage 1d4 + 3}) Stichschaden. Das Ziel muss einen {@dc 13} Konstitutionsschutzwurf machen und erleidet bei einem misslungenen Schutz 10 ({@damage 3d6}) Giftschaden, bei einem erfolgreichen Schutz halb so viel Schaden."
+					]
+				}
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Rool",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 221,
+			"_copy": {
+				"name": "Assassin",
+				"source": "MM",
+				"_trait": {
+					"name": "Half-Orc",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the assassin",
+						"with": "Rool",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"O",
+				"TC",
+				"X"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Sea Elf",
+			"source": "SKT",
+			"page": 70,
+			"_copy": {
+				"name": "Merfolk",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "merfolk",
+						"with": "sea elf",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Fey Ancestry",
+							"entries": [
+								"Die Seeelfe hat einen Vorteil bei Rettungsw\u00fcrfen gegen das Wesen {@condition charmed}, und Magie kann die Seeelfe nicht in Schlaf versetzen."
+							]
+						}
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"traitTags": [
+				"Amphibious",
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Serissa",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 209,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Serissa",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"Serissa macht zwei Maulattacken."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 14} Treffer, Reichweite 10 ft., ein Ziel. {@h}30 ({@damage 6d6 + 9}) Schaden durch Wucht."
+								]
+							}
+						}
+					]
+				}
+			},
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "20d12 + 100"
+			},
+			"damageTags": [
+				"B",
+				"L"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Shaldoor",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 256,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Shaldoor",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Roleplaying Information",
+							"entries": [
+								"Shaldoor ist ein geschickter Reiter auf Rochen und Walen und glaubt, dass Annam, der Allvater, die Ordnung zerrissen hat, um die Riesen in den Krieg gegen die Drachen zu treiben. Sie ist begeistert, in diesem gro\u00dfen Konflikt an vorderster Front zu stehen!",
+								"Ideal: \"Riesen sind f\u00fcr den Krieg gemacht - vor allem Sturmriesen!\"",
+								"Bond: \"Ostoria ist verschwunden, doch ich sehne mich nach der R\u00fcckkehr eines m\u00e4chtigen Riesenreichs.\"",
+								"Fehler: \"Ich lasse gerne Zerst\u00f6rung auf meine Feinde herabregnen, und ich zeige ihnen niemals Gnade."
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"skill": {
+				"animal handling": "+9",
+				"athletics": "+14",
+				"perception": "+9"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Der Riese wirkt einen der folgenden Zauber, f\u00fcr die keine materiellen Zauberkomponenten ben\u00f6tigt werden und die Charisma als Zauberf\u00e4higkeit verwenden (Zauberschutz {@dc 17}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell levitate}",
+						"{@spell light}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell control weather} (cast as 1 action)",
+							"{@spell water breathing}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Shalvus Martholio",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 250,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Turami"
+					}
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"insight": "+4",
+				"investigation": "+3",
+				"perception": "+4",
+				"sleight of hand": "+4",
+				"stealth": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"trait": [
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Shalvus f\u00fcgt 7 ({@dice 2d6}) zus\u00e4tzlichen Schaden zu, wenn er ein Ziel mit einem Waffenangriff trifft und einen Vorteil beim Angriffswurf hat, oder wenn sich das Ziel innerhalb von 5 Fu\u00df um einen Verb\u00fcndeten von Shalvus befindet, der nicht {@condition incapacitated} ist, und Shalvus keinen Nachteil beim Angriffswurf hat."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Nalaskur Thaelond vom Gasthaus Bargewright hat den Hirten Shalvus mit einer wichtigen Aufgabe betraut: Er soll herausfinden, wie Goldenfields am besten unter die Kontrolle des Schwarzen Netzwerks gebracht werden kann. Shalvus glaubt, dass ein Erfolg seinen raschen Aufstieg in den Reihen der Zhentarim sichern wird.",
+						"Ideal: \"Ich werde alles tun, um mich bei den Zhentarim zu beweisen.\"",
+						"Bond: \"Ich liebe Tiere, und ich besch\u00fctze sie sehr.",
+						"Schw\u00e4che: \"Ich kann nicht widerstehen, Risiken einzugehen, um meinen Ehrgeiz zu befriedigen\"."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 2} Treffer, Reichweite 5 ft., ein Ziel. {@h}3 ({@damage 1d6}) Wuchtschaden, oder 4 ({@damage 1d8}) Wuchtschaden, wenn mit beiden H\u00e4nden eingesetzt."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} als Treffer, Reichweite 30/120 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden. Shalvus tr\u00e4gt zehn Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sharda",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 103,
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the fanatic",
+						"with": "Sharda",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Dagger",
+							"items": {
+								"name": "Club",
+								"entries": [
+									"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., eine Kreatur. {@h}4 ({@damage 1d4 + 2}) Schaden durch Wucht."
+								]
+							}
+						}
+					]
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Illuskan"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Terran"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Sheep",
+			"source": "SKT",
+			"page": 142,
+			"_copy": {
+				"name": "Goat",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "goat",
+						"with": "sheep",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "removeArr",
+						"names": "Charge"
+					}
+				}
+			},
+			"size": [
+				"S"
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"action": null,
+			"traitTags": [],
+			"miscTags": [],
+			"hasToken": true
+		},
+		{
+			"name": "Shield Dwarf Guard",
+			"source": "SKT",
+			"page": 78,
+			"_copy": {
+				"name": "Guard",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"action": [
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 3} Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d8 + 1}) Wuchtschaden, oder 6 ({@damage 1d10 + 1}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Shield Dwarf Noble",
+			"source": "SKT",
+			"page": 78,
+			"_copy": {
+				"name": "Noble",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"action": [
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 3} Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d8 + 1}) Wuchtschaden, oder 6 ({@damage 1d10 + 1}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Sir Baric Nylef",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 249,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Illuskan"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 15,
+			"cha": 15,
+			"skill": {
+				"insight": "+4",
+				"investigation": "+2",
+				"medicine": "+4",
+				"survival": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"Baric hat einen Vorteil bei Rettungsw\u00fcrfen gegen Wesen {@condition frightened}."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Als Ritter des Ordens des Fehdehandschuhs hat Sir Baric einen Eid geschworen, \u00dcbelt\u00e4ter zu fangen und vor Gericht zu stellen. Seine derzeitige Beute ist der zwergische R\u00e4uber Worvil \"the Weevil\" Forkbeard, der sich Ger\u00fcchten zufolge in Icewind Dale versteckt h\u00e4lt. Zus\u00e4tzlich zu seiner Ausr\u00fcstung hat Sir Baric ein ungepanzertes Schlachtpferd, Henry.",
+						"Ideal: \"Das B\u00f6se darf in dieser Welt nicht gedeihen\".",
+						"Bond: \"Tyr ist mein Herr, der Orden meine Familie. Durch mein Handeln werde ich beide ehren.\"",
+						"Makel: \"Ich habe keine Angst vor dem Tod. Wenn Tyr mich schlie\u00dflich ruft, werde ich gl\u00fccklich zu ihm gehen.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}11 ({@damage 2d6 + 4}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} bis Treffer, Reichweite 100/400 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d10}) Stich-Schaden. Baric tr\u00e4gt zwanzig Armbrustbolzen bei sich."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sirac of Suzail",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 247,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Chondathan"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 11,
+			"int": 12,
+			"wis": 13,
+			"cha": 16,
+			"skill": {
+				"athletics": "+4",
+				"insight": "+3",
+				"survival": "+3"
+			},
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Orc"
+			],
+			"trait": [
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Als Akolyth von Torm wuchs Sirac in den Stra\u00dfen von Suzail, der Hauptstadt von Cormyr, auf. Er kam nach Icewind Dale, um ein trotteliger Forellenfischer zu werden, fand aber stattdessen zur Religion. Als unehelicher Sohn von Artus Cimber, einem bekannten menschlichen Abenteurer, hat Sirac seinen Vater nicht mehr gesehen, seit er ein Baby war.",
+						"Ideal: \"Ohne Pflicht und Loyalit\u00e4t ist ein Mensch nichts\".",
+						"Bond: \"Icewind Dale ist der Ort, an den ich f\u00fcr den Rest meines Lebens geh\u00f6re.\"",
+						"Makel: \"Ich bin ehrlich bis zum Umfallen.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 5} als Treffer, Reichweite 20/60 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d4 + 3}) Stich-Schaden. Sirac tr\u00e4gt sechs Pfeile bei sich."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Sirac addiert 2 zu seinem AC gegen einen Nahkampfangriff, der ihn treffen w\u00fcrde. Um dies zu tun, muss Sirac den Angreifer sehen und eine Nahkampfwaffe f\u00fchren."
+					]
+				}
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Slarkrethel",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SKT",
+			"page": 224,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"titan"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 472,
+				"formula": "27d20 + 189"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 60
+			},
+			"str": 30,
+			"dex": 11,
+			"con": 25,
+			"int": 22,
+			"wis": 18,
+			"cha": 20,
+			"save": {
+				"str": "+18",
+				"dex": "+8",
+				"con": "+15",
+				"int": "+14",
+				"wis": "+12"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"lightning",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"frightened",
+				"paralyzed"
+			],
+			"languages": [
+				"understands Abyssal",
+				"Celestial",
+				"Infernal",
+				"and Primordial but can't speak",
+				"telepathy 120 ft."
+			],
+			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Slarkrethel wirkt einen der folgenden Zauber, f\u00fcr die keine Zauberkomponenten ben\u00f6tigt werden und bei denen Intelligenz als Zaubernde F\u00e4higkeit verwendet wird (Zauberschutz {@dc 22}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell detect thoughts}",
+						"{@spell sending}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell control weather} (cast as 1 action)",
+							"{@spell fly}",
+							"{@spell ice storm}"
+						],
+						"1e": [
+							"{@spell arcane eye}",
+							"{@spell chain lightning}",
+							"{@spell feeblemind}",
+							"{@spell foresight}",
+							"{@spell locate creature}",
+							"{@spell mass suggestion}",
+							"{@spell nondetection}",
+							"{@spell power word kill}",
+							"{@spell scrying} (cast as 1 action)",
+							"{@spell sequester}",
+							"{@spell telekinesis}",
+							"{@spell teleport}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Wenn Slarkrethel ein Rettungswurf misslingt, kann er stattdessen w\u00e4hlen, ob er erfolgreich ist."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Slarkrethel kann Luft und Wasser atmen."
+					]
+				},
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"Slarkrethel ignoriert schwieriges Terrain, und magische Effekte k\u00f6nnen seine Geschwindigkeit nicht verringern oder ihn {@condition restrained} werden lassen. Er kann 5 Fu\u00df Bewegung aufwenden, um aus nichtmagischen Fesseln zu entkommen oder {@condition grappled} zu sein."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Slarkrethel verursacht doppelten Schaden an Objekten und Strukturen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Slarkrethel f\u00fchrt drei Tentakelangriffe aus, die er jeweils durch einen Einsatz von Fling ersetzen kann."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}23 ({@damage 3d8 + 10}) Stich-Schaden. Handelt es sich bei dem Ziel um eine gro\u00dfe oder kleinere Kreatur {@condition grappled} von Slarkrethel, wird diese Kreatur verschluckt, und der Greifhaken endet. W\u00e4hrend des Verschluckens ist die Kreatur {@condition blinded} und {@condition restrained}, sie hat totale Deckung vor Angriffen und anderen Effekten au\u00dferhalb Slarkrethels und erleidet zu Beginn jeder von Slarkrethels Runden 42 ({@damage 12d6}) S\u00e4ureschaden. Wenn Slarkrethel in einem einzigen Zug 50 Schaden oder mehr von einer Kreatur in seinem Inneren erleidet, muss Slarkrethel am Ende dieses Zuges einen {@dc 25} Konstitutionswettkampf bestehen oder alle verschluckten Kreaturen erbrechen, die dann {@condition prone} in einem Umkreis von 10 Fu\u00df um Slarkrethel fallen. Wenn der Slarkrethel stirbt, wird eine verschluckte Kreatur nicht mehr {@condition restrained} von ihm gehalten und kann mit einer Bewegungszeit von 15 Fu\u00df aus dem Leichnam entkommen, indem sie {@condition prone} verl\u00e4sst."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 17} Treffer, Reichweite 30 ft., ein Ziel. {@h}20 ({@damage 3d6 + 10}) Wuchtschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 18}). Bis dieser Griff endet, ist das Ziel {@condition restrained}. Slarkrethel hat zehn Tentakel, von denen jeder ein Ziel packen kann."
+					]
+				},
+				{
+					"name": "Fling",
+					"entries": [
+						"Ein von Slarkrethel gehaltener gro\u00dfer oder kleinerer Gegenstand oder eine Kreatur {@condition grappled} wird bis zu 60 Fu\u00df weit in eine zuf\u00e4llige Richtung geworfen und {@condition prone} umgesto\u00dfen. Wenn ein geworfenes Ziel auf eine feste Oberfl\u00e4che trifft, erleidet es 3 ({@damage 1d6}) Wuchtschaden pro 10 Fu\u00df, die es geworfen wurde. Wenn das Ziel auf eine andere Kreatur geworfen wird, muss diese Kreatur einen {@dc 18} Schutzwurf auf Geschicklichkeit bestehen oder den gleichen Schaden erleiden und umgeworfen werden {@condition prone}."
+					]
+				},
+				{
+					"name": "Lightning Storm",
+					"entries": [
+						"Slarkrethel erschafft auf magische Weise drei Blitze, von denen jeder ein Ziel treffen kann, das Slarkrethel im Umkreis von 120 Fu\u00df sehen kann. Das Ziel muss einen {@dc 23} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 22 ({@damage 4d10}) Blitzschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Tentacle Attack or Fling",
+					"entries": [
+						"Slarkrethel f\u00fchrt eine Tentakel-Attacke aus oder benutzt seine Schleuder."
+					]
+				},
+				{
+					"name": "Lightning Storm (Costs 2 Actions)",
+					"entries": [
+						"Slarkrethel setzt Blitzsturm ein."
+					]
+				},
+				{
+					"name": "Ink Cloud (Costs 3 Actions)",
+					"entries": [
+						"Unter Wasser st\u00f6\u00dft Slarkrethel eine Tintenwolke in einem Radius von 60 Fu\u00df aus. Die Wolke breitet sich um Ecken herum aus, und dieser Bereich ist f\u00fcr andere Kreaturen als Slarkrethel stark verdunkelt. Jede Kreatur au\u00dfer Slarkrethel, die ihren Zug dort beendet, muss einen {@dc 23} Konstitutionsschutzwurf bestehen und erleidet bei einem misslungenen Schutz 16 ({@damage 3d10}) Giftschaden, bei einem erfolgreichen Schutz halb so viel Schaden. Eine starke Str\u00f6mung vertreibt die Wolke, die ansonsten am Ende von Slarkrethels n\u00e4chstem Zug verschwindet."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Kraken",
+				"source": "MM"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"CS",
+				"I",
+				"P",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"I",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"invisible",
+				"petrified",
+				"restrained",
+				"unconscious"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Stone Giant Statue",
+			"source": "SKT",
+			"page": 127,
+			"_copy": {
+				"name": "Stone Golem",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "giant",
+						"with": "golem"
+					}
+				}
+			},
+			"size": [
+				"H"
+			],
+			"hp": {
+				"average": 195,
+				"formula": "17d12 + 85"
+			},
+			"languages": null,
+			"cr": "0",
+			"action": null,
+			"actionTags": [],
+			"languageTags": [],
+			"miscTags": [],
+			"hasToken": true
+		},
+		{
+			"name": "Tartha",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 207,
+			"_copy": {
+				"name": "Fire Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Tartha",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Tau",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 103,
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the fanatic",
+						"with": "Tau",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Dagger",
+							"items": {
+								"name": "Club",
+								"entries": [
+									"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., eine Kreatur. {@h}4 ({@damage 1d4 + 2}) Schaden durch Wucht."
+								]
+							}
+						}
+					]
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Shou"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"languages": [
+				"Common",
+				"Terran"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Thane Kayalithica",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 153,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "11d12 + 55"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 15,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"con": "+8",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+12",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Giant"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Die angeborene F\u00e4higkeit des Riesen zur Zauberei ist Weisheit. Er kann von Natur aus die folgenden Zauber wirken und ben\u00f6tigt daf\u00fcr keine materiellen Komponenten:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell meld into stone}",
+							"{@spell stone shape}"
+						],
+						"1e": [
+							"{@spell stoneskin}",
+							"{@spell time stop}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Stone Camouflage",
+					"entries": [
+						"Der Riese hat einen Vorteil bei Geschicklichkeits-Proben (Tarnung), um sich in felsigem Gel\u00e4nde zu verstecken."
+					]
+				},
+				{
+					"name": "Olach Morrah",
+					"entries": [
+						"Der Riese meditiert 1 Stunde lang, w\u00e4hrend der er nichts anderes tun kann. Am Ende der Stunde wird der Riese, sofern er ununterbrochen meditiert hat, f\u00fcr 8 Stunden {@condition petrified}. Nach Ablauf dieser Zeit ist der Riese nicht mehr {@condition petrified} und erlangt f\u00fcr die n\u00e4chsten 24 Stunden einen Zittersinn bis zu einer Reichweite von 30 Fu\u00df sowie ein gewisses Ma\u00df an angeborenen Zauberf\u00e4higkeiten."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fling",
+					"entries": [
+						"Der Riese versucht, eine kleine oder mittlere Kreatur im Umkreis von 10 Fu\u00df zu werfen. Das Ziel muss einen {@dc 17} Geschicklichkeitswurf bestehen oder wird bis zu 60 Fu\u00df horizontal in eine Richtung seiner Wahl geschleudert und landet {@condition prone} und erleidet {@dice 1d6} Wuchtschaden f\u00fcr jeweils 10 Fu\u00df, die es geworfen wurde."
+					]
+				},
+				{
+					"name": "Rolling Rock",
+					"entries": [
+						"Der Riese l\u00e4sst einen Felsen in einer 30 Fu\u00df langen und 5 Fu\u00df breiten Linie \u00fcber den Boden purzeln. Jede Kreatur in dieser Linie muss einen {@dc 17} Schutzwurf auf Geschicklichkeit machen, erleidet 22 ({@damage 3d10 + 6}) Wuchtschaden und f\u00e4llt {@condition prone} bei einem misslungenen Schutzwurf."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Riese f\u00fchrt zwei Angriffe mit dem Adamant-Gro\u00dfklub aus."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 9} bis zum Treffer, Reichweite 15 Fu\u00df, ein Ziel. {@h}19 ({@damage 3d8 + 6}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 9} bis zum Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}28 ({@damage 4d10 + 6}) Schaden durch Wucht. Handelt es sich bei dem Ziel um eine Kreatur, muss diese einen {@dc 17} St\u00e4rkeschutzwurf bestehen oder wird {@condition prone} umgesto\u00dfen."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Rock Catching",
+					"entries": [
+						"Wenn ein Stein oder ein \u00e4hnlicher Gegenstand auf den Riesen geschleudert wird, kann der Riese mit einem erfolgreichen {@dc 10} Geschicklichkeitswurf das Geschoss auffangen und erleidet keinen Wuchtschaden davon."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "The Weevil",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 114,
+			"_copy": {
+				"name": "Bandit Captain",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "dwarf",
+						"with": "Weevil"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"Der Weevil macht drei Nahkampfangriffe mit seinen Hand\u00e4xten. Oder der Weevil f\u00fchrt zwei Fernkampfangriffe mit seinen Hand\u00e4xten aus."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Scimitar",
+							"items": {
+								"name": "Handaxe +1",
+								"entries": [
+									"{@atk mw} {@hit 6} Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 4}) Hiebschaden."
+								]
+							}
+						},
+						{
+							"mode": "removeArr",
+							"names": "Dagger"
+						}
+					]
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"D",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tholtz Daggerdark",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 221,
+			"_copy": {
+				"name": "Archmage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the archmage",
+						"with": "Tholtz"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Thunderbeast Skeleton",
+			"source": "SKT",
+			"page": 99,
+			"size": [
+				"H"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d12 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 11,
+			"con": 15,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"poisoned",
+				"exhaustion"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} Treffer, Reichweite 5 Fu\u00df, {@h}18 ({@damage 4d6 + 4}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@hit 7} zu treffen, Reichweite 10 ft., ein Ziel. {@h}18 ({@damage 4d6 + 4}) Schaden durch Wucht. Gelingt ein DC14-St\u00e4rke-Erhaltungswurf oder du wirst umgeworfen {@condition prone}."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tressym",
+			"source": "SKT",
+			"page": 242,
+			"otherSources": [
+				{
+					"source": "IMR"
+				}
+			],
+			"size": [
+				"T"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 5,
+				"formula": "2d4"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30,
+				"fly": 40
+			},
+			"str": 3,
+			"dex": 15,
+			"con": 10,
+			"int": 11,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Detect Invisibility",
+					"entries": [
+						"Im Umkreis von 60 Fu\u00df um den Tressym kann die magische Unsichtbarkeit nichts vor den Augen des Tressyms verbergen."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Der Tressym hat einen Vorteil bei Weisheitspr\u00fcfungen ({@skill Perception}), die auf Geruch beruhen."
+					]
+				},
+				{
+					"name": "Poison Sense",
+					"entries": [
+						"Das Tressym kann durch Geschmack, Ber\u00fchrung oder Geruch feststellen, ob eine Substanz giftig ist."
+					]
+				},
+				{
+					"name": "Familiar",
+					"entries": [
+						"Mit der Erlaubnis des DM kann eine Person, die den {@spell find familiar}-Zauber wirkt, anstelle einer normalen Katze eine Tressym beschw\u00f6ren."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 0} Treffer, Reichweite 5 ft., ein Ziel. {@h}1 Hiebschaden."
+					]
+				}
+			],
+			"familiar": true,
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tug",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 209,
+			"_copy": {
+				"name": "Hill Giant",
+				"source": "MM"
+			},
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Turlang",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 107,
+			"_copy": {
+				"name": "Treant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the treant",
+						"with": "Turlang"
+					}
+				}
+			},
+			"hp": {
+				"average": 200,
+				"formula": "12d12 + 60"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Turlang wirkt einen der folgenden Zauber, f\u00fcr die keine materiellen Zauberkomponenten ben\u00f6tigt werden und die Weisheit als Zauberfertigkeit verwenden (Zauberschutz {@dc 15}):"
+					],
+					"will": [
+						"{@spell druidcraft}",
+						"{@spell guidance}",
+						"{@spell resistance}",
+						"{@spell speak with plants}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell animal messenger}",
+							"{@spell detect magic}",
+							"{@spell entangle}",
+							"{@spell goodberry}",
+							"{@spell gust of wind}",
+							"{@spell pass without trace}",
+							"{@spell speak with animals}"
+						],
+						"1e": [
+							"{@spell commune with nature} (cast as 1 action)",
+							"{@spell conjure woodland beings}",
+							"{@spell hallucinatory terrain} (cast as 1 action)"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Urgala Meltimer",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 254,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Turami"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 13,
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+3"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"trait": [
+				{
+					"name": "Giant Slayer",
+					"entries": [
+						"Jeder Waffenangriff, den Urgala gegen einen Riesen f\u00fchrt, verursacht bei einem Treffer zus\u00e4tzlich 7 ({@dice 2d6}) Schaden."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Urgala, eine Abenteurerin im Ruhestand, besitzt ein respektables Gasthaus, das Nordschildhaus, und sie m\u00f6chte nicht, dass es oder die H\u00e4user ihrer Nachbarn zerst\u00f6rt werden. Sie hat keine Toleranz f\u00fcr Monster oder Tyrannen.",
+						"Ideal: \"Wir leben in einer gewaltt\u00e4tigen Welt, und manchmal ist Gewalt notwendig, um zu \u00fcberleben\".",
+						"Bond: \"Mein Zuhause ist mein Leben. Bedrohen Sie es, und ich werde Ihnen wehtun.\"",
+						"Schw\u00e4che: \"Ich wei\u00df, wie verr\u00e4terisch und gierig Abenteurer sein k\u00f6nnen. Ich traue ihnen nicht - keinem von ihnen.\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Urgala f\u00fchrt zwei Angriffe mit ihrem Morgenstern oder ihrem Kurzbogen aus."
+					]
+				},
+				{
+					"name": "Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} bis Treffer, Reichweite 80/320 Fu\u00df, ein Ziel. {@h}5 ({@damage 1d6 + 1}) Stich-Schaden. Urgala tr\u00e4gt einen K\u00f6cher mit zwanzig Pfeilen bei sich."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Uthgardt Barbarian Leader",
+			"source": "SKT",
+			"page": 86,
+			"_copy": {
+				"name": "Berserker",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "berserker",
+						"with": "barbarian"
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Oathbow",
+							"entries": [
+								"{@atk rw} {@hit 5} auf Treffer, Reichweite 150/600 Fu\u00df, ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stichschaden, plus zus\u00e4tzlich 10 ({@damage 3d6}) Stichschaden gegen einen eingeschworenen Feind Siehe den Eintrag {@item oathbow} f\u00fcr die anderen Eigenschaften."
+							]
+						}
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"dex": 15,
+			"languages": [
+				"Bothii",
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Uthgardt Shaman",
+			"source": "SKT",
+			"page": 243,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 38,
+				"formula": "7d8 + 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 13,
+			"int": 10,
+			"wis": 15,
+			"cha": 12,
+			"skill": {
+				"medicine": "+4",
+				"nature": "+4",
+				"perception": "+4",
+				"survival": "+6"
+			},
+			"passive": 14,
+			"languages": [
+				"Bothii",
+				"Common"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Requires a Sacred Bundle)",
+					"headerEntries": [
+						"Der Schamane wirkt einen der folgenden Zauber, wobei er Weisheit als Zauberf\u00e4higkeit verwendet (Zauberschutz {@dc 12}; {@hit 4} um mit Zauberangriffen zu treffen):"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell mage hand}",
+						"{@spell message}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell augury} (cast as 1 action)",
+							"{@spell bestow curse}",
+							"{@spell cordon of arrows}",
+							"{@spell detect magic}",
+							"{@spell speak with dead}",
+							"{@spell spirit guardians}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden oder 6 ({@damage 1d8 + 2}) Stich-Schaden, wenn er mit zwei H\u00e4nden gef\u00fchrt wird."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} bis Treffer, Reichweite 80/320 Fu\u00df, ein Ziel. {@h}4 ({@damage 1d6 + 1}) Stich-Schaden."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Uthgardt Shaman (Black Lion)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell chill touch}",
+									"{@spell feign death}",
+									"{@spell revivify}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Black Raven)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell animal messenger} (raven only)",
+									"{@spell polymorph} (self only; into a raven only)"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Blue Bear)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell enhance ability} (bear's endurance only)",
+									"{@spell heroism}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Elk)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell find steed} (cast as 1 action; elk only)",
+									"{@spell haste}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Gray Wolf)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell beast sense} (wolf or dire wolf only)",
+									"{@spell moonbeam}",
+									"{@spell speak with animals} (wolf or dire wolf only)"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Great Worm)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell crusader's mantle}",
+									"{@spell hypnotic pattern}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Griffon)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell beast sense} (birds only)",
+									"{@spell fly}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Red Tiger)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell enhance ability} (cat's grace only)",
+									"{@spell jump}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Sky Pony)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell gust of wind}",
+									"{@spell witch bolt}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Thunderbeast)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell enhance ability} (bull's strength only)",
+									"{@spell pass without trace}"
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Uthgardt Shaman (Tree Ghost)",
+					"source": "SKT",
+					"_mod": {
+						"_": {
+							"mode": "addSpells",
+							"daily": {
+								"1e": [
+									"{@spell barkskin}",
+									"{@spell speak with plants}"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Vaal",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 207,
+			"_copy": {
+				"name": "Cloud Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Vaal",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Vaasha",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 256,
+			"_copy": {
+				"name": "Storm Giant",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the giant",
+						"with": "Vaasha",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Roleplaying Information",
+							"entries": [
+								"Vaasha ist eine erfahrene J\u00e4gerin und F\u00e4hrtenleserin, die sich nicht in die Gefahr st\u00fcrzt, ohne vorher die Risiken abzusch\u00e4tzen. Sie hat keine Angst, ihre Meinung zu sagen, selbst gegen\u00fcber ihrem K\u00f6nig. F\u00fcr sie ist ein w\u00fcrdiger Anf\u00fchrer die Wahrheit wert, egal wie schmerzhaft sie ist.",
+								"Ideal: \"Ich m\u00f6chte, dass dieser Konflikt vorbei ist, damit ich in die ruhige Stille der Meerestiefen zur\u00fcckkehren kann.\"",
+								"Bond: \"Ich werde diese sch\u00f6ne Welt bis zu meinem letzten Atemzug vor dem B\u00f6sen besch\u00fctzen.\"",
+								"Fehler: \"Es ist mir egal, ob meine Worte die Gef\u00fchle anderer verletzen\"."
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"skill": {
+				"athletics": "+14",
+				"perception": "+9",
+				"survival": "+9"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Der Riese wirkt einen der folgenden Zauber, f\u00fcr die keine materiellen Zauberkomponenten ben\u00f6tigt werden und die Charisma als Zauberf\u00e4higkeit verwenden (Zauberschutz {@dc 17}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell levitate}",
+						"{@spell light}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell control weather} (cast as 1 action)",
+							"{@spell water breathing}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Wiri Fleagol",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 176,
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM",
+				"_trait": {
+					"name": "Rock Gnome",
+					"source": "PHB"
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"G",
+				"X"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Wood Elf",
+			"source": "SKT",
+			"page": 28,
+			"_copy": {
+				"name": "Scout",
+				"source": "MM",
+				"_trait": {
+					"name": "Wood Elf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "scout",
+						"with": "wood elf"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Xolkin Alassandar",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 27,
+			"_copy": {
+				"name": "Bandit Captain",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the captain",
+						"with": "Xolkin",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Yak",
+			"source": "SKT",
+			"page": 172,
+			"_copy": {
+				"name": "Elk",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "elk",
+						"with": "yak"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Yakfolk Priest",
+			"source": "SKT",
+			"page": 245,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "7d10 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 15,
+			"int": 14,
+			"wis": 18,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"medicine": "+6",
+				"survival": "+6"
+			},
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Yikaria"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Der Yakfolk ist ein Zauberwirker der Stufe 7. Seine Zauberf\u00e4higkeit ist Weisheit (Zauberschutz {@dc 14}, {@hit 6} um mit Zauberangriffen zu treffen). Der Priester hat die folgenden Klerikerzauber vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell bane}",
+								"{@spell command}",
+								"{@spell cure wounds}",
+								"{@spell sanctuary}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell augury}",
+								"{@spell hold person}",
+								"{@spell spiritual weapon}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell protection from energy}",
+								"{@spell sending}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell banishment}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Possession (Recharges after a Short or Long Rest)",
+					"entries": [
+						"Das Yakvolk versucht, von einem Humanoiden oder Riesen magischen Besitz zu ergreifen. Das Yakfolk muss das Ziel w\u00e4hrend einer kurzen Pause ber\u00fchren, sonst schl\u00e4gt der Versuch fehl. Am Ende der Ruhezeit muss das Ziel einen {@dc 12} Konstitutionsschutzwurf bestehen oder es wird vom Yakfolk besessen, das dann mit allem, was es tr\u00e4gt, verschwindet. Bis die Besessenheit endet, ist das Ziel {@condition incapacitated}, verliert die Kontrolle \u00fcber seinen K\u00f6rper und ist sich seiner Umgebung nicht bewusst. Das Yakfolk kontrolliert nun seinen K\u00f6rper und kann nicht mehr von Angriffen, Zaubern oder anderen Effekten getroffen werden. Es beh\u00e4lt seine Ausrichtung, seine Intelligenz-, Weisheits- und Charisma-Werte sowie seine F\u00e4higkeiten bei. Ansonsten verwendet es die Statistiken des Ziels, mit Ausnahme von dessen Wissen, Klassenmerkmalen, F\u00e4higkeiten und Fertigkeiten.",
+						"Die Besessenheit h\u00e4lt an, bis entweder der K\u00f6rper auf 0 Trefferpunkte f\u00e4llt, das Yakvolk die Besessenheit als Aktion beendet oder das Yakvolk durch einen Effekt wie den Zauber {@spell dispel evil and good} aus dem K\u00f6rper gezwungen wird. Wenn die Besessenheit endet, taucht das Yakfolk in einem unbesetzten Raum innerhalb von 5 Fu\u00df um den K\u00f6rper wieder auf und ist {@condition stunned} bis zum Ende seiner n\u00e4chsten Runde. Wenn der Wirtsk\u00f6rper stirbt, w\u00e4hrend er vom Yakfolk besessen ist, stirbt auch das Yakfolk, und sein K\u00f6rper erscheint nicht wieder."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Das Yakvolk f\u00fchrt zwei Nahkampfangriffe aus."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 2d6 + 3}) Wuchtschaden, oder 12 ({@damage 2d8 + 3}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				},
+				{
+					"name": "Summon Earth Elemental (1/Day)",
+					"entries": [
+						"Das Yakvolk beschw\u00f6rt einen {@creature earth elemental}. Das Elementar erscheint in einem unbesetzten Raum innerhalb von 60 Fu\u00df um seinen Beschw\u00f6rer und handelt als Verb\u00fcndeter des Beschw\u00f6rers. Es bleibt 10 Minuten lang, bis es stirbt oder bis sein Beschw\u00f6rer es durch eine Aktion aufl\u00f6st."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"name": "Yakfolk Warrior",
+			"source": "SKT",
+			"page": 244,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d10 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 15,
+			"int": 14,
+			"wis": 15,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"survival": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Yikaria"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Possession (Recharges after a Short or Long Rest)",
+					"entries": [
+						"Das Yakvolk versucht, von einem Humanoiden oder Riesen magischen Besitz zu ergreifen. Das Yakfolk muss das Ziel w\u00e4hrend einer kurzen Pause ber\u00fchren, sonst schl\u00e4gt der Versuch fehl. Am Ende der Ruhezeit muss das Ziel einen {@dc 12} Konstitutionsschutzwurf bestehen oder es wird vom Yakfolk besessen, das dann mit allem, was es tr\u00e4gt, verschwindet. Bis die Besessenheit endet, ist das Ziel {@condition incapacitated}, verliert die Kontrolle \u00fcber seinen K\u00f6rper und ist sich seiner Umgebung nicht bewusst. Das Yakfolk kontrolliert nun seinen K\u00f6rper und kann nicht mehr von Angriffen, Zaubern oder anderen Effekten getroffen werden. Es beh\u00e4lt seine Ausrichtung, seine Intelligenz-, Weisheits- und Charisma-Werte sowie seine F\u00e4higkeiten bei. Ansonsten verwendet es die Statistiken des Ziels, mit Ausnahme von dessen Wissen, Klassenmerkmalen, F\u00e4higkeiten und Fertigkeiten.",
+						"Die Besessenheit h\u00e4lt an, bis entweder der K\u00f6rper auf 0 Trefferpunkte f\u00e4llt, das Yakvolk die Besessenheit als Aktion beendet oder das Yakvolk durch einen Effekt wie den Zauber {@spell dispel evil and good} aus dem K\u00f6rper gezwungen wird. Wenn die Besessenheit endet, taucht das Yakfolk in einem unbesetzten Raum innerhalb von 5 Fu\u00df um den K\u00f6rper wieder auf und ist {@condition stunned} bis zum Ende seiner n\u00e4chsten Runde. Wenn der Wirtsk\u00f6rper stirbt, w\u00e4hrend er vom Yakfolk besessen ist, stirbt auch das Yakfolk, und sein K\u00f6rper erscheint nicht wieder."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Das Yakvolk f\u00fchrt zwei Angriffe aus, entweder mit seinem Gro\u00dfschwert oder seinem Langbogen."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}18 ({@damage 4d6 + 4}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 2} bis zum Treffer, Reichweite 150/600 Fu\u00df, ein Ziel. {@h}9 ({@damage 2d8}) Stich-Schaden."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Young Cloud Giant",
+			"source": "SKT",
+			"page": 112,
+			"_copy": {
+				"name": "Hill Giant",
+				"source": "MM"
+			},
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"insight": "+4",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Zaltember",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 180,
+			"size": [
+				"L"
+			],
+			"type": "giant",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d10 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}12 ({@damage 2d8 + 3}) Hiebschaden, oder 14 ({@damage 2d10 + 3}) Hiebschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} auf Treffer, Reichweite 5 ft. oder 30/120 ft., ein Ziel. {@h}10 ({@damage 2d6 + 3}) Stich-Schaden."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Zephyros",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 33,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d12 + 96"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 22,
+			"int": 18,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+11",
+				"wis": "+8",
+				"cha": "+8"
+			},
+			"skill": {
+				"insight": "+8",
+				"perception": "+8"
+			},
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Zephyros' angeborene F\u00e4higkeit zur Zauberei ist Charisma. Er kann von Natur aus die folgenden Zauber wirken und ben\u00f6tigt daf\u00fcr keine materiellen Komponenten:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell fog cloud}",
+						"{@spell light}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell feather fall}",
+							"{@spell fly}",
+							"{@spell misty step}",
+							"{@spell telekinesis}"
+						],
+						"1e": [
+							"{@spell control weather}",
+							"{@spell gaseous form}"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Zephyros wirkt einen der folgenden Zauber, f\u00fcr die keine materiellen Komponenten ben\u00f6tigt werden und die Intelligenz als Zaubernde F\u00e4higkeit verwenden (Zauberschutz {@dc 17}, {@hit 11} um mit Zauberangriffen zu treffen):"
+					],
+					"will": [
+						"{@spell message}",
+						"{@spell prestidigitation}",
+						"{@spell ray of frost}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell gust of wind}",
+							"{@spell levitate}",
+							"{@spell magic missile}"
+						],
+						"1e": [
+							"{@spell cone of cold}",
+							"{@spell contact other plane} (cast as 1 action)",
+							"{@spell greater invisibility}",
+							"{@spell mass suggestion}",
+							"{@spell nondetection}",
+							"{@spell Otiluke's resilient sphere}",
+							"{@spell protection from energy}",
+							"{@spell tongues}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Zephyros hat einen Vorteil bei Weisheitspr\u00fcfungen ({@skill Perception}), die auf Geruch beruhen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fling",
+					"entries": [
+						"Zephyros versucht, eine kleine oder mittlere Kreatur im Umkreis von 10 Fu\u00df zu werfen. Das Ziel muss einen {@dc 20} Geschicklichkeitswurf bestehen oder wird bis zu 60 Fu\u00df horizontal in eine von Zephyros gew\u00e4hlte Richtung geschleudert und landet {@condition prone}, wobei es {@dice 1d8} Wuchtschaden pro 10 Fu\u00df erleidet."
+					]
+				},
+				{
+					"name": "Wind Aura",
+					"entries": [
+						"Eine magische Aura aus Wind umgibt Zephyros. Die Aura ist eine Kugel mit einem Radius von 10 Fu\u00df, die so lange anh\u00e4lt, wie er sich auf sie konzentriert (als ob er sich auf einen Zauber konzentrieren w\u00fcrde). W\u00e4hrend die Aura in Kraft ist, erh\u00e4lt Zephyros einen Bonus von +2 auf seinen AC gegen Angriffe mit Fernkampfwaffen und alle offenen Flammen innerhalb der Aura werden gel\u00f6scht, es sei denn, sie sind magisch."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Zephyros f\u00fchrt zwei Stab-Attacken aus."
+					]
+				},
+				{
+					"name": "Staff of the Magi",
+					"entries": [
+						"{@atk mw} {@hit 15} Treffer, Reichweite 10 ft., ein Ziel. {@h}20 ({@damage 3d6 + 10}) Wuchtschaden, oder 23 ({@damage 3d8 + 10}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt. Dieser Schaden wird als magisch angesehen."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 12} bis zum Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}30 ({@damage 4d10 + 8}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW",
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"restrained"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zi Liang",
+			"isNpc": true,
+			"source": "SKT",
+			"page": 251,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "human",
+						"prefix": "Shou"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 11,
+			"int": 14,
+			"wis": 16,
+			"cha": 11,
+			"skill": {
+				"acrobatics": "+4",
+				"athletics": "+3",
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Goblin"
+			],
+			"trait": [
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"Wenn Zi keine R\u00fcstung und keinen Schild tr\u00e4gt, wird ihr AC um ihren Weisheitsmodifikator erh\u00f6ht."
+					]
+				},
+				{
+					"name": "Roleplaying Information",
+					"entries": [
+						"Zi Liang ist ein gl\u00e4ubiger Verehrer von Chauntea, der Mutter Erde. Zu den Verteidigern von Goldenfields hat sie deutlich weniger Vertrauen, deshalb patrouilliert sie in ihrer Freizeit auf der Tempelfarm.",
+						"Ideal: \"Wenn wir unsere G\u00e4rten und unsere Felder treu pflegen, wird Chauntea uns zul\u00e4cheln.\"",
+						"Bond: \"Goldenfields ist die Kornkammer des Nordens. Die Menschen sind auf seine Sicherheit und seinen Wohlstand angewiesen, und ich werde tun, was getan werden muss, um es zu sch\u00fctzen.\"",
+						"Fehler: \"Ich traue Autorit\u00e4ten nicht. Ich tue das, was mein Herz mir sagt, dass es richtig ist."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Zi f\u00fchrt zwei Nahkampfangriffe aus."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 3} Treffer, Reichweite 5 ft., ein Ziel. {@h}4 ({@damage 1d6 + 1}) Wuchtschaden, oder 5 ({@damage 1d8 + 1}) Wuchtschaden, wenn mit beiden H\u00e4nden eingesetzt."
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 4} als Treffer, Reichweite 30/120 Fu\u00df, ein Ziel. {@h}4 ({@damage 1d4 + 2}) Schaden durch Wucht. Zi tr\u00e4gt zwanzig Schleudersteine bei sich."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"GO"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

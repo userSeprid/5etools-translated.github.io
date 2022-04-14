@@ -1,0 +1,482 @@
+{
+	"monster": [
+		{
+			"name": "Giant Zombie Constrictor Snake",
+			"source": "AitFR-DN",
+			"page": 11,
+			"size": [
+				"H"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 187,
+				"formula": "22d12 + 44"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20,
+				"swim": 30
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 14,
+			"int": 1,
+			"wis": 15,
+			"cha": 4,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"blindsight 15 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"vulnerable": [
+				"poison"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Sunlight Vulnerability",
+					"entries": [
+						"Solange sich die Schlange im Sonnenlicht befindet, hat sie einen Nachteil bei Angriffsw\u00fcrfen und bei Weisheitspr\u00fcfungen (Wahrnehmung), die sich auf das Sehen beziehen. Wenn die Schlange ihren Zug im Sonnenlicht beginnt, erleidet sie sofort 10 Strahlenschaden."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"Wenn der Schaden die Schlange auf 0 Trefferpunkte reduziert, muss sie einen Konstitutions-Erhaltungswurf mit einem DC von 5 + dem erlittenen Schaden machen, es sei denn, der Schaden ist strahlend oder stammt von einem kritischen Treffer. Bei einem Erfolg f\u00e4llt die Schlange stattdessen auf 1 Trefferpunkt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Die Schlange f\u00fchrt zwei Angriffe aus: einen mit ihrem Biss und einen mit einem W\u00fcrgeangriff."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} auf Treffer, Reichweite 10 Fu\u00df, ein Ziel. {@h}17 ({@damage 3d8 + 4}) Stichschaden. Das Ziel muss einen {@dc 15} Konstitutionsschutzwurf machen und erleidet bei einem misslungenen Schutzwurf 17 ({@damage 5d6}) Giftschaden, bei einem erfolgreichen halb so viel Schaden."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}17 ({@damage 3d8 + 4}) Wuchtschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 16}). Bis dieser Griff endet, ist die Kreatur {@condition restrained} und die Schlange kann kein weiteres Ziel einschn\u00fcren."
+					]
+				}
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Hamish Hewland",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AitFR-DN",
+			"page": 11,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d12 + 20"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 11,
+			"con": 15,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+9",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+9",
+				"history": "+3",
+				"insight": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Giant"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hamish macht zwei Angriffe mit seiner Axt oder wirft zwei Felsen."
+					]
+				},
+				{
+					"name": "Axe",
+					"entries": [
+						"{@atk mw} {@hit 9} Treffer, Reichweite 5 ft., ein Ziel. {@h}17 ({@damage 2d10 + 6}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 9} bis zum Treffer, Reichweite 60/240 Fu\u00df, ein Ziel. {@h}17 ({@damage 2d10 + 6}) Schaden durch Wucht."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Hamish addiert 2 zu seinem AC gegen einen Nahkampfangriff, der ihn treffen w\u00fcrde. Dazu muss er den Angreifer sehen und eine Nahkampfwaffe oder einen Schild f\u00fchren."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Kyrilla, Accursed Gorgon",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AitFR-DN",
+			"page": 12,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d10 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"deception": "+6",
+				"insight": "+6",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Primordial"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Feed on Pain (2/Day)",
+					"entries": [
+						"Wenn sie das erste Mal in ihrem Zug mit einem Waffenangriff trifft, kann Kyrilla dem Ziel zus\u00e4tzlich 16 ({@damage 3d10}) Giftschaden zuf\u00fcgen und erh\u00e4lt eine Anzahl von Trefferpunkten zur\u00fcck, die der H\u00e4lfte des zugef\u00fcgten Schadens entspricht."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"Wenn ihr ein Rettungswurf misslingt, kann Kyrilla stattdessen einen Erfolg w\u00e4hlen."
+					]
+				},
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"Wenn eine Kreatur, die Kyrillas Augen sehen kann, ihren Zug innerhalb von 30 Fu\u00df um sie herum beginnt, kann Kyrilla sie zwingen, einen {@dc 14} Konstitutionsschutzwurf zu machen, wenn Kyrilla nicht {@condition incapacitated} ist und die Kreatur sehen kann. Wenn der Rettungswurf um 5 oder mehr misslingt, ist die Kreatur sofort {@condition petrified}. Andernfalls beginnt eine Kreatur, die den Schutzwurf nicht besteht, sich in Stein zu verwandeln und ist {@condition restrained}. Die {@condition restrained} Kreatur muss den Rettungswurf am Ende ihrer n\u00e4chsten Runde wiederholen und wird bei einem Fehlschlag zu {@condition petrified} oder beendet den Effekt bei einem Erfolg. Die Versteinerung h\u00e4lt an, bis die Kreatur durch den {@spell greater restoration}-Zauber oder andere Magie befreit wird.",
+						"Wenn eine Kreatur nicht \u00fcberrascht wird, kann sie ihre Augen abwenden, um den Rettungswurf zu Beginn ihres Zuges zu vermeiden. Wenn die Kreatur dies tut, kann sie Kyrilla bis zum Beginn ihres n\u00e4chsten Zuges nicht sehen und kann dann erneut die Augen abwenden. Wenn die Kreatur Kyrilla in der Zwischenzeit ansieht, muss sie sofort den Schutzwurf machen.",
+						"Kyrillas verfluchter Blick wirkt nicht auf Untote oder Konstrukte. Wenn Kyrilla sich selbst auf einer polierten Oberfl\u00e4che im Umkreis von 30 Fu\u00df und in einem Bereich mit hellem Licht reflektiert sieht, wird sie aufgrund ihres Fluchs von ihrem eigenen Blick getroffen."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"Solange sie sich im Sonnenlicht befindet, hat Kyrilla einen Nachteil bei Angriffsw\u00fcrfen und Weisheitspr\u00fcfungen (Wahrnehmung), die sich auf das Sehen beziehen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kyrilla f\u00fchrt einen Angriff zum Einschn\u00fcren und zwei Angriffe mit ihren Klauen aus, oder sie f\u00fchrt drei Angriffe mit ihrem Langbogen aus."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} Treffer, Reichweite 5 ft., ein Ziel. {@h}13 ({@damage 3d6 + 3}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 4} auf Treffer, Reichweite 10 Fu\u00df, ein Ziel. {@h}10 ({@damage 3d6}) Wuchtschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 13}), wenn es eine gro\u00dfe oder kleinere Kreatur ist. Bis zum Ende dieses Haltegriffs ist das Ziel {@condition restrained} und Kyrilla kann kein anderes Ziel einschn\u00fcren."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} bis zum Treffer, Reichweite 150/600 Fu\u00df, ein Ziel. {@h}16 ({@damage 3d8 + 3}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Summon Swarm of Poisonous Snakes {@recharge 5}",
+					"entries": [
+						"Kyrilla beschw\u00f6rt einen Schwarm Giftschlangen in einen leeren Raum im Umkreis von 10 Fu\u00df von ihr. Der Schwarm steht unter Kyrillas Kontrolle und agiert in ihrem Zug, direkt nach ihr in der Reihenfolge der Initiative.",
+						"Sie bleibt bis zu 1 Stunde lang bestehen. Sie kann nicht mehr als drei Schw\u00e4rme pro Tag beschw\u00f6ren. Kyrilla kann einen oder alle ihrer beschworenen Schw\u00e4rme mit einer Bonusaktion verbannen."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Claw",
+					"entries": [
+						"Kyrilla oder ein Schwarm Giftschlangen f\u00fchrt einen Waffenangriff aus."
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"Kyrilla macht einen Wisdom (Perception) Check."
+					]
+				},
+				{
+					"name": "Slither",
+					"entries": [
+						"Kyrilla bewegt sich bis zu ihrer Geschwindigkeit, ohne Gelegenheitsangriffe zu provozieren."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Kyrilla, Accursed Gorgon",
+				"source": "AitFR-DN"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"petrified",
+				"restrained"
+			],
+			"conditionInflictLegendary": [
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Skeletal Horror",
+			"source": "AitFR-DN",
+			"page": 13,
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 150,
+				"formula": "20d10 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "6",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Schrecken f\u00fchrt zwei Angriffe mit seinen Klauen aus."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}19 ({@damage 3d10 + 3}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Wave of Bones {@recharge 5}",
+					"entries": [
+						"Das Grauen st\u00fcrzt sich wie eine Welle auf die Feinde, bevor es sich schnell wieder formiert. Jede Kreatur im Umkreis von 10 Fu\u00df um das Grauen muss einen {@dc 15} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 18 ({@damage 4d8}) Wuchtschaden, bei einem erfolgreichen Schutzwurf die H\u00e4lfte des Schadens. Eine Kreatur, die diesen Rettungswurf nicht schafft, wird au\u00dferdem {@condition prone} niedergestreckt."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"hasFluff": true
+		}
+	]
+}

@@ -1,0 +1,1090 @@
+{
+	"spell": [
+		{
+			"name": "Dark Star",
+			"source": "EGW",
+			"page": 186,
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a shard of onyx and a drop of the caster's blood, both of which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Dieser Zauber erschafft eine Sph\u00e4re mit einem Radius von bis zu 40 Fu\u00df, die auf einen Punkt deiner Wahl zentriert ist. Das Gebiet innerhalb dieser Sph\u00e4re ist von magischer Dunkelheit und erdr\u00fcckender Gravitationskraft erf\u00fcllt.",
+				"F\u00fcr die Dauer des Zaubers ist das Gebiet des Zaubers schwieriges Terrain. Eine Kreatur mit Nachtsicht kann nicht durch die magische Dunkelheit sehen und nichtmagisches Licht kann es nicht erhellen. Kein Ton kann innerhalb des Gebiets erzeugt werden oder es durchdringen. Jede Kreatur oder jedes Objekt, das sich vollst\u00e4ndig innerhalb der Sph\u00e4re befindet, ist immun gegen Donnerschaden und Kreaturen sind {@condition deafened}, solange sie sich vollst\u00e4ndig innerhalb der Sph\u00e4re befinden. Das Wirken eines Zaubers, der eine verbale Komponente enth\u00e4lt, ist dort unm\u00f6glich.",
+				"Jede Kreatur, die den Bereich des Zaubers zum ersten Mal in einem Zug betritt oder ihren Zug dort beginnt, muss einen Schutzwurf auf Konstitution machen. Bei einem misslungenen Schutzwurf erleidet die Kreatur {@damage 8d10} Kraftschaden, bei einem erfolgreichen Schutzwurf die H\u00e4lfte des Schadens. Eine Kreatur, die durch diesen Schaden auf 0 Trefferpunkte reduziert wird, wird aufgel\u00f6st. Eine aufgel\u00f6ste Kreatur und alles, was sie tr\u00e4gt, au\u00dfer magischen Gegenst\u00e4nden, wird zu einem Haufen feinen grauen Staubs."
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"hasFluffImages": true
+		},
+		{
+			"name": "Fortune's Favor",
+			"source": "EGW",
+			"page": 186,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a white pearl worth at least 100 gp, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Wenn die gew\u00e4hlte Kreatur einen Angriffswurf, eine F\u00e4higkeitspr\u00fcfung oder einen Rettungswurf macht, bevor der Zauber endet, kann sie diesen Zauber auf sich selbst entlassen, um einen zus\u00e4tzlichen Wurf auf {@dice d20} zu machen und zu w\u00e4hlen, welche der {@dice d20}zu verwenden ist. Alternativ kann sie, wenn ein Angriffswurf gegen die gew\u00e4hlte Kreatur gemacht wird, diesen Zauber auf sich selbst entlassen, um einen Wurf auf {@dice d20} zu machen und zu w\u00e4hlen, welche der {@dice d20}zu verwenden ist, die, die sie gew\u00fcrfelt hat oder die, die der Angreifer gew\u00fcrfelt hat.",
+				"Wenn der urspr\u00fcngliche {@dice d20} Wurf einen Vorteil oder Nachteil hat, w\u00fcrfelt die Kreatur den zus\u00e4tzlichen {@dice d20}, nachdem Vorteil oder Nachteil auf den urspr\u00fcnglichen Wurf angewandt wurde."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 3 oder h\u00f6her wirkst, kannst du eine zus\u00e4tzliche Kreatur f\u00fcr jeden Slot der Stufe 2 oder h\u00f6her anvisieren."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Gift of Alacrity",
+			"source": "EGW",
+			"page": 186,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"Wenn du eine willige Kreatur ber\u00fchrst, kann das Ziel f\u00fcr die Dauer der Ber\u00fchrung {@dice 1d8} zu seinen Initiativw\u00fcrfen addieren."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Gravity Fissure",
+			"source": "EGW",
+			"page": 187,
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fistful of iron filings"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du manifestierst eine Schlucht aus Gravitationsenergie in einer Linie, die von dir ausgeht und 100 Fu\u00df lang und 5 Fu\u00df breit ist. Jede Kreatur in dieser Linie muss einen Schutzwurf auf Konstitution machen und erleidet {@damage 8d8} Kraftschaden, wenn der Schutzwurf misslingt, oder halb so viel Schaden, wenn er erfolgreich ist.",
+				"Jede Kreatur im Umkreis von 10 Fu\u00df um die Linie, die sich nicht in ihr befindet, muss einen Konstitutionsschutzwurf bestehen oder {@damage 8d8} Kraftschaden erleiden und in Richtung der Linie gezogen werden, bis sich die Kreatur in ihrem Bereich befindet."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 7 oder h\u00f6her wirkst, erh\u00f6ht sich der Schaden um {@scaledamage 8d8|6-9|1d8} f\u00fcr jede Slotstufe \u00fcber der Stufe 6."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Gravity Sinkhole",
+			"source": "EGW",
+			"page": 187,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a black marble"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Eine Sph\u00e4re mit einem Radius von 20 Fu\u00df bildet sich an einem Punkt, den du in Reichweite sehen kannst, und zerrt an den dort befindlichen Kreaturen. Jede Kreatur in der Sph\u00e4re muss einen Schutzwurf auf Konstitution machen. Bei einem misslungenen Schutzwurf erleidet die Kreatur {@damage 5d10} Kraftschaden und wird in einer geraden Linie in Richtung des Zentrums der Sph\u00e4re gezogen, wobei sie in einem unbesetzten Raum so nah wie m\u00f6glich am Zentrum endet (selbst wenn dieser Raum in der Luft liegt). Bei einem erfolgreichen Schutzwurf erleidet die Kreatur nur halb so viel Schaden und wird nicht gezogen."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 5 oder h\u00f6her wirkst, erh\u00f6ht sich der Schaden um {@scaledamage 5d10|4-9|1d10} f\u00fcr jede Slotstufe \u00fcber 4."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Immovable Object",
+			"source": "EGW",
+			"page": 187,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "gold dust worth at least 25 gp, which the spell consumes",
+					"cost": 2500,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Du ber\u00fchrst einen Gegenstand, der nicht mehr als 10 Pfund wiegt, und l\u00e4sst ihn auf magische Weise an Ort und Stelle fixieren. Du und die Kreaturen, die du beim Wirken dieses Zaubers bestimmst, k\u00f6nnen den Gegenstand normal bewegen. Du kannst auch ein Passwort festlegen, das, wenn es im Umkreis von 5 Fu\u00df um den Gegenstand gesprochen wird, diesen Zauber f\u00fcr 1 Minute unterdr\u00fcckt.",
+				"Wenn das Objekt in der Luft fixiert ist, kann es bis zu 4.000 Pfund Gewicht tragen. Mehr Gewicht f\u00fchrt dazu, dass das Objekt f\u00e4llt. Andernfalls kann eine Kreatur eine Aktion nutzen, um eine St\u00e4rke\u00fcberpr\u00fcfung gegen den Schutz-DC des Zaubers zu machen. Bei einem Erfolg kann die Kreatur das Objekt bis zu 10 Fu\u00df bewegen."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberspruch der 4. oder 5. Stufe wirkst, erh\u00f6ht sich der DC zum Bewegen des Objekts um 5, es kann bis zu 8.000 Pfund Gewicht tragen und die Dauer erh\u00f6ht sich auf 24 Stunden. Wenn du diesen Zauberspruch mit einem Zauberspruch der 6. Stufe oder h\u00f6her wirkst, erh\u00f6ht sich der DC zum Bewegen des Objekts um 10, es kann bis zu 20.000 Pfund Gewicht tragen und der Effekt ist dauerhaft, bis er gebannt wird."
+					]
+				}
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Magnify Gravity",
+			"source": "EGW",
+			"page": 188,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Die Schwerkraft in einer Sph\u00e4re mit einem Radius von 10 Fu\u00df, die auf einen Punkt zentriert ist, den du in Reichweite sehen kannst, erh\u00f6ht sich f\u00fcr einen Moment. Jede Kreatur in der Sph\u00e4re muss in der Runde, in der du den Zauber wirkst, einen Konstitutions-Erhaltungswurf machen. Bei einem misslungenen Rettungswurf erleidet eine Kreatur {@damage 2d8} Kraftschaden und ihre Geschwindigkeit wird bis zum Ende ihrer n\u00e4chsten Runde halbiert. Bei einem erfolgreichen Rettungswurf erleidet eine Kreatur halb so viel Schaden und erleidet keine Verringerung ihrer Geschwindigkeit.",
+				"Bis zum Beginn deines n\u00e4chsten Zuges erfordert jeder Gegenstand, der nicht in der Sph\u00e4re getragen wird, eine erfolgreiche St\u00e4rkepr\u00fcfung gegen deinen Zauberschutz-DC, um ihn aufheben oder bewegen zu k\u00f6nnen."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 2 oder h\u00f6her wirkst, erh\u00f6ht sich der Schaden um {@scaledamage 2d8|1-9|1d8} f\u00fcr jeden Slot der Stufe 1."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Pulse Wave",
+			"source": "EGW",
+			"page": 188,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du erzeugst intensiven Druck, entl\u00e4sst ihn in einem 30-Fu\u00df-Kegel und entscheidest, ob der Druck Kreaturen und Objekte zieht oder st\u00f6\u00dft. Jede Kreatur in diesem Kegel muss einen Konstitutions-Erhaltungswurf machen. Eine Kreatur erleidet {@damage 6d6} Kraftschaden bei einem misslungenen Schutzwurf oder halb so viel Schaden bei einem erfolgreichen Schutzwurf. Und jede Kreatur, die den Schutzwurf misslingt, wird entweder 15 Fu\u00df auf dich zu gezogen oder 15 Fu\u00df von dir weggesto\u00dfen, je nachdem, welche Wahl du f\u00fcr den Zauber getroffen hast.",
+				"Dar\u00fcber hinaus werden ungesicherte Gegenst\u00e4nde, die sich vollst\u00e4ndig innerhalb des Kegels befinden, ebenfalls 15 Fu\u00df gezogen oder geschoben."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 4 oder h\u00f6her wirkst, erh\u00f6ht sich der Schaden um {@scaledamage 6d6|3-9|1d6} und die Entfernung, die gezogen oder geschoben wird, um 5 Fu\u00df f\u00fcr jeden Slot der Stufe 3."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ravenous Void",
+			"source": "EGW",
+			"page": 188,
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 1000
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small, nine-pointed star made of iron"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Du erschaffst eine Sph\u00e4re mit einem Radius von 20 Fu\u00df zerst\u00f6rerischer Gravitationskraft, die auf einen Punkt zentriert ist, den du in Reichweite sehen kannst. W\u00e4hrend der Dauer des Zaubers sind die Sph\u00e4re und jeder Raum im Umkreis von 100 Fu\u00df schwieriges Gel\u00e4nde und nichtmagische Gegenst\u00e4nde, die sich vollst\u00e4ndig innerhalb der Sph\u00e4re befinden, werden zerst\u00f6rt, wenn sie nicht getragen werden.",
+				"Wenn die Sph\u00e4re erscheint und zu Beginn jedes deiner Z\u00fcge, bis der Zauber endet, werden ungesicherte Objekte im Umkreis von 100 Fu\u00df zum Zentrum der Sph\u00e4re gezogen und enden in einem unbesetzten Raum so nah wie m\u00f6glich am Zentrum.",
+				"Eine Kreatur, die ihren Zug im Umkreis von 100 Fu\u00df um die Sph\u00e4re beginnt, muss einen St\u00e4rkewurf bestehen oder wird geradewegs in das Zentrum der Sph\u00e4re gezogen und endet in einem unbesetzten Raum so nahe wie m\u00f6glich am Zentrum. Eine Kreatur, die die Sph\u00e4re zum ersten Mal in einem Zug betritt oder ihren Zug dort beginnt, erleidet {@damage 5d10} Kraftschaden und ist {@condition restrained}, bis sie sich nicht mehr in der Sph\u00e4re befindet. Befindet sich die Sph\u00e4re in der Luft, schwebt die {@condition restrained} Kreatur in der Sph\u00e4re. Eine Kreatur kann ihre Aktion nutzen, um eine St\u00e4rke\u00fcberpr\u00fcfung gegen den Schutz-DC deines Zaubers zu machen, um diesen {@condition restrained} Zustand f\u00fcr sich selbst oder eine andere Kreatur in der Sph\u00e4re, die sie erreichen kann, zu beenden. Eine Kreatur, die durch diesen Zauber auf 0 Trefferpunkte reduziert wurde, wird zusammen mit allen nichtmagischen Gegenst\u00e4nden, die sie tr\u00e4gt, vernichtet."
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Reality Break",
+			"source": "EGW",
+			"page": 189,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a crystal prism"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Du zerbrichst die Barrieren zwischen den Realit\u00e4ten und Zeitlinien und st\u00fcrzt eine Kreatur in Aufruhr und Wahnsinn. Das Ziel muss einen Weisheitswurf bestehen, sonst kann es bis zum Ende des Zaubers nicht mehr reagieren. Das betroffene Ziel muss au\u00dferdem zu Beginn jeder seiner Runden einen {@dice d10} w\u00fcrfeln; die gew\u00fcrfelte Zahl bestimmt, was mit dem Ziel passiert, wie in der Tabelle Effekte des Realit\u00e4tsbruchs angegeben.",
+				"Am Ende jeder seiner Runden kann das betroffene Ziel den Weisheitswurf wiederholen und bei einem Erfolg den Zauber f\u00fcr sich selbst beenden.",
+				{
+					"type": "table",
+					"caption": "Reality Break Effects",
+					"colLabels": [
+						"d10",
+						"Effect"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1-2",
+							"{@b Vision of the Far Realm.} Das Ziel erleidet {@damage 6d12} psychischen Schaden und ist bis zum Ende des Zuges {@condition stunned}."
+						],
+						[
+							"3-5",
+							"{@b Rending Rift.} Das Ziel muss einen Rettungswurf in Geschicklichkeit machen und erleidet {@damage 8d12} Kraftschaden, wenn der Rettungswurf misslingt, oder halb so viel Schaden, wenn er erfolgreich ist."
+						],
+						[
+							"6-8",
+							"{@b Wormhole.} Das Ziel wird mit allem, was es tr\u00e4gt, bis zu 30 Fu\u00df weit in einen unbesetzten Raum deiner Wahl teleportiert, den du sehen kannst. Das Ziel erleidet au\u00dferdem {@damage 10d12} Kraftschaden und wird umgeworfen {@condition prone}."
+						],
+						[
+							"9-10",
+							"{@b Chill of the Dark Void.} Das Ziel erleidet {@damage 10d12} K\u00e4lteschaden und ist bis zum Ende des Zuges {@condition blinded}."
+						]
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic",
+				"force",
+				"cold"
+			],
+			"conditionInflict": [
+				"stunned",
+				"prone",
+				"blinded"
+			],
+			"savingThrow": [
+				"wisdom",
+				"dexterity"
+			],
+			"miscTags": [
+				"RO",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					}
+				]
+			},
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sapping Sting",
+			"source": "EGW",
+			"page": 189,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du entziehst einer Kreatur, die du in Reichweite siehst, die Lebenskraft. Das Ziel muss einen Konstitutionsschutzwurf bestehen oder {@damage 1d4} nekrotischen Schaden erleiden und {@condition prone} fallen.",
+				"Der Schaden dieses Zaubers erh\u00f6ht sich um {@dice 1d4}, wenn du die 5. Stufe ({@dice 2d4}), die 11. Stufe ({@dice 3d4}) und die 17. Stufe ({@dice 4d4}) erreichst."
+			],
+			"scalingLevelDice": {
+				"label": "necrotic damage",
+				"scaling": {
+					"1": "1d4",
+					"5": "2d4",
+					"11": "3d4",
+					"17": "4d4"
+				}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Temporal Shunt",
+			"source": "EGW",
+			"page": 189,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "taken when a creature you can see makes an attack roll or starts to cast a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Du zielst auf die ausl\u00f6sende Kreatur, die einen Weisheitswurf bestehen muss, oder sie verschwindet, wird an einen anderen Punkt in der Zeit geschleudert und der Angriff geht daneben oder der Zauber ist vergeudet. Zu Beginn seines n\u00e4chsten Zuges erscheint das Ziel wieder an der Stelle, an der es sich befand, oder im n\u00e4chstgelegenen unbesetzten Raum. Das Ziel erinnert sich nicht daran, dass du den Zauber gewirkt hast oder von ihm betroffen warst."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 6 oder h\u00f6her wirkst, kannst du f\u00fcr jeden Slot \u00fcber der Stufe 5 eine zus\u00e4tzliche Kreatur als Ziel w\u00e4hlen. Alle Ziele m\u00fcssen sich innerhalb von 30 Fu\u00df Entfernung befinden."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Tether Essence",
+			"source": "EGW",
+			"page": 189,
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a spool of platinum cord worth at least 250 gp, which the spell consumes",
+					"cost": 25000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Zwei Kreaturen, die du in Reichweite sehen kannst, m\u00fcssen einen Konstitutionsschutzwurf machen, mit Nachteil, wenn sie weniger als 30 Fu\u00df voneinander entfernt sind. Jede der beiden Kreaturen kann den Schutz freiwillig verweigern. Wenn einer der beiden Schutzw\u00fcrfe gelingt, hat der Zauber keine Wirkung. Wenn beide Schutzw\u00fcrfe verweigert werden, sind die Kreaturen f\u00fcr die Dauer des Zaubers magisch miteinander verbunden, unabh\u00e4ngig von der Entfernung zwischen ihnen. Wenn einer der beiden Kreaturen Schaden zugef\u00fcgt wird, wird derselbe Schaden auch der anderen zugef\u00fcgt. Wenn die Trefferpunkte einer der beiden wiederhergestellt werden, wird die gleiche Anzahl von Trefferpunkten der anderen wiederhergestellt. Wenn eine der gefesselten Kreaturen auf 0 Trefferpunkte reduziert wird, endet der Zauber f\u00fcr beide. Wenn der Zauber f\u00fcr eine Kreatur endet, endet er f\u00fcr beide."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Time Ravage",
+			"source": "EGW",
+			"page": 189,
+			"level": 9,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an hourglass filled with diamond dust worth at least 5,000 gp, which the spell consumes",
+					"cost": 500000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du zielst auf eine Kreatur, die du in Reichweite siehst, und unterziehst ihre physische Gestalt der Verw\u00fcstung des schnellen Alterns. Das Ziel muss einen Konstitutionswurf machen und erleidet bei einem misslungenen Schutz {@damage 10d12} nekrotischen Schaden, bei einem erfolgreichen Schutz halb so viel Schaden. Wenn der Schutzwurf misslingt, altert das Ziel au\u00dferdem so weit, dass ihm nur noch 30 Tage bleiben, bevor es an Altersschw\u00e4che stirbt. In diesem gealterten Zustand hat das Ziel einen Nachteil bei Angriffsw\u00fcrfen, F\u00e4higkeitspr\u00fcfungen und Schutzw\u00fcrfen, und seine Gehgeschwindigkeit ist halbiert. Nur der Zauber {@spell wish} oder {@spell greater restoration}, der mit einem Zauberslot der Stufe 9 gewirkt wird, kann diese Effekte beenden und das Ziel in sein fr\u00fcheres Alter zur\u00fcckversetzen."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wristpocket",
+			"source": "EGW",
+			"page": 190,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Du schnippst mit dem Handgelenk, wodurch ein Gegenstand in deiner Hand verschwindet. Der Gegenstand, den nur du in der Hand halten kannst und der nicht mehr als 5 Pfund wiegen darf, wird in einen extradimensionalen Raum transportiert, wo er f\u00fcr die Dauer des Spiels bleibt.",
+				"Bis der Zauber endet, kannst du deine Aktion nutzen, um den Gegenstand in deine freie Hand zu holen, und du kannst deine Aktion nutzen, um den Gegenstand in den extradimensionalen Raum zur\u00fcckzubringen. Ein Gegenstand, der sich noch in der Dimension der Tasche befindet, wenn der Zauber endet, erscheint in deinem Raum, zu deinen F\u00fc\u00dfen."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Chronurgy",
+							"source": "EGW"
+						}
+					},
+					{
+						"class": {
+							"name": "Wizard",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Graviturgy",
+							"source": "EGW"
+						}
+					}
+				]
+			}
+		}
+	]
+}

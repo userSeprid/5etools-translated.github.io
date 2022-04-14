@@ -1,0 +1,112 @@
+{
+	"spell": [
+		{
+			"name": "Create Magen",
+			"source": "IDRotF",
+			"page": 318,
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a vial of quicksilver worth 500 gp and a life-sized human doll, both of which the spell consumes, and an intricate crystal rod worth at least 1,500 gp that is not consumed",
+					"cost": 50000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"W\u00e4hrend du den Zauber sprichst, legst du eine Phiole Quecksilber in die Brust einer lebensgro\u00dfen menschlichen Puppe, die mit Asche oder Staub gef\u00fcllt ist. Dann n\u00e4hst du die Puppe zu und tr\u00e4ufelst dein Blut auf sie. Am Ende des Zaubers klopfst du mit einem Kristallstab auf die Puppe und verwandelst sie in einen {@filter magen|bestiary|search=magen|source=IDRotF}, der mit dem Kleidungsst\u00fcck der Puppe bekleidet ist. Die Art des Magens w\u00e4hlst du w\u00e4hrend des Zaubers. Siehe {@adventure appendix C|IDRotF|21} f\u00fcr verschiedene Arten von Magens und ihre Statistiken.",
+				"Wenn der Magier erscheint, verringert sich dein Trefferpunkte-Maximum um einen Betrag, der dem Herausforderungswert des Magiers entspricht (mindestens um 1). Nur ein Zauber von {@spell wish} kann diese Verringerung deines Trefferpunkte-Maximums r\u00fcckg\u00e4ngig machen.",
+				"Jeder Magier, den du mit diesem Zauberspruch erschaffst, gehorcht deinen Befehlen, ohne zu fragen."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frost Fingers",
+			"source": "IDRotF",
+			"page": 318,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Gefrierende K\u00e4lte schie\u00dft aus deinen Fingerspitzen in einem 15-Fu\u00df-Kegel. Jede Kreatur in diesem Bereich muss einen Konstitutionsschutzwurf machen und erleidet bei einem misslungenen Schutz {@damage 2d8} K\u00e4lteschaden, bei einem erfolgreichen Schutz halb so viel Schaden.",
+				"Durch die K\u00e4lte gefrieren nichtmagische Fl\u00fcssigkeiten in dem Bereich, der nicht getragen wird."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 2 oder h\u00f6her wirkst, erh\u00f6ht sich der Schaden um {@dice 1d8} f\u00fcr jeden Slot der Stufe 1."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}

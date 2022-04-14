@@ -1,0 +1,3125 @@
+{
+	"data": [
+		{
+			"type": "section",
+			"name": "Introduction",
+			"id": "000",
+			"page": 2,
+			"entries": [
+				"Die Schnauze von Omgar ist eine geographische Region {@adventure described briefly|ToA|2|Snout of Omgar} in {@adventure Tomb of Annihilation|ToA}. In diesem Abenteuer wird jedoch nicht viel \u00fcber den Ort oder seine Bewohner verraten. Das Tortle-Paket ist f\u00fcr Kerkermeister geschrieben, die mehr \u00fcber die Schnauze von Omgar wissen wollen. Diese Erg\u00e4nzung f\u00fchrt auch eine neue spielbare Charakterrasse ein, die {@race tortle|ttp}, und einen neuen Abenteuerort: {@adventure Dangwaru, the Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)}.",
+				"Schildkr\u00f6ten sind intelligente, schildkr\u00f6ten\u00e4hnliche Humanoide, die ein Talent f\u00fcr das \u00dcberleben in der Wildnis haben. Die Rasse tauchte zum ersten Mal in fr\u00fchen Ausgaben des D&D-Spiels auf, und zwar nirgendwo deutlicher als in Modul X9, Die wilde K\u00fcste, das in der Welt von Mystara spielt. Schildkr\u00f6ten k\u00f6nnen, wie die meisten anderen abenteuerlichen V\u00f6lker, auf jeder D&D-Welt auftreten. In den Vergessenen Reichen sind die {@adventure peninsula of Chult|ToA|2} und die Schnauze von Omgar ein gutes Zuhause f\u00fcr sie.",
+				"Diese Erg\u00e4nzung setzt voraus, dass du die D&D Fifth Edition Grundregelb\u00fccher ({@book Player's Handbook|phb}, {@book Dungeon Master's Guide|dmg} und {@book Monster Manual|mm}) sowie {@book Volo's Guide to Monsters|vgm} und {@adventure Tomb of Annihilation|ToA} besitzt.",
+				{
+					"type": "insetReadaloud",
+					"entries": [
+						"Text, der in einem solchen Kasten erscheint, soll den Spielern vorgelesen oder umschrieben werden, wenn ihre Charaktere zum ersten Mal an einem Ort oder unter bestimmten Umst\u00e4nden, wie im Text beschrieben, eintreffen."
+					],
+					"id": "070"
+				},
+				"Die {@book Monster Manual|mm}, {@book Volo's Guide to Monsters|vgm} und {@adventure Tomb of Annihilation|ToA} enthalten Statistikbl\u00f6cke f\u00fcr die meisten der hier vorkommenden Kreaturen, und eine Handvoll neuer Monster erscheint am Ende dieser Erg\u00e4nzung. Wenn der Name einer Kreatur in der Schriftart {@bold bold} erscheint, ist das ein visueller Hinweis auf den Statusteil in {@book Monster Manual|mm}. Wenn ein Werteblock an anderer Stelle erscheint, wird dies im Text angegeben.",
+				"Die im Abenteuer erw\u00e4hnten Zauberspr\u00fcche und Ausr\u00fcstungsgegenst\u00e4nde werden in der {@book Player's Handbook|phb} beschrieben. Magische Gegenst\u00e4nde werden in der {@book Dungeon Master's Guide|dmg} beschrieben.",
+				{
+					"type": "section",
+					"name": "The Snout of Omgar",
+					"id": "001",
+					"page": 2,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Snout of Omgar DM.webp"
+							},
+							"title": "Snout of Omgar - DM",
+							"width": 1988,
+							"height": 2681,
+							"mapRegions": [
+								{
+									"area": "01f",
+									"points": [
+										[
+											510,
+											920
+										],
+										[
+											262,
+											918
+										],
+										[
+											267,
+											1039
+										],
+										[
+											529,
+											1032
+										]
+									]
+								},
+								{
+									"area": "029",
+									"points": [
+										[
+											522,
+											1390
+										],
+										[
+											466,
+											1483
+										],
+										[
+											537,
+											1622
+										],
+										[
+											889,
+											1625
+										],
+										[
+											853,
+											1536
+										],
+										[
+											768,
+											1501
+										],
+										[
+											674,
+											1476
+										],
+										[
+											619,
+											1382
+										]
+									]
+								},
+								{
+									"area": "056",
+									"points": [
+										[
+											801,
+											1694
+										],
+										[
+											532,
+											1815
+										],
+										[
+											545,
+											1900
+										],
+										[
+											890,
+											1949
+										],
+										[
+											887,
+											1862
+										]
+									]
+								},
+								{
+									"area": "056",
+									"points": [
+										[
+											1474,
+											1492
+										],
+										[
+											1372,
+											1699
+										],
+										[
+											1410,
+											1764
+										],
+										[
+											1795,
+											1701
+										],
+										[
+											1771,
+											1635
+										]
+									]
+								},
+								{
+									"area": "056",
+									"points": [
+										[
+											1185,
+											1971
+										],
+										[
+											1376,
+											1971
+										],
+										[
+											1382,
+											2045
+										],
+										[
+											1282,
+											2124
+										],
+										[
+											1183,
+											2042
+										]
+									]
+								},
+								{
+									"area": "056",
+									"points": [
+										[
+											948,
+											1100
+										],
+										[
+											1173,
+											1109
+										],
+										[
+											1337,
+											1161
+										],
+										[
+											1308,
+											1226
+										],
+										[
+											1224,
+											1292
+										],
+										[
+											1045,
+											1288
+										],
+										[
+											943,
+											1232
+										]
+									]
+								},
+								{
+									"area": "058",
+									"points": [
+										[
+											465,
+											233
+										],
+										[
+											713,
+											232
+										],
+										[
+											803,
+											419
+										],
+										[
+											739,
+											530
+										],
+										[
+											450,
+											468
+										]
+									]
+								},
+								{
+									"area": "062",
+									"points": [
+										[
+											505,
+											691
+										],
+										[
+											815,
+											690
+										],
+										[
+											814,
+											752
+										],
+										[
+											644,
+											870
+										],
+										[
+											537,
+											830
+										]
+									]
+								},
+								{
+									"area": "065",
+									"points": [
+										[
+											979,
+											957
+										],
+										[
+											695,
+											966
+										],
+										[
+											704,
+											1089
+										],
+										[
+											791,
+											1088
+										],
+										[
+											998,
+											1019
+										],
+										[
+											996,
+											957
+										]
+									]
+								}
+							],
+							"imageType": "map",
+							"hrefThumbnail": {
+								"type": "internal",
+								"path": "adventure/TTP/thumbnail/Snout of Omgar DM-thumb.webp"
+							},
+							"id": "08a"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Snout of Omgar Player.jpg"
+							},
+							"title": "Snout of Omgar - Player",
+							"width": 2080,
+							"height": 2850,
+							"imageType": "mapPlayer",
+							"mapParent": {
+								"id": "08a",
+								"scaleX": 0.956,
+								"scaleY": 0.946
+							}
+						},
+						"Die Schnauze von Omgar war einst eine Halbinsel, aber durch die Umw\u00e4lzungen der Zauberpest brach die Spitze der Halbinsel ab, so dass eine Insel entstand, die durch eine schmale Meerenge vom Festland von Chult getrennt ist. Als die Trennung erfolgte, beanspruchten die in der N\u00e4he lebenden Schildkr\u00f6ten die Insel als ihr Reich. Die Meerenge bot einen nat\u00fcrlichen Schutz gegen aggressive Raubtiere vom Festland.",
+						"Die Schildkr\u00f6ten der Schnauze sind ein gastfreundliches Volk, das gerne jagt, fischt, bastelt und mit Besuchern Handel treibt. Nicht lange nach der Gr\u00fcndung der Insel geriet ein Piratenschiff, das von einem Kleriker der Meeresg\u00f6ttin {@deity Umberlee|Faer\u00fbnian|SCAG} gesteuert wurde, in einen Taifun und wurde an Land gesp\u00fclt. Schildkr\u00f6ten retteten die \u00dcberlebenden des Schiffbruchs und k\u00fcmmerten sich um sie. Der Kapit\u00e4n beeindruckte die Schildkr\u00f6ten mit ihrer Magie und erz\u00e4hlte Geschichten, die {@deity Umberlee|Faer\u00fbnian|SCAG} in einem schmeichelhaften Licht erscheinen lie\u00dfen. Mit der Zeit \u00fcberredete sie sie, einen Palast zu Ehren ihrer Gottheit zu errichten. Die Klerikerin w\u00e4hlte einen Berghang mit Blick auf das Meer, und dort bauten die Schildkr\u00f6ten ein Jahrzehnt lang {@adventure Dangwaru, the Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)}, das heimlich als Tempel f\u00fcr {@deity Umberlee|Faer\u00fbnian|SCAG} diente. Im Gegenzug lie\u00dfen die Klerikerin und ihre Gefolgsleute die Schildkr\u00f6ten in Ruhe und waren ruhige Nachbarn.",
+						"Mit der Zeit starben die {@deity Umberlee|Faer\u00fbnian|SCAG} Anbeter der Insel aus und der Palast verfiel. Die Nachkommen der Schildkr\u00f6ten, die den {@adventure Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)} erbaut hatten, entdeckten bald, dass darin b\u00f6se Kreaturen lauerten. \u00c4ltere Schildkr\u00f6ten meiden den verfallenen Palast, aber j\u00fcngere Schildkr\u00f6ten versuchen gelegentlich, ihn als \u00dcbergangsritus zu erkunden. Nur wenige von ihnen kommen weit, bevor sie von seltsamen Monstern verscheucht werden."
+					]
+				},
+				{
+					"type": "section",
+					"name": "Using This Supplement",
+					"id": "002",
+					"page": 2,
+					"entries": [
+						"Hier sind M\u00f6glichkeiten, diese Erg\u00e4nzung in Verbindung mit {@adventure Tomb of Annihilation|ToA} zu verwenden:",
+						{
+							"type": "list",
+							"items": [
+								"Mit deiner Zustimmung k\u00f6nnen ein oder mehrere Spieler {@race tortle|ttp} Charaktere nach den Regeln im Abschnitt \"{@adventure Tortle|ttp|1}\" erstellen. Diese Schildkr\u00f6ten sind auf der Suche nach Abenteuern und Kameradschaft weit von der Schnauze Omgars gereist. Sie k\u00f6nnen sich der Gruppe in {@adventure Port Nyanzaru|ToA|1} oder einem anderen {@adventure location in Chult|ToA|2|Locations in Chult} anschlie\u00dfen.",
+								"Die Gruppe k\u00f6nnte auf einen Schildkr\u00f6ten-NSC treffen, der bereit ist, als Wildnisf\u00fchrer zu dienen. Diese Erg\u00e4nzung beschreibt drei neue Schildkr\u00f6tenf\u00fchrer (siehe \"{@adventure Tortle Guides|ttp|1|Tortle Guides},\").",
+								"Die Gruppe k\u00f6nnte die Schnauze von Omgar besuchen, ihre Orte erforschen und ihre Bewohner treffen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Adventure Hooks",
+							"id": "003",
+							"page": 1,
+							"entries": [
+								"Hier sind einige Haken, mit denen ihr Charaktere in die Schnauze von Omgar locken k\u00f6nnt:",
+								{
+									"type": "list",
+									"items": [
+										"Auf einer Schiffsreise um die Halbinsel Chultan geraten die Charaktere in einen Sturm und werden an der Schnauze von Omgar, nicht allzu weit von High Horn entfernt, an Land gesp\u00fclt (siehe \"{@adventure High Horn|ttp|3|High Horn}\").",
+										"Die Kommandantin von {@adventure Fort Beluarian|ToA|2|Fort Beluarian}, {@creature Liara Portyr|ToA}, beauftragt die Abenteurer, die Ruinen der {@adventure Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)} zu erkunden und ihr Bericht zu erstatten. Sie arrangiert ein Schiff, das sie nach {@adventure Ahoyhoy|ttp|3|Ahoyhoy} bringt.",
+										"Die Charaktere heuern in {@adventure Port Nyanzaru|ToA|1} oder {@adventure Fort Beluarian|ToA|2|Fort Beluarian} einen Schildkr\u00f6tenf\u00fchrer an. Die Schildkr\u00f6te erz\u00e4hlt ihnen Geschichten \u00fcber den {@adventure Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)} und bittet als Bezahlung f\u00fcr ihre Dienste um ihre Hilfe bei der Befreiung des Palastes von Monstern.",
+										"Die Handelsf\u00fcrsten von {@adventure Port Nyanzaru|ToA|1} sind besorgt \u00fcber die wachsende Zahl von {@filter yuan-ti|bestiary|tag=yuan-ti} Spionen in ihrer Stadt und bef\u00fcrchten, dass das Schlangenvolk ein Attentat auf sie plant. Bei der Leiche eines get\u00f6teten {@creature yuan-ti pureblood|mm} Spions, der versucht hat, den {@adventure Merchant Prince Zhanthi's|ToA|1|Zhanthi} Haushalt zu infiltrieren, wurde eine Karte der Schnauze von Omgar gefunden. Zhanthi bietet Abenteurern, die bereit sind, jede Sehensw\u00fcrdigkeit der Insel zu besuchen und ihr von ihren Entdeckungen zu berichten, eine Belohnung von 1.000 Gp. {@adventure Zhanthi|ToA|1|Zhanthi} \u00fcbergibt ihnen die Karte und arrangiert ein schnelles Schiff ({@adventure the Brazen Pegasus|ToA|1|Harbor Ward}), das sie zur Insel bringt.",
+										"Ein Schiff mit dem ber\u00fchmten Entdecker {@creature Volothamp \"Volo\" Geddarm|ToA} ist verschwunden. Es segelte zur S\u00fcdk\u00fcste von Chult und kam nie an. Volos Plan war es, die sch\u00f6ne {@adventure Snapping Turtle Bay|ToA|2|Snapping Turtle Bay} zu besuchen und dann eine Woche in der Tortle-Festung von {@adventure Ahoyhoy|ttp|3|Ahoyhoy} zu verbringen. (\"Die Gastfreundschaft in Tortle soll un\u00fcbertroffen sein!\") Ger\u00fcchte, das Schiff sei in die H\u00e4nde von Piraten gefallen, sind falsch; tats\u00e4chlich kenterte das Schiff in einem Sturm, und Volo wurde an der Schnauze von Omgar an Land gesp\u00fclt."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Tortle",
+			"id": "004",
+			"page": 3,
+			"entries": [
+				"Einzelheiten \u00fcber die spielbare Rasse finden Sie im Eintrag {@race tortle|ttp} auf der Seite \u00fcber die Rassen.",
+				{
+					"type": "entries",
+					"name": "Tortle Guides",
+					"id": "005",
+					"page": 4,
+					"entries": [
+						"Die folgenden Schildkr\u00f6ten-NSCs k\u00f6nnen zu den {@adventure list of guides|toa|1|Finding a Guide} hinzugef\u00fcgt werden, die in Chult angeheuert werden k\u00f6nnen. Einer der Schildkr\u00f6tenf\u00fchrer, Kwilgok, arbeitet f\u00fcr die {@adventure merchant prince Jobal|ToA|1|Jobal} in {@adventure Port Nyanzaru|ToA|1}. Die anderen, Eeyal und Mudgraw, sind Freiberufler, die von {@adventure Fort Beluarian|ToA|2|Fort Beluarian} bzw. {@adventure Ahoyhoy|ttp|3|Ahoyhoy} aus arbeiten.",
+						{
+							"type": "optfeature",
+							"name": "Eeyal",
+							"page": 4,
+							"entries": [
+								"Wenn die Charaktere Eeyal treffen, gib ihnen {@adventure handout A|ttp|4|Handout A: Eeyal}.",
+								"Eeyal ist eine {@creature tortle|mtf}, die eine Schutzbrille tr\u00e4gt, die sie selbst angefertigt hat, um ihre Augen vor Vulkanasche zu sch\u00fctzen. Sie brauchte fast ein Jahr, um von der Schnauze von Omgar nach {@adventure Fort Beluarian|ToA|2|Fort Beluarian} zu reisen, wobei sie Chult durch raue Berge, dichte Dschungel und von Untoten verseuchtes Gebiet durchquerte. Sie hat {@adventure Lake Luo|ToA|2|Lake luo}, den Gartenpalast von {@adventure Nangalore|ToA|2|Nangalore}, die Schlucht von {@adventure Ataaz Muhahah|ToA|2|Ataaz Muhahah} und die Ruinen von {@adventure Mezro|ToA|2|Mezro} gesehen. Sie fand sogar ein Schiffswrack im Dschungel ({@adventure the Wreck of the Narwhal|ToA|2|Wreck of the Narwhal}) und freundete sich mit einem {@creature weretiger} an, der dort lebt.",
+								"Als geschickte Kunsthandwerkerin tr\u00e4gt Eeyal ein Set von {@item smith's tools|phb} und ein Set von {@item tinker's tools|phb}. Au\u00dferdem besitzt sie eine {@item climber's kit|phb}, eine {@item healer's kit|phb} und eine {@item dungeoneer's pack|phb}. Diese Ausr\u00fcstung ist an einem speziell angefertigten Ledergeschirr befestigt, das an Eeyals Panzer angebracht ist. Eeyal behauptet, f\u00fcr alle Eventualit\u00e4ten das richtige Werkzeug zu haben, und ist so stolz auf ihre Ausr\u00fcstung, dass sie darauf besteht, alles selbst zu tragen.",
+								"Eeyal ist 1,80 m gro\u00df und wiegt 420 Pfund.",
+								"Obwohl sie erst 17 Jahre alt ist, ist ihr Verhalten mit dem einer viel \u00e4lteren, viel weiseren Schildkr\u00f6te vergleichbar. Sie w\u00e4hlt ihre Worte sorgf\u00e4ltig aus und geht keine unn\u00f6tigen Risiken ein. Wenn sie durch den Dschungel l\u00e4uft, nutzt sie ihre {@item quarterstaff|phb}, um vor sich hinzustochern, wohl wissend, dass es Fallen und Schlingen in vielen Formen gibt.",
+								"Wenn die Charaktere Eeyal anheuern, empfiehlt sie ihnen, vor der Abreise auch eine Erkundungscharta zu erwerben {@adventure Fort Beluarian|ToA|2|Fort Beluarian}. Eeyal rechnet damit, auf {@adventure Flaming Fist|ToA|1|Flaming Fist} Patrouillen zu treffen, und solche Treffen k\u00f6nnen schnell sauer werden, wenn man nicht die n\u00f6tigen Papiere dabei hat.",
+								"Eeyal hat Angst vor unterirdischen Orten und geht nur dann freiwillig in den Untergrund, wenn es keine andere M\u00f6glichkeit gibt.",
+								"Eeyal ist vertrauensw\u00fcrdig und berechnet 5 Gp pro Tag. Sie bietet auch einen erm\u00e4\u00dfigten Tarif von 40 gp f\u00fcr einen Tag an, aber die Zahlung muss im Voraus erfolgen und kann nicht zur\u00fcckerstattet werden."
+							],
+							"prerequisite": "tortle guide (Fort Beluarian)",
+							"id": "06b"
+						},
+						{
+							"type": "optfeature",
+							"name": "Kwilgok",
+							"entries": [
+								"Wenn die Figuren Kwilgok treffen, gib ihnen {@adventure handout B|ttp|4|Handout B: Kwilgok}.",
+								"Vor drei Jahren besuchte ein Handelsschiff die Schildkr\u00f6tenfestung von {@adventure Ahoyhoy|ttp|3|Ahoyhoy}, und Kwilgok gelang es, eine Passage auf dem Schiff zu buchen. In {@adventure Port Nyanzaru|ToA|1} entdeckte er eine Welt wie keine andere. Er fand Arbeit bei der Reparatur von Docks und hatte innerhalb eines Jahres genug Geld, um sich ein gebrauchtes {@creature ankylosaurus} zu kaufen, mit dem er mehrere {@adventure dinosaur races|ToA|1|Dinosaur Racing} mit hohen Eins\u00e4tzen bestritt. Er verlor mehr, als er gewann, aber er erregte die Aufmerksamkeit des {@adventure Merchant Prince Jobal|ToA|1|Jobal}, der ihn davon \u00fcberzeugte, dass die Erkundung der Wildnis mehr Gewinn einbrachte. Kwilgok, der {@creature tortle|mtf}, wurde F\u00fchrer und gibt, wie alle seri\u00f6sen F\u00fchrer in {@adventure Port Nyanzaru|ToA|1}, einen Teil seiner Eink\u00fcnfte an {@adventure Jobal|ToA|1|Jobal} ab.",
+								"Kwilgok reist mit einem z\u00e4nkischen {@creature ankylosaurus} namens T\u00f6dlicher Schatz. Die Schildkr\u00f6te reitet in einem Howdah auf dem R\u00fccken des Ankylosaurus und lenkt das Tier mit Hilfe eines {@item Pole (10-foot)|phb|10-foot pole}) mit saftigen Bl\u00e4ttern, die an einem Ende gebunden sind. Obwohl er anderen nicht erlaubt, auf dem Tier zu reiten, sind viele M\u00f6chtegern-Forscher so beeindruckt von dem Dinosaurier, dass sie gerne bereit sind, Kwilgoks Geb\u00fchr von 6 Gp pro Tag zu zahlen, wobei die Zahlung f\u00fcr 30 Tage im Voraus erfolgt.",
+								"Obwohl er ein f\u00e4higer und ehrlicher F\u00fchrer ist, setzt sich Kwilgok nicht f\u00fcr seine Arbeitgeber ein. Er bekommt immer wieder Arbeit, weil er so gelassen ist und bereit ist, eine Expedition in jede Ecke von Chult zu f\u00fchren. Er ist schon viele Male den {@adventure River Soshenstar|ToA|2|River Soshenstar} hinaufgereist und kennt den {@adventure Aldani Basin|ToA|2|Aldani Basin} und die umliegende Region recht gut. Er hat auch schon Expeditionen nach {@adventure Orolunga|ToA|2|Orolunga} gef\u00fchrt, obwohl er dort noch nie auf das schwer fassbare Orakel gesto\u00dfen ist, von dem es hei\u00dft, dass es dort wohnt. Ein Ort, den er lieber nicht wieder aufsuchen m\u00f6chte, ist {@adventure Dangwaru, the Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)}. Als er jung war, beschloss Kwilgok aus Jux und Tollerei, die Ruinen zu erkunden, und stie\u00df dort auf b\u00f6se Schatten. Die Schatten h\u00e4tten ihm beinahe das Leben gekostet, aber es gelang ihm, in geschw\u00e4chtem Zustand aus dem Palast zu fliehen. Die Schatten suchen Kwilgok noch immer in seinen Tr\u00e4umen heim, und er m\u00f6chte ihnen nicht noch einmal begegnen.",
+								"Kwilgok ist 26 Jahre alt, knapp einen Meter gro\u00df und wiegt 450 Pfund."
+							],
+							"prerequisite": "tortle guide (Port Nyanzaru)",
+							"id": "06c"
+						},
+						{
+							"type": "optfeature",
+							"name": "Mudgraw",
+							"entries": [
+								"Wenn die Charaktere Mudgraw treffen, gib ihnen {@adventure handout C|ttp|4|Handout C: Mudgraw}. Charaktere, die die Schildkr\u00f6tenfestung von {@adventure Ahoyhoy|ttp|3|Ahoyhoy} besuchen, k\u00f6nnen sich Mudgraw als F\u00fchrer sichern. Mudgraw ist davon \u00fcberzeugt, dass er ein nat\u00fcrlicher Anf\u00fchrer ist, br\u00fcllt gerne, um geh\u00f6rt zu werden, und er gibt nie zu, dass er sich irrt, selbst wenn er nicht wei\u00df, wovon er spricht. Der {@creature tortle druid|mtf} l\u00e4sst sich ein gutes Abenteuer nicht entgehen und ist bereit, die Insel zu verlassen. Er hat bereits Expeditionen nach {@adventure Omu|ToA|3|Omu}, {@adventure Shilku|ToA|2|Shilku} und in die {@adventure Heart of Ubtao|ToA|2|Heart of Ubtao} geleitet. Es ist f\u00fcnf Jahre her, dass er das Herz das letzte Mal besucht hat; daher wei\u00df er nichts \u00fcber die derzeitigen Bewohner.",
+								"Mudgraws einziger Besuch in {@adventure Omu|ToA|3|Omu} vor drei Jahren endete in einer Katastrophe. Er und eine Gruppe menschlicher Schatzsucher aus der Stadt Athkatla gerieten in einen Hinterhalt von {@filter yuan-ti|bestiary|tag=yuan-ti}, und Mudgraw war gezwungen, seine Gef\u00e4hrten im Stich zu lassen. Er versteckte sich in einer Ruine, die einst ein Schrein des Gottes Ubtao war, war fasziniert von den labyrinthartigen Bildern an den W\u00e4nden und fand einen h\u00f6lzernen {@item holy symbol|phb}, den die fr\u00fcheren Bewohner des Schreins zur\u00fcckgelassen hatten. Er glaubt, dass Ubtao ihm geholfen hat, aus der Stadt zu entkommen, und tr\u00e4gt die {@item holy symbol|phb} nun um seinen Hals. Er bedauert, die Expedition aufgegeben zu haben, und zieht es vor, nicht dar\u00fcber zu sprechen. Einer seiner neuen Lieblingsspr\u00fcche lautet: \"Das Leben ist ein Labyrinth\". Mudgraw benutzt ihn immer dann, wenn er ver\u00e4rgert ist oder Informationen hat, die er lieber nicht preisgeben m\u00f6chte.",
+								"Mudgraw ist 44 Jahre alt, 6 Fu\u00df gro\u00df und wiegt 480 Pfund. Er verlangt 5 Gp pro Tag, verzichtet aber auf sein Honorar, wenn er die Chance erh\u00e4lt, eine weitere Expedition nach {@adventure Omu|ToA|3|Omu} zu leiten. Mudgraw sieht eine solche Expedition als eine Gelegenheit zur S\u00fchne."
+							],
+							"prerequisite": "tortle druid guide (Ahoyhoy)",
+							"id": "06d"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Exploring the Island",
+			"id": "006",
+			"page": 5,
+			"entries": [
+				"Ein Regenwald bedeckt die relativ flache nordwestliche Ecke der Insel. Dieser Regenwald ist im Norden von grasbewachsenen H\u00fcgeln, im Osten und Westen von Sandstr\u00e4nden und im S\u00fcden von Bergen umgeben. Die Schildkr\u00f6tenfestung von {@adventure Ahoyhoy|ttp|3|Ahoyhoy} steht an der Westk\u00fcste, wo der Rand des Regenwaldes und die Berge aufeinandertreffen.",
+				{
+					"type": "entries",
+					"name": "Random Encounters",
+					"id": "007",
+					"page": 5,
+					"entries": [
+						"W\u00fcrfle dreimal pro Spieltag eine {@dice d20}, wobei du morgens, nachmittags und abends oder nachts nach Begegnungen suchst. Eine zuf\u00e4llige Begegnung findet bei einem Wurf von 18 oder h\u00f6her statt. W\u00fcrfle einen {@dice d100} und schaue in der Tabelle Begegnungen der Omgarschnauze nach dem entsprechenden Gel\u00e4nde. Nachdem Sie festgelegt haben, was die Charaktere antreffen, k\u00f6nnen Sie die unten aufgef\u00fchrten Informationen verwenden, um die Begegnung zum Leben zu erwecken. Lassen Sie die Spieler ihren Weg durch die Vermeidung von leichten Begegnungen erz\u00e4hlen oder erh\u00f6hen Sie die Schwierigkeit von leichten Begegnungen, um sie spannend zu halten.",
+						"Zuf\u00e4llige Begegnungen sind nicht auf Charaktere einer bestimmten Stufe zugeschnitten. Wenn die Charaktere auf feindliche Kreaturen treffen, die sie nicht besiegen k\u00f6nnen, geben Sie ihnen die M\u00f6glichkeit zu fliehen, sich zu verstecken, zu verhandeln oder auf andere Weise den sicheren Tod zu vermeiden. Du kannst auch andere Kreaturen auftauchen lassen, die die Charaktere ablenken, um ihnen die Flucht zu erm\u00f6glichen. Wenn ein Charakter zum Beispiel eine wichtige F\u00e4higkeitspr\u00fcfung oder einen Rettungswurf machen muss, k\u00f6nnte ein {@creature chwinga|toa} (siehe {@adventure Tomb of Annihilation|ToA}) erscheinen, {@spell guidance} oder {@spell resistance} auf den Charakter wirken und dann in seinem n\u00e4chsten Zug verschwinden.",
+						{
+							"type": "table",
+							"page": 5,
+							"caption": "Snout of Omgar Encounters",
+							"colLabels": [
+								"Encounter",
+								"Land",
+								"Water"
+							],
+							"colStyles": [
+								"col-6",
+								"col-3 text-center",
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"{@area Almiraj|008|x}",
+									"01-05",
+									"\u2014"
+								],
+								[
+									"{@area Axe beaks|009|x}",
+									"06-10",
+									"\u2014"
+								],
+								[
+									"{@area Baboons|00a|x}",
+									"11-15",
+									"\u2014"
+								],
+								[
+									"{@area Blood hawks|00b|x}",
+									"16-20",
+									"\u2014"
+								],
+								[
+									"{@area Cannibals|00c|x}",
+									"21-25",
+									"01-15"
+								],
+								[
+									"{@area Chwinga|00d|x}",
+									"26-30",
+									"\u2014"
+								],
+								[
+									"{@area Dimetrodons|00e|x}",
+									"31-35",
+									"\u2014"
+								],
+								[
+									"{@area Dolphins|00f|x}",
+									"\u2014",
+									"16-30"
+								],
+								[
+									"{@area Eblis|010|x}",
+									"36-40",
+									"\u2014"
+								],
+								[
+									"{@area Flail snail|011|x}",
+									"41-45",
+									"\u2014"
+								],
+								[
+									"{@area Flying snakes|012|x}",
+									"46-50",
+									"31-40"
+								],
+								[
+									"{@area Geonids|013|x}",
+									"51-55",
+									"\u2014"
+								],
+								[
+									"{@area Giant lizards|014|x}",
+									"56-60",
+									"\u2014"
+								],
+								[
+									"{@area Giant snapping turtle|015|x}",
+									"61-65",
+									"41-50"
+								],
+								[
+									"{@area Jaculis|016|x}",
+									"66-70",
+									"\u2014"
+								],
+								[
+									"{@area Marine Decapus|017|x}",
+									"\u2014",
+									"51-60"
+								],
+								[
+									"{@area Plesiosaurus|018|x}",
+									"\u2014",
+									"61-75"
+								],
+								[
+									"{@area Pteranodons|019|x}",
+									"71-75",
+									"76-85"
+								],
+								[
+									"{@area Reef sharks|01a|x}",
+									"\u2014",
+									"86-00"
+								],
+								[
+									"{@area Stirges|01b|x}",
+									"76-80",
+									"\u2014"
+								],
+								[
+									"{@area Topis|01c|x}",
+									"81-85",
+									"\u2014"
+								],
+								[
+									"{@area Tortle|01d|x}",
+									"86-00",
+									"\u2014"
+								]
+							],
+							"data": {
+								"tableInclude": true
+							}
+						},
+						{
+							"type": "entries",
+							"name": "Almiraj",
+							"id": "008",
+							"page": 5,
+							"entries": [
+								"Die Charaktere sehen einen {@creature almiraj|toa} (siehe {@adventure Tomb of Annihilation|ToA}) in etwa 60 Fu\u00df Entfernung. Der Almiraj flieht vor jeder Kreatur, die sich ihm auf weniger als 30 Fu\u00df n\u00e4hert. Jeder Charakter, der den Almiraj erfolgreich in eine Falle gelockt hat, kann eine Aktion nutzen, um eine DC 14 Weisheitsprobe ({@skill Animal Handling}) zu machen. Wenn die Pr\u00fcfung erfolgreich ist, wird der Almiraj ruhig und greift den Charakter nicht an oder l\u00e4uft weg, es sei denn, er f\u00fchlt sich bedroht oder wird verletzt."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Axe Beaks",
+							"id": "009",
+							"page": 5,
+							"entries": [
+								"Eine Schar von {@dice 1d6+3} {@creature axe beak||axe beaks} st\u00fcrmt auf die Charaktere zu und schl\u00e4gt auf jeden ein, den sie erreichen k\u00f6nnen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Baboons",
+							"id": "00a",
+							"page": 5,
+							"entries": [
+								"Ein Rudel von {@dice 3d6} {@creature baboon||baboons} hat sich an das Leben in kleinen Bergh\u00f6hlen angepasst, huscht aber auf der Suche nach Nahrung bis zur Baumgrenze hinunter. Die Paviane k\u00f6nnen bes\u00e4nftigt werden, indem man jedem von ihnen einen Tagesvorrat an Futter zuwirft. Andernfalls greifen sie an und fliehen, sobald ihre Zahl um die H\u00e4lfte reduziert ist."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Blood Hawks",
+							"id": "00b",
+							"page": 6,
+							"entries": [
+								"Diese leuchtend roten V\u00f6gel sind ein h\u00e4ufiger Anblick auf der Insel. Sie ern\u00e4hren sich von {@creature flying snake|MM|flying snakes}, und Schildkr\u00f6ten jagen sie zum Spa\u00df. {@creature blood hawk||Blood hawks} erscheinen nur tags\u00fcber, und eine typische Begegnung besteht aus {@dice 2d6} {@creature blood hawk||blood hawks}, die angreifen, bis die H\u00e4lfte von ihnen get\u00f6tet ist. Wenn diese Begegnung in der Nacht gew\u00fcrfelt wird, wird sie als keine Begegnung behandelt."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Cannibals",
+							"id": "00c",
+							"page": 6,
+							"entries": [
+								"Menschliche Kannibalen vom Festland benutzen {@item canoe|toa|canoes}, um die Insel zu erreichen. Sie kommen auf der Suche nach \u00dcberlebenden des Schiffbruchs, um sie zu jagen und zu essen. Die Charaktere treffen auf {@dice 3d6} feindliche Kannibalen (CE m\u00e4nnliche und weibliche Chultan-Menschen {@creature tribal warrior||tribal warriors}), die bis zum Tod k\u00e4mpfen. Sie tragen Ledermasken aus geh\u00e4uteten menschlichen Gesichtern und groben Schmuck aus menschlichen Knochen und Z\u00e4hnen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Chwinga",
+							"id": "00d",
+							"page": 6,
+							"entries": [
+								"Ein {@creature chwinga|toa} (siehe {@adventure Tomb of Annihilation|ToA}) zeigt Interesse an den Charakteren. Er versucht, etwas Wertvolles aus einem unbewachten Rucksack zu stehlen, wird aber von jedem Charakter bemerkt, der einen passiven Weisheitswert ({@skill Perception}) von 17 oder h\u00f6her hat. Der Chwinga l\u00e4sst immer etwas anderes im Austausch zur\u00fcck: eine h\u00fcbsche Muschel, eine Handvoll N\u00fcsse oder einen ungeschliffenen Edelstein (10 gp)."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dimetrodons",
+							"id": "00e",
+							"page": 6,
+							"entries": [
+								"Wenn die Charaktere in Ufern\u00e4he unterwegs sind, sehen sie {@dice 1d4} {@creature dimetrodon|vgm|dimetrodons} (siehe {@adventure Tomb of Annihilation|ToA} oder {@book Volo's Guide to Monsters|vgm}), die sich in flachen Wasserlachen suhlen. Diese Kreaturen werden feindselig, wenn sie gest\u00f6rt werden. Wenn sich die Charaktere nicht in der N\u00e4he des Wassers befinden oder ein Nachtlager aufschlagen, sind die Dimetrodons in Bewegung und greifen alles an, was sich ihnen in den Weg stellt."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dolphins",
+							"id": "00f",
+							"page": 6,
+							"entries": [
+								"Die Gruppe trifft auf {@dice 2d4} {@creature dolphin|vgm|dolphins} (siehe {@book Volo's Guide to Monsters|vgm}) oder 1 {@creature killer whale}, wenn du das m\u00f6chtest. Wenn die Charaktere Magie einsetzen, um mit den Kreaturen zu sprechen, k\u00f6nnen sie den Weg zur n\u00e4chsten K\u00fcstensiedlung erfahren."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Eblis",
+							"id": "010",
+							"page": 6,
+							"entries": [
+								"Wenn die Charaktere unterwegs sind, wenn diese Begegnung stattfindet, sto\u00dfen sie auf {@dice 1d4+2} {@creature eblis|toa} (siehe {@adventure Tomb of Annihilation|ToA}) auf der Suche nach {@creature lizard|MM|lizards} oder {@creature flying snake|MM|flying snakes} zu essen. Die Eblis bieten h\u00f6flich an, Informationen gegen Sch\u00e4tze zu tauschen. F\u00fcr einen Schatz im Wert von 50 gp zeigen sie den Abenteurern die Richtung zu nahegelegenen Landmarken. Die Eblis greifen an, wenn die Charaktere sich weigern zu handeln und in der Unterzahl sind. Sie fliehen, wenn die H\u00e4lfte von ihnen get\u00f6tet oder au\u00dfer Gefecht gesetzt wird. Wenn diese Begegnung stattfindet, w\u00e4hrend sich die Gruppe in einem Lager befindet, schleichen sich die Eblis in das Lager und versuchen, einen Charakter wegzuschleppen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Flail Snail",
+							"id": "011",
+							"page": 6,
+							"entries": [
+								"Charaktere entdecken die schleimige Spur einer {@creature flail snail|vgm} (siehe {@adventure Tomb of Annihilation|ToA} oder {@book Volo's Guide to Monsters|vgm}). Wenn sie beschlie\u00dfen, ihr zu folgen, k\u00f6nnen sie mit einer erfolgreichen DC 10 Weisheitspr\u00fcfung ({@skill Survival}) herausfinden, in welche Richtung sich die Schnecke bewegt hat. Die Schnecke will in Ruhe gelassen werden und greift nur diejenigen an, die sich ihr in den Weg stellen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Flying Snakes",
+							"id": "012",
+							"page": 6,
+							"entries": [
+								"Die Gruppe trifft auf {@dice 1d6} {@creature flying snake||flying snakes}. Diese Schlangen greifen nur an, wenn sie bedroht werden. Eine fliegende Schlange, die erfolgreich gepackt wurde, kann in einen Sack oder ein anderes weiches Gef\u00e4\u00df gestopft werden. Nach 1 Stunde Eingeschlossensein beruhigt sich die Schlange. Ein Charakter, der eine Weisheitspr\u00fcfung DC 13 ({@skill Animal Handling}) besteht, kann eine ruhige Schlange aus dem Beh\u00e4lter entfernen, ohne dass sie angreift oder wegfliegt."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Geonids",
+							"id": "013",
+							"page": 6,
+							"entries": [
+								"Geoniden leben in Bergh\u00f6hlen, aber sie k\u00f6nnen \u00fcberall auf der Insel angetroffen werden. Wenn die Begegnung tags\u00fcber stattfindet, werden die Charaktere von {@dice 2d4} {@creature geonid|ttp|geonids} \u00fcberfallen, die als kleine Felsbrocken getarnt sind. Sie verlangen einen Schatz im Wert von mindestens 25 gp f\u00fcr die sichere Durchreise durch ihr Gebiet. Findet die Begegnung bei Nacht statt, versuchen {@dice 3d6} {@creature geonid|ttp|geonids}, sich in das Lager der Gruppe zu schleichen und Nahrung zu stehlen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Giant Lizards",
+							"id": "014",
+							"page": 6,
+							"entries": [
+								"Die Charaktere treffen auf {@dice 1d6} {@creature giant lizard||giant lizards}. Tags\u00fcber sind die Echsen gut gen\u00e4hrt und fliehen, wenn sie angegriffen werden; nachts werden sie aggressiv und greifen Charaktere an, die sich ihnen bis auf 30 Fu\u00df n\u00e4hern. Die Schnauze von Omgar ist die Heimat von Hunderten von Rieseneidechsen. Schildkr\u00f6ten jagen sie wegen ihres Leders und ihres Fleisches, und sie verwenden die Knochen und Z\u00e4hne der Echsen, um groben Schmuck herzustellen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Giant Snapping Turtle",
+							"id": "015",
+							"page": 6,
+							"entries": [
+								"Diese aggressiven Monster sonnen sich gerne auf den warmen Felsen und an den Ufern der Insel, aber gelegentlich wagt sich eines ins Landesinnere, um Nahrung zu finden. Die Charaktere begegnen einem einsamen {@creature giant snapping turtle|toa} (siehe {@adventure Tomb of Annihilation|ToA}) und k\u00f6nnen ihm ausweichen, indem sie Abstand halten."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Jaculis",
+							"id": "016",
+							"page": 6,
+							"entries": [
+								"Ohne Vorwarnung st\u00fcrzen sich {@dice 1d6} {@creature jaculi|toa|jaculis} (siehe {@adventure Tomb of Annihilation|ToA}) von B\u00e4umen oder Bergvorspr\u00fcngen auf die Gruppe. Jeder Charakter mit einem passiven Weisheitswert ({@skill Perception}) von 14 oder h\u00f6her erkennt die Jaculis, bevor sie zuschlagen, aber alle anderen werden \u00fcberrascht."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Marine Decapus",
+							"id": "017",
+							"page": 6,
+							"entries": [
+								"Dieses Meerestier {@creature decapus|ttp} ern\u00e4hrt sich von Schwimmern und rei\u00dft sogar ein Ruderboot von einem {@item canoe|toa} (allerdings muss es vorher die H\u00e4lfte seiner Tentakel einsetzen, um das Schiff zu packen). Der Decapus zieht sich in die Tiefe zur\u00fcck, wenn er mehr als die H\u00e4lfte seiner Trefferpunkte verliert."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Plesiosaurus",
+							"id": "018",
+							"page": 6,
+							"entries": [
+								"Die Charaktere geraten in das Jagdgebiet eines hungrigen {@creature plesiosaurus}, der vorbeigehende {@item canoe|toa|canoes} oder alles andere angreift, um das er seine Kiefer wickeln kann."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Pteranodons",
+							"id": "019",
+							"page": 6,
+							"entries": [
+								"{@creature pteranodon||Pteranodons} rasten auf den Bergen und versammeln sich in Schw\u00e4rmen zum Fischen an den K\u00fcsten der Insel. Die Charaktere sehen {@dice 1d6} {@creature pteranodon||pteranodons} in der N\u00e4he. Die Pteranodons halten Abstand und greifen nur bei Bedrohung an."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Reef Sharks",
+							"id": "01a",
+							"page": 8,
+							"entries": [
+								"In den Gew\u00e4ssern um die Insel tummeln sich Tausende von {@creature reef shark||reef sharks}, die vom Geruch des Blutes im Wasser angezogen werden. Ein Schwimmer mit einer offenen, blutenden Wunde wird von {@dice 1d6} {@creature reef shark||reef sharks} angegriffen, wenn er l\u00e4nger als 1 Minute im Wasser verweilt."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Stirges",
+							"id": "01b",
+							"page": 8,
+							"entries": [
+								"Die Schnauze von Omgar hat viele H\u00f6hlen, Ruinen und B\u00e4ume, in denen sich {@creature stirge||stirges} verstecken k\u00f6nnen. Am Tag st\u00f6ren die Charaktere {@dice 2d6} {@creature stirge||stirges}, wenn sie sich durch den Dschungel bewegen. Nachts st\u00fcrmt die gleiche Anzahl von St\u00f6renfrieden das Lager der Gruppe."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Topis",
+							"id": "01c",
+							"page": 8,
+							"entries": [
+								"Die Zeichen werden von {@dice 1d4+2} {@creature topi|ttp|topis} (siehe \"{@creature topi|ttp|Topi}\") angegriffen, die aus dem {@adventure Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)} ausgebrochen sind."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tortle",
+							"id": "01d",
+							"page": 8,
+							"entries": [
+								"Die Zeichen treffen auf ein {@creature tortle|mtf} (siehe \"{@race tortle|ttp|Tortles}\"). Vorschl\u00e4ge f\u00fcr Schildkr\u00f6tennamen siehe \"{@race tortle|ttp|Tortle Names}\". Wenn diese Begegnung in K\u00fcstenn\u00e4he stattfindet, ist die Schildkr\u00f6te ein Fischer mit einer {@item fishing tackle|phb|fishing pole}, einer {@item net|phb} und einem Fischkorb. Findet die Begegnung im Landesinneren statt, jagt die Schildkr\u00f6te Schlangen, {@creature lizard|MM|lizards}, {@creature axe beak||axe beaks} oder {@creature blood hawk||blood hawks}. Die Schildkr\u00f6te versucht, hilfreich zu sein. Wenn die Charaktere auf der Suche nach einer Siedlung sind, in der sie sich ausruhen und Handel treiben k\u00f6nnen, weist die Schildkr\u00f6te ihnen den Weg nach {@adventure Ahoyhoy|ttp|3|Ahoyhoy}. Wenn sie auf der Suche nach Abenteuern sind, zeigt sie ihnen den Weg zum {@adventure Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)}. Wenn sie ein Geheimnis suchen, zeigt sie ihnen den Weg zum {@adventure Shrine of Fangs|ttp|3|Shrine of Fangs}. Wenn sie auf der Suche nach Schiffswracks sind, die sie pl\u00fcndern k\u00f6nnen, f\u00fchrt es sie in Richtung {@adventure High Horn|ttp|3|High Horn}. Wenn sie sich am\u00fcsieren wollen, weist ihnen die Schildkr\u00f6te den Weg zum {@adventure Mud Pits of Florrb|ttp|3|Mud Pits of Florrb}."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Island Locations",
+			"id": "01e",
+			"page": 8,
+			"entries": [
+				"Die folgenden Stellen sind auf {@area map 1|001|x} verschl\u00fcsselt.",
+				{
+					"type": "entries",
+					"name": "Ahoyhoy",
+					"id": "01f",
+					"page": 8,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Ahoyhoy DM.webp"
+							},
+							"title": "Ahoyhoy - DM",
+							"width": 1988,
+							"height": 1373,
+							"mapRegions": [
+								{
+									"area": "020",
+									"points": [
+										[
+											856,
+											977
+										],
+										[
+											983,
+											980
+										],
+										[
+											991,
+											706
+										],
+										[
+											856,
+											707
+										]
+									]
+								},
+								{
+									"area": "021",
+									"points": [
+										[
+											728,
+											260
+										],
+										[
+											859,
+											207
+										],
+										[
+											1023,
+											208
+										],
+										[
+											1173,
+											271
+										],
+										[
+											1125,
+											412
+										],
+										[
+											1091,
+											455
+										],
+										[
+											1125,
+											534
+										],
+										[
+											1043,
+											618
+										],
+										[
+											869,
+											655
+										],
+										[
+											826,
+											547
+										],
+										[
+											749,
+											488
+										],
+										[
+											774,
+											459
+										],
+										[
+											776,
+											351
+										]
+									]
+								},
+								{
+									"area": "022",
+									"points": [
+										[
+											469,
+											775
+										],
+										[
+											446,
+											688
+										],
+										[
+											471,
+											563
+										],
+										[
+											603,
+											484
+										],
+										[
+											723,
+											488
+										],
+										[
+											852,
+											653
+										],
+										[
+											845,
+											777
+										],
+										[
+											658,
+											870
+										]
+									]
+								},
+								{
+									"area": "023",
+									"points": [
+										[
+											422,
+											698
+										],
+										[
+											290,
+											619
+										],
+										[
+											195,
+											634
+										],
+										[
+											109,
+											718
+										],
+										[
+											102,
+											878
+										],
+										[
+											248,
+											957
+										],
+										[
+											449,
+											873
+										],
+										[
+											457,
+											784
+										]
+									]
+								},
+								{
+									"area": "024",
+									"points": [
+										[
+											251,
+											269
+										],
+										[
+											409,
+											270
+										],
+										[
+											507,
+											350
+										],
+										[
+											508,
+											446
+										],
+										[
+											381,
+											542
+										],
+										[
+											235,
+											531
+										],
+										[
+											209,
+											379
+										]
+									]
+								},
+								{
+									"area": "025",
+									"points": [
+										[
+											644,
+											230
+										],
+										[
+											491,
+											294
+										],
+										[
+											513,
+											352
+										],
+										[
+											510,
+											444
+										],
+										[
+											568,
+											487
+										],
+										[
+											606,
+											472
+										],
+										[
+											739,
+											477
+										],
+										[
+											764,
+											455
+										],
+										[
+											763,
+											353
+										],
+										[
+											712,
+											263
+										]
+									]
+								},
+								{
+									"area": "026",
+									"points": [
+										[
+											1180,
+											496
+										],
+										[
+											1277,
+											497
+										],
+										[
+											1278,
+											618
+										],
+										[
+											1180,
+											614
+										]
+									]
+								},
+								{
+									"area": "027",
+									"points": [
+										[
+											1508,
+											514
+										],
+										[
+											1575,
+											363
+										],
+										[
+											1707,
+											325
+										],
+										[
+											1809,
+											342
+										],
+										[
+											1892,
+											519
+										],
+										[
+											1819,
+											686
+										],
+										[
+											1596,
+											696
+										],
+										[
+											1512,
+											633
+										]
+									]
+								},
+								{
+									"area": "028",
+									"points": [
+										[
+											1104,
+											657
+										],
+										[
+											1347,
+											653
+										],
+										[
+											1476,
+											774
+										],
+										[
+											1480,
+											983
+										],
+										[
+											1294,
+											1111
+										],
+										[
+											1093,
+											1103
+										],
+										[
+											1005,
+											970
+										],
+										[
+											1010,
+											741
+										]
+									]
+								},
+								{
+									"area": "025",
+									"points": [
+										[
+											1196,
+											247
+										],
+										[
+											1142,
+											410
+										],
+										[
+											1190,
+											483
+										],
+										[
+											1348,
+											498
+										],
+										[
+											1430,
+											441
+										],
+										[
+											1456,
+											310
+										],
+										[
+											1374,
+											236
+										],
+										[
+											1290,
+											223
+										]
+									]
+								}
+							],
+							"imageType": "map",
+							"hrefThumbnail": {
+								"type": "internal",
+								"path": "adventure/TTP/thumbnail/Ahoyhoy DM-thumb.webp"
+							},
+							"id": "08b"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Ahoyhoy Player.jpg"
+							},
+							"title": "Ahoyhoy - Player",
+							"width": 1459,
+							"height": 978,
+							"imageType": "mapPlayer",
+							"mapParent": {
+								"id": "08b",
+								"offsetY": 20,
+								"scaleX": 1.365,
+								"scaleY": 1.34
+							}
+						},
+						"Die Schildkr\u00f6tenfestung von Ahoyhoy (siehe {@area map 2|01f|x}) liegt an der Nordwestk\u00fcste der Insel. Die Schildkr\u00f6ten kommen hierher, um Kontakte zu kn\u00fcpfen, Eier zu legen und sich mit H\u00e4ndlern zu treffen. Der Ort hat keine Regierung. Von Schildkr\u00f6ten und G\u00e4sten wird erwartet, dass sie sich gut benehmen, und diejenigen, die ein \u00c4rgernis darstellen, werden gebeten zu gehen - oder notfalls vertrieben.",
+						"Zu jeder Zeit leben in Ahoyhoy {@dice 4d6} erwachsene {@creature tortle|mtf|tortles} (siehe \"Schildkr\u00f6ten\"), {@dice 2d6} junge Schildkr\u00f6ten (Nichtk\u00e4mpfer mit AC 14 und je 2 Trefferpunkten) und eine alte {@creature tortle druid|mtf} namens Mudgraw (f\u00fcr Rollenspielhinweise siehe \"{@area Tortle Guides,|005|x}\"; f\u00fcr Statistiken siehe \"{@filter Tortles,|bestiary|tag=tortle}\"). Vier der erwachsenen Schildkr\u00f6ten stehen auf den W\u00e4llen Wache (zwei in {@area 3|022} und zwei in {@area 9|028}). Die \u00fcbrigen schlafen auf gewebten Matten oder besch\u00e4ftigen sich mit handwerklichen T\u00e4tigkeiten und Projekten (Herstellung von {@item crossbow bolt|phb|crossbow bolts}, Ausnehmen von Fischen, Ausbessern von Wettersch\u00e4den an der Festung usw.). Die Schildkr\u00f6ten ziehen es vor, ohne Dach \u00fcber dem Kopf zu schlafen. Sie legen ihre Eier in speziellen Bereichen ab, die mit Seilnetzen bedeckt sind, um die Eier vor gro\u00dfen fliegenden Raubtieren zu sch\u00fctzen.",
+						"Wenn die Charaktere die Schildkr\u00f6ten von Ahoyhoy nach Wissen \u00fcber die Insel und ihre Bewohner befragen, gibt jede Schildkr\u00f6te, mit der sie sprechen, eine n\u00fctzliche Information weiter. W\u00fcrfle einen {@dice d8} und ziehe die Ahoyhoy-\u00dcberlieferungstabelle zu Rate, um festzustellen, welche Informationen weitergegeben werden.",
+						{
+							"type": "table",
+							"caption": "Ahoyhoy Lore",
+							"page": 8,
+							"colLabels": [
+								"d8",
+								"Lore"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Vor der Nordspitze der Insel gibt es mehrere Schiffswracks. Die meisten Wracks wurden gepl\u00fcndert, aber wenn sich der Sand und das Wasser zur\u00fcckziehen, k\u00f6nnte etwas Wertvolles zum Vorschein kommen, das noch nicht entdeckt wurde. Es ist am sichersten, die Wracks bei Ebbe zu erkunden. Bei Flut treibt ein zweik\u00f6pfiger Dinosaurier in den Untiefen sein Unwesen."
+								],
+								[
+									"2",
+									"Es gibt einen alten Pfad, der von Ahoyhoy nach {@adventure Dangwaru|ttp|3|Dangwaru (The Typhoon Palace)} f\u00fchrt, hoch oben am Berghang. Tortles hat das {@adventure Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)} vor einem Jahrhundert f\u00fcr die \u00dcberlebenden eines Schiffbruchs gebaut, aber es ist seit Jahren verlassen. B\u00f6se Geister wachen nun \u00fcber den Palast, von dem man sagt, dass er voller Sch\u00e4tze ist. (Wenn die Charaktere nach mehr Informationen dr\u00e4ngen, erz\u00e4hle die zus\u00e4tzlichen Informationen im Abschnitt \"{@adventure Dangwaru|ttp|3|Dangwaru (The Typhoon Palace)}\")."
+								],
+								[
+									"3",
+									"Vor einiger Zeit wurde ich bei der Jagd {@creature flying snake|mm|flying snakes} im Dschungel von geschrumpften Zombies angegriffen, die nicht gr\u00f6\u00dfer als menschliche Kinder waren. Ich habe ein paar von ihnen vernichtet, und der Rest ist geflohen. Seitdem habe ich sie nicht mehr gesehen."
+								],
+								[
+									"4",
+									"Ein Pfad f\u00fchrt von Ahoyhoy nach {@adventure some mud pits|ttp|3|Mud Pits of Florrb} im Herzen des Dschungels. Wenn du mindestens eine Stunde lang in einer Schlammgrube badest, wird dich das st\u00e4rken."
+								],
+								[
+									"5",
+									"In den Fu\u00df der Berge \u00f6stlich von Ahoyhoy ist ein alter Schrein eingemei\u00dfelt, der zu einer Art Schlangenkult geh\u00f6rte. Es ist ein Ort voller R\u00e4tsel und Geheimnisse."
+								],
+								[
+									"6",
+									"Schildkr\u00f6ten paaren sich und legen Eier, wenn sie alt werden. Die Eltern bewachen die Eier, bis sie schl\u00fcpfen, und geben dann ihre Lebenserfahrungen an den neugeborenen Nachwuchs weiter. Kurz nachdem sie gelernt hat, auf zwei Beinen zu laufen, wird eine junge Schildkr\u00f6te zum Waisenkind, das bereit ist, der Welt seinen Stempel aufzudr\u00fccken."
+								],
+								[
+									"7",
+									"Ein Schiff namens Stirge kommt oft nach Ahoyhoy. Sein Kapit\u00e4n, Laskilar, ist ein unversch\u00e4mter Pirat, aber er hat immer n\u00fctzliche Waren zum Handeln. Nachdem die Stirge die Schnauze von Omgar verlassen hat, steuert sie normalerweise einen Ort namens Jahaka Anchorage an. Ich habe noch nie von ihm geh\u00f6rt, also muss er weit weg sein. (F\u00fcr weitere Informationen \u00fcber {@adventure Captain Laskilar and Jahaka Anchorage|toa|2|Jahaka Anchorage}, siehe {@adventure Tomb of Annihilation|ToA}.)"
+								],
+								[
+									"8",
+									"Die Insel beherbergt winzige, harmlose Elementargeister namens {@creature chwinga|toa|chwingas}. Wenn sie dich m\u00f6gen, werden sie dir Geschenke machen."
+								]
+							]
+						},
+						"Das Fort ist auf einem Felsvorsprung gebaut, der einen Sandstrand \u00fcberragt. Die Besucher k\u00f6nnen ihre Zelte am Strand aufschlagen und im Fort Handel treiben. Alle paar Monate geht ein Schiff ein paar hundert Meter vor der K\u00fcste vor Anker und schickt seine Besatzung in Ruderbooten zum Handel mit den Schildkr\u00f6ten. Weitere Informationen \u00fcber den Handel mit den Schildkr\u00f6ten finden Sie unter {@area 9|028}.",
+						"Zwei Pfade f\u00fchren von Ahoyhoy weg. Der n\u00f6rdliche Weg f\u00fchrt in den Dschungel und endet am {@adventure Mud Pits of Florrb|ttp|3|Mud Pits of Florrb}. Der s\u00fcdliche Weg f\u00fchrt den Berghang hinauf nach {@adventure Dangwaru|ttp|3|Dangwaru (The Typhoon Palace)}.",
+						{
+							"type": "entries",
+							"name": "1. South Gate",
+							"id": "020",
+							"page": 9,
+							"entries": [
+								"Wenn sich die Charaktere dem Fort von S\u00fcden n\u00e4hern, lesen Sie:",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Am Ufer steht ein mehrst\u00f6ckiges Fort, dessen robuste Steinmauern mit gro\u00dfen Schildkr\u00f6tenpanzern geschm\u00fcckt sind. Der Weg, der zum Fort f\u00fchrt, endet an einem h\u00f6lzernen Doppeltor. Zwei W\u00e4chter stehen auf der Mauer \u00f6stlich des Tores Wache. Sie sehen aus wie \u00fcbergro\u00dfe, zweibeinige Schildkr\u00f6ten, die mit Armbr\u00fcsten bewaffnet sind. Vor dem Tor befindet sich ein Strand, an dem ein paar Fischerboote mit breitem Boden an Stegen festgemacht sind."
+									],
+									"id": "071"
+								},
+								"Siehe {@area 9|028} f\u00fcr weitere Informationen \u00fcber die Schildkr\u00f6tenw\u00e4chter. Sie sind freundlich zu Besuchern, die keine \u00e4u\u00dferen Anzeichen von Feindseligkeit zeigen.",
+								"Die Doppelt\u00fcr am S\u00fcdtor ist unverschlossen, kann aber im Bedarfsfall verriegelt werden. Um die vergitterte T\u00fcr aufzubrechen, ist eine erfolgreiche DC 27 St\u00e4rke ({@skill Athletics})-\u00dcberpr\u00fcfung erforderlich. Die Gittert\u00fcr kann auch aufgeschlagen werden; sie hat AC 15, eine Schadensschwelle von 10, 120 Trefferpunkte und ist immun gegen Gift und psychischen Schaden. Die T\u00fcr ist 10 Fu\u00df hoch und 12 Fu\u00df breit und in eine 15 Fu\u00df hohe Steinwand eingelassen. Die umgebenden W\u00e4nde sind ebenfalls 15 Fu\u00df hoch.",
+								"Eine Holztreppe f\u00fchrt hinunter zum Strand. Die Tortle-Fischerboote sind funktional identisch mit {@item rowboat|dmg|rowboats} (siehe {@book chapter 5 of the Dungeon Master's Guide|dmg|5} f\u00fcr weitere Informationen zu {@item rowboat|dmg|rowboats})."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "2. North Gate and Courtyard",
+							"id": "021",
+							"page": 9,
+							"entries": [
+								"Wenn sich die Charaktere dem Fort von Norden n\u00e4hern, lesen Sie:",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Am Ufer steht ein mehrst\u00f6ckiges Fort, dessen robuste Steinmauern mit gro\u00dfen Schildkr\u00f6tenpanzern geschm\u00fcckt sind. Der Weg, der zum Fort f\u00fchrt, endet an einem h\u00f6lzernen Doppeltor. Zwei Wachen sind dort postiert, eine auf jedem der W\u00e4lle auf jeder Seite des Tores. Sie sehen aus wie zu gro\u00df geratene, zweibeinige Schildkr\u00f6ten, die mit Armbr\u00fcsten bewaffnet sind."
+									],
+									"id": "072"
+								},
+								"Die Tort\u00fcren sind identisch mit denen in {@area 1|020}. Zwei {@creature tortle|mtf|tortles} (siehe \"{@filter Tortles,|bestiary|tag=tortle}\") stehen auf 10 Fu\u00df hohen h\u00f6lzernen W\u00e4llen, die sich an der Innenseite der Mauer entlangziehen. \u00dcber Leitern im Innenhof sind die W\u00e4lle leicht zu erreichen.",
+								"Im Hof, der mit einer d\u00fcnnen Sandschicht bedeckt ist, reparieren Schildkr\u00f6ten oft Fischernetze. Kurze Steintreppen f\u00fchren zu den angrenzenden Bereichen hinauf. In einem \u00fcberdachten Stall befinden sich {@dice 1d4} {@creature boar||boars} und {@dice 1d4} {@creature mule||mules} in Buchten, sowie {@dice 2d8} {@item chicken|phb|chickens} in St\u00e4llen. Das Futter f\u00fcr die Tiere wird auf einem Dachboden gelagert. Diese Tiere sind in der Omgar-Schnauze nicht heimisch; die Schildkr\u00f6ten haben sie von H\u00e4ndlern erworben."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "3. Living Area",
+							"id": "022",
+							"page": 9,
+							"entries": [
+								"Der Boden hier ist mit Sand bedeckt. Die Schildkr\u00f6ten schlafen hier auf geflochtenen Matten, sitzen unter schattigen Vord\u00e4chern, h\u00e4ngen Fisch und Fleisch zum Trocknen auf, kochen ihr Essen \u00fcber kleinen Feuern und trinken aus einem zentralen Becken, das Regenwasser auff\u00e4ngt. Sie kommen auch hierher, um sich mit anderen zu treffen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "4. Fishing Space and Storage",
+							"id": "023",
+							"page": 9,
+							"entries": [
+								"In Kisten und F\u00e4ssern werden hier Fischereiger\u00e4te und andere Vorr\u00e4te gelagert. Aus den W\u00e4nden ragen mehrere lange Holzstangen heraus, mit denen die Schildkr\u00f6ten in den seichten Gew\u00e4ssern Fische fangen. Ein polierter Metallstern, der an einem Holzpfosten befestigt ist, dient dazu, Sonnen- und Mondlicht einzufangen und zu reflektieren. Die Schildkr\u00f6ten benutzen diesen Stern als Alarm, um die Fischerboote in den westlichen Gew\u00e4ssern vor einem Angriff auf die Festung zu warnen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "5. Amphitheater",
+							"id": "024",
+							"page": 9,
+							"entries": [
+								"Das h\u00f6chste Geb\u00e4ude von Ahoyhoy ist ein ummauertes Amphitheater, in dem sich die Schildkr\u00f6ten versammeln, um \u00fcber Angelegenheiten der Gemeinschaft zu diskutieren und Geschichten zu erz\u00e4hlen. Die Schildkr\u00f6ten von Ahoyhoy freuen sich auf die Geschichten, und von den Geschichtenerz\u00e4hlern wird erwartet, dass sie ihre Erz\u00e4hlungen so unterhaltsam wie m\u00f6glich gestalten. Es steht den Besuchern frei, entweder als Zuh\u00f6rer oder als Geschichtenerz\u00e4hler teilzunehmen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "6. Egg Hatcheries",
+							"id": "025",
+							"page": 9,
+							"entries": [
+								"Ahoyhoy verf\u00fcgt \u00fcber zwei gro\u00dfe, mit Sand gef\u00fcllte Bereiche, die als Schildkr\u00f6tenbrutpl\u00e4tze dienen. \u00dcber diese Bereiche sind von den oberen Mauern aus Seile gespannt, die Netze bilden, die verhindern, dass {@creature pteranodon||pteranodons} und \u00e4hnliche fliegende Raubtiere die Eier stehlen.",
+								"Es besteht eine {@chance 20} Chance, dass eine Br\u00fcterei {@dice 1d12} Schildkr\u00f6teneier enth\u00e4lt. Wenn Eier vorhanden sind, m\u00fcssen {@dice 1d2} \u00e4ltere Menschen {@creature tortle|mtf|tortles} (siehe \"{@filter Tortles,|bestiary|tag=tortle}\") auf sie aufpassen. Jedes Schildkr\u00f6tenei wiegt 5 Pfund. Eine neugeborene Schildkr\u00f6te bleibt in der Regel einige Monate lang in ihrem Brutkasten, bis sie lernt, auf zwei Beinen zu laufen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "7. Gong",
+							"id": "026",
+							"page": 9,
+							"entries": [
+								"In der Mitte der Festung steht ein Gong aus geschlagener Bronze, der mit gen\u00e4htem Eidechsenleder umwickelt ist. An dem Pfosten, an dem er befestigt ist, h\u00e4ngt ein Schl\u00e4gel. Die Schildkr\u00f6ten von Ahoyhoy verwenden eine einfache Reihe von Gongsignalen:",
+								{
+									"type": "list",
+									"items": [
+										"Eine Bong signalisiert die Ankunft von Besuchern auf dem Landweg.",
+										"Zwei Bongs weisen auf die Ankunft von Besuchern per Schiff hin.",
+										"Drei Bongs sind ein Aufruf, sich im Amphitheater zu versammeln.",
+										"Vier Bongs deuten darauf hin, dass ein Angriff unmittelbar bevorsteht."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "8. Smithy",
+							"id": "027",
+							"page": 9,
+							"entries": [
+								"Die Schildkr\u00f6ten nutzen den \u00f6stlichsten Bereich der Festung f\u00fcr die Herstellung von Werkzeugen, {@item shield|phb|shields} und {@table weapons|phb}. Er enth\u00e4lt eine Steinschmiede und Ausr\u00fcstung f\u00fcr die Metallbearbeitung, das Steinhauen und das Gerben von H\u00e4uten. In der Mitte des Bereichs steht eine primitive Holzpuppe, die die Schildkr\u00f6ten f\u00fcr Waffentests verwenden."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "9. Market",
+							"id": "028",
+							"page": 9,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Dieser ummauerte Bereich ist wie ein Markt ausgestattet. Der Boden ist mit Sand bedeckt, auf dem gewebte Matten, h\u00f6lzerne St\u00e4nde und Verkaufstische liegen. In der Mitte des Marktes steht eine steinerne Sonnenuhr, und eine Treppe f\u00fchrt hinauf zu den h\u00f6lzernen W\u00e4llen, die die S\u00fcdmauer s\u00e4umen."
+									],
+									"id": "073"
+								},
+								"Hier versammeln sich Schildkr\u00f6ten, um mit freundlichen Besuchern zu handeln. Zwei {@creature tortle|mtf|tortles} (siehe \"{@filter Tortles,|bestiary|tag=tortle}\") stehen auf den W\u00e4llen Wache und halten Ausschau nach Besuchern oder Unruhen, die sich von S\u00fcden her n\u00e4hern.",
+								"Die Schildkr\u00f6ten erwerben oft Dinge, die sie nicht brauchen, von den Besuchern, um sie an andere Besucher zu verkaufen. Wenn ein Charakter einen Gegenstand auf der {@table weapons|phb|Weapons table}, der {@table adventuring gear|phb|Adventuring Gear table}, der {@table tools|phb|Tools table} oder der {@table trade goods|phb|Trade Goods table} (alle in {@book chapter 5 of the Player's Handbook|phb|5}) kaufen m\u00f6chte, besteht eine {@chance 25} Chance, dass die Schildkr\u00f6ten einen solchen Gegenstand zum Verkauf oder zum Tausch gegen etwas Gleichwertiges haben. Die Schildkr\u00f6ten kaufen und verkaufen {@item shield|phb|shields}, aber nicht {@table Armor and Shields; Armor|phb|armor}.",
+								"Die Ahoi-Waren-Tabelle enth\u00e4lt ungew\u00f6hnliche Kreaturen und Gegenst\u00e4nde, die in der Schildkr\u00f6ten-Siedlung beschafft werden k\u00f6nnen. Wenn die Charaktere mehr als ein Exemplar einer bestimmten Kreatur oder eines Gegenstands erwerben wollen, w\u00fcrfeln sie einen {@dice d4}, um zu bestimmen, wie viele die Schildkr\u00f6ten zum Verkauf oder Tausch haben.",
+								{
+									"type": "table",
+									"caption": "Ahoyhoy Goods",
+									"page": 9,
+									"colLabels": [
+										"Cost",
+										"Goods"
+									],
+									"colStyles": [
+										"col-2 text-right",
+										"col-10"
+									],
+									"rows": [
+										[
+											"2 sp",
+											"1 lb. Scheffel rote {@creature blood hawk} Federn"
+										],
+										[
+											"1 gp",
+											"Bedeckter Korb (2 lb) mit 4 {@creature poisonous snake||poisonous snakes} oder {@creature scorpion|mm|scorpions}"
+										],
+										[
+											"2 gp",
+											"2 lb. Korb mit Muscheln oder Korallen"
+										],
+										[
+											"3 gp",
+											"70-Pfund-Fass mit 80-Pfund-Kokosn\u00fcssen"
+										],
+										[
+											"5 gp",
+											"5 lb. Holzk\u00e4fig, in dem ein untrainierter {@creature almiraj|toa} (siehe {@adventure Tomb of Annihilation|ToA}) oder ein {@creature baboon}"
+										],
+										[
+											"10 gp",
+											"5 lb. Holzk\u00e4fig, in dem ein trainierter {@creature blood hawk} oder {@creature flying snake} gehalten wird"
+										],
+										[
+											"25 gp",
+											"{@creature Dimetrodon|vgm} Ei oder {@creature pteranodon} Ei"
+										],
+										[
+											"50 gp",
+											"Domestiziert {@creature giant lizard} (Lasttier)"
+										],
+										[
+											"50 gp",
+											"Mit Kapuze, untrainiert {@creature axe beak} an einer Leine"
+										],
+										[
+											"500 gp",
+											"500 gp Diamant"
+										],
+										[
+											"500 gp",
+											"25-Pfund-Stapel von {@creature flail snail|vgm} Granatsplittern"
+										],
+										[
+											"1,000 gp",
+											"Beutel mit zehn Perlen zu 100 gp"
+										],
+										[
+											"5,000 gp",
+											"250 lb. {@creature flail snail|vgm} Schale (unversehrt)"
+										]
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dangwaru (The Typhoon Palace)",
+					"id": "029",
+					"page": 9,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Dangwaru DM.webp"
+							},
+							"title": "Dangwaru - DM",
+							"width": 1988,
+							"height": 2656,
+							"mapRegions": [
+								{
+									"area": "02a",
+									"points": [
+										[
+											871,
+											248
+										],
+										[
+											873,
+											613
+										],
+										[
+											1198,
+											611
+										],
+										[
+											1198,
+											246
+										]
+									]
+								},
+								{
+									"area": "02b",
+									"points": [
+										[
+											1298,
+											249
+										],
+										[
+											1449,
+											249
+										],
+										[
+											1450,
+											401
+										],
+										[
+											1295,
+											400
+										]
+									]
+								},
+								{
+									"area": "02c",
+									"points": [
+										[
+											608,
+											144
+										],
+										[
+											308,
+											265
+										],
+										[
+											253,
+											485
+										],
+										[
+											340,
+											709
+										],
+										[
+											585,
+											744
+										],
+										[
+											600,
+											607
+										],
+										[
+											693,
+											555
+										],
+										[
+											726,
+											347
+										]
+									]
+								},
+								{
+									"area": "02d",
+									"points": [
+										[
+											978,
+											718
+										],
+										[
+											1100,
+											718
+										],
+										[
+											1094,
+											618
+										],
+										[
+											976,
+											622
+										]
+									]
+								},
+								{
+									"area": "02e",
+									"points": [
+										[
+											873,
+											625
+										],
+										[
+											875,
+											974
+										],
+										[
+											1196,
+											976
+										],
+										[
+											1197,
+											623
+										],
+										[
+											1109,
+											623
+										],
+										[
+											1113,
+											730
+										],
+										[
+											965,
+											732
+										],
+										[
+											963,
+											623
+										]
+									]
+								},
+								{
+									"area": "02f",
+									"points": [
+										[
+											860,
+											615
+										],
+										[
+											734,
+											616
+										],
+										[
+											678,
+											662
+										],
+										[
+											680,
+											812
+										],
+										[
+											861,
+											809
+										]
+									]
+								},
+								{
+									"area": "030",
+									"points": [
+										[
+											1209,
+											616
+										],
+										[
+											1408,
+											612
+										],
+										[
+											1404,
+											813
+										],
+										[
+											1209,
+											815
+										]
+									]
+								},
+								{
+									"area": "032",
+									"points": [
+										[
+											681,
+											824
+										],
+										[
+											682,
+											978
+										],
+										[
+											865,
+											974
+										],
+										[
+											864,
+											817
+										]
+									]
+								},
+								{
+									"area": "034",
+									"points": [
+										[
+											1206,
+											822
+										],
+										[
+											1408,
+											820
+										],
+										[
+											1404,
+											980
+										],
+										[
+											1205,
+											979
+										]
+									]
+								},
+								{
+									"area": "036",
+									"points": [
+										[
+											666,
+											1099
+										],
+										[
+											602,
+											1097
+										],
+										[
+											610,
+											616
+										],
+										[
+											695,
+											559
+										],
+										[
+											727,
+											605
+										],
+										[
+											669,
+											654
+										]
+									]
+								},
+								{
+									"area": "038",
+									"points": [
+										[
+											1033,
+											985
+										],
+										[
+											679,
+											986
+										],
+										[
+											676,
+											1328
+										],
+										[
+											1029,
+											1333
+										]
+									]
+								},
+								{
+									"area": "03b",
+									"points": [
+										[
+											1410,
+											990
+										],
+										[
+											1042,
+											989
+										],
+										[
+											1040,
+											1335
+										],
+										[
+											1301,
+											1334
+										],
+										[
+											1528,
+											1275
+										],
+										[
+											1655,
+											1241
+										],
+										[
+											1798,
+											1122
+										],
+										[
+											1782,
+											1045
+										],
+										[
+											1627,
+											992
+										]
+									]
+								},
+								{
+									"area": "03f",
+									"points": [
+										[
+											675,
+											1330
+										],
+										[
+											822,
+											1330
+										],
+										[
+											824,
+											1622
+										],
+										[
+											675,
+											1547
+										]
+									]
+								},
+								{
+									"area": "040",
+									"points": [
+										[
+											663,
+											1389
+										],
+										[
+											311,
+											1439
+										],
+										[
+											146,
+											1727
+										],
+										[
+											160,
+											1965
+										],
+										[
+											359,
+											2223
+										],
+										[
+											667,
+											2220
+										],
+										[
+											670,
+											1980
+										],
+										[
+											822,
+											1865
+										],
+										[
+											823,
+											1636
+										],
+										[
+											663,
+											1556
+										]
+									]
+								},
+								{
+									"area": "042",
+									"points": [
+										[
+											888,
+											1331
+										],
+										[
+											887,
+											1693
+										],
+										[
+											1193,
+											1701
+										],
+										[
+											1194,
+											1333
+										]
+									]
+								},
+								{
+									"area": "045",
+									"points": [
+										[
+											1205,
+											1341
+										],
+										[
+											1306,
+											1344
+										],
+										[
+											1305,
+											1431
+										],
+										[
+											1405,
+											1433
+										],
+										[
+											1401,
+											1699
+										],
+										[
+											1205,
+											1699
+										]
+									]
+								},
+								{
+									"area": "046",
+									"points": [
+										[
+											1400,
+											1711
+										],
+										[
+											832,
+											1706
+										],
+										[
+											833,
+											1807
+										],
+										[
+											1405,
+											1809
+										]
+									]
+								},
+								{
+									"area": "047",
+									"points": [
+										[
+											886,
+											1818
+										],
+										[
+											888,
+											1915
+										],
+										[
+											976,
+											1915
+										],
+										[
+											981,
+											2276
+										],
+										[
+											1307,
+											2277
+										],
+										[
+											1296,
+											2075
+										],
+										[
+											1358,
+											2079
+										],
+										[
+											1356,
+											1914
+										],
+										[
+											1409,
+											1914
+										],
+										[
+											1404,
+											1818
+										]
+									]
+								},
+								{
+									"area": "04b",
+									"points": [
+										[
+											904,
+											2323
+										],
+										[
+											1044,
+											2323
+										],
+										[
+											1044,
+											2490
+										],
+										[
+											908,
+											2486
+										]
+									]
+								},
+								{
+									"area": "04c",
+									"points": [
+										[
+											1189,
+											2326
+										],
+										[
+											1187,
+											2492
+										],
+										[
+											1405,
+											2489
+										],
+										[
+											1402,
+											2318
+										]
+									]
+								},
+								{
+									"area": "04e",
+									"points": [
+										[
+											885,
+											2335
+										],
+										[
+											771,
+											2334
+										],
+										[
+											681,
+											2170
+										],
+										[
+											683,
+											1993
+										],
+										[
+											839,
+											1862
+										],
+										[
+											877,
+											1858
+										]
+									]
+								},
+								{
+									"area": "04f",
+									"points": [
+										[
+											1837,
+											2293
+										],
+										[
+											1753,
+											2482
+										],
+										[
+											1517,
+											2509
+										],
+										[
+											1373,
+											2077
+										],
+										[
+											1374,
+											1933
+										],
+										[
+											1432,
+											1930
+										],
+										[
+											1517,
+											1654
+										],
+										[
+											1659,
+											1570
+										],
+										[
+											1486,
+											1538
+										],
+										[
+											1496,
+											1309
+										],
+										[
+											1624,
+											1263
+										],
+										[
+											1716,
+											1305
+										],
+										[
+											1818,
+											1504
+										],
+										[
+											1891,
+											1792
+										]
+									]
+								},
+								{
+									"area": "050",
+									"points": [
+										[
+											1884,
+											936
+										],
+										[
+											1912,
+											1224
+										],
+										[
+											1836,
+											1372
+										],
+										[
+											1771,
+											1380
+										],
+										[
+											1705,
+											1276
+										],
+										[
+											1816,
+											1139
+										],
+										[
+											1780,
+											979
+										],
+										[
+											1826,
+											931
+										]
+									]
+								},
+								{
+									"area": "051",
+									"points": [
+										[
+											1572,
+											688
+										],
+										[
+											1461,
+											821
+										],
+										[
+											1459,
+											981
+										],
+										[
+											1689,
+											988
+										],
+										[
+											1777,
+											960
+										],
+										[
+											1815,
+											915
+										],
+										[
+											1813,
+											689
+										]
+									]
+								}
+							],
+							"imageType": "map",
+							"hrefThumbnail": {
+								"type": "internal",
+								"path": "adventure/TTP/thumbnail/Dangwaru DM-thumb.webp"
+							},
+							"id": "08c"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Dangwaru Player.jpg"
+							},
+							"title": "Dangwaru - Player",
+							"width": 2149,
+							"height": 2909,
+							"imageType": "mapPlayer",
+							"mapParent": {
+								"id": "08c",
+								"scaleX": 0.926,
+								"scaleY": 0.928
+							}
+						},
+						"Der Taifunpalast (siehe {@area map 3|029|x}) steht seit fast einem Jahrhundert. Wenn die Charaktere auf Stufe 3 oder niedriger sind, m\u00fcssen sie sich zwischen den Begegnungen im Palast ausruhen und erholen. M\u00f6glicherweise m\u00fcssen sie sich sogar ein paar Mal zur\u00fcckziehen und neu gruppieren. Charaktere der 4. Stufe oder h\u00f6her sollten in der Lage sein, den Palast mit wenigen (wenn \u00fcberhaupt) Pausen auszur\u00e4umen.",
+						"Der von Schildkr\u00f6ten erbaute Palast ist ein robustes, mehrst\u00f6ckiges Steingeb\u00e4ude mit in den Berghang gehauenen Terrassen. Sein Name, Dangwaru, bedeutet grob \u00fcbersetzt \"hohes Haus\" in {@language primordial|phb|Aquan}. Niemand kann sich an den Namen des Klerikers erinnern, f\u00fcr den der Palast gebaut wurde, aber die Schildkr\u00f6ten der Insel kennen die folgenden \u00dcberlieferungen \u00fcber Dangwaru und seine urspr\u00fcnglichen Bewohner:",
+						{
+							"type": "list",
+							"items": [
+								"Vor fast einem Jahrhundert st\u00fcrzte ein Schiff bei {@adventure High Horn|ttp|3|High Horn} durch einen Sturm ab. Nachdem sie die menschlichen \u00dcberlebenden aus dem Wrack und dem Wasser gezogen hatten, versuchten die Schildkr\u00f6ten, den Menschen ein Gef\u00fchl von Heimat zu vermitteln.",
+								"Der Kapit\u00e4n des Schiffes war eine charismatische Frau, die die Schildkr\u00f6ten bewunderten. Sie betete eine Meeresg\u00f6ttin an und erz\u00e4hlte Geschichten \u00fcber schreckliche Seeungeheuer, gro\u00dfe Schiffsschlachten und pr\u00e4chtige Inselpal\u00e4ste. Die Schildkr\u00f6ten bauten den Taifunpalast f\u00fcr sie, damit sie sich auf der Insel zu Hause f\u00fchlen konnte.",
+								"Die Kapit\u00e4nin und ihre Mannschaft lebten f\u00fcr den Rest ihres Lebens im Palast. Der letzte von ihnen kam vor mehr als f\u00fcnfzig Jahren ums Leben.",
+								"Der Palast ist bauf\u00e4llig und verwunschen. Junge Schildkr\u00f6ten erkunden gelegentlich die Ruinen auf der Suche nach einem Schatz. Die meisten kommen nicht weit, bevor seltsame Ger\u00e4usche und schattenhafte Gestalten sie verscheuchen."
+							]
+						},
+						"Die Tortles bauten den Taifun-Palast, um St\u00fcrmen, Erdbeben und dem Lauf der Zeit zu trotzen. Die meisten Sch\u00e4den, die er erlitten hat, sind auf Vernachl\u00e4ssigung zur\u00fcckzuf\u00fchren, und die Sch\u00e4den sind meist nur oberfl\u00e4chlich.",
+						"Die Decken im Palast sind, wenn nicht anders angegeben, 15 Fu\u00df hoch. Die W\u00e4nde bestehen aus mit Gips \u00fcberzogenem Stein. In den Putz eingebettet sind dekorative Steine, Austernschalen, Seesterne und Korallenzweige. Die T\u00fcren sind aus dickem Holz gefertigt und haben keine Schl\u00f6sser.",
+						"Einige Gebiete enthalten magische Schutzzauber, die von jedem umgangen werden k\u00f6nnen, der ein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} tr\u00e4gt. Die Charaktere k\u00f6nnen ein solches Ger\u00e4t im Wrack des {@adventure Bitch Queen|ttp|3|Bitch Queen} finden (siehe \"{@adventure High Horn|ttp|3|High Horn}\").",
+						{
+							"type": "entries",
+							"name": "1. Ruined Portico",
+							"id": "02a",
+							"page": 11,
+							"entries": [
+								"Wenn die Charaktere dem Weg nach S\u00fcden von {@adventure Ahoyhoy|ttp|3|Ahoyhoy} nach Dangwaru folgen, lies oder umschreibe das Folgende:",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Der Weg schmiegt sich an den Berghang und schl\u00e4ngelt sich kilometerlang an der felsigen K\u00fcste der Insel entlang, bevor er an einem Steinpalast endet, der drei\u00dfig Meter \u00fcber dem Meeresspiegel errichtet wurde. Die Wellen schlagen direkt unter den Mauern des Palastes gegen die Felsen.",
+										"Der pr\u00e4chtige Eingang des Palastes besteht aus einer Kolonnade mit weinumrankten S\u00e4ulen, die zu einer steinernen Doppelt\u00fcr mit sch\u00e4umenden Wellen f\u00fchrt, die sich in der Mitte teilen. Teile des Dachs der S\u00e4ulenhalle sind eingest\u00fcrzt, und zwischen den rissigen Steinplatten sprie\u00dfen Palmen und Farne hervor. Dutzende von harmlosen {@creature lizard|MM|lizards} nutzen die schattigen Bereiche des S\u00e4ulengangs als Unterschlupf. \u00d6stlich der S\u00e4ulenhalle steht eine zehn Fu\u00df hohe Statue, die von Ranken \u00fcberwuchert ist. Sie hat den Kopf und den Oberk\u00f6rper einer Frau und eine sich drehende Wasserwelle an der Stelle, wo ihre Beine sein sollten. Jenseits der Westseite des Portikus \u00fcberblickt eine \u00fcberwucherte Gartenterrasse das tosende Meer."
+									],
+									"id": "074"
+								},
+								"Je nach Tages- oder Nachtzeit scheinen schr\u00e4ge Sonnen- oder Mondstrahlen durch die L\u00f6cher im Dach des S\u00e4ulengangs. Obwohl die winzigen {@creature lizard|MM|lizards} harmlos sind, lauert ein feindlicher {@creature giant lizard} inmitten der Pflanzen in der s\u00fcd\u00f6stlichen Ecke des Portikus. Charaktere, die den S\u00e4ulengang betreten, k\u00f6nnen den {@creature giant lizard} mit einer erfolgreichen DC 15 Weisheitspr\u00fcfung ({@skill Perception}) entdecken. Jeder, der sich ihm oder dem Fallgatter (siehe {@area 4|02d}) auf weniger als 20 Fu\u00df n\u00e4hert, wird angegriffen. Der {@creature giant lizard} ist hungrig und k\u00e4mpft, bis er get\u00f6tet wird.",
+								"Die Doppelt\u00fcr wird entriegelt und schiebt sich an rostigen, quietschenden Eisenscharnieren auf. Wenn die Charaktere in den Wracks von High Horn (siehe \"{@adventure High Horn|ttp|3|High Horn}\") oder anderswo ein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} gefunden haben, erkennen sie, dass die in die Doppelt\u00fcr eingeritzten Spaltwellen dem Symbol sehr \u00e4hnlich sind."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "2. Statue of Umberlee",
+							"id": "02b",
+							"page": 11,
+							"entries": [
+								"Eine 10 Fu\u00df hohe Statue der Meeresg\u00f6ttin {@deity Umberlee|Faer\u00fbnian|SCAG} steht \u00f6stlich des Portikus des Palastes. Die Statue, die im vorgelesenen Text zu {@area 1|02a} beschrieben wird, ist harmlos.",
+								"Der Boden f\u00e4llt nach S\u00fcden hin ab und steigt 5 Fu\u00df an, bis er auf einen 5 Fu\u00df breiten und 8 Fu\u00df hohen Riss in der Palastwand trifft, der den Zugang zu {@area 7|030} erm\u00f6glicht. Der Riss ist f\u00fcr jeden, der diesen Bereich betritt, deutlich sichtbar."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "3. Overgrown Garden",
+							"id": "02c",
+							"page": 11,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Wilde Farne und Palmen dominieren diesen \u00fcberwucherten Garten. Drei Statuen, von denen zwei Haie und eine einen Oktopus darstellen, stehen auf einer drei Meter hohen Steinmauer mit Blick auf das Meer. Alles hier ist feucht von der Gischt der anbrandenden Wellen. Eine Steintreppe f\u00fchrt zehn Meter hinauf zu einem br\u00f6ckelnden Steinbalkon, der sich an der Palastmauer entlang nach S\u00fcden erstreckt."
+									],
+									"id": "075"
+								},
+								"Vom Garten bis zum Meer sind es nur 20 Fu\u00df. Tags\u00fcber beherbergt der Garten harmlose {@creature lizard|MM|lizards}, Schlangen und {@creature spider|mm|spiders}, aber nichts Gef\u00e4hrliches. Nachts lauern sieben {@creature Topi|ttp|Topis} inmitten der Pflanzen und anderen Tiere. Sie versuchen, jede Figur zu \u00fcberraschen, die sich in den Garten verirrt. Hier ist kein Schatz versteckt."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "4. Antechamber and Portcullis",
+							"id": "02d",
+							"page": 11,
+							"entries": [
+								"Die T\u00fcren des Palastes \u00f6ffnen sich in ein Vorzimmer mit einer Fackelhalterung an der Westwand. In der S\u00fcdwand ist ein schweres eisernes Fallgitter eingelassen, das mit der Winde in {@area 5|02e} hoch- und heruntergelassen werden kann. Obwohl das Fallgitter zu stabil ist, um von Waffen besch\u00e4digt zu werden, kann es mit einem {@spell knock}-Zauber angehoben werden. Ein Charakter kann das Fallgitter auch mit einer erfolgreichen DC 25 St\u00e4rke ({@skill Athletics})-Pr\u00fcfung anheben, und ein kleiner Charakter kann sich mit einer erfolgreichen DC 20 Geschicklichkeit ({@skill Acrobatics})-Pr\u00fcfung zwischen die Gitterst\u00e4be des Fallgitters zw\u00e4ngen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "5. Feast Hall",
+							"id": "02e",
+							"page": 11,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Ein rostiger Eisenkronleuchter h\u00e4ngt an einer Kette \u00fcber einem ehemals gro\u00dfen Esstisch in der Mitte eines gro\u00dfen Raums. Durch L\u00f6cher in der Decke f\u00e4llt Licht auf den Tisch, und ein paar harmlose tropische V\u00f6gel flattern umher. Der geflieste Boden ist mit zerbrochenem Geschirr, Vogelkot und anderem Unrat \u00fcbers\u00e4t. Eine breite Treppe im S\u00fcden f\u00fchrt f\u00fcnf Meter hinauf zu einer erh\u00f6hten Galerie, die den Raum umgibt. Alte, gerahmte Bilder von Segelschiffen h\u00e4ngen an den W\u00e4nden der Galerie. Drei geschlossene T\u00fcren f\u00fchren vom oberen Bereich zu anderen Teilen des Palastes. Eine vierte T\u00fcr in der s\u00fcd\u00f6stlichen Ecke ist fast vollst\u00e4ndig durch Tr\u00fcmmer verdeckt."
+									],
+									"id": "076"
+								},
+								"Dieser verfallene Festsaal enth\u00e4lt nichts von Wert. Charaktere, die die W\u00e4nde durchsuchen, finden jedoch einen kleinen Eisenschl\u00fcssel, der hinter einem der gerahmten Bilder versteckt ist. Der Schl\u00fcssel, dessen Kopf die Form eines Ankers hat, schlie\u00dft die bemalte Truhe in {@area 18|047} auf.",
+								"Der Windenmechanismus zum Heben und Senken des Fallgatters ({@area 4|02d}) befindet sich an der Ostwand im nordwestlichen Teil der Galerie.",
+								"Die Tr\u00fcmmer in der s\u00fcd\u00f6stlichen Ecke sind das Ergebnis eines teilweisen Einsturzes des Daches. Sie k\u00f6nnen von einem einzelnen Charakter in 4 Stunden beseitigt werden, oder in entsprechend k\u00fcrzerer Zeit von zwei oder mehr Charakteren, die zusammenarbeiten. Sobald die Tr\u00fcmmer beseitigt sind, f\u00fchrt der Durchgang nach {@area 9|028}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "6. Abandoned Quarters",
+							"id": "02f",
+							"page": 13,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Dieser Raum enth\u00e4lt eine Reihe von Betten, Sofas und anderen Einrichtungsgegenst\u00e4nden, die allesamt schon bessere Tage gesehen haben. Von der Decke und den W\u00e4nden ist der Putz abgefallen, was die Unordnung und den M\u00fcll noch vergr\u00f6\u00dfert. Gegen\u00fcber der Doppelt\u00fcr befindet sich ein schmales Fenster, das auf das Meer hinausgeht."
+									],
+									"id": "077"
+								},
+								"Eine Durchsuchung des Raumes ergibt nichts von Interesse oder Wert. Das Fenster ist breit genug, damit ein kleiner oder mittlerer Charakter hindurchkriechen kann."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "7. Ruined Bath",
+							"id": "030",
+							"page": 13,
+							"entries": [
+								"Charaktere k\u00f6nnen diesen Raum durch die T\u00fcr an der Westwand oder durch den 1,5 Meter breiten Spalt in der Nordwand betreten.",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Dieser Raum wird von einem versunkenen Bad mit Pflanzen dominiert, dessen verputzte W\u00e4nde mit bunten Korallenzweigen und Muscheln besetzt sind. Weitere Pflanzen sprie\u00dfen aus den L\u00fccken zwischen den Fliesen, so dass hier ein wahrer Dschungel entsteht. Eine {@creature bat} flattert umher, aufgeschreckt durch deine Anwesenheit."
+									],
+									"id": "078"
+								},
+								"Neben den harmlosen {@creature bat} beherbergt das zerst\u00f6rte Bad auch einige harmlose {@creature lizard|MM|lizards}, Schnecken und {@creature spider|mm|spiders}.",
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "031",
+									"entries": [
+										"Ein Charakter, der das 3 Fu\u00df tiefe versunkene Bad durchsucht und eine DC 13 Weisheitspr\u00fcfung ({@skill Perception}) besteht, findet im Unterholz ein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} (25 gp)."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "8. Shrine",
+							"id": "032",
+							"page": 13,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Ein Steinsockel steht auf einem runden Podest in der Mitte dieses Raumes. Auf dem Sockel, der Doppelt\u00fcr im Osten zugewandt, steht eine zehn Zentimeter hohe Holzstatuette einer Frau, die einen {@item trident|phb} h\u00e4lt, mit einem Haifischschwanz anstelle der Beine. Vier eiserne Fackelhalterungen sind an die feuchten W\u00e4nde geschraubt, die mit abbl\u00e4tterndem Putz bedeckt und mit bunten Korallenzweigen und Seesternen besetzt sind. Ein schmales Fenster gegen\u00fcber der Doppelt\u00fcr blickt auf das Meer hinaus."
+									],
+									"id": "079"
+								},
+								"Das Fenster ist breit genug, damit eine kleine oder mittlere Figur hindurchkriechen kann.",
+								{
+									"type": "entries",
+									"name": "Trapped Relic",
+									"id": "033",
+									"entries": [
+										"Die Statuette auf dem Sockel stellt {@deity Umberlee|Faer\u00fbnian|SCAG} dar. Eine Schildkr\u00f6te schnitzte sie aus Treibholz, bemalte sie und schenkte sie den Anbetern des Palastes {@deity Umberlee|Faer\u00fbnian|SCAG}. Sie wurde hier aufgestellt, damit die Besucher sich vor der Meeresg\u00f6ttin niederwerfen konnten.",
+										"Ein {@spell glyph of warding}-Zauber wird ausgel\u00f6st, wenn die Statuette zum ersten Mal von einer Kreatur, die kein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} tr\u00e4gt, vom Sockel entfernt wird. Ein Charakter, der die Statuette studiert und eine Intelligenzpr\u00fcfung DC 15 ({@skill Investigation}) besteht, entdeckt die fast unsichtbare Glyphe, die auf dem {@item trident|phb} eingraviert ist. Wenn die Glyphe ausgel\u00f6st wird, bricht magische Energie in einem Umkreis von 20 Fu\u00df aus, der sich um die Glyphe dreht. Jede Kreatur in diesem Bereich muss einen Rettungswurf von DC 15 auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Rettungswurf 22 ({@damage 5d8}) Donnerschaden, bei einem erfolgreichen Versuch halb so viel."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "9. Crab Pool",
+							"id": "034",
+							"page": 13,
+							"entries": [
+								"Ein teilweiser Einsturz des Daches hat den westlichen Durchgang mit Schutt gef\u00fcllt. Charaktere k\u00f6nnen den Eingang nicht benutzen, bis der Schutt wegger\u00e4umt ist (siehe {@area 5|02e} f\u00fcr Details).",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Die verputzten W\u00e4nde dieses dunklen Raums sind feucht und mit bunten Steinen, Seesternen, Muscheln und Korallenzweigen besetzt. Aus der Ostwand ragt die Steinskulptur einer {@creature giant crab} heraus, deren spitz zulaufende Arme sich an ein zehn Fu\u00df breites Steinbecken schmiegen. Ein Rinnsal von Wasser flie\u00dft aus dem Maul der Krabbe in das Becken. L\u00f6cher im Rand des Beckens dienen als Abfl\u00fcsse, damit das Becken nicht \u00fcberl\u00e4uft. Durch ein schmales Fenster in der S\u00fcdwand h\u00f6rt man das Rauschen des Meerwassers, das durch die Gezeiten in eine H\u00f6hle ein- und ausstr\u00f6mt."
+									],
+									"id": "07a"
+								},
+								"Die Schildkr\u00f6ten bauten eine Zisterne auf dem Dach, die das Regenwasser auff\u00e4ngt und durch die Krabbenskulptur in das Becken leitet. Wenn ein Lebewesen im Becken badet, krabbelt ein Dutzend {@creature crab||crabs} aus L\u00f6chern in der riesigen Steinkrabbenskulptur, um den Badenden zu reinigen. Dieser Vorgang dauert 10 Minuten. Die {@creature crab||crabs} sind harmlos und k\u00f6nnen normal get\u00f6tet werden.",
+								"Ein {@spell detect magic}-Zauber offenbart eine Aura der Transmutationsmagie, die von dem Pool ausgeht. Der Pool verf\u00fcgt \u00fcber die folgenden Kr\u00e4fte, die ein {@spell identify}-Zauberspruch feststellen kann:",
+								{
+									"type": "list",
+									"items": [
+										"Eine Kreatur, die ein Gebet zu {@deity Umberlee|Faer\u00fbnian|SCAG} spricht, w\u00e4hrend sie einen Schatz im Wert von 10 gp oder mehr in den Pool wirft, erh\u00e4lt die magische F\u00e4higkeit, 24 Stunden lang Wasser zu atmen, w\u00e4hrend sie ihre normale Atmungsweise beibeh\u00e4lt. Der Schatz verschwindet, wenn der Segen erteilt wird.",
+										"Jede Kreatur, die das Becken besch\u00e4digt, muss einen Konstitutionsschutzwurf von DC 15 bestehen oder wird f\u00fcr 24 Stunden in einen {@creature crab} verwandelt. Der Effekt ist ansonsten identisch mit dem des {@spell polymorph}-Zaubers."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Window",
+									"id": "035",
+									"entries": [
+										"Das Fenster in der S\u00fcdwand ist breit genug, dass ein kleiner oder mittlerer Charakter hindurchkriechen kann. Es blickt in eine \u00fcberflutete Meeresh\u00f6hle ({@area 12|03b}) und liegt 25 Fu\u00df \u00fcber dem Wasserspiegel."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "10. Crumbling Walkway",
+							"id": "036",
+							"page": 13,
+							"entries": [
+								"Ein steinerner Steg oberhalb der Wasserkante ist teilweise in die aufgew\u00fchlte See gest\u00fcrzt und hat gro\u00dfe L\u00fccken hinterlassen. Was vom Steg \u00fcbrig geblieben ist, ist strukturell intakt. Um den besch\u00e4digten Bereich sicher zu Fu\u00df zu \u00fcberqueren, muss eine Kreatur einen St\u00e4rkecheck DC 15 ({@skill Athletics}) bestehen. Misslingt der Check, f\u00e4llt die Kreatur 30 Fu\u00df einen felsigen Abhang hinunter, erleidet 10 ({@damage 3d6}) Wuchtschaden und landet in 10 Fu\u00df tiefem Wasser. Charaktere, die den Steg von Norden her hinaufsteigen, k\u00f6nnen den besch\u00e4digten Abschnitt umgehen, indem sie durch das Fenster in {@area 6|02f} kriechen, sich durch den Palast bewegen und durch das Fenster in der Westwand von {@area 8|032} hinausgehen, von wo aus sie nach S\u00fcden weitergehen k\u00f6nnen.",
+								{
+									"type": "entries",
+									"name": "Seaside Entrance",
+									"id": "037",
+									"entries": [
+										"Am s\u00fcdlichen Ende des Weges befindet sich eine steinerne Doppelt\u00fcr. Die T\u00fcren sind mit sch\u00e4umenden Wellen verziert, die sich in der Mitte teilen, und sie schwingen an rostigen Eisenscharnieren nach innen {@area 11|038}."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "11. Throne Room",
+							"id": "038",
+							"page": 14,
+							"entries": [
+								"Tags\u00fcber dringt das Sonnenlicht durch Risse in der Decke und ein Fenster in der Westwand und erhellt den Raum schwach. In klaren N\u00e4chten tut dies auch das Mondlicht. Das Rauschen der Wellen ist Tag und Nacht zu h\u00f6ren.",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Abbl\u00e4tternde Wandmalereien zieren die verputzten W\u00e4nde dieses Thronsaals, auf denen tentakelartige Seeungeheuer abgebildet sind, die sturmgepeitschte Schiffe ins Verderben rei\u00dfen. In den Putz eingelassen sind wei\u00dfe Korallenzweige und Mosaike in Form von Haien aus dekorativen Steinen und Muscheln. S\u00e4ulen, die wie dicke Seetangstr\u00e4nge geschnitzt sind, st\u00fctzen die rissige, drei\u00dfig Fu\u00df hohe Kuppeldecke. Zwei Paare h\u00f6lzerner Statuen von schildkr\u00f6ten\u00e4hnlichen Humanoiden stehen auf gegen\u00fcberliegenden Seiten des Raums. Zwischen dem s\u00fcdlichen Paar erstreckt sich ein dunkler Gang. Ein Podest an der Ostwand st\u00fctzt einen Granitthron, der die Form eines Tintenfisches hat. Hinter dem Thron befindet sich eine Doppelt\u00fcr, neben der eine hohe Tonurne steht. In die Wand gegen\u00fcber dem Thron ist ein neun Fu\u00df hohes, gew\u00f6lbtes Fenster eingelassen, das auf das Meer hinausschaut."
+									],
+									"id": "07b"
+								},
+								"Vier {@creature shadow||shadows} lauern hier. Diese untoten \u00dcberbleibsel l\u00e4ngst verstorbener {@deity Umberlee|Faer\u00fbnian|SCAG} Anbeter tun ihr Bestes, um Eindringlinge zu \u00fcberraschen und zu t\u00f6ten. Sie haben Arme, die wie Tentakel aussehen, und ihre Angriffe mit Kraftentzug haben eine Reichweite von 10 Fu\u00df statt 5 Fu\u00df. Ansonsten sind ihre Statistiken unver\u00e4ndert. Die {@creature shadow||shadows} k\u00f6nnen weder nach drau\u00dfen gehen, noch k\u00f6nnen sie kommunizieren. Sie k\u00e4mpfen, bis sie verwandelt oder zerst\u00f6rt werden.",
+								"Der Raum enth\u00e4lt auch einen {@creature mimic}, der als Tonurne an der Ostwand getarnt ist. Der {@creature mimic} lauert auf Kreaturen, die von dem {@creature shadow||shadows} abgelenkt werden, oder wartet darauf, jemanden anzugreifen, der die \u00f6stlichen T\u00fcren inspiziert. Wenn der {@creature mimic} auf die H\u00e4lfte seiner Trefferpunkte oder weniger reduziert ist, versucht er, sich zur\u00fcckzuziehen. Der {@creature shadow||shadows} und der {@creature mimic} ignorieren sich gegenseitig.",
+								{
+									"type": "entries",
+									"name": "Statues",
+									"id": "039",
+									"entries": [
+										"Die vier Holzstatuen sind so geschnitzt und bemalt, dass sie wie Schildkr\u00f6ten aussehen. Sie sind 1,80 m hoch und wiegen jeweils 200 Pfund."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Throne",
+									"id": "03a",
+									"entries": [
+										"Der Granitthron wiegt 3.000 Pfund und strahlt unter der Kontrolle eines {@spell detect magic}-Zaubers oder eines \u00e4hnlichen Effekts eine starke Aura der Transmutationsmagie aus. Ein {@spell identify}-Zauber offenbart seine magischen Eigenschaften:",
+										{
+											"type": "list",
+											"items": [
+												"Ein Humanoid, der auf dem Thron sitzt, kann ihn benutzen, um den {@spell control weather}-Zauber zu wirken, ohne Komponenten zu ben\u00f6tigen. Solange die Kreatur auf dem Thron sitzt, muss sie sich nicht konzentrieren, um den Zauber aufrechtzuerhalten. Das Verlassen des Throns beendet den Effekt, woraufhin sich das Wetter allm\u00e4hlich wieder normalisiert.",
+												"Ein Humanoider, der auf dem Thron sitzt, kann sich in eine M\u00f6we (benutze die {@creature raven}-Statistik ohne die Eigenschaft Mimikry) oder eine {@creature octopus} verwandeln. Der Effekt ist identisch mit dem eines {@spell polymorph}-Zaubers, au\u00dfer dass die Dauer 8 Stunden betr\u00e4gt und die Kreatur den Effekt jederzeit selbst beenden kann (keine Aktion erforderlich)."
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "12. Sea Cave",
+							"id": "03b",
+							"page": 14,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Meerwasser str\u00f6mt in diese feuchte H\u00f6hle hinein und wieder heraus, prallt gegen die W\u00e4nde und f\u00fcllt die H\u00f6hle mit einer kalten Gischt. An der Wand hinter der T\u00fcr ist ein halbrunder Balkon aus Stein angebracht. In der N\u00e4he des hinteren Teils der H\u00f6hle h\u00e4ngt eine durchh\u00e4ngende Br\u00fccke aus ausgefransten Seilen und Holzbrettern. Dazwischen, in die Nordwand auf halbem Weg zwischen Balkon und Br\u00fccke, ist ein schmales, offenes Fenster."
+									],
+									"id": "07c"
+								},
+								"Das Wasser ist hier 20 Fu\u00df tief und st\u00fcrmisch. Jede Kreatur, die ihren Zug im Wasser beginnt, muss einen DC-10-St\u00e4rkeprobenwurf bestehen, um nicht gegen die W\u00e4nde geschleudert zu werden, wobei sie {@damage 2d6} Wuchtschaden erleidet und von der Str\u00f6mung {@dice 1d6*5|1d6 \u00d7 5 feet} nach Westen oder Osten gezogen wird, w\u00e4hrend das Wasser in die H\u00f6hle str\u00f6mt oder sich zur\u00fcckzieht.",
+								{
+									"type": "entries",
+									"name": "Balcony",
+									"id": "03c",
+									"entries": [
+										"Der steinerne Balkon befindet sich 30 Fu\u00df \u00fcber dem Wasser und ist durch eine steinerne Doppelt\u00fcr mit dem Thronsaal ({@area 11|038}) verbunden."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Bridge",
+									"id": "03d",
+									"entries": [
+										"Die Br\u00fccke h\u00e4ngt 30 Fu\u00df \u00fcber dem Wasser und verbindet die Gebiete {@area 22|04f|x} und {@area 24|051|x}. Viele ihrer Bretter fehlen, und die, die noch vorhanden sind, sind verrottet und unsicher. Wenn ein Charakter die Br\u00fccke benutzt, w\u00fcrfle einen {@dice d6}. Bei einem Wurf von 1 bricht eine Planke unter den F\u00fc\u00dfen ein und zwingt den Charakter, einen Rettungswurf von DC 10 (Geschicklichkeit) zu bestehen oder ins Wasser zu fallen. Der Wurf darf nur einmal pro Charakter und \u00dcberquerung durchgef\u00fchrt werden. Jedes Mal, wenn die Br\u00fccke eine Planke verliert, erh\u00f6ht sich der DC zuk\u00fcnftiger Rettungsw\u00fcrfe um 1."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Window",
+									"id": "03e",
+									"entries": [
+										"Das Fenster in der Nordwand ist breit genug, damit eine kleine oder mittlere Figur hindurchkriechen kann. Die \u00d6ffnung befindet sich 25 Fu\u00df \u00fcber dem Wasserspiegel."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "13. Ruined Guard Room",
+							"id": "03f",
+							"page": 14,
+							"entries": [
+								"Charaktere k\u00f6nnen diesen Raum durch eine offene T\u00fcr in der Westwand oder durch die steinerne Doppelt\u00fcr im Osten betreten.",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Die Au\u00dfent\u00fcr dieses Raums ist eingest\u00fcrzt, und die Vegetation hat sich ins Innere geschlichen. Weinreben und Pflanzen wachsen inmitten von zerst\u00f6rten M\u00f6beln, und tropische V\u00f6gel nisten auf Regalen und in Nischen. Im Westen f\u00fchrt eine Treppe hinunter zu einer gro\u00dfen, mehrst\u00f6ckigen Gartenterrasse."
+									],
+									"id": "07d"
+								},
+								"Die Einrichtungsgegenst\u00e4nde fallen auseinander, wenn sie gest\u00f6rt werden. Eine Durchsuchung des Zimmers ergibt nichts von Wert."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "14. Terrace Garden",
+							"id": "040",
+							"page": 14,
+							"entries": [
+								"Tags\u00fcber umkreisen sechs {@creature blood hawk||blood hawks} den Garten in einer H\u00f6he von 60 Fu\u00df. Diese aggressiven, rot gefiederten V\u00f6gel jagen {@creature lizard|MM|lizards} und andere kleine Tiere und fallen \u00fcber eine Person her, die den Terrassengarten allein erkundet. Die Blutbussarde sind nachts nicht anwesend.",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Die Wellen schlagen gegen einen Felsvorsprung, auf dem ein spektakul\u00e4rer, mehrst\u00f6ckiger Garten angelegt ist, dessen Terrassen von Pflanzen \u00fcberwuchert und von Steinmauern mit Haifischstatuen an den Ecken eingefasst sind. Steintreppen verbinden die unteren Terrassen mit den oberen. Auf der h\u00f6chsten Terrasse befindet sich ein kunstvoller, mit Weinreben umrankter Pavillon, der von Palmen flankiert wird. \u00d6stlich des Pavillons f\u00fchren rissige Stufen zu einem Podest vor einer T\u00fcr, die wie eine riesige Welle geschnitzt ist und sich in der Mitte teilt."
+									],
+									"id": "07e"
+								},
+								"Die H\u00f6henmarkierungen auf {@area map 3|029|x} geben die H\u00f6he der verschiedenen Terrassen \u00fcber dem Meeresspiegel an.",
+								"In der Gartenlaube lauert ein hungriger {@creature decapus|ttp} (siehe \"{@creature decapus|ttp|Decapus,}\"), der die erste Kreatur angreift, die in seine Reichweite kommt. Die {@creature decapus|ttp} hat einen Vorteil bei Geschicklichkeitsproben ({@skill Stealth}), um sich unter dem Dach der Gartenlaube zu verstecken.",
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "041",
+									"entries": [
+										"Der Boden des Pavillons ist mit den \u00dcberresten vergangener Mahlzeiten \u00fcbers\u00e4t, darunter Echsenknochen, Federn von Blutfalken und zwei Schildkr\u00f6tenschalen. Inmitten des M\u00fclls liegt ein Ring aus Lapislazuli (25 gp). Der Ring hat eine magische Besonderheit, die dazu f\u00fchrt, dass sein Tr\u00e4ger einen wiederkehrenden Alptraum erlebt, nachdem er l\u00e4nger als 1 Stunde mit dem Ring geschlafen hat. Der Albtraum ist lebhaft: Der Tr\u00e4ger wird von einem Pottwal verschlungen, w\u00e4hrend er sich an einem schwimmenden Fass auf st\u00fcrmischer See festh\u00e4lt. Nachdem er in dem Alptraum verschlungen wurde, wacht der Tr\u00e4ger des Rings auf, ohne Schaden genommen zu haben."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "15. Cleric's Chambers",
+							"id": "042",
+							"page": 15,
+							"entries": [
+								"Die im Taifunpalast ans\u00e4ssige Klerikerin von {@deity Umberlee|Faer\u00fbnian|SCAG} hat diese R\u00e4ume f\u00fcr sich beansprucht. \u00dcber der Doppelt\u00fcr zu dieser Suite ist ein {@spell glyph of warding}-Zauber eingraviert, der ausgel\u00f6st wird, wenn eine Kreatur zwischen den ge\u00f6ffneten T\u00fcren hindurchgeht. Nur eine Kreatur, die ein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} tr\u00e4gt, l\u00f6st die Glyphe nicht aus und kann sicher durch die T\u00fcren gehen. Ein Charakter, der den T\u00fcrrahmen untersucht und eine Intelligenz\u00fcberpr\u00fcfung DC 15 ({@skill Investigation}) besteht, entdeckt die fast unsichtbare Glyphe. Wenn die Glyphe ausgel\u00f6st wird, bricht magische Energie in einem Umkreis von 20 Fu\u00df aus, der sich um die Glyphe herum erstreckt. Jede Kreatur in diesem Bereich muss einen Rettungswurf mit DC 15 Geschicklichkeit ablegen und erleidet bei einem misslungenen Rettungswurf 22 ({@damage 5d8}) K\u00e4lteschaden, bei einem erfolgreichen Versuch halb so viel.",
+								"Wenn die Charaktere zum ersten Mal das Schlafgemach des Klerikers erblicken, lies:",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Dieses palastartige Schlafgemach ist unheimlich ruhig und still. In den blauen Gipsw\u00e4nden haben sich Risse gebildet, in die bunte Korallenzweige und Muscheln eingelassen sind. S\u00e4ulen, die wie Tentakel geschnitzt sind, st\u00fctzen die gew\u00f6lbte Decke mit einer gro\u00dfen Kuppel, die wie der Nachthimmel aussieht. Unter der Kuppel und zwischen den Pfeilern steht ein gro\u00dfes Bett auf einem breiten, runden Podest. Der h\u00f6lzerne Rahmen des Bettes ist so geschnitzt, dass er an wogende Wellen erinnert. In der Nordwand sind zwei T\u00fcren eingelassen. Staub bedeckt alles."
+									],
+									"id": "07f"
+								},
+								"Das Schlafgemach enth\u00e4lt nichts von Wert. Die T\u00fcren im Norden f\u00fchren zu kleineren R\u00e4umen, die weiter unten beschrieben werden.",
+								{
+									"type": "entries",
+									"name": "Bathroom",
+									"id": "043",
+									"entries": [
+										"Die \u00f6stliche T\u00fcr zum Schlafgemach des Klerikers f\u00fchrt in ein gefliestes Bad. Die Badewanne ist ein langes, rechteckiges Steinbecken, das in den Boden eingelassen ist. Rohre verbinden das Becken mit einer Zisterne auf dem Dach, die den Regen auff\u00e4ngt. Neben dem Becken befindet sich ein steinerner St\u00f6psel, mit dem man das Wasser daran hindern kann, durch das Loch im Boden des Beckens abzulaufen."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Vestibule",
+									"id": "044",
+									"entries": [
+										"Die westliche T\u00fcr zum Schlafgemach der Klerikerin f\u00fchrt in einen Vorraum, in dem die Klerikerin von {@deity Umberlee|Faer\u00fbnian|SCAG} ihre pers\u00f6nlichen Gegenst\u00e4nde aufbewahrt. An den kahlen Steinw\u00e4nden stehen steinerne Regale, und in der Mitte des Bodens stehen zwei Holztruhen.",
+										"In den Regalen stehen wertlose Holzstatuetten von Meeresbewohnern, die der Klerikerin von {@deity Umberlee|Faer\u00fbnian|SCAG} von Bewunderern der Schildkr\u00f6te geschenkt wurden, sowie vier verschimmelte B\u00fccher, die die Logb\u00fccher aus ihrer Zeit als Kapit\u00e4nin der {@adventure Bitch Queen|ttp|3|Bitch Queen} sind. Diese alten Logb\u00fccher, die die Reisen des Schiffes dokumentieren, sind einem interessierten K\u00e4ufer in einer beliebigen Hafenstadt jeweils 25 Goldst\u00fccke wert. Die Truhen sind verschlossen, und die Schl\u00fcssel befinden sich in {@area 24|051}. Um ein Schloss zu knacken, ben\u00f6tigt man {@item thieves' tools|phb} und eine erfolgreiche DC 15 Geschicklichkeitsprobe. Eine Truhe enth\u00e4lt f\u00fcnf Kleidungsst\u00fccke von {@item traveler's clothes|phb} Gr\u00f6\u00dfe f\u00fcr eine gro\u00dfe menschliche Frau. Die andere Truhe enth\u00e4lt priesterliche Gew\u00e4nder, die einem Kleriker von {@deity Umberlee|Faer\u00fbnian|SCAG} angemessen sind, und acht Eisenschl\u00fcssel unterschiedlicher Form und Gr\u00f6\u00dfe. Die Schl\u00fcssel \u00f6ffnen acht der neun Truhen in {@area 18|047}. (Der neunte Schl\u00fcssel wurde entwendet und in {@area 5|02e} versteckt)."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "16. Kitchen and Storage",
+							"id": "045",
+							"page": 15,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Diese K\u00fcche wurde seit Jahren nicht mehr anger\u00fchrt, und ihr Inhalt ist mit Staub und Spinnweben bedeckt. In einer Wand ist ein Steinofen eingebaut, und schmale T\u00fcren f\u00fchren in Lagerr\u00e4ume und Vorratskammern."
+									],
+									"id": "080"
+								},
+								"Charaktere, die den Raum durchsuchen, k\u00f6nnen genug Material bergen, um f\u00fcnf {@item mess kit|phb|mess kits} zusammenzusetzen. Alle Lebensmittel, die hier einst gelagert wurden, sind l\u00e4ngst verdorben."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "17. Hallway",
+							"id": "046",
+							"page": 15,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Dieser gew\u00f6lbte Gang ist mit steinernen Strebepfeilern verst\u00e4rkt, zwischen denen Wandmalereien zu sehen sind, die d\u00fcstere Unterwasserszenen darstellen. Im Westen befindet sich eine gro\u00dfe Doppelt\u00fcr, und am \u00f6stlichen Ende des Saals ist eine flackernde Kugel in die Wand eingelassen. Entlang des Saals befinden sich zwei weitere Doppelt\u00fcren, eine Einzelt\u00fcr und zwei mit Staub und Spinnweben bedeckte Tonurnen."
+									],
+									"id": "081"
+								},
+								"Die Kugel am \u00f6stlichen Ende der Halle ist aus Kristall und strahlt unter der Kontrolle eines {@spell detect magic}-Zaubers oder eines \u00e4hnlichen Effekts eine Aura von Beschw\u00f6rungsmagie aus. Die Kugel, die einen Durchmesser von 1 Fu\u00df hat, strahlt helles Licht in einem Radius von 30 Fu\u00df und schwaches Licht f\u00fcr weitere 30 Fu\u00df aus. Jedes Mal, wenn eine Kreatur die Kugel ber\u00fchrt, w\u00fcrfle einen {@dice d6}. Bei einem Wurf von 2 oder h\u00f6her teleportiert die Kugel die Kreatur nach {@area 24|051}. Bei einem Wurf von 1 versagt die Kugel und sendet Blitze in einer Linie aus, die 100 Fu\u00df lang und so breit wie die Halle ist. Jede Kreatur im Wirkungsbereich muss einen Schutzwurf von DC 15 auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 14 ({@damage 4d6}) Blitzschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden. Die Kugel kann nicht von ihrer Wandhalterung entfernt werden. Sie hat AC 10, 1 Trefferpunkt und ist immun gegen Gift und psychischen Schaden. Wenn die Kugel zerst\u00f6rt wird, erlischt ihr Licht und die Teile werden unmagisch.",
+								"Die T\u00fcren an der Nordwand f\u00fchren in die dahinter liegenden R\u00e4ume. Die T\u00fcren im Westen und S\u00fcden haben auf dieser Seite Scharniere und f\u00fchren in den Flur.",
+								"Die Tonurnen sind rein dekorativ und enthalten nichts Wertvolles."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "18. Treasury",
+							"id": "047",
+							"page": 16,
+							"entries": [
+								"Wenn Personen von {@area 17|046} aus in diesen Bereich blicken, lesen Sie:",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Hinter der Doppelt\u00fcr befindet sich ein zwanzig Fu\u00df breiter und zwanzig Fu\u00df langer Gang, der zu einer dunklen, s\u00e4ulenartigen Kammer f\u00fchrt, die mit Truhen, Kisten und anderen Beh\u00e4ltnissen \u00fcbers\u00e4t ist. Alles ist mit Staub bedeckt, aber nicht genug, um die gebrochenen Knochen und Waffen zu verbergen, die auf dem Boden des Ganges liegen."
+									],
+									"id": "082"
+								},
+								"Die \u00dcberreste auf dem Boden geh\u00f6ren zu einem l\u00e4ngst verstorbenen Diebspaar. Charaktere, die den Staub wegwischen, finden auch Blutflecken und tiefe Kratzer auf dem Boden. Diese Hinweise deuten auf das Vorhandensein einer Falle hin.",
+								{
+									"type": "entries",
+									"name": "Crusher Trap",
+									"id": "048",
+									"page": 16,
+									"entries": [
+										"Der 20 Fu\u00df gro\u00dfe Bereich s\u00fcdlich der Doppelt\u00fcr enth\u00e4lt eine mechanische Falle mit einem magischen Sensor. Wenn eine Kreatur diesen Bereich betritt, bewirken riesige, in den W\u00e4nden verborgene, federgelagerte Zahnr\u00e4der, dass die Steinbl\u00f6cke auf beiden Seiten des Flurs zusammensto\u00dfen. Nur eine Kreatur, die ein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} tr\u00e4gt, kann sich durch diesen Bereich bewegen, ohne die Falle auszul\u00f6sen. Ein Charakter, der n\u00f6rdlich oder s\u00fcdlich des gefangenen Bereichs steht, kann anhand der Kratzer auf dem Boden erkennen, dass es sich bei den W\u00e4nden um bewegliche Steinbl\u00f6cke handelt, aber es gibt keine M\u00f6glichkeit, den Ausl\u00f6ser der Falle oder die Methode zur Umgehung der Falle ohne Experimente oder den Einsatz von Wahrsagemagie zu identifizieren. Eine Kreatur, die sich zwischen den kollidierenden Steinbl\u00f6cken befindet, muss einen Rettungswurf von DC 13 in Geschicklichkeit ablegen. Bei Erfolg springt die Kreatur in die von ihr bevorzugte Richtung, nach Norden oder S\u00fcden, aus dem Weg. Bei einem misslungenen Schutzwurf erleidet die Kreatur 44 ({@damage 8d10}) Schaden durch Wucht. Eine Kreatur, die durch diesen Schaden auf 0 Trefferpunkte reduziert wird, wird zu Brei zermalmt. Nachdem die Bl\u00f6cke zugeschlagen haben, dauert es 1 Minute, bis sie sich in die W\u00e4nde zur\u00fcckziehen, woraufhin die Falle zur\u00fcckgesetzt wird."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Sculpted Visage",
+									"id": "049",
+									"entries": [
+										"Eine breite Nische in der Ostwand ist vom n\u00f6rdlichen Eingang aus nicht sichtbar. Wenn die Charaktere die Nische zum ersten Mal sehen, lesen Sie:",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"An der R\u00fcckseite einer Nische in der Ostwand befindet sich ein riesiges steinernes Gesicht in Flachrelief. Das Gesicht ist das einer g\u00f6ttlich sch\u00f6nen Frau mit Seetang als Haar, Augenlidern wie Muscheln und einem vage bedrohlichen Halbl\u00e4cheln."
+											],
+											"id": "083"
+										},
+										"Das Gesicht, das 12 Fu\u00df hoch und 10 Fu\u00df breit ist, stellt die Meeresg\u00f6ttin {@deity Umberlee|Faer\u00fbnian|SCAG} dar. Unter der Kontrolle eines {@spell detect magic}-Zaubers oder eines \u00e4hnlichen Effekts strahlt es eine Aura der Transmutationsmagie aus. Wenn sich eine Kreatur, die offen ein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} tr\u00e4gt oder schwingt, dem Gesicht bis auf 10 Fu\u00df n\u00e4hert, \u00f6ffnet sich sein Mund weit und es entsteht eine \u00d6ffnung mit einem Durchmesser von 5 Fu\u00df, die den Zugang zu den H\u00f6hlen dahinter ({@area 22|04f}) erm\u00f6glicht. Die \u00d6ffnung ist mit Reihen von dreieckigen Z\u00e4hnen ges\u00e4umt, die denen eines Riesenhais \u00e4hneln, denen man aber leicht ausweichen kann. Das Maul schlie\u00dft sich nach 1 Minute, kann aber von beiden Seiten wieder ge\u00f6ffnet werden."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "04a",
+									"entries": [
+										"Dieser Raum enth\u00e4lt Beute aus Schiffswracks, die in zwei versiegelten F\u00e4ssern, neun verschlossenen Holztruhen, vier Tonurnen und vier versiegelten Kisten aufbewahrt wird. Die Tabelle Schatztruhen beschreibt jeden Beh\u00e4lter und seinen Inhalt. Die Schl\u00fcssel, die die Truhen 1 bis 8 \u00f6ffnen, befinden sich in {@area 15|042}; der Schl\u00fcssel, der die Truhe 9 \u00f6ffnet, ist in {@area 5|02e} versteckt. Ein Charakter, der {@item thieves' tools|phb} benutzt, kann eine Truhe mit einer erfolgreichen DC 15 Geschicklichkeitsprobe aufschlie\u00dfen."
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Treasury Containers",
+									"page": 16,
+									"colLabels": [
+										"Container",
+										"Contents"
+									],
+									"colStyles": [
+										"col-4",
+										"col-8"
+									],
+									"rows": [
+										[
+											"Fass 1",
+											"40 Gallonen gew\u00f6hnlicher Wein"
+										],
+										[
+											"Fass 2",
+											"80 Pfund Salz"
+										],
+										[
+											"Truhe 1",
+											"150 gp der maztikanischen M\u00fcnzpr\u00e4gung"
+										],
+										[
+											"Brust 2 (durch Feuer verbrannt)",
+											"Drei leere Zauberb\u00fccher (je 50 gp) und eine kleine Holzkiste mit zwanzig {@item candle|phb|candles}"
+										],
+										[
+											"Brust 3 (bedeckt mit Kratzspuren)",
+											"Ein ordentlich gefaltetes Hochzeitskleid und Schleier (25 gp)"
+										],
+										[
+											"Truhe 4",
+											"Ein Satz von {@item alchemist's supplies|phb} und vier Flaschen von {@item alchemist's fire (flask)|phb|alchemist's fire}"
+										],
+										[
+											"Truhe 5 (verrottet)",
+											"Ein Anzug aus {@item scale mail|phb} (50 gp) und ein Stahlhelm mit einem Elektrumfisch auf der Spitze (50 gp)"
+										],
+										[
+											"Brustkorb 6 (mit Blut befleckt)",
+											"A {@item diplomat's pack|phb} (siehe die \"Ausr\u00fcstungspakete\" in der {@book Player's Handbook|phb})"
+										],
+										[
+											"Truhe 7 (gestempelt mit dem Wappen von Baldur's Gate)",
+											"Ein {@item spyglass|phb} mit Perlmutt-Intarsien (1.000 gp), auf einem violetten Samtkissen ruhend"
+										],
+										[
+											"Truhe 8",
+											"F\u00fcnfzig Fl\u00e4schchen mit zakharanischem Parf\u00fcm (je 5 gp)"
+										],
+										[
+											"Truhe 9 (bemalt mit dem Bild eines verankerten Schiffes)",
+											"A {@item Quaal's Feather Token, Anchor} begraben unter 200 gp"
+										],
+										[
+											"Kiste 1",
+											"A {@item Exotic saddle|phb|griffon saddle} (60 gp)"
+										],
+										[
+											"Kiste 2 (gestempelt mit dem Wappen von Waterdeep)",
+											"Ein zerlegtes 300-Pfund-Holz {@item sled|phb} (20 gp), mit Aufbauanleitung in {@language Common|phb}"
+										],
+										[
+											"Kiste 3",
+											"Ein {@item lute|phb} (35 gp), ein {@item lyre|phb} (35 gp) und ein {@item viol|phb} (30 gp) in Stroh verpackt."
+										],
+										[
+											"Kiste 4",
+											"F\u00fcnf {@item heavy crossbow|phb|heavy crossbows} und 100 {@item crossbow bolt|phb|crossbow bolts} in Stroh verpackt"
+										],
+										[
+											"Urne aus Ton 1",
+											"Leere"
+										],
+										[
+											"Urne aus Ton 2",
+											"Leere"
+										],
+										[
+											"Tonurne 3 (bemalt mit Pegasi-Bildern)",
+											"Zehn 50 Fu\u00df lange Spulen aus {@item hempen rope (50 feet)|phb|hempen rope} (je 1 gp)"
+										],
+										[
+											"Tonurne 4 (bemalt mit Tintenfischbildern)",
+											"10 Gallonen dunkelviolette Tinte"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "19. Glass Statue",
+							"id": "04b",
+							"page": 17,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"In diesem dunklen, rechteckigen Raum steht eine zwei Meter hohe Glasstatue einer finsteren Frau mit Krakenarmen, die aus den dunklen Wellen des Ozeans auftauchen. Drei staubige Teppiche liegen auf dem Sockel der Statue."
+									],
+									"id": "084"
+								},
+								"Bei n\u00e4herer Betrachtung ist die Statue hohl und mit wirbelndem Wasser gef\u00fcllt. Die Statue hat AC 10, 10 Trefferpunkte und ist immun gegen Gift und psychischen Schaden. Wird die Statue zerbrochen, str\u00f6mt das Wasser aus und nimmt die Form eines {@creature water elemental} unter dem Befehl desjenigen an, der es freigesetzt hat. Das Elementar versteht nur {@language primordial|phb|Aquan} und befolgt keine Befehle, die es nicht verstehen kann. Es verschwindet 1 Stunde, nachdem es befreit wurde."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "20. Haunted Cage",
+							"id": "04c",
+							"page": 17,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Von der Decke dieses dunklen, rechteckigen Raums h\u00e4ngt an einer Kette ein alter Taucherk\u00e4fig, an dem sich Seepocken festgesetzt haben. Der K\u00e4fig ist acht Fu\u00df hoch, hat einen Durchmesser von f\u00fcnf Fu\u00df und baumelt zwei Fu\u00df \u00fcber dem Boden. Vor dem K\u00e4fig sind zerfledderte Teppiche ausgebreitet. Weitere Einrichtungsgegenst\u00e4nde sind kahle Regale und bemalte Tonurnen, die alle mit Staub und Spinnweben bedeckt sind."
+									],
+									"id": "085"
+								},
+								"Der gr\u00f6\u00dfte Teppich ist ein {@creature rug of smothering}. Er greift die erste Kreatur an, die ihn st\u00f6rt. Die Urnen enthalten die Sch\u00e4del und Knochen von sechs toten {@deity Umberlee|Faer\u00fbnian|SCAG} Anbetern.",
+								"Der K\u00e4fig wurde von der {@adventure Bitch Queen|ttp|3|Bitch Queen} (siehe \"{@adventure High Horn|ttp|3|High Horn},\") geborgen, wo er zur Tiefseebergung in haiverseuchten Gew\u00e4ssern verwendet wurde. Der Kapit\u00e4n benutzte ihn auch, um Gefangene zu foltern und zu ertr\u00e4nken. Wenn ein Lebewesen den K\u00e4fig ber\u00fchrt, materialisiert sich ein neutrales Wasservolk {@creature ghost} darin. Der Geist ist alles, was von Siburrath \u00fcbrig geblieben ist, einem m\u00e4nnlichen {@creature merfolk}, der vor \u00fcber einem Jahrhundert von dem {@adventure Bitch Queen's|ttp|3|Bitch Queen} Kapit\u00e4n gefangen genommen und gefoltert wurde. Siburraths Geist kann den K\u00e4fig nur verlassen, wenn er von jemandem Besitz ergreift, und er kann nicht ruhen, bevor sein Peiniger get\u00f6tet wurde.",
+								"Der Geist versucht, von dem ersten Charakter Besitz zu ergreifen, der sich ihm bis auf 5 Fu\u00df n\u00e4hert, mit der Absicht, den Wirt zu benutzen, um seinen Peiniger zu finden und zu t\u00f6ten. Wenn es dem Geist nicht gelingt, von jemandem Besitz zu ergreifen, versucht er, die Charaktere (in {@language primordial|phb|Aquan} oder {@language Common|phb}) zu \u00fcberreden, ihm zu helfen, Frieden zu finden. Das Gespenst sp\u00fcrt, dass sein Peiniger in der N\u00e4he ist, kann aber den genauen Ort nicht ausmachen. Wenn die Charaktere die Schneckenkreatur in {@area 24|051} t\u00f6ten, wird der Geist zur Ruhe gelegt, und die Charaktere erhalten EP, als h\u00e4tten sie den Geist im Kampf besiegt.",
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "04d",
+									"entries": [
+										"Wenn der Geist zur Ruhe gelegt wird, hinterl\u00e4sst er eine {@item Conch of Safe Rest|ttp|pearlescent conch shell}, die 2 Pfund wiegt. Die Muschel strahlt eine Aura von Beschw\u00f6rungsmagie aus, wenn ein {@spell detect magic}-Zauber oder ein \u00e4hnlicher Effekt gewirkt wird. Ein {@spell identify}-Zauber offenbart, dass die Muschel ein magischer Einweggegenstand mit folgender Eigenschaft ist: Eine Kreatur kann eine Aktion nutzen, um die Muschel wie ein Horn zu blasen, was einen Effekt erzeugt, der mit dem eines {@spell Leomund's tiny hut}-Zaubers identisch ist. Die Muschel verschwindet, sobald der Zauber wirkt. Der Effekt endet, wenn die Kreatur, die das Horn geblasen hat, den Wirkungsbereich des Zaubers verl\u00e4sst."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "21. Lounge",
+							"id": "04e",
+							"page": 17,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Zwei Doppelt\u00fcren f\u00fchren in diese Kammer, und ein schmales Fenster dazwischen blickt auf eine \u00fcberwucherte Gartenterrasse. Die Einrichtung ist im Laufe der Zeit in die Jahre gekommen. Die verputzten W\u00e4nde bl\u00e4ttern ab, und in der rissigen Decke haben tropische V\u00f6gel ihre Nester gebaut. Eine von Marmors\u00e4ulen flankierte Treppe f\u00fchrt zu einer erh\u00f6hten Steinplattform, die mit zerschlissenen Teppichen, Kissen und Wandteppichen geschm\u00fcckt ist. In dem Raum stehen drei Tonurnen, die mit Bildern von Haien und Kraken bemalt sind, und zwei verrottete Sofas."
+									],
+									"id": "086"
+								},
+								"Sechs {@creature Topi|ttp|Topis} verstecken sich in den Tonurnen, zwei pro Urne. Alle sechs kommen heraus und greifen an, wenn eine Urne gest\u00f6rt oder die Doppelt\u00fcr im Westen ge\u00f6ffnet wird."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "22. Caves of Worship",
+							"id": "04f",
+							"page": 17,
+							"entries": [
+								"Dieses Gebiet besteht aus drei nat\u00fcrlichen H\u00f6hlen, die durch Tunnel miteinander verbunden sind. Meeresnebel str\u00f6mt aus dem Norden heran, und das Rauschen der Wellen hallt \u00fcberall wider. In jeder H\u00f6hle befindet sich ein 5 Fu\u00df tiefes Wasserbecken. Harmlose {@creature crab||crabs} krabbeln \u00fcber den Boden, und an den W\u00e4nden kleben glitzernde Schnecken. Ein paar zerbrochene F\u00e4sser und Kisten liegen verstreut herum.",
+								"W\u00e4hrend sich die Charaktere durch die H\u00f6hlen bewegen, taucht ein hungriges {@creature xorn} aus einer Wand hinter ihnen auf und verlangt nach Nahrung (in {@language primordial|phb|Terran}). Wenn die Charaktere den {@creature xorn} nicht schnell mit Edelsteinen oder M\u00fcnzen im Wert von mindestens 50 gp f\u00fcttern, greift er sie an. Wenn der {@creature xorn} richtig gef\u00fcttert oder auf weniger als die H\u00e4lfte seiner Trefferpunkte reduziert wird, versinkt er wieder im Stein."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "23. Blow Holes",
+							"id": "050",
+							"page": 17,
+							"entries": [
+								"In unvorhersehbaren Abst\u00e4nden bricht Meerwasser durch vier L\u00f6cher im Boden dieses 80 Fu\u00df langen Tunnels aus und str\u00f6mt dann zur\u00fcck in den {@area 12|03b} und rei\u00dft die Kreaturen im Tunnel mit sich. Wirf einen {@dice d6} am Ende einer beliebigen Runde, in der sich eine oder mehrere Kreaturen im Tunnel befinden. Bei einem Wurf von 1 oder 2 str\u00f6mt Wasser aus den Blasl\u00f6chern und zieht sich schnell wieder zur\u00fcck, wodurch alle Kreaturen mittlerer oder kleiner Gr\u00f6\u00dfe im Tunnel gezwungen werden, einen Schutzwurf der St\u00e4rke DC 10 zu machen. Jede Kreatur, die den Schutzwurf nicht besteht, wird in das {@area 12|03b} gesp\u00fclt und erleidet 5 ({@damage 2d4}) Wuchtschaden, w\u00e4hrend sie in das n\u00e4chstgelegene Blasloch st\u00fcrzt. Wenn die Kreatur durch ein Seil gesichert ist, wird sie nur so weit weggeschwemmt, wie es das Seil zul\u00e4sst, erleidet aber trotzdem Schaden. Ein Charakter, der in {@area 12|03b} hineingesp\u00fclt wird, kann eine Geschicklichkeitsprobe (DC 15) ablegen, um auf einer Welle durch eines der Blasl\u00f6cher wieder nach oben zu reiten. Bei einem erfolgreichen Check erleidet der Charakter 5 ({@damage 2d4}) Wuchtschaden und landet {@condition prone} im Tunnel."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "24. Shrine of Umberlee",
+							"id": "051",
+							"page": 17,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"Aus dem Boden dieser feuchten, dunklen H\u00f6hle erhebt sich eine groteske, drei Meter hohe Statue eines Seeungeheuers mit glitzernden Augen und Tentakeln. In der N\u00e4he steht ein erh\u00f6htes steinernes Becken, dessen Sockel wie eine wogende Welle geschnitzt ist. An den W\u00e4nden stehen zwei zerbrochene Kisten, zwei Tonurnen und drei verrottete Holztruhen."
+									],
+									"id": "087"
+								},
+								"Die Statue stellt einen Kraken dar - eine der vielen Formen von {@deity Umberlee|Faer\u00fbnian|SCAG}. Charaktere, die sich der Statue n\u00e4hern, sehen eine Kreatur, die sich an der Decke hinter der Statue festh\u00e4lt:",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"An der Decke hinter der Statue h\u00e4ngt eine drei Meter lange Schnecke mit gl\u00e4nzender schwarzer Haut und Tentakeln, die aus ihrem Kopf herauswachsen. Sie \u00f6ffnet ihr Maul und enth\u00fcllt scharfe Z\u00e4hne."
+									],
+									"id": "088"
+								},
+								"Der {@creature giant slug|ttp} war einst der Kleriker von {@deity Umberlee|Faer\u00fbnian|SCAG}, f\u00fcr den das {@adventure Typhoon Palace|ttp|3|Dangwaru (The Typhoon Palace)} gebaut wurde. Die Meeresg\u00f6ttin verwandelte den Kleriker zur Strafe f\u00fcr ein unbekanntes Vergehen. Die Riesennacktschnecke kann sich nicht an ihr fr\u00fcheres Leben erinnern und hat die Statistiken eines {@creature carrion crawler}, mit den folgenden \u00c4nderungen:",
+								{
+									"type": "list",
+									"items": [
+										"Der {@creature giant slug|ttp} hat 66 Trefferpunkte.",
+										"Er hat eine Gehgeschwindigkeit und eine Klettergeschwindigkeit von 10 Fu\u00df. Er kann auf schwierige Oberfl\u00e4chen klettern, auch kopf\u00fcber an der Decke, ohne einen F\u00e4higkeitstest machen zu m\u00fcssen.",
+										"Er kann von Natur aus jeden der folgenden Zauber einmal pro Tag wirken und ben\u00f6tigt daf\u00fcr keine Komponenten: {@spell guiding bolt}, {@spell sanctuary}, und {@spell spiritual weapon}. Seine Zauberfertigkeit ist Weisheit (Zauberschutz DC 11; +3 auf Treffer mit Zauberangriffen).",
+										"Wenn die Nacktschnecke in dieser H\u00f6hle Schaden erleidet, kann sie ihre Reaktion nutzen, um eines der Tentakel der Krakenstatue zu animieren und es dazu zu bringen, einen Nahkampfangriff ({@hit +3|+3 to hit}) gegen eine Kreatur im Umkreis von 20 Fu\u00df um die Statue durchzuf\u00fchren, die die Nacktschnecke sehen kann. Der Tentakel f\u00fcgt bei einem Treffer 8 ({@damage 1d8 + 4}) Wuchtschaden zu.",
+										"Er hat Nachtsicht bis zu einer Reichweite von 60 Fu\u00df.",
+										"Es versteht {@language Abyssal|phb}, {@language primordial|phb|Aquan} und {@language Common|phb}, kann aber nicht sprechen.",
+										"Es hat eine Schwierigkeitsstufe von 3 (700 XP)."
+									]
+								},
+								"Au\u00dferdem gibt es zwei {@creature shadow||shadows}, die denen in {@area 11|038} \u00e4hneln. Sie tauchen hinter der Krakenstatue auf und greifen an, wenn die {@creature giant slug|ttp} verletzt wird. Wenn die Schnecke auf 11 Trefferpunkte oder weniger reduziert ist, wirkt sie {@spell sanctuary} auf sich selbst und versteckt sich hinter der Krakenstatue.",
+								{
+									"type": "entries",
+									"name": "Statue and Holy Symbol",
+									"id": "052",
+									"entries": [
+										"Die Statue wiegt 5.000 Pfund und ist mit schleimigem Schimmel bedeckt. Auf dem Boden hinter der Statue liegt ein heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} (25 gp), das eine kleine magische Eigenheit hat: Wenn es von jemandem getragen wird, der kein Anbeter von {@deity Umberlee|Faer\u00fbnian|SCAG} ist, erf\u00fcllt es seinen Besitzer mit einem Gef\u00fchl des Grauens. Dieses heilige Symbol geh\u00f6rte einst der Klerikerin von Umberlee, aber in ihrer jetzigen Form hat sie keine Verwendung daf\u00fcr. Siehe {@area handout D|06e|x} f\u00fcr eine Illustration des heiligen Symbols."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Stone Basin",
+									"id": "053",
+									"entries": [
+										"Der Kleriker von {@deity Umberlee|Faer\u00fbnian|SCAG} benutzte dieses Becken als Wahrsagerbecken. In den Boden eingelassene Rohre f\u00fcllen das Becken mit Meerwasser, bis es \u00fcberl\u00e4uft. Auf dem Grund des Beckens, unter 10 Gallonen Meerwasser, befinden sich zwei rostige Eisenschl\u00fcssel. Die Schl\u00fcssel schlie\u00dfen die Truhen in {@area 15|042} auf."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "054",
+									"entries": [
+										"Die zerschlagenen Kisten, die Tonurnen und zwei der verrottenden Truhen sind leer. Die dritte Truhe ist unverschlossen und enth\u00e4lt 120 Sp und 70 cp in einem verschimmelten Sack (Tribut an {@deity Umberlee|Faer\u00fbnian|SCAG}), zwei {@item potion of healing|dmg|potions of healing} in Flaschen aus ausgeh\u00f6hlten Seeigeln, eine {@item driftglobe} und eine Korallenkrone (250 gp)."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Development",
+									"id": "055",
+									"entries": [
+										"Durch die T\u00f6tung des {@creature giant slug|ttp} wird der Geist von Siburrath (siehe {@area 20|04c}) zur Ruhe gebracht."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Geonid Caves",
+					"id": "056",
+					"page": 18,
+					"entries": [
+						"Die Berge sind durchsetzt mit nat\u00fcrlichen H\u00f6hlen, die von {@creature geonid|ttp|geonids} \u00fcbernommen und erweitert wurden. Jede H\u00f6hle ist ein kleines Labyrinth aus verwinkelten Tunneln und Kammern, die von {@dice 2d6} {@creature geonid|ttp|geonids} bewohnt werden (siehe \"{@creature Geonid|ttp}\").",
+						"Jedes H\u00f6hlensystem ist mit den Knochen der {@creature geonid|ttp|geonids'} vergangenen Mahlzeiten \u00fcbers\u00e4t ({@creature bat|mm|bats}, {@creature rat|mm|rats}, und {@creature lizard|MM|lizards}, meistens). Es besteht eine {@chance 30} Chance, dass die {@creature geonid|ttp|geonids} ihre H\u00f6hle entweder mit einem {@creature flail snail|vgm|Flail Snail} (siehe {@adventure Tomb of Annihilation|ToA} oder {@book Volo's Guide to Monsters|vgm}) teilen, der nicht freundlich auf Eindringlinge reagiert, oder mit einem gefr\u00e4\u00dfigen {@creature xorn}, der Edelsteine f\u00fcr einen sicheren Durchgang verlangt.",
+						{
+							"type": "entries",
+							"name": "Treasure",
+							"id": "057",
+							"entries": [
+								"{@creature geonid|ttp|Geonids} verstecken ihre Sch\u00e4tze in den hinteren Bereichen ihrer H\u00f6hlen. Bei einer gr\u00fcndlichen Durchsuchung der tiefsten H\u00f6hle werden Schmuckst\u00fccke und Kunstgegenst\u00e4nde (geschnitzte Figuren, Talismane und \u00c4hnliches) im Wert von {@dice 2d10} gp sowie {@dice 1d4} ungeschliffene Edelsteine im Wert von je 10 gp gefunden. Jedes Mal, wenn die Charaktere einen solchen Hort finden, besteht eine kumulative {@chance 20} Chance, dass die Beute eine 6 Zoll gro\u00dfe Obsidianfigur eines gewundenen Schlangengottes (25 gp) enth\u00e4lt. Es kann nur ein solches Relikt gefunden werden. Ein {@creature geonid|ttp} hat sie dem {@adventure Shrine of Fangs|ttp|3|Shrine of Fangs} gestohlen, und ihre R\u00fcckgabe schlie\u00dft eine Quest ab (siehe \"{@adventure Shrine of Fangs|ttp|3|Shrine of Fangs}\")."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High Horn",
+					"id": "058",
+					"page": 18,
+					"entries": [
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"Auf einem Felsvorsprung an der Nordspitze der Insel steht in nordwestlicher Richtung eine drei\u00dfig Fu\u00df hohe Steinstatue eines schildkr\u00f6ten\u00e4hnlichen Humanoiden, der ein gro\u00dfes steinernes Horn an sein Maul h\u00e4lt. Unterhalb des Denkmals befindet sich ein mit Muscheln \u00fcbers\u00e4ter Sandstrand. Schwarze, moosbewachsene Felsen ragen aus dem Wasser wie von der Zeit abgenutzte Z\u00e4hne. Gleich hinter diesen \"Z\u00e4hnen\" liegen mehrere mit Seepocken bedeckte Schiffswracks."
+							],
+							"id": "089"
+						},
+						"Die Statue stellt eine l\u00e4ngst verstorbene Schildkr\u00f6te namens Gumdarr dar, die ein Schiff an den Felsen zerschellen h\u00f6rte und sich auf den Felsen stellte, um einen besseren Blick zu erhaschen. Er blies ein {@item horn|phb}, um andere Schildkr\u00f6ten an den Strand zu locken, und gemeinsam fischten sie die \u00dcberlebenden des Schiffbruchs heraus.",
+						"In den letzten hundert Jahren sind hier sechs Schiffe abgest\u00fcrzt, darunter auch das Schiff, das die Klerikerin von {@deity Umberlee|Faer\u00fbnian|SCAG} und ihre Mannschaft auf die Insel brachte. Bei Flut sind drei der Wracks (die {@adventure Bitch Queen|ttp|3|Bitch Queen}, die {@adventure Carcerius|ttp|3|Carcerius} und die {@adventure Sea Mare|ttp|3|Sea Mare}) \u00fcberflutet, w\u00e4hrend die anderen (die {@adventure Dawn Avenger|ttp|3|Dawn Avenger}, die {@adventure Dirty Dastard|ttp|3|Dirty Dastard} und die {@adventure Virago|ttp|3|Virago}) zumindest teilweise \u00fcber der Wasserlinie sichtbar sind. Bei Ebbe sind alle sechs Wracks bis zu einem gewissen Grad sichtbar. Jedes Schiffswrack wird im Folgenden beschrieben.",
+						"Ein {@creature two-headed plesiosaurus|ttp} durchstreift bei Flut das Wasser um die Wracks. Die Kreatur zieht sich bei Ebbe in die n\u00f6rdliche Meerenge zur\u00fcck. Es hat die Statistiken eines {@creature plesiosaurus}, mit diesen \u00c4nderungen:",
+						{
+							"type": "list",
+							"items": [
+								"Der {@creature two-headed plesiosaurus|ttp} hat 100 Trefferpunkte.",
+								"Er ist im Vorteil bei Weisheitspr\u00fcfungen ({@skill Perception}) und bei Rettungsw\u00fcrfen gegen {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} oder Schl\u00e4ge {@condition unconscious}.",
+								"Er kann seine Aktion nutzen, um zwei Bissattacken auszuf\u00fchren, eine mit jedem Kopf.",
+								"Es hat eine Schwierigkeitsstufe von 4 (1.100 XP)."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Bitch Queen",
+							"id": "059",
+							"page": 19,
+							"entries": [
+								"Die \"Bitch Queen\" war ein schwimmender Tempel f\u00fcr die G\u00f6ttin {@deity Umberlee|Faer\u00fbnian|SCAG}. Als das Schiff vor fast einem Jahrhundert w\u00e4hrend eines Sturms kenterte und auf die Felsen geschleudert wurde, sa\u00dfen viele der Besatzungsmitglieder in den \u00fcberfluteten Kaj\u00fcten fest. Die Schildkr\u00f6ten, die sie retteten und an Land zogen, waren von dem menschlichen Kapit\u00e4n der Zickenk\u00f6nigin angetan, der {@deity Umberlee|Faer\u00fbnian|SCAG} in einem schmeichelhafteren Licht darstellte, als sie es verdiente. Um der Kapit\u00e4nin und ihrer Gottheit zu gefallen, k\u00fcmmerten sich die Schildkr\u00f6ten um die \u00dcberlebenden und bauten f\u00fcr sie einen Palast am Berghang \u00fcber dem Meer.",
+								"Von der K\u00f6nigin der H\u00fcndinnen ist nur noch der Bugspriet und die h\u00f6lzerne Galionsfigur \u00fcbrig, die eine schreiende Frau mit langen Seetangstr\u00e4hnen als Haaren und um sie herum brechenden Wellen darstellt. Ein Teil der Achterburg des Schiffes liegt in der N\u00e4he, auf der Seite und inmitten der Felsen. Bei Flut ist das Wrack vollst\u00e4ndig versunken; bei Ebbe sind der Bugspriet und die H\u00e4lfte der Galionsfigur sowie eine kleine, von der Sonne ausgebleichte Ecke der hinteren Burg sichtbar.",
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "05a",
+									"entries": [
+										"An einem St\u00fcck der zersplitterten Reling, die noch am Bugspriet befestigt ist, h\u00e4ngt ein silbernes, angeschlagenes heiliges Symbol von {@deity Umberlee|Faer\u00fbnian|SCAG} (25 gp). Ein Charakter muss unter Wasser tauchen, um es zu finden, aber es glitzert im Licht und ist leicht zu erkennen. Siehe {@area handout D|06e|x} f\u00fcr eine Illustration des heiligen Symbols."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Carcerius",
+							"id": "05b",
+							"page": 19,
+							"entries": [
+								"Die Karavelle Carcerius transportierte Sklaven in der Umgebung von Chult, als sie vor f\u00fcnfundsiebzig Jahren in einen Sturm geriet. Die Besatzung wurde vom Deck gefegt, w\u00e4hrend die Sklaven unten angekettet blieben. Als das Schiff schlie\u00dflich gegen die Felsen prallte und sank, ertranken alle Sklaven.",
+								"Drei Teile des zerbrochenen Rumpfes bilden ein Dreieck, und der gr\u00f6\u00dfte Teil der Karosserie ist im Sand eingegraben. Bei Flut ist das Wrack vollst\u00e4ndig \u00fcberflutet, bei Ebbe sind zwei Teile halb freigelegt. Pl\u00fcnderer haben das Wrack ges\u00e4ubert, aber man kann immer noch rostige Fesseln finden, die neben Skelettresten an verrottete Balken geschraubt sind."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dawn Avenger",
+							"id": "05c",
+							"page": 19,
+							"entries": [
+								"Der Kapit\u00e4n der Dawn Avenger war ein {@race aasimar|dmg} Kleriker von {@deity Lathander|Faer\u00fbnian|SCAG}. Vor etwas mehr als einem Jahr kam sie mit einem Auftrag zur Piratenjagd an die S\u00fcdk\u00fcste von Chult und lief stattdessen mit ihrem Schiff auf Grund. Schuld daran waren dicke Rauchwolken von den Vulkanen im Norden, die die Sicht behinderten. Sieben \u00dcberlebende, darunter der Kapit\u00e4n, schafften es bis zur Schnauze, blieben aber nicht lange dort. Mit geborgenen Ruderbooten \u00fcberquerten sie die n\u00f6rdliche Meerenge, landeten auf dem Festland und verschwanden in der Wildnis von Chult. Niemand auf der Insel ist den \u00dcberlebenden begegnet, so dass niemand wei\u00df, was aus ihnen geworden ist.",
+								"Die Dawn Avenger brach in zwei Teile. Der hintere Teil wurde von der Str\u00f6mung auf das Meer hinausgezogen, der vordere Teil liegt zwischen den Felsen und ist mit dem gebrochenen Mast nach S\u00fcden geneigt. Bei Ebbe ist das Wrack vollst\u00e4ndig sichtbar, bei Flut taucht die Steuerbordh\u00e4lfte ab. Die Schildkr\u00f6ten haben es sauber gepfl\u00fcckt und nichts Wertvolles zur\u00fcckgelassen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dirty Dastard",
+							"id": "05d",
+							"page": 19,
+							"entries": [
+								"Dieses Piratenschiff ist vor neun Jahren gesunken. Es liegt kopf\u00fcber auf einem Felsen, die Masten und das Oberdeck sind abgeschert, der freiliegende Bauch ist mit Seepocken und Schnecken verkrustet. Bei Ebbe liegt der Rumpf vollst\u00e4ndig \u00fcber dem Wasser. Ein Riss an der Steuerbordseite bildet eine geeignete T\u00fcr. Bei Flut ist alles bis auf den Kiel des Schiffes unter Wasser.",
+								"Die Dirty Dastard wurde kurz nach ihrem Untergang von Schildkr\u00f6ten gepl\u00fcndert und ist seit kurzem das Versteck einer {@creature sea hag} namens Myldryd Urchinspine. Die abscheuliche Hexe lauert im dunklen Inneren des Schiffes und ist bereit, jeden zu verschlingen, der uneingeladen hereinkommt. Der sandige Boden ihres Verstecks ist mit halb aufgegessenem rohem Fisch, Seetang und zerbrochenen Muscheln bedeckt. Unter dem Sand und Ger\u00fcmpel sind zwei {@creature giant crab||giant crabs} versteckt, die den Befehlen der Hexe gehorchen.",
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "05e",
+									"entries": [
+										"Die Hexe hat eine alte, unverschlossene Seekiste mitgebracht, in der sich ihre Besitzt\u00fcmer befinden. Die Truhe liegt unter Sand und Felsen begraben. Charaktere, die mindestens 15 Minuten damit verbringen, das Versteck der Hexe zu durchsuchen, k\u00f6nnen die verrottende Truhe mit einem erfolgreichen DC 15 Weisheitstest ({@skill Perception}) freilegen. Die Pr\u00fcfung wird mit Nachteil durchgef\u00fchrt, wenn sich das Wrack unter Wasser befindet.",
+										"Myldryds Truhe enth\u00e4lt drei Schmuckst\u00fccke (zuf\u00e4llig bestimmt durch W\u00fcrfeln auf der {@item Trinket|phb|Trinket}-Tabelle in {@book chapter 5 of the Player's Handbook|phb|5}), 200 cp, einen Kamm aus Walknochen (5 sp) und einen ausgestopften Papagei mit einem Karneol-Edelstein (50 gp) darin. Ein Geheimfach im Deckel der Truhe kann mit einer erfolgreichen DC 16 Weisheitspr\u00fcfung ({@skill Perception}) gefunden und ge\u00f6ffnet werden; es enth\u00e4lt einen {@item medallion of thoughts|DMG}."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sea Mare",
+							"id": "05f",
+							"page": 19,
+							"entries": [
+								"Die sea mare war ein Handelsschiff, das vor vierundzwanzig Jahren in die H\u00e4nde von Piraten fiel. Nachdem die Piraten die Schiffsbesatzung get\u00f6tet und den Laderaum gepl\u00fcndert hatten, versuchten sie, das Schiff in Brand zu setzen, bevor sie es aufgaben. Ein Regensturm l\u00f6schte die Flammen, bevor sie gro\u00dfen Schaden anrichten konnten, aber starke Winde trieben das Wrack in den Untergang. Von allen Schiffswracks, die bei High Horn gefunden wurden, liegt die Sea Mare am weitesten von der K\u00fcste entfernt, eingebettet in einem Loch und an einem Korallenriff. Sie ist gr\u00f6\u00dftenteils intakt, liegt aber bei Flut vollst\u00e4ndig unter Wasser. Selbst bei Ebbe sind nur die ramponierten \u00dcberreste des Kr\u00e4hennestes \u00fcber dem Wasser zu sehen.",
+								"Schildkr\u00f6ten haben mehrmals vergeblich versucht, das Wrack zu pl\u00fcndern. Mit ihrem letzten Atemzug verpf\u00e4ndete die Kapit\u00e4nin des Schiffes ihre Seele an Orcus und wurde in eine {@creature wight} verwandelt, die im Laderaum des Schiffes lauert. Obwohl sie keine Waffen tr\u00e4gt, bewacht sie die Reste der Ladung (siehe \"{@area Treasure|060|x}\" unten).",
+								"Im \u00fcberfluteten Laderaum finden die Charaktere inmitten von Skeletten, die von Fischen zerpfl\u00fcckt wurden, einen luftdicht verschlossenen Steinsarkophag, der das Abbild eines D\u00e4mons mit gefalteten Fl\u00fcgeln tr\u00e4gt. Der Sarkophag wiegt 2.000 Pfund, und sein Deckel ist mit einem {@spell arcane lock}-Zauber belegt. Das \u00d6ffnen des Sarkophags erfordert einen {@spell knock}-Zauber oder eine erfolgreiche DC 28 St\u00e4rke ({@skill Athletics})-\u00dcberpr\u00fcfung. Der Sarkophag enth\u00e4lt die mumifizierte Leiche eines Erzmagiers, der starb, nachdem er es nicht geschafft hatte, ein Lich zu werden. Der Leichnam ist in ein schwarzes Leichentuch geh\u00fcllt. Zu ihren F\u00fc\u00dfen liegt ein verstopftes bronzenes Schriftrollenrohr und daneben ein Stab, der aus einem einzelnen Zweig aus blasswei\u00dfem Holz (siehe \"{@area Treasure|060|x}\" unten) gefertigt wurde.",
+								"Die Schriftrollenr\u00f6hre enth\u00e4lt ein trockenes Blatt Pergament mit der folgenden Botschaft in {@language Abyssal|phb}: \"Orcus, fordere deinen Preis! Die Geheimnisse des Lichdom bleiben dein, aber meine Taten und Magie werden weiterleben, ebenso wie meine Seele im Abyss.\"",
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"id": "060",
+									"entries": [
+										"Die Spitze des Stabs des Erzmagiers hat die Form einer D\u00e4monenklaue. Der Stab ist nicht magisch, aber er strahlt eine falsche Aura der Beschw\u00f6rungsmagie aus, wenn er mit einem {@spell detect magic}-Zauber oder \u00e4hnlicher Magie untersucht wird. Das Wirken von {@spell dispel magic} auf den Stab entfernt die falsche Aura. Der Stab ist 25 Gp wert und kann als {@item arcane focus|phb} verwendet werden."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Virago",
+							"id": "061",
+							"page": 20,
+							"entries": [
+								"Die Virago war ein Handelsschiff aus Zazesspur. Vor etwa drei\u00dfig Jahren geriet es in die F\u00e4nge von Piraten und wurde um die Halbinsel Chultan gejagt. Die Virago w\u00e4re entkommen, wenn sie nicht in eine Aschewolke gefahren w\u00e4re und Feuer gefangen h\u00e4tte. Das brennende Schiff trieb tagelang, bevor die Str\u00f6mung es nach {@adventure High Horn|ttp|3|High Horn} trug. Dort sank es. Der verbrannte Maststumpf ist der einzige Teil des Schiffes, der bei Flut sichtbar ist; bei Ebbe liegt das verbrannte Oberdeck der Virago \u00fcber Wasser; das verrottete Unterdeck und der Kiel sind tief im Sand vergraben. Von diesem Wrack kann nichts von Wert geborgen werden."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mud Pits of Florrb",
+					"id": "062",
+					"page": 20,
+					"entries": [
+						"Im Herzen des Dschungels der Insel befinden sich drei Schlammbecken, die durch geothermische Schlote erhitzt werden. Jedes Becken befindet sich in Sichtweite der beiden anderen und ist 1,5 m tief, 50 m breit und ungef\u00e4hr kreisrund. (Die auf {@area map 1|001|x} abgebildeten Becken sind nicht ma\u00dfstabsgetreu.) Ein {@spell detect magic}-Zauber offenbart eine schwache Aura der Abjurationsmagie um jedes Becken. Die Schildkr\u00f6ten der Insel baden und entspannen gerne stundenlang in den Schlammpools und vertreiben sich die Zeit mit Singen und Br\u00fcllen. Ein gewundener Fu\u00dfpfad verbindet die Schlammgruben mit der Schildkr\u00f6tenfestung von {@adventure Ahoyhoy|ttp|3|Ahoyhoy}.",
+						"Der \"Herr\" der Schlammgruben ist Florrb, ein {@creature mud mephit} mit {@dice 1d10} tempor\u00e4ren Trefferpunkten (die er durch das Schwimmen in den Schlammgruben erhalten hat). Der Mephit und die Schildkr\u00f6ten teilen eine gemeinsame Sprache ({@language primordial|phb|Aquan}). Durch Worte und Gesten fordert Florrb die Besucher auf, im Schlamm zu baden und sich zu vergn\u00fcgen. Er verlangt keine Bezahlung, besteht aber darauf, sich denen anzuschlie\u00dfen, die baden. Florrb ist gerne in seinem nat\u00fcrlichen Element, aber je l\u00e4nger der Mephit im Schlamm bleibt, desto m\u00fcrrischer wird er. Eine erfolgreiche DC 10-Weisheitspr\u00fcfung (Einsicht) offenbart, dass der Schlammmephit darauf zu warten scheint, dass etwas passiert. Florrb will nicht, dass andere wissen, was wirklich vor sich geht und offenbart den Grund seiner Angst nur, wenn er magisch dazu gezwungen wird.",
+						{
+							"type": "entries",
+							"name": "Florrb's Problem",
+							"id": "063",
+							"page": 20,
+							"entries": [
+								"Als sich die Schlammgruben vor hundert Jahren bildeten, wurden Florrb und zwei andere {@creature mud mephit|mm|mud mephits} von der Elementarebene der Erde in sie transportiert. Die beiden anderen Mephits haben einen Weg gefunden, in ihre Heimatdimension zur\u00fcckzukehren, aber Florrb wurde zur\u00fcckgelassen. Er will nach Hause zur\u00fcckkehren, wei\u00df aber nicht, wie. Die anderen Mephits schwammen in den Schlammgruben, als sie verschwanden. In den Jahren seither sind weitere Kreaturen beim Baden in den Schlammgruben verschwunden, aber Florrb hat noch nicht herausgefunden, wie man sie aktivieren kann. Mit einer erfolgreichen DC 15 Charisma ({@skill Persuasion})-Pr\u00fcfung kann ein Charakter Florrb dabei helfen, sich daran zu erinnern, dass jeder der anderen Mephits w\u00e4hrend eines Vulkanausbruchs verschwand, als Asche und Glut vom Himmel fielen.",
+								"Ein {@spell legend lore}-Zauber offenbart, dass alle drei Schlammgruben Portale zur Elementarebene der Erde sind und dass ein spezieller \"Torschl\u00fcssel\" ben\u00f6tigt wird, um sie von dieser Seite zu \u00f6ffnen. Der Torschl\u00fcssel ist jede offene Flamme. (Die Flamme und die Schlammgrube symbolisieren das Zusammentreffen der vier Elemente: Erde und Wasser in der Schlammgrube, Feuer und Luft in der Flamme). Immer wenn eine offene Flamme im Umkreis von 10 Fu\u00df um eine Schlammgrube brennt, wird die Grube zu einem Portal, das mit einer \u00e4hnlichen, aber gr\u00f6\u00dferen Schlammgrube in der Elementarebene der Erde verbunden ist. Zu solchen Zeiten taucht jede Kreatur, die vollst\u00e4ndig in eine Grube eintaucht, in der anderen wieder auf. Eine offene Flamme ist nicht erforderlich, um von einer der Schlammgruben auf der Elementarebene der Erde zu der entsprechenden Schlammgrube auf der Insel zu reisen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mud Pit Effect",
+							"id": "064",
+							"page": 20,
+							"entries": [
+								"Jede Kreatur, die mindestens 1 Stunde lang in einer Schlammgrube badet, erh\u00e4lt {@dice 1d10} tempor\u00e4re Trefferpunkte. Schlamm, der aus einer Grube entfernt wird, verliert diese Eigenschaft."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shrine of Fangs",
+					"id": "065",
+					"page": 20,
+					"entries": [
+						"Am Fu\u00dfe eines Berges befindet sich ein uralter Yuan-ti-Schrein, der Merrshaulk gewidmet ist. {@creature Yuan-ti Abomination|MM|Yuan-ti Abominations} brachten hier einst Opfer dar, in der Hoffnung, ihre schlummernde Gottheit zu wecken oder ein Flackern g\u00f6ttlicher Erkenntnis zu erhalten.",
+						"In der N\u00e4he des Fu\u00dfes des Berges ist ein riesiger Schlangenkopf eingemei\u00dfelt, dessen gegabelte Zunge eine zehn Fu\u00df breite und zwanzig Fu\u00df hohe Steinrampe bildet. Vom Dach des Schlangenmauls h\u00e4ngen steinerne Rei\u00dfz\u00e4hne herab, die ein Vordach \u00fcber einem dunklen, drei Meter breiten Tunnel bilden, der in den Berg f\u00fchrt.",
+						"Der Tunnel am hinteren Ende des Schlangenkopfes ist 200 Fu\u00df lang und schl\u00e4ngelt sich sanft in den Berg hinunter, wo er vor einer unbeleuchteten ovalen Kammer endet. Charaktere, die eine Lichtquelle haben oder im Dunkeln sehen k\u00f6nnen, k\u00f6nnen die Merkmale des Raums erkennen:",
+						"Der Tunnel endet in einem gew\u00f6lbten ovalen Raum, der drei\u00dfig Fu\u00df tief, zwanzig Fu\u00df breit und zwanzig Fu\u00df hoch ist. Die W\u00e4nde sind mit Fresken bemalt, die Schlangenschw\u00e4rme darstellen. Am anderen Ende des Raumes steht ein rissiger, schalenf\u00f6rmiger Altar, der drei Fu\u00df hoch ist und einen Durchmesser von sechs Fu\u00df hat und mit getrocknetem Blut beschmiert ist. In den Boden der Schale ist eine leere Nische eingelassen, und von der Decke \u00fcber dem Altar h\u00e4ngt ein blutverschmierter Eisenhaken am Ende einer rostigen Kette.",
+						"Eine Untersuchung der Wandfresken zeigt, dass die Augenh\u00f6hlen der Schlangen einst wertvolle Edelsteine enthielten. Die im Berg lebenden Xorn haben alle Edelsteine herausgerissen und gefressen und leere, facettierte Vertiefungen zur\u00fcckgelassen.",
+						"Die Yuan-ti spie\u00dften ihre Opfer gerne auf den Haken \u00fcber dem Altar auf. Das Blut der Opfer sammelte sich in der Steinschale des Altars, und die {@filter yuan-ti|bestiary|tag=yuan-ti} wuschen sich in dem Blut, w\u00e4hrend sie Merrshaulks Namen riefen, in der Hoffnung, den Gott aus seinem Schlummer zu wecken.",
+						{
+							"type": "entries",
+							"name": "Talking Snakes",
+							"id": "066",
+							"page": 21,
+							"entries": [
+								"Hinter dem Altar lauern zwei Erweckte {@creature poisonous snake||poisonous snakes} namens Ssura und Y'zleth (ausgesprochen SOO-rah und EEZ-leth). Sie schl\u00fcpfen aus ihrem Versteck und stellen sich jedem entgegen, der sich dem Altar bis auf 5 Fu\u00df n\u00e4hert. Jede erweckte Schlange ist b\u00fcndnisfrei, hat einen Intelligenzwert von 10 und kann sprechen {@language Common|phb}. Die Schlangen behaupten, dass sie n\u00fctzliche Informationen haben, die sie weitergeben k\u00f6nnen, wenn die Charaktere bereit sind, eine Aufgabe f\u00fcr sie zu erf\u00fcllen.",
+								"Vor sechs Monaten drang eine Kreatur mit einem blockartigen Panzer (ein {@creature geonid|ttp}) in den Schrein ein und stahl eine Ikone von Merrshaulk. Die Ikone ist eine aus Obsidian geschnitzte Schlangenfigur. Ssura und Y'zleth wollen, dass sie gefunden und in die Nische im Sockel des Altars zur\u00fcckgebracht wird. Der Dieb und seine Artgenossen leben in H\u00f6hlen, die die Berge durchziehen (siehe \"{@area Geonid Caves,|056|x}\"). Die Schlangen warnen die Charaktere, dass sie m\u00f6glicherweise mehrere H\u00f6hlen durchsuchen m\u00fcssen, um die Figur zu finden.",
+								"Als Diener von Merrshaulk sind Ssura und Y'zleth gegen andere Yuan-ti-Gottheiten eingestellt. Insbesondere versuchen sie, die Machenschaften der Yuan-ti zu vereiteln, die Dendar, der Nachtschlange, geweiht sind. Wenn die Charaktere die Quest abschlie\u00dfen, geben Ssura und Y'zleth als Belohnung die folgenden Informationen preis:",
+								{
+									"type": "list",
+									"items": [
+										"Ein verschlossenes Tor unter den Gipfeln der Flamme f\u00fchrt in das Reich eines apokalyptischen Gottes, der als Dendar die Nachtschlange bekannt ist. Wenn die Nachtschlange auftaucht, wird sie die Welt verschlingen. Ihre {@filter yuan-ti|bestiary|tag=yuan-ti} Anh\u00e4nger sind auf der Suche nach einer Reliquie namens Schwarze Opalkrone, von der es hei\u00dft, dass sie die Macht hat, das Tor zu Dendars Reich zu \u00f6ffnen.",
+										"Lange Zeit wachte ein geheimnisvoller Gott namens Ubtao in Chult und baute Labyrinthe, um zu verhindern, dass Dendars Anbeter sie finden und freilassen. Inzwischen hat sich Ubtao aus der Welt zur\u00fcckgezogen und niemanden zur\u00fcckgelassen, der Dendars Freilassung verhindern k\u00f6nnte.",
+										"{@creature Ras Nsi|ToA}, einer von Ubtaos gefallenen Champions, hat sich mit den {@filter yuan-ti|bestiary|tag=yuan-ti} verb\u00fcndet und ist einer von ihnen geworden. {@creature Ras Nsi|ToA} und seine Gef\u00e4hrten {@filter yuan-ti|bestiary|tag=yuan-ti} haben einen Tempel unter der Ruinenstadt {@adventure Omu|ToA|3|Omu}, westlich der Flammengipfel, errichtet.",
+										"Einer der {@creature Ras Nsi|ToA|Ras Nsi's} gr\u00f6\u00dften Feinde ist ein {@creature Guardian Naga} namens Saja N'baza. Der Naga wohnt in einem gefallenen K\u00f6nigreich namens {@adventure Orolunga|ToA|2|Orolunga}. Weder Ssura noch Y'zleth wissen, wie man dorthin kommt."
+									]
+								},
+								"Ssura und Y'zleth haben alles, was sie wissen, von {@filter yuan-ti|bestiary|tag=yuan-ti} Besuchern des Schreins erfahren. Sie k\u00f6nnen auch andere Fakten wissen, wenn du das m\u00f6chtest. Die erweckten Schlangen verlassen den Schrein nicht freiwillig und greifen jeden an, der versucht, sie zu fangen oder zu t\u00f6ten."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "New Monsters",
+			"id": "06f",
+			"page": 21,
+			"entries": [
+				"Zu den vielen Bewohnern der Schnauze von Omgar geh\u00f6ren die folgenden Kreaturen",
+				{
+					"type": "list",
+					"columns": 4,
+					"items": [
+						"{@creature decapus|ttp|Decapus}",
+						"{@creature geonid|ttp|Geonid}",
+						"{@creature giant slug|ttp|Giant Slug}",
+						"{@creature topi|ttp|Topi}",
+						"{@creature tortle|mtf|Tortle}",
+						"{@creature tortle druid|mtf|Tortle Druid}",
+						"{@creature two-headed plesiosaurus|ttp|Two-Headed Plesiosaurus}"
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Handouts",
+			"id": "067",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Handout A: Eeyal",
+					"id": "068",
+					"entries": [
+						"mein name ist eeyal. ich bin von der schnauze omgars bis {@adventure fort beluarian|ToA|2|Fort Beluarian} gereist und kenne die gefahren von chult gut. ich habe auf meinen reisen viele erstaunliche sehensw\u00fcrdigkeiten gesehen und wundersame orte besucht. ich trage meine eigene ausr\u00fcstung, habe alle notwendigen werkzeuge zum \u00fcberleben und \u00fcberlasse nichts dem zufall. ich glaube nicht daran, unn\u00f6tige risiken einzugehen. mein honorar betr\u00e4gt 5 goldst\u00fccke pro tag. ich akzeptiere auch eine nicht r\u00fcckzahlbare anzahlung von 40 goldst\u00fccken f\u00fcr einen tag. ich empfehle ihnen dringend, eine erkundungscharta bei {@adventure fort beluarian|ToA|2|Fort Beluarian} zu erwerben, bevor sie sich in den dschungel begeben. f\u00fcnfzig goldst\u00fccke sind ein kleiner preis, um sich die {@adventure flaming fist|ToA|1|Flaming Fist} vom hals zu halten.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Eeyal.jpg"
+							},
+							"width": 699,
+							"height": 700
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Handout B: Kwilgok",
+					"id": "069",
+					"entries": [
+						"guten tag, fremde! ich bin kwilgok - fr\u00fcher ein dinosaurier-racer, jetzt der beste f\u00fchrer in {@adventure port nyanzaru|ToA|1}. ich bin den {@adventure river soshenstar|ToA|2|River Soshenstar} hinauf zum {@adventure aldani basin|ToA|2|Aldani Basin} und zur\u00fcck gereist. ich habe so viele ecken von chult besucht und kann euch sagen: es gibt kein land, das sch\u00f6ner und gef\u00e4hrlicher ist. das ist mein {@creature ankylosaurus}, mein t\u00f6dlicher schatz. ein toller preis, nicht wahr? er folgt mir \u00fcberall hin. wir kosten 6 goldst\u00fccke pro tag, mit zahlung f\u00fcr 30 tage im voraus. sehr teuer, ja, aber das ist es wert, das verspreche ich dir. m\u00f6ge die sonne und der mond immer \u00fcber dich wachen.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Kwilgok.jpg"
+							},
+							"width": 683,
+							"height": 700
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Handout C: Mudgraw",
+					"id": "06a",
+					"entries": [
+						"Der gro\u00dfe Ubtao hat euch zu mir gef\u00fchrt, wie ich sehe. Ich bin Mudgraw, eine Legende in dieser Gegend. Was mir an Jugend fehlt, mache ich durch Erfahrung wett. Ich habe viele Expeditionen in das b\u00f6se Herz von Chult gef\u00fchrt und Dinge gesehen, die euch in eurem Schneckenhaus erzittern lassen w\u00fcrden.",
+						"Ein t\u00f6dliches Labyrinth wartet auf uns, ihr Tapferen. Mit Ubtaos Segen werde ich euch sicher hindurchf\u00fchren. Das ist es, was ich am besten kann! Ich reise mit leichtem Gep\u00e4ck und trage meine Heimat auf dem R\u00fccken.",
+						"Ich berechne 5 Goldst\u00fccke pro Tag, aber es gibt Umst\u00e4nde, unter denen ich auf meine Geb\u00fchr verzichten kann. Manchmal ist die Reise durch das Labyrinth des Lebens schon Belohnung genug!",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/Mudgraw.jpg"
+							},
+							"width": 631,
+							"height": 700
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Handout D: Holy Symbol of Umberlee",
+					"id": "06e",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TTP/HolySymbolOfUmberlee.webp"
+							},
+							"width": 770,
+							"height": 739
+						}
+					]
+				}
+			]
+		}
+	]
+}

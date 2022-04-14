@@ -1,0 +1,871 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"MM": "SDW",
+				"VGM": "SDW",
+				"MTF": "SDW",
+				"SKT": "SDW",
+				"ToA": "SDW",
+				"TftYP": "SDW",
+				"DIP": "SDW",
+				"GoS": "SDW"
+			}
+		}
+	},
+	"monster": [
+		{
+			"name": "Expert",
+			"source": "SDW",
+			"level": 9,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 12,
+			"int": 14,
+			"wis": 10,
+			"cha": 14,
+			"save": {
+				"dex": "+8"
+			},
+			"skill": {
+				"acrobatics": "+12",
+				"performance": "+6",
+				"persuasion": "+6",
+				"sleight of hand": "+8",
+				"stealth": "+12"
+			},
+			"passive": 10,
+			"languages": [
+				"Common",
+				"plus one of your choice"
+			],
+			"trait": [
+				{
+					"name": "Helpful",
+					"entries": [
+						"Der Experte kann die Aktion Hilfe als Bonusaktion ausf\u00fchren, und die Kreatur, die die Hilfe erh\u00e4lt, erh\u00e4lt einen {@dice 1d6} Bonus auf den {@dice d20} Wurf. Wenn es sich bei diesem Wurf um einen Angriffswurf handelt, kann die Kreatur darauf verzichten, den Bonus zu addieren, und wenn der Angriff trifft, kann die Kreatur den Bonus zum Schadenswurf des Angriffs gegen ein Ziel addieren."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"Wenn der Experte nicht {@condition incapacitated} ist und einem Effekt ausgesetzt ist, der es ihm erlaubt, einen Rettungswurf f\u00fcr Geschicklichkeit zu machen, um nur halben Schaden zu erleiden, erleidet er keinen Schaden, wenn der Rettungswurf gelingt, und nur halben Schaden, wenn er nicht gelingt."
+					]
+				},
+				{
+					"name": "Tools",
+					"entries": [
+						"Der Experte hat Diebeswerkzeug und ein Musikinstrument."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Extra Attack",
+					"entries": [
+						"Der Experte kann zweimal statt einmal angreifen, wenn er in seinem Zug die Angriffsaktion ausf\u00fchrt."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 8} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d6 + 4}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}6 ({@damage 1d4 + 4}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 8} bis Treffer, Reichweite 80/320 Fu\u00df, ein Ziel. {@h}7 ({@damage 1d6 + 4}) Stich-Schaden."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"THW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Giant Shark Skeleton",
+			"source": "SDW",
+			"size": [
+				"H"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "11d12 + 55"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 50
+			},
+			"str": 23,
+			"dex": 11,
+			"con": 21,
+			"int": 1,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"Das Riesenhaiskelett hat Vorteil bei Nahkampf-Angriffsw\u00fcrfen gegen jede Kreatur, die nicht alle ihre Trefferpunkte hat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}22 ({@damage 3d10 + 6}) Stich-Schaden."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Lhammaruntosz",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "SDW",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 212,
+				"formula": "17d12 + 102"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 23,
+			"int": 16,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"dex": "+5",
+				"con": "+11",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+12",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 22,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Lhammaruntosz' F\u00e4higkeit zur Zauberei ist Charisma (Zauberschutz {@dc 17}). Sie kann von Natur aus die folgenden Zauber wirken und ben\u00f6tigt daf\u00fcr keine materiellen Komponenten:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell create food and water}",
+							"{@spell detect thoughts}",
+							"{@spell fog cloud}",
+							"{@spell speak with animals}"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Lhammaruntosz ist ein Zauberwirker der Stufe 8. Ihre Zauberfertigkeit ist Charisma (Zauberschutz {@dc 17}; {@hit 9} um mit Zauberangriffen zu treffen). Sie hat die folgenden Zauberspr\u00fcche f\u00fcr Zauberer vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell mending}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell charm person}",
+								"{@spell detect magic}",
+								"{@spell expeditious retreat}",
+								"{@spell sleep}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell darkness}",
+								"{@spell invisibility}",
+								"{@spell suggestion}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell protection from energy}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell stoneskin}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Lhammaruntosz kann Luft und Wasser atmen."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Wenn Lhammaruntosz ein Rettungswurf misslingt, kann sie stattdessen einen Erfolg w\u00e4hlen."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Lhammaruntosz erh\u00e4lt zu Beginn ihres Zuges 5 Trefferpunkte zur\u00fcck."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lhammaruntosz kann ihre furchterregende Pr\u00e4senz einsetzen. Sie f\u00fchrt dann drei Angriffe aus: einen mit ihrem Biss und zwei mit ihren Klauen."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} Treffer, Reichweite 10 ft., ein Ziel. {@h}18 ({@damage 2d10 + 7}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 2d6 + 7}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} bis zum Treffer, Reichweite 15 Fu\u00df, ein Ziel. {@h}16 ({@damage 2d8 + 7}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Jede Kreatur von Lhammaruntosz' Wahl, die sich in einem Umkreis von 120 Fu\u00df von ihr befindet und sie wahrnimmt, muss einen {@dc 17} Weisheitswurf bestehen oder wird 1 Minute lang {@condition frightened}. Eine Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg f\u00fcr sie selbst endet. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt f\u00fcr sie endet, ist die Kreatur f\u00fcr die n\u00e4chsten 24 Stunden immun gegen Lhammaruntosz' Schreckliche Gegenwart."
+					]
+				},
+				{
+					"name": "Breath Weapons {@recharge 5}",
+					"entries": [
+						"Lhammaruntosz benutzt eine der folgenden Atemwaffen."
+					]
+				},
+				{
+					"name": "Lightning Breath",
+					"entries": [
+						"Lhammaruntosz st\u00f6\u00dft Blitze in einer 90 Fu\u00df langen und 5 Fu\u00df breiten Linie aus. Jede Kreatur in dieser Linie muss einen {@dc 19} Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutzwurf 66 ({@damage 12d10}) Blitzschaden, bei einem erfolgreichen Schutzwurf halb so viel."
+					]
+				},
+				{
+					"name": "Repulsion Breath",
+					"entries": [
+						"Lhammaruntosz verstr\u00f6mt Absto\u00dfungsenergie in einem 30 Fu\u00df gro\u00dfen Kegel. Jede Kreatur in diesem Bereich muss einen {@dc 19} St\u00e4rkewurf bestehen. Bei einem misslungenen Schutzwurf wird die Kreatur 60 Fu\u00df weit vom Drachen weggesto\u00dfen."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Lhammaruntosz verwandelt sich auf magische Weise in einen Humanoiden oder eine Bestie, deren Herausforderungswert nicht h\u00f6her ist als ihr eigener, oder zur\u00fcck in ihre wahre Gestalt. Sie kehrt in ihre wahre Gestalt zur\u00fcck, wenn sie stirbt. Jegliche Ausr\u00fcstung, die sie tr\u00e4gt, wird von der neuen Form absorbiert oder getragen (nach Lhammaruntosz' Wahl).",
+						"In einer neuen Form beh\u00e4lt Lhammaruntosz seine Ausrichtung, Trefferpunkte, Trefferw\u00fcrfel, die F\u00e4higkeit zu sprechen, F\u00e4higkeiten, legend\u00e4re Resistenzen, H\u00f6hlenaktionen und die Werte f\u00fcr Intelligenz, Weisheit und Charisma sowie diese Aktion. Ihre Statistiken und F\u00e4higkeiten werden ansonsten durch die der neuen Form ersetzt, mit Ausnahme der Klassenmerkmale und legend\u00e4ren Aktionen dieser Form."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"Lhammaruntosz macht einen Wisdom (Perception) Check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"Lhammaruntosz macht einen Schwanzangriff."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"Lhammaruntosz schl\u00e4gt mit den Fl\u00fcgeln. Jede Kreatur im Umkreis von 10 Fu\u00df um Lhammaruntosz muss einen {@dc 20} Schutzwurf auf Geschicklichkeit bestehen oder erleidet 14 ({@damage 2d6 + 7}) Wuchtschaden und wird {@condition prone} umgeworfen. Lhammaruntosz kann dann bis zur H\u00e4lfte ihrer Fluggeschwindigkeit fliegen."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Bronze Dragon",
+				"source": "MM"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"deafened",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"unconscious"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Spellcaster (Healer)",
+			"source": "SDW",
+			"level": 9,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "10d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 15,
+			"wis": 18,
+			"cha": 13,
+			"save": {
+				"wis": "+8"
+			},
+			"skill": {
+				"arcana": "+6",
+				"investigation": "+6",
+				"religion": "+6"
+			},
+			"passive": 14,
+			"languages": [
+				"Common",
+				"plus one of your choice"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Healer)",
+					"headerEntries": [
+						"Die Zauberei-F\u00e4higkeit des Zaubernden ist Weisheit (Zauberschutz {@dc 16}, {@hit 8} um mit Zauberangriffen zu treffen). Der Zaubernde hat folgende Klerikerzauber vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell resistance}",
+								"{@spell sacred flame}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell bless}",
+								"{@spell cure wounds}",
+								"{@spell shield of faith}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell aid}",
+								"{@spell lesser restoration}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell protection from energy}",
+								"{@spell revivify}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell banishment}",
+								"{@spell death ward}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell greater restoration}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Potent Cantrip",
+					"entries": [
+						"Der Zaubernde kann seinen Zauberf\u00e4higkeitsmodifikator zum Schaden addieren, den er mit einem beliebigen Zaubertrick verursacht."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel. {@h}3 ({@damage 1d6}) Wuchtschaden, oder 4 ({@damage 1d8}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Spellcaster (Mage)",
+			"source": "SDW",
+			"level": 9,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "10d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 18,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+8",
+				"investigation": "+8",
+				"religion": "+8"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"plus one of your choice"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Mage)",
+					"headerEntries": [
+						"Die Zauberf\u00e4higkeit des Zaubernden ist Intelligenz (Zauberschutz {@dc 16}, {@hit 8} um mit Zauberangriffen zu treffen). Der Zaubernde hat folgende Zauberspr\u00fcche vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell shield}",
+								"{@spell sleep}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell flaming sphere}",
+								"{@spell invisibility}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell fireball}",
+								"{@spell fly}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell polymorph}",
+								"{@spell wall of fire}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell cone of cold}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Potent Cantrip",
+					"entries": [
+						"Der Zaubernde kann seinen Zauberf\u00e4higkeitsmodifikator zum Schaden addieren, den er mit einem beliebigen Zaubertrick verursacht."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel. {@h}3 ({@damage 1d6}) Wuchtschaden, oder 4 ({@damage 1d8}) Wuchtschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"unconscious"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Warrior",
+			"source": "SDW",
+			"level": 9,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|PHB|plate}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"plus one of your choice"
+			],
+			"trait": [
+				{
+					"name": "Battle Readiness",
+					"entries": [
+						"Der Krieger hat einen Vorteil bei Initiativw\u00fcrfen."
+					]
+				},
+				{
+					"name": "Improved Critical",
+					"entries": [
+						"Die Angriffsw\u00fcrfe des Kriegers erzielen einen kritischen Treffer bei einem Wurf von 19 oder 20 auf dem {@dice d20}."
+					]
+				},
+				{
+					"name": "Indomitable (1/Day)",
+					"entries": [
+						"Der Krieger kann einen misslungenen Rettungswurf wiederholen, muss aber das neue Ergebnis verwenden."
+					]
+				},
+				{
+					"name": "Martial Role",
+					"entries": [
+						"Der Krieger hat eine der folgenden Eigenschaften deiner Wahl:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"name": "Attacker",
+									"type": "item",
+									"entries": [
+										"Der Krieger erh\u00e4lt einen Bonus von +2 auf Angriffsw\u00fcrfe."
+									]
+								},
+								{
+									"name": "Defender",
+									"type": "item",
+									"entries": [
+										"Der Krieger erh\u00e4lt die unten stehende Schutzreaktion."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Second Wind (Recharges after a Short or Long Rest)",
+					"entries": [
+						"Der Krieger kann eine Bonusaktion in seinem Zug nutzen, um Trefferpunkte in H\u00f6he von {@dice 1d10} + seiner Stufe wiederzuerlangen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Extra Attack",
+					"entries": [
+						"Der Krieger kann zweimal statt einmal angreifen, wenn er in seinem Zug die Angriffsaktion ausf\u00fchrt."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} bis zum Treffer, Reichweite 5 Fu\u00df, ein Ziel. {@h}8 ({@damage 1d8 + 4}) Hiebschaden, oder 9 ({@damage 1d10 + 4}) Hiebschaden, wenn mit zwei H\u00e4nden eingesetzt."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} bis zum Treffer, Reichweite 150/600 Fu\u00df, ein Ziel. {@h}6 ({@damage 1d8 + 2}) Stich-Schaden."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protection (Defender Only)",
+					"entries": [
+						"Wenn eine Kreatur, die der Krieger sehen kann, ein anderes Ziel als den Krieger angreift, das sich im Umkreis von 5 Fu\u00df um den Krieger befindet, kann der Krieger seine Reaktion nutzen, um einen Nachteil auf den Angriffswurf zu legen. Der Krieger muss einen Schild tragen."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true
+		}
+	]
+}

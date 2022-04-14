@@ -1,0 +1,617 @@
+{
+	"spell": [
+		{
+			"name": "Ego Whip",
+			"source": "UAFighterRogueWizard",
+			"page": 7,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Du peitschst den Geist einer Kreatur, die du in Reichweite siehst, und erf\u00fcllst sie mit Verzweiflung. Das Ziel muss einen Intelligenz-Sparwurf bestehen oder erleidet einen Nachteil bei Angriffsw\u00fcrfen, F\u00e4higkeitspr\u00fcfungen und Rettungsw\u00fcrfen und kann keine Zauber wirken. Am Ende jeder seiner Runden kann das Ziel einen weiteren Intelligenz-Sparwurf machen. Bei einem Erfolg endet der Zauber auf dem Ziel."
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Id Insinuation",
+			"source": "UAFighterRogueWizard",
+			"page": 7,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Du entl\u00e4sst eine Flut widerspr\u00fcchlicher W\u00fcnsche in den Geist einer Kreatur, die du in Reichweite siehst, und beeintr\u00e4chtigst damit ihre Entscheidungsf\u00e4higkeit. Das Ziel muss einen Weisheitswurf bestehen oder wird handlungsunf\u00e4hig. Am Ende jeder seiner Runden erleidet es {@damage 1d12} psychischen Schaden und kann dann einen weiteren Weisheitswurf machen. Bei einem Erfolg endet der Zauber f\u00fcr das Ziel."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Intellect Fortress",
+			"source": "UAFighterRogueWizard",
+			"page": 7,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Du erschaffst eine schwach schimmernde Barriere aus sch\u00fctzenden psychischen Kr\u00e4ften um dich herum und hast f\u00fcr die Dauer dieser Barriere Vorteil bei allen Rettungsw\u00fcrfen.",
+				"Wenn eine andere Kreatur, die du im Umkreis von 30 Fu\u00df sehen kannst, einen Rettungswurf misslingt, kannst du deine Reaktion benutzen, um ihr zu erlauben, den Rettungswurf zu wiederholen. Sie muss den neuen Wurf benutzen."
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mental Barrier",
+			"source": "UAFighterRogueWizard",
+			"page": 7,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are forced to make an Intelligence, a Wisdom, or a Charisma saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Bis zum Beginn deiner n\u00e4chsten Runde hast du einen Vorteil bei Schutzw\u00fcrfen auf Intelligenz, Weisheit und Charisma und bist resistent gegen psychischen Schaden."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mind Sliver",
+			"source": "UAFighterRogueWizard",
+			"page": 7,
+			"level": 0,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Du jagst einen verwirrenden Strom psychischer Energie in den Geist einer Kreatur, die du in Reichweite siehst. Das Ziel muss einen Intelligenz-Sparwurf machen. Wenn der Sparwurf nicht gelingt, erleidet das Ziel {@damage 1d6} psychischen Schaden und muss beim ersten Mal, wenn es vor dem Ende deines n\u00e4chsten Zuges einen Sparwurf macht, einen {@dice d4} w\u00fcrfeln und die gew\u00fcrfelte Zahl vom Sparwurf abziehen.",
+				"Der Schaden dieses Zaubers erh\u00f6ht sich um {@dice 1d6}, wenn du bestimmte Stufen erreichst: 5. Stufe ({@damage 2d6}), 11. Stufe ({@damage 3d6}) und 17. Stufe ({@damage 4d6})."
+			],
+			"scalingLevelDice": {
+				"label": "psychic damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mind Thrust",
+			"source": "UAFighterRogueWizard",
+			"page": 7,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Du schleuderst eine Lanze der psionischen St\u00f6rung in den Geist einer Kreatur, die du in Reichweite siehst. Das Ziel muss einen Intelligenz-Erhaltungswurf machen. Bei einem misslungenen Rettungswurf erleidet das Ziel {@damage 3d6} psychischen Schaden und kann in seinem n\u00e4chsten Zug seine Aktion nur auf {@action Dash} oder {@action Disengage} verwenden. Bei einem erfolgreichen Rettungswurf erleidet das Ziel nur halb so viel Schaden und der Zauber schr\u00e4nkt seine Aktionsm\u00f6glichkeiten nicht ein."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"type": "entries",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 3 oder h\u00f6her wirkst, kannst du eine zus\u00e4tzliche Kreatur f\u00fcr jeden Slot der Stufe 2 anvisieren. Die Kreaturen m\u00fcssen sich im Umkreis von 30 Fu\u00df befinden, wenn du sie anvisierst."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psionic Blast",
+			"source": "UAFighterRogueWizard",
+			"page": 8,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du entl\u00e4sst eine zerst\u00f6rerische Welle geistiger Kraft in einem Umkreis von 30 Fu\u00df. Jede Kreatur in diesem Bereich muss einen Rettungswurf machen. Bei einem misslungenen Rettungswurf erleidet das Ziel {@damage 5d8} Kraftschaden, wird 20 Fu\u00df direkt von dir weggesto\u00dfen und wird umgeworfen {@condition prone}. Bei einem erfolgreichen Rettungswurf erleidet das Ziel nur halb so viel Schaden und wird weder gesto\u00dfen noch umgeworfen."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"type": "entries",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 4 oder h\u00f6her wirkst, erh\u00f6ht sich der Schaden um {@dice 1d8} f\u00fcr jede Slotstufe \u00fcber der Stufe 3."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psychic Crush",
+			"source": "UAFighterRogueWizard",
+			"page": 8,
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Du \u00fcberlastest den Geist einer Kreatur, die du in Reichweite siehst, und f\u00fcllst ihre Psyche mit widerspr\u00fcchlichen Emotionen. Das Ziel muss einen Intelligenz-Erhaltungswurf machen. Bei einem misslungenen Schutzwurf erleidet das Ziel {@damage 12d6} psychischen Schaden und ist 1 Minute lang {@condition stunned}. Bei einem erfolgreichen Schutzwurf erleidet das Ziel halb so viel Schaden und wird nicht bet\u00e4ubt.",
+				"Das bet\u00e4ubte Ziel kann am Ende jeder seiner Runden einen Intelligenz-Erhaltungswurf machen. Bei einem erfolgreichen Rettungswurf endet der Zauber f\u00fcr das Ziel."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thought Shield",
+			"source": "UAFighterRogueWizard",
+			"page": 8,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"F\u00fcr die Dauer der Ber\u00fchrung kann der Geist des Ziels nicht gelesen oder entdeckt werden, Kreaturen k\u00f6nnen nicht telepathisch mit dem Ziel kommunizieren, es sei denn, das Ziel erlaubt es, und das Ziel hat einen Vorteil bei Rettungsw\u00fcrfen gegen jeden Effekt, der feststellen w\u00fcrde, ob es die Wahrheit sagt."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}

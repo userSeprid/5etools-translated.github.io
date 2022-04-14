@@ -1,0 +1,671 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		}
+	},
+	"monster": [
+		{
+			"name": "Brain in a Jar",
+			"source": "LLK",
+			"page": 38,
+			"otherSources": [
+				{
+					"source": "IMR"
+				}
+			],
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 1,
+			"dex": 1,
+			"con": 15,
+			"int": 19,
+			"wis": 10,
+			"cha": 15,
+			"save": {
+				"int": "+7",
+				"cha": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"Die angeborene Zauberfertigkeit des Gehirns im Glas ist Intelligenz (Zauberschutz {@dc 15}). Es kann von Natur aus die folgenden Zauber wirken und ben\u00f6tigt daf\u00fcr keine Komponenten:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell mage hand}",
+						"{@spell zone of truth}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell charm person}",
+							"{@spell command}",
+							"{@spell hold person}"
+						],
+						"1e": [
+							"{@spell compulsion}",
+							"{@spell hold monster}",
+							"{@spell sleep} (cast at 3rd level)",
+							"{@spell Tasha's hideous laughter}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Detect Sentience",
+					"entries": [
+						"Das Gehirn im Glas kann die Anwesenheit und den Standort jeder Kreatur im Umkreis von 300 Fu\u00df wahrnehmen, die eine Intelligenz von 3 oder h\u00f6her hat, unabh\u00e4ngig von dazwischenliegenden Barrieren, es sei denn, die Kreatur ist durch einen {@spell mind blank} Zauber gesch\u00fctzt."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Das Gehirn im Glas hat einen Vorteil bei Schutzw\u00fcrfen gegen Zauberspr\u00fcche und andere magische Effekte."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mind Blast {@recharge 5}",
+					"entries": [
+						"Das Gehirn in einem Glas strahlt auf magische Weise psychische Energie in einem Kegel von 60 Fu\u00df aus. Jede Kreatur in diesem Bereich muss einen {@dc 15} Intelligenz-Sicherungswurf bestehen oder 13 ({@damage 2d8 + 4}) psychischen Schaden erleiden und 1 Minute lang {@condition stunned} sein. Eine Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg f\u00fcr sie selbst endet."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated",
+				"paralyzed",
+				"prone",
+				"unconscious"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Clockwork Kraken",
+			"source": "LLK",
+			"page": 38,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 142,
+				"formula": "15d10 + 60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 18,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Die Uhrwerkkrake hat einen Vorteil bei Rettungsw\u00fcrfen gegen Zauber und andere magische Effekte."
+					]
+				},
+				{
+					"name": "Independent Tentacles",
+					"entries": [
+						"Die Uhrwerkskrake hat acht Tentakel, von denen jeder wie eine Kreatur mittlerer Gr\u00f6\u00dfe behandelt wird. Sie bewegt sich unabh\u00e4ngig, wenn das Konstrukt am Zug ist, und hat eine Fluggeschwindigkeit von 40 Fu\u00df. Die Sinne der Uhrwerkkrake funktionieren sowohl \u00fcber ihre Tentakel als auch \u00fcber ihren Hauptk\u00f6rper. Jedes Tentakel kann unabh\u00e4ngig angegriffen werden, wobei der Schaden, der den Tentakeln zugef\u00fcgt wird, auf die Trefferpunkte der Uhrwerkkrake angerechnet wird. Ein Tentakel wird zerst\u00f6rt, wenn es mehr als 20 Schaden erleidet.",
+						"Wenn das Konstrukt auf drei oder weniger Tentakel reduziert wird, werden seine Angriffe entsprechend verringert. Eine Uhrwerkskrake kann am Ende einer langen Pause alle zerst\u00f6rten Tentakel nachwachsen lassen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Die Uhrwerkskrake f\u00fchrt vier Tentakel-Schlagangriffe aus."
+					]
+				},
+				{
+					"name": "Tentacle Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} Treffer, Reichweite 5 ft., ein Ziel. {@h}12 ({@damage 2d6 + 5}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Garret Levistusson",
+			"isNpc": true,
+			"source": "LLK",
+			"page": 41,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 17,
+			"skill": {
+				"deception": "+7",
+				"investigation": "+4",
+				"performance": "+5",
+				"persuasion": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"Thieves' cant"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Garret ist ein Zauberwirker der Stufe 2. Seine Zauberf\u00e4higkeit ist Charisma (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er hat die folgenden Bardenzauber vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell vicious mockery}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell charm person}",
+								"{@spell detect magic}",
+								"{@spell disguise self}",
+								"{@spell identify}",
+								"{@spell Tasha's hideous laughter}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Garret tr\u00e4gt eine {@item Ring of Warmth} (in seinen Statistiken enthalten) und schwingt eine {@item Gambler's Blade longsword|LLK}."
+					]
+				},
+				{
+					"name": "Bardic Inspiration (3/Day)",
+					"entries": [
+						"Als Bonusaktion kann Garret einer ausgew\u00e4hlten Kreatur (au\u00dfer ihm) einen {@dice d6} Inspirationsw\u00fcrfel geben. Die gew\u00e4hlte Kreatur muss sich innerhalb von 60 Fu\u00df um Garret befinden und ihn h\u00f6ren k\u00f6nnen. Einmal innerhalb der n\u00e4chsten 10 Minuten kann die Kreatur den W\u00fcrfel werfen und die gew\u00fcrfelte Zahl zu einer F\u00e4higkeits\u00fcberpr\u00fcfung, einem Angriffswurf oder einem Rettungswurf addieren, den sie macht. Die Kreatur kann den Inspirationsw\u00fcrfel verwenden, nachdem der Wurf durchgef\u00fchrt wurde, aber bevor der DM sagt, ob er erfolgreich war oder nicht. Sobald der Inspirationsw\u00fcrfel gew\u00fcrfelt wurde, ist er verloren. Eine Kreatur kann immer nur einen Inspirationsw\u00fcrfel haben."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"In jedem seiner Spielz\u00fcge kann Garret eine Bonusaktion nutzen, um die Aktionen \"Hetzen\", \"Ausweichen\" oder \"Verstecken\" auszuf\u00fchren."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Garret f\u00fcgt 7 ({@dice 2d6}) zus\u00e4tzlichen Schaden zu, wenn er ein Ziel mit einem Waffenangriff trifft und einen Vorteil beim Angriffswurf hat, oder wenn sich das Ziel innerhalb von 5 Fu\u00df um einen Verb\u00fcndeten von Garret befindet, der nicht {@condition incapacitated} ist, und Garret keinen Nachteil beim Angriffswurf hat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"TC"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated",
+				"prone"
+			]
+		},
+		{
+			"name": "Gloine Nathair-Nathair",
+			"isNpc": true,
+			"source": "IMR",
+			"page": 23,
+			"_copy": {
+				"name": "Medusa",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the medusa",
+						"with": "Gloine",
+						"flags": "i"
+					}
+				}
+			},
+			"type": "undead",
+			"immune": [
+				"poison",
+				"necrotic"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"Wenn eine Kreatur, die die Augen der Medusa sehen kann, ihren Zug innerhalb von 30 Fu\u00df um die Medusa beginnt, kann die Medusa sie zwingen, einen {@dc 14} Konstitutionsrettungswurf zu machen, wenn die Medusa nicht {@condition incapacitated} ist und die Kreatur sehen kann. Wenn der Rettungswurf um 5 oder mehr misslingt, ist die Kreatur sofort {@condition petrified}. Andernfalls beginnt eine Kreatur, die den Schutzwurf nicht besteht, sich in Glas zu verwandeln und ist {@condition restrained}. Die {@condition restrained} Kreatur muss den Rettungswurf am Ende ihrer n\u00e4chsten Runde wiederholen, wobei sie bei einem Fehlschlag zu {@condition petrified} wird oder der Effekt bei einem Erfolg endet. Die Versteinerung h\u00e4lt an, bis die Kreatur durch den {@spell greater restoration}-Zauber oder andere Magie befreit wird.",
+						"Wenn eine Kreatur nicht \u00fcberrascht wird, kann sie ihre Augen abwenden, um den Rettungswurf zu Beginn ihres Zuges zu vermeiden. Wenn die Kreatur dies tut, kann sie die Medusa bis zum Beginn ihres n\u00e4chsten Zuges nicht mehr sehen, dann kann sie ihre Augen wieder abwenden. Wenn die Kreatur die Medusa in der Zwischenzeit ansieht, muss sie den Schutzwurf sofort wiederholen.",
+						"Wenn sich die Medusa in einem Umkreis von 30 Fu\u00df auf einer polierten Oberfl\u00e4che spiegelt und sich in einem Bereich mit hellem Licht befindet, wird die Medusa aufgrund ihres Fluchs von ihrem eigenen Blick beeinflusst."
+					]
+				}
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			]
+		},
+		{
+			"name": "Mary Greymalkin",
+			"isNpc": true,
+			"source": "LLK",
+			"page": 41,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item Bracers of Defense}",
+						"{@item Ring of Protection}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 14,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"arcana": "+4",
+				"medicine": "+4",
+				"nature": "+4",
+				"religion": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Elvish",
+				"Infernal",
+				"Sylvan"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Maria ist eine Zauberin der Stufe 5. Ihre Zauberf\u00e4higkeit ist Charisma (Zauberschutz {@dc 12}, {@hit 4} f\u00fcr Treffer mit Zauberangriffen). Sie erh\u00e4lt ihre verbrauchten Zauberslots zur\u00fcck, wenn sie eine kurze oder lange Pause beendet. Sie kennt die folgenden Hexenmeister-Zauberspr\u00fcche:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast}",
+								"{@spell mage hand}"
+							]
+						},
+						"3": {
+							"lower": 1,
+							"slots": 3,
+							"spells": [
+								"{@spell darkness}",
+								"{@spell hex}",
+								"{@spell hypnotic pattern}",
+								"{@spell misty step}",
+								"{@spell phantasmal force}",
+								"{@spell unseen servant}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Maria tr\u00e4gt {@item Bracers of Defense} und eine {@item Ring of Protection}, und hat eine {@item Deck of Several Things|LLK}"
+					]
+				},
+				{
+					"name": "Fey Presence (Recharges after a Short Rest)",
+					"entries": [
+						"Mary kann jede Kreatur im Umkreis von 10 Fu\u00df dazu bringen, einen {@dc 12} Weisheitswurf zu bestehen oder bis zum Ende ihres n\u00e4chsten Zuges (nach Marys Wahl) von ihr {@condition charmed} oder {@condition frightened} angegriffen zu werden."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Maria hat einen Vorteil bei Rettungsw\u00fcrfen gegen das Wesen {@condition charmed}, und Magie kann sie nicht in Schlaf versetzen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 2} Treffer, Reichweite 5 ft., ein Ziel. {@h}3 ({@damage 1d6}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CE",
+				"E",
+				"I",
+				"S"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Ooze-Folk",
+			"source": "LLK",
+			"page": 46,
+			"size": [
+				"M"
+			],
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "2d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 3,
+			"con": 20,
+			"int": 1,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 8,
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"prone"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Transparent",
+					"entries": [
+						"Selbst wenn ein Ooze-Volk in Sichtweite ist, braucht es eine {@dc 12} Weisheitspr\u00fcfung ({@skill Perception}), um ein Ooze-Volk zu entdecken, das sich weder bewegt noch angegriffen hat. Eine Kreatur, die versucht, den Raum des Ooze-Folks zu betreten, w\u00e4hrend sie sich des Ooze-Folks nicht bewusst ist, wird vom Ooze-Folk \u00fcberrascht."
+					]
+				},
+				{
+					"name": "Fragile Bones",
+					"entries": [
+						"F\u00fcr jeweils 5 erlittene Schadenspunkte wird die Gehgeschwindigkeit des Echsenvolks um 5 Fu\u00df verringert."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Das Ooze-Volk f\u00fchrt eine Glas-Langschwert-Attacke und eine Pseudopod-Attacke durch."
+					]
+				},
+				{
+					"name": "Glass Longsword",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., eine Kreatur. {@h}6 ({@damage 1d8 + 2}) Hiebschaden. Wenn bei einem Angriffswurf mit einem gl\u00e4sernen Langschwert eine 1 gew\u00fcrfelt wird, zerspringt es und kann nicht mehr benutzt werden."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., eine Kreatur. {@h}5 ({@damage 1d6 + 2}) S\u00e4ureschaden."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}

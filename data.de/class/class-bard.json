@@ -1,0 +1,3531 @@
+{
+	"_meta": {
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		}
+	},
+	"class": [
+		{
+			"name": "Bard",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				14,
+				15,
+				15,
+				16,
+				18,
+				19,
+				19,
+				20,
+				22,
+				22,
+				22
+			],
+			"additionalSpells": [
+				{
+					"name": "Magical Secrets",
+					"known": {
+						"10": [
+							{
+								"choose": "level=0;1;2;3;4;5"
+							},
+							{
+								"choose": "level=0;1;2;3;4;5"
+							}
+						],
+						"14": [
+							{
+								"choose": "level=0;1;2;3;4;5;6;7"
+							},
+							{
+								"choose": "level=0;1;2;3;4;5;6;7"
+							}
+						],
+						"18": [
+							{
+								"choose": ""
+							},
+							{
+								"choose": ""
+							}
+						]
+					}
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@item hand crossbow|phb|hand crossbows}",
+					"{@item longsword|phb|longswords}",
+					"{@item rapier|phb|rapiers}",
+					"{@item shortsword|phb|shortswords}"
+				],
+				"tools": [
+					"three {@item musical instrument|PHB|musical instruments} of your choice"
+				],
+				"skills": [
+					{
+						"any": 3
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
+					"(a) a {@item lute|phb} or (b) any other {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
+					"{@item Leather armor|phb}, and a {@item dagger|phb}"
+				],
+				"goldAlternative": "{@dice 5d4 \u00d7 10|5d4 \u00d7 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"rapier|phb"
+						],
+						"b": [
+							"longsword|phb"
+						],
+						"c": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"diplomat's pack|phb"
+						],
+						"b": [
+							"entertainer's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"lute|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "instrumentMusical"
+							}
+						]
+					},
+					{
+						"_": [
+							"Leather armor|phb",
+							"dagger|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"athletics",
+									"acrobatics",
+									"sleight of hand",
+									"stealth",
+									"arcana",
+									"history",
+									"investigation",
+									"nature",
+									"religion",
+									"animal handling",
+									"insight",
+									"medicine",
+									"perception",
+									"survival",
+									"deception",
+									"intimidation",
+									"performance",
+									"persuasion"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"one {@item musical instrument|PHB} of your choice"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=bard}",
+						"{@filter Spells Known|spells|class=bard}"
+					],
+					"rows": [
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							4,
+							14
+						],
+						[
+							4,
+							15
+						],
+						[
+							4,
+							15
+						],
+						[
+							4,
+							16
+						],
+						[
+							4,
+							18
+						],
+						[
+							4,
+							19
+						],
+						[
+							4,
+							19
+						],
+						[
+							4,
+							20
+						],
+						[
+							4,
+							22
+						],
+						[
+							4,
+							22
+						],
+						[
+							4,
+							22
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=bard}",
+						"{@filter 2nd|spells|level=2|class=bard}",
+						"{@filter 3rd|spells|level=3|class=bard}",
+						"{@filter 4th|spells|level=4|class=bard}",
+						"{@filter 5th|spells|level=5|class=bard}",
+						"{@filter 6th|spells|level=6|class=bard}",
+						"{@filter 7th|spells|level=7|class=bard}",
+						"{@filter 8th|spells|level=8|class=bard}",
+						"{@filter 9th|spells|level=9|class=bard}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Bardic Inspiration|Bard||1",
+				"Magical Inspiration|Bard||1|UAClassFeatureVariants",
+				"Spellcasting|Bard||1",
+				"Spell Versatility|Bard||1|UAClassFeatureVariants",
+				"Jack of All Trades|Bard||2",
+				"Song of Rest (d6)|Bard||2",
+				"Magical Inspiration|Bard||2|TCE",
+				{
+					"classFeature": "Bard College|Bard||3",
+					"gainSubclassFeature": true
+				},
+				"Expertise|Bard||3",
+				"Ability Score Improvement|Bard||4",
+				"Proficiency Versatility|Bard||4|UAClassFeatureVariants",
+				"Bardic Versatility|Bard||4|TCE",
+				"Bardic Inspiration (d8)|Bard||5",
+				"Font of Inspiration|Bard||5",
+				"Countercharm|Bard||6",
+				{
+					"classFeature": "Bard College feature|Bard||6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Bard||8",
+				"Proficiency Versatility|Bard||8|UAClassFeatureVariants",
+				"Song of Rest (d8)|Bard||9",
+				"Bardic Inspiration (d10)|Bard||10",
+				"Expertise|Bard||10",
+				"Magical Secrets|Bard||10",
+				"Ability Score Improvement|Bard||12",
+				"Proficiency Versatility|Bard||12|UAClassFeatureVariants",
+				"Song of Rest (d10)|Bard||13",
+				"Magical Secrets|Bard||14",
+				{
+					"classFeature": "Bard College feature|Bard||14",
+					"gainSubclassFeature": true
+				},
+				"Bardic Inspiration (d12)|Bard||15",
+				"Ability Score Improvement|Bard||16",
+				"Proficiency Versatility|Bard||16|UAClassFeatureVariants",
+				"Song of Rest (d12)|Bard||17",
+				"Magical Secrets|Bard||18",
+				"Ability Score Improvement|Bard||19",
+				"Proficiency Versatility|Bard||19|UAClassFeatureVariants",
+				"Superior Inspiration|Bard||20"
+			],
+			"subclassTitle": "Bard College",
+			"fluff": [
+				{
+					"name": "Bard",
+					"type": "section",
+					"entries": [
+						"W\u00e4hrend sie summend mit ihren Fingern \u00fcber ein uraltes Monument in einer l\u00e4ngst vergessenen Ruine streicht, sprudelt die Halbelfin in derben Lederklamotten Wissen in ihren Geist, hervorgerufen durch die Magie ihres Liedes - Wissen \u00fcber das Volk, das das Monument erbaut hat, und die mythische Sage, die es darstellt.",
+						"Ein strenger menschlicher Krieger schl\u00e4gt sein Schwert rhythmisch gegen seinen Schuppenpanzer, gibt das Tempo f\u00fcr seinen Kriegsgesang vor und fordert seine Gef\u00e4hrten zu Mut und Heldentum auf. Die Magie seines Gesangs st\u00e4rkt und ermutigt sie.",
+						"Lachend stimmt eine Gnomin ihre Cister und legt ihre subtile Magie \u00fcber die versammelten Adligen, um sicherzustellen, dass die Worte ihrer Gef\u00e4hrten gut ankommen werden.",
+						"Ob Gelehrter, Skalde oder Schurke, ein Barde webt Magie durch Worte und Musik, um Verb\u00fcndete zu inspirieren, Feinde zu demoralisieren, den Geist zu manipulieren, Illusionen zu schaffen und sogar Wunden zu heilen.",
+						{
+							"type": "entries",
+							"name": "Music and Magic",
+							"entries": [
+								"In den Welten von D&amp;D sind Worte und Musik nicht nur Schwingungen der Luft, sondern Vokalisationen mit einer ganz eigenen Macht. Der Barde ist ein Meister des Gesangs, der Sprache und der Magie, die sie beinhalten. Barden sagen, dass das Multiversum in die Existenz gesprochen wurde, dass die Worte der G\u00f6tter ihm Form verliehen haben und dass das Echo dieser urspr\u00fcnglichen Worte der Sch\u00f6pfung immer noch im ganzen Kosmos widerhallt. Die Musik der Barden ist ein Versuch, diese Echos einzufangen und nutzbar zu machen, subtil verwoben in ihre Zauber und Kr\u00e4fte.",
+								"Die gr\u00f6\u00dfte St\u00e4rke der Barden ist ihre Vielseitigkeit. Viele Barden halten sich im Kampf lieber im Hintergrund und nutzen ihre Magie, um ihre Verb\u00fcndeten zu inspirieren und ihre Feinde aus der Ferne zu behindern. Barden sind aber auch in der Lage, sich im Nahkampf zu verteidigen, wenn es n\u00f6tig ist, und nutzen ihre Magie, um ihre Schwerter und R\u00fcstungen zu verst\u00e4rken. Ihre Zauber neigen eher zu Zaubern und Illusionen als zu offenkundig zerst\u00f6rerischen Zaubern. Sie verf\u00fcgen \u00fcber ein breit gef\u00e4chertes Wissen in vielen Bereichen und eine nat\u00fcrliche Begabung, die es ihnen erm\u00f6glicht, fast alles gut zu machen. Barden werden zu Meistern der Talente, die sie zu perfektionieren versuchen, von musikalischen Darbietungen bis hin zu esoterischem Wissen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Learning from Experience",
+							"entries": [
+								"Wahre Barden sind nicht allt\u00e4glich in der Welt. Nicht jeder Minnes\u00e4nger, der in einer Taverne singt, oder jeder Hofnarr, der sich an einem k\u00f6niglichen Hof tummelt, ist ein Barde. Die Entdeckung der Magie, die sich in der Musik verbirgt, erfordert ein hartes Studium und ein gewisses Ma\u00df an nat\u00fcrlichem Talent, das den meisten Troubadouren und Jongleuren fehlt. Es kann jedoch schwierig sein, den Unterschied zwischen diesen K\u00fcnstlern und wahren Barden zu erkennen. Ein Barde verbringt sein Leben damit, durch das Land zu ziehen, um Wissen zu sammeln, Geschichten zu erz\u00e4hlen und von der Dankbarkeit des Publikums zu leben, \u00e4hnlich wie jeder andere Unterhaltungsk\u00fcnstler. Aber ein tiefes Wissen, ein gewisses Ma\u00df an musikalischem K\u00f6nnen und ein Hauch von Magie unterscheiden Barden von ihren Gef\u00e4hrten.",
+								"Barden bleiben nur selten lange an einem Ort, und ihr nat\u00fcrlicher Drang zu reisen, um neue Geschichten zu erz\u00e4hlen, neue Fertigkeiten zu erlernen und neue Entdeckungen jenseits des Horizonts zu machen, macht eine Abenteurerkarriere zu einer nat\u00fcrlichen Berufung. Jedes Abenteuer ist eine Gelegenheit, zu lernen, eine Vielzahl von Fertigkeiten zu \u00fcben, l\u00e4ngst vergessene Gr\u00e4ber zu betreten, verlorene Werke der Magie zu entdecken, alte W\u00e4lzer zu entziffern, an seltsame Orte zu reisen oder exotischen Kreaturen zu begegnen. Barden lieben es, Helden zu begleiten, um ihre Taten aus erster Hand mitzuerleben. Ein Barde, der eine ehrfurchtgebietende Geschichte aus eigener Erfahrung erz\u00e4hlen kann, erwirbt sich das Ansehen anderer Barden. Tats\u00e4chlich nehmen sich viele Barden, nachdem sie so viele Geschichten \u00fcber Helden, die m\u00e4chtige Taten vollbracht haben, erz\u00e4hlt haben, diese Themen zu Herzen und schl\u00fcpfen selbst in heldenhafte Rollen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Bard",
+							"entries": [
+								"Barden leben von Geschichten, egal ob diese Geschichten wahr sind oder nicht. Der Hintergrund und die Beweggr\u00fcnde deines Charakters sind nicht so wichtig wie die Geschichten, die er oder sie \u00fcber sie erz\u00e4hlt. Vielleicht hattest du eine sichere und allt\u00e4gliche Kindheit. Dar\u00fcber gibt es keine gute Geschichte zu erz\u00e4hlen, also k\u00f6nnten Sie sich als Waisenkind darstellen, das von einer Hexe in einem d\u00fcsteren Sumpf aufgezogen wurde. Oder deine Kindheit ist vielleicht eine Geschichte wert. Manche Barden erlangen ihre magische Musik durch au\u00dfergew\u00f6hnliche Mittel, einschlie\u00dflich der Inspiration durch Feen oder andere \u00fcbernat\u00fcrliche Kreaturen.",
+								"Warst du in der Lehre, hast unter einem Meister gelernt und bist dem erfahreneren Barden gefolgt, bis du bereit warst, dich selbst\u00e4ndig zu machen? Oder hast du eine Schule besucht, auf der du das Bardenwissen studiert und dich in musikalischer Magie ge\u00fcbt hast? Vielleicht warst du ein junger Ausrei\u00dfer oder ein Waisenkind, das sich mit einem umherziehenden Barden angefreundet hat, der zu deinem Mentor wurde. Oder du warst ein verw\u00f6hntes Adelskind, das von einem Meister unterrichtet wurde. Vielleicht bist du in die F\u00e4nge einer Hexe geraten und hast neben deinem Leben und deiner Freiheit auch ein musikalisches Geschenk erkauft, aber zu welchem Preis?",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"Du kannst schnell einen Barden machen, wenn du diese Vorschl\u00e4ge befolgst. Erstens sollte Charisma dein h\u00f6chster F\u00e4higkeitswert sein, gefolgt von Geschicklichkeit. Zweitens, w\u00e4hle den {@background entertainer} Hintergrund. Drittens: W\u00e4hle die Zaubertricks {@spell dancing lights} und {@spell vicious mockery} sowie die folgenden Zauber der ersten Stufe: {@spell charm person}, {@spell detect magic}, {@spell healing word}, und {@spell thunderwave}."
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB",
+					"page": 51
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Musik ist die Frucht des g\u00f6ttlichen Baumes, der mit den Worten der Sch\u00f6pfung schwingt. Aber die Frage, die ich euch stelle, lautet: Kann ein Barde zur Wurzel dieses Baumes vordringen? Kann er die Quelle dieser Kraft anzapfen? Ach, was f\u00fcr eine Musik w\u00fcrde er dann in diese Welt bringen!"
+							],
+							"by": "Fletcher Danairia, master bard"
+						},
+						"Barden bringen Heiterkeit in ernste Zeiten; sie vermitteln Weisheit, um Unwissenheit auszugleichen; und sie lassen das L\u00e4cherliche erhaben erscheinen. Barden sind Bewahrer der alten Geschichte, ihre Lieder und Geschichten bewahren die Erinnerung an gro\u00dfe Ereignisse \u00fcber die Zeit hinweg - Wissen, das so wichtig ist, dass es auswendig gelernt und als m\u00fcndliche Geschichte weitergegeben wird, um zu \u00fcberleben, selbst wenn keine schriftlichen Aufzeichnungen \u00fcbrig bleiben.",
+						"Es ist auch die Aufgabe des Barden, \u00fcber kleinere und zeitgen\u00f6ssische Ereignisse zu berichten - die Geschichten der Helden von heute, einschlie\u00dflich ihrer Heldentaten und ihrer weniger beeindruckenden Misserfolge.",
+						"Nat\u00fcrlich gibt es in der Welt viele Menschen, die ein Lied singen oder eine gute Geschichte erz\u00e4hlen k\u00f6nnen, und zu einem Barden geh\u00f6rt mehr als nur eine flinke Zunge und eine melodi\u00f6se Stimme. Doch was Barden wirklich von anderen - und voneinander - unterscheidet, sind Stil und Inhalt ihrer Darbietungen.",
+						"Um die Aufmerksamkeit des Publikums zu erregen und zu halten, sind Barden typischerweise extravagant und aufgeschlossen, wenn sie auftreten. Die ber\u00fchmtesten von ihnen sind im Grunde das \u00c4quivalent zu Popstars in der D&amp;D-Welt. Wenn du einen Barden spielst, solltest du einen deiner Lieblingsmusiker als Vorbild f\u00fcr deinen Charakter nehmen.",
+						"Du kannst deinem Bardencharakter einige einzigartige Aspekte hinzuf\u00fcgen, indem du die folgenden Vorschl\u00e4ge ber\u00fccksichtigst.",
+						{
+							"type": "entries",
+							"name": "Defining Work",
+							"entries": [
+								"Jeder erfolgreiche Barde ist f\u00fcr mindestens eine Darbietung bekannt, in der Regel ein Lied oder ein Gedicht, das bei allen, die es h\u00f6ren, beliebt ist. \u00dcber diese Darbietungen wird noch jahrelang gesprochen, und bei einigen Zuschauern hat das Erlebnis ihr Leben f\u00fcr immer ver\u00e4ndert.",
+								"Wenn Sie noch ganz am Anfang Ihrer Karriere stehen, liegt Ihr wichtigstes Werk wahrscheinlich noch in der Zukunft, aber wenn Sie von Ihrem Beruf leben wollen, haben Sie wahrscheinlich schon ein oder zwei St\u00fccke in Ihrem Repertoire, die sich als Publikumslieblinge erwiesen haben.",
+								{
+									"type": "table",
+									"caption": "Defining Work",
+									"colLabels": [
+										"{@dice d6}",
+										"Defining Work"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"\"The Three Flambinis\", ein bitterb\u00f6ses Lied \u00fcber Verwechslungen und unb\u00e4ndiges Verlangen"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"\"Waltz of the Myconids\", eine fr\u00f6hliche Melodie, die vor allem Kindern gef\u00e4llt"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"\"Asmodeus' goldener Arsch\", ein dramatisches Gedicht, von dem Sie behaupten, dass es durch Ihren pers\u00f6nlichen Besuch in Avernus inspiriert wurde"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"\"Die Piraten von Luskan\", Ihr Bericht aus erster Hand, wie Sie als Kind von Seer\u00e4ubern gekidnappt wurden"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"\"Ein Reifen, zwei Tauben und ein H\u00f6llenhund\", eine subtile Parodie auf einen unf\u00e4higen Adeligen"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"\"Ein Narr im Abgrund\", ein kom\u00f6diantisches Gedicht \u00fcber die Reisen eines Narren unter D\u00e4monen"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Instrument",
+							"entries": [
+								"Auf der Suche nach der ultimativen Darbietung und der h\u00f6chsten Anerkennung ist das Instrument eines Barden mindestens so wichtig wie seine stimmlichen F\u00e4higkeiten. Die Qualit\u00e4t der Herstellung des Instruments ist nat\u00fcrlich ein entscheidender Faktor; die besten Instrumente machen die beste Musik, und einige Barden sind st\u00e4ndig auf der Suche nach einer Verbesserung. Vielleicht ebenso wichtig ist jedoch der Unterhaltungswert des Instruments selbst; Instrumente, die bizarr konstruiert oder aus exotischen Materialien hergestellt sind, hinterlassen wahrscheinlich einen bleibenden Eindruck beim Publikum.",
+								"Vielleicht haben Sie ein Instrument von der Stange\", weil Sie sich im Moment nichts anderes leisten k\u00f6nnen, oder Sie haben Ihr erstes Instrument geschenkt bekommen und m\u00f6chten es durch etwas Aufw\u00e4ndigeres ersetzen. Sind Sie zufrieden mit dem Instrument, das Sie haben, oder m\u00f6chten Sie es durch etwas wirklich Besonderes ersetzen?",
+								{
+									"type": "table",
+									"caption": "Instrument",
+									"colLabels": [
+										"{@dice d6}",
+										"Instrument"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Eine meisterhaft gefertigte Halblingsfiedel"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Ein von Elfen hergestelltes Mithral {@item horn|PHB} "
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Eine Zither aus Spinnenseide der Drow"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Ein orkischer {@item drum|PHB}"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Eine h\u00f6lzerne Bullywug-Kr\u00e4chzbox"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Eine Bastelharfe mit gnomischem Design"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Embarrassment",
+							"entries": [
+								"Fast jeder Barde hat schon einmal eine schlechte Erfahrung vor Publikum gemacht, und wahrscheinlich bist auch du keine Ausnahme. Niemand wird sofort ber\u00fchmt; vielleicht hattest du zu Beginn deiner Karriere ein paar kleine Schwierigkeiten, oder es hat eine Weile gedauert, bis du deinen Ruf wiederherstellen konntest, nachdem sich das Schicksal gegen dich verschworen hatte und du auf der B\u00fchne untergegangen bist.",
+								"Die M\u00f6glichkeiten, wie ein Auftritt schief gehen kann, sind so vielf\u00e4ltig wie die Fische im Meer. Egal, welche Art von Katastrophe eintritt, ein Barde hat den Mut und das Selbstvertrauen, sich davon zu erholen - entweder mit der Show weiterzumachen (wenn m\u00f6glich) oder zu versprechen, morgen mit einer neuen Performance zur\u00fcckzukommen, die garantiert gef\u00e4llt.",
+								{
+									"type": "table",
+									"caption": "Embarrassment",
+									"colLabels": [
+										"{@dice d6}",
+										"Embarrassment"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Als Ihr kom\u00f6diantischer Song \"Big Tom's Hijinks\" - den Sie \u00fcbrigens brillant fanden - bei Big Tom nicht gut ankam"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Die Matinee-Vorstellung, bei der ein Eulenb\u00e4r aus dem Zirkus ausbrach und die Zuschauer terrorisierte"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Wenn dein Er\u00f6ffnungslied deine enthusiastische, aber allgemein gehasste Interpretation von \"Song of the Froghemoth\" war"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Die erste und letzte \u00f6ffentliche Auff\u00fchrung von \"Mirt, Man about Town\""
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Das eine Mal auf der B\u00fchne, als deine Per\u00fccke Feuer gefangen hat und du sie heruntergeworfen hast, wodurch die B\u00fchne in Brand geraten ist"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Als du dich w\u00e4hrend der letzten Strophe von \"Starlight Serenade\" aus Versehen auf deine {@item lute|PHB} gesetzt hast"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Bard's Muse",
+							"entries": [
+								"Nat\u00fcrlich hat jeder Barde ein Repertoire an Liedern und Geschichten. Einige Barden sind Generalisten, die bei jedem Auftritt aus einem breiten Spektrum an Themen sch\u00f6pfen k\u00f6nnen und stolz auf ihre Vielseitigkeit sind. Andere verfolgen einen pers\u00f6nlicheren Ansatz in ihrer Kunst, der von ihrer Bindung an eine Muse bestimmt wird - ein bestimmtes Konzept, das einen Gro\u00dfteil dessen inspiriert, was diese Barden vor einem Publikum vortragen.",
+								"Ein Barde, der einer Muse folgt, tut dies im Allgemeinen, um ein tieferes Verst\u00e4ndnis daf\u00fcr zu erlangen, was diese Muse repr\u00e4sentiert und wie er dieses Verst\u00e4ndnis am besten durch seine Darbietung an andere weitergeben kann.",
+								"Wenn dein Bardencharakter eine Muse hat, kann es eine der drei hier beschriebenen sein oder eine, die du dir selbst ausgedacht hast.",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Nature",
+											"entries": [
+												"Du f\u00fchlst eine Verwandtschaft mit der nat\u00fcrlichen Welt, und ihre Sch\u00f6nheit und ihr Geheimnis inspirieren dich. F\u00fcr dich ist ein Baum ein tiefes Symbol, dessen Wurzeln in das dunkle Unbekannte eindringen, um die Kraft der Erde hervorzuholen, w\u00e4hrend seine \u00c4ste sich der Sonne entgegenstrecken, um ihre Bl\u00fcten und Fr\u00fcchte zu n\u00e4hren. Die Natur ist der uralte Zeuge, der jedes Reich aufsteigen und fallen sah, selbst jene, deren Namen vergessen sind und darauf warten, wiederentdeckt zu werden. Die G\u00f6tter der Natur teilen ihre Geheimnisse mit Druiden und Weisen und \u00f6ffnen ihre Herzen und ihren Verstand f\u00fcr neue Sichtweisen, und wie bei diesen Individuen findest du heraus, dass deine Kreativit\u00e4t aufbl\u00fcht, w\u00e4hrend du durch ein offenes Feld mit wogendem Gras wanderst oder in stiller Ehrfurcht durch einen Hain uralter Eichen gehst."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Love",
+											"entries": [
+												"Du bist auf der Suche nach dem Wesen der wahren Liebe. Obwohl du die oberfl\u00e4chliche Liebe aus Fleisch und Blut nicht verschm\u00e4hst, interessierst du dich f\u00fcr die tiefere Form der Liebe, die Tausende von Menschen inspirieren und jeden Augenblick begl\u00fccken kann. Diese Art von Liebe nimmt viele Formen an, und du kannst sie \u00fcberall sehen - vom Funkeln eines sch\u00f6nen Edelsteins bis zum Lied eines einfachen Fischers, der dem Meer f\u00fcr seinen Reichtum dankt. Du bist der Liebe auf der Spur, diesem kostbarsten und geheimnisvollsten aller Gef\u00fchle, und deine Suche f\u00fcllt deine Geschichten und deine Lieder mit Leben und Leidenschaft."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Conflict",
+											"entries": [
+												"Das Drama verk\u00f6rpert den Konflikt, und die besten Geschichten haben den Konflikt als Schl\u00fcsselelement. Von der Geschichte einer Kneipenschl\u00e4gerei am Morgen danach bis zur Saga einer epischen Schlacht, vom Streit unter Liebenden bis zum Zerw\u00fcrfnis zwischen m\u00e4chtigen Dynastien - der Konflikt ist es, der Geschichtenerz\u00e4hler wie dich zu deinen besten Werken inspiriert. Der Konflikt kann das Beste in manchen Menschen hervorbringen und ihre heldenhafte Natur zum Vorschein bringen und die Welt ver\u00e4ndern, aber er kann auch dazu f\u00fchren, dass andere sich der Dunkelheit zuwenden und dem B\u00f6sen verfallen. Du strebst danach, alle Formen von Konflikten zu erleben oder mitzuerleben, gro\u00dfe und kleine, um diesen ewigen Aspekt des Lebens zu studieren und ihn in deinen Worten und deiner Musik zu verewigen."
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE",
+					"page": 12
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "College of Lore",
+			"shortName": "Lore",
+			"source": "PHB",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 54,
+			"srd": true,
+			"additionalSpells": [
+				{
+					"name": "Additional Magical Secrets",
+					"known": {
+						"6": [
+							{
+								"choose": "level=0;1;2;3"
+							},
+							{
+								"choose": "level=0;1;2;3"
+							}
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"College of Lore|Bard||Lore||3",
+				"Additional Magical Secrets|Bard||Lore||6",
+				"Peerless Skill|Bard||Lore||14"
+			]
+		},
+		{
+			"name": "College of Valor",
+			"shortName": "Valor",
+			"source": "PHB",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 55,
+			"subclassFeatures": [
+				"College of Valor|Bard||Valor||3",
+				"Extra Attack|Bard||Valor||6",
+				"Battle Magic|Bard||Valor||14"
+			]
+		},
+		{
+			"name": "College of Satire (UA)",
+			"shortName": "Satire (UA)",
+			"source": "UAKitsOfOld",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassFeatures": [
+				"College of Satire|Bard||Satire (UA)|UAKitsOfOld|3",
+				"Fool's Insight|Bard||Satire (UA)|UAKitsOfOld|6",
+				"Fool's Luck|Bard||Satire (UA)|UAKitsOfOld|14"
+			]
+		},
+		{
+			"name": "College of Swords (UA)",
+			"shortName": "Swords (UA)",
+			"source": "UAKitsOfOld",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"College of Swords|Bard||Swords (UA)|UAKitsOfOld|3",
+				"Extra Attack|Bard||Swords (UA)|UAKitsOfOld|6",
+				"Battle Magic|Bard||Swords (UA)|UAKitsOfOld|14"
+			]
+		},
+		{
+			"name": "College of Glamour (UA)",
+			"shortName": "Glamour (UA)",
+			"source": "UABardBardColleges",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"College of Glamour|Bard||Glamour (UA)|UABardBardColleges|3",
+				"Mantle of Majesty|Bard||Glamour (UA)|UABardBardColleges|6",
+				"Mantle of Majesty|Bard||Glamour (UA)|UABardBardColleges|14"
+			]
+		},
+		{
+			"name": "College of Whispers (UA)",
+			"shortName": "Whispers (UA)",
+			"source": "UABardBardColleges",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"College of Whispers|Bard||Whispers (UA)|UABardBardColleges|3",
+				"Mantle of Whispers|Bard||Whispers (UA)|UABardBardColleges|6",
+				"Shadow Lore|Bard||Whispers (UA)|UABardBardColleges|14"
+			]
+		},
+		{
+			"name": "College of Swords v2 (UA)",
+			"shortName": "Swords v2 (UA)",
+			"source": "UARevisedSubclasses",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"College of Swords v2|Bard||Swords v2 (UA)|UARevisedSubclasses|3",
+				"Cunning Flourish|Bard||Swords v2 (UA)|UARevisedSubclasses|6",
+				"Master's Flourish|Bard||Swords v2 (UA)|UARevisedSubclasses|14"
+			]
+		},
+		{
+			"name": "College of Glamour",
+			"shortName": "Glamour",
+			"source": "XGE",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 14,
+			"additionalSpells": [
+				{
+					"innate": {
+						"6": [
+							"command"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"College of Glamour|Bard||Glamour|XGE|3",
+				"Mantle of Majesty|Bard||Glamour|XGE|6",
+				"Unbreakable Majesty|Bard||Glamour|XGE|14"
+			]
+		},
+		{
+			"name": "College of Swords",
+			"shortName": "Swords",
+			"source": "XGE",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 15,
+			"subclassFeatures": [
+				"College of Swords|Bard||Swords|XGE|3",
+				"Extra Attack|Bard||Swords|XGE|6",
+				"Master's Flourish|Bard||Swords|XGE|14"
+			]
+		},
+		{
+			"name": "College of Whispers",
+			"shortName": "Whispers",
+			"source": "XGE",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 16,
+			"subclassFeatures": [
+				"College of Whispers|Bard||Whispers|XGE|3",
+				"Mantle of Whispers|Bard||Whispers|XGE|6",
+				"Shadow Lore|Bard||Whispers|XGE|14"
+			]
+		},
+		{
+			"name": "College of Eloquence (UA)",
+			"shortName": "Eloquence (UA)",
+			"source": "UABardAndPaladin",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"College of Eloquence|Bard||Eloquence (UA)|UABardAndPaladin|3",
+				"Undeniable Logic|Bard||Eloquence (UA)|UABardAndPaladin|6",
+				"Infectious Inspiration|Bard||Eloquence (UA)|UABardAndPaladin|14"
+			]
+		},
+		{
+			"name": "College of Creation (UA)",
+			"shortName": "Creation (UA)",
+			"source": "UA2020SubclassesPt2",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"College of Creation|Bard||Creation (UA)|UA2020SubclassesPt2|3",
+				"Animating Performance|Bard||Creation (UA)|UA2020SubclassesPt2|6",
+				"Performance of Creation|Bard||Creation (UA)|UA2020SubclassesPt2|14"
+			]
+		},
+		{
+			"name": "College of Spirits (UA)",
+			"shortName": "Spirits (UA)",
+			"source": "UA2020SubclassesPt4",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 1,
+			"isReprinted": true,
+			"subclassFeatures": [
+				"College of Spirits|Bard||Spirits (UA)|UA2020SubclassesPt4|3",
+				"Spirit Session|Bard||Spirits (UA)|UA2020SubclassesPt4|6",
+				"Spiritual Focus|Bard||Spirits (UA)|UA2020SubclassesPt4|6",
+				"Mystical Connection|Bard||Spirits (UA)|UA2020SubclassesPt4|14"
+			]
+		},
+		{
+			"name": "College of Creation",
+			"shortName": "Creation",
+			"source": "TCE",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 28,
+			"subclassFeatures": [
+				"College of Creation|Bard||Creation|TCE|3",
+				"Animating Performance|Bard||Creation|TCE|6",
+				"Creative Crescendo|Bard||Creation|TCE|14"
+			]
+		},
+		{
+			"name": "College of Eloquence",
+			"shortName": "Eloquence",
+			"source": "TCE",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 29,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 28
+				}
+			],
+			"subclassFeatures": [
+				"College of Eloquence|Bard||Eloquence|TCE|3",
+				"Unfailing Inspiration|Bard||Eloquence|TCE|6",
+				"Universal Speech|Bard||Eloquence|TCE|6",
+				"Infectious Inspiration|Bard||Eloquence|TCE|14"
+			]
+		},
+		{
+			"name": "College of Spirits",
+			"shortName": "Spirits",
+			"source": "VRGR",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 28,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"guidance#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"College of Spirits|Bard||Spirits|VRGR|3",
+				"Spirit Session|Bard||Spirits|VRGR|6",
+				"Mystical Connection|Bard||Spirits|VRGR|14"
+			]
+		},
+		{
+			"name": "Mage of Lorehold (UA)",
+			"shortName": "Lorehold (UA)",
+			"source": "UA2021MagesOfStrixhaven",
+			"className": "Bard",
+			"classSource": "PHB",
+			"_copy": {
+				"name": "Mage of Lorehold (UA)",
+				"shortName": "Lorehold (UA)",
+				"source": "UA2021MagesOfStrixhaven",
+				"className": "Generic",
+				"classSource": "Generic",
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"name": "Mage of Silverquill (UA)",
+			"shortName": "Silverquill (UA)",
+			"source": "UA2021MagesOfStrixhaven",
+			"className": "Bard",
+			"classSource": "PHB",
+			"_copy": {
+				"name": "Mage of Silverquill (UA)",
+				"shortName": "Silverquill (UA)",
+				"source": "UA2021MagesOfStrixhaven",
+				"className": "Generic",
+				"classSource": "Generic",
+				"_preserve": {
+					"page": true
+				}
+			}
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Bardic Inspiration",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 1,
+			"entries": [
+				"Du kannst andere durch mitrei\u00dfende Worte oder Musik inspirieren. Um dies zu tun, w\u00e4hlst du als Bonusaktion in deinem Zug eine andere Kreatur im Umkreis von 60 Fu\u00df, die dich h\u00f6ren kann. Diese Kreatur erh\u00e4lt einen bardischen Inspirationsw\u00fcrfel, einen {@dice d6}.",
+				"Einmal innerhalb der n\u00e4chsten 10 Minuten kann die Kreatur den W\u00fcrfel werfen und die gew\u00fcrfelte Zahl zu einer F\u00e4higkeitspr\u00fcfung, einem Angriffswurf oder einem Rettungswurf addieren. Die Kreatur kann warten, bis sie die {@dice d20} gew\u00fcrfelt hat, bevor sie sich entscheidet, den bardischen Inspirationsw\u00fcrfel zu benutzen, aber sie muss sich entscheiden, bevor der DM sagt, ob der Wurf erfolgreich war oder nicht. Sobald der bardische Inspirationsw\u00fcrfel gew\u00fcrfelt wurde, ist er verloren. Eine Kreatur kann immer nur einen bardischen Inspirationsw\u00fcrfel haben.",
+				"Du kannst diese F\u00e4higkeit so oft einsetzen, wie es deinem Charisma-Modifikator entspricht (mindestens einmal). Du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendest.",
+				"Dein W\u00fcrfel f\u00fcr Bardische Inspiration \u00e4ndert sich, wenn du bestimmte Stufen in dieser Klasse erreichst. Der W\u00fcrfel wird zu {@dice d8} auf Stufe 5, zu {@dice d10} auf Stufe 10 und zu {@dice d12} auf Stufe 15."
+			]
+		},
+		{
+			"name": "Magical Inspiration",
+			"source": "UAClassFeatureVariants",
+			"page": 3,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 1,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 1st-level bard feature (enhances Bardic Inspiration)}",
+				"Wenn eine Kreatur einen W\u00fcrfel f\u00fcr bardische Inspiration von dir hat und einen Zauber wirkt, kann sie diesen W\u00fcrfel werfen und die gew\u00fcrfelte Zahl zu einem Schadens- oder Heilungswurf des Zaubers addieren. Der W\u00fcrfel f\u00fcr bardische Inspiration ist dann verloren."
+			]
+		},
+		{
+			"name": "Spell Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 3,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 1,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 1st-level bard feature (enhances Spellcasting)}",
+				"Immer wenn du eine lange Ruhepause beendest, kannst du einen Zauber, den du mit dieser Zauberfertigkeit erlernt hast, durch einen anderen Zauber aus der Liste der Bardenzauber ersetzen. Der neue Zauber muss die gleiche Stufe haben wie der Zauber, den du ersetzt."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 1,
+			"entries": [
+				"Du hast gelernt, das Gewebe der Realit\u00e4t zu entwirren und im Einklang mit deinen W\u00fcnschen und deiner Musik umzugestalten. Deine Zauberspr\u00fcche sind Teil deines gro\u00dfen Repertoires, Magie, die du auf verschiedene Situationen abstimmen kannst. Siehe {@book chapter 10|PHB|10} f\u00fcr die allgemeinen Regeln der Zauberei und {@book chapter 11|PHB|11} f\u00fcr die {@filter bard spell list|spells|class=bard}.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"Du kennst zwei Zaubertricks deiner Wahl aus der Bardenzauberliste. Du erlernst zus\u00e4tzliche Bardenzauber deiner Wahl auf h\u00f6heren Stufen, einen 3. Zaubertrick auf Stufe 4 und einen 4. auf Stufe 10."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"Die Barden-Tabelle zeigt, wie viele Zauberpl\u00e4tze du hast, um deine {@filter bard spells|spells|class=bard} der 1. Stufe und h\u00f6her zu wirken. Um einen dieser Zauber zu wirken, musst du einen Platz der Stufe des Zaubers oder h\u00f6her verbrauchen. Du erh\u00e4ltst alle verbrauchten Zauberpl\u00e4tze zur\u00fcck, wenn du eine lange Pause beendest.",
+						"Wenn du zum Beispiel den Zauber {@spell cure wounds} der Stufe 1 kennst und einen Zauberplatz der Stufe 1 und einen der Stufe 2 zur Verf\u00fcgung hast, kannst du {@spell cure wounds} mit einem der beiden Pl\u00e4tze wirken."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"Du kennst vier Zauber der 1. Stufe deiner Wahl aus der Bardenzauberliste.",
+						"Du erlernst auf jeder Stufe au\u00dfer der 12., 16., 19. und 20. einen zus\u00e4tzlichen Bardenzauber deiner Wahl. Jeder dieser Zauber muss einer Stufe angeh\u00f6ren, f\u00fcr die du Zauberpl\u00e4tze hast. Wenn du zum Beispiel die 3. Stufe dieser Klasse erreichst, kannst du einen neuen Zauber der 1. oder 2.",
+						"Au\u00dferdem kannst du, wenn du eine Stufe in dieser Klasse erreichst, einen der Bardenzauber w\u00e4hlen, die du kennst, und ihn durch einen anderen Zauber aus der Bardenzauberliste ersetzen, der ebenfalls eine Stufe haben muss, f\u00fcr die du Zauberpl\u00e4tze hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Charisma ist deine Zauberf\u00e4higkeit f\u00fcr deine Bardenzauber. Deine Magie kommt von dem Herz und der Seele, die du in die Darbietung deiner Musik oder deiner Rede steckst. Du verwendest dein Charisma immer dann, wenn sich ein Zauber auf deine Zauberf\u00e4higkeit bezieht. Au\u00dferdem verwendest du deinen Charisma-Modifikator, wenn du den Schutzwurf-DC f\u00fcr einen Bardenzauber festlegst, den du wirkst, und wenn du einen Angriffswurf mit einem solchen machst.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"Du kannst jeden Bardenzauber, den du kennst, als Ritual wirken, wenn dieser Zauber das Ritual-Tag hat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"Du kannst eine {@item musical instrument|PHB} als Zauberfokus f\u00fcr deine Bardenzauber verwenden."
+					]
+				}
+			]
+		},
+		{
+			"name": "Jack of All Trades",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 2,
+			"entries": [
+				"Ab Stufe 2 kannst du die H\u00e4lfte deines Fertigkeitsbonus, abgerundet, zu jeder F\u00e4higkeitspr\u00fcfung addieren, die nicht bereits deinen Fertigkeitsbonus enth\u00e4lt."
+			]
+		},
+		{
+			"name": "Magical Inspiration",
+			"source": "TCE",
+			"page": 27,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 2,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 2nd-level bard {@variantrule optional class features|tce|optional feature}}",
+				"Wenn eine Kreatur einen W\u00fcrfel f\u00fcr Bardische Inspiration von dir hat und einen Zauber wirkt, der Trefferpunkte wiederherstellt oder Schaden zuf\u00fcgt, kann die Kreatur diesen W\u00fcrfel werfen und ein Ziel w\u00e4hlen, das von dem Zauber betroffen ist. Addiere die gew\u00fcrfelte Zahl als Bonus zu den wiederhergestellten Trefferpunkten oder dem zugef\u00fcgten Schaden. Der W\u00fcrfel f\u00fcr Bardische Inspiration ist dann verloren."
+			]
+		},
+		{
+			"name": "Song of Rest (d6)",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 2,
+			"entries": [
+				"Ab Stufe 2 kannst du beruhigende Musik oder Reden einsetzen, um deine verwundeten Verb\u00fcndeten w\u00e4hrend einer kurzen Ruhepause wiederzubeleben. Wenn du oder befreundete Kreaturen, die deine Darbietung h\u00f6ren k\u00f6nnen, am Ende der kurzen Ruhepause durch das Ausgeben von Trefferw\u00fcrfeln Trefferpunkte zur\u00fcckgewinnen, erh\u00e4lt jede dieser Kreaturen zus\u00e4tzlich {@dice 1d6} Trefferpunkte zur\u00fcck.",
+				"Die zus\u00e4tzlichen Trefferpunkte erh\u00f6hen sich, wenn du bestimmte Stufen in dieser Klasse erreichst: auf {@dice 1d8} auf der 9. Stufe, auf {@dice 1d10} auf der 13. Stufe und auf {@dice 1d12} auf der 17. Stufe."
+			]
+		},
+		{
+			"name": "Bard College",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 3,
+			"entries": [
+				"Auf der 3. Stufe vertiefst du dich in die fortgeschrittenen Techniken einer Bardenschule deiner Wahl aus der Liste der verf\u00fcgbaren Schulen. Deine Wahl gew\u00e4hrt dir auf der 3. Stufe und erneut auf der 6. und 14."
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 3,
+			"entries": [
+				"Auf der 3. Stufe w\u00e4hlst du zwei deiner Fertigkeitsprofessionen aus und verdoppelst deinen Fertigkeitsbonus f\u00fcr jede F\u00e4higkeitspr\u00fcfung, bei der du eine der gew\u00e4hlten Fertigkeiten einsetzt.",
+				"Auf der 10. Stufe kannst du zwei weitere Fertigkeitsprofile w\u00e4hlen, um diesen Vorteil zu erhalten."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"Wenn du die 4. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Bardic Versatility",
+			"source": "TCE",
+			"page": 27,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 4th-level bard {@variantrule optional class features|tce|optional feature}}",
+				"Immer wenn du eine Stufe in dieser Klasse erreichst, die dir die F\u00e4higkeitspunktverbesserung gew\u00e4hrt, kannst du eine der folgenden Aktionen ausf\u00fchren, die eine \u00c4nderung des Fokus beim Einsatz deiner Fertigkeiten und Magie darstellt:",
+				{
+					"type": "list",
+					"items": [
+						"Ersetze eine der Fertigkeiten, die du f\u00fcr das Merkmal Expertise gew\u00e4hlt hast, durch eine deiner anderen Fertigkeiten, die nicht von Expertise profitiert.",
+						"Ersetze einen Zaubertrick, den du durch das Merkmal Zaubern dieser Klasse gelernt hast, durch einen anderen Zaubertrick aus dem {@filter bard spell list|spells|level=0|class=bard}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 4th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Bardic Inspiration (d8)",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"Auf der 5. Stufe \u00e4ndert sich dein W\u00fcrfel f\u00fcr bardische Inspiration in {@dice d8}."
+			]
+		},
+		{
+			"name": "Font of Inspiration",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"Ab der 5. Stufe erh\u00e4ltst du alle deine verbrauchten Eins\u00e4tze von Bardische Inspiration zur\u00fcck, wenn du eine kurze oder lange Pause beendest."
+			]
+		},
+		{
+			"name": "Bard College feature",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 6,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du eine Eigenschaft aus deinem Bardenkolleg."
+			]
+		},
+		{
+			"name": "Countercharm",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 6,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du die F\u00e4higkeit, musikalische Noten oder Worte der Macht zu benutzen, um bewusstseinsbeeinflussende Effekte zu unterbrechen. Als Aktion kannst du eine Darbietung beginnen, die bis zum Ende deines n\u00e4chsten Zuges andauert. W\u00e4hrend dieser Zeit haben du und alle befreundeten Kreaturen im Umkreis von 30 Fu\u00df einen Vorteil bei Schutzw\u00fcrfen gegen {@condition frightened} oder {@condition charmed}. Eine Kreatur muss in der Lage sein, dich zu h\u00f6ren, um diesen Vorteil zu erhalten. Die Darbietung endet vorzeitig, wenn du {@condition incapacitated} oder zum Schweigen gebracht wirst oder wenn du sie freiwillig beendest (keine Aktion erforderlich)."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"Wenn du die 8. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 8,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 8th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Song of Rest (d8)",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 9,
+			"entries": [
+				"Auf der 9. Stufe erh\u00f6hen sich die zus\u00e4tzlichen Trefferpunkte, die durch das Lied der Ruhe gewonnen werden, auf {@dice 1d8}."
+			]
+		},
+		{
+			"name": "Bardic Inspiration (d10)",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 10,
+			"entries": [
+				"Auf der 10. Stufe \u00e4ndert sich dein W\u00fcrfel f\u00fcr bardische Inspiration in {@dice d10}."
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 10,
+			"entries": [
+				"Auf der 10. Stufe kannst du zwei weitere Fertigkeitsfertigkeiten w\u00e4hlen. Dein Fertigkeitsbonus verdoppelt sich bei jeder F\u00e4higkeitspr\u00fcfung, die du mit einer der gew\u00e4hlten Fertigkeiten durchf\u00fchrst."
+			]
+		},
+		{
+			"name": "Magical Secrets",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 10,
+			"entries": [
+				"Bis zur 10. Stufe hast du magisches Wissen aus einem breiten Spektrum von Disziplinen gepl\u00fcndert. W\u00e4hle zwei Zauberspr\u00fcche aus einer beliebigen Klasse, einschlie\u00dflich dieser. Ein Zauber, den du w\u00e4hlst, muss eine Stufe haben, die du wirken kannst, wie in der Barden-Tabelle angegeben, oder ein Zaubertrick sein.",
+				"Die gew\u00e4hlten Zauber z\u00e4hlen f\u00fcr dich als Bardenzauber und werden in die Anzahl in der Spalte \"Bekannte Zauber\" in der Barden-Tabelle aufgenommen.",
+				"Du erlernst zwei zus\u00e4tzliche Zauberspr\u00fcche aus beliebigen Klassen auf Stufe 14 und erneut auf Stufe 18."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 12,
+			"entries": [
+				"Wenn du die 12. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 12,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 12th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Song of Rest (d10)",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 13,
+			"entries": [
+				"Auf der 13. Stufe erh\u00f6hen sich die zus\u00e4tzlichen Trefferpunkte, die durch das Lied der Ruhe gewonnen werden, auf {@dice 1d10}."
+			]
+		},
+		{
+			"name": "Bard College feature",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 14,
+			"entries": [
+				"Auf der 14. Stufe erh\u00e4ltst du eine Eigenschaft aus deinem Bardenkolleg."
+			]
+		},
+		{
+			"name": "Magical Secrets",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 14,
+			"entries": [
+				"Auf der 14. Stufe kannst du zwei zus\u00e4tzliche Zauber aus einer beliebigen Klasse, einschlie\u00dflich dieser, w\u00e4hlen. Ein Zauber, den du w\u00e4hlst, muss eine Stufe haben, die du wirken kannst, wie in der Barden-Tabelle angegeben, oder ein Zaubertrick sein.",
+				"Die gew\u00e4hlten Zauber z\u00e4hlen f\u00fcr dich als Bardenzauber und werden in die Anzahl in der Spalte \"Bekannte Zauber\" in der Barden-Tabelle aufgenommen."
+			]
+		},
+		{
+			"name": "Bardic Inspiration (d12)",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 15,
+			"entries": [
+				"Auf der 15. Stufe \u00e4ndert sich dein W\u00fcrfel f\u00fcr bardische Inspiration in {@dice d12}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 16,
+			"entries": [
+				"Wenn du die 16. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 16,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 16th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Song of Rest (d12)",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 17,
+			"entries": [
+				"Auf der 17. Stufe erh\u00f6hen sich die zus\u00e4tzlichen Trefferpunkte, die durch das Lied der Ruhe gewonnen werden, auf {@dice 1d12}."
+			]
+		},
+		{
+			"name": "Magical Secrets",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 18,
+			"entries": [
+				"Auf der 18. Stufe kannst du zwei zus\u00e4tzliche Zauber aus einer beliebigen Klasse w\u00e4hlen, einschlie\u00dflich dieses Zaubers. Ein Zauber, den du w\u00e4hlst, muss eine Stufe haben, die du wirken kannst, wie in der Barden-Tabelle angegeben, oder ein Zaubertrick sein.",
+				"Die gew\u00e4hlten Zauber z\u00e4hlen f\u00fcr dich als Bardenzauber und werden in die Anzahl in der Spalte \"Bekannte Zauber\" in der Barden-Tabelle aufgenommen."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 19,
+			"entries": [
+				"Wenn du die 19. Stufe erreichst, kannst du einen F\u00e4higkeitswert deiner Wahl um 2 erh\u00f6hen, oder du kannst zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen. Wie \u00fcblich kannst du mit dieser F\u00e4higkeit keinen F\u00e4higkeitswert \u00fcber 20 erh\u00f6hen.",
+				"Wenn dein DM die Verwendung von Feats erlaubt, kannst du stattdessen eine {@5etools feat|feats.html} nehmen."
+			]
+		},
+		{
+			"name": "Proficiency Versatility",
+			"source": "UAClassFeatureVariants",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 19,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 19th-level feature (enhances Ability Score Improvement)}",
+				"Wenn du die F\u00e4higkeitspunktverbesserung deiner Klasse erh\u00e4ltst, kannst du auch eine deiner Fertigkeitsfertigkeiten durch eine Fertigkeitsfertigkeit ersetzen, die von deiner Klasse auf Stufe 1 angeboten wird (die ersetzte Fertigkeitsfertigkeit muss nicht von der Klasse sein).",
+				"Diese Ver\u00e4nderung bedeutet, dass eine Ihrer F\u00e4higkeiten verk\u00fcmmert, w\u00e4hrend Sie sich auf eine andere F\u00e4higkeit konzentrieren."
+			]
+		},
+		{
+			"name": "Superior Inspiration",
+			"source": "PHB",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"level": 20,
+			"entries": [
+				"Wenn du auf Stufe 20 die Initiative w\u00fcrfelst und keinen Einsatz von Bardische Inspiration mehr hast, erh\u00e4ltst du einen Einsatz zur\u00fcck."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "College of Lore",
+			"source": "PHB",
+			"page": 54,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore",
+			"subclassSource": "PHB",
+			"level": 3,
+			"entries": [
+				"Barden des Kollegiums der \u00dcberlieferung wissen etwas \u00fcber die meisten Dinge und sammeln Wissensfetzen aus so unterschiedlichen Quellen wie Gelehrtenb\u00e4nden und Bauerngeschichten. Ob sie nun Volksballaden in Tavernen oder kunstvolle Kompositionen an K\u00f6nigsh\u00f6fen singen, diese Barden nutzen ihre Gaben, um das Publikum in ihren Bann zu ziehen. Wenn der Applaus abebbt, stellen die Zuh\u00f6rer vielleicht alles in Frage, was sie f\u00fcr wahr hielten, von ihrem Glauben an die Priesterschaft des \u00f6rtlichen Tempels bis hin zu ihrer Loyalit\u00e4t gegen\u00fcber dem K\u00f6nig.",
+				"Die Loyalit\u00e4t dieser Barden liegt im Streben nach Sch\u00f6nheit und Wahrheit, nicht in der Treue zu einem Monarchen oder in der Befolgung der Lehren einer Gottheit. Ein Adliger, der einen solchen Barden als Herold oder Berater besch\u00e4ftigt, wei\u00df, dass der Barde lieber ehrlich als politisch ist.",
+				"Die Mitglieder des Kollegs versammeln sich in Bibliotheken und manchmal auch in echten Kollegs mit Klassenzimmern und Schlafs\u00e4len, um ihr Wissen untereinander auszutauschen. Sie treffen sich auch bei Festen oder Staatsangelegenheiten, wo sie Korruption aufdecken, L\u00fcgen entlarven und sich \u00fcber selbstgef\u00e4llige Autorit\u00e4tspersonen lustig machen k\u00f6nnen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Bard||Lore||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cutting Words|Bard||Lore||3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "PHB",
+			"page": 54,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem College of Lore auf Stufe 3 beitrittst, erh\u00e4ltst du die Beherrschung von drei Fertigkeiten deiner Wahl."
+			]
+		},
+		{
+			"name": "Cutting Words",
+			"source": "PHB",
+			"page": 54,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Ebenfalls auf Stufe 3 lernst du, wie du deinen Witz einsetzen kannst, um andere abzulenken, zu verwirren oder auf andere Weise das Vertrauen und die Kompetenz anderer zu untergraben. Wenn eine Kreatur, die du im Umkreis von 60 Fu\u00df sehen kannst, einen Angriffswurf, eine F\u00e4higkeitspr\u00fcfung oder einen Schadenswurf durchf\u00fchrt, kannst du als Reaktion eine deiner Verwendungen von Bardische Inspiration einsetzen, indem du einen W\u00fcrfel f\u00fcr Bardische Inspiration wirfst und die gew\u00fcrfelte Zahl vom Wurf der Kreatur abziehst. Du kannst diese F\u00e4higkeit einsetzen, nachdem die Kreatur ihren Wurf durchf\u00fchrt, aber bevor der DM feststellt, ob der Angriffswurf oder die F\u00e4higkeitspr\u00fcfung erfolgreich war oder nicht, oder bevor die Kreatur ihren Schaden verursacht. Die Kreatur ist immun, wenn sie dich nicht h\u00f6ren kann oder wenn sie immun gegen {@condition charmed} ist."
+			]
+		},
+		{
+			"name": "Additional Magical Secrets",
+			"source": "PHB",
+			"page": 54,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore",
+			"subclassSource": "PHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe lernst du zwei Zauberspr\u00fcche deiner Wahl aus einer beliebigen Klasse. Ein Zauber deiner Wahl muss eine Stufe haben, die du wirken kannst, wie in der Barden-Tabelle angegeben, oder ein Zaubertrick sein. Die gew\u00e4hlten Zauber z\u00e4hlen f\u00fcr dich als Bardenzauber, werden aber nicht auf die Anzahl der Bardenzauber angerechnet, die du kennst."
+			]
+		},
+		{
+			"name": "Peerless Skill",
+			"source": "PHB",
+			"page": 54,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore",
+			"subclassSource": "PHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab Stufe 14 kannst du bei einer F\u00e4higkeitspr\u00fcfung einen Einsatz von Bardische Inspiration verbrauchen. Wirf einen W\u00fcrfel f\u00fcr Bardische Inspiration und addiere die gew\u00fcrfelte Zahl zu deiner F\u00e4higkeitspr\u00fcfung. Du kannst dich daf\u00fcr entscheiden, dies zu tun, nachdem du den W\u00fcrfel f\u00fcr die F\u00e4higkeitspr\u00fcfung geworfen hast, aber bevor der DM dir sagt, ob du erfolgreich bist oder nicht."
+			]
+		},
+		{
+			"name": "College of Valor",
+			"source": "PHB",
+			"page": 55,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB",
+			"level": 3,
+			"entries": [
+				"Barden des Kollegs der Tapferkeit sind wagemutige Skalden, die mit ihren Erz\u00e4hlungen die Erinnerung an die gro\u00dfen Helden der Vergangenheit wachhalten und so eine neue Generation von Helden inspirieren. Diese Barden versammeln sich in Met-Hallen oder an gro\u00dfen Lagerfeuern, um die Taten der M\u00e4chtigen aus Vergangenheit und Gegenwart zu besingen. Sie reisen durch das Land, um gro\u00dfe Ereignisse aus erster Hand mitzuerleben und daf\u00fcr zu sorgen, dass die Erinnerung an diese Ereignisse nicht aus der Welt verschwindet. Mit ihren Liedern inspirieren sie andere dazu, die gleichen H\u00f6hen an Leistungen zu erreichen wie die Helden der Vergangenheit.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Bard||Valor||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Combat Inspiration|Bard||Valor||3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "PHB",
+			"page": 55,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem College of Valor auf Stufe 3 beitrittst, erh\u00e4ltst du Fertigkeit im Umgang mit mittleren R\u00fcstungen, Schilden und Kampfwaffen."
+			]
+		},
+		{
+			"name": "Combat Inspiration",
+			"source": "PHB",
+			"page": 55,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Ebenfalls auf Stufe 3 lernst du, andere im Kampf zu inspirieren. Eine Kreatur, die einen W\u00fcrfel f\u00fcr Bardische Inspiration von dir erhalten hat, kann diesen W\u00fcrfel werfen und die gew\u00fcrfelte Zahl zu einem Waffenschadenswurf addieren, den sie gerade durchgef\u00fchrt hat. Alternativ kann sie, wenn ein Angriffswurf gegen die Kreatur durchgef\u00fchrt wird, ihre Reaktion nutzen, um den W\u00fcrfel f\u00fcr Bardische Inspiration zu werfen und die gew\u00fcrfelte Zahl zu ihrem AC gegen diesen Angriff zu addieren, nachdem sie den Wurf gesehen hat, aber bevor sie wei\u00df, ob sie getroffen oder verfehlt hat."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "PHB",
+			"page": 55,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab der 6. Stufe kannst du zweimal statt einmal angreifen, wenn du die Aktion {@action Attack} in deinem Zug ausf\u00fchrst."
+			]
+		},
+		{
+			"name": "Battle Magic",
+			"source": "PHB",
+			"page": 55,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Mit Stufe 14 beherrschst du die Kunst, Zauberei und Waffengebrauch zu einem einzigen harmonischen Akt zu verweben. Wenn du deine Aktion dazu verwendest, einen Bardenzauber zu wirken, kannst du einen Waffenangriff als Bonusaktion ausf\u00fchren."
+			]
+		},
+		{
+			"name": "College of Creation",
+			"source": "TCE",
+			"page": 27,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation",
+			"subclassSource": "TCE",
+			"level": 3,
+			"entries": [
+				"Barden glauben, dass der Kosmos ein Kunstwerk ist - die Sch\u00f6pfung der ersten Drachen und G\u00f6tter. Diese sch\u00f6pferische Arbeit beinhaltete Harmonien, die bis heute in der Existenz widerhallen, eine Kraft, die als das Lied der Sch\u00f6pfung bekannt ist. Die Barden des Kollegiums der Sch\u00f6pfung sch\u00f6pfen aus diesem urzeitlichen Lied durch Tanz, Musik und Poesie, und ihre Lehrer teilen diese Lektion:",
+				"\"Vor der Sonne und dem Mond gab es das Lied, und seine Musik weckte die erste Morgend\u00e4mmerung. Seine Melodien erfreuten die Steine und B\u00e4ume so sehr, dass einige von ihnen eine eigene Stimme bekamen. Und nun singen auch sie. Lernt das Lied, Sch\u00fcler, und auch ihr k\u00f6nnt die Berge singen und tanzen lehren.\"",
+				"Zwerge und Gnome ermutigen ihre Barden oft dazu, das Lied der Sch\u00f6pfung zu studieren. Und unter den Drachengeborenen wird das Lied der Sch\u00f6pfung verehrt, denn Legenden beschreiben Bahamut und Tiamat - die gr\u00f6\u00dften aller Drachen - als zwei der ersten S\u00e4nger des Liedes.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mote of Potential|Bard||Creation|TCE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Performance of Creation|Bard||Creation|TCE|3"
+				}
+			]
+		},
+		{
+			"name": "Mote of Potential",
+			"source": "TCE",
+			"page": 27,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation",
+			"subclassSource": "TCE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Creation feature}",
+				"Immer wenn du einer Kreatur einen W\u00fcrfel f\u00fcr Bardische Inspiration gibst, kannst du eine Note aus dem Lied der Sch\u00f6pfung aussprechen, um einen Winzigen Klumpen Potential zu erschaffen, der im Umkreis von 5 Fu\u00df um diese Kreatur kreist. Der Klumpen ist nicht greifbar und unverwundbar und h\u00e4lt an, bis der W\u00fcrfel f\u00fcr Bardische Inspiration verloren geht. Der Klumpen sieht aus wie eine Musiknote, ein Stern, eine Blume oder ein anderes Symbol der Kunst oder des Lebens, das du w\u00e4hlst.",
+				"Wenn die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration einsetzt, bietet der Mote einen zus\u00e4tzlichen Effekt, der davon abh\u00e4ngt, ob der W\u00fcrfel eine F\u00e4higkeitspr\u00fcfung, einen Angriffswurf oder einen Rettungswurf beg\u00fcnstigt, wie unten beschrieben:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Ability Check",
+							"entry": "Wenn die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration w\u00fcrfelt, um ihn zu einer F\u00e4higkeits\u00fcberpr\u00fcfung hinzuzuf\u00fcgen, kann sie den W\u00fcrfel f\u00fcr Bardische Inspiration erneut werfen und w\u00e4hlen, welchen Wurf sie verwenden m\u00f6chte, da das Mote aufplatzt und f\u00fcr einen Moment bunte, harmlose Funken ausst\u00f6\u00dft."
+						},
+						{
+							"type": "item",
+							"name": "Attack Roll",
+							"entry": "Unmittelbar nachdem die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration gew\u00fcrfelt hat, um ihn zu einem Angriffswurf gegen ein Ziel zu addieren, zerbricht der Mote donnernd. Das Ziel und jede Kreatur deiner Wahl, die du im Umkreis von 5 Fu\u00df sehen kannst, m\u00fcssen einen Konstitutions-Erhaltungswurf gegen deinen Zauber-Save-DC bestehen oder erleiden Donnerschaden in H\u00f6he der gew\u00fcrfelten Zahl des W\u00fcrfels f\u00fcr Bardische Inspiration."
+						},
+						{
+							"type": "item",
+							"name": "Saving Throw",
+							"entry": "Unmittelbar nachdem die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration gew\u00fcrfelt und zu einem Rettungswurf addiert hat, verschwindet der Mote mit dem Klang sanfter Musik, wodurch die Kreatur vor\u00fcbergehend Trefferpunkte in H\u00f6he der gew\u00fcrfelten Zahl des W\u00fcrfels f\u00fcr Bardische Inspiration plus deinem Charisma-Modifikator erh\u00e4lt (mindestens 1 vor\u00fcbergehender Trefferpunkt)."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Performance of Creation",
+			"source": "TCE",
+			"page": 27,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation",
+			"subclassSource": "TCE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Creation feature}",
+				"Als Aktion kannst du die Magie des Liedes der Sch\u00f6pfung kanalisieren, um einen nichtmagischen Gegenstand deiner Wahl in einem unbesetzten Raum im Umkreis von 10 Fu\u00df von dir zu erschaffen. Der Gegenstand muss auf einer Oberfl\u00e4che oder in einer Fl\u00fcssigkeit erscheinen, die ihn tragen kann. Der Gp-Wert des Gegenstands kann nicht mehr als das 20-fache deiner Bardenstufe betragen und der Gegenstand muss mittelgro\u00df oder kleiner sein. Der Gegenstand schimmert sanft und eine Kreatur kann schwach Musik h\u00f6ren, wenn sie ihn ber\u00fchrt. Der erschaffene Gegenstand verschwindet nach einer Anzahl von Stunden, die deinem Fertigkeitsbonus entspricht. Beispiele f\u00fcr Gegenst\u00e4nde, die du erschaffen kannst, findest du im Ausr\u00fcstungskapitel des {@book Player's Handbook|PHB|5}.",
+				"Wenn du einmal einen Gegenstand mit dieser Eigenschaft erschaffen hast, kannst du dies erst wieder nach einer langen Pause tun, es sei denn, du verbrauchst einen Zauberslot der Stufe 2 oder h\u00f6her, um diese Eigenschaft erneut zu benutzen. Du kannst immer nur einen Gegenstand mit dieser Eigenschaft erschaffen; wenn du diese Aktion benutzt und bereits einen Gegenstand mit dieser Eigenschaft besitzt, verschwindet der erste sofort.",
+				"Die Gr\u00f6\u00dfe des Gegenstands, den du mit dieser Eigenschaft herstellen kannst, erh\u00f6ht sich um eine Gr\u00f6\u00dfenkategorie, wenn du die 6. Stufe (Gro\u00df) und die 14. Stufe (Riesig) erreichst."
+			]
+		},
+		{
+			"name": "Animating Performance",
+			"source": "TCE",
+			"page": 27,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Creation feature}",
+				"Als Aktion kannst du einen gro\u00dfen oder kleineren nichtmagischen Gegenstand im Umkreis von 30 Fu\u00df um dich herum beleben, der nicht getragen wird. Der belebte Gegenstand verwendet den Stat-Block {@creature Dancing Item|TCE}, der deinen Fertigkeitsbonus (PB) nutzt. Der Gegenstand ist freundlich zu dir und deinen Begleitern und gehorcht deinen Befehlen. Er lebt 1 Stunde lang, bis er auf 0 Trefferpunkte reduziert wird oder bis du stirbst.",
+				"Im Kampf teilt der Gegenstand deine Initiative, aber er ist sofort nach dir am Zug. Er kann sich selbst bewegen und seine Reaktion einsetzen, aber die einzige Aktion, die er in seinem Zug ausf\u00fchrt, ist die Aktion {@action Dodge}, es sei denn, du nimmst in deinem Zug eine Bonusaktion, um ihm eine andere Aktion zu befehlen. Diese Aktion kann eine aus seinem Statuenblock oder eine andere Aktion sein. Wenn du {@condition incapacitated} bist, kann der Gegenstand jede beliebige Aktion ausf\u00fchren, nicht nur {@action Dodge}.",
+				"Wenn du deine Eigenschaft Bardische Inspiration einsetzt, kannst du den Gegenstand als Teil derselben Bonusaktion befehlen, die du f\u00fcr Bardische Inspiration einsetzt.",
+				"Wenn du einmal einen Gegenstand mit dieser Eigenschaft belebt hast, kannst du dies erst wieder nach einer langen Ruhepause tun, es sei denn, du verbrauchst einen Zauberslot der Stufe 3 oder h\u00f6her, um diese Eigenschaft erneut zu benutzen. Du kannst immer nur einen Gegenstand mit dieser Eigenschaft beleben; wenn du diese Aktion benutzt und bereits einen {@creature dancing item|TCE} aus dieser Eigenschaft hast, wird der erste Gegenstand sofort leblos."
+			]
+		},
+		{
+			"name": "Creative Crescendo",
+			"source": "TCE",
+			"page": 27,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level College of Creation feature}",
+				"Wenn du deine F\u00e4higkeit \"Leistung der Sch\u00f6pfung\" einsetzt, kannst du mehr als einen Gegenstand auf einmal erschaffen. Die Anzahl der Gegenst\u00e4nde entspricht deinem Charisma-Modifikator (mindestens zwei Gegenst\u00e4nde). Wenn du einen Gegenstand erschaffst, der diese Anzahl \u00fcbersteigt, w\u00e4hlst du aus, welcher der zuvor erschaffenen Gegenst\u00e4nde verschwindet. Nur einer dieser Gegenst\u00e4nde kann die maximale Gr\u00f6\u00dfe haben, die du erschaffen kannst; die anderen m\u00fcssen klein oder winzig sein.",
+				"Ihr seid bei der Herstellung von Gegenst\u00e4nden mit der Leistung der Sch\u00f6pfung nicht mehr durch den Wert von Gp begrenzt."
+			]
+		},
+		{
+			"name": "College of Eloquence",
+			"source": "TCE",
+			"page": 29,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence",
+			"subclassSource": "TCE",
+			"level": 3,
+			"entries": [
+				"Anh\u00e4nger des Kollegiums der Eloquenz beherrschen die Kunst der Redekunst. \u00dcberzeugen gilt als hohe Kunst, und ein gut begr\u00fcndetes, gut gesprochenes Argument erweist sich oft als \u00fcberzeugender als Fakten. Diese Barden beherrschen eine Mischung aus Logik und theatralischem Wortspiel, \u00fcberzeugen Skeptiker und Verleumder mit logischen Argumenten und sprechen die Gef\u00fchle der Zuh\u00f6rer an.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Silver Tongue|Bard||Eloquence|TCE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Unsettling Words|Bard||Eloquence|TCE|3"
+				}
+			]
+		},
+		{
+			"name": "Silver Tongue",
+			"source": "TCE",
+			"page": 29,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence",
+			"subclassSource": "TCE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Eloquence feature}",
+				"Du bist ein Meister darin, das Richtige zur richtigen Zeit zu sagen. Wenn du eine Charisma- ({@skill Persuasion}) oder Charisma- ({@skill Deception}) Pr\u00fcfung machst, kannst du einen {@dice d20} Wurf von 9 oder niedriger als 10 behandeln."
+			]
+		},
+		{
+			"name": "Unsettling Words",
+			"source": "TCE",
+			"page": 29,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence",
+			"subclassSource": "TCE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Eloquence feature}",
+				"Du kannst mit Magie durchsetzte Worte spinnen, die eine Kreatur verunsichern und sie an sich selbst zweifeln lassen. Als Bonusaktion kannst du einen Einsatz deiner Bardischen Inspiration verbrauchen und eine Kreatur ausw\u00e4hlen, die du im Umkreis von 60 Fu\u00df sehen kannst. Wirf den W\u00fcrfel f\u00fcr Bardische Inspiration. Die Kreatur muss die gew\u00fcrfelte Zahl von ihrem n\u00e4chsten Rettungswurf abziehen, bevor du deinen n\u00e4chsten Zug beginnst."
+			]
+		},
+		{
+			"name": "Unfailing Inspiration",
+			"source": "TCE",
+			"page": 29,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Eloquence feature}",
+				"Deine inspirierenden Worte sind so \u00fcberzeugend, dass andere sich zum Erfolg getrieben f\u00fchlen. Wenn eine Kreatur einen deiner W\u00fcrfel f\u00fcr Bardische Inspiration zu ihrer F\u00e4higkeitspr\u00fcfung, ihrem Angriffswurf oder ihrem Rettungswurf hinzuf\u00fcgt und der Wurf misslingt, darf die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration behalten."
+			]
+		},
+		{
+			"name": "Universal Speech",
+			"source": "TCE",
+			"page": 29,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Eloquence feature}",
+				"Du hast die F\u00e4higkeit erlangt, deine Sprache f\u00fcr jede Kreatur verst\u00e4ndlich zu machen. W\u00e4hle als Aktion eine oder mehrere Kreaturen im Umkreis von 60 Fu\u00df um dich, bis zu einer Anzahl, die deinem Charisma-Modifikator entspricht (mindestens eine Kreatur). Die gew\u00e4hlten Kreaturen k\u00f6nnen dich 1 Stunde lang auf magische Weise verstehen, unabh\u00e4ngig von der Sprache, die du sprichst.",
+				"Wenn du diese Eigenschaft einmal benutzt hast, kannst du sie erst wieder nach einer langen Pause benutzen, es sei denn, du verbrauchst einen Zauberslot, um sie erneut zu benutzen."
+			]
+		},
+		{
+			"name": "Infectious Inspiration",
+			"source": "TCE",
+			"page": 29,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level College of Eloquence feature}",
+				"Wenn du jemanden erfolgreich inspirierst, kann sich die Macht deiner Beredsamkeit nun auf jemand anderen ausbreiten. Wenn eine Kreatur im Umkreis von 60 Fu\u00df von dir einen deiner W\u00fcrfel f\u00fcr Bardische Inspiration zu ihrer F\u00e4higkeitspr\u00fcfung, ihrem Angriffswurf oder ihrem Rettungswurf hinzuf\u00fcgt und der Wurf erfolgreich ist, kannst du deine Reaktion nutzen, um eine andere Kreatur (au\u00dfer dir selbst), die dich im Umkreis von 60 Fu\u00df h\u00f6ren kann, zu ermutigen, indem du ihr einen W\u00fcrfel f\u00fcr Bardische Inspiration gibst, ohne dass du einen deiner Eins\u00e4tze f\u00fcr Bardische Inspiration verbrauchst.",
+				"Du kannst diese Reaktion so oft einsetzen, wie es deinem Charisma-Modifikator entspricht (mindestens einmal), und du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendest."
+			]
+		},
+		{
+			"name": "College of Creation",
+			"source": "UA2020SubclassesPt2",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation (UA)",
+			"subclassSource": "UA2020SubclassesPt2",
+			"level": 3,
+			"entries": [
+				"Die Barden glauben, dass das Multiversum durch Wort und Klang entstanden ist, durch esoterische Harmonien, die weiterhin durch die Existenz erklingen: das Lied der Sch\u00f6pfung. Die Barden dieses Kollegiums nutzen diese uralte Kraft durch Tanz, Musik oder Gesang, um das ins Leben zu rufen, was sie am meisten brauchen.",
+				"Mitglieder dieses Kollegiums haben ihre Kr\u00e4fte vielleicht w\u00e4hrend Erfahrungen in anderen Welten oder Dimensionen der Existenz entwickelt. Diejenigen, die die Gemeinsamkeiten mehrerer Realit\u00e4ten gesehen haben, k\u00f6nnten gelernt haben, Wahrheiten anzuzapfen, die die meisten Sterblichen nur f\u00fcr einen Moment erahnen k\u00f6nnen. Es kann aber auch sein, dass der Barde mit seiner eigenen Dimension, Realit\u00e4t oder Zeit nicht mehr Schritt halten kann und seine Verbindungen zu anderen Welten ihm erlauben, den Raum um sich herum zu manipulieren. Unabh\u00e4ngig davon, woher ein Barde seine Kr\u00e4fte bezieht, k\u00f6nnen andere K\u00fcnstler von ihm angezogen werden, entweder um seine Geheimnisse zu erfahren oder um seiner gef\u00e4hrlichen Manipulation des Liedes der Sch\u00f6pfung ein Ende zu setzen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Note of Potential|Bard||Creation (UA)|UA2020SubclassesPt2|3"
+				}
+			]
+		},
+		{
+			"name": "Note of Potential",
+			"source": "UA2020SubclassesPt2",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation (UA)",
+			"subclassSource": "UA2020SubclassesPt2",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Creation feature}",
+				"Du kannst das Lied der Sch\u00f6pfung manipulieren, um eine schwebende musikalische Note der M\u00f6glichkeit zu beschw\u00f6ren: Immer wenn du einer Kreatur einen W\u00fcrfel f\u00fcr Bardische Inspiration gibst, kannst du eine Note des Potenzials erschaffen. Die Note ist ein winziges Objekt, das nicht greifbar und unverwundbar ist, und sie bleibt so lange bestehen, bis der W\u00fcrfel f\u00fcr Bardische Inspiration verloren geht. Eine Kreatur mit einer Note kann sie auf folgende Weise benutzen.",
+				{
+					"type": "entries",
+					"name": "Note of Destruction",
+					"entries": [
+						"Unmittelbar nachdem die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration gew\u00fcrfelt hat, um ihn zu einem Angriffswurf hinzuzuf\u00fcgen, kann sie die Note ausgeben, um einen Klangsto\u00df zu erzeugen. Jede andere Kreatur im Umkreis von 3 Metern muss einen Konstitutions-Erhaltungswurf gegen den Schutz-DC deines Zaubers bestehen oder erleidet Donnerschaden in H\u00f6he der gew\u00fcrfelten Zahl des W\u00fcrfels f\u00fcr Bardische Inspiration."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Note of Protection",
+					"entries": [
+						"Unmittelbar nachdem die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration gew\u00fcrfelt und zu einem Rettungswurf addiert hat, kann die Kreatur die Note ausgeben, um tempor\u00e4re Trefferpunkte in H\u00f6he der gew\u00fcrfelten Zahl des W\u00fcrfels f\u00fcr Bardische Inspiration + dein Charisma-Modifikator zu erhalten, vorausgesetzt, die Kreatur hat nicht bereits tempor\u00e4re Trefferpunkte."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Note of Ingenuity",
+					"entries": [
+						"Wenn die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration w\u00fcrfelt, um ihn zu einer F\u00e4higkeitspr\u00fcfung hinzuzuf\u00fcgen, kann sie die Note ausgeben, um den W\u00fcrfel f\u00fcr Bardische Inspiration erneut zu werfen und zu w\u00e4hlen, welchen Wurf sie verwenden m\u00f6chte."
+					]
+				}
+			]
+		},
+		{
+			"name": "Animating Performance",
+			"source": "UA2020SubclassesPt2",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation (UA)",
+			"subclassSource": "UA2020SubclassesPt2",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Creation feature}",
+				"Deine Beherrschung des Liedes der Sch\u00f6pfung erlaubt es dir, Gegenst\u00e4nde auf magische Weise zum Leben zu erwecken. Als Aktion kannst du einen gro\u00dfen oder kleineren nichtmagischen Gegenstand anvisieren, den du in einem Umkreis von 30 Fu\u00df sehen kannst, und ihn beleben. Der belebte Gegenstand verwendet den Stat-Block {@creature Dancing Item|UA2020SubclassesPt2} und steht 1 Stunde lang unter deiner Kontrolle oder bis er auf 0 Trefferpunkte reduziert wird.",
+				"Im Kampf teilt der Gegenstand die Anzahl deiner Initiative, aber er ist sofort nach dir am Zug. Er kann sich selbst bewegen und seine Reaktion einsetzen, aber die einzige Aktion, die er in seinem Zug ausf\u00fchrt, ist die Aktion {@action Dodge}, es sei denn, du nimmst eine Bonusaktion in deinem Zug, um ihm zu befehlen, eine der Aktionen in seinem Statuenblock oder die Aktion {@action Dash}, {@action Disengage}, {@action Help}, {@action Hide} oder {@action Search} auszuf\u00fchren.",
+				"Wenn du deine Eigenschaft Bardische Inspiration einsetzt, kannst du bestimmen, welche Aktion dein belebter Gegenstand als Teil derselben Bonusaktion ausf\u00fchrt.",
+				"Wenn du einmal einen Gegenstand mit dieser Eigenschaft belebt hast, kannst du das erst wieder tun, wenn du eine lange Ruhepause beendet hast oder wenn du einen Zauberslot der Stufe 3 oder h\u00f6her verbraucht hast, um diese Eigenschaft zu benutzen. Du kannst immer nur einen Gegenstand mit dieser Eigenschaft beleben; wenn du diese Aktion benutzt und bereits einen {@creature dancing item|UA2020SubclassesPt2} aus dieser Eigenschaft hast, wird der erste Gegenstand sofort leblos."
+			]
+		},
+		{
+			"name": "Performance of Creation",
+			"source": "UA2020SubclassesPt2",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Creation (UA)",
+			"subclassSource": "UA2020SubclassesPt2",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level College of Creation feature}",
+				"Durch deine Darbietung kannst du die Magie der Sch\u00f6pfung manipulieren und die Welt um dich herum kurzzeitig ver\u00e4ndern. Als Aktion kannst du einen nichtmagischen Gegenstand deiner Wahl in einem unbesetzten Raum im Umkreis von 10 Fu\u00df um dich herum erschaffen. Der Gegenstand muss auf einer Oberfl\u00e4che oder in einer Fl\u00fcssigkeit erscheinen, die ihn tragen kann. Der Gp-Wert des Gegenstands darf nicht mehr als das 20-fache deiner Bardenstufe betragen und muss gro\u00df oder kleiner sein. Winzige schimmernde, nicht greifbare Noten schweben um ihn herum, und eine Kreatur kann schwach Musik h\u00f6ren, wenn sie ihn ber\u00fchrt. Beispiele f\u00fcr Gegenst\u00e4nde, die du erschaffen kannst, findest du in den Tabellen R\u00fcstung, Waffen, Abenteurerausr\u00fcstung, Werkzeuge sowie Reittiere und Fahrzeuge in Kapitel 5, \"Ausr\u00fcstung\", des Spielerhandbuchs.",
+				"Der erschaffene Gegenstand verschwindet am Ende deines n\u00e4chsten Zuges, es sei denn, du verwendest deine Aktion, um ihn aufrechtzuerhalten. Jedes Mal, wenn du deine Aktion auf diese Weise verwendest, wird die Dauer des Gegenstandes bis zum Ende deines n\u00e4chsten Zuges verl\u00e4ngert, maximal jedoch um 1 Minute. Wenn du den Gegenstand die ganze Minute aufrechterh\u00e4ltst, bleibt er f\u00fcr eine Anzahl von Stunden bestehen, die deiner Bardenstufe entspricht.",
+				"Wenn du einmal einen Gegenstand mit dieser Eigenschaft erschaffen hast, kannst du das erst wieder tun, wenn du eine lange Pause gemacht hast oder einen Zauberslot der Stufe 5 oder h\u00f6her verbraucht hast, um diese Eigenschaft zu benutzen. Du kannst immer nur einen Gegenstand mit dieser Eigenschaft erschaffen; wenn du diese Aktion benutzt und bereits einen Gegenstand mit dieser Eigenschaft besitzt, verschwindet der erste sofort."
+			]
+		},
+		{
+			"name": "College of Spirits",
+			"source": "UA2020SubclassesPt4",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits (UA)",
+			"subclassSource": "UA2020SubclassesPt4",
+			"level": 3,
+			"entries": [
+				"Geschichten aus der Vergangenheit sind m\u00e4chtig; sie enthalten Lektionen \u00fcber Geschichte, Philosophie und Magie. Die Barden des Kollegiums der Geister suchen nach den Geschichten derer, die jenseits der materiellen Dimension leben. Mit Hilfe von Spielsets versuchen sie, ihre Geschichten zu h\u00f6ren, aber die Barden haben keine Kontrolle dar\u00fcber, welche Geschichte sie finden.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guiding Whispers|Bard||Spirits (UA)|UA2020SubclassesPt4|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spiritual Focus|Bard||Spirits (UA)|UA2020SubclassesPt4|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tales from Beyond|Bard||Spirits (UA)|UA2020SubclassesPt4|3"
+				}
+			]
+		},
+		{
+			"name": "Guiding Whispers",
+			"source": "UA2020SubclassesPt4",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits (UA)",
+			"subclassSource": "UA2020SubclassesPt4",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Spirits feature}",
+				"Du kannst Geister anrufen, um dich und andere zu leiten. Du erlernst den {@spell guidance} Zaubertrick, der nicht auf die Anzahl der Bardenzauber angerechnet wird, die du kennst. F\u00fcr dich hat er eine Reichweite von 60 Fu\u00df, wenn du ihn wirkst."
+			]
+		},
+		{
+			"name": "Spiritual Focus",
+			"source": "UA2020SubclassesPt4",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits (UA)",
+			"subclassSource": "UA2020SubclassesPt4",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Spirits feature}",
+				"Um mit Geistern in Kontakt zu treten, kannst du spezielle Hilfsmittel verwenden: eine Kerze, eine Kristallkugel, ein sprechendes Brett, ein Tarokka-Deck oder einen Sch\u00e4del.",
+				"Wenn du auf der 6. Stufe einen Bardenzauber wirkst, der Schaden zuf\u00fcgt oder Trefferpunkte durch den Geistigen Fokus wiederherstellt, wirf einen {@dice d6} und du erh\u00e4ltst einen Bonus auf einen Wurf des Zaubers in H\u00f6he der gew\u00fcrfelten Zahl."
+			]
+		},
+		{
+			"name": "Tales from Beyond",
+			"source": "UA2020SubclassesPt4",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits (UA)",
+			"subclassSource": "UA2020SubclassesPt4",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Spirits feature}",
+				"W\u00e4hrend du deinen Geistigen Fokus h\u00e4ltst, kannst du eine Bonusaktion nutzen, um einen Einsatz deiner Bardischen Inspiration zu verbrauchen und mit deinem Bardischen Inspirationsw\u00fcrfel auf der Tabelle Geschichten der Geister zu w\u00fcrfeln, um die erz\u00e4hlte Geschichte zu bestimmen. Du beh\u00e4ltst die Geschichte im Ged\u00e4chtnis, bis du die Wirkung der Geschichte verleihst oder eine kurze oder lange Pause machst.",
+				"Du kannst eine Aktion nutzen, um eine Kreatur im Umkreis von 30 Fu\u00df um dich herum (das kannst auch du sein) als Ziel des Effekts der Sage auszuw\u00e4hlen. Wenn du das getan hast, kannst du den Effekt der Sage erst wieder einsetzen, wenn du erneut w\u00fcrfelst.",
+				"Du kannst immer nur eine dieser Geschichten im Kopf behalten, und ein Wurf auf der Tabelle mit den Geistergeschichten beendet sofort die Wirkung der vorherigen Geschichte. Wenn die Geschichte einen Rettungswurf erfordert, entspricht der DC deinem Zauberschutz-DC.",
+				{
+					"type": "table",
+					"caption": "Spirits' Tales",
+					"colLabels": [
+						"Bardic Insp. Die",
+						"Tale"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							1,
+							"{@b 1 Beast.} Du rezitierst die Geschichte eines schlauen Tieres. 1 Minute lang hat das Ziel einen Vorteil bei Weisheitspr\u00fcfungen ({@skill Perception}) und einen Vorteil bei Angriffsw\u00fcrfen gegen eine Kreatur, wenn sich ein anderer Feind im Umkreis von 5 Fu\u00df befindet und dieser Feind nicht {@condition incapacitated} ist."
+						],
+						[
+							2,
+							"{@b 2 Warrior.} Du erz\u00e4hlst die Geschichte eines ber\u00fchmten Duellanten. F\u00fchre einen Nahkampf-Zauberangriff gegen das Ziel aus, w\u00e4hrend ein angreifender Spektralkrieger kurz in einem unbesetzten Raum innerhalb von 5 Fu\u00df um das Ziel erscheint, bevor er verschwindet. Bei einem Treffer erleidet das Ziel Kraftschaden in H\u00f6he von zwei W\u00fcrfeln deiner Bardischen Inspiration + deinem Charisma-Modifikator."
+						],
+						[
+							3,
+							"{@b 3 Friends.} Du rezitierst die Geschichte von Freunden, die sich im Jenseits wiedergefunden haben. Das Ziel und eine andere Kreatur seiner Wahl, die es im Umkreis von 5 Fu\u00df sehen kann, erhalten Trefferpunkte in H\u00f6he eines Wurfs deines W\u00fcrfels f\u00fcr Bardische Inspiration + dein Charisma-Modifikator zur\u00fcck."
+						],
+						[
+							4,
+							"{@b 4 Runaway.} Du erz\u00e4hlst die Geschichte eines Abenteurers, der sich aus jeder Enge befreien konnte. Das Ziel kann sofort seine Reaktion nutzen, um sich bis zu 30 Fu\u00df in einen unbesetzten Raum zu teleportieren, den es sehen kann. Wenn das Ziel sich teleportiert, kann es eine Anzahl von Kreaturen, die es im Umkreis von 30 Fu\u00df sehen kann, bis zu deinem Charisma-Modifikator (mindestens 1) w\u00e4hlen, um sofort die gleiche Reaktion zu nutzen."
+						],
+						[
+							5,
+							"{@b 5 Avenger.} Du erz\u00e4hlst die Geschichte eines r\u00e4chenden Ritters. 1 Minute lang kann das Ziel jedes Mal, wenn eine Kreatur, die es im Umkreis von 30 Fu\u00df sehen kann, von einer Kreatur verletzt wird, seine Reaktion nutzen, um dem Angreifer Kraftschaden in H\u00f6he eines Wurfs deines W\u00fcrfels f\u00fcr bardische Inspiration zuzuf\u00fcgen."
+						],
+						[
+							6,
+							"{@b 6 Hero.} Du erz\u00e4hlst die Geschichte eines epischen Helden. W\u00e4hle eine Kreatur, die du im Umkreis von 30 Fu\u00df sehen kannst. Das Ziel erh\u00e4lt tempor\u00e4re Trefferpunkte in H\u00f6he eines Wurfs deines W\u00fcrfels f\u00fcr Bardische Inspiration + deiner Bardenstufe. Solange es diese tempor\u00e4ren Trefferpunkte hat, erh\u00f6ht sich die Gehgeschwindigkeit des Ziels um 10 Fu\u00df."
+						],
+						[
+							7,
+							"{@b 7 Fey.} Du erz\u00e4hlst die Geschichte einer schelmischen Fee. Das Ziel muss einen Weisheitswurf bestehen oder wird bis zum Ende seiner n\u00e4chsten Runde von dir {@condition charmed}. Das {@condition charmed} Ziel muss seine Aktion nutzen, um einen Nahkampfangriff gegen eine andere Kreatur als sich selbst durchzuf\u00fchren, die du gedanklich w\u00e4hlst. Das Ziel kann in seinem Zug normal agieren, wenn du keine andere Kreatur w\u00e4hlst."
+						],
+						[
+							8,
+							"{@b 8 Dark Spirit.} Du sprichst eine schreckliche Geschichte \u00fcber einen Slayer in der Dunkelheit. Das Ziel wird {@condition invisible} bis zum Ende seines n\u00e4chsten Zuges oder bis es eine Kreatur mit einem Angriff trifft. Wenn es w\u00e4hrend dieser Unsichtbarkeit eine Kreatur mit einem Angriff trifft, erleidet diese Kreatur nekrotischen Schaden in H\u00f6he eines Wurfes deines W\u00fcrfels f\u00fcr bardische Inspiration und ist {@condition frightened} des Ziels bis zum Ende seines n\u00e4chsten Zuges."
+						],
+						[
+							9,
+							"{@b 9 Giant.} Du sprichst von den Taten eines m\u00e4chtigen Riesen: Jede Kreatur nach Wahl des Ziels, die es im Umkreis von 30 Fu\u00df sehen kann, muss einen St\u00e4rkewurf machen und erleidet bei einem Fehlschlag Kraftschaden in H\u00f6he von zwei W\u00fcrfeln deiner Bardischen Inspiration und wird umgeworfen {@condition prone}. Eine Kreatur, die ihren Rettungswurf schafft, erleidet nur halb so viel Schaden und wird nicht umgeworfen {@condition prone}."
+						],
+						[
+							10,
+							"{@b 10 Dragon.} Du hauchst das Gedicht eines zornigen Drachens aus. Das Ziel spuckt in einem Umkreis von 30 Fu\u00df magisch Feuer aus seinem Maul. Jede Kreatur in diesem Bereich muss einen Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutzwurf Feuerschaden in H\u00f6he von drei W\u00fcrfeln deiner Bardischen Inspiration, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+						],
+						[
+							11,
+							"{@b 11 Celestial.} Du sprichst von den erhabenen Taten eines Himmlischen. Das Ziel erh\u00e4lt Trefferpunkte in H\u00f6he von zwei W\u00fcrfeln deiner Bardischen Inspiration + deiner Bardenstufe zur\u00fcck und du beendest eine Krankheit oder einen Zustand aus der folgenden Liste, die/der das Ziel betrifft: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition petrified}, oder {@condition poisoned}."
+						],
+						[
+							12,
+							"{@b 12 Unknown.} Du sprichst eine unverst\u00e4ndliche Fabel von einem Wesen jenseits der Sterne. W\u00e4hle eine Kreatur, die du im Umkreis von 30 Fu\u00df sehen kannst. Das Ziel muss einen Intelligenz-Erhaltungswurf bestehen oder erleidet psychischen Schaden in H\u00f6he von drei W\u00fcrfeln deiner Bardischen Inspiration, und das Ziel kann 1 Minute lang keine Sprache sprechen."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spirit Session",
+			"source": "UA2020SubclassesPt4",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits (UA)",
+			"subclassSource": "UA2020SubclassesPt4",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Spirits feature}",
+				"Du kannst Geister kanalisieren, um Einblicke in die Magie zu erhalten. Du kannst ein einst\u00fcndiges Ritual durchf\u00fchren, in dem du Geister kanalisierst (dies kann w\u00e4hrend einer kurzen oder langen Ruhepause geschehen), indem du deinen geistigen Fokus einsetzt. Du kannst das Ritual mit einer Anzahl von Kreaturen durchf\u00fchren, die deinem Fertigkeitsbonus entspricht (einschlie\u00dflich dir selbst). Am Ende des Rituals lernst du vor\u00fcbergehend {@filter one spell of your choice from any class|spells|school=d;n|level=0;1;2;3;4;5;6}.",
+				"Der gew\u00e4hlte Zauber muss eine Stufe haben, die der Anzahl der Kreaturen, die das Ritual durchgef\u00fchrt haben, oder weniger entspricht, er muss eine Stufe haben, die du wirken kannst, und er muss aus der Schule der Wahrsagerei oder Nekromantie stammen. Der gew\u00e4hlte Zauber z\u00e4hlt f\u00fcr dich als Bardenzauber, wird aber nicht auf die Anzahl der Bardenzauber angerechnet, die du kennst.",
+				"Wenn du das Ritual einmal durchgef\u00fchrt hast, kannst du es erst wieder tun, wenn du eine lange Pause beginnst, und du kennst den gew\u00e4hlten Zauber, bis du eine lange Pause beginnst."
+			]
+		},
+		{
+			"name": "Spiritual Focus",
+			"source": "UA2020SubclassesPt4",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits (UA)",
+			"subclassSource": "UA2020SubclassesPt4",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Spirits feature}",
+				"Wenn du auf der 6. Stufe einen Bardenzauber wirkst, der Schaden zuf\u00fcgt oder Trefferpunkte durch den Geistigen Fokus wiederherstellt, wirf einen {@dice d6} und du erh\u00e4ltst einen Bonus auf einen Wurf des Zaubers in H\u00f6he der gew\u00fcrfelten Zahl."
+			]
+		},
+		{
+			"name": "Mystical Connection",
+			"source": "UA2020SubclassesPt4",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits (UA)",
+			"subclassSource": "UA2020SubclassesPt4",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level College of Spirits feature}",
+				"Deine Verbindung zu den Geistern ist halb-permanent geworden. Immer wenn du deine Eigenschaft Geschichten aus dem Jenseits benutzt, kannst du einen {@dice d6} w\u00fcrfeln und ihn benutzen, anstatt einen W\u00fcrfel f\u00fcr Bardische Inspiration auszugeben. Du benutzt immer noch deinen W\u00fcrfel f\u00fcr Bardische Inspiration f\u00fcr den Effekt der Geschichte, ohne ihn auszugeben."
+			]
+		},
+		{
+			"name": "College of Eloquence",
+			"source": "UABardAndPaladin",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence (UA)",
+			"subclassSource": "UABardAndPaladin",
+			"level": 3,
+			"entries": [
+				"Anh\u00e4nger des Kollegiums der Eloquenz beherrschen die Kunst der Redekunst. \u00dcberzeugen gilt als hohe Kunst, und ein gut begr\u00fcndetes, gut gesprochenes Argument erweist sich oft als m\u00e4chtiger als die objektive Wahrheit. Diese Barden beherrschen eine Mischung aus Logik und theatralischem Wortspiel, \u00fcberzeugen Skeptiker und Gegner mit logischen Argumenten und sprechen die Gef\u00fchle ganzer Zuh\u00f6rerschaften an.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Universal Speech|Bard||Eloquence (UA)|UABardAndPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soothing Words|Bard||Eloquence (UA)|UABardAndPaladin|3"
+				}
+			]
+		},
+		{
+			"name": "Soothing Words",
+			"source": "UABardAndPaladin",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence (UA)",
+			"subclassSource": "UABardAndPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Eloquence feature}",
+				"Du kannst jetzt ruhige Emotionen zaubern, ohne einen Zauberslot zu verbrauchen. Du kannst diese F\u00e4higkeit so oft einsetzen, wie es deinem Charisma-Modifikator entspricht. Du erh\u00e4ltst alle verbrauchten Eins\u00e4tze dieser F\u00e4higkeit zur\u00fcck, wenn du eine lange Pause beendet hast."
+			]
+		},
+		{
+			"name": "Universal Speech",
+			"source": "UABardAndPaladin",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence (UA)",
+			"subclassSource": "UABardAndPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Eloquence feature}",
+				"Du hast die F\u00e4higkeit erlangt, mit jeder Kreatur zu sprechen und zu argumentieren. Als Bonusaktion kannst du einen deiner Eins\u00e4tze von Bardische Inspiration aufbrauchen. Wenn du dies tust, wirfst du deinen W\u00fcrfel f\u00fcr Bardische Inspiration und w\u00e4hlst eine Anzahl von Kreaturen im Umkreis von 60 Fu\u00df, die du sehen kannst, die dem Wurf entspricht. 10 Minuten lang k\u00f6nnen die gew\u00e4hlten Kreaturen dich auf magische Weise verstehen, unabh\u00e4ngig von der Sprache, die du sprichst, und du hast einen Vorteil bei Charisma-Proben, um sie zu beeinflussen. Diese Eigenschaft funktioniert auch bei Kreaturen, die keine Sprachen sprechen."
+			]
+		},
+		{
+			"name": "Undeniable Logic",
+			"source": "UABardAndPaladin",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence (UA)",
+			"subclassSource": "UABardAndPaladin",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Eloquence feature}",
+				"Sie k\u00f6nnen Worte, die mit Magie gespickt sind, zu einem Knoten von Argumenten spinnen, der ermutigend oder unm\u00f6glich zu folgen sein kann.",
+				"Als Bonusaktion kannst du einen deiner Eins\u00e4tze von Bardische Inspiration aufbrauchen. Wenn du dies tust, w\u00e4hle eine Kreatur, die du im Umkreis von 60 Metern sehen kannst und die dich h\u00f6ren kann, wirf dann deinen W\u00fcrfel f\u00fcr Bardische Inspiration und w\u00e4hle eine der folgenden M\u00f6glichkeiten:",
+				{
+					"type": "list",
+					"items": [
+						"Die Kreatur erleidet psychischen Schaden in H\u00f6he der Zahl, die du mit dem W\u00fcrfel f\u00fcr Bardische Inspiration w\u00fcrfelst. Die Kreatur muss einen Intelligenz-Sicherungswurf gegen den Schutz-DC deines Zaubers bestehen oder beim n\u00e4chsten Sicherungswurf, den sie vor dem Ende deines n\u00e4chsten Zuges macht, einen Nachteil haben.",
+						"Die Kreatur erh\u00e4lt Trefferpunkte in H\u00f6he der Zahl, die du mit dem W\u00fcrfel f\u00fcr Bardische Inspiration w\u00fcrfelst, und die Kreatur hat beim n\u00e4chsten Rettungswurf, den sie vor dem Ende deines n\u00e4chsten Zuges macht, Vorteil."
+					]
+				}
+			]
+		},
+		{
+			"name": "Infectious Inspiration",
+			"source": "UABardAndPaladin",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Eloquence (UA)",
+			"subclassSource": "UABardAndPaladin",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level College of Eloquence feature}",
+				"Wenn eine Kreatur einen deiner W\u00fcrfel f\u00fcr Bardische Inspiration zu ihrer F\u00e4higkeits\u00fcberpr\u00fcfung, ihrem Angriffswurf oder ihrem Rettungswurf hinzuf\u00fcgt und der Wurf misslingt, darf die Kreatur den W\u00fcrfel f\u00fcr Bardische Inspiration behalten.",
+				"Zus\u00e4tzlich kannst du, wenn eine Kreatur einen deiner W\u00fcrfel f\u00fcr Bardische Inspiration zu ihrer F\u00e4higkeitspr\u00fcfung, ihrem Angriffswurf oder ihrem Rettungswurf hinzuf\u00fcgt und der Wurf erfolgreich ist, deine Reaktion nutzen, um eine andere Kreatur (au\u00dfer dir selbst), die dich im Umkreis von 60 Fu\u00df h\u00f6ren kann, zu ermutigen, indem du ihr einen W\u00fcrfel f\u00fcr Bardische Inspiration gibst, ohne einen deiner Eins\u00e4tze f\u00fcr Bardische Inspiration zu verbrauchen. Du kannst diese Reaktion so oft nutzen, wie es deinem Charisma-Modifikator entspricht (mindestens einmal), und du erh\u00e4ltst alle verbrauchten Eins\u00e4tze zur\u00fcck, wenn du eine lange Pause beendest."
+			]
+		},
+		{
+			"name": "College of Glamour",
+			"source": "UABardBardColleges",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 3,
+			"entries": [
+				"Das College of Glamour steht jenen Barden offen, die ihr Handwerk im pulsierenden, t\u00f6dlichen Reich des Feenreichs erlernt haben. Von Satyrn, Eladrin und anderen Feen unterrichtet, lernen diese Barden, ihre Magie einzusetzen, um andere zu erfreuen und zu fesseln.",
+				"Die Barden dieses Kollegiums werden mit einer Mischung aus Ehrfurcht und Furcht betrachtet. Ihre Darbietungen sind der Stoff, aus dem Legenden gemacht sind. Die Barden dieses Kollegiums sind so wortgewandt, dass eine Rede oder ein Lied, das einer von ihnen vortr\u00e4gt, dazu f\u00fchren kann, dass Gefangene den Barden unverletzt freilassen, und einen w\u00fctenden Drachen in Selbstgef\u00e4lligkeit wiegen kann. Dieselbe Magie, die es ihnen erlaubt, Bestien zu b\u00e4ndigen, kann auch den Geist beugen. B\u00f6sartige Barden dieses Kollegiums k\u00f6nnen eine Gemeinschaft wochenlang ausbluten lassen, indem sie ihre Magie dazu missbrauchen, ihre Gastgeber in Sklaven zu verwandeln.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mantle of Inspiration|Bard||Glamour (UA)|UABardBardColleges|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Enthralling Performance|Bard||Glamour (UA)|UABardBardColleges|3"
+				}
+			]
+		},
+		{
+			"name": "Enthralling Performance",
+			"source": "UABardBardColleges",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Ab der 3. Stufe kannst du deinen Auftritt mit verf\u00fchrerischer Feenmagie aufladen.",
+				"Wenn du mindestens 10 Minuten lang auftrittst, kannst du versuchen, dein Publikum durch Singen, Rezitieren eines Gedichts oder Tanzen zum Staunen zu bringen. Am Ende des Auftritts w\u00e4hlst du eine Anzahl von Humanoiden im Umkreis von 60 Fu\u00df, die dir zugesehen und zugeh\u00f6rt haben, bis zu einer Anzahl, die deinem Charisma-Modifikator entspricht (mindestens einer). Jedes Ziel muss einen Weisheitswurf gegen deinen Zauber-Save-DC bestehen oder von dir {@condition charmed} werden. W\u00e4hrend {@condition charmed} auf diese Weise das Ziel dich verg\u00f6ttert, spricht es zu jedem, der es anspricht, in den h\u00f6chsten T\u00f6nen von dir, behindert jeden, der sich dir widersetzt, und vermeidet Gewalt, es sei denn, es war bereits geneigt, in deinem Namen zu k\u00e4mpfen. Dieser Effekt endet bei einem Ziel nach 1 Stunde, wenn es Schaden erleidet, wenn du es angreifst oder wenn es Zeuge wird, wie du einen seiner Verb\u00fcndeten angreifst oder sch\u00e4digst.",
+				"Gelingt es dem Ziel, sich gegen diesen Effekt zu sch\u00fctzen, hat es keine Ahnung, dass du versucht hast, es zu verzaubern.",
+				"Wenn Sie diese Funktion verwenden, k\u00f6nnen Sie sie erst wieder nach einer kurzen oder langen Pause nutzen."
+			]
+		},
+		{
+			"name": "Mantle of Inspiration",
+			"source": "UABardBardColleges",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem College of Glamour auf Stufe 3 beitrittst, erh\u00e4ltst du die F\u00e4higkeit, ein Lied der Feenmagie zu weben, das deine Verb\u00fcndeten mit Kraft und Schnelligkeit verzaubert.",
+				"Als Bonusaktion kannst du einen Einsatz von Bardische Inspiration aufwenden, um dir ein wundersames, jenseitiges Aussehen zu verleihen. Wenn du dies tust, w\u00e4hle eine Anzahl von Verb\u00fcndeten, die du sehen kannst und die dich im Umkreis von 60 Fu\u00df sehen k\u00f6nnen, bis zu einer Anzahl von ihnen, die deinem Charisma-Modifikator entspricht (mindestens einer). Jedes Ziel erh\u00e4lt {@dice 2d6} tempor\u00e4re Trefferpunkte.",
+				"Wenn ein Ziel diese tempor\u00e4ren Trefferpunkte erh\u00e4lt, kann es au\u00dferdem seine Reaktion nutzen, um sich bis zu seiner Geschwindigkeit auf dich zuzubewegen, ohne Gelegenheitsangriffe zu provozieren. Es muss den k\u00fcrzesten und sichersten Weg zu dir nehmen.",
+				"Die Anzahl der tempor\u00e4ren Trefferpunkte erh\u00f6ht sich, wenn du bestimmte Stufen in dieser Klasse erreichst, und steigt auf {@dice 2d8} auf der 5. Stufe, {@dice 2d10} auf der 10. Stufe und {@dice 2d12} auf der 15."
+			]
+		},
+		{
+			"name": "Mantle of Majesty",
+			"source": "UABardBardColleges",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du die F\u00e4higkeit, dich in eine feige Magie zu h\u00fcllen, die andere dazu bringt, dir zu dienen. Als Bonusaktion nimmst du f\u00fcr 1 Minute ein Aussehen von unirdischer Sch\u00f6nheit an. W\u00e4hrend dieser Zeit kannst du {@spell command} als Bonusaktion in jeder deiner Runden wirken, ohne einen Zauberslot zu benutzen. Dieser Effekt h\u00e4lt 1 Minute lang an, und jede Kreatur {@condition charmed} in deiner N\u00e4he misslingt automatisch ihr Schutzwurf gegen den Zauber.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Mantle of Majesty",
+			"source": "UABardBardColleges",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Auf der 14. Stufe erh\u00e4ltst du einen jenseitigen Aspekt deines Aussehens, der dich noch grimmiger und lieblicher erscheinen l\u00e4sst.",
+				"Au\u00dferdem kannst du mit dieser Eigenschaft {@spell sanctuary} auf dich selbst wirken. Wenn eine Kreatur ihren Schutzwurf gegen den Zauber misslingt, erh\u00e4ltst du au\u00dferdem 1 Minute lang einen Vorteil bei allen Charisma-Proben gegen die Kreatur, und sie hat einen Nachteil bei allen Schutzw\u00fcrfen, die sie in deinem n\u00e4chsten Zug gegen deine Zauber macht.",
+				"Wenn du mit dieser Funktion {@spell sanctuary} gewirkt hast, kannst du dies erst wieder tun, wenn du eine kurze oder lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "College of Whispers",
+			"source": "UABardBardColleges",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 3,
+			"entries": [
+				"Die meisten Leute freuen sich, einen Barden in ihrer Mitte willkommen zu hei\u00dfen. Die Barden des Kollegs des Fl\u00fcsterns nutzen dies zu ihrem Vorteil. Sie scheinen wie jeder andere Barde zu sein, teilen Neuigkeiten mit, singen Lieder und erz\u00e4hlen den Zuh\u00f6rern, die sie versammeln, Geschichten. In Wahrheit lehrt das Kolleg des Fl\u00fcsterns seine Sch\u00fcler, dass sie W\u00f6lfe unter Schafen sind. Diese Barden nutzen ihr Wissen und ihre Magie, um Geheimnisse aufzudecken und sie durch Erpressung und Drohungen gegen andere einzusetzen.",
+				"Viele andere Barden hassen das Kollegium des Fl\u00fcsterns, da sie es als Parasit betrachten, der den Ruf der Barden ausnutzt, um Reichtum und Macht zu erlangen. Aus diesem Grund geben diese Barden ihre wahre Natur nur selten preis, es sei denn, sie m\u00fcssen es. Sie behaupten in der Regel, einem anderen Kollegium anzugeh\u00f6ren, oder halten ihre wahre Natur geheim, um K\u00f6nigsh\u00f6fe und andere Orte der Macht besser infiltrieren und ausnutzen zu k\u00f6nnen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Venomous Blades|Bard||Whispers (UA)|UABardBardColleges|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Venomous Words|Bard||Whispers (UA)|UABardBardColleges|3"
+				}
+			]
+		},
+		{
+			"name": "Venomous Blades",
+			"source": "UABardBardColleges",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem College of Whispers auf Stufe 3 beitrittst, erh\u00e4ltst du die F\u00e4higkeit, deine Waffenangriffe f\u00fcr einen Moment auf magische Weise giftig zu machen.",
+				"Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Einsatz deiner Bardischen Inspiration ausgeben, um diesem Ziel zus\u00e4tzlich {@damage 2d6} Giftschaden zuzuf\u00fcgen. Du kannst dies nur einmal pro Runde in deinem Zug tun.",
+				"Der zus\u00e4tzliche Schaden erh\u00f6ht sich, wenn du bestimmte Stufen in dieser Klasse erreichst, und steigt auf {@dice 2d8} auf der 5. Stufe, {@dice 2d10} auf der 10. Stufe und {@dice 2d12} auf der 15. Stufe."
+			]
+		},
+		{
+			"name": "Venomous Words",
+			"source": "UABardBardColleges",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Auf der 3. Stufe lernst du, unschuldig erscheinende Worte mit einer heimt\u00fcckischen Magie zu versehen. Eine Kreatur, die dich sprechen h\u00f6rt, kann in Angst und Paranoia verfallen.",
+				"Wenn du mindestens 10 Minuten lang allein mit einem Humanoiden sprichst, kannst du versuchen, Paranoia und Angst in seinen Geist zu s\u00e4en. Am Ende des Gespr\u00e4chs muss das Ziel einen Weisheitswurf gegen den Schutz-DC deines Zaubers bestehen oder f\u00fcr die n\u00e4chste Stunde {@condition frightened} sein, bis es angegriffen oder gesch\u00e4digt wird oder bis es miterlebt, wie seine Verb\u00fcndeten angegriffen oder gesch\u00e4digt werden. W\u00e4hrend {@condition frightened} auf diese Weise paranoid ist, versucht das Ziel, die Gesellschaft anderer zu meiden, einschlie\u00dflich seiner Verb\u00fcndeten. Das Ziel sucht sich den sichersten, geheimsten Ort, der ihm zur Verf\u00fcgung steht, und versteckt sich dort.",
+				"Gelingt dem Ziel die Rettung, hat es keinen Hinweis darauf, dass du es erschrecken wolltest.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine kurze oder lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Mantle of Whispers",
+			"source": "UABardBardColleges",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du die F\u00e4higkeit, die Gestalt einer Kreatur anzunehmen. Wenn du eine Kreatur mit einem Angriff oder Zauber t\u00f6test oder eine Kreatur im Umkreis von 3 Metern stirbt, kannst du ihren Schatten mit deiner Reaktion magisch einfangen. Du kannst nur den Schatten einer Kreatur einfangen, die deinem Kreaturentyp (z.B. humanoid) und deiner Gr\u00f6\u00dfe entspricht (du kannst einen kleinen oder mittleren Schatten einfangen, wenn du klein bist), und du kannst immer nur einen Schatten einfangen.",
+				"Nachdem du den Schatten einer Kreatur eingefangen hast, kannst du ihn mit deiner Magie in eine Verkleidung weben, die es dir erlaubt, sein Aussehen anzunehmen und Zugang zu seinen oberfl\u00e4chlichen Erinnerungen zu erhalten. Als Aktion nimmst du das Aussehen der Kreatur f\u00fcr 1 Stunde an oder bis du diesen Effekt als Bonusaktion beendest.",
+				"W\u00e4hrend dieser Stunde erh\u00e4ltst du Zugang zu allen Informationen, die die Kreatur aus freien St\u00fccken mit einem zuf\u00e4lligen Bekannten teilen w\u00fcrde. Die Informationen umfassen allgemeine Details \u00fcber ihren Hintergrund und ihr pers\u00f6nliches Leben, aber keine Geheimnisse. Die Informationen reichen aus, um dich als die Kreatur auszugeben, indem du ihre Erinnerungen nutzt.",
+				"Eine andere Kreatur kann diese Verkleidung durchschauen, indem sie eine Weisheitspr\u00fcfung ({@skill Insight}) gegen deine Charisma-Pr\u00fcfung ({@skill Deception}) ablegt, wobei du einen Bonus von +5 auf deine Pr\u00fcfung erh\u00e4ltst.",
+				"Die Verkleidung und das Wissen, das sie gew\u00e4hrt, verschwinden, wenn die Dauer dieser F\u00e4higkeit endet."
+			]
+		},
+		{
+			"name": "Shadow Lore",
+			"source": "UABardBardColleges",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers (UA)",
+			"subclassSource": "UABardBardColleges",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Auf Stufe 14 erh\u00e4ltst du die F\u00e4higkeit, dunkle Magie in deine Worte zu weben und die tiefsten \u00c4ngste einer Kreatur anzuzapfen.",
+				"Als Aktion fl\u00fcsterst du auf magische Weise einen Satz, den nur eine Kreatur deiner Wahl im Umkreis von 30 Fu\u00df von dir h\u00f6ren kann. Das Ziel muss einen Weisheitswurf gegen den Schutz-DC deines Zaubers machen. Er gelingt automatisch, wenn es keine Sprache mit dir teilt oder dich nicht h\u00f6ren kann. Bei einem erfolgreichen Schutzwurf klingt dein Fl\u00fcstern wie unverst\u00e4ndliches Gemurmel und hat keine Wirkung.",
+				"Wenn das Ziel seinen Rettungswurf nicht schafft, wird es f\u00fcr die n\u00e4chsten 8 Stunden oder bis du oder deine Verb\u00fcndeten es angreifen oder ihm Schaden zuf\u00fcgen, von dir auf {@condition charmed} geleitet. Es interpretiert das Gefl\u00fcster als Beschreibung seines schrecklichsten Geheimnisses. W\u00e4hrend du dieses Geheimnis nicht kennst, ist das Ziel davon \u00fcberzeugt, dass du es kennst.",
+				"Auf {@condition charmed} gehorcht die Kreatur deinen Befehlen aus Angst, dass du ihr Geheimnis verr\u00e4tst. Sie wird nicht ihr Leben f\u00fcr dich riskieren oder f\u00fcr dich k\u00e4mpfen, es sei denn, sie war bereits dazu geneigt. Sie gew\u00e4hrt dir Gunst und Geschenke, die sie einem engen Freund anbieten w\u00fcrde.",
+				"Wenn der Effekt endet, wei\u00df die Kreatur nicht mehr, warum sie dich so gef\u00fcrchtet hat. Wenn du diese F\u00e4higkeit einmal benutzt hast, kannst du sie erst wieder nach einer langen Pause einsetzen."
+			]
+		},
+		{
+			"name": "College of Satire",
+			"source": "UAKitsOfOld",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Satire (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"entries": [
+				"Die Barden des Kollegiums der Satire werden Gaukler genannt. Sie unterhalten ihr Publikum, das von der Menge in einer heruntergekommenen Hafenkneipe bis hin zu den Adligen am k\u00f6niglichen Hof reicht, mit anspruchslosen Geschichten, gewagter Akrobatik und bissigen Witzen. Wo andere Barden vergessene \u00dcberlieferungen oder Geschichten von epischer Tapferkeit suchen, st\u00f6bern die Gaukler peinliche und urkomische Geschichten aller Art auf. Ob sie nun die unfl\u00e4tige Geschichte einer Aff\u00e4re eines bulligen Stallknechts mit einer alten Herzogin oder eine sp\u00f6ttische Satire \u00fcber die s\u00fc\u00dfliche Unschuld eines Paladins von Helm erz\u00e4hlen - ein Gaukler l\u00e4sst sich weder von Geschmack noch von gesellschaftlichem Anstand noch von Scham davon abhalten, sich einen Spa\u00df zu erlauben.",
+				"Narren sind zwar Meister des Wortspiels, des Scherzes und der verbalen Sticheleien, aber sie sind viel mehr als nur eine komische Figur. Von ihnen wird erwartet, dass sie sich \u00fcber sie lustig machen und sie provozieren, indem sie sich zunutze machen, dass selbst die M\u00e4chtigsten die Sticheleien eines Narren mit Humor ertragen. Diese Erwartung erlaubt es einem Narren, als Kritiker oder als Stimme der Vernunft zu dienen, wenn andere zu eingesch\u00fcchtert sind, um die Wahrheit zu sagen.",
+				"F\u00fcr die Herzogin mit einer Vorliebe f\u00fcr stramme junge Arbeiter k\u00f6nnten solche Geschichten dazu dienen, die Zielpersonen ihrer Zuneigung zu warnen und sie zu zwingen, ihre Gewohnheiten zu \u00e4ndern, weil es ihr an willigen Partnern mangelt. Wenn sie den Narren zur\u00fcckschl\u00e4gt, ruiniert das nur ihren bereits besch\u00e4digten Ruf und k\u00f6nnte der beste Beweis daf\u00fcr sein, dass die Satiren des Narren ins Schwarze getroffen haben. Wenn sie aber freundlich und gro\u00dfz\u00fcgig zu ihren Eroberungen ist, machen die Witze und Geschichten sie zu einer Art Volksheldin und locken noch mehr potenzielle Partner zu ihr.",
+				"Narren sind nur einer Sache treu: der Verfolgung und Verbreitung der Wahrheit. Sie nutzen ihre Komik und ihr harmloses Auftreten, um gesellschaftliche Schranken zu durchbrechen und Korruption, Inkompetenz und Dummheit unter den Reichen und M\u00e4chtigen zu entlarven. Ob sie den Verrat eines Betr\u00fcgers aufdecken oder die Kriegspl\u00e4ne eines Barons als von Gier und Blutrausch getrieben entlarven, ein Narr dient als Gewissen eines Reiches.",
+				"Gaukler wagen sich an den Schutz des einfachen Volkes und durchkreuzen die Pl\u00e4ne der Reichen, M\u00e4chtigen und Arroganten. Ihre Magie st\u00e4rkt die Stimmung der Verb\u00fcndeten und l\u00e4sst die Feinde zweifeln. Unter den Barden sind Gaukler un\u00fcbertroffene Akrobaten, und ihre F\u00e4higkeit zu taumeln, auszuweichen, zu springen und zu klettern macht sie zu schl\u00fcpfrigen Gegnern im Kampf.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Bard||Satire (UA)|UAKitsOfOld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tumbling Fool|Bard||Satire (UA)|UAKitsOfOld|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "UAKitsOfOld",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Satire (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem College of Satire auf der 3. Stufe beitrittst, erh\u00e4ltst du die Beherrschung von {@item thieves' tools|phb}. Du erh\u00e4ltst au\u00dferdem die Beherrschung von {@skill Sleight of Hand} und einer zus\u00e4tzlichen Fertigkeit deiner Wahl. Wenn du bereits {@item thieves' tools|phb} oder {@skill Sleight of Hand} beherrschst, w\u00e4hle eine weitere Fertigkeit f\u00fcr jede Beherrschung, die du bereits hast."
+			]
+		},
+		{
+			"name": "Tumbling Fool",
+			"source": "UAKitsOfOld",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Satire (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Auf Stufe 3 beherrschst du eine Reihe akrobatischer Techniken, die es dir erm\u00f6glichen, Gefahren auszuweichen. Als Bonusaktion kannst du taumeln. Wenn du taumelst, erh\u00e4ltst du f\u00fcr den Rest deines Zuges die folgenden Vorteile:",
+				{
+					"type": "list",
+					"items": [
+						"Sie erhalten die Vorteile der Aktionen {@action Dash} und {@action Disengage}.",
+						"Du erh\u00e4ltst eine Klettergeschwindigkeit in H\u00f6he deiner aktuellen Geschwindigkeit.",
+						"Du erleidest die H\u00e4lfte des Schadens beim Fallen."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fool's Insight",
+			"source": "UAKitsOfOld",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Satire (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4lt deine F\u00e4higkeit, Geschichten und \u00dcberlieferungen zu sammeln, einen \u00fcbernat\u00fcrlichen Vorteil. Du kannst \"Gedanken erkennen\" bis zu einer Anzahl deines Charisma-Modifikators zaubern. Du erh\u00e4ltst alle verbrauchten Anwendungen dieser F\u00e4higkeit nach einer langen Pause zur\u00fcck.",
+				"Widersteht eine Kreatur deinem Versuch, tiefer zu erforschen, und gelingt ihr ein Rettungswurf gegen deine Gedankenentdeckung, erleidet sie sofort einen peinlichen sozialen Fauxpas: Sie kann laut r\u00fclpsen, einen donnernden R\u00fclpser aussto\u00dfen, stolpern und fallen oder gezwungen sein, einen geschmacklosen Witz zu erz\u00e4hlen."
+			]
+		},
+		{
+			"name": "Fool's Luck",
+			"source": "UAKitsOfOld",
+			"page": 2,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Satire (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Gaukler scheinen ein H\u00e4ndchen daf\u00fcr zu haben, sich aus brenzligen Situationen herauszuwinden und etwas, das wie ein sicherer Misserfolg aussieht, in einen peinlichen, aber effektiven Erfolg zu verwandeln.",
+				"Auf Stufe 14 kannst du einen Einsatz von Bardische Inspiration verbrauchen, nachdem du eine F\u00e4higkeitspr\u00fcfung oder einen Rettungswurf nicht bestanden hast oder einen Angriffswurf nicht bestanden hast. Wirf einen W\u00fcrfel f\u00fcr Bardische Inspiration und addiere die gew\u00fcrfelte Zahl zu deinem Angriff, deinem Rettungswurf oder deiner F\u00e4higkeitspr\u00fcfung, wobei das neue Ergebnis anstelle des misslungenen Wurfs verwendet wird.",
+				"Wenn du mit dieser F\u00e4higkeit einen Erfolg bei einem Angriff, einem Rettungswurf oder einer F\u00e4higkeitspr\u00fcfung erzielst, notiere die Zahl, die du mit dem W\u00fcrfel f\u00fcr Bardische Inspiration gew\u00fcrfelt hast. Der DM kann dieses Ergebnis dann als Malus auf einen Angriff oder eine Pr\u00fcfung anwenden, die du durchf\u00fchrst, und du kannst diese F\u00e4higkeit erst wieder einsetzen, wenn du diesen Nachteil erleidest. Wenn der DM diesen Malus geltend macht, beschreibe einen peinlichen Fauxpas oder Fehler, den du machst, als Teil des betroffenen W\u00fcrfelwurfs."
+			]
+		},
+		{
+			"name": "College of Swords",
+			"source": "UAKitsOfOld",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"entries": [
+				"Die Barden des Schwertkollegiums werden Klingen genannt und unterhalten mit waghalsigen Waffenkunstst\u00fccken. Klingen f\u00fchren Kunstst\u00fccke wie Schwertschlucken, Messerwerfen und -jonglieren sowie Scheink\u00e4mpfe vor. Aber obwohl sie ihre Waffen zur Unterhaltung einsetzen, sind sie auch selbst hochtrainierte und geschickte Krieger.",
+				"Ihr Waffentalent veranlasst viele Klingen dazu, ein Doppelleben zu f\u00fchren. Eine Klinge k\u00f6nnte eine Zirkustruppe als Tarnung f\u00fcr ruchlose Taten wie Attentate, Raub und Erpressung benutzen. Andere Klingen schlagen auf die B\u00f6sen ein und bringen Gerechtigkeit gegen die Grausamen und M\u00e4chtigen ins Spiel. Die meisten Truppen akzeptieren das Talent einer Klinge gerne, weil es die Aufregung in einer Vorstellung erh\u00f6ht, aber nur wenige Entertainer vertrauen ihnen v\u00f6llig.",
+				"Klingen, die ihr Leben als Unterhaltungsk\u00fcnstler aufgegeben haben, sind oft in Schwierigkeiten geraten, die es ihnen unm\u00f6glich machen, ihre geheimen Aktivit\u00e4ten aufrechtzuerhalten. Eine Klinge, die beim Stehlen oder bei der Selbstjustiz erwischt wird, ist f\u00fcr die meisten K\u00fcnstlertruppen eine zu gro\u00dfe Belastung. Da ihre Waffenfertigkeit ihr gr\u00f6\u00dftes Kapital ist, arbeiten diese Klingen entweder als Vollstrecker f\u00fcr Diebesgilden oder machen sich auf eigene Faust als Abenteurer davon.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Bard||Swords (UA)|UAKitsOfOld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fighting Style|Bard||Swords (UA)|UAKitsOfOld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blade Flourish|Bard||Swords (UA)|UAKitsOfOld|3"
+				}
+			]
+		},
+		{
+			"name": "Blade Flourish",
+			"source": "UAKitsOfOld",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Auf der 3. Stufe lernst du, beeindruckende Darbietungen mit deinen Waffen zu vollf\u00fchren. Wenn du in deinem Zug die Aktion {@action Attack} verwendest und mit einem Dolch, Langschwert, Rapier, Krumms\u00e4bel oder Kurzschwert angreifst, kannst du eine der folgenden Verzierungen versuchen.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Defensive Flourish",
+							"entries": [
+								"Als Bonusaktion verbrauchst du einen Einsatz von Bardische Inspiration, indem du einen W\u00fcrfel f\u00fcr Bardische Inspiration wirfst und die gew\u00fcrfelte Zahl bis zum Beginn deines n\u00e4chsten Zuges als Bonus auf deinen AC anwendest."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Trick Shooter's Flourish",
+							"entries": [
+								"Dieser Lieblingstrick der Messerwerfer erlaubt es dir, einen Einsatz von Bardische Inspiration als Bonusaktion zu verwenden. Wirf einen W\u00fcrfel f\u00fcr Bardische Inspiration und wende die gew\u00fcrfelte Zahl als Bonus auf den n\u00e4chsten Fernkampfangriffswurf an, den du in dieser Runde mit einem Dolch ausf\u00fchrst. Wenn das Ziel des Angriffs ein unbeaufsichtigter, lebloser Gegenstand ist, entspricht der Bonus dem Doppelten des W\u00fcrfelwurfs."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Unnerving Flourish",
+							"entries": [
+								"Immer wenn du eine Kreatur mit einem Nahkampfangriff auf 0 Trefferpunkte reduzierst, kannst du eine Bonusaktion nutzen, um einen Einsatz von Bardische Inspiration zu verbrauchen und die Kreatur stattdessen bei 1 Trefferpunkt zu belassen.",
+								"Die Kreatur ist f\u00fcr eine Anzahl von Minuten, die deinem Charisma-Modifikator entspricht, {@condition frightened}. Sie muss au\u00dferdem einen Rettungswurf mit einem DC in H\u00f6he deines Zauberei-DC + einem Bonus in H\u00f6he des Wurfs deines W\u00fcrfels f\u00fcr Bardische Inspiration ablegen. Wenn die Kreatur diesen Rettungswurf nicht besteht, beantwortet sie alle Fragen, die du ihr stellst, wahrheitsgem\u00e4\u00df und gehorcht deinen direkten Befehlen, solange sie unter diesem Effekt {@condition frightened} ist."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "UAKitsOfOld",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem Kollegium der Klingen auf Stufe 3 beitrittst, erh\u00e4ltst du Fertigkeit im Umgang mit mittlerer R\u00fcstung und mit Krumms\u00e4beln."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "UAKitsOfOld",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Das College of Blades legt den Schwerpunkt auf die Beherrschung von Waffen und gew\u00e4hrt euch Zugang zur Option des Zwei-Waffen-Kampfes f\u00fcr das Klassenfeature Kampfstil.",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Two-Weapon Fighting"
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "UAKitsOfOld",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab der 6. Stufe kannst du zweimal statt einmal angreifen, wenn du die Aktion {@action Attack} in deinem Zug ausf\u00fchrst."
+			]
+		},
+		{
+			"name": "Battle Magic",
+			"source": "UAKitsOfOld",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Mit Stufe 14 beherrschst du die Kunst, Zauberei und Waffengebrauch zu einem einzigen harmonischen Akt zu verweben. Wenn du deine Aktion dazu verwendest, einen Bardenzauber zu wirken, kannst du einen Waffenangriff als Bonusaktion ausf\u00fchren."
+			]
+		},
+		{
+			"name": "College of Swords v2",
+			"source": "UARevisedSubclasses",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords v2 (UA)",
+			"subclassSource": "UARevisedSubclasses",
+			"level": 3,
+			"entries": [
+				"Die Barden des Schwertkollegiums werden Klingen genannt und unterhalten mit waghalsigen Waffenkunstst\u00fccken. Klingen f\u00fchren Kunstst\u00fccke wie Schwertschlucken, Messerwerfen und -jonglieren sowie Scheink\u00e4mpfe vor. Aber obwohl sie ihre Waffen zur Unterhaltung einsetzen, sind sie auch selbst hochtrainierte und geschickte Krieger.",
+				"Ihr Waffentalent veranlasst viele Klingen dazu, ein Doppelleben zu f\u00fchren. Eine Klinge k\u00f6nnte eine Zirkustruppe als Tarnung f\u00fcr ruchlose Taten wie Attentate, Raub und Erpressung benutzen. Andere Klingen schlagen auf die B\u00f6sen ein und bringen Gerechtigkeit gegen die Grausamen und M\u00e4chtigen ins Spiel. Die meisten Truppen akzeptieren das Talent einer Klinge gerne, weil es die Aufregung in einer Vorstellung erh\u00f6ht, aber nur wenige Entertainer vertrauen ihnen v\u00f6llig.",
+				"Klingen, die ihr Leben als Unterhaltungsk\u00fcnstler aufgegeben haben, sind oft in Schwierigkeiten geraten, die es ihnen unm\u00f6glich machen, ihre geheimen Aktivit\u00e4ten aufrechtzuerhalten. Eine Klinge, die beim Stehlen oder bei der Selbstjustiz erwischt wird, ist f\u00fcr die meisten K\u00fcnstlertruppen eine zu gro\u00dfe Belastung. Da ihre Waffenfertigkeit ihr gr\u00f6\u00dftes Kapital ist, arbeiten diese Klingen entweder als Vollstrecker f\u00fcr Diebesgilden oder machen sich auf eigene Faust als Abenteurer davon.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Bard||Swords v2 (UA)|UARevisedSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fighting Style|Bard||Swords v2 (UA)|UARevisedSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blade Flourish|Bard||Swords v2 (UA)|UARevisedSubclasses|3"
+				}
+			]
+		},
+		{
+			"name": "Blade Flourish",
+			"source": "UARevisedSubclasses",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords v2 (UA)",
+			"subclassSource": "UARevisedSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Auf der 3. Stufe lernst du, beeindruckende Darbietungen mit deinen Waffen zu vollbringen. Als Standardaktion kannst du einen Standard-Nahkampfangriff ausf\u00fchren und deine Gehgeschwindigkeit bis zum Ende der aktuellen Runde um 10 Fu\u00df erh\u00f6hen. Immer wenn du diese Option einsetzt, kannst du auch eine der folgenden Optionen f\u00fcr \"Klingenpracht\" mit ihr verwenden.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Defensive Flourish",
+							"entries": [
+								"Du kannst einen deiner Eins\u00e4tze von Bardische Inspiration aufbrauchen, indem du einen W\u00fcrfel f\u00fcr Bardische Inspiration wirfst und die gew\u00fcrfelte Zahl als Bonus auf deinen AC bis zum Beginn deiner n\u00e4chsten Runde anwendest."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Slashing Flourish",
+							"entries": [
+								"Wenn der Angriff sein Ziel trifft, kannst du einen deiner Eins\u00e4tze von Bardische Inspiration ausgeben, um die Waffe dazu zu bringen, jeder Kreatur deiner Wahl au\u00dfer dem Ziel, die du im Umkreis von 5 Fu\u00df sehen kannst, Schaden zuzuf\u00fcgen. Der Schaden entspricht der Zahl, die du auf den W\u00fcrfel f\u00fcr Bardische Inspiration wirfst."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Mobile Flourish",
+							"entries": [
+								"Wenn der Angriff sein Ziel trifft, kannst du einen deiner Eins\u00e4tze von Bardische Inspiration ausgeben, um das Ziel bis zu 5 Fu\u00df von dir wegzuschieben, plus eine Anzahl von F\u00fc\u00dfen, die der gew\u00fcrfelten Zahl auf dem W\u00fcrfel f\u00fcr Bardische Inspiration entspricht. Du kannst dann sofort deine Reaktion einsetzen, um dich bis zu deiner Geschwindigkeit in einen unbesetzten Raum innerhalb von 5 Fu\u00df um das Ziel zu bewegen."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "UARevisedSubclasses",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords v2 (UA)",
+			"subclassSource": "UARevisedSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du auf Stufe 3 dem Kollegium der Klingen beitrittst, erlangst du Fertigkeit im Umgang mit mittlerer R\u00fcstung und mit Krumms\u00e4beln. Wenn du eine einfache oder kriegerische Nahkampfwaffe beherrschst, kannst du sie als Zauberfokus f\u00fcr deine Bardenzauber verwenden."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "UARevisedSubclasses",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords v2 (UA)",
+			"subclassSource": "UARevisedSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Das College of Blades legt den Schwerpunkt auf die Beherrschung von Waffen und gew\u00e4hrt euch Zugang zu den Optionen Duellieren oder Zwei-Waffen-Kampf f\u00fcr das Klassenmerkmal Kampfstil, die wie folgt lauten.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two-Weapon Fighting"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cunning Flourish",
+			"source": "UARevisedSubclasses",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords v2 (UA)",
+			"subclassSource": "UARevisedSubclasses",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab der 6. Stufe kannst du zweimal statt einmal angreifen, wenn du in deinem Zug die Aktion \"Klingenpracht\" ausf\u00fchrst. Du kannst jedoch nur eine Option f\u00fcr \"Klingenpracht\" verwenden, wenn du diese Aktion ausf\u00fchrst."
+			]
+		},
+		{
+			"name": "Master's Flourish",
+			"source": "UARevisedSubclasses",
+			"page": 1,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords v2 (UA)",
+			"subclassSource": "UARevisedSubclasses",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab der 14. Stufe kannst du jedes Mal, wenn du eine Option von Blade Flourish verwendest, einen {@dice d6} w\u00fcrfeln und sie verwenden, anstatt einen W\u00fcrfel f\u00fcr Bardic Inspiration auszugeben."
+			]
+		},
+		{
+			"name": "College of Spirits",
+			"source": "VRGR",
+			"page": 28,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "VRGR",
+			"level": 3,
+			"entries": [
+				"Barden des Kollegiums der Geister suchen nach Geschichten mit inh\u00e4renter Macht - seien es Legenden, Geschichten oder Fiktionen - und erwecken ihre Themen zum Leben. Mit okkulten Mitteln beschw\u00f6ren diese Barden spirituelle Verk\u00f6rperungen m\u00e4chtiger Kr\u00e4fte, um die Welt erneut zu ver\u00e4ndern. Solche Geister sind jedoch launisch, und was ein Barde beschw\u00f6rt, ist nicht immer ganz unter ihrer Kontrolle.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guiding Whispers|Bard||Spirits|VRGR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spiritual Focus|Bard||Spirits|VRGR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tales from Beyond|Bard||Spirits|VRGR|3"
+				}
+			]
+		},
+		{
+			"name": "Guiding Whispers",
+			"source": "VRGR",
+			"page": 28,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "VRGR",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Spirits feature}",
+				"Du kannst Geister anrufen, um dich und andere zu leiten. Du erlernst den {@spell guidance} Zaubertrick, der nicht auf die Anzahl der Bardenzauber angerechnet wird, die du kennst. F\u00fcr dich hat er eine Reichweite von 60 Fu\u00df, wenn du ihn wirkst."
+			]
+		},
+		{
+			"name": "Spiritual Focus",
+			"source": "VRGR",
+			"page": 28,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "VRGR",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Spirits feature}",
+				"Du verwendest Werkzeuge, die dir helfen, Geister zu kanalisieren, seien es historische Figuren oder fiktive Archetypen. Du kannst die folgenden Gegenst\u00e4nde als Zauberfokus f\u00fcr deine Bardenzauber verwenden: eine Kerze, eine Kristallkugel, einen Sch\u00e4del, ein Geisterbrett oder ein Tarokka-Deck.",
+				"Wenn du ab der 6. Stufe einen Bardenzauber wirkst, der Schaden zuf\u00fcgt oder Trefferpunkte durch den Geistigen Fokus wiederherstellt, wirf einen {@dice d6} und du erh\u00e4ltst einen Bonus auf einen Schadens- oder Heilungswurf des Zaubers in H\u00f6he der gew\u00fcrfelten Zahl."
+			]
+		},
+		{
+			"name": "Tales from Beyond",
+			"source": "VRGR",
+			"page": 28,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "VRGR",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Spirits feature}",
+				"W\u00e4hrend du deinen Geistigen Fokus h\u00e4ltst, kannst du eine Bonusaktion nutzen, um einen Einsatz deiner Bardischen Inspiration zu verbrauchen und mit deinem W\u00fcrfel f\u00fcr Bardische Inspiration auf der Tabelle f\u00fcr Geistergeschichten zu w\u00fcrfeln, um die Geschichte zu bestimmen, die die Geister dir zu erz\u00e4hlen auftragen. Du beh\u00e4ltst die Geschichte im Kopf, bis du die Wirkung der Geschichte verleihst oder eine kurze oder lange Pause machst.",
+				"Du kannst eine Aktion nutzen, um eine Kreatur im Umkreis von 30 Fu\u00df um dich herum (das kannst auch du sein) als Ziel des Effekts der Sage auszuw\u00e4hlen. Wenn du das getan hast, kannst du den Effekt der Sage erst wieder einsetzen, wenn du erneut w\u00fcrfelst.",
+				"Du kannst immer nur eine dieser Geschichten im Kopf behalten, und ein Wurf auf der Tabelle f\u00fcr Geistergeschichten beendet sofort die Wirkung der vorherigen Geschichte.",
+				"Wenn die Erz\u00e4hlung einen Schutzwurf erfordert, entspricht der DC deinem Zauberschutz-DC.",
+				{
+					"type": "table",
+					"caption": "Spirit Tales",
+					"colLabels": [
+						"Bardic Insp. Die",
+						"Tale Told Through You"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Tale of the Clever Animal: In den n\u00e4chsten 10 Minuten kann das Ziel bei jeder Intelligenz-, Weisheits- oder Charisma-\u00dcberpr\u00fcfung sofort nach dem W\u00fcrfeln von {@dice d20} einen zus\u00e4tzlichen W\u00fcrfel werfen und die Zahl des zus\u00e4tzlichen W\u00fcrfels zu der Pr\u00fcfung addieren. Der zus\u00e4tzliche W\u00fcrfel ist vom gleichen Typ wie der W\u00fcrfel f\u00fcr Bardische Inspiration."
+						],
+						[
+							"2",
+							"Tale of the Renowned Duelist: Du f\u00fchrst einen Nahkampf-Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel Kraftschaden in H\u00f6he von zwei W\u00fcrfen deiner Bardischen Inspiration + deinem Charisma-Modifikator."
+						],
+						[
+							"3",
+							"Tale of the Beloved Friends: Das Ziel und eine weitere Kreatur seiner Wahl, die es im Umkreis von 5 Fu\u00df sehen kann, erhalten vor\u00fcbergehend Trefferpunkte in H\u00f6he eines Wurfs deines W\u00fcrfels f\u00fcr Bardische Inspiration + dein Charisma-Modifikator."
+						],
+						[
+							"4",
+							"Das Ziel kann seine Reaktion sofort einsetzen, um sich bis zu 30 Fu\u00df weit in einen unbesetzten Raum zu teleportieren, den es sehen kann. Wenn sich das Ziel teleportiert, kann es eine Anzahl von Kreaturen, die es im Umkreis von 30 Fu\u00df sehen kann, bis zu deinem Charisma-Modifikator (mindestens 0) w\u00e4hlen, um sofort dieselbe Reaktion einzusetzen."
+						],
+						[
+							"5",
+							"M\u00e4rchen des R\u00e4chers: 1 Minute lang erleidet jede Kreatur, die das Ziel mit einem Nahkampfangriff trifft, Kraftschaden in H\u00f6he eines Wurfs deiner bardischen Inspirationsw\u00fcrfel."
+						],
+						[
+							"6",
+							"Tale of the Traveler: Das Ziel erh\u00e4lt tempor\u00e4re Trefferpunkte in H\u00f6he eines Wurfs deines W\u00fcrfels f\u00fcr Bardische Inspiration + deiner Bardenstufe. Solange es diese tempor\u00e4ren Trefferpunkte hat, erh\u00f6ht sich die Gehgeschwindigkeit des Ziels um 10 Fu\u00df und es erh\u00e4lt einen Bonus von +1 auf seine AC."
+						],
+						[
+							"7",
+							"Tale of the Beguiler: Das Ziel muss einen Weisheitswurf bestehen oder erleidet psychischen Schaden in H\u00f6he von zwei W\u00fcrfeln deiner Bardischen Inspiration, und das Ziel ist bis zum Ende seiner n\u00e4chsten Runde {@condition incapacitated}."
+						],
+						[
+							"8",
+							"Das Ziel wird {@condition invisible} bis zum Ende seines n\u00e4chsten Zuges oder bis es eine Kreatur mit einem Angriff trifft. Wenn das Ziel w\u00e4hrend dieser Unsichtbarkeit eine Kreatur mit einem Angriff trifft, erleidet die getroffene Kreatur nekrotischen Schaden in H\u00f6he eines Wurfs deiner bardischen Inspirationsw\u00fcrfel und ist {@condition frightened} des Ziels bis zum Ende des n\u00e4chsten Zuges der {@condition frightened} Kreatur."
+						],
+						[
+							"9",
+							"Jede Kreatur nach Wahl des Ziels, die es im Umkreis von 30 Fu\u00df sehen kann, muss einen St\u00e4rkewurf machen. Bei einem misslungenen Schutzwurf erleidet eine Kreatur Donnerschaden in H\u00f6he von drei W\u00fcrfeln deiner Bardischen Inspiration und wird umgeworfen {@condition prone}. Eine Kreatur, die ihren Schutzwurf erfolgreich absolviert, erleidet halb so viel Schaden und wird nicht umgeworfen {@condition prone}."
+						],
+						[
+							"10",
+							"Tale of the Dragon: Das Ziel spuckt in einem Umkreis von 30 Fu\u00df Feuer aus dem Maul. Jede Kreatur in diesem Bereich muss einen Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutzwurf Feuerschaden in H\u00f6he von vier W\u00fcrfeln deiner Bardischen Inspiration, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+						],
+						[
+							"11",
+							"Das Ziel erh\u00e4lt Trefferpunkte in H\u00f6he von zwei W\u00fcrfen deiner bardischen Inspiration + deinem Charisma-Modifikator zur\u00fcck und du beendest einen Zustand aus der folgenden Liste, der das Ziel betrifft: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition petrified} oder {@condition poisoned}."
+						],
+						[
+							"12",
+							"Tale of the Mind-Bender: Du beschw\u00f6rst eine unverst\u00e4ndliche Fabel eines jenseitigen Wesens herauf. Das Ziel muss einen Intelligenzschutzwurf bestehen oder psychischen Schaden in H\u00f6he von drei W\u00fcrfeln deiner Bardischen Inspiration erleiden und bis zum Ende seiner n\u00e4chsten Runde {@condition stunned} sein."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spirit Session",
+			"source": "VRGR",
+			"page": 28,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "VRGR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Spirits feature}",
+				"Geister gew\u00e4hren dir \u00fcbernat\u00fcrliche Einblicke. Du kannst ein einst\u00fcndiges Ritual durchf\u00fchren, in dem du Geister kanalisierst (dies kann w\u00e4hrend einer kurzen oder langen Ruhepause geschehen), indem du deinen spirituellen Fokus einsetzt. Du kannst das Ritual mit einer Anzahl von willigen Kreaturen durchf\u00fchren, die deinem Fertigkeitsbonus entspricht (dich selbst eingeschlossen). Am Ende des Rituals lernst du vor\u00fcbergehend {@filter one spell of your choice from any class|spells|school=d;n|level=0;1;2;3;4;5;6}.",
+				"Der gew\u00e4hlte Zauber muss eine Stufe haben, die der Anzahl der Kreaturen, die das Ritual durchgef\u00fchrt haben, oder weniger entspricht, er muss eine Stufe haben, die du wirken kannst, und er muss aus der Schule der Wahrsagerei oder Nekromantie stammen. Der gew\u00e4hlte Zauber z\u00e4hlt f\u00fcr dich als Bardenzauber, wird aber nicht auf die Anzahl der Bardenzauber angerechnet, die du kennst.",
+				"Wenn du das Ritual einmal durchgef\u00fchrt hast, kannst du es erst wieder tun, wenn du eine lange Pause beginnst, und du kennst den gew\u00e4hlten Zauber, bis du eine lange Pause beginnst."
+			]
+		},
+		{
+			"name": "Mystical Connection",
+			"source": "VRGR",
+			"page": 28,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Spirits",
+			"subclassSource": "VRGR",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level College of Spirits feature}",
+				"Du hast nun die M\u00f6glichkeit, die Geister der Geschichten aus dem Jenseits zu bestimmten Geschichten anzustacheln. Immer wenn du auf der Geistergeschichten-Tabelle w\u00fcrfelst, kannst du zweimal w\u00fcrfeln und w\u00e4hlen, welchen der beiden Effekte du verleihen m\u00f6chtest. Wenn du auf beiden W\u00fcrfeln die gleiche Zahl w\u00fcrfelst, kannst du die Zahl ignorieren und einen beliebigen Effekt auf der Tabelle w\u00e4hlen.",
+				{
+					"type": "inset",
+					"name": "Spirit Tales",
+					"entries": [
+						"Geschichtenerz\u00e4hler, wie die Barden des Kollegiums der Geister, geben oft Geschichten zum Besten, die von einem gr\u00f6\u00dferen Thema oder Werk inspiriert sind. Wenn du entscheidest, welche Geschichten du erz\u00e4hlst, \u00fcberlege, was sie verbindet. Handelt es sich um Figuren aus einer bestimmten Gruppe, wie Archetypen aus dem Tarokka-Deck, Figuren aus Sternbildern, imagin\u00e4re Freunde aus der Kindheit oder Figuren aus einem bestimmten M\u00e4rchenbuch? Oder sind deine Inspirationen allgemeiner und umfassen historische Meister, mythologische Helden oder urbane Legenden? Nutze die Geschichten, die du erz\u00e4hlst, um deine Nische als Geschichtenerz\u00e4hler zu definieren."
+					]
+				}
+			]
+		},
+		{
+			"name": "College of Glamour",
+			"source": "XGE",
+			"page": 14,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE",
+			"level": 3,
+			"entries": [
+				"Das College of Glamour ist die Heimat von Barden, die ihr Handwerk im pulsierenden Reich des Feenreichs oder unter der Anleitung von jemandem, der dort lebte, erlernt haben. Von Satyrn, Eladrin und anderen Feen unterrichtet, lernen diese Barden, ihre Magie einzusetzen, um andere zu erfreuen und zu fesseln.",
+				"Die Barden dieses Kollegiums werden mit einer Mischung aus Ehrfurcht und Furcht betrachtet. Ihre Darbietungen sind der Stoff, aus dem Legenden gemacht sind. Diese Barden sind so wortgewandt, dass eine Rede oder ein Lied, das einer von ihnen vortr\u00e4gt, dazu f\u00fchren kann, dass Gefangene den Barden unverletzt freilassen, und dass sie einen w\u00fctenden Drachen in Selbstgef\u00e4lligkeit wiegen k\u00f6nnen. Dieselbe Magie, die es ihnen erlaubt, Bestien zu b\u00e4ndigen, kann auch den Geist beugen. Schurkische Barden dieses Kollegiums k\u00f6nnen eine Gemeinschaft wochenlang ausbluten lassen, indem sie ihre Magie dazu missbrauchen, ihre Gastgeber in Sklaven zu verwandeln. Heldenhafte Barden dieses Kollegiums hingegen nutzen diese Macht, um die Unterdr\u00fcckten zu erfreuen und Unterdr\u00fccker zu untergraben.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mantle of Inspiration|Bard||Glamour|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Enthralling Performance|Bard||Glamour|XGE|3"
+				}
+			]
+		},
+		{
+			"name": "Enthralling Performance",
+			"source": "XGE",
+			"page": 14,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Ab der 3. Stufe kannst du deinen Auftritt mit verf\u00fchrerischer, feiger Magie aufladen.",
+				"Wenn du mindestens 1 Minute lang auftrittst, kannst du versuchen, dein Publikum durch Singen, Rezitieren eines Gedichts oder Tanzen zum Staunen zu bringen. Am Ende des Auftritts w\u00e4hlst du eine Anzahl von Humanoiden im Umkreis von 60 Fu\u00df, die dir zugesehen und zugeh\u00f6rt haben, bis zu einer Anzahl, die deinem Charisma-Modifikator entspricht (mindestens einer). Jedes Ziel muss einen Weisheitswurf gegen deinen Zauber-Save-DC bestehen oder von dir {@condition charmed} werden. W\u00e4hrend {@condition charmed} auf diese Weise das Ziel dich verg\u00f6ttert, spricht es mit jedem, der mit ihm spricht, in den h\u00f6chsten T\u00f6nen von dir und behindert jeden, der sich dir widersetzt, obwohl es Gewalt vermeidet, es sei denn, es war bereits geneigt, in deinem Namen zu k\u00e4mpfen. Dieser Effekt endet bei einem Ziel nach 1 Stunde, wenn es Schaden erleidet, wenn du es angreifst oder wenn es Zeuge wird, wie du einen seiner Verb\u00fcndeten angreifst oder sch\u00e4digst.",
+				"Wenn der Rettungswurf eines Ziels gelingt, hat das Ziel keine Ahnung, dass du versucht hast, es zu verzaubern.",
+				"Wenn Sie diese Funktion verwenden, k\u00f6nnen Sie sie erst wieder nach einer kurzen oder langen Pause nutzen."
+			]
+		},
+		{
+			"name": "Mantle of Inspiration",
+			"source": "XGE",
+			"page": 14,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem College of Glamour auf der 3. Stufe beitrittst, erh\u00e4ltst du die F\u00e4higkeit, ein Lied der Feenmagie zu weben, das deine Verb\u00fcndeten mit Kraft und Schnelligkeit ausstattet.",
+				"Als Bonusaktion kannst du einen Einsatz deiner Bardischen Inspiration aufwenden, um dir eine wundersame Erscheinung zu verleihen. Wenn du dies tust, w\u00e4hlst du eine Anzahl von Kreaturen, die du sehen kannst und die dich im Umkreis von 60 Fu\u00df sehen k\u00f6nnen, bis zu einer Anzahl, die deinem Charisma-Modifikator entspricht (mindestens eine). Jede dieser Kreaturen erh\u00e4lt 5 tempor\u00e4re Trefferpunkte. Wenn eine Kreatur diese tempor\u00e4ren Trefferpunkte erh\u00e4lt, kann sie sofort ihre Reaktion einsetzen, um sich bis zu ihrer Geschwindigkeit zu bewegen, ohne Gelegenheitsangriffe zu provozieren.",
+				"Die Anzahl der tempor\u00e4ren Trefferpunkte erh\u00f6ht sich, wenn du bestimmte Stufen in dieser Klasse erreichst, auf 8 bei Stufe 5, 11 bei Stufe 10 und 14 bei Stufe 15."
+			]
+		},
+		{
+			"name": "Mantle of Majesty",
+			"source": "XGE",
+			"page": 14,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du die F\u00e4higkeit, dich in eine feige Magie zu h\u00fcllen, die andere dazu bringt, dir zu dienen. Als Bonusaktion kannst du {@spell command} wirken, ohne einen Zauberslot zu verbrauchen, und du nimmst f\u00fcr 1 Minute oder bis zum Ende deiner Konzentration eine Erscheinung von unirdischer Sch\u00f6nheit an (als ob du dich auf einen Zauber konzentrieren w\u00fcrdest). W\u00e4hrend dieser Zeit kannst du in jeder deiner Runden {@spell command} als Bonusaktion wirken, ohne einen Zauberslot zu verbrauchen.",
+				"Jede Kreatur {@condition charmed}, die von dir getroffen wird, versagt automatisch bei ihrem Schutzwurf gegen die {@spell command}, die du mit dieser Eigenschaft wirkst.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Unbreakable Majesty",
+			"source": "XGE",
+			"page": 14,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Auf der 14. Stufe erh\u00e4lt dein Aussehen dauerhaft einen jenseitigen Aspekt, der dich sch\u00f6ner und grimmiger erscheinen l\u00e4sst.",
+				"Au\u00dferdem kannst du als Bonusaktion 1 Minute lang oder bis du {@condition incapacitated} bist eine magisch majest\u00e4tische Pr\u00e4senz annehmen. W\u00e4hrend dieser Zeit muss der Angreifer jedes Mal, wenn er dich zum ersten Mal in einem Zug angreift, einen Charisma-Erhaltungswurf gegen deinen Zauber-Save-DC machen. Bei einem misslungenen Rettungswurf kann er dich in diesem Zug nicht angreifen und muss ein neues Ziel f\u00fcr seinen Angriff w\u00e4hlen, oder der Angriff ist vergeudet. Bei einem erfolgreichen Rettungswurf kann er dich in diesem Zug angreifen, hat aber einen Nachteil bei jedem Rettungswurf, den er in deinem n\u00e4chsten Zug gegen deine Zauber macht.",
+				"Sobald Sie diese majest\u00e4tische Pr\u00e4senz einnehmen, k\u00f6nnen Sie dies erst wieder nach einer kurzen oder langen Pause tun."
+			]
+		},
+		{
+			"name": "College of Swords",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"entries": [
+				"Die Barden des Schwertkollegiums werden Klingen genannt und unterhalten durch waghalsige Waffenkunstst\u00fccke. Klingen f\u00fchren Kunstst\u00fccke wie Schwertschlucken, Messerwerfen und -jonglieren sowie Scheink\u00e4mpfe auf. Obwohl sie ihre Waffen zur Unterhaltung einsetzen, sind sie auch selbst hochtrainierte und geschickte Krieger.",
+				"Ihr Waffentalent inspiriert viele Klingen dazu, ein Doppelleben zu f\u00fchren. Eine Klinge k\u00f6nnte eine Zirkustruppe als Tarnung f\u00fcr ruchlose Taten wie Attentate, Raub und Erpressung nutzen. Andere Klingen schlagen auf die B\u00f6sen ein und bringen Gerechtigkeit gegen die Grausamen und M\u00e4chtigen ins Spiel. Die meisten Truppen nehmen das Talent einer Klinge gerne an, weil es die Vorstellung aufregender macht, aber nur wenige Entertainer vertrauen einer Klinge in ihren Reihen voll und ganz.",
+				"Klingen, die ihr Leben als Gaukler aufgeben, geraten oft in Schwierigkeiten, die es ihnen unm\u00f6glich machen, ihre geheimen Aktivit\u00e4ten aufrechtzuerhalten. Eine Klinge, die beim Stehlen oder bei der Selbstjustiz erwischt wird, ist f\u00fcr die meisten Truppen eine zu gro\u00dfe Belastung. Mit ihren Waffenfertigkeiten und ihrer Magie arbeiten diese Klingen entweder als Vollstrecker f\u00fcr Diebesgilden oder machen sich auf eigene Faust als Abenteurer davon.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Bard||Swords|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fighting Style|Bard||Swords|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blade Flourish|Bard||Swords|XGE|3"
+				}
+			]
+		},
+		{
+			"name": "Blade Flourish",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Auf der 3. Stufe lernst du, beeindruckende Darbietungen von Kampfkraft und Schnelligkeit zu zeigen.",
+				"Immer wenn du in deinem Zug die Aktion {@action Attack} ausf\u00fchrst, erh\u00f6ht sich deine Gehgeschwindigkeit bis zum Ende des Zuges um 10 Fu\u00df, und wenn ein Waffenangriff, den du im Rahmen dieser Aktion ausf\u00fchrst, eine Kreatur trifft, kannst du eine der folgenden Optionen f\u00fcr \"Klingenpracht\" deiner Wahl verwenden. Du kannst nur eine Option f\u00fcr \"Klingenpracht\" pro Zug verwenden.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Defensive Flourish|Bard|XGE|Swords|XGE|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Slashing Flourish|Bard|XGE|Swords|XGE|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mobile Flourish|Bard|XGE|Swords|XGE|3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem College of Swords auf der 3. Stufe beitrittst, erh\u00e4ltst du die Beherrschung der mittleren R\u00fcstung und des {@item scimitar|phb}.",
+				"Wenn du eine einfache oder kriegerische Nahkampfwaffe beherrschst, kannst du sie als Zauberfokus f\u00fcr deine Bardenzauber verwenden."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Auf Stufe 3 nimmst du einen Kampfstil als deine Spezialit\u00e4t an. W\u00e4hle eine der folgenden Optionen. Du kannst einen Kampfstil nicht mehr als einmal w\u00e4hlen, auch wenn das Spiel dir die M\u00f6glichkeit gibt, noch einmal zu w\u00e4hlen.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two-Weapon Fighting"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Ab der 6. Stufe kannst du zweimal statt einmal angreifen, wenn du die Aktion {@action Attack} in deinem Zug ausf\u00fchrst."
+			]
+		},
+		{
+			"name": "Master's Flourish",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Ab der 14. Stufe kannst du jedes Mal, wenn du eine Option von Blade Flourish verwendest, einen {@dice d6} w\u00fcrfeln und sie verwenden, anstatt einen W\u00fcrfel f\u00fcr Bardic Inspiration auszugeben."
+			]
+		},
+		{
+			"name": "College of Whispers",
+			"source": "XGE",
+			"page": 16,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers",
+			"subclassSource": "XGE",
+			"level": 3,
+			"entries": [
+				"Die meisten Leute freuen sich, einen Barden in ihrer Mitte willkommen zu hei\u00dfen. Die Barden des Kollegs des Fl\u00fcsterns nutzen dies zu ihrem Vorteil. Sie scheinen wie andere Barden zu sein, teilen Neuigkeiten mit, singen Lieder und erz\u00e4hlen den Zuh\u00f6rern, die sie versammeln, Geschichten. In Wahrheit lehrt das Kolleg des Fl\u00fcsterns seine Sch\u00fcler, dass sie W\u00f6lfe unter Schafen sind. Diese Barden nutzen ihr Wissen und ihre Magie, um Geheimnisse aufzudecken und sie durch Erpressung und Drohungen gegen andere zu wenden.",
+				"Viele andere Barden hassen das Kollegium des Fl\u00fcsterns, da sie es als Parasit betrachten, der den Ruf eines Barden ausnutzt, um sich Reichtum und Macht zu verschaffen. Aus diesem Grund geben die Mitglieder dieses Kollegiums nur selten ihre wahre Natur preis. Sie behaupten in der Regel, einem anderen Kollegium anzugeh\u00f6ren, oder sie halten ihre eigentliche Berufung geheim, um K\u00f6nigsh\u00f6fe und andere Orte der Macht zu infiltrieren und auszunutzen.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psychic Blades|Bard||Whispers|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Words of Terror|Bard||Whispers|XGE|3"
+				}
+			]
+		},
+		{
+			"name": "Psychic Blades",
+			"source": "XGE",
+			"page": 16,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wenn du dem Kollegium des Fl\u00fcsterns auf Stufe 3 beitrittst, erh\u00e4ltst du die F\u00e4higkeit, deine Waffenangriffe auf magische Weise giftig f\u00fcr den Geist einer Kreatur zu machen.",
+				"Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Einsatz deiner Bardischen Inspiration ausgeben, um diesem Ziel zus\u00e4tzlichen {@damage 2d6} psychischen Schaden zuzuf\u00fcgen. Du kannst dies nur einmal pro Runde in deinem Zug tun.",
+				"Der psychische Schaden erh\u00f6ht sich, wenn du bestimmte Stufen in dieser Klasse erreichst, auf {@dice 3d6} auf der 5. Stufe, {@dice 5d6} auf der 10. Stufe und {@dice 8d6} auf der 15. Stufe."
+			]
+		},
+		{
+			"name": "Words of Terror",
+			"source": "XGE",
+			"page": 16,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Auf Stufe 3 lernst du, unschuldig wirkende Worte mit einer heimt\u00fcckischen Magie zu versehen, die Schrecken verbreiten kann.",
+				"Wenn du mindestens 1 Minute lang allein mit einem Humanoiden sprichst, kannst du versuchen, Paranoia in seinem Geist zu s\u00e4en. Am Ende des Gespr\u00e4chs muss das Ziel einen Weisheitswurf gegen den Schutz-DC deines Zaubers bestehen oder {@condition frightened} von dir oder einer anderen Kreatur deiner Wahl sein. Das Ziel ist auf diese Weise 1 Stunde lang {@condition frightened}, bis es angegriffen oder gesch\u00e4digt wird oder bis es Zeuge wird, wie seine Verb\u00fcndeten angegriffen oder gesch\u00e4digt werden.",
+				"Gelingt dem Ziel der Rettungswurf, hat es keine Anzeichen daf\u00fcr, dass du versucht hast, es zu erschrecken.",
+				"Wenn Sie diese Funktion verwenden, k\u00f6nnen Sie sie erst wieder nach einer kurzen oder langen Pause nutzen."
+			]
+		},
+		{
+			"name": "Mantle of Whispers",
+			"source": "XGE",
+			"page": 16,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers",
+			"subclassSource": "XGE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Auf der 6. Stufe erh\u00e4ltst du die F\u00e4higkeit, die Gestalt eines Humanoiden zu \u00fcbernehmen. Wenn ein Humanoider in einem Umkreis von 30 Fu\u00df stirbt, kannst du seinen Schatten mit deiner Reaktion magisch einfangen. Du beh\u00e4ltst diesen Schatten, bis du ihn benutzt oder eine lange Pause einlegst.",
+				"Du kannst den Schatten als Aktion einsetzen. Wenn du das tust, verschwindet er und verwandelt sich auf magische Weise in eine Verkleidung, die an dir erscheint. Du siehst jetzt aus wie die tote Person, aber gesund und lebendig. Diese Verkleidung h\u00e4lt 1 Stunde lang an oder bis du sie als Bonusaktion beendest.",
+				"W\u00e4hrend du in der Verkleidung bist, erh\u00e4ltst du Zugang zu allen Informationen, die der Humanoide aus freien St\u00fccken mit einem zuf\u00e4lligen Bekannten teilen w\u00fcrde. Diese Informationen umfassen allgemeine Details \u00fcber seinen Hintergrund und sein pers\u00f6nliches Leben, aber keine Geheimnisse. Die Informationen reichen aus, um dich als die Person auszugeben, indem du ihre Erinnerungen nutzt.",
+				"Eine andere Kreatur kann diese Verkleidung durchschauen, wenn du eine Weisheitspr\u00fcfung ({@skill Insight}) bestehst, die von deiner Charisma-Pr\u00fcfung ({@skill Deception}) angefochten wird. Du erh\u00e4ltst einen Bonus von +5 auf deine Pr\u00fcfung.",
+				"Sobald Sie einen Schatten mit dieser Funktion eingefangen haben, k\u00f6nnen Sie keinen weiteren mehr einfangen, bis Sie eine kurze oder lange Pause eingelegt haben."
+			]
+		},
+		{
+			"name": "Shadow Lore",
+			"source": "XGE",
+			"page": 16,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Whispers",
+			"subclassSource": "XGE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Auf Stufe 14 erh\u00e4ltst du die F\u00e4higkeit, dunkle Magie in deine Worte zu weben und die tiefsten \u00c4ngste einer Kreatur anzuzapfen.",
+				"Als Aktion fl\u00fcsterst du auf magische Weise einen Satz, den nur eine Kreatur deiner Wahl im Umkreis von 30 Fu\u00df von dir h\u00f6ren kann. Das Ziel muss einen Weisheitswurf gegen den Schutz-DC deines Zaubers machen. Er gelingt automatisch, wenn es keine Sprache mit dir teilt oder dich nicht h\u00f6ren kann. Bei einem erfolgreichen Schutzwurf klingt dein Fl\u00fcstern wie unverst\u00e4ndliches Gemurmel und hat keine Wirkung.",
+				"Bei einem misslungenen Rettungswurf wird das Ziel f\u00fcr die n\u00e4chsten 8 Stunden oder bis du oder deine Verb\u00fcndeten es angreifen, ihm Schaden zuf\u00fcgen oder es zu einem Rettungswurf zwingen, von dir auf {@condition charmed} geleitet. Es interpretiert das Gefl\u00fcster als Beschreibung seines schrecklichsten Geheimnisses. Du erf\u00e4hrst dieses Geheimnis nicht, aber das Ziel ist \u00fcberzeugt, dass du es kennst.",
+				"Die {@condition charmed} Kreatur gehorcht deinen Befehlen aus Angst, dass du ihr Geheimnis verr\u00e4tst. Sie wird nicht ihr Leben f\u00fcr dich riskieren oder f\u00fcr dich k\u00e4mpfen, es sei denn, sie war ohnehin dazu geneigt. Sie gew\u00e4hrt dir Gunstbezeugungen und Geschenke, die sie einem engen Freund anbieten w\u00fcrde.",
+				"Wenn der Effekt endet, wei\u00df die Kreatur nicht mehr, warum sie dich so in Angst gehalten hat.",
+				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
+			]
+		},
+		{
+			"name": "Defensive Flourish",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "XGE",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"entries": [
+				"Du kannst einen Einsatz deiner Bardischen Inspiration daf\u00fcr verwenden, dass die Waffe dem getroffenen Ziel zus\u00e4tzlichen Schaden zuf\u00fcgt. Der Schaden entspricht der gew\u00fcrfelten Zahl auf dem W\u00fcrfel f\u00fcr Bardische Inspiration. Au\u00dferdem addierst du die gew\u00fcrfelte Zahl bis zum Beginn deines n\u00e4chsten Zuges zu deinem AC."
+			]
+		},
+		{
+			"name": "Mobile Flourish",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "XGE",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"entries": [
+				"Du kannst einen Einsatz deiner Bardischen Inspiration daf\u00fcr verwenden, dass die Waffe dem getroffenen Ziel zus\u00e4tzlichen Schaden zuf\u00fcgt. Der Schaden entspricht der gew\u00fcrfelten Augenzahl auf dem W\u00fcrfel f\u00fcr Bardische Inspiration. Au\u00dferdem kannst du das Ziel bis zu 5 Fu\u00df von dir wegschieben, plus eine Augenzahl, die der gew\u00fcrfelten Augenzahl auf dem W\u00fcrfel entspricht. Du kannst dich dann sofort mit deiner Reaktion bis zu deiner Gehgeschwindigkeit auf einen unbesetzten Platz innerhalb von 5 Fu\u00df um das Ziel bewegen."
+			]
+		},
+		{
+			"name": "Slashing Flourish",
+			"source": "XGE",
+			"page": 15,
+			"className": "Bard",
+			"classSource": "XGE",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"entries": [
+				"Du kannst einen Einsatz deiner Bardischen Inspiration ausgeben, um die Waffe dazu zu bringen, dem getroffenen Ziel und jeder anderen Kreatur deiner Wahl, die du im Umkreis von 5 Fu\u00df sehen kannst, zus\u00e4tzlichen Schaden zuzuf\u00fcgen. Der Schaden entspricht der Zahl, die du auf dem W\u00fcrfel f\u00fcr Bardische Inspiration w\u00fcrfelst."
+			]
+		}
+	]
+}

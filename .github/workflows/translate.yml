@@ -1,0 +1,43 @@
+name: translate
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source files'
+        required: True
+
+jobs:
+  translate:
+    strategy:
+      max-parallel: 1
+      matrix:
+        language: [ 'es', 'de', 'it', 'ru', 'zh' ]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: 'translations'
+    - uses: actions/setup-python@v3
+      with:
+        python-version: '3.9'
+        architecture: 'x64'
+    - name: Set up dependencies
+      run: |
+           sudo apt-get install -y firefox
+           pip3 install selenium webdriver_manager
+    - name: Generate translations
+      continue-on-error: true
+      run: |
+           cd $GITHUB_WORKSPACE
+           ./translation/translate.py --language ${{ matrix.language }} --translate --deepl ${{ github.event.inputs.source }}
+           #./translation/translate.py --language ${{ matrix.language }} --translate --deepl ${{ matrix.source }}
+    - name: Save results
+      continue-on-error: true
+      run: |
+           git config user.name "Automatic translator"
+           git config user.email "<>"
+           git add data.${{ matrix.language }}/ translation/cache/${{ matrix.language }}/
+           git commit -m 'automatic translation'
+           git pull
+           git push origin translations

@@ -1,0 +1,170 @@
+{
+	"class": [
+		{
+			"name": "Prestige Class: Rune Scribe",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 2,
+			"requirements": {
+				"entries": [
+					"{@b Dexterity 13.} Runenschreiber brauchen flinke Finger, um die verschlungenen Muster einer Rune zu meistern.",
+					"{@b Intelligence 13.} Die Runenkunde erfordert intensives Studium und Wissen.",
+					"{@b Proficiency in the {@skill Arcana} skill.}Die Beherrschung von Runen erfordert ein Verst\u00e4ndnis der arkanen \u00dcberlieferung.",
+					"{@b Character level 5th.} Die Runenmagie erwacht nur bei m\u00e4chtigen Seelen, und ihr m\u00fcsst einen Charakter der Stufe 5 haben, bevor ihr Stufen in der Prestigeklasse Runenschreiber erlangen k\u00f6nnt.",
+					"{@b Complete a special task.} Ihr m\u00fcsst eine Rune finden und sie einem NSC-Runenschreiber vorlegen, der sie als Gegenleistung daf\u00fcr annimmt, dass er euch in der Runenmagie unterrichtet. Ihr k\u00f6nnt in dieser Prestigeklasse nicht mehr Stufen erlangen als euer Lehrer. M\u00f6glicherweise m\u00fcsst ihr weitere Runen suchen und sie erfahreneren Runenschreibern vorlegen, um die f\u00fcnfte Stufe dieser Prestigeklasse zu erreichen."
+				]
+			},
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"casterProgression": "full",
+			"startingProficiencies": {
+				"tools": [
+					"{@item calligrapher's supplies|PHB}",
+					"{@item mason's tools|PHB}",
+					"{@item woodcarver's tools|PHB}"
+				]
+			},
+			"classTableGroups": [
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"1st",
+						"2nd",
+						"3rd"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Rune Lore|Prestige Class: Rune Scribe|UAPrestigeClassesRunMagic|1",
+				"Runic Magic|Prestige Class: Rune Scribe|UAPrestigeClassesRunMagic|1",
+				"Runic Discovery|Prestige Class: Rune Scribe|UAPrestigeClassesRunMagic|2",
+				"Runic Discovery|Prestige Class: Rune Scribe|UAPrestigeClassesRunMagic|3",
+				"Living Rune|Prestige Class: Rune Scribe|UAPrestigeClassesRunMagic|4",
+				"Rune Mastery|Prestige Class: Rune Scribe|UAPrestigeClassesRunMagic|5",
+				"Runic Discovery|Prestige Class: Rune Scribe|UAPrestigeClassesRunMagic|5"
+			],
+			"fluff": [
+				{
+					"name": "Rune Scribe",
+					"type": "section",
+					"entries": [
+						"Ein Runenschreiber beherrscht die Geheimnisse der Runen der Macht - uralte Siegel, die die grundlegende Magie der Sch\u00f6pfung verk\u00f6rpern. Die Riesen waren die ersten, die die Runenmagie beherrschten, obwohl viele andere V\u00f6lker diese Macht schlie\u00dflich stahlen oder mit ihr handelten.",
+						"Runenmagie ist \u00e4u\u00dferst selten. Einige ihrer Geheimnisse sind verloren gegangen, und was an \u00dcberlieferungen \u00fcbrig geblieben ist, wird eifers\u00fcchtig geh\u00fctet. Nur wenige Runenschreiber teilen ihre \u00dcberlieferungen mit anderen. Tats\u00e4chlich nehmen die meisten Runenschreiber nur dann neue Sch\u00fcler auf, wenn sie dadurch Zugang zu einer vergessenen oder fehlenden Rune erhalten. Die Prestigeklasse Runenschreiber verwendet die Regeln f\u00fcr Runenmagie, die am Ende dieses Artikels vorgestellt werden."
+					],
+					"source": "UAPrestigeClassesRunMagic",
+					"page": 2
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Rune Lore",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 3,
+			"className": "Prestige Class: Rune Scribe",
+			"classSource": "UAPrestigeClassesRunMagic",
+			"level": 1,
+			"entries": [
+				"Auf der 1. Stufe erlernst du die Grundlagen des Runenschreibens und bist in der Lage, alle Eigenschaften einer Meisterrune zu aktivieren, wenn du richtig auf sie eingestimmt bist. Der Abschnitt \"{@variantrule Rune Magic|UAPrestigeClassesRunMagic}\" enth\u00e4lt Informationen \u00fcber Meisterrunen und Beschreibungen von Runen und ihren Eigenschaften. Die erste Rune, die du beherrschst, ist die Rune, die du gefunden und deinem Tutor vorgelegt hast, um dich f\u00fcr diese Prestigeklasse zu qualifizieren. Dein Eintritt in die Klasse beinhaltet den Prozess der Beherrschung der Geheimnisse dieser Rune."
+			]
+		},
+		{
+			"name": "Runic Magic",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 3,
+			"className": "Prestige Class: Rune Scribe",
+			"classSource": "UAPrestigeClassesRunMagic",
+			"level": 1,
+			"entries": [
+				"Runen k\u00f6nnen deine eigene magische Kraft nutzen, um einige ihrer Effekte zu verst\u00e4rken. Du erh\u00e4ltst eine Anzahl von Zauberschlitzen, wie in der Tabelle Runenschreiber angegeben, aber diese Prestigeklasse gew\u00e4hrt keine bekannten Zauber. Stattdessen kannst du als Runenschreiber deine Zauberschlitze ausgeben, um Runen zu st\u00e4rken, wie im Abschnitt \"{@variantrule Rune Magic|UAPrestigeClassesRunMagic}\" beschrieben. Um deine Gesamtzahl an Zauberschlitzen zu bestimmen, addiere deine Stufen in Runenschreiber zu deinen Stufen in Klassen, die dir das Merkmal Zaubern gew\u00e4hren, f\u00fcr den Zweck des Multiclassings. Wenn du zum Beispiel Runenschreiber 4/Zauberer 6 bist, h\u00e4ttest du die Zauberpl\u00e4tze eines Charakters der Stufe 10, zus\u00e4tzlich zu den Zaubertricks und dem Zauberbuch eines Zauberers der Stufe 6."
+			]
+		},
+		{
+			"name": "Runic Discovery",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 3,
+			"className": "Prestige Class: Rune Scribe",
+			"classSource": "UAPrestigeClassesRunMagic",
+			"level": 2,
+			"entries": [
+				"Dein st\u00e4ndiges Studium der Runenmagie erlaubt es dir, die Geheimnisse neuer Runen zu erforschen, ohne sie erst aufdecken zu m\u00fcssen. Auf Stufe 2 w\u00e4hlst du eine seltene Rune. Du kannst dich auf diese Rune einstimmen, auch wenn du die Meisterrune daf\u00fcr nicht besitzt. (Siehe den Abschnitt \"{@variantrule Rune Magic|UAPrestigeClassesRunMagic}\" f\u00fcr Informationen \u00fcber die Seltenheit von Runen und Meisterrunen.) Um dich auf diese Weise auf eine Rune einzustimmen, musst du eine kurze Ruhepause einlegen, in der du nichts anderes tust, als \u00fcber die Rune zu meditieren. Am Ende der kurzen Ruhepause bist du auf die Rune eingestimmt. Es wird davon ausgegangen, dass du die Rune immer bei dir tr\u00e4gst, um zu bestimmen, ob du ihre Eigenschaften nutzen kannst.",
+				"Du kannst eine weitere kurze Pause einlegen, in der du nichts anderes tust, als \u00fcber die Rune zu meditieren, um deine Einstimmung auf sie zu beenden."
+			]
+		},
+		{
+			"name": "Runic Discovery",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 3,
+			"className": "Prestige Class: Rune Scribe",
+			"classSource": "UAPrestigeClassesRunMagic",
+			"level": 3,
+			"entries": [
+				"Dein st\u00e4ndiges Studium der Runenmagie erlaubt es dir, die Geheimnisse neuer Runen zu erforschen, ohne sie erst aufdecken zu m\u00fcssen. Auf Stufe 3 w\u00e4hlst du eine seltene Rune. Du kannst dich auf diese Rune einstimmen, auch wenn du die Meisterrune daf\u00fcr nicht besitzt. (Siehe den Abschnitt \"{@variantrule Rune Magic|UAPrestigeClassesRunMagic}\" f\u00fcr Informationen \u00fcber die Seltenheit von Runen und Meisterrunen.) Um dich auf diese Weise auf eine Rune einzustimmen, musst du eine kurze Ruhepause einlegen, in der du nichts anderes tust, als \u00fcber die Rune zu meditieren. Am Ende der kurzen Ruhepause bist du auf die Rune eingestimmt. Es wird davon ausgegangen, dass du die Rune immer bei dir tr\u00e4gst, um zu bestimmen, ob du ihre Eigenschaften nutzen kannst.",
+				"Du kannst eine weitere kurze Pause einlegen, in der du nichts anderes tust, als \u00fcber die Rune zu meditieren, um deine Einstimmung auf sie zu beenden."
+			]
+		},
+		{
+			"name": "Living Rune",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 3,
+			"className": "Prestige Class: Rune Scribe",
+			"classSource": "UAPrestigeClassesRunMagic",
+			"level": 4,
+			"entries": [
+				"Runen sind ein Teil der lebendigen Welt, und deine Studien erlauben es dir, dich auf immer m\u00e4chtigere Weise mit ihrer Magie zu verbinden. Auf der 4. Stufe lernst du, Runenmagie in deine Identit\u00e4t einzubauen, was dir erlaubt, deinen K\u00f6rper und deinen Geist zu verst\u00e4rken. Am Ende einer langen Pause kannst du w\u00e4hlen, ob du einen F\u00e4higkeitswert deiner Wahl um 2 oder zwei F\u00e4higkeitswerte deiner Wahl um 1 erh\u00f6hen willst. Am Ende jeder folgenden langen Pause kannst du diese Wahl \u00e4ndern, indem du die Werte, die du zuvor erh\u00f6ht hast, reduzierst und andere Werte verbesserst (wenn du zwei F\u00e4higkeiten erh\u00f6ht hast, kannst du dich entscheiden, nur einen dieser Werte zu \u00e4ndern)."
+			]
+		},
+		{
+			"name": "Rune Mastery",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 3,
+			"className": "Prestige Class: Rune Scribe",
+			"classSource": "UAPrestigeClassesRunMagic",
+			"level": 5,
+			"entries": [
+				"Auf der 5. Stufe erlangst du die F\u00e4higkeit, ein immer gr\u00f6\u00dferes Spektrum an Runenmagie zu beherrschen. Wenn du dich auf eine Rune einstimmst, kannst du w\u00e4hlen, dass sie nicht auf dein Limit an eingestimmten magischen Gegenst\u00e4nden angerechnet wird. Du kannst immer nur auf eine solche Rune eingestimmt werden. Du kannst diese F\u00e4higkeit erneut nutzen, nachdem du deine Einstimmung auf eine Rune beendet hast."
+			]
+		},
+		{
+			"name": "Runic Discovery",
+			"source": "UAPrestigeClassesRunMagic",
+			"page": 3,
+			"className": "Prestige Class: Rune Scribe",
+			"classSource": "UAPrestigeClassesRunMagic",
+			"level": 5,
+			"entries": [
+				"Dein st\u00e4ndiges Studium der Runenmagie erlaubt es dir, die Geheimnisse neuer Runen zu erforschen, ohne sie erst aufdecken zu m\u00fcssen. Auf der 5. Stufe w\u00e4hlst du eine seltene Rune. Du kannst dich auf diese Rune einstimmen, auch wenn du die Meisterrune daf\u00fcr nicht besitzt. (Siehe den Abschnitt \"{@variantrule Rune Magic|UAPrestigeClassesRunMagic}\" f\u00fcr Informationen \u00fcber die Seltenheit von Runen und Meisterrunen.) Um dich auf diese Weise auf eine Rune einzustimmen, musst du eine kurze Ruhepause einlegen, in der du nichts anderes tust, als \u00fcber die Rune zu meditieren. Am Ende der kurzen Ruhepause bist du auf die Rune eingestimmt. Es wird davon ausgegangen, dass du die Rune immer bei dir tr\u00e4gst, um zu bestimmen, ob du ihre Eigenschaften nutzen kannst.",
+				"Du kannst eine weitere kurze Pause einlegen, in der du nichts anderes tust, als \u00fcber die Rune zu meditieren, um deine Einstimmung auf sie zu beenden."
+			]
+		}
+	]
+}

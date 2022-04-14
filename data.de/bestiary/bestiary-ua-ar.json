@@ -1,0 +1,208 @@
+{
+	"monster": [
+		{
+			"name": "Alchemical Homunculus",
+			"source": "UAArtificerRevisited",
+			"page": 6,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "equal to five times your level in this class + your Intelligence modifier"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 30
+			},
+			"str": 4,
+			"dex": 15,
+			"con": 11,
+			"int": 10,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages you speak"
+			],
+			"trait": [
+				{
+					"name": "Might of the Master",
+					"entries": [
+						"Die folgenden Zahlen erh\u00f6hen sich um 1, wenn sich dein Fertigkeitsbonus um 1 erh\u00f6ht: die Fertigkeitsboni des Homunkulus und die Boni auf Treffer und Schaden seines S\u00e4urespeichels."
+					]
+				}
+			],
+			"actionNote": "Requires Your Bonus Action",
+			"action": [
+				{
+					"name": "Acidic Spittle",
+					"entries": [
+						"{@atk rw} {@hit 4} auf Treffer, Reichweite 30 Fu\u00df, ein Ziel, das du sehen kannst. {@h}{@damage 1d6 + 2} S\u00e4ureschaden."
+					]
+				},
+				{
+					"name": "Alchemical Salve (3/Day)",
+					"entries": [
+						"Der Homunkulus produziert eine Salbe und ber\u00fchrt eine Kreatur, die du bestimmst. Das Ziel erh\u00e4lt einen der folgenden magischen Vorteile nach deiner Wahl:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Buoyancy",
+									"entry": "Das Ziel erh\u00e4lt f\u00fcr 10 Minuten eine Fluggeschwindigkeit von 10 Fu\u00df."
+								},
+								{
+									"type": "item",
+									"name": "Inspiration",
+									"entry": "Das Ziel f\u00fchlt sich schwindlig und effektiv und erh\u00e4lt in der n\u00e4chsten Stunde einen Vorteil bei bestimmten F\u00e4higkeitspr\u00fcfungen. Das Ziel w\u00e4hlt die \u00dcberpr\u00fcfungen vor oder nach dem W\u00fcrfeln aus. Die Magie verfliegt, nachdem das Ziel sie bei einer Anzahl von \u00dcberpr\u00fcfungen eingesetzt hat, die deinem Intelligenzmodifikator entspricht (mindestens 1)."
+								},
+								{
+									"type": "item",
+									"name": "Resilience",
+									"entry": "Das Ziel erh\u00e4lt eine Anzahl tempor\u00e4rer Trefferpunkte in H\u00f6he von {@dice 2d6} + deinem Intelligenzmodifikator."
+								}
+							]
+						}
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Iron Defender",
+			"source": "UAArtificerRevisited",
+			"page": 11,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "equal to five times your level in this class + your Intelligence modifier + the iron defender's Constitution modifier"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 4,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages you speak"
+			],
+			"trait": [
+				{
+					"name": "Might of the Master",
+					"entries": [
+						"Die folgenden Zahlen erh\u00f6hen sich um 1, wenn sich dein Fertigkeitsbonus um 1 erh\u00f6ht: die Fertigkeitsboni des eisernen Verteidigers, die Boni auf Treffer und Schaden seines Bisses und die Anzahl der Trefferpunkte, die durch seine Reparaturaktion wiederhergestellt werden."
+					]
+				},
+				{
+					"name": "Vigilant",
+					"entries": [
+						"Der eiserne Verteidiger darf sich nicht wundern."
+					]
+				}
+			],
+			"actionNote": "Requires Your Bonus Action",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel, das du sehen kannst. {@h}{@damage 1d8 + 2} Stich-Schaden."
+					]
+				},
+				{
+					"name": "Repair (3/Day)",
+					"entries": [
+						"Die magischen Mechanismen im Inneren des eisernen Verteidigers stellen {@dice 2d8 + 2} Trefferpunkte f\u00fcr sich selbst oder f\u00fcr ein Konstrukt oder Objekt im Umkreis von 5 Fu\u00df wieder her."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Defensive Pounce",
+					"entries": [
+						"Der eiserne Verteidiger erleidet einen Nachteil auf den Angriffswurf einer Kreatur, die er sehen kann und die sich innerhalb von 5 Fu\u00df um ihn herum befindet, vorausgesetzt, der Angriffswurf richtet sich gegen eine andere Kreatur als den eisernen Verteidiger."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		}
+	]
+}

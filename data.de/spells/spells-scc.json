@@ -1,0 +1,316 @@
+{
+	"spell": [
+		{
+			"name": "Borrowed Knowledge",
+			"source": "SCC",
+			"page": 37,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a book worth at least 25 gp",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Du sch\u00f6pfst aus dem Wissen der Geister der Vergangenheit. W\u00e4hle eine Fertigkeit, die du nicht beherrschst. W\u00e4hrend der Dauer des Zaubers beherrschst du die gew\u00e4hlte Fertigkeit. Der Zauber endet vorzeitig, wenn du ihn erneut wirkst."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Kinetic Jaunt",
+			"source": "SCC",
+			"page": 37,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Sie verst\u00e4rken Ihre Bewegung auf magische Weise mit tanz\u00e4hnlichen Schritten und verschaffen sich so f\u00fcr die Dauer des Trainings folgende Vorteile.",
+				{
+					"type": "list",
+					"items": [
+						"Deine Gehgeschwindigkeit erh\u00f6ht sich um 10 Fu\u00df.",
+						"Du provozierst keine Gelegenheitsangriffe.",
+						"Du kannst dich durch das Feld einer anderen Kreatur bewegen, und es z\u00e4hlt nicht als schwieriges Gel\u00e4nde. Wenn du deinen Zug im Feld einer anderen Kreatur beendest, wirst du in das letzte unbesetzte Feld geschoben, das du besetzt hast, und du erleidest {@damage 1d8} Kraftschaden."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Silvery Barbs",
+			"source": "SCC",
+			"page": 38,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature you can see within 60 feet of yourself succeeds on an attack roll, an ability check, or a saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du lenkst die ausl\u00f6sende Kreatur auf magische Weise ab und verwandelst ihre momentane Unsicherheit in eine Ermutigung f\u00fcr eine andere Kreatur. Die ausl\u00f6sende Kreatur muss den {@dice d20} Wurf wiederholen und den niedrigeren Wurf verwenden.",
+				"Du kannst dann eine andere Kreatur w\u00e4hlen, die du in Reichweite siehst (du kannst dich selbst w\u00e4hlen). Die gew\u00e4hlte Kreatur hat Vorteil beim n\u00e4chsten Angriffswurf, bei der n\u00e4chsten F\u00e4higkeitspr\u00fcfung oder beim n\u00e4chsten Rettungswurf, den sie innerhalb von 1 Minute macht. Eine Kreatur kann immer nur durch eine Anwendung dieses Zaubers gest\u00e4rkt werden."
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vortex Warp",
+			"source": "SCC",
+			"page": 38,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du verdrehst auf magische Weise den Raum um eine andere Kreatur, die du in Reichweite sehen kannst. Dem Ziel muss ein Konstitutions-Erhaltungswurf gelingen (es kann w\u00e4hlen, ob er scheitert), oder das Ziel wird in einen unbesetzten Raum deiner Wahl teleportiert, den du in Reichweite sehen kannst. Der gew\u00e4hlte Raum muss sich auf einer Oberfl\u00e4che oder in einer Fl\u00fcssigkeit befinden, die das Ziel tragen kann, ohne dass es sich quetschen muss."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 3 oder h\u00f6her wirkst, erh\u00f6ht sich die Reichweite des Zaubers um 30 Fu\u00df f\u00fcr jede Slotstufe \u00fcber der Stufe 2."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wither and Bloom",
+			"source": "SCC",
+			"page": 38,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a withered vine twisted into a loop"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Du beschw\u00f6rst sowohl Tod als auch Leben in einer Kugel mit einem Radius von 10 Fu\u00df, die auf einen Punkt in Reichweite zentriert ist. Jede Kreatur deiner Wahl in diesem Gebiet muss einen Konstitutionswurf machen und erleidet bei einem misslungenen Schutz {@damage 2d6} nekrotischen Schaden, bei einem erfolgreichen Schutz die H\u00e4lfte. Nichtmagische Vegetation in diesem Gebiet verdorrt.",
+				"Au\u00dferdem kann eine Kreatur deiner Wahl in diesem Gebiet einen ihrer nicht verbrauchten Trefferw\u00fcrfel ausgeben und w\u00fcrfeln, um eine Anzahl von Trefferpunkten wiederzuerlangen, die dem Wurf plus deinem Modifikator f\u00fcr die Zauberf\u00e4higkeit entspricht."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 3 oder h\u00f6her wirkst, erh\u00f6ht sich der Schaden um {@scaledamage 2d6|2-9|1d6} f\u00fcr jeden Slot \u00fcber dem 2. und die Anzahl der Trefferw\u00fcrfel, die ausgegeben und zum Heilungswurf hinzugef\u00fcgt werden k\u00f6nnen, erh\u00f6ht sich um einen f\u00fcr jeden Slot \u00fcber dem 2."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
