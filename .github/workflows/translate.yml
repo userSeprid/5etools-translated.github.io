@@ -6,6 +6,7 @@ on:
       source:
         description: 'Source files'
         required: True
+        default: "data/{spells,class}/*.json data/*.json data/book/*.json data/bestiary/*.json data/adventure/*.json"
 
 jobs:
   translate:
@@ -30,8 +31,8 @@ jobs:
       continue-on-error: true
       run: |
            cd $GITHUB_WORKSPACE
-           ./translation/translate.py --language ${{ matrix.language }} --translate --deepl ${{ github.event.inputs.source }}
-           #./translation/translate.py --language ${{ matrix.language }} --translate --deepl ${{ matrix.source }}
+           ./translation/translate.py --language ${{ matrix.language }} --maxrun 9000 --translate --deepl ${{ github.event.inputs.source }}
+           npm run gen-all
     - name: Save results
       continue-on-error: true
       run: |
@@ -39,5 +40,26 @@ jobs:
            git config user.email "<>"
            git add data.${{ matrix.language }}/ translation/cache/${{ matrix.language }}/
            git commit -m 'automatic translation'
-           git pull
+           git pull --rebase
            git push origin translations
+  deploy:
+    needs: translate
+    runs-on: ubuntu-latest
+    steps:
+       - uses: actions/checkout@master
+         with:
+           ref: 'translations'
+           fetch-depth: 0 # So we get the last official release tag
+
+       - name: cache buster
+         run: |
+              cd $GITHUB_WORKSPACE
+              VERSION=$(git describe --tags --abbrev=0)
+              bash ./.github/add-query-strings.sh "${VERSION}.$(date +%s)"
+
+       # See: https://github.com/JamesIves/github-pages-deploy-action
+       - name: Deploy
+         uses: JamesIves/github-pages-deploy-action@releases/v4
+         with:
+           branch: gh-pages-translated
+           folder: .
