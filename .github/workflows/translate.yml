@@ -11,7 +11,7 @@ on:
 jobs:
   translate:
     strategy:
-      max-parallel: 1
+      max-parallel: 5
       matrix:
         language: [ 'es', 'de', 'it', 'ru', 'zh' ]
     runs-on: ubuntu-latest
@@ -31,7 +31,8 @@ jobs:
       continue-on-error: true
       run: |
            cd $GITHUB_WORKSPACE
-           ./translation/translate.py --language ${{ matrix.language }} --maxrun 9000 --translate --deepl ${{ github.event.inputs.source }}
+           curl ifconfig.me
+           ./translation/translate.py --language ${{ matrix.language }} --maxrun 300 --translate --deepl ${{ github.event.inputs.source }}
            npm run gen-all
     - name: Save results
       continue-on-error: true
@@ -42,6 +43,8 @@ jobs:
            git commit -m 'automatic translation'
            git pull --rebase
            git push origin translations
+           # Try again with a short delay if it fails (conflicting pushes)
+           if [ $? != 0 ]; then sleep $((1 + $RANDOM % 10)); git pull --rebase; git push origin translations; fi
   deploy:
     needs: translate
     runs-on: ubuntu-latest
