@@ -45,8 +45,8 @@ jobs:
            git push origin translations || true
            # Try again with a short delay in case it fails (conflicting pushes)
            sleep $((1 + $RANDOM % 10))
-			  git pull --rebase
-			  git push origin translations; fi
+           git pull --rebase
+           git push origin translations; fi
   deploy:
     needs: translate
     runs-on: ubuntu-latest
