@@ -32,7 +32,7 @@ jobs:
       run: |
            cd $GITHUB_WORKSPACE
            curl ifconfig.me
-           ./translation/translate.py --language ${{ matrix.language }} --maxrun 300 --translate --deepl ${{ github.event.inputs.source }}
+           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --deepl ${{ github.event.inputs.source }}
            npm run gen-all
     - name: Save results
       continue-on-error: true
