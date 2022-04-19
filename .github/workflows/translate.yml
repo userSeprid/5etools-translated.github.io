@@ -7,6 +7,8 @@ on:
         description: 'Source files'
         required: True
         default: "data/{spells,class}/*.json data/*.json data/book/*.json data/bestiary/*.json data/adventure/*.json"
+  schedule:
+    - cron: "10 5 * * *"
 
 jobs:
   translate:
