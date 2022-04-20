@@ -1,7 +1,7 @@
 name: translate
 
 env:
-  SOURCE_FILES: 'data/spells/*.json data/class/*.json data/*.json data/book/*.json data/bestiary/*.json data/adventure/*.json'
+  SOURCE_FILES: 'data/spells/*.json data/class/*.json data/*.json data/book/*.json data/adventure/*.json data/bestiary/*.json'
 
 on:
   workflow_dispatch:
@@ -45,14 +45,15 @@ jobs:
            git config user.email "<>"
            git add data.${{ matrix.language }}/ translation/cache/${{ matrix.language }}/
            git commit -m 'automatic translation'
-           git pull --rebase
+           git status
+           git pull --rebase --autostash
            git push origin translations || true
            # Try again with a short delay in case it fails (conflicting pushes)
            sleep $((1 + $RANDOM % 10))
-           git pull --rebase
+           git pull --rebase --autostash
            git push origin translations || true
            sleep $((1 + $RANDOM % 10))
-           git pull --rebase
+           git pull --rebase --autostash
            git push origin translations || true
   deploy:
     needs: translate
