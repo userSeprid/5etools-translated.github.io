@@ -1,12 +1,15 @@
 name: translate
 
+env:
+  SOURCE_FILES: "data/{spells,class}/*.json data/*.json data/book/*.json data/bestiary/*.json data/adventure/*.json"
+
 on:
   workflow_dispatch:
     inputs:
       source:
         description: 'Source files'
         required: True
-        default: "data/{spells,class}/*.json data/*.json data/book/*.json data/bestiary/*.json data/adventure/*.json"
+        default: ${SOURCE_FILES}
   schedule:
     - cron: "10 5 * * *"
 
@@ -33,8 +36,7 @@ jobs:
       continue-on-error: true
       run: |
            cd $GITHUB_WORKSPACE
-           curl ifconfig.me
-           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --deepl ${{ github.event.inputs.source }}
+           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --deepl $SOURCE_FILES
            npm run gen-all
     - name: Save results
       continue-on-error: true
