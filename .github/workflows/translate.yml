@@ -16,7 +16,7 @@ on:
 jobs:
   translate:
     strategy:
-      max-parallel: 5
+      max-parallel: 1
       matrix:
         language: [ 'es', 'de', 'it', 'ru', 'zh' ]
     runs-on: ubuntu-latest
@@ -53,12 +53,12 @@ jobs:
            sleep $((1 + $RANDOM % 10 * 10))
            git pull --rebase --autostash
            git push origin translations || true
-           sleep $((1 + $RANDOM % 10 * 10))
-           git pull --rebase --autostash
-           git push origin translations || true
-           sleep $((1 + $RANDOM % 10 * 10))
-           git pull --rebase --autostash
-           git push origin translations || true
+           #sleep $((1 + $RANDOM % 10 * 10))
+           #git pull --rebase --autostash
+           #git push origin translations || true
+           #sleep $((1 + $RANDOM % 10 * 10))
+           #git pull --rebase --autostash
+           #git push origin translations || true
   deploy:
     needs: translate
     runs-on: ubuntu-latest
