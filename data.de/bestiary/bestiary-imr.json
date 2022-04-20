@@ -1551,7 +1551,7 @@
 						"items": {
 							"name": "Acidic Spittle",
 							"entries": [
-								"{@atk rw} {@hit 4} to hit, range 30 ft., one target. {@h}5 ({@damage 1d6 + 2}) acid damage."
+								"{@atk rw} {@hit 4} auf Treffer, Reichweite 30 Fuß, ein Ziel. {@h}5 ({@damage 1d6 + 2}) Säureschaden."
 							]
 						}
 					}
@@ -1618,7 +1618,7 @@
 				{
 					"name": "Telepathic Bond",
 					"entries": [
-						"While the construct is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically."
+						"Das Konstrukt befindet sich zwar auf derselben Dimension wie sein Meister, kann ihm aber auf magische Weise mitteilen, was es wahrnimmt, und die beiden können telepathisch kommunizieren."
 					]
 				}
 			],
@@ -1626,7 +1626,7 @@
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 slashing damage, and the target must succeed on a {@dc 10} Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is instead {@condition poisoned} for 5 ({@dice 1d10}) minutes and {@condition unconscious} while {@condition poisoned} in this way."
+						"{@atk mw} {@hit 4} auf Treffer, Reichweite 5 Fuß, ein Ziel. {@h}1 Hiebschaden, und das Ziel muss einen {@dc 10} Konstitutions-Sicherungswurf bestehen oder 1 Minute lang {@condition poisoned} leiden. Misslingt der Rettungswurf um 5 oder mehr, wird das Ziel stattdessen {@condition poisoned} für 5 ({@dice 1d10}) Minuten und {@condition unconscious} solange {@condition poisoned} auf diese Weise angegriffen."
 					]
 				}
 			],
@@ -1729,13 +1729,13 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"The thessalkraken can breathe air and water."
+						"Die Thessalkraken können Luft und Wasser atmen."
 					]
 				},
 				{
 					"name": "Freedom of Movement",
 					"entries": [
-						"The thessalkraken ignores {@quickref difficult terrain||3}, and magical effects can't reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement to escape from nonmagical restraints or being {@condition grappled}."
+						"Der Thessalkraken ignoriert {@quickref difficult terrain||3}, und magische Effekte können seine Geschwindigkeit nicht verringern oder ihn {@condition restrained} werden lassen. Er kann 5 Fuß Bewegung aufwenden, um aus nichtmagischen Fesseln zu entkommen oder {@condition grappled} zu sein."
 					]
 				}
 			],
@@ -1743,32 +1743,32 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The thessalkraken makes one bite attack and two tentacle attacks. It can replace each tentacle attack with one use of Fling."
+						"Der Thessalkrake macht eine Biss-Attacke und zwei Tentakel-Attacken. Er kann jede Tentakel-Attacke durch einen Einsatz von \"Schleudern\" ersetzen."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 7}) piercing damage plus 5 ({@damage 1d10}) acid damage. If the target is a Medium or smaller creature {@condition grappled} by the thessalkraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the thessalkraken, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the thessalkraken's turns.",
-						"If the thessalkraken takes 35 damage or more on a single turn from a creature inside it, it must succeed on a {@dc 23} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the thessalkraken. If the thessalkraken dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 10 feet of movement, exiting {@condition prone}."
+						"{@atk mw} {@hit 12} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}20 ({@damage 3d8 + 7}) Stich-Schaden plus 5 ({@damage 1d10}) Säure-Schaden. Handelt es sich bei dem Ziel um eine Kreatur mittlerer oder kleinerer Größe {@condition grappled}, die vom Thessalkraken verschluckt wird, endet der Greifhaken. Während des Verschluckens ist die Kreatur {@condition blinded} und {@condition restrained}, sie hat totale Deckung vor Angriffen und anderen Effekten außerhalb des Thessalkraken und erleidet 21 ({@damage 6d6}) Säureschaden zu Beginn jeder Runde des Thessalkraken.",
+						"Wenn der Thessalkrake in einer einzigen Runde 35 oder mehr Schaden durch eine Kreatur in seinem Inneren erleidet, muss er am Ende dieser Runde einen {@dc 23} Konstitutionsrettungswurf bestehen oder alle verschluckten Kreaturen wieder auswürgen, die dann {@condition prone} in einen Raum innerhalb von 10 Fuß um den Thessalkraken fallen. Wenn der Thessalkrake stirbt, wird eine verschluckte Kreatur nicht mehr {@condition restrained} von ihm gehalten und kann mit einer Bewegungszeit von 10 Fuß aus dem Leichnam entkommen, indem sie {@condition prone} verlässt."
 					]
 				},
 				{
 					"name": "Tentacle",
 					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}17 ({@damage 3d6 + 7}) slashing damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}. The thessalkraken has ten tentacles, each of which can grapple one target."
+						"{@atk mw} {@hit 12} Treffer, Reichweite 20 ft., ein Ziel. {@h}17 ({@damage 3d6 + 7}) Hiebschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 16}). Bis zum Ende des Haltegriffs ist das Ziel {@condition restrained}. Der Thessalkraken hat zehn Tentakel, von denen jeder ein Ziel packen kann."
 					]
 				},
 				{
 					"name": "Fling",
 					"entries": [
-						"One Medium or smaller object held or creature {@condition grappled} by the thessalkraken is thrown up to 40 feet in a random direction and knocked {@condition prone}. If a thrown target strikes a solid surface, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a {@dc 16} Dexterity saving throw or take the same damage and be knocked {@condition prone}."
+						"Ein mittelgroßes oder kleineres Objekt, das vom Thessalkraken gehalten wird oder eine Kreatur {@condition grappled}, wird bis zu 40 Fuß in eine zufällige Richtung geworfen und umgestoßen {@condition prone}. Wenn das geworfene Ziel auf eine feste Oberfläche trifft, erleidet es 3 ({@damage 1d6}) Wuchtschaden pro 10 Fuß, die es geworfen wurde. Wenn das Ziel auf eine andere Kreatur geworfen wird, muss diese Kreatur einen {@dc 16} Schutzwurf auf Geschicklichkeit bestehen oder den gleichen Schaden erleiden und umgeworfen werden {@condition prone}."
 					]
 				},
 				{
 					"name": "Acid Saliva {@recharge 5}",
 					"entries": [
-						"The thessalkraken spits a glob of acid at a point it can see within 60 feet of it. Each creature within 10 feet of that point must make a {@dc 18} Dexterity saving throw, taking 22 ({@damage 4d10}) acid damage on a failed save, or half as much damage on a successful one."
+						"Der Thessalkrake spuckt einen Säureklumpen auf einen Punkt, den er im Umkreis von 60 Fuß sehen kann. Jede Kreatur im Umkreis von 10 Fuß um diesen Punkt muss einen {@dc 18} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 22 ({@damage 4d10}) Säureschaden, bei einem erfolgreichen Schutzwurf die Hälfte des Schadens."
 					]
 				}
 			],
@@ -1776,19 +1776,19 @@
 				{
 					"name": "Tentacle Attack",
 					"entries": [
-						"The thessalkraken makes one tentacle attack."
+						"Der Thessalkrake führt einen Tentakelangriff aus."
 					]
 				},
 				{
 					"name": "Fling",
 					"entries": [
-						"The thessalkraken uses Fling."
+						"Der Thessalkrake benutzt Fling."
 					]
 				},
 				{
 					"name": "Ink Cloud (Costs 3 Actions)",
 					"entries": [
-						"While underwater, the thessalkraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the thessalkraken. Each creature other than the thessalkraken that ends its turn there must succeed on a {@dc 18} Constitution saving throw, taking 16 ({@damage 3d10}) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the thessalkraken's next turn."
+						"Unter Wasser stößt der Thessalkraken eine Tintenwolke in einem Radius von 60 Fuß aus. Die Wolke breitet sich um Ecken herum aus, und dieser Bereich ist für andere Kreaturen als den Thessalkraken stark verdunkelt. Jede Kreatur außer dem Thessalkraken, die ihren Zug dort beendet, muss einen {@dc 18} Konstitutionsschutzwurf bestehen und erleidet bei einem misslungenen Schutzwurf 16 ({@damage 3d10}) Giftschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden. Eine starke Strömung vertreibt die Wolke, die ansonsten am Ende des nächsten Zuges des Thessalkraken verschwindet."
 					]
 				}
 			],
@@ -1909,19 +1909,19 @@
 				{
 					"name": "Hold Breath",
 					"entries": [
-						"The two-headed crocodile can hold its breath for 15 minutes."
+						"Das zweiköpfige Krokodil kann seinen Atem 15 Minuten lang anhalten."
 					]
 				},
 				{
 					"name": "Two Heads",
 					"entries": [
-						"The two-headed crocodile has advantage on Wisdom (Perception) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+						"Das zweiköpfige Krokodil ist im Vorteil bei Weisheitsprüfungen (Wahrnehmung) und bei Rettungswürfen gegen {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} und Stoßen {@condition unconscious}."
 					]
 				},
 				{
 					"name": "Wakeful",
 					"entries": [
-						"When one of the crocodile's heads is asleep, its other head is awake."
+						"Wenn einer der Köpfe des Krokodils schläft, ist der andere Kopf wach."
 					]
 				}
 			],
@@ -1929,13 +1929,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The two-headed crocodile makes two attacks with its bite."
+						"Das zweiköpfige Krokodil führt mit seinem Biss zwei Angriffe aus."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, and that head of the crocodile can't bite another target."
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d10 + 2}) Stichschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 12}). Bis zum Ende des Haltegriffs ist das Ziel {@condition restrained}, und der Kopf des Krokodils kann kein anderes Ziel beißen."
 					]
 				}
 			],
@@ -2000,13 +2000,13 @@
 				{
 					"name": "Two Heads",
 					"entries": [
-						"The two-headed owlbear has advantage on Wisdom (Perception) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+						"Der zweiköpfige Eulenbär ist im Vorteil bei Weisheitsprüfungen (Wahrnehmung) und bei Rettungswürfen gegen {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} und Stoßen {@condition unconscious}."
 					]
 				},
 				{
 					"name": "Wakeful",
 					"entries": [
-						"When one of the owlbear's heads is asleep, its other head is awake."
+						"Wenn einer der Köpfe des Eulenbären schläft, ist sein anderer Kopf wach."
 					]
 				}
 			],
@@ -2014,19 +2014,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The two-headed owlbear makes three attacks: two with its beaks and one with its claws."
+						"Der zweiköpfige Eulenbär führt drei Angriffe aus: zwei mit seinen Schnäbeln und einen mit seinen Klauen."
 					]
 				},
 				{
 					"name": "Beak",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 1d10 + 5}) Stich-Schaden."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 2d8 + 5}) Hiebschaden."
 					]
 				}
 			],
