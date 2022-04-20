@@ -663,6 +663,9 @@
 				"P",
 				"S"
 			],
+			"damageTagsSpell": [
+				"N"
+			],
 			"spellcastingTags": [
 				"I"
 			],
@@ -795,13 +798,13 @@
 				{
 					"name": "Incorporeal Dash",
 					"entries": [
-						"Bol'bara passt sich ihrer Geschwindigkeit an. Sie kann sich durch andere Kreaturen und Objekte bewegen, als wären sie schwieriges Terrain. Sie erleidet 5 ({@damage 1d10}) Kraftschaden, wenn sie ihren Zug innerhalb eines Objekts beendet."
+						"Bol'bara moves up to her speed. She can move through other creatures and objects as if they were {@quickref difficult terrain||3}. She takes 5 ({@damage 1d10}) force damage if she ends her turn inside an object."
 					]
 				},
 				{
 					"name": "Zone of Calamity (Costs 2 Actions)",
 					"entries": [
-						"Eine Sphäre magischer Verwirrung mit einem Radius von 15 Fuß erstreckt sich von einem Punkt, den Bol'bara im Umkreis von 60 Fuß um sich herum sehen kann, und breitet sich um Ecken aus. Jede Kreatur, die ihren Zug in diesem Gebiet beginnt, wird so behandelt, als ob sie von dem Zauber {@spell confusion} betroffen wäre (Schutz {@dc 12}). Die Sphäre hält so lange an, wie Bol'bara die Konzentration aufrechterhält, bis zu 1 Minute (als ob sie sich auf einen Zauber konzentrieren würde)."
+						"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell confusion} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains concentration, up to 1 minute (as if concentrating on a spell)."
 					]
 				}
 			],
@@ -818,6 +821,10 @@
 			"damageTags": [
 				"O",
 				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O"
 			],
 			"spellcastingTags": [
 				"I"
@@ -877,13 +884,13 @@
 				{
 					"name": "Bladed Hide",
 					"entries": [
-						"Zu Beginn jeder seiner Runden fügt der Moorboot 5 ({@damage 2d4}) Stichschaden an jeder Kreatur zu, die sich an ihm festhält."
+						"At the start of each of its turns, the moorbounder deals 5 ({@damage 2d4}) piercing damage to any creature grappling it."
 					]
 				},
 				{
 					"name": "Standing Leap",
 					"entries": [
-						"Der Weitsprung der Moorboote beträgt bis zu 40 Fuß und der Hochsprung bis zu 20 Fuß, mit oder ohne Anlauf."
+						"The moorbounder's long jump is up to 40 feet and its high jump is up to 20 feet, with or without a running start."
 					]
 				}
 			],
@@ -891,19 +898,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Schweinswal führt zwei Angriffe aus: einen mit seinen Klingen und einen mit seinen Klauen."
+						"The moorbounder makes two attacks: one with its blades and one with its claws."
 					]
 				},
 				{
 					"name": "Blades",
 					"entries": [
-						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}11 ({@damage 2d6 + 4}) Hiebschaden."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 4d4 + 4}) Hiebschaden."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d4 + 4}) slashing damage."
 					]
 				}
 			],
@@ -973,7 +980,7 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"Der Crawler hat einen Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens ein Verbündeter des Crawlers innerhalb von 5 Fuß um die Kreatur befindet und der Verbündete nicht {@condition incapacitated}."
+						"The crawler has advantage on an attack roll against a creature if at least one of the crawler's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -981,25 +988,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Crawler führt vier Angriffe aus: einen mit seinem Biss, zwei mit seinen Klauen und einen mit seinem Schwanz."
+						"The crawler makes four attacks: one with its bite, two with its claws, and one with its tail."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 4} auf Treffer, Reichweite 5 Fuß, eine Kreatur. {@h}4 ({@damage 1d4 + 2}) Stichschaden und das Ziel muss einen {@dc 11} Weisheits-Sicherungswurf bestehen oder wird bis zum Beginn der nächsten Runde des Crawlers {@condition frightened}."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage and the target must succeed on a {@dc 11} Wisdom saving throw or become {@condition frightened} until the start of the crawler's next turn."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 4} Treffer, Reichweite 15 ft., ein Ziel. {@h}4 ({@damage 1d4 + 2}) Hiebschaden."
+						"{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
 					]
 				},
 				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 4} Treffer, Reichweite 15 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stich-Schaden."
+						"{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
 					]
 				}
 			],
@@ -1098,7 +1105,7 @@
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"Der Abgesandte hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+						"The emissary has advantage on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -1106,25 +1113,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Abgesandte führt drei Krallenangriffe aus."
+						"The emissary makes three talons attacks."
 					]
 				},
 				{
 					"name": "Talons",
 					"entries": [
-						"{@atk mw} {@hit 6} Treffer, Reichweite 5 ft., eine Kreatur. {@h}14 ({@damage 2d10 + 3}) Hiebschaden."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}14 ({@damage 2d10 + 3}) slashing damage."
 					]
 				},
 				{
 					"name": "Alluring Thrum (Recharges 5-6)",
 					"entries": [
-						"Der Abgesandte gibt ein furchtbares, aber verlockendes Brummen von sich. Jede Kreatur im Umkreis von 20 Fuß um den Emissär, die ihn hören kann und keine Anomalie ist, muss einen {@dc 14} Konstitutionsrettungswurf bestehen oder wird 1 Minute lang {@condition charmed}. Eine Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+						"The emissary emits a dreadful yet alluring hum. Each creature within 20 feet of the emissary that can hear it and that isn't an aberration must succeed on a {@dc 14} Constitution saving throw or be {@condition charmed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				},
 				{
 					"name": "Crystal Spores {@recharge}",
 					"entries": [
-						"Eine Wolke aus giftigen kristallinen Sporen mit einem Radius von 15 Fuß breitet sich von dem Abgesandten aus. Die Sporen verbreiten sich um Ecken. Jede Kreatur in diesem Gebiet muss einen {@dc 14} Konstitutionsschutzwurf bestehen oder wird {@condition poisoned}. Solange eine Kreatur auf diese Weise {@condition poisoned} wird, erleidet sie zu Beginn jeder ihrer Runden 11 ({@damage 2d10}) Giftschaden. Eine Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+						"A 15-foot-radius cloud of toxic crystalline spores extends out from the emissary. The spores spread around corners. Each creature in the area must succeed on a {@dc 14} Constitution saving throw or become {@condition poisoned}. While {@condition poisoned} in this way, a creature takes 11 ({@damage 2d10}) poison damage at the start of each of its turns. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				}
 			],
@@ -1224,13 +1231,13 @@
 				{
 					"name": "Earth Glide",
 					"entries": [
-						"Der Seher kann durch nichtmagische, unbearbeitete Erde und Stein hindurchgehen. Dabei stört der Seher das Material, durch das er sich bewegt, nicht."
+						"The seer can traverse through nonmagical, unworked earth and stone. While doing so, the seer doesn't disturb the material it moves through."
 					]
 				},
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"Der Seher hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+						"The seer has advantage on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -1238,19 +1245,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Seher verwendet den Spaltstab zweimal, die Psychedelische Kugel zweimal oder jede der beiden Möglichkeiten einmal."
+						"The seer uses Fission Staff twice, Psychedelic Orb twice, or each one once."
 					]
 				},
 				{
 					"name": "Fission Staff",
 					"entries": [
-						"{@atk mw} {@hit 8} auf Treffer, Reichweite 5 Fuß, eine Kreatur. {@h}9 ({@damage 1d6 + 6}) Wuchtschaden plus 18 ({@damage 4d8}) Strahlenschaden, und das Ziel wird {@condition prone} niedergeschlagen."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage plus 18 ({@damage 4d8}) radiant damage, and the target is knocked {@condition prone}."
 					]
 				},
 				{
 					"name": "Psychedelic Orb",
 					"entries": [
-						"Der Seher schleudert eine schimmernde Kugel auf eine Kreatur, die er im Umkreis von 120 Metern sieht. Das Ziel muss einen {@dc 19} Weisheitswurf bestehen oder erleidet 27 ({@damage 5d10}) psychischen Schaden und einen zufälligen Zustand bis zum Beginn des nächsten Zuges des Sehers. Wirf einen {@dice d6} für den Zustand: (1-2) {@condition blinded}, (3-4) {@condition frightened}, oder (5-6) {@condition stunned}."
+						"The seer hurls a glimmering orb at one creature it can see within 120 of it. The target must succeed on a {@dc 19} Wisdom saving throw or take 27 ({@damage 5d10}) psychic damage and suffer a random condition until the start of the seer's next turn. Roll a {@dice d6} for the condition: (1-2) {@condition blinded}, (3-4) {@condition frightened}, or (5-6) {@condition stunned}."
 					]
 				}
 			],
@@ -1258,7 +1265,7 @@
 				{
 					"name": "Fuse Damage",
 					"entries": [
-						"Wenn der Seher von einem Angriff getroffen wird, erleidet er nur die Hälfte des auslösenden Schadens. Wenn der Seher in seinem nächsten Zug das erste Mal mit einem Nahkampfangriff trifft, erleidet das Ziel einen zusätzlichen {@damage 1d6} Strahlenschaden."
+						"When the seer is hit by an attack, it takes only half of the triggering damage. The first time the seer hits with a melee attack on its next turn, the target takes an extra {@damage 1d6} radiant damage."
 					]
 				}
 			],
@@ -1358,19 +1365,19 @@
 				{
 					"name": "Illumination",
 					"entries": [
-						"Der Wurm spendet in einem Umkreis von 20 Fuß schwaches Licht."
+						"The worm sheds dim light in a 20-foot radius."
 					]
 				},
 				{
 					"name": "Radiant Mirror",
 					"entries": [
-						"Wenn der Wurm Strahlungsschaden erleidet, erleidet jede Kreatur im Umkreis von 20 Fuß diesen Schaden ebenfalls."
+						"If the worm takes radiant damage, each creature within 20 feet of it takes that damage as well."
 					]
 				},
 				{
 					"name": "Tunneler",
 					"entries": [
-						"Der Wurm kann sich mit halber Geschwindigkeit durch festes Gestein graben und hinterlässt einen Tunnel mit einem Durchmesser von 10 Fuß."
+						"The worm can burrow through solid rock at half its burrowing speed and leaves a 10-foot-diameter tunnel in its wake."
 					]
 				}
 			],
@@ -1378,20 +1385,20 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Wurm führt zwei Angriffe aus: einen mit seinen mit Widerhaken versehenen Tentakeln und einen mit seinem Biss."
+						"The worm makes two attacks: one with its barbed tentacles and one with its bite."
 					]
 				},
 				{
 					"name": "Barbed Tentacles",
 					"entries": [
-						"{@atk mw} {@hit 13} Treffer, Reichweite 10 ft., eine Kreatur. {@h}25 ({@damage 5d6 + 8}) Stichschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 18}). Bis dieser Griff endet, ist das Ziel {@condition restrained}. Die Tentakel können immer nur eine Kreatur auf einmal packen."
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one creature. {@h}25 ({@damage 5d6 + 8}) piercing damage, and the target is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}. The tentacles can grapple only one creature at a time."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 13} Treffer, Reichweite 10 ft., ein Ziel. {@h}30 ({@damage 5d8 + 8}) Stich-Schaden. Wenn das Ziel eine große oder kleinere Kreatur ist, muss es einen {@dc 18} Schutzwurf auf Geschicklichkeit bestehen oder vom Wurm verschluckt werden. Eine verschluckte Kreatur ist {@condition blinded} und {@condition restrained}, hat totale Deckung vor Angriffen und anderen Effekten außerhalb des Wurms und erleidet 21 ({@damage 6d6}) Feuerschaden zu Beginn jeder Runde des Wurms.",
-						"Wenn der Wurm in einer einzigen Runde 30 oder mehr Schaden durch eine Kreatur in seinem Inneren erleidet, muss der Wurm am Ende dieser Runde einen {@dc 21} Konstitutionsrettungswurf bestehen oder alle verschluckten Kreaturen wieder auswürgen, die dann {@condition prone} in einem Umkreis von 10 Fuß um den Wurm fallen. Wenn der Wurm stirbt, wird eine verschluckte Kreatur nicht mehr {@condition restrained} von ihm gehalten und kann dem Leichnam entkommen, indem sie {@condition prone} 20 Fuß Bewegung benötigt."
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}30 ({@damage 5d8 + 8}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 18} Dexterity saving throw or be swallowed by the worm. A swallowed creature is {@condition blinded} and {@condition restrained}, has total cover against attacks and other effects outside the worm, and takes 21 ({@damage 6d6}) fire damage at the start of each of the worm's turns.",
+						"If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
 					]
 				}
 			],
@@ -1525,13 +1532,13 @@
 				{
 					"name": "Numbing Aura",
 					"entries": [
-						"Jede Kreatur, die ihren Zug innerhalb von 10 Fuß um den Zombie beginnt, muss einen {@dc 17} Konstitutionsschutzwurf machen. Wenn der Schutzwurf nicht gelingt, kann die Kreatur in diesem Zug nicht mehr als einen Angriff durchführen oder eine Bonusaktion ausführen."
+						"Any creature that starts its turn within 10 feet of the zombie must make a {@dc 17} Constitution saving throw. Unless the save succeeds, the creature can't make more than one attack, or take a bonus action on that turn."
 					]
 				},
 				{
 					"name": "Undead Fortitude",
 					"entries": [
-						"Wenn der Schaden den Zombie auf 0 Trefferpunkte reduziert, muss er einen Konstitutionsschutzwurf mit einem DC von 5 + dem erlittenen Schaden machen, es sei denn, der Schaden ist Feuer, Strahlung oder ein kritischer Treffer. Bei einem Erfolg sinkt der Zombie stattdessen auf 1 Trefferpunkt."
+						"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is fire, radiant, or from a critical hit. On a success, the zombie drops to 1 hit point instead."
 					]
 				}
 			],
@@ -1539,25 +1546,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Zombie führt zwei Waffenangriffe aus."
+						"The zombie makes two weapon attacks."
 					]
 				},
 				{
 					"name": "Greataxe",
 					"entries": [
-						"{@atk mw} {@hit 10} Treffer, Reichweite 10 ft., ein Ziel. {@h}25 ({@damage 3d12 + 6}) Hiebschaden."
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}25 ({@damage 3d12 + 6}) slashing damage."
 					]
 				},
 				{
 					"name": "Hurl Rock",
 					"entries": [
-						"{@atk rw} {@hit 10} bis zum Treffer, Reichweite 60/240 Fuß, ein Ziel. {@h}28 ({@damage 4d10 + 6}) Schaden durch Wucht."
+						"{@atk rw} {@hit 10} to hit, range 60/240 ft., one target. {@h}28 ({@damage 4d10 + 6}) bludgeoning damage."
 					]
 				},
 				{
 					"name": "Freezing Stare",
 					"entries": [
-						"Der Zombie zielt auf eine Kreatur, die er im Umkreis von 60 Fuß sehen kann. Das Ziel muss einen {@dc 17} Konstitutionsschutzwurf bestehen oder 35 ({@damage 10d6}) Kälteschaden erleiden und bis zum Ende seiner nächsten Runde {@condition paralyzed} sein."
+						"The zombie targets one creature it can see within 60 feet of it. The target must succeed on a {@dc 17} Constitution saving throw or take 35 ({@damage 10d6}) cold damage and be {@condition paralyzed} until the end of its next turn."
 					]
 				}
 			],
@@ -1644,19 +1651,19 @@
 				{
 					"name": "Freezing Body",
 					"entries": [
-						"Eine Kreatur, die den Wurm berührt oder ihn mit einem Nahkampfangriff trifft, während sie sich in einem Umkreis von 5 Fuß um ihn befindet, erleidet 10 ({@damage 3d6}) Kälteschaden."
+						"A creature that touches the worm or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) cold damage."
 					]
 				},
 				{
 					"name": "Death Burst",
 					"entries": [
-						"Wenn der Wurm stirbt, explodiert er in einer Explosion aus eisiger Energie. Jede Kreatur im Umkreis von 60 Fuß muss einen {@dc 20} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 28 ({@damage 8d6}) Kälteschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden. Kreaturen, die sich im Inneren des Wurms befinden, wenn er stirbt, schaffen diesen Rettungswurf automatisch nicht."
+						"When the worm dies, it explodes in a burst of frigid energy. Each creature within 60 feet of it must make a {@dc 20} Dexterity saving throw, taking 28 ({@damage 8d6}) cold damage on a failed save, or half as much damage on a successful one. Creatures inside the worm when it dies automatically fail this saving throw."
 					]
 				},
 				{
 					"name": "Tunneler",
 					"entries": [
-						"Der Wurm kann sich mit halber Geschwindigkeit durch festes Gestein graben und hinterlässt einen Tunnel mit einem Durchmesser von 10 Fuß."
+						"The worm can burrow through solid rock at half its burrowing speed and leaves a 10-foot-diameter tunnel in its wake."
 					]
 				}
 			],
@@ -1664,20 +1671,20 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Wurm führt zwei Biss-Attacken durch oder benutzt seinen Trill und führt eine Biss-Attacke durch."
+						"The worm makes two bite attacks, or uses its Trill and makes a bite attack."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 15} auf Treffer, Reichweite 10 Fuß, ein Ziel. {@h}22 ({@damage 3d8 + 9}) Stichschaden plus 10 ({@damage 3d6}) Kälteschaden. Wenn das Ziel eine große oder kleinere Kreatur ist, muss es einen {@dc 20} Schutzwurf auf Geschicklichkeit bestehen oder vom Wurm verschluckt werden. Eine verschluckte Kreatur ist {@condition blinded} und {@condition restrained}, hat totalen Schutz vor Angriffen und anderen Effekten außerhalb des Wurms und erleidet zu Beginn jeder Runde des Wurms 10 ({@damage 3d6}) Säureschaden und 10 ({@damage 3d6}) Kälteschaden.",
-						"Wenn der Wurm in einer einzigen Runde 30 oder mehr Schaden durch eine Kreatur in seinem Inneren erleidet, muss er am Ende dieser Runde einen {@dc 20} Konstitutionswettkampf bestehen oder alle verschluckten Kreaturen wieder auswürgen, die dann {@condition prone} in einem Umkreis von 10 Fuß um den Wurm fallen."
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d8 + 9}) piercing damage plus 10 ({@damage 3d6}) cold damage. If the target is a Large or smaller creature, it must succeed on a {@dc 20} Dexterity saving throw or be swallowed by the worm. A swallowed creature is {@condition blinded} and {@condition restrained}, has total cover against attacks and other effects outside the worm, and takes 10 ({@damage 3d6}) acid damage and 10 ({@damage 3d6}) cold damage at the start of each of the worm's turns.",
+						"If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the worm."
 					]
 				},
 				{
 					"name": "Trill",
 					"entries": [
-						"Der Frostwurm stößt einen markerschütternden Schrei aus. Jede Kreatur im Umkreis von 60 Fuß um den Wurm, die ihn hören kann, muss einen {@dc 20} Weisheitswurf bestehen oder 1 Minute lang {@condition stunned} Schaden erleiden. Eine Kreatur kann den Rettungswurf jedes Mal wiederholen, wenn sie Schaden erleidet, und am Ende jeder ihrer Runden, wobei der Effekt bei einem Erfolg für sie selbst endet. Sobald eine Kreatur erfolgreich gegen diesen Effekt rettet, oder wenn dieser Effekt für sie endet, ist diese Kreatur für die nächsten 24 Stunden immun gegen den Trill aller Frostwürmer. Frostwürmer sind gegen diesen Effekt immun."
+						"The frost worm emits a haunting cry. Each creature within 60 feet of the worm that can hear it must succeed on a {@dc 20} Wisdom saving throw or be {@condition stunned} for 1 minute. A creature can repeat the saving throw each time it takes damage and at the end of each of its turns, ending the effect on itself on a success. Once a creature successfully saves against this effect, or if this effect ends for it, that creature is immune to the Trill of all frost worms for the next 24 hours. Frost worms are immune to this effect."
 					]
 				}
 			],
@@ -1778,19 +1785,19 @@
 				{
 					"name": "Immutable Form",
 					"entries": [
-						"Der Getriebewächter ist immun gegen jeden Zauber oder Effekt, der seine Form verändern würde."
+						"The gearkeeper is immune to any spell or effect that would alter its form."
 					]
 				},
 				{
 					"name": "Rapid Shifting",
 					"entries": [
-						"Gelegenheitsangriffe gegen den Getriebewärter haben Nachteil."
+						"Opportunity attacks made against the gearkeeper have disadvantage."
 					]
 				},
 				{
 					"name": "Whirling Blades",
 					"entries": [
-						"Jede Kreatur, die ihren Zug in einem Umkreis von 5 Fuß um den Getriebewärter beginnt, erleidet 4 ({@damage 1d8}) Hiebschaden."
+						"Any creature that starts its turn within 5 feet of the gearkeeper takes 4 ({@damage 1d8}) slashing damage."
 					]
 				}
 			],
@@ -1798,25 +1805,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Ausrüstungsbesitzer führt zwei Armklingenangriffe oder einen Armklingenangriff und einen Speerwerferangriff aus."
+						"The gearkeeper makes two Arm Blade attacks, or one Arm Blade attack and one Spear Launcher attack."
 					]
 				},
 				{
 					"name": "Arm Blade",
 					"entries": [
-						"{@atk mw} {@hit 9} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}18 ({@damage 3d8 + 5}) Hiebschaden."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) slashing damage."
 					]
 				},
 				{
 					"name": "Spear Launcher",
 					"entries": [
-						"{@atk rw} {@hit 9} als Treffer, Reichweite 90 Fuß, ein Ziel. {@h}12 ({@damage 2d6 + 5}) Stich-Schaden, und das Ziel wird {@condition prone} niedergeschlagen."
+						"{@atk rw} {@hit 9} to hit, range 90 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, and the target is knocked {@condition prone}."
 					]
 				},
 				{
 					"name": "Shrapnel Blast {@recharge}",
 					"entries": [
-						"Der Wächter der Ausrüstung schleudert einen Sprühnebel aus gezacktem Metall in einem Kegel von 30 Fuß. Jede Kreatur in diesem Bereich muss einen {@dc 15} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 21 ({@damage 6d6}) Stichschaden, bei einem erfolgreichen Schutzwurf die Hälfte des Schadens."
+						"The gearkeeper jettisons a spray of jagged metal in a 30-foot cone. Each creature in the area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) piercing damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -1914,13 +1921,13 @@
 				{
 					"name": "Shadowstep",
 					"entries": [
-						"Als Bonusaktion kann sich der Düsterschleicher bis zu 40 Fuß in einen unbesetzten Raum teleportieren, den er sehen kann."
+						"As a bonus action, the gloomstalker can teleport up to 40 feet to an unoccupied space it can see."
 					]
 				},
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"Solange er sich im Sonnenlicht befindet, hat der Düsterschleicher einen Nachteil bei Angriffswürfen und bei Weisheitsprüfungen (Wahrnehmung), die sich auf das Sehen beziehen."
+						"While in sunlight, the gloomstalker has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
 					]
 				}
 			],
@@ -1928,31 +1935,31 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Düsterschleicher führt zwei Angriffe aus: einen mit seinem Biss und einen mit seinen Klauen."
+						"The gloomstalker makes two attacks: one with its bite and one with its claws."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 9} auf Treffer, Reichweite 5 ft., eine Kreatur. {@h}15 ({@damage 2d8 + 6}) Stichschaden plus 7 ({@damage 2d6}) nekrotischer Schaden."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}15 ({@damage 2d8 + 6}) piercing damage plus 7 ({@damage 2d6}) necrotic damage."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 9} bis zum Treffer, Reichweite 5 Fuß, ein Ziel. {@h}13 ({@damage 2d6 + 6}) Hiebschaden plus 7 ({@damage 2d6}) nekrotischer Schaden."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
 					]
 				},
 				{
 					"name": "Snatch",
 					"entries": [
-						"{@atk mw} {@hit 9} auf Treffer, Reichweite 5 Fuß, eine Kreatur mittlerer Größe oder kleiner. {@h}13 ({@damage 2d6 + 6}) Hiebschaden plus 7 ({@damage 2d6}) nekrotischer Schaden, und das Ziel ist {@condition grappled} (Flucht {@dc 17}). Während {@condition grappled} auf diese Weise, ist das Ziel {@condition restrained}."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one Medium or smaller creature. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 7 ({@damage 2d6}) necrotic damage, and the target is {@condition grappled} (escape {@dc 17}). While {@condition grappled} in this way, the target is {@condition restrained}."
 					]
 				},
 				{
 					"name": "Shriek {@recharge}",
 					"entries": [
-						"Der Finsterling stößt einen schrecklichen Schrei aus. Jeder Feind im Umkreis von 60 Fuß um die Düsterpirsch, der sie hören kann, muss einen {@dc 13} Konstitutionswettkampf bestehen oder {@condition paralyzed} bis zum Ende des nächsten Zuges des Feindes leiden."
+						"The gloomstalker emits a terrible shriek. Each enemy within 60 feet of the gloomstalker that can hear it must succeed on a {@dc 13} Constitution saving throw or be {@condition paralyzed} until the end of the enemy's next turn."
 					]
 				}
 			],
@@ -2032,13 +2039,13 @@
 				{
 					"name": "Keen Hearing and Smell",
 					"entries": [
-						"Der Wolf hat einen Vorteil bei Weisheitsprüfungen (Wahrnehmung), die auf Gehör oder Geruch beruhen."
+						"The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 					]
 				},
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"Der Wolf hat einen Vorteil bei Angriffswürfen gegen eine Kreatur, wenn sich mindestens ein Verbündeter des Wolfes innerhalb von 5 Fuß um die Kreatur befindet und der Verbündete nicht {@condition incapacitated}."
+						"The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -2046,19 +2053,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Wolf führt zwei Angriffe aus: einen mit seinem Biss und einen mit seinen Klauen."
+						"The wolf makes two attacks: one with its bite and one with its claws."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 8} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}11 ({@damage 1d10 + 6}) Stich-Schaden. Handelt es sich bei dem Ziel um eine Kreatur, muss diese einen {@dc 16} Stärkeschutzwurf bestehen oder wird {@condition prone} umgestoßen."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) piercing damage. If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 8} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}15 ({@damage 2d8 + 6}) Stich-Schaden."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage."
 					]
 				}
 			],
@@ -2148,14 +2155,14 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"Die Schildkröte kann Luft und Wasser atmen."
+						"The tortoise can breathe air and water."
 					]
 				},
 				{
 					"name": "Massive Frame",
 					"entries": [
-						"Die Schildkröte kann bis zu 20.000 Pfund Gewicht auf ihrem Panzer tragen, bewegt sich aber mit halber Geschwindigkeit, wenn das Gewicht 10.000 Pfund überschreitet. Mittelgroße oder kleinere Kreaturen können sich unter der Schildkröte bewegen, während sie sich nicht bewegt {@condition prone}.",
-						"Jede Kreatur, die sich unter der Schildkröte befindet, wenn sie {@condition prone} fällt, ist {@condition grappled} (Flucht {@dc 18}). Bis zum Ende des Haltegriffs ist die Kreatur {@condition prone} und {@condition restrained}."
+						"The tortoise can carry up to 20,000 pounds of weight atop its shell, but moves at half speed if the weight exceeds 10,000 pounds. Medium or smaller creatures can move underneath the tortoise while it's not {@condition prone}.",
+						"Any creature under the tortoise when it falls {@condition prone} is {@condition grappled} (escape {@dc 18}). Until the grapple ends, the creature is {@condition prone} and {@condition restrained}."
 					]
 				}
 			],
@@ -2163,13 +2170,13 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 12} Treffer, Reichweite 10 ft., ein Ziel. {@h}28 ({@damage 3d12 + 9}) Schaden durch Wucht."
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}28 ({@damage 3d12 + 9}) bludgeoning damage."
 					]
 				},
 				{
 					"name": "Shell Defense {@recharge 4}",
 					"entries": [
-						"Die Schildkröte zieht sich in ihren Panzer zurück, fällt {@condition prone} und erhält einen Bonus von +5 auf AC. Solange die Schildkröte in ihrem Panzer ist, ist ihre Geschwindigkeit 0 und kann sich nicht erhöhen. Die Schildkröte kann als Aktion aus ihrem Panzer hervorkommen, dann ist sie nicht mehr {@condition prone}."
+						"The tortoise withdraws into its shell, falls {@condition prone}, and gains a +5 bonus to AC. While the tortoise is in its shell, its speed is 0 and can't increase. The tortoise can emerge from its shell as an action, whereupon it is no longer {@condition prone}."
 					]
 				}
 			],
@@ -2278,13 +2285,13 @@
 				{
 					"name": "Curse of the Husk",
 					"entries": [
-						"Ein Humanoider, der durch einen Nahkampfangriff des Zombies getötet wurde, erwacht in seinem nächsten Zug als Husk-Zombie wieder."
+						"A humanoid slain by a melee attack from the zombie revives as a husk zombie on its next turn."
 					]
 				},
 				{
 					"name": "Undead Fortitude",
 					"entries": [
-						"Wenn der Schaden den Zombie auf 0 Trefferpunkte reduziert, muss er einen Konstitutions-Erhaltungswurf mit einem DC von 5 + dem erlittenen Schaden machen, es sei denn, der Schaden ist strahlend oder stammt von einem kritischen Treffer. Bei einem Erfolg fällt der Zombie stattdessen auf 1 Trefferpunkt."
+						"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
 					]
 				}
 			],
@@ -2292,13 +2299,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Zombie führt zwei Klauenangriffe aus. Für jede dieser Attacken, die eine Kreatur auf 0 Trefferpunkte reduziert, kann der Zombie eine weitere Klauenattacke durchführen."
+						"The zombie makes two claw attacks. For each of these attacks that reduces a creature to 0 hit points, the zombie can make an additional claw attack."
 					]
 				},
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Hiebschaden."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
 					]
 				}
 			],
@@ -2307,12 +2314,12 @@
 					"type": "variant",
 					"name": "Husk Zombie Bursters",
 					"entries": [
-						"Einige Schalen-Zombies sind von Krankheit und Galle aufgedunsen und stürzen sich in ihrem rasenden Zustand auf andere Lebewesen, explodieren und verbreiten ihre schreckliche Infektion. Ein Husk-Zombie Burster hat die folgende zusätzliche Aktionsmöglichkeit:",
+						"Some husk zombies become bloated with disease and bile, their frenzied state pushing them to rush other living creatures, explode, and spread their horrid infection. A husk zombie burster has the following additional action option:",
 						{
 							"type": "entries",
 							"name": "Burst",
 							"entries": [
-								"Der Zombie explodiert und wird zerstört. Jede Kreatur im Umkreis von 1,5 Metern muss einen Rettungswurf der Konstitution DC 12 machen und erleidet bei einem misslungenen Rettungswurf 14 ({@damage 4d6}) Giftschaden, bei einem erfolgreichen die Hälfte. Eine humanoide Kreatur, die durch diesen Schaden getötet wird, erhebt sich nach 1 Minute als {@creature husk zombie|EGW}."
+								"The zombie explodes and is destroyed. Each creature within 5 feet of it must make a DC 12 Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a {@creature husk zombie|EGW} after 1 minute."
 							]
 						}
 					],
@@ -2394,7 +2401,8 @@
 				"N",
 				"P",
 				"S"
-			]
+			],
+			"damageTagsLegendary": []
 		},
 		{
 			"name": "Kobold Underling",
@@ -2442,19 +2450,19 @@
 				{
 					"name": "Messy End",
 					"entries": [
-						"Der Kobold explodiert 3 Runden nach seinem Tod, oder sofort, wenn er durch einen kritischen Treffer getötet wurde. Die Explosion zerstört den Körper des Kobolds und lässt seine Ausrüstung zurück. Jede Kreatur, die sich im Umkreis von 5 Fuß um den explodierenden Kobold befindet, muss einen {@dc 10} Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutzwurf 4 ({@damage 1d8}) Wuchtschaden, bei einem erfolgreichen Schutzwurf die Hälfte des Schadens."
+						"The kobold explodes 3 rounds after it dies, or immediately if it was killed by a critical hit. The explosion destroys the kobold's body, leaving its equipment behind. Each creature within 5 feet of the exploding kobold must make a {@dc 10} Dexterity saving throw, taking 4 ({@damage 1d8}) bludgeoning damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"Der Kobold hat einen Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens ein Verbündeter des Kobolds innerhalb von 5 Fuß um die Kreatur befindet und der Verbündete nicht {@condition incapacitated}."
+						"The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					]
 				},
 				{
 					"name": "Sunlight Sensitivity",
 					"entries": [
-						"Solange er sich im Sonnenlicht befindet, hat der Kobold einen Nachteil bei Angriffswürfen und bei Weisheitsprüfungen (Wahrnehmung), die sich auf das Sehen beziehen."
+						"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
 					]
 				}
 			],
@@ -2462,13 +2470,13 @@
 				{
 					"name": "Shortsword",
 					"entries": [
-						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stich-Schaden."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
 					]
 				},
 				{
 					"name": "Hand Crossbow",
 					"entries": [
-						"{@atk rw} {@hit 5} als Treffer, Reichweite 30/120 Fuß, ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stich-Schaden."
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
 					]
 				}
 			],
@@ -2542,7 +2550,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Der Merrow ist ein Zauberwirker der Stufe 6. Stufe. Seine Zauberfertigkeit ist Weisheit (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Der Merrow hat die folgenden Druidenzauber vorbereitet:"
+						"The merrow is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The merrow has the following druid spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -2584,7 +2592,7 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"Der Merrow kann Luft und Wasser atmen."
+						"The merrow can breathe air and water."
 					]
 				}
 			],
@@ -2592,13 +2600,13 @@
 				{
 					"name": "Harpoon",
 					"entries": [
-						"{@atk mw,rw} {@hit 6} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}11 ({@damage 2d6 + 4}) Stich-Schaden. Handelt es sich bei dem Ziel um eine Kreatur mittlerer Größe oder kleiner, kann der Merrow sie 10 Fuß näher heranziehen."
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a Medium or smaller creature, the merrow can pull it 10 feet closer."
 					]
 				},
 				{
 					"name": "Lightning Bolt (3rd-Level Spell; Requires a Spell Slot)",
 					"entries": [
-						"Der Merrow entfesselt einen Blitz in einer Linie, die 100 Fuß lang und 5 Fuß breit ist. Jede Kreatur in der Reihe muss einen {@dc 13} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 28 ({@damage 8d6}) Blitzschaden, bei einem erfolgreichen Schutzwurf die Hälfte des Schadens."
+						"The merrow unleashes a stroke of lightning in a line 100 feet long and 5 feet wide. Each creature in the line must make a {@dc 13} Dexterity saving throw, taking 28 ({@damage 8d6}) lightning damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -2615,6 +2623,10 @@
 			"damageTags": [
 				"L",
 				"P"
+			],
+			"damageTagsSpell": [
+				"L",
+				"T"
 			],
 			"spellcastingTags": [
 				"CD"
@@ -2674,7 +2686,7 @@
 				{
 					"name": "Standing Leap",
 					"entries": [
-						"Der Weitsprung der Moorboote beträgt bis zu 40 Fuß und der Hochsprung bis zu 20 Fuß, mit oder ohne Anlauf."
+						"The moorbounder's long jump is up to 40 feet and its high jump is up to 20 feet, with or without a running start."
 					]
 				}
 			],
@@ -2682,7 +2694,7 @@
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 4d4 + 4}) Hiebschaden."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d4 + 4}) slashing damage."
 					]
 				}
 			],
@@ -2733,7 +2745,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Die angeborene Zauberfähigkeit des Mossback Steward ist Weisheit (Zauberschutz {@dc 15}). Er kann von Natur aus die folgenden Zauber wirken und benötigt dafür keine materiellen Komponenten."
+						"Mossback Steward's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components."
 					],
 					"will": [
 						"{@spell friends}"
@@ -2833,13 +2845,13 @@
 				{
 					"name": "Shadow Stealth",
 					"entries": [
-						"Bei schwachem Licht oder in der Dunkelheit kann der Nergaliid die Aktion Verstecken als Bonusaktion ausführen."
+						"While in dim light or darkness, the nergaliid can take the Hide action as a bonus action."
 					]
 				},
 				{
 					"name": "Standing Leap",
 					"entries": [
-						"Der Weitsprung des Nergaliiden beträgt bis zu 30 Fuß und sein Hochsprung bis zu 20 Fuß, mit oder ohne Anlauf."
+						"The nergaliid's long jump is up to 30 feet and its high jump is up to 20 feet, with or without a running start."
 					]
 				}
 			],
@@ -2847,19 +2859,19 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 6} auf Treffer, Reichweite 5 ft., eine Kreatur. {@h}13 ({@damage 2d8 + 4}) Stichschaden, und das Ziel muss einen {@dc 15} Konstitutions-Sicherungswurf bestehen oder wird 1 Minute lang {@condition poisoned}. Die {@condition poisoned} Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}13 ({@damage 2d8 + 4}) piercing damage, and the target must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for 1 minute. The {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				},
 				{
 					"name": "Tongue Lash",
 					"entries": [
-						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 20 Fuß, ein Ziel. {@h}10 ({@damage 1d12 + 4}) Schaden durch Wucht."
+						"{@atk mw} {@hit 6} to hit, reach 20 ft., one target. {@h}10 ({@damage 1d12 + 4}) bludgeoning damage."
 					]
 				},
 				{
 					"name": "Siphon Life {@recharge 4}",
 					"entries": [
-						"Der Nergaliid zieht auf magische Weise das Leben aus einem Humanoiden, den er im Umkreis von 40 Fuß sieht. Das Ziel muss einen {@dc 15} Weisheitsspruch ablegen. Ein {@condition incapacitated}-Ziel scheitert automatisch an diesem Versuch. Bei einem misslungenen Schutzwurf erleidet die Kreatur 10 ({@damage 3d6}) psychischen Schaden, und der Nergaliid erhält vorübergehend Trefferpunkte in Höhe des erlittenen Schadens. Bei einer erfolgreichen Rettung erleidet das Ziel nur halb so viel Schaden, und der Nergaliid erhält keine temporären Trefferpunkte. Wenn dieser Schaden das Ziel tötet, erhebt sich sein Körper am Ende der aktuellen Runde des Nergaliiden als {@creature husk zombie|EGW} (siehe weiter oben in diesem Kapitel)."
+						"The nergaliid magically draws the life from a humanoid it can see within 40 feet of it. The target must make a {@dc 15} Wisdom saving throw. An {@condition incapacitated} target fails the save automatically. On a failed save, the creature takes 10 ({@damage 3d6}) psychic damage, and the nergaliid gains temporary hit points equal to the damage taken. On a successful save, the target takes half as much damage, and the nergaliid doesn't gain temporary hit points. If this damage kills the target, its body rises at the end of the nergaliid's current turn as a {@creature husk zombie|EGW} (see earlier in this chapter)."
 					]
 				}
 			],
@@ -2962,7 +2974,8 @@
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance"
-			]
+			],
+			"damageTagsLegendary": []
 		},
 		{
 			"name": "Parson Pellinost",
@@ -2985,7 +2998,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Pellinost ist ein Zauberwirker der Stufe 5. Stufe. Seine Zauberfertigkeit ist Weisheit (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Pellinost hat die folgenden Klerikerzauber vorbereitet:"
+						"Pellinost is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Pellinost has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -3020,6 +3033,10 @@
 					},
 					"ability": "wis"
 				}
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -3106,7 +3123,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Die angeborene Zauberfähigkeit des Hexenmeisters ist Charisma (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er kann von Natur aus die folgenden Zauber wirken und benötigt dafür keine materiellen Komponenten:"
+						"The warlock's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
 						"{@spell eldritch blast} (see \"Actions\" below)",
@@ -3129,19 +3146,19 @@
 				{
 					"name": "Blood Frenzy",
 					"entries": [
-						"Der Hexenmeister hat einen Vorteil bei Nahkampf-Angriffswürfen gegen Kreaturen, die nicht alle ihre Trefferpunkte haben."
+						"The warlock has advantage on melee attack rolls against any creature that doesn't have all its hit points."
 					]
 				},
 				{
 					"name": "Limited Amphibiousness",
 					"entries": [
-						"Der Hexenmeister kann Luft und Wasser atmen, aber er muss mindestens einmal alle 4 Stunden untergetaucht werden, um nicht zu ersticken."
+						"The warlock can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
 					]
 				},
 				{
 					"name": "Shark Telepathy",
 					"entries": [
-						"Der Hexenmeister kann jeden Hai im Umkreis von 120 Fuß auf magische Weise befehligen, indem er eine begrenzte Telepathie einsetzt."
+						"The warlock can magically command any shark within 120 feet of it, using a limited telepathy."
 					]
 				}
 			],
@@ -3149,25 +3166,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Hexenmeister führt zwei Angriffe aus: einen mit seinem Biss und einen mit seinem Schwert der Tiefen."
+						"The warlock makes two attacks: one with its bite and one with its Sword of Fathoms."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., eine Kreatur. {@h}4 ({@damage 1d4 + 2}) Stich-Schaden."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
 					]
 				},
 				{
 					"name": "Sword of Fathoms",
 					"entries": [
-						"{@atk mw} {@hit 4} auf Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d10 + 2}) Hiebschaden, und wenn das Ziel eine Kreatur ist, muss es einen {@dc 13} Konstitutions-Sicherungswurf bestehen oder es beginnt zu würgen. Die würgende Kreatur ist {@condition incapacitated} bis zum Ende ihrer nächsten Runde, wenn der Effekt für sie endet."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage, and if the target is a creature, it must succeed on a {@dc 13} Constitution saving throw or begin choking. The choking creature is {@condition incapacitated} until the end of its next turn, when the effect ends on it."
 					]
 				},
 				{
 					"name": "Eldritch Blast (Cantrip)",
 					"entries": [
-						"{@atk rs} {@hit 5} auf Treffer, Reichweite 120 Fuß, eine Kreatur. {@h}5 ({@damage 1d10}) Kraftschaden."
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one creature. {@h}5 ({@damage 1d10}) force damage."
 					]
 				}
 			],
@@ -3176,12 +3193,12 @@
 					"type": "variant",
 					"name": "Rod of Retribution",
 					"entries": [
-						"Sahuaginische Hexenmeister von Uk'otoa, die in den Augen des Leviathan-Lords über ein außergewöhnliches Potenzial verfügen, erhalten zusätzlich zu Uk'otoas typischem Segen, dem Schwert der Klafter, eine {@item rod of retribution|egw}. Ein Sahuagin-Warlock von Uk'otoa, der diesen Stab besitzt, erhält die folgende Reaktion:",
+						"Sahuagin warlocks of Uk'otoa who have exceptional potential in the eyes of the leviathan lord are granted a {@item rod of retribution|egw} in addition to Uk'otoa's typical blessing, the Sword of Fathoms. A sahuagin warlock of Uk'otoa holding this rod gains the following reaction:",
 						{
 							"type": "entries",
 							"name": "Retribution (3/Day)",
 							"entries": [
-								"Wenn eine Kreatur, die der Hexenmeister im Umkreis von 60 Fuß sehen kann, den Hexenmeister schädigt, muss die Kreatur einen {@dc 13} Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutz 11 ({@damage 2d10}) Blitzschaden, bei einem erfolgreichen Schutz halb so viel Schaden."
+								"When a creature the warlock can see within 60 feet of it damages the warlock, the creature must make a {@dc 13} Dexterity saving throw, taking 11 ({@damage 2d10}) lightning damage on a failed save, or half as much damage on a successful one."
 							]
 						}
 					]
@@ -3202,6 +3219,12 @@
 				"O",
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"N",
+				"O"
 			],
 			"spellcastingTags": [
 				"CL",
@@ -3231,7 +3254,7 @@
 							"items": {
 								"name": "Special Equipment",
 								"entries": [
-									"Der Hexenmeister trägt eine {@item rod of retribution|egw}."
+									"The warlock carries a {@item rod of retribution|egw}."
 								]
 							}
 						},
@@ -3241,7 +3264,7 @@
 								"type": "entries",
 								"name": "Retribution (3/Day)",
 								"entries": [
-									"Wenn eine Kreatur, die der Hexenmeister im Umkreis von 60 Fuß sehen kann, den Hexenmeister schädigt, muss die Kreatur einen {@dc 13} Schutzwurf auf Geschicklichkeit machen und erleidet bei einem misslungenen Schutz 11 ({@damage 2d10}) Blitzschaden, bei einem erfolgreichen Schutz halb so viel Schaden."
+									"When a creature the warlock can see within 60 feet of it damages the warlock, the creature must make a {@dc 13} Dexterity saving throw, taking 11 ({@damage 2d10}) lightning damage on a failed save, or half as much damage on a successful one."
 								]
 							}
 						}
@@ -3328,7 +3351,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Die angeborene Zauberfähigkeit der Meeresfurie ist Charisma (Zauberschutz {@dc 16}, {@hit 8} um mit Zauberangriffen zu treffen). Er kann von Natur aus die folgenden Zauber wirken und benötigt dafür keine materiellen Komponenten:"
+						"The sea fury's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
 						"{@spell witch bolt}"
@@ -3347,19 +3370,19 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"Der Seebär kann Luft und Wasser atmen."
+						"The sea fury can breathe air and water."
 					]
 				},
 				{
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
-						"Wenn die Meereswut einen Rettungswurf nicht schafft, kann sie stattdessen wählen, ob sie erfolgreich ist."
+						"If the sea fury fails a saving throw, it can choose to succeed instead."
 					]
 				},
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"Die Meereswut hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+						"The sea fury has advantage on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -3367,19 +3390,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Seebär macht zwei Angriffe mit seinen Klauen."
+						"The sea fury makes two attacks with its claws."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 8} Treffer, Reichweite 5 ft., ein Ziel. {@h}13 ({@damage 2d8 + 4}) Hiebschaden."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
 					]
 				},
 				{
 					"name": "Death Glare",
 					"entries": [
-						"Die Meereswut zielt auf eine {@condition frightened} Kreatur, die sie im Umkreis von 30 Fuß sehen kann. Das Ziel muss einen {@dc 16} Weisheitswurf bestehen oder auf 0 Trefferpunkte fallen."
+						"The sea fury targets one {@condition frightened} creature it can see within 30 feet of it. The target must succeed on a {@dc 16} Wisdom saving throw or drop to 0 hit points."
 					]
 				}
 			],
@@ -3387,19 +3410,19 @@
 				{
 					"name": "As Water",
 					"entries": [
-						"Die Meereswut verwandelt sich in eine Welle schäumenden Meerwassers, zusammen mit allem, was sie trägt oder mit sich führt, und bewegt sich bis zu ihrer Geschwindigkeit, ohne Gelegenheitsangriffe zu provozieren. Solange sie sich in dieser Form befindet, kann sie nicht {@condition grappled} oder {@condition restrained} sein. Am Ende dieser Bewegung kehrt er in seine wahre Form zurück."
+						"The sea fury transforms into a wave of foaming seawater, along with whatever it is wearing or carrying, and moves up to its speed without provoking opportunity attacks. While in this form, it can't be {@condition grappled} or {@condition restrained}. It reverts to its true form at the end of this movement."
 					]
 				},
 				{
 					"name": "Fearsome Apparition (Costs 2 Actions)",
 					"entries": [
-						"Die Meeresfurie beschwört eine Erscheinung einer ihrer toten Schwestern herauf, die in einem unbesetzten Raum erscheint, den die Meeresfurie in einem Umkreis von 30 Fuß um sie herum sehen kann. Feinde der Seefurie, die die Erscheinung sehen können, müssen einen {@dc 16} Weisheitswurf bestehen oder {@condition frightened} vor ihr stehen, bis sie am Ende der nächsten Runde der Seefurie verschwindet."
+						"The sea fury conjures an apparition of one of its dead sisters, which appears in an unoccupied space the sea fury can see within 30 feet of it. Enemies of the sea fury that can see the apparition must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} of it until it vanishes at the end of the sea fury's next turn."
 					]
 				},
 				{
 					"name": "Conjure Snakes (Costs 3 Actions)",
 					"entries": [
-						"Die Meeresfurie spuckt einen Schwarm giftiger Schlangen aus, der denselben Raum wie die Meeresfurie einnimmt, aus eigener Initiative handelt und auf Anweisung der Meeresfurie angreift. Die Meeresfurie kann bis zu drei dieser Schwärme auf einmal kontrollieren."
+						"The sea fury disgorges a {@creature swarm of poisonous snakes}, which occupies the same space as the sea fury, acts on its own initiative count, and attacks as directed by the sea fury. The sea fury can control up to three of these swarms at a time."
 					]
 				}
 			],
@@ -3425,6 +3448,11 @@
 			],
 			"damageTags": [
 				"S"
+			],
+			"damageTagsSpell": [
+				"L",
+				"N",
+				"T"
 			],
 			"spellcastingTags": [
 				"I"
@@ -3494,13 +3522,13 @@
 				{
 					"name": "Stench",
 					"entries": [
-						"Jede Kreatur, die ihren Zug in einem Umkreis von 5 Fuß um die Schattenbestie beginnt, muss einen {@dc 12} Konstitutionsschutzwurf bestehen oder bis zum Beginn ihres nächsten Zuges {@condition poisoned} sein. Bei einem erfolgreichen Rettungswurf ist die Kreatur für 24 Stunden immun gegen diesen Gestank."
+						"Any creature that starts its turn within 5 feet of the shadowghast must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} until the start of its next turn. On a successful saving throw, the creature is immune to this Stench for 24 hours."
 					]
 				},
 				{
 					"name": "Shadow Stealth",
 					"entries": [
-						"Bei schwachem Licht oder in der Dunkelheit kann der Shadowghast die Aktion Verstecken als Bonusaktion ausführen."
+						"While in dim light or darkness, the shadowghast can take the Hide action as a bonus action."
 					]
 				}
 			],
@@ -3508,19 +3536,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Die Schattenbestie führt zwei Angriffe aus: einen mit ihrem Biss und einen mit ihren Klauen."
+						"The shadowghast makes two attacks: one with its bite and one with its claws."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 8} auf Treffer, Reichweite 5 ft., eine Kreatur. {@h}11 ({@damage 2d8 + 2}) Hiebschaden plus 5 ({@damage 1d10}) nekrotischer Schaden."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d8 + 2}) slashing damage plus 5 ({@damage 1d10}) necrotic damage."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 8} Treffer, Reichweite 5 ft., ein Ziel. {@h}12 ({@damage 2d6 + 5}) Hiebschaden. Handelt es sich bei dem Ziel um eine andere Kreatur als einen Untoten, muss es einen {@dc 12} Konstitutionsschutzwurf bestehen oder 1 Minute lang {@condition paralyzed} sein. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature other than an undead, it must succeed on a {@dc 12} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				}
 			],
@@ -3563,7 +3591,7 @@
 						"items": {
 							"name": "Limited Amphibiousness",
 							"entries": [
-								"Die Abscheulichkeit kann Luft und Wasser atmen, muss aber mindestens einmal alle 4 Stunden untergetaucht werden, um nicht zu ersticken."
+								"The abomination can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
 							]
 						}
 					}
@@ -3628,13 +3656,13 @@
 				{
 					"name": "Powerful Build",
 					"entries": [
-						"Sken zählt bei der Bestimmung ihrer Tragfähigkeit und des Gewichts, das sie schieben, ziehen oder heben kann, als eine Nummer größer."
+						"Sken counts as one size larger when determining her carrying capacity and the weight she can push, drag, or lift."
 					]
 				},
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Sken trägt einen Ring der Verdunkelung. Mit ihm kann sie dreimal am Tag den Zauber {@spell fog cloud} auf sich selbst gerichtet wirken. Die Wolke hält 1 Minute lang an (keine Konzentration erforderlich)."
+						"Sken wears a ring of obscuring. With it, she can cast the {@spell fog cloud} spell centered on herself three times per day. The cloud lasts for 1 minute (no concentration required)."
 					]
 				}
 			],
@@ -3642,7 +3670,7 @@
 				{
 					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 3}) Hiebschaden, oder 8 ({@damage 1d10 + 3}) Hiebschaden, wenn mit zwei Händen eingesetzt."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage when used with two hands."
 					]
 				}
 			],
@@ -3650,7 +3678,7 @@
 				{
 					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Wenn Sken Schaden erleidet, kann sie ihre Reaktion nutzen, um den erlittenen Schaden um 8 ({@dice 1d12 + 2}) zu reduzieren."
+						"When Sken takes damage, she can use her reaction to reduce the damage taken by 8 ({@dice 1d12 + 2})."
 					]
 				}
 			],
@@ -3687,7 +3715,7 @@
 				{
 					"name": "Spellcasting (Lizardfolk Form Only)",
 					"headerEntries": [
-						"Skr'a S'orsk ist ein Zauberwirker der Stufe 5. Stufe. Seine Zauberfertigkeit ist Weisheit (Zauberschutz {@dc 12}, {@hit 4} um mit Zauberangriffen zu treffen). Skr'a S'orsk hat die folgenden Druidenzauber vorbereitet:"
+						"Skr'a S'orsk is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Skr'a S'orsk has the following druid spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -3796,13 +3824,13 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"Der Basilisk kann Luft und Wasser atmen."
+						"The basilisk can breathe air and water."
 					]
 				},
 				{
 					"name": "Petrifying Secretions",
 					"entries": [
-						"Eine Kreatur muss einen {@dc 13} Konstitutionsschutzwurf machen, wenn sie den Basilisken mit einem Waffenangriff trifft, während sie sich in einem Umkreis von 5 Fuß befindet, oder wenn sie ihre Runde {@condition grappled} durch den Basilisken beginnt. Wenn die Rettung nicht gelingt, beginnt die Kreatur auf magische Weise, sich in Stein zu verwandeln und ist {@condition restrained}, und sie muss den Rettungswurf am Ende ihres nächsten Zuges wiederholen. Bei einem erfolgreichen Schutz endet der Effekt. Bei einem Fehlschlag ist die Kreatur {@condition petrified}."
+						"A creature must make a {@dc 13} Constitution saving throw if it hits the basilisk with a weapon attack while within 5 feet of it or if it starts its turn {@condition grappled} by the basilisk. Unless the save succeeds, the creature magically begins to turn to stone and is {@condition restrained}, and it must repeat the saving throw at the end of its next turn. On a successful save, the effect ends. On a failure, the creature is {@condition petrified}."
 					]
 				}
 			],
@@ -3810,19 +3838,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Basilisk führt zwei Angriffe aus: einen mit seinem Biss und einen mit seinem Schwanz."
+						"The basilisk makes two attacks: one with its bite and one with its tail."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 6} auf Treffer, Reichweite 5 ft., eine Kreatur. {@h}13 ({@damage 3d6 + 3}) Stichschaden plus 10 ({@damage 3d6}) Giftschaden."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}13 ({@damage 3d6 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage."
 					]
 				},
 				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 15 Fuß, ein Ziel. {@h}14 ({@damage 2d10 + 3}) Schaden durch Wucht. Wenn das Ziel eine große oder kleinere Kreatur ist, beträgt er {@condition grappled} (Flucht {@dc 12})."
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage. If the target is a Large or smaller creature, it is {@condition grappled} (escape {@dc 12})."
 					]
 				}
 			],
@@ -3947,13 +3975,13 @@
 				{
 					"name": "Charge",
 					"entries": [
-						"Wenn sich der Udaak mindestens 20 Fuß gerade auf ein Ziel zubewegt und es dann im selben Zug mit einem Hieb trifft, erleidet das Ziel zusätzlich 27 ({@damage 6d8}) Wucht-Schaden. Handelt es sich bei dem Ziel um eine Kreatur, muss diese einen {@dc 21} Stärkeschutzwurf bestehen oder sie wird bis zu 20 Fuß vom Udaak weggestoßen und {@condition prone} umgeworfen."
+						"If the udaak moves at least 20 feet straight toward a target and then hits it with a slam attack on the same turn, the target takes an extra 27 ({@damage 6d8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be pushed up to 20 feet away from the udaak and knocked {@condition prone}."
 					]
 				},
 				{
 					"name": "Siege Monster",
 					"entries": [
-						"Der Udaak verursacht doppelten Schaden an Gegenständen und Strukturen."
+						"The udaak deals double damage to objects and structures."
 					]
 				}
 			],
@@ -3961,26 +3989,26 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Udaak führt drei Angriffe aus: einen mit seinem Biss und zwei mit seinem Hieb."
+						"The udaak makes three attacks: one with its bite and two with its slam."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 13} Treffer, Reichweite 5 ft., eine Kreatur. {@h}21 ({@damage 2d12 + 8}) Stichschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 21}). Bis zum Ende des Haltegriffs ist das Ziel {@condition restrained} und der Udaak kann kein anderes Ziel beißen."
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one creature. {@h}21 ({@damage 2d12 + 8}) piercing damage, and the target is {@condition grappled} (escape {@dc 21}). Until this grapple ends, the target is {@condition restrained}, and the udaak can't bite another target."
 					]
 				},
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atk mw} {@hit 13} Treffer, Reichweite 10 ft., ein Ziel. {@h}21 ({@damage 3d8 + 8}) Schaden durch Wucht."
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) bludgeoning damage."
 					]
 				},
 				{
 					"name": "Swallow",
 					"entries": [
-						"Der Udaak führt einen Bissangriff gegen ein großes oder kleineres Ziel aus, das er gerade packt. Wenn der Angriff trifft, wird das Ziel ebenfalls verschluckt und der Griff endet. Eine verschluckte Kreatur ist {@condition blinded} und {@condition restrained} groß, sie hat totale Deckung vor Angriffen und anderen Effekten außerhalb des Udaaks und erleidet zu Beginn jeder Runde des Udaaks 21 ({@damage 6d6}) Säureschaden.",
-						"Wenn der Udaak in einer einzigen Runde 30 Schaden oder mehr von einer Kreatur in seinem Inneren erleidet, muss der Udaak am Ende dieser Runde einen {@dc 21} Konstitutionswettkampf bestehen oder alle verschluckten Kreaturen wieder auswürgen, die dann {@condition prone} in einem Umkreis von 10 Fuß um den Udaak fallen. Wenn der Uudaak stirbt, wird eine verschluckte Kreatur nicht mehr {@condition restrained} von ihm festgehalten und kann dem Leichnam entkommen, indem sie sich 20 Fuß weit bewegt und {@condition prone} verlässt."
+						"The udaak makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. A swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the udaak, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the udaak's turns.",
+						"If the udaak takes 30 damage or more on a single turn from a creature inside it, the udaak must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the udaak. If the udaak dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
 					]
 				}
 			],
@@ -4070,13 +4098,13 @@
 				{
 					"name": "Voice Lock",
 					"entries": [
-						"Der Vox-Sucher muss sich auf die Quelle der nächstgelegenen Stimme im Umkreis von 60 Fuß zubewegen und diese angreifen, unter Ausschluss aller anderen Ziele, solange er einsatzbereit ist."
+						"The vox seeker must move toward and attack the source of the nearest voice within 60 feet of it, to the exclusion of all other targets, for as long as it remains operational."
 					]
 				},
 				{
 					"name": "Spider Climb",
 					"entries": [
-						"Der Vox-Sucher kann auf schwierige Oberflächen klettern, auch kopfüber an der Decke, ohne einen Fähigkeitstest machen zu müssen."
+						"The vox seeker can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 					]
 				}
 			],
@@ -4084,7 +4112,7 @@
 				{
 					"name": "Pincer",
 					"entries": [
-						"{@atk mw} {@hit 2} Treffer, Reichweite 5 ft., ein Ziel. {@h}2 ({@damage 1d4}) Stichschaden plus 3 Blitzschaden."
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage plus 3 lightning damage."
 					]
 				}
 			],
@@ -4160,13 +4188,13 @@
 				{
 					"name": "Fey Ancestry",
 					"entries": [
-						"Yinra hat einen Vorteil bei Rettungswürfen gegen das Wesen {@condition charmed}, und Magie kann sie nicht in Schlaf versetzen."
+						"Yinra has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep."
 					]
 				},
 				{
 					"name": "Keen Hearing and Sight",
 					"entries": [
-						"Yinra hat einen Vorteil bei Weisheitsprüfungen (Wahrnehmung), die sich auf das Hören oder Sehen beziehen."
+						"Yinra has advantage on Wisdom (Perception) checks that rely on hearing or sight."
 					]
 				}
 			],
@@ -4174,13 +4202,13 @@
 				{
 					"name": "Shortsword",
 					"entries": [
-						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stich-Schaden."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
 					]
 				},
 				{
 					"name": "Longbow",
 					"entries": [
-						"{@atk rw} {@hit 5} bis zum Treffer, Reichweite 150/600 Fuß, ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stich-Schaden."
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
 					]
 				}
 			],

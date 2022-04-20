@@ -189,6 +189,13 @@
 				"L",
 				"P"
 			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"I",
+				"L",
+				"T"
+			],
 			"spellcastingTags": [
 				"CW"
 			],
@@ -360,6 +367,11 @@
 			],
 			"damageTags": [
 				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"O"
 			],
 			"spellcastingTags": [
 				"CS",
@@ -579,6 +591,11 @@
 			],
 			"damageTags": [
 				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"T"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -860,6 +877,12 @@
 			],
 			"damageTags": [
 				"B"
+			],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"O",
+				"P"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -1361,6 +1384,13 @@
 			"damageTags": [
 				"P"
 			],
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"N",
+				"P",
+				"T"
+			],
 			"spellcastingTags": [
 				"CD"
 			],
@@ -1618,6 +1648,9 @@
 			"damageTags": [
 				"P"
 			],
+			"damageTagsSpell": [
+				"F"
+			],
 			"spellcastingTags": [
 				"CS"
 			],
@@ -1753,6 +1786,11 @@
 				"B",
 				"P"
 			],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"O"
+			],
 			"spellcastingTags": [
 				"CL",
 				"F"
@@ -1877,6 +1915,9 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"C"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -2062,6 +2103,10 @@
 			],
 			"damageTags": [
 				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -2249,6 +2294,16 @@
 				"B",
 				"C",
 				"P"
+			],
+			"damageTagsLegendary": [
+				"L",
+				"N"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"L",
+				"T"
 			],
 			"spellcastingTags": [
 				"CD"
@@ -2786,6 +2841,10 @@
 				"P",
 				"S"
 			],
+			"damageTagsSpell": [
+				"B",
+				"L"
+			],
 			"spellcastingTags": [
 				"CS"
 			],
@@ -2918,6 +2977,9 @@
 			],
 			"damageTags": [
 				"B"
+			],
+			"damageTagsSpell": [
+				"T"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -3124,6 +3186,13 @@
 				"B",
 				"F"
 			],
+			"damageTagsLegendary": [
+				"B",
+				"F"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
 			"spellcastingTags": [
 				"I"
 			],
@@ -3221,6 +3290,10 @@
 					"ability": "int"
 				}
 			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
 			"hasToken": true
 		},
 		{
@@ -3302,21 +3375,21 @@
 				{
 					"name": "Earth Passage",
 					"entries": [
-						"Marlos kann sich in schwierigem Gelände, das aus Erde oder Stein besteht, so bewegen, als wäre es normales Terrain. Er kann sich durch feste Erde und Felsen bewegen, als ob es sich um schwieriges Gelände handeln würde. Wenn er seinen Zug dort beendet, wird er in den nächstgelegenen Raum geschoben, den er zuletzt besetzt hat."
+						"Marlos can move in {@quickref difficult terrain||3} composed of anything made from earth or stone as if it were normal terrain. He can move through solid earth and rock as if it were {@quickref difficult terrain||3}. If he ends his turn there, he is shunted into the nearest space he last occupied."
 					]
 				},
 				{
 					"name": "Legendary Resistance (2/Day)",
 					"entries": [
-						"Wenn Marlos ein Rettungswurf misslingt, kann er stattdessen einen Erfolg wählen."
+						"If Marlos fails a saving throw, he can choose to succeed instead."
 					]
 				},
 				{
 					"name": "Petrifying Gaze",
 					"entries": [
-						"Wenn eine Kreatur, die Marlos' Augen sehen kann, ihren Zug innerhalb von 30 Fuß um ihn herum beginnt, kann Marlos sie zwingen, einen {@dc 14} Konstitutionsschutzwurf zu machen, wenn Marlos nicht {@condition incapacitated} ist und die Kreatur sehen kann. Wenn der Rettungswurf um 5 oder mehr misslingt, ist die Kreatur sofort {@condition petrified}. Andernfalls beginnt eine Kreatur, die den Schutzwurf nicht besteht, sich in Stein zu verwandeln und ist {@condition restrained}. Die {@condition restrained} Kreatur muss den Rettungswurf am Ende ihrer nächsten Runde wiederholen und wird bei einem Fehlschlag zu {@condition petrified} oder beendet den Effekt bei einem Erfolg. Die Versteinerung hält an, bis die Kreatur durch den {@spell greater restoration}-Zauber oder andere Magie befreit wird.",
-						"Wenn eine Kreatur nicht überrascht wird, kann sie ihre Augen abwenden, um den Rettungswurf zu Beginn ihres Zuges zu vermeiden. Wenn die Kreatur dies tut, kann sie Marlos bis zum Beginn ihres nächsten Zuges nicht sehen und kann sich dann entscheiden, die Augen wieder abzuwenden. Wenn die Kreatur Marlos in der Zwischenzeit ansieht, muss sie den Schutzwurf sofort wiederholen.",
-						"Wenn Marlos sich in einem Umkreis von 30 Fuß auf einer polierten Oberfläche spiegelt und sich in einem Bereich mit hellem Licht befindet, wird er aufgrund seines Fluchs von seinem eigenen Blick beeinflusst."
+						"When a creature that can see Marlos's eyes starts its turn within 30 feet of him, Marlos can force it to make a {@dc 14} Constitution saving throw if Marlos isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the {@spell greater restoration} spell or other magic.",
+						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Marlos until the start of its next turn, when it can decide to avert its eyes again. If the creature looks at Marlos in the meantime, it must immediately make the save.",
+						"If Marlos sees himself reflected on a polished surface within 30 feet of him and in an area of bright light, Marlos is, due to his curse, affected by his own gaze."
 					]
 				}
 			],
@@ -3324,19 +3397,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Marlos führt drei Nahkampfangriffe aus, einen mit seinem Schlangenhaar und zwei mit {@item Ironfang|PotA}."
+						"Marlos makes three melee attacks, one with his snake hair and two with {@item Ironfang|PotA}."
 					]
 				},
 				{
 					"name": "Snake Hair",
 					"entries": [
-						"{@atk mw} {@hit 6} Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stichschaden plus 14 ({@damage 4d6}) Giftschaden."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 14 ({@damage 4d6}) poison damage."
 					]
 				},
 				{
 					"name": "Ironfang",
 					"entries": [
-						"{@atk mw} {@hit 9} Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stichschaden plus 4 ({@damage 1d8}) Donnerschaden."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 4 ({@damage 1d8}) thunder damage."
 					]
 				}
 			],
@@ -3362,6 +3435,9 @@
 				"I",
 				"P",
 				"T"
+			],
+			"damageTagsLegendary": [
+				"B"
 			],
 			"miscTags": [
 				"MW"
@@ -3427,7 +3503,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Mirajs angeborene Fähigkeit zur Zauberei ist Konstitution (Zauberschutz {@dc 14}). Er kann von Natur aus den folgenden Zauber wirken, der keine materiellen Komponenten benötigt:"
+						"Miraj's innate spellcasting ability is Constitution (spell save {@dc 14}). He can innately cast the following spell, requiring no material components:"
 					],
 					"daily": {
 						"1": [
@@ -3439,7 +3515,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Miraj ist ein Zauberwirker der Stufe 11. Seine Zauberfähigkeit ist Charisma (Zauberschutz {@dc 15}, {@hit 7} um mit Zauberangriffen zu treffen). Er kennt die folgenden Zaubersprüche des Hexers:"
+						"Miraj is an 11th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -3502,7 +3578,7 @@
 				{
 					"name": "Earth Walk",
 					"entries": [
-						"Die Bewegung durch schwieriges Terrain aus Erde oder Stein kostet Miraj keine zusätzliche Bewegung."
+						"Moving through {@quickref difficult terrain||3} made of earth or stone costs Miraj no extra movement."
 					]
 				}
 			],
@@ -3510,7 +3586,7 @@
 				{
 					"name": "Staff",
 					"entries": [
-						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel. {@h}4 ({@damage 1d6 + 1}) Wuchtschaden, oder 5 ({@damage 1d8 + 1}) Wuchtschaden, wenn mit zwei Händen eingesetzt."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage when used with two hands."
 					]
 				}
 			],
@@ -3520,6 +3596,16 @@
 			],
 			"damageTags": [
 				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"O",
+				"T"
 			],
 			"spellcastingTags": [
 				"CS",
@@ -3546,7 +3632,7 @@
 							"items": {
 								"name": "Tendril",
 								"entries": [
-									"{@atk mw} {@hit 7} auf Treffer, Reichweite 50 Fuß, eine Kreatur. {@h}4 ({@damage 1d8}) Feuerschaden und das Ziel ist {@condition grappled} (Flucht DC 15). Bis zum Ende des Haltegriffs ist das Ziel {@condition restrained} und hat Nachteil bei Stärkeüberprüfungen und Stärkeschutzwürfen, und der Ringer kann dieselbe Ranke nicht auf ein anderes Ziel anwenden. Eine Kreatur erleidet jedes Mal 4 ({@damage 1d8}) Feuerschaden, wenn sie ihren Zug beendet, wenn sie vom Seiler gepackt wird."
+									"{@atk mw} {@hit 7} to hit, reach 50 ft., one creature. {@h}4 ({@damage 1d8}) fire damage and the target is {@condition grappled} (escape DC 15). Until the grapple ends, the target is {@condition restrained} and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target. A creature takes 4 ({@damage 1d8}) fire damage each time it ends its turn grappled by the roper."
 								]
 							}
 						},
@@ -3556,7 +3642,7 @@
 							"items": {
 								"name": "Bite",
 								"entries": [
-									"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}22 ({@damage 4d8 + 4}) Feuerschaden."
+									"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d8 + 4}) fire damage."
 								]
 							}
 						}
@@ -3607,6 +3693,7 @@
 				"P",
 				"S"
 			],
+			"damageTagsLegendary": [],
 			"hasToken": true
 		},
 		{
@@ -3686,7 +3773,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Ogrémochs angeborene Fähigkeit zur Zauberei ist Charisma (Zauberschutz {@dc 20}, {@hit 12} um mit Zauberangriffen zu treffen). Er kann von Natur aus die folgenden Zauber wirken, die keine materiellen Komponenten benötigen:"
+						"Ogrémoch's innate spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
 						"{@spell meld into stone}",
@@ -3700,25 +3787,25 @@
 				{
 					"name": "Empowered Attacks",
 					"entries": [
-						"Ogrémochs Schlagangriffe werden als magisch und adamantinisch behandelt, um die Resistenz und Immunität gegen nichtmagische Angriffe zu umgehen."
+						"Ogrémoch's slam attacks are treated as magical and adamantine for the purpose of bypassing resistance and immunity to nonmagical attacks."
 					]
 				},
 				{
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
-						"Wenn Ogrémoch ein Rettungswurf misslingt, kann er stattdessen wählen, ob er erfolgreich ist."
+						"If Ogrémoch fails a saving throw, he can choose to succeed instead."
 					]
 				},
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"Ogrémoch hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+						"Ogrémoch has advantage on saving throws against spells and other magical effects."
 					]
 				},
 				{
 					"name": "Siege Monster",
 					"entries": [
-						"Ogrémoch verursacht mit seinen Nah- und Fernkampfwaffenangriffen doppelten Schaden an Objekten und Strukturen."
+						"Ogrémoch deals double damage to objects and structures with his melee and ranged weapon attacks."
 					]
 				}
 			],
@@ -3726,25 +3813,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Ogrémoch führt zwei Schläge aus."
+						"Ogrémoch makes two slam attacks."
 					]
 				},
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atk mw} {@hit 14} bis zum Treffer, Reichweite 15 Fuß, ein Ziel. {@h}30 ({@damage 4d10 + 8}) Schaden durch Wucht."
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}30 ({@damage 4d10 + 8}) bludgeoning damage."
 					]
 				},
 				{
 					"name": "Boulder",
 					"entries": [
-						"{@atk rw} {@hit 6} bis zum Treffer, Reichweite 500 Fuß, ein Ziel. {@h}46 ({@damage 7d10 + 8}) Schaden durch Wucht. Handelt es sich bei dem Ziel um eine Kreatur, muss diese einen {@dc 23} Stärkeschutzwurf bestehen oder wird {@condition prone} umgestoßen."
+						"{@atk rw} {@hit 6} to hit, range 500 ft., one target. {@h}46 ({@damage 7d10 + 8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 23} Strength saving throw or be knocked {@condition prone}."
 					]
 				},
 				{
 					"name": "Summon Elementals (1/Day)",
 					"entries": [
-						"Ogrémoch beschwört bis zu drei {@creature earth elemental||earth elementals} und verliert 30 Trefferpunkte für jedes Elementar, das er beschwört. Die beschworenen Elementare haben maximale Trefferpunkte, erscheinen in einem Umkreis von 100 Fuß um Ogrémoch und verschwinden, wenn Ogrémoch auf 0 Trefferpunkte reduziert wird."
+						"Ogrémoch summons up to three {@creature earth elemental||earth elementals} and loses 30 hit points for each elemental he summons. Summoned elementals have maximum hit points, appear within 100 feet of Ogrémoch, and disappear if Ogrémoch is reduced to 0 hit points."
 					]
 				}
 			],
@@ -3752,19 +3839,19 @@
 				{
 					"name": "Illuminating Crystals",
 					"entries": [
-						"Ogrémochs kristalline Ausstülpungen flackern. Jede Kreatur im Umkreis von 30 Fuß um Ogrémoch wird in orangefarbenes Licht getaucht, das ein schwaches Licht in einem Radius von 10 Fuß ausstrahlt. Jeder Angriffswurf gegen eine betroffene Kreatur hat einen Vorteil, wenn der Angreifer sie sehen kann, und die betroffene Kreatur kann nicht davon profitieren, dass sie {@condition invisible} ist."
+						"Ogrémoch's crystalline protrusions flare. Each creature within 30 feet of Ogrémoch becomes outlined in orange light, shedding dim light in a 10-foot radius. Any attack roll against an affected creature has advantage if the attacker can see it, and the affected creature can't benefit from being {@condition invisible}."
 					]
 				},
 				{
 					"name": "Stomp (Costs 2 Actions)",
 					"entries": [
-						"Ogrémoch stampft auf den Boden und erzeugt ein Beben der Erde, das sich in einem Radius von 30 Fuß ausbreitet. Andere Kreaturen, die in diesem Radius auf dem Boden stehen, müssen einen {@dc 23} Geschicklichkeitswurf bestehen oder fallen {@condition prone}."
+						"Ogrémoch stomps the ground, creating an earth tremor that extends in a 30-foot radius. Other creatures standing on the ground in that radius must succeed on a {@dc 23} Dexterity saving throw or fall {@condition prone}."
 					]
 				},
 				{
 					"name": "Create Gargoyle (Costs 3 Actions)",
 					"entries": [
-						"Ogrémochs Trefferpunkte werden um 50 reduziert, wenn er ein Stück seines Körpers abbricht und es auf dem Boden in einem unbesetzten Raum innerhalb von 15 Fuß von ihm platziert. Der Felsbrocken verwandelt sich augenblicklich in einen {@creature gargoyle} und agiert mit der gleichen Anzahl an Initiativen wie Ogrémoch. Ogrémoch kann diese Aktion nicht nutzen, wenn er 50 Trefferpunkte oder weniger hat. Der Gargoyle gehorcht Ogrémochs Befehlen und kämpft, bis er zerstört wird."
+						"Ogrémoch's hit points are reduced by 50 as he breaks off a chunk of his body and places it on the ground in an unoccupied space within 15 feet of him. The chunk of rock instantly transforms into a {@creature gargoyle} and acts on the same initiative count as Ogrémoch. Ogrémoch can't use this action if he has 50 hit points or fewer. The gargoyle obeys Ogrémoch's commands and fights until destroyed."
 					]
 				}
 			],
@@ -3789,6 +3876,9 @@
 				"T"
 			],
 			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
 				"B"
 			],
 			"spellcastingTags": [
@@ -3892,7 +3982,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Olhydras angeborene Fähigkeit zur Zauberei ist Charisma (Zauberschutz {@dc 20}, {@hit 12} um mit Zauberangriffen zu treffen). Sie kann von Natur aus die folgenden Zauber wirken und benötigt dafür keine materiellen Komponenten:"
+						"Olhydra's innate spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
 						"{@spell wall of ice}"
@@ -3912,25 +4002,25 @@
 				{
 					"name": "Empowered Attacks",
 					"entries": [
-						"Olhydras Schleuderangriffe werden als magisch behandelt, um Widerstand und Immunität gegen nichtmagische Angriffe zu umgehen."
+						"Olhydra's slam attacks are treated as magical for the purpose of bypassing resistance and immunity to nonmagical attacks."
 					]
 				},
 				{
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
-						"Wenn Olhydra ein Rettungswurf misslingt, kann sie stattdessen einen Erfolg wählen."
+						"If Olhydra fails a saving throw, she can choose to succeed instead."
 					]
 				},
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"Olhydra hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+						"Olhydra has advantage on saving throws against spells and other magical effects."
 					]
 				},
 				{
 					"name": "Water Form",
 					"entries": [
-						"Olhydra kann in den Raum eines feindlichen Wesens eindringen und sich dort aufhalten. Sie kann sich durch einen Raum bewegen, der nur 1 Zoll breit ist, ohne sich zu quetschen."
+						"Olhydra can enter a hostile creature's space and stop there. She can move through a space as narrow as 1 inch wide without squeezing."
 					]
 				}
 			],
@@ -3938,25 +4028,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Olhydra führt zwei Schleuderangriffe oder zwei Wasserstrahlangriffe aus."
+						"Olhydra makes two slam attacks or two water jet attacks."
 					]
 				},
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atk mw} {@hit 11} bis zum Treffer, Reichweite 10 ft., ein Ziel. {@h}21 ({@damage 3d10 + 5}) Wuchtschaden, und das Ziel ist {@condition grappled} (Flucht {@dc 19}). Olhydra kann bis zu vier Ziele packen. Wenn Olhydra sich bewegt, bewegen sich alle Kreaturen, die sie im Griff hat, mit ihr."
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Olhydra can grapple up to four targets. When Olhydra moves, all creatures she is grappling move with her."
 					]
 				},
 				{
 					"name": "Water Jet",
 					"entries": [
-						"{@atk rw} {@hit 12} auf Treffer, Reichweite 120 Fuß, ein Ziel. {@h}21 ({@damage 6d6}) Wuchtschaden, und das Ziel wird {@condition prone} niedergeschlagen, wenn es einen {@dc 19} Stärkeschutzwurf nicht besteht."
+						"{@atk rw} {@hit 12} to hit, range 120 ft., one target. {@h}21 ({@damage 6d6}) bludgeoning damage, and the target is knocked {@condition prone} if it fails a {@dc 19} Strength saving throw."
 					]
 				},
 				{
 					"name": "Summon Elementals (1/Day)",
 					"entries": [
-						"Olhydra beschwört bis zu drei {@creature water elemental||water elementals} und verliert 30 Trefferpunkte für jedes Elementar, das sie beschwört. Die beschworenen Elementare haben maximale Trefferpunkte, erscheinen in einem Umkreis von 100 Fuß um Olhydra und verschwinden, wenn Olhydra auf 0 Trefferpunkte reduziert wird."
+						"Olhydra summons up to three {@creature water elemental||water elementals} and loses 30 hit points for each elemental she summons. Summoned elementals have maximum hit points, appear within 100 feet of Olhydra, and disappear if Olhydra is reduced to 0 hit points."
 					]
 				}
 			],
@@ -3964,19 +4054,19 @@
 				{
 					"name": "Crush",
 					"entries": [
-						"Eine Kreatur, die Olhydra im Griff hat, wird für 21 ({@damage 3d10 + 5}) Wuchtschaden zerquetscht."
+						"One creature that Olhydra is grappling is crushed for 21 ({@damage 3d10 + 5}) bludgeoning damage."
 					]
 				},
 				{
 					"name": "Fling (Costs 2 Actions)",
 					"entries": [
-						"Olhydra lässt eine Kreatur, die sie gerade packt, los, indem sie sie bis zu 60 Fuß weit wegschleudert, in eine Richtung ihrer Wahl. Wenn die geschleuderte Kreatur mit einer festen Oberfläche wie einer Wand oder dem Boden in Berührung kommt, erleidet die Kreatur {@dice 1d6} Wuchtschaden für jeweils 10 Fuß, die sie geschleudert wurde."
+						"Olhydra releases one creature she is grappling by flinging the creature up to 60 feet away from her, in a direction of her choice. If the flung creature comes into contact with a solid surface, such as a wall or floor, the creature takes {@dice 1d6} bludgeoning damage for every 10 feet it was flung."
 					]
 				},
 				{
 					"name": "Water to Acid (Costs 3 Actions)",
 					"entries": [
-						"Olhydra verwandelt ihren wässrigen Körper in Säure. Dieser Effekt hält bis zu Olhydras nächstem Zug an. Jede Kreatur, die mit Olhydra in Kontakt kommt oder sie mit einem Nahkampfangriff trifft, während sie sich in einem Umkreis von 5 Fuß um sie befindet, erleidet 11 ({@damage 2d10}) Säureschaden. Jede Kreatur {@condition grappled} von Olhydra erleidet zu Beginn ihres Zuges 22 ({@damage 4d10}) Säureschaden."
+						"Olhydra transforms her watery body into acid. This effect lasts until Olhydra's next turn. Any creature that comes into contact with Olhydra or hits her with a melee attack while standing within 5 feet of her takes 11 ({@damage 2d10}) acid damage. Any creature {@condition grappled} by Olhydra takes 22 ({@damage 4d10}) acid damage at the start of its turn."
 					]
 				}
 			],
@@ -4000,6 +4090,16 @@
 			"damageTags": [
 				"A",
 				"B"
+			],
+			"damageTagsLegendary": [
+				"C"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"L",
+				"T"
 			],
 			"spellcastingTags": [
 				"I"
@@ -4079,7 +4179,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Der Einäugige Schauder ist ein Zauberwirker der Stufe 5. Seine Zauberfähigkeit ist Charisma (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er kennt die folgenden Zaubersprüche des Zauberers:"
+						"The one-eyed shiver is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -4117,7 +4217,7 @@
 				{
 					"name": "Chilling Mist",
 					"entries": [
-						"Solange er lebt, projiziert der Einäugige Schauer eine Aura kalten Nebels im Umkreis von 10 Fuß um sich herum. Wenn der Einäugige Schauder einer Kreatur in diesem Gebiet Schaden zufügt, erleidet diese Kreatur zusätzlich 5 ({@damage 1d10}) Kälteschaden."
+						"While it is alive, the one-eyed shiver projects an aura of cold mist within 10 feet of itself. If the one-eyed shiver deals damage to a creature in this area, the creature also takes 5 ({@damage 1d10}) cold damage."
 					]
 				}
 			],
@@ -4125,13 +4225,13 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 4} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}4 ({@damage 1d4 + 2}) Stich-Schaden."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
 					]
 				},
 				{
 					"name": "Eye of Frost",
 					"entries": [
-						"Der einäugige Schauer wirft {@spell ray of frost} aus seinem fehlenden Auge. Wenn es trifft, ist das Ziel ebenfalls {@condition restrained}. Ein Ziel, das auf diese Weise {@condition restrained} getroffen wird, kann den Zustand mit einer Aktion beenden, indem es eine {@dc 13} Stärkeprobe besteht."
+						"The one-eyed shiver casts {@spell ray of frost} from its missing eye. If it hits, the target is also {@condition restrained}. A target {@condition restrained} in this way can end the condition by using an action, succeeding on a {@dc 13} Strength check."
 					]
 				}
 			],
@@ -4141,6 +4241,10 @@
 			"damageTags": [
 				"C",
 				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"T"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -4215,7 +4319,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Oreioth ist ein Zauberwirker der Stufe 6. Seine Zauberfähigkeit ist Intelligenz (Zauberschutz {@dc 13}, {@hit 5} Trefferquote bei Angriffen mit Zaubern). Er hat die folgenden Zaubersprüche vorbereitet:"
+						"Oreioth is a 6th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -4257,13 +4361,13 @@
 				{
 					"name": "Grim Harvest",
 					"entries": [
-						"Einmal pro Runde, wenn Oreioth eine oder mehrere Kreaturen mit einem Zauber der Stufe 1 oder höher tötet, erhält er Trefferpunkte in Höhe der doppelten Stufe des Zaubers zurück."
+						"Once per turn when Oreioth kills one or more creatures with a spell of 1st level or higher, he regains hit points equal to twice the spell's level."
 					]
 				},
 				{
 					"name": "Swift Animation (Recharges after a Long Rest)",
 					"entries": [
-						"Wenn ein lebender mittelgroßer oder kleiner Humanoid im Umkreis von 30 Fuß um Oreioth stirbt, kann er in seinem nächsten Zug eine Aktion nutzen, um {@spell animate dead} auf den Leichnam dieses Humanoiden zu wirken, anstatt die normale Wirkzeit des Zaubers zu nutzen."
+						"When a living Medium or Small humanoid within 30 feet of Oreioth dies, he can use an action on his next turn to cast {@spell animate dead} on that humanoid's corpse, instead of using the spell's normal casting time."
 					]
 				}
 			],
@@ -4271,7 +4375,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 3} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}3 ({@damage 1d4 + 1}) Stich-Schaden."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
 					]
 				}
 			],
@@ -4281,6 +4385,12 @@
 			],
 			"damageTags": [
 				"P"
+			],
+			"damageTagsSpell": [
+				"I",
+				"L",
+				"N",
+				"O"
 			],
 			"spellcastingTags": [
 				"CW"
@@ -4319,7 +4429,7 @@
 				{
 					"name": "Maul",
 					"entries": [
-						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 2d6 + 3}) Schaden durch Wucht."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage."
 					]
 				}
 			],
@@ -4383,13 +4493,13 @@
 				{
 					"name": "Searing Armor",
 					"entries": [
-						"Die Panzerung des Razerblasts ist heiß. Jede Kreatur, die den Raserblast packt oder {@condition grappled} von ihm getroffen wird, erleidet am Ende des Zuges dieser Kreatur 5 ({@damage 1d10}) Feuerschaden."
+						"The razerblast's armor is hot. Any creature grappling the razerblast or {@condition grappled} by it takes 5 ({@damage 1d10}) fire damage at the end of that creature's turn."
 					]
 				},
 				{
 					"name": "Shrapnel Explosion",
 					"entries": [
-						"Wenn der Raserblast auf 0 Trefferpunkte fällt, explodiert eine flammende Kugel in seiner Brust, die den Körper des Raserblasts zerstört und seine Rüstung als Schrapnell verstreut. Kreaturen, die sich zum Zeitpunkt der Explosion im Umkreis von 10 Fuß um den Raserblast befinden, müssen einen {@dc 12} Schutzwurf auf Geschicklichkeit bestehen und erleiden bei einem misslungenen Schutzwurf 21 ({@damage 6d6}) Stichschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+						"When the razerblast drops to 0 hit points, a flaming orb in its chest explodes, destroying the razerblast's body and scattering its armor as shrapnel. Creatures within 10 feet of the razerblast when it explodes must succeed on a {@dc 12} Dexterity saving throw, taking 21 ({@damage 6d6}) piercing damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -4397,13 +4507,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Razerblast macht drei Nahkampfangriffe."
+						"The razerblast makes three melee attacks."
 					]
 				},
 				{
 					"name": "Spear",
 					"entries": [
-						"{@atk mw,rw} {@hit 6} Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stich-Schaden, oder 7 ({@damage 1d8 + 3}) Stich-Schaden, wenn mit zwei Händen als Nahkampfangriff eingesetzt, plus 3 ({@damage 1d6}) Feuerschaden."
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage if used with two hands to make a melee attack, plus 3 ({@damage 1d6}) fire damage."
 					]
 				}
 			],
@@ -4449,7 +4559,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Renwick ist ein Zauberwirker der Stufe 18. Seine Zauberfähigkeit ist Intelligenz (Zauberschutz {@dc 20}, {@hit 12} um mit Zauberangriffen zu treffen). Renwick hat die folgenden Zaubersprüche vorbereitet:"
+						"Renwick is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Renwick has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -4531,6 +4641,7 @@
 					"ability": "int"
 				}
 			],
+			"damageTagsLegendary": [],
 			"hasToken": true
 		},
 		{
@@ -4558,7 +4669,7 @@
 				{
 					"name": "Warhammer",
 					"entries": [
-						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}9 ({@damage 1d8 + 4}) Wuchtschaden, oder 10 ({@damage 1d10 + 4}) Wuchtschaden, wenn mit zwei Händen eingesetzt."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) bludgeoning damage, or 10 ({@damage 1d10 + 4}) bludgeoning damage if used with two hands."
 					]
 				}
 			],
@@ -4620,13 +4731,13 @@
 				{
 					"name": "Unarmored Defense",
 					"entries": [
-						"Solange der Mönch keine Rüstung trägt und keinen Schild führt, beinhaltet sein AC seinen Weisheitsmodifikator."
+						"While the monk is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
 					]
 				},
 				{
 					"name": "Unarmored Movement",
 					"entries": [
-						"Wenn der Mönch keine Rüstung und keinen Schild trägt, erhöht sich seine Gehgeschwindigkeit um 10 Fuß (in seiner Geschwindigkeit enthalten)."
+						"While the monk is wearing no armor and wielding no shield, its walking speed increases by 10 feet (included in its speed)."
 					]
 				}
 			],
@@ -4634,13 +4745,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Der Mönch führt zwei Nahkampfangriffe aus."
+						"The monk makes two melee attacks."
 					]
 				},
 				{
 					"name": "Unarmed Strike",
 					"entries": [
-						"{@atk mw} {@hit 4} Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Schaden durch Wucht."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
 					]
 				}
 			],
@@ -4648,7 +4759,7 @@
 				{
 					"name": "Parry",
 					"entries": [
-						"Der Mönch addiert 2 zu seinem AC gegen einen Angriff mit einer Nah- oder Fernkampfwaffe, der ihn treffen würde. Dazu muss der Mönch den Angreifer sehen."
+						"The monk adds 2 to its AC against one melee or ranged weapon attack that would hit it. To do so, the monk must see the attacker."
 					]
 				}
 			],
@@ -4730,7 +4841,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Shoalars angeborene Fähigkeit zur Zauberei ist Konstitution (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er kann von Natur aus die folgenden Zauber wirken:"
+						"Shoalar's innate spellcasting ability is Constitution (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He can innately cast the following spells:"
 					],
 					"will": [
 						"{@spell shape water|xge}"
@@ -4745,7 +4856,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Shoalar ist ein Zauberwirker der Stufe 5. Seine Zauberfähigkeit ist Charisma (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er kennt die folgenden Zaubersprüche des Hexers:"
+						"Shoalar is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -4786,7 +4897,7 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"Shoalar kann Luft und Wasser atmen."
+						"Shoalar can breathe air and water."
 					]
 				}
 			],
@@ -4794,7 +4905,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw,rw} {@hit 3} auf Treffer, Reichweite 5 ft. oder auf Distanz 20/60 ft., ein Ziel. {@h}3 ({@damage 1d4 + 1}) Stich-Schaden."
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or ranged 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
 					]
 				}
 			],
@@ -4807,6 +4918,13 @@
 			],
 			"damageTags": [
 				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"N",
+				"O"
 			],
 			"spellcastingTags": [
 				"CS",
@@ -4872,7 +4990,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Der Himmelsweber ist ein Zauberwirker der Stufe 6. Seine Zauberfähigkeit ist Charisma (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er kennt die folgenden Zaubersprüche des Zauberers:"
+						"The Skyweaver is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -4914,7 +5032,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}3 ({@damage 1d4 + 1}) Stich-Schaden."
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
 					]
 				}
 			],
@@ -4924,6 +5042,10 @@
 			],
 			"damageTags": [
 				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"L"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -5013,7 +5135,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Der Steinmetz ist ein Zauberwirker der Stufe 7. Seine Zauberfähigkeit ist Charisma (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Er kennt die folgenden Zaubersprüche des Zauberers:"
+						"The Stonemelder is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -5061,7 +5183,7 @@
 				{
 					"name": "Death Burst",
 					"entries": [
-						"Wenn der Steinmetz stirbt, verwandelt er sich in Stein und explodiert in einer Explosion von Steinsplittern und wird zu einem rauchenden Trümmerhaufen. Jede Kreatur im Umkreis von 10 Fuß um den explodierenden Steinmetz muss einen {@dc 14} Schutzwurf auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 11 ({@damage 2d10}) Wuchtschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden."
+						"When the Stonemelder dies, it turns to stone and explodes in a burst of rock shards, becoming a smoking pile of rubble. Each creature within 10 feet of the exploding Stonemelder must make a {@dc 14} Dexterity saving throw, taking 11 ({@damage 2d10}) bludgeoning damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -5069,7 +5191,7 @@
 				{
 					"name": "Black Earth Rod",
 					"entries": [
-						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Schaden durch Wucht. Der Steinmetz kann auch einen Zauberslot ausgeben, um zusätzlichen Schaden zu verursachen. Er verursacht {@dice 2d8} Wuchtschaden für einen Slot der Stufe 1 plus zusätzliche {@dice 1d8} für jede Stufe des Slots über der Stufe 1."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage. The Stonemelder can also expend a spell slot to deal extra damage, dealing {@dice 2d8} bludgeoning damage for a 1st level slot, plus an additional {@dice 1d8} for each level of the slot above 1st."
 					]
 				}
 			],
@@ -5085,6 +5207,11 @@
 			],
 			"damageTags": [
 				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"T"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -5150,7 +5277,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Thurl ist ein Zauberwirker der Stufe 5. Seine Zauberfähigkeit ist Charisma (Zauberschutz {@dc 12}, {@hit 4} um mit Zauberangriffen zu treffen). Thurl kennt die folgenden Zaubersprüche des Zauberers:"
+						"Thurl is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Thurl knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -5191,19 +5318,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Thurl führt zwei Nahkampfangriffe aus."
+						"Thurl makes two melee attacks."
 					]
 				},
 				{
 					"name": "Greatsword",
 					"entries": [
-						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 2d6 + 3}) Hiebschaden."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
 					]
 				},
 				{
 					"name": "Lance",
 					"entries": [
-						"{@atk mw} {@hit 5} Treffer, Reichweite 10 ft., ein Ziel. {@h}9 ({@damage 1d12 + 3}) Stich-Schaden."
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d12 + 3}) piercing damage."
 					]
 				}
 			],
@@ -5211,7 +5338,7 @@
 				{
 					"name": "Parry",
 					"entries": [
-						"Thurl addiert 2 zu seinem AC gegen einen Nahkampfangriff, der ihn treffen würde. Um dies zu tun, muss Thurl den Angreifer sehen und eine Nahkampfwaffe führen."
+						"Thurl adds 2 to his AC against one melee attack that would hit him. To do so, Thurl must see the attacker and be wielding a melee weapon."
 					]
 				}
 			],
@@ -5226,6 +5353,9 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"C"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -5321,7 +5451,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Vanifer ist ein Zauberwirker der Stufe 10. Ihre Zauberfähigkeit ist Charisma (Zauberschutz {@dc 16}, {@hit 8} um mit Zauberangriffen zu treffen). Vanifer kennt die folgenden Zaubersprüche der Zauberer:"
+						"Vanifer is a 10th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Vanifer knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -5381,13 +5511,13 @@
 				{
 					"name": "Funeral Pyre",
 					"entries": [
-						"Wenn Vanifer auf 0 Trefferpunkte fällt, wird ihr Körper in einem Feuer- und Rauchblitz verbrannt. Alles, was sie bei sich trug, wird in der Asche zurückgelassen."
+						"When Vanifer drops to 0 hit points, her body is consumed in a flash of fire and smoke. Anything she was wearing or carrying is left behind among ashes."
 					]
 				},
 				{
 					"name": "Legendary Resistance (2/Day)",
 					"entries": [
-						"Wenn Vanifer ein Rettungswurf misslingt, kann sie stattdessen einen Erfolg wählen."
+						"If Vanifer fails a saving throw, she can choose to succeed instead."
 					]
 				}
 			],
@@ -5395,13 +5525,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Vanifer macht zwei Angriffe."
+						"Vanifer makes two attacks."
 					]
 				},
 				{
 					"name": "Tinderstrike",
 					"entries": [
-						"{@atk mw,rw} {@hit 9} auf Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}7 ({@damage 1d4 + 5}) Stichschaden plus 7 ({@damage 2d6}) Feuerschaden."
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage plus 7 ({@damage 2d6}) fire damage."
 					]
 				}
 			],
@@ -5426,6 +5556,18 @@
 			"damageTags": [
 				"F",
 				"P"
+			],
+			"damageTagsLegendary": [
+				"F"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"T"
 			],
 			"spellcastingTags": [
 				"CS"
@@ -5491,7 +5633,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Wiggan ist ein Zauberwirker der Stufe 4. Seine Zauberfähigkeit ist Weisheit (Zauberschutz {@dc 12}, {@hit 4} um mit Zauberangriffen zu treffen). Er hat die folgenden Klerikerzauber vorbereitet:"
+						"Wiggan is a 4th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). He has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -5529,7 +5671,7 @@
 				{
 					"name": "Brave Devotion",
 					"entries": [
-						"Wiggan hat einen Vorteil bei Rettungswürfen gegen {@condition charmed} oder {@condition frightened}."
+						"Wiggan has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
 					]
 				}
 			],
@@ -5537,13 +5679,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Wiggan macht zwei Angriffe mit seinem Holzstock."
+						"Wiggan makes two attacks with his wooden cane."
 					]
 				},
 				{
 					"name": "Wooden Cane",
 					"entries": [
-						"{@atk mw} {@hit 0} Treffer ({@hit 4} Treffer mit Knüppel), Reichweite 5 Fuß, ein Ziel. {@h}1 ({@damage 1d4 - 1}) Wuchtschaden, oder 6 ({@damage 1d8 + 2}) Wuchtschaden mit Knüppel."
+						"{@atk mw} {@hit 0} to hit ({@hit 4} to hit with shillelagh), reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage with shillelagh."
 					]
 				}
 			],
@@ -5556,6 +5698,11 @@
 			],
 			"damageTags": [
 				"B"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"P"
 			],
 			"spellcastingTags": [
 				"CC"
@@ -5630,7 +5777,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Windharrow ist ein Zauberwirker der Stufe 8. Seine Zauberfähigkeit ist Charisma (Zauberschutz {@dc 13}, {@hit 5} um mit Zauberangriffen zu treffen). Windharrow kennt die folgenden Bardenzauber:"
+						"Windharrow is an 8th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Windharrow knows the following bard spells:"
 					],
 					"spells": {
 						"0": {
@@ -5679,7 +5826,7 @@
 				{
 					"name": "Fey Ancestry",
 					"entries": [
-						"Windharrow hat einen Vorteil bei Rettungswürfen gegen das Wesen {@condition charmed}, und Magie kann ihn nicht in Schlaf versetzen."
+						"Windharrow has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
 					]
 				}
 			],
@@ -5687,13 +5834,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Windharrow führt zwei Nahkampfangriffe aus."
+						"Windharrow makes two melee attacks."
 					]
 				},
 				{
 					"name": "Rapier",
 					"entries": [
-						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., eine Kreatur. {@h}7 ({@damage 1d8 + 3}) Stich-Schaden."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage."
 					]
 				}
 			],
@@ -5713,6 +5860,11 @@
 			],
 			"damageTags": [
 				"P"
+			],
+			"damageTagsSpell": [
+				"O",
+				"T",
+				"Y"
 			],
 			"spellcastingTags": [
 				"CB"
@@ -5807,7 +5959,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Yan-C-Bins angeborene Fähigkeit zur Zauberei ist Charisma (Zauberschutz {@dc 20}, {@hit 12} um mit Zauberangriffen zu treffen). Er kann von Natur aus die folgenden Zauber wirken und benötigt dafür keine materiellen Komponenten:"
+						"Yan-C-Bin's innate spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
 						"{@spell gust of wind}",
@@ -5828,25 +5980,25 @@
 				{
 					"name": "Air Form",
 					"entries": [
-						"Yan-C-Bin kann in den Raum eines feindlichen Wesens eindringen und dort anhalten. Er kann sich durch einen Raum bewegen, der nur einen Zentimeter breit ist, ohne sich zu quetschen, wenn Luft durch diesen Raum strömen könnte."
+						"Yan-C-Bin can enter a hostile creature's space and stop there. He can move through a space as narrow as 1 inch wide without squeezing if air could pass through that space."
 					]
 				},
 				{
 					"name": "Empowered Attacks",
 					"entries": [
-						"Yan-C-Bins Slam-Attacken werden als magisch behandelt, um die Resistenz und Immunität gegen nicht-magische Angriffe zu umgehen."
+						"Yan-C-Bin's slam attacks are treated as magical for the purpose of bypassing resistance and immunity to nonmagical attacks."
 					]
 				},
 				{
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
-						"Wenn Yan-C-Bin ein Rettungswurf misslingt, kann er stattdessen wählen, ob er erfolgreich ist."
+						"If Yan-C-Bin fails a saving throw, he can choose to succeed instead."
 					]
 				},
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"Yan-C-Bin hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+						"Yan-C-Bin has advantage on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -5854,31 +6006,31 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Yan-C-Bin führt zwei Schläge aus."
+						"Yan-C-Bin makes two slam attacks."
 					]
 				},
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atk mw} {@hit 14} auf Treffer, Reichweite 10 Fuß, ein Ziel. {@h}20 ({@damage 3d8 + 7}) Kraftschaden plus 10 ({@damage 3d6}) Blitzschaden."
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d8 + 7}) force damage plus 10 ({@damage 3d6}) lightning damage."
 					]
 				},
 				{
 					"name": "Thundercrack (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Yan-C-Bin entfesselt einen furchtbaren Donnerschlag in einer Kugel mit einem Radius von 100 Fuß um sich selbst herum. Alle anderen Kreaturen in diesem Gebiet müssen einen {@dc 24} Konstitutionsschutzwurf bestehen oder 31 ({@damage 9d6}) Donnerschaden erleiden und 1 Minute lang {@condition deafened} sein. Bei einem erfolgreichen Schutzwurf erleidet eine Kreatur nur halb so viel Schaden und ist {@condition deafened} bis zum Beginn von Yan-C-Bins nächstem Zug."
+						"Yan-C-Bin unleashes a terrible thundercrack in a 100-foot-radius sphere centered on himself. All other creatures in the area must succeed on a {@dc 24} Constitution saving throw or take 31 ({@damage 9d6}) thunder damage and be {@condition deafened} for 1 minute. On a successful save, a creature takes half as much damage and is {@condition deafened} until the start of Yan-C-Bin's next turn."
 					]
 				},
 				{
 					"name": "Change Shape",
 					"entries": [
-						"Yan-C-Bin verwandelt sich in einen mittelgroßen Humanoiden. Während er sich in der polymorphen Form befindet, umgibt ihn eine wirbelnde Brise, seine Augen sind blass und trübe, und er verliert die Eigenschaft Luftform. Er kann bis zu 1 Stunde lang in der polymorphen Form bleiben. Die Rückverwandlung in seine wahre Form erfordert eine Aktion."
+						"Yan-C-Bin polymorphs into a Medium humanoid. While in polymorphed form, a swirling breeze surrounds him, his eyes are pale and cloudy, and he loses the Air Form trait. He can remain in polymorphed form for up to 1 hour. Reverting to his true form requires an action."
 					]
 				},
 				{
 					"name": "Summon Elementals (1/Day)",
 					"entries": [
-						"Yan-C-Bin beschwört bis zu drei {@creature air elemental||air elementals} und verliert 30 Trefferpunkte für jedes Elementar, das er beschwört. Die beschworenen Elementare haben maximale Trefferpunkte, erscheinen in einem Umkreis von 100 Fuß um Yan-C-Bin und verschwinden, wenn Yan-C-Bin auf 0 Trefferpunkte reduziert wird."
+						"Yan-C-Bin summons up to three {@creature air elemental||air elementals} and loses 30 hit points for each elemental he summons. Summoned elementals have maximum hit points, appear within 100 feet of Yan-C-Bin, and disappear if Yan-C-Bin is reduced to 0 hit points."
 					]
 				}
 			],
@@ -5886,19 +6038,19 @@
 				{
 					"name": "Peal of Thunder",
 					"entries": [
-						"Yan-C-Bin stößt einen Donnergrollen aus, der bis zu einer Entfernung von 300 Fuß zu hören ist. Jede Kreatur innerhalb von 30 Fuß um Yan-C-Bin erleidet 5 ({@damage 1d10}) Donnerschaden."
+						"Yan-C-Bin unleashes a peal of thunder that can be heard out to a range of 300 feet. Each creature within 30 feet of Yan-C-Bin takes 5 ({@damage 1d10}) thunder damage."
 					]
 				},
 				{
 					"name": "Teleport (Costs 2 Actions)",
 					"entries": [
-						"Yan-C-Bin teleportiert sich auf magische Weise bis zu 120 Fuß in einen unbesetzten Raum, den er sehen kann. Alles, was Yan-C-Bin trägt oder bei sich hat, wird mit ihm teleportiert."
+						"Yan-C-Bin magically teleports up to 120 feet to an unoccupied space he can see. Anything Yan-C-Bin is wearing or carrying is teleported with him."
 					]
 				},
 				{
 					"name": "Suffocate (Costs 3 Actions)",
 					"entries": [
-						"Yan-C-Bin stiehlt die Luft eines atmenden Wesens, das er im Umkreis von 60 Fuß sehen kann. Das Ziel muss einen {@dc 21} Konstitutionsschutzwurf machen. Bei einem misslungenen Schutzwurf sinkt das Ziel auf 0 Trefferpunkte und stirbt. Bei einem erfolgreichen Schutzwurf kann das Ziel bis zum Beginn seiner nächsten Runde weder atmen noch sprechen."
+						"Yan-C-Bin steals the air of one breathing creature he can see within 60 feet of him. The target must make a {@dc 21} Constitution saving throw. On a failed save, the target drops to 0 hit points and is dying. On a successful save, the target can't breathe or speak until the start of its next turn."
 					]
 				}
 			],
@@ -5924,6 +6076,14 @@
 				"L",
 				"O",
 				"T"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"L"
+			],
+			"damageTagsSpell": [
+				"I",
+				"L"
 			],
 			"spellcastingTags": [
 				"I"
@@ -5969,7 +6129,7 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}14 ({@damage 2d8 + 5}) Stich-Schaden."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
 					]
 				}
 			],
