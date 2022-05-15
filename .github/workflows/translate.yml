@@ -38,6 +38,8 @@ jobs:
            cd $GITHUB_WORKSPACE
            ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --deepl $SOURCE_FILES
            ./translation/translate.py --language ${{ matrix.language }} --translate data/*.json data/*/*.json
+           mv data data.src
+           ln -s data.${{ matrix.language }} data
            npm run gen-all
     - name: Save results
       continue-on-error: true
