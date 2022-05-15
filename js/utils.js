@@ -2649,7 +2649,9 @@ DataUtil = {
 		'de': { name: 'Deutsch',  baseDir: 'data.de/' },
 		'it': { name: 'Italiano', baseDir: 'data.it/' },
 		'ru': { name: 'Pусский',  baseDir: 'data.ru/' },
-		'zh': { name: '中文',      baseDir: 'data.zh/' },
+		'zh': { name: '中文',     baseDir: 'data.zh/' },
+		'pl': { name: 'Polska',   baseDir: 'data.pl/' },
+		'sv': { name: 'Svenska',  baseDir: 'data.sv/' },
 	},
 
 	async _pLoad (url) {

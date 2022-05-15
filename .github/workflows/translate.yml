@@ -18,7 +18,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        language: [ 'es', 'de', 'it', 'ru', 'zh' ]
+        language: [ 'es', 'de', 'it', 'ru', 'zh', 'pl', 'sv' ]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
