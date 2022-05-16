@@ -41,6 +41,8 @@ jobs:
            mv data data.src
            ln -s data.${{ matrix.language }} data
            npm run gen-all
+           rm -f data
+           mv data.src data
     - name: Save results
       continue-on-error: true
       run: |
@@ -49,6 +51,7 @@ jobs:
            git add data.${{ matrix.language }}/ translation/cache/${{ matrix.language }}/
            git commit -m 'automatic translation'
            git status
+           git checkout HEAD .
            git pull --rebase --autostash
            git push origin translations || true
            # Try again with a short delay in case it fails (conflicting pushes)
