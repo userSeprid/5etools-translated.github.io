@@ -2697,10 +2697,9 @@ DataUtil = {
 		}
 
 		if (DataUtil._loading[id] && !isBustCache) {
-			await DataUtil._loading[url];
-			return DataUtil._loaded[url];
+			await DataUtil._loading[id];
+			return DataUtil._loaded[id];
 		}
-		console.log("loading " + url);
 
 		DataUtil._loading[id] = new Promise((resolve, reject) => {
 			const request = new XMLHttpRequest();
