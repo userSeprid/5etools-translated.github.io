@@ -78,7 +78,14 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE
               VERSION=$(git describe --tags --abbrev=0)
-              bash ./.github/add-query-strings.sh "${VERSION}.$(date +%s)"
+              bash ./.github/set-deployed-flag.sh "${VERSION}.$(date +%s)"
+
+       -  name: Build Service Worker
+          run: |
+               npm i
+               npm run build:sw:prod
+               sed -i 's/sw.js//g' .gitignore
+               sed -i 's/sw-injector.js//g' .gitignore
 
        # See: https://github.com/JamesIves/github-pages-deploy-action
        - name: Deploy
