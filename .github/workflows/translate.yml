@@ -87,15 +87,13 @@ jobs:
                sed -i 's/sw.js//g' .gitignore
                sed -i 's/sw-injector.js//g' .gitignore
 
-       - name: Pages deploy
-         run: |
-              git add .
-              git commit -a -m 'pages build'
-              git push --force-with-lease origin translations:gh-pages-translated
+       - name: cleanup
+               # Clean unnecessary files for pages deploy
+               rm -Rf translation
 
        # See: https://github.com/JamesIves/github-pages-deploy-action
-       #- name: Deploy
-       #  uses: JamesIves/github-pages-deploy-action@releases/v4
-       #  with:
-       #    branch: gh-pages-translated
-       #    folder: .
+       - name: Deploy
+         uses: JamesIves/github-pages-deploy-action@releases/v4
+         with:
+           branch: gh-pages-translated
+           folder: .
