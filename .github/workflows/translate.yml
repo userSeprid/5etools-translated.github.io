@@ -80,16 +80,17 @@ jobs:
               VERSION=$(git describe --tags --abbrev=0)
               bash ./.github/set-deployed-flag.sh "${VERSION}.$(date +%s)"
 
-       -  name: Build Service Worker
-          run: |
-               npm i
-               npm run build:sw:prod
-               sed -i 's/sw.js//g' .gitignore
-               sed -i 's/sw-injector.js//g' .gitignore
+       - name: Build Service Worker
+         run: |
+              npm i
+              npm run build:sw:prod
+              sed -i 's/sw.js//g' .gitignore
+              sed -i 's/sw-injector.js//g' .gitignore
 
        - name: cleanup
-               # Clean unnecessary files for pages deploy
-               rm -Rf translation
+         run: |
+              # Clean unnecessary files for pages deploy
+              rm -Rf translation
 
        # See: https://github.com/JamesIves/github-pages-deploy-action
        - name: Deploy
