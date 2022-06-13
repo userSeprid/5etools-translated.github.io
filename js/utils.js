@@ -2704,6 +2704,8 @@ DataUtil = {
 		'zh': { name: '中文',     baseDir: 'data.zh/' },
 		'pl': { name: 'Polska',   baseDir: 'data.pl/' },
 		'sv': { name: 'Svenska',  baseDir: 'data.sv/' },
+		'fr': { name: 'Français',  baseDir: 'data.fr/' },
+		'nl': { name: 'Nederlands',  baseDir: 'data.nl/' },
 	},
 
 	async _pLoad ({url, id, isBustCache = false}) {

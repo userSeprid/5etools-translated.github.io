@@ -31,6 +31,8 @@ supported_languages = {
 	'zh': 'zh-ZH',
 	'pl': 'pl-PL',
 	'sv': 'sv-SV',
+	'fr': 'fr-FR',
+	'nl': 'nl-NL',
 }
 
 todoCharCounter = 0
