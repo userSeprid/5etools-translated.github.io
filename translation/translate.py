@@ -159,9 +159,14 @@ class Translator:
 
 		for word, translation in contains.items():
 			print(f"adding {word}:{translation} to glossary")
-			self._webdriver.find_element(By.XPATH, '//input[@dl-test="glossary-newentry-source-input"]').send_keys(word)
-			self._webdriver.find_element(By.XPATH, '//input[@dl-test="glossary-newentry-target-input"]').send_keys(translation)
-			self._webdriver.find_element(By.XPATH, '//button[@dl-test="glossary-newentry-accept-button"]').click()
+			try:
+				self._webdriver.find_element(By.XPATH, '//input[@dl-test="glossary-newentry-source-input"]').send_keys(word)
+				self._webdriver.find_element(By.XPATH, '//input[@dl-test="glossary-newentry-target-input"]').send_keys(translation)
+				self._webdriver.find_element(By.XPATH, '//button[@dl-test="glossary-newentry-accept-button"]').click()
+			except:
+				self._webdriver.find_element(By.XPATH, '//input[@aria-label="Source glossary entry"]').send_keys(word)
+				self._webdriver.find_element(By.XPATH, '//input[@aria-label="Target glossary entry"]').send_keys(translation)
+				self._webdriver.find_element(By.XPATH, '//button[@aria-label="Save entry"]').click()
 			time.sleep(0.5)
 			self._deeplGlossary.append(word)
 
