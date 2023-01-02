@@ -117,7 +117,8 @@ class Translator:
 			firefox_options.set_preference('network.proxy.type', 1)
 			firefox_options.set_preference('network.proxy.socks', proxy_host)
 			firefox_options.set_preference('network.proxy.socks_port', proxy_port)
-		self._webdriver = webdriver.Firefox(options=firefox_options, service=Service(GeckoDriverManager().install()))
+		#self._webdriver = webdriver.Firefox(options=firefox_options, service=Service(GeckoDriverManager().install()))
+		self._webdriver = webdriver.Firefox(options=firefox_options)
 		self._webdriver.set_window_size(1920, 1080)
 
 		self._webdriver.get("https://www.deepl.com/en/translator")

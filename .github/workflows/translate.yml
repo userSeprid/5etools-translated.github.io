@@ -48,7 +48,7 @@ jobs:
         architecture: 'x64'
     - name: Set up dependencies
       run: |
-           sudo apt-get install -y firefox
+           #sudo apt-get install -y firefox
            pip3 install selenium webdriver_manager
     - name: Generate translations
       continue-on-error: true
