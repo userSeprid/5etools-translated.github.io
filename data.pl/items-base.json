@@ -610,12 +610,12 @@
 			"dmgType": "P",
 			"weapon": true,
 			"entries": [
-				"A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+				"Hoopak to solidny kij z procą na jednym końcu i ostrym zakończeniem na drugim.",
 				{
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+						"Kiedy wykonujesz atak wręcz tą bronią, ignorujesz jej właściwość amunicja. Możesz użyć hoopaka jako bojowej broni dystansowej. Jeśli to zrobisz, wykorzystuje ona właściwość amunicji, używa pocisków z procy i zadaje {@damage 1d4} obrażeń od okaleczenia przy trafieniu."
 					]
 				}
 			],
@@ -1601,7 +1601,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "AF",
@@ -1617,7 +1617,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "BF",
@@ -1737,7 +1737,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "2H",
@@ -1932,6 +1932,7 @@
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
+			"source": "XGE",
 			"entries": [
 				"Biegłość w posługiwaniu się instrumentem muzycznym oznacza, że znasz techniki gry na tym instrumencie. Znasz także niektóre utwory powszechnie wykonywane na tym instrumencie.",
 				{
@@ -1981,6 +1982,7 @@
 		},
 		{
 			"appliesTo": "GS",
+			"source": "XGE",
 			"entries": [
 				"Biegłość w posługiwaniu się zestawem do gier dotyczy jednego typu gry, np. Three-Dragon Ante lub gier losowych z użyciem kości.",
 				{

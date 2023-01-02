@@ -75,7 +75,7 @@
 								"Zadaniem tego znacznika jest otwarcie podanej strony, wstępnie przefiltrowanej przy użyciu określonych opcji filtrowania. Jest jedno poważne zastrzeżenie, które sprawia, że jest on trudny w użyciu dla aspirujących entuzjastów JSONtranauts - wartości filtrów używają wersji {@i internal} takiej, jaką można znaleźć w danych. Tak więc na przykład ..|school=D|... będzie filtrować zaklęcia do zaklęć ze szkoły Wróżbiarstwa, ponieważ 'D' jest identyfikatorem Wróżbiarstwa w danych. Próba użycia np. ..|school=Divination|... nie zadziała.",
 								"W tym miejscu \"filter_name_X\" odpowiada dosłownej nazwie tekstowej filtra, wyświetlanej w oknie rozwijanym.",
 								"Kilka przykładów zastosowania tego znacznika w praktyce:",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Znaczniki \"ataku\" w bestiariuszu: {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (tylko homebrew) {@atk a}, {@atk aw}. Przecinki oddzielają typy ataków or'd; ogólna forma to: '@atk &lt;m|r|a&gt;[&lt;w|s&gt;][,&lt;m|r|a&gt;[&lt;w|s&gt;][,...]]'."
 									]
 								},
-								"Znaczniki ładowania homebrew: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Przyjmuje się, że adres URL po potoku pochodzi z głównego katalogu repozytorium homebrew, chyba że zaczyna się od prefiksu \"...://\" (tzn. powinien działać każdy link, ale istnieje skrót dla linków do repozytorium homebrew)."
+								"Znaczniki ładowania homebrew: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Przyjmuje się, że adres URL po potoku pochodzi z głównego katalogu repozytorium homebrew, chyba że zaczyna się od prefiksu \"...://\" (tzn. powinien działać każdy link, ale istnieje skrót dla linków do repozytorium homebrew).",
+								"Znaczniki ładowania przedpremierowego; jak wyżej: {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]
