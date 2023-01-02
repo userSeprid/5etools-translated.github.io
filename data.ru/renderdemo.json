@@ -75,7 +75,7 @@
 								"Цель этого тега - открыть заданную страницу, предварительно отфильтрованную с помощью указанных параметров фильтрации. Есть одна существенная оговорка, которая делает его сложным в использовании для начинающих JSONtranauts - значения фильтра используют версию {@i internal}, как вы найдете в данных. Так, например, ..|school=D|... будет отфильтровывать заклинания для заклинаний школы Divination, поскольку 'D' - это идентификатор Divination в данных. Попытка сделать, например, ..|school=Divination|... не сработает.",
 								"Здесь 'имя_фильтра_X' соответствует буквальному текстовому имени фильтра, отображаемому в выпадающем списке.",
 								"Некоторые примеры тега в действии:",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Теги бестиария 'атака': {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (только домашние) {@atk a}, {@atk aw}. Запятые разделяют типы атак; общий вид: '@atk &lt;m|r|a&gt;[&lt;w|s&gt;][,&lt;m|r|a&gt;[&lt;w|s&gt;][,...]]'."
 									]
 								},
-								"Домашние загрузочные теги: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Предполагается, что URL после трубы является корнем репозитория homebrew, если только он не начинается с префикса \"...://\" (т.е. любая ссылка должна работать, но существует сокращение для ссылок на репозиторий homebrew)."
+								"Домашние загрузочные теги: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Предполагается, что URL после трубы является корнем репозитория homebrew, если только он не начинается с префикса \"...://\" (т.е. любая ссылка должна работать, но существует сокращение для ссылок на репозиторий homebrew).",
+								"Теги предварительной загрузки; как указано выше: {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]

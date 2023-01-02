@@ -610,12 +610,12 @@
 			"dmgType": "P",
 			"weapon": true,
 			"entries": [
-				"A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+				"Хупак - это прочная палка с пращей на одном конце и заостренным наконечником на другом.",
 				{
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+						"Когда вы делаете атаку ближнего боя этим оружием, вы игнорируете его свойство боеприпасов. Вы можете использовать хупак как боевое оружие дальнего боя. В этом случае он использует свойство боеприпасов, использует пули из пращи и наносит {@damage 1d4} урона при попадании."
 					]
 				}
 			],
@@ -1601,7 +1601,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "AF",
@@ -1617,7 +1617,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "BF",
@@ -1737,7 +1737,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "2H",
@@ -1932,6 +1932,7 @@
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
+			"source": "XGE",
 			"entries": [
 				"Владение музыкальным инструментом означает, что вы знакомы с техникой игры на нем. Вы также знаете некоторые песни, которые обычно исполняются на этом инструменте.",
 				{
@@ -1981,6 +1982,7 @@
 		},
 		{
 			"appliesTo": "GS",
+			"source": "XGE",
 			"entries": [
 				"Владение игровым набором относится к одному типу игры, например, \"Трехдраконное анте\" или азартные игры с использованием игральных костей.",
 				{
