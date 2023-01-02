@@ -58,7 +58,7 @@ jobs:
            ./translation/translate.py --language ${{ matrix.language }} --translate data/*.json data/*/*.json
            mv data data.src
            ln -s data.${{ matrix.language }} data
-           npm run gen-all
+           npm run gen
            rm -f data
            mv data.src data
     - name: Save results
@@ -107,11 +107,20 @@ jobs:
        - name: cleanup
          run: |
               # Clean unnecessary files for pages deploy
-              rm -Rf translation
+              rm -rf translation
+              rm -rf node_modules
 
-       # See: https://github.com/JamesIves/github-pages-deploy-action
-       - name: Deploy
-         uses: JamesIves/github-pages-deploy-action@releases/v4
-         with:
-           branch: gh-pages-translated
-           folder: .
+       -  name: Setup Pages
+          uses: actions/configure-pages@master
+
+       -  name: Upload artifact
+          uses: actions/upload-pages-artifact@master
+          with:
+             path: '.'
+
+       -  name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@master
+          with:
+             # Timeout in millis (1 hour)
+             timeout: 3600000
