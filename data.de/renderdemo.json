@@ -75,7 +75,7 @@
 								"Der Zweck dieses Tags ist es, die angegebene Seite zu öffnen, die mit den angegebenen Filteroptionen vorgefiltert ist. Es gibt eine wichtige Einschränkung, die die Verwendung für angehende JSONtranauten schwierig macht - die Filterwerte verwenden die {@i internal}-Version, wie sie in den Daten zu finden ist. So würde z.B. ..|school=D|... die Zaubersprüche nach den Zaubersprüchen der Wahrsagerschule filtern, da 'D' die Kennung für Wahrsager in den Daten ist. Der Versuch, z.B. ..|school=Divination|.. zu verwenden, wird nicht funktionieren.",
 								"Der \"Filtername_X\" entspricht hier dem wörtlichen Namen des Filters, wie er in der Dropdown-Liste angezeigt wird.",
 								"Einige Beispiele für den Tag in Aktion:",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Bestiarium 'Angriff' Tags: {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (nur Eigenbau) {@atk a}, {@atk aw}. Kommas trennen or'd-Angriffstypen; die allgemeine Form ist: '@atk &lt;m|r|a&gt;[&lt;w|s&gt;][,&lt;m|r|a&gt;[&lt;w|s&gt;][,...]]'"
 									]
 								},
-								"Homebrew Lade-Tags: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Bei der URL nach der Pipe wird davon ausgegangen, dass sie von der Wurzel des Homebrew-Repository stammt, es sei denn, sie beginnt mit einem \"...://\"-Präfix (d.h. jeder Link sollte funktionieren, aber es gibt eine Abkürzung für Homebrew-Repository-Links)."
+								"Homebrew Lade-Tags: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Bei der URL nach der Pipe wird davon ausgegangen, dass sie von der Wurzel des Homebrew-Repository stammt, es sei denn, sie beginnt mit einem \"...://\"-Präfix (d.h. jeder Link sollte funktionieren, aber es gibt eine Abkürzung für Homebrew-Repository-Links).",
+								"Vorab-Ladekennzeichen; wie oben: {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]
