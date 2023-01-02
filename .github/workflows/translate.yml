@@ -56,6 +56,7 @@ jobs:
            cd $GITHUB_WORKSPACE
            ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --deepl $SOURCE_FILES
            ./translation/translate.py --language ${{ matrix.language }} --translate data/*.json data/*/*.json
+           tail -n 1000 geckodriver.log
            mv data data.src
            ln -s data.${{ matrix.language }} data
            npm run gen
