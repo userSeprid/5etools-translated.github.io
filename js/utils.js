@@ -1,28 +1,23 @@
-// ************************************************************************* //
-// Strict mode should not be used, as the roll20 script depends on this file //
-// Do not use classes                                                        //
-// ************************************************************************* //
-IS_NODE = typeof module !== "undefined";
-if (IS_NODE) require("./parser.js");
+"use strict";
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
-IS_DEPLOYED = undefined;
-VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.172.2"/* 5ETOOLS_VERSION__CLOSE */;
-DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
+globalThis.IS_DEPLOYED = undefined;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.174.1"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 // for the roll20 script to set
-IS_VTT = false;
+globalThis.IS_VTT = false;
 
-IMGUR_CLIENT_ID = `abdea4de492d3b0`;
+globalThis.IMGUR_CLIENT_ID = `abdea4de492d3b0`;
 
 // TODO refactor into VeCt
-HASH_PART_SEP = ",";
-HASH_LIST_SEP = "_";
-HASH_SUB_LIST_SEP = "~";
-HASH_SUB_KV_SEP = ":";
-HASH_BLANK = "blankhash";
-HASH_SUB_NONE = "null";
+globalThis.HASH_PART_SEP = ",";
+globalThis.HASH_LIST_SEP = "_";
+globalThis.HASH_SUB_LIST_SEP = "~";
+globalThis.HASH_SUB_KV_SEP = ":";
+globalThis.HASH_BLANK = "blankhash";
+globalThis.HASH_SUB_NONE = "null";
 
-VeCt = {
+globalThis.VeCt = {
 	STR_NONE: "None",
 	STR_SEE_CONSOLE: "See the console (CTRL+SHIFT+J) for details.",
 
@@ -32,7 +27,8 @@ VeCt = {
 
 	FILTER_BOX_SUB_HASH_SEARCH_PREFIX: "fbsr",
 
-	JSON_HOMEBREW_INDEX: `homebrew/index.json`,
+	JSON_PRERELEASE_INDEX: `prerelease/index.json`,
+	JSON_BREW_INDEX: `homebrew/index.json`,
 
 	STORAGE_HOMEBREW: "HOMEBREW_STORAGE",
 	STORAGE_HOMEBREW_META: "HOMEBREW_META_STORAGE",
@@ -59,6 +55,8 @@ VeCt = {
 
 	URL_BREW: `https://github.com/TheGiddyLimit/homebrew`,
 	URL_ROOT_BREW: `https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/`, // N.b. must end with a slash
+	URL_PRERELEASE: `https://github.com/TheGiddyLimit/unearthed-arcana`,
+	URL_ROOT_PRERELEASE: `https://raw.githubusercontent.com/TheGiddyLimit/unearthed-arcana/master/`, // As above
 
 	STR_NO_ATTUNEMENT: "No Attunement Required",
 
@@ -279,7 +277,7 @@ Array.prototype.joinConjunct || Object.defineProperty(Array.prototype, "joinConj
 	},
 });
 
-StrUtil = {
+globalThis.StrUtil = {
 	COMMAS_NOT_IN_PARENTHESES_REGEX: /,\s?(?![^(]*\))/g,
 	COMMA_SPACE_NOT_IN_PARENTHESES_REGEX: /, (?![^(]*\))/g,
 
@@ -315,7 +313,7 @@ StrUtil = {
 	qq (str) { return (str = str || "").qq(); },
 };
 
-CleanUtil = {
+globalThis.CleanUtil = {
 	getCleanJson (data, {isMinify = false, isFast = true} = {}) {
 		data = MiscUtil.copy(data);
 		data = MiscUtil.getWalker().walk(data, {string: (str) => CleanUtil.getCleanString(str, {isFast})});
@@ -366,7 +364,6 @@ CleanUtil.SHARED_REPLACEMENTS = {
 	"‘": "'",
 	"": "'",
 	"…": "...",
-	" ": " ", // non-breaking space
 	"\u200B": ``, // zero-width space
 	"ﬀ": "ff",
 	"ﬃ": "ffi",
@@ -389,6 +386,7 @@ CleanUtil.STR_REPLACEMENTS = {
 	"—": "\\u2014",
 	"–": "\\u2013",
 	"−": "\\u2212",
+	" ": "\\u00A0",
 };
 CleanUtil.SHARED_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.SHARED_REPLACEMENTS).join("|"), "g");
 CleanUtil.STR_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.STR_REPLACEMENTS).join("|"), "g");
@@ -397,12 +395,13 @@ CleanUtil._ELLIPSIS_COLLAPSE_REGEX = /\s*(\.\s*\.\s*\.)/g;
 CleanUtil._DASH_COLLAPSE_REGEX = /[ ]*([\u2014\u2013])[ ]*/g;
 
 // SOURCES =============================================================================================================
-SourceUtil = {
+globalThis.SourceUtil = {
 	ADV_BOOK_GROUPS: [
 		{group: "core", displayName: "Core"},
 		{group: "supplement", displayName: "Supplements"},
 		{group: "setting", displayName: "Settings"},
 		{group: "supplement-alt", displayName: "Extras"},
+		{group: "prerelease", displayName: "Prerelease"},
 		{group: "homebrew", displayName: "Homebrew"},
 		{group: "screen", displayName: "Screens"},
 		{group: "other", displayName: "Miscellaneous"},
@@ -432,17 +431,30 @@ SourceUtil = {
 	},
 
 	isNonstandardSource (source) {
-		return source != null
-			&& (typeof BrewUtil2 === "undefined" || !BrewUtil2.hasSourceJson(source))
-			&& SourceUtil.isNonstandardSourceWotc(source);
+		if (source == null) return false;
+		return (
+			(typeof BrewUtil2 === "undefined" || !BrewUtil2.hasSourceJson(source))
+				&& SourceUtil.isNonstandardSourceWotc(source)
+		)
+			|| SourceUtil.isPrereleaseSource(source);
+	},
+
+	// TODO(Future) remove this in favor of simply checking existence in `PrereleaseUtil`
+	// TODO(Future) cleanup uses of `PrereleaseUtil.hasSourceJson` to match
+	isPrereleaseSource (source) {
+		if (source == null) return false;
+		if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return true;
+		return source.startsWith(Parser.SRC_UA_PREFIX)
+			|| source.startsWith(Parser.SRC_UA_ONE_PREFIX);
 	},
 
 	isNonstandardSourceWotc (source) {
-		return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source.startsWith(SRC_AL_PREFIX) || source.startsWith(SRC_MCVX_PREFIX) || Parser.SOURCES_NON_STANDARD_WOTC.has(source);
+		return source.startsWith(Parser.SRC_UA_PREFIX) || source.startsWith(Parser.SRC_UA_ONE_PREFIX) || source.startsWith(Parser.SRC_PS_PREFIX) || source.startsWith(Parser.SRC_AL_PREFIX) || source.startsWith(Parser.SRC_MCVX_PREFIX) || Parser.SOURCES_NON_STANDARD_WOTC.has(source);
 	},
 
 	getFilterGroup (source) {
 		if (source instanceof FilterItem) source = source.item;
+		if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return 1;
 		if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return 2;
 		return Number(SourceUtil.isNonstandardSource(source));
 	},
@@ -471,7 +483,7 @@ SourceUtil = {
 };
 
 // CURRENCY ============================================================================================================
-CurrencyUtil = {
+globalThis.CurrencyUtil = {
 	/**
 	 * Convert 10 gold -> 1 platinum, etc.
 	 * @param obj Object of the form {cp: 123, sp: 456, ...} (values optional)
@@ -583,7 +595,7 @@ Math.seed = Math.seed || function (s) {
 	};
 };
 
-JqueryUtil = {
+globalThis.JqueryUtil = {
 	_isEnhancementsInit: false,
 	initEnhancements () {
 		if (JqueryUtil._isEnhancementsInit) return;
@@ -841,7 +853,7 @@ JqueryUtil = {
 
 	_doToastCleanup (eleToast) {
 		eleToast.removeClass("toast--animate");
-		setTimeout(() => document.body.removeChild(eleToast), 85);
+		setTimeout(() => eleToast.parentElement && document.body.removeChild(eleToast), 85);
 		JqueryUtil._ACTIVE_TOAST.splice(JqueryUtil._ACTIVE_TOAST.indexOf(eleToast), 1);
 	},
 
@@ -854,7 +866,7 @@ JqueryUtil = {
 
 if (typeof window !== "undefined") window.addEventListener("load", JqueryUtil.initEnhancements);
 
-ElementUtil = {
+globalThis.ElementUtil = {
 	getOrModify ({
 		tag,
 		clazz,
@@ -1071,7 +1083,7 @@ ElementUtil = {
 
 if (typeof window !== "undefined") window.e_ = ElementUtil.getOrModify;
 
-ObjUtil = {
+globalThis.ObjUtil = {
 	async pForEachDeep (source, pCallback, options = {depth: Infinity, callEachLevel: false}) {
 		const path = [];
 		const pDiveDeep = async function (val, path, depth = 0) {
@@ -1091,7 +1103,7 @@ ObjUtil = {
 };
 
 // TODO refactor other misc utils into this
-MiscUtil = {
+globalThis.MiscUtil = {
 	COLOR_HEALTHY: "#00bb20",
 	COLOR_HURT: "#c5ca00",
 	COLOR_BLOODIED: "#f7a100",
@@ -1844,7 +1856,7 @@ MiscUtil = {
 };
 
 // EVENT HANDLERS ======================================================================================================
-EventUtil = {
+globalThis.EventUtil = {
 	_mouseX: 0,
 	_mouseY: 0,
 	_isUsingTouch: false,
@@ -1894,7 +1906,7 @@ EventUtil = {
 if (typeof window !== "undefined") window.addEventListener("load", EventUtil.init);
 
 // CONTEXT MENUS =======================================================================================================
-ContextUtil = {
+globalThis.ContextUtil = {
 	_isInit: false,
 	_menus: [],
 
@@ -2119,7 +2131,7 @@ ContextUtil = {
 };
 
 // LIST AND SEARCH =====================================================================================================
-SearchUtil = {
+globalThis.SearchUtil = {
 	removeStemmer (elasticSearch) {
 		const stemmer = elasticlunr.Pipeline.getRegisteredFunction("stemmer");
 		elasticSearch.pipeline.remove(stemmer);
@@ -2127,7 +2139,7 @@ SearchUtil = {
 };
 
 // ENCODING/DECODING ===================================================================================================
-UrlUtil = {
+globalThis.UrlUtil = {
 	encodeForHash (toEncode) {
 		if (toEncode instanceof Array) return toEncode.map(it => `${it}`.toUrlified()).join(HASH_LIST_SEP);
 		else return `${toEncode}`.toUrlified();
@@ -2369,6 +2381,7 @@ UrlUtil.PG_OBJECTS = "objects.html";
 UrlUtil.PG_TRAPS_HAZARDS = "trapshazards.html";
 UrlUtil.PG_QUICKREF = "quickreference.html";
 UrlUtil.PG_MANAGE_BREW = "managebrew.html";
+UrlUtil.PG_MANAGE_PRERELEASE = "manageprerelease.html";
 UrlUtil.PG_MAKE_BREW = "makebrew.html";
 UrlUtil.PG_DEMO_RENDER = "renderdemo.html";
 UrlUtil.PG_TABLES = "tables.html";
@@ -2476,6 +2489,7 @@ UrlUtil.URL_TO_HASH_BUILDER["legendaryGroup"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["itemEntry"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["itemProperty"] = (it) => UrlUtil.encodeArrayForHash(it.abbreviation, it.source);
 UrlUtil.URL_TO_HASH_BUILDER["itemType"] = (it) => UrlUtil.encodeArrayForHash(it.abbreviation, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["itemTypeAdditionalEntries"] = (it) => UrlUtil.encodeArrayForHash(it.appliesTo, it.source);
 UrlUtil.URL_TO_HASH_BUILDER["skill"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["sense"] = UrlUtil.URL_TO_HASH_GENERIC;
 
@@ -2516,6 +2530,7 @@ UrlUtil.PG_TO_NAME[UrlUtil.PG_OBJECTS] = "Objects";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_TRAPS_HAZARDS] = "Traps & Hazards";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_QUICKREF] = "Quick Reference";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MANAGE_BREW] = "Homebrew Manager";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_MANAGE_PRERELEASE] = "Prerelease Content Manager";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MAKE_BREW] = "Homebrew Builder";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_DEMO_RENDER] = "Renderer Demo";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_TABLES] = "Tables";
@@ -2638,7 +2653,7 @@ if (!IS_DEPLOYED && !IS_VTT && typeof window !== "undefined") {
 }
 
 // SORTING =============================================================================================================
-SortUtil = {
+globalThis.SortUtil = {
 	ascSort: (a, b) => {
 		if (typeof FilterItem !== "undefined") {
 			if (a instanceof FilterItem) a = a.item;
@@ -2967,7 +2982,47 @@ class _DataUtilPropConfigCustom extends _DataUtilPropConfig {
 	static async loadUnmergedJSON () { throw new Error("Unimplemented!"); }
 }
 
-DataUtil = {
+class _DataUtilBrewHelper {
+	constructor ({defaultUrlRoot}) {
+		this._defaultUrlRoot = defaultUrlRoot;
+	}
+
+	_getCleanUrlRoot (urlRoot) {
+		if (urlRoot && urlRoot.trim()) {
+			urlRoot = urlRoot.trim();
+			if (!urlRoot.endsWith("/")) urlRoot = `${urlRoot}/`;
+			return urlRoot;
+		}
+		return this._defaultUrlRoot;
+	}
+
+	async pLoadTimestamps (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-timestamps.json`);
+	}
+
+	async pLoadPropIndex (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-props.json`);
+	}
+
+	async pLoadMetaIndex (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-meta.json`);
+	}
+
+	async pLoadSourceIndex (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-sources.json`);
+	}
+
+	getFileUrl (path, urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return `${urlRoot}${path}`;
+	}
+}
+
+globalThis.DataUtil = {
 	_loading: {},
 	_loaded: {},
 	_merging: {},
@@ -3046,8 +3101,9 @@ DataUtil = {
 		if (data && typeof data === "object") {
 			for (const k in data) {
 				if (data[k] instanceof Array) {
-					for (let i = 0, len = data[k].length; i < len; ++i) {
-						data[k][i].__prop = k;
+					for (const it of data[k]) {
+						if (typeof it !== "object") continue;
+						it.__prop = k;
 					}
 				}
 			}
@@ -3118,7 +3174,7 @@ DataUtil = {
 
 					const dependencyData = await Promise.all(sourceIds.map(sourceId => DataUtil.pLoadByMeta(dataProp, sourceId)));
 
-					const flatDependencyData = dependencyData.map(dd => dd[dataProp]).flat();
+					const flatDependencyData = dependencyData.map(dd => dd[dataProp]).flat().filter(Boolean);
 					await Promise.all(data[dataProp].map(entry => DataUtil._pDoMetaMerge_handleCopyProp(dataProp, flatDependencyData, entry, {...options, isErrorOnMissing: !isHasInternalCopies})));
 				}));
 				delete data._meta.dependencies;
@@ -3144,7 +3200,7 @@ DataUtil = {
 
 					const includesData = await Promise.all(sourceIds.map(sourceId => DataUtil.pLoadByMeta(dataProp, sourceId)));
 
-					const flatIncludesData = includesData.map(dd => dd[dataProp]).flat();
+					const flatIncludesData = includesData.map(dd => dd[dataProp]).flat().filter(Boolean);
 					return {dataProp, flatIncludesData};
 				}));
 				delete data._meta.includes;
@@ -3346,7 +3402,7 @@ DataUtil = {
 				const data = await DataUtil[prop].pLoadSingleSource(source);
 				if (data) return data;
 
-				return DataUtil.pLoadBrewBySource(source);
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 			}
 			// endregion
 
@@ -3359,7 +3415,7 @@ DataUtil = {
 				const index = await DataUtil.loadJSON(`${baseUrlPart}/${DataUtil._MULTI_SOURCE_PROP_TO_INDEX_NAME[prop]}`);
 				if (index[source]) return DataUtil.loadJSON(`${baseUrlPart}/${index[source]}`);
 
-				return DataUtil.pLoadBrewBySource(source);
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 			}
 			// endregion
 
@@ -3368,12 +3424,12 @@ DataUtil = {
 			case "itemGroup": {
 				const data = await DataUtil.item.loadRawJSON();
 				if (data[prop] && data[prop].some(it => it.source === source)) return data;
-				return DataUtil.pLoadBrewBySource(source);
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 			}
 			case "race": {
 				const data = await DataUtil.race.loadJSON({isAddBaseRaces: true});
 				if (data[prop] && data[prop].some(it => it.source === source)) return data;
-				return DataUtil.pLoadBrewBySource(source);
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 			}
 			// endregion
 
@@ -3384,7 +3440,7 @@ DataUtil = {
 					const data = await (impl.loadJSON ? impl.loadJSON() : DataUtil.loadJSON(impl.getDataUrl()));
 					if (data[prop] && data[prop].some(it => it.source === source)) return data;
 
-					return DataUtil.pLoadBrewBySource(source);
+					return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 				}
 
 				throw new Error(`Could not get loadable URL for \`${JSON.stringify({key: prop, value: source})}\``);
@@ -3393,32 +3449,28 @@ DataUtil = {
 		}
 	},
 
-	// TODO(Future) Note that a case-insensitive variant of this is built into the renderer, which could be factored out
-	//   to this level if required.
-	async pLoadBrewBySource (source, {isSilent = true} = {}) {
-		const brewUrl = await DataUtil._pLoadAddBrewBySource_pGetUrl({source, isSilent});
-		if (!brewUrl) return null;
-		return DataUtil.loadJSON(brewUrl);
+	async _pLoadByMeta_pGetPrereleaseBrewUrl (source) {
+		const fromPrerelease = await DataUtil.pLoadPrereleaseBySource(source);
+		if (fromPrerelease) return fromPrerelease;
+
+		const fromBrew = await DataUtil.pLoadBrewBySource(source);
+		if (fromBrew) return fromBrew;
+
+		throw new Error(`Could not find prerelease/brew URL for source "${source}"`);
 	},
 
-	async pAddBrewBySource (source, {isSilent = true} = {}) {
-		const brewUrl = await DataUtil._pLoadAddBrewBySource_pGetUrl({source, isSilent});
-		if (!brewUrl) return null;
-		return BrewUtil2.pAddBrewFromUrl(brewUrl);
+	async pLoadPrereleaseBySource (source) {
+		if (typeof PrereleaseUtil === "undefined") return null;
+		const url = await PrereleaseUtil.pGetSourceUrl(source);
+		if (!url) return null;
+		return DataUtil.loadJSON(url);
 	},
 
-	async _pLoadAddBrewBySource_pGetUrl ({source, isSilent = true}) {
-		const brewIndex = await DataUtil.brew.pLoadSourceIndex(typeof BrewUtil2 !== "undefined" ? await BrewUtil2.pGetCustomUrl() : null);
-
-		const out = await DataUtil.pGetBrewUrl({index: brewIndex, source});
-		if (!out && !isSilent) throw new Error(`Neither base nor brew index contained source "${source}"`);
-		return out;
-	},
-
-	async pGetBrewUrl ({index, source}) {
-		if (!index[source]) return null;
-		const urlRoot = await StorageUtil.pGet(`HOMEBREW_CUSTOM_REPO_URL`);
-		return DataUtil.brew.getFileUrl(index[source], urlRoot);
+	async pLoadBrewBySource (source) {
+		if (typeof BrewUtil2 === "undefined") return null;
+		const url = await BrewUtil2.pGetSourceUrl(source);
+		if (!url) return null;
+		return DataUtil.loadJSON(url);
 	},
 
 	// region Dbg
@@ -4573,8 +4625,12 @@ DataUtil = {
 			return {item: await Renderer.item.pBuildList()};
 		}
 
+		static async loadPrerelease () {
+			return {item: await Renderer.item.pGetItemsFromPrerelease()};
+		}
+
 		static async loadBrew () {
-			return {item: await Renderer.item.pGetItemsFromHomebrew()};
+			return {item: await Renderer.item.pGetItemsFromBrew()};
 		}
 	},
 
@@ -4670,14 +4726,23 @@ DataUtil = {
 			return {race: raceData};
 		}
 
-		static async loadBrew ({isAddBaseRaces = true} = {}) {
-			if (typeof BrewUtil2 === "undefined") return {};
-			const rawSite = await DataUtil.race.loadRawJSON();
-			const brew = await BrewUtil2.pGetBrewProcessed();
-			return DataUtil.race.getPostProcessedBrewJson(rawSite, brew, {isAddBaseRaces});
+		static async loadPrerelease ({isAddBaseRaces = true} = {}) {
+			return DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null});
 		}
 
-		static getPostProcessedBrewJson (rawSite, brew, {isAddBaseRaces = false} = {}) {
+		static async loadBrew ({isAddBaseRaces = true} = {}) {
+			return DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null});
+		}
+
+		static async _loadPrereleaseBrew ({isAddBaseRaces = true, brewUtil} = {}) {
+			if (!brewUtil) return {};
+
+			const rawSite = await DataUtil.race.loadRawJSON();
+			const brew = await brewUtil.pGetBrewProcessed();
+			return DataUtil.race.getPostProcessedPrereleaseBrewJson(rawSite, brew, {isAddBaseRaces});
+		}
+
+		static getPostProcessedPrereleaseBrewJson (rawSite, brew, {isAddBaseRaces = false} = {}) {
 			rawSite = MiscUtil.copyFast(rawSite);
 			brew = MiscUtil.copyFast(brew);
 
@@ -4781,8 +4846,18 @@ DataUtil = {
 			data.recipe.forEach(r => Renderer.recipe.populateFullIngredients(r));
 		}
 
+		static async loadPrerelease () {
+			return this._loadPrereleaseBrew({brewUtil: typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null});
+		}
+
 		static async loadBrew () {
-			const brew = typeof BrewUtil2 !== "undefined" ? await BrewUtil2.pGetBrewProcessed() : {};
+			return this._loadPrereleaseBrew({brewUtil: typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null});
+		}
+
+		static async _loadPrereleaseBrew ({brewUtil}) {
+			if (!brewUtil) return {};
+
+			const brew = await brewUtil.pGetBrewProcessed();
 			DataUtil.recipe.postProcessData(brew);
 			return brew;
 		}
@@ -4836,6 +4911,13 @@ DataUtil = {
 			})();
 		}
 
+		static async loadPrerelease () {
+			return {
+				class: await DataLoader.pCacheAndGetAllPrerelease("class"),
+				subclass: await DataLoader.pCacheAndGetAllPrerelease("subclass"),
+			};
+		}
+
 		static async loadBrew () {
 			return {
 				class: await DataLoader.pCacheAndGetAllBrew("class"),
@@ -4863,7 +4945,7 @@ DataUtil = {
 			opts = opts || {};
 			if (opts.isLower) uid = uid.toLowerCase();
 			let [name, className, classSource, level, source, displayText] = uid.split("|").map(it => it.trim());
-			classSource = classSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			classSource = classSource || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
 			source = source || classSource;
 			level = Number(level);
 			return {
@@ -4886,7 +4968,7 @@ DataUtil = {
 			return [
 				f.name,
 				f.className,
-				f.classSource === SRC_PHB ? "" : f.classSource, // assume the class has PHB source
+				f.classSource === Parser.SRC_PHB ? "" : f.classSource, // assume the class has PHB source
 				f.level,
 				f.source === f.classSource ? "" : f.source, // assume the class feature has the class source
 			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
@@ -4901,8 +4983,8 @@ DataUtil = {
 			opts = opts || {};
 			if (opts.isLower) uid = uid.toLowerCase();
 			let [name, className, classSource, subclassShortName, subclassSource, level, source, displayText] = uid.split("|").map(it => it.trim());
-			classSource = classSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
-			subclassSource = subclassSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			classSource = classSource || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
+			subclassSource = subclassSource || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
 			source = source || subclassSource;
 			level = Number(level);
 			return {
@@ -4927,9 +5009,9 @@ DataUtil = {
 			return [
 				f.name,
 				f.className,
-				f.classSource === SRC_PHB ? "" : f.classSource, // assume the class has the PHB source
+				f.classSource === Parser.SRC_PHB ? "" : f.classSource, // assume the class has the PHB source
 				f.subclassShortName,
-				f.subclassSource === SRC_PHB ? "" : f.subclassSource, // assume the subclass has the PHB source
+				f.subclassSource === Parser.SRC_PHB ? "" : f.subclassSource, // assume the subclass has the PHB source
 				f.level,
 				f.source === f.subclassSource ? "" : f.source, // assume the feature has the same source as the subclass
 			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
@@ -4960,12 +5042,12 @@ DataUtil = {
 
 		static doPostLoad (data) {
 			const PRINT_ORDER = [
-				SRC_PHB,
-				SRC_DMG,
-				SRC_SCAG,
-				SRC_VGM,
-				SRC_MTF,
-				SRC_ERLW,
+				Parser.SRC_PHB,
+				Parser.SRC_DMG,
+				Parser.SRC_SCAG,
+				Parser.SRC_VGM,
+				Parser.SRC_MTF,
+				Parser.SRC_ERLW,
 			];
 
 			const inSource = {};
@@ -5093,7 +5175,7 @@ DataUtil = {
 			opts = opts || {};
 			if (opts.isLower) uid = uid.toLowerCase();
 			let [name, source, ixChapter, ixHeader, displayText] = uid.split("|").map(it => it.trim());
-			source = source || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			source = source || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
 			ixChapter = Number(ixChapter || 0);
 			return {
 				name,
@@ -5105,55 +5187,12 @@ DataUtil = {
 		},
 	},
 
-	brew: {
-		_getCleanUrlRoot (urlRoot) {
-			if (urlRoot && urlRoot.trim()) {
-				urlRoot = urlRoot.trim();
-				if (!urlRoot.endsWith("/")) urlRoot = `${urlRoot}/`;
-				return urlRoot;
-			}
-			return VeCt.URL_ROOT_BREW;
-		},
-
-		async pLoadTimestamps (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-timestamps.json`);
-		},
-
-		async pLoadPropIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-props.json`);
-		},
-
-		async pLoadNameIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-names.json`);
-		},
-
-		async pLoadAbbreviationIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-abbreviations.json`);
-		},
-
-		async pLoadMetaIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-meta.json`);
-		},
-
-		async pLoadSourceIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-sources.json`);
-		},
-
-		getFileUrl (path, urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return `${urlRoot}${path}`;
-		},
-	},
+	brew: new _DataUtilBrewHelper({defaultUrlRoot: VeCt.URL_ROOT_BREW}),
+	prerelease: new _DataUtilBrewHelper({defaultUrlRoot: VeCt.URL_ROOT_PRERELEASE}),
 };
 
 // ROLLING =============================================================================================================
-RollerUtil = {
+globalThis.RollerUtil = {
 	isCrypto () {
 		return typeof window !== "undefined" && typeof window.crypto !== "undefined";
 	},
@@ -5474,10 +5513,10 @@ function StorageUtilBacked () {
 	};
 }
 
-StorageUtil = new StorageUtilBacked();
+globalThis.StorageUtil = new StorageUtilBacked();
 
 // TODO transition cookie-like storage items over to this
-SessionStorageUtil = {
+globalThis.SessionStorageUtil = {
 	_fakeStorage: {},
 	__storage: null,
 	getStorage: () => {
@@ -5535,7 +5574,7 @@ SessionStorageUtil = {
 };
 
 // ID GENERATION =======================================================================================================
-CryptUtil = {
+globalThis.CryptUtil = {
 	// region md5 internals
 	// stolen from http://www.myersdaily.org/joseph/javascript/md5.js
 	_md5cycle: (x, k) => {
@@ -5730,7 +5769,7 @@ CryptUtil = {
 };
 
 // COLLECTIONS =========================================================================================================
-CollectionUtil = {
+globalThis.CollectionUtil = {
 	ObjectSet: class ObjectSet {
 		constructor () {
 			this.map = new Map();
@@ -6314,7 +6353,7 @@ function BookModeView (opts) {
 BookModeView._BOOK_VIEW_COLUMNS_K = "bookViewColumns";
 
 // CONTENT EXCLUSION ===================================================================================================
-ExcludeUtil = {
+globalThis.ExcludeUtil = {
 	isInitialised: false,
 	_excludes: null,
 	_cache_excludesLookup: null,
@@ -6465,7 +6504,7 @@ ExcludeUtil = {
 };
 
 // EXTENSIONS ==========================================================================================================
-ExtensionUtil = {
+globalThis.ExtensionUtil = {
 	ACTIVE: false,
 
 	_doSend (type, data) {
@@ -6477,7 +6516,8 @@ ExtensionUtil = {
 		const {page, source, hash, extensionData} = ExtensionUtil._getElementData({ele});
 
 		if (page && source && hash) {
-			let toSend = await DataLoader.pCacheAndGet(page, source, hash);
+			let toSend = ExtensionUtil._getEmbeddedFromCache(page, source, hash)
+				|| await DataLoader.pCacheAndGet(page, source, hash);
 
 			if (extensionData) {
 				switch (page) {
@@ -6526,11 +6566,25 @@ ExtensionUtil = {
 	doSendRoll (data) { ExtensionUtil._doSend("roll", data); },
 
 	pDoSend ({type, data}) { ExtensionUtil._doSend(type, data); },
+
+	/* -------------------------------------------- */
+
+	_CACHE_EMBEDDED_STATS: {},
+
+	addEmbeddedToCache (page, source, hash, ent) {
+		MiscUtil.set(ExtensionUtil._CACHE_EMBEDDED_STATS, page.toLowerCase(), source.toLowerCase(), hash.toLowerCase(), MiscUtil.copyFast(ent));
+	},
+
+	_getEmbeddedFromCache (page, source, hash) {
+		return MiscUtil.get(ExtensionUtil._CACHE_EMBEDDED_STATS, page.toLowerCase(), source.toLowerCase(), hash.toLowerCase());
+	},
+
+	/* -------------------------------------------- */
 };
 if (typeof window !== "undefined") window.addEventListener("rivet.active", () => ExtensionUtil.ACTIVE = true);
 
 // TOKENS ==============================================================================================================
-TokenUtil = {
+globalThis.TokenUtil = {
 	handleStatblockScroll (event, ele) {
 		$(`#token_image`)
 			.toggle(ele.scrollTop < 32)
@@ -6547,7 +6601,7 @@ TokenUtil = {
  * @param {boolean} isDbg
  * @constructor
  */
-VeLock = function ({name = null, isDbg = false} = {}) {
+globalThis.VeLock = function ({name = null, isDbg = false} = {}) {
 	this._name = name;
 	this._isDbg = isDbg;
 	this._lockMeta = null;
@@ -6601,7 +6655,7 @@ VeLock = function ({name = null, isDbg = false} = {}) {
 ExcludeUtil._lock = new VeLock();
 
 // DATETIME ============================================================================================================
-DatetimeUtil = {
+globalThis.DatetimeUtil = {
 	getDateStr ({date, isShort = false, isPad = false} = {}) {
 		const month = DatetimeUtil._MONTHS[date.getMonth()];
 		return `${isShort ? month.substring(0, 3) : month} ${isPad && date.getDate() < 10 ? "\u00A0" : ""}${Parser.getOrdinalForm(date.getDate())}, ${date.getFullYear()}`;
@@ -6660,7 +6714,7 @@ DatetimeUtil._SECS_PER_DAY = 86400;
 DatetimeUtil._SECS_PER_HOUR = 3600;
 DatetimeUtil._SECS_PER_MINUTE = 60;
 
-EditorUtil = {
+globalThis.EditorUtil = {
 	getTheme () {
 		const {isNight} = styleSwitcher.getSummary();
 		return isNight ? "ace/theme/tomorrow_night" : "ace/theme/textmate";
@@ -6752,7 +6806,7 @@ if (!IS_VTT && typeof window !== "undefined") {
 	// });
 }
 
-_Donate = {
+globalThis._Donate = {
 	// TAG Disabled until further notice
 	/*
 	init () {

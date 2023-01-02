@@ -672,7 +672,8 @@ class ListUiUtil {
 		opts = opts || {};
 
 		if (opts.isPassThroughEvents) {
-			const subEles = evt.path.slice(0, evt.path.indexOf(evt.currentTarget));
+			const evtPath = evt.composedPath();
+			const subEles = evtPath.slice(0, evtPath.indexOf(evt.currentTarget));
 			if (subEles.some(ele => ListUiUtil._EVT_PASS_THOUGH_TAGS.has(ele?.tagName))) return;
 		}
 
@@ -1379,6 +1380,10 @@ class SearchUiUtil {
 			await Promise.all(options.additionalIndices.map(async add => {
 				additionalData[add] = Omnidexer.decompressIndex(await DataUtil.loadJSON(`${Renderer.get().baseUrl}search/index-${add}.json`));
 				const maxId = additionalData[add].last().id;
+
+				const prereleaseIndex = await PrereleaseUtil.pGetAdditionalSearchIndices(maxId, add);
+				if (prereleaseIndex.length) additionalData[add] = additionalData[add].concat(prereleaseIndex);
+
 				const brewIndex = await BrewUtil2.pGetAdditionalSearchIndices(maxId, add);
 				if (brewIndex.length) additionalData[add] = additionalData[add].concat(brewIndex);
 			}));
@@ -1389,6 +1394,10 @@ class SearchUiUtil {
 			await Promise.all(options.alternateIndices.map(async alt => {
 				alternateData[alt] = Omnidexer.decompressIndex(await DataUtil.loadJSON(`${Renderer.get().baseUrl}search/index-alt-${alt}.json`));
 				const maxId = alternateData[alt].last().id;
+
+				const prereleaseIndex = await BrewUtil2.pGetAlternateSearchIndices(maxId, alt);
+				if (prereleaseIndex.length) alternateData[alt] = alternateData[alt].concat(prereleaseIndex);
+
 				const brewIndex = await BrewUtil2.pGetAlternateSearchIndices(maxId, alt);
 				if (brewIndex.length) alternateData[alt] = alternateData[alt].concat(brewIndex);
 			}));
@@ -1435,16 +1444,21 @@ class SearchUiUtil {
 		Object.values(additionalData).forEach(arr => arr.forEach(d => handleDataItem(d)));
 		Object.values(alternateData).forEach(arr => arr.forEach(d => handleDataItem(d, true)));
 
-		const brewIndex = await BrewUtil2.pGetSearchIndex({id: availContent.ALL.documentStore.length});
+		const pAddPrereleaseBrewIndex = async ({brewUtil}) => {
+			const brewIndex = await brewUtil.pGetSearchIndex({id: availContent.ALL.documentStore.length});
 
-		brewIndex.forEach(d => {
-			if (SearchUiUtil._isNoHoverCat(d.c) || fromDeepIndex(d)) return;
-			d.cf = Parser.pageCategoryToFull(d.c);
-			d.cf = d.c === Parser.CAT_ID_CREATURE ? "Creature" : Parser.pageCategoryToFull(d.c);
-			initIndexForFullCat(d);
-			availContent.ALL.addDoc(d);
-			availContent[d.cf].addDoc(d);
-		});
+			brewIndex.forEach(d => {
+				if (SearchUiUtil._isNoHoverCat(d.c) || fromDeepIndex(d)) return;
+				d.cf = Parser.pageCategoryToFull(d.c);
+				d.cf = d.c === Parser.CAT_ID_CREATURE ? "Creature" : Parser.pageCategoryToFull(d.c);
+				initIndexForFullCat(d);
+				availContent.ALL.addDoc(d);
+				availContent[d.cf].addDoc(d);
+			});
+		};
+
+		await pAddPrereleaseBrewIndex({brewUtil: PrereleaseUtil});
+		await pAddPrereleaseBrewIndex({brewUtil: BrewUtil2});
 
 		return availContent;
 	}
@@ -1796,7 +1810,7 @@ class SearchWidget {
 			fnTransform: doc => {
 				const cpy = MiscUtil.copyFast(doc);
 				Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-				cpy.tag = `{@spell ${doc.n.toSpellCase()}${doc.s !== SRC_PHB ? `|${doc.s}` : ""}}`;
+				cpy.tag = `{@spell ${doc.n.toSpellCase()}${doc.s !== Parser.SRC_PHB ? `|${doc.s}` : ""}}`;
 				return cpy;
 			},
 		};
@@ -1860,7 +1874,7 @@ class SearchWidget {
 				fnTransform: doc => {
 					const cpy = MiscUtil.copyFast(doc);
 					Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-					cpy.tag = `{@feat ${doc.n}${doc.s !== SRC_PHB ? `|${doc.s}` : ""}}`;
+					cpy.tag = `{@feat ${doc.n}${doc.s !== Parser.SRC_PHB ? `|${doc.s}` : ""}}`;
 					return cpy;
 				},
 			},
@@ -1889,7 +1903,7 @@ class SearchWidget {
 				fnTransform: doc => {
 					const cpy = MiscUtil.copyFast(doc);
 					Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-					cpy.tag = `{@background ${doc.n}${doc.s !== SRC_PHB ? `|${doc.s}` : ""}}`;
+					cpy.tag = `{@background ${doc.n}${doc.s !== Parser.SRC_PHB ? `|${doc.s}` : ""}}`;
 					return cpy;
 				},
 			},
@@ -1921,7 +1935,7 @@ class SearchWidget {
 				fnTransform: doc => {
 					const cpy = MiscUtil.copyFast(doc);
 					Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-					cpy.tag = `{@race ${doc.n}${doc.s !== SRC_PHB ? `|${doc.s}` : ""}}`;
+					cpy.tag = `{@race ${doc.n}${doc.s !== Parser.SRC_PHB ? `|${doc.s}` : ""}}`;
 					return cpy;
 				},
 			},
@@ -1950,7 +1964,7 @@ class SearchWidget {
 				fnTransform: doc => {
 					const cpy = MiscUtil.copyFast(doc);
 					Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-					cpy.tag = `{@optfeature ${doc.n}${doc.s !== SRC_PHB ? `|${doc.s}` : ""}}`;
+					cpy.tag = `{@optfeature ${doc.n}${doc.s !== Parser.SRC_PHB ? `|${doc.s}` : ""}}`;
 					return cpy;
 				},
 			},
@@ -2021,7 +2035,7 @@ class SearchWidget {
 			fnTransform: doc => {
 				const cpy = MiscUtil.copyFast(doc);
 				Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-				cpy.tag = `{@creature ${doc.n}${doc.s !== SRC_MM ? `|${doc.s}` : ""}}`;
+				cpy.tag = `{@creature ${doc.n}${doc.s !== Parser.SRC_MM ? `|${doc.s}` : ""}}`;
 				return cpy;
 			},
 		};
@@ -2070,7 +2084,7 @@ class SearchWidget {
 				fnTransform: doc => {
 					const cpy = MiscUtil.copyFast(doc);
 					Object.assign(cpy, SearchWidget.docToPageSourceHash(cpy));
-					cpy.tag = `{@item ${doc.n}${doc.s !== SRC_DMG ? `|${doc.s}` : ""}}`;
+					cpy.tag = `{@item ${doc.n}${doc.s !== Parser.SRC_DMG ? `|${doc.s}` : ""}}`;
 					return cpy;
 				},
 			},
@@ -2166,14 +2180,19 @@ class SearchWidget {
 
 		let id = 0;
 		for (const subSpec of customIndexSubSpecs) {
-			const [json, homebrew] = await Promise.all([
+			const [json, prerelease, brew] = await Promise.all([
 				typeof subSpec.dataSource === "string"
 					? DataUtil.loadJSON(subSpec.dataSource)
 					: subSpec.dataSource(),
+				PrereleaseUtil.pGetBrewProcessed(),
 				BrewUtil2.pGetBrewProcessed(),
 			]);
 
-			await [...json[subSpec.prop], ...(homebrew[subSpec.prop] || [])]
+			await [
+				...json[subSpec.prop],
+				...(prerelease[subSpec.prop] || []),
+				...(brew[subSpec.prop] || []),
+			]
 				.pSerialAwaitMap(async ent => {
 					const doc = {
 						id: id++,
@@ -5537,21 +5556,16 @@ class SettingsUtil {
 	}
 }
 
-// Expose classes for Node/VTTs as appropriate
-const utilsUiExports = {
-	ProxyBase,
-	UiUtil,
-	ListUiUtil,
-	ProfUiUtil,
-	TabUiUtil,
-	SearchUiUtil,
-	SearchWidget,
-	InputUiUtil,
-	DragReorderUiUtil,
-	SourceUiUtil,
-	BaseComponent,
-	ComponentUiUtil,
-	RenderableCollectionBase,
-};
-if (typeof module !== "undefined") module.exports = utilsUiExports;
-else Object.assign(window, utilsUiExports);
+globalThis.ProxyBase = ProxyBase;
+globalThis.UiUtil = UiUtil;
+globalThis.ListUiUtil = ListUiUtil;
+globalThis.ProfUiUtil = ProfUiUtil;
+globalThis.TabUiUtil = TabUiUtil;
+globalThis.SearchUiUtil = SearchUiUtil;
+globalThis.SearchWidget = SearchWidget;
+globalThis.InputUiUtil = InputUiUtil;
+globalThis.DragReorderUiUtil = DragReorderUiUtil;
+globalThis.SourceUiUtil = SourceUiUtil;
+globalThis.BaseComponent = BaseComponent;
+globalThis.ComponentUiUtil = ComponentUiUtil;
+globalThis.RenderableCollectionBase = RenderableCollectionBase;

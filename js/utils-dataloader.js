@@ -13,6 +13,7 @@
 
 class _DataLoaderConst {
 	static SOURCE_SITE_ALL = Symbol("SOURCE_SITE_ALL");
+	static SOURCE_PRERELEASE_ALL_CURRENT = Symbol("SOURCE_PRERELEASE_ALL_CURRENT");
 	static SOURCE_BREW_ALL_CURRENT = Symbol("SOURCE_BREW_ALL_CURRENT");
 
 	static ENTITY_NULL = Symbol("ENTITY_NULL");
@@ -96,13 +97,38 @@ class _DataLoaderDereferencerBase {
 		keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
 	});
 
-	_pPreloadingRefContent = null;
+	/* -------------------------------------------- */
+
+	_pPreloadingRefContentSite = null;
+	_pPreloadingRefContentPrerelease = null;
+	_pPreloadingRefContentBrew = null;
+
+	_preloadingPrereleaseLastIdent = null;
+	_preloadingBrewLastIdent = null;
 
 	async pPreloadRefContent () {
-		return (this._pPreloadingRefContent = this._pPreloadingRefContent || this._pPreloadRefContent());
+		await (this._pPreloadingRefContentSite = this._pPreloadingRefContentSite || this._pPreloadRefContentSite());
+
+		if (typeof PrereleaseUtil !== "undefined") {
+			const identPrerelease = PrereleaseUtil.getCacheIteration();
+			if (identPrerelease !== this._preloadingPrereleaseLastIdent) this._pPreloadingRefContentPrerelease = null;
+			this._preloadingPrereleaseLastIdent = identPrerelease;
+			await (this._pPreloadingRefContentPrerelease = this._pPreloadingRefContentPrerelease || this._pPreloadRefContentPrerelease());
+		}
+
+		if (typeof BrewUtil2 !== "undefined") {
+			const identBrew = BrewUtil2.getCacheIteration();
+			if (identBrew !== this._preloadingBrewLastIdent) this._pPreloadingRefContentBrew = null;
+			this._preloadingBrewLastIdent = identBrew;
+			await (this._pPreloadingRefContentBrew = this._pPreloadingRefContentBrew || this._pPreloadRefContentBrew());
+		}
 	}
 
-	async _pPreloadRefContent () { /* Implement as required */ }
+	async _pPreloadRefContentSite () { /* Implement as required */ }
+	async _pPreloadRefContentPrerelease () { /* Implement as required */ }
+	async _pPreloadRefContentBrew () { /* Implement as required */ }
+
+	/* -------------------------------------------- */
 
 	dereference ({ent, entriesWithoutRefs, toReplaceMeta, ixReplace}) { throw new Error("Unimplemented!"); }
 
@@ -142,10 +168,9 @@ class _DataLoaderDereferencerClassSubclassFeatures extends _DataLoaderDereferenc
 }
 
 class _DataLoaderDereferencerOptionalfeatures extends _DataLoaderDereferencerBase {
-	async _pPreloadRefContent () {
-		await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_OPT_FEATURES);
-		await DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_OPT_FEATURES);
-	}
+	async _pPreloadRefContentSite () { await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_OPT_FEATURES); }
+	async _pPreloadRefContentPrerelease () { await DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_OPT_FEATURES); }
+	async _pPreloadRefContentBrew () { await DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_OPT_FEATURES); }
 
 	dereference ({ent, entriesWithoutRefs, toReplaceMeta, ixReplace}) {
 		const refUnpacked = DataUtil.generic.unpackUid(toReplaceMeta.optionalfeature, "optfeature");
@@ -170,10 +195,9 @@ class _DataLoaderDereferencerOptionalfeatures extends _DataLoaderDereferencerBas
 }
 
 class _DataLoaderDereferencerItemEntries extends _DataLoaderDereferencerBase {
-	async _pPreloadRefContent () {
-		await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_ITEMS);
-		await DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_ITEMS);
-	}
+	async _pPreloadRefContentSite () { await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_ITEMS); }
+	async _pPreloadRefContentPrerelease () { await DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_ITEMS); }
+	async _pPreloadRefContentBrew () { await DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_ITEMS); }
 
 	dereference ({ent, entriesWithoutRefs, toReplaceMeta, ixReplace}) {
 		const refUnpacked = DataUtil.generic.unpackUid(toReplaceMeta.itemEntry, "itemEntry");
@@ -439,6 +463,7 @@ class _DataLoaderDereferencer {
 class _DataLoaderCache {
 	_cache = {};
 	_cacheSiteLists = {};
+	_cachePrereleaseLists = {};
 	_cacheBrewLists = {};
 
 	get (pageClean, sourceClean, hashClean) {
@@ -447,6 +472,10 @@ class _DataLoaderCache {
 
 	getAllSite (pageClean) {
 		return Object.values(this._cacheSiteLists[pageClean] || {});
+	}
+
+	getAllPrerelease (pageClean) {
+		return Object.values(this._cachePrereleaseLists[pageClean] || {});
 	}
 
 	getAllBrew (pageClean) {
@@ -472,31 +501,34 @@ class _DataLoaderCache {
 
 		if (ent === _DataLoaderConst.ENTITY_NULL) return;
 
-		// region Set site/brew list cache
-		const isSiteSource = SourceUtil.isSiteSource(Parser.sourceJsonToJson(sourceClean));
-
-		this._set_addToPartition({
-			isSite: true,
-			cache: this._cacheSiteLists,
-			isSiteSource,
-			pageClean,
-			hashClean,
-			ent,
-		});
-
-		this._set_addToPartition({
-			isSite: false,
-			cache: this._cacheBrewLists,
-			isSiteSource,
-			pageClean,
-			hashClean,
-			ent,
-		});
+		// region Set site/prerelease/brew list cache
+		const sourceJson = Parser.sourceJsonToJson(sourceClean);
+		if (SourceUtil.isSiteSource(sourceJson)) {
+			this._set_addToPartition({
+				cache: this._cacheSiteLists,
+				pageClean,
+				hashClean,
+				ent,
+			});
+		} else if (PrereleaseUtil.hasSourceJson(sourceJson)) {
+			this._set_addToPartition({
+				cache: this._cachePrereleaseLists,
+				pageClean,
+				hashClean,
+				ent,
+			});
+		} else if (BrewUtil2.hasSourceJson(sourceJson)) {
+			this._set_addToPartition({
+				cache: this._cacheBrewLists,
+				pageClean,
+				hashClean,
+				ent,
+			});
+		}
 		// endregion
 	}
 
-	_set_addToPartition ({isSite, isSiteSource, cache, pageClean, hashClean, ent}) {
-		if (isSiteSource !== isSite) return;
+	_set_addToPartition ({cache, pageClean, hashClean, ent}) {
 		let siteListCache = cache[pageClean];
 		if (!siteListCache) {
 			siteListCache = {};
@@ -513,6 +545,19 @@ class _DataLoaderCache {
 // region Data type loading
 
 class _DataTypeLoader {
+	static PROPS = [];
+	static PAGE = null;
+	static IS_FLUFF = false;
+
+	static register ({fnRegister}) {
+		fnRegister({
+			loader: new this(),
+			props: this.PROPS,
+			page: this.PAGE,
+			isFluff: this.IS_FLUFF,
+		});
+	}
+
 	static _getAsRawPrefixed (json, {propsRaw}) {
 		return {
 			...propsRaw.mergeMap(prop => ({[`raw_${prop}`]: json[prop]})),
@@ -520,13 +565,6 @@ class _DataTypeLoader {
 	}
 
 	/* -------------------------------------------- */
-
-	/**
-	 * Props which are (loosely) associated with this loader. Can be specified to optimize load time.
-	 * Note that for the dereferencer to function, this list should include all props which may be required by the
-	 *   dereferencing process for this entity type.
-	 */
-	propAllowlist;
 
 	/** Used to reduce phase 1 caching for a loader where phase 2 is the primary caching step. */
 	phase1CachePropAllowlist;
@@ -546,9 +584,11 @@ class _DataTypeLoader {
 	 */
 	_getSiteIdent ({pageClean, sourceClean}) { throw new Error("Unimplemented!"); }
 
+	_isPrereleaseAvailable () { return typeof PrereleaseUtil !== "undefined"; }
+
 	_isBrewAvailable () { return typeof BrewUtil2 !== "undefined"; }
 
-	async _pPrePopulate ({data, isBrew}) { /* Implement as required */ }
+	async _pPrePopulate ({data, isPrerelease, isBrew}) { /* Implement as required */ }
 
 	async pGetSiteData ({pageClean, sourceClean}) {
 		const propCache = this._getSiteIdent({pageClean, sourceClean});
@@ -558,18 +598,31 @@ class _DataTypeLoader {
 
 	async _pGetSiteData ({pageClean, sourceClean}) { throw new Error("Unimplemented!"); }
 
+	async pGetStoredPrereleaseData () {
+		if (!this._isPrereleaseAvailable()) return {};
+		return this._pGetStoredPrereleaseData();
+	}
+
 	async pGetStoredBrewData () {
 		if (!this._isBrewAvailable()) return {};
 		return this._pGetStoredBrewData();
 	}
 
-	async _pGetStoredBrewData () {
-		const brewData = await BrewUtil2.pGetBrewProcessed();
-		await this._pPrePopulate({data: brewData, isBrew: true});
-		return brewData;
+	async _pGetStoredPrereleaseData () {
+		return this._pGetStoredPrereleaseBrewData({brewUtil: PrereleaseUtil, isPrerelease: true});
 	}
 
-	async pGetPostCacheData ({siteData = null, brewData = null, lockToken2}) { /* Implement as required */ }
+	async _pGetStoredBrewData () {
+		return this._pGetStoredPrereleaseBrewData({brewUtil: BrewUtil2, isBrew: true});
+	}
+
+	async _pGetStoredPrereleaseBrewData ({brewUtil, isPrerelease, isBrew}) {
+		const prereleaseBrewData = await brewUtil.pGetBrewProcessed();
+		await this._pPrePopulate({data: prereleaseBrewData, isPrerelease, isBrew});
+		return prereleaseBrewData;
+	}
+
+	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) { /* Implement as required */ }
 
 	async _pGetPostCacheData_obj_withCache ({obj, propCache, lockToken2}) {
 		this._cache_pPostCaches[propCache] = this._cache_pPostCaches[propCache] || this._pGetPostCacheData_obj({obj, lockToken2});
@@ -586,11 +639,6 @@ class _DataTypeLoader {
 class _DataTypeLoaderSingleSource extends _DataTypeLoader {
 	_filename;
 
-	constructor ({filename}) {
-		super();
-		this._filename = filename;
-	}
-
 	_getSiteIdent ({pageClean, sourceClean}) { return this._filename; }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
@@ -598,27 +646,209 @@ class _DataTypeLoaderSingleSource extends _DataTypeLoader {
 	}
 }
 
+class _DataTypeLoaderBackground extends _DataTypeLoaderSingleSource {
+	static PROPS = ["background"];
+	static PAGE = UrlUtil.PG_BACKGROUNDS;
+
+	_filename = "backgrounds.json";
+}
+
+class _DataTypeLoaderPsionic extends _DataTypeLoaderSingleSource {
+	static PROPS = ["psionic"];
+	static PAGE = UrlUtil.PG_PSIONICS;
+
+	_filename = "psionics.json";
+}
+
+class _DataTypeLoaderObject extends _DataTypeLoaderSingleSource {
+	static PROPS = ["object"];
+	static PAGE = UrlUtil.PG_OBJECTS;
+
+	_filename = "objects.json";
+}
+
+class _DataTypeLoaderAction extends _DataTypeLoaderSingleSource {
+	static PROPS = ["action"];
+	static PAGE = UrlUtil.PG_ACTIONS;
+
+	_filename = "actions.json";
+}
+
+class _DataTypeLoaderFeat extends _DataTypeLoaderSingleSource {
+	static PROPS = ["feat"];
+	static PAGE = UrlUtil.PG_FEATS;
+
+	_filename = "feats.json";
+}
+
+class _DataTypeLoaderOptionalfeature extends _DataTypeLoaderSingleSource {
+	static PROPS = ["optionalfeature"];
+	static PAGE = UrlUtil.PG_OPT_FEATURES;
+
+	_filename = "optionalfeatures.json";
+}
+
+class _DataTypeLoaderReward extends _DataTypeLoaderSingleSource {
+	static PROPS = ["reward"];
+	static PAGE = UrlUtil.PG_REWARDS;
+
+	_filename = "rewards.json";
+}
+
+class _DataTypeLoaderCharoption extends _DataTypeLoaderSingleSource {
+	static PROPS = ["charoption"];
+	static PAGE = UrlUtil.PG_CHAR_CREATION_OPTIONS;
+
+	_filename = "charcreationoptions.json";
+}
+
+class _DataTypeLoaderTrapHazard extends _DataTypeLoaderSingleSource {
+	static PROPS = ["trap", "hazard"];
+	static PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+
+	_filename = "trapshazards.json";
+}
+
+class _DataTypeLoaderCultBoon extends _DataTypeLoaderSingleSource {
+	static PROPS = ["cult", "boon"];
+	static PAGE = UrlUtil.PG_CULTS_BOONS;
+
+	_filename = "cultsboons.json";
+}
+
+class _DataTypeLoaderVehicle extends _DataTypeLoaderSingleSource {
+	static PROPS = ["vehicle", "vehicleUpgrade"];
+	static PAGE = UrlUtil.PG_VEHICLES;
+
+	_filename = "vehicles.json";
+}
+
+class _DataTypeLoaderConditionDisease extends _DataTypeLoaderSingleSource {
+	static PROPS = ["condition", "disease", "status"];
+	static PAGE = UrlUtil.PG_CONDITIONS_DISEASES;
+
+	_filename = "conditionsdiseases.json";
+}
+
+class _DataTypeLoaderSkill extends _DataTypeLoaderSingleSource {
+	static PROPS = ["skill"];
+
+	_filename = "skills.json";
+}
+
+class _DataTypeLoaderSense extends _DataTypeLoaderSingleSource {
+	static PROPS = ["sense"];
+
+	_filename = "senses.json";
+}
+
+class _DataTypeLoaderLegendaryGroup extends _DataTypeLoaderSingleSource {
+	static PROPS = ["legendaryGroup"];
+
+	_filename = "legendarygroups.json";
+}
+
+class _DataTypeLoaderItemEntry extends _DataTypeLoaderSingleSource {
+	static PROPS = ["itemEntry"];
+
+	_filename = "items-base.json";
+}
+
+class _DataTypeLoaderBackgroundFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["backgroundFluff"];
+	static PAGE = UrlUtil.PG_BACKGROUNDS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-backgrounds.json";
+}
+
+class _DataTypeLoaderFeatFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["featFluff"];
+	static PAGE = UrlUtil.PG_FEATS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-feats.json";
+}
+
+class _DataTypeLoaderItemFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["itemFluff"];
+	static PAGE = UrlUtil.PG_ITEMS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-items.json";
+}
+
+class _DataTypeLoaderRaceFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["raceFluff"];
+	static PAGE = UrlUtil.PG_RACES;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-races.json";
+}
+
+class _DataTypeLoaderLanguageFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["languageFluff"];
+	static PAGE = UrlUtil.PG_LANGUAGES;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-languages.json";
+}
+
+class _DataTypeLoaderVehicleFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["vehicleFluff"];
+	static PAGE = UrlUtil.PG_VEHICLES;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-vehicles.json";
+}
+
+class _DataTypeLoaderObjectFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["objectFluff"];
+	static PAGE = UrlUtil.PG_OBJECTS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-objects.json";
+}
+
+class _DataTypeLoaderCharoptionFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["charoptionFluff"];
+	static PAGE = UrlUtil.PG_CHAR_CREATION_OPTIONS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-charcreationoptions.json";
+}
+
+class _DataTypeLoaderRecipeFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["recipeFluff"];
+	static PAGE = UrlUtil.PG_RECIPES;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-recipes.json";
+}
+
+class _DataTypeLoaderConditionDiseaseFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["conditionFluff", "diseaseFluff", "statusFluff"];
+	static PAGE = UrlUtil.PG_CONDITIONS_DISEASES;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-conditionsdiseases.json";
+}
+
 class _DataTypeLoaderPredefined extends _DataTypeLoader {
 	_loader;
-	_loadJsonArgs;
-	_loadBrewArgs;
-
-	/**
-	 * @param {string} loader
-	 * @param {object|undefined} loaderLoadJsonArgs
-	 * @param {object|undefined} loadBrewArgs
-	 */
-	constructor ({loader, loadJsonArgs, loadBrewArgs}) {
-		super();
-		this._loader = loader;
-		this._loadJsonArgs = loadJsonArgs;
-		this._loadBrewArgs = loadBrewArgs;
-	}
+	_loadJsonArgs = null;
+	_loadPrereleaseArgs = null;
+	_loadBrewArgs = null;
 
 	_getSiteIdent ({pageClean, sourceClean}) { return this._loader; }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
 		return DataUtil[this._loader].loadJSON(this._loadJsonArgs);
+	}
+
+	async _pGetStoredPrereleaseData () {
+		if (!DataUtil[this._loader].loadPrerelease) return super._pGetStoredPrereleaseData();
+		return DataUtil[this._loader].loadPrerelease(this._loadPrereleaseArgs);
 	}
 
 	async _pGetStoredBrewData () {
@@ -627,17 +857,55 @@ class _DataTypeLoaderPredefined extends _DataTypeLoader {
 	}
 }
 
+class _DataTypeLoaderRace extends _DataTypeLoaderPredefined {
+	static PROPS = ["race", "subrace"];
+	static PAGE = UrlUtil.PG_RACES;
+
+	_loader = "race";
+	_loadJsonArgs = {isAddBaseRaces: true};
+	_loadPrereleaseArgs = {isAddBaseRaces: true};
+	_loadBrewArgs = {isAddBaseRaces: true};
+}
+
+class _DataTypeLoaderDeity extends _DataTypeLoaderPredefined {
+	static PROPS = ["deity"];
+	static PAGE = UrlUtil.PG_DEITIES;
+
+	_loader = "deity";
+}
+
+class _DataTypeLoaderVariantrule extends _DataTypeLoaderPredefined {
+	static PROPS = ["variantrule"];
+	static PAGE = UrlUtil.PG_VARIANTRULES;
+
+	_loader = "variantrule";
+}
+
+class _DataTypeLoaderTable extends _DataTypeLoaderPredefined {
+	static PROPS = ["table", "tableGroup"];
+	static PAGE = UrlUtil.PG_TABLES;
+
+	_loader = "table";
+}
+
+class _DataTypeLoaderLanguage extends _DataTypeLoaderPredefined {
+	static PROPS = ["language"];
+	static PAGE = UrlUtil.PG_LANGUAGES;
+
+	_loader = "language";
+}
+
+class _DataTypeLoaderRecpie extends _DataTypeLoaderPredefined {
+	static PROPS = ["recipe"];
+	static PAGE = UrlUtil.PG_RECIPES;
+
+	_loader = "recipe";
+}
+
 class _DataTypeLoaderMultiSource extends _DataTypeLoader {
 	_prop;
 
-	constructor ({prop}) {
-		super();
-		this._prop = prop;
-	}
-
 	_getSiteIdent ({pageClean, sourceClean}) { return `${this._prop}__${sourceClean}`; }
-
-	_pPrePopulate ({data}) { /* Implement as required */ }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
 		const source = Parser.sourceJsonToJson(sourceClean);
@@ -651,52 +919,70 @@ class _DataTypeLoaderMultiSource extends _DataTypeLoader {
 	}
 }
 
-class _DataTypeLoaderCustomBestiary extends _DataTypeLoaderMultiSource {
-	propAllowlist = new Set(["monster", "monsterFluff", "legendaryGroup", "makebrewCreatureTrait"]);
+class _DataTypeLoaderCustomMonster extends _DataTypeLoaderMultiSource {
+	static PROPS = ["monster"];
+	static PAGE = UrlUtil.PG_BESTIARY;
 
-	constructor () {
-		super({prop: "monster"});
-	}
+	_prop = "monster";
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
 		await DataUtil.monster.pPreloadMeta();
 		return super._pGetSiteData({pageClean, sourceClean});
 	}
 
-	async _pPrePopulate ({data, isBrew}) {
+	async _pPrePopulate ({data, isPrerelease, isBrew}) {
 		DataUtil.monster.populateMetaReference(data);
 	}
 }
 
-class _DataTypeLoaderCustomSpells extends _DataTypeLoaderMultiSource {
-	constructor () {
-		super({prop: "spell"});
-	}
+class _DataTypeLoaderCustomMonsterFluff extends _DataTypeLoaderMultiSource {
+	static PROPS = ["monsterFluff"];
+	static PAGE = UrlUtil.PG_BESTIARY;
+	static IS_FLUFF = true;
 
-	async _pPrePopulate ({data, isBrew}) {
-		Renderer.spell.prePopulateHover(data, {isBrew});
+	_prop = "monsterFluff";
+}
+
+class _DataTypeLoaderCustomSpell extends _DataTypeLoaderMultiSource {
+	static PROPS = ["spell"];
+	static PAGE = UrlUtil.PG_SPELLS;
+
+	_prop = "spell";
+
+	async _pPrePopulate ({data, isPrerelease, isBrew}) {
+		Renderer.spell.prePopulateHover(data);
+		if (isPrerelease) Renderer.spell.prePopulateHoverPrerelease(data);
+		if (isBrew) Renderer.spell.prePopulateHoverBrew(data);
 	}
 }
 
-class _DataTypeLoaderCustomClassesSubclasses extends _DataTypeLoader {
-	// Note that this only loads these specific props, to avoid deadlock incurred by dereferencing class/subclass features
-	static _PROPS = ["class", "subclass"];
+class _DataTypeLoaderCustomSpellFluff extends _DataTypeLoaderMultiSource {
+	static PROPS = ["spell"];
+	static PAGE = UrlUtil.PG_SPELLS;
+	static IS_FLUFF = true;
 
-	constructor ({hasPhase2Cache = false} = {}) {
-		super();
-		this.hasPhase2Cache = hasPhase2Cache;
-	}
+	_prop = "spellFluff";
+}
+
+class _DataTypeLoaderCustomClassesSubclass extends _DataTypeLoader {
+	static PROPS = ["raw_class", "raw_subclass", "class", "subclass"];
+	static PAGE = UrlUtil.PG_CLASSES;
+
+	// Note that this only loads these specific props, to avoid deadlock incurred by dereferencing class/subclass features
+	static _PROPS_RAWABLE = ["class", "subclass"];
+
+	hasPhase2Cache = true;
 
 	_getSiteIdent ({pageClean, sourceClean}) { return `${pageClean}__${this.constructor.name}`; }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
 		const json = await DataUtil.class.loadRawJSON();
-		return this.constructor._getAsRawPrefixed(json, {propsRaw: this.constructor._PROPS});
+		return this.constructor._getAsRawPrefixed(json, {propsRaw: this.constructor._PROPS_RAWABLE});
 	}
 
-	async _pGetStoredBrewData () {
-		const brew = await BrewUtil2.pGetBrewProcessed();
-		return this.constructor._getAsRawPrefixed(brew, {propsRaw: this.constructor._PROPS});
+	async _pGetStoredPrereleaseBrewData ({brewUtil, isPrerelease, isBrew}) {
+		const prereleaseBrew = await brewUtil.pGetBrewProcessed();
+		return this.constructor._getAsRawPrefixed(prereleaseBrew, {propsRaw: this.constructor._PROPS_RAWABLE});
 	}
 
 	async _pGetPostCacheData_obj ({obj, lockToken2}) {
@@ -797,7 +1083,7 @@ class _DataTypeLoaderCustomClassesSubclasses extends _DataTypeLoader {
 				if (fnIsInvalidUnpackedUid(unpackedUid)) return;
 
 				// Skip over temp/nonexistent links
-				if (source === SRC_5ETOOLS_TMP) return;
+				if (source === Parser.SRC_5ETOOLS_TMP) return;
 
 				const hash = UrlUtil.URL_TO_HASH_BUILDER[propFeature](unpackedUid);
 
@@ -834,32 +1120,33 @@ class _DataTypeLoaderCustomClassesSubclasses extends _DataTypeLoader {
 		_DataLoaderInternalUtil.doNotifyFailedDereferences({missingRefSets});
 	}
 
-	async pGetPostCacheData ({siteData = null, brewData = null, lockToken2}) {
+	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) {
 		return {
 			siteDataPostCache: await this._pGetPostCacheData_obj_withCache({obj: siteData, lockToken2, propCache: "site"}),
+			prereleaseDataPostCache: await this._pGetPostCacheData_obj({obj: prereleaseData, lockToken2}),
 			brewDataPostCache: await this._pGetPostCacheData_obj({obj: brewData, lockToken2}),
 		};
 	}
 }
 
-class _DataTypeLoaderCustomClassSubclassFeatures extends _DataTypeLoader {
-	static _PROPS = ["classFeature", "subclassFeature"];
+class _DataTypeLoaderCustomClassSubclassFeature extends _DataTypeLoader {
+	static PROPS = ["raw_classFeature", "raw_subclassFeature", "classFeature", "subclassFeature"];
+	static PAGE = UrlUtil.PG_CLASS_SUBCLASS_FEATURES;
 
-	constructor ({hasPhase2Cache = false} = {}) {
-		super();
-		this.hasPhase2Cache = hasPhase2Cache;
-	}
+	static _PROPS_RAWABLE = ["classFeature", "subclassFeature"];
+
+	hasPhase2Cache = true;
 
 	_getSiteIdent ({pageClean, sourceClean}) { return `${pageClean}__${this.constructor.name}`; }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
 		const json = await DataUtil.class.loadRawJSON();
-		return this.constructor._getAsRawPrefixed(json, {propsRaw: this.constructor._PROPS});
+		return this.constructor._getAsRawPrefixed(json, {propsRaw: this.constructor._PROPS_RAWABLE});
 	}
 
-	async _pGetStoredBrewData () {
-		const brew = await BrewUtil2.pGetBrewProcessed();
-		return this.constructor._getAsRawPrefixed(brew, {propsRaw: this.constructor._PROPS});
+	async _pGetStoredPrereleaseBrewData ({brewUtil, isPrerelease, isBrew}) {
+		const prereleaseBrew = await brewUtil.pGetBrewProcessed();
+		return this.constructor._getAsRawPrefixed(prereleaseBrew, {propsRaw: this.constructor._PROPS_RAWABLE});
 	}
 
 	async _pGetPostCacheData_obj ({obj, lockToken2}) {
@@ -873,16 +1160,18 @@ class _DataTypeLoaderCustomClassSubclassFeatures extends _DataTypeLoader {
 		return out;
 	}
 
-	async pGetPostCacheData ({siteData = null, brewData = null, lockToken2}) {
+	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) {
 		return {
 			siteDataPostCache: await this._pGetPostCacheData_obj_withCache({obj: siteData, lockToken2, propCache: "site"}),
+			prereleaseDataPostCache: await this._pGetPostCacheData_obj({obj: prereleaseData, lockToken2}),
 			brewDataPostCache: await this._pGetPostCacheData_obj({obj: brewData, lockToken2}),
 		};
 	}
 }
 
-class _DataTypeLoaderCustomItems extends _DataTypeLoader {
-	propAllowlist = new Set(["item", "itemGroup", "itemType", "itemEntry", "itemProperty", "baseitem", "itemFluff"]);
+class _DataTypeLoaderCustomItem extends _DataTypeLoader {
+	static PROPS = ["item", "itemGroup", "itemType", "itemEntry", "itemProperty", "itemTypeAdditionalEntries", "baseitem", "magicvariant"];
+	static PAGE = UrlUtil.PG_ITEMS;
 
 	/**
 	 * Avoid adding phase 1 items to the cache. Adding them as `raw_item` is inaccurate, as we have already e.g. merged
@@ -903,12 +1192,12 @@ class _DataTypeLoaderCustomItems extends _DataTypeLoader {
 		return Renderer.item.pGetSiteUnresolvedRefItems();
 	}
 
-	async _pGetStoredBrewData () {
-		const brew = await BrewUtil2.pGetBrewProcessed();
+	async _pGetStoredPrereleaseBrewData ({brewUtil, isPrerelease, isBrew}) {
+		const prereleaseBrew = await brewUtil.pGetBrewProcessed();
 
 		return {
-			item: await Renderer.item.pGetSiteUnresolvedRefItemsFromHomebrew(brew),
-			itemEntry: brew.itemEntry || [],
+			item: await Renderer.item.pGetSiteUnresolvedRefItemsFromPrereleaseBrew({brewUtil, brew: prereleaseBrew}),
+			itemEntry: prereleaseBrew.itemEntry || [],
 		};
 	}
 
@@ -918,25 +1207,29 @@ class _DataTypeLoaderCustomItems extends _DataTypeLoader {
 		const out = {};
 
 		if (obj.item?.length) {
-			out.item = (await _DataLoaderDereferencer.pGetDereferenced(obj.item, "item", {entryProp: "entries", propIsRef: "hasRefs"}))?.item || [];
-			out.item = (await _DataLoaderDereferencer.pGetDereferenced(out.item, "item", {entryProp: "_fullEntries", propIsRef: "hasRefs"}))?.item || [];
+			out.item = (await _DataLoaderDereferencer.pGetDereferenced(obj.item, "item", {propEntries: "entries", propIsRef: "hasRefs"}))?.item || [];
+			out.item = (await _DataLoaderDereferencer.pGetDereferenced(out.item, "item", {propEntries: "_fullEntries", propIsRef: "hasRefs"}))?.item || [];
 		}
 
 		return out;
 	}
 
-	async pGetPostCacheData ({siteData = null, brewData = null, lockToken2}) {
+	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) {
 		return {
 			siteDataPostCache: await this._pGetPostCacheData_obj_withCache({obj: siteData, lockToken2, propCache: "site"}),
+			prereleaseDataPostCache: await this._pGetPostCacheData_obj({obj: prereleaseData, lockToken2}),
 			brewDataPostCache: await this._pGetPostCacheData_obj({obj: brewData, lockToken2}),
 		};
 	}
 }
 
 class _DataTypeLoaderCustomQuickref extends _DataTypeLoader {
-	static _PROPS = ["reference", "referenceData"];
+	static PROPS = ["reference", "referenceData"];
+	static PAGE = UrlUtil.PG_QUICKREF;
 
 	_getSiteIdent ({pageClean, sourceClean}) { return this.constructor.name; }
+
+	_isPrereleaseAvailable () { return false; }
 
 	_isBrewAvailable () { return false; }
 
@@ -948,11 +1241,11 @@ class _DataTypeLoaderCustomQuickref extends _DataTypeLoader {
 		};
 	}
 
-	hasCustomCacheStrategy ({obj}) { return this.constructor._PROPS.some(prop => obj[prop]?.length); }
+	hasCustomCacheStrategy ({obj}) { return this.constructor.PROPS.some(prop => obj[prop]?.length); }
 
 	addToCacheCustom ({cache, obj}) {
 		obj.referenceData.forEach((chapter, ixChapter) => this._addToCacheCustom_chapter({cache, chapter, ixChapter}));
-		return [...this.constructor._PROPS];
+		return [...this.constructor.PROPS];
 	}
 
 	_addToCacheCustom_chapter ({cache, chapter, ixChapter}) {
@@ -988,56 +1281,57 @@ class _DataTypeLoaderCustomQuickref extends _DataTypeLoader {
 }
 
 class _DataTypeLoaderCustomAdventureBook extends _DataTypeLoader {
-	_page;
-	_prop;
-	_propData;
 	_filename;
 
 	_getSiteIdent ({pageClean, sourceClean}) { return `${pageClean}__${sourceClean}`; }
 
-	hasCustomCacheStrategy ({obj}) { return [this._prop, this._propData].some(prop => obj[prop]?.length); }
+	hasCustomCacheStrategy ({obj}) { return this.constructor.PROPS.some(prop => obj[prop]?.length); }
 
 	addToCacheCustom ({cache, obj}) {
+		const [prop, propData] = this.constructor.PROPS;
+
 		// Get only the ids that exist in both data + contents
-		const dataIds = (obj[this._propData] || []).filter(it => it.id).map(it => it.id);
-		const contentsIds = new Set((obj[this._prop] || []).filter(it => it.id).map(it => it.id));
+		const dataIds = (obj[propData] || []).filter(it => it.id).map(it => it.id);
+		const contentsIds = new Set((obj[prop] || []).filter(it => it.id).map(it => it.id));
 		const matchingIds = dataIds.filter(id => contentsIds.has(id));
 
 		matchingIds.forEach(id => {
-			const data = (obj[this._propData] || []).find(it => it.id === id);
-			const contents = (obj[this._prop] || []).find(it => it.id === id);
+			const data = (obj[propData] || []).find(it => it.id === id);
+			const contents = (obj[prop] || []).find(it => it.id === id);
 
-			const hash = UrlUtil.URL_TO_HASH_BUILDER[this._page](contents);
-			this._addImageBackReferences(data, this._page, contents.source, hash);
+			const hash = UrlUtil.URL_TO_HASH_BUILDER[this.constructor.PAGE](contents);
+			this._addImageBackReferences(data, this.constructor.PAGE, contents.source, hash);
 
 			const {page: pageClean, source: sourceClean, hash: hashClean} = _DataLoaderInternalUtil.getCleanPageSourceHash({
-				page: this._page,
+				page: this.constructor.PAGE,
 				source: contents.source,
 				hash,
 			});
 
 			const pack = {
-				[this._prop]: contents,
-				[this._propData]: data,
+				[prop]: contents,
+				[propData]: data,
 			};
 
 			cache.set(pageClean, sourceClean, hashClean, pack);
 		});
 
-		return [this._prop, this._propData];
+		return [prop, propData];
 	}
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
+		const [prop, propData] = this.constructor.PROPS;
+
 		const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/${this._filename}`);
-		const contents = index[this._prop].find(contents => _DataLoaderInternalUtil.getCleanSource({source: contents.source}) === sourceClean);
+		const contents = index[prop].find(contents => _DataLoaderInternalUtil.getCleanSource({source: contents.source}) === sourceClean);
 
 		if (!contents) return {};
 
-		const json = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/${this._prop}/${this._prop}-${UrlUtil.encodeForHash(contents.id.toLowerCase())}.json`);
+		const json = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/${prop}/${prop}-${UrlUtil.encodeForHash(contents.id.toLowerCase())}.json`);
 
 		return {
-			[this._prop]: [contents],
-			[this._propData]: [
+			[prop]: [contents],
+			[propData]: [
 				{
 					source: contents.source,
 					id: contents.id,
@@ -1067,16 +1361,16 @@ class _DataTypeLoaderCustomAdventureBook extends _DataTypeLoader {
 }
 
 class _DataTypeLoaderCustomAdventure extends _DataTypeLoaderCustomAdventureBook {
-	_page = UrlUtil.PG_ADVENTURE;
-	_prop = "adventure";
-	_propData = "adventureData";
+	static PROPS = ["adventure", "adventureData"];
+	static PAGE = UrlUtil.PG_ADVENTURE;
+
 	_filename = "adventures.json";
 }
 
 class _DataTypeLoaderCustomBook extends _DataTypeLoaderCustomAdventureBook {
-	_page = UrlUtil.PG_BOOK;
-	_prop = "book";
-	_propData = "bookData";
+	static PROPS = ["book", "bookData"];
+	static PAGE = UrlUtil.PG_BOOK;
+
 	_filename = "books.json";
 }
 
@@ -1142,220 +1436,90 @@ class DataLoader {
 			.forEach(([k, v]) => this._PROP_TO_HASH_PAGE[`${k}Fluff`] = _DataLoaderInternalUtil.getCleanPageFluff({page: v}));
 	}
 
-	static _registerDataTypeLoader (loader) {
+	static _registerDataTypeLoader ({loader, props, page, isFluff}) {
 		this._DATA_TYPE_LOADER_LIST.push(loader);
-		return loader;
+
+		if (!props?.length) throw new Error(`No "props" specified for loader "${loader.constructor.name}"!`);
+
+		props.forEach(prop => this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: prop})] = loader);
+
+		if (!page) return;
+
+		this._DATA_TYPE_LOADERS[
+			isFluff
+				? _DataLoaderInternalUtil.getCleanPageFluff({page})
+				: _DataLoaderInternalUtil.getCleanPage({page})
+		] = loader;
 	}
 
 	static _registerDataTypeLoaders () {
+		const fnRegister = this._registerDataTypeLoader.bind(this);
+
 		// region Multi-file
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "monster"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_BESTIARY})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomBestiary());
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "monsterFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_BESTIARY})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderMultiSource({prop: "monsterFluff"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "spell"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_SPELLS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomSpells());
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "spellFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_SPELLS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderMultiSource({prop: "spellFluff"}));
-
+		_DataTypeLoaderCustomMonster.register({fnRegister});
+		_DataTypeLoaderCustomMonsterFluff.register({fnRegister});
+		_DataTypeLoaderCustomSpell.register({fnRegister});
+		_DataTypeLoaderCustomSpellFluff.register({fnRegister});
 		// endregion
 
 		// region Predefined
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "race"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "subrace"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_RACES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderPredefined({loader: "race", loadJsonArgs: {isAddBaseRaces: true}, loadBrewArgs: {isAddBaseRaces: true}}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "deity"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_DEITIES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderPredefined({loader: "deity"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "variantrule"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_VARIANTRULES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderPredefined({loader: "variantrule"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "table"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "tableGroup"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_TABLES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderPredefined({loader: "table"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "language"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_LANGUAGES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderPredefined({loader: "language"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "recipe"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_RECIPES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderPredefined({loader: "recipe"}));
-
+		_DataTypeLoaderRace.register({fnRegister});
+		_DataTypeLoaderDeity.register({fnRegister});
+		_DataTypeLoaderVariantrule.register({fnRegister});
+		_DataTypeLoaderTable.register({fnRegister});
+		_DataTypeLoaderLanguage.register({fnRegister});
+		_DataTypeLoaderRecpie.register({fnRegister});
 		// endregion
 
 		// region Special
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_class"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_subclass"})] =
-				this._registerDataTypeLoader(new _DataTypeLoaderCustomClassesSubclasses());
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "class"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "subclass"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_CLASSES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomClassesSubclasses({hasPhase2Cache: true}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_classfeature"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_subclassfeature"})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomClassSubclassFeatures());
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "classFeature"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "subclassFeature"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_CLASS_SUBCLASS_FEATURES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomClassSubclassFeatures({hasPhase2Cache: true}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "item"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_ITEMS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomItems());
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "reference"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "referenceData"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_QUICKREF})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomQuickref());
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "adventure"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "adventureData"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_ADVENTURE})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomAdventure());
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "book"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "bookData"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_BOOK})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderCustomBook());
+		_DataTypeLoaderCustomClassesSubclass.register({fnRegister});
+		_DataTypeLoaderCustomClassSubclassFeature.register({fnRegister});
+		_DataTypeLoaderCustomItem.register({fnRegister});
+		_DataTypeLoaderCustomQuickref.register({fnRegister});
+		_DataTypeLoaderCustomAdventure.register({fnRegister});
+		_DataTypeLoaderCustomBook.register({fnRegister});
 		// endregion
 
 		// region Single file
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "background"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_BACKGROUNDS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "backgrounds.json"}));
+		_DataTypeLoaderBackground.register({fnRegister});
+		_DataTypeLoaderPsionic.register({fnRegister});
+		_DataTypeLoaderObject.register({fnRegister});
+		_DataTypeLoaderAction.register({fnRegister});
+		_DataTypeLoaderFeat.register({fnRegister});
+		_DataTypeLoaderOptionalfeature.register({fnRegister});
+		_DataTypeLoaderReward.register({fnRegister});
+		_DataTypeLoaderCharoption.register({fnRegister});
 
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "psionic"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_PSIONICS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "psionics.json"}));
+		_DataTypeLoaderTrapHazard.register({fnRegister});
+		_DataTypeLoaderCultBoon.register({fnRegister});
+		_DataTypeLoaderVehicle.register({fnRegister});
 
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "object"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_OBJECTS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "objects.json"}));
+		_DataTypeLoaderConditionDisease.register({fnRegister});
 
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "action"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_ACTIONS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "actions.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "trap"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "hazard"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_TRAPS_HAZARDS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "trapshazards.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "cult"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "boon"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_CULTS_BOONS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "cultsboons.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "condition"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "disease"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "status"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_CONDITIONS_DISEASES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "conditionsdiseases.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "vehicle"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "vehicleUpgrade"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_VEHICLES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "vehicles.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "feat"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_feat"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_FEATS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "feats.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "optionalfeature"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_optionalfeature"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_OPT_FEATURES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "optionalfeatures.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "reward"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_reward"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_REWARDS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "rewards.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "charoption"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raw_charoption"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: UrlUtil.PG_CHAR_CREATION_OPTIONS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "charcreationoptions.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "skill"})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "skills.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "sense"})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "senses.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "legendaryGroup"})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "bestiary/legendarygroups.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "itemEntry"})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "items-base.json"}));
+		_DataTypeLoaderSkill.register({fnRegister});
+		_DataTypeLoaderSense.register({fnRegister});
+		_DataTypeLoaderLegendaryGroup.register({fnRegister});
+		_DataTypeLoaderItemEntry.register({fnRegister});
 		// endregion
 
 		// region Fluff
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "backgroundFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_BACKGROUNDS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-backgrounds.json"}));
+		_DataTypeLoaderBackgroundFluff.register({fnRegister});
+		_DataTypeLoaderFeatFluff.register({fnRegister});
+		_DataTypeLoaderItemFluff.register({fnRegister});
+		_DataTypeLoaderRaceFluff.register({fnRegister});
+		_DataTypeLoaderLanguageFluff.register({fnRegister});
+		_DataTypeLoaderVehicleFluff.register({fnRegister});
+		_DataTypeLoaderObjectFluff.register({fnRegister});
+		_DataTypeLoaderCharoptionFluff.register({fnRegister});
+		_DataTypeLoaderRecipeFluff.register({fnRegister});
 
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "featFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_FEATS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-feats.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "itemFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_ITEMS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-items.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "conditionFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "diseaseFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "statusFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_CONDITIONS_DISEASES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-conditionsdiseases.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "raceFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_RACES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-races.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "languageFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_LANGUAGES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-languages.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "vehicleFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_VEHICLES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-vehicles.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "objectFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_OBJECTS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-objects.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "charoptionFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_CHAR_CREATION_OPTIONS})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-charcreationoptions.json"}));
-
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPage({page: "recipeFluff"})] =
-		this._DATA_TYPE_LOADERS[_DataLoaderInternalUtil.getCleanPageFluff({page: UrlUtil.PG_RECIPES})] =
-			this._registerDataTypeLoader(new _DataTypeLoaderSingleSource({filename: "fluff-recipes.json"}));
-
+		_DataTypeLoaderConditionDiseaseFluff.register({fnRegister});
 		// endregion
 	}
 
 	static _ = this._init();
 
 	static _CACHE = new _DataLoaderCache();
-	static _LOCK_0 = new VeLock({isDbg: false, name: "loader-lock-0"});
 	static _LOCK_1 = new VeLock({isDbg: false, name: "loader-lock-1"});
 	static _LOCK_2 = new VeLock({isDbg: false, name: "loader-lock-2"});
 
@@ -1436,21 +1600,57 @@ class DataLoader {
 		return this._CACHE.getAllSite(pageClean);
 	}
 
-	static async pCacheAndGetAllBrew (page, {isSilent = false} = {}) {
-		const pageClean = _DataLoaderInternalUtil.getCleanPage({page});
-
-		if (this._PAGES_NO_CONTENT.has(pageClean)) return null;
-
-		const dataLoader = this._pCache_getDataTypeLoader({pageClean, isSilent});
-		if (!dataLoader) return null;
-
-		// (Avoid preloading missing brew here, as we only return currently-loaded brew.)
-
-		const {brewData} = await this._pCacheAndGet_getCacheMeta({pageClean, sourceClean: _DataLoaderConst.SOURCE_BREW_ALL_CURRENT, dataLoader});
-		await this._pCacheAndGet_processCacheMeta({dataLoader, brewData});
-
-		return this._CACHE.getAllBrew(pageClean);
+	static async pCacheAndGetAllPrerelease (page, {isSilent = false} = {}) {
+		return this._CacheAndGetAllPrerelease.pCacheAndGetAll({parent: this, page, isSilent});
 	}
+
+	static async pCacheAndGetAllBrew (page, {isSilent = false} = {}) {
+		return this._CacheAndGetAllBrew.pCacheAndGetAll({parent: this, page, isSilent});
+	}
+
+	static _CacheAndGetAllPrereleaseBrew = class {
+		static _SOURCE_ALL;
+		static _PROP_DATA;
+
+		static async pCacheAndGetAll (
+			{
+				parent,
+				page,
+				isSilent,
+			},
+		) {
+			const pageClean = _DataLoaderInternalUtil.getCleanPage({page});
+
+			if (parent._PAGES_NO_CONTENT.has(pageClean)) return null;
+
+			const dataLoader = parent._pCache_getDataTypeLoader({pageClean, isSilent});
+			if (!dataLoader) return null;
+
+			// (Avoid preloading missing prerelease/homebrew here, as we only return currently-loaded prerelease/homebrew.)
+
+			const cacheMeta = await parent._pCacheAndGet_getCacheMeta({pageClean, sourceClean: this._SOURCE_ALL, dataLoader});
+			await parent._pCacheAndGet_processCacheMeta({dataLoader, [this._PROP_DATA]: cacheMeta[this._PROP_DATA]});
+
+			return this._getAllCached({parent, pageClean});
+		}
+
+		/** @abstract */
+		static _getAllCached ({parent, pageClean}) { throw new Error("Unimplemented!"); }
+	};
+
+	static _CacheAndGetAllPrerelease = class extends this._CacheAndGetAllPrereleaseBrew {
+		static _SOURCE_ALL = _DataLoaderConst.SOURCE_PRERELEASE_ALL_CURRENT;
+		static _PROP_DATA = "prereleaseData";
+
+		static _getAllCached ({parent, pageClean}) { return parent._CACHE.getAllPrerelease(pageClean); }
+	};
+
+	static _CacheAndGetAllBrew = class extends this._CacheAndGetAllPrereleaseBrew {
+		static _SOURCE_ALL = _DataLoaderConst.SOURCE_BREW_ALL_CURRENT;
+		static _PROP_DATA = "brewData";
+
+		static _getAllCached ({parent, pageClean}) { return parent._CACHE.getAllBrew(pageClean); }
+	};
 
 	/* -------------------------------------------- */
 
@@ -1480,11 +1680,14 @@ class DataLoader {
 		const dataLoader = this._pCache_getDataTypeLoader({pageClean, isSilent});
 		if (!dataLoader) return this._getVerifiedRequiredEntity({pageClean, sourceClean, hashClean, ent: null, isRequired});
 
-		const isUnavailableBrew = await this._pCacheAndGet_preloadMissingBrew({sourceClean});
+		const isUnavailablePrerelease = await this._PrereleasePreloader._pPreloadMissing({parent: this, sourceClean});
+		if (isUnavailablePrerelease) return this._getVerifiedRequiredEntity({pageClean, sourceClean, hashClean, ent: null, isRequired});
+
+		const isUnavailableBrew = await this._BrewPreloader._pPreloadMissing({parent: this, sourceClean});
 		if (isUnavailableBrew) return this._getVerifiedRequiredEntity({pageClean, sourceClean, hashClean, ent: null, isRequired});
 
-		const {siteData = null, brewData = null} = await this._pCacheAndGet_getCacheMeta({pageClean, sourceClean, dataLoader});
-		await this._pCacheAndGet_processCacheMeta({dataLoader, siteData, brewData, lockToken2});
+		const {siteData = null, prereleaseData = null, brewData = null} = await this._pCacheAndGet_getCacheMeta({pageClean, sourceClean, dataLoader});
+		await this._pCacheAndGet_processCacheMeta({dataLoader, siteData, prereleaseData, brewData, lockToken2});
 
 		return this.getFromCache(page, source, hash, {isCopy, _isInsertSentinelOnMiss: true});
 	}
@@ -1494,47 +1697,123 @@ class DataLoader {
 		return DataLoader.pCacheAndGet(page, source, hash, opts);
 	}
 
-	/**
-	 * Phase 0: check if homebrew, and if so, check/load the source (if available).
-	 *   Track failures (i.e., there is no available JSON for the brew source requested), and skip repeated failures.
-	 *   This allows us to avoid an expensive mass re-cache, if a brew source which does not exist is requested for
-	 *   loading multiple times.
-	 */
-	static async _pCacheAndGet_preloadMissingBrew ({sourceClean}) {
-		try {
-			await this._LOCK_0.pLock();
-			return (await this._pPreloadMissingBrew({sourceClean}));
-		} finally {
-			this._LOCK_0.unlock();
-		}
-	}
+	static _PrereleaseBrewPreloader = class {
+		static _LOCK_0;
+		static _SOURCES_ATTEMPTED;
+		/** Cache of clean (lowercase) source -> URL. */
+		static _CACHE_SOURCE_CLEAN_TO_URL;
+		static _SOURCE_ALL;
 
-	/**
-	 * @param sourceClean
-	 * @return {Promise<boolean>} `true` if the brew does not exist and could not be loaded, false otherwise.
-	 */
-	static async _pPreloadMissingBrew ({sourceClean}) {
-		if (this._isExistingBrewMiss({sourceClean})) return true;
-
-		if (this._isSiteSource({sourceClean})) return false;
-		if (sourceClean === _DataLoaderConst.SOURCE_BREW_ALL_CURRENT) return false;
-
-		if (typeof BrewUtil2 === "undefined") {
-			this._setExistingBrewMiss({sourceClean});
-			return true;
+		/**
+		 * Phase 0: check if prerelease/homebrew, and if so, check/load the source (if available).
+		 *   Track failures (i.e., there is no available JSON for the source requested), and skip repeated failures.
+		 *   This allows us to avoid an expensive mass re-cache, if a source which does not exist is requested for
+		 *   loading multiple times.
+		 */
+		static async pPreloadMissing ({parent, sourceClean}) {
+			try {
+				await this._LOCK_0.pLock();
+				return (await this._pPreloadMissing({parent, sourceClean}));
+			} finally {
+				this._LOCK_0.unlock();
+			}
 		}
 
-		if (BrewUtil2.hasSourceJson(sourceClean)) return false;
+		/**
+		 * @param parent
+		 * @param sourceClean
+		 * @return {Promise<boolean>} `true` if the source does not exist and could not be loaded, false otherwise.
+		 */
+		static async _pPreloadMissing ({parent, sourceClean}) {
+			if (this._isExistingMiss({parent, sourceClean})) return true;
 
-		const urlBrew = await this._pGetBrewUrl({sourceClean});
-		if (!urlBrew) {
-			this._setExistingBrewMiss({sourceClean});
-			return true;
+			if (!this._isPossibleSource({parent, sourceClean})) return false;
+			if (sourceClean === this._SOURCE_ALL) return false;
+
+			const brewUtil = this._getBrewUtil();
+			if (!brewUtil) {
+				this._setExistingMiss({parent, sourceClean});
+				return true;
+			}
+
+			if (brewUtil.hasSourceJson(sourceClean)) return false;
+
+			const urlBrew = await this._pGetSourceUrl({parent, sourceClean});
+			if (!urlBrew) {
+				this._setExistingMiss({parent, sourceClean});
+				return true;
+			}
+
+			await brewUtil.pAddBrewFromUrl(urlBrew);
+			return false;
 		}
 
-		await BrewUtil2.pAddBrewFromUrl(urlBrew);
-		return false;
-	}
+		static _isExistingMiss ({sourceClean}) {
+			return this._SOURCES_ATTEMPTED.has(sourceClean);
+		}
+
+		static _setExistingMiss ({sourceClean}) {
+			this._SOURCES_ATTEMPTED.add(sourceClean);
+		}
+
+		/* -------------------------------------------- */
+
+		static async _pInitCacheSourceToUrl () {
+			if (this._CACHE_SOURCE_CLEAN_TO_URL) return;
+
+			const index = await this._pGetUrlIndex();
+			if (!index) return this._CACHE_SOURCE_CLEAN_TO_URL = {};
+
+			const brewUtil = this._getBrewUtil();
+			const urlRoot = await brewUtil.pGetCustomUrl();
+
+			this._CACHE_SOURCE_CLEAN_TO_URL = Object.entries(index)
+				.mergeMap(([src, url]) => ({[_DataLoaderInternalUtil.getCleanSource({source: src})]: brewUtil.getFileUrl(url, urlRoot)}));
+		}
+
+		static async _pGetUrlIndex () {
+			try {
+				return (await this._pGetSourceIndex());
+			} catch (e) {
+				setTimeout(() => { throw e; });
+				return null;
+			}
+		}
+
+		static async _pGetSourceUrl ({sourceClean}) {
+			await this._pInitCacheSourceToUrl();
+			return this._CACHE_SOURCE_CLEAN_TO_URL[sourceClean];
+		}
+
+		/** @abstract */
+		static _isPossibleSource ({parent, sourceClean}) { throw new Error("Unimplemented!"); }
+		/** @abstract */
+		static _getBrewUtil () { throw new Error("Unimplemented!"); }
+		/** @abstract */
+		static _pGetSourceIndex () { throw new Error("Unimplemented!"); }
+	};
+
+	static _PrereleasePreloader = class extends this._PrereleaseBrewPreloader {
+		static _LOCK_0 = new VeLock({isDbg: false, name: "loader-lock-0--prerelease"});
+		static _SOURCE_ALL = _DataLoaderConst.SOURCE_BREW_ALL_CURRENT;
+		static _SOURCES_ATTEMPTED = new Set();
+		static _CACHE_SOURCE_CLEAN_TO_URL = null;
+
+		static _isPossibleSource ({parent, sourceClean}) { parent._isPrereleaseSource({sourceClean}); }
+		static _getBrewUtil () { return typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null; }
+		static _pGetSourceIndex () { return DataUtil.prerelease.pLoadSourceIndex(); }
+	};
+
+	static _BrewPreloader = class extends this._PrereleaseBrewPreloader {
+		static _LOCK_0 = new VeLock({isDbg: false, name: "loader-lock-0--brew"});
+		static _SOURCE_ALL = _DataLoaderConst.SOURCE_PRERELEASE_ALL_CURRENT;
+		static _SOURCES_ATTEMPTED = new Set();
+		static _CACHE_SOURCE_CLEAN_TO_URL = null;
+
+		static _isPossibleSource ({parent, sourceClean}) { return !parent._isSiteSource({sourceClean}) && !parent._isPrereleaseSource({sourceClean}); }
+		static _getBrewUtil () { return typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null; }
+		static _pGetSourceIndex () { return DataUtil.brew.pLoadSourceIndex(); }
+	};
 
 	static async _pCacheAndGet_getCacheMeta ({pageClean, sourceClean, dataLoader}) {
 		try {
@@ -1548,38 +1827,49 @@ class DataLoader {
 	static async _pCache ({pageClean, sourceClean, dataLoader}) {
 		// region Fetch from site data
 		const siteData = await dataLoader.pGetSiteData({pageClean, sourceClean});
-		this._pCache_addToCache({allDataMerged: siteData, propAllowlist: dataLoader.phase1CachePropAllowlist || dataLoader.propAllowlist});
+		this._pCache_addToCache({allDataMerged: siteData, propAllowlist: dataLoader.phase1CachePropAllowlist || new Set(dataLoader.constructor.PROPS)});
 		// Always early-exit, regardless of whether the entity was found in the cache, if we know this is a site source
 		if (this._isSiteSource({sourceClean})) return {siteData};
 		// endregion
 
-		if (typeof BrewUtil2 === "undefined") return {siteData};
+		const out = {siteData};
 
-		// region Fetch from already-stored brew data
-		//   As we have preloaded missing brew earlier in the flow, we know that a brew is either present, or unavailable
-		let brewData = await dataLoader.pGetStoredBrewData();
-		this._pCache_addToCache({allDataMerged: brewData, propAllowlist: dataLoader.phase1CachePropAllowlist || dataLoader.propAllowlist});
+		// region Fetch from already-stored prerelease/brew data
+		//   As we have preloaded missing prerelease/brew earlier in the flow, we know that a prerelease/brew is either
+		//   present, or unavailable
+		if (typeof PrereleaseUtil !== "undefined") {
+			const prereleaseData = await dataLoader.pGetStoredPrereleaseData();
+			this._pCache_addToCache({allDataMerged: prereleaseData, propAllowlist: dataLoader.phase1CachePropAllowlist || new Set(dataLoader.constructor.PROPS)});
+			out.prereleaseData = prereleaseData;
+		}
+
+		if (typeof BrewUtil2 !== "undefined") {
+			const brewData = await dataLoader.pGetStoredBrewData();
+			this._pCache_addToCache({allDataMerged: brewData, propAllowlist: dataLoader.phase1CachePropAllowlist || new Set(dataLoader.constructor.PROPS)});
+			out.brewData = brewData;
+		}
 		// endregion
 
-		return {siteData, brewData};
+		return out;
 	}
 
-	static async _pCacheAndGet_processCacheMeta ({dataLoader, siteData = null, brewData = null, lockToken2 = null}) {
+	static async _pCacheAndGet_processCacheMeta ({dataLoader, siteData = null, prereleaseData = null, brewData = null, lockToken2 = null}) {
 		if (!dataLoader.hasPhase2Cache) return;
 
 		try {
 			lockToken2 = await this._LOCK_2.pLock({token: lockToken2});
-			await this._pCacheAndGet_processCacheMeta_({dataLoader, siteData, brewData, lockToken2});
+			await this._pCacheAndGet_processCacheMeta_({dataLoader, siteData, prereleaseData, brewData, lockToken2});
 		} finally {
 			this._LOCK_2.unlock();
 		}
 	}
 
-	static async _pCacheAndGet_processCacheMeta_ ({dataLoader, siteData = null, brewData = null, lockToken2 = null}) {
-		const {siteDataPostCache, brewDataPostCache} = await dataLoader.pGetPostCacheData({siteData, brewData, lockToken2});
+	static async _pCacheAndGet_processCacheMeta_ ({dataLoader, siteData = null, prereleaseData = null, brewData = null, lockToken2 = null}) {
+		const {siteDataPostCache, prereleaseDataPostCache, brewDataPostCache} = await dataLoader.pGetPostCacheData({siteData, prereleaseData, brewData, lockToken2});
 
-		this._pCache_addToCache({allDataMerged: siteDataPostCache, propAllowlist: dataLoader.phase2CachePropAllowlist || dataLoader.propAllowlist});
-		this._pCache_addToCache({allDataMerged: brewDataPostCache, propAllowlist: dataLoader.phase2CachePropAllowlist || dataLoader.propAllowlist});
+		this._pCache_addToCache({allDataMerged: siteDataPostCache, propAllowlist: dataLoader.phase2CachePropAllowlist || new Set(dataLoader.constructor.PROPS)});
+		this._pCache_addToCache({allDataMerged: prereleaseDataPostCache, propAllowlist: dataLoader.phase2CachePropAllowlist || new Set(dataLoader.constructor.PROPS)});
+		this._pCache_addToCache({allDataMerged: brewDataPostCache, propAllowlist: dataLoader.phase2CachePropAllowlist || new Set(dataLoader.constructor.PROPS)});
 	}
 
 	static _pCache_getDataTypeLoader ({pageClean, isSilent}) {
@@ -1588,7 +1878,7 @@ class DataLoader {
 		return dataLoader;
 	}
 
-	static _pCache_addToCache ({allDataMerged, propAllowlist = null}) {
+	static _pCache_addToCache ({allDataMerged, propAllowlist}) {
 		if (!allDataMerged) return;
 
 		allDataMerged = {...allDataMerged};
@@ -1602,7 +1892,7 @@ class DataLoader {
 
 		Object.keys(allDataMerged)
 			.forEach(prop => {
-				if (propAllowlist && !propAllowlist.has(prop)) return;
+				if (!propAllowlist.has(prop)) return;
 
 				const arr = allDataMerged[prop];
 				if (!arr?.length || !(arr instanceof Array)) return;
@@ -1628,61 +1918,33 @@ class DataLoader {
 
 	/* -------------------------------------------- */
 
-	static _BREW_SOURCES_ATTEMPTED = new Set();
-
-	static _isExistingBrewMiss ({sourceClean}) {
-		return this._BREW_SOURCES_ATTEMPTED.has(sourceClean);
-	}
-
-	static _setExistingBrewMiss ({sourceClean}) {
-		this._BREW_SOURCES_ATTEMPTED.add(sourceClean);
-	}
-
-	/* -------------------------------------------- */
-
 	static _CACHE_SITE_SOURCE_CLEAN = null;
+
+	static _doBuildSourceCaches () {
+		this._CACHE_SITE_SOURCE_CLEAN = this._CACHE_SITE_SOURCE_CLEAN || new Set(Object.keys(Parser.SOURCE_JSON_TO_FULL)
+			.map(src => _DataLoaderInternalUtil.getCleanSource({source: src})));
+	}
 
 	static _isSiteSource ({sourceClean}) {
 		if (sourceClean === _DataLoaderConst.SOURCE_SITE_ALL) return true;
 		if (sourceClean === _DataLoaderConst.SOURCE_BREW_ALL_CURRENT) return false;
+		if (sourceClean === _DataLoaderConst.SOURCE_PRERELEASE_ALL_CURRENT) return false;
 
-		this._CACHE_SITE_SOURCE_CLEAN = this._CACHE_SITE_SOURCE_CLEAN || new Set(Object.keys(Parser.SOURCE_JSON_TO_FULL)
-			.map(src => _DataLoaderInternalUtil.getCleanSource({source: src})));
+		this._doBuildSourceCaches();
+
 		return this._CACHE_SITE_SOURCE_CLEAN.has(sourceClean);
 	}
 
-	/* -------------------------------------------- */
+	static _isPrereleaseSource ({sourceClean}) {
+		if (sourceClean === _DataLoaderConst.SOURCE_SITE_ALL) return false;
+		if (sourceClean === _DataLoaderConst.SOURCE_BREW_ALL_CURRENT) return false;
+		if (sourceClean === _DataLoaderConst.SOURCE_PRERELEASE_ALL_CURRENT) return true;
 
-	/** Cache of clean (lowercase) source -> brew URL. */
-	static _CACHE_BREW_SOURCE_CLEAN_TO_URL = null;
+		this._doBuildSourceCaches();
 
-	static async _pInitCacheBrewSourceToUrl () {
-		if (this._CACHE_BREW_SOURCE_CLEAN_TO_URL) return;
-
-		const index = await this._pGetBrewUrlIndex();
-		if (!index) return this._CACHE_BREW_SOURCE_CLEAN_TO_URL = {};
-
-		const urlRoot = await BrewUtil2.pGetCustomUrl();
-
-		this._CACHE_BREW_SOURCE_CLEAN_TO_URL = Object.entries(index)
-			.mergeMap(([src, url]) => ({[_DataLoaderInternalUtil.getCleanSource({source: src})]: DataUtil.brew.getFileUrl(url, urlRoot)}));
+		return sourceClean.startsWith(_DataLoaderInternalUtil.getCleanSource({source: Parser.SRC_UA_PREFIX}))
+			|| sourceClean.startsWith(_DataLoaderInternalUtil.getCleanSource({source: Parser.SRC_UA_ONE_PREFIX}));
 	}
-
-	static async _pGetBrewUrlIndex () {
-		try {
-			return (await DataUtil.brew.pLoadSourceIndex());
-		} catch (e) {
-			setTimeout(() => { throw e; });
-			return null;
-		}
-	}
-
-	static async _pGetBrewUrl ({sourceClean}) {
-		await this._pInitCacheBrewSourceToUrl();
-		return this._CACHE_BREW_SOURCE_CLEAN_TO_URL[sourceClean];
-	}
-
-	/* -------------------------------------------- */
 }
 
 // endregion
