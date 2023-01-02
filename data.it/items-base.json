@@ -610,12 +610,12 @@
 			"dmgType": "P",
 			"weapon": true,
 			"entries": [
-				"A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+				"L'hoopak è un bastone robusto con un'imbragatura a un'estremità e una punta appuntita all'altra.",
 				{
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+						"Quando si effettua un attacco in mischia con quest'arma, si ignora la proprietà delle munizioni. Si può usare l'hoopak come arma marziale a distanza. In questo caso, utilizza la proprietà delle munizioni, usa proiettili da fionda e infligge {@damage 1d4} danni da percosse su un colpo."
 					]
 				}
 			],
@@ -1601,7 +1601,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "AF",
@@ -1617,7 +1617,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "BF",
@@ -1737,7 +1737,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "2H",
@@ -1932,6 +1932,7 @@
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
+			"source": "XGE",
 			"entries": [
 				"La padronanza di uno strumento musicale indica che hai familiarità con le tecniche utilizzate per suonarlo. Hai anche la conoscenza di alcune canzoni comunemente eseguite con quello strumento.",
 				{
@@ -1981,6 +1982,7 @@
 		},
 		{
 			"appliesTo": "GS",
+			"source": "XGE",
 			"entries": [
 				"La competenza con un set di gioco si applica a un tipo di gioco, come Three-Dragon Ante o i giochi d'azzardo che utilizzano i dadi.",
 				{

@@ -75,7 +75,7 @@
 								"Lo scopo di questo tag è di aprire la pagina data, pre-filtrata con le opzioni di filtro specificate. C'è un grosso inconveniente che lo rende difficile da usare per gli aspiranti JSONtranauti: i valori del filtro usano la versione {@i internal}, come si trova nei dati. Così, per esempio, ..|school=D|... filtrerebbe gli incantesimi per quelli della scuola di Divinazione, poiché 'D' è l'identificatore di Divinazione nei dati. Provare a fare ad esempio ..|scuola=Divinazione|... non funzionerà.",
 								"Il 'filter_name_X' qui corrisponde al nome testuale letterale del filtro, come visualizzato nel dropdown.",
 								"Alcuni esempi del tag in azione:",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Tag \"attacco\" del bestiario: {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (solo homebrew) {@atk a}, {@atk aw}. Le virgole separano i tipi di attacco or'd; la forma generale è: '@atk &lt;m|r|a&gt;[&lt;w|s&gt;][,&lt;m|r|a&gt;[&lt;w|s&gt;][,...]]'"
 									]
 								},
-								"Tag di caricamento homebrew: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. L'URL dopo il tubo si presume essere dalla radice del repository homebrew, a meno che non inizi con un prefisso \"...://\" (cioè, qualsiasi link dovrebbe funzionare, ma c'è un'abbreviazione per i link del repository homebrew)."
+								"Tag di caricamento homebrew: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. L'URL dopo il tubo si presume essere dalla radice del repository homebrew, a meno che non inizi con un prefisso \"...://\" (cioè, qualsiasi link dovrebbe funzionare, ma c'è un'abbreviazione per i link del repository homebrew).",
+								"Tag di caricamento di Prerelease; come sopra: {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]
