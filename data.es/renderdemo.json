@@ -75,7 +75,7 @@
 								"El propósito de esta etiqueta es abrir la página dada, pre-filtrada con las opciones de filtrado especificadas. Hay una advertencia importante que hace que esta etiqueta sea difícil de usar para los aspirantes a JSONtranautas: los valores del filtro utilizan la versión {@i internal}, como se encontraría en los datos. Así, por ejemplo, ..|escuela=D|.. filtraría los hechizos a los de la escuela de Adivinación, ya que 'D' es el identificador de Adivinación en los datos. Intentar hacer, por ejemplo, ..|escuela=Divinación|.. no funcionará.",
 								"El 'nombre_del_filtro_X' coincide aquí con el nombre literal del texto del filtro, tal y como aparece en el desplegable.",
 								"Algunos ejemplos de la etiqueta en acción:",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Etiquetas de \"ataque\" del bestiario: {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (sólo homebrew) {@atk a}, {@atk aw}. Las comas separan los tipos de ataque or'd; la forma general es: '@atk &lt;m|r|a&gt;[&lt;w|s&gt;][,&lt;m|r|a&gt;[&lt;w|s&gt;][,...]]'."
 									]
 								},
-								"Etiquetas de carga caseras: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Se asume que la URL después de la tubería es de la raíz del repositorio homebrew, a menos que comience con un prefijo \"...://\" (es decir, cualquier enlace debería funcionar, pero hay una abreviatura para los enlaces del repositorio homebrew)."
+								"Etiquetas de carga caseras: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. Se asume que la URL después de la tubería es de la raíz del repositorio homebrew, a menos que comience con un prefijo \"...://\" (es decir, cualquier enlace debería funcionar, pero hay una abreviatura para los enlaces del repositorio homebrew).",
+								"Etiquetas de carga previas al lanzamiento; como arriba: {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]
