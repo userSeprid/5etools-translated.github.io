@@ -75,7 +75,7 @@
 								"这个标签的目的是打开给定的页面，用指定的过滤选项进行预过滤。有一个主要的注意事项，使得有抱负的JSONtranauts使用起来很棘手--过滤值使用{@i internal}版本，就像你在数据中发现的那样。因此，例如，.|school=D|...会将法术过滤为占卜学校的法术，因为'D'是数据中的占卜标识。试图这样做，例如 ...|school=Divination|...，是行不通的。",
 								"这里的'filter_name_X'与下拉菜单中显示的过滤器的字面文本名称相匹配。",
 								"该标签在行动中的一些例子。",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"兽皮书的 \"攻击 \"标签。{@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (仅限自制) {@atk a}, {@atk aw}。逗号分隔了or'd攻击类型；一般的形式是：'@atk &lt;m|r|a&gt;[&lt;w|s&gt;] [,&lt;m|r|a&gt;[&lt;w|s&gt;] [,...]'"
 									]
 								},
-								"自制的加载标签。{@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. 管子后面的URL被认为是来自自制软件仓库的根，除非它以\"...://\"的前缀开头（也就是说，任何链接都应该工作，但有一个自制软件仓库链接的速记法）。"
+								"自制的加载标签。{@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. 管子后面的URL被认为是来自自制软件仓库的根，除非它以\"...://\"的前缀开头（也就是说，任何链接都应该工作，但有一个自制软件仓库链接的速记法）。",
+								"预先发布的加载标签；同上：（%0%）。"
 							]
 						}
 					]
