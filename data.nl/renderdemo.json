@@ -75,7 +75,7 @@
 								"Het doel van deze tag is om de gegeven pagina te openen, voorgefilterd met de gespecificeerde filteropties. Er is één groot nadeel dat dit lastig maakt voor aspirant JSONtranauten-de filterwaarden gebruiken de {@i internal} versie, zoals je die in de data zou vinden. Dus, bijvoorbeeld, ..|school=D|... zou spreuken filteren op Divinatie school spreuken, aangezien 'D' de Divinatie identifier is in de data. Proberen om bijv. ..|school=Divination|.. te doen zal niet werken.",
 								"De 'filter_naam_X' komt hier overeen met de letterlijke tekstnaam van het filter, zoals weergegeven in het uitklapmenu.",
 								"Enkele voorbeelden van de tag in actie:",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Aanvalstags in het Bestiarium: {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (alleen voor eigen gebruik) {@atk a}, {@atk aw}. Komma's scheiden or'd aanvalstypes; de algemene vorm is: '@atk &lt;m|r|a&gt;[&lt;w|s&gt;][,&lt;m|r|a&gt;[&lt;w|s&gt;][,...]]'"
 									]
 								},
-								"Homebrew laad tags: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. De URL na de pijp wordt verondersteld van de root van de homebrew repository te zijn, tenzij het begint met een \"...://\" prefix (i.e., iedere link zou moeten werken, maar er is een shorthand voor homebrew repository links)."
+								"Homebrew laad tags: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. De URL na de pijp wordt verondersteld van de root van de homebrew repository te zijn, tenzij het begint met een \"...://\" prefix (i.e., iedere link zou moeten werken, maar er is een shorthand voor homebrew repository links).",
+								"Prerelease loading tags; zoals hierboven: {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]
