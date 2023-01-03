@@ -75,7 +75,7 @@
 								"Le but de cette balise est d'ouvrir la page donnée, pré-filtrée avec les options de filtrage spécifiées. Il y a un problème majeur qui rend l'utilisation de cette balise délicate pour les JSONtranautes en herbe : les valeurs de filtrage utilisent la version {@i internal}, comme vous le trouveriez dans les données. Ainsi, par exemple, ..|school=D|... filtrerait les sorts en fonction de l'école de divination, puisque 'D' est l'identifiant de la divination dans les données. Essayer de faire par exemple ..|school=Divination|... ne fonctionnera pas.",
 								"Le \"nom_du_filtre_X\" correspond ici au nom littéral du filtre, tel qu'il est affiché dans la liste déroulante.",
 								"Quelques exemples de la balise en action :",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Balises 'attaque' du bestiaire : {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs} ; (homebrew uniquement) {@atk a}, {@atk aw}. Les virgules séparent les types d'attaque or'd ; la forme générale est : '@atk &lt;m|r|a&gt ;[&lt;w|s&gt ;][,&lt;m|r|a&gt ;[&lt;w|s&gt ;][,...]]]'."
 									]
 								},
-								"Balises de chargement homebrew : {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. L'URL après le tuyau est supposée provenir de la racine du dépôt homebrew, sauf si elle commence par un préfixe \"...://\" (c'est-à-dire que n'importe quel lien devrait fonctionner, mais il existe un raccourci pour les liens vers le dépôt homebrew)."
+								"Balises de chargement homebrew : {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. L'URL après le tuyau est supposée provenir de la racine du dépôt homebrew, sauf si elle commence par un préfixe \"...://\" (c'est-à-dire que n'importe quel lien devrait fonctionner, mais il existe un raccourci pour les liens vers le dépôt homebrew).",
+								"Balises de chargement de pré-version ; comme ci-dessus : {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]

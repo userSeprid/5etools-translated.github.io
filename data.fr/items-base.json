@@ -610,12 +610,12 @@
 			"dmgType": "P",
 			"weapon": true,
 			"entries": [
-				"A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+				"Un hoopak est un bâton solide avec une fronde à une extrémité et un bout pointu à l'autre.",
 				{
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+						"Lorsque vous effectuez une attaque de mêlée avec cette arme, vous ignorez sa propriété de munitions. Vous pouvez utiliser le hoopak comme une arme à distance martiale. Dans ce cas, elle utilise la propriété de munition, utilise des balles de fronde et inflige {@damage 1d4} de dégâts de matraquage en cas de succès."
 					]
 				}
 			],
@@ -1601,7 +1601,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "AF",
@@ -1617,7 +1617,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "BF",
@@ -1737,7 +1737,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}} ft.)"
 		},
 		{
 			"abbreviation": "2H",
@@ -1932,6 +1932,7 @@
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
+			"source": "XGE",
 			"entries": [
 				"La maîtrise d'un instrument de musique indique que vous êtes familier avec les techniques utilisées pour en jouer. Vous avez également connaissance de quelques chansons couramment interprétées avec cet instrument.",
 				{
@@ -1981,6 +1982,7 @@
 		},
 		{
 			"appliesTo": "GS",
+			"source": "XGE",
 			"entries": [
 				"La maîtrise d'un ensemble de jeux s'applique à un type de jeu, comme le Three-Dragon Ante ou les jeux de hasard qui utilisent des dés.",
 				{
