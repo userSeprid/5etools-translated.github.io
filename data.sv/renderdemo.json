@@ -75,7 +75,7 @@
 								"Syftet med den här taggen är att öppna den angivna sidan, förfiltrerad med de angivna filtreringsalternativen. Det finns en viktig invändning som gör det svårt att använda den här för blivande JSONtranautövare - filtervärdena använder {@i internal}-versionen, som du skulle hitta i data. Så till exempel skulle ..|school=D|... filtrera trollformler till trollformler från Divination school, eftersom \"D\" är Divination-identifieraren i data. Att försöka göra t.ex. ..|school=Divination|... kommer inte att fungera.",
 								"Här motsvarar \"filter_name_X\" det bokstavliga textnamnet på filtret som visas i rullgardinsmenyn.",
 								"Några exempel på hur taggen används:",
-								"{@filter Races that have a bonus to Intelligence|races|Ability Bonus (Including Subrace)=Intelligence +any}",
+								"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}",
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter Creatures with a Strength score of 18 or more|bestiary|strength=[18;]}",
@@ -137,7 +137,8 @@
 										"Bestiariums \"attack\"-taggar: {@atk m}, {@atk r}, {@atk m,r}, {@atk mw}, {@atk rw}, {@atk ms}, {@atk rs}; (endast för hemmabygge) {@atk a}, {@atk aw}. Komma separerar or'd-attacktyper; den allmänna formen är: \"@atk &lt;m|r|a&gt;[&lt;w|s&gt;][,&lt;m|r|a&gt;[&lt;w|s&gt;][,...]]]\"."
 									]
 								},
-								"Homebrew lastning av taggar: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. URL:en efter pipen antas vara från roten av homebrew-förrådet, om den inte börjar med ett \"...://\"-prefix (dvs. vilken länk som helst fungerar, men det finns en förkortning för homebrew-förrådslänkar)."
+								"Homebrew lastning av taggar: {@loader Tome of Beasts|creature/Kobold Press; Tome of Beasts.json}. URL:en efter pipen antas vara från roten av homebrew-förrådet, om den inte börjar med ett \"...://\"-prefix (dvs. vilken länk som helst fungerar, men det finns en förkortning för homebrew-förrådslänkar).",
+								"Lastmärken för förhandsutgivning; som ovan: {@loader UA: When Armies Clash|collection/Unearthed Arcana - When Armies Clash.json|prerelease}."
 							]
 						}
 					]

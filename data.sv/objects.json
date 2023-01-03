@@ -48,21 +48,21 @@
 				"psychic"
 			],
 			"entries": [
-				"This wagon-sized device is designed to look roughly like a dragon. Before it can be used, the boilerdrak must be lit and aimed. It takes 1 action to light the weapon, 1 action to aim it, and 1 action to fire it. When you use your action to fire it, roll a {@dice d20}. If you roll a 2 or higher, use the Flames action. If you roll a 1, use the Explosion action."
+				"Denna vagnstora apparat är utformad för att se ut ungefär som en drake. Innan den kan användas måste boilerdraket tändas och riktas. Det tar 1 handling att tända vapnet, 1 handling att sikta och 1 handling att avfyra det. När du använder din handling för att avfyra det kastar du en {@dice d20}. Om du kastar en 2 eller högre använder du handlingen Flames. Om du kastar en 1 använder du explosionshandlingen."
 			],
 			"actionEntries": [
 				{
 					"type": "entries",
 					"name": "Flames",
 					"entries": [
-						"The boilerdrak expels flames in a 60-foot cone. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 27 ({@dice 5d10}) fire damage on a failed save, or half as much damage on a successful one."
+						"Pannkraken sprutar ut lågor i en 60 fot lång kägla. Varje varelse i det området måste göra ett {@dc 15} räddningskast för att rädda sig. Vid ett misslyckat räddningskast tar den 27 ({@dice 5d10}) brandskador, eller hälften så mycket skada vid ett lyckat räddningskast."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Explosion",
 					"entries": [
-						"The boilerdrak explodes in a 30-foot-radius sphere and is destroyed. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 27 ({@dice 5d10}) fire damage on a failed save, or half as much damage on a successful one."
+						"Boilerdrak exploderar i en sfär med en radie på 30 fot och förstörs. Varje varelse i det området måste göra ett {@dc 15} räddningskast med Dexterity, och tar 27 ({@dice 5d10}) brandskador vid ett misslyckat räddningskast, eller hälften så mycket skada vid ett lyckat räddningskast."
 					]
 				}
 			],
@@ -302,16 +302,16 @@
 				"psychic"
 			],
 			"entries": [
-				"The gnomeflinger is a catapult designed to hurl creatures, instead of projectiles, in a high arc. The gnomeflinger was designed in conjunction with the {@item narycrash|DSotDQ} (see the {@area \"Adventuring Gear\"|498|x} section) to hasten transportation. The device can hold one Medium or smaller creature. Before it can be used, the gnomeflinger must be loaded and aimed. It takes 1 action to load the gnomeflinger, 1 action to aim it, and 1 action to fire it.",
-				"While taking an action to aim the gnomeflinger, you set the maximum horizontal distance of the Fling Personnel action to 60 feet, 150 feet, or 300 feet."
+				"Gnomeflinger är en katapult som är utformad för att kasta varelser, i stället för projektiler, i en hög båge. Gnomeflinger utformades tillsammans med {@item narycrash|DSotDQ} (se avsnittet {@area \"Adventuring Gear\"|498|x}) för att påskynda transporter. Apparaten kan rymma en medium eller mindre varelse. Innan den kan användas måste gnomeflinger laddas och riktas. Det tar 1 handling att ladda gnomeflingern, 1 handling att sikta den och 1 handling att avfyra den.",
+				"När du gör en handling för att sikta på gnomeflingern ställer du in det maximala horisontella avståndet för åtgärden Fling Personnel till 60 fot, 150 fot eller 300 fot."
 			],
 			"actionEntries": [
 				{
 					"type": "entries",
 					"name": "Fling Personnel",
 					"entries": [
-						"The gnomeflinger catapults a Medium or smaller creature at least 60 feet away horizontally, with a maximum horizontal distance of 60 feet, 150 feet, or 300 feet, depending on the option chosen when the catapult was aimed. During this trajectory, the creature always reaches a height of 60 feet vertically.",
-						"A creature that collides with another creature or an object during this trajectory takes 3 ({@dice 1d6}) bludgeoning damage for every 10 feet away from the gnomeflinger it is."
+						"Gnomeflinger katapulterar en medium eller mindre varelse minst 60 fot bort horisontellt, med ett maximalt horisontellt avstånd på 60 fot, 150 fot eller 300 fot, beroende på vilket alternativ som valdes när katapulten riktades. Under denna bana når varelsen alltid en höjd av 60 fot vertikalt.",
+						"En varelse som kolliderar med en annan varelse eller ett föremål under den här banan tar 3 ({@dice 1d6}) slående skada för varje tre meter från gnomeflinger som den befinner sig."
 					]
 				}
 			]
