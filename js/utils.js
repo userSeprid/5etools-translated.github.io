@@ -3033,7 +3033,7 @@ globalThis.DataUtil = {
 	},
 
 	async _pLoad ({url, id, isBustCache = false}) {
-		language = StorageUtil.syncGet("contentLanguage")
+		var language = StorageUtil.syncGet("contentLanguage")
 		if (!language) {
 			language = this.defaultContentLanguage;
 		}
