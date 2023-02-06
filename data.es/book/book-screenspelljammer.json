@@ -117,7 +117,8 @@
 					"entries": [
 						"Puedes contener la respiración durante un número de minutos igual a 1 + tu modificador de Constitución (mínimo 30 segundos).",
 						"Si te quedas sin aliento o te ahogas, puedes sobrevivir durante un número de asaltos igual a tu modificador de Constitución (mínimo 1 asalto). Al comienzo de tu siguiente turno, caes a 0 puntos de golpe y te estás muriendo, y no puedes recuperar puntos de golpe ni ser estabilizado hasta que puedas respirar de nuevo."
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "entries",
@@ -132,18 +133,22 @@
 									"name": "Impeded Melee",
 									"entries": [
 										"Al realizar un ataque cuerpo a cuerpo con un arma, una criatura que no tenga velocidad para volar o nadar (ya sea de forma natural o proporcionada por magia) tiene desventaja en la tirada de ataque, a menos que el arma inflija daño perforante."
-									]
+									],
+									"id": "004"
 								},
 								{
 									"type": "entries",
 									"name": "Movement",
 									"entries": [
 										"Una criatura puede utilizar una acción para empujar algo más pesado que ella y moverse hasta su velocidad de caminar, volar o nadar en línea recta. La criatura continúa por este camino, moviéndose en línea recta a su velocidad en cada uno de sus giros hasta que algo la detiene o cambia su trayectoria."
-									]
+									],
+									"id": "005"
 								}
-							]
+							],
+							"id": "003"
 						}
-					]
+					],
+					"id": "002"
 				},
 				{
 					"type": "gallery",
@@ -337,7 +342,10 @@
 											"1 nave de interferencia de hechizos (tirada del {@book Ship Encounters table|BAM|0|Ship Encounters})",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -478,7 +486,10 @@
 											"1 nave de interferencia de hechizos (tirada en la tabla de encuentros con naves)",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -616,7 +627,8 @@
 										]
 									]
 								}
-							]
+							],
+							"id": "006"
 						},
 						{
 							"type": "entries",
@@ -649,7 +661,8 @@
 									]
 								},
 								"Si la nave choca contra algo que no tiene puntos de impacto (como un planeta o una luna), aplica el daño sólo a la nave. La nave se detiene tras chocar contra una criatura u objeto Gargantuesco o inamovible; en caso contrario, la nave puede seguir moviéndose si le queda movimiento, y lo que haya golpeado se desplaza al espacio desocupado más cercano que no esté en la trayectoria de la nave."
-							]
+							],
+							"id": "007"
 						}
 					]
 				},
@@ -720,7 +733,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "008"
 				},
 				{
 					"type": "entries",
@@ -781,7 +795,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00b"
 				},
 				{
 					"type": "entries",
@@ -913,9 +928,11 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00c"
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }

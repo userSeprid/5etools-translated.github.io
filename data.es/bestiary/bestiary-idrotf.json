@@ -25,114 +25,27 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 169,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"goliath"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
+			"_copy": {
+				"name": "Goliath Warrior",
+				"source": "IDRotF",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the goliath",
+						"with": "Aruk",
+						"flags": "i"
+					},
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"insight": 1,
+								"medicine": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 67,
-				"formula": "9d8 + 27"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 11,
-			"con": 16,
-			"int": 10,
-			"wis": 15,
-			"cha": 10,
-			"skill": {
-				"athletics": "+6",
-				"insight": "+4",
-				"medicine": "+4",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
-			"resist": [
-				"cold"
-			],
-			"languages": [
-				"Common",
-				"Giant"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Mountain Born",
-					"entries": [
-						"Aruk está aclimatado a la altitud, incluso a alturas superiores a los 6.000 metros."
-					]
-				},
-				{
-					"name": "Powerful Build",
-					"entries": [
-						"Aruk cuenta como una talla más al determinar su capacidad de carga y el peso que puede empujar, arrastrar o levantar."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Aruk realiza dos ataques con su greataxe o lanza dos jabalinas."
-					]
-				},
-				{
-					"name": "Greataxe",
-					"entries": [
-						"{@atk mw} {@hit 6} para golpear, alcance 5 pies, un objetivo. {@h}10 ({@damage 1d12 + 4}) de daño cortante."
-					]
-				},
-				{
-					"name": "Javelin",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} para golpear, alcance 5 pies o rango 30/120 pies, un objetivo. {@h}7 ({@damage 1d6 + 4}) de daño penetrante."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Cuando Aruk recibe daño, reduce el daño recibido en 9 ({@dice 1d12 + 3})."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"GI"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -905,7 +818,6 @@
 			"name": "Awakened White Moose",
 			"source": "IDRotF",
 			"page": 82,
-			"_isCopy": true,
 			"size": [
 				"L"
 			],
@@ -999,110 +911,57 @@
 		},
 		{
 			"name": "Battlehammer Dwarf",
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 107,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"dwarf"
-				]
+			"_copy": {
+				"name": "Scout",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "scout",
+						"with": "dwarf"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Longbow",
+							"items": {
+								"name": "Light Crossbow",
+								"entries": [
+									"{@atk rw} {@hit 4} para golpear, alcance 80/320 pies, un objetivo. {@h}6 ({@damage 1d8 + 2}) de daño penetrante."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Shortsword",
+							"items": {
+								"name": "Handaxe",
+								"entries": [
+									"{@atk mw,rw} {@hit 2} para golpear, alcance 5 pies o rango 20/60 pies, un objetivo. {@h}3 ({@damage 1d6 + 0}) de daño cortante."
+								]
+							}
+						}
+					]
+				}
 			},
 			"alignment": [
 				"L",
 				"G"
 			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 16,
-				"formula": "3d8 + 3"
-			},
-			"speed": {
-				"walk": 25
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 11,
-			"wis": 13,
-			"cha": 11,
-			"skill": {
-				"nature": "+4",
-				"perception": "+5",
-				"stealth": "+6",
-				"survival": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
-			"resist": [
-				"poison"
-			],
-			"languages": [
-				"Common",
-				"Dwarvish"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Keen Hearing and Sight",
-					"entries": [
-						"El enano tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen del oído o la vista."
-					]
-				},
-				{
-					"name": "Dwarven Resilience",
-					"entries": [
-						"El enano tiene ventaja en las tiradas de salvación contra el veneno y resistencia al daño por veneno."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El enano realiza dos ataques cuerpo a cuerpo o dos ataques a distancia."
-					]
-				},
-				{
-					"name": "Handaxe",
-					"entries": [
-						"{@atk mw,rw} {@hit 2} para golpear, alcance 5 pies o rango 20/60 pies, un objetivo. {@h}3 ({@damage 1d6 + 0}) de daño cortante."
-					]
-				},
-				{
-					"name": "Light Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 4} para golpear, alcance 80/320 pies, un objetivo. {@h}6 ({@damage 1d8 + 2}) de daño penetrante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
-				"D"
-			],
-			"damageTags": [
-				"P"
+				"D",
+				"X"
 			],
 			"miscTags": [
 				"MW",
@@ -1481,128 +1340,39 @@
 			"name": "Chimeric Baboon",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"S"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 3,
-				"formula": "1d6"
-			},
-			"speed": {
-				"walk": 30,
-				"climb": 30
-			},
-			"str": 8,
-			"dex": 14,
-			"con": 11,
-			"int": 4,
-			"wis": 12,
-			"cha": 6,
-			"passive": 11,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"El babuino tiene ventaja en una tirada de ataque contra una criatura si al menos uno de los aliados del babuino está a menos de 1,5 metros de la criatura y el aliado no lo está {@condition incapacitated}."
-					]
+			"_copy": {
+				"name": "Baboon",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Bite",
+						"items": {
+							"name": "Bite",
+							"entries": [
+								"{@atk mw} {@hit 1} para golpear, alcance 5 pies, un objetivo. {@h}1 ({@damage 1d4 - 1}) de daño punzante, más 3 ({@damage 1d6}) de daño venenoso adicional."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 1} para golpear, alcance 5 pies, un objetivo. {@h}1 ({@damage 1d4 - 1}) de daño punzante, más 3 ({@damage 1d6}) de daño venenoso adicional."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
-			"damageTags": [
-				"I",
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
+			},
 			"hasToken": true
 		},
 		{
 			"name": "Chimeric Cat",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 2,
-				"formula": "1d4"
-			},
-			"speed": {
-				"walk": 40,
-				"climb": 30
-			},
-			"str": 3,
-			"dex": 15,
-			"con": 10,
-			"int": 3,
-			"wis": 12,
-			"cha": 7,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+4"
+			"_copy": {
+				"name": "Cat",
+				"source": "MM"
 			},
 			"senses": [
 				"blindsight 60 ft.",
 				"tremorsense 60 ft."
 			],
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Smell",
-					"entries": [
-						"El gato tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen del olfato."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 0} para golpear, alcance de 5 pies, un objetivo. {@h}1 de daño cortante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
 			"senseTags": [
 				"B",
 				"T"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1611,68 +1381,21 @@
 			"name": "Chimeric Fox",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 2,
-				"formula": "1d4"
-			},
-			"speed": {
-				"walk": 30,
-				"burrow": 5
-			},
-			"str": 2,
-			"dex": 16,
-			"con": 11,
-			"int": 3,
-			"wis": 12,
-			"cha": 6,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Hearing",
-					"entries": [
-						"El zorro tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen del oído."
-					]
-				},
-				{
-					"name": "Chimeric Creation",
-					"entries": [
-						"El zorro tiene un pelaje que cambia de color para adaptarse a su entorno, lo que le da ventaja en los chequeos de Destreza (Sigilo)."
-					]
+			"_copy": {
+				"name": "Fox",
+				"source": "IDRotF",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Chimeric Creation",
+							"entries": [
+								"El zorro tiene un pelaje que cambia de color para adaptarse a su entorno, lo que le da ventaja en los chequeos de Destreza (Sigilo)."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} para golpear, alcance 5 pies, una criatura. {@h}1 de daño penetrante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
+			},
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -1680,46 +1403,15 @@
 			"name": "Chimeric Hare",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 1,
-				"formula": "1d4 - 1"
+			"_copy": {
+				"name": "Hare",
+				"source": "IDRotF"
 			},
 			"speed": {
 				"walk": 20,
 				"burrow": 5,
 				"fly": 30
 			},
-			"str": 1,
-			"dex": 17,
-			"con": 9,
-			"int": 2,
-			"wis": 11,
-			"cha": 4,
-			"skill": {
-				"perception": "+2",
-				"stealth": "+5"
-			},
-			"passive": 12,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Escape",
-					"entries": [
-						"La liebre puede realizar la acción de correr, desentenderse u ocultarse como acción adicional en cada uno de sus turnos."
-					]
-				}
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -1748,64 +1440,31 @@
 			"name": "Chimeric Weasel",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 1,
-				"formula": "1d4 - 1"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 3,
-			"dex": 16,
-			"con": 8,
-			"int": 2,
-			"wis": 12,
-			"cha": 3,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Hearing and Smell",
-					"entries": [
-						"La comadreja tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen del oído o del olfato."
-					]
-				},
-				{
-					"name": "Chimeric Creation",
-					"entries": [
-						"La comadreja tiene ojos brillantes que emiten luz brillante en un radio de 6 metros y luz tenue en otros 6 metros."
-					]
+			"_copy": {
+				"name": "Weasel",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Chimeric Creation",
+							"entries": [
+								"La comadreja tiene ojos brillantes que emiten luz brillante en un radio de 6 metros y luz tenue en otros 6 metros."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Bite",
+						"items": {
+							"name": "Bite",
+							"entries": [
+								"{@atk mw} {@hit 5} para golpear, alcance 5 pies, un objetivo. {@h}1 de daño penetrante."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} para golpear, alcance 5 pies, un objetivo. {@h}1 de daño penetrante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"damageTags": [
-				"P"
-			],
+			},
 			"miscTags": [
 				"AOE",
 				"MW"
@@ -2046,169 +1705,6 @@
 				"MW",
 				"RNG",
 				"RW"
-			],
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Dzaan",
-			"isNpc": true,
-			"isNamedCreature": true,
-			"source": "IDRotF",
-			"page": 270,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				10
-			],
-			"hp": {
-				"average": 49,
-				"formula": "9d8 + 9"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 11,
-			"con": 12,
-			"int": 16,
-			"wis": 13,
-			"cha": 15,
-			"save": {
-				"int": "+5",
-				"wis": "+3"
-			},
-			"skill": {
-				"arcana": "+5",
-				"deception": "+4",
-				"history": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Giant",
-				"Infernal"
-			],
-			"cr": "4",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Dzaan es un hechicero de 9º nivel. Su habilidad de hechizo es Inteligencia (salvación de hechizo {@dc 13}, {@hit 5} para golpear con ataques de hechizo). Tiene preparados los siguientes hechizos de mago:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell acid splash}*",
-								"{@spell light}",
-								"{@spell minor illusion}",
-								"{@spell shocking grasp}*"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell detect magic}",
-								"{@spell disguise self}",
-								"{@spell magic missile}*"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell invisibility}",
-								"{@spell levitate}",
-								"{@spell phantasmal force}"
-							]
-						},
-						"3": {
-							"slots": 3,
-							"spells": [
-								"{@spell fireball}",
-								"{@spell sending}",
-								"{@spell slow}"
-							]
-						},
-						"4": {
-							"slots": 3,
-							"spells": [
-								"{@spell arcane eye}",
-								"{@spell confusion}"
-							]
-						},
-						"5": {
-							"slots": 1,
-							"spells": [
-								"{@spell animate objects}"
-							]
-						}
-					},
-					"footerEntries": [
-						"*See \"Actions\" below."
-					],
-					"ability": "int"
-				}
-			],
-			"action": [
-				{
-					"name": "Shocking Grasp (Cantrip)",
-					"entries": [
-						"{@atk ms} {@hit 5} para golpear, alcance de 5 pies, una criatura (la tirada de ataque tiene ventaja si el objetivo lleva armadura de metal). {@h}9 ({@damage 2d8}) de daño por relámpago, y el objetivo no puede tomar reacciones hasta el inicio de su siguiente turno."
-					]
-				},
-				{
-					"name": "Acid Splash (Cantrip)",
-					"entries": [
-						"Dzaan lanza una burbuja de ácido a una criatura que pueda ver en un radio de 60 pies, o a dos de esas criaturas que estén a 5 pies de distancia. El objetivo debe tener éxito en una tirada de salvación de Destreza {@dc 13} o recibir 7 ({@damage 2d6}) de daño por ácido."
-					]
-				},
-				{
-					"name": "Magic Missile (1st-Level Spell; Requires a Spell Slot)",
-					"entries": [
-						"Dzaan crea tres dardos de fuerza mágica. Cada dardo golpea infaliblemente a una criatura que Dzaan pueda ver en un radio de 120 pies, infligiendo 3 ({@damage 1d4 + 1}) de daño de fuerza. Si Dzaan lanza este hechizo utilizando una ranura de hechizo de 2º nivel, crea un dardo más."
-					]
-				}
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"GI",
-				"I"
-			],
-			"damageTags": [
-				"A",
-				"L",
-				"O"
-			],
-			"damageTagsSpell": [
-				"A",
-				"B",
-				"F",
-				"L",
-				"O",
-				"P",
-				"S",
-				"Y"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"conditionInflictSpell": [
-				"invisible"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3651,7 +3147,6 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 176,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -3930,139 +3425,32 @@
 			"name": "Headless Iron Golem",
 			"source": "IDRotF",
 			"page": 244,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Iron Golem",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Headless",
+							"entries": [
+								"El gólem es {@condition blinded} y {@condition deafened}, lo que le da desventaja en todas sus tiradas de ataque, y no puede usar su Aliento Venenoso."
+							]
+						}
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "Poison Breath {@recharge 5}"
+					}
 				}
-			],
+			},
 			"hp": {
 				"average": 150,
 				"formula": "10d10 + 50"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 24,
-			"dex": 9,
-			"con": 20,
-			"int": 3,
-			"wis": 11,
-			"cha": 1,
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				"psychic",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't adamantine",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
 			"cr": "10",
-			"trait": [
-				{
-					"name": "Fire Absorption",
-					"entries": [
-						"Cada vez que el gólem recibe daño de fuego, no recibe daño y, en cambio, recupera un número de puntos de golpe igual al daño de fuego infligido."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"El gólem es inmune a cualquier hechizo o efecto que pueda alterar su forma."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"El gólem tiene ventaja en las tiradas de salvación contra hechizos y otros efectos mágicos."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"Los ataques con armas del gólem son mágicos."
-					]
-				},
-				{
-					"name": "Headless",
-					"entries": [
-						"Es {@condition blinded} y {@condition deafened}, lo que le da desventaja en todas sus tiradas de ataque, y no puede usar su Aliento Venenoso."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El gólem hace dos ataques cuerpo a cuerpo."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 13} para golpear, alcance 5 pies, un objetivo. {@h}20 ({@damage 3d8 + 7}) de daño por apaleamiento."
-					]
-				},
-				{
-					"name": "Sword",
-					"entries": [
-						"{@atk mw} {@hit 13} para golpear, alcance de 10 pies, un objetivo. {@h}23 ({@damage 3d10 + 7}) de daño cortante."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"SD"
-			],
 			"actionTags": [
 				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4073,10 +3461,28 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 215,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the gladiator",
+							"with": "Hengar",
+							"flags": "i"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
+			},
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4086,107 +3492,6 @@
 			"alignment": [
 				"N",
 				"G"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item studded leather armor|PHB|studded leather}",
-						"{@item shield|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Any one language (usually Common)"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"Hengar tiene ventaja en las tiradas de salvación contra el ser {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Un arma cuerpo a cuerpo inflige un dado extra de su daño cuando Hengar golpea con ella (incluido en el ataque)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Hengar realiza tres ataques cuerpo a cuerpo o dos ataques a distancia."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} para golpear, alcance 5 pies y rango 20/60 pies, un objetivo. {@h}11 ({@damage 2d6 + 4}) de daño punzante, o 13 ({@damage 2d8 + 4}) de daño punzante si se usa con las dos manos para hacer un ataque cuerpo a cuerpo."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} para golpear, alcance 5 pies, una criatura. {@h}9 ({@damage 2d4 + 4}) de daño contundente. Si el objetivo es una criatura mediana o más pequeña, debe tener éxito en una tirada de salvación de {@dc 15} Fuerza o ser derribado {@condition prone}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Hengar añade 3 a su CA contra un ataque cuerpo a cuerpo que lo golpearía. Para ello, Hengar debe ver al atacante y estar empuñando un arma cuerpo a cuerpo."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4287,84 +3592,29 @@
 			"name": "Ice Piercer",
 			"source": "IDRotF",
 			"page": 226,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Piercer",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "piercer",
+						"with": "ice piercer"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Drop",
+						"items": {
+							"name": "Drop",
+							"entries": [
+								"{@atk mw} {@hit 3} para golpear, una criatura directamente debajo del perforador. {@h}10 ({@damage 3d6}) de daño perforante más 10 ({@damage 3d6}) de daño de frío. Fallo: El perforador recibe la mitad del daño de caída normal por la distancia de caída."
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 22,
-				"formula": "3d8 + 9"
 			},
-			"speed": {
-				"walk": 5,
-				"climb": 5
-			},
-			"str": 10,
-			"dex": 13,
-			"con": 16,
-			"int": 1,
-			"wis": 7,
-			"cha": 3,
-			"skill": {
-				"stealth": "+5"
-			},
-			"senses": [
-				"blindsight 30 ft.",
-				"darkvision 60 ft."
-			],
-			"passive": 8,
 			"immune": [
 				"cold"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "False Appearance",
-					"entries": [
-						"Mientras el perforador de hielo permanece inmóvil en el techo, es indistinguible de una estalactita normal."
-					]
-				},
-				{
-					"name": "Spider Climb",
-					"entries": [
-						"El perforador de hielo puede trepar por superficies difíciles, incluso por los techos, sin necesidad de hacer un chequeo de habilidad."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Drop",
-					"entries": [
-						"{@atk mw} {@hit 3} para golpear, una criatura directamente debajo del perforador de hielo. {@h}10 ({@damage 3d6}) de daño de perforación más 10 ({@damage 3d6}) de daño de frío. Fallo: El perforador de hielo recibe la mitad del daño de caída normal por la distancia caída."
-					]
-				}
-			],
-			"traitTags": [
-				"False Appearance",
-				"Spider Climb"
-			],
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"damageTags": [
-				"C",
-				"P"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4913,144 +4163,46 @@
 		{
 			"name": "Kadroth",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 42,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"tiefling"
-				]
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_trait": {
+					"name": "Tiefling",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the fanatic",
+						"with": "Kadroth",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 10,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"persuasion": "+4",
-				"religion": "+2"
-			},
-			"senses": [
-				"darkvision 60"
-			],
-			"passive": 11,
-			"resist": [
-				"fire"
-			],
-			"languages": [
-				"Common",
-				"Infernal"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"El fanático es un hechicero de 4º nivel. Su habilidad de hechizo es Sabiduría (salvación de hechizo {@dc 11}, {@hit 3} para golpear con ataques de hechizo). El fanático tiene preparados los siguientes conjuros de clérigo:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"trait": [
-				{
-					"name": "Dark Devotion",
-					"entries": [
-						"El fanático tiene ventaja en las tiradas de salvación contra ser {@condition charmed} o {@condition frightened}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El fanático hace dos ataques cuerpo a cuerpo."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} para golpear, alcance 5 pies o rango 20/60 pies, una criatura. {@h}4 ({@damage 1d4 + 2}) de daño perforante."
-					]
-				}
-			],
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
-				"I"
-			],
-			"damageTags": [
-				"P"
+				"I",
+				"X"
 			],
 			"damageTagsSpell": [
+				"F",
 				"N",
 				"O",
 				"R"
 			],
 			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"paralyzed",
-				"prone"
+				"CC",
+				"I"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5061,7 +4213,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 243,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -5133,142 +4284,28 @@
 			"name": "Knight of the Black Sword",
 			"source": "IDRotF",
 			"page": 259,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"L",
-				"NX",
-				"C",
-				"NY",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Icy Doom",
+							"entries": [
+								"Cuando el cultista muere, su cadáver se congela durante 9 días, durante los cuales no puede ser descongelado, dañado por el fuego, animado o resucitado."
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 10,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"persuasion": "+4",
-				"religion": "+2"
-			},
-			"passive": 11,
 			"languages": [
 				"Common",
 				"Infernal"
 			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"El fanático es un hechicero de 4º nivel. Su habilidad de hechizo es Sabiduría (salvación de hechizo {@dc 11}, {@hit 3} para golpear con ataques de hechizo). El fanático tiene preparados los siguientes conjuros de clérigo:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"trait": [
-				{
-					"name": "Dark Devotion",
-					"entries": [
-						"El fanático tiene ventaja en las tiradas de salvación contra ser {@condition charmed} o {@condition frightened}."
-					]
-				},
-				{
-					"name": "Icy Doom",
-					"entries": [
-						"Cuando el cultista muere, su cadáver se congela durante 9 días, durante los cuales no puede ser descongelado, dañado por el fuego, animado o resucitado."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El fanático hace dos ataques cuerpo a cuerpo."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} para golpear, alcance 5 pies o rango 20/60 pies, una criatura. {@h}4 ({@damage 1d4 + 2}) de daño perforante."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
 				"I"
-			],
-			"damageTags": [
-				"P"
-			],
-			"damageTagsSpell": [
-				"N",
-				"O",
-				"R"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"paralyzed",
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -5790,132 +4827,22 @@
 			"name": "Lonelywood Banshee",
 			"source": "IDRotF",
 			"page": 81,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": "undead",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 58,
-				"formula": "13d8"
-			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 40,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"str": 1,
-			"dex": 14,
-			"con": 10,
-			"int": 12,
-			"wis": 11,
-			"cha": 17,
-			"save": {
-				"wis": "+2",
-				"cha": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 10,
-			"resist": [
-				"acid",
-				"fire",
-				"lightning",
-				"thunder",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
+			"_copy": {
+				"name": "Banshee",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Corrupting Touch",
+						"items": {
+							"name": "Spectral Longbow",
+							"entries": [
+								"{@atk rs} {@hit 4} para golpear, alcance 150/600 pies, un objetivo. {@h}12 ({@damage 3d6 + 2}) de daño necrótico."
+							]
+						}
+					}
 				}
-			],
-			"immune": [
-				"cold",
-				"necrotic",
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained"
-			],
-			"languages": [
-				"Common",
-				"Elvish"
-			],
-			"cr": "4",
-			"trait": [
-				{
-					"name": "Detect Life",
-					"entries": [
-						"La banshee puede percibir mágicamente la presencia de criaturas hasta 5 millas de distancia que no sean muertos vivientes o construcciones. Sabe la dirección general en la que se encuentran, pero no su ubicación exacta."
-					]
-				},
-				{
-					"name": "Incorporeal Movement",
-					"entries": [
-						"La banshee puede moverse a través de otras criaturas y objetos como si fueran {@quickref difficult terrain||3}. Recibe 5 ({@damage 1d10}) de daño de fuerza si termina su turno dentro de un objeto."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Spectral Longbow",
-					"entries": [
-						"{@atk rs} {@hit 4} para golpear, alcance 150/600 pies, un objetivo. {@h}12 ({@damage 3d6 + 2}) de daño necrótico."
-					]
-				},
-				{
-					"name": "Horrifying Visage",
-					"entries": [
-						"Cada criatura no muerta en un radio de 60 pies de la banshee que pueda verla debe tener éxito en una tirada de salvación de Sabiduría {@dc 13} o quedar {@condition frightened} durante 1 minuto. Un objetivo {@condition frightened} puede repetir la tirada de salvación al final de cada uno de sus turnos, con desventaja si la banshee está dentro de la línea de visión, terminando el efecto sobre sí mismo en caso de éxito. Si la tirada de salvación de un objetivo tiene éxito o el efecto termina para él, el objetivo es inmune al Visaje Horripilante de la banshee durante las siguientes 24 horas."
-					]
-				},
-				{
-					"name": "Wail (1/Day)",
-					"entries": [
-						"La banshee lanza un lamento lúgubre, siempre que no esté a la luz del sol. Este lamento no tiene efecto sobre los constructos y los muertos vivientes. Todas las demás criaturas en un radio de 30 pies que puedan oírla deben realizar una tirada de salvación de Constitución {@dc 13}. Si falla, la criatura queda reducida a 0 puntos de vida. Si tiene éxito, la criatura recibe 10 ({@damage 3d6}) de daño psíquico."
-					]
-				}
-			],
-			"traitTags": [
-				"Incorporeal Movement"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C",
-				"E"
-			],
-			"damageTags": [
-				"N",
-				"O",
-				"Y"
-			],
-			"conditionInflict": [
-				"frightened"
-			],
+			},
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5923,12 +4850,31 @@
 		{
 			"name": "Mjenir",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 215,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Druid",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the druid",
+							"with": "Mjenir",
+							"flags": "i"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
+			},
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -5937,95 +4883,6 @@
 			},
 			"alignment": [
 				"N"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 27,
-				"formula": "5d8 + 5"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 12,
-			"con": 13,
-			"int": 12,
-			"wis": 15,
-			"cha": 11,
-			"skill": {
-				"medicine": "+4",
-				"nature": "+3",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
-			"languages": [
-				"Druidic plus any two languages"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Mjenir es un hechicero de 4º nivel. Su habilidad de lanzamiento de hechizos es Sabiduría (salvación de hechizos {@dc 12}, {@hit 4} para golpear con ataques de hechizos). Tiene preparados los siguientes hechizos de druida:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 2} para golpear ({@hit 4} para golpear con shillelagh), alcance 5 pies, un objetivo. {@h}3 ({@damage 1d6}) de daño por apuñalamiento, 4 ({@damage 1d8}) de daño por apuñalamiento si se blande con las dos manos, o 6 ({@damage 1d8 + 2}) de daño por apuñalamiento con el shillelagh."
-					]
-				}
-			],
-			"languageTags": [
-				"DU",
-				"X"
-			],
-			"damageTags": [
-				"B"
-			],
-			"damageTagsSpell": [
-				"F",
-				"T"
-			],
-			"spellcastingTags": [
-				"CD"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"restrained"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6285,7 +5142,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 160,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -6410,120 +5266,27 @@
 			"name": "Reghed Chieftain",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item hide armor|PHB|hide}",
-						"{@item shield|PHB}"
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "gladiator",
+							"with": "chieftain"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"El jefe tiene ventaja en las tiradas de salvación contra el ser {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Un arma cuerpo a cuerpo inflige un dado extra de su daño cuando el jefe impacta con ella (incluido en el ataque)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El jefe realiza tres ataques cuerpo a cuerpo o dos ataques a distancia."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} para golpear, alcance 5 pies y rango 20/60 pies, un objetivo. {@h}11 ({@damage 2d6 + 4}) de daño punzante, o 13 ({@damage 2d8 + 4}) de daño punzante si se usa con las dos manos para hacer un ataque cuerpo a cuerpo."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} para golpear, alcance 5 pies, una criatura. {@h}9 ({@damage 2d4 + 4}) de daño contundente. Si el objetivo es una criatura mediana o más pequeña, debe tener éxito en una tirada de salvación de {@dc 15} Fuerza o ser derribado {@condition prone}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"El cacique suma 3 a su CA contra un ataque cuerpo a cuerpo que lo golpearía. Para ello, el cacique debe ver al atacante y estar empuñando un arma cuerpo a cuerpo."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -6531,120 +5294,27 @@
 			"name": "Reghed Great Warrior",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item hide armor|PHB|hide}",
-						"{@item shield|PHB}"
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "gladiator",
+							"with": "great warrior"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"El gran guerrero tiene ventaja en las tiradas de salvación contra el ser {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Un arma cuerpo a cuerpo inflige un dado extra de su daño cuando el gran guerrero golpea con ella (incluido en el ataque)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El gran guerrero realiza tres ataques cuerpo a cuerpo o dos ataques a distancia."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} para golpear, alcance 5 pies y rango 20/60 pies, un objetivo. {@h}11 ({@damage 2d6 + 4}) de daño punzante, o 13 ({@damage 2d8 + 4}) de daño punzante si se usa con las dos manos para hacer un ataque cuerpo a cuerpo."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} para golpear, alcance 5 pies, una criatura. {@h}9 ({@damage 2d4 + 4}) de daño contundente. Si el objetivo es una criatura mediana o más pequeña, debe tener éxito en una tirada de salvación de {@dc 15} Fuerza o ser derribado {@condition prone}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"El gran guerrero suma 3 a su CA contra un ataque cuerpo a cuerpo que lo golpearía. Para ello, el gran guerrero debe ver al atacante y estar empuñando un arma cuerpo a cuerpo."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -6652,108 +5322,37 @@
 			"name": "Reghed Shaman",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
+			"_copy": {
+				"name": "Druid",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "druid",
+							"with": "shaman"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
 			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 27,
-				"formula": "5d8 + 5"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 12,
-			"con": 13,
-			"int": 12,
-			"wis": 15,
-			"cha": 11,
-			"skill": {
-				"medicine": "+4",
-				"nature": "+3",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
 			"languages": [
 				"Common",
 				"Druidic"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"El druida es un hechicero de 4º nivel. Su habilidad de lanzamiento de conjuros es Sabiduría (salvación de conjuro {@dc 12}, {@hit 4} para golpear con ataques de conjuro). Tiene preparados los siguientes conjuros de druida:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 2} para golpear ({@hit 4} para golpear con shillelagh), alcance 5 pies, un objetivo. {@h}3 ({@damage 1d6}) de daño por apuñalamiento, 4 ({@damage 1d8}) de daño por apuñalamiento si se blande con las dos manos, o 6 ({@damage 1d8 + 2}) de daño por apuñalamiento con el shillelagh."
-					]
-				}
 			],
 			"languageTags": [
 				"C",
 				"DU"
 			],
-			"damageTags": [
-				"B"
-			],
-			"damageTagsSpell": [
-				"F",
-				"T"
-			],
 			"spellcastingTags": [
-				"CD"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"restrained"
+				"O"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6762,77 +5361,35 @@
 			"name": "Reghed Warrior",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
+			"_copy": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "tribal warrior",
+							"with": "warrior"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 11,
-				"formula": "2d8 + 2"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 13,
-			"dex": 11,
-			"con": 12,
-			"int": 8,
-			"wis": 11,
-			"cha": 8,
 			"skill": {
 				"survival": "+4"
 			},
-			"passive": 10,
 			"languages": [
 				"Common"
 			],
-			"cr": "1/8",
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"El guerrero tiene ventaja en una tirada de ataque contra una criatura si al menos uno de los aliados del guerrero está a menos de 1,5 metros de la criatura y el aliado no lo está {@condition incapacitated}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} para golpear, alcance de 5 pies o rango de 20/60 pies, un objetivo. {@h}4 ({@damage 1d6 + 1}) de daño punzante, o 5 ({@damage 1d8 + 1}) de daño punzante si se usa con las dos manos para hacer un ataque cuerpo a cuerpo."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
 			"languageTags": [
 				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6933,7 +5490,6 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 23,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -7169,88 +5725,14 @@
 			"name": "Snowy Owlbear",
 			"source": "IDRotF",
 			"page": 309,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 59,
-				"formula": "7d10 + 21"
+			"_copy": {
+				"name": "Owlbear",
+				"source": "MM"
 			},
 			"speed": {
 				"walk": 40,
 				"swim": 30
 			},
-			"str": 20,
-			"dex": 12,
-			"con": 17,
-			"int": 3,
-			"wis": 12,
-			"cha": 7,
-			"skill": {
-				"perception": "+3"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 13,
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Keen Sight and Smell",
-					"entries": [
-						"El oso lechuza de las nieves tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen de la vista o el olfato."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El búho nival realiza dos ataques: uno con el pico y otro con las garras."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 7} para golpear, alcance 5 pies, una criatura. {@h}10 ({@damage 1d10 + 5}) de daño perforante."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 7} para golpear, alcance 5 pies, un objetivo. {@h}14 ({@damage 2d8 + 5}) de daño cortante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -7260,7 +5742,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 144,
-			"_isCopy": true,
 			"size": [
 				"S"
 			],
@@ -7634,103 +6115,22 @@
 			"name": "Telepathic Pentacle",
 			"source": "IDRotF",
 			"page": 244,
-			"_isCopy": true,
-			"size": [
-				"H"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Hydra",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "hydra",
+						"with": "Telepathic Pentacle"
+					}
 				}
-			],
-			"hp": {
-				"average": 172,
-				"formula": "15d12 + 75"
 			},
 			"speed": {
 				"walk": 30,
 				"swim": 30,
 				"climb": 30
 			},
-			"str": 20,
-			"dex": 12,
-			"con": 20,
-			"int": 2,
-			"wis": 10,
-			"cha": 7,
-			"skill": {
-				"perception": "+6"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 16,
-			"cr": "8",
-			"trait": [
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"El Pentáculo Telepático puede contener la respiración durante 1 hora."
-					]
-				},
-				{
-					"name": "Multiple Heads",
-					"entries": [
-						"El Pentáculo Telepático tiene cinco cabezas. Mientras tenga más de una cabeza, el pentáculo telepático tiene ventaja en las tiradas de salvación contra ser {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} y golpeado {@condition unconscious}.",
-						"Siempre que el Pentáculo Telepático reciba 25 o más daños en un solo turno, una de sus cabezas muere. Si todas sus cabezas mueren, el Pentáculo Telepático muere.",
-						"Al final de su turno, le crecen dos cabezas por cada una de las que haya muerto desde su último turno, a menos que haya recibido daño por fuego desde su último turno. El pentáculo telepático recupera 10 puntos de vida por cada cabeza que vuelva a crecer de este modo."
-					]
-				},
-				{
-					"name": "Reactive Heads",
-					"entries": [
-						"Por cada cabeza que el Pentáculo Telepático tenga más allá de una, obtiene una reacción extra que puede ser usada sólo para ataques de oportunidad."
-					]
-				},
-				{
-					"name": "Wakeful",
-					"entries": [
-						"Mientras el Pentáculo Telepático duerme, al menos una de sus cabezas está despierta."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El Pentáculo Telepático realiza tantos ataques de mordisco como cabezas tiene."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 8} para golpear, alcance de 10 pies, un objetivo. {@h}10 ({@damage 1d10 + 5}) de daño perforante."
-					]
-				}
-			],
-			"traitTags": [
-				"Hold Breath"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -7872,29 +6272,27 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tribal Warrior Spore Servants",
+			"name": "Tribal Warrior Spore Servant",
 			"source": "IDRotF",
 			"page": 52,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "tribal warrior",
+							"with": "spore servant",
+							"flags": "i"
+						}
+					]
+				}
+			},
 			"type": "plant",
 			"alignment": [
 				"U"
 			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 11,
-				"formula": "2d8 + 2"
-			},
 			"speed": {
 				"walk": 20
 			},
@@ -7907,33 +6305,19 @@
 			"senses": [
 				"blindsight 30 ft. (blind beyond this radius)"
 			],
-			"passive": 10,
 			"conditionImmune": [
 				"blinded",
 				"charmed",
 				"frightened",
 				"paralyzed"
 			],
-			"cr": "1/8",
-			"action": [
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} para golpear, alcance de 5 pies o rango de 20/60 pies, un objetivo. {@h}4 ({@damage 1d6 + 1}) de daño punzante, o 5 ({@damage 1d8 + 1}) de daño punzante si se usa con las dos manos para hacer un ataque cuerpo a cuerpo."
-					]
-				}
-			],
+			"languages": null,
+			"trait": null,
+			"traitTags": [],
 			"senseTags": [
 				"B"
 			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
+			"languageTags": [],
 			"hasToken": true
 		},
 		{
@@ -8633,83 +7017,45 @@
 			"name": "Young Griffon (Medium)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 3} para golpear, alcance 5 pies, un objetivo. {@h}4 ({@damage 1d6 + 1}) de daño perforante."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 3} para golpear, alcance 5 pies, un objetivo. {@h}6 ({@damage 2d4 + 1}) de daño cortante."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"M"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 32,
 				"formula": "5d6 + 15"
 			},
-			"speed": {
-				"walk": 30,
-				"fly": 80
-			},
 			"str": 12,
 			"dex": 15,
 			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "1",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"El grifo tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen de la vista."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El grifo realiza dos ataques: uno con el pico y otro con las garras."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 3} para golpear, alcance 5 pies, un objetivo. {@h}4 ({@damage 1d6 + 1}) de daño perforante."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 3} para golpear, alcance 5 pies, un objetivo. {@h}6 ({@damage 2d4 + 1}) de daño cortante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8718,83 +7064,43 @@
 			"name": "Young Griffon (Small)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 1} para golpear, alcance 5 pies, un objetivo. {@h}2 ({@damage 1d4}) de daño perforante."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 1} para golpear, alcance 5 pies, un objetivo. {@h}2 ({@damage 1d4}) de daño cortante."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"S"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 13,
 				"formula": "2d6 + 6"
 			},
-			"speed": {
-				"walk": 30,
-				"fly": 80
-			},
 			"str": 8,
-			"dex": 15,
-			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "1/4",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"El grifo tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen de la vista."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El grifo realiza dos ataques: uno con el pico y otro con las garras."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 1} para golpear, alcance 5 pies, un objetivo. {@h}2 ({@damage 1d4}) de daño perforante."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 1} para golpear, alcance 5 pies, un objetivo. {@h}2 ({@damage 1d4}) de daño cortante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8803,16 +7109,36 @@
 			"name": "Young Griffon (Tiny)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 0} para golpear, alcance 5 pies, un objetivo. {@h}1 de daño penetrante."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 0} para golpear, alcance de 5 pies, un objetivo. {@h}1 de daño cortante."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"T"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 5,
@@ -8825,61 +7151,7 @@
 			"str": 2,
 			"dex": 15,
 			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"El grifo tiene ventaja en los chequeos de Sabiduría (Percepción) que dependen de la vista."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"El grifo realiza dos ataques: uno con el pico y otro con las garras."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 0} para golpear, alcance 5 pies, un objetivo. {@h}1 de daño penetrante."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 0} para golpear, alcance de 5 pies, un objetivo. {@h}1 de daño cortante."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true

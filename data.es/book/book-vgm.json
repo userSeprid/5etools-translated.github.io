@@ -1055,6 +1055,14 @@
 										"path": "book/VGM/Beholder-Lair-DM.jpg"
 									},
 									"title": "Beholder Lair (DM)",
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 5,
+										"offsetY": -15,
+										"scale": 2,
+										"distance": 10
+									},
 									"width": 800,
 									"height": 1100,
 									"imageType": "map"
@@ -1068,6 +1076,10 @@
 									"title": "Beholder Lair (Players)",
 									"width": 3200,
 									"height": 4500,
+									"grid": {
+										"type": "square",
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								"Las salas comunes que se encuentran en la guarida de un observador se describen en las secciones siguientes.",
@@ -4038,6 +4050,13 @@
 									"title": "Goblin War Camp (DM)",
 									"width": 1164,
 									"height": 800,
+									"grid": {
+										"type": "square",
+										"size": 56,
+										"offsetX": 19,
+										"offsetY": 7,
+										"scale": 4
+									},
 									"imageType": "map"
 								},
 								{
@@ -4049,6 +4068,9 @@
 									"title": "Goblin War Camp (Players)",
 									"width": 5900,
 									"height": 5500,
+									"grid": {
+										"type": "square"
+									},
 									"imageType": "mapPlayer"
 								},
 								"En el interior del baluarte que lo rodea, los goblinoides tienen sus cuarteles separados, organizados de acuerdo con sus victorias. Lo típico de cualquier campamento son los amplios caminos que lo atraviesan, que van desde cada puerta hasta el centro del campamento y salen por el otro lado. Esta configuración permite que todos los goblinoides se reúnan rápidamente y salgan del campamento en masa para hacer frente a una amenaza que se aproxima.",
@@ -4702,6 +4724,14 @@
 									"title": "Hag Lairs (DM)",
 									"width": 1091,
 									"height": 750,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 19,
+										"offsetY": 15,
+										"scale": 1.87,
+										"distance": 10
+									},
 									"imageType": "map"
 								},
 								{
@@ -4713,6 +4743,10 @@
 									"title": "Hag Lairs (Players)",
 									"width": 4200,
 									"height": 2900,
+									"grid": {
+										"type": "square",
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								"Ya sea de forma natural o por medios fabricados, la guarida está bien defendida de las intrusiones. Puede que sólo se pueda acceder a ella por un empinado sendero de montaña, o que esté rodeada por una valla que la bruja construye con postes rematados con cráneos protegidos mágicamente. A menudo, una guarida refleja el punto de vista de su principal habitante: la casa de una bruja asesina puede tener el aspecto de un ataúd o un mausoleo, y la de una glotona puede parecerse a una taberna o a una casa de pan de jengibre. Dado que estos lugares les resultan convenientes, las brujas del mar suelen establecer sus guaridas dentro de los cascos de barcos hundidos o abandonados.",
@@ -5491,6 +5525,13 @@
 									"title": "Kobold Lair (DM)",
 									"width": 545,
 									"height": 750,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 19,
+										"offsetY": 6,
+										"scale": 4.15
+									},
 									"imageType": "map"
 								},
 								{
@@ -5502,6 +5543,13 @@
 									"title": "Kobold Lair (Players)",
 									"width": 1600,
 									"height": 2200,
+									"grid": {
+										"type": "square",
+										"size": 72,
+										"offsetX": -8,
+										"offsetY": 25,
+										"scale": 2
+									},
 									"imageType": "mapPlayer"
 								},
 								"Las criaturas más grandes que un kobold tienen que ponerse en cuclillas o arrastrarse para poder pasar por los túneles de una madriguera kobold, lo que por sí mismo es suficiente para disuadir a la mayoría de los humanoides hostiles (como orcos o hobgoblins) de intentar invadir el territorio de los kobolds. Los aventureros que intentan erradicar una infestación de kobolds a menudo se encuentran atascados en pasajes bajos demasiado estrechos para dar la vuelta, lo que les obliga a moverse en fila india y a hacer recaer el peso del combate sobre el primero y el último de la fila.",
@@ -6185,6 +6233,11 @@
 									"title": "Mind Flayer Colony (DM)",
 									"width": 545,
 									"height": 750,
+									"grid": {
+										"type": "none",
+										"size": 138,
+										"distance": 50
+									},
 									"imageType": "map"
 								},
 								"No hay dos guaridas iguales, ya que el cerebro anciano residente dirige la forma y la función de cada una. La guarida que se muestra en el mapa adjunto es típica e incluye muchos elementos que se encuentran en la fortaleza de cada colonia.",
@@ -7067,6 +7120,13 @@
 									"title": "Orc Stronghold (DM)",
 									"width": 800,
 									"height": 1100,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 10,
+										"offsetY": 3,
+										"scale": 3.5
+									},
 									"imageType": "map"
 								},
 								{
@@ -7078,6 +7138,10 @@
 									"title": "Orc Stronghold (Players)",
 									"width": 5500,
 									"height": 7500,
+									"grid": {
+										"type": "square",
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								"Todos los campamentos están divididos según el culto. Los que veneran a Gruumsh, Ilneval, Bahgtru y Luthic reciben las mejores partes de la guarida, mientras que los seguidores de Yurtrus y Shargaas son relegados a los profundos y oscuros recovecos del lugar, lejos del resto de la tribu.",
@@ -7289,80 +7353,80 @@
 									"page": 94,
 									"entries": [
 										"En los últimos años antes de que el imperio yuan-ti se derrumbara, Sseth se apareció al pueblo de las serpientes en forma de un yuan-ti alado. Prometió alejar a los yuan-ti del borde de la derrota y devolverlos al pináculo de la dominación mundial a cambio de su veneración. Muchos de los devotos de Merrshaulk se volcaron en la adoración de la Muerte Sibilante, creyendo que era un avatar de su deidad. Le concedieron suficiente poder para organizar una breve recuperación, pero esas acciones fueron demasiado escasas y tardías para evitar el colapso del imperio. Sseth optó por descansar y reunir fuerzas durante los años de decadencia, ya que cada vez más yuan-ti adoptaron su culto.",
-										"Sus seguidores más devotos, conocidos como susurradores de mentes, utilizan la magia que les otorga su dios para emular las tácticas y los principios de Sseth. Se esfuerzan por tener éxito ofreciendo una opción alternativa a los puntos de vista o planes controvertidos, y al hacerlo desprenden un aire de autoimportancia que les da una reputación poco agradable entre los yuan-ti que siguen a otros dioses.",
-										{
-											"type": "inset",
-											"name": "Gods of Other Worlds",
-											"entries": [
-												"En los mundos distintos a los Reinos Olvidados, los yuan-ti hacen pactos con deidades de los panteones presentados en el apéndice B del Manual del Jugador. A continuación se sugieren deidades yuan-ti para cada panteón.",
-												{
-													"type": "entries",
-													"name": "Greyhawk",
-													"page": 94,
-													"entries": [
-														"Erythnul, Iuz, Tharizdun, Vecna."
-													],
-													"id": "175"
-												},
-												{
-													"type": "entries",
-													"name": "Dragonlance",
-													"page": 94,
-													"entries": [
-														"Chemosh, Sargonnas."
-													],
-													"id": "176"
-												},
-												{
-													"type": "entries",
-													"name": "Eberron",
-													"page": 94,
-													"entries": [
-														"La Furia, el Guardián, la Burla, la Sombra, el Viajero."
-													],
-													"id": "177"
-												},
-												{
-													"type": "entries",
-													"name": "Celtic",
-													"page": 94,
-													"entries": [
-														"Mathonwy, Morrigan."
-													],
-													"id": "178"
-												},
-												{
-													"type": "entries",
-													"name": "Greek",
-													"page": 94,
-													"entries": [
-														"Ares, Hécate."
-													],
-													"id": "179"
-												},
-												{
-													"type": "entries",
-													"name": "Egyptian",
-													"page": 94,
-													"entries": [
-														"Apep, Set."
-													],
-													"id": "17a"
-												},
-												{
-													"type": "entries",
-													"name": "Norse",
-													"page": 94,
-													"entries": [
-														"Hel, Loki."
-													],
-													"id": "17b"
-												}
-											],
-											"id": "174"
-										}
+										"Sus seguidores más devotos, conocidos como susurradores de mentes, utilizan la magia que les otorga su dios para emular las tácticas y los principios de Sseth. Se esfuerzan por tener éxito ofreciendo una opción alternativa a los puntos de vista o planes controvertidos, y al hacerlo desprenden un aire de autoimportancia que les da una reputación poco agradable entre los yuan-ti que siguen a otros dioses."
 									],
 									"id": "173"
+								},
+								{
+									"type": "inset",
+									"name": "Gods of Other Worlds",
+									"entries": [
+										"En los mundos distintos a los Reinos Olvidados, los yuan-ti hacen pactos con deidades de los panteones presentados en el apéndice B del Manual del Jugador. A continuación se sugieren deidades yuan-ti para cada panteón.",
+										{
+											"type": "entries",
+											"name": "Greyhawk",
+											"page": 94,
+											"entries": [
+												"Erythnul, Iuz, Tharizdun, Vecna."
+											],
+											"id": "175"
+										},
+										{
+											"type": "entries",
+											"name": "Dragonlance",
+											"page": 94,
+											"entries": [
+												"Chemosh, Sargonnas."
+											],
+											"id": "176"
+										},
+										{
+											"type": "entries",
+											"name": "Eberron",
+											"page": 94,
+											"entries": [
+												"La Furia, el Guardián, la Burla, la Sombra, el Viajero."
+											],
+											"id": "177"
+										},
+										{
+											"type": "entries",
+											"name": "Celtic",
+											"page": 94,
+											"entries": [
+												"Mathonwy, Morrigan."
+											],
+											"id": "178"
+										},
+										{
+											"type": "entries",
+											"name": "Greek",
+											"page": 94,
+											"entries": [
+												"Ares, Hécate."
+											],
+											"id": "179"
+										},
+										{
+											"type": "entries",
+											"name": "Egyptian",
+											"page": 94,
+											"entries": [
+												"Apep, Set."
+											],
+											"id": "17a"
+										},
+										{
+											"type": "entries",
+											"name": "Norse",
+											"page": 94,
+											"entries": [
+												"Hel, Loki."
+											],
+											"id": "17b"
+										}
+									],
+									"id": "174"
 								},
 								{
 									"type": "entries",
@@ -8320,6 +8384,14 @@
 									"title": "Yuan-Ti Temple (DM)",
 									"width": 1091,
 									"height": 1500,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 24,
+										"offsetY": 38,
+										"scale": 2.32,
+										"distance": 10
+									},
 									"imageType": "map"
 								},
 								{
@@ -8331,6 +8403,11 @@
 									"title": "Yuan-Ti Temple—Level 1 (Players)",
 									"width": 1350,
 									"height": 1200,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8342,6 +8419,11 @@
 									"title": "Yuan-Ti Temple—Level 2 (Players)",
 									"width": 1100,
 									"height": 1000,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8353,6 +8435,11 @@
 									"title": "Yuan-Ti Temple—Level 3 (Players)",
 									"width": 900,
 									"height": 850,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8364,6 +8451,11 @@
 									"title": "Yuan-Ti Temple—Level 4 (Players)",
 									"width": 750,
 									"height": 700,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8375,6 +8467,11 @@
 									"title": "Yuan-Ti Temple—Level 5 (Players)",
 									"width": 856,
 									"height": 812,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
