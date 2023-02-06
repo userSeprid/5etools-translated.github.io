@@ -117,7 +117,8 @@
 					"entries": [
 						"Możesz wstrzymać oddech na liczbę minut równą 1 + twój modyfikator Konstytucji (minimum 30 sekund).",
 						"Jeśli zabraknie ci tchu lub się udusisz, możesz przeżyć przez liczbę rund równą twojemu modyfikatorowi Konstytucji (minimum 1 runda). Na początku twojej następnej tury spadasz do 0 punktów życia i umierasz, nie możesz odzyskać punktów życia ani zostać ustabilizowany, dopóki nie będziesz mógł ponownie oddychać."
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "entries",
@@ -132,18 +133,22 @@
 									"name": "Impeded Melee",
 									"entries": [
 										"Podczas ataku bronią w walce wręcz, stworzenie, które nie posiada prędkości latania lub pływania (naturalnej lub zapewnionej przez magię) ma minus na rolce ataku, chyba że broń zadaje obrażenia przeszywające."
-									]
+									],
+									"id": "004"
 								},
 								{
 									"type": "entries",
 									"name": "Movement",
 									"entries": [
 										"Stworzenie może użyć akcji, by odepchnąć coś cięższego od siebie i poruszyć się w linii prostej z prędkością chodzenia, latania lub pływania. Stworzenie kontynuuje ten kurs, poruszając się w linii prostej ze swoją prędkością na każdym ze swoich obrotów, dopóki coś go nie zatrzyma lub nie zmieni jego trajektorii."
-									]
+									],
+									"id": "005"
 								}
-							]
+							],
+							"id": "003"
 						}
-					]
+					],
+					"id": "002"
 				},
 				{
 					"type": "gallery",
@@ -337,7 +342,10 @@
 											"1 statek zakłócający czary (rzut na {@book Ship Encounters table|BAM|0|Ship Encounters})",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -478,7 +486,10 @@
 											"1 statek zakłócający czary (wykonaj rzut na tabelę spotkań statków)",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -616,7 +627,8 @@
 										]
 									]
 								}
-							]
+							],
+							"id": "006"
 						},
 						{
 							"type": "entries",
@@ -649,7 +661,8 @@
 									]
 								},
 								"Jeśli statek wpadnie na coś, co nie ma punktów trafień (np. planetę lub księżyc), zadaj obrażenia tylko statkowi. Statek zatrzymuje się po zderzeniu z Gargantuiczną lub nieruchomą istotą lub obiektem; w przeciwnym razie statek może kontynuować ruch, jeśli ma jeszcze jakieś możliwości ruchu, a to, w co uderzył, przesuwa się do najbliższej niezajętej przestrzeni, która nie znajduje się na drodze statku."
-							]
+							],
+							"id": "007"
 						}
 					]
 				},
@@ -720,7 +733,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "008"
 				},
 				{
 					"type": "entries",
@@ -781,7 +795,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00b"
 				},
 				{
 					"type": "entries",
@@ -913,9 +928,11 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00c"
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }
