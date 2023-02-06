@@ -117,7 +117,8 @@
 					"entries": [
 						"Si può trattenere il respiro per un numero di minuti pari a 1 + il proprio modificatore di Costituzione (minimo 30 secondi).",
 						"Se manca il respiro o si soffoca, si può sopravvivere per un numero di round pari al proprio modificatore di Costituzione (minimo 1 round). All'inizio del proprio turno successivo, si scende a 0 punti ferita e si è in fin di vita; non si possono recuperare punti ferita o essere stabilizzati finché non si riesce a respirare di nuovo."
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "entries",
@@ -132,18 +133,22 @@
 									"name": "Impeded Melee",
 									"entries": [
 										"Quando si effettua un attacco in mischia con un'arma, una creatura che non ha una velocità di volo o di nuoto (naturale o fornita dalla magia) ha svantaggio sul tiro per colpire, a meno che l'arma non infligga danni perforanti."
-									]
+									],
+									"id": "004"
 								},
 								{
 									"type": "entries",
 									"name": "Movement",
 									"entries": [
 										"Una creatura può usare un'azione per spingere via qualcosa di più pesante di lei e muoversi in linea retta fino alla sua velocità di camminare, volare o nuotare. La creatura prosegue lungo questo percorso, muovendosi in linea retta alla sua velocità a ogni turno, finché qualcosa non la ferma o cambia la sua traiettoria."
-									]
+									],
+									"id": "005"
 								}
-							]
+							],
+							"id": "003"
 						}
-					]
+					],
+					"id": "002"
 				},
 				{
 					"type": "gallery",
@@ -337,7 +342,10 @@
 											"1 nave incantatrice (tiro sul {@book Ship Encounters table|BAM|0|Ship Encounters})",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -478,7 +486,10 @@
 											"1 nave incantatrice (tirare sulla tabella Incontri con le navi)",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -616,7 +627,8 @@
 										]
 									]
 								}
-							]
+							],
+							"id": "006"
 						},
 						{
 							"type": "entries",
@@ -649,7 +661,8 @@
 									]
 								},
 								"Se la nave urta qualcosa che non ha punti ferita (come un pianeta o una luna), il danno viene applicato solo alla nave. La nave si ferma dopo aver urtato una creatura o un oggetto gargantuesco o inamovibile; altrimenti, la nave può continuare a muoversi se ha ancora movimento, e qualsiasi cosa abbia urtato si sposta nel più vicino spazio non occupato che non si trovi sul percorso della nave."
-							]
+							],
+							"id": "007"
 						}
 					]
 				},
@@ -720,7 +733,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "008"
 				},
 				{
 					"type": "entries",
@@ -781,7 +795,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00b"
 				},
 				{
 					"type": "entries",
@@ -913,9 +928,11 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00c"
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }
