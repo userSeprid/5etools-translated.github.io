@@ -9071,6 +9071,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table F"
+			],
+			"seeAlsoDeck": [
+				"Deck of Illusions"
 			]
 		},
 		{
@@ -9095,17 +9098,17 @@
 			},
 			"grantsProficiency": true,
 			"entries": [
-				"Dieses Deck, das normalerweise in einer Schachtel oder einem Beutel aufbewahrt wird, enthält eine Reihe von Karten aus Elfenbein oder Pergament. 75 Prozent der Decks haben nur dreizehn Karten, die übrigen zweiundzwanzig.",
+				"Dieses Deck befindet sich normalerweise in einer Schachtel oder einem Beutel und enthält eine Reihe von Karten aus Elfenbein oder Pergament. Die meisten ({@chance 75|75 percent}) dieser Decks haben nur dreizehn Karten, aber die übrigen haben zweiundzwanzig.",
 				"Bevor du eine Karte ziehst, musst du angeben, wie viele Karten du ziehen willst, und sie dann zufällig ziehen (du kannst ein verändertes Spielkartendeck verwenden, um das Deck zu simulieren). Alle Karten, die du über diese Anzahl hinaus ziehst, haben keine Wirkung. Sobald du eine Karte aus dem Deck ziehst, wird ihre Magie wirksam. Du musst jede Karte höchstens eine Stunde nach der vorherigen ziehen. Wenn du die gewählte Anzahl nicht ziehst, fliegen die restlichen Karten von selbst aus dem Deck und wirken alle auf einmal.",
-				"Sobald eine Karte gezogen wird, verschwindet sie aus dem Spiel, es sei denn, es handelt sich um den Narren oder den Spaßvogel, dann taucht die Karte wieder im Stapel auf, so dass es möglich ist, dieselbe Karte zweimal zu ziehen.",
+				"Sobald eine Karte gezogen wird, verschwindet sie aus dem Spiel. Wenn es sich nicht um die {@card Fool|Deck of Many Things} oder die {@card Jester|Deck of Many Things} handelt, taucht die Karte wieder im Stapel auf, so dass es möglich ist, dieselbe Karte zweimal zu ziehen.",
 				{
 					"type": "entries",
 					"name": "A Question of Enmity",
 					"entries": [
-						"Zwei der Karten in einem Deck der vielen Dinge können einem Charakter die Feindschaft eines anderen Wesens einbringen. Mit der Flammen-Karte ist die Feindschaft offenkundig. Der Charakter sollte die bösartigen Bemühungen des Teufels mehrfach erleben. Die Suche nach dem Unhold sollte keine einfache Aufgabe sein, und der Abenteurer sollte einige Male mit den Verbündeten und Anhängern des Teufels zusammenstoßen, bevor er dem Teufel selbst gegenübertreten kann."
+						"Zwei der Karten in einem Deck der vielen Dinge können einem Charakter die Feindschaft eines anderen Wesens einbringen. Mit der Flammen-Karte ist die Feindschaft offenkundig. Der Charakter sollte die bösartigen Bemühungen des Teufels mehrfach erleben. Die Suche nach dem Unhold sollte keine einfache Aufgabe sein, und der Abenteurer sollte einige Male mit den Verbündeten und Anhängern des Teufels zusammenstoßen, bevor er dem Teufel selbst gegenübertreten kann.",
+						"Im Falle der {@card Rogue|Deck of Many Things}-Karte ist die Feindschaft geheim und sollte von jemandem ausgehen, den man für einen Freund oder Verbündeten hält. Als Dungeon Master solltest du einen dramatisch passenden Moment abwarten, um diese Feindschaft zu enthüllen und die Abenteurer raten lassen, wer wahrscheinlich zum Verräter wird."
 					]
 				},
-				"Im Fall der Schurkenkarte ist die Feindschaft geheim und sollte von jemandem kommen, den man für einen Freund oder Verbündeten hält. Als Dungeon Master solltest du einen dramatisch passenden Moment abwarten, um diese Feindschaft zu enthüllen, und die Abenteurer raten lassen, wer wahrscheinlich zum Verräter wird.",
 				{
 					"type": "table",
 					"colLabels": [
@@ -9437,7 +9440,7 @@
 					"type": "entries",
 					"name": "Skull",
 					"entries": [
-						"Du beschwörst einen {@creature avatar of death|dmg}- ein geisterhaftes humanoides Skelett in einer zerfledderten schwarzen Robe, das eine geisterhafte Sense trägt. Es erscheint in einem Raum nach Wahl des DM im Umkreis von 10 Fuß von dir und greift dich an, wobei es alle anderen warnt, dass du den Kampf allein gewinnen musst. Der Avatar kämpft, bis du stirbst oder er auf 0 Trefferpunkte fällt, woraufhin er verschwindet. Wenn jemand versucht, dir zu helfen, beschwört der Helfer seinen eigenen {@creature avatar of death|dmg}. Eine Kreatur, die von einem {@creature avatar of death|dmg} getötet wurde, kann nicht wiederbelebt werden."
+						"Du beschwörst ein {@creature avatar of death|DMG} - ein geisterhaftes humanoides Skelett in einer zerfledderten schwarzen Robe, das eine geisterhafte Sense trägt. Es erscheint in einem Raum nach Wahl des DM im Umkreis von 10 Fuß von dir und greift dich an, wobei es alle anderen warnt, dass du den Kampf allein gewinnen musst. Der Avatar kämpft so lange, bis du stirbst oder er auf 0 Trefferpunkte sinkt, woraufhin er verschwindet. Wenn jemand versucht, dir zu helfen, beschwört der Helfer seinen eigenen {@creature avatar of death|DMG}. Eine Kreatur, die von einem {@creature avatar of death|DMG} getötet wird, kann nicht wiederbelebt werden."
 					]
 				},
 				{
@@ -9465,7 +9468,7 @@
 					"type": "entries",
 					"name": "Euryale",
 					"entries": [
-						"Die {@creature medusa}-ähnliche Visage der Karte verflucht dich. Du erleidest einen Malus von -2 auf Rettungswürfe, wenn du auf diese Weise verflucht bist. Nur ein Gott oder die Magie der Schicksalskarte kann diesen Fluch beenden."
+						"Die {@creature medusa}-ähnliche Visage der Karte verflucht dich. Du erleidest einen Malus von -2 auf Rettungswürfe, wenn du auf diese Weise verflucht bist. Nur ein Gott oder die Magie der {@card The Fates|Deck of Many Things}-Karte kann diesen Fluch beenden."
 					]
 				},
 				{
@@ -9503,6 +9506,9 @@
 			"lootTables": [
 				"Magic Item Table I"
 			],
+			"seeAlsoDeck": [
+				"Deck of Many Things"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -9529,7 +9535,7 @@
 			"grantsProficiency": true,
 			"entries": [
 				"Dieses einzigartige Deck, das in einem Lederbeutel aufbewahrt wird, enthält zweiundzwanzig farbige Karten aus einem starken, aber unbekannten Metall, auf denen jeweils ein Motiv in Form eines Mosaiks aus erhabenen Punkten aufgedruckt ist. Bevor du eine Karte ziehst, musst du angeben, wie viele Karten du zu ziehen gedenkst, und sie dann nach dem Zufallsprinzip ziehen (du kannst ein verändertes Spielkartendeck verwenden, um das Deck zu simulieren). Alle Karten, die du über diese Anzahl hinaus ziehst, haben keine Wirkung. Sobald du eine Karte aus dem Deck ziehst, wird ihre Magie wirksam. Du musst jede Karte höchstens eine Stunde nach der vorherigen ziehen. Wenn du die gewählte Anzahl nicht ziehst, fliegt die verbleibende Anzahl von Karten von selbst aus dem Deck und wird auf einmal wirksam.",
-				"Sobald eine Karte gezogen wird, verschwindet sie aus dem Spiel, es sei denn, es handelt sich um den Narren oder den Spaßvogel, dann taucht die Karte wieder im Stapel auf, so dass es möglich ist, dieselbe Karte zweimal zu ziehen.",
+				"Sobald eine Karte gezogen wird, verschwindet sie aus dem Spiel. Wenn es sich nicht um die {@card Fool|Deck of Several Things|LLK} oder die {@card Jester|Deck of Several Things|LLK} handelt, taucht die Karte wieder im Stapel auf, so dass es möglich ist, dieselbe Karte zweimal zu ziehen.",
 				{
 					"type": "table",
 					"colLabels": [
@@ -9802,7 +9808,7 @@
 					"type": "entries",
 					"name": "Flames",
 					"entries": [
-						"Der Großmeister des Klosters des gequälten Körpers wird zu deinem Feind. Der Knochenteufel sucht deinen Untergang und genießt dein Leiden, bevor er versucht, dich zu töten. Wenn der Großmeister bereits besiegt wurde, gewinnst du die Feindschaft von Garret Levistussons Beschützer - einem ähnlich mächtigen Teufel."
+						"Der Großmeister des Klosters des gequälten Körpers wird dein Feind. Der Knochenteufel trachtet nach deinem Verderben und genießt dein Leiden, bevor er versucht, dich zu töten. Wenn der Großmeister bereits besiegt wurde, gewinnst du die Feindschaft eines {@creature Garret Levistusson|LLK|Garret Levistusson's} Patrons - eines ähnlich mächtigen Teufels."
 					]
 				},
 				{
@@ -9921,10 +9927,13 @@
 					"type": "inset",
 					"name": "Using the Deck of Several Things",
 					"entries": [
-						"Die besondere Beschaffenheit dieses Kartensatzes (der von Mary Greymalkin getragen wird, wenn sie als NSC eingesetzt wird) bedeutet, dass viele seiner Effekte nur innerhalb und in Bezug auf dieses spezielle Abenteuer wirken. Dies deckt normalerweise die Zeit ab, die die Charaktere zwischen dem Aufbruch zu den Barrieregipfeln und der Auflösung der Ereignisse in Kwalishs Labor (Gebiet O7) verbringen.",
-						"Bei Karten, die einen Charakter für eine gewisse Zeit aus dem Spiel nehmen (Donjon und die Leere), kannst du einem Spieler erlauben, die Rolle eines NSC-Soldaten der Gruppe zu übernehmen, oder einen vorübergehenden Charakter als NSC einführen, den die Gruppe auf ihrer Reise trifft, oder du kannst beschließen, dass nur ein Teil des Willens des Charakters verschwindet und eingesperrt wird, so dass der Charakter bis zu seiner Befreiung in einem roboterhaften Zustand agiert."
+						"Die besondere Beschaffenheit dieses Decks (das von {@creature Mary Greymalkin|LLK} getragen wird, wenn es als NSC verwendet wird) bedeutet, dass viele seiner Effekte nur innerhalb und in Bezug auf dieses spezielle Abenteuer wirken. Dies deckt normalerweise die Zeit ab, die die Charaktere zwischen dem Aufbruch zu den Barrieregipfeln und der Auflösung der Ereignisse in Kwalishs Labor (Gebiet O7) verbringen.",
+						"Bei Karten, die einen Charakter für eine gewisse Zeit aus dem Spiel nehmen ({@card Donjon|Deck of Several Things|LLK} und {@card the Void|Deck of Several Things|LLK}), kannst du einem Spieler erlauben, die Rolle eines NSC-Angestellten der Gruppe zu übernehmen, oder einen temporären Charakter als NSC einführen, den die Gruppe auf ihrer Reise trifft. Alternativ kann man auch entscheiden, dass nur ein Teil des Willens des Charakters verschwindet und gefangen bleibt, so dass der Charakter in einem roboterhaften Zustand agiert, bis er befreit wird."
 					]
 				}
+			],
+			"seeAlsoDeck": [
+				"Deck of Several Things|LLK"
 			]
 		},
 		{
@@ -23127,6 +23136,7 @@
 		{
 			"name": "Nightbringer",
 			"source": "MCV2DC",
+			"page": 14,
 			"baseItem": "mace|PHB",
 			"type": "M",
 			"immune": [
@@ -27430,6 +27440,7 @@
 				}
 			],
 			"wondrous": true,
+			"bonusSpellSaveDc": "+2",
 			"entries": [
 				"Wenn du diese Ziehharmonika in der Hand hältst, erhältst du einen Bonus von +2 auf den Rettungswurf-DC deiner Bardenzauber.",
 				"Als Aktion kannst du die Ziehharmonika benutzen, um {@spell Otto's irresistible dance} aus dem Gegenstand zu zaubern. Diese Eigenschaft der Ziehharmonika kann erst in der nächsten Morgendämmerung wieder benutzt werden."

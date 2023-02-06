@@ -572,7 +572,7 @@
 											"Böse, grauhäutige Zwerge, die im Underdark leben"
 										],
 										[
-											"{@creature Dzaan|IDRotF}",
+											"Dzaan",
 											"duh-ZAWN",
 											"Roter Zauberer von Thay und Mitglied der Arkanen Bruderschaft"
 										],
@@ -639,7 +639,7 @@
 										[
 											"Krintaas",
 											"KRIN-tass",
-											"{@creature Dzaan|IDRotF} der Leibwächter von Wight"
+											"Dzaan's wight bodyguard"
 										],
 										[
 											"Dinneshere-See",
@@ -2006,10 +2006,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/013-map-1.1-bremen.jpg"
 									},
-									"title": "Map 1.1: bremen",
+									"title": "Map 1.1: Bremen",
 									"width": 2208,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 123,
+										"distance": 100
+									},
 									"id": "388",
 									"mapRegions": [
 										{
@@ -2091,6 +2096,11 @@
 									"width": 2208,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 123,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "388"
 									}
@@ -2591,10 +2601,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/018-map-1.2-bryn-shander.jpg"
 									},
-									"title": "Map 1.2: bryn shander",
+									"title": "Map 1.2: Bryn Shander",
 									"width": 3000,
 									"height": 2143,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 66,
+										"distance": 100
+									},
 									"id": "67c",
 									"mapRegions": [
 										{
@@ -2697,6 +2712,11 @@
 									"width": 3000,
 									"height": 2143,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 66,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "67c"
 									}
@@ -3116,10 +3136,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/024-map-1.3-caer-dineval.jpg"
 									},
-									"title": "Map 1.3: caer-dineval",
+									"title": "Map 1.3: Caer-Dineval",
 									"width": 2202,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 108,
+										"distance": 100
+									},
 									"id": "67d",
 									"mapRegions": [
 										{
@@ -3222,6 +3247,11 @@
 									"width": 2201,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 108,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "67d",
 										"autoScale": true
@@ -3439,6 +3469,13 @@
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 88,
+												"offsetX": -22,
+												"offsetY": 4,
+												"scale": 1.05
+											},
 											"id": "6fd",
 											"mapRegions": [
 												{
@@ -5956,10 +5993,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/032-map-1.5-caer-konig.jpg"
 									},
-									"title": "Map 1.5: caer-konig",
+									"title": "Map 1.5: Caer-Konig",
 									"width": 2206,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 105,
+										"distance": 100
+									},
 									"id": "6ff",
 									"mapRegions": [
 										{
@@ -6062,6 +6104,11 @@
 									"width": 2206,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 105,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "6ff"
 									}
@@ -6266,10 +6313,17 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/035-map-1.6-duergar-outpost.jpg"
 											},
-											"title": "Map 1.6: duergar outpost",
+											"title": "Map 1.6: Duergar Outpost",
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 104,
+												"offsetX": -38,
+												"offsetY": 28,
+												"distance": 10
+											},
 											"id": "700",
 											"mapRegions": [
 												{
@@ -6683,7 +6737,8 @@
 												"type": "square",
 												"size": 104,
 												"offsetX": -38,
-												"offsetY": 28
+												"offsetY": 28,
+												"distance": 10
 											}
 										}
 									]
@@ -6904,7 +6959,7 @@
 											]
 										},
 										"Die vergitterte Öffnung in der nordöstlichen Ecke ähnelt derjenigen in {@area area O3|11a|x}.",
-										"Die drei Zellen an der Westwand sind derzeit leer. In jeder der fünf Zellen entlang der Südwand befindet sich ein Gefangener, ein ehemaliger Ten-Towner oder ein Reghed-Nomade, der von den Duergar verschleppt und getötet wurde. Mit Hilfe der belebenden Sporen eines mykonidischen Herrschers haben die Duergar diese toten Menschen in fünf Sporendiener (wie im Eintrag \"Mykoniden\" im {@book Monster Manual|MM} beschrieben) verwandelt, die mit Pilzwucherungen bedeckt sind. Die Sporendiener kommen aus ihren Zellen hervor und greifen Eindringlinge an, die den Raum betreten. Sie verwenden den {@creature Tribal Warrior Spore Servants|IDRotF|tribal warrior}-Statutblock, mit diesen Änderungen:",
+										"The three cells along the west wall are empty at present. Each of the five cells along the south wall holds one prisoner, formerly a Ten-Towner or a Reghed nomad who was abducted and killed by the duergar. Using the animating spores of a myconid sovereign, the duergar have turned these dead humans into five spore servants (as described in the \"Myconids\" entry in the {@book Monster Manual|MM}) covered with fungal growths. The spore servants emerge from their cells to attack intruders who enter the room. They use the {@creature Tribal Warrior Spore Servant|IDRotF|tribal warrior} stat block, with these changes:",
 										{
 											"type": "list",
 											"items": [
@@ -7092,6 +7147,11 @@
 									"width": 2202,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 124,
+										"distance": 100
+									},
 									"id": "701",
 									"mapRegions": [
 										{
@@ -7152,6 +7212,11 @@
 									"width": 2202,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 124,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "701"
 									}
@@ -7286,6 +7351,13 @@
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 104,
+												"offsetX": -37,
+												"offsetY": -40,
+												"distance": 10
+											},
 											"id": "702",
 											"mapRegions": [
 												{
@@ -7963,7 +8035,8 @@
 												"type": "square",
 												"size": 104,
 												"offsetX": -38,
-												"offsetY": -40
+												"offsetY": -40,
+												"distance": 10
 											}
 										}
 									]
@@ -8325,10 +8398,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/046-map-1.9-easthaven.jpg"
 									},
-									"title": "Map 1.9: easthaven",
+									"title": "Map 1.9: Easthaven",
 									"width": 3000,
 									"height": 2139,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 66,
+										"distance": 100
+									},
 									"id": "703",
 									"mapRegions": [
 										{
@@ -8431,6 +8509,11 @@
 									"width": 3000,
 									"height": 2139,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 66,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "703"
 									}
@@ -8580,7 +8663,7 @@
 					"page": 62,
 					"id": "16c",
 					"entries": [
-						"Das Abenteuer in Easthaven beginnt zur gleichen Zeit wie die Verbrennung des Roten Zauberers, {@creature Dzaan|IDRotF}, die im Abschnitt \"Arkane Bruderschaft\" in {@area appendix C|6fe|x} beschrieben wird. Unabhängig davon, ob die Charaktere das Abenteuer in Easthaven beginnen oder gerade erst angekommen sind, sind sie bei der feurigen Hinrichtung von {@creature Dzaan|IDRotF} dabei. Sie sind zu spät dran, um {@creature Dzaan|IDRotF} zu retten, aber sie könnten in Kapitel 2 erneut auf eine magische Kopie von ihm treffen (siehe \"{@area Lost Spire of Netheril|3a8|x}\").",
+						"The quest in Easthaven begins at the same time as the burning of the Red Wizard, Dzaan, who is described in the \"Arcane Brotherhood\" section of {@area appendix C|6fe|x}. Whether the characters are starting the adventure in Easthaven or have just arrived, they are present during Dzaan's fiery execution. They're too late to save Dzaan, but they might encounter a magical copy of him again in chapter 2 (see \"{@area Lost Spire of Netheril|3a8|x}\").",
 						"Die Hauptfrau der Miliz von Easthaven, Imdra Arlaggath, wird während der Verbrennung auf die Charaktere aufmerksam und bietet ihnen eine Aufgabe an. Einige Fischer sind auf dem Lac Dinneshere verschwunden, und sie möchte, dass die Charaktere ein Boot nehmen und nach ihnen suchen. Sie weiß, wo die Fischer am liebsten fischen und fordert die Charaktere auf, zuerst diesen Teil des Sees zu durchsuchen. Wenn sie Imdras Rat beherzigen, finden sie die Boote der Fischer auf dem Eis, nur wenige Schritte von einer gefrorenen Höhle entfernt, die zuvor unter Schnee und Eis verborgen war. Diese Höhle, so finden die Charaktere bald heraus, ist das Versteck einer Hexe namens Maud Chiselbone.",
 						"Charaktere, die den Höhlenkomplex erforschen, finden die Leichen der Fischer und auch die von Maud {@item cauldron of plenty|IDRotF} (siehe {@adventure appendix D|IDRotF|22|{@item Cauldron of Plenty|IDRotF}}). Der Kessel ist eine erstaunliche Entdeckung und eine willkommene für die Bewohner von Zehn-Städten, wenn die Charaktere sich dazu entschließen, sich von ihm zu trennen. Wenn sich die Nachricht vom Kessel verbreitet, stehen die Charaktere schnell im Mittelpunkt des Interesses, da sich verschiedene Städte darum bemühen, ihn zu bekommen. Da kein Ende des Winters in Sicht ist, könnte der Kessel das letzte sein, was zwischen dem Überleben der einen und dem Aussterben der anderen Stadt steht.",
 						{
@@ -8599,15 +8682,15 @@
 							"page": 63,
 							"id": "16d",
 							"entries": [
-								"Die Ereignisse beginnen sich zu entfalten, wenn die Personen sich in der Nähe der Hinrichtung von {@creature Dzaan|IDRotF} befinden:",
+								"Events begin to unfold when the characters find themselves in the vicinity as Dzaan's execution takes place:",
 								{
 									"type": "insetReadaloud",
 									"id": "16e",
 									"entries": [
-										"Vor dem Rathaus hat sich eine Menschenmenge versammelt, um der öffentlichen Hinrichtung von {@creature Dzaan|IDRotF} beizuwohnen, einem menschlichen Zauberer, der trotz seiner Bemühungen, sich zu tarnen, erkannt und wegen der Verbrechen, die er dem Dale-Volk zugefügt hat, verhaftet wurde. Er wurde an einen Pfahl gebunden und geknebelt. Die Mitglieder der Miliz zünden mit Fackeln das Stroh an, das um seine Füße gebunden ist. Durch den Wind angefacht, fängt das Feuer schnell Feuer. {@creature Dzaan|IDRotF} wehrt sich nicht und schreit nicht, als er schnell von den Flammen verschlungen wird. Die zusammengerollten Zuschauer rücken näher an das menschliche Feuer heran, begierig, seine Wärme zu spüren."
+										"A crowd has gathered in front of the Town Hall to watch the public execution of Dzaan, a human wizard who, despite efforts to disguise himself, was recognized and arrested for the crimes he has inflicted upon dale-folk. He has been bound to a stake and gagged. Members of the militia use torches to light the straw tucked around his feet. Fanned by the wind, the fire catches quickly. Dzaan does not struggle or scream as he is quickly engulfed in flames. Bundled-up spectators move closer to the human bonfire, eager to feel its warmth."
 									]
 								},
-								"Eine Frau in einem maßgeschneiderten Mantel und einem Pelzhut nähert sich den Personen, die sich um den brennenden Zauberer scharen. Sie stellt sich als Imdra Arlaggath vor, Hauptmann der Miliz von Easthaven. Hauptmann Arlaggath (rechtschaffener guter Halbelf {@creature veteran}) spricht knapp, ist aber nicht unfreundlich. Wenn einer der Charaktere nach {@creature Dzaan|IDRotF} fragt, erzählt sie ihm, dass er einige Abenteurer, die den Menschen in Eiswindtal in der Vergangenheit geholfen haben, kaltblütig ermordet hat; seine öffentliche Hinrichtung ist kein Racheakt, sondern soll andere von ähnlichem Verhalten abhalten."
+								"A woman bedecked in a tailored coat and a fur hat approaches the characters as people huddle around the burning wizard. She introduces herself as Imdra Arlaggath, captain of Easthaven's militia. Captain Arlaggath (lawful good half-elf {@creature veteran}) speaks curtly but is not unfriendly. If any of the characters ask about Dzaan, she tells them that he coldly murdered some adventurers who had aided the people of Icewind Dale in the past; his public execution isn't an act of vengeance but is meant to deter others from engaging in similar behavior."
 							]
 						},
 						{
@@ -8625,7 +8708,7 @@
 									]
 								},
 								"Wenn die Charaktere ein Boot brauchen, können sie eines von den Fischerdocks ausleihen und es über das Eis zum offenen Wasser ziehen. Ein Ruderboot kann bis zu vier mittelgroße Charaktere aufnehmen, während ein einmastiges Skiff bis zu acht Charaktere aufnehmen kann. Für ein Skiff wird mindestens ein Besatzungsmitglied benötigt, das sich mit Wasserfahrzeugen auskennt.",
-								"Wenn die Charaktere eine Belohnung für ihre Dienste verlangen, sagt Hauptmann Arlaggath, dass sie nicht befugt ist, eine zu geben. Aber sie hat zwei Gegenstände aus {@creature Dzaan|IDRotF} konfisziert, die die Charaktere interessieren könnten: ein {@item spell scroll} von {@spell fireball} in einem Kupferrohr und ein graues {@item bag of tricks}. Sie können das eine oder das andere haben, wenn sie die vermissten Fischer finden."
+								"If the characters request a reward for their services, Captain Arlaggath says she's not authorized to give one. But she did confiscate two items from Dzaan that might interest the characters: a {@item spell scroll} of {@spell fireball} in a copper tube and a gray {@item bag of tricks}. They can have one or the other if they find the missing fishers."
 							]
 						},
 						{
@@ -8729,6 +8812,13 @@
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 104,
+												"offsetX": -38,
+												"offsetY": 30,
+												"distance": 10
+											},
 											"id": "704",
 											"mapRegions": [
 												{
@@ -11704,7 +11794,8 @@
 												"type": "square",
 												"size": 104,
 												"offsetX": -38,
-												"offsetY": -30
+												"offsetY": 30,
+												"distance": 10
 											}
 										}
 									]
@@ -11986,10 +12077,17 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/055-map-1.11-easthaven-town-hall.jpg"
 											},
-											"title": "Map 1.11: easthaven town hall",
+											"title": "Map 1.11: Easthaven Town Hall",
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 86,
+												"offsetX": -5,
+												"offsetY": -31,
+												"scale": 1.03
+											},
 											"id": "705",
 											"mapRegions": [
 												{
@@ -12660,7 +12758,7 @@
 											"page": 70,
 											"id": "1a6",
 											"entries": [
-												"Charaktere, die mindestens 10 Minuten damit verbringen, die Bücherregale zu durchsuchen, entdecken ein abgenutztes Buch mit einem roten Ledereinband und gelben Seiten. Die Ränder der Seiten sind mit getrocknetem Blut befleckt. Die Schrift im Innern des Buches lässt vermuten, dass es sich um eine Gedichtsammlung handelt. Tatsächlich handelt es sich jedoch um das Zauberbuch eines roten Zauberers von Thay namens {@creature Dzaan|IDRotF}. Der wahre Inhalt des Buches ist durch einen {@spell illusory script}-Zauber verborgen, der 5 Tage nach der Hinrichtung von {@creature Dzaan|IDRotF} endet (siehe \"{@area Public Execution|16d|x}\").",
+												"Characters who spend at least 10 minutes searching the bookshelves discover a worn book with a red leather cover and yellow pages. The edges of the pages are stained with dry blood. The writing inside suggests the book is nothing more than a poetry anthology. However, it's actually the spellbook of a Red Wizard of Thay named Dzaan. The book's true contents are hidden by an {@spell illusory script} spell that ends 5 days after Dzaan's execution (see \"{@area Public Execution|16d|x}\").",
 												"Nachdem das Buch von einem Mitglied der Stadtmiliz beschlagnahmt worden war, wurde es ins Rathaus gebracht, wo ein Beamter es in dieser Bibliothek zur sicheren Aufbewahrung unterbrachte. Wenn du {@spell dispel magic} auf das Buch legst, wird der {@spell illusory script}-Zauber beendet, mit dem es belegt ist. Wenn der {@spell illusory script}-Zauber endet, wird der wahre Inhalt des Buches enthüllt. Es enthält die folgenden Zaubersprüche: {@spell animate objects}, {@spell arcane eye}, {@spell arcane lock}, {@spell blur}, {@spell confusion}, {@spell conjure elemental}, {@spell detect magic}, {@spell disguise self}, {@spell fireball}, {@spell hallucinatory terrain}, {@spell illusory script}, {@spell invisibility}, {@spell knock}, {@spell levitate}, {@spell magic missile}, {@spell major image}, {@spell mirror image}, {@spell mislead}, {@spell phantasmal force}, {@spell phantasmal killer}, {@spell seeming}, {@spell sending}, {@spell silent image}, und {@spell slow}."
 											]
 										}
@@ -12876,10 +12974,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/059-map-1.12-good-mead.jpg"
 									},
-									"title": "Map 1.12: good mead",
+									"title": "Map 1.12: Good Mead",
 									"width": 2196,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 136,
+										"distance": 100
+									},
 									"id": "706",
 									"mapRegions": [
 										{
@@ -12961,6 +13064,11 @@
 									"width": 2196,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 136,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "706"
 									}
@@ -13089,10 +13197,16 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/062-map-1.13-verbeeg-lair.jpg"
 											},
-											"title": "Map 1.13: verbeeg lair",
+											"title": "Map 1.13: Verbeeg Lair",
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 104,
+												"offsetX": -4,
+												"offsetY": 29
+											},
 											"id": "707",
 											"mapRegions": [
 												{
@@ -15388,7 +15502,7 @@
 												"type": "square",
 												"size": 104,
 												"offsetX": -4,
-												"offsetY": 30
+												"offsetY": 29
 											}
 										}
 									]
@@ -15856,10 +15970,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/066-map-1.14-lonelywood.jpg"
 									},
-									"title": "Map 1.14: lonelywood",
+									"title": "Map 1.14: Lonelywood",
 									"width": 2199,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 124,
+										"distance": 100
+									},
 									"id": "708",
 									"mapRegions": [
 										{
@@ -15941,6 +16060,11 @@
 									"width": 2199,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 124,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "708"
 									}
@@ -16150,6 +16274,12 @@
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 104,
+												"offsetX": 11,
+												"offsetY": 29
+											},
 											"id": "709",
 											"mapRegions": [
 												{
@@ -17228,7 +17358,7 @@
 												"type": "square",
 												"size": 104,
 												"offsetX": 11,
-												"offsetY": 30
+												"offsetY": 29
 											}
 										}
 									]
@@ -17664,10 +17794,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/075-map-1.16-targos.jpg"
 									},
-									"title": "Map 1.16: targos",
+									"title": "Map 1.16: Targos",
 									"width": 2196,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 78,
+										"distance": 100
+									},
 									"id": "70a",
 									"mapRegions": [
 										{
@@ -17770,6 +17905,11 @@
 									"width": 2196,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 78,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "70a"
 									}
@@ -17899,10 +18039,16 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/077-map-1.17-kelvins-cairn.jpg"
 											},
-											"title": "Map 1.17: kelvin's cairn",
+											"title": "Map 1.17: Kelvin's Cairn",
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 104,
+												"offsetX": 16,
+												"offsetY": -25
+											},
 											"id": "70b",
 											"mapRegions": [
 												{
@@ -18755,7 +18901,7 @@
 												"type": "square",
 												"size": 104,
 												"offsetX": 16,
-												"offsetY": -26
+												"offsetY": -25
 											}
 										}
 									]
@@ -19158,10 +19304,15 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/082-map-1.18-termalaine.jpg"
 									},
-									"title": "Map 1.18: termalaine",
+									"title": "Map 1.18: Termalaine",
 									"width": 2196,
 									"height": 3000,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 77,
+										"distance": 100
+									},
 									"id": "70c",
 									"mapRegions": [
 										{
@@ -19243,6 +19394,11 @@
 									"width": 2196,
 									"height": 3000,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 77,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "70c"
 									}
@@ -19407,10 +19563,16 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/085-map-1.19-gem-mine.jpg"
 											},
-											"title": "Map 1.19: gem mine",
+											"title": "Map 1.19: Gem Mine",
 											"width": 4000,
 											"height": 2765,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 104,
+												"offsetX": -38,
+												"offsetY": 30
+											},
 											"id": "70d",
 											"mapRegions": [
 												{
@@ -23813,10 +23975,17 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/095-map-2.1-icewind-dale.png"
 									},
-									"title": "Map 2.1: icewind dale",
+									"title": "Map 2.1: Icewind Dale",
 									"width": 2550,
 									"height": 1704,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 50,
+										"scale": 1.88,
+										"distance": 1,
+										"units": "miles"
+									},
 									"id": "70e",
 									"mapRegions": [
 										{
@@ -24150,6 +24319,12 @@
 									"width": 6000,
 									"height": 4215,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 63,
+										"distance": 1,
+										"units": "miles"
+									},
 									"mapParent": {
 										"id": "70e",
 										"autoScale": true
@@ -24177,10 +24352,16 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/097-map-2.2-angajuks-bell.jpg"
 											},
-											"title": "Map 2.2: angajuk's bell",
+											"title": "Map 2.2: Angajuk's Bell",
 											"width": 2210,
 											"height": 3000,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 116,
+												"offsetX": -57,
+												"offsetY": -61
+											},
 											"id": "70f",
 											"mapRegions": [
 												{
@@ -24465,8 +24646,8 @@
 											"grid": {
 												"type": "square",
 												"size": 116,
-												"offsetX": -58,
-												"offsetY": -54
+												"offsetX": -57,
+												"offsetY": -61
 											}
 										}
 									]
@@ -24682,10 +24863,16 @@
 														"type": "internal",
 														"path": "adventure/IDRotF/100-map-2.3-black-cabin.jpg"
 													},
-													"title": "Map 2.3: black cabin",
+													"title": "Map 2.3: Black Cabin",
 													"width": 2210,
 													"height": 3000,
 													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 116,
+														"offsetX": -53,
+														"offsetY": -40
+													},
 													"id": "710",
 													"mapRegions": [
 														{
@@ -24902,7 +25089,7 @@
 													"grid": {
 														"type": "square",
 														"size": 116,
-														"offsetX": -55,
+														"offsetX": -53,
 														"offsetY": -40
 													}
 												}
@@ -25252,10 +25439,16 @@
 														"type": "internal",
 														"path": "adventure/IDRotF/105-map-2.4-cackling-chasm.jpg"
 													},
-													"title": "Map 2.4: cackling chasm",
+													"title": "Map 2.4: Cackling Chasm",
 													"width": 2210,
 													"height": 3000,
 													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 116,
+														"offsetX": -54,
+														"offsetY": -32
+													},
 													"id": "711",
 													"mapRegions": [
 														{
@@ -26708,8 +26901,8 @@
 													"grid": {
 														"type": "square",
 														"size": 116,
-														"offsetX": -55,
-														"offsetY": -33
+														"offsetX": -54,
+														"offsetY": -32
 													}
 												}
 											]
@@ -26971,6 +27164,12 @@
 													"width": 2210,
 													"height": 3000,
 													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 116,
+														"offsetX": -39,
+														"offsetY": -41
+													},
 													"id": "712",
 													"mapRegions": [
 														{
@@ -28888,7 +29087,7 @@
 														"type": "square",
 														"size": 116,
 														"offsetX": -39,
-														"offsetY": -42
+														"offsetY": -41
 													}
 												}
 											]
@@ -29117,10 +29316,16 @@
 																"type": "internal",
 																"path": "adventure/IDRotF/110-map-2.6-dark-duchess.jpg"
 															},
-															"title": "Map 2.6: dark duchess",
+															"title": "Map 2.6: Dark Duchess",
 															"width": 4000,
 															"height": 2765,
 															"imageType": "map",
+															"grid": {
+																"type": "square",
+																"size": 104,
+																"offsetX": -17,
+																"offsetY": 29
+															},
 															"id": "713",
 															"mapRegions": [
 																{
@@ -29919,7 +30124,10 @@
 																"id": "713"
 															},
 															"grid": {
-																"type": "none"
+																"type": "square",
+																"size": 104,
+																"offsetX": -17,
+																"offsetY": 29
 															}
 														}
 													]
@@ -30438,10 +30646,16 @@
 																"type": "internal",
 																"path": "adventure/IDRotF/114-map-2.7-id-ascendant.jpg"
 															},
-															"title": "Map 2.7: id ascendant",
+															"title": "Map 2.7: Id Ascendant",
 															"width": 4000,
 															"height": 2765,
 															"imageType": "map",
+															"grid": {
+																"type": "square",
+																"size": 104,
+																"offsetX": -37,
+																"offsetY": 29
+															},
 															"id": "714",
 															"mapRegions": [
 																{
@@ -31447,8 +31661,8 @@
 															"grid": {
 																"type": "square",
 																"size": 104,
-																"offsetX": -38,
-																"offsetY": 30
+																"offsetX": -37,
+																"offsetY": 29
 															}
 														}
 													]
@@ -31798,10 +32012,17 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/117-map-2.8-jarlmoot.jpg"
 											},
-											"title": "Map 2.8: jarlmoot",
+											"title": "Map 2.8: Jarlmoot",
 											"width": 2210,
 											"height": 3000,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 116,
+												"offsetX": -56,
+												"offsetY": -65,
+												"distance": 10
+											},
 											"id": "715",
 											"mapRegions": [
 												{
@@ -32023,8 +32244,9 @@
 											"grid": {
 												"type": "square",
 												"size": 116,
-												"offsetX": -58,
-												"offsetY": 50
+												"offsetX": -56,
+												"offsetY": -65,
+												"distance": 10
 											}
 										}
 									]
@@ -32408,10 +32630,17 @@
 																"type": "internal",
 																"path": "adventure/IDRotF/128-map-2.9-karkolohk.jpg"
 															},
-															"title": "Map 2.9: karkolohk",
+															"title": "Map 2.9: Karkolohk",
 															"width": 4000,
 															"height": 2765,
 															"imageType": "map",
+															"grid": {
+																"type": "square",
+																"size": 104,
+																"offsetX": -45,
+																"offsetY": -53,
+																"distance": 10
+															},
 															"id": "716",
 															"mapRegions": [
 																{
@@ -33259,8 +33488,9 @@
 															"grid": {
 																"type": "square",
 																"size": 104,
-																"offsetX": -44,
-																"offsetY": 53
+																"offsetX": -45,
+																"offsetY": -53,
+																"distance": 10
 															}
 														}
 													]
@@ -33527,16 +33757,16 @@
 								"In der Tundra liegt die Spitze eines Turms begraben, der von der Netherstadt Ythryn abbrach, als er vor fast zweitausend Jahren vom Himmel fiel. Die Turmspitze zerbrach in Stücke, als sie sich kopfüber in die Erde senkte. Dort blieb er jahrhundertelang, begraben unter Schnee und Eis.",
 								"Der niederländische Zauberer, der im Inneren des Turms lebte, überlebte den Absturz nicht. Der Schildwächter des Zauberers überlebte nicht nur, sondern grub sich auch einen Weg nach draußen und schuf so einen Tunnel, durch den andere das Innere des Turms erreichen können. Bis vor kurzem war die Öffnung dieses Tunnels unter Eis und Schnee begraben. Nach dem Verlassen des Turms wanderte der Schildwächter in das Rückgrat der Welt, wo er stillstand und jahrhundertelang verschollen war, bis eine Gruppe von Goblins ihn vor kurzem fand und in ihre Bergfestung brachte (siehe \"{@area Karkolohk|389|x}\").",
 								"Die Charaktere können in Zehn-Städte von der Turmspitze erfahren (siehe \"{@area Tall Tales in Ten-Towns|27f|x}\"), oder sie stolpern zufällig auf der Jagd darüber (siehe \"{@area Hunt for the Red Yeti|288|x}\"). Der NSC, der die Geschichte erzählt, ist bereit, die Charaktere für nicht weniger als 20 Gp zum Standort des Turms zu führen. Danach wünscht der Führer der Gruppe Glück, bevor er sich auf den Rückweg nach Zehn-Städte macht.",
-								"Bevor sich die Charaktere den Herausforderungen der Spitze stellen, sollten sie die Informationen über {@creature Dzaan|IDRotF} im Abschnitt \"{@area Arcane Brotherhood|6fe|x}\" von {@adventure appendix C|IDRotF|21} durchlesen. Die Details über das Simulakrum und den Leibwächter von {@creature Dzaan|IDRotF} sind angesichts dessen, was die Charaktere entdecken werden, besonders wichtig.",
+								"Before the characters face the challenges of the spire, review the information about Dzaan in the \"{@area Arcane Brotherhood|6fe|x}\" section of {@adventure appendix C|IDRotF|21}. The details concerning Dzaan's simulacrum and bodyguard are especially pertinent, given what the characters are about to discover.",
 								{
 									"type": "entries",
 									"name": "Not-So-Dead Wizard of Thay",
 									"page": 145,
 									"id": "3a9",
 									"entries": [
-										"{@creature Dzaan|IDRotF} wies sein Simulakrum an, in der Turmspitze zu bleiben und beauftragte Krintaas, seinen {@creature wight} Leibwächter, es zu bewachen. Das Simulakrum will unbedingt die Runenkammer auf der untersten Ebene ({@area area P16|3d7|x}) aktivieren, denn die Magie dieses Raumes kann eine illusorische Kreatur oder einen Gegenstand in eine reale Kreatur verwandeln (innerhalb der Grenzen). Das {@creature Dzaan's Simulacrum|IDRotF|simulacrum} glaubt, die Runenkammer nutzen zu können, um sich selbst in einen Klon aus Fleisch und Blut von {@creature Dzaan|IDRotF} zu verwandeln, aber die Aktivierung der Kammer erfordert einen Lebensfunken, den das Simulakrum nicht besitzt. Krintaas, der ebenfalls keinen Lebensfunken besitzt, wartet ungeduldig darauf, dass {@creature Dzaan|IDRotF} zurückkehrt und die Versuche des Simulakrums, die Runenkammer zu testen, zunichte macht. Weder das Simulakrum noch Krintaas wissen, dass der echte {@creature Dzaan|IDRotF} tot ist (siehe \"{@area Toil and Trouble|16c|x}\").",
-										"Als die Figuren auftauchen, ist {@creature Dzaan's simulacrum|IDRotF} ganz aus dem Häuschen. Endlich sind einige potenziell hilfreiche Lebewesen eingetroffen! Das Simulakrum wird verhandeln, sich mit ihnen anfreunden, sie bedrohen oder tun, was immer es für möglich hält, um einen oder mehrere von ihnen dazu zu bringen, es in die Runenkammer zu begleiten. Wenn die Charaktere wissen, dass der echte {@creature Dzaan|IDRotF} tot ist und diese Information an das Simulakrum weitergeben, wird es noch entschlossener.",
-										"Sobald es erfährt, dass {@creature Dzaan|IDRotF} tot ist, tut Krintaas alles, was nötig ist, um sicherzustellen, dass das Simulakrum den Lebensfunken erhält, den es zur Aktivierung der Runenkammer braucht."
+										"Dzaan instructed his simulacrum to remain in the spire and ordered Krintaas, his {@creature wight} bodyguard, to watch over it. The simulacrum is keen to activate the rune chamber on the lowest level ({@area area P16|3d7|x}), because this room's magic can transform an illusory creature or object into a real one (within limits). The {@creature Dzaan's Simulacrum|IDRotF|simulacrum} thinks it can use the rune chamber to turn itself into a flesh-and-blood clone of Dzaan, but activating the chamber requires a life-spark, which the simulacrum does not possess. Krintaas, who also lacks a life-spark, is impatiently waiting for Dzaan to return and quash the simulacrum's efforts to test the rune chamber. Neither the simulacrum nor Krintaas is aware that the real Dzaan is dead (see \"{@area Toil and Trouble|16c|x}\").",
+										"When the characters show up, {@creature Dzaan's simulacrum|IDRotF} is ecstatic. Finally, some potentially helpful living creatures have arrived! The simulacrum will bargain, befriend, threaten, or do whatever else it thinks might work in order to get one or more of them to accompany it to the rune chamber. If the characters know that the real Dzaan is dead and convey that information to the simulacrum, it becomes even more determined.",
+										"Once it learns that Dzaan is dead, Krintaas does whatever it takes to make sure the simulacrum gets the life-spark it needs to activate the rune chamber."
 									]
 								},
 								{
@@ -33624,6 +33854,12 @@
 																	"width": 4000,
 																	"height": 2765,
 																	"imageType": "map",
+																	"grid": {
+																		"type": "square",
+																		"size": 104,
+																		"offsetX": -5,
+																		"offsetY": 30
+																	},
 																	"id": "717",
 																	"mapRegions": [
 																		{
@@ -34751,7 +34987,7 @@
 														"Hohe Bücherregale, die an der Außenwand befestigt sind, haben ihren Inhalt auf den zur Decke gewordenen Fußboden verschüttet. Ein großer Tisch liegt auf der Seite, ein Bein ist gebrochen. Ein fünf Fuß breiter Tunnel im Boden im Osten führt nach unten."
 													]
 												},
-												"Die meisten Bücher in dieser Bibliothek sind durch Zeit und Vernachlässigung zerstört worden. Die Gruppe von Abenteurern {@creature Dzaan|IDRotF}, die angeheuert wurde, um ihm bei der Durchsuchung des Turms zu helfen, entfernte alle Bücher, die sie für wertvoll hielten, einschließlich Zauberbücher. Sie ließen ein paar Bücher zurück, die für bestimmte Charaktere interessant sein könnten:",
+												"Most of the books in this library have been destroyed by time and neglect. The group of adventurers Dzaan hired to help him search the spire removed all the books they considered valuable, including spellbooks. They left behind a few that might interest certain characters:",
 												"{@i Magical Wonders of Netheril.} Dieses Buch ist eine Sammlung von Interviews mit Erzmagiern aus den Niederlanden, die über ihre Studien der alten Elfenmagie und die Erschaffung von {@i mythallars} (siehe {@adventure appendix D|IDRotF|22}) sprechen. Das Buch enthält Skizzen von solchen Geräten.",
 												"{@i Mysteries of the Phaerimm.} Dieses Buch beleuchtet die Phaerimm - telepathische, trichterförmige Monster mit bösartigem Verstand, die im Underdark lauern - und enthält beunruhigende Skizzen von ihnen.",
 												"{@i Wizards in the Hollow.} Die Geburt des Reiches der Netheresen wird in dieser ansonsten langweiligen, schwerfälligen Geschichte über das Leben dreier Zauberer der Netheresen geschildert.",
@@ -34948,10 +35184,10 @@
 													"id": "3cb",
 													"entries": [
 														"Man hat sich Mühe gegeben, den Inhalt dieses auf dem Kopf stehenden Raumes zu ordnen und ein funktionales Büro zu schaffen. In der Mitte des Raumes steht ein Tisch, umgeben von kleinen Bücherstapeln. Auf dem Tisch liegt ein surrendes Amulett an einer Kette.",
-														"Zwei Gestalten stehen hinter dem Tisch. Die eine ist ein untoter Krieger in einer mit Nieten besetzten Lederrüstung, dessen totengraues Fleisch fest über seine Knochen gezogen ist und dessen Gesicht einen furchtbaren finsteren Ausdruck trägt. Der andere ist ein attraktiver junger Mann in kalter Kleidung. Sein Gesicht zeigt unter einem ausgefransten Hexenhut wache Augen und ein warmes Lächeln. \"Willkommen in der verlorenen Turmspitze von Netheril\", sagt er. \"Mein Name ist {@creature Dzaan|IDRotF}.\""
+														"Two figures stand behind the table. One is an undead warrior in studded leather armor, its dead-gray flesh drawn tightly over its bones and its face locked in a terrible scowl. The other is an attractive young man in cold weather clothing. His face, beneath a frayed witch's hat, displays studious eyes and a warm smile. \"Welcome to the lost spire of Netheril,\" he says. \"My name is Dzaan.\""
 													]
 												},
-												"Die Personen, die die feurige Hinrichtung von {@creature Dzaan|IDRotF} miterlebt haben (siehe \"{@area Toil and Trouble|16c|x}\"), erkennen den jungen Mann als {@creature Dzaan|IDRotF} - zurück von den Toten, so scheint es zumindest. Das Simulakrum hingegen ist den Figuren noch nie begegnet. Um ihr Vertrauen zu gewinnen, versucht es, ehrlich und zuvorkommend zu sein. Es ist sich seiner selbst bewusst genug, um zu wissen, was es ist, aber es kann in seiner jetzigen Form nicht wachsen oder lernen. Es bittet die Charaktere, ihm zu helfen, ein Wesen aus Fleisch und Blut zu werden, wie der Zauberer, der es erschaffen hat. Es weiß nichts über das Schicksal von {@creature Dzaan|IDRotF} oder die Verbrechen, für die der echte {@creature Dzaan|IDRotF} hingerichtet wurde.",
+												"Characters who watched Dzaan's fiery execution (see \"{@area Toil and Trouble|16c|x}\") recognize the young man as Dzaan—back from the dead, or so it seems. The simulacrum, on the other hand, has never met the characters before. To earn their trust, it tries to be honest and forthcoming. It is self-aware enough to know what it is, but it can't grow or learn in its current form. It asks the characters to help it become a flesh-and-blood creature like the wizard who created it. It knows nothing about Dzaan's fate or the crimes for which the real Dzaan was executed.",
 												"Im Laufe eines Gesprächs teilt das Simulakrum folgende Informationen mit:",
 												{
 													"type": "insetReadaloud",
@@ -34961,7 +35197,7 @@
 														"\"Auf der untersten Ebene dieses umgedrehten Turms hat mein Schöpfer eine Kammer gefunden, die Illusionen in Wirklichkeit verwandeln kann. Der Lebensfunke eines Lebewesens ist nötig, um die Kraft zu aktivieren. Da ich eine Schöpfung aus Schnee und Schatten bin, habe ich keinen eigenen Lebensfunken, und Krintaas, mein untoter Leibwächter, ist in dieser Hinsicht keine Hilfe. Ich versichere euch, dass die Kammer niemandem schaden kann.\""
 													]
 												},
-												"Das Simulakrum von {@creature Dzaan|IDRotF} hat kein Zauberbuch. Wenn es angegriffen wird, ist sein Impuls, sich umzudrehen {@condition invisible} und zu fliehen, dann seinen {@spell levitate}-Zauber zu benutzen, um den Turm hinaufzusteigen, während Krintaas seine Flucht deckt. Wenn es dem Turm entkommt, macht es sich auf den Weg nach Zehn-Städte; als ein Ding aus Eis und Schnee kann das Simulakrum die Tundra durchqueren, ohne Angst zu haben, zu erfrieren.",
+												"Dzaan's simulacrum lacks a spellbook. If attacked, its impulse is to turn {@condition invisible} and flee, then use its {@spell levitate} spell to ascend the tower while Krintaas covers its escape. If it escapes the spire, it makes its way to Ten-Towns; as a thing made of ice and snow, the simulacrum can cross the tundra without fear of freezing to death.",
 												{
 													"type": "image",
 													"href": {
@@ -34978,7 +35214,7 @@
 													"page": 149,
 													"id": "3cd",
 													"entries": [
-														"Der Gegenstand auf dem Tisch ist das Amulett für einen {@creature shield guardian}. {@creature Dzaan|IDRotF} hat es aus {@area area P15|3d4|x} geholt und zur Untersuchung hierher gebracht. Weder das Simulakrum noch Krintaas wissen, was das Amulett bewirkt, und es ist ihnen auch egal. Das Simulakrum ist bereit, es den Charakteren zu geben, wenn einer oder mehrere von ihnen bereit sind, es in die Runenkammer auf der untersten Ebene zu begleiten. Ein {@spell detect magic}-Zauber offenbart eine magische Aura der Verzauberung um das Amulett.",
+														"The object on the table is the amulet for a {@creature shield guardian}. Dzaan retrieved it from {@area area P15|3d4|x} and brought it here for examination. Neither the simulacrum nor Krintaas know what the amulet does, nor do they care. The simulacrum will happily give it to the characters if one or more of them agrees to accompany it to the rune chamber on the lowest level. A {@spell detect magic} spell reveals a magical aura of enchantment around the amulet.",
 														"Das Amulett ist eine 4 Zoll breite Scheibe aus silberumrandetem Holz, in deren Vorderseite eine Rune geschnitzt ist. (Diese Rune stimmt mit der Rune auf den Unterarmen des Schildwächters überein und ist das persönliche Siegel des Zauberers, der beide geschaffen hat).",
 														"Dieses besondere {@item shield guardian amulet|IDRotF} ist ein seltener magischer Gegenstand, der eine Einstimmung erfordert, und nur Humanoide können sich auf ihn einstimmen. Ein Humanoider, der sich auf das Amulett einstimmt, kennt die Entfernung und die Richtung des Schildwächters, vorausgesetzt, das Amulett und der Wächter befinden sich auf derselben Dimension der Existenz. Als Aktion kann der auf das Amulett eingestimmte Träger versuchen, den Schildwächter mit einer erfolgreichen DC 20 Intelligenzüberprüfung ({@skill Arcana}) zu reaktivieren. Die Reaktivierung kann nur versucht werden, wenn sich das Amulett und der Wächter innerhalb von 10 Fuß Entfernung voneinander befinden. Ansonsten funktioniert das Amulett wie im Eintrag des Schildwächters in {@book Monster Manual|MM} beschrieben."
 													]
@@ -35032,7 +35268,7 @@
 											"page": 150,
 											"id": "3d2",
 											"entries": [
-												"Dieser Raum ist der Ort, an dem sich die alten Bewohner des Turms zu den Mahlzeiten versammelten. Charaktere, die sich mit dem Simulakrum von {@creature Dzaan|IDRotF} angefreundet haben, werden vor der Kreatur in diesem Raum gewarnt:",
+												"This room is where the old tenants of the spire gathered for meals. Characters who befriended Dzaan's simulacrum are warned about the creature in this room:",
 												{
 													"type": "insetReadaloud",
 													"id": "3d3",
@@ -35109,7 +35345,7 @@
 													"items": [
 														"Die Runenkammer kann keine magischen Gegenstände, belebte Objekte, Konstrukte oder Untote herstellen.",
 														"Ein Lebensfunke wird benötigt, um eine illusorische Kreatur in eine physische zu verwandeln. Ähnlich wie ein elektrischer Funke gibt er dem Raum den nötigen Ruck, um die Verwandlung zu vollenden. (Für Objekte wird keine solche Komponente benötigt.)",
-														"Die Risse in den Wänden haben genügend Runen beschädigt, um die Magie des Raumes zu beeinträchtigen, was zu unerwarteten Ergebnissen führen könnte. (Die Warnung des Simulakrums {@creature Dzaan|IDRotF} vor diesem Risiko hält es nicht davon ab, die Runenkammer zu benutzen)."
+														"The cracks in the walls have damaged enough of the runes to compromise the room's magic, which might give rise to unexpected results. (Warning Dzaan's simulacrum about this risk does not discourage it from using the rune chamber.)"
 													]
 												},
 												{
@@ -35128,7 +35364,7 @@
 													"id": "3dc",
 													"entries": [
 														"Wenn ein Scheinwesen unter der Kristallscheibe steht, strahlt die Scheibe ein sanftes goldenes Licht aus. Es passiert jedoch nichts, bis ein lebendes Wesen die illusorische Scheibe berührt. Wenn das passiert, würfle mit Prozentwürfeln und ziehe die Tabelle der Runenkammer-Effekte zu Rate, um zu bestimmen, was als nächstes passiert.",
-														"Wenn das Simulakrum von {@creature Dzaan|IDRotF} real wird, siehe den Abschnitt \"{@area Dzaan Lives!|3dd|x}\" weiter unten.",
+														"If Dzaan's simulacrum becomes real, see the \"{@area Dzaan Lives!|3dd|x}\" section below.",
 														{
 															"type": "table",
 															"caption": "Rune Chamber Effect",
@@ -35143,7 +35379,7 @@
 															"rows": [
 																[
 																	"01–10",
-																	"Das illusorische Objekt oder die Kreatur wird zerstört. Wenn dies dem Simulakrum von {@creature Dzaan|IDRotF} passiert, sinkt es sofort auf 0 Trefferpunkte und zerfällt in einen Haufen aus Eis und Schnee."
+																	"The illusory object or creature is destroyed. If this happens to Dzaan's simulacrum, it instantly drops to 0 hit points and collapses into a pile of ice and snow."
 																],
 																[
 																	"11–50",
@@ -35171,8 +35407,8 @@
 									"page": 151,
 									"id": "3dd",
 									"entries": [
-										"Wenn die Runenkammer richtig funktioniert und das Simulakrum ein echter Klon von {@creature Dzaan|IDRotF} wird, dankt der Zauberer den Charakteren für ihre Hilfe und bittet sie, das Geschehene mit niemandem in Zehn-Städten zu besprechen. Siehe die Beschreibung von {@creature Dzaan|IDRotF} in {@adventure appendix C|IDRotF|21} für Informationen über die Änderung des Statutenblocks des Simulakrums, um seine Umwandlung in einen Klon von {@creature Dzaan|IDRotF} zu berücksichtigen. Krintaas bleibt an der Seite von {@creature Dzaan|IDRotF} als sein treuer, untoter Leibwächter.",
-										"{@creature Dzaan|IDRotF} hat das Ziel, Ythryn zu plündern. Ohne sein Zauberbuch ist der Zauberer jedoch erbärmlich untermotorisiert. Versteckt unter Lagen von Kaltwetterkleidung müssen {@creature Dzaan|IDRotF} und Krintaas nach Bryn Shander reisen, um ein leeres Zauberbuch, Schreibmaterial und Proviant zu besorgen. In der Zwischenzeit fordert {@creature Dzaan|IDRotF} die Charaktere auf, seine Rivalen in der Arkanen Bruderschaft aufzuspüren und zu vernichten. {@creature Dzaan|IDRotF} vermutet, dass sich seine Rivalen in den Zehn Städten verstecken und zeichnet ein wenig schmeichelhaftes Porträt von jedem von ihnen:",
+										"If the rune chamber works properly and the simulacrum becomes a true clone of Dzaan, the wizard thanks the characters for their help and asks them not to discuss what has happened with anyone in Ten-Towns. See Dzaan's description in {@adventure appendix C|IDRotF|21} for information about modifying the simulacrum's stat block to account for its transformation into a clone of Dzaan. Krintaas remains by Dzaan's side as his faithful, undead bodyguard.",
+										"Dzaan's ultimate goal is to plunder Ythryn. Without his spellbook, however, the wizard is woefully underpowered. Concealed under layers of cold weather clothing, Dzaan and Krintaas must travel to Bryn Shander to obtain a blank spellbook, as well as writing supplies and provisions. In the meantime, Dzaan urges the characters to seek out and destroy his rivals in the Arcane Brotherhood. Dzaan assumes his rivals are hiding out in Ten-Towns and paints an unflattering portrait of each one:",
 										{
 											"type": "list",
 											"items": [
@@ -35318,10 +35554,17 @@
 																		"type": "internal",
 																		"path": "adventure/IDRotF/135-map-2.11-reghed-camp.jpg"
 																	},
-																	"title": "Map 2.11: reghed tribe camp",
+																	"title": "Map 2.11: Reghed Tribe Camp",
 																	"width": 2210,
 																	"height": 3000,
 																	"imageType": "map",
+																	"grid": {
+																		"type": "square",
+																		"size": 116,
+																		"offsetX": -62,
+																		"offsetY": 12,
+																		"distance": 10
+																	},
 																	"id": "718"
 																},
 																{
@@ -35340,8 +35583,9 @@
 																	"grid": {
 																		"type": "square",
 																		"size": 116,
-																		"offsetX": 55,
-																		"offsetY": 12
+																		"offsetX": -62,
+																		"offsetY": 12,
+																		"distance": 10
 																	}
 																}
 															]
@@ -35545,10 +35789,18 @@
 														"type": "internal",
 														"path": "adventure/IDRotF/138-map-2.12-revels-end.jpg"
 													},
-													"title": "Map 2.12: revel's end",
+													"title": "Map 2.12: Revel's End",
 													"width": 3684,
 													"height": 5000,
 													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 92,
+														"offsetX": -46,
+														"offsetY": -56,
+														"scale": 1.05,
+														"distance": 10
+													},
 													"id": "719",
 													"mapRegions": [
 														{
@@ -36505,8 +36757,9 @@
 														"type": "square",
 														"size": 92,
 														"offsetX": -46,
-														"offsetY": -35,
-														"scale": 1.05
+														"offsetY": -56,
+														"scale": 1.05,
+														"distance": 10
 													}
 												}
 											]
@@ -36972,7 +37225,7 @@
 													"type": "list",
 													"items": [
 														"Über {@creature Avarice|IDRotF} sagt Gant: \"Der Tiefling-Albino? Ich glaube, sie hat eine vielversprechende Zukunft.\"",
-														"Über {@creature Dzaan|IDRotF} sagt Gant: \"Er ist ein roter Zauberer von Thay. Muss ich noch mehr sagen?\" (Wenn man ihn bittet, mehr zu sagen, fügt er hinzu: \"{@creature Dzaan|IDRotF} rasiert sich nicht den Kopf und trägt auch keine roten Roben, aber das ändert nichts an der Tatsache, dass er ein Thayaner ist. Die roten Zauberer wollen das Netz ganz für sich allein. Wenn sie ihren Willen bekommen, wird niemand mehr Magie anwenden können.\")",
+														"About Dzaan, Gant says: \"He's a Red Wizard of Thay. Need I say more?\" (If asked to elaborate, he adds: \"Dzaan doesn't shave his head or wear red robes, but that doesn't change the fact that he's Thayan. The Red Wizards want the Weave all to themselves. If they get their way, no one else will be able to use magic.\")",
 														"Über Nass Lantomir sagt Gant: \"Sie ist ein Niemand\".",
 														"Über {@creature Vellynne Harpell|IDRotF} sagt Gant: \"Hätten nicht einflussreiche Mitglieder ihrer Familie ihre Beziehungen zur Bruderschaft spielen lassen, würde diese alte Vogelscheuche immer noch tote Katzen in Longsaddle reanimieren.\""
 													]
@@ -37008,10 +37261,17 @@
 														"type": "internal",
 														"path": "adventure/IDRotF/141-map-2.13-skytower-shelter.jpg"
 													},
-													"title": "Map 2.13: skytower shelter",
+													"title": "Map 2.13: Skytower Shelter",
 													"width": 2210,
 													"height": 3000,
 													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 116,
+														"offsetX": -71,
+														"offsetY": -68,
+														"distance": 10
+													},
 													"id": "71a",
 													"mapRegions": [
 														{
@@ -38370,8 +38630,9 @@
 													"grid": {
 														"type": "square",
 														"size": 116,
-														"offsetX": 43,
-														"offsetY": 44
+														"offsetX": -71,
+														"offsetY": -68,
+														"distance": 10
 													}
 												}
 											]
@@ -38749,10 +39010,17 @@
 														"type": "internal",
 														"path": "adventure/IDRotF/144-map-2.14-wyrmdoom-crag.jpg"
 													},
-													"title": "Map 2.14: wyrmdoom crag",
+													"title": "Map 2.14: Wyrmdoom Crag",
 													"width": 2210,
 													"height": 3000,
 													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 116,
+														"offsetX": 58,
+														"offsetY": 30,
+														"distance": 10
+													},
 													"id": "71b",
 													"mapRegions": [
 														{
@@ -39936,8 +40204,9 @@
 													"grid": {
 														"type": "square",
 														"size": 116,
-														"offsetX": -58,
-														"offsetY": 28
+														"offsetX": 58,
+														"offsetY": 30,
+														"distance": 10
 													}
 												}
 											]
@@ -40432,6 +40701,13 @@
 											"width": 3684,
 											"height": 5000,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 88,
+												"offsetX": -40,
+												"offsetY": -47,
+												"distance": 10
+											},
 											"id": "71c",
 											"mapRegions": [
 												{
@@ -41089,7 +41365,11 @@
 												"id": "71c"
 											},
 											"grid": {
-												"type": "none"
+												"type": "square",
+												"size": 88,
+												"offsetX": -40,
+												"offsetY": -47,
+												"distance": 10
 											}
 										}
 									]
@@ -42385,10 +42665,16 @@
 										"type": "internal",
 										"path": "adventure/IDRotF/155-map-4.1-dragons-flight-path.png"
 									},
-									"title": "Map 4.1: dragons flight path",
+									"title": "Map 4.1: Dragons Flight Path",
 									"width": 1700,
 									"height": 1102,
-									"imageType": "map"
+									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 236,
+										"distance": 8.48,
+										"units": "miles"
+									}
 								},
 								{
 									"type": "entries",
@@ -43244,10 +43530,17 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/160-map-5.1-island-of-solstice.jpg"
 											},
-											"title": "Map 5.1: island of solstice",
+											"title": "Map 5.1: Island of Solstice",
 											"width": 3684,
 											"height": 5000,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 88,
+												"offsetX": -11,
+												"offsetY": 16,
+												"distance": 200
+											},
 											"id": "71d",
 											"mapRegions": [
 												{
@@ -43626,10 +43919,10 @@
 											},
 											"grid": {
 												"type": "square",
-												"size": 93,
-												"offsetX": -6,
-												"offsetY": 25,
-												"scale": 1.05
+												"size": 88,
+												"offsetX": -11,
+												"offsetY": 16,
+												"distance": 200
 											}
 										}
 									]
@@ -43942,7 +44235,7 @@
 																"type": "internal",
 																"path": "adventure/IDRotF/164-map-5.2-grimskalle.jpg"
 															},
-															"title": "Map 5.2: grimskalle",
+															"title": "Map 5.2: Grimskalle",
 															"width": 3684,
 															"height": 5000,
 															"imageType": "map",
@@ -46523,6 +46816,13 @@
 																	]
 																}
 															],
+															"grid": {
+																"type": "square",
+																"size": 88,
+																"offsetX": 30,
+																"offsetY": -6,
+																"distance": 10
+															},
 															"hrefThumbnail": {
 																"type": "internal",
 																"path": "adventure/IDRotF/thumbnail/164-map-5.2-grimskalle.webp"
@@ -46543,10 +46843,10 @@
 															},
 															"grid": {
 																"type": "square",
-																"size": 92,
-																"offsetX": 42,
-																"offsetY": 3,
-																"scale": 1.05
+																"size": 88,
+																"offsetX": 30,
+																"offsetY": -6,
+																"distance": 10
 															}
 														}
 													]
@@ -47439,7 +47739,7 @@
 					"page": 215,
 					"id": "59b",
 					"entries": [
-						"Dieses Kapitel konzentriert sich auf die Erkundung der Eishöhlen durch die Charaktere. Es besteht eine gute Chance, dass {@creature Vellynne Harpell|IDRotF} ebenfalls anwesend ist und als NSC-Führer dient. Falls sie zu Beginn des Abenteuers gestorben ist, können die Charaktere {@item Professor Skant|IDRotF} als Ersatzführer benutzen, vorausgesetzt, sie haben Vellynnes {@i professor orb} in {@area chapter 5|538|x} von Aurils Insel geholt. Wenn weder Vellynne noch Professor Skant in der Nähe sind, kannst du einen anderen NSC mit den Informationen versorgen, die du brauchst, um die Höhlen des Hungers zu erreichen. Wahrscheinliche Kandidaten sind {@creature Hengar Aesnvaard|IDRotF} (siehe \"Eskorte des Elchstammes\" unten) und das Simulakrum von {@creature Dzaan|IDRotF} (siehe {@adventure appendix C|IDRotF|21}).",
+						"This chapter focuses on the characters' exploration of the ice caves. There's a good chance that {@creature Vellynne Harpell|IDRotF} is present as well, serving as an NPC guide. If she died earlier in the adventure, the characters can use {@item Professor Skant|IDRotF} as a substitute guide, assuming they retrieved Vellynne's {@i professor orb} from Auril's island in {@area chapter 5|538|x}. If neither Vellynne nor Professor Skant are around, you can furnish another NPC with the information needed to reach the Caves of Hunger. Likely candidates include {@creature Hengar Aesnvaard|IDRotF} (see \"Elk Tribe Escort\" below) and Dzaan's simulacrum (see {@adventure appendix C|IDRotF|21}).",
 						{
 							"type": "entries",
 							"name": "Character Advancement",
@@ -47752,10 +48052,17 @@
 												"type": "internal",
 												"path": "adventure/IDRotF/171-map-6.1-caves-of-hunger.jpg"
 											},
-											"title": "Map 6.1: caves of hunger",
+											"title": "Map 6.1: Caves of Hunger",
 											"width": 4421,
 											"height": 6000,
 											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 158,
+												"offsetX": 28,
+												"offsetY": 55,
+												"scale": 3
+											},
 											"id": "71f",
 											"mapRegions": [
 												{
@@ -52275,7 +52582,11 @@
 												"id": "71f"
 											},
 											"grid": {
-												"type": "none"
+												"type": "square",
+												"size": 158,
+												"offsetX": 28,
+												"offsetY": 55,
+												"scale": 3
 											}
 										}
 									]
@@ -53493,6 +53804,11 @@
 									"width": 5000,
 									"height": 3100,
 									"imageType": "map",
+									"grid": {
+										"type": "none",
+										"size": 286,
+										"distance": 100
+									},
 									"id": "720",
 									"mapRegions": [
 										{
@@ -54120,6 +54436,11 @@
 									"width": 5000,
 									"height": 3100,
 									"imageType": "mapPlayer",
+									"grid": {
+										"type": "none",
+										"size": 286,
+										"distance": 100
+									},
 									"mapParent": {
 										"id": "720"
 									}
@@ -55292,10 +55613,16 @@
 																"type": "internal",
 																"path": "adventure/IDRotF/184-map-7.3-spire-of-iriolarthas.jpg"
 															},
-															"title": "Map 7.3: spire of iriolarthas",
+															"title": "Map 7.3: Spire of Iriolarthas",
 															"width": 4000,
 															"height": 2765,
 															"imageType": "map",
+															"grid": {
+																"type": "square",
+																"size": 52,
+																"offsetX": 6,
+																"offsetY": -24
+															},
 															"id": "721",
 															"mapRegions": [
 																{
@@ -57227,7 +57554,7 @@
 						"In diesem Kapitel versuchen zwei Zauberer der Arkanen Bruderschaft, ihre großen Ambitionen zu verwirklichen: {@creature Vellynne Harpell|IDRotF} und {@creature Avarice|IDRotF}. Beide werden in {@area appendix C|6fe|x} beschrieben.",
 						"Wenn die Charaktere Probleme haben, ein Rätsel in Ythryn zu lösen, wie z.B. das Kraftfeld um die Spitze von Iriolarthas zu deaktivieren, können Sie Vellynne oder {@creature Avarice|IDRotF} zur Hilfe nehmen. Beide NSCs sind hochintelligent und können den Charakteren helfen, eine Lösung zu finden. Sie als Spielleiter können sie einsetzen, um das Abenteuer nicht ins Stocken geraten zu lassen.",
 						"Sowohl Vellynne als auch {@creature Avarice|IDRotF} würden fast alles tun, um Iriolarthas' Zauberbuch zu bekommen, und sie sind nur wenig weniger entschlossen, wenn es darum geht, wer Iriolarthas' {@item staff of power}, das {@item scroll of the comet|IDRotF} und das {@item scroll of tarrasque summoning|IDRotF} bekommt.",
-						"Wenn die Charaktere dem Simulakrum von {@creature Dzaan|IDRotF} in Kapitel 2 geholfen haben, eine echte Person zu werden (siehe \"{@area Lost Spire of Netheril|3a8|x}\"), könnte er ebenfalls anwesend sein. Ohne die volle Anzahl an Zaubern ist {@creature Dzaan|IDRotF} nicht annähernd so hilfreich wie Vellynne und nicht so gefährlich wie {@creature Avarice|IDRotF}, aber er ist genauso gierig und eigennützig. Spielt ihn entsprechend.",
+						"If the characters helped Dzaan's simulacrum become a real person in chapter 2 (see \"{@area Lost Spire of Netheril|3a8|x}\"), he might be present as well. Without a full complement of spells, Dzaan isn't nearly as helpful as Vellynne nor as dangerous as {@creature Avarice|IDRotF}, but he's just as greedy and self-serving. Roleplay him accordingly.",
 						{
 							"type": "entries",
 							"name": "Vellynne's Help",
@@ -58255,7 +58582,13 @@
 					"title": "Poster Map: Icewind Dale",
 					"width": 6000,
 					"height": 4215,
-					"imageType": "map"
+					"imageType": "map",
+					"grid": {
+						"type": "none",
+						"size": 63,
+						"distance": 1,
+						"units": "miles"
+					}
 				},
 				{
 					"type": "image",
@@ -58263,10 +58596,15 @@
 						"type": "internal",
 						"path": "adventure/IDRotF/264-ten-towns.jpg"
 					},
-					"title": "Poster Map: Icewind Dale (Ten Towns)",
+					"title": "Poster Map: Ten Towns",
 					"width": 6000,
 					"height": 4215,
-					"imageType": "map"
+					"imageType": "map",
+					"grid": {
+						"type": "none",
+						"size": 122,
+						"distance": 250
+					}
 				}
 			],
 			"id": "01f"

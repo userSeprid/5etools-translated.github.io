@@ -117,7 +117,8 @@
 					"entries": [
 						"Du kannst deinen Atem für eine Anzahl von Minuten anhalten, die 1 + deinem Konstitutionsmodifikator entspricht (mindestens 30 Sekunden).",
 						"Wenn dir der Atem ausgeht oder du erstickst, kannst du eine Anzahl von Runden überleben, die deinem Konstitutionsmodifikator entspricht (mindestens 1 Runde). Zu Beginn deines nächsten Zuges fällst du auf 0 Trefferpunkte und liegst im Sterben. Du kannst weder Trefferpunkte zurückgewinnen noch stabilisiert werden, bis du wieder atmen kannst."
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "entries",
@@ -132,18 +133,22 @@
 									"name": "Impeded Melee",
 									"entries": [
 										"Bei einem Nahkampfangriff mit einer Waffe hat eine Kreatur, die keine Flug- oder Schwimmgeschwindigkeit hat (entweder von Natur aus oder durch Magie), einen Nachteil beim Angriffswurf, es sei denn, die Waffe verursacht Stichschaden."
-									]
+									],
+									"id": "004"
 								},
 								{
 									"type": "entries",
 									"name": "Movement",
 									"entries": [
 										"Eine Kreatur kann eine Aktion verwenden, um etwas abzustoßen, das schwerer ist als sie selbst, und sich bis zu ihrer Geh-, Flug- oder Schwimmgeschwindigkeit in einer geraden Linie bewegen. Die Kreatur setzt diesen Kurs fort und bewegt sich bei jeder ihrer Drehungen in einer geraden Linie mit ihrer Geschwindigkeit, bis sie von etwas aufgehalten wird oder ihre Flugbahn ändert."
-									]
+									],
+									"id": "005"
 								}
-							]
+							],
+							"id": "003"
 						}
-					]
+					],
+					"id": "002"
 				},
 				{
 					"type": "gallery",
@@ -337,7 +342,10 @@
 											"1 Zauberstopp-Schiff (Wurf auf {@book Ship Encounters table|BAM|0|Ship Encounters})",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -478,7 +486,10 @@
 											"1 Spelljamming-Schiff (Würfelwurf auf der Tabelle Schiffsbegegnungen)",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -616,7 +627,8 @@
 										]
 									]
 								}
-							]
+							],
+							"id": "006"
 						},
 						{
 							"type": "entries",
@@ -649,7 +661,8 @@
 									]
 								},
 								"Wenn das Schiff auf etwas stößt, das keine Trefferpunkte hat (z. B. ein Planet oder ein Mond), wird der Schaden nur auf das Schiff angewendet. Das Schiff hält an, wenn es mit einem Gargantuan oder einem unbeweglichen Wesen oder Objekt zusammenstößt; andernfalls kann sich das Schiff weiterbewegen, wenn es noch Bewegung übrig hat, und was auch immer es getroffen hat, bewegt sich auf den nächsten unbesetzten Platz, der nicht im Weg des Schiffes liegt."
-							]
+							],
+							"id": "007"
 						}
 					]
 				},
@@ -720,7 +733,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "008"
 				},
 				{
 					"type": "entries",
@@ -781,7 +795,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00b"
 				},
 				{
 					"type": "entries",
@@ -913,9 +928,11 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00c"
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }
