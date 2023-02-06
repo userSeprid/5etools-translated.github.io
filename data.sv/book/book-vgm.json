@@ -1055,6 +1055,14 @@
 										"path": "book/VGM/Beholder-Lair-DM.jpg"
 									},
 									"title": "Beholder Lair (DM)",
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 5,
+										"offsetY": -15,
+										"scale": 2,
+										"distance": 10
+									},
 									"width": 800,
 									"height": 1100,
 									"imageType": "map"
@@ -1068,6 +1076,10 @@
 									"title": "Beholder Lair (Players)",
 									"width": 3200,
 									"height": 4500,
+									"grid": {
+										"type": "square",
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								"Vanliga rum som finns i en beholder's lair beskrivs i de följande avsnitten.",
@@ -4038,6 +4050,13 @@
 									"title": "Goblin War Camp (DM)",
 									"width": 1164,
 									"height": 800,
+									"grid": {
+										"type": "square",
+										"size": 56,
+										"offsetX": 19,
+										"offsetY": 7,
+										"scale": 4
+									},
 									"imageType": "map"
 								},
 								{
@@ -4049,6 +4068,9 @@
 									"title": "Goblin War Camp (Players)",
 									"width": 5900,
 									"height": 5500,
+									"grid": {
+										"type": "square"
+									},
 									"imageType": "mapPlayer"
 								},
 								"I den omgivande bålen har goblinoiderna alla sina egna rum, organiserade efter sina respektive roller. Typiskt för varje läger är de breda stigar som korsar det, som går från varje port genom lägrets mitt och ut på andra sidan. Denna konfiguration gör det möjligt för alla goblinoider att snabbt samla sig och lämna lägret i massor för att möta ett annalkande hot.",
@@ -4702,6 +4724,14 @@
 									"title": "Hag Lairs (DM)",
 									"width": 1091,
 									"height": 750,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 19,
+										"offsetY": 15,
+										"scale": 1.87,
+										"distance": 10
+									},
 									"imageType": "map"
 								},
 								{
@@ -4713,6 +4743,10 @@
 									"title": "Hag Lairs (Players)",
 									"width": 4200,
 									"height": 2900,
+									"grid": {
+										"type": "square",
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								"Gömman är väl skyddad mot intrång, antingen naturligt eller på konstgjord väg. Det kan vara möjligt att nå det endast via en brant bergsstig, eller så kan det vara omgivet av ett staket som hagan bygger av stolpar som är täckta med magiskt skyddade skallar. Ofta återspeglar en lya den primära invånarens livsåskådning - en mordisk hages hem kan vara tillverkat för att se ut som en kista eller ett mausoleum, och en frossande hages hem kan se ut som en taverna eller ett pepparkakshus. Eftersom sådana platser är bekväma för dem, etablerar havshäxor ofta sina lyor inuti skrovet på vrakade eller övergivna fartyg.",
@@ -5491,6 +5525,13 @@
 									"title": "Kobold Lair (DM)",
 									"width": 545,
 									"height": 750,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 19,
+										"offsetY": 6,
+										"scale": 4.15
+									},
 									"imageType": "map"
 								},
 								{
@@ -5502,6 +5543,13 @@
 									"title": "Kobold Lair (Players)",
 									"width": 1600,
 									"height": 2200,
+									"grid": {
+										"type": "square",
+										"size": 72,
+										"offsetX": -8,
+										"offsetY": 25,
+										"scale": 2
+									},
 									"imageType": "mapPlayer"
 								},
 								"Varelser som är större än en kobold måste sitta på huk eller krypa för att kunna ta sig igenom tunnlarna i en koboldhåla, vilket i sig är tillräckligt för att avskräcka de flesta fientliga humanoider (som orcher eller hobgoblins) från att försöka invadera koboldernas territorium. Äventyrare som försöker utrota ett koboldangrepp finner sig ofta fast i låga passager som är för smala för att kunna vända i, vilket tvingar dem att röra sig i en enda fil och lägger bördan av striden på de första och sista personerna i kön.",
@@ -6185,6 +6233,11 @@
 									"title": "Mind Flayer Colony (DM)",
 									"width": 545,
 									"height": 750,
+									"grid": {
+										"type": "none",
+										"size": 138,
+										"distance": 50
+									},
 									"imageType": "map"
 								},
 								"Ingen lya är den andra lik, eftersom den äldsta hjärnan styr form och funktion i varje lya. Den håla som visas på kartan är typisk och innehåller många element som finns i varje kolonis fäste.",
@@ -7067,6 +7120,13 @@
 									"title": "Orc Stronghold (DM)",
 									"width": 800,
 									"height": 1100,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 10,
+										"offsetY": 3,
+										"scale": 3.5
+									},
 									"imageType": "map"
 								},
 								{
@@ -7078,6 +7138,10 @@
 									"title": "Orc Stronghold (Players)",
 									"width": 5500,
 									"height": 7500,
+									"grid": {
+										"type": "square",
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								"Varje läger är uppdelat efter gudstjänstriktning. De som vördar Gruumsh, Ilneval, Bahgtru och Luthic får de bästa delarna av lyan, medan Yurtrus och Shargaas anhängare förvisas till de djupa, mörka hålen på platsen, bort från resten av stammen.",
@@ -7289,80 +7353,80 @@
 									"page": 94,
 									"entries": [
 										"Under de sista åren innan yuan-ti-imperiet kollapsade visade sig Sseth för ormfolket i form av en bevingad yuan-ti. Han lovade att leda yuan-ti bort från nederlagets brant och tillbaka till toppen av världsherravälde i utbyte mot deras vördnad. Många av Merrshaulks troende vände sig till dyrkan av Sibilant Death och trodde att han var en avatar av deras gudom. De gav honom tillräckligt med makt för att kunna genomföra en kort återhämtning, men dessa åtgärder var för lite och för sent för att förhindra imperiets kollaps. Sseth valde att vila och samla kraft under nedgångsåren, eftersom fler och fler av yuan-ti antog hans dyrkan.",
-										"Hans mest hängivna anhängare, kända som tankesviskare, använder sin gudagivna magi för att efterlikna Sseths taktik och principer. De strävar efter att lyckas genom att erbjuda ett alternativt val till ifrågasättande åsikter eller planer, och på så sätt utstrålar de en air av självgodhet som ger dem ett mindre än välsmakande rykte bland yuan-ti som följer andra gudar.",
-										{
-											"type": "inset",
-											"name": "Gods of Other Worlds",
-											"entries": [
-												"I andra världar än Forgotten Realms sluter yuan-ti pakter med gudomar i de pantheon som presenteras i bilaga B i Player's Handbook. Nedan följer förslag på yuan-ti-gudar för varje pantheon.",
-												{
-													"type": "entries",
-													"name": "Greyhawk",
-													"page": 94,
-													"entries": [
-														"Erythnul, Iuz, Tharizdun, Vecna."
-													],
-													"id": "175"
-												},
-												{
-													"type": "entries",
-													"name": "Dragonlance",
-													"page": 94,
-													"entries": [
-														"Kemosh, Sargonnas."
-													],
-													"id": "176"
-												},
-												{
-													"type": "entries",
-													"name": "Eberron",
-													"page": 94,
-													"entries": [
-														"Fury, Keeper, Mockery, Shadow, Traveler."
-													],
-													"id": "177"
-												},
-												{
-													"type": "entries",
-													"name": "Celtic",
-													"page": 94,
-													"entries": [
-														"Math Mathonwy, Morrigan."
-													],
-													"id": "178"
-												},
-												{
-													"type": "entries",
-													"name": "Greek",
-													"page": 94,
-													"entries": [
-														"Ares, Hekate."
-													],
-													"id": "179"
-												},
-												{
-													"type": "entries",
-													"name": "Egyptian",
-													"page": 94,
-													"entries": [
-														"Apep, Set."
-													],
-													"id": "17a"
-												},
-												{
-													"type": "entries",
-													"name": "Norse",
-													"page": 94,
-													"entries": [
-														"Hel, Loke."
-													],
-													"id": "17b"
-												}
-											],
-											"id": "174"
-										}
+										"Hans mest hängivna anhängare, kända som tankesviskare, använder sin gudagivna magi för att efterlikna Sseths taktik och principer. De strävar efter att lyckas genom att erbjuda ett alternativt val till ifrågasättande åsikter eller planer, och på så sätt utstrålar de en air av självgodhet som ger dem ett mindre än välsmakande rykte bland yuan-ti som följer andra gudar."
 									],
 									"id": "173"
+								},
+								{
+									"type": "inset",
+									"name": "Gods of Other Worlds",
+									"entries": [
+										"I andra världar än Forgotten Realms sluter yuan-ti pakter med gudomar i de pantheon som presenteras i bilaga B i Player's Handbook. Nedan följer förslag på yuan-ti-gudar för varje pantheon.",
+										{
+											"type": "entries",
+											"name": "Greyhawk",
+											"page": 94,
+											"entries": [
+												"Erythnul, Iuz, Tharizdun, Vecna."
+											],
+											"id": "175"
+										},
+										{
+											"type": "entries",
+											"name": "Dragonlance",
+											"page": 94,
+											"entries": [
+												"Kemosh, Sargonnas."
+											],
+											"id": "176"
+										},
+										{
+											"type": "entries",
+											"name": "Eberron",
+											"page": 94,
+											"entries": [
+												"Fury, Keeper, Mockery, Shadow, Traveler."
+											],
+											"id": "177"
+										},
+										{
+											"type": "entries",
+											"name": "Celtic",
+											"page": 94,
+											"entries": [
+												"Math Mathonwy, Morrigan."
+											],
+											"id": "178"
+										},
+										{
+											"type": "entries",
+											"name": "Greek",
+											"page": 94,
+											"entries": [
+												"Ares, Hekate."
+											],
+											"id": "179"
+										},
+										{
+											"type": "entries",
+											"name": "Egyptian",
+											"page": 94,
+											"entries": [
+												"Apep, Set."
+											],
+											"id": "17a"
+										},
+										{
+											"type": "entries",
+											"name": "Norse",
+											"page": 94,
+											"entries": [
+												"Hel, Loke."
+											],
+											"id": "17b"
+										}
+									],
+									"id": "174"
 								},
 								{
 									"type": "entries",
@@ -8320,6 +8384,14 @@
 									"title": "Yuan-Ti Temple (DM)",
 									"width": 1091,
 									"height": 1500,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"offsetX": 24,
+										"offsetY": 38,
+										"scale": 2.32,
+										"distance": 10
+									},
 									"imageType": "map"
 								},
 								{
@@ -8331,6 +8403,11 @@
 									"title": "Yuan-Ti Temple—Level 1 (Players)",
 									"width": 1350,
 									"height": 1200,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8342,6 +8419,11 @@
 									"title": "Yuan-Ti Temple—Level 2 (Players)",
 									"width": 1100,
 									"height": 1000,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8353,6 +8435,11 @@
 									"title": "Yuan-Ti Temple—Level 3 (Players)",
 									"width": 900,
 									"height": 850,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8364,6 +8451,11 @@
 									"title": "Yuan-Ti Temple—Level 4 (Players)",
 									"width": 750,
 									"height": 700,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{
@@ -8375,6 +8467,11 @@
 									"title": "Yuan-Ti Temple—Level 5 (Players)",
 									"width": 856,
 									"height": 812,
+									"grid": {
+										"type": "square",
+										"size": 50,
+										"distance": 10
+									},
 									"imageType": "mapPlayer"
 								},
 								{

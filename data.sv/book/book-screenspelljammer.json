@@ -117,7 +117,8 @@
 					"entries": [
 						"Du kan hålla andan i ett antal minuter som är lika med 1 + din konstitutionsmodifierare (minst 30 sekunder).",
 						"Om du får andnöd eller kvävs kan du överleva i ett antal rundor som är lika med din konstitutionsmodifierare (minst 1 runda). I början av din nästa vändning sjunker du till 0 träffpunkter och är döende, och du kan inte återfå träffpunkter eller stabiliseras förrän du kan andas igen."
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "entries",
@@ -132,18 +133,22 @@
 									"name": "Impeded Melee",
 									"entries": [
 										"När du gör en närstridsattack med ett vapen har en varelse som inte har en flyg- eller simhastighet (antingen naturligt eller genom magi) nackdel på attackkastet om inte vapnet ger genomträngande skada."
-									]
+									],
+									"id": "004"
 								},
 								{
 									"type": "entries",
 									"name": "Movement",
 									"entries": [
 										"En varelse kan använda en handling för att skjuta bort något som är tyngre än den själv och förflytta sig upp till sin gång-, flyg- eller simhastighet i en rak linje. Varelsen fortsätter längs denna bana och förflyttar sig i en rak linje med sin hastighet vid varje vändning tills något stoppar den eller ändrar dess bana."
-									]
+									],
+									"id": "005"
 								}
-							]
+							],
+							"id": "003"
 						}
-					]
+					],
+					"id": "002"
 				},
 				{
 					"type": "gallery",
@@ -337,7 +342,10 @@
 											"1 stavningsstörande fartyg (rulla på {@book Ship Encounters table|BAM|0|Ship Encounters})",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -478,7 +486,10 @@
 											"1 skepp för att spelljamming (rulla på bordet Ship Encounters).",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -616,7 +627,8 @@
 										]
 									]
 								}
-							]
+							],
+							"id": "006"
 						},
 						{
 							"type": "entries",
@@ -649,7 +661,8 @@
 									]
 								},
 								"Om skeppet stöter på något som inte har träffpunkter (t.ex. en planet eller en måne), tillämpas skadan endast på skeppet. Skeppet stannar efter att ha kraschat in i en Gargantuan eller en orörlig varelse eller ett orörligt föremål; annars kan skeppet fortsätta att röra sig om det har någon rörelse kvar, och det som det träffade flyttar sig till närmsta obefolkade utrymme som inte är i skeppets väg."
-							]
+							],
+							"id": "007"
 						}
 					]
 				},
@@ -720,7 +733,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "008"
 				},
 				{
 					"type": "entries",
@@ -781,7 +795,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00b"
 				},
 				{
 					"type": "entries",
@@ -913,9 +928,11 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00c"
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }
