@@ -117,7 +117,8 @@
 					"entries": [
 						"Vous pouvez retenir votre souffle pendant un nombre de minutes égal à 1 + votre modificateur de Constitution (minimum de 30 secondes).",
 						"Si vous êtes à bout de souffle ou que vous vous étouffez, vous pouvez survivre pendant un nombre de rounds égal à votre modificateur de Constitution (minimum de 1 round). Au début de votre prochain tour, vous tombez à 0 point de vie et êtes en train de mourir, et vous ne pouvez pas regagner de points de vie ou être stabilisé tant que vous ne pouvez pas respirer à nouveau."
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "entries",
@@ -132,18 +133,22 @@
 									"name": "Impeded Melee",
 									"entries": [
 										"Lorsqu'elle effectue une attaque de mêlée avec une arme, une créature qui n'a pas de vitesse de vol ou de natation (soit naturellement, soit par magie) a un désavantage sur le jet d'attaque, sauf si l'arme inflige des dégâts perforants."
-									]
+									],
+									"id": "004"
 								},
 								{
 									"type": "entries",
 									"name": "Movement",
 									"entries": [
 										"Une créature peut utiliser une action pour repousser un objet plus lourd qu'elle et se déplacer en ligne droite jusqu'à sa vitesse de marche, de vol ou de nage. La créature continue sur cette trajectoire, se déplaçant en ligne droite à sa vitesse à chacun de ses tours jusqu'à ce que quelque chose l'arrête ou modifie sa trajectoire."
-									]
+									],
+									"id": "005"
 								}
-							]
+							],
+							"id": "003"
 						}
-					]
+					],
+					"id": "002"
 				},
 				{
 					"type": "gallery",
@@ -337,7 +342,10 @@
 											"1 navire de brouillage des sorts (lancer sur le {@book Ship Encounters table|BAM|0|Ship Encounters})",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -478,7 +486,10 @@
 											"1 vaisseau brouilleur de sorts (lancer sur la table des rencontres de vaisseaux)",
 											"—"
 										]
-									]
+									],
+									"data": {
+										"tableIgnore": true
+									}
 								},
 								{
 									"type": "table",
@@ -616,7 +627,8 @@
 										]
 									]
 								}
-							]
+							],
+							"id": "006"
 						},
 						{
 							"type": "entries",
@@ -649,7 +661,8 @@
 									]
 								},
 								"Si le vaisseau heurte quelque chose qui n'a pas de points de vie (comme une planète ou une lune), appliquez les dégâts uniquement au vaisseau. Le vaisseau s'arrête après avoir percuté une créature ou un objet gigantesque ou inamovible ; sinon, le vaisseau peut continuer à se déplacer s'il lui reste du mouvement, et ce qu'il a heurté se déplace vers l'espace inoccupé le plus proche qui n'est pas sur la trajectoire du vaisseau."
-							]
+							],
+							"id": "007"
 						}
 					]
 				},
@@ -720,7 +733,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "008"
 				},
 				{
 					"type": "entries",
@@ -781,7 +795,8 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00b"
 				},
 				{
 					"type": "entries",
@@ -913,9 +928,11 @@
 								]
 							]
 						}
-					]
+					],
+					"id": "00c"
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }
