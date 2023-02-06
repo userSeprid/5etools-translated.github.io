@@ -9071,6 +9071,9 @@
 			],
 			"lootTables": [
 				"Magic Item Table F"
+			],
+			"seeAlsoDeck": [
+				"Deck of Illusions"
 			]
 		},
 		{
@@ -9095,17 +9098,17 @@
 			},
 			"grantsProficiency": true,
 			"entries": [
-				"通常在一个盒子或袋子里找到，这副牌包含一些用象牙或牛皮纸制成的卡片。大多数（75%）这类牌组只有十三张，但其余的有二十二张。",
+				"Usually found in a box or pouch, this deck contains a number of cards made of ivory or vellum. Most ({@chance 75|75 percent}) of these decks have only thirteen cards, but the rest have twenty-two.",
 				"在你抽牌之前，你必须声明你打算抽多少张牌，然后随机抽牌（你可以用一副改变过的扑克牌来模拟这副牌）。任何超过这个数字的抽出的牌都没有效果。否则，只要你从牌组中抽出一张牌，它的魔法就会生效。你必须在上一次抽牌后1小时内抽出每张牌。如果你没能抽到所选的数字，剩下的牌就会自行从牌组中飞出，并一次性生效。",
-				"一旦抽出一张牌，它就会消失。除非这张牌是 \"傻瓜 \"或 \"小丑\"，否则这张牌会重新出现在牌组中，这样就有可能抽到同一张牌两次。",
+				"Once a card is drawn, it fades from existence. Unless the card is the {@card Fool|Deck of Many Things} or the {@card Jester|Deck of Many Things}, the card reappears in the deck, making it possible to draw the same card twice.",
 				{
 					"type": "entries",
 					"name": "A Question of Enmity",
 					"entries": [
-						"在一副由许多东西组成的牌中，有两张牌可以让一个角色赢得另一个生命的敌意。有了火焰牌，这种敌意是公开的。角色应该在多个场合体验到魔鬼的恶毒努力。寻找恶魔不应该是一个简单的任务，冒险者应该在能够面对恶魔本身之前与恶魔的盟友和追随者发生几次冲突。"
+						"在一副由许多东西组成的牌中，有两张牌可以让一个角色赢得另一个生命的敌意。有了火焰牌，这种敌意是公开的。角色应该在多个场合体验到魔鬼的恶毒努力。寻找恶魔不应该是一个简单的任务，冒险者应该在能够面对恶魔本身之前与恶魔的盟友和追随者发生几次冲突。",
+						"In the case of the {@card Rogue|Deck of Many Things} card, the enmity is secret and should come from someone thought to be a friend or an ally. As Dungeon Master, you should wait for a dramatically appropriate moment to reveal this enmity, leaving the adventurer guessing who is likely to become a betrayer."
 					]
 				},
-				"就流氓牌而言，这种敌意是秘密的，应该来自一个被认为是朋友或盟友的人。作为地下城主，你应该等待一个戏剧性的适当时机来揭示这种敌意，让冒险者猜测谁可能成为背叛者。",
 				{
 					"type": "table",
 					"colLabels": [
@@ -9437,7 +9440,7 @@
 					"type": "entries",
 					"name": "Skull",
 					"entries": [
-						"你召唤一个{@creature avatar of death|dmg}--一个身穿破烂黑袍、手持幽灵镰刀的鬼魂般的人形骷髅。它出现在你10英尺范围内DM选择的空间，并攻击你，警告所有其他人，你必须独自赢得这场战斗。这个化身一直战斗到你死亡或者它的生命值降到0，然后它就会消失。如果有人试图帮助你，帮助者会召唤出它自己的（%1%）。被{@creature avatar of death|dmg}杀死的生物不能恢复生命。"
+						"You summon an {@creature avatar of death|DMG}—a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own {@creature avatar of death|DMG}. A creature slain by an {@creature avatar of death|DMG} can't be restored to life."
 					]
 				},
 				{
@@ -9465,7 +9468,7 @@
 					"type": "entries",
 					"name": "Euryale",
 					"entries": [
-						"这张卡的{@creature medusa}面孔会诅咒你。当你受到这种诅咒时，你的救赎动作会受到-2的惩罚。只有神或命运之卡的魔力可以结束这个诅咒。"
+						"The card's {@creature medusa}-like visage curses you. You take a −2 penalty on saving throws while cursed in this way. Only a god or the magic of {@card The Fates|Deck of Many Things} card can end this curse."
 					]
 				},
 				{
@@ -9503,6 +9506,9 @@
 			"lootTables": [
 				"Magic Item Table I"
 			],
+			"seeAlsoDeck": [
+				"Deck of Many Things"
+			],
 			"hasFluffImages": true
 		},
 		{
@@ -9529,7 +9535,7 @@
 			"grantsProficiency": true,
 			"entries": [
 				"这副独特的牌存放在一个皮袋里，包含二十二张彩色卡片，由某种坚固但不知名的金属制成，每张卡片上的图案都印成了凸起的点状马赛克。在你抽牌之前，你必须声明你打算抽多少张牌，然后随机抽出它们（你可以用一副改变过的扑克牌来模拟这副牌）。任何超过这个数字的抽出的牌都没有效果。否则，只要你从牌组中抽出一张牌，它的魔法就会生效。你必须在上一次抽牌后1小时内抽出每张牌。如果你没能抽到所选的数字，剩下的牌就会自行从牌组中飞出，并一次性生效。",
-				"一旦抽出一张牌，它就会消失。除非这张牌是 \"傻瓜 \"或 \"小丑\"，否则这张牌会重新出现在牌组中，这样就有可能抽到同一张牌两次。",
+				"Once a card is drawn, it fades from existence. Unless the card is the {@card Fool|Deck of Several Things|LLK} or the {@card Jester|Deck of Several Things|LLK}, the card reappears in the deck, making it possible to draw the same card twice.",
 				{
 					"type": "table",
 					"colLabels": [
@@ -9802,7 +9808,7 @@
 					"type": "entries",
 					"name": "Flames",
 					"entries": [
-						"痛苦的身体寺院的大法师成为你的敌人。这个骨魔寻求你的毁灭，在试图杀死你之前品尝你的痛苦。如果大法师已经被打败了，你就会得到加雷特-列维斯特森的赞助人--一个同样强大的魔鬼的敌意。"
+						"The Grand Master of the Monastery of the Distressed Body becomes your enemy. The bone devil seeks your ruin, savoring your suffering before attempting to slay you. If the Grand Master has already been defeated, you gain the enmity of {@creature Garret Levistusson|LLK|Garret Levistusson's} patron—a similarly powerful devil."
 					]
 				},
 				{
@@ -9921,10 +9927,13 @@
 					"type": "inset",
 					"name": "Using the Deck of Several Things",
 					"entries": [
-						"这副牌的特殊性（如果玛丽-格雷马尔金被用作NPC，则由她携带）意味着它的许多效果只在这个特定的冒险中运作，并与之相关。这通常涵盖了人物从出发到屏障山峰到解决Kwalish的实验室（O7区）中发生的任何事件之间的任何时间。",
-						"对于那些有效地将角色从游戏中移除一段时间的牌（唐戎和虚空），你可以让玩家扮演党的NPC雇佣者之一，或者引入一个临时角色作为党的旅程中遇到的NPC。或者，你可以决定只让角色的某些方面的意志消失并被禁锢，让角色在机器人状态下运作，直到被释放。"
+						"The special nature of this deck (carried by {@creature Mary Greymalkin|LLK} if she is used as an NPC) means that many of its effects operate only within and with respect to this specific adventure. This typically covers any time the characters spend between setting out for the Barrier Peaks and the resolution of whatever events transpire in Kwalish's lab (area O7).",
+						"For cards that effectively remove a character from play for a period of time ({@card Donjon|Deck of Several Things|LLK} and {@card the Void|Deck of Several Things|LLK}), you can allow a player to take on the role of one of the party's NPC hirelings, or introduce a temporary character as an NPC met during the party's journey. Alternatively, you can decide that only some aspect of the character's will disappears and is imprisoned, leaving the character to operate in a robotic state until freed."
 					]
 				}
+			],
+			"seeAlsoDeck": [
+				"Deck of Several Things|LLK"
 			]
 		},
 		{
@@ -23127,6 +23136,7 @@
 		{
 			"name": "Nightbringer",
 			"source": "MCV2DC",
+			"page": 14,
 			"baseItem": "mace|PHB",
 			"type": "M",
 			"immune": [
@@ -27430,6 +27440,7 @@
 				}
 			],
 			"wondrous": true,
+			"bonusSpellSaveDc": "+2",
 			"entries": [
 				"在持有此琴时，你的吟游诗人法术的蓄力DC获得+2的奖励。",
 				"作为一个动作，你可以使用协奏曲从物品中施放（%0%）。琴的这一属性在下一个黎明前不能再次使用。"
