@@ -25,114 +25,27 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 169,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"goliath"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
+			"_copy": {
+				"name": "Goliath Warrior",
+				"source": "IDRotF",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the goliath",
+						"with": "Aruk",
+						"flags": "i"
+					},
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"insight": 1,
+								"medicine": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 67,
-				"formula": "9d8 + 27"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 11,
-			"con": 16,
-			"int": 10,
-			"wis": 15,
-			"cha": 10,
-			"skill": {
-				"athletics": "+6",
-				"insight": "+4",
-				"medicine": "+4",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
-			"resist": [
-				"cold"
-			],
-			"languages": [
-				"Common",
-				"Giant"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Mountain Born",
-					"entries": [
-						"Aruk is geacclimatiseerd aan grote hoogten, inclusief hoogten boven de 20.000 voet."
-					]
-				},
-				{
-					"name": "Powerful Build",
-					"entries": [
-						"Aruk telt als één maat groter bij het bepalen van zijn draagvermogen en het gewicht dat hij kan duwen, slepen of tillen."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Aruk doet twee aanvallen met zijn grote bijl of werpt twee speren."
-					]
-				},
-				{
-					"name": "Greataxe",
-					"entries": [
-						"{@atk mw} {@hit 6} om te raken, reikwijdte 5 ft., één doel. {@h}10 ({@damage 1d12 + 4}) slagen schade."
-					]
-				},
-				{
-					"name": "Javelin",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} om te raken, bereik 5 ft. of reikwijdte 30/120 ft., één doelwit. {@h}7 ({@damage 1d6 + 4}) doorborende schade."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Als Aruk schade oploopt, vermindert hij de opgelopen schade met 9 ({@dice 1d12 + 3})."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"GI"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -905,7 +818,6 @@
 			"name": "Awakened White Moose",
 			"source": "IDRotF",
 			"page": 82,
-			"_isCopy": true,
 			"size": [
 				"L"
 			],
@@ -999,110 +911,57 @@
 		},
 		{
 			"name": "Battlehammer Dwarf",
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 107,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"dwarf"
-				]
+			"_copy": {
+				"name": "Scout",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "scout",
+						"with": "dwarf"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Longbow",
+							"items": {
+								"name": "Light Crossbow",
+								"entries": [
+									"{@atk rw} {@hit 4} om te raken, afstand 80/320 ft., één doel. {@h}6 ({@damage 1d8 + 2}) doorborende schade."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Shortsword",
+							"items": {
+								"name": "Handaxe",
+								"entries": [
+									"{@atk mw,rw} {@hit 2} om te raken, reikwijdte 5 ft. of reikwijdte 20/60 ft., één doel. {@h}3 ({@damage 1d6 + 0}) snijschade."
+								]
+							}
+						}
+					]
+				}
 			},
 			"alignment": [
 				"L",
 				"G"
 			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 16,
-				"formula": "3d8 + 3"
-			},
-			"speed": {
-				"walk": 25
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 11,
-			"wis": 13,
-			"cha": 11,
-			"skill": {
-				"nature": "+4",
-				"perception": "+5",
-				"stealth": "+6",
-				"survival": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
-			"resist": [
-				"poison"
-			],
-			"languages": [
-				"Common",
-				"Dwarvish"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Keen Hearing and Sight",
-					"entries": [
-						"De dwerg heeft voordeel bij controles van de Wijsheid (Perceptie) die op gehoor of zicht gebaseerd zijn."
-					]
-				},
-				{
-					"name": "Dwarven Resilience",
-					"entries": [
-						"De dwerg heeft voordeel op saving throws tegen gif en weerstand tegen gifschade."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De dwerg doet twee mêlee-aanvallen of twee afstandsaanvallen."
-					]
-				},
-				{
-					"name": "Handaxe",
-					"entries": [
-						"{@atk mw,rw} {@hit 2} om te raken, reikwijdte 5 ft. of reikwijdte 20/60 ft., één doel. {@h}3 ({@damage 1d6 + 0}) snijschade."
-					]
-				},
-				{
-					"name": "Light Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 4} om te raken, afstand 80/320 ft., één doel. {@h}6 ({@damage 1d8 + 2}) doorborende schade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
-				"D"
-			],
-			"damageTags": [
-				"P"
+				"D",
+				"X"
 			],
 			"miscTags": [
 				"MW",
@@ -1481,128 +1340,39 @@
 			"name": "Chimeric Baboon",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"S"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 3,
-				"formula": "1d6"
-			},
-			"speed": {
-				"walk": 30,
-				"climb": 30
-			},
-			"str": 8,
-			"dex": 14,
-			"con": 11,
-			"int": 4,
-			"wis": 12,
-			"cha": 6,
-			"passive": 11,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"De baviaan heeft voordeel bij een aanvalsrol tegen een wezen als ten minste één van de bondgenoten van de baviaan zich binnen 5 voet van het wezen bevindt en de bondgenoot niet {@condition incapacitated}."
-					]
+			"_copy": {
+				"name": "Baboon",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Bite",
+						"items": {
+							"name": "Bite",
+							"entries": [
+								"{@atk mw} {@hit 1} om te raken, reikwijdte 5 ft., één doelwit. {@h}1 ({@damage 1d4 - 1}) doorborende schade, plus een extra 3 ({@damage 1d6}) gifschade."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 1} om te raken, reikwijdte 5 ft., één doelwit. {@h}1 ({@damage 1d4 - 1}) doorborende schade, plus een extra 3 ({@damage 1d6}) gifschade."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
-			"damageTags": [
-				"I",
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
+			},
 			"hasToken": true
 		},
 		{
 			"name": "Chimeric Cat",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 2,
-				"formula": "1d4"
-			},
-			"speed": {
-				"walk": 40,
-				"climb": 30
-			},
-			"str": 3,
-			"dex": 15,
-			"con": 10,
-			"int": 3,
-			"wis": 12,
-			"cha": 7,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+4"
+			"_copy": {
+				"name": "Cat",
+				"source": "MM"
 			},
 			"senses": [
 				"blindsight 60 ft.",
 				"tremorsense 60 ft."
 			],
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Smell",
-					"entries": [
-						"De kat heeft voordeel op wijsheid (Perceptie) controles die op geur gebaseerd zijn."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 0} om te raken, reikwijdte 5 ft., één doel. {@h}1 slagschade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
 			"senseTags": [
 				"B",
 				"T"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1611,68 +1381,21 @@
 			"name": "Chimeric Fox",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 2,
-				"formula": "1d4"
-			},
-			"speed": {
-				"walk": 30,
-				"burrow": 5
-			},
-			"str": 2,
-			"dex": 16,
-			"con": 11,
-			"int": 3,
-			"wis": 12,
-			"cha": 6,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Hearing",
-					"entries": [
-						"De vos heeft voordeel bij controles van Wijsheid (Perceptie) die afhangen van het gehoor."
-					]
-				},
-				{
-					"name": "Chimeric Creation",
-					"entries": [
-						"De vos heeft een vacht die van kleur verandert naargelang de omgeving, wat hem een voordeel geeft op Dexterity (Stealth) checks."
-					]
+			"_copy": {
+				"name": "Fox",
+				"source": "IDRotF",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Chimeric Creation",
+							"entries": [
+								"De vos heeft een vacht die van kleur verandert naargelang de omgeving, wat hem een voordeel geeft op Dexterity (Stealth) checks."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} om te raken, reikwijdte 5 ft., één schepsel. {@h}1 doorborende schade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
+			},
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -1680,46 +1403,15 @@
 			"name": "Chimeric Hare",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 1,
-				"formula": "1d4 - 1"
+			"_copy": {
+				"name": "Hare",
+				"source": "IDRotF"
 			},
 			"speed": {
 				"walk": 20,
 				"burrow": 5,
 				"fly": 30
 			},
-			"str": 1,
-			"dex": 17,
-			"con": 9,
-			"int": 2,
-			"wis": 11,
-			"cha": 4,
-			"skill": {
-				"perception": "+2",
-				"stealth": "+5"
-			},
-			"passive": 12,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Escape",
-					"entries": [
-						"De haas kan in elke beurt de actie Streep, Afwenden of Verstoppen als bonusactie uitvoeren."
-					]
-				}
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -1748,64 +1440,31 @@
 			"name": "Chimeric Weasel",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 1,
-				"formula": "1d4 - 1"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 3,
-			"dex": 16,
-			"con": 8,
-			"int": 2,
-			"wis": 12,
-			"cha": 3,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Hearing and Smell",
-					"entries": [
-						"De wezel heeft voordeel bij de wijsheid (Perceptie) controles die gebaseerd zijn op gehoor of reuk."
-					]
-				},
-				{
-					"name": "Chimeric Creation",
-					"entries": [
-						"De wezel heeft gloeiende ogen die helder licht uitstralen in een straal van 20 voet en gedimd licht voor nog eens 20 voet."
-					]
+			"_copy": {
+				"name": "Weasel",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Chimeric Creation",
+							"entries": [
+								"De wezel heeft gloeiende ogen die helder licht uitstralen in een straal van 20 voet en gedimd licht voor nog eens 20 voet."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Bite",
+						"items": {
+							"name": "Bite",
+							"entries": [
+								"{@atk mw} {@hit 5} om te raken, reikwijdte 5 ft., één doelwit. {@h}1 doorborende schade."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} om te raken, reikwijdte 5 ft., één doelwit. {@h}1 doorborende schade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"damageTags": [
-				"P"
-			],
+			},
 			"miscTags": [
 				"AOE",
 				"MW"
@@ -2046,169 +1705,6 @@
 				"MW",
 				"RNG",
 				"RW"
-			],
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Dzaan",
-			"isNpc": true,
-			"isNamedCreature": true,
-			"source": "IDRotF",
-			"page": 270,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				10
-			],
-			"hp": {
-				"average": 49,
-				"formula": "9d8 + 9"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 11,
-			"con": 12,
-			"int": 16,
-			"wis": 13,
-			"cha": 15,
-			"save": {
-				"int": "+5",
-				"wis": "+3"
-			},
-			"skill": {
-				"arcana": "+5",
-				"deception": "+4",
-				"history": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Giant",
-				"Infernal"
-			],
-			"cr": "4",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Dzaan is een 9e niveau spellcaster. Zijn tovervaardigheid is Intelligentie (spell save {@dc 13}, {@hit 5} to hit met spell attacks). Hij heeft de volgende tovenaarsspreuken voorbereid:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell acid splash}*",
-								"{@spell light}",
-								"{@spell minor illusion}",
-								"{@spell shocking grasp}*"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell detect magic}",
-								"{@spell disguise self}",
-								"{@spell magic missile}*"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell invisibility}",
-								"{@spell levitate}",
-								"{@spell phantasmal force}"
-							]
-						},
-						"3": {
-							"slots": 3,
-							"spells": [
-								"{@spell fireball}",
-								"{@spell sending}",
-								"{@spell slow}"
-							]
-						},
-						"4": {
-							"slots": 3,
-							"spells": [
-								"{@spell arcane eye}",
-								"{@spell confusion}"
-							]
-						},
-						"5": {
-							"slots": 1,
-							"spells": [
-								"{@spell animate objects}"
-							]
-						}
-					},
-					"footerEntries": [
-						"*See \"Actions\" below."
-					],
-					"ability": "int"
-				}
-			],
-			"action": [
-				{
-					"name": "Shocking Grasp (Cantrip)",
-					"entries": [
-						"{@atk ms} {@hit 5} om te raken, reikwijdte 5 ft., één wezen (de aanvalsrol heeft voordeel als het doelwit een pantser van metaal draagt). {@h}9 ({@damage 2d8}) bliksemschade, en het doelwit kan geen reacties uitvoeren tot het begin van zijn volgende beurt."
-					]
-				},
-				{
-					"name": "Acid Splash (Cantrip)",
-					"entries": [
-						"Dzaan gooit een bel zuur naar een wezen dat hij kan zien binnen 60 meter van hem, of naar twee van zulke wezens die binnen 5 meter van elkaar zijn. Het doelwit moet slagen op een {@dc 13} Dexterity saving throw of 7 ({@damage 2d6}) zuurschade oplopen."
-					]
-				},
-				{
-					"name": "Magic Missile (1st-Level Spell; Requires a Spell Slot)",
-					"entries": [
-						"Dzaan creëert drie darts van magische kracht. Elk pijltje treft feilloos een wezen dat Dzaan kan zien binnen een straal van 120 meter, waarbij hij 3 ({@damage 1d4 + 1}) krachtschade toebrengt. Als Dzaan deze spreuk uitspreekt met een spreukslot van het 2e niveau, creëert hij nog een pijl."
-					]
-				}
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"GI",
-				"I"
-			],
-			"damageTags": [
-				"A",
-				"L",
-				"O"
-			],
-			"damageTagsSpell": [
-				"A",
-				"B",
-				"F",
-				"L",
-				"O",
-				"P",
-				"S",
-				"Y"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"conditionInflictSpell": [
-				"invisible"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3651,7 +3147,6 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 176,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -3930,139 +3425,32 @@
 			"name": "Headless Iron Golem",
 			"source": "IDRotF",
 			"page": 244,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Iron Golem",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Headless",
+							"entries": [
+								"De golem is {@condition blinded} en {@condition deafened}, wat hem nadeel geeft op al zijn aanvalsrollen, en hij kan zijn Gifadem niet gebruiken."
+							]
+						}
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "Poison Breath {@recharge 5}"
+					}
 				}
-			],
+			},
 			"hp": {
 				"average": 150,
 				"formula": "10d10 + 50"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 24,
-			"dex": 9,
-			"con": 20,
-			"int": 3,
-			"wis": 11,
-			"cha": 1,
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				"psychic",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't adamantine",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
 			"cr": "10",
-			"trait": [
-				{
-					"name": "Fire Absorption",
-					"entries": [
-						"Als de golem vuurschade oploopt, loopt hij geen schade op en krijgt hij een aantal hit points terug dat gelijk is aan de opgelopen vuurschade."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"De golem is immuun voor elke spreuk of effect dat zijn vorm zou veranderen."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"De golem heeft voordeel op saving throws tegen spreuken en andere magische effecten."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"De wapenaanvallen van de golem zijn magisch."
-					]
-				},
-				{
-					"name": "Headless",
-					"entries": [
-						"Het is {@condition blinded} en {@condition deafened}, waardoor het nadeel heeft op al zijn aanvalsrollen, en het kan zijn Poison Breath niet gebruiken."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De golem doet twee melee aanvallen."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 13} om te raken, reikwijdte 5 ft., één doelwit. {@h}20 ({@damage 3d8 + 7}) schade door kneuzing."
-					]
-				},
-				{
-					"name": "Sword",
-					"entries": [
-						"{@atk mw} {@hit 13} om te raken, reikwijdte 10 ft., één doel. {@h}23 ({@damage 3d10 + 7}) snijschade."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"SD"
-			],
 			"actionTags": [
 				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4073,10 +3461,28 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 215,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the gladiator",
+							"with": "Hengar",
+							"flags": "i"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
+			},
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4086,107 +3492,6 @@
 			"alignment": [
 				"N",
 				"G"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item studded leather armor|PHB|studded leather}",
-						"{@item shield|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Any one language (usually Common)"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"Hengar heeft voordeel op saving throws tegen zijn {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Een mêlee-wapen brengt één extra dobbelsteen aan schade toe als Hengar ermee slaat (inbegrepen in de aanval)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Hengar doet drie mêlee-aanvallen of twee afstandsaanvallen."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} om te raken, reikwijdte 5 ft. en bereik 20/60 ft., één doelwit. {@h}11 ({@damage 2d6 + 4}) doorborende schade, of 13 ({@damage 2d8 + 4}) doorborende schade indien gebruikt met twee handen om een melee aanval te maken."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} om te raken, reikwijdte 5 ft., één schepsel. {@h}9 ({@damage 2d4 + 4}) vernietigingsschade. Als het doelwit een medium of kleiner wezen is, moet het slagen op een {@dc 15} krachtsparingsworp of het wordt {@condition prone} neergeslagen."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Hengar telt 3 op bij zijn AC tegen een aanval die hem zou raken. Om dit te doen moet Hengar de aanvaller zien en een wapen dragen."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4287,84 +3592,29 @@
 			"name": "Ice Piercer",
 			"source": "IDRotF",
 			"page": 226,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Piercer",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "piercer",
+						"with": "ice piercer"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Drop",
+						"items": {
+							"name": "Drop",
+							"entries": [
+								"{@atk mw} {@hit 3} om te raken, één wezen direct onder de doordringer. {@h}10 ({@damage 3d6}) doordringende schade plus 10 ({@damage 3d6}) koude schade. Mis: De doordringer krijgt de helft van de normale valschade voor de gevallen afstand."
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 22,
-				"formula": "3d8 + 9"
 			},
-			"speed": {
-				"walk": 5,
-				"climb": 5
-			},
-			"str": 10,
-			"dex": 13,
-			"con": 16,
-			"int": 1,
-			"wis": 7,
-			"cha": 3,
-			"skill": {
-				"stealth": "+5"
-			},
-			"senses": [
-				"blindsight 30 ft.",
-				"darkvision 60 ft."
-			],
-			"passive": 8,
 			"immune": [
 				"cold"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "False Appearance",
-					"entries": [
-						"Terwijl de ijspegel onbeweeglijk aan het plafond blijft hangen, is hij niet te onderscheiden van een normale stalactiet."
-					]
-				},
-				{
-					"name": "Spider Climb",
-					"entries": [
-						"De ijsdoorboorder kan moeilijke oppervlaktes beklimmen, inclusief ondersteboven op plafonds, zonder dat hij een vaardigheidscontrole hoeft te doen."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Drop",
-					"entries": [
-						"{@atk mw} {@hit 3} om te raken, een schepsel direct onder de ijs piercer. {@h}10 ({@damage 3d6}) piercing schade plus 10 ({@damage 3d6}) koude schade. Mis: De ijs priem neemt de helft van de normale val schade voor de afstand gevallen."
-					]
-				}
-			],
-			"traitTags": [
-				"False Appearance",
-				"Spider Climb"
-			],
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"damageTags": [
-				"C",
-				"P"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4913,144 +4163,46 @@
 		{
 			"name": "Kadroth",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 42,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"tiefling"
-				]
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_trait": {
+					"name": "Tiefling",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the fanatic",
+						"with": "Kadroth",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 10,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"persuasion": "+4",
-				"religion": "+2"
-			},
-			"senses": [
-				"darkvision 60"
-			],
-			"passive": 11,
-			"resist": [
-				"fire"
-			],
-			"languages": [
-				"Common",
-				"Infernal"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"De fanaticus is een spellcaster van het 4e niveau. Zijn spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). De fanaticus heeft de volgende cleric spreuken voorbereid:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"trait": [
-				{
-					"name": "Dark Devotion",
-					"entries": [
-						"De fanaticus heeft voordeel op saving throws tegen {@condition charmed} of {@condition frightened} zijn."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De fanaticus doet twee melee aanvallen."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} om te raken, reikwijdte 5 ft. of reikwijdte 20/60 ft., één wezen. {@h}4 ({@damage 1d4 + 2}) doorborende schade."
-					]
-				}
-			],
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
-				"I"
-			],
-			"damageTags": [
-				"P"
+				"I",
+				"X"
 			],
 			"damageTagsSpell": [
+				"F",
 				"N",
 				"O",
 				"R"
 			],
 			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"paralyzed",
-				"prone"
+				"CC",
+				"I"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5061,7 +4213,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 243,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -5133,142 +4284,28 @@
 			"name": "Knight of the Black Sword",
 			"source": "IDRotF",
 			"page": 259,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"L",
-				"NX",
-				"C",
-				"NY",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Icy Doom",
+							"entries": [
+								"Wanneer de sekteleer sterft, bevriest zijn lichaam gedurende 9 dagen. In die tijd kan het niet worden ontdooid, niet door vuur worden beschadigd, niet worden bezield en niet uit de dood worden opgewekt."
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 10,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"persuasion": "+4",
-				"religion": "+2"
-			},
-			"passive": 11,
 			"languages": [
 				"Common",
 				"Infernal"
 			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"De fanaticus is een spellcaster van het 4e niveau. Zijn spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). De fanaticus heeft de volgende cleric spreuken voorbereid:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"trait": [
-				{
-					"name": "Dark Devotion",
-					"entries": [
-						"De fanaticus heeft voordeel op saving throws tegen {@condition charmed} of {@condition frightened} zijn."
-					]
-				},
-				{
-					"name": "Icy Doom",
-					"entries": [
-						"Wanneer de sekteleer sterft, bevriest zijn lichaam gedurende 9 dagen. In die tijd kan het niet worden ontdooid, niet door vuur worden beschadigd, niet worden bezield en niet uit de dood worden opgewekt."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De fanaticus doet twee melee aanvallen."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} om te raken, reikwijdte 5 ft. of reikwijdte 20/60 ft., één wezen. {@h}4 ({@damage 1d4 + 2}) doorborende schade."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
 				"I"
-			],
-			"damageTags": [
-				"P"
-			],
-			"damageTagsSpell": [
-				"N",
-				"O",
-				"R"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"paralyzed",
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -5790,132 +4827,22 @@
 			"name": "Lonelywood Banshee",
 			"source": "IDRotF",
 			"page": 81,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": "undead",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 58,
-				"formula": "13d8"
-			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 40,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"str": 1,
-			"dex": 14,
-			"con": 10,
-			"int": 12,
-			"wis": 11,
-			"cha": 17,
-			"save": {
-				"wis": "+2",
-				"cha": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 10,
-			"resist": [
-				"acid",
-				"fire",
-				"lightning",
-				"thunder",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
+			"_copy": {
+				"name": "Banshee",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Corrupting Touch",
+						"items": {
+							"name": "Spectral Longbow",
+							"entries": [
+								"{@atk rs} {@hit 4} om te raken, bereik 150/600 ft., één doelwit. {@h}12 ({@damage 3d6 + 2}) necrotische schade."
+							]
+						}
+					}
 				}
-			],
-			"immune": [
-				"cold",
-				"necrotic",
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained"
-			],
-			"languages": [
-				"Common",
-				"Elvish"
-			],
-			"cr": "4",
-			"trait": [
-				{
-					"name": "Detect Life",
-					"entries": [
-						"De banshee kan op magische wijze de aanwezigheid van wezens tot op 5 mijl afstand waarnemen, die geen ondoden of constructies zijn. Ze weet de algemene richting waarin ze zich bevinden, maar niet hun exacte locatie."
-					]
-				},
-				{
-					"name": "Incorporeal Movement",
-					"entries": [
-						"De banshee kan door andere wezens en voorwerpen heen bewegen alsof ze {@quickref difficult terrain||3} zijn. Ze neemt 5 ({@damage 1d10}) krachtschade als ze haar beurt eindigt in een voorwerp."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Spectral Longbow",
-					"entries": [
-						"{@atk rs} {@hit 4} om te raken, bereik 150/600 ft., één doelwit. {@h}12 ({@damage 3d6 + 2}) necrotische schade."
-					]
-				},
-				{
-					"name": "Horrifying Visage",
-					"entries": [
-						"Elk niet ondood wezen binnen 60 voet van de banshee dat haar kan zien moet slagen op een {@dc 13} Wijsheid-reddingsworp of {@condition frightened} gedurende 1 minuut. Een {@condition frightened} doelwit kan de worp herhalen aan het einde van elke beurt, met nadeel als de banshee binnen gezichtsveld is, en het effect op zichzelf beëindigen als hij slaagt. Als de worp van een doelwit slaagt of het effect eindigt, is het doelwit de volgende 24 uur immuun voor de Verschrikkelijke Aanblik van de banshee."
-					]
-				},
-				{
-					"name": "Wail (1/Day)",
-					"entries": [
-						"De banshee laat een treurig gejammer los, op voorwaarde dat ze niet in het zonlicht staat. Dit gejammer heeft geen effect op constructies en ondoden. Alle andere wezens binnen een straal van 30 meter die haar kunnen horen, moeten een {@dc 13} Constitution saving throw doen. Als de worp niet slaagt, verliest het wezen 0 hit points. Als hij slaagt, krijgt het wezen 10 ({@damage 3d6}) psychische schade."
-					]
-				}
-			],
-			"traitTags": [
-				"Incorporeal Movement"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C",
-				"E"
-			],
-			"damageTags": [
-				"N",
-				"O",
-				"Y"
-			],
-			"conditionInflict": [
-				"frightened"
-			],
+			},
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5923,12 +4850,31 @@
 		{
 			"name": "Mjenir",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 215,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Druid",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the druid",
+							"with": "Mjenir",
+							"flags": "i"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
+			},
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -5937,95 +4883,6 @@
 			},
 			"alignment": [
 				"N"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 27,
-				"formula": "5d8 + 5"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 12,
-			"con": 13,
-			"int": 12,
-			"wis": 15,
-			"cha": 11,
-			"skill": {
-				"medicine": "+4",
-				"nature": "+3",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
-			"languages": [
-				"Druidic plus any two languages"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Mjenir is een 4de niveau spellcaster. Zijn spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Hij heeft de volgende druïde spreuken voorbereid:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 2} om te raken ({@hit 4} om te raken met shillelagh), reikwijdte 5 ft., één doel. {@h}3 ({@damage 1d6}) knuppelschade, 4 ({@damage 1d8}) knuppelschade indien gehanteerd met twee handen, of 6 ({@damage 1d8 + 2}) knuppelschade met shillelagh."
-					]
-				}
-			],
-			"languageTags": [
-				"DU",
-				"X"
-			],
-			"damageTags": [
-				"B"
-			],
-			"damageTagsSpell": [
-				"F",
-				"T"
-			],
-			"spellcastingTags": [
-				"CD"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"restrained"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6285,7 +5142,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 160,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -6410,120 +5266,27 @@
 			"name": "Reghed Chieftain",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item hide armor|PHB|hide}",
-						"{@item shield|PHB}"
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "gladiator",
+							"with": "chieftain"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"De hoofdman heeft voordeel op saving throws tegen zijn {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Een strijdwapen brengt één extra dobbelsteen aan schade toe als het opperhoofd ermee slaat (inbegrepen in de aanval)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De hoofdman doet drie mêlee-aanvallen of twee afstandsaanvallen."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} om te raken, reikwijdte 5 ft. en bereik 20/60 ft., één doelwit. {@h}11 ({@damage 2d6 + 4}) doorborende schade, of 13 ({@damage 2d8 + 4}) doorborende schade indien gebruikt met twee handen om een melee aanval te maken."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} om te raken, reikwijdte 5 ft., één schepsel. {@h}9 ({@damage 2d4 + 4}) vernietigingsschade. Als het doelwit een medium of kleiner wezen is, moet het slagen op een {@dc 15} krachtsparingsworp of het wordt {@condition prone} neergeslagen."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Het stamhoofd telt 3 op bij zijn AC tegen een aanval die hem zou raken. Om dit te doen, moet het stamhoofd de aanvaller zien en een wapen dragen."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -6531,120 +5294,27 @@
 			"name": "Reghed Great Warrior",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item hide armor|PHB|hide}",
-						"{@item shield|PHB}"
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "gladiator",
+							"with": "great warrior"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"De grote krijger heeft voordeel op saving throws tegen zijn {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Een mêlee-wapen brengt één extra dobbelsteen aan schade toe als de grote krijger ermee slaat (inbegrepen in de aanval)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De grote krijger doet drie mêlee aanvallen of twee afstands aanvallen."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} om te raken, reikwijdte 5 ft. en bereik 20/60 ft., één doelwit. {@h}11 ({@damage 2d6 + 4}) doorborende schade, of 13 ({@damage 2d8 + 4}) doorborende schade indien gebruikt met twee handen om een melee aanval te maken."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} om te raken, reikwijdte 5 ft., één schepsel. {@h}9 ({@damage 2d4 + 4}) vernietigingsschade. Als het doelwit een medium of kleiner wezen is, moet het slagen op een {@dc 15} krachtsparingsworp of het wordt {@condition prone} neergeslagen."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"De grote krijger voegt 3 toe aan zijn AC tegen een mêlee aanval die hem zou kunnen raken. Om dit te doen moet de grote krijger de aanvaller zien en een strijdwapen dragen."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -6652,108 +5322,37 @@
 			"name": "Reghed Shaman",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
+			"_copy": {
+				"name": "Druid",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "druid",
+							"with": "shaman"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
 			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 27,
-				"formula": "5d8 + 5"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 12,
-			"con": 13,
-			"int": 12,
-			"wis": 15,
-			"cha": 11,
-			"skill": {
-				"medicine": "+4",
-				"nature": "+3",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
 			"languages": [
 				"Common",
 				"Druidic"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"De druïde is een spellcaster van het 4e niveau. Zijn spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Hij heeft de volgende druïde spreuken voorbereid:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 2} om te raken ({@hit 4} om te raken met shillelagh), reikwijdte 5 ft., één doel. {@h}3 ({@damage 1d6}) knuppelschade, 4 ({@damage 1d8}) knuppelschade indien gehanteerd met twee handen, of 6 ({@damage 1d8 + 2}) knuppelschade met shillelagh."
-					]
-				}
 			],
 			"languageTags": [
 				"C",
 				"DU"
 			],
-			"damageTags": [
-				"B"
-			],
-			"damageTagsSpell": [
-				"F",
-				"T"
-			],
 			"spellcastingTags": [
-				"CD"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"restrained"
+				"O"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6762,77 +5361,35 @@
 			"name": "Reghed Warrior",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
+			"_copy": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "tribal warrior",
+							"with": "warrior"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 11,
-				"formula": "2d8 + 2"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 13,
-			"dex": 11,
-			"con": 12,
-			"int": 8,
-			"wis": 11,
-			"cha": 8,
 			"skill": {
 				"survival": "+4"
 			},
-			"passive": 10,
 			"languages": [
 				"Common"
 			],
-			"cr": "1/8",
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"De krijger heeft voordeel bij een aanvalsrol tegen een wezen als ten minste één van de bondgenoten van de krijger zich binnen 5 voet van het wezen bevindt en de bondgenoot niet {@condition incapacitated}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} om te raken, reikwijdte 5 ft. of reikwijdte 20/60 ft., één doelwit. {@h}4 ({@damage 1d6 + 1}) doorborende schade, of 5 ({@damage 1d8 + 1}) doorborende schade indien gebruikt met twee handen om een melee aanval te maken."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
 			"languageTags": [
 				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6933,7 +5490,6 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 23,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -7169,88 +5725,14 @@
 			"name": "Snowy Owlbear",
 			"source": "IDRotF",
 			"page": 309,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 59,
-				"formula": "7d10 + 21"
+			"_copy": {
+				"name": "Owlbear",
+				"source": "MM"
 			},
 			"speed": {
 				"walk": 40,
 				"swim": 30
 			},
-			"str": 20,
-			"dex": 12,
-			"con": 17,
-			"int": 3,
-			"wis": 12,
-			"cha": 7,
-			"skill": {
-				"perception": "+3"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 13,
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Keen Sight and Smell",
-					"entries": [
-						"De sneeuwuil heeft voordeel bij de Wisdom (Perception) checks die gebaseerd zijn op zicht of reuk."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De sneeuwuil voert twee aanvallen uit: één met zijn snavel en één met zijn klauwen."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 7} om te raken, reikwijdte 5 ft., één schepsel. {@h}10 ({@damage 1d10 + 5}) doorborende schade."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 7} om te raken, reikwijdte 5 ft., één doel. {@h}14 ({@damage 2d8 + 5}) snijschade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -7260,7 +5742,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 144,
-			"_isCopy": true,
 			"size": [
 				"S"
 			],
@@ -7634,103 +6115,22 @@
 			"name": "Telepathic Pentacle",
 			"source": "IDRotF",
 			"page": 244,
-			"_isCopy": true,
-			"size": [
-				"H"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Hydra",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "hydra",
+						"with": "Telepathic Pentacle"
+					}
 				}
-			],
-			"hp": {
-				"average": 172,
-				"formula": "15d12 + 75"
 			},
 			"speed": {
 				"walk": 30,
 				"swim": 30,
 				"climb": 30
 			},
-			"str": 20,
-			"dex": 12,
-			"con": 20,
-			"int": 2,
-			"wis": 10,
-			"cha": 7,
-			"skill": {
-				"perception": "+6"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 16,
-			"cr": "8",
-			"trait": [
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"De Telepathische Pentakel kan zijn adem 1 uur inhouden."
-					]
-				},
-				{
-					"name": "Multiple Heads",
-					"entries": [
-						"De Telepathische Pentakel heeft vijf hoofden. Terwijl het meer dan één hoofd heeft, heeft de Telepathische Pentakel voordeel op saving throws tegen {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, en geslagen worden {@condition unconscious}.",
-						"Telkens wanneer de Telepathic Pentacle 25 of meer schade oploopt in één beurt, sterft één van zijn hoofden. Als alle hoofden sterven, sterft de Telepathic Pentacle.",
-						"Aan het einde van zijn beurt groeit hij twee koppen voor elk van zijn koppen die sinds zijn laatste beurt zijn gestorven, tenzij hij sinds zijn laatste beurt vuurschade heeft opgelopen. De Telepathische Pentakel krijgt 10 hit points terug voor elk hoofd dat op deze manier weer aangroeit."
-					]
-				},
-				{
-					"name": "Reactive Heads",
-					"entries": [
-						"Voor elke kop die de Telepathische Pentakel meer heeft dan één, krijgt hij een extra reactie die alleen kan worden gebruikt voor gelegenheidsaanvallen."
-					]
-				},
-				{
-					"name": "Wakeful",
-					"entries": [
-						"Terwijl de Telepathische Pentakel slaapt, is ten minste een van zijn hoofden wakker."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De Telepathische Pentakel doet evenveel bijtaanvallen als hij hoofden heeft."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 8} om te raken, reikwijdte 10 ft., één doelwit. {@h}10 ({@damage 1d10 + 5}) doorborende schade."
-					]
-				}
-			],
-			"traitTags": [
-				"Hold Breath"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -7872,29 +6272,27 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tribal Warrior Spore Servants",
+			"name": "Tribal Warrior Spore Servant",
 			"source": "IDRotF",
 			"page": 52,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "tribal warrior",
+							"with": "spore servant",
+							"flags": "i"
+						}
+					]
+				}
+			},
 			"type": "plant",
 			"alignment": [
 				"U"
 			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 11,
-				"formula": "2d8 + 2"
-			},
 			"speed": {
 				"walk": 20
 			},
@@ -7907,33 +6305,19 @@
 			"senses": [
 				"blindsight 30 ft. (blind beyond this radius)"
 			],
-			"passive": 10,
 			"conditionImmune": [
 				"blinded",
 				"charmed",
 				"frightened",
 				"paralyzed"
 			],
-			"cr": "1/8",
-			"action": [
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} om te raken, reikwijdte 5 ft. of reikwijdte 20/60 ft., één doelwit. {@h}4 ({@damage 1d6 + 1}) doorborende schade, of 5 ({@damage 1d8 + 1}) doorborende schade indien gebruikt met twee handen om een melee aanval te maken."
-					]
-				}
-			],
+			"languages": null,
+			"trait": null,
+			"traitTags": [],
 			"senseTags": [
 				"B"
 			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
+			"languageTags": [],
 			"hasToken": true
 		},
 		{
@@ -8633,83 +7017,45 @@
 			"name": "Young Griffon (Medium)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 3} om te raken, reikwijdte 5 ft., één doel. {@h}4 ({@damage 1d6 + 1}) doorborende schade."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 3} om te raken, reikwijdte 5 ft., één doel. {@h}6 ({@damage 2d4 + 1}) snijschade."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"M"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 32,
 				"formula": "5d6 + 15"
 			},
-			"speed": {
-				"walk": 30,
-				"fly": 80
-			},
 			"str": 12,
 			"dex": 15,
 			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "1",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"De griffioen heeft voordeel bij controles van Wijsheid (Perceptie) die op zicht gebaseerd zijn."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De griffioen doet twee aanvallen: een met zijn snavel en een met zijn klauwen."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 3} om te raken, reikwijdte 5 ft., één doel. {@h}4 ({@damage 1d6 + 1}) doorborende schade."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 3} om te raken, reikwijdte 5 ft., één doel. {@h}6 ({@damage 2d4 + 1}) snijschade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8718,83 +7064,43 @@
 			"name": "Young Griffon (Small)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 1} om te raken, reikwijdte 5 ft., één doel. {@h}2 ({@damage 1d4}) doorborende schade."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 1} om te raken, reikwijdte 5 ft., één doel. {@h}2 ({@damage 1d4}) snijschade."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"S"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 13,
 				"formula": "2d6 + 6"
 			},
-			"speed": {
-				"walk": 30,
-				"fly": 80
-			},
 			"str": 8,
-			"dex": 15,
-			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "1/4",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"De griffioen heeft voordeel bij controles van Wijsheid (Perceptie) die op zicht gebaseerd zijn."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De griffioen doet twee aanvallen: een met zijn snavel en een met zijn klauwen."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 1} om te raken, reikwijdte 5 ft., één doel. {@h}2 ({@damage 1d4}) doorborende schade."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 1} om te raken, reikwijdte 5 ft., één doel. {@h}2 ({@damage 1d4}) snijschade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8803,16 +7109,36 @@
 			"name": "Young Griffon (Tiny)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 0} om te raken, reikwijdte 5 ft., één doelwit. {@h}1 doorborende schade."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 0} om te raken, reikwijdte 5 ft., één doel. {@h}1 slagschade."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"T"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 5,
@@ -8825,61 +7151,7 @@
 			"str": 2,
 			"dex": 15,
 			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"De griffioen heeft voordeel bij controles van Wijsheid (Perceptie) die op zicht gebaseerd zijn."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De griffioen doet twee aanvallen: een met zijn snavel en een met zijn klauwen."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 0} om te raken, reikwijdte 5 ft., één doelwit. {@h}1 doorborende schade."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 0} om te raken, reikwijdte 5 ft., één doel. {@h}1 slagschade."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
