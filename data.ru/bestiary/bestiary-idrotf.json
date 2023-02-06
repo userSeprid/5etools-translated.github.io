@@ -25,114 +25,27 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 169,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"goliath"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
+			"_copy": {
+				"name": "Goliath Warrior",
+				"source": "IDRotF",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the goliath",
+						"with": "Aruk",
+						"flags": "i"
+					},
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"insight": 1,
+								"medicine": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 67,
-				"formula": "9d8 + 27"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 11,
-			"con": 16,
-			"int": 10,
-			"wis": 15,
-			"cha": 10,
-			"skill": {
-				"athletics": "+6",
-				"insight": "+4",
-				"medicine": "+4",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
-			"resist": [
-				"cold"
-			],
-			"languages": [
-				"Common",
-				"Giant"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Mountain Born",
-					"entries": [
-						"Арук акклиматизирован к большой высоте, включая высоты более 20 000 футов."
-					]
-				},
-				{
-					"name": "Powerful Build",
-					"entries": [
-						"Арук считается на один размер больше при определении его грузоподъемности и веса, который он может толкать, тащить или поднимать."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Арук делает две атаки своей большой саблей или бросает два копья."
-					]
-				},
-				{
-					"name": "Greataxe",
-					"entries": [
-						"{@atk mw} {@hit 6} попадание, радиус действия 5 футов, одна цель. {@h}10 ({@damage 1d12 + 4}) косой урон."
-					]
-				},
-				{
-					"name": "Javelin",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} попадание, радиус действия 5 футов или дальность 30/120 футов, одна цель. {@h}7 ({@damage 1d6 + 4}) колющего урона."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Когда Арук получает урон, он уменьшает получаемый урон на 9 ({@dice 1d12 + 3})."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"GI"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -905,7 +818,6 @@
 			"name": "Awakened White Moose",
 			"source": "IDRotF",
 			"page": 82,
-			"_isCopy": true,
 			"size": [
 				"L"
 			],
@@ -999,110 +911,57 @@
 		},
 		{
 			"name": "Battlehammer Dwarf",
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 107,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"dwarf"
-				]
+			"_copy": {
+				"name": "Scout",
+				"source": "MM",
+				"_trait": {
+					"name": "Mountain Dwarf",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "scout",
+						"with": "dwarf"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Longbow",
+							"items": {
+								"name": "Light Crossbow",
+								"entries": [
+									"{@atk rw} {@hit 4} попадание, дальность 80/320 футов, одна цель. {@h}6 ({@damage 1d8 + 2}) колющего урона."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Shortsword",
+							"items": {
+								"name": "Handaxe",
+								"entries": [
+									"{@atk mw,rw} {@hit 2} попадание, радиус действия 5 футов или дальность 20/60 футов, одна цель. {@h}3 ({@damage 1d6 + 0}) косой урон."
+								]
+							}
+						}
+					]
+				}
 			},
 			"alignment": [
 				"L",
 				"G"
 			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 16,
-				"formula": "3d8 + 3"
-			},
-			"speed": {
-				"walk": 25
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 11,
-			"wis": 13,
-			"cha": 11,
-			"skill": {
-				"nature": "+4",
-				"perception": "+5",
-				"stealth": "+6",
-				"survival": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
-			"resist": [
-				"poison"
-			],
-			"languages": [
-				"Common",
-				"Dwarvish"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Keen Hearing and Sight",
-					"entries": [
-						"Гном имеет преимущество при проверках мудрости (восприятие), которые зависят от слуха или зрения."
-					]
-				},
-				{
-					"name": "Dwarven Resilience",
-					"entries": [
-						"Гном имеет преимущество при бросках спасбросков против яда и сопротивление против повреждений ядом."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Гном делает две атаки ближнего боя или две атаки дальнего боя."
-					]
-				},
-				{
-					"name": "Handaxe",
-					"entries": [
-						"{@atk mw,rw} {@hit 2} попадание, радиус действия 5 футов или дальность 20/60 футов, одна цель. {@h}3 ({@damage 1d6 + 0}) косой урон."
-					]
-				},
-				{
-					"name": "Light Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 4} попадание, дальность 80/320 футов, одна цель. {@h}6 ({@damage 1d8 + 2}) колющего урона."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
-				"D"
-			],
-			"damageTags": [
-				"P"
+				"D",
+				"X"
 			],
 			"miscTags": [
 				"MW",
@@ -1481,128 +1340,39 @@
 			"name": "Chimeric Baboon",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"S"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 3,
-				"formula": "1d6"
-			},
-			"speed": {
-				"walk": 30,
-				"climb": 30
-			},
-			"str": 8,
-			"dex": 14,
-			"con": 11,
-			"int": 4,
-			"wis": 12,
-			"cha": 6,
-			"passive": 11,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"Бабуин имеет преимущество при броске атаки против существа, если хотя бы один из союзников бабуина находится в пределах 5 футов от существа, а союзник - нет {@condition incapacitated}."
-					]
+			"_copy": {
+				"name": "Baboon",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Bite",
+						"items": {
+							"name": "Bite",
+							"entries": [
+								"{@atk mw} {@hit 1} попадание, радиус действия 5 футов, одна цель. {@h}1 ({@damage 1d4 - 1}) колющего урона, плюс дополнительно 3 ({@damage 1d6}) урона ядом."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 1} попадание, радиус действия 5 футов, одна цель. {@h}1 ({@damage 1d4 - 1}) колющего урона, плюс дополнительно 3 ({@damage 1d6}) урона ядом."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
-			"damageTags": [
-				"I",
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
+			},
 			"hasToken": true
 		},
 		{
 			"name": "Chimeric Cat",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 2,
-				"formula": "1d4"
-			},
-			"speed": {
-				"walk": 40,
-				"climb": 30
-			},
-			"str": 3,
-			"dex": 15,
-			"con": 10,
-			"int": 3,
-			"wis": 12,
-			"cha": 7,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+4"
+			"_copy": {
+				"name": "Cat",
+				"source": "MM"
 			},
 			"senses": [
 				"blindsight 60 ft.",
 				"tremorsense 60 ft."
 			],
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Smell",
-					"entries": [
-						"Кошка имеет преимущество при проверках на мудрость (восприятие), которые зависят от запаха."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 0} попадание, досягаемость 5 футов, одна цель. {@h}1 косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
 			"senseTags": [
 				"B",
 				"T"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1611,68 +1381,21 @@
 			"name": "Chimeric Fox",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 2,
-				"formula": "1d4"
-			},
-			"speed": {
-				"walk": 30,
-				"burrow": 5
-			},
-			"str": 2,
-			"dex": 16,
-			"con": 11,
-			"int": 3,
-			"wis": 12,
-			"cha": 6,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Hearing",
-					"entries": [
-						"Лиса имеет преимущество при проверках на мудрость (восприятие), которые зависят от слуха."
-					]
-				},
-				{
-					"name": "Chimeric Creation",
-					"entries": [
-						"Мех лисы меняет цвет в зависимости от окружения, что дает ей преимущество при проверке ловкости (скрытности)."
-					]
+			"_copy": {
+				"name": "Fox",
+				"source": "IDRotF",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Chimeric Creation",
+							"entries": [
+								"Мех лисы меняет цвет в зависимости от окружения, что дает ей преимущество при проверке ловкости (скрытности)."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} попадание, досягаемость 5 футов, одно существо. {@h}1 колющее повреждение."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
+			},
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -1680,46 +1403,15 @@
 			"name": "Chimeric Hare",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 1,
-				"formula": "1d4 - 1"
+			"_copy": {
+				"name": "Hare",
+				"source": "IDRotF"
 			},
 			"speed": {
 				"walk": 20,
 				"burrow": 5,
 				"fly": 30
 			},
-			"str": 1,
-			"dex": 17,
-			"con": 9,
-			"int": 2,
-			"wis": 11,
-			"cha": 4,
-			"skill": {
-				"perception": "+2",
-				"stealth": "+5"
-			},
-			"passive": 12,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Escape",
-					"entries": [
-						"Заяц может выполнить действие \"Рывок\", \"Уход\" или \"Прятаться\" в качестве бонусного действия на каждом из своих ходов."
-					]
-				}
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -1748,64 +1440,31 @@
 			"name": "Chimeric Weasel",
 			"source": "IDRotF",
 			"page": 246,
-			"_isCopy": true,
-			"size": [
-				"T"
-			],
-			"type": "beast",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"average": 1,
-				"formula": "1d4 - 1"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 3,
-			"dex": 16,
-			"con": 8,
-			"int": 2,
-			"wis": 12,
-			"cha": 3,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"passive": 13,
-			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Hearing and Smell",
-					"entries": [
-						"Ласка имеет преимущество при проверках мудрости (восприятие), которые полагаются на слух или обоняние."
-					]
-				},
-				{
-					"name": "Chimeric Creation",
-					"entries": [
-						"У ласки светящиеся глаза, излучающие яркий свет в радиусе 20 футов и тусклый свет еще на 20 футов."
-					]
+			"_copy": {
+				"name": "Weasel",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Chimeric Creation",
+							"entries": [
+								"У ласки светящиеся глаза, излучающие яркий свет в радиусе 20 футов и тусклый свет еще на 20 футов."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Bite",
+						"items": {
+							"name": "Bite",
+							"entries": [
+								"{@atk mw} {@hit 5} попадание, радиус действия 5 футов, одна цель. {@h}1 колющее повреждение."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} попадание, радиус действия 5 футов, одна цель. {@h}1 колющее повреждение."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"damageTags": [
-				"P"
-			],
+			},
 			"miscTags": [
 				"AOE",
 				"MW"
@@ -2046,169 +1705,6 @@
 				"MW",
 				"RNG",
 				"RW"
-			],
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Dzaan",
-			"isNpc": true,
-			"isNamedCreature": true,
-			"source": "IDRotF",
-			"page": 270,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				10
-			],
-			"hp": {
-				"average": 49,
-				"formula": "9d8 + 9"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 11,
-			"con": 12,
-			"int": 16,
-			"wis": 13,
-			"cha": 15,
-			"save": {
-				"int": "+5",
-				"wis": "+3"
-			},
-			"skill": {
-				"arcana": "+5",
-				"deception": "+4",
-				"history": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Giant",
-				"Infernal"
-			],
-			"cr": "4",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Дзаан - заклинатель 9-го уровня. Его способность к заклинаниям - Интеллект (спасение от заклинаний {@dc 13}, {@hit 5} попадания при атаках заклинаниями). У него подготовлены следующие заклинания мага:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell acid splash}*",
-								"{@spell light}",
-								"{@spell minor illusion}",
-								"{@spell shocking grasp}*"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell detect magic}",
-								"{@spell disguise self}",
-								"{@spell magic missile}*"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell invisibility}",
-								"{@spell levitate}",
-								"{@spell phantasmal force}"
-							]
-						},
-						"3": {
-							"slots": 3,
-							"spells": [
-								"{@spell fireball}",
-								"{@spell sending}",
-								"{@spell slow}"
-							]
-						},
-						"4": {
-							"slots": 3,
-							"spells": [
-								"{@spell arcane eye}",
-								"{@spell confusion}"
-							]
-						},
-						"5": {
-							"slots": 1,
-							"spells": [
-								"{@spell animate objects}"
-							]
-						}
-					},
-					"footerEntries": [
-						"*See \"Actions\" below."
-					],
-					"ability": "int"
-				}
-			],
-			"action": [
-				{
-					"name": "Shocking Grasp (Cantrip)",
-					"entries": [
-						"{@atk ms} {@hit 5} попадание, радиус действия 5 футов, одно существо (бросок атаки имеет преимущество, если цель одета в металлическую броню). {@h}9 ({@damage 2d8}) урон молнией, и цель не может использовать реакцию до начала своего следующего хода."
-					]
-				},
-				{
-					"name": "Acid Splash (Cantrip)",
-					"entries": [
-						"Дзаан бросает пузырь кислоты в одно существо, которое он видит в радиусе 60 футов от него, или в двух таких существ, находящихся в радиусе 5 футов друг от друга. Цель должна успешно выполнить бросок на ловкость {@dc 13} или получить 7 ({@damage 2d6}) урона кислотой."
-					]
-				},
-				{
-					"name": "Magic Missile (1st-Level Spell; Requires a Spell Slot)",
-					"entries": [
-						"Дзаан создает три дротика магической силы. Каждый дротик безошибочно поражает одно существо, которое Дзаан может видеть в радиусе 120 футов от него, нанося 3 ({@damage 1d4 + 1}) урона силой. Если Дзаан произносит это заклинание, используя слот заклинания 2-го уровня, он создает еще один дротик."
-					]
-				}
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"GI",
-				"I"
-			],
-			"damageTags": [
-				"A",
-				"L",
-				"O"
-			],
-			"damageTagsSpell": [
-				"A",
-				"B",
-				"F",
-				"L",
-				"O",
-				"P",
-				"S",
-				"Y"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"conditionInflictSpell": [
-				"invisible"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3651,7 +3147,6 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 176,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -3930,139 +3425,32 @@
 			"name": "Headless Iron Golem",
 			"source": "IDRotF",
 			"page": 244,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Iron Golem",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Headless",
+							"entries": [
+								"The golem is {@condition blinded} and {@condition deafened}, giving it disadvantage on all its attack rolls, and it can't use its Poison Breath."
+							]
+						}
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "Poison Breath {@recharge 5}"
+					}
 				}
-			],
+			},
 			"hp": {
 				"average": 150,
 				"formula": "10d10 + 50"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 24,
-			"dex": 9,
-			"con": 20,
-			"int": 3,
-			"wis": 11,
-			"cha": 1,
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				"psychic",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't adamantine",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
 			"cr": "10",
-			"trait": [
-				{
-					"name": "Fire Absorption",
-					"entries": [
-						"Когда голем получает урон от огня, он не получает урона, а восстанавливает количество хит-пойнтов, равное нанесенному огнем урону."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"Голем невосприимчив к любому заклинанию или эффекту, который изменит его форму."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Голем имеет преимущество при бросках спасения против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"Оружейные атаки голема являются магическими."
-					]
-				},
-				{
-					"name": "Headless",
-					"entries": [
-						"Он имеет {@condition blinded} и {@condition deafened}, что дает ему недостаток при всех бросках атаки, и он не может использовать свое Ядовитое дыхание."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Голем делает две атаки ближнего боя."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 13} попадание, досягаемость 5 футов, одна цель. {@h}20 ({@damage 3d8 + 7}) урон от удара."
-					]
-				},
-				{
-					"name": "Sword",
-					"entries": [
-						"{@atk mw} {@hit 13} попадание, радиус действия 10 футов, одна цель. {@h}23 ({@damage 3d10 + 7}) косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"SD"
-			],
 			"actionTags": [
 				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4073,10 +3461,28 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 215,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the gladiator",
+							"with": "Hengar",
+							"flags": "i"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
+			},
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4086,107 +3492,6 @@
 			"alignment": [
 				"N",
 				"G"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item studded leather armor|PHB|studded leather}",
-						"{@item shield|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Any one language (usually Common)"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"Хенгар имеет преимущество при бросках спасения против бытия {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Оружие ближнего боя наносит один дополнительный кубик урона, когда Хенгар бьет им (включается в атаку)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Хенгар делает три атаки ближнего боя или две атаки дальнего боя."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} попадание, радиус действия 5 футов и дальность 20/60 футов, одна цель. {@h}11 ({@damage 2d6 + 4}) колющего урона или 13 ({@damage 2d8 + 4}) колющего урона, если используется двумя руками для атаки в ближнем бою."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, досягаемость 5 футов, одно существо. {@h}9 ({@damage 2d4 + 4}) повреждений от удара. Если цель - существо среднего или меньшего размера, оно должно успешно выполнить бросок на спасбросок силы {@dc 15} или быть сбито с ног {@condition prone}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Хенгар прибавляет 3 к своему AC против одной атаки ближнего боя, которая может его поразить. Для этого Хенгар должен видеть атакующего и владеть оружием ближнего боя."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4287,84 +3592,29 @@
 			"name": "Ice Piercer",
 			"source": "IDRotF",
 			"page": 226,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Piercer",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "piercer",
+						"with": "ice piercer"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Drop",
+						"items": {
+							"name": "Drop",
+							"entries": [
+								"{@atk mw} {@hit 3} to hit, one creature directly underneath the piercer. {@h}10 ({@damage 3d6}) piercing damage plus 10 ({@damage 3d6}) cold damage. Miss: The piercer takes half the normal falling damage for the distance fallen."
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 22,
-				"formula": "3d8 + 9"
 			},
-			"speed": {
-				"walk": 5,
-				"climb": 5
-			},
-			"str": 10,
-			"dex": 13,
-			"con": 16,
-			"int": 1,
-			"wis": 7,
-			"cha": 3,
-			"skill": {
-				"stealth": "+5"
-			},
-			"senses": [
-				"blindsight 30 ft.",
-				"darkvision 60 ft."
-			],
-			"passive": 8,
 			"immune": [
 				"cold"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "False Appearance",
-					"entries": [
-						"Пока ледяной пирсер остается неподвижным на потолке, он неотличим от обычного сталактита."
-					]
-				},
-				{
-					"name": "Spider Climb",
-					"entries": [
-						"Ледоруб может карабкаться по сложным поверхностям, в том числе вверх ногами по потолку, без необходимости делать проверку способностей."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Drop",
-					"entries": [
-						"{@atk mw} {@hit 3} для попадания по одному существу, находящемуся непосредственно под ледяным пронзателем. {@h}10 ({@damage 3d6}) колющего урона плюс 10 ({@damage 3d6}) урона холодом. Промах: пронзитель льда получает половину обычного урона от падения на расстояние падения."
-					]
-				}
-			],
-			"traitTags": [
-				"False Appearance",
-				"Spider Climb"
-			],
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"damageTags": [
-				"C",
-				"P"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4913,144 +4163,46 @@
 		{
 			"name": "Kadroth",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 42,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"tiefling"
-				]
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_trait": {
+					"name": "Tiefling",
+					"source": "PHB"
+				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the fanatic",
+						"with": "Kadroth",
+						"flags": "i"
+					}
+				}
 			},
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 10,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"persuasion": "+4",
-				"religion": "+2"
-			},
-			"senses": [
-				"darkvision 60"
-			],
-			"passive": 11,
-			"resist": [
-				"fire"
-			],
-			"languages": [
-				"Common",
-				"Infernal"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Фанатик - заклинатель 4-го уровня. Его способность к заклинаниям - Мудрость (спасение от заклинаний {@dc 11}, {@hit 3} к попаданию при атаках заклинаниями). У фанатика подготовлены следующие заклинания клерикалов:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"trait": [
-				{
-					"name": "Dark Devotion",
-					"entries": [
-						"Фанатик имеет преимущество при бросках спасбросков против бытия {@condition charmed} или {@condition frightened}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Фанатик делает две атаки ближнего боя."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} попадание, досягаемость 5 футов или дальность 20/60 футов, одно существо. {@h}4 ({@damage 1d4 + 2}) колющего урона."
-					]
-				}
-			],
 			"senseTags": [
 				"D"
 			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
-				"I"
-			],
-			"damageTags": [
-				"P"
+				"I",
+				"X"
 			],
 			"damageTagsSpell": [
+				"F",
 				"N",
 				"O",
 				"R"
 			],
 			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"paralyzed",
-				"prone"
+				"CC",
+				"I"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5061,7 +4213,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 243,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -5133,142 +4284,28 @@
 			"name": "Knight of the Black Sword",
 			"source": "IDRotF",
 			"page": 259,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"L",
-				"NX",
-				"C",
-				"NY",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"{@item leather armor|PHB}"
-					]
+			"_copy": {
+				"name": "Cult Fanatic",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Icy Doom",
+							"entries": [
+								"Когда культист умирает, его труп замерзает на 9 дней, в течение которых его нельзя разморозить, повредить огнем, оживить или воскресить из мертвых."
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 10,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"persuasion": "+4",
-				"religion": "+2"
-			},
-			"passive": 11,
 			"languages": [
 				"Common",
 				"Infernal"
 			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Фанатик - заклинатель 4-го уровня. Его способность к заклинаниям - Мудрость (спасение от заклинаний {@dc 11}, {@hit 3} к попаданию при атаках заклинаниями). У фанатика подготовлены следующие заклинания клерикалов:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"trait": [
-				{
-					"name": "Dark Devotion",
-					"entries": [
-						"Фанатик имеет преимущество при бросках спасбросков против бытия {@condition charmed} или {@condition frightened}."
-					]
-				},
-				{
-					"name": "Icy Doom",
-					"entries": [
-						"Когда культист умирает, его труп замерзает на 9 дней, в течение которых его нельзя разморозить, повредить огнем, оживить или воскресить из мертвых."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Фанатик делает две атаки ближнего боя."
-					]
-				},
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 4} попадание, досягаемость 5 футов или дальность 20/60 футов, одно существо. {@h}4 ({@damage 1d4 + 2}) колющего урона."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
 			"languageTags": [
 				"C",
 				"I"
-			],
-			"damageTags": [
-				"P"
-			],
-			"damageTagsSpell": [
-				"N",
-				"O",
-				"R"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"paralyzed",
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -5790,132 +4827,22 @@
 			"name": "Lonelywood Banshee",
 			"source": "IDRotF",
 			"page": 81,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": "undead",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 58,
-				"formula": "13d8"
-			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 40,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"str": 1,
-			"dex": 14,
-			"con": 10,
-			"int": 12,
-			"wis": 11,
-			"cha": 17,
-			"save": {
-				"wis": "+2",
-				"cha": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 10,
-			"resist": [
-				"acid",
-				"fire",
-				"lightning",
-				"thunder",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
+			"_copy": {
+				"name": "Banshee",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Corrupting Touch",
+						"items": {
+							"name": "Spectral Longbow",
+							"entries": [
+								"{@atk rs} {@hit 4} попадание, дальность 150/600 футов, одна цель. {@h}12 ({@damage 3d6 + 2}) некротических повреждений."
+							]
+						}
+					}
 				}
-			],
-			"immune": [
-				"cold",
-				"necrotic",
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained"
-			],
-			"languages": [
-				"Common",
-				"Elvish"
-			],
-			"cr": "4",
-			"trait": [
-				{
-					"name": "Detect Life",
-					"entries": [
-						"Банши может магически ощущать присутствие существ на расстоянии до 5 миль, не являющихся нежитью или конструктами. Она знает общее направление, в котором они находятся, но не их точное местоположение."
-					]
-				},
-				{
-					"name": "Incorporeal Movement",
-					"entries": [
-						"Банши может перемещаться сквозь других существ и предметы, как если бы они были {@quickref difficult terrain||3}. Она получает 5 ({@damage 1d10}) урона силы, если заканчивает свой ход внутри объекта."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Spectral Longbow",
-					"entries": [
-						"{@atk rs} {@hit 4} попадание, дальность 150/600 футов, одна цель. {@h}12 ({@damage 3d6 + 2}) некротических повреждений."
-					]
-				},
-				{
-					"name": "Horrifying Visage",
-					"entries": [
-						"Каждое неживое существо в радиусе 60 футов от банши, которое может ее видеть, должно успешно выполнить бросок спасброска {@dc 13} по Мудрости или стать {@condition frightened} на 1 минуту. Цель {@condition frightened} может повторить бросок спасброска в конце каждого своего хода, с недостатком, если банши находится в пределах прямой видимости, и при успехе завершить эффект на себе. Если бросок спасброска цели успешен или эффект заканчивается для нее, цель получает иммунитет к Ужасающему облику банши на следующие 24 часа."
-					]
-				},
-				{
-					"name": "Wail (1/Day)",
-					"entries": [
-						"Банши издает заунывный вой, если она не находится под солнечным светом. Этот вой не действует на существ и нежить. Все другие существа в радиусе 30 футов от нее, которые могут ее слышать, должны сделать бросок на спасбросок {@dc 13} конституции. В случае неудачи существо падает до 0 хит-поинтов. При успехе существо получает 10 ({@damage 3d6}) психических повреждений."
-					]
-				}
-			],
-			"traitTags": [
-				"Incorporeal Movement"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C",
-				"E"
-			],
-			"damageTags": [
-				"N",
-				"O",
-				"Y"
-			],
-			"conditionInflict": [
-				"frightened"
-			],
+			},
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5923,12 +4850,31 @@
 		{
 			"name": "Mjenir",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 215,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Druid",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the druid",
+							"with": "Mjenir",
+							"flags": "i"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
+			},
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -5937,95 +4883,6 @@
 			},
 			"alignment": [
 				"N"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 27,
-				"formula": "5d8 + 5"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 12,
-			"con": 13,
-			"int": 12,
-			"wis": 15,
-			"cha": 11,
-			"skill": {
-				"medicine": "+4",
-				"nature": "+3",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
-			"languages": [
-				"Druidic plus any two languages"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Мженир - заклинатель 4-го уровня. Его способность к заклинаниям - Мудрость (спасение от заклинаний {@dc 12}, {@hit 4} попадания при атаках заклинаниями). У него подготовлены следующие заклинания друидов:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 2} попасть ({@hit 4} попасть шилелагом), радиус действия 5 футов, одна цель. {@h}3 ({@damage 1d6}) повреждений, 4 ({@damage 1d8}) повреждений, если держать двумя руками, или 6 ({@damage 1d8 + 2}) повреждений, если использовать шилелаг."
-					]
-				}
-			],
-			"languageTags": [
-				"DU",
-				"X"
-			],
-			"damageTags": [
-				"B"
-			],
-			"damageTagsSpell": [
-				"F",
-				"T"
-			],
-			"spellcastingTags": [
-				"CD"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"restrained"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6285,7 +5142,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 160,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -6410,120 +5266,27 @@
 			"name": "Reghed Chieftain",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item hide armor|PHB|hide}",
-						"{@item shield|PHB}"
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "gladiator",
+							"with": "chieftain"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"Вождь имеет преимущество при бросках спасения против бытия {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Оружие ближнего боя наносит один дополнительный кубик урона, когда вождь бьет им (включается в атаку)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Вождь делает три атаки ближнего боя или две атаки дальнего боя."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} попадание, радиус действия 5 футов и дальность 20/60 футов, одна цель. {@h}11 ({@damage 2d6 + 4}) колющего урона или 13 ({@damage 2d8 + 4}) колющего урона, если используется двумя руками для атаки в ближнем бою."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, досягаемость 5 футов, одно существо. {@h}9 ({@damage 2d4 + 4}) повреждений от удара. Если цель - существо среднего или меньшего размера, оно должно успешно выполнить бросок на спасбросок силы {@dc 15} или быть сбито с ног {@condition prone}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Вождь прибавляет 3 к своему AC против одной атаки ближнего боя, которая может его поразить. Для этого вождь должен видеть атакующего и владеть оружием ближнего боя."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -6531,120 +5294,27 @@
 			"name": "Reghed Great Warrior",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"{@item hide armor|PHB|hide}",
-						"{@item shield|PHB}"
+			"_copy": {
+				"name": "Gladiator",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "gladiator",
+							"with": "great warrior"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 112,
-				"formula": "15d8 + 45"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"save": {
-				"str": "+7",
-				"dex": "+5",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+10",
-				"intimidation": "+5",
-				"survival": "+5"
-			},
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"Великий воин имеет преимущество при бросках спасбросков против бытия {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"Оружие ближнего боя наносит один дополнительный кубик урона, когда великий воин бьет им (включается в атаку)."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Великий воин совершает три атаки ближнего боя или две атаки дальнего боя."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 7} попадание, радиус действия 5 футов и дальность 20/60 футов, одна цель. {@h}11 ({@damage 2d6 + 4}) колющего урона или 13 ({@damage 2d8 + 4}) колющего урона, если используется двумя руками для атаки в ближнем бою."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, досягаемость 5 футов, одно существо. {@h}9 ({@damage 2d4 + 4}) повреждений от удара. Если цель - существо среднего или меньшего размера, оно должно успешно выполнить бросок на спасбросок силы {@dc 15} или быть сбито с ног {@condition prone}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Великий воин прибавляет 3 к своему AC против одной атаки ближнего боя, которая может его поразить. Для этого великий воин должен видеть атакующего и владеть оружием ближнего боя."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -6652,108 +5322,37 @@
 			"name": "Reghed Shaman",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
+			"_copy": {
+				"name": "Druid",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "druid",
+							"with": "shaman"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
+					]
+				}
 			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 27,
-				"formula": "5d8 + 5"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 12,
-			"con": 13,
-			"int": 12,
-			"wis": 15,
-			"cha": 11,
-			"skill": {
-				"medicine": "+4",
-				"nature": "+3",
-				"perception": "+4",
-				"survival": "+4"
-			},
-			"passive": 14,
 			"languages": [
 				"Common",
 				"Druidic"
-			],
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Друид - заклинатель 4-го уровня. Его способность к заклинаниям - Мудрость (спасение от заклинаний {@dc 12}, {@hit 4} попадания при атаках заклинаниями). У него подготовлены следующие заклинания друида:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"action": [
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 2} попасть ({@hit 4} попасть шилелагом), радиус действия 5 футов, одна цель. {@h}3 ({@damage 1d6}) повреждений, 4 ({@damage 1d8}) повреждений, если держать двумя руками, или 6 ({@damage 1d8 + 2}) повреждений, если использовать шилелаг."
-					]
-				}
 			],
 			"languageTags": [
 				"C",
 				"DU"
 			],
-			"damageTags": [
-				"B"
-			],
-			"damageTagsSpell": [
-				"F",
-				"T"
-			],
 			"spellcastingTags": [
-				"CD"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"restrained"
+				"O"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6762,77 +5361,35 @@
 			"name": "Reghed Warrior",
 			"source": "IDRotF",
 			"page": 152,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any race"
-				]
-			},
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
+			"_copy": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "tribal warrior",
+							"with": "warrior"
+						}
+					],
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"survival": 1
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 11,
-				"formula": "2d8 + 2"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 13,
-			"dex": 11,
-			"con": 12,
-			"int": 8,
-			"wis": 11,
-			"cha": 8,
 			"skill": {
 				"survival": "+4"
 			},
-			"passive": 10,
 			"languages": [
 				"Common"
 			],
-			"cr": "1/8",
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"Воин имеет преимущество при броске атаки против существа, если хотя бы один из союзников воина находится в пределах 5 футов от существа, а союзник - нет {@condition incapacitated}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} попадание, радиус действия 5 футов или дальность 20/60 футов, одна цель. {@h}4 ({@damage 1d6 + 1}) колющего урона, или 5 ({@damage 1d8 + 1}) колющего урона, если используется двумя руками для атаки в ближнем бою."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
 			"languageTags": [
 				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6933,7 +5490,6 @@
 			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 23,
-			"_isCopy": true,
 			"size": [
 				"M"
 			],
@@ -7169,88 +5725,14 @@
 			"name": "Snowy Owlbear",
 			"source": "IDRotF",
 			"page": 309,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 59,
-				"formula": "7d10 + 21"
+			"_copy": {
+				"name": "Owlbear",
+				"source": "MM"
 			},
 			"speed": {
 				"walk": 40,
 				"swim": 30
 			},
-			"str": 20,
-			"dex": 12,
-			"con": 17,
-			"int": 3,
-			"wis": 12,
-			"cha": 7,
-			"skill": {
-				"perception": "+3"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 13,
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Keen Sight and Smell",
-					"entries": [
-						"Снежный совиный медведь имеет преимущество при проверках мудрости (восприятие), которые полагаются на зрение или обоняние."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Снежный совиный медведь делает две атаки: одну клювом и одну когтями."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, досягаемость 5 футов, одно существо. {@h}10 ({@damage 1d10 + 5}) колющих повреждений."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, радиус действия 5 футов, одна цель. {@h}14 ({@damage 2d8 + 5}) косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -7260,7 +5742,6 @@
 			"isNpc": true,
 			"source": "IDRotF",
 			"page": 144,
-			"_isCopy": true,
 			"size": [
 				"S"
 			],
@@ -7634,103 +6115,22 @@
 			"name": "Telepathic Pentacle",
 			"source": "IDRotF",
 			"page": 244,
-			"_isCopy": true,
-			"size": [
-				"H"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Hydra",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "hydra",
+						"with": "Telepathic Pentacle"
+					}
 				}
-			],
-			"hp": {
-				"average": 172,
-				"formula": "15d12 + 75"
 			},
 			"speed": {
 				"walk": 30,
 				"swim": 30,
 				"climb": 30
 			},
-			"str": 20,
-			"dex": 12,
-			"con": 20,
-			"int": 2,
-			"wis": 10,
-			"cha": 7,
-			"skill": {
-				"perception": "+6"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 16,
-			"cr": "8",
-			"trait": [
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"Телепатический пентакль может задерживать дыхание на 1 час."
-					]
-				},
-				{
-					"name": "Multiple Heads",
-					"entries": [
-						"Телепатический пентакль имеет пять голов. Если у него больше одной головы, то телепатический пентакль имеет преимущество при бросках спасбросков против {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned} и ударов {@condition unconscious}.",
-						"Когда Телепатический пентакль получает 25 или более повреждений за один ход, одна из его голов умирает. Если умирают все его головы, Телепатический пентакль умирает.",
-						"В конце своего хода он отращивает две головы за каждую из своих голов, умерших после его последнего хода, если только он не получил урон от огня после своего последнего хода. Телепатический пентакль восстанавливает 10 хит-пойнтов за каждую голову, выращенную таким образом."
-					]
-				},
-				{
-					"name": "Reactive Heads",
-					"entries": [
-						"За каждую голову телепатического пентакля сверх одной, он получает дополнительную реакцию, которую можно использовать только для атак по возможности."
-					]
-				},
-				{
-					"name": "Wakeful",
-					"entries": [
-						"Пока Телепатический пентакль спит, по крайней мере одна из его голов бодрствует."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Телепатический пентакль совершает столько атак укусом, сколько у него голов."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 8} попадание, радиус действия 10 футов, одна цель. {@h}10 ({@damage 1d10 + 5}) колющего урона."
-					]
-				}
-			],
-			"traitTags": [
-				"Hold Breath"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -7872,29 +6272,27 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tribal Warrior Spore Servants",
+			"name": "Tribal Warrior Spore Servant",
 			"source": "IDRotF",
 			"page": 52,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "tribal warrior",
+							"with": "spore servant",
+							"flags": "i"
+						}
+					]
+				}
+			},
 			"type": "plant",
 			"alignment": [
 				"U"
 			],
-			"ac": [
-				{
-					"ac": 12,
-					"from": [
-						"{@item hide armor|PHB}"
-					]
-				}
-			],
-			"hp": {
-				"average": 11,
-				"formula": "2d8 + 2"
-			},
 			"speed": {
 				"walk": 20
 			},
@@ -7907,33 +6305,19 @@
 			"senses": [
 				"blindsight 30 ft. (blind beyond this radius)"
 			],
-			"passive": 10,
 			"conditionImmune": [
 				"blinded",
 				"charmed",
 				"frightened",
 				"paralyzed"
 			],
-			"cr": "1/8",
-			"action": [
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 3} попадание, радиус действия 5 футов или дальность 20/60 футов, одна цель. {@h}4 ({@damage 1d6 + 1}) колющего урона, или 5 ({@damage 1d8 + 1}) колющего урона, если используется двумя руками для атаки в ближнем бою."
-					]
-				}
-			],
+			"languages": null,
+			"trait": null,
+			"traitTags": [],
 			"senseTags": [
 				"B"
 			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
+			"languageTags": [],
 			"hasToken": true
 		},
 		{
@@ -8633,83 +7017,45 @@
 			"name": "Young Griffon (Medium)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 3} попадание, радиус действия 5 футов, одна цель. {@h}4 ({@damage 1d6 + 1}) колющего урона."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 3} попадание, радиус действия 5 футов, одна цель. {@h}6 ({@damage 2d4 + 1}) косой урон."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"M"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 32,
 				"formula": "5d6 + 15"
 			},
-			"speed": {
-				"walk": 30,
-				"fly": 80
-			},
 			"str": 12,
 			"dex": 15,
 			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "1",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"Грифон имеет преимущество при проверках мудрости (восприятие), которые зависят от зрения."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Грифон делает две атаки: одну клювом и одну когтями."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 3} попадание, радиус действия 5 футов, одна цель. {@h}4 ({@damage 1d6 + 1}) колющего урона."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 3} попадание, радиус действия 5 футов, одна цель. {@h}6 ({@damage 2d4 + 1}) косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8718,83 +7064,43 @@
 			"name": "Young Griffon (Small)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 1} попадание, радиус действия 5 футов, одна цель. {@h}2 ({@damage 1d4}) колющего урона."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 1} попадание, радиус действия 5 футов, одна цель. {@h}2 ({@damage 1d4}) косой урон."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"S"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 13,
 				"formula": "2d6 + 6"
 			},
-			"speed": {
-				"walk": 30,
-				"fly": 80
-			},
 			"str": 8,
-			"dex": 15,
-			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "1/4",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"Грифон имеет преимущество при проверках мудрости (восприятие), которые зависят от зрения."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Грифон делает две атаки: одну клювом и одну когтями."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 1} попадание, радиус действия 5 футов, одна цель. {@h}2 ({@damage 1d4}) колющего урона."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 1} попадание, радиус действия 5 футов, одна цель. {@h}2 ({@damage 1d4}) косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8803,16 +7109,36 @@
 			"name": "Young Griffon (Tiny)",
 			"source": "IDRotF",
 			"page": 163,
-			"_isCopy": true,
+			"_copy": {
+				"name": "Griffon",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Beak",
+							"items": {
+								"name": "Beak",
+								"entries": [
+									"{@atk mw} {@hit 0} попадание, радиус действия 5 футов, одна цель. {@h}1 колющее повреждение."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Claws",
+							"items": {
+								"name": "Claws",
+								"entries": [
+									"{@atk mw} {@hit 0} попадание, досягаемость 5 футов, одна цель. {@h}1 косой урон."
+								]
+							}
+						}
+					]
+				}
+			},
 			"size": [
 				"T"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
 			],
 			"hp": {
 				"average": 5,
@@ -8825,61 +7151,7 @@
 			"str": 2,
 			"dex": 15,
 			"con": 16,
-			"int": 2,
-			"wis": 13,
-			"cha": 8,
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
 			"cr": "0",
-			"trait": [
-				{
-					"name": "Keen Sight",
-					"entries": [
-						"Грифон имеет преимущество при проверках мудрости (восприятие), которые зависят от зрения."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Грифон делает две атаки: одну клювом и одну когтями."
-					]
-				},
-				{
-					"name": "Beak",
-					"entries": [
-						"{@atk mw} {@hit 0} попадание, радиус действия 5 футов, одна цель. {@h}1 колющее повреждение."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 0} попадание, досягаемость 5 футов, одна цель. {@h}1 косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
