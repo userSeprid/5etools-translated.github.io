@@ -9,6 +9,7 @@ import argparse
 import traceback
 
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 #from selenium.webdriver.chrome.service import Service
 #from webdriver_manager.chrome import ChromeDriverManager
@@ -22,6 +23,8 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+from selenium.webdriver.common.action_chains import ActionChains
 
 supported_languages = {
 	'es': 'es-ES',
@@ -132,7 +135,8 @@ class Translator:
 		# div[@dl-test=translator-target-lang-list]
 		WebDriverWait(self._webdriver, 1).until(EC.presence_of_element_located((By.XPATH, f"//button[@dl-test=\"translator-lang-option-{self._language}\"]"))).click()
 
-		self._inputField = self._webdriver.find_element(By.XPATH, '//textarea[@dl-test="translator-source-input"]')
+		#self._inputField = self._webdriver.find_element(By.XPATH, '//d-textarea[@dl-test="translator-source-input"]')
+		self._inputField = self._webdriver.find_element(By.XPATH, '//*[@class="lmt__textarea_container"]')
 		self._outputField = self._webdriver.find_element(By.XPATH, '//*[@id="target-dummydiv"]')
 
 		# Init glossary
@@ -242,9 +246,16 @@ class Translator:
 		self._setupGlossary(translate_text)
 
 		self._inputField.click()
-		self._inputField.clear()
+		#self._inputField.clear()
+		#self._inputField.send_keys(5000 * Keys.BACKSPACE)
+		actions = ActionChains(self._webdriver)
+		actions.send_keys(5000 * Keys.BACKSPACE)
+		actions.perform()
+
 		time.sleep(0.5)
-		self._inputField.send_keys(translate_text)
+		#self._inputField.send_keys(translate_text)
+		actions.send_keys(translate_text)
+		actions.perform()
 
 		translator_working = WebDriverWait(self._webdriver, 1).until(EC.presence_of_element_located((By.XPATH, '//main[@id="dl_translator"]')))
 
