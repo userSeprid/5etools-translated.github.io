@@ -559,6 +559,7 @@
 				"slashing"
 			],
 			"miscTags": [
+				"OBJ",
 				"SMN",
 				"UBA"
 			],
@@ -713,6 +714,9 @@
 					]
 				}
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -782,6 +786,9 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"C"
@@ -868,6 +875,7 @@
 				"Qualsiasi creatura o oggetto che entra nel portale esce dall'altro portale come se i due fossero adiacenti; passare attraverso un portale dal lato senza portale non ha alcun effetto. La nebbia che riempie ogni portale è opaca e blocca la visione attraverso di essa. Al tuo turno, puoi ruotare gli anelli come azione bonus in modo che il lato attivo sia rivolto in una direzione diversa."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT",
 				"TP",
 				"UBA"
@@ -913,6 +921,9 @@
 			"entries": [
 				"Se tocchi una porta, una finestra, un cancello, una cassa o un'altra entrata chiusa, questa si blocca per la durata dell'incantesimo. Tu e le creature che designi quando lanci l'incantesimo potete aprire l'oggetto normalmente. Puoi anche impostare una parola d'ordine che, se pronunciata entro 1,5 metri dall'oggetto, sopprime questo incantesimo per 1 minuto. Altrimenti, l'oggetto è impraticabile finché non viene rotto o l'incantesimo non viene dissipato o soppresso. Il lancio di {@spell knock} sull'oggetto sopprime {@spell arcane lock} per 10 minuti.",
 				"Mentre è influenzato da questo incantesimo, l'oggetto è più difficile da rompere o forzare; la CD per romperlo o scassinare qualsiasi serratura su di esso aumenta di 10."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -1397,6 +1408,9 @@
 			],
 			"conditionInflict": [
 				"incapacitated"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -1742,7 +1756,9 @@
 				"strength"
 			],
 			"miscTags": [
+				"DFT",
 				"FMV",
+				"OBJ",
 				"SGT",
 				"UBA"
 			]
@@ -1791,6 +1807,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"DFT"
 			],
 			"areaTags": [
 				"W"
@@ -2001,6 +2020,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -2186,6 +2208,7 @@
 				"radiant"
 			],
 			"miscTags": [
+				"AAD",
 				"LGT"
 			]
 		},
@@ -2237,6 +2260,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"N"
@@ -2405,6 +2431,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -2863,7 +2890,7 @@
 				}
 			],
 			"entries": [
-				"Crei una sfera di 20 piedi di nebbia velenosa giallo-verde centrata su un punto a tua scelta nel raggio d'azione. La nebbia si diffonde intorno agli angoli. Dura per la durata dell'incantesimo o finché un forte vento non la disperde, ponendo fine all'incantesimo. La sua area è fortemente oscurata.",
+				"Si crea una sfera di 6 metri di raggio di nebbia velenosa giallo-verde centrata su un punto a scelta nel raggio d'azione. La nebbia si diffonde intorno agli angoli. Dura per tutta la durata dell'incantesimo o finché un forte vento non disperde la nebbia, ponendo fine all'incantesimo. La sua area è {@quickref Vision and Light|PHB|2||heavily obscured}.",
 				"Quando una creatura entra nell'area dell'incantesimo per la prima volta in un turno o vi inizia il proprio turno, deve effettuare un tiro salvezza di Costituzione. La creatura subisce {@damage 5d8} danni da veleno se il tiro salvezza è fallito, o la metà dei danni se è riuscito. Le creature sono colpite anche se trattengono il respiro o non hanno bisogno di respirare.",
 				"La nebbia si allontana di 10 piedi da te all'inizio di ogni tuo turno, rotolando lungo la superficie del terreno. I vapori, essendo più pesanti dell'aria, affondano al livello più basso del terreno, riversandosi anche nelle aperture."
 			],
@@ -2881,6 +2908,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -4091,6 +4121,9 @@
 			],
 			"entries": [
 				"Una fiamma, equivalente in luminosità a una torcia, scaturisce da un oggetto che si tocca. L'effetto sembra quello di una fiamma normale, ma non crea calore e non usa ossigeno. Una fiamma continua può essere coperta o nascosta ma non soffocata o spenta."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -4173,7 +4206,8 @@
 				"strength"
 			],
 			"miscTags": [
-				"FMV"
+				"FMV",
+				"OBJ"
 			],
 			"areaTags": [
 				"N"
@@ -4748,6 +4782,9 @@
 			"damageInflict": [
 				"radiant"
 			],
+			"miscTags": [
+				"AAD"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -4899,6 +4936,9 @@
 				"Se il punto scelto si trova su un oggetto che si tiene in mano o che non viene indossato o trasportato, l'oscurità emana dall'oggetto e si muove con esso. Coprire completamente la fonte dell'oscurità con un oggetto opaco, come una ciotola o un elmo, blocca l'oscurità.",
 				"Se un'area di questo incantesimo si sovrappone a un'area di luce creata da un incantesimo di 2° livello o inferiore, l'incantesimo che ha creato la luce viene dissipato."
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -4982,7 +5022,8 @@
 				"Se un'area di questo incantesimo si sovrappone a un'area di oscurità creata da un incantesimo di 3° livello o inferiore, l'incantesimo che ha creato l'oscurità viene dissipato."
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -5087,6 +5128,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -5128,6 +5172,7 @@
 				"Ogni volta che lanci questo incantesimo, puoi creare un nuovo demiplano o far connettere la porta d'ombra a un demiplano che hai creato con un precedente lancio di questo incantesimo. Inoltre, se conosci la natura e il contenuto di un demiplano creato da un lancio di questo incantesimo da parte di un'altra creatura, puoi invece far connettere la porta d'ombra al suo demiplano."
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM",
 				"SGT"
 			]
@@ -5500,6 +5545,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -5616,6 +5662,9 @@
 						"Quando lanci questo incantesimo usando uno slot incantesimo di 4° livello o superiore, terminerai automaticamente gli effetti di un incantesimo sul bersaglio se il livello dell'incantesimo è uguale o inferiore al livello dello slot incantesimo che hai usato."
 					]
 				}
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"ST"
@@ -5751,6 +5800,9 @@
 			],
 			"damageInflict": [
 				"radiant"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -6046,6 +6098,9 @@
 				"In qualsiasi momento successivo, puoi usare la tua azione per pronunciare il nome dell'oggetto e schiacciare lo zaffiro. L'oggetto appare istantaneamente nella tua mano, indipendentemente dalle distanze fisiche o planari, e l'incantesimo termina.",
 				"Se un'altra creatura sta tenendo o trasportando l'oggetto, schiacciare lo zaffiro non trasporta l'oggetto a te, ma impari invece chi è la creatura che possiede l'oggetto e più o meno dove si trova quella creatura in quel momento.",
 				"{@spell Dispel magic} o un effetto simile applicato con successo allo zaffiro termina l'effetto di questo incantesimo."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -6312,6 +6367,9 @@
 				"fire",
 				"lightning",
 				"thunder"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -6466,6 +6524,7 @@
 				"constitution"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -6681,8 +6740,8 @@
 				"force"
 			],
 			"miscTags": [
-				"SGT",
-				"PS"
+				"PS",
+				"SGT"
 			]
 		},
 		{
@@ -6891,6 +6950,7 @@
 				"Le creature o gli oggetti magici non possono essere creati o trasmutati da questo incantesimo. Inoltre, non puoi usarlo per creare oggetti che normalmente richiedono un alto grado di maestria, come gioielli, armi, vetro o armature, a meno che tu non abbia dimestichezza con il tipo di strumenti artigianali utilizzati per creare tali oggetti."
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM",
 				"SGT"
 			]
@@ -7461,6 +7521,7 @@
 				"R"
 			],
 			"miscTags": [
+				"OBJ",
 				"SCL"
 			],
 			"areaTags": [
@@ -7557,6 +7618,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"C"
 			]
@@ -7610,6 +7674,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -7790,6 +7857,7 @@
 			],
 			"miscTags": [
 				"LGT",
+				"OBJ",
 				"UBA"
 			],
 			"areaTags": [
@@ -7948,6 +8016,9 @@
 						"Quando lanci questo incantesimo usando uno slot incantesimo di 2° livello o superiore, il raggio della nebbia aumenta di 20 piedi per ogni livello di slot superiore al 1°."
 					]
 				}
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -8282,9 +8353,9 @@
 				"Quando lanci questo incantesimo, puoi pronunciare il nome di una specifica creatura (uno pseudonimo, un titolo o un soprannome non funziona). Se quella creatura si trova su un piano diverso da quello in cui ti trovi, il portale si apre nelle immediate vicinanze della creatura nominata e la attira attraverso di esso nello spazio non occupato più vicino al tuo lato del portale. Non ottieni alcun potere speciale sulla creatura, ed essa è libera di agire come il DM ritiene opportuno. Potrebbe andarsene, attaccarti o aiutarti."
 			],
 			"miscTags": [
+				"PS",
 				"SGT",
-				"TP",
-				"PS"
+				"TP"
 			]
 		},
 		{
@@ -8932,7 +9003,7 @@
 					"type": "entries",
 					"name": "Corridors",
 					"entries": [
-						"La nebbia riempie tutti i corridoi protetti, rendendoli fortemente oscurati. Inoltre, a ogni incrocio o diramazione che offre la possibilità di scegliere la direzione, c'è una probabilità {@chance 50|||Disoriented!|No effect} che una creatura diversa da voi creda di andare nella direzione opposta a quella scelta."
+						"La nebbia riempie tutti i corridoi protetti, rendendoli {@quickref Vision and Light|PHB|2||heavily obscured}. Inoltre, a ogni incrocio o diramazione che offre la possibilità di scegliere la direzione, c'è una probabilità {@chance 50|||Disoriented!|No effect} che una creatura diversa da voi creda di andare nella direzione opposta a quella scelta."
 					]
 				},
 				{
@@ -8970,6 +9041,7 @@
 				"Puoi creare una struttura permanentemente sorvegliata e protetta lanciandovi questo incantesimo ogni giorno per un anno."
 			],
 			"miscTags": [
+				"OBS",
 				"PRM"
 			],
 			"areaTags": [
@@ -9118,6 +9190,7 @@
 				"strength"
 			],
 			"miscTags": [
+				"DFT",
 				"FMV",
 				"UBA"
 			],
@@ -9637,6 +9710,7 @@
 				"constitution"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT",
 				"UBA"
 			],
@@ -10103,6 +10177,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"DFT"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -10156,6 +10233,7 @@
 				"wisdom"
 			],
 			"miscTags": [
+				"AAD",
 				"SGT",
 				"UBA"
 			],
@@ -10306,6 +10384,9 @@
 			"entries": [
 				"Scegli un oggetto che devi toccare durante il lancio dell'incantesimo. Se si tratta di un oggetto magico o di un altro oggetto impregnato di magia, imparerai le sue proprietà e come usarle, se richiede sintonia per essere usato e quante cariche ha, se ce ne sono. Apprendi se ci sono incantesimi che influenzano l'oggetto e quali sono. Se l'oggetto è stato creato da un incantesimo, imparerai quale incantesimo lo ha creato.",
 				"Se invece tocchi una creatura durante il lancio, impari quali incantesimi, se ce ne sono, la stanno influenzando."
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"ST"
@@ -10495,7 +10576,7 @@
 				}
 			],
 			"entries": [
-				"Una nube vorticosa di fumo attraversata da braci incandescenti appare in una sfera di 20 piedi di raggio centrata su un punto nel raggio d'azione. La nube si diffonde intorno agli angoli ed è pesantemente oscurata. Dura per la durata o fino a quando un vento di velocità moderata o maggiore (almeno 10 miglia all'ora) la disperde.",
+				"Una vorticosa nube di fumo attraversata da tizzoni bianchi appare in una sfera di 6 metri di raggio centrata su un punto nel raggio d'azione. La nube si diffonde intorno agli angoli ed è {@quickref Vision and Light|PHB|2||heavily obscured}. Dura per tutta la durata o finché un vento di velocità moderata o superiore (almeno 10 miglia orarie) non la disperde.",
 				"Quando la nuvola appare, ogni creatura al suo interno deve effettuare un tiro salvezza di Destrezza. Una creatura subisce {@damage 10d8} danni da fuoco se fallisce il tiro salvezza, o la metà dei danni se lo supera. Una creatura deve effettuare questo tiro salvezza anche quando entra nell'area dell'incantesimo per la prima volta in un turno o vi termina il suo turno.",
 				"La nuvola si allontana di 10 piedi direttamente da te in una direzione che scegli all'inizio di ogni tuo turno."
 			],
@@ -10504,6 +10585,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -10596,7 +10680,7 @@
 				}
 			],
 			"entries": [
-				"Locuste brulicanti e mordaci riempiono una sfera di 20 piedi di raggio, centrata su un punto scelto da te entro il raggio d'azione. La sfera si espande intorno agli angoli. La sfera rimane per la durata e la sua area è leggermente oscurata. L'area della sfera è {@quickref difficult terrain||3}.",
+				"Le locuste brulicanti e mordaci riempiono una sfera di 6 metri di raggio centrata su un punto a scelta nel raggio d'azione. La sfera si diffonde intorno agli angoli. La sfera rimane per tutta la durata e la sua area è {@quickref Vision and Light|PHB|2||lightly obscured}. L'area della sfera è {@quickref difficult terrain||3}.",
 				"Quando l'area appare, ogni creatura al suo interno deve effettuare un tiro salvezza di Costituzione. Una creatura subisce {@damage 4d10} danni da perforazione se fallisce il tiro salvezza, o la metà dei danni se lo supera. Una creatura deve effettuare questo tiro salvezza anche quando entra nell'area dell'incantesimo per la prima volta in un turno o vi termina il suo turno."
 			],
 			"entriesHigherLevel": [
@@ -10613,6 +10697,10 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"DFT",
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -10749,6 +10837,7 @@
 				"Quando lanci l'incantesimo, un forte colpo, udibile fino a 300 piedi di distanza, proviene dall'oggetto bersaglio."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			]
 		},
@@ -10788,6 +10877,9 @@
 			"entries": [
 				"Nomina o descrivi una persona, un luogo o un oggetto. L'incantesimo porta alla tua mente un breve riassunto della tradizione significativa sulla cosa che hai nominato. La tradizione potrebbe consistere in racconti attuali, storie dimenticate o persino tradizioni segrete che non sono mai state ampiamente conosciute. Se la cosa che hai nominato non è di importanza leggendaria, non ottieni alcuna informazione. Più informazioni hai già sulla cosa, più precise e dettagliate sono le informazioni che ricevi.",
 				"Le informazioni che si apprendono sono accurate ma potrebbero essere espresse in un linguaggio figurato. Per esempio, se hai a portata di mano una misteriosa ascia magica, l'incantesimo potrebbe produrre questa informazione: \"Guai al malfattore la cui mano tocca l'ascia, perché anche il manico taglia la mano dei malvagi. Solo un vero Bambino di Pietra, amante e amato da Moradin, può risvegliare i veri poteri dell'ascia, e solo con la parola sacra Rudnogg sulle labbra\"."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -10958,6 +11050,7 @@
 				"constitution"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -11005,7 +11098,8 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBJ"
 			]
 		},
 		{
@@ -11113,6 +11207,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"L"
@@ -11237,6 +11334,9 @@
 				"Descrivi o nomina un oggetto che ti è familiare. Percepisci la direzione della posizione dell'oggetto, a condizione che l'oggetto sia entro 1.000 piedi da te. Se l'oggetto è in movimento, conosci la direzione del suo movimento.",
 				"L'incantesimo può localizzare un oggetto specifico a te noto, a patto che tu l'abbia visto da vicino - entro 30 piedi - almeno una volta. In alternativa, l'incantesimo può localizzare l'oggetto più vicino di un tipo particolare, come un certo tipo di abbigliamento, gioielli, mobili, strumenti o armi.",
 				"Questo incantesimo non può localizzare un oggetto se un qualsiasi spessore di piombo, anche un foglio sottile, blocca un percorso diretto tra te e l'oggetto."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -11370,6 +11470,9 @@
 				"Una mano spettrale e fluttuante appare in un punto a tua scelta entro il raggio d'azione. La mano dura per la durata dell'incantesimo o finché non la elimini come azione. La mano svanisce se si trova a più di 30 piedi da te o se lanci di nuovo questo incantesimo.",
 				"Puoi usare la tua azione per controllare la mano. Puoi usare la mano per manipolare un oggetto, aprire una porta o un contenitore aperto, riporre o recuperare un oggetto da un contenitore aperto o versare il contenuto di una fiala. Puoi muovere la mano fino a 30 piedi ogni volta che la usi.",
 				"La mano non può attaccare, attivare oggetti magici o trasportare più di 10 libbre."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -11603,6 +11706,7 @@
 				"La circostanza scatenante può essere generica o dettagliata quanto si vuole, anche se deve essere basata su condizioni visive o uditive che si verificano entro 30 piedi dall'oggetto. Per esempio, si potrebbe ordinare alla bocca di parlare quando una creatura si muove entro 30 piedi dall'oggetto o quando una campana d'argento suona entro 30 piedi da esso."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			]
 		},
@@ -12129,6 +12233,9 @@
 			"entries": [
 				"Questo incantesimo ripara una singola rottura o uno strappo in un oggetto che tocchi, come una maglia di catena rotta, due metà di una chiave rotta, un mantello strappato o un'otre che perde. Finché la rottura o lo strappo non è più grande di 1 piede in qualsiasi dimensione, lo riparerai, senza lasciare traccia del danno precedente.",
 				"Questo incantesimo può riparare fisicamente un oggetto o un costrutto magico, ma non può restituire la magia a tale oggetto."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -12215,6 +12322,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -12687,6 +12795,9 @@
 				"Evochi una dimora extradimensionale a portata di mano che dura per tutta la durata. Scegli dove si trova la sua unica entrata. L'ingresso brilla debolmente ed è largo 5 piedi e alto 10 piedi. Tu e qualsiasi creatura da te designata quando lanci l'incantesimo potete entrare nella dimora extradimensionale finché il portale rimane aperto. Puoi aprire o chiudere il portale se ti trovi entro 30 piedi da esso. Mentre è chiuso, il portale è invisibile.",
 				"Oltre il portale c'è un magnifico foyer con numerose camere al di là. L'atmosfera è pulita, fresca e calda.",
 				"Puoi creare la pianta che vuoi, ma lo spazio non può superare i 50 cubi, ogni cubo è di 10 piedi per lato. Il locale è arredato e decorato come vuoi tu. Contiene cibo sufficiente per servire un banchetto di nove portate per un massimo di 100 persone. Uno staff di 100 servitori quasi trasparenti assiste tutti coloro che entrano. Tu decidi l'aspetto visivo di questi servitori e il loro abbigliamento. Essi sono completamente obbedienti ai tuoi ordini. Ogni servitore può eseguire qualsiasi compito che un normale servitore umano potrebbe eseguire, ma non può attaccare o intraprendere qualsiasi azione che potrebbe danneggiare direttamente un'altra creatura. Così i servitori possono andare a prendere le cose, pulire, rammendare, piegare i vestiti, accendere il fuoco, servire il cibo, versare il vino e così via. I servitori possono andare ovunque nella villa ma non possono lasciarla. Gli arredi e gli altri oggetti creati da questo incantesimo si disperdono in fumo se rimossi dalla villa. Quando l'incantesimo termina, qualsiasi creatura o oggetto lasciato all'interno dello spazio extradimensionale viene espulso negli spazi aperti più vicini all'ingresso."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -12899,6 +13010,9 @@
 			"entries": [
 				"Per la durata, nascondi un bersaglio che tocchi dalla magia divinatoria. Il bersaglio può essere una creatura volenterosa o un luogo o un oggetto non più grande di 10 piedi in qualsiasi dimensione. Il bersaglio non può essere bersagliato da nessuna magia divinatoria o percepito attraverso sensori magici di scrying."
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"ST"
 			]
@@ -12955,6 +13069,7 @@
 				}
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM"
 			],
 			"areaTags": [
@@ -13076,6 +13191,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"ST"
@@ -13210,6 +13328,7 @@
 				"Quando l'apertura scompare, qualsiasi creatura o oggetto che si trovi ancora nel passaggio creato dall'incantesimo viene espulso in sicurezza in uno spazio non occupato più vicino alla superficie su cui hai lanciato l'incantesimo."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			]
 		},
@@ -13539,8 +13658,8 @@
 				"charisma"
 			],
 			"miscTags": [
-				"TP",
-				"PS"
+				"PS",
+				"TP"
 			],
 			"areaTags": [
 				"ST",
@@ -13585,6 +13704,9 @@
 				"Se lanci questo incantesimo usando 1 azione, scegli un punto entro il raggio d'azione. Tutte le piante normali in un raggio di 100 piedi centrato su quel punto diventano fitte e incolte. Una creatura che si muove attraverso l'area deve spendere 4 piedi di movimento per ogni 1 piede che muove.",
 				"Puoi escludere una o più aree di qualsiasi dimensione all'interno dell'area dell'incantesimo dall'essere influenzate.",
 				"Se lanci questo incantesimo per 8 ore, arricchisci la terra. Tutte le piante in un raggio di mezzo miglio centrato su un punto entro il raggio d'azione si arricchiscono per 1 anno. Le piante producono il doppio della quantità normale di cibo quando vengono raccolte."
+			],
+			"miscTags": [
+				"DFT"
 			]
 		},
 		{
@@ -13944,6 +14066,9 @@
 					]
 				},
 				"Se lanci questo incantesimo più volte, puoi avere fino a tre dei suoi effetti non istantanei attivi alla volta, e puoi respingere tale effetto come azione."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -15063,6 +15188,9 @@
 			"entries": [
 				"Al tuo tocco, tutte le maledizioni che colpiscono una creatura o un oggetto terminano. Se l'oggetto è un oggetto magico maledetto, la sua maledizione rimane, ma l'incantesimo rompe la sintonia del suo proprietario con l'oggetto in modo che possa essere rimosso o scartato."
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"ST"
 			]
@@ -15199,6 +15327,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"Y"
@@ -15592,6 +15723,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -15765,6 +15899,9 @@
 			"conditionInflict": [
 				"invisible"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"ST"
 			]
@@ -15878,6 +16015,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -16106,6 +16246,9 @@
 			"conditionInflict": [
 				"deafened"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -16313,7 +16456,7 @@
 				}
 			],
 			"entries": [
-				"Fino al termine dell'incantesimo, la pioggia gelata e il nevischio cadono in un cilindro alto 6 metri con un raggio di 40 metri centrato su un punto a tua scelta entro il raggio d'azione. L'area è pesantemente oscurata e le fiamme esposte nella zona vengono spente.",
+				"Finché l'incantesimo non termina, la pioggia e il nevischio gelati cadono in un cilindro alto 6 metri e con un raggio di 40 metri, centrato su un punto a scelta nel raggio d'azione. L'area è {@quickref Vision and Light|PHB|2||heavily obscured} e le fiamme esposte nell'area sono spente.",
 				"Il terreno nell'area è coperto di ghiaccio scivoloso, rendendolo {@quickref difficult terrain||3}. Quando una creatura entra nell'area dell'incantesimo per la prima volta in un turno o vi inizia il suo turno, deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza è fallito, cade {@condition prone}.",
 				"Se una creatura inizia il suo turno nell'area dell'incantesimo e si sta concentrando su un incantesimo, la creatura deve effettuare con successo un tiro salvezza di Costituzione contro la tua CD di salvataggio dell'incantesimo o perdere la concentrazione."
 			],
@@ -16323,6 +16466,9 @@
 			"savingThrow": [
 				"dexterity",
 				"constitution"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"Y"
@@ -16819,6 +16965,9 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -16857,12 +17006,15 @@
 				}
 			],
 			"entries": [
-				"Crei una sfera di 20 piedi di raggio di gas giallo e nauseabondo centrata su un punto nel raggio d'azione. La nube si diffonde intorno agli angoli e la sua area è pesantemente oscurata. La nube permane nell'aria per tutta la durata.",
+				"Si crea una sfera di 6 metri di raggio di gas giallo e nauseabondo centrata su un punto nel raggio d'azione. La nube si diffonde intorno agli angoli e la sua area è {@quickref Vision and Light|PHB|2||heavily obscured}. La nube rimane nell'aria per tutta la sua durata.",
 				"Ogni creatura che si trova completamente all'interno della nube all'inizio del suo turno deve effettuare un tiro salvezza di Costituzione contro il veleno. Se il tiro salvezza viene fallito, la creatura spende la sua azione di quel turno per vomitare e annaspare. Le creature che non hanno bisogno di respirare o che sono immuni al veleno hanno automaticamente successo in questo tiro salvezza.",
 				"Un vento moderato (almeno 10 miglia all'ora) disperde la nuvola dopo 4 colpi. Un vento forte (almeno 20 miglia all'ora) la disperde dopo 1 giro."
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -16899,6 +17051,9 @@
 			],
 			"entries": [
 				"Tocca un oggetto di pietra di grandezza media o più piccola o una sezione di pietra non più di 5 piedi in qualsiasi dimensione e modellala in qualsiasi forma che si adatti al tuo scopo. Così, per esempio, potresti modellare una grande roccia in un'arma, un idolo o un forziere, o fare un piccolo passaggio attraverso un muro, purché il muro sia meno di un metro e mezzo di spessore. Potresti anche modellare una porta di pietra o il suo telaio per sigillare la porta. L'oggetto che crei può avere fino a due cerniere e un chiavistello, ma dettagli meccanici più fini non sono possibili."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -17013,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Raffiche e pioggia gelata assalgono l'area sotto la nuvola. L'area diventa {@quickref difficult terrain||3} ed è fortemente oscurata. Ogni creatura presente subisce {@damage 1d6} danni da freddo. Gli attacchi con armi a distanza nell'area sono impossibili. Il vento e la pioggia contano come una grave distrazione ai fini del mantenimento della concentrazione sugli incantesimi. Infine, raffiche di vento forte (da 20 a 50 miglia all'ora) disperdono automaticamente nebbia, nebbie e fenomeni simili nell'area, sia mondani che magici."
+						"Raffiche e pioggia gelata assalgono l'area sotto la nuvola. L'area diventa {@quickref difficult terrain||3} ed è {@quickref Vision and Light|PHB|2||heavily obscured}. Ogni creatura presente subisce {@damage 1d6} danni da freddo. Gli attacchi con armi a distanza nell'area sono impossibili. Il vento e la pioggia contano come una grave distrazione per mantenere la concentrazione sugli incantesimi. Infine, le raffiche di vento forte (da 20 a 50 miglia orarie) disperdono automaticamente la nebbia, le nebbie e i fenomeni simili presenti nell'area, siano essi mondani o magici."
 					]
 				}
 			],
@@ -17032,6 +17187,8 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
+				"OBS",
 				"SGT"
 			],
 			"areaTags": [
@@ -17358,7 +17515,8 @@
 				"intelligence"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -17479,6 +17637,7 @@
 			],
 			"miscTags": [
 				"FMV",
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -17916,6 +18075,7 @@
 				"strength"
 			],
 			"miscTags": [
+				"AAD",
 				"FMV"
 			]
 		},
@@ -17969,7 +18129,8 @@
 				"constitution"
 			],
 			"miscTags": [
-				"FMV"
+				"FMV",
+				"OBJ"
 			],
 			"areaTags": [
 				"C"
@@ -18196,6 +18357,7 @@
 				"wisdom"
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM",
 				"SGT",
 				"SMN"
@@ -18756,6 +18918,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM"
 			],
 			"areaTags": [
@@ -19328,8 +19491,8 @@
 				"Devi designare un santuario lanciando questo incantesimo all'interno di un luogo, come un tempio, dedicato o fortemente legato alla tua divinità. Se cerchi di lanciare l'incantesimo in questo modo in un'area che non è dedicata alla tua divinità, l'incantesimo non ha effetto."
 			],
 			"miscTags": [
-				"TP",
-				"PS"
+				"PS",
+				"TP"
 			]
 		},
 		{
@@ -19377,6 +19540,9 @@
 			],
 			"abilityCheck": [
 				"wisdom"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
