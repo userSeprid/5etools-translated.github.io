@@ -514,12 +514,22 @@
 			]
 		},
 		{
+			"name": "Charm of Agelessness",
+			"source": "BGDIA",
+			"page": 215,
+			"type": "Charm",
+			"entries": [
+				"Solange du diesen Charme hast, alterst du nicht auf natürliche Weise, und deine Haut bekommt den wächsernen Teint einer Puppe. Die magische Alterung wirkt sich jedoch weiterhin auf dich aus. Dieser Zauber verschwindet von dir, wenn du stirbst."
+			]
+		},
+		{
 			"name": "Charm of Air Bubbles",
 			"source": "BAM",
+			"page": 17,
 			"type": "Charm",
 			"entries": [
 				"{@note This charm can be bestowed by a {@creature chwinga astronaut|BAM} mit ihrer Aktion \"Magische Gabe\".}",
-				"Dieser Zauber erlaubt es dir, den Zauber Luftblase (siehe Astralabenteurer-Handbuch) als Aktion zu wirken. Nach dreimaliger Anwendung verschwindet dieser Zauber."
+				"Dieser Zauber erlaubt es dir, den {@spell Air Bubble|AAG}-Zauber (siehe Handbuch für Astralabenteurer) als Aktion zu wirken. Nach dreimaliger Anwendung verfällt dieser Zauber."
 			]
 		},
 		{
@@ -571,12 +581,39 @@
 			]
 		},
 		{
+			"name": "Charm of Diabolical Inspiration",
+			"source": "BGDIA",
+			"page": 215,
+			"type": "Charm",
+			"entries": [
+				"Wenn du diesen Zauber erhältst, wächst dir ein kurzer, rudimentärer Schwanz, es sei denn, du hast bereits einen Schwanz. Wenn du eine Fähigkeitsüberprüfung, einen Angriffswurf oder einen Rettungswurf machst, kannst du diesen Zauber benutzen, um einen Vorteil bei dem Wurf zu erhalten. Nach neunmaligem Gebrauch verschwindet der Zauber von dir, ebenso wie dein verkümmerter Schwanz."
+			]
+		},
+		{
 			"name": "Charm of Feather Falling",
 			"source": "DMG",
 			"page": 228,
 			"type": "Charm",
 			"entries": [
 				"Dieser Zauber gewährt dir die Vorteile eines {@item ring of feather falling}. Diese Vorteile halten für 10 Tage an, danach verschwindet der Zauber von dir."
+			]
+		},
+		{
+			"name": "Charm of Greater Conscription",
+			"source": "BGDIA",
+			"page": 215,
+			"type": "Charm",
+			"entries": [
+				"Solange du diesen Zauber hast, ziehst du Fliegen an. Als Aktion aktivierst du diesen Zauber, um eine {@creature horned devil} zu beschwören. Dieser Teufel erscheint in einem unbesetzten Raum im Umkreis von 30 Fuß von dir, gehorcht widerwillig deinen Befehlen und dient dir unter Protest 9 Tage lang oder bis er stirbt, woraufhin er verschwindet. Wenn der Teufel verschwindet, verschwindet auch dieser Zauber von dir."
+			]
+		},
+		{
+			"name": "Charm of Hellish Rebuke",
+			"source": "BGDIA",
+			"page": 215,
+			"type": "Charm",
+			"entries": [
+				"Ein feuriger Heiligenschein erscheint über Ihrem Kopf, wenn Sie dieses Amulett erhalten. Mit diesem Zauber kannst du als Reaktion den {@spell hellish rebuke}-Zauber (Version 9. Stufe) wirken. Nach neunmaliger Anwendung verschwindet der Zauber von dir, ebenso wie der feurige Heiligenschein."
 			]
 		},
 		{
@@ -591,10 +628,29 @@
 		{
 			"name": "Charm of Instant Tools",
 			"source": "BAM",
+			"page": 17,
 			"type": "Charm",
 			"entries": [
 				"{@note This charm can be bestowed by a {@creature chwinga astronaut|BAM} mit ihrer Aktion \"Magische Gabe\".}",
 				"Mit diesem Zauber kannst du einen Satz Handwerker-, Navigations- oder Diebeswerkzeuge herbeizaubern. Die beschworenen Werkzeuge erscheinen entweder in deiner Hand oder an einem anderen Ort in deinem Raum (deine Wahl). Nach der Benutzung verschwindet der Zauber, aber die Werkzeuge bleiben erhalten."
+			]
+		},
+		{
+			"name": "Charm of Lesser Conscription",
+			"source": "BGDIA",
+			"page": 215,
+			"type": "Charm",
+			"entries": [
+				"Solange du diesen Zauber hast, ziehst du Fliegen an. Als Aktion aktivierst du diesen Zauber, um einen {@creature barbed devil}, zwei {@creature Bearded Devil||bearded devils} oder drei {@creature Spined Devil||spined devils} zu beschwören. Alle Teufel erscheinen sofort in unbesetzten Räumen innerhalb von 30 Fuß um dich herum. Jeder Teufel gehorcht deinen Befehlen und dient dir eifrig für 9 Tage oder bis er stirbt, woraufhin der Teufel verschwindet. Sobald alle durch diesen Zauber beschworenen Teufel verschwinden, verschwindet auch der Zauber von dir."
+			]
+		},
+		{
+			"name": "Charm of Many Tongues",
+			"source": "BGDIA",
+			"page": 215,
+			"type": "Charm",
+			"entries": [
+				"Du sprichst und verstehst alle Sprachen, beherrschst die Fertigkeiten {@skill Deception} und {@skill Persuasion} und kannst das Doppelte deines normalen Fertigkeitsbonus hinzufügen, wenn du diese Fertigkeiten benutzt. Dieser Zauber verschwindet von dir, wenn du stirbst."
 			]
 		},
 		{
@@ -623,6 +679,15 @@
 			"entries": [
 				"{@note This charm can be bestowed by a {@creature chwinga|ToA}, die in Icewind Dale oder anderen kalten Regionen leben, indem sie ihre Aktion \"Magische Gabe\" benutzen.}",
 				"Dieser Anhänger hat 5 Ladungen. Als Bonusaktion kannst du 1 der Ladungen des Zaubers ausgeben, um einen magischen Schneeball in deiner Hand zu erschaffen und ihn zu werfen. Du musst eine Hand frei haben, um den Schneeball zu halten, oder die Ladung ist vergeudet. Der Schneeball ist eine magische Fernkampfwaffe, die du gut beherrschst. Er hat eine normale Reichweite von 20 Fuß und eine große Reichweite von 60 Fuß, verursacht bei einem Treffer {@damage 1d4} Kälteschaden und erzielt einen kritischen Treffer bei einem Wurf von 19 oder 20. Wenn du mit dem Schneeball einen kritischen Treffer erzielst, ist das Ziel bis zum Ende seines nächsten Zuges {@condition blinded}. Der Schneeball verschwindet sofort, nachdem du ihn getroffen oder verfehlt hast, oder am Ende deines Zuges, wenn du ihn nicht geworfen hast. Sobald alle seine Ladungen verbraucht sind, verschwindet dieser Zauber von dir."
+			]
+		},
+		{
+			"name": "Charm of the Adamant",
+			"source": "BGDIA",
+			"page": 215,
+			"type": "Charm",
+			"entries": [
+				"Dieser Anhänger hat 9 Ladungen. Du kannst eine Aktion nutzen, um 1 Ladung des Zaubers zu verbrauchen, um 30 temporäre Trefferpunkte zu erhalten. Für die nächste Stunde werden deine Augen zu leeren Räumen völliger Dunkelheit und du kannst nicht {@condition charmed} oder {@condition frightened} sein. Sobald alle Ladungen verbraucht sind, verschwindet der Zauber von dir."
 			]
 		},
 		{
