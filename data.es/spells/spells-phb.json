@@ -559,6 +559,7 @@
 				"slashing"
 			],
 			"miscTags": [
+				"OBJ",
 				"SMN",
 				"UBA"
 			],
@@ -713,6 +714,9 @@
 					]
 				}
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -782,6 +786,9 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"C"
@@ -868,6 +875,7 @@
 				"Cualquier criatura u objeto que entre en el portal sale por el otro portal como si ambos estuvieran adyacentes; atravesar un portal desde el lado que no lo tiene no tiene ningún efecto. La niebla que llena cada portal es opaca y bloquea la visión a través de ella. En tu turno, puedes girar los anillos como acción extra para que el lado activo mire en una dirección diferente."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT",
 				"TP",
 				"UBA"
@@ -913,6 +921,9 @@
 			"entries": [
 				"Si tocas una puerta, ventana, portón, cofre o cualquier otra entrada cerrada, ésta queda bloqueada mientras dure el hechizo. Tú y las criaturas que designes al lanzar este hechizo podéis abrir el objeto normalmente. También puedes establecer una contraseña que, cuando se pronuncia a menos de 1,5 metros del objeto, suprime este hechizo durante 1 minuto. De lo contrario, es infranqueable hasta que se rompa o se disipe o suprima el hechizo. Lanzar {@spell knock} sobre el objeto suprime {@spell arcane lock} durante 10 minutos.",
 				"Mientras esté afectado por este hechizo, el objeto es más difícil de romper o abrir por la fuerza; la CD para romperlo o forzar cualquier cerradura que tenga aumenta en 10."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -1397,6 +1408,9 @@
 			],
 			"conditionInflict": [
 				"incapacitated"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -1742,7 +1756,9 @@
 				"strength"
 			],
 			"miscTags": [
+				"DFT",
 				"FMV",
+				"OBJ",
 				"SGT",
 				"UBA"
 			]
@@ -1791,6 +1807,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"DFT"
 			],
 			"areaTags": [
 				"W"
@@ -2001,6 +2020,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -2186,6 +2208,7 @@
 				"radiant"
 			],
 			"miscTags": [
+				"AAD",
 				"LGT"
 			]
 		},
@@ -2237,6 +2260,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"N"
@@ -2405,6 +2431,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -2863,7 +2890,7 @@
 				}
 			],
 			"entries": [
-				"Creas una esfera de 20 pies de radio de niebla venenosa de color amarillo-verde centrada en un punto que elijas dentro del alcance. La niebla se extiende por las esquinas. Dura lo que dura o hasta que un viento fuerte dispersa la niebla, poniendo fin al hechizo. Su área queda muy oscurecida.",
+				"Creas una esfera de 20 pies de radio de niebla venenosa de color amarillo verdoso centrada en un punto que elijas dentro del alcance. La niebla se extiende por las esquinas. Dura lo que dura o hasta que un fuerte viento dispersa la niebla, finalizando el hechizo. Su área es {@quickref Vision and Light|PHB|2||heavily obscured}.",
 				"Cuando una criatura entra en el área del hechizo por primera vez en un turno o comienza su turno allí, esa criatura debe hacer una tirada de salvación de Constitución. La criatura recibe {@damage 5d8} de daño por veneno si falla la tirada de salvación, o la mitad de daño si tiene éxito. Las criaturas se ven afectadas incluso si contienen la respiración o no necesitan respirar.",
 				"La niebla se aleja 3 metros de ti al comienzo de cada uno de tus turnos, rodando por la superficie del suelo. Los vapores, al ser más pesados que el aire, se hunden hasta el nivel más bajo del terreno, llegando a derramar aberturas."
 			],
@@ -2881,6 +2908,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -4091,6 +4121,9 @@
 			],
 			"entries": [
 				"Una llama, equivalente en brillo a una antorcha, brota de un objeto que usted toca. El efecto se parece a una llama normal, pero no crea calor y no utiliza oxígeno. Una llama continua puede cubrirse u ocultarse, pero no puede sofocarse ni apagarse."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -4173,7 +4206,8 @@
 				"strength"
 			],
 			"miscTags": [
-				"FMV"
+				"FMV",
+				"OBJ"
 			],
 			"areaTags": [
 				"N"
@@ -4748,6 +4782,9 @@
 			"damageInflict": [
 				"radiant"
 			],
+			"miscTags": [
+				"AAD"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -4899,6 +4936,9 @@
 				"Si el punto que eliges se encuentra en un objeto que sostienes o en uno que no se lleva puesto o que se transporta, la oscuridad emana del objeto y se mueve con él. Cubrir completamente la fuente de la oscuridad con un objeto opaco, como un cuenco o un yelmo, bloquea la oscuridad.",
 				"Si cualquier área de este hechizo se solapa con un área de luz creada por un hechizo de 2º nivel o inferior, el hechizo que creó la luz se disipa."
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -4982,7 +5022,8 @@
 				"Si cualquier área de este hechizo se solapa con un área de oscuridad creada por un hechizo de 3er nivel o inferior, el hechizo que creó la oscuridad se disipa."
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -5087,6 +5128,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -5128,6 +5172,7 @@
 				"Cada vez que lances este hechizo, puedes crear un nuevo semiplano, o hacer que la puerta sombría se conecte a un semiplano que hayas creado con un lanzamiento anterior de este hechizo. Además, si conoces la naturaleza y el contenido de un semiplano creado por el lanzamiento de este hechizo por otra criatura, puedes hacer que la puerta sombría se conecte a su semiplano."
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM",
 				"SGT"
 			]
@@ -5500,6 +5545,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -5616,6 +5662,9 @@
 						"Cuando lanzas este hechizo utilizando una ranura de hechizo de 4º nivel o superior, terminas automáticamente los efectos de un hechizo sobre el objetivo si el nivel del hechizo es igual o menor que el nivel de la ranura de hechizo que has utilizado."
 					]
 				}
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"ST"
@@ -5751,6 +5800,9 @@
 			],
 			"damageInflict": [
 				"radiant"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -6046,6 +6098,9 @@
 				"En cualquier momento posterior, puedes usar tu acción para decir el nombre del objeto y aplastar el zafiro. El objeto aparece instantáneamente en tu mano, independientemente de las distancias físicas o planares, y el hechizo termina.",
 				"Si otra criatura está sosteniendo o llevando el objeto, aplastar el zafiro no transporta el objeto hacia ti, sino que aprendes quién es la criatura que posee el objeto y aproximadamente dónde se encuentra esa criatura en ese momento.",
 				"{@spell Dispel magic} o un efecto similar aplicado con éxito al zafiro termina el efecto de este hechizo."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -6312,6 +6367,9 @@
 				"fire",
 				"lightning",
 				"thunder"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -6466,6 +6524,7 @@
 				"constitution"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -6681,8 +6740,8 @@
 				"force"
 			],
 			"miscTags": [
-				"SGT",
-				"PS"
+				"PS",
+				"SGT"
 			]
 		},
 		{
@@ -6891,6 +6950,7 @@
 				"Las criaturas o los objetos mágicos no pueden ser creados o transmutados por este hechizo. Tampoco puedes usarlo para crear objetos que normalmente requieren un alto grado de artesanía, como joyas, armas, cristales o armaduras, a menos que domines el tipo de herramientas artesanales que se utilizan para fabricar dichos objetos."
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM",
 				"SGT"
 			]
@@ -7461,6 +7521,7 @@
 				"R"
 			],
 			"miscTags": [
+				"OBJ",
 				"SCL"
 			],
 			"areaTags": [
@@ -7557,6 +7618,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"C"
 			]
@@ -7610,6 +7674,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -7790,6 +7857,7 @@
 			],
 			"miscTags": [
 				"LGT",
+				"OBJ",
 				"UBA"
 			],
 			"areaTags": [
@@ -7948,6 +8016,9 @@
 						"Cuando lanzas este hechizo utilizando una ranura de hechizo de 2º nivel o superior, el radio de la niebla aumenta en 6 metros por cada nivel de ranura superior al 1º."
 					]
 				}
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -8282,9 +8353,9 @@
 				"Cuando lanzas este hechizo, puedes decir el nombre de una criatura específica (un seudónimo, título o apodo no funciona). Si esa criatura se encuentra en un plano distinto al tuyo, el portal se abre en las inmediaciones de la criatura nombrada y la atrae a través de él hasta el espacio desocupado más cercano en tu lado del portal. No obtienes ningún poder especial sobre la criatura, y ésta es libre de actuar como el DM considere apropiado. Puede marcharse, atacarte o ayudarte."
 			],
 			"miscTags": [
+				"PS",
 				"SGT",
-				"TP",
-				"PS"
+				"TP"
 			]
 		},
 		{
@@ -8932,7 +9003,7 @@
 					"type": "entries",
 					"name": "Corridors",
 					"entries": [
-						"La niebla llena todos los pasillos protegidos, haciéndolos muy oscuros. Además, en cada intersección o pasaje que se bifurca y que ofrece la posibilidad de elegir la dirección, hay un {@chance 50|||Disoriented!|No effect} de posibilidades de que una criatura que no sea tú crea que va en la dirección opuesta a la que elige."
+						"La niebla llena todos los pasillos protegidos, convirtiéndolos en {@quickref Vision and Light|PHB|2||heavily obscured}. Además, en cada intersección o pasadizo que se bifurca ofreciendo una elección de dirección, hay un {@chance 50|||Disoriented!|No effect} de probabilidades de que una criatura que no seas tú crea que va en la dirección opuesta a la que elige."
 					]
 				},
 				{
@@ -8970,6 +9041,7 @@
 				"Puedes crear una estructura permanentemente vigilada y protegida lanzando este hechizo allí cada día durante un año."
 			],
 			"miscTags": [
+				"OBS",
 				"PRM"
 			],
 			"areaTags": [
@@ -9118,6 +9190,7 @@
 				"strength"
 			],
 			"miscTags": [
+				"DFT",
 				"FMV",
 				"UBA"
 			],
@@ -9637,6 +9710,7 @@
 				"constitution"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT",
 				"UBA"
 			],
@@ -10103,6 +10177,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"DFT"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -10156,6 +10233,7 @@
 				"wisdom"
 			],
 			"miscTags": [
+				"AAD",
 				"SGT",
 				"UBA"
 			],
@@ -10306,6 +10384,9 @@
 			"entries": [
 				"Eliges un objeto que debes tocar durante el lanzamiento del hechizo. Si se trata de un objeto mágico o de algún otro objeto mágico, aprendes sus propiedades y cómo usarlas, si requiere sintonización para usarlo y cuántas cargas tiene, si es que las tiene. También puedes saber si hay algún hechizo que afecte al objeto y cuál es. Si el objeto fue creado por un hechizo, aprendes qué hechizo lo creó.",
 				"Si, en cambio, tocas a una criatura durante el lanzamiento, te enteras de qué hechizos, si es que hay alguno, le están afectando en ese momento."
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"ST"
@@ -10495,7 +10576,7 @@
 				}
 			],
 			"entries": [
-				"Una nube arremolinada de humo atravesada por brasas blancas aparece en una esfera de 6 metros de radio centrada en un punto dentro del alcance. La nube se extiende por las esquinas y queda muy oscurecida. Dura lo que dura o hasta que un viento de velocidad moderada o mayor (al menos 10 millas por hora) la dispersa.",
+				"Aparece una nube arremolinada de humo atravesada por ascuas al rojo vivo en una esfera de 6 metros de radio centrada en un punto dentro del alcance. La nube se extiende por las esquinas y es {@quickref Vision and Light|PHB|2||heavily obscured}. Dura lo que dura o hasta que un viento de velocidad moderada o superior (al menos 10 millas por hora) la dispersa.",
 				"Cuando la nube aparece, cada criatura que se encuentre en ella debe realizar una tirada de salvación de Destreza. Una criatura recibe {@damage 10d8} de daño por fuego si falla la tirada de salvación, o la mitad de daño si tiene éxito. Una criatura también debe hacer esta tirada de salvación cuando entra en el área del hechizo por primera vez en un turno o termina su turno allí.",
 				"La nube se aleja 3 metros directamente de ti en la dirección que elijas al inicio de cada uno de tus turnos."
 			],
@@ -10504,6 +10585,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -10596,7 +10680,7 @@
 				}
 			],
 			"entries": [
-				"Unas langostas enjambrosas y mordaces llenan una esfera de 6 metros de radio centrada en un punto que elijas dentro del alcance. La esfera se extiende por las esquinas. La esfera permanece mientras dure, y su área queda ligeramente oscurecida. El área de la esfera es {@quickref difficult terrain||3}.",
+				"Enjambres de langostas mordedoras llenan una esfera de 6 metros de radio centrada en un punto que elijas dentro del alcance. La esfera se extiende por las esquinas. La esfera permanece mientras dura, y su área es de {@quickref Vision and Light|PHB|2||lightly obscured}. El área de la esfera es de {@quickref difficult terrain||3}.",
 				"Cuando el área aparece, cada criatura que se encuentre en ella debe realizar una tirada de salvación de Constitución. Una criatura recibe {@damage 4d10} de daño perforante si falla la tirada de salvación, o la mitad de daño si tiene éxito. Una criatura también debe hacer esta tirada de salvación cuando entra en el área del hechizo por primera vez en un turno o termina su turno allí."
 			],
 			"entriesHigherLevel": [
@@ -10613,6 +10697,10 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"DFT",
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -10749,6 +10837,7 @@
 				"Cuando lanzas el hechizo, un fuerte golpe, audible desde una distancia de hasta 300 pies, emana del objeto objetivo."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			]
 		},
@@ -10788,6 +10877,9 @@
 			"entries": [
 				"Nombra o describe a una persona, lugar u objeto. El hechizo te trae a la mente un breve resumen de la sabiduría popular sobre el objeto que has nombrado. El conocimiento puede consistir en historias actuales, historias olvidadas o incluso conocimientos secretos que nunca se han conocido. Si el objeto que nombras no es de importancia legendaria, no obtienes ninguna información. Cuanta más información tengas sobre el objeto, más precisa y detallada será la información que recibas.",
 				"La información que obtienes es precisa, pero puede estar redactada en lenguaje figurado. Por ejemplo, si tienes una misteriosa hacha mágica a mano, el hechizo podría dar esta información \"Ay del malhechor cuya mano toque el hacha, porque incluso el mango corta la mano de los malvados. Sólo un verdadero Niño de Piedra, amante y amado de Moradin, puede despertar los verdaderos poderes del hacha, y sólo con la palabra sagrada Rudnogg en los labios\"."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -10958,6 +11050,7 @@
 				"constitution"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -11005,7 +11098,8 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBJ"
 			]
 		},
 		{
@@ -11113,6 +11207,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"L"
@@ -11237,6 +11334,9 @@
 				"Describe o nombra un objeto que te resulte familiar. Percibes la dirección de la ubicación del objeto, siempre que éste se encuentre a menos de 1.000 pies de ti. Si el objeto está en movimiento, conoces la dirección de su movimiento.",
 				"El hechizo puede localizar un objeto específico conocido por ti, siempre que lo hayas visto de cerca -a menos de 30 pies- al menos una vez. Alternativamente, el hechizo puede localizar el objeto más cercano de un tipo particular, como un cierto tipo de ropa, joyas, muebles, herramientas o armas.",
 				"Este hechizo no puede localizar un objeto si cualquier grosor de plomo, incluso una fina lámina, bloquea un camino directo entre tú y el objeto."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -11370,6 +11470,9 @@
 				"Una mano espectral y flotante aparece en un punto que elijas dentro del alcance. La mano dura lo que dura o hasta que la descartes como acción. La mano se desvanece si está a más de 30 pies de ti o si vuelves a lanzar este hechizo.",
 				"Puedes utilizar tu acción para controlar la mano. Puedes utilizar la mano para manipular un objeto, abrir una puerta o un contenedor sin cerrar, guardar o recuperar un objeto de un contenedor abierto o verter el contenido de un frasco. Puedes mover la mano hasta 30 pies cada vez que la uses.",
 				"La mano no puede atacar, activar objetos mágicos ni cargar más de 10 libras."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -11603,6 +11706,7 @@
 				"La circunstancia desencadenante puede ser tan general o tan detallada como quieras, aunque debe basarse en condiciones visuales o auditivas que ocurran a menos de 30 pies del objeto. Por ejemplo, puedes ordenar a la boca que hable cuando cualquier criatura se mueva a menos de 30 pies del objeto o cuando una campana de plata suene a menos de 30 pies de él."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			]
 		},
@@ -12129,6 +12233,9 @@
 			"entries": [
 				"Este hechizo repara una sola rotura o desgarro en un objeto que toques, como un eslabón de cadena roto, dos mitades de una llave rota, una capa desgarrada o un odre que gotea. Siempre que la rotura o desgarro no supere 1 pie en cualquier dimensión, lo reparas sin dejar rastro del daño anterior.",
 				"Este hechizo puede reparar físicamente un objeto o construcción mágica, pero el hechizo no puede devolver la magia a dicho objeto."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -12215,6 +12322,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -12687,6 +12795,9 @@
 				"Conjuras una morada extradimensional al alcance de la mano que dura lo que dura. Eliges dónde se encuentra su única entrada. La entrada brilla débilmente y tiene 5 pies de ancho y 10 pies de alto. Tú y cualquier criatura que designes al lanzar el conjuro podéis entrar en la morada extradimensional mientras el portal permanezca abierto. Puedes abrir o cerrar el portal si estás a menos de 30 pies de él. Mientras está cerrado, el portal es invisible.",
 				"Más allá del portal hay un magnífico vestíbulo con numerosas cámaras más allá. El ambiente es limpio, fresco y cálido.",
 				"Puedes crear la planta que quieras, pero el espacio no puede superar los 50 cubos, cada uno de ellos de 3 metros de lado. El local está amueblado y decorado como tú elijas. Contiene suficiente comida para servir un banquete de nueve platos para hasta 100 personas. Un equipo de 100 sirvientes casi transparentes atiende a todos los que entran. Tú decides la apariencia visual de estos sirvientes y su vestimenta. Son completamente obedientes a tus órdenes. Cada sirviente puede realizar cualquier tarea que un sirviente humano normal pueda realizar, pero no pueden atacar ni realizar ninguna acción que pueda dañar directamente a otra criatura. Así, los sirvientes pueden ir a buscar cosas, limpiar, remendar, doblar ropa, encender fuego, servir comida, servir vino, etc. Los sirvientes pueden ir a cualquier parte de la mansión, pero no pueden salir de ella. Los muebles y otros objetos creados por este hechizo se disipan en humo si se sacan de la mansión. Cuando el hechizo termina, cualquier criatura u objeto que quede dentro del espacio extradimensional es expulsado a los espacios abiertos más cercanos a la entrada."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -12899,6 +13010,9 @@
 			"entries": [
 				"Durante la duración, ocultas un objetivo que toques de la magia de adivinación. El objetivo puede ser una criatura dispuesta o un lugar u objeto que no supere los 3 metros en cualquier dimensión. El objetivo no puede ser apuntado por ninguna magia de adivinación ni percibido a través de sensores mágicos de adivinación."
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"ST"
 			]
@@ -12955,6 +13069,7 @@
 				}
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM"
 			],
 			"areaTags": [
@@ -13076,6 +13191,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"ST"
@@ -13210,6 +13328,7 @@
 				"Cuando la abertura desaparece, cualquier criatura u objeto que siga en el pasaje creado por el hechizo es expulsado de forma segura a un espacio desocupado más cercano a la superficie sobre la que lanzaste el hechizo."
 			],
 			"miscTags": [
+				"OBJ",
 				"SGT"
 			]
 		},
@@ -13539,8 +13658,8 @@
 				"charisma"
 			],
 			"miscTags": [
-				"TP",
-				"PS"
+				"PS",
+				"TP"
 			],
 			"areaTags": [
 				"ST",
@@ -13585,6 +13704,9 @@
 				"Si lanzas este hechizo usando 1 acción, elige un punto dentro del alcance. Todas las plantas normales en un radio de 100 pies centrado en ese punto se vuelven espesas y crecidas. Una criatura que se mueva por el área debe gastar 4 pies de movimiento por cada 1 pie que se mueva.",
 				"Puedes excluir una o más áreas de cualquier tamaño dentro del área del hechizo para que no se vean afectadas.",
 				"Si lanzas este hechizo durante 8 horas, enriqueces la tierra. Todas las plantas en un radio de media milla centrado en un punto dentro del alcance se enriquecen durante 1 año. Las plantas rinden el doble de lo normal cuando se cosechan."
+			],
+			"miscTags": [
+				"DFT"
 			]
 		},
 		{
@@ -13944,6 +14066,9 @@
 					]
 				},
 				"Si lanzas este hechizo varias veces, puedes tener hasta tres de sus efectos no instantáneos activos a la vez, y puedes descartar tal efecto como una acción."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -15063,6 +15188,9 @@
 			"entries": [
 				"Al tocarlo, todas las maldiciones que afectan a una criatura u objeto terminan. Si el objeto es un objeto mágico maldito, su maldición permanece, pero el hechizo rompe la sintonía de su propietario con el objeto para que pueda retirarlo o desecharlo."
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"ST"
 			]
@@ -15199,6 +15327,9 @@
 			],
 			"savingThrow": [
 				"dexterity"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"Y"
@@ -15592,6 +15723,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -15765,6 +15899,9 @@
 			"conditionInflict": [
 				"invisible"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"ST"
 			]
@@ -15878,6 +16015,9 @@
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -16106,6 +16246,9 @@
 			"conditionInflict": [
 				"deafened"
 			],
+			"miscTags": [
+				"OBJ"
+			],
 			"areaTags": [
 				"S"
 			]
@@ -16313,7 +16456,7 @@
 				}
 			],
 			"entries": [
-				"Hasta que el hechizo termine, la lluvia helada y el aguanieve caen en un cilindro de 20 pies de altura con un radio de 40 pies centrado en un punto que elijas dentro del alcance. El área queda muy oscurecida y las llamas expuestas en la zona se apagan.",
+				"Hasta que el hechizo termine, la lluvia helada y el aguanieve caen en un cilindro de 20 pies de altura con un radio de 40 pies centrado en un punto que elijas dentro del alcance. El área es {@quickref Vision and Light|PHB|2||heavily obscured}, y las llamas expuestas en la zona se apagan.",
 				"El suelo de la zona se cubre de hielo resbaladizo, lo que lo convierte en {@quickref difficult terrain||3}. Cuando una criatura entra en el área del hechizo por primera vez en un turno o comienza su turno allí, debe hacer una tirada de salvación de Destreza. Si falla la tirada de salvación, cae {@condition prone}.",
 				"Si una criatura comienza su turno en el área del hechizo y se está concentrando en un hechizo, la criatura debe hacer una tirada de salvación de Constitución exitosa contra su DC de salvación del hechizo o perder la concentración."
 			],
@@ -16323,6 +16466,9 @@
 			"savingThrow": [
 				"dexterity",
 				"constitution"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"Y"
@@ -16819,6 +16965,9 @@
 			],
 			"savingThrow": [
 				"wisdom"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
@@ -16857,12 +17006,15 @@
 				}
 			],
 			"entries": [
-				"Creas una esfera de 20 pies de radio de gas amarillo y nauseabundo centrada en un punto dentro del alcance. La nube se extiende por las esquinas y su área queda muy oscurecida. La nube permanece en el aire mientras dure.",
+				"Creas una esfera de 20 pies de radio de gas amarillo nauseabundo centrada en un punto dentro del alcance. La nube se extiende por las esquinas y su área es de {@quickref Vision and Light|PHB|2||heavily obscured}. La nube permanece en el aire mientras dura.",
 				"Cada criatura que esté completamente dentro de la nube al comienzo de su turno debe hacer una tirada de salvación de Constitución contra el veneno. Si falla la tirada de salvación, la criatura gasta su acción de ese turno dando arcadas y tambaleándose. Las criaturas que no necesitan respirar o son inmunes al veneno tienen automáticamente éxito en esta tirada de salvación.",
 				"Un viento moderado (al menos 10 millas por hora) dispersa la nube después de 4 rondas. Un viento fuerte (al menos 20 millas por hora) la dispersa después de 1 ronda."
 			],
 			"savingThrow": [
 				"constitution"
+			],
+			"miscTags": [
+				"OBS"
 			],
 			"areaTags": [
 				"S"
@@ -16899,6 +17051,9 @@
 			],
 			"entries": [
 				"Tocas un objeto de piedra de tamaño medio o menor o una sección de piedra de no más de 1,5 metros en cualquier dimensión y le das la forma que te convenga. Así, por ejemplo, puedes dar forma a una roca grande para convertirla en un arma, un ídolo o un cofre, o hacer un pequeño pasaje a través de una pared, siempre que ésta tenga menos de 1,5 metros de grosor. También puedes dar forma a una puerta de piedra o a su marco para sellar la puerta. El objeto que creas puede tener hasta dos bisagras y un pestillo, pero no es posible realizar detalles mecánicos más finos."
+			],
+			"miscTags": [
+				"OBJ"
 			]
 		},
 		{
@@ -17013,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Ráfagas y lluvia helada asaltan la zona bajo la nube. La zona se vuelve {@quickref difficult terrain||3} y queda muy oscurecida. Cada criatura que se encuentra allí recibe {@damage 1d6} de daño por frío. Los ataques con armas a distancia en la zona son imposibles. El viento y la lluvia cuentan como una distracción severa a efectos de mantener la concentración en los hechizos. Por último, las ráfagas de viento fuerte (entre 20 y 50 millas por hora) dispersan automáticamente la niebla, las brumas y otros fenómenos similares en la zona, ya sean mundanos o mágicos."
+						"Ráfagas y lluvia helada asaltan la zona bajo la nube. El área se vuelve {@quickref difficult terrain||3} y se {@quickref Vision and Light|PHB|2||heavily obscured}. Cada criatura allí recibe {@damage 1d6} de daño por frío. Los ataques con armas a distancia en la zona son imposibles. El viento y la lluvia cuentan como distracción grave a efectos de mantener la concentración en los hechizos. Por último, las ráfagas de viento fuerte (de 20 a 50 millas por hora) dispersan automáticamente la niebla, las brumas y fenómenos similares en la zona, ya sean mundanos o mágicos."
 					]
 				}
 			],
@@ -17032,6 +17187,8 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
+				"OBS",
 				"SGT"
 			],
 			"areaTags": [
@@ -17358,7 +17515,8 @@
 				"intelligence"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"OBJ"
 			],
 			"areaTags": [
 				"S"
@@ -17479,6 +17637,7 @@
 			],
 			"miscTags": [
 				"FMV",
+				"OBJ",
 				"SGT"
 			],
 			"areaTags": [
@@ -17916,6 +18075,7 @@
 				"strength"
 			],
 			"miscTags": [
+				"AAD",
 				"FMV"
 			]
 		},
@@ -17969,7 +18129,8 @@
 				"constitution"
 			],
 			"miscTags": [
-				"FMV"
+				"FMV",
+				"OBJ"
 			],
 			"areaTags": [
 				"C"
@@ -18196,6 +18357,7 @@
 				"wisdom"
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM",
 				"SGT",
 				"SMN"
@@ -18756,6 +18918,7 @@
 				"dexterity"
 			],
 			"miscTags": [
+				"OBJ",
 				"PRM"
 			],
 			"areaTags": [
@@ -19328,8 +19491,8 @@
 				"Debes designar un santuario lanzando este hechizo dentro de un lugar, como un templo, dedicado o fuertemente vinculado a tu deidad. Si intentas lanzar el hechizo de esta manera en un área que no está dedicada a tu deidad, el hechizo no tiene efecto."
 			],
 			"miscTags": [
-				"TP",
-				"PS"
+				"PS",
+				"TP"
 			]
 		},
 		{
@@ -19377,6 +19540,9 @@
 			],
 			"abilityCheck": [
 				"wisdom"
+			],
+			"miscTags": [
+				"AAD"
 			]
 		},
 		{
