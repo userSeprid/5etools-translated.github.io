@@ -5061,14 +5061,14 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Das Buch der erhabenen Taten hat die folgenden zufälligen Eigenschaften:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+						"Das Buch der erhabenen Taten hat die folgenden zufälligen Eigenschaften:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5138,16 +5138,16 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Das Buch der abscheulichen Finsternis hat die folgenden zufälligen Eigenschaften:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+						"Das Buch der abscheulichen Finsternis hat die folgenden zufälligen Eigenschaften:",
+						{
+							"type": "list",
+							"items": [
+								"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5199,6 +5199,54 @@
 			"attachedSpells": [
 				"dominate monster"
 			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Book of Vile Darkness (Variant)",
+			"source": "KftGV",
+			"page": 207,
+			"_copy": {
+				"name": "Book of Vile Darkness",
+				"source": "DMG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 7
+						},
+						"items": [
+							"The Book of Vile Darkness has the following properties:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Circle of Death",
+										"entries": [
+											"While attuned to the book, you can cast {@spell circle of death} (save DC 20) from it as an action. After you cast the spell, roll a {@dice d6}. On a roll of 1-5, you can't use this property again until the next dawn."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Condition Immunities",
+										"entries": [
+											"While attuned to the book, you can't be {@condition charmed} or {@condition frightened}."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Evil Presence",
+										"entries": [
+											"The book houses an evil spirit that is hostile toward you. When you become attuned to the book, the spirit tries to leave the book and enter your body. If you fail a DC 20 Charisma saving throw, it succeeds, and you become an NPC under the DM's control until the intruding spirit is banished using magic such as the {@spell dispel evil and good} spell. The banished spirit returns to the book."
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
 			"hasFluffImages": true
 		},
 		{
@@ -7695,6 +7743,58 @@
 			],
 			"attachedSpells": [
 				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Constantori's Portrait",
+			"source": "KftGV",
+			"page": 101,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"sentient": true,
+			"weight": 15,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"Dieses Gemälde des berühmten Künstlers Dkesii Kwan zeigt Constantori, eine schöne Hofdame, die für eine horrende Summe als Modell für Dkesii bezahlt wurde. Ob Constantoris tatsächliches Aussehen dem Gemälde entspricht, ist umstritten. Das Porträt ist eines von mehreren Gemälden, die von der verstorbenen Daiyani Grysthorn in Auftrag gegeben wurden, einer Verbrecherfürstin, die häufig magische Gemälde als Geschenke an ihre angesehensten Mitarbeiter verteilte.",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"Constantoris Porträt ist ein empfindungsfähiger, rechtschaffen böser Gegenstand mit einem Intelligenzwert von 14, einem Weisheitswert von 12 und einem Charismawert von 8. Er kann in einem Umkreis von 120 Fuß hören und hat {@sense darkvision} in einem Umkreis von 60 Fuß, aber er kann nichts hinter sich sehen.",
+						"Das Gemälde kann sich in Common, Draconic und Elvish unterhalten, als wäre es eine lebende Person, obwohl Constantoris Mund sich nicht bewegt. Wann immer ein Gespräch im Hörbereich des Porträts stattfindet, nimmt das Gemälde eifrig Geheimnisse, die Namen von Geheimnisträgern, wichtige Ereignisse oder politische Gespräche auf."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"Das Porträt von Constantori ist anspruchsvoll, herablassend und eitel. Es mag es nicht, wenn es zugedeckt oder aus dem Blickfeld genommen wird, und es verurteilt lautstark jeden, der versucht, es aus seinem blattvergoldeten Rahmen zu entfernen."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wealth of Information",
+					"entries": [
+						"Das Gemälde dient in erster Linie der Beobachtung und Erinnerung von Gesprächen. In den letzten Jahrzehnten hat Constantoris Porträt im Stillen zahllose Gespräche beobachtet und verfügt nun über eine nicht zu beziffernde Menge an Wissen - von kriminellen Verschwörungen bis hin zu geheimen Passwörtern. Der Spielleiter entscheidet, was das Gemälde weiß und was es nicht weiß.",
+						"Während du auf das Gemälde eingestimmt bist, kannst du eine Aktion ausführen, um es über eine beliebige Entfernung telepathisch zu kontaktieren, vorausgesetzt, du und das Gemälde befinden sich auf derselben Dimension der Existenz. Das Gemälde kann dich jedoch nicht telepathisch kontaktieren. Um den telepathischen Kontakt mit dem Gemälde aufrechtzuerhalten, musst du dich konzentrieren (als ob du dich auf einen Zauberspruch konzentrieren würdest)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guardian Portrait",
+					"entries": [
+						"Solange du auf das Gemälde eingestimmt bist, kannst du ihm befehlen, seinen Standort gegen eine oder mehrere Kreaturen zu bewachen, die du als Feinde des Gemäldes identifizierst. Das Gemälde führt diese Funktion aus, bis du ihm befiehlst, damit aufzuhören, oder bis deine Einstimmung auf das Gemälde endet.",
+						"Das Gemälde hat 3 Ladungen. Wenn eine Kreatur, die das Gemälde als seinen Feind identifiziert, ihren Zug in einem Raum beginnt, den das Gemälde sehen kann, gibt das Gemälde 1 seiner Ladungen aus, um {@spell magic missile} (3 Raketen) zu wirken, die auf diese Kreatur zielen. Das Gemälde erhält täglich im Morgengrauen alle verbrauchten Ladungen zurück.",
+						"Das Gemälde ist ein kleiner Gegenstand mit AC 12, 20 Trefferpunkten und Immunität gegen Giftschaden. In seinem Blattgoldrahmen wiegt das Gemälde 15 Pfund. Wenn das Gemälde mindestens 1 Trefferpunkt hat und von einem {@spell mending}-Zauber getroffen wird, erhält es {@dice 2d6} Trefferpunkte zurück."
+					]
+				}
+			],
+			"attachedSpells": [
+				"magic missile"
 			],
 			"hasFluffImages": true
 		},
@@ -12408,15 +12508,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Das Auge von Vecna und die {@item Hand of Vecna} haben jeweils die folgenden zufälligen Eigenschaften:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"Das Auge von Vecna und die {@item Hand of Vecna} haben jeweils die folgenden zufälligen Eigenschaften:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -15491,15 +15591,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Die {@item Eye of Vecna} und die Hand von Vecna haben jeweils die folgenden zufälligen Eigenschaften:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"Die {@item Eye of Vecna} und die Hand von Vecna haben jeweils die folgenden zufälligen Eigenschaften:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -30282,6 +30382,259 @@
 			]
 		},
 		{
+			"name": "Shard of Xeluan",
+			"source": "KftGV",
+			"page": 134,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"curse": true,
+			"bonusSpellAttack": "+1",
+			"entries": [
+				"Dieser 1 Fuß lange Obsidiansplitter weist unter seiner kalten Oberfläche Adern aus Silber und Gold auf.",
+				{
+					"type": "entries",
+					"name": "Empowered Magic",
+					"entries": [
+						"Solange du den Splitter in der Hand hältst, kannst du ihn als Zauberfokus verwenden und er gibt dir einen Bonus von +1 auf deine Zauberangriffswürfe."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Strength",
+					"entries": [
+						"Solange du den Splitter bei dir trägst, erhöht sich dein Stärkewert um 4. Der Splitter kann deinen Stärkewert nicht über 22 erhöhen."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"Wenn du dich auf diesen Gegenstand einstimmst, wird sein Fluch auf dich ausgedehnt. Du bleibst verflucht, bis du von einem {@spell remove curse}-Zauber oder ähnlicher Magie getroffen wirst, oder bis der Splitter wieder an Xeluans {@condition petrified}-Herz befestigt wird.",
+						"Der Fluch des Scherbens bringt Unglück über dich. Wenn du bei einem Angriffswurf, einer Fähigkeitsprüfung oder einem Rettungswurf eine 1 würfelst, wirfst du auf die Unglückstabelle für den Splitter, um das Unglück zu bestimmen. Solange dieses Unglück andauert, ereilt dich kein weiteres Scherbenunglück."
+					]
+				},
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"d6",
+						"Misfortune"
+					],
+					"rows": [
+						[
+							"1",
+							"Du hast dich versehentlich mit dem Splitter geschnitten und bist {@condition poisoned} bis zum nächsten Morgengrauen."
+						],
+						[
+							"2",
+							"Du hast eine Vision einer uralten Katastrophe - eine wunderschöne Stadt, die von zerbröckelnden Bergen und ausbrechenden Vulkanen bedroht ist - und bist {@condition stunned} bis zum Ende deines nächsten Zuges."
+						],
+						[
+							"3",
+							"Ein paar Sekunden lang bebt der Boden unter Ihnen. Du und jede Kreatur im Umkreis von 10 Fuß um dich herum müssen einen Rettungswurf von DC 16 Geschicklichkeit bestehen oder werden umgeworfen {@condition prone}."
+						],
+						[
+							"4",
+							"Der Splitter setzt drei glühende Pfeile magischer Kraft frei, die auf eine zufällige Kreatur im Umkreis von 30 Fuß zielen. Wenn es kein solches Ziel gibt, wirst du selbst zum Ziel. Jeder Pfeil trifft automatisch und fügt dem Ziel 3 ({@damage 1d4 + 1}) Kraftschaden zu."
+						],
+						[
+							"5",
+							"Bis zum nächsten Morgengrauen sind dir Bestien mit einem Intelligenzwert von 3 oder weniger feindlich gesinnt."
+						],
+						[
+							"6",
+							"Nichts scheint so zu sein, wie Sie es wollen. Bis zur nächsten Morgendämmerung hast du einen Nachteil bei Fähigkeitsprüfungen."
+						]
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Black Sapphire)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Dieser Edelstein enthält einen instabilen extradimensionalen Spalt. Seine Facetten sind von schillernden Adern durchzogen, die sich von selbst zu bewegen scheinen. Es sind fünf Arten von Splitter-Solitären bekannt, wobei jeder eine andere Art von Edelstein ist, wie in der Tabelle der Splitter-Solitäre gezeigt wird.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Während du den Splitter-Solitär trägst oder in der Hand hältst, kannst du dich als Bonusaktion zusammen mit allem, was du trägst oder bei dir hast, in einen unbesetzten Raum teleportieren, den du im Umkreis von 30 Fuß um dich herum sehen kannst.",
+						"Wenn du diese Eigenschaft einsetzt, kannst du die instabile Kraft des extradimensionalen Risses des Steins anzapfen, um die Teleportationsdistanz um bis zu 30 Fuß zu erhöhen, aber wenn du dich mit Hilfe des Riss-Schrittes mehr als 30 Fuß teleportierst, musst du einen Rettungswurf von DC 16 auf Konstitution bestehen oder {@damage 3d10} Kraftschaden erleiden, unmittelbar nachdem du teleportiert hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Der Stein hat 6 Ladungen und erhält täglich im Morgengrauen {@dice 1d6} verbrauchte Ladungen zurück. Als Aktion kannst du einen der Zauber des Steins wirken, indem du die erforderliche Anzahl an Ladungen verbrauchst, wobei keine materiellen Komponenten benötigt werden (Schutzwurf DC 16). Mit dem schwarzen Saphirsplitter-Solitär können die folgenden Zauber gewirkt werden: {@spell banishment} (3 Aufladungen; das Ziel wird für die Dauer des Zaubers in den extradimensionalen Raum des Steins verbannt), {@spell mirror image} (1 Aufladung), {@spell blight} (3 Aufladungen), {@spell finger of death} (6 Aufladungen)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"blight",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Diamond)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Dieser Edelstein enthält einen instabilen extradimensionalen Spalt. Seine Facetten sind von schillernden Adern durchzogen, die sich von selbst zu bewegen scheinen. Es sind fünf Arten von Splitter-Solitären bekannt, wobei jeder eine andere Art von Edelstein ist, wie in der Tabelle der Splitter-Solitäre gezeigt wird.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Während du den Splitter-Solitär trägst oder in der Hand hältst, kannst du dich als Bonusaktion zusammen mit allem, was du trägst oder bei dir hast, in einen unbesetzten Raum teleportieren, den du im Umkreis von 30 Fuß um dich herum sehen kannst.",
+						"Wenn du diese Eigenschaft einsetzt, kannst du die instabile Kraft des extradimensionalen Risses des Steins anzapfen, um die Teleportationsdistanz um bis zu 30 Fuß zu erhöhen, aber wenn du dich mit Hilfe des Riss-Schrittes mehr als 30 Fuß teleportierst, musst du einen Rettungswurf von DC 16 auf Konstitution bestehen oder {@damage 3d10} Kraftschaden erleiden, unmittelbar nachdem du teleportiert hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Der Stein hat 6 Ladungen und erhält täglich bei Sonnenaufgang {@dice 1d6} verbrauchte Ladungen zurück. Als Aktion kannst du einen der Zauber des Steins wirken, indem du die erforderliche Anzahl an Ladungen verbrauchst, wobei keine materiellen Komponenten benötigt werden (Schutzwurf DC 16). Mit dem Diamantsplitter-Solitär können folgende Zauber gewirkt werden: {@spell banishment} (3 Aufladungen; das Ziel wird für die Dauer des Zaubers in den extradimensionalen Raum des Steins verbannt), {@spell mirror image} (1 Aufladung), {@spell ice storm} (3 Aufladungen), {@spell simulacrum} (6 Aufladungen; das Duplikat entsteht."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"ice storm",
+				"simulacrum"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Jacinth)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Dieser Edelstein enthält einen instabilen extradimensionalen Spalt. Seine Facetten sind von schillernden Adern durchzogen, die sich von selbst zu bewegen scheinen. Es sind fünf Arten von Splitter-Solitären bekannt, wobei jeder eine andere Art von Edelstein ist, wie in der Tabelle der Splitter-Solitäre gezeigt wird.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Während du den Splitter-Solitär trägst oder in der Hand hältst, kannst du dich als Bonusaktion zusammen mit allem, was du trägst oder bei dir hast, in einen unbesetzten Raum teleportieren, den du im Umkreis von 30 Fuß um dich herum sehen kannst.",
+						"Wenn du diese Eigenschaft einsetzt, kannst du die instabile Kraft des extradimensionalen Risses des Steins anzapfen, um die Teleportationsdistanz um bis zu 30 Fuß zu erhöhen, aber wenn du dich mit Hilfe des Riss-Schrittes mehr als 30 Fuß teleportierst, musst du einen Rettungswurf von DC 16 auf Konstitution bestehen oder {@damage 3d10} Kraftschaden erleiden, unmittelbar nachdem du teleportiert hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Der Stein hat 6 Aufladungen und erhält täglich im Morgengrauen {@dice 1d6} verbrauchte Aufladungen zurück. Als Aktion kannst du einen der Zauber des Steins wirken, indem du die erforderliche Anzahl an Ladungen verbrauchst, wobei keine materiellen Komponenten benötigt werden (Schutzwurf DC 16). Mit dem Jacinthsplitter-Solitär können folgende Zauber gewirkt werden: {@spell banishment} (3 Ladungen; das Ziel wird für die Dauer des Zaubers in den extradimensionalen Raum des Steins verbannt), {@spell mirror image} (1 Ladung), {@spell fireball} (2 Ladungen), {@spell fire storm} (6 Ladungen)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fireball",
+				"fire storm"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Rainbow Pearl)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Dieser Edelstein enthält einen instabilen extradimensionalen Spalt. Seine Facetten sind von schillernden Adern durchzogen, die sich von selbst zu bewegen scheinen. Es sind fünf Arten von Splitter-Solitären bekannt, wobei jeder eine andere Art von Edelstein ist, wie in der Tabelle der Splitter-Solitäre gezeigt wird.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Während du den Splitter-Solitär trägst oder in der Hand hältst, kannst du dich als Bonusaktion zusammen mit allem, was du trägst oder bei dir hast, in einen unbesetzten Raum teleportieren, den du im Umkreis von 30 Fuß um dich herum sehen kannst.",
+						"Wenn du diese Eigenschaft einsetzt, kannst du die instabile Kraft des extradimensionalen Risses des Steins anzapfen, um die Teleportationsdistanz um bis zu 30 Fuß zu erhöhen, aber wenn du dich mit Hilfe des Riss-Schrittes mehr als 30 Fuß teleportierst, musst du einen Rettungswurf von DC 16 auf Konstitution bestehen oder {@damage 3d10} Kraftschaden erleiden, unmittelbar nachdem du teleportiert hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Der Stein hat 6 Ladungen und erhält täglich im Morgengrauen {@dice 1d6} verbrauchte Ladungen zurück. Als Aktion kannst du einen der Zauber des Steins wirken, indem du die erforderliche Anzahl an Ladungen verbrauchst, wobei keine materiellen Komponenten benötigt werden (Schutzwurf DC 16). Der Regenbogenperlensplitter-Solitär kann für folgende Zauber verwendet werden: {@spell banishment} (3 Aufladungen; das Ziel wird für die Dauer des Zaubers in den extradimensionalen Raum des Steins verbannt), {@spell mirror image} (1 Aufladung), {@spell prismatic spray} (6 Aufladungen), {@spell water breathing} (2 Aufladungen)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"prismatic spray",
+				"water breathing"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Ruby)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Dieser Edelstein enthält einen instabilen extradimensionalen Spalt. Seine Facetten sind von schillernden Adern durchzogen, die sich von selbst zu bewegen scheinen. Es sind fünf Arten von Splitter-Solitären bekannt, wobei jeder eine andere Art von Edelstein ist, wie in der Tabelle der Splitter-Solitäre gezeigt wird.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Während du den Splitter-Solitär trägst oder in der Hand hältst, kannst du dich als Bonusaktion zusammen mit allem, was du trägst oder bei dir hast, in einen unbesetzten Raum teleportieren, den du im Umkreis von 30 Fuß um dich herum sehen kannst.",
+						"Wenn du diese Eigenschaft einsetzt, kannst du die instabile Kraft des extradimensionalen Risses des Steins anzapfen, um die Teleportationsdistanz um bis zu 30 Fuß zu erhöhen, aber wenn du dich mit Hilfe des Riss-Schrittes mehr als 30 Fuß teleportierst, musst du einen Rettungswurf von DC 16 auf Konstitution bestehen oder {@damage 3d10} Kraftschaden erleiden, unmittelbar nachdem du teleportiert hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Der Stein hat 6 Ladungen und erhält täglich bei Sonnenaufgang {@dice 1d6} verbrauchte Ladungen zurück. Als Aktion kannst du einen der Zauber des Steins wirken, indem du die erforderliche Anzahl an Ladungen verbrauchst, wobei keine materiellen Komponenten benötigt werden (Schutzwurf DC 16). Der Rubinsplitter-Solitär kann für folgende Zauber verwendet werden: {@spell banishment} (3 Aufladungen; das Ziel wird für die Dauer des Zaubers in den extradimensionalen Raum des Steins verbannt), {@spell mirror image} (1 Aufladung), {@spell fly} (2 Aufladungen), {@spell teleport} (6 Aufladungen)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fly",
+				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Shatterspike",
 			"source": "TftYP",
 			"page": 229,
@@ -39106,19 +39459,19 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Der Zauberstab von Orcus hat die folgenden zufälligen Eigenschaften:"
+						"Der Zauberstab von Orcus hat die folgenden zufälligen Eigenschaften:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+							]
+						},
+						"Die schädlichen Eigenschaften des Zauberstabs von Orcus werden unterdrückt, solange der Zauberstab auf {@creature Orcus|MTF} eingestimmt ist."
 					]
 				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
-					]
-				},
-				"Die schädlichen Eigenschaften des Zauberstabs von Orcus werden unterdrückt, solange der Zauberstab auf {@creature Orcus|MTF} eingestimmt ist.",
 				{
 					"name": "Protection",
 					"type": "entries",
@@ -42586,6 +42939,84 @@
 			"lootTables": [
 				"Magic Item Table C"
 			]
+		},
+		{
+			"name": "Shard Solitaire",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Dieser Edelstein enthält einen instabilen extradimensionalen Spalt. Seine Facetten sind von schillernden Adern durchzogen, die sich von selbst zu bewegen scheinen. Es sind fünf Arten von Splitter-Solitären bekannt, wobei jeder eine andere Art von Edelstein ist, wie in der Tabelle der Splitter-Solitäre gezeigt wird.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Während du den Splitter-Solitär trägst oder in der Hand hältst, kannst du dich als Bonusaktion zusammen mit allem, was du trägst oder bei dir hast, in einen unbesetzten Raum teleportieren, den du im Umkreis von 30 Fuß um dich herum sehen kannst.",
+						"Wenn du diese Eigenschaft einsetzt, kannst du die instabile Kraft des extradimensionalen Risses des Steins anzapfen, um die Teleportationsdistanz um bis zu 30 Fuß zu erhöhen, aber wenn du dich mit Hilfe des Riss-Schrittes mehr als 30 Fuß teleportierst, musst du einen Rettungswurf von DC 16 auf Konstitution bestehen oder {@damage 3d10} Kraftschaden erleiden, unmittelbar nachdem du teleportiert hast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Der Stein hat 6 Ladungen und erhält täglich im Morgengrauen {@dice 1d6} verbrauchte Ladungen zurück. In der Tabelle der Scherbensolitär-Typen sind die Zauber aufgelistet, die allen Scherbensolitären gemeinsam sind, sowie die Zauber, die für jede Art von Stein spezifisch sind. Als Aktion kannst du einen der Zaubersprüche des Steins wirken, indem du die erforderliche Anzahl an Aufladungen verbrauchst, wobei keine materiellen Komponenten benötigt werden (Schutzwurf DC 16).",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"colLabels": [
+								"Shard Solitaire",
+								"Spells"
+							],
+							"rows": [
+								[
+									"All",
+									"{@spell Banishment} (3 Aufladungen; das Ziel wird für die Dauer des Zaubers in den extradimensionalen Raum des Steins verbannt), {@spell mirror image} (1 Aufladung)"
+								],
+								[
+									"Schwarzer Saphir",
+									"{@spell Blight} (3 Gebühren), {@spell finger of death} (6 Gebühren)"
+								],
+								[
+									"Diamant",
+									"{@spell Ice storm} (3 Aufladungen), {@spell simulacrum} (6 Aufladungen; das durch den Zauber erzeugte Duplikat hat die gleiche Anzahl von Trefferpunkten wie die Kreatur, die es imitiert)"
+								],
+								[
+									"Jacinth",
+									"{@spell Fireball} (2 Gebühren), {@spell fire storm} (6 Gebühren)"
+								],
+								[
+									"Regenbogen Perle",
+									"{@spell Prismatic spray} (6 Gebühren), {@spell water breathing} (2 Gebühren)"
+								],
+								[
+									"Ruby",
+									"{@spell Fly} (2 Gebühren), {@spell teleport} (6 Gebühren)"
+								]
+							]
+						}
+					]
+				}
+			],
+			"items": [
+				"Shard Solitaire (Black Sapphire)|KftGV",
+				"Shard Solitaire (Diamond)|KftGV",
+				"Shard Solitaire (Jacinth)|KftGV",
+				"Shard Solitaire (Rainbow Pearl)|KftGV",
+				"Shard Solitaire (Ruby)|KftGV"
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Silken Spite",

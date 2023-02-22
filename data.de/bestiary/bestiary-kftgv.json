@@ -1,0 +1,2447 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"MM": "KftGV"
+			}
+		}
+	},
+	"monster": [
+		{
+			"name": "Animatronic Allosaurus",
+			"source": "KftGV",
+			"page": 22,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 51,
+				"formula": "6d10 + 18"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 17,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pounce",
+					"entries": [
+						"Wenn sich der Allosaurus mindestens 30 Fuß geradeaus auf eine Kreatur zubewegt und sie dann im selben Zug mit einem Klauenangriff trifft, muss das Ziel einen {@dc 13} Rettungswurf auf Stärke bestehen oder wird {@condition prone} niedergeschlagen. Wenn das Ziel {@condition prone} ist, kann der Allosaurus eine Biss-Attacke gegen es als Bonusaktion durchführen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} zu treffen, Reichweite 5 ft., ein Ziel. {@h}15 ({@damage 2d10 + 4}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} zu treffen, Reichweite 5 ft., ein Ziel. {@h}8 ({@damage 1d8 + 4}) Hiebschaden."
+					]
+				}
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Animated Armor",
+			"source": "KftGV",
+			"page": 157,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 13,
+			"int": 1,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"Die Rüstung wird außer Gefecht gesetzt, solange sie sich im Bereich eines {@spell antimagic field} befindet. Wenn sie von {@spell dispel magic} getroffen wird, muss die Rüstung einen Rettungswurf in Konstitution gegen den Schutz-DC des Zaubernden bestehen oder sie wird 1 Minute lang bewusstlos."
+					]
+				},
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Wenn die Rüstung auf 0 Trefferpunkte sinkt, wird sie zu einem Häufchen Asche, und jegliche Ausrüstung, die sie trug oder mit sich führte, fällt auf den Boden."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"Solange die Rüstung unbeweglich bleibt, ist sie von einer normalen Rüstung nicht zu unterscheiden."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Die Rüstung führt zwei Nahkampfangriffe aus."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 4} bis zum Treffer, Reichweite 5 Fuß, ein Ziel. {@h}5 ({@damage 1d6 + 2}) Schaden durch Wucht."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Flying Sword",
+			"source": "KftGV",
+			"page": 157,
+			"_isCopy": true,
+			"size": [
+				"S"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "5d6"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 50
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 11,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"save": {
+				"dex": "+4"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 7,
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"Das Schwert wird außer Gefecht gesetzt, solange es sich im Bereich eines {@spell antimagic field} befindet. Wenn es von {@spell dispel magic} getroffen wird, muss das Schwert einen Rettungswurf in Konstitution gegen den Zauberschutz-DC des Zaubernden bestehen oder 1 Minute lang bewusstlos werden."
+					]
+				},
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Wenn das Schwert auf 0 Trefferpunkte sinkt, wird es zu einem Häufchen Asche, und jegliche Ausrüstung, die es trug oder mit sich führte, fällt auf den Boden."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"Das Schwert bleibt zwar unbeweglich und fliegt nicht, aber es ist nicht von einem normalen Schwert zu unterscheiden."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 3} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d8 + 1}) Hiebschaden."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Knight",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"con": "+4",
+				"wis": "+2"
+			},
+			"passive": 10,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Any one language (usually Common)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Wenn der Ritter auf 0 Trefferpunkte sinkt, wird er zu einem Häufchen Asche, und jegliche Ausrüstung, die er trug oder mit sich führte, fällt auf den Boden."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"Der Ritter hat einen Vorteil bei Rettungswürfen gegen Wesen {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Ritter führt zwei Nahkampfangriffe aus."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 5} Treffer, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 2d6 + 3}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} bis zum Treffer, Reichweite 100/400 Fuß, ein Ziel. {@h}5 ({@damage 1d10}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"1 Minute lang kann der Ritter einen besonderen Befehl oder eine Warnung aussprechen, wenn eine nicht feindliche Kreatur, die er im Umkreis von 30 Fuß sehen kann, einen Angriffswurf oder einen Rettungswurf macht. Die Kreatur kann einen {@dice d4} zu ihrem Wurf hinzufügen, sofern sie den Ritter hören und verstehen kann. Eine Kreatur kann immer nur von einem Anführerwürfel profitieren. Dieser Effekt endet, wenn der Ritter {@condition incapacitated} ist."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Der Ritter addiert 2 zu seinem AC gegen einen Nahkampfangriff, der ihn treffen würde. Dazu muss der Ritter den Angreifer sehen und eine Nahkampfwaffe führen."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Shambling Mound",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d10 + 48"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"stealth": "+2"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"lightning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Wenn der Wackelhügel auf 0 Trefferpunkte sinkt, wird er zu einem Aschehaufen, und jegliche Ausrüstung, die er trug oder mit sich führte, fällt auf den Boden."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Immer wenn der Wackelhügel Blitzschaden erleidet, erleidet er keinen Schaden und erhält eine Anzahl von Trefferpunkten zurück, die dem erlittenen Blitzschaden entspricht."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Wackelhügel führt zwei Slam-Attacken durch. Wenn beide Angriffe ein Ziel von mittlerer Größe oder kleiner treffen, ist das Ziel {@condition grappled} (Flucht {@dc 14}) und der Shambling Mound wendet seine Verschlingung auf es an."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 Fuß, ein Ziel. {@h}13 ({@damage 2d8 + 4}) Schaden durch Wucht."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"Der watschelnde Hügel verschlingt eine mittlere oder kleinere Kreatur {@condition grappled}, die sich in seiner Nähe befindet. Das verschlungene Ziel ist {@condition blinded}, {@condition restrained} und nicht in der Lage zu atmen und muss zu Beginn jeder Runde des Hügels einen {@dc 14} Rettungswurf auf Konstitution bestehen oder 13 ({@damage 2d8 + 4}) Wuchtschaden erleiden. Wenn sich der Hügel bewegt, bewegt sich das verschlungene Ziel mit ihm. Der Hügel kann immer nur eine Kreatur gleichzeitig verschlingen."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Ashen Veteran",
+			"source": "KftGV",
+			"page": 154,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|PHB|splint}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Any one language (usually Common)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Wenn der Veteran auf 0 Trefferpunkte sinkt, wird er zu einem Häufchen Asche, und jegliche Ausrüstung, die er trug oder mit sich führte, fällt auf den Boden."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Veteran führt zwei Angriffe mit dem Langschwert aus. Wenn er ein Kurzschwert gezogen hat, kann er auch eine Kurzschwert-Attacke ausführen."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 Fuß, ein Ziel. {@h}7 ({@damage 1d8 + 3}) Hiebschaden, oder 8 ({@damage 1d10 + 3}) Hiebschaden, wenn mit zwei Händen eingesetzt."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} zu treffen, Reichweite 5 ft, ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} auf Treffer, Reichweite 100/400 Fuß, ein Ziel. {@h}6 ({@damage 1d10 + 1}) Stich-Schaden."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Warhorse",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 11,
+			"immune": [
+				"fire"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Wenn das Pferd auf 0 Trefferpunkte sinkt, wird es zu einem Häufchen Asche, und jegliche Ausrüstung, die es trug oder mit sich führte, fällt auf den Boden."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"Bewegt sich das Pferd mindestens 20 Fuß geradeaus auf eine Kreatur zu und trifft sie dann im selben Zug mit einem Hufangriff, muss das Ziel einen {@dc 14} Rettungswurf auf Stärke bestehen oder wird umgeworfen {@condition prone}. Wenn das Ziel {@condition prone} ist, kann das Pferd als Bonusaktion eine weitere Attacke mit seinen Hufen gegen es ausführen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} zu treffen, Reichweite 5 ft., ein Ziel. {@h}11 ({@damage 2d6 + 4}) Schaden durch Wucht."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Charmayne Daymore",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 159,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"wizard"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 123,
+				"formula": "19d8 + 38"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 15,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"deception": "+7",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Ignan"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Charmayne wirkt einen der folgenden Zauber, wobei er Intelligenz als Zauberfähigkeit einsetzt (Zauberschutz {@dc 17}):"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell mage hand}"
+					],
+					"daily": {
+						"3": [
+							"{@spell mage armor}"
+						],
+						"1e": [
+							"{@spell dispel magic}",
+							"{@spell invisibility}",
+							"{@spell polymorph}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Wenn Charmayne ein Rettungswurf misslingt, kann sie stattdessen einen Erfolg wählen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Charmayne führt drei Aschensturm-Angriffe aus. Sie kann einen dieser Angriffe durch einen Einsatz von Zauberei ersetzen."
+					]
+				},
+				{
+					"name": "Ashen Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 9} zu treffen, Reichweite 5 ft. oder 60 ft., ein Ziel. {@h}17 ({@damage 5d6}) Feuerschaden."
+					]
+				},
+				{
+					"name": "Cinder Spite {@recharge 5}",
+					"entries": [
+						"Charmayne erzeugt eine magische Feuerexplosion, die sich auf einen Punkt konzentriert, den sie im Umkreis von 120 Fuß von sich selbst sehen kann. Jede Kreatur in einem Umkreis von 20 Fuß um diesen Punkt muss einen {@dc 17} Rettungswurf machen und erleidet bei einem misslungenen Rettungswurf 35 ({@damage 10d6}) Feuerschaden, bei einem erfolgreichen Rettungswurf die Hälfte des Schadens. Ein Humanoid, der durch diesen Schaden auf 0 Trefferpunkte reduziert wird, stirbt und wird in eine winzige Holzkohlefigur verwandelt."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Charmayne can take up to three reactions per round but only one per turn",
+					"entries": []
+				},
+				{
+					"name": "Elemental Rebuke",
+					"entries": [
+						"Wenn er von einem Angriff getroffen wird, spricht Charmayne ein Wort in Ignan und fügt dem Angreifer 10 ({@damage 3d6}) Feuerschaden zu. Charmayne teleportiert sich dann zusammen mit der Ausrüstung, die sie trägt, bis zu 30 Fuß weit in einen unbesetzten Raum, den sie sehen kann, und hinterlässt eine harmlose Asche- und Glutwolke in dem Raum, den sie gerade verlassen hat."
+					]
+				},
+				{
+					"name": "Fiery Counterspell",
+					"entries": [
+						"Charmayne unterbricht eine Kreatur, die sie im Umkreis von 60 Fuß um sich herum sehen kann und die einen Zauber wirkt. Wenn der Zauber auf Stufe 4 oder niedriger ist, schlägt er fehl und hat keine Wirkung. Wenn es sich um einen Zauber der Stufe 5 oder höher handelt, führt Charmayne eine Intelligenzprüfung durch ({@dc 10} + Stufe des Zaubers). Bei einem Erfolg schlägt der Zauber fehl und hat keine Wirkung. Unabhängig von der Stufe des Zaubers erleidet der Zaubernde 10 ({@damage 3d6}) Feuerschaden, wenn der Zauber fehlschlägt."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"IG"
+			],
+			"damageTags": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Clockwork Defender",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 18,
+			"int": 3,
+			"wis": 14,
+			"cha": 1,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+4"
+			},
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Der Verteidiger braucht weder Luft, Essen, Trinken noch Schlaf."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Electrified Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} zu treffen, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d8 + 3}) Stichschaden plus 7 ({@damage 2d6}) Blitzschaden. Handelt es sich bei dem Ziel um eine Kreatur, muss sie einen {@dc 13} Rettungswurf auf Stärke bestehen oder {@condition grappled} (Flucht {@dc 13}) sein. Eine Kreatur {@condition grappled} in der Nähe des Verteidigers erleidet den Schaden zu Beginn jeder Runde des Verteidigers erneut. Der Verteidiger kann jeweils nur eine Kreatur {@condition grappled} auf diese Weise festhalten, und der Verteidiger kann während des Festhaltens keine Attacken mit Elektrisiertem Biss ausführen."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Light Beam",
+					"entries": [
+						"Der Verteidiger strahlt ein helles Licht aus seinen Augen in einem Kegel von 60 Fuß aus, oder er schaltet dieses Licht ab."
+					]
+				}
+			],
+			"traitTags": [
+				"Unusual Nature"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Clockwork Observer",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d4 + 2"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 16,
+			"con": 13,
+			"int": 3,
+			"wis": 15,
+			"cha": 1,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"Der Beobachter provoziert keine Gelegenheitsangriffe, wenn er aus der Reichweite eines Feindes fliegt."
+					]
+				},
+				{
+					"name": "Telepathic Bond",
+					"entries": [
+						"Solange sich der Beobachter in einem Umkreis von 1 Meile von seinem Schöpfer befindet, kann er seinem Schöpfer auf magische Weise mitteilen, was er sieht, und die beiden können telepathisch kommunizieren."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Der Beobachter braucht weder Luft, Essen, Trinken noch Schlaf."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shriek",
+					"entries": [
+						"Der Beobachter stößt einen mechanischen Schrei aus, bis er seine nächste Runde beginnt oder bis er auf 0 Trefferpunkte fällt. Dieser Schrei kann in einem Umkreis von 300 Fuß gehört werden."
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Eldritch Horror Hatchling",
+			"source": "KftGV",
+			"page": 24,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 11,
+					"condition": "while prone"
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d10 + 6"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 10
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 13,
+			"int": 1,
+			"wis": 13,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 11,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} zu treffen, Reichweite 5 ft., ein Ziel. {@h}10 ({@damage 2d6 + 3}) Hiebschaden plus 3 ({@damage 1d6}) Giftschaden. Wenn das Ziel eine große oder kleinere Kreatur ist, ist es {@condition grappled} (Flucht {@dc 13}). Bis zum Ende des Haltegriffs kann der Eldritch-Horror-Schlüpfer nur die {@condition grappled} Kreatur beißen und hat dabei Vorteil bei Angriffswürfen."
+					]
+				},
+				{
+					"name": "Acid Spray {@recharge}",
+					"entries": [
+						"Das Eldritch-Horror-Schlüpfling spuckt Säure in einer Linie, die 30 Fuß lang und 5 Fuß breit ist, vorausgesetzt, es befindet sich keine Kreatur darin {@condition grappled}. Jede Kreatur in dieser Linie muss einen {@dc 13} Rettungswurf in Geschicklichkeit machen und erleidet bei einem misslungenen Rettungswurf 10 ({@damage 3d6}) Säureschaden, bei einem erfolgreichen Rettungswurf halb so viel Schaden."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Eliphas Adulare",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 188,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "in humanoid form"
+				},
+				{
+					"ac": 11,
+					"condition": "in bear and hybrid form"
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 17,
+			"int": 18,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"perception": "+7"
+			},
+			"passive": 17,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common (can't speak in bear form)"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Humanoid or Hybrid Form Only)",
+					"headerEntries": [
+						"Eliphas wirkt einen der folgenden Zauber, wobei er Intelligenz als Zauberfähigkeit verwendet (Schutz {@dc 15}):"
+					],
+					"will": [
+						"{@spell light}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell detect magic}",
+							"{@spell fog cloud}"
+						],
+						"1e": [
+							"{@spell phantasmal force}",
+							"{@spell shatter}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Eliphas kann seine Aktion nutzen, um sich in einen großen Bären-Humanoiden-Hybriden oder in einen großen Bären zu verwandeln, oder zurück in seine wahre Form, die humanoid ist. Seine statistischen Werte, mit Ausnahme von Größe und AC, sind in jeder Form gleich. Jegliche Ausrüstung, die er trägt oder mit sich führt, wird nicht transformiert. Wenn er stirbt, kehrt er in seine wahre Form zurück."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Eliphas hat einen Vorteil bei Weisheitsprüfungen (Wahrnehmung), die auf Geruch beruhen."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"In Bärengestalt führt Eliphas zwei Klauenangriffe aus. In humanoider Gestalt führt er zwei Angriffe mit der Großaxt aus. In der Hybridform kann er wie ein Bär oder ein Humanoid angreifen."
+					]
+				},
+				{
+					"name": "Bite (Bear or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} zu treffen, Reichweite 5 ft., ein Ziel. {@h}15 ({@damage 2d10 + 4}) Stich-Schaden. Ist das Ziel ein Humanoid, muss es einen {@dc 14} Rettungswurf auf Konstitution bestehen oder mit Werbär-Lykanthropie verflucht werden."
+					]
+				},
+				{
+					"name": "Claw (Bear or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 Fuß, ein Ziel. {@h}13 ({@damage 2d8 + 4}) Hiebschaden."
+					]
+				},
+				{
+					"name": "Greataxe (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} bis zum Treffer, Reichweite 5 Fuß, ein Ziel. {@h}10 ({@damage 1d12 + 4}) Hiebschaden."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Fragment of Krokulmar",
+			"source": "KftGV",
+			"page": 53,
+			"size": [
+				"T"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d4 + 3"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 12,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"persuasion": "+7",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"Deep Speech",
+				"telepathy 60 ft."
+			],
+			"cr": "0",
+			"action": [
+				{
+					"name": "Psionic Revitalization",
+					"entries": [
+						"Das Fragment berührt eine Kreatur, die im Bereich des Fragments 0 Trefferpunkte hat. Das Ziel erhält 10 Trefferpunkte zurück, und jede Kreatur im Umkreis von 10 Fuß um die geheilte Kreatur erleidet 3 ({@damage 1d6}) psychischen Schaden."
+					]
+				},
+				{
+					"name": "Squirming Dodge",
+					"entries": [
+						"Bis zum Beginn der nächsten Runde des Fragments hat jeder Angriffswurf gegen das Fragment einen Nachteil, und das Fragment macht Rettungswürfe mit Vorteil."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Juvenile Eldritch Horror",
+			"source": "KftGV",
+			"page": 24,
+			"_isCopy": true,
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 168,
+				"formula": "16d12 + 64"
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 40
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 18,
+			"int": 18,
+			"wis": 14,
+			"cha": 12,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"lightning"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Der Eldritch-Horror wirkt einen der folgenden Zauber, die keine Komponenten benötigen und Intelligenz als Zauberfähigkeit verwenden (Schutz {@dc 14}):"
+					],
+					"daily": {
+						"1": [
+							"{@spell project image}"
+						],
+						"2e": [
+							"{@spell blindness/deafness}",
+							"{@spell blur}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Der Eldritch-Horror führt zwei Angriffe aus: einen mit seinem Biss und einen zum Zusammenschnüren."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} Treffer, Reichweite 10 ft., ein Ziel. {@h}22 ({@damage 3d10 + 6}) Stich-Schaden."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 10} auf Treffer, Reichweite 5 ft., eine große oder kleinere Kreatur. {@h}17 ({@damage 2d10 + 6}) Schaden durch Wucht plus 17 ({@damage 2d10 + 6}) Schaden durch Hieb. Das Ziel ist {@condition grappled} (entkomme {@dc 16}), wenn der Eldritch-Horror nicht bereits eine Kreatur einschnürt, und das Ziel ist {@condition restrained}, bis dieser Griff endet."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"Der eldritchische Schrecken stößt eine Blitzlinie aus, die 20 Fuß lang und 5 Fuß breit ist. Jede Kreatur in dieser Linie muss einen {@dc 16} Rettungswurf in Geschicklichkeit machen und erleidet bei einem misslungenen Rettungswurf 66 ({@damage 12d10}) Blitzschaden, bei einem erfolgreichen Rettungswurf halb so viel Schaden."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"Der Eldritch-Horror führt eine Biss-Attacke gegen ein Ziel mittlerer Größe oder kleiner durch, das er gerade packt. Wenn der Angriff trifft, wird das Ziel ebenfalls verschluckt und der Griff endet. Während es verschluckt ist, ist das Ziel {@condition blinded} und {@condition restrained}, es hat totale Deckung vor Angriffen und anderen Effekten außerhalb des Eldritchhorrors und erleidet zu Beginn jeder Runde des Eldritchhorrors 21 ({@damage 6d6}) Säureschaden. Ein Schrecken kann jeweils nur eine Kreatur verschlingen lassen.",
+						"Wenn der eldritchische Schrecken in einem einzigen Zug 30 oder mehr Schaden durch die verschluckte Kreatur erleidet, muss der Schrecken am Ende dieses Zuges einen {@dc 14} Rettungswurf auf die Konstitution bestehen oder die Kreatur wieder auswürgen, die dann {@condition prone} in einen Raum innerhalb von 10 Fuß um den Schrecken fällt. Wenn der eldritchische Schrecken stirbt, wird eine verschluckte Kreatur nicht mehr {@condition restrained} von ihm angegriffen und kann dem Leichnam entkommen, indem sie {@condition prone} 15 Fuß Bewegung aufwendet."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened"
+			]
+		},
+		{
+			"name": "King Jhaeros",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 133,
+				"formula": "14d10 + 56"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common",
+				"Draconic",
+				"Elvish",
+				"and Ignan but can't speak"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Wenn Jhaeros auf 0 Trefferpunkte fällt, explodiert er in einer harmlosen Aschewolke und lässt nichts anderes zurück."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Immer wenn Jhaeros seinen Zug mit 60 Trefferpunkten oder weniger beginnt, wirfst du einen {@dice d6}. Bei einer 6 wird Jhaeros berserkerhaft. In jedem seiner Züge, während er in Berserkerlaune ist, greift Jhaeros die nächste Kreatur an, die er sehen kann. Wenn keine Kreatur in der Nähe ist, zu der er sich bewegen und angreifen kann, greift Jhaeros ein Objekt an, vorzugsweise ein Objekt, das kleiner ist als er selbst. Sobald Jhaeros in den Berserker verfällt, bleibt er so lange in diesem Zustand, bis er zerstört wird oder alle seine Trefferpunkte wiedererlangt."
+					]
+				},
+				{
+					"name": "Fire Absorption",
+					"entries": [
+						"Immer wenn Jhaeros Feuerschaden erleidet, erleidet er keinen Schaden und erhält stattdessen eine Anzahl von Trefferpunkten zurück, die dem erlittenen Feuerschaden entspricht."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Jhaeros ist immun gegen jeden Zauber oder Effekt, der seine Form verändern würde."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Jhaeros ist bei Rettungswürfen gegen Zauber und andere magische Effekte im Vorteil."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Die Waffenangriffe von Jhaeros sind magisch."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Jhaeros führt zwei Schläge aus."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} zu treffen, Reichweite 5 ft, ein Ziel. {@h}16 ({@damage 2d10 + 5}) Schaden durch Wucht. Handelt es sich bei dem Ziel um eine Kreatur, muss sie einen {@dc 15} Rettungswurf auf Konstitution bestehen oder ihr Trefferpunktemaximum wird um einen Betrag in Höhe des erlittenen Schadens reduziert. Das Ziel stirbt, wenn dieser Angriff sein Trefferpunktemaximum auf 0 reduziert. Die Reduzierung hält an, bis sie durch den {@spell greater restoration} Zauber oder andere Magie aufgehoben wird."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Bis zum Ende seines nächsten Zuges erhält Jhaeros auf magische Weise einen Bonus von +2 auf seine AC, hat einen Vorteil bei Rettungswürfen für Geschicklichkeit und kann seinen Schlagangriff als Bonusaktion einsetzen."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR",
+				"E",
+				"IG"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Markos Delphi",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 53,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"warlock"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 12,
+			"int": 17,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"Celestial",
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Markos wirkt einen der folgenden Zauber, für die keine materiellen Komponenten benötigt werden und die Charisma als Zauberfähigkeit verwenden (Zauberschutz {@dc 13}):"
+					],
+					"daily": {
+						"1e": [
+							"{@spell arms of Hadar}",
+							"{@spell charm person}",
+							"{@spell mage armor}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Markos führt zwei Angriffe mit der Zeremonienklinge, zwei Angriffe mit der Psychokugel oder einen von beiden aus."
+					]
+				},
+				{
+					"name": "Ceremonial Blade",
+					"entries": [
+						"{@atk mw} {@hit 4} zu treffen, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stichschaden plus 3 ({@damage 1d6}) Giftschaden. Handelt es sich bei dem Ziel um eine Kreatur, muss sie einen {@dc 13} Rettungswurf auf die Konstitution bestehen oder wird 1 Minute lang {@condition poisoned}. Die Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+					]
+				},
+				{
+					"name": "Psychic Orb",
+					"entries": [
+						"{@atk rs} {@hit 5} auf Treffer, Reichweite 60 Fuß, eine Kreatur. {@h}10 ({@damage 2d6 + 3}) psychischer Schaden."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Swap Space",
+					"entries": [
+						"Markos zielt auf eine mittlere oder kleine Kreatur, die er in einem Umkreis von 30 Fuß von sich selbst sehen kann. Das Ziel muss einen {@dc 13} Rettungswurf auf die Konstitution bestehen, oder es teleportiert sich mitsamt der Ausrüstung, die es trägt oder mit sich führt, und tauscht die Position mit Markos."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"DS"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Prisoner 13",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 68,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf",
+					"monk"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"mountain tattoo"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 18,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+5",
+				"deception": "+9",
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"poison"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish",
+				"Thieves' cant",
+				"Undercommon"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"In einem Gebiet mit Antimagie funktionieren die Tätowierungen und Reaktionen der Gefangenen 13 nicht, und ihre Statistiken werden wie folgt modifiziert: Ihre AC werden zu 13, sie verliert ihre Immunität gegen psychischen Schaden und den Zustand \"Verzaubert\", und ihr Tätowierter Schlag wird zu einem Nahkampfangriff, der bei einem Treffer 7 ({@damage 1d8 + 3}) Wuchtschaden verursacht."
+					]
+				},
+				{
+					"name": "Mindlink Tattoos",
+					"entries": [
+						"Der Gefangene 13 hat telepathische Verbindungen zu Dutzenden von Agenten, die im ganzen Land tätig sind. Diese Verbindungen ermöglichen es dem Gefangenen 13, mit jedem dieser Agenten telepathisch zu kommunizieren, während sie sich beide auf derselben Dimension befinden."
+					]
+				},
+				{
+					"name": "Mountain Tattoo",
+					"entries": [
+						"Der AC der Gefangenen 13 beinhaltet ihren Konstitutionsmodifikator."
+					]
+				},
+				{
+					"name": "Shroud Tattoo",
+					"entries": [
+						"Gefangene 13 kann nicht mit Wahrsagezaubern oder anderen Funktionen anvisiert werden, die ihre Gedanken lesen würden, und sie kann nicht durch magische Hellseher wahrgenommen werden. Sie kann nicht telepathisch kontaktiert werden, es sei denn, sie erlaubt einen solchen Kontakt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gefangener 13 führt zwei Angriffe mit tätowierten Schlägen aus."
+					]
+				},
+				{
+					"name": "Tattooed Strike",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} auf Treffer, Reichweite 5 ft. oder 60 ft., ein Ziel. {@h}12 ({@damage 2d8 + 3}) Kraftschaden."
+					]
+				},
+				{
+					"name": "Firestorm Tattoo {@recharge 5}",
+					"entries": [
+						"Gefangene 13 entfesselt auf magische Weise eine Flamme aus der Tätowierung auf ihrem Rücken, die eine Kugel mit einem Radius von 20 Fuß um sie herum ausfüllt. Jede andere Kreatur in diesem Bereich muss einen {@dc 15} Rettungswurf auf Geschicklichkeit machen. Bei einem misslungenen Schutzwurf erleidet die Kreatur 13 ({@damage 3d8}) Feuerschaden und wird {@condition prone} umgeworfen. Bei einem erfolgreichen Schutzwurf erleidet sie halb so viel Schaden und wird nicht umgeworfen {@condition prone}."
+					]
+				},
+				{
+					"name": "River Tattoo",
+					"entries": [
+						"Gefangene 13 beendet auf magische Weise alle Effekte, die die {@condition grappled} oder {@condition restrained} Zustände bei ihr verursachen. Wenn sie mit nichtmagischen Fesseln gefesselt ist, schlüpft sie aus ihnen heraus."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Readiness",
+					"entries": [
+						"Wenn eine Kreatur, die Gefangene 13 im Umkreis von 60 Fuß um sich herum sehen kann, ihren Zug beendet, führt Gefangene 13 einen Angriff mit Tätowiertem Schlag aus oder setzt Fluss-Tätowierung ein. Sie kann sich dann bis zu ihrer Geschwindigkeit bewegen, ohne Gelegenheitsangriffe zu provozieren."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E",
+				"TC",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sythian Skalderang",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 117,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"bard",
+					"tiefling"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Graz'zt's gift"
+					]
+				}
+			],
+			"hp": {
+				"average": 99,
+				"formula": "18d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 13,
+			"int": 14,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"deception": "+6",
+				"performance": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Sythian wirkt einen der folgenden Zauber, wobei er Charisma als Zauberfähigkeit einsetzt (Zauberschutz {@dc 14}):"
+					],
+					"will": [
+						"{@spell mage hand}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell charm person}",
+							"{@spell faerie fire}",
+							"{@spell unseen servant}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fear of Frogs and Toads",
+					"entries": [
+						"Sythian ist {@condition frightened}, solange er sich in einem Umkreis von 20 Fuß von einem Frosch oder einer Kröte (jeder Größe) befindet, die er sehen kann."
+					]
+				},
+				{
+					"name": "Graz'zt's Gift",
+					"entries": [
+						"Sythians AC beinhaltet seinen Charisma-Modifikator."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sythian führt zwei Angriffe mit vergiftetem Kurzschwert oder vergiftetem Pfeil durch und setzt Flüstern von Azzagrat ein."
+					]
+				},
+				{
+					"name": "Poisoned Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}5 ({@damage 1d6 + 2}) Stichschaden plus 5 ({@damage 1d10}) Giftschaden."
+					]
+				},
+				{
+					"name": "Poisoned Dart",
+					"entries": [
+						"{@atk rw} {@hit 5} auf Treffer, Reichweite 20/60 Fuß, ein Ziel. {@h}4 ({@damage 1d4 + 2}) Stichschaden plus 5 ({@damage 1d10}) Giftschaden."
+					]
+				},
+				{
+					"name": "Whispers of Azzagrat",
+					"entries": [
+						"Jede Kreatur in einem 15-Fuß-Würfel, die aus Sythian stammt, muss einen {@dc 14} Rettungswurf in Weisheit machen. Bei einem misslungenen Schutzwurf erleidet die Kreatur 18 ({@damage 4d8}) psychischen Schaden und ist bis zum Ende ihrer nächsten Runde {@condition incapacitated}. Bei einem erfolgreichen Schutzwurf erleidet die Kreatur halb so viel Schaden und ist nicht {@condition incapacitated}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fiendish Rebuke (3/Day)",
+					"entries": [
+						"Unmittelbar nachdem eine Kreatur im Umkreis von 5 Fuß von Sythian mit einem Angriffswurf getroffen wurde, zwingt Sythian diese Kreatur zu einem {@dc 14} Rettungswurf auf die Konstitution. Bei einem misslungenen Rettungswurf erleidet die Kreatur 14 ({@damage 4d6}) Feuerschaden, bei einem erfolgreichen Rettungswurf halb so viel."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tixie Tockworth",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnome"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d6 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 18,
+			"int": 17,
+			"wis": 9,
+			"cha": 10,
+			"save": {
+				"int": "+6",
+				"wis": "+2"
+			},
+			"skill": {
+				"arcana": "+9",
+				"perception": "+2"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Gnomish",
+				"Terran",
+				"Undercommon"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Tockworth wirkt einen der folgenden Zauber, für die keine materiellen Komponenten benötigt werden und bei denen Intelligenz als Zaubernde Fähigkeit verwendet wird (Zauberschutz {@dc 14}):"
+					],
+					"will": [
+						"{@spell nondetection} (self only)"
+					],
+					"daily": {
+						"2": [
+							"{@spell dimension door}"
+						],
+						"1e": [
+							"{@spell blindness/deafness}",
+							"{@spell blur}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Force Field",
+					"entries": [
+						"Tockworth erzeugt ein magisches Kraftfeld um sich herum. Dieses Kraftfeld hat 15 Trefferpunkte und erhält zu Beginn jeder von Tockworths Runden alle seine Trefferpunkte zurück, aber es hört auf zu funktionieren, wenn Tockworth auf 0 Trefferpunkte fällt. Jeder Schaden, den Tockworth erleidet, wird zuerst von den Trefferpunkten des Kraftfelds abgezogen. Jedes Mal, wenn das Kraftfeld wieder Trefferpunkte erhält, enden die folgenden Zustände für Tockworth: {@condition grappled}, {@condition restrained} und {@condition stunned}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tockworth führt drei Angriffe mit Kurzschwert oder Blitzentladung aus."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} zu treffen, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Stichschaden plus 10 ({@damage 3d6}) Kraftschaden."
+					]
+				},
+				{
+					"name": "Lightning Discharge",
+					"entries": [
+						"{@atk rs} {@hit 6} auf Treffer, Reichweite 60 Fuß, eine Kreatur. {@h}16 ({@damage 3d10}) Blitzschaden."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Scalding Steam {@recharge 5}",
+					"entries": [
+						"Tockworth stößt in einem 15 Fuß hohen Kegel einen Strahl aus glühend heißem Dampf aus. Jede Kreatur in diesem Kegel muss einen {@dc 15} Rettungswurf in Geschicklichkeit machen und erleidet bei einem misslungenen Rettungswurf 10 ({@damage 3d6}) Feuerschaden, bei einem erfolgreichen Rettungswurf halb so viel Schaden."
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"G",
+				"T",
+				"U"
+			],
+			"damageTags": [
+				"F",
+				"L",
+				"O",
+				"P"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zorhanna's Simulacrum",
+			"source": "KftGV",
+			"page": 184,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 99,
+				"formula": "18d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+13",
+				"history": "+13"
+			},
+			"passive": 12,
+			"resist": [
+				{
+					"special": "damage from spells"
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "(from stoneskin)",
+					"preNote": "nonmagical",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common",
+				"Deep Speech (when it is angry or frustrated)",
+				"Draconic",
+				"Elvish",
+				"Gnomish",
+				"Sylvan"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Das Simulakrum ist ein Zauberwirker der Stufe 18. Seine Zauberfähigkeit ist Intelligenz (Zauberschutz {@dc 17}, {@hit 9} um mit Zauberangriffen zu treffen). Das Simulakrum kann nach Belieben Selbstverkleidung und Unsichtbarkeit zaubern und hat die folgenden Zaubersprüche vorbereitet:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell mage armor}*",
+								"{@spell magic missile}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fly}",
+								"{@spell lightning bolt}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell banishment}",
+								"{@spell fire shield}",
+								"{@spell stoneskin}*"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell scrying}",
+								"{@spell wall of force}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell globe of invulnerability}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell teleport}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell mind blank}*"
+							]
+						},
+						"9": {
+							"slots": 1,
+							"spells": [
+								"{@spell time stop}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*The simulacrum casts these spells on itself before combat."
+					],
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Das Simulakrum hat einen Vorteil bei Rettungswürfen gegen Zauber und andere magische Effekte."
+					]
+				},
+				{
+					"name": "Simulacrum",
+					"entries": [
+						"Das Simulakrum kann keine verbrauchten Zauberplätze wiedergewinnen oder die Eigenschaften der Splitter-Solitär-Halskette nutzen. (Der Splitter-Solitär ist derzeit auf das Wesen aus dem Fernen Reich abgestimmt, das in ihm gefangen ist). Wenn das Simulakrum auf 0 Trefferpunkte fällt, verwandelt es sich in Schnee und schmilzt dahin, und die Splitter-Solitär-Halskette teleportiert sich in den Tresor in Zorhannas Gewölbeturm."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} Treffer, Reichweite 5 ft. oder 20/60 ft., ein Ziel. {@h}4 ({@damage 1d4 + 2}) Stich-Schaden."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"DS",
+				"E",
+				"G",
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"hasFluff": true
+		}
+	]
+}
