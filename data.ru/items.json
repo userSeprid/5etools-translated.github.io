@@ -5061,14 +5061,14 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Книга возвышенных деяний обладает следующими случайными свойствами:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+						"Книга возвышенных деяний обладает следующими случайными свойствами:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5138,16 +5138,16 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Книга мерзкой тьмы обладает следующими случайными свойствами:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+						"Книга мерзкой тьмы обладает следующими случайными свойствами:",
+						{
+							"type": "list",
+							"items": [
+								"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5199,6 +5199,54 @@
 			"attachedSpells": [
 				"dominate monster"
 			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Book of Vile Darkness (Variant)",
+			"source": "KftGV",
+			"page": 207,
+			"_copy": {
+				"name": "Book of Vile Darkness",
+				"source": "DMG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 7
+						},
+						"items": [
+							"The Book of Vile Darkness has the following properties:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Circle of Death",
+										"entries": [
+											"While attuned to the book, you can cast {@spell circle of death} (save DC 20) from it as an action. After you cast the spell, roll a {@dice d6}. On a roll of 1-5, you can't use this property again until the next dawn."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Condition Immunities",
+										"entries": [
+											"While attuned to the book, you can't be {@condition charmed} or {@condition frightened}."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Evil Presence",
+										"entries": [
+											"The book houses an evil spirit that is hostile toward you. When you become attuned to the book, the spirit tries to leave the book and enter your body. If you fail a DC 20 Charisma saving throw, it succeeds, and you become an NPC under the DM's control until the intruding spirit is banished using magic such as the {@spell dispel evil and good} spell. The banished spirit returns to the book."
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
 			"hasFluffImages": true
 		},
 		{
@@ -7695,6 +7743,58 @@
 			],
 			"attachedSpells": [
 				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Constantori's Portrait",
+			"source": "KftGV",
+			"page": 101,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"sentient": true,
+			"weight": 15,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"На этой картине знаменитого художника Дкесия Квана изображена Константори, прекрасная придворная дама, которой заплатили ошеломляющую сумму, чтобы она стала моделью Дкесия. Соответствует ли реальная внешность Константори картине, остается предметом споров. Портрет является одной из нескольких картин, заказанных покойной Дайяни Гристхорн, повелительницей преступности, которая часто дарила магические картины своим самым уважаемым соратникам.",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"Портрет Константори - это разумный, законный злой предмет с показателями интеллекта 14, мудрости 12 и харизмы 8. Он может слышать на расстоянии 120 футов и имеет {@sense darkvision} на расстоянии 60 футов, но не может видеть ничего за собой.",
+						"Картина может разговаривать на общем, драконьем и эльфийском языках, как будто это живой человек, хотя рот Константори не двигается. Когда разговор происходит в пределах слухового диапазона портрета, картина охотно собирает секреты, имена тайновестников, значимые события или любые политические разговоры.Ли дарила волшебные картины в качестве подарков своим самым уважаемым коллегам."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"Портрет Константори - требовательный, снисходительный и тщеславный. Он не любит, когда его накрывают или убирают с глаз долой, и громко осуждает любого, кто пытается вынуть его из золотой рамы.nversations.ly дарила волшебные картины в качестве подарков своим самым уважаемым коллегам."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wealth of Information",
+					"entries": [
+						"Основная цель картины - наблюдать и вспоминать разговоры. За последние несколько десятилетий Портрет Константори спокойно наблюдал за бесчисленными разговорами и теперь владеет неоценимым количеством информации - от преступных заговоров до секретных паролей. DM решает, что картина знает, а что нет.",
+						"Когда вы настроены на картину, вы можете предпринять действие, чтобы телепатически связаться с ней на любом расстоянии, при условии, что вы и картина находитесь на одном плане существования. Однако картина не может телепатически связаться с вами. Поддержание телепатического контакта с картиной требует вашей концентрации (как при концентрации на заклинании). что картина знает и чего не знает."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guardian Portrait",
+					"entries": [
+						"Пока вы настроены на картину, вы можете приказать ей охранять свое местоположение от одного или нескольких существ, которых вы определите как врагов картины. Картина будет выполнять эту функцию до тех пор, пока вы не прикажете ей остановиться или пока ваша привязка к картине не закончится.концентрация на заклинании).что картина знает и чего не знает.",
+						"Картина имеет 3 заряда. Когда существо, которое картина идентифицирует как своего врага, начинает свой ход в пространстве, которое картина может видеть, картина тратит 1 из своих зарядов, чтобы разыграть {@spell magic missile} (3 ракеты), нацеленные на это существо. Картина восстанавливает все потраченные заряды ежедневно на рассвете.e Картина знает, а чего не знает.",
+						"Картина - маленький предмет с AC 12, 20 хит-поинтами и иммунитетом к урону ядом. В своей раме из золотого листа картина весит 15 фунтов. Если у картины есть хотя бы 1 хит-пойнт и она поражена заклинанием {@spell mending}, она восстанавливает {@dice 2d6} хит-пойнтов, а если нет - нет."
+					]
+				}
+			],
+			"attachedSpells": [
+				"magic missile"
 			],
 			"hasFluffImages": true
 		},
@@ -12408,15 +12508,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Око Векны и {@item Hand of Vecna} обладают следующими случайными свойствами:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"Око Векны и {@item Hand of Vecna} обладают следующими случайными свойствами:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -15491,15 +15591,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"{@item Eye of Vecna} и Рука Векны обладают следующими случайными свойствами:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"{@item Eye of Vecna} и Рука Векны обладают следующими случайными свойствами:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -30282,6 +30382,259 @@
 			]
 		},
 		{
+			"name": "Shard of Xeluan",
+			"source": "KftGV",
+			"page": 134,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"curse": true,
+			"bonusSpellAttack": "+1",
+			"entries": [
+				"Этот осколок обсидиана длиной 1 фут имеет прожилки серебра и золота под своей холодной поверхностью.",
+				{
+					"type": "entries",
+					"name": "Empowered Magic",
+					"entries": [
+						"Держа осколок в руках, вы можете использовать его как фокус заклинания, и он дает вам бонус +1 к броскам атаки заклинаниями."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Strength",
+					"entries": [
+						"Ваш показатель силы увеличивается на 4, пока осколок находится на вашем лице. Осколок не может поднять ваш показатель силы выше 22."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"Настроившись на этот предмет, его проклятие распространяется и на вас. Вы остаетесь проклятым до тех пор, пока на вас не будет направлено {@spell remove curse} заклинание или аналогичная магия, или пока осколок не будет вновь прикреплен к сердцу Кселуана {@condition petrified}.",
+						"Проклятие осколка навлекает на вас несчастье. Когда вы выпадает 1 при броске атаки, проверке способности или броске спасброска, сделайте бросок по таблице \"Несчастья осколка\", чтобы определить несчастье. Пока длится это несчастье, другие несчастья от осколков вас не постигнут."
+					]
+				},
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"d6",
+						"Misfortune"
+					],
+					"rows": [
+						[
+							"1",
+							"Вы случайно порезались осколком и находитесь в состоянии {@condition poisoned} до следующего рассвета."
+						],
+						[
+							"2",
+							"Вы переживаете видение древнего бедствия - прекрасного города, которому угрожают разрушающиеся горы и извергающиеся вулканы - и получаете {@condition stunned} до конца вашего следующего хода."
+						],
+						[
+							"3",
+							"В течение нескольких секунд земля дрожит под вами. Вы и каждое существо в радиусе 10 футов от вас должны успешно выполнить бросок на ловкость DC 16 или быть сбитыми с ног {@condition prone}."
+						],
+						[
+							"4",
+							"Осколок выпускает три светящихся дротика магической силы, которые нацеливаются на одно случайное существо в радиусе 30 футов от вас. Если такой цели нет, ею становитесь вы. Каждый дротик попадает автоматически и наносит цели 3 ({@damage 1d4 + 1}) урона силой."
+						],
+						[
+							"5",
+							"До следующего рассвета звери с показателем интеллекта 3 или ниже враждебны к вам."
+						],
+						[
+							"6",
+							"Кажется, ничто не идет тебе навстречу. До следующего рассвета у вас есть недостаток при проверке способностей."
+						]
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Black Sapphire)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Этот драгоценный камень содержит нестабильный внепространственный разлом. Его грани испещрены радужными прожилками, которые, кажется, движутся по собственному желанию. Известно пять типов солитеров из осколков, каждый из которых представляет собой отдельный вид драгоценного камня, как показано в таблице \"Типы солитеров из осколков\".",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"В качестве бонусного действия, пока вы носите или держите осколок солитера, вы можете телепортировать себя, а также все, что на вас надето или вы несете, в незанятое пространство, которое вы можете видеть в радиусе 30 футов от себя.",
+						"Когда вы используете это свойство, вы можете использовать нестабильную силу внепространственного разлома камня, чтобы увеличить расстояние телепортации на 30 футов, но если вы телепортируетесь на расстояние более 30 футов с помощью Rift Step, вы должны преуспеть в броске спасброска по Конституции DC 16 или получить {@damage 3d10} урона силы сразу после телепортации."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Камень имеет 6 зарядов и восстанавливает {@dice 1d6} израсходованных зарядов ежедневно на рассвете. В качестве действия вы можете произнести одно из заклинаний камня, потратив необходимое количество зарядов, не требующее материальных компонентов (спасбросок DC 16). Солитер из осколков черного сапфира можно использовать для следующих заклинаний: {@spell banishment} (3 заряда; цель изгоняется во внепространство камня на время действия заклинания), {@spell mirror image} (1 заряд), {@spell blight} (3 заряда), {@spell finger of death} (6 зарядов).тер вы телепортируетесь."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"blight",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Diamond)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Этот драгоценный камень содержит нестабильный внепространственный разлом. Его грани испещрены радужными прожилками, которые, кажется, движутся по собственному желанию. Известно пять типов солитеров из осколков, каждый из которых представляет собой отдельный вид драгоценного камня, как показано в таблице \"Типы солитеров из осколков\".",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"В качестве бонусного действия, пока вы носите или держите осколок солитера, вы можете телепортировать себя, а также все, что на вас надето или вы несете, в незанятое пространство, которое вы можете видеть в радиусе 30 футов от себя.",
+						"Когда вы используете это свойство, вы можете использовать нестабильную силу внепространственного разлома камня, чтобы увеличить расстояние телепортации на 30 футов, но если вы телепортируетесь на расстояние более 30 футов с помощью Rift Step, вы должны преуспеть в броске спасброска по Конституции DC 16 или получить {@damage 3d10} урона силы сразу после телепортации."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Камень имеет 6 зарядов и восстанавливает {@dice 1d6} израсходованных зарядов ежедневно на рассвете. В качестве действия вы можете произнести одно из заклинаний камня, потратив необходимое количество зарядов, не требующее материальных компонентов (бросок DC 16). Солитер из алмазных осколков можно использовать для следующих заклинаний: {@spell banishment} (3 заряда; цель изгоняется во внепространство камня на время действия заклинания), {@spell mirror image} (1 заряд), {@spell ice storm} (3 заряда), {@spell simulacrum} (6 зарядов; дубликат создается. нальное пространство на время действия заклинания), {@spell mirror image} (1 заряд), {@spell ice storm} (3 заряда), {@spell simulacrum} (6 зарядов).тер вы телепортируетесь."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"ice storm",
+				"simulacrum"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Jacinth)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Этот драгоценный камень содержит нестабильный внепространственный разлом. Его грани испещрены радужными прожилками, которые, кажется, движутся по собственному желанию. Известно пять типов солитеров из осколков, каждый из которых представляет собой отдельный вид драгоценного камня, как показано в таблице \"Типы солитеров из осколков\".",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"В качестве бонусного действия, пока вы носите или держите осколок солитера, вы можете телепортировать себя, а также все, что на вас надето или вы несете, в незанятое пространство, которое вы можете видеть в радиусе 30 футов от себя.",
+						"Когда вы используете это свойство, вы можете использовать нестабильную силу внепространственного разлома камня, чтобы увеличить расстояние телепортации на 30 футов, но если вы телепортируетесь на расстояние более 30 футов с помощью Rift Step, вы должны преуспеть в броске спасброска по Конституции DC 16 или получить {@damage 3d10} урона силы сразу после телепортации."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Камень имеет 6 зарядов и восстанавливает {@dice 1d6} израсходованных зарядов ежедневно на рассвете. В качестве действия вы можете произнести одно из заклинаний камня, потратив необходимое количество зарядов, не требующее материальных компонентов (спасбросок DC 16). Солитер из осколков жасмина можно использовать для следующих заклинаний: {@spell banishment} (3 заряда; цель изгоняется во внепространство камня на время действия заклинания), {@spell mirror image} (1 заряд), {@spell fireball} (2 заряда), {@spell fire storm} (6 зарядов). ), {@spell fire storm} (6 зарядов; дубликат созда.нального пространства на время действия заклинания), {@spell mirror image} (1 заряд), {@spell fireball} (3 заряда), {@spell fire storm} (6 зарядов).тер вы телепортируетесь."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fireball",
+				"fire storm"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Rainbow Pearl)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Этот драгоценный камень содержит нестабильный внепространственный разлом. Его грани испещрены радужными прожилками, которые, кажется, движутся по собственному желанию. Известно пять типов солитеров из осколков, каждый из которых представляет собой отдельный вид драгоценного камня, как показано в таблице \"Типы солитеров из осколков\".",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"В качестве бонусного действия, пока вы носите или держите осколок солитера, вы можете телепортировать себя, а также все, что на вас надето или вы несете, в незанятое пространство, которое вы можете видеть в радиусе 30 футов от себя.",
+						"Когда вы используете это свойство, вы можете использовать нестабильную силу внепространственного разлома камня, чтобы увеличить расстояние телепортации на 30 футов, но если вы телепортируетесь на расстояние более 30 футов с помощью Rift Step, вы должны преуспеть в броске спасброска по Конституции DC 16 или получить {@damage 3d10} урона силы сразу после телепортации."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Камень имеет 6 зарядов и восстанавливает {@dice 1d6} израсходованных зарядов ежедневно на рассвете. В качестве действия вы можете произнести одно из заклинаний камня, потратив необходимое количество зарядов, не требующее материальных компонентов (спасбросок DC 16). Солитер из осколков радужного жемчуга можно использовать для следующих заклинаний: {@spell banishment} (3 заряда; цель изгоняется во внепространство камня на время действия заклинания), {@spell mirror image} (1 заряд), {@spell prismatic spray} (6 зарядов), {@spell water breathing} (2 заряда). %) (6 зарядов).), {@spell water breathing} (6 зарядов; дубликат созда.нального пространства на время действия заклинания), {@spell mirror image} (1 заряд), {@spell prismatic spray} (3 заряда), {@spell water breathing} (6 зарядов).тер вы телепортируетесь."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"prismatic spray",
+				"water breathing"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Ruby)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Этот драгоценный камень содержит нестабильный внепространственный разлом. Его грани испещрены радужными прожилками, которые, кажется, движутся по собственному желанию. Известно пять типов солитеров из осколков, каждый из которых представляет собой отдельный вид драгоценного камня, как показано в таблице \"Типы солитеров из осколков\".",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"В качестве бонусного действия, пока вы носите или держите осколок солитера, вы можете телепортировать себя, а также все, что на вас надето или вы несете, в незанятое пространство, которое вы можете видеть в радиусе 30 футов от себя.",
+						"Когда вы используете это свойство, вы можете использовать нестабильную силу внепространственного разлома камня, чтобы увеличить расстояние телепортации на 30 футов, но если вы телепортируетесь на расстояние более 30 футов с помощью Rift Step, вы должны преуспеть в броске спасброска по Конституции DC 16 или получить {@damage 3d10} урона силы сразу после телепортации."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Камень имеет 6 зарядов и восстанавливает {@dice 1d6} израсходованных зарядов ежедневно на рассвете. В качестве действия вы можете произнести одно из заклинаний камня, потратив необходимое количество зарядов, не требующее материальных компонентов (спасбросок DC 16). Солитер из осколков рубина можно использовать для следующих заклинаний: {@spell banishment} (3 заряда; цель изгоняется во внепространство камня на время действия заклинания), {@spell mirror image} (1 заряд), {@spell fly} (2 заряда), {@spell teleport} (6 зарядов). (6 зарядов), {@spell teleport} (2 заряда).%) (6 зарядов).), {@spell teleport} (6 зарядов; дубликат созда.нального пространства на время действия заклинания), {@spell mirror image} (1 заряд), {@spell fly} (3 заряда), {@spell teleport} (6 зарядов).тер вы телепортируетесь."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fly",
+				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Shatterspike",
 			"source": "TftYP",
 			"page": 229,
@@ -39106,19 +39459,19 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Жезл Оркуса обладает следующими случайными свойствами:"
+						"Жезл Оркуса обладает следующими случайными свойствами:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+							]
+						},
+						"Вредные свойства жезла Оркуса подавляются, пока жезл настроен на {@creature Orcus|MTF} себя."
 					]
 				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
-					]
-				},
-				"Вредные свойства жезла Оркуса подавляются, пока жезл настроен на {@creature Orcus|MTF} себя.",
 				{
 					"name": "Protection",
 					"type": "entries",
@@ -42586,6 +42939,84 @@
 			"lootTables": [
 				"Magic Item Table C"
 			]
+		},
+		{
+			"name": "Shard Solitaire",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Этот драгоценный камень содержит нестабильный внепространственный разлом. Его грани испещрены радужными прожилками, которые, кажется, движутся по собственному желанию. Известно пять типов солитеров из осколков, каждый из которых представляет собой отдельный вид драгоценного камня, как показано в таблице \"Типы солитеров из осколков\".",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"В качестве бонусного действия, пока вы носите или держите осколок солитера, вы можете телепортировать себя, а также все, что на вас надето или вы несете, в незанятое пространство, которое вы можете видеть в радиусе 30 футов от себя.",
+						"Когда вы используете это свойство, вы можете использовать нестабильную силу внепространственного разлома камня, чтобы увеличить расстояние телепортации на 30 футов, но если вы телепортируетесь на расстояние более 30 футов с помощью Rift Step, вы должны преуспеть в броске спасброска по Конституции DC 16 или получить {@damage 3d10} урона силы сразу после телепортации."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Камень имеет 6 зарядов и восстанавливает {@dice 1d6} израсходованных зарядов ежедневно на рассвете. В таблице \"Типы солитеров из осколков\" перечислены заклинания, общие для всех солитеров из осколков, а также заклинания, характерные для каждого вида камня. В качестве действия вы можете произнести одно из заклинаний камня, потратив необходимое количество зарядов, не требующих материальных компонентов (бросок DC 16).%) (6 зарядов).(6 зарядов), (%4%) (2 заряда).%) (6 зарядов).), (%4%) (6 зарядов; дубликат создает пространство на время действия заклинания), (%2%) (1 заряд), (%3%) (3 заряда), (%4%) (6 зарядов).тер вы телепортируетесь.",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"colLabels": [
+								"Shard Solitaire",
+								"Spells"
+							],
+							"rows": [
+								[
+									"All",
+									"{@spell Banishment} (3 заряда; цель изгоняется во внепространство камня на время действия заклинания), {@spell mirror image} (1 заряд) (1 заряд); дубликат создает внепространство на время действия заклинания), (%2%) (1 заряд), (%3%) (3 заряда), (%4%) (6 зарядов).тер вы телепортируетесь."
+								],
+								[
+									"Черный сапфир",
+									"{@spell Blight} (3 заряда), {@spell finger of death} (6 зарядов)"
+								],
+								[
+									"Алмаз",
+									"{@spell Ice storm} (3 заряда), {@spell simulacrum} (6 зарядов; дубликат, созданный заклинанием, имеет такое же количество хит-пойнтов, как и существо, которому он подражает)"
+								],
+								[
+									"Иакинф",
+									"{@spell Fireball} (2 заряда), {@spell fire storm} (6 зарядов)"
+								],
+								[
+									"Радужная жемчужина",
+									"{@spell Prismatic spray} (6 зарядов), {@spell water breathing} (2 заряда)"
+								],
+								[
+									"Ruby",
+									"{@spell Fly} (2 заряда), {@spell teleport} (6 зарядов)"
+								]
+							]
+						}
+					]
+				}
+			],
+			"items": [
+				"Shard Solitaire (Black Sapphire)|KftGV",
+				"Shard Solitaire (Diamond)|KftGV",
+				"Shard Solitaire (Jacinth)|KftGV",
+				"Shard Solitaire (Rainbow Pearl)|KftGV",
+				"Shard Solitaire (Ruby)|KftGV"
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Silken Spite",
