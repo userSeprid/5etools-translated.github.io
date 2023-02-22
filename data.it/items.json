@@ -5061,14 +5061,14 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Il Libro delle Azioni Esaltate ha le seguenti proprietà casuali:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+						"Il Libro delle Azioni Esaltate ha le seguenti proprietà casuali:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5138,16 +5138,16 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Il Libro delle Tenebre Vili ha le seguenti proprietà casuali:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+						"Il Libro delle Tenebre Vili ha le seguenti proprietà casuali:",
+						{
+							"type": "list",
+							"items": [
+								"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5199,6 +5199,54 @@
 			"attachedSpells": [
 				"dominate monster"
 			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Book of Vile Darkness (Variant)",
+			"source": "KftGV",
+			"page": 207,
+			"_copy": {
+				"name": "Book of Vile Darkness",
+				"source": "DMG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 7
+						},
+						"items": [
+							"The Book of Vile Darkness has the following properties:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Circle of Death",
+										"entries": [
+											"While attuned to the book, you can cast {@spell circle of death} (save DC 20) from it as an action. After you cast the spell, roll a {@dice d6}. On a roll of 1-5, you can't use this property again until the next dawn."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Condition Immunities",
+										"entries": [
+											"While attuned to the book, you can't be {@condition charmed} or {@condition frightened}."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Evil Presence",
+										"entries": [
+											"The book houses an evil spirit that is hostile toward you. When you become attuned to the book, the spirit tries to leave the book and enter your body. If you fail a DC 20 Charisma saving throw, it succeeds, and you become an NPC under the DM's control until the intruding spirit is banished using magic such as the {@spell dispel evil and good} spell. The banished spirit returns to the book."
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
 			"hasFluffImages": true
 		},
 		{
@@ -7695,6 +7743,58 @@
 			],
 			"attachedSpells": [
 				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Constantori's Portrait",
+			"source": "KftGV",
+			"page": 101,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"sentient": true,
+			"weight": 15,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"Questo dipinto del famoso artista Dkesii Kwan raffigura Constantori, una bellissima cortigiana, che fu pagata una cifra esorbitante per essere la modella di Dkesii. Se l'aspetto reale di Constantori corrisponda a quello del dipinto è ancora oggetto di dibattito. Il ritratto è uno dei numerosi dipinti commissionati dalla defunta Daiyani Grysthorn, un signore del crimine che spesso regalava dipinti magici ai suoi collaboratori più stimati.",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"Il Ritratto di Constantori è un oggetto senziente e malvagio con un punteggio di Intelligenza pari a 14, un punteggio di Saggezza pari a 12 e un punteggio di Carisma pari a 8. Può sentire entro un raggio di 120 piedi e ha {@sense darkvision} entro un raggio di 60 piedi, ma non può vedere nulla dietro di sé.",
+						"Il dipinto può conversare in comune, draconico ed elfico come se fosse una persona vivente, anche se la bocca di Constantori non si muove. Ogni volta che si verifica una conversazione nel raggio uditivo del ritratto, il dipinto raccoglie avidamente i segreti, i nomi degli informatori segreti, gli eventi significativi o qualsiasi conversazione politica."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"Il Ritratto di Constantori è esigente, accondiscendente e vanitoso. Non ama essere coperto o messo fuori vista e condanna a gran voce chiunque cerchi di toglierlo dalla sua cornice in foglia d'oro."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wealth of Information",
+					"entries": [
+						"Lo scopo principale del dipinto è osservare e ricordare le conversazioni. Negli ultimi decenni, il Ritratto di Constantori ha osservato silenziosamente innumerevoli conversazioni e ora possiede una quantità non quantificabile di informazioni, da cospirazioni criminali a password segrete. Il DM decide cosa il dipinto sa e cosa non sa.",
+						"Mentre si è sintonizzati con il dipinto, si può compiere un'azione per contattarlo telepaticamente a qualsiasi distanza, a patto che si sia sullo stesso piano di esistenza. Tuttavia, il dipinto non può contattarvi telepaticamente. Mantenere il contatto telepatico con il dipinto richiede la concentrazione (come se ci si concentrasse su un incantesimo)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guardian Portrait",
+					"entries": [
+						"Mentre siete in sintonia con il dipinto, potete ordinargli di sorvegliare la sua posizione contro una o più creature che identificate come nemici del dipinto. Il dipinto svolge questa funzione finché non gli si ordina di smettere o finché la sintonia con il dipinto non termina.",
+						"Il dipinto ha 3 cariche. Quando una creatura che il dipinto identifica come nemica inizia il suo turno in uno spazio che il dipinto può vedere, il dipinto spende 1 delle sue cariche per lanciare {@spell magic missile} (3 missili), mirando a quella creatura. Il dipinto recupera tutte le cariche spese ogni giorno all'alba.",
+						"Il dipinto è un oggetto Piccolo con CA 12, 20 punti ferita e immunità ai danni da veleno. Nella sua cornice in foglia d'oro, il dipinto pesa 15 libbre. Se il dipinto ha almeno 1 punto ferita e viene bersagliato da un incantesimo {@spell mending}, recupera {@dice 2d6} punti ferita."
+					]
+				}
+			],
+			"attachedSpells": [
+				"magic missile"
 			],
 			"hasFluffImages": true
 		},
@@ -12408,15 +12508,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"L'Occhio di Vecna e il {@item Hand of Vecna} hanno ciascuno le seguenti proprietà casuali:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"L'Occhio di Vecna e il {@item Hand of Vecna} hanno ciascuno le seguenti proprietà casuali:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -15491,15 +15591,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Il {@item Eye of Vecna} e la Mano di Vecna hanno ciascuno le seguenti proprietà casuali:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"Il {@item Eye of Vecna} e la Mano di Vecna hanno ciascuno le seguenti proprietà casuali:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -30282,6 +30382,259 @@
 			]
 		},
 		{
+			"name": "Shard of Xeluan",
+			"source": "KftGV",
+			"page": 134,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"curse": true,
+			"bonusSpellAttack": "+1",
+			"entries": [
+				"Questo frammento di ossidiana lungo un metro ha vene d'argento e d'oro sotto la sua superficie fredda.",
+				{
+					"type": "entries",
+					"name": "Empowered Magic",
+					"entries": [
+						"Quando si tiene il frammento, lo si può usare come focus per gli incantesimi e conferisce un bonus di +1 ai tiri per gli incantesimi."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Strength",
+					"entries": [
+						"Il punteggio di Forza aumenta di 4 quando il frammento è sulla persona. Il frammento non può aumentare il punteggio di Forza oltre 22."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"La sintonia con questo oggetto estende la sua maledizione a voi. Rimarrete maledetti finché non sarete bersagliati da un incantesimo {@spell remove curse} o da una magia simile, o finché il frammento non sarà riattaccato al cuore di Xeluan {@condition petrified}.",
+						"La maledizione del frammento provoca disgrazie. Quando si tira un 1 su un tiro di attacco, una prova di abilità o un tiro salvezza, si tira sulla tabella Sfortuna del Frammento per determinare la sventura. Finché dura questa disgrazia, non si possono avere altre disgrazie del frammento."
+					]
+				},
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"d6",
+						"Misfortune"
+					],
+					"rows": [
+						[
+							"1",
+							"Ti sei tagliato accidentalmente con il frammento e sei {@condition poisoned} fino all'alba successiva."
+						],
+						[
+							"2",
+							"Si ha la visione di un'antica calamità - una bellissima città minacciata da montagne che si sgretolano e vulcani in eruzione - e si è {@condition stunned} fino alla fine del proprio turno successivo."
+						],
+						[
+							"3",
+							"Per qualche secondo, la terra trema sotto di voi. Voi e ogni creatura entro 3 metri da voi dovete riuscire a effettuare un tiro salvezza di Destrezza con DC 16 o essere sbalzati {@condition prone}."
+						],
+						[
+							"4",
+							"Il frammento rilascia tre dardi incandescenti di forza magica che colpiscono una creatura a caso entro 9 metri da voi. Se non esiste un bersaglio, si diventa il bersaglio. Ogni dardo colpisce automaticamente e infligge 3 ({@damage 1d4 + 1}) danni da forza al bersaglio."
+						],
+						[
+							"5",
+							"Fino all'alba successiva, le bestie con un punteggio di Intelligenza pari o inferiore a 3 sono ostili a voi."
+						],
+						[
+							"6",
+							"Niente sembra andare per il verso giusto. Fino all'alba successiva, hai svantaggio sulle prove di abilità."
+						]
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Black Sapphire)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Questa gemma contiene una spaccatura extradimensionale instabile. Le sue sfaccettature sono costellate di venature iridescenti che sembrano muoversi di propria iniziativa. Sono noti cinque tipi di solitario di coccio, ognuno dei quali è un tipo diverso di gemma, come indicato nella tabella Tipi di solitario di coccio.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Come azione bonus, mentre si indossa o si tiene in mano il solitario di coccio, ci si può teletrasportare, insieme a tutto ciò che si indossa o si trasporta, in uno spazio non occupato visibile entro 9 metri da sé.",
+						"Quando si usa questa proprietà, si può attingere al potere instabile della spaccatura extradimensionale della pietra per aumentare la distanza del teletrasporto fino a 9 metri, ma se ci si teletrasporta per più di 9 metri usando Passo della Spaccatura, si deve riuscire a superare un tiro salvezza di Costituzione con DC 16 o subire {@damage 3d10} danni da forza subito dopo il teletrasporto."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La pietra ha 6 cariche e recupera {@dice 1d6} le cariche spese ogni giorno all'alba. Come azione, si può lanciare uno degli incantesimi della pietra spendendo il numero richiesto di cariche, senza bisogno di componenti materiali (tiro salvezza DC 16). Il solitario di schegge di zaffiro nero può essere usato per lanciare i seguenti incantesimi: {@spell banishment} (3 cariche; il bersaglio viene bandito nello spazio extradimensionale della pietra per la durata dell'incantesimo), {@spell mirror image} (1 carica), {@spell blight} (3 cariche), {@spell finger of death} (6 cariche)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"blight",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Diamond)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Questa gemma contiene una spaccatura extradimensionale instabile. Le sue sfaccettature sono costellate di venature iridescenti che sembrano muoversi di propria iniziativa. Sono noti cinque tipi di solitario di coccio, ognuno dei quali è un tipo diverso di gemma, come indicato nella tabella Tipi di solitario di coccio.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Come azione bonus, mentre si indossa o si tiene in mano il solitario di coccio, ci si può teletrasportare, insieme a tutto ciò che si indossa o si trasporta, in uno spazio non occupato visibile entro 9 metri da sé.",
+						"Quando si usa questa proprietà, si può attingere al potere instabile della spaccatura extradimensionale della pietra per aumentare la distanza del teletrasporto fino a 9 metri, ma se ci si teletrasporta per più di 9 metri usando Passo della Spaccatura, si deve riuscire a superare un tiro salvezza di Costituzione con DC 16 o subire {@damage 3d10} danni da forza subito dopo il teletrasporto."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La pietra ha 6 cariche e recupera {@dice 1d6} le cariche spese ogni giorno all'alba. Come azione, si può lanciare uno degli incantesimi della pietra spendendo il numero richiesto di cariche, senza bisogno di componenti materiali (tiro salvezza DC 16). Il solitario di frammenti di diamante può essere usato per lanciare i seguenti incantesimi: {@spell banishment} (3 cariche; il bersaglio viene bandito nello spazio extradimensionale della pietra per la durata dell'incantesimo), {@spell mirror image} (1 carica), {@spell ice storm} (3 cariche), {@spell simulacrum} (6 cariche; il duplicato crea."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"ice storm",
+				"simulacrum"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Jacinth)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Questa gemma contiene una spaccatura extradimensionale instabile. Le sue sfaccettature sono costellate di venature iridescenti che sembrano muoversi di propria iniziativa. Sono noti cinque tipi di solitario di coccio, ognuno dei quali è un tipo diverso di gemma, come indicato nella tabella Tipi di solitario di coccio.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Come azione bonus, mentre si indossa o si tiene in mano il solitario di coccio, ci si può teletrasportare, insieme a tutto ciò che si indossa o si trasporta, in uno spazio non occupato visibile entro 9 metri da sé.",
+						"Quando si usa questa proprietà, si può attingere al potere instabile della spaccatura extradimensionale della pietra per aumentare la distanza del teletrasporto fino a 9 metri, ma se ci si teletrasporta per più di 9 metri usando Passo della Spaccatura, si deve riuscire a superare un tiro salvezza di Costituzione con DC 16 o subire {@damage 3d10} danni da forza subito dopo il teletrasporto."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La pietra ha 6 cariche e recupera {@dice 1d6} le cariche spese ogni giorno all'alba. Come azione, si può lanciare uno degli incantesimi della pietra spendendo il numero richiesto di cariche, senza bisogno di componenti materiali (tiro salvezza DC 16). Il solitario di frammenti di giacinto può essere usato per lanciare i seguenti incantesimi: {@spell banishment} (3 cariche; il bersaglio viene bandito nello spazio extradimensionale della pietra per la durata dell'incantesimo), {@spell mirror image} (1 carica), {@spell fireball} (2 cariche), {@spell fire storm} (6 cariche)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fireball",
+				"fire storm"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Rainbow Pearl)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Questa gemma contiene una spaccatura extradimensionale instabile. Le sue sfaccettature sono costellate di venature iridescenti che sembrano muoversi di propria iniziativa. Sono noti cinque tipi di solitario di coccio, ognuno dei quali è un tipo diverso di gemma, come indicato nella tabella Tipi di solitario di coccio.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Come azione bonus, mentre si indossa o si tiene in mano il solitario di coccio, ci si può teletrasportare, insieme a tutto ciò che si indossa o si trasporta, in uno spazio non occupato visibile entro 9 metri da sé.",
+						"Quando si usa questa proprietà, si può attingere al potere instabile della spaccatura extradimensionale della pietra per aumentare la distanza del teletrasporto fino a 9 metri, ma se ci si teletrasporta per più di 9 metri usando Passo della Spaccatura, si deve riuscire a superare un tiro salvezza di Costituzione con DC 16 o subire {@damage 3d10} danni da forza subito dopo il teletrasporto."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La pietra ha 6 cariche e recupera {@dice 1d6} le cariche spese ogni giorno all'alba. Come azione, si può lanciare uno degli incantesimi della pietra spendendo il numero richiesto di cariche, senza bisogno di componenti materiali (tiro salvezza DC 16). Il solitario di frammenti di perla arcobaleno può essere usato per lanciare i seguenti incantesimi: {@spell banishment} (3 cariche; il bersaglio viene bandito nello spazio extradimensionale della pietra per la durata dell'incantesimo), {@spell mirror image} (1 carica), {@spell prismatic spray} (6 cariche), {@spell water breathing} (2 cariche)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"prismatic spray",
+				"water breathing"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Ruby)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Questa gemma contiene una spaccatura extradimensionale instabile. Le sue sfaccettature sono costellate di venature iridescenti che sembrano muoversi di propria iniziativa. Sono noti cinque tipi di solitario di coccio, ognuno dei quali è un tipo diverso di gemma, come indicato nella tabella Tipi di solitario di coccio.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Come azione bonus, mentre si indossa o si tiene in mano il solitario di coccio, ci si può teletrasportare, insieme a tutto ciò che si indossa o si trasporta, in uno spazio non occupato visibile entro 9 metri da sé.",
+						"Quando si usa questa proprietà, si può attingere al potere instabile della spaccatura extradimensionale della pietra per aumentare la distanza del teletrasporto fino a 9 metri, ma se ci si teletrasporta per più di 9 metri usando Passo della Spaccatura, si deve riuscire a superare un tiro salvezza di Costituzione con DC 16 o subire {@damage 3d10} danni da forza subito dopo il teletrasporto."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La pietra ha 6 cariche e recupera {@dice 1d6} le cariche spese ogni giorno all'alba. Come azione, si può lanciare uno degli incantesimi della pietra spendendo il numero richiesto di cariche, senza bisogno di componenti materiali (tiro salvezza DC 16). Il solitario di rubino può essere usato per lanciare i seguenti incantesimi: {@spell banishment} (3 cariche; il bersaglio viene bandito nello spazio extradimensionale della pietra per la durata dell'incantesimo), {@spell mirror image} (1 carica), {@spell fly} (2 cariche), {@spell teleport} (6 cariche)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fly",
+				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Shatterspike",
 			"source": "TftYP",
 			"page": 229,
@@ -39106,19 +39459,19 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"La Bacchetta di Orcus ha le seguenti proprietà casuali:"
+						"La Bacchetta di Orcus ha le seguenti proprietà casuali:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+							]
+						},
+						"Le proprietà dannose della Bacchetta di Orcus sono soppresse mentre la bacchetta è sintonizzata con {@creature Orcus|MTF} se stesso."
 					]
 				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
-					]
-				},
-				"Le proprietà dannose della Bacchetta di Orcus sono soppresse mentre la bacchetta è sintonizzata con {@creature Orcus|MTF} se stesso.",
 				{
 					"name": "Protection",
 					"type": "entries",
@@ -42586,6 +42939,84 @@
 			"lootTables": [
 				"Magic Item Table C"
 			]
+		},
+		{
+			"name": "Shard Solitaire",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Questa gemma contiene una spaccatura extradimensionale instabile. Le sue sfaccettature sono costellate di venature iridescenti che sembrano muoversi di propria iniziativa. Sono noti cinque tipi di solitario di coccio, ognuno dei quali è un tipo diverso di gemma, come indicato nella tabella Tipi di solitario di coccio.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Come azione bonus, mentre si indossa o si tiene in mano il solitario di coccio, ci si può teletrasportare, insieme a tutto ciò che si indossa o si trasporta, in uno spazio non occupato visibile entro 9 metri da sé.",
+						"Quando si usa questa proprietà, si può attingere al potere instabile della spaccatura extradimensionale della pietra per aumentare la distanza del teletrasporto fino a 9 metri, ma se ci si teletrasporta per più di 9 metri usando Passo della Spaccatura, si deve riuscire a superare un tiro salvezza di Costituzione con DC 16 o subire {@damage 3d10} danni da forza subito dopo il teletrasporto."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La pietra ha 6 cariche e recupera {@dice 1d6} le cariche spese ogni giorno all'alba. La tabella dei tipi di solitari di coccio elenca gli incantesimi comuni a tutti i solitari di coccio e gli incantesimi specifici per ogni tipo di pietra. Come azione, si può lanciare uno degli incantesimi della pietra spendendo il numero richiesto di cariche, senza bisogno di componenti materiali (tiro salvezza DC 16).",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"colLabels": [
+								"Shard Solitaire",
+								"Spells"
+							],
+							"rows": [
+								[
+									"All",
+									"{@spell Banishment} (3 cariche; il bersaglio è bandito nello spazio extradimensionale della pietra per la durata dell'incantesimo), {@spell mirror image} (1 carica)"
+								],
+								[
+									"Zaffiro nero",
+									"{@spell Blight} (3 cariche), {@spell finger of death} (6 cariche)"
+								],
+								[
+									"Diamante",
+									"{@spell Ice storm} (3 cariche), {@spell simulacrum} (6 cariche; il duplicato creato dall'incantesimo ha lo stesso numero di punti ferita della creatura che imita)"
+								],
+								[
+									"Giacinto",
+									"{@spell Fireball} (2 cariche), {@spell fire storm} (6 cariche)"
+								],
+								[
+									"Perla arcobaleno",
+									"{@spell Prismatic spray} (6 cariche), {@spell water breathing} (2 cariche)"
+								],
+								[
+									"Ruby",
+									"{@spell Fly} (2 cariche), {@spell teleport} (6 cariche)"
+								]
+							]
+						}
+					]
+				}
+			],
+			"items": [
+				"Shard Solitaire (Black Sapphire)|KftGV",
+				"Shard Solitaire (Diamond)|KftGV",
+				"Shard Solitaire (Jacinth)|KftGV",
+				"Shard Solitaire (Rainbow Pearl)|KftGV",
+				"Shard Solitaire (Ruby)|KftGV"
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Silken Spite",
