@@ -5061,14 +5061,14 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Księga Podwyższonych Czynów ma następujące właściwości losowe:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+						"Księga Podwyższonych Czynów ma następujące właściwości losowe:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5138,16 +5138,16 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Księga Plugawej Ciemności ma następujące właściwości losowe:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+						"Księga Plugawej Ciemności ma następujące właściwości losowe:",
+						{
+							"type": "list",
+							"items": [
+								"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5199,6 +5199,54 @@
 			"attachedSpells": [
 				"dominate monster"
 			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Book of Vile Darkness (Variant)",
+			"source": "KftGV",
+			"page": 207,
+			"_copy": {
+				"name": "Book of Vile Darkness",
+				"source": "DMG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 7
+						},
+						"items": [
+							"The Book of Vile Darkness has the following properties:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Circle of Death",
+										"entries": [
+											"While attuned to the book, you can cast {@spell circle of death} (save DC 20) from it as an action. After you cast the spell, roll a {@dice d6}. On a roll of 1-5, you can't use this property again until the next dawn."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Condition Immunities",
+										"entries": [
+											"While attuned to the book, you can't be {@condition charmed} or {@condition frightened}."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Evil Presence",
+										"entries": [
+											"The book houses an evil spirit that is hostile toward you. When you become attuned to the book, the spirit tries to leave the book and enter your body. If you fail a DC 20 Charisma saving throw, it succeeds, and you become an NPC under the DM's control until the intruding spirit is banished using magic such as the {@spell dispel evil and good} spell. The banished spirit returns to the book."
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
 			"hasFluffImages": true
 		},
 		{
@@ -7695,6 +7743,58 @@
 			],
 			"attachedSpells": [
 				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Constantori's Portrait",
+			"source": "KftGV",
+			"page": 101,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"sentient": true,
+			"weight": 15,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"Ten obraz autorstwa słynnego artysty Dkesii Kwan przedstawia Constantori, piękną dwórkę, której zapłacono oszałamiającą sumę za bycie modelką Dkesii. To, czy rzeczywisty wygląd Constantori odpowiada obrazowi, pozostaje przedmiotem dyskusji. Portret jest jednym z kilku obrazów zamówionych przez zmarłą Daiyani Grysthorn, władczynię zbrodni, która często dawała magiczne obrazy w prezencie swoim najbardziej cenionym współpracownikom.",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"Constantori's Portrait to czujący, legalnie zły przedmiot o wyniku Inteligencji 14, Mądrości 12 i Charyzmy 8. Słyszy w zasięgu 120 stóp i ma {@sense darkvision} w zasięgu 60 stóp, ale nie widzi niczego za sobą.aiyani Grysthorn, władca zbrodni, który często dawał magiczne obrazy w prezencie swoim najbardziej cenionym współpracownikom.",
+						"Obraz potrafi rozmawiać we Wspólnym, Dracońskim i Elfickim, jakby był żywą osobą, choć usta Constantori nie poruszają się. Gdy tylko w zasięgu słuchu portretu pojawia się rozmowa, obraz chętnie zbiera sekrety, nazwiska skrytobójców, ważne wydarzenia czy wszelkie rozmowy polityczne.ly dawała magiczne obrazy w prezencie swoim najbardziej cenionym współpracownikom."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"Portret Constantori jest wymagający, protekcjonalny i próżny. Nie lubi być zakrywany lub umieszczany poza zasięgiem wzroku i głośno potępia każdego, kto próbuje wyjąć go ze swojej złoconej ramy.nversations.ly dawała magiczne obrazy w prezencie swoim najbardziej cenionym współpracownikom."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wealth of Information",
+					"entries": [
+						"Podstawowym celem obrazu jest obserwacja i przywołanie rozmów. Przez ostatnie kilkadziesiąt lat Portret Constantoriego obserwował po cichu niezliczone rozmowy i posiada teraz niepoliczalną ilość wiedzy - od kryminalnych spisków po tajne hasła. DM decyduje, co obraz wie, a czego nie.",
+						"Podczas dostrojenia do obrazu możesz podjąć akcję telepatycznego kontaktu na dowolną odległość, pod warunkiem, że ty i obraz jesteście na tej samej płaszczyźnie istnienia. Obraz nie może jednak skontaktować się z tobą telepatycznie. Utrzymanie telepatycznego kontaktu z obrazem wymaga twojej koncentracji (tak jakbyś koncentrował się na zaklęciu).s co obraz wie, a czego nie."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guardian Portrait",
+					"entries": [
+						"Kiedy jesteś dostrojony do obrazu, możesz nakazać mu, aby strzegł swojej lokalizacji przed jednym lub kilkoma stworzeniami, które określisz jako wrogów obrazu. Obraz pełni tę funkcję, dopóki nie wydasz mu rozkazu zaprzestania lub dopóki twoje dostrojenie do obrazu nie wygaśnie.centrowanie się do zaklęcia).co obraz wie, a czego nie.",
+						"Obraz ma 3 ładunki. Kiedy stworzenie, które obraz zidentyfikuje jako swojego wroga, rozpoczyna swoją turę w przestrzeni, którą obraz widzi, obraz wydaje 1 ze swoich ładunków, aby rzucić {@spell magic missile} (3 pociski), celując w to stworzenie. Obraz odzyskuje wszystkie wydatkowane ładunki codziennie o świcie.e obraz wie, a czego nie.",
+						"Obraz jest małym obiektem o AC 12, 20 punktach trafień i odporności na obrażenia od trucizny. W swojej ramie z liści złota obraz waży 15 funtów. Jeśli obraz ma co najmniej 1 punkt trafienia i zostanie zaatakowany przez {@spell mending} zaklęcie, odzyskuje {@dice 2d6} punktów trafienia.hat nie."
+					]
+				}
+			],
+			"attachedSpells": [
+				"magic missile"
 			],
 			"hasFluffImages": true
 		},
@@ -12408,15 +12508,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Oko Vecny i {@item Hand of Vecna} mają następujące właściwości losowe:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"Oko Vecny i {@item Hand of Vecna} mają następujące właściwości losowe:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -15491,15 +15591,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"{@item Eye of Vecna} i Ręka Vecny mają następujące właściwości losowe:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"{@item Eye of Vecna} i Ręka Vecny mają następujące właściwości losowe:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -30282,6 +30382,259 @@
 			]
 		},
 		{
+			"name": "Shard of Xeluan",
+			"source": "KftGV",
+			"page": 134,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"curse": true,
+			"bonusSpellAttack": "+1",
+			"entries": [
+				"Ten odłamek obsydianu o długości 1 stopy ma pod swoją zimną powierzchnią żyły srebra i złota.",
+				{
+					"type": "entries",
+					"name": "Empowered Magic",
+					"entries": [
+						"Trzymając odłamek, możesz używać go jako punktu skupienia zaklęć i daje ci on premię +1 do ataków czarami."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Strength",
+					"entries": [
+						"Twój wynik wytrzymałości wzrasta o 4, gdy odłamek znajduje się na twojej osobie. Odłamek nie może podnieść twojego wyniku Siły powyżej 22."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"Dostrojenie się do tego przedmiotu rozszerza jego klątwę na ciebie. Pozostaniesz przeklęty, dopóki nie zostaniesz zaatakowany przez {@spell remove curse} zaklęcie lub podobną magię, lub dopóki odłamek nie zostanie ponownie dołączony do {@condition petrified} serca Xeluana.",
+						"Klątwa odłamka powoduje, że spotyka cię nieszczęście. Kiedy wyrzucisz 1 przy ataku, sprawdzeniu umiejętności lub rzucie ratunkowym, rzuć na tabelę nieszczęść Shard, aby określić nieszczęście. Tak długo jak trwa to nieszczęście, nie spotykają cię inne nieszczęścia związane z odłamkami."
+					]
+				},
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"d6",
+						"Misfortune"
+					],
+					"rows": [
+						[
+							"1",
+							"Przypadkowo skaleczyłeś się odłamkiem i jesteś {@condition poisoned} do następnego świtu."
+						],
+						[
+							"2",
+							"Doświadczasz wizji starożytnej katastrofy - pięknego miasta zagrożonego przez rozpadające się góry i wybuchające wulkany - i jesteś {@condition stunned} do końca swojej następnej tury."
+						],
+						[
+							"3",
+							"Przez kilka sekund ziemia trzęsie się pod tobą. Ty i każde stworzenie w promieniu 10 stóp od ciebie musi udać się na rzut ratujący zręczność DC 16 lub zostać powalonym {@condition prone}."
+						],
+						[
+							"4",
+							"Odłamek wypuszcza trzy świecące lotki magicznej siły, które celują w jedną losową istotę w promieniu 30 stóp od ciebie. Jeśli nie ma takiego celu, stajesz się nim ty. Każda strzałka trafia automatycznie i zadaje 3 ({@damage 1d4 + 1}) obrażeń od siły."
+						],
+						[
+							"5",
+							"Do następnego świtu Bestie o wyniku Inteligencji 3 lub niższym są do ciebie wrogo nastawione."
+						],
+						[
+							"6",
+							"Wydaje się, że nic nie idzie po twojej myśli. Do następnego świtu masz minusy w sprawdzaniu umiejętności."
+						]
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Black Sapphire)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Ten kamień szlachetny zawiera niestabilną szczelinę pozawymiarową. Jego fasety są pokryte opalizującymi żyłami, które wydają się poruszać z własnej woli. Znanych jest pięć rodzajów pasjansów, każdy z nich to inny rodzaj kamienia szlachetnego, jak pokazano w tabeli typów pasjansów.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Jako akcja dodatkowa, nosząc lub trzymając odłamkowy pasjans, możesz teleportować się wraz ze wszystkim, co masz na sobie lub niesiesz, do niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie.",
+						"Kiedy używasz tej właściwości, możesz wykorzystać niestabilną moc kamiennej, międzywymiarowej szczeliny, aby zwiększyć odległość teleportu o maksymalnie 30 stóp, ale jeśli teleportujesz się na więcej niż 30 stóp używając Kroku Szczeliny, musisz odnieść sukces w rzucie ratunkowym DC 16 Konstytucji lub otrzymać {@damage 3d10} obrażeń od siły natychmiast po teleportacji."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Kamień ma 6 ładunków i codziennie o świcie odzyskuje {@dice 1d6} zużytych ładunków. Jako akcję możesz rzucić jedno z zaklęć kamienia, wydając wymaganą liczbę ładunków, nie wymagającą składników materialnych (save DC 16). Solitera z czarnego szafiru można użyć do rzucenia następujących zaklęć: {@spell banishment} (3 ładunki; cel zostaje wygnany do przestrzeni pozawymiarowej kamienia na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell blight} (3 ładunki), {@spell finger of death} (6 ładunków).ter teleportujesz się."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"blight",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Diamond)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Ten kamień szlachetny zawiera niestabilną szczelinę pozawymiarową. Jego fasety są pokryte opalizującymi żyłami, które wydają się poruszać z własnej woli. Znanych jest pięć rodzajów pasjansów, każdy z nich to inny rodzaj kamienia szlachetnego, jak pokazano w tabeli typów pasjansów.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Jako akcja dodatkowa, nosząc lub trzymając odłamkowy pasjans, możesz teleportować się wraz ze wszystkim, co masz na sobie lub niesiesz, do niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie.",
+						"Kiedy używasz tej właściwości, możesz wykorzystać niestabilną moc kamiennej, międzywymiarowej szczeliny, aby zwiększyć odległość teleportu o maksymalnie 30 stóp, ale jeśli teleportujesz się na więcej niż 30 stóp używając Kroku Szczeliny, musisz odnieść sukces w rzucie ratunkowym DC 16 Konstytucji lub otrzymać {@damage 3d10} obrażeń od siły natychmiast po teleportacji."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Kamień ma 6 ładunków i codziennie o świcie odzyskuje {@dice 1d6} zużytych ładunków. Jako akcję możesz rzucić jedno z zaklęć kamienia, wydając odpowiednią liczbę ładunków, nie wymagającą składników materialnych (save DC 16). Solitera z diamentowym odłamkiem można użyć do rzucenia następujących zaklęć: {@spell banishment} (3 ładunki; cel zostaje wygnany do przestrzeni pozawymiarowej kamienia na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell ice storm} (3 ładunki), {@spell simulacrum} (6 ładunków; duplikat tworzy. %) (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozawymiarowej na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell ice storm} (3 ładunki), {@spell simulacrum} (6 ładunków).ter ty teleportujesz."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"ice storm",
+				"simulacrum"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Jacinth)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Ten kamień szlachetny zawiera niestabilną szczelinę pozawymiarową. Jego fasety są pokryte opalizującymi żyłami, które wydają się poruszać z własnej woli. Znanych jest pięć rodzajów pasjansów, każdy z nich to inny rodzaj kamienia szlachetnego, jak pokazano w tabeli typów pasjansów.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Jako akcja dodatkowa, nosząc lub trzymając odłamkowy pasjans, możesz teleportować się wraz ze wszystkim, co masz na sobie lub niesiesz, do niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie.",
+						"Kiedy używasz tej właściwości, możesz wykorzystać niestabilną moc kamiennej, międzywymiarowej szczeliny, aby zwiększyć odległość teleportu o maksymalnie 30 stóp, ale jeśli teleportujesz się na więcej niż 30 stóp używając Kroku Szczeliny, musisz odnieść sukces w rzucie ratunkowym DC 16 Konstytucji lub otrzymać {@damage 3d10} obrażeń od siły natychmiast po teleportacji."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Kamień ma 6 ładunków i codziennie o świcie odzyskuje {@dice 1d6} zużytych ładunków. Jako akcję możesz rzucić jedno z zaklęć kamienia, wydając wymaganą liczbę ładunków, nie wymagającą składników materialnych (save DC 16). Solitera z Odłamków Żakina można użyć do rzucenia następujących zaklęć: {@spell banishment} (3 ładunki; cel zostaje wygnany do przestrzeni pozawymiarowej kamienia na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell fireball} (2 ładunki), {@spell fire storm} (6 ładunków). e na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell fireball} (3 ładunki), {@spell fire storm} (6 ładunków; duplikat tworzy.%) (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozawymiarowej na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell fireball} (3 ładunki), {@spell fire storm} (6 ładunków).ter teleportujesz się."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fireball",
+				"fire storm"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Rainbow Pearl)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Ten kamień szlachetny zawiera niestabilną szczelinę pozawymiarową. Jego fasety są pokryte opalizującymi żyłami, które wydają się poruszać z własnej woli. Znanych jest pięć rodzajów pasjansów, każdy z nich to inny rodzaj kamienia szlachetnego, jak pokazano w tabeli typów pasjansów.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Jako akcja dodatkowa, nosząc lub trzymając odłamkowy pasjans, możesz teleportować się wraz ze wszystkim, co masz na sobie lub niesiesz, do niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie.",
+						"Kiedy używasz tej właściwości, możesz wykorzystać niestabilną moc kamiennej, międzywymiarowej szczeliny, aby zwiększyć odległość teleportu o maksymalnie 30 stóp, ale jeśli teleportujesz się na więcej niż 30 stóp używając Kroku Szczeliny, musisz odnieść sukces w rzucie ratunkowym DC 16 Konstytucji lub otrzymać {@damage 3d10} obrażeń od siły natychmiast po teleportacji."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Kamień ma 6 ładunków i codziennie o świcie odzyskuje {@dice 1d6} zużytych ładunków. Jako akcję, możesz rzucić jedno z zaklęć kamienia, wydając wymaganą liczbę ładunków, nie wymagającą składników materialnych (save DC 16). Tęczowy perłowy pasjans może być użyty do rzucenia następujących zaklęć: {@spell banishment} (3 ładunki; cel zostaje wygnany do przestrzeni pozawymiarowej kamienia na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell prismatic spray} (6 ładunków), {@spell water breathing} (2 ładunki).%) (6 ładunków). e na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell prismatic spray} (3 ładunki), {@spell water breathing} (6 ładunków; duplikat tworzy.%) (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozawymiarowej na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell prismatic spray} (3 ładunki), {@spell water breathing} (6 ładunków).ter teleportujesz się."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"prismatic spray",
+				"water breathing"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Ruby)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Ten kamień szlachetny zawiera niestabilną szczelinę pozawymiarową. Jego fasety są pokryte opalizującymi żyłami, które wydają się poruszać z własnej woli. Znanych jest pięć rodzajów pasjansów, każdy z nich to inny rodzaj kamienia szlachetnego, jak pokazano w tabeli typów pasjansów.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Jako akcja dodatkowa, nosząc lub trzymając odłamkowy pasjans, możesz teleportować się wraz ze wszystkim, co masz na sobie lub niesiesz, do niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie.",
+						"Kiedy używasz tej właściwości, możesz wykorzystać niestabilną moc kamiennej, międzywymiarowej szczeliny, aby zwiększyć odległość teleportu o maksymalnie 30 stóp, ale jeśli teleportujesz się na więcej niż 30 stóp używając Kroku Szczeliny, musisz odnieść sukces w rzucie ratunkowym DC 16 Konstytucji lub otrzymać {@damage 3d10} obrażeń od siły natychmiast po teleportacji."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Kamień ma 6 ładunków i codziennie o świcie odzyskuje {@dice 1d6} zużytych ładunków. Jako akcję możesz rzucić jedno z zaklęć kamienia, wydając wymaganą liczbę ładunków, nie wymagającą składników materialnych (save DC 16). Solitera z rubinowym odłamkiem można użyć do rzucenia następujących zaklęć: {@spell banishment} (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozawymiarowej na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell fly} (2 ładunki), {@spell teleport} (6 ładunków).(6 ładunków), {@spell teleport} (2 ładunki).%) (6 ładunków). e na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell fly} (3 ładunki), {@spell teleport} (6 ładunków; duplikat tworzy.%) (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozaziemskiej na czas trwania zaklęcia), {@spell mirror image} (1 ładunek), {@spell fly} (3 ładunki), {@spell teleport} (6 ładunków).ter teleportujesz się."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fly",
+				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Shatterspike",
 			"source": "TftYP",
 			"page": 229,
@@ -39106,19 +39459,19 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Różdżka Orcusa ma następujące właściwości losowe:"
+						"Różdżka Orcusa ma następujące właściwości losowe:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+							]
+						},
+						"Szkodliwe właściwości różdżki Orcusa są tłumione, gdy różdżka jest zestrojona z {@creature Orcus|MTF} nim samym."
 					]
 				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
-					]
-				},
-				"Szkodliwe właściwości różdżki Orcusa są tłumione, gdy różdżka jest zestrojona z {@creature Orcus|MTF} nim samym.",
 				{
 					"name": "Protection",
 					"type": "entries",
@@ -42586,6 +42939,84 @@
 			"lootTables": [
 				"Magic Item Table C"
 			]
+		},
+		{
+			"name": "Shard Solitaire",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Ten kamień szlachetny zawiera niestabilną szczelinę pozawymiarową. Jego fasety są pokryte opalizującymi żyłami, które wydają się poruszać z własnej woli. Znanych jest pięć rodzajów pasjansów, każdy z nich to inny rodzaj kamienia szlachetnego, jak pokazano w tabeli typów pasjansów.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Jako akcja dodatkowa, nosząc lub trzymając odłamkowy pasjans, możesz teleportować się wraz ze wszystkim, co masz na sobie lub niesiesz, do niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie.",
+						"Kiedy używasz tej właściwości, możesz wykorzystać niestabilną moc kamiennej, międzywymiarowej szczeliny, aby zwiększyć odległość teleportu o maksymalnie 30 stóp, ale jeśli teleportujesz się na więcej niż 30 stóp używając Kroku Szczeliny, musisz odnieść sukces w rzucie ratunkowym DC 16 Konstytucji lub otrzymać {@damage 3d10} obrażeń od siły natychmiast po teleportacji."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Kamień ma 6 ładunków i codziennie o świcie odzyskuje {@dice 1d6} zużytych ładunków. Tabela Rodzaje pasjansów z odłamków zawiera listę zaklęć wspólnych dla wszystkich pasjansów z odłamków, a także zaklęcia specyficzne dla każdego rodzaju kamienia. Jako akcję możesz rzucić jedno z zaklęć kamienia, wydając odpowiednią liczbę ładunków, nie wymagających składników materialnych (save DC 16).%) (6 ładunków).(6 ładunków), (%4%) (2 ładunki).%) (6 ładunków). e na czas trwania zaklęcia), (%2%) (1 ładunek), (%3%) (3 ładunki), (%4%) (6 ładunków; duplikat tworzy.%) (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozawymiarowej na czas trwania zaklęcia), (%2%) (1 ładunek), (%3%) (3 ładunki), (%4%) (6 ładunków).ter teleportujesz się.",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"colLabels": [
+								"Shard Solitaire",
+								"Spells"
+							],
+							"rows": [
+								[
+									"All",
+									"{@spell Banishment} (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozawymiarowej na czas trwania zaklęcia), {@spell mirror image} (1 ładunek)czas trwania zaklęcia), (%2%) (1 ładunek), (%3%) (3 ładunki), (%4%) (6 ładunków; duplikat tworzy. %) (3 ładunki; cel zostaje wygnany do kamiennej przestrzeni pozawymiarowej na czas trwania zaklęcia), (%2%) (1 ładunek), (%3%) (3 ładunki), (%4%) (6 ładunków).ter teleportujesz się."
+								],
+								[
+									"Czarna szafirowa przestrzeń na czas trwania zaklęcia), (%2%) (1 ładunek), (%3%) (3 ładunki), (%4%) (6 ładunków).ter teleportujesz się.",
+									"{@spell Blight} (3 opłaty), {@spell finger of death} (6 opłat)"
+								],
+								[
+									"Diament",
+									"{@spell Ice storm} (3 ładunki), {@spell simulacrum} (6 ładunków; duplikat stworzony przez zaklęcie ma taką samą liczbę punktów trafień jak istota, którą naśladuje)"
+								],
+								[
+									"Jacinth",
+									"{@spell Fireball} (2 opłaty), {@spell fire storm} (6 opłat)"
+								],
+								[
+									"Tęczowa perła",
+									"{@spell Prismatic spray} (6 opłat), {@spell water breathing} (2 opłaty)"
+								],
+								[
+									"Ruby",
+									"{@spell Fly} (2 opłaty), {@spell teleport} (6 opłat)"
+								]
+							]
+						}
+					]
+				}
+			],
+			"items": [
+				"Shard Solitaire (Black Sapphire)|KftGV",
+				"Shard Solitaire (Diamond)|KftGV",
+				"Shard Solitaire (Jacinth)|KftGV",
+				"Shard Solitaire (Rainbow Pearl)|KftGV",
+				"Shard Solitaire (Ruby)|KftGV"
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Silken Spite",

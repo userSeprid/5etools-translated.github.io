@@ -28,7 +28,7 @@
 					"*": {
 						"mode": "replaceTxt",
 						"replace": "the veteran",
-						"with": "Durstan",
+						"with": "Amelia",
 						"flags": "i"
 					}
 				}
@@ -148,6 +148,79 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Andir beyond 1st Level",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Hit Points",
+								"New Features"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2nd",
+									"16 ({@dice 3d8 + 3})",
+									"Rzucanie czarów. Andir uczy się kolejnego zaklęcia 1. poziomu: {@spell longstrider}."
+								],
+								[
+									"3rd",
+									"22 ({@dice 4d8 + 4})",
+									"Rzucanie czarów. Andir zyskuje jeden slot na zaklęcia 1. poziomu. Uczy się też kolejnego zaklęcia 1. poziomu: {@spell Tenser's floating disk}."
+								],
+								[
+									"4th",
+									"27 ({@dice 5d8 + 5})",
+									"Ability Score Improvement. Wynik Inteligencji Andira wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się o 1 następujące liczby: jego spell save DC, premia do trafienia jego ataków czarami oraz premie we wpisie umiejętności. Rzucanie zaklęć. Andir uczy się kolejnego cantripa: {@spell mage hand}."
+								],
+								[
+									"5th",
+									"33 ({@dice 6d8 + 6})",
+									"Proficiency Bonus. Premia biegłości Andira wzrasta o 1, więc zwiększ o 1 następujące liczby: jego DC obrony przed czarami, premia do trafienia jego Quarterstaffa i ataków czarami, oraz premie we wpisach Saving Throws i Skills. Spellcasting. Andir zyskuje jeden slot na zaklęcia 1. poziomu i dwa sloty na zaklęcia 2. poziomu. Uczy się także 2. poziomu zaklęcia: {@spell knock}."
+								],
+								[
+									"6th",
+									"38 ({@dice 7d8 + 7})",
+									"Potężne czary. Andir dodaje swój modyfikator Inteligencji do obrażeń zadawanych przez dowolny cantrip.ll sloty. Uczy się także 2. poziomu zaklęcia: (%0%)."
+								],
+								[
+									"7th",
+									"44 ({@dice 8d8 + 8})",
+									"Rzucanie czarów. Andir zyskuje jeden slot na czary 2. poziomu. Uczy się też kolejnego zaklęcia 2. poziomu: {@spell invisibility}."
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"Ability Score Improvement. Wynik Inteligencji Andira wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się o 1 następujące liczby: jego save DC czarów, premia do trafienia jego ataków czarami oraz premie w jego wpisie Umiejętności."
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"Proficiency Bonus. Premia biegłości Andira wzrasta o 1, więc zwiększ o 1 następujące liczby: jego DC obrony przed czarami, premia do trafienia jego Quarterstaffa i ataków czarami, oraz premie we wpisach Saving Throws i Skills. Rzucanie zaklęć. Andir zyskuje dwa sloty na czary 3. poziomu. Uczy się też 3. poziomowego zaklęcia: {@spell haste}."
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"Rzucanie zaklęć. Andir uczy się kolejnego cantripa: {@spell minor illusion}.-poziomowego zaklęcia: {@spell minor illusion}."
+								],
+								[
+									"11th",
+									"66 ({@dice 12d8 + 12})",
+									"Rzucanie czarów. Andir zyskuje jeden slot na czary trzeciego poziomu. Uczy się też kolejnego zaklęcia 3. poziomu: {@spell sending}."
+								]
+							]
+						}
+					]
+				}
+			],
 			"languageTags": [
 				"C",
 				"DR"
@@ -168,7 +241,636 @@
 			],
 			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Andir Valmakos (10th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Andir dodaje swój modyfikator Inteligencji do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Quarterstaff",
+							"items": {
+								"name": "Quarterstaff",
+								"entries": [
+									"{@atk mw} {@hit 4} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d6}) obrażeń od uderzeń, lub 4 ({@damage 1d8}) obrażeń od uderzeń, jeśli użyto dwóch rąk."
+								]
+							}
+						}
+					},
+					"level": 10,
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+4"
+					},
+					"skill": {
+						"arcana": "+8",
+						"history": "+8",
+						"investigation": "+8",
+						"religion": "+8"
+					},
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 16}, {@hit 8} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell knock}",
+										"{@spell invisibility}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell haste}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (11th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Andir dodaje swój modyfikator Inteligencji do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Quarterstaff",
+							"items": {
+								"name": "Quarterstaff",
+								"entries": [
+									"{@atk mw} {@hit 4} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d6}) obrażeń od uderzeń, lub 4 ({@damage 1d8}) obrażeń od uderzeń, jeśli użyto dwóch rąk."
+								]
+							}
+						}
+					},
+					"level": 11,
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+4"
+					},
+					"skill": {
+						"arcana": "+8",
+						"history": "+8",
+						"investigation": "+8",
+						"religion": "+8"
+					},
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 16}, {@hit 8} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell knock}",
+										"{@spell invisibility}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell haste}",
+										"{@spell sending}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (2nd Level)",
+					"source": "DSotDQ",
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 12}, {@hit 4} do trafienia przy atakach czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}"
+							],
+							"spells": {
+								"1": {
+									"slots": 2,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (3rd Level)",
+					"source": "DSotDQ",
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 12}, {@hit 4} do trafienia przy atakach czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (4th Level)",
+					"source": "DSotDQ",
+					"level": 4,
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"int": 16,
+					"skill": {
+						"arcana": "+5",
+						"history": "+5",
+						"investigation": "+5",
+						"religion": "+5"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 13}, {@hit 5} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (5th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Quarterstaff",
+							"items": {
+								"name": "Quarterstaff",
+								"entries": [
+									"{@atk mw} {@hit 3} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d6}) obrażeń od uderzeń, lub 4 ({@damage 1d8}) obrażeń od uderzeń, jeśli użyto dwóch rąk."
+								]
+							}
+						}
+					},
+					"level": 5,
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"int": 16,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+6",
+						"history": "+6",
+						"investigation": "+6",
+						"religion": "+6"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 14}, {@hit 6} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell knock}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (6th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Andir dodaje swój modyfikator Inteligencji do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Quarterstaff",
+							"items": {
+								"name": "Quarterstaff",
+								"entries": [
+									"{@atk mw} {@hit 3} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d6}) obrażeń od uderzeń, lub 4 ({@damage 1d8}) obrażeń od uderzeń, jeśli użyto dwóch rąk."
+								]
+							}
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"int": 16,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+6",
+						"history": "+6",
+						"investigation": "+6",
+						"religion": "+6"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 14}, {@hit 6} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell knock}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (7th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Andir dodaje swój modyfikator Inteligencji do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Quarterstaff",
+							"items": {
+								"name": "Quarterstaff",
+								"entries": [
+									"{@atk mw} {@hit 3} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d6}) obrażeń od uderzeń, lub 4 ({@damage 1d8}) obrażeń od uderzeń, jeśli użyto dwóch rąk."
+								]
+							}
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"int": 16,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+6",
+						"history": "+6",
+						"investigation": "+6",
+						"religion": "+6"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 14}, {@hit 6} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell knock}",
+										"{@spell invisibility}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (8th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Andir dodaje swój modyfikator Inteligencji do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Quarterstaff",
+							"items": {
+								"name": "Quarterstaff",
+								"entries": [
+									"{@atk mw} {@hit 3} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d6}) obrażeń od uderzeń, lub 4 ({@damage 1d8}) obrażeń od uderzeń, jeśli użyto dwóch rąk."
+								]
+							}
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+7",
+						"history": "+7",
+						"investigation": "+7",
+						"religion": "+7"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 15}, {@hit 7} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell knock}",
+										"{@spell invisibility}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Andir Valmakos (9th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Andir dodaje swój modyfikator Inteligencji do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Quarterstaff",
+							"items": {
+								"name": "Quarterstaff",
+								"entries": [
+									"{@atk mw} {@hit 4} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d6}) obrażeń od uderzeń, lub 4 ({@damage 1d8}) obrażeń od uderzeń, jeśli użyto dwóch rąk."
+								]
+							}
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+4"
+					},
+					"skill": {
+						"arcana": "+8",
+						"history": "+8",
+						"investigation": "+8",
+						"religion": "+8"
+					},
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Andira to Inteligencja (spell save {@dc 16}, {@hit 8} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia czarodziejskie:"
+							],
+							"will": [
+								"{@spell light}",
+								"{@spell ray of frost}",
+								"{@spell mage hand}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell thunderwave}",
+										"{@spell longstrider}",
+										"{@spell Tenser's floating disk}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell knock}",
+										"{@spell invisibility}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell haste}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Anhkolox",
@@ -528,6 +1230,79 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Ayik beyond 1st Level",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Hit Points",
+								"New Features"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2nd",
+									"16 ({@dice 3d8 + 3})",
+									"Drugi wiatr. Ayik może użyć dodatkowej akcji w swojej turze, aby odzyskać punkty trafień równe {@dice 1d10} + jego poziom. Gdy raz użyje tej cechy, nie może jej użyć ponownie, dopóki nie zakończy krótkiego lub długiego odpoczynku."
+								],
+								[
+									"3rd",
+									"22 ({@dice 4d8 + 4})",
+									"Ulepszona krytyka. Rolki ataku Ayika uzyskują teraz trafienie krytyczne przy rolce 19 lub 20 na {@dice d20}."
+								],
+								[
+									"4th",
+									"27 ({@dice 5d8 + 5})",
+									"Ability Score Improvement. Wynik Zręczności Ayika wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się o 1 następujące liczby: jego Klasa Pancerza, premia do rzutu ratunkowego ze Zręczności, premie {@skill Acrobatics} i {@skill Stealth} oraz premie do trafienia i obrażeń jego ataków bronią."
+								],
+								[
+									"5th",
+									"33 ({@dice 6d8 + 6})",
+									"Proficiency Bonus. Premia biegłości Ayika wzrasta o 1, więc zwiększ o 1 następujące liczby: premie we wpisach Saving Throws i Skills (o 2 dla {@skill Perception}), oraz premie do trafienia jego ataków bronią. Jego pasywny wynik Percepcji wzrasta o 2."
+								],
+								[
+									"6th",
+									"38 ({@dice 7d8 + 7})",
+									"Dodatkowy atak. Ayik może zaatakować dwa razy, zamiast raz, za każdym razem, gdy podejmuje akcję {@action attack||Attack} w swojej turze."
+								],
+								[
+									"7th",
+									"44 ({@dice 8d8 + 8})",
+									"Gotowość bojowa. Ayik ma przewagę w rolkach inicjatywy."
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"Ability Score Improvement. Wynik Zręczności Ayika wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się o 1 następujące liczby: jego Klasa Pancerza, premia do rzutu ratunkowego ze Zręczności, premie {@skill Acrobatics} i {@skill Stealth} oraz premie do trafienia i obrażeń jego ataków bronią."
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"Proficiency Bonus. Premia biegłości Ayika wzrasta o 1, więc zwiększ o 1 następujące liczby: premie we wpisach Saving Throws i Skills (o 2 dla {@skill Perception}), oraz premie do trafienia jego ataków bronią. Jego pasywny wynik Percepcji wzrasta o 2."
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"Ulepszona obrona. Klasa Pancerza Ayika wzrasta o 1."
+								],
+								[
+									"11th",
+									"66 ({@dice 12d8 + 12})",
+									"Niepokorny. Ayik może powtórzyć rzut ratujący, który mu się nie udał, ale musi użyć nowego rzutu. Gdy raz użyje tej cechy, nie może jej użyć ponownie, dopóki nie skończy długiego odpoczynku."
+								]
+							]
+						}
+					]
+				}
+			],
 			"languageTags": [
 				"C"
 			],
@@ -541,7 +1316,655 @@
 			],
 			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Ayik Ur (10th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Ayik can attack twice, instead of once, whenever he takes the {@action attack||Attack} action on his turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Ayik has advantage on initiative rolls."
+									]
+								},
+								{
+									"name": "Improved Defense",
+									"entries": [
+										"Ayik's Armor Class increases by 1."
+									]
+								}
+							]
+						}
+					},
+					"level": 10,
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}",
+								"improved defense"
+							]
+						}
+					],
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+9"
+					},
+					"skill": {
+						"athletics": "+4",
+						"nature": "+4",
+						"perception": "+9",
+						"stealth": "+9",
+						"survival": "+5"
+					},
+					"passive": 19,
+					"pbNote": "+4",
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 11} do trafienia, zasięg 5 stóp, jeden cel. {@h}8 ({@damage 1d6 + 5}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 11} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}9 ({@damage 1d8 + 5}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (11th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Ayik can attack twice, instead of once, whenever he takes the {@action attack||Attack} action on his turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Ayik has advantage on initiative rolls."
+									]
+								},
+								{
+									"name": "Improved Defense",
+									"entries": [
+										"Ayik's Armor Class increases by 1."
+									]
+								},
+								{
+									"name": "Indomitable",
+									"entries": [
+										"Ayik can reroll a saving throw that he fails, but he must use the new roll. Once he uses this feature, he can't use it again until he finishes a long rest."
+									]
+								}
+							]
+						}
+					},
+					"level": 11,
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}",
+								"improved defense"
+							]
+						}
+					],
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+9"
+					},
+					"skill": {
+						"athletics": "+4",
+						"nature": "+4",
+						"perception": "+9",
+						"stealth": "+9",
+						"survival": "+5"
+					},
+					"passive": 19,
+					"pbNote": "+4",
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 11} do trafienia, zasięg 5 stóp, jeden cel. {@h}8 ({@damage 1d6 + 5}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 11} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}9 ({@damage 1d8 + 5}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (2nd Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Second Wind",
+								"entries": [
+									"Ayik może użyć akcji bonusowej w swojej turze, aby odzyskać punkty trafień równe {@dice 1d10} + jego poziom. Gdy raz użyje tej cechy, nie może jej użyć ponownie, dopóki nie zakończy krótkiego lub długiego odpoczynku."
+								]
+							}
+						}
+					},
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (3rd Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								}
+							]
+						}
+					},
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (4th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								}
+							]
+						}
+					},
+					"level": 4,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}"
+							]
+						}
+					],
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"athletics": "+2",
+						"nature": "+2",
+						"perception": "+5",
+						"stealth": "+6",
+						"survival": "+3"
+					},
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 8} do trafienia, zasięg 5 stóp, jeden cel. {@h}7 ({@damage 1d6 + 4}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 8} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}8 ({@damage 1d8 + 4}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (5th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								}
+							]
+						}
+					},
+					"level": 5,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}"
+							]
+						}
+					],
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+7",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 9} do trafienia, zasięg 5 stóp, jeden cel. {@h}7 ({@damage 1d6 + 4}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 9} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}8 ({@damage 1d8 + 4}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (6th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Ayik can attack twice, instead of once, whenever he takes the {@action attack||Attack} action on his turn."
+									]
+								}
+							]
+						}
+					},
+					"level": 6,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}"
+							]
+						}
+					],
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+7",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 9} do trafienia, zasięg 5 stóp, jeden cel. {@h}7 ({@damage 1d6 + 4}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 9} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}8 ({@damage 1d8 + 4}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (7th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Ayik can attack twice, instead of once, whenever he takes the {@action attack||Attack} action on his turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Ayik has advantage on initiative rolls."
+									]
+								}
+							]
+						}
+					},
+					"level": 7,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}"
+							]
+						}
+					],
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+7",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 9} do trafienia, zasięg 5 stóp, jeden cel. {@h}7 ({@damage 1d6 + 4}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 9} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}8 ({@damage 1d8 + 4}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (8th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Ayik can attack twice, instead of once, whenever he takes the {@action attack||Attack} action on his turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Ayik has advantage on initiative rolls."
+									]
+								}
+							]
+						}
+					},
+					"level": 8,
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}"
+							]
+						}
+					],
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+8"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+8",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 10} do trafienia, zasięg 5 stóp, jeden cel. {@h}8 ({@damage 1d6 + 5}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 10} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}9 ({@damage 1d8 + 5}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Ayik Ur (9th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Ayik can use a bonus action on his turn to regain hit points equal to {@dice 1d10} + his level. Once he uses this feature, he can't use it again until he finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Ayik's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Ayik can attack twice, instead of once, whenever he takes the {@action attack||Attack} action on his turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Ayik has advantage on initiative rolls."
+									]
+								}
+							]
+						}
+					},
+					"level": 9,
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item studded leather armor|PHB|studded leather}"
+							]
+						}
+					],
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+9"
+					},
+					"skill": {
+						"athletics": "+4",
+						"nature": "+4",
+						"perception": "+9",
+						"stealth": "+9",
+						"survival": "+5"
+					},
+					"passive": 19,
+					"pbNote": "+4",
+					"action": [
+						{
+							"name": "Shortsword",
+							"entries": [
+								"{@atk mw} {@hit 11} do trafienia, zasięg 5 stóp, jeden cel. {@h}8 ({@damage 1d6 + 5}) obrażeń przebijających."
+							]
+						},
+						{
+							"name": "Longbow",
+							"entries": [
+								"{@atk rw} {@hit 11} do trafienia, zasięg 150/600 stóp, jeden cel. {@h}9 ({@damage 1d8 + 5}) obrażeń przebijających."
+							]
+						}
+					],
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Baaz Draconian",
@@ -1965,6 +3388,79 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Hrigg beyond 1st Level",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Hit Points",
+								"New Features"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2nd",
+									"16 ({@dice 3d8 + 3})",
+									"Rzucanie czarów. Hrigg uczy się kolejnego zaklęcia 1. poziomu: {@spell bless}."
+								],
+								[
+									"3rd",
+									"22 ({@dice 4d8 + 4})",
+									"Rzucanie czarów. Hrigg zyskuje jeden slot na czary pierwszego poziomu. Uczy się też kolejnego zaklęcia 1. poziomu: {@spell detect evil and good}."
+								],
+								[
+									"4th",
+									"27 ({@dice 5d8 + 5})",
+									"Ability Score Improvement. Wynik Mądrości Hrigga wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się następujące liczby o 1: jego save DC zaklęć i premia do trafienia jego ataków zaklęciami, jego premia do rzutu ratującego Mądrość, jego {@skill Medicine} i {@skill Perception} premie oraz jego pasywny wynik Perception. Rzucanie czarów. Hrigg uczy się kolejnego cantripa: {@spell spare the dying}."
+								],
+								[
+									"5th",
+									"33 ({@dice 6d8 + 6})",
+									"Bonus do biegłości. Premia biegłości Hrigga wzrasta o 1, więc zwiększ o 1 następujące liczby: jego DC obrony przed zaklęciem i premię do trafienia jego ataków zaklęciem, premie we wpisach Saving Throws i Skills oraz premie do trafienia jego ataków bronią. Rzucanie zaklęć. Hrigg zyskuje jeden slot na czary 1. poziomu i dwa sloty na czary 2. poziomu. Uczy się także 2. poziomu zaklęcia: {@spell spiritual weapon}.ng. Hrigg uczy się kolejnego cantripa: (%2%)."
+								],
+								[
+									"6th",
+									"38 ({@dice 7d8 + 7})",
+									"Potent Cantrips. Hrigg dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip.el slot na zaklęcia i dwa sloty na zaklęcia drugiego poziomu. Uczy się także 2. poziomu zaklęcia: (%0%).ng. Hrigg uczy się kolejnego cantripa: (%2%)."
+								],
+								[
+									"7th",
+									"44 ({@dice 8d8 + 8})",
+									"Rzucanie czarów. Hrigg zyskuje jeden slot na czary drugiego poziomu. Uczy się też kolejnego zaklęcia 2. poziomu: {@spell lesser restoration}."
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"Ability Score Improvement. Wynik Mądrości Hrigga wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się następujące liczby o 1: jego spell save DC i bonus do trafienia jego ataków czarami, jego bonus do rzutu ratującego Mądrość, jego {@skill Medicine} i {@skill Perception} bonusy oraz jego pasywny wynik Perception."
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"Proficiency Bonus. Premia biegłości Hrigga wzrasta o 1, więc zwiększ o 1 następujące liczby: jego DC obrony przed zaklęciem i premię do trafienia jego ataków zaklęciem, premie we wpisach Saving Throws i Skills oraz premie do trafienia jego ataków bronią. Spellcasting. Hrigg zyskuje dwa sloty na czary 3. poziomu. Uczy się też 3. poziomowego zaklęcia: {@spell beacon of hope}."
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"Rzucanie czarów. Hrigg uczy się kolejnego cantripa: {@spell thaumaturgy}.el slotów na czary. Uczy się też 3. poziomowego zaklęcia: {@spell thaumaturgy}."
+								],
+								[
+									"11th",
+									"66 ({@dice 12d8 + 12})",
+									"Rzucanie czarów. Hrigg zyskuje jeden slot na zaklęcia 3. poziomu. Uczy się też kolejnego zaklęcia 3. poziomu: {@spell spirit guardians}."
+								]
+							]
+						}
+					]
+				}
+			],
 			"senseTags": [
 				"D"
 			],
@@ -1986,7 +3482,647 @@
 			],
 			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Hrigg Roundrook (10th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Hrigg dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Maul",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}9 ({@damage 2d6 + 2}) obrażeń od uderzenia."
+								]
+							}
+						}
+					},
+					"level": 10,
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"athletics": "+6",
+						"history": "+4",
+						"medicine": "+8",
+						"perception": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 16}, {@hit 8} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}",
+								"{@spell thaumaturgy}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell spiritual weapon}",
+										"{@spell lesser restoration}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell beacon of hope}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (11th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Hrigg dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Maul",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}9 ({@damage 2d6 + 2}) obrażeń od uderzenia."
+								]
+							}
+						}
+					},
+					"level": 11,
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"athletics": "+6",
+						"history": "+4",
+						"medicine": "+8",
+						"perception": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 16}, {@hit 8} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}",
+								"{@spell thaumaturgy}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell spiritual weapon}",
+										"{@spell lesser restoration}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell beacon of hope}",
+										"{@spell spirit guardians}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (2nd Level)",
+					"source": "DSotDQ",
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność zaklinania Hrigga to Mądrość (spell save {@dc 12}, {@hit 4} do trafienia z atakami zaklęciami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}"
+							],
+							"spells": {
+								"1": {
+									"slots": 2,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (3rd Level)",
+					"source": "DSotDQ",
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność zaklinania Hrigga to Mądrość (spell save {@dc 12}, {@hit 4} do trafienia z atakami zaklęciami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (4th Level)",
+					"source": "DSotDQ",
+					"level": 4,
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+5"
+					},
+					"skill": {
+						"athletics": "+4",
+						"history": "+2",
+						"medicine": "+5",
+						"perception": "+5"
+					},
+					"passive": 15,
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 13}, {@hit 5} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (5th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Maul",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 5} do trafienia, zasięg 5 stóp, jeden cel. {@h}9 ({@damage 2d6 + 2}) obrażeń od uderzenia."
+								]
+							}
+						}
+					},
+					"level": 5,
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+6",
+						"perception": "+6"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 14}, {@hit 6} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell spiritual weapon}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (6th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Hrigg dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Maul",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 5} do trafienia, zasięg 5 stóp, jeden cel. {@h}9 ({@damage 2d6 + 2}) obrażeń od uderzenia."
+								]
+							}
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+6",
+						"perception": "+6"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 14}, {@hit 6} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell spiritual weapon}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (7th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Hrigg dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Maul",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 5} do trafienia, zasięg 5 stóp, jeden cel. {@h}9 ({@damage 2d6 + 2}) obrażeń od uderzenia."
+								]
+							}
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+6",
+						"perception": "+6"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 14}, {@hit 6} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell spiritual weapon}",
+										"{@spell lesser restoration}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (8th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Hrigg dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Maul",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 5} do trafienia, zasięg 5 stóp, jeden cel. {@h}9 ({@damage 2d6 + 2}) obrażeń od uderzenia."
+								]
+							}
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+7"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+7",
+						"perception": "+7"
+					},
+					"passive": 16,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 15}, {@hit 7} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell spiritual weapon}",
+										"{@spell lesser restoration}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Hrigg Roundrook (9th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Potent Cantrips",
+								"entries": [
+									"Hrigg dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Maul",
+							"items": {
+								"name": "Maul",
+								"entries": [
+									"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}9 ({@damage 2d6 + 2}) obrażeń od uderzenia."
+								]
+							}
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"athletics": "+6",
+						"history": "+4",
+						"medicine": "+8",
+						"perception": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolność czarowania Hrigga to Mądrość (spell save {@dc 16}, {@hit 8} do trafienia atakami czarami). Ma przygotowane następujące zaklęcia kleryckie:"
+							],
+							"will": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell bless}",
+										"{@spell detect evil and good}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell spiritual weapon}",
+										"{@spell lesser restoration}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell beacon of hope}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Hulking Shadow",
@@ -2114,7 +4250,7 @@
 				{
 					"name": "Bonus Proficiencies",
 					"entries": [
-						"Iriad biegle posługuje się prostą bronią, lekkim pancerzem, narzędziami kartografa i snycerza."
+						"Iriad biegle posługuje się prostą bronią, lekkim pancerzem, {@item cartographer's tools|PHB} i {@item woodcarver's tools|PHB}."
 					]
 				},
 				{
@@ -2136,7 +4272,80 @@
 				{
 					"name": "Helpful",
 					"entries": [
-						"Iriad podejmuje akcję pomocy."
+						"Iriad podejmuje {@action Help} działania."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Iriad beyond 1st Level",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Hit Points",
+								"New Features"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2nd",
+									"16 ({@dice 3d8 + 3})",
+									"Cunning Action. W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję dodatkową."
+								],
+								[
+									"3rd",
+									"22 ({@dice 4d8 + 4})",
+									"Specjalizacja. Premia do biegłości Iriady jest podwajana do każdego sprawdzenia umiejętności, które wykorzystuje {@skill Stealth} lub {@skill Survival}."
+								],
+								[
+									"4th",
+									"27 ({@dice 5d8 + 5})",
+									"Ability Score Improvement. Wynik Zręczności Iriady wzrasta o 2, podnosząc modyfikator o 1, więc zwiększ o 1 następujące liczby: jej klasę pancerza, premię do rzutu ratunkowego ze Zręczności, premię {@skill Stealth} oraz premie do trafienia i obrażeń jej ataków bronią."
+								],
+								[
+									"5th",
+									"33 ({@dice 6d8 + 6})",
+									"Proficiency Bonus. Premia do biegłości Iriady wzrasta o 1, więc dokonaj następujących zmian w jej bloku statystyk: zwiększ premie do rzutów ratunkowych i umiejętności o 1 (o 2 dla {@skill Perception}, {@skill Stealth} i {@skill Survival}); zwiększ jej pasywny wynik Percepcji o 2; zwiększ premie do trafienia jej ataków bronią o 1."
+								],
+								[
+									"6th",
+									"38 ({@dice 7d8 + 7})",
+									"Skoordynowane uderzenie. Kiedy Iriada używa swojej cechy Pomocna, aby wspomóc sojusznika w atakowaniu stworzenia, ten cel może znajdować się do 30 stóp od niej, a ona może zadać mu dodatkowe {@dice 2d6} obrażeń następnym razem, gdy trafi go rolką ataku przed końcem bieżącej tury. Dodatkowe obrażenia są tego samego typu obrażeniami zadawanymi przez atak. o 1."
+								],
+								[
+									"7th",
+									"44 ({@dice 8d8 + 8})",
+									"Uniki. Kiedy Iriada podlega efektowi, który pozwala jej wykonać rzut ratujący zręczność, aby otrzymać tylko połowę obrażeń, nie otrzymuje żadnych obrażeń, jeśli uda jej się wykonać rzut ratujący, i tylko połowę obrażeń, jeśli jej się nie uda. Iriada nie korzysta z tej cechy podczas {@condition incapacitated}. zadawanych przez atak. o 1."
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"Ability Score Improvement. Wyniki Siły i Mądrości Iriady wzrastają o 1, podnosząc ich modyfikatory o 1, więc zwiększają o 1 następujące liczby: jej premie {@skill Athletics}, {@skill Perception} i {@skill Survival} oraz jej pasywny wynik Percepcji."
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"Proficiency Bonus. Premia do biegłości Iriady wzrasta o 1, więc dokonaj następujących zmian w jej bloku statystyk: zwiększ premie do rzutów ratunkowych i umiejętności o 1 (o 2 dla {@skill Perception}, {@skill Stealth} i {@skill Survival}); zwiększ jej pasywny wynik Percepcji o 2; zwiększ premie do trafienia jej ataków bronią o 1."
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"Ability Score Improvement. Wynik Zręczności Iriady wzrasta o 2, podnosząc modyfikator o 1, więc zwiększ o 1 następujące liczby: jej klasę pancerza, premię do rzutu ratunkowego ze Zręczności, premię {@skill Stealth} oraz premie do trafienia i obrażeń jej ataków bronią."
+								],
+								[
+									"11th",
+									"66 ({@dice 12d8 + 12})",
+									"Inspirująca pomoc. Kiedy Iriada podejmuje {@action help||Help} akcję, istota, która otrzymuje pomoc, zyskuje również {@dice 1d6} premii do {@dice d20} rolki. Jeśli ten rolka jest rolką ataku, stworzenie może zrezygnować z dodania do niej premii, a następnie, jeśli atak trafi, stworzenie może dodać premię do rolki obrażeń ataku przeciwko jednemu celowi."
+								]
+							]
+						}
 					]
 				}
 			],
@@ -2161,7 +4370,647 @@
 			],
 			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Iriad (10th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Expertise",
+									"entries": [
+										"Iriad's proficiency bonus is doubled for any ability check she makes that uses either {@skill Stealth} or {@skill Survival}."
+									]
+								},
+								{
+									"name": "Coordinated Strike",
+									"entries": [
+										"When Iriad uses her Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from her, and she can deal an extra {@damage 2d6} damage to it the next time she hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack."
+									]
+								},
+								{
+									"name": "Evasion",
+									"entries": [
+										"When Iriad is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails. Iriad doesn't benefit from this feature while {@condition incapacitated}."
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 10,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"str": 12,
+					"dex": 20,
+					"wis": 14,
+					"save": {
+						"dex": "+8"
+					},
+					"skill": {
+						"acrobatics": "+7",
+						"athletics": "+5",
+						"investigation": "+4",
+						"nature": "+4",
+						"perception": "+10",
+						"stealth": "+13",
+						"survival": "+10"
+					},
+					"passive": 18,
+					"pbNote": "+4",
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 9} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}7 ({@damage 1d4 + 5}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Iriad (11th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Expertise",
+									"entries": [
+										"Iriad's proficiency bonus is doubled for any ability check she makes that uses either {@skill Stealth} or {@skill Survival}."
+									]
+								},
+								{
+									"name": "Coordinated Strike",
+									"entries": [
+										"When Iriad uses her Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from her, and she can deal an extra {@damage 2d6} damage to it the next time she hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack."
+									]
+								},
+								{
+									"name": "Evasion",
+									"entries": [
+										"When Iriad is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails. Iriad doesn't benefit from this feature while {@condition incapacitated}."
+									]
+								},
+								{
+									"name": "Inspiring Help",
+									"entries": [
+										"When Iriad takes the {@action help||Help} action, the creature who receives the help also gains a {@dice 1d6} bonus to the {@dice d20} roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack's damage roll against one target."
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 11,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"str": 12,
+					"dex": 20,
+					"wis": 14,
+					"save": {
+						"dex": "+8"
+					},
+					"skill": {
+						"acrobatics": "+7",
+						"athletics": "+5",
+						"investigation": "+4",
+						"nature": "+4",
+						"perception": "+10",
+						"stealth": "+13",
+						"survival": "+10"
+					},
+					"passive": 18,
+					"pbNote": "+4",
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 9} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}7 ({@damage 1d4 + 5}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Iriad (2nd Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"variant": null
+				},
+				{
+					"name": "Iriad (3rd Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Expertise",
+								"entries": [
+									"Premia do biegłości Iriady jest podwajana do każdego sprawdzenia umiejętności, które wykorzystuje {@skill Stealth} lub {@skill Survival}."
+								]
+							}
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"skill": {
+						"acrobatics": "+5",
+						"athletics": "+2",
+						"investigation": "+2",
+						"nature": "+2",
+						"perception": "+5",
+						"stealth": "+7",
+						"survival": "+5"
+					},
+					"variant": null
+				},
+				{
+					"name": "Iriad (4th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Expertise",
+								"entries": [
+									"Premia do biegłości Iriady jest podwajana do każdego sprawdzenia umiejętności, które wykorzystuje {@skill Stealth} lub {@skill Survival}."
+								]
+							}
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 4,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+5"
+					},
+					"skill": {
+						"acrobatics": "+5",
+						"athletics": "+2",
+						"investigation": "+2",
+						"nature": "+2",
+						"perception": "+5",
+						"stealth": "+8",
+						"survival": "+5"
+					},
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 6} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}6 ({@damage 1d4 + 4}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Iriad (5th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Expertise",
+								"entries": [
+									"Premia do biegłości Iriady jest podwajana do każdego sprawdzenia umiejętności, które wykorzystuje {@skill Stealth} lub {@skill Survival}."
+								]
+							}
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 5,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+3",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+10",
+						"survival": "+7"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 7} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}6 ({@damage 1d4 + 4}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Iriad (6th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Expertise",
+									"entries": [
+										"Iriad's proficiency bonus is doubled for any ability check she makes that uses either {@skill Stealth} or {@skill Survival}."
+									]
+								},
+								{
+									"name": "Coordinated Strike",
+									"entries": [
+										"When Iriad uses her Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from her, and she can deal an extra {@damage 2d6} damage to it the next time she hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack."
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 6,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+3",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+10",
+						"survival": "+7"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 7} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}6 ({@damage 1d4 + 4}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Iriad (7th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Expertise",
+									"entries": [
+										"Iriad's proficiency bonus is doubled for any ability check she makes that uses either {@skill Stealth} or {@skill Survival}."
+									]
+								},
+								{
+									"name": "Coordinated Strike",
+									"entries": [
+										"When Iriad uses her Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from her, and she can deal an extra {@damage 2d6} damage to it the next time she hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack."
+									]
+								},
+								{
+									"name": "Evasion",
+									"entries": [
+										"When Iriad is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails. Iriad doesn't benefit from this feature while {@condition incapacitated}."
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 7,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+3",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+10",
+						"survival": "+7"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 7} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}6 ({@damage 1d4 + 4}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Iriad (8th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Expertise",
+									"entries": [
+										"Iriad's proficiency bonus is doubled for any ability check she makes that uses either {@skill Stealth} or {@skill Survival}."
+									]
+								},
+								{
+									"name": "Coordinated Strike",
+									"entries": [
+										"When Iriad uses her Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from her, and she can deal an extra {@damage 2d6} damage to it the next time she hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack."
+									]
+								},
+								{
+									"name": "Evasion",
+									"entries": [
+										"When Iriad is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails. Iriad doesn't benefit from this feature while {@condition incapacitated}."
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 8,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"str": 12,
+					"dex": 18,
+					"wis": 14,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+4",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+8",
+						"stealth": "+10",
+						"survival": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+3",
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 7} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}6 ({@damage 1d4 + 4}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Iriad (9th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Expertise",
+									"entries": [
+										"Iriad's proficiency bonus is doubled for any ability check she makes that uses either {@skill Stealth} or {@skill Survival}."
+									]
+								},
+								{
+									"name": "Coordinated Strike",
+									"entries": [
+										"When Iriad uses her Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from her, and she can deal an extra {@damage 2d6} damage to it the next time she hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack."
+									]
+								},
+								{
+									"name": "Evasion",
+									"entries": [
+										"When Iriad is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails. Iriad doesn't benefit from this feature while {@condition incapacitated}."
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Cunning Action",
+								"entries": [
+									"W swojej turze w walce Iriada może podjąć akcję {@action dash||Dash}, {@action disengage||Disengage} lub {@action hide||Hide} jako akcję bonusową.et."
+								]
+							}
+						}
+					},
+					"level": 9,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item leather armor|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"str": 12,
+					"dex": 18,
+					"wis": 14,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"acrobatics": "+7",
+						"athletics": "+5",
+						"investigation": "+4",
+						"nature": "+4",
+						"perception": "+10",
+						"stealth": "+12",
+						"survival": "+10"
+					},
+					"passive": 18,
+					"pbNote": "+4",
+					"action": [
+						{
+							"name": "Poison Dagger",
+							"entries": [
+								"{@atk mw,rw} {@hit 8} do trafienia, zasięg 5 stóp lub zasięg 20/60 stóp, jeden cel. {@h}6 ({@damage 1d4 + 4}) obrażeń przebijających plus 3 ({@damage 1d6}) obrażeń od trucizny."
+							]
+						}
+					],
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Ishvern",
@@ -3158,6 +6007,79 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Levna beyond 1st Level",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Hit Points",
+								"New Features"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2nd",
+									"19 ({@dice 3d8 + 6})",
+									"Drugi wiatr. Levna może użyć akcji bonusowej w swojej turze, aby odzyskać punkty trafień równe {@dice 1d10} + jej poziom. Kiedy użyje tej cechy, nie może jej użyć ponownie, dopóki nie zakończy krótkiego lub długiego odpoczynku."
+								],
+								[
+									"3rd",
+									"26 ({@dice 4d8 + 8})",
+									"Ulepszona krytyka. Rolki ataku Levny uzyskują teraz trafienie krytyczne przy rolce 19 lub 20 na {@dice d20}."
+								],
+								[
+									"4th",
+									"32 ({@dice 5d8 + 10})",
+									"Ability Score Improvement. Wynik Siły Levny wzrasta o 2, podnosząc modyfikator o 1, dzięki czemu zwiększa się jej premia {@skill Athletics} o 1, a także zwiększają się premie do trafienia i obrażeń jej ataków bronią o 1."
+								],
+								[
+									"5th",
+									"39 ({@dice 6d8 + 12})",
+									"Proficiency Bonus. Premia do biegłości Levny wzrasta o 1, więc zwiększają się o nią następujące liczby: premie do rzutów ratunkowych i umiejętności, jej pasywny wynik Percepcji oraz premie do trafienia jej ataków bronią."
+								],
+								[
+									"6th",
+									"45 ({@dice 7d8 + 14})",
+									"Dodatkowy atak. Levna może zaatakować dwa razy, zamiast raz, kiedy podejmuje akcję {@action attack||Attack} w swojej turze."
+								],
+								[
+									"7th",
+									"52 ({@dice 8d8 + 16})",
+									"Gotowość bojowa. Levna ma przewagę w rolkach inicjatywy."
+								],
+								[
+									"8th",
+									"58 ({@dice 9d8 + 18})",
+									"Ability Score Improvement. Wynik Siły Levny wzrasta o 2, podnosząc modyfikator o 1, dzięki czemu zwiększa się jej premia {@skill Athletics} o 1, a także zwiększają się premie do trafienia i obrażeń jej ataków bronią o 1."
+								],
+								[
+									"9th",
+									"65 ({@dice 10d8 + 20})",
+									"Proficiency Bonus. Premia do biegłości Levny wzrasta o 1, więc zwiększają się o nią następujące liczby: premie do rzutów ratunkowych i umiejętności, jej pasywny wynik Percepcji oraz premie do trafienia jej ataków bronią."
+								],
+								[
+									"10th",
+									"71 ({@dice 11d8 + 22})",
+									"Ulepszona obrona. Klasa Pancerza Levny wzrasta o 1."
+								],
+								[
+									"11th",
+									"78 ({@dice 12d8 + 24})",
+									"Niepokorny. Levna może powtórzyć rzut ratujący, który jej się nie udał, ale musi użyć nowego rzutu. Gdy raz użyje tej cechy, nie może jej użyć ponownie, dopóki nie zakończy długiego odpoczynku."
+								]
+							]
+						}
+					]
+				}
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -3172,7 +6094,558 @@
 			],
 			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Levna Drakehorn (10th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Levna can attack twice, instead of once, whenever she takes the {@action Attack} action on her turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Levna has advantage on initiative rolls."
+									]
+								},
+								{
+									"name": "Improved Defense",
+									"entries": [
+										"Levna's Armor Class increases by 1."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 8} do trafienia, zasięg 5 stóp, jeden cel. {@h}11 ({@damage 2d6 + 4}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 10,
+					"ac": [
+						{
+							"ac": 19,
+							"from": [
+								"{@item plate armor|PHB|plate}",
+								"improved defense"
+							]
+						}
+					],
+					"hp": {
+						"average": 71,
+						"formula": "11d8 + 22"
+					},
+					"str": 19,
+					"save": {
+						"con": "+6"
+					},
+					"skill": {
+						"athletics": "+8",
+						"intimidation": "+6",
+						"perception": "+4"
+					},
+					"passive": 14,
+					"pbNote": "+4",
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (11th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Levna can attack twice, instead of once, whenever she takes the {@action Attack} action on her turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Levna has advantage on initiative rolls."
+									]
+								},
+								{
+									"name": "Improved Defense",
+									"entries": [
+										"Levna's Armor Class increases by 1."
+									]
+								},
+								{
+									"name": "Indomitable",
+									"entries": [
+										"Levna can reroll a saving throw that she fails, but she must use the new roll. Once she uses this feature, she can't use it again until she finishes a long rest."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 8} do trafienia, zasięg 5 stóp, jeden cel. {@h}11 ({@damage 2d6 + 4}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 11,
+					"ac": [
+						{
+							"ac": 19,
+							"from": [
+								"{@item plate armor|PHB|plate}",
+								"improved defense"
+							]
+						}
+					],
+					"hp": {
+						"average": 78,
+						"formula": "12d8 + 24"
+					},
+					"str": 19,
+					"save": {
+						"con": "+6"
+					},
+					"skill": {
+						"athletics": "+8",
+						"intimidation": "+6",
+						"perception": "+4"
+					},
+					"passive": 14,
+					"pbNote": "+4",
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (2nd Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								}
+							]
+						}
+					},
+					"level": 2,
+					"hp": {
+						"average": 19,
+						"formula": "3d8 + 6"
+					},
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (3rd Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								}
+							]
+						}
+					},
+					"level": 3,
+					"hp": {
+						"average": 26,
+						"formula": "4d8 + 8"
+					},
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (4th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 5} do trafienia, zasięg 5 stóp, jeden cel. {@h}10 ({@damage 2d6 + 3}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 4,
+					"hp": {
+						"average": 32,
+						"formula": "5d8 + 10"
+					},
+					"str": 17,
+					"skill": {
+						"athletics": "+5",
+						"intimidation": "+4",
+						"perception": "+2"
+					},
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (5th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}10 ({@damage 2d6 + 3}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 5,
+					"hp": {
+						"average": 39,
+						"formula": "6d8 + 12"
+					},
+					"str": 17,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+6",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (6th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Levna can attack twice, instead of once, whenever she takes the {@action Attack} action on her turn."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}10 ({@damage 2d6 + 3}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 45,
+						"formula": "7d8 + 14"
+					},
+					"str": 17,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+6",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (7th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Levna can attack twice, instead of once, whenever she takes the {@action Attack} action on her turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Levna has advantage on initiative rolls."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}10 ({@damage 2d6 + 3}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 52,
+						"formula": "8d8 + 16"
+					},
+					"str": 17,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+6",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (8th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Levna can attack twice, instead of once, whenever she takes the {@action Attack} action on her turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Levna has advantage on initiative rolls."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 7} do trafienia, zasięg 5 stóp, jeden cel. {@h}11 ({@damage 2d6 + 4}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 58,
+						"formula": "9d8 + 18"
+					},
+					"str": 19,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+7",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"name": "Levna Drakehorn (9th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Second Wind",
+									"entries": [
+										"Levna can use a bonus action on her turn to regain hit points equal to {@dice 1d10} + her level. Once she uses this feature, she can't use it again until she finishes a short or long rest."
+									]
+								},
+								{
+									"name": "Improved Critical",
+									"entries": [
+										"Levna's attack rolls now score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+									]
+								},
+								{
+									"name": "Extra Attack",
+									"entries": [
+										"Levna can attack twice, instead of once, whenever she takes the {@action Attack} action on her turn."
+									]
+								},
+								{
+									"name": "Battle Readiness",
+									"entries": [
+										"Levna has advantage on initiative rolls."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Greatsword",
+							"items": {
+								"name": "Greatsword",
+								"entries": [
+									"{@atk mw} {@hit 8} do trafienia, zasięg 5 stóp, jeden cel. {@h}11 ({@damage 2d6 + 4}) obrażeń od cięcia."
+								]
+							}
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 65,
+						"formula": "10d8 + 20"
+					},
+					"str": 19,
+					"save": {
+						"con": "+6"
+					},
+					"skill": {
+						"athletics": "+8",
+						"intimidation": "+6",
+						"perception": "+4"
+					},
+					"passive": 14,
+					"pbNote": "+4",
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Lohezet",
@@ -4172,7 +7645,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Zdolnością zaklęciową Tem jest Mądrość (spell save {@dc 12}, +4 do ataków zaklęciami). Ma przygotowane następujące zaklęcia druidów:"
+						"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 12}, {@hit 4} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
 					],
 					"will": [
 						"{@spell druidcraft}",
@@ -4219,6 +7692,79 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Tem beyond 1st Level",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Hit Points",
+								"New Features"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2nd",
+									"16 ({@dice 3d6 + 6})",
+									"Rzucanie czarów. Tem uczy się kolejnego zaklęcia 1. poziomu: {@spell faerie fire}."
+								],
+								[
+									"3rd",
+									"22 ({@dice 4d6 + 8})",
+									"Rzucanie czarów. Tem zyskuje jeden slot na czary pierwszego poziomu. Uczy się też kolejnego zaklęcia 1. poziomu: {@spell goodberry}."
+								],
+								[
+									"4th",
+									"27 ({@dice 5d6 + 10})",
+									"Ability Score Improvement. Wynik Mądrości Tem wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się o 1 następujące liczby: jej spell save DC i premia do trafienia ataków czarami; premia do rzutu ratującego Mądrość; jej {@skill Insight}, {@skill Medicine} i {@skill Perception} premie; jej pasywny wynik Percepcji; oraz DC jej akcji Taunt. Rzucanie czarów. Tem uczy się kolejnego cantripa: {@spell mending}."
+								],
+								[
+									"5th",
+									"33 ({@dice 6d6 + 12})",
+									"Bonus biegłości. Premia biegłości Tem wzrasta o 1, więc zwiększ o 1 następujące liczby: jej DC obrony przed zaklęciami i premię do trafienia jej ataków zaklęciami, premie we wpisach Saving Throws i Skills, oraz premie do trafienia jej ataków bronią, oraz DC jej akcji Taunt.C jej akcji Taunt. Rzucanie czarów. Tem uczy się kolejnego cantripa: (%3%)."
+								],
+								[
+									"6th",
+									"38 ({@dice 7d6 + 14})",
+									"Potent Cantrips. Tem dodaje swój modyfikator Mądrości do obrażeń zadawanych przez dowolny cantrip.aunt action. Rzucanie czarów. Tem uczy się kolejnego cantripa: (%3%)."
+								],
+								[
+									"7th",
+									"44 ({@dice 8d6 + 16})",
+									"Rzucanie czarów. Tem zyskuje jeden slot zaklęć 2. poziomu. Uczy się też kolejnego zaklęcia 2. poziomu: {@spell enhance ability}."
+								],
+								[
+									"8th",
+									"49 ({@dice 9d6 + 18})",
+									"Ability Score Improvement. Wynik Mądrości Tem wzrasta o 2, podnosząc modyfikator o 1, więc zwiększają się następujące liczby o 1: jej DC obrony przed zaklęciami i premia do trafienia ataków zaklęciami; premia do rzutu ratującego Mądrość; jej {@skill Insight}, {@skill Medicine} i {@skill Perception} premie; jej pasywny wynik Percepcji; oraz DC jej akcji Taunt."
+								],
+								[
+									"9th",
+									"55 ({@dice 10d6 + 20})",
+									"Bonus biegłości. Premia biegłości Tem wzrasta o 1, więc zwiększ o 1 następujące liczby: jej DC obrony przed zaklęciami i premię do trafienia jej ataków zaklęciami, premie we wpisach Saving Throws i Skills, premie do trafienia jej ataków bronią oraz DC jej akcji Taunt.C jej akcji Taunt."
+								],
+								[
+									"10th",
+									"60 ({@dice 11d6 + 22})",
+									"Rzucanie czarów. Tem uczy się kolejnego cantripa: {@spell resistance}.t akcji."
+								],
+								[
+									"11th",
+									"66 ({@dice 12d6 + 24})",
+									"Rzucanie czarów. Tem zyskuje jeden slot na zaklęcia 3. poziomu. Uczy się też kolejnego zaklęcia 3. poziomu: {@spell dispel magic}."
+								]
+							]
+						}
+					]
+				}
+			],
 			"languageTags": [
 				"C"
 			],
@@ -4238,7 +7784,677 @@
 			],
 			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Tem Temble (10th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Potent Cantrips",
+									"entries": [
+										"Tem adds her Wisdom modifier to the damage she deals with any cantrip."
+									]
+								}
+							]
+						}
+					},
+					"level": 10,
+					"hp": {
+						"average": 60,
+						"formula": "11d6 + 22"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"insight": "+8",
+						"medicine": "+8",
+						"perception": "+8",
+						"sleight of hand": "+6",
+						"stealth": "+6"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 16}, {@hit 8} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}",
+								"{@spell resistance}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell enhance ability}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 6} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 16} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (11th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Potent Cantrips",
+									"entries": [
+										"Tem adds her Wisdom modifier to the damage she deals with any cantrip."
+									]
+								}
+							]
+						}
+					},
+					"level": 11,
+					"hp": {
+						"average": 66,
+						"formula": "12d6 + 24"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"insight": "+8",
+						"medicine": "+8",
+						"perception": "+8",
+						"sleight of hand": "+6",
+						"stealth": "+6"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 16}, {@hit 8} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}",
+								"{@spell resistance}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell enhance ability}"
+									]
+								},
+								"3": {
+									"slots": 1,
+									"spells": [
+										"{@spell dispel magic}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 6} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 16} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (2nd Level)",
+					"source": "DSotDQ",
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d6 + 6"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 12}, {@hit 4} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}"
+							],
+							"spells": {
+								"1": {
+									"slots": 2,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (3rd Level)",
+					"source": "DSotDQ",
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d6 + 8"
+					},
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 12}, {@hit 4} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (4th Level)",
+					"source": "DSotDQ",
+					"level": 4,
+					"hp": {
+						"average": 27,
+						"formula": "5d6 + 10"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+5"
+					},
+					"skill": {
+						"insight": "+5",
+						"medicine": "+5",
+						"perception": "+5",
+						"sleight of hand": "+4",
+						"stealth": "+4"
+					},
+					"passive": 15,
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 13}, {@hit 5} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 4} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 13} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (5th Level)",
+					"source": "DSotDQ",
+					"level": 5,
+					"hp": {
+						"average": 33,
+						"formula": "6d6 + 12"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"insight": "+6",
+						"medicine": "+6",
+						"perception": "+6",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 14}, {@hit 6} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 14} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (6th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Potent Cantrips",
+									"entries": [
+										"Tem adds her Wisdom modifier to the damage she deals with any cantrip."
+									]
+								}
+							]
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 38,
+						"formula": "7d6 + 14"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"insight": "+6",
+						"medicine": "+6",
+						"perception": "+6",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 14}, {@hit 6} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 14} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (7th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Potent Cantrips",
+									"entries": [
+										"Tem adds her Wisdom modifier to the damage she deals with any cantrip."
+									]
+								}
+							]
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 44,
+						"formula": "8d6 + 16"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"insight": "+6",
+						"medicine": "+6",
+						"perception": "+6",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 14}, {@hit 6} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell enhance ability}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 14} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (8th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Potent Cantrips",
+									"entries": [
+										"Tem adds her Wisdom modifier to the damage she deals with any cantrip."
+									]
+								}
+							]
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 49,
+						"formula": "9d6 + 18"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+7"
+					},
+					"skill": {
+						"insight": "+7",
+						"medicine": "+7",
+						"perception": "+7",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 16,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 15}, {@hit 7} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell enhance ability}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 15} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Tem Temble (9th Level)",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Potent Cantrips",
+									"entries": [
+										"Tem adds her Wisdom modifier to the damage she deals with any cantrip."
+									]
+								}
+							]
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 55,
+						"formula": "10d6 + 20"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"insight": "+8",
+						"medicine": "+8",
+						"perception": "+8",
+						"sleight of hand": "+6",
+						"stealth": "+6"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Zdolnością zaklinania Tem jest Mądrość (spell save {@dc 16}, {@hit 8} do ataków czarami). Ma przygotowane następujące zaklęcia druidów:"
+							],
+							"will": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell mending}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell healing word}",
+										"{@spell faerie fire}",
+										"{@spell goodberry}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell enhance ability}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"name": "Hoopak",
+							"entries": [
+								"{@atk mw,rw} {@hit 6} do trafienia, zasięg 5 stóp lub zasięg 40/160 stóp, jeden cel. {@h}4 ({@damage 1d4 + 2}) obrażeń przebijających, lub 4 ({@damage 1d4 + 2}) obrażeń obezwładniających, jeśli Tem użył procy hoopaka do wykonania ataku dystansowego."
+							]
+						},
+						{
+							"name": "Taunt",
+							"entries": [
+								"Tem wystrzeliwuje wściekłą lawinę obelg w kierunku istoty, którą widzi w promieniu 60 stóp od niej. Jeśli cel słyszy Tem, musi wykonać rzut ratujący mądrość {@dc 16} lub mieć problemy z atakami do końca swojej następnej tury."
+							]
+						}
+					],
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Undead Soldier",
