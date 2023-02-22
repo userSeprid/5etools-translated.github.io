@@ -5061,14 +5061,14 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"El Libro de los Hechos Exaltados tiene las siguientes propiedades aleatorias:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+						"El Libro de los Hechos Exaltados tiene las siguientes propiedades aleatorias:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5138,16 +5138,16 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"El libro de la vil oscuridad tiene las siguientes propiedades aleatorias:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+						"El libro de la vil oscuridad tiene las siguientes propiedades aleatorias:",
+						{
+							"type": "list",
+							"items": [
+								"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5199,6 +5199,54 @@
 			"attachedSpells": [
 				"dominate monster"
 			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Book of Vile Darkness (Variant)",
+			"source": "KftGV",
+			"page": 207,
+			"_copy": {
+				"name": "Book of Vile Darkness",
+				"source": "DMG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 7
+						},
+						"items": [
+							"The Book of Vile Darkness has the following properties:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Circle of Death",
+										"entries": [
+											"While attuned to the book, you can cast {@spell circle of death} (save DC 20) from it as an action. After you cast the spell, roll a {@dice d6}. On a roll of 1-5, you can't use this property again until the next dawn."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Condition Immunities",
+										"entries": [
+											"While attuned to the book, you can't be {@condition charmed} or {@condition frightened}."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Evil Presence",
+										"entries": [
+											"The book houses an evil spirit that is hostile toward you. When you become attuned to the book, the spirit tries to leave the book and enter your body. If you fail a DC 20 Charisma saving throw, it succeeds, and you become an NPC under the DM's control until the intruding spirit is banished using magic such as the {@spell dispel evil and good} spell. The banished spirit returns to the book."
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
 			"hasFluffImages": true
 		},
 		{
@@ -7695,6 +7743,58 @@
 			],
 			"attachedSpells": [
 				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Constantori's Portrait",
+			"source": "KftGV",
+			"page": 101,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"sentient": true,
+			"weight": 15,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"Este cuadro del afamado artista Dkesii Kwan representa a Constantori, una bella cortesana, a la que se pagó una asombrosa suma por ser modelo de Dkesii. Sigue siendo objeto de debate si el aspecto real de Constantori se corresponde con el del cuadro. El retrato es uno de los varios cuadros encargados por la difunta Daiyani Grysthorn, señora del crimen que solía regalar cuadros mágicos a sus socios más apreciados.",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"El Retrato de Constantori es un objeto sintiente, malvado legal, con una puntuación de Inteligencia de 14, una puntuación de Sabiduría de 12 y una puntuación de Carisma de 8. Puede oír dentro de un alcance de 120 pies y tiene {@sense darkvision} dentro de un alcance de 60 pies, pero no puede ver nada detrás de sí mismo.",
+						"El cuadro puede conversar en común, dracónico y élfico como si fuera una persona viva, aunque la boca de Constantori no se mueve. Cada vez que se produce una conversación dentro del alcance auditivo del retrato, el cuadro recoge con avidez secretos, nombres de narradores secretos, acontecimientos significativos o cualquier conversación política."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"El Retrato de Constantori es exigente, condescendiente y vanidoso. No le gusta que lo cubran ni que lo aparten de la vista, y condena en voz alta a cualquiera que intente sacarlo de su marco de pan de oro."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wealth of Information",
+					"entries": [
+						"El objetivo principal del cuadro es observar y recordar conversaciones. Durante las últimas décadas, el Retrato de Constantori ha observado en silencio innumerables conversaciones y ahora posee una cantidad incuantificable de conocimientos, desde conspiraciones criminales hasta contraseñas secretas. El DM decide lo que el cuadro sabe y lo que no.",
+						"Mientras estés en sintonía con el cuadro, puedes realizar una acción para contactar telepáticamente con él a cualquier distancia, siempre que tú y el cuadro estéis en el mismo plano de existencia. Sin embargo, el cuadro no puede contactar telepáticamente contigo. Mantener el contacto telepático con el cuadro requiere tu concentración (como si te concentraras en un hechizo)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guardian Portrait",
+					"entries": [
+						"Mientras estés en sintonía con el cuadro, puedes ordenarle que proteja su ubicación contra una o varias criaturas que identifiques como enemigos del cuadro. El cuadro realizará esta función hasta que le ordenes que deje de hacerlo o hasta que finalice tu sintonía con él.",
+						"El cuadro tiene 3 cargas. Cuando una criatura que el cuadro identifica como su enemigo comienza su turno en un espacio que el cuadro puede ver, el cuadro gasta 1 de sus cargas para lanzar {@spell magic missile} (3 misiles), apuntando a esa criatura. El cuadro recupera todas las cargas gastadas diariamente al amanecer.",
+						"El cuadro es un objeto Pequeño con CA 12, 20 puntos de golpe e inmunidad al daño por veneno. En su marco de pan de oro, el cuadro pesa 15 libras. Si el cuadro tiene al menos 1 punto de vida y es objetivo de un hechizo {@spell mending}, recupera {@dice 2d6} puntos de vida."
+					]
+				}
+			],
+			"attachedSpells": [
+				"magic missile"
 			],
 			"hasFluffImages": true
 		},
@@ -12408,15 +12508,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"El Ojo de Vecna y el {@item Hand of Vecna} tienen cada uno las siguientes propiedades aleatorias:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"El Ojo de Vecna y el {@item Hand of Vecna} tienen cada uno las siguientes propiedades aleatorias:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -15491,15 +15591,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"El {@item Eye of Vecna} y la Mano de Vecna tienen las siguientes propiedades aleatorias:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"El {@item Eye of Vecna} y la Mano de Vecna tienen las siguientes propiedades aleatorias:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -30282,6 +30382,259 @@
 			]
 		},
 		{
+			"name": "Shard of Xeluan",
+			"source": "KftGV",
+			"page": 134,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"curse": true,
+			"bonusSpellAttack": "+1",
+			"entries": [
+				"Este fragmento de obsidiana de 1 pie de largo tiene vetas de plata y oro bajo su fría superficie.",
+				{
+					"type": "entries",
+					"name": "Empowered Magic",
+					"entries": [
+						"Mientras sostienes el fragmento, puedes usarlo como foco de conjuro y te otorga un bonificador +1 a tus tiradas de ataque con conjuros."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Strength",
+					"entries": [
+						"Tu puntuación de Fuerza aumenta en 4 mientras el fragmento esté en tu persona. El fragmento no puede aumentar tu puntuación de Fuerza por encima de 22."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"Al sintonizar con este objeto, su maldición se extiende a ti. Permanecerás maldito hasta que te ataque un hechizo {@spell remove curse} o magia similar, o hasta que el fragmento se vuelva a unir al corazón de Xeluan {@condition petrified}.",
+						"La maldición del fragmento hace que te sobrevenga la desgracia. Cuando saques un 1 en una tirada de ataque, un chequeo de habilidad o una tirada de salvación, tira en la tabla de desgracias del fragmento para determinar la desgracia. Mientras dure esta desgracia, no te ocurrirá ninguna otra."
+					]
+				},
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"d6",
+						"Misfortune"
+					],
+					"rows": [
+						[
+							"1",
+							"Te cortas accidentalmente con el fragmento y estás {@condition poisoned} hasta el próximo amanecer."
+						],
+						[
+							"2",
+							"Experimentas una visión de una antigua calamidad -una hermosa ciudad amenazada por montañas que se desmoronan y volcanes en erupción- y estás {@condition stunned} hasta el final de tu siguiente turno."
+						],
+						[
+							"3",
+							"Durante unos segundos, el suelo tiembla debajo de ti. Tú y cada criatura en un radio de 3 metros debéis superar una tirada de salvación de Destreza DC 16 o ser derribados {@condition prone}."
+						],
+						[
+							"4",
+							"El fragmento libera tres dardos brillantes de fuerza mágica que se dirigen a una criatura aleatoria en un radio de 30 pies. Si no existe tal objetivo, tú te conviertes en el objetivo. Cada dardo impacta automáticamente e inflige 3 ({@damage 1d4 + 1}) de daño de fuerza al objetivo."
+						],
+						[
+							"5",
+							"Hasta el siguiente amanecer, las Bestias con una puntuación de Inteligencia de 3 o inferior te son hostiles."
+						],
+						[
+							"6",
+							"Nada parece salirte bien. Hasta el próximo amanecer, tienes desventaja en los chequeos de habilidad."
+						]
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Black Sapphire)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Esta gema contiene una grieta extradimensional inestable. Sus facetas están surcadas por venas iridiscentes que parecen moverse por sí solas. Se conocen cinco tipos de solitarios de esquirlas, cada uno de los cuales es un tipo diferente de gema, como se muestra en la tabla Tipos de solitarios de esquirlas.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Como acción adicional, mientras lleves o sostengas el solitario de esquirlas, puedes teletransportarte, junto con cualquier cosa que lleves o lleves, a un espacio desocupado que puedas ver en un radio de 30 pies de ti.",
+						"Cuando usas esta propiedad, puedes aprovechar el poder inestable de la grieta extradimensional de la piedra para aumentar la distancia de teletransporte hasta 30 pies, pero si te teletransportas más de 30 pies usando Paso de Grieta, debes tener éxito en una tirada de salvación de Constitución DC 16 o recibir {@damage 3d10} de daño de fuerza inmediatamente después de teletransportarte."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La piedra tiene 6 cargas y recupera {@dice 1d6} las cargas gastadas diariamente al amanecer. Como acción, puedes lanzar uno de los hechizos de la piedra gastando el número requerido de cargas, sin necesidad de componentes materiales (salvación DC 16). El solitario de fragmentos de zafiro negro puede utilizarse para lanzar los siguientes hechizos: {@spell banishment} (3 cargas; el objetivo es desterrado al espacio extradimensional de la piedra durante la duración del hechizo), {@spell mirror image} (1 carga), {@spell blight} (3 cargas), {@spell finger of death} (6 cargas)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"blight",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Diamond)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Esta gema contiene una grieta extradimensional inestable. Sus facetas están surcadas por venas iridiscentes que parecen moverse por sí solas. Se conocen cinco tipos de solitarios de esquirlas, cada uno de los cuales es un tipo diferente de gema, como se muestra en la tabla Tipos de solitarios de esquirlas.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Como acción adicional, mientras lleves o sostengas el solitario de esquirlas, puedes teletransportarte, junto con cualquier cosa que lleves o lleves, a un espacio desocupado que puedas ver en un radio de 30 pies de ti.",
+						"Cuando usas esta propiedad, puedes aprovechar el poder inestable de la grieta extradimensional de la piedra para aumentar la distancia de teletransporte hasta 30 pies, pero si te teletransportas más de 30 pies usando Paso de Grieta, debes tener éxito en una tirada de salvación de Constitución DC 16 o recibir {@damage 3d10} de daño de fuerza inmediatamente después de teletransportarte."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La piedra tiene 6 cargas y recupera {@dice 1d6} las cargas gastadas diariamente al amanecer. Como acción, puedes lanzar uno de los hechizos de la piedra gastando el número de cargas requerido, sin necesidad de componentes materiales (salvación DC 16). El solitario de esquirla de diamante puede utilizarse para lanzar los siguientes conjuros: {@spell banishment} (3 cargas; el objetivo es desterrado al espacio extradimensional de la piedra durante la duración del conjuro), {@spell mirror image} (1 carga), {@spell ice storm} (3 cargas), {@spell simulacrum} (6 cargas; el duplicado crea."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"ice storm",
+				"simulacrum"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Jacinth)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Esta gema contiene una grieta extradimensional inestable. Sus facetas están surcadas por venas iridiscentes que parecen moverse por sí solas. Se conocen cinco tipos de solitarios de esquirlas, cada uno de los cuales es un tipo diferente de gema, como se muestra en la tabla Tipos de solitarios de esquirlas.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Como acción adicional, mientras lleves o sostengas el solitario de esquirlas, puedes teletransportarte, junto con cualquier cosa que lleves o lleves, a un espacio desocupado que puedas ver en un radio de 30 pies de ti.",
+						"Cuando usas esta propiedad, puedes aprovechar el poder inestable de la grieta extradimensional de la piedra para aumentar la distancia de teletransporte hasta 30 pies, pero si te teletransportas más de 30 pies usando Paso de Grieta, debes tener éxito en una tirada de salvación de Constitución DC 16 o recibir {@damage 3d10} de daño de fuerza inmediatamente después de teletransportarte."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La piedra tiene 6 cargas y recupera {@dice 1d6} las cargas gastadas diariamente al amanecer. Como acción, puedes lanzar uno de los hechizos de la piedra gastando el número requerido de cargas, sin necesidad de componentes materiales (salvación DC 16). El solitario de esquirla de jacinto puede utilizarse para lanzar los siguientes conjuros: {@spell banishment} (3 cargas; el objetivo es desterrado al espacio extradimensional de la piedra durante la duración del conjuro), {@spell mirror image} (1 carga), {@spell fireball} (2 cargas), {@spell fire storm} (6 cargas)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fireball",
+				"fire storm"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Rainbow Pearl)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Esta gema contiene una grieta extradimensional inestable. Sus facetas están surcadas por venas iridiscentes que parecen moverse por sí solas. Se conocen cinco tipos de solitarios de esquirlas, cada uno de los cuales es un tipo diferente de gema, como se muestra en la tabla Tipos de solitarios de esquirlas.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Como acción adicional, mientras lleves o sostengas el solitario de esquirlas, puedes teletransportarte, junto con cualquier cosa que lleves o lleves, a un espacio desocupado que puedas ver en un radio de 30 pies de ti.",
+						"Cuando usas esta propiedad, puedes aprovechar el poder inestable de la grieta extradimensional de la piedra para aumentar la distancia de teletransporte hasta 30 pies, pero si te teletransportas más de 30 pies usando Paso de Grieta, debes tener éxito en una tirada de salvación de Constitución DC 16 o recibir {@damage 3d10} de daño de fuerza inmediatamente después de teletransportarte."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La piedra tiene 6 cargas y recupera {@dice 1d6} las cargas gastadas diariamente al amanecer. Como acción, puedes lanzar uno de los hechizos de la piedra gastando el número requerido de cargas, sin necesidad de componentes materiales (salvación DC 16). El solitario de fragmentos de perla arco iris puede utilizarse para lanzar los siguientes conjuros: {@spell banishment} (3 cargas; el objetivo es desterrado al espacio extradimensional de la piedra durante la duración del conjuro), {@spell mirror image} (1 carga), {@spell prismatic spray} (6 cargas), {@spell water breathing} (2 cargas)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"prismatic spray",
+				"water breathing"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Ruby)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Esta gema contiene una grieta extradimensional inestable. Sus facetas están surcadas por venas iridiscentes que parecen moverse por sí solas. Se conocen cinco tipos de solitarios de esquirlas, cada uno de los cuales es un tipo diferente de gema, como se muestra en la tabla Tipos de solitarios de esquirlas.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Como acción adicional, mientras lleves o sostengas el solitario de esquirlas, puedes teletransportarte, junto con cualquier cosa que lleves o lleves, a un espacio desocupado que puedas ver en un radio de 30 pies de ti.",
+						"Cuando usas esta propiedad, puedes aprovechar el poder inestable de la grieta extradimensional de la piedra para aumentar la distancia de teletransporte hasta 30 pies, pero si te teletransportas más de 30 pies usando Paso de Grieta, debes tener éxito en una tirada de salvación de Constitución DC 16 o recibir {@damage 3d10} de daño de fuerza inmediatamente después de teletransportarte."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La piedra tiene 6 cargas y recupera {@dice 1d6} las cargas gastadas diariamente al amanecer. Como acción, puedes lanzar uno de los hechizos de la piedra gastando el número requerido de cargas, sin necesidad de componentes materiales (salvación DC 16). El solitario de fragmentos de rubí puede utilizarse para lanzar los siguientes conjuros: {@spell banishment} (3 cargas; el objetivo es desterrado al espacio extradimensional de la piedra durante la duración del conjuro), {@spell mirror image} (1 carga), {@spell fly} (2 cargas), {@spell teleport} (6 cargas)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fly",
+				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Shatterspike",
 			"source": "TftYP",
 			"page": 229,
@@ -39106,19 +39459,19 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"La Varita de Orcus tiene las siguientes propiedades aleatorias:"
+						"La Varita de Orcus tiene las siguientes propiedades aleatorias:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+							]
+						},
+						"Las propiedades perjudiciales de la Varita de Orcus se suprimen mientras la varita está sintonizada con {@creature Orcus|MTF} él mismo."
 					]
 				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
-					]
-				},
-				"Las propiedades perjudiciales de la Varita de Orcus se suprimen mientras la varita está sintonizada con {@creature Orcus|MTF} él mismo.",
 				{
 					"name": "Protection",
 					"type": "entries",
@@ -42586,6 +42939,84 @@
 			"lootTables": [
 				"Magic Item Table C"
 			]
+		},
+		{
+			"name": "Shard Solitaire",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Esta gema contiene una grieta extradimensional inestable. Sus facetas están surcadas por venas iridiscentes que parecen moverse por sí solas. Se conocen cinco tipos de solitarios de esquirlas, cada uno de los cuales es un tipo diferente de gema, como se muestra en la tabla Tipos de solitarios de esquirlas.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Como acción adicional, mientras lleves o sostengas el solitario de esquirlas, puedes teletransportarte, junto con cualquier cosa que lleves o lleves, a un espacio desocupado que puedas ver en un radio de 30 pies de ti.",
+						"Cuando usas esta propiedad, puedes aprovechar el poder inestable de la grieta extradimensional de la piedra para aumentar la distancia de teletransporte hasta 30 pies, pero si te teletransportas más de 30 pies usando Paso de Grieta, debes tener éxito en una tirada de salvación de Constitución DC 16 o recibir {@damage 3d10} de daño de fuerza inmediatamente después de teletransportarte."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"La piedra tiene 6 cargas y recupera {@dice 1d6} las cargas gastadas diariamente al amanecer. La tabla de Tipos de Solitarios de Fragmentos enumera los hechizos comunes a todos los solitarios de fragmentos, así como los hechizos específicos de cada tipo de piedra. Como acción, puedes lanzar uno de los conjuros de la piedra gastando el número requerido de cargas, sin necesidad de componentes materiales (salvación DC 16).",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"colLabels": [
+								"Shard Solitaire",
+								"Spells"
+							],
+							"rows": [
+								[
+									"All",
+									"{@spell Banishment} (3 cargas; el objetivo es desterrado al espacio extradimensional de la piedra durante la duración del hechizo), {@spell mirror image} (1 carga)"
+								],
+								[
+									"Zafiro negro",
+									"{@spell Blight} (3 cargas), {@spell finger of death} (6 cargas)"
+								],
+								[
+									"Diamante",
+									"{@spell Ice storm} (3 cargas), {@spell simulacrum} (6 cargas; el duplicado creado por el hechizo tiene el mismo número de puntos de golpe que la criatura a la que imita)"
+								],
+								[
+									"Jacinth",
+									"{@spell Fireball} (2 cargas), {@spell fire storm} (6 cargas)"
+								],
+								[
+									"Perla arco iris",
+									"{@spell Prismatic spray} (6 cargas), {@spell water breathing} (2 cargas)"
+								],
+								[
+									"Ruby",
+									"{@spell Fly} (2 cargas), {@spell teleport} (6 cargas)"
+								]
+							]
+						}
+					]
+				}
+			],
+			"items": [
+				"Shard Solitaire (Black Sapphire)|KftGV",
+				"Shard Solitaire (Diamond)|KftGV",
+				"Shard Solitaire (Jacinth)|KftGV",
+				"Shard Solitaire (Rainbow Pearl)|KftGV",
+				"Shard Solitaire (Ruby)|KftGV"
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Silken Spite",
