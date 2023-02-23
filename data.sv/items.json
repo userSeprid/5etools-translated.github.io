@@ -5061,14 +5061,14 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Book of Exalted Deeds har följande slumpmässiga egenskaper:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+						"Book of Exalted Deeds har följande slumpmässiga egenskaper:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"2 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5138,16 +5138,16 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Book of Vile Darkness har följande slumpmässiga egenskaper:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+						"Book of Vile Darkness har följande slumpmässiga egenskaper:",
+						{
+							"type": "list",
+							"items": [
+								"3 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"3 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"2 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental properties}"
+							]
+						}
 					]
 				},
 				{
@@ -5199,6 +5199,54 @@
 			"attachedSpells": [
 				"dominate monster"
 			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Book of Vile Darkness (Variant)",
+			"source": "KftGV",
+			"page": 207,
+			"_copy": {
+				"name": "Book of Vile Darkness",
+				"source": "DMG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"index": 7
+						},
+						"items": [
+							"The Book of Vile Darkness has the following properties:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Circle of Death",
+										"entries": [
+											"While attuned to the book, you can cast {@spell circle of death} (save DC 20) from it as an action. After you cast the spell, roll a {@dice d6}. On a roll of 1-5, you can't use this property again until the next dawn."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Condition Immunities",
+										"entries": [
+											"While attuned to the book, you can't be {@condition charmed} or {@condition frightened}."
+										]
+									},
+									{
+										"type": "item",
+										"name": "Evil Presence",
+										"entries": [
+											"The book houses an evil spirit that is hostile toward you. When you become attuned to the book, the spirit tries to leave the book and enter your body. If you fail a DC 20 Charisma saving throw, it succeeds, and you become an NPC under the DM's control until the intruding spirit is banished using magic such as the {@spell dispel evil and good} spell. The banished spirit returns to the book."
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
 			"hasFluffImages": true
 		},
 		{
@@ -7695,6 +7743,58 @@
 			],
 			"attachedSpells": [
 				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Constantori's Portrait",
+			"source": "KftGV",
+			"page": 101,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"sentient": true,
+			"weight": 15,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"Den här målningen av den berömda konstnären Dkesii Kwan föreställer Constantori, en vacker hovman som fick en svindlande summa för att vara Dkesiis modell. Huruvida Constantoris verkliga utseende stämmer överens med målningen är fortfarande föremål för debatt. Porträttet är en av flera målningar som beställdes av den avlidna Daiyani Grysthorn, en brottsherre som ofta gav magiska målningar som gåvor till sina mest uppskattade medarbetare.",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"Constantoris porträtt är ett kännande, lagligt ondskefullt föremål med en intelligenspoäng på 14, en visdomspoäng på 12 och en karismapoäng på 8. Det kan höra inom en räckvidd av 120 fot och har {@sense darkvision} inom en räckvidd av 60 fot, men det kan inte se något bakom sig själv.",
+						"Målningen kan konversera på allmänspråket, drakoniska och elviska som om den vore en levande person, även om Constantoris mun inte rör sig. När ett samtal äger rum inom porträttets hörselområde samlar målningen ivrigt in hemligheter, namn på hemliga berättare, betydelsefulla händelser eller eventuella politiska samtal."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"Constantoris porträtt är krävande, nedlåtande och fåfäng. Den tycker inte om att bli täckt eller placerad utom synhåll, och den fördömer högljutt alla som försöker ta bort den från sin ram av bladguld."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wealth of Information",
+					"entries": [
+						"Målningens främsta syfte är att observera och minnas samtal. Under de senaste decennierna har Constantoris porträtt i tysthet observerat oräkneliga samtal och har nu en oöverskådlig mängd kunskap - allt från kriminella konspirationer till hemliga lösenord. DM bestämmer vad målningen vet och vad den inte vet.",
+						"När du är inställd på målningen kan du göra en åtgärd för att telepatiskt kontakta den över vilket avstånd som helst, förutsatt att du och målningen befinner er på samma existensplan. Målningen kan dock inte ta telepatisk kontakt med dig. Att upprätthålla telepatisk kontakt med målningen kräver din koncentration (som om du koncentrerar dig på en besvärjelse)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Guardian Portrait",
+					"entries": [
+						"Medan du är inställd på målningen kan du beordra den att vakta sin plats mot en eller flera varelser som du identifierar som målningens fiender. Målningen utför denna funktion tills du beordrar den att sluta eller tills din intoning till målningen upphör.",
+						"Målningen har 3 laddningar. När en varelse som målningen identifierar som sin fiende börjar sin tur i ett utrymme som målningen kan se, använder målningen 1 av sina laddningar för att kasta {@spell magic missile} (3 missiler), riktad mot den varelsen. Målningen återfår alla förbrukade laddningar dagligen i gryningen.",
+						"Målningen är ett litet föremål med AC 12, 20 träffpunkter och immunitet mot giftskador. I sin ram av guldblad väger målningen 15 pund. Om målningen har minst 1 träffpunkt och blir måltavla för en {@spell mending} besvärjelse får den tillbaka {@dice 2d6} träffpunkter."
+					]
+				}
+			],
+			"attachedSpells": [
+				"magic missile"
 			],
 			"hasFluffImages": true
 		},
@@ -12408,15 +12508,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Vecnas öga och {@item Hand of Vecna} har vardera följande slumpmässiga egenskaper:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"Vecnas öga och {@item Hand of Vecna} har vardera följande slumpmässiga egenskaper:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -15491,15 +15591,15 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"{@item Eye of Vecna} och Vecnas hand har följande slumpmässiga egenskaper:"
-					]
-				},
-				{
-					"type": "list",
-					"items": [
-						"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+						"{@item Eye of Vecna} och Vecnas hand har följande slumpmässiga egenskaper:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}"
+							]
+						}
 					]
 				},
 				{
@@ -30282,6 +30382,259 @@
 			]
 		},
 		{
+			"name": "Shard of Xeluan",
+			"source": "KftGV",
+			"page": 134,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"curse": true,
+			"bonusSpellAttack": "+1",
+			"entries": [
+				"Den här en meter långa obsidianskärvan har ådror av silver och guld under sin kalla yta.",
+				{
+					"type": "entries",
+					"name": "Empowered Magic",
+					"entries": [
+						"När du håller i skärvan kan du använda den som ett fokus för trollkonst, och den ger dig en +1 bonus på dina trollkonstattacker."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Strength",
+					"entries": [
+						"Din styrka ökar med 4 när du har skärvan på dig. Skärvan kan inte höja din styrka över 22."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"Genom att stämma av det här föremålet utvidgas dess förbannelse till dig. Du förblir förbannad tills du blir måltavla för en {@spell remove curse} besvärjelse eller liknande magi, eller tills skärvan återfästs till Xeluans {@condition petrified} hjärta.",
+						"Skärvans förbannelse orsakar olycka för dig. När du kastar en 1 på ett anfallskast, en förmågekontroll eller ett räddningskast, rulla på bordet Shard Misfortunes för att bestämma olyckan. Så länge som denna olycka varar, drabbas du inte av någon annan olycka med en skärva."
+					]
+				},
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"d6",
+						"Misfortune"
+					],
+					"rows": [
+						[
+							"1",
+							"Du har råkat skära dig med skäran och är {@condition poisoned} tills nästa gryning."
+						],
+						[
+							"2",
+							"Du får en vision av en gammal katastrof - en vacker stad som hotas av sönderfallande berg och vulkanutbrott - och är {@condition stunned} tills slutet av din nästa tur."
+						],
+						[
+							"3",
+							"Under några sekunder skakar marken under dig. Du och varje varelse inom tre meter från dig måste lyckas med ett räddningskast med DC 16 för Dexterity eller bli omkullkastade {@condition prone}."
+						],
+						[
+							"4",
+							"Skärvan släpper ut tre glödande pilbågar av magisk kraft som riktar sig mot en slumpmässig varelse inom 30 fot från dig. Om det inte finns någon sådan måltavla blir du målet. Varje pil träffar automatiskt och ger 3 ({@damage 1d4 + 1}) kraftskador till målet."
+						],
+						[
+							"5",
+							"Fram till nästa gryning är djur med en intelligenspoäng på 3 eller lägre fientligt inställda till dig."
+						],
+						[
+							"6",
+							"Ingenting verkar gå din väg. Fram till nästa gryning har du nackdel på förmågekontroller."
+						]
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Black Sapphire)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Den här ädelstenen innehåller en instabil extradimensionell spricka. Dess facetter är ribbade med iriserande ådror som verkar röra sig av egen kraft. Det finns fem typer av shard solitaire, var och en av dem en annan typ av ädelsten, vilket visas i tabellen Shard Solitaire Types.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Som en bonusåtgärd kan du, medan du bär eller håller i skärvsolitären, teleportera dig själv, tillsammans med allt du har på dig eller bär på dig, till ett obebott utrymme som du kan se inom 30 fot från dig själv.",
+						"När du använder den här egenskapen kan du utnyttja den instabila kraften i stenens extradimensionella spricka för att öka teleportavståndet med upp till 30 fot, men om du teleporterar mer än 30 fot med hjälp av Rift Step måste du lyckas med ett räddningskast med DC 16 för Konstitution eller ta {@damage 3d10} kraftskada omedelbart efter att du har teleporterat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Stenen har 6 laddningar och återfår {@dice 1d6} förbrukade laddningar dagligen i gryningen. Som en handling kan du kasta en av stenens trollformler genom att förbruka det erforderliga antalet laddningar, utan att det krävs några materiella komponenter (räddning DC 16). Solitärens svarta safirskärva kan användas för att kasta följande trollformler: {@spell banishment} (3 laddningar; målet förvisas till stenens extradimensionella rum för trollformelns varaktighet), {@spell mirror image} (1 laddning), {@spell blight} (3 laddningar), {@spell finger of death} (6 laddningar)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"blight",
+				"finger of death"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Diamond)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Den här ädelstenen innehåller en instabil extradimensionell spricka. Dess facetter är ribbade med iriserande ådror som verkar röra sig av egen kraft. Det finns fem typer av shard solitaire, var och en av dem en annan typ av ädelsten, vilket visas i tabellen Shard Solitaire Types.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Som en bonusåtgärd kan du, medan du bär eller håller i skärvsolitären, teleportera dig själv, tillsammans med allt du har på dig eller bär på dig, till ett obebott utrymme som du kan se inom 30 fot från dig själv.",
+						"När du använder den här egenskapen kan du utnyttja den instabila kraften i stenens extradimensionella spricka för att öka teleportavståndet med upp till 30 fot, men om du teleporterar mer än 30 fot med hjälp av Rift Step måste du lyckas med ett räddningskast med DC 16 för Konstitution eller ta {@damage 3d10} kraftskada omedelbart efter att du har teleporterat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Stenen har 6 laddningar och återfår {@dice 1d6} förbrukade laddningar dagligen i gryningen. Som en handling kan du kasta en av stenens trollformler genom att förbruka det erforderliga antalet laddningar, utan att det krävs några materiella komponenter (räddning DC 16). Diamantskärvssolitären kan användas för att kasta följande trollformler: {@spell banishment} (3 laddningar; målet förvisas till stenens extradimensionella rum för trollformelns varaktighet), {@spell mirror image} (1 laddning), {@spell ice storm} (3 laddningar), {@spell simulacrum} (6 laddningar; duplikatet skapar."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"ice storm",
+				"simulacrum"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Jacinth)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Den här ädelstenen innehåller en instabil extradimensionell spricka. Dess facetter är ribbade med iriserande ådror som verkar röra sig av egen kraft. Det finns fem typer av shard solitaire, var och en av dem en annan typ av ädelsten, vilket visas i tabellen Shard Solitaire Types.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Som en bonusåtgärd kan du, medan du bär eller håller i skärvsolitären, teleportera dig själv, tillsammans med allt du har på dig eller bär på dig, till ett obebott utrymme som du kan se inom 30 fot från dig själv.",
+						"När du använder den här egenskapen kan du utnyttja den instabila kraften i stenens extradimensionella spricka för att öka teleportavståndet med upp till 30 fot, men om du teleporterar mer än 30 fot med hjälp av Rift Step måste du lyckas med ett räddningskast med DC 16 för Konstitution eller ta {@damage 3d10} kraftskada omedelbart efter att du har teleporterat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Stenen har 6 laddningar och återfår {@dice 1d6} förbrukade laddningar dagligen i gryningen. Som en handling kan du kasta en av stenens trollformler genom att förbruka det erforderliga antalet laddningar, utan att det krävs några materiella komponenter (räddning DC 16). Jacintskärvssolitären kan användas för att kasta följande trollformler: {@spell banishment} (3 laddningar; målet förvisas till stenens extradimensionella rum för trollformelns varaktighet), {@spell mirror image} (1 laddning), {@spell fireball} (2 laddningar), {@spell fire storm} (6 laddningar)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fireball",
+				"fire storm"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Rainbow Pearl)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Den här ädelstenen innehåller en instabil extradimensionell spricka. Dess facetter är ribbade med iriserande ådror som verkar röra sig av egen kraft. Det finns fem typer av shard solitaire, var och en av dem en annan typ av ädelsten, vilket visas i tabellen Shard Solitaire Types.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Som en bonusåtgärd kan du, medan du bär eller håller i skärvsolitären, teleportera dig själv, tillsammans med allt du har på dig eller bär på dig, till ett obebott utrymme som du kan se inom 30 fot från dig själv.",
+						"När du använder den här egenskapen kan du utnyttja den instabila kraften i stenens extradimensionella spricka för att öka teleportavståndet med upp till 30 fot, men om du teleporterar mer än 30 fot med hjälp av Rift Step måste du lyckas med ett räddningskast med DC 16 för Konstitution eller ta {@damage 3d10} kraftskada omedelbart efter att du har teleporterat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Stenen har 6 laddningar och återfår {@dice 1d6} förbrukade laddningar dagligen i gryningen. Som en handling kan du kasta en av stenens trollformler genom att förbruka det erforderliga antalet laddningar, utan att det krävs några materiella komponenter (räddning DC 16). Solitärens regnbågspärlskärva kan användas för att kasta följande trollformler: {@spell banishment} (3 laddningar; målet förvisas till stenens extradimensionella rum för trollformelns varaktighet), {@spell mirror image} (1 laddning), {@spell prismatic spray} (6 laddningar), {@spell water breathing} (2 laddningar)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"prismatic spray",
+				"water breathing"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shard Solitaire (Ruby)",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Den här ädelstenen innehåller en instabil extradimensionell spricka. Dess facetter är ribbade med iriserande ådror som verkar röra sig av egen kraft. Det finns fem typer av shard solitaire, var och en av dem en annan typ av ädelsten, vilket visas i tabellen Shard Solitaire Types.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Som en bonusåtgärd kan du, medan du bär eller håller i skärvsolitären, teleportera dig själv, tillsammans med allt du har på dig eller bär på dig, till ett obebott utrymme som du kan se inom 30 fot från dig själv.",
+						"När du använder den här egenskapen kan du utnyttja den instabila kraften i stenens extradimensionella spricka för att öka teleportavståndet med upp till 30 fot, men om du teleporterar mer än 30 fot med hjälp av Rift Step måste du lyckas med ett räddningskast med DC 16 för Konstitution eller ta {@damage 3d10} kraftskada omedelbart efter att du har teleporterat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Stenen har 6 laddningar och återfår {@dice 1d6} förbrukade laddningar dagligen i gryningen. Som en handling kan du kasta en av stenens trollformler genom att förbruka det erforderliga antalet laddningar, utan att det krävs några materiella komponenter (räddning DC 16). Rubinskärvssolitären kan användas för att kasta följande trollformler: {@spell banishment} (3 laddningar; målet förvisas till stenens extradimensionella rum för trollformelns varaktighet), {@spell mirror image} (1 laddning), {@spell fly} (2 laddningar), {@spell teleport} (6 laddningar)."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment",
+				"fly",
+				"teleport"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Shatterspike",
 			"source": "TftYP",
 			"page": 229,
@@ -39106,19 +39459,19 @@
 					"name": "Random Properties",
 					"type": "entries",
 					"entries": [
-						"Orcus stav har följande slumpmässiga egenskaper:"
+						"Orcus stav har följande slumpmässiga egenskaper:",
+						{
+							"type": "list",
+							"items": [
+								"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
+								"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+								"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
+								"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+							]
+						},
+						"De skadliga egenskaperna hos Orcus stav är undertryckta medan staven är inställd på {@creature Orcus|MTF} honom själv."
 					]
 				},
-				{
-					"type": "list",
-					"items": [
-						"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial properties}",
-						"1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
-						"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental properties}",
-						"1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
-					]
-				},
-				"De skadliga egenskaperna hos Orcus stav är undertryckta medan staven är inställd på {@creature Orcus|MTF} honom själv.",
 				{
 					"name": "Protection",
 					"type": "entries",
@@ -42586,6 +42939,84 @@
 			"lootTables": [
 				"Magic Item Table C"
 			]
+		},
+		{
+			"name": "Shard Solitaire",
+			"source": "KftGV",
+			"page": 193,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"Den här ädelstenen innehåller en instabil extradimensionell spricka. Dess facetter är ribbade med iriserande ådror som verkar röra sig av egen kraft. Det finns fem typer av shard solitaire, var och en av dem en annan typ av ädelsten, vilket visas i tabellen Shard Solitaire Types.",
+				{
+					"type": "entries",
+					"name": "Rift Step",
+					"entries": [
+						"Som en bonusåtgärd kan du, medan du bär eller håller i skärvsolitären, teleportera dig själv, tillsammans med allt du har på dig eller bär på dig, till ett obebott utrymme som du kan se inom 30 fot från dig själv.",
+						"När du använder den här egenskapen kan du utnyttja den instabila kraften i stenens extradimensionella spricka för att öka teleportavståndet med upp till 30 fot, men om du teleporterar mer än 30 fot med hjälp av Rift Step måste du lyckas med ett räddningskast med DC 16 för Konstitution eller ta {@damage 3d10} kraftskada omedelbart efter att du har teleporterat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Stenen har 6 laddningar och återfår {@dice 1d6} förbrukade laddningar dagligen i gryningen. Tabellen Shard Solitaire Types listar de trollformler som är gemensamma för alla shard solitaires, samt de trollformler som är specifika för varje typ av sten. Som en handling kan du kasta en av stenens trollformler genom att förbruka det erforderliga antalet laddningar, vilket inte kräver några materiella komponenter (räddning DC 16).",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"colLabels": [
+								"Shard Solitaire",
+								"Spells"
+							],
+							"rows": [
+								[
+									"All",
+									"{@spell Banishment} (3 laddningar; målet förvisas till stenens extradimensionella rum under trollformelns varaktighet), {@spell mirror image} (1 laddning)"
+								],
+								[
+									"Svart safir",
+									"{@spell Blight} (3 avgifter), {@spell finger of death} (6 avgifter)"
+								],
+								[
+									"Diamant",
+									"{@spell Ice storm} (3 laddningar), {@spell simulacrum} (6 laddningar; den kopia som skapas av besvärjelsen har samma antal träffpunkter som den varelse som den imiterar)"
+								],
+								[
+									"Jacinth",
+									"{@spell Fireball} (2 avgifter), {@spell fire storm} (6 avgifter)"
+								],
+								[
+									"Regnbågspärla",
+									"{@spell Prismatic spray} (6 avgifter), {@spell water breathing} (2 avgifter)"
+								],
+								[
+									"Ruby",
+									"{@spell Fly} (2 avgifter), {@spell teleport} (6 avgifter)"
+								]
+							]
+						}
+					]
+				}
+			],
+			"items": [
+				"Shard Solitaire (Black Sapphire)|KftGV",
+				"Shard Solitaire (Diamond)|KftGV",
+				"Shard Solitaire (Jacinth)|KftGV",
+				"Shard Solitaire (Rainbow Pearl)|KftGV",
+				"Shard Solitaire (Ruby)|KftGV"
+			],
+			"attachedSpells": [
+				"mirror image",
+				"banishment"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Silken Spite",
