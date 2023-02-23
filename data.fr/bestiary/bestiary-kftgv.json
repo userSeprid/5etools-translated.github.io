@@ -1,0 +1,2447 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"MM": "KftGV"
+			}
+		}
+	},
+	"monster": [
+		{
+			"name": "Animatronic Allosaurus",
+			"source": "KftGV",
+			"page": 22,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 51,
+				"formula": "6d10 + 18"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 17,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pounce",
+					"entries": [
+						"Si l'allosaure se déplace d'au moins 30 pieds en ligne droite vers une créature et la frappe avec une attaque de griffes au cours du même tour, cette cible doit réussir un jet de sauvegarde de Force {@dc 13} ou être assommée {@condition prone}. Si la cible est {@condition prone}, l'allosaure peut effectuer une attaque de morsure contre elle comme action bonus."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} pour toucher, portée de 1,5 m, une cible. {@h}15 ({@damage 2d10 + 4}) dégâts perforants."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} pour toucher, portée de 5 ft, une cible. {@h}8 ({@damage 1d8 + 4}) dégâts tranchants."
+					]
+				}
+			],
+			"traitTags": [
+				"Pounce"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Animated Armor",
+			"source": "KftGV",
+			"page": 157,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 13,
+			"int": 1,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"L'armure est neutralisée lorsqu'elle se trouve dans la zone d'un {@spell antimagic field}. Si elle est visée par {@spell dispel magic}, l'armure doit réussir un jet de sauvegarde de Constitution contre le DC de sauvegarde du sort du lanceur ou tomber inconsciente pendant 1 minute."
+					]
+				},
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Lorsque l'armure tombe à 0 point de vie, elle est réduite en un tas de cendres, et tout équipement qu'elle portait tombe au sol."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"Bien que l'armure reste immobile, il est impossible de la distinguer d'une armure normale."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"L'armure effectue deux attaques de mêlée."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 4} pour toucher, portée de 5 ft, une cible. {@h}5 ({@damage 1d6 + 2}) dégâts de matraquage."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Flying Sword",
+			"source": "KftGV",
+			"page": 157,
+			"_isCopy": true,
+			"size": [
+				"S"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "5d6"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 50
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 11,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"save": {
+				"dex": "+4"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 7,
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"L'épée est neutralisée lorsqu'elle se trouve dans la zone d'un {@spell antimagic field}. Si elle est ciblée par {@spell dispel magic}, l'épée doit réussir un jet de sauvegarde de Constitution contre le DC de sauvegarde du sort du lanceur ou tomber inconsciente pendant 1 minute."
+					]
+				},
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Lorsque l'épée tombe à 0 point de vie, elle est réduite en un tas de cendres, et tout équipement qu'elle portait tombe au sol."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"Bien que l'épée reste immobile et ne vole pas, il est impossible de la distinguer d'une épée normale."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 3} pour toucher, portée de 5 ft, une cible. {@h}5 ({@damage 1d8 + 1}) dégâts tranchants."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Knight",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"con": "+4",
+				"wis": "+2"
+			},
+			"passive": 10,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Any one language (usually Common)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Lorsque le chevalier tombe à 0 point de vie, il est réduit en un tas de cendres, et tout équipement qu'il portait tombe au sol."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"Le chevalier a un avantage sur les jets de sauvegarde contre l'être {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Le chevalier effectue deux attaques de mêlée."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 5} pour toucher, portée de 1,5 m, une cible. {@h}10 ({@damage 2d6 + 3}) dégâts tranchants."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} pour toucher, portée de 100/400 ft., une cible. {@h}5 ({@damage 1d10}) dégâts perforants."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"Pendant 1 minute, le chevalier peut prononcer un commandement spécial ou un avertissement chaque fois qu'une créature non hostile qu'il peut voir dans un rayon de 30 pieds de lui fait un jet d'attaque ou un jet de sauvegarde. La créature peut ajouter un {@dice d4} à son jet si elle peut entendre et comprendre le chevalier. Une créature ne peut bénéficier que d'un seul dé de leadership à la fois. Cet effet prend fin si le chevalier est {@condition incapacitated}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Le chevalier ajoute 2 à sa CA contre une attaque de mêlée qui le toucherait. Pour cela, le chevalier doit voir l'attaquant et manier une arme de mêlée."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Shambling Mound",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d10 + 48"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"stealth": "+2"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"lightning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Lorsque le monticule rampant tombe à 0 point de vie, il est réduit en un tas de cendres, et tout équipement qu'il portait tombe au sol."
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"Chaque fois que le monticule ambulant subit des dégâts de foudre, il ne subit aucun dégât et regagne un nombre de points de vie égal aux dégâts de foudre infligés."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Le monticule ambulant fait deux attaques en claquant. Si les deux attaques touchent une cible de taille moyenne ou plus petite, la cible est {@condition grappled} (s'échappe {@dc 14}), et le monticule ambulant utilise son Engloutissement sur elle."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} pour toucher, portée de 1,5 m, une cible. {@h}13 ({@damage 2d8 + 4}) dégâts de matraquage."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"Le monticule grouillant engloutit une créature moyenne ou plus petite {@condition grappled} à proximité. La cible engloutie est {@condition blinded}, {@condition restrained}, et incapable de respirer, et elle doit réussir un jet de sauvegarde de Constitution {@dc 14} au début de chaque tour du monticule ou subir 13 ({@damage 2d8 + 4}) dégâts de matraquage. Si le monticule se déplace, la cible engloutie se déplace avec lui. Le monticule ne peut avoir qu'une seule créature engloutie à la fois."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Ashen Veteran",
+			"source": "KftGV",
+			"page": 154,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|PHB|splint}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Any one language (usually Common)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Lorsque le vétéran tombe à 0 point de vie, il est réduit en un tas de cendres, et tout équipement qu'il portait tombe au sol."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Le vétéran effectue deux attaques à l'épée longue. S'il a une épée courte dégainée, il peut également effectuer une attaque d'épée courte."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} pour toucher, portée de 1,5 m, une cible. {@h}7 ({@damage 1d8 + 3}) dégâts tranchants, ou 8 ({@damage 1d10 + 3}) dégâts tranchants si utilisé à deux mains."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} pour toucher, portée de 1,5 m, une cible. {@h}6 ({@damage 1d6 + 3}) dégâts perforants."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} pour toucher, portée de 100/400 ft., une cible. {@h}6 ({@damage 1d10 + 1}) dégâts perforants."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ashen Warhorse",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 11,
+			"immune": [
+				"fire"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Lorsque le cheval tombe à 0 point de vie, il est réduit en un tas de cendres, et tout équipement qu'il portait tombe au sol."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"Si le cheval se déplace d'au moins 6 mètres en ligne droite vers une créature et la frappe avec une attaque de sabots dans le même tour, cette cible doit réussir un jet de sauvegarde de {@dc 14} de Force ou être assommée {@condition prone}. Si la cible est {@condition prone}, le cheval peut effectuer une autre attaque avec ses sabots contre elle comme action bonus."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} pour toucher, portée de 5 ft, une cible. {@h}11 ({@damage 2d6 + 4}) dégâts de matraquage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Charmayne Daymore",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 159,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"wizard"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 123,
+				"formula": "19d8 + 38"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 15,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"deception": "+7",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Ignan"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Charmayne lance l'un des sorts suivants, en utilisant l'Intelligence comme capacité de lanceur de sorts (sauvegarde contre les sorts {@dc 17}) :"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell mage hand}"
+					],
+					"daily": {
+						"3": [
+							"{@spell mage armor}"
+						],
+						"1e": [
+							"{@spell dispel magic}",
+							"{@spell invisibility}",
+							"{@spell polymorph}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Si Charmayne échoue à un jet de sauvegarde, elle peut choisir de le réussir à la place."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Charmayne fait trois attaques Ashen Burst. Elle peut remplacer l'une de ces attaques par une utilisation de Sortilèges."
+					]
+				},
+				{
+					"name": "Ashen Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 9} pour toucher, portée de 5 ft ou de 60 ft, une cible. {@h}17 ({@damage 5d6}) dégâts de feu."
+					]
+				},
+				{
+					"name": "Cinder Spite {@recharge 5}",
+					"entries": [
+						"Charmayne crée une explosion magique de feu centrée sur un point qu'elle peut voir dans un rayon de 120 pieds autour d'elle. Chaque créature dans une sphère de 20 pieds de rayon centrée sur ce point doit effectuer un jet de sauvegarde de {@dc 17} de Dextérité, subissant 35 ({@damage 10d6}) dégâts de feu en cas d'échec, ou la moitié en cas de réussite. Un humanoïde réduit à 0 point de vie par ces dégâts meurt et est transformé en une minuscule figurine de charbon de bois."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Charmayne can take up to three reactions per round but only one per turn",
+					"entries": []
+				},
+				{
+					"name": "Elemental Rebuke",
+					"entries": [
+						"En réponse à une attaque, Charmayne prononce un mot en Ignan, infligeant 10 ({@damage 3d6}) de dégâts de feu à l'attaquant. Charmayne se téléporte ensuite, avec tout équipement qu'elle porte ou transporte, jusqu'à 30 pieds vers un espace inoccupé qu'elle peut voir, laissant un nuage inoffensif de cendres et de braises dans l'espace qu'elle vient de quitter."
+					]
+				},
+				{
+					"name": "Fiery Counterspell",
+					"entries": [
+						"Charmayne interrompt une créature qu'elle peut voir à moins de 60 pieds d'elle et qui lance un sort. Si le sort est de 4ème niveau ou moins, il échoue et n'a aucun effet. Si le sort est de 5e niveau ou plus, Charmayne effectue un test d'Intelligence ({@dc 10} + le niveau du sort). En cas de réussite, le sort échoue et n'a aucun effet. Quel que soit le niveau du sort, le lanceur subit 10 ({@damage 3d6}) de dégâts de feu si le sort échoue."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"IG"
+			],
+			"damageTags": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Clockwork Defender",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 18,
+			"int": 3,
+			"wis": 14,
+			"cha": 1,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+4"
+			},
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Le défenseur n'a pas besoin d'air, de nourriture, de boisson ou de sommeil."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Electrified Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} pour toucher, portée de 1,5 m, une cible. {@h}7 ({@damage 1d8 + 3}) dégâts perforants plus 7 ({@damage 2d6}) dégâts de foudre. Si la cible est une créature, elle doit réussir un jet de sauvegarde de {@dc 13} Force ou être {@condition grappled} (fuite {@dc 13}). Une créature {@condition grappled} par le défenseur subit à nouveau les dégâts au début de chacun des tours du défenseur. Le défenseur ne peut avoir qu'une seule créature {@condition grappled} de cette façon à la fois, et il ne peut pas faire d'attaques de morsure électrifiée pendant qu'il est au grappin."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Light Beam",
+					"entries": [
+						"Le défenseur émet une lumière vive à partir de ses yeux dans un cône de 60 pieds, ou il éteint cette lumière."
+					]
+				}
+			],
+			"traitTags": [
+				"Unusual Nature"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Clockwork Observer",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d4 + 2"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 16,
+			"con": 13,
+			"int": 3,
+			"wis": 15,
+			"cha": 1,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"L'observateur ne provoque pas d'attaque d'opportunité lorsqu'il vole hors de portée d'un ennemi."
+					]
+				},
+				{
+					"name": "Telepathic Bond",
+					"entries": [
+						"Tant que l'observateur se trouve à moins d'un kilomètre de son créateur, il peut transmettre magiquement ce qu'il voit à son créateur, et les deux peuvent communiquer par télépathie."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"L'observateur n'a pas besoin d'air, de nourriture, de boisson ou de sommeil."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shriek",
+					"entries": [
+						"L'observateur émet un hurlement mécanique jusqu'au début de son prochain tour ou jusqu'à ce qu'il tombe à 0 point de vie. Ce cri peut être entendu dans un rayon de 300 pieds."
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Eldritch Horror Hatchling",
+			"source": "KftGV",
+			"page": 24,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 11,
+					"condition": "while prone"
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d10 + 6"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 10
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 13,
+			"int": 1,
+			"wis": 13,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 11,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} pour toucher, portée de 1,5 m, une cible. {@h}10 ({@damage 2d6 + 3}) dégâts tranchants plus 3 ({@damage 1d6}) dégâts de poison. Si la cible est une créature Large ou plus petite, elle subit {@condition grappled} (fuite {@dc 13}). Jusqu'à la fin de ce grappin, l'éclosion de l'horreur eldritch ne peut mordre que la créature de {@condition grappled} et a l'avantage sur les jets d'attaque pour le faire."
+					]
+				},
+				{
+					"name": "Acid Spray {@recharge}",
+					"entries": [
+						"L'éclosion de l'horreur eldritch crache de l'acide sur une ligne de 30 pieds de long et 5 pieds de large, à condition qu'il n'y ait pas de créature {@condition grappled}. Chaque créature de cette ligne doit effectuer un jet de sauvegarde de {@dc 13} Dextérité, subissant 10 ({@damage 3d6}) dégâts d'acide en cas d'échec, ou la moitié des dégâts en cas de réussite."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Eliphas Adulare",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 188,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"condition": "in humanoid form"
+				},
+				{
+					"ac": 11,
+					"condition": "in bear and hybrid form"
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 17,
+			"int": 18,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"perception": "+7"
+			},
+			"passive": 17,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common (can't speak in bear form)"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Humanoid or Hybrid Form Only)",
+					"headerEntries": [
+						"Eliphas lance l'un des sorts suivants, en utilisant l'Intelligence comme capacité de lanceur de sorts (sauvegarde {@dc 15}) :"
+					],
+					"will": [
+						"{@spell light}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell detect magic}",
+							"{@spell fog cloud}"
+						],
+						"1e": [
+							"{@spell phantasmal force}",
+							"{@spell shatter}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Eliphas peut utiliser son action pour se polymorpher en un hybride grand ours-humanoïde ou en un grand ours, ou revenir à sa vraie forme, qui est humanoïde. Ses statistiques, autres que sa taille et sa CA, sont les mêmes dans chaque forme. L'équipement qu'il porte ou qu'il transporte n'est pas transformé. Il retourne à sa vraie forme s'il meurt."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Eliphas a un avantage sur les contrôles de Sagesse (Perception) qui font appel à l'odorat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sous forme d'ours, Eliphas effectue deux attaques de griffes. En forme humanoïde, il effectue deux attaques de grande hache. En forme hybride, il peut attaquer comme un ours ou un humanoïde."
+					]
+				},
+				{
+					"name": "Bite (Bear or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} pour toucher, portée de 1,5 m, une cible. {@h}15 ({@damage 2d10 + 4}) dégâts perforants. Si la cible est un humanoïde, elle doit réussir un jet de sauvegarde de Constitution {@dc 14} ou être maudite par la lycanthropie des ours-garous."
+					]
+				},
+				{
+					"name": "Claw (Bear or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} pour toucher, portée de 1,5 m, une cible. {@h}13 ({@damage 2d8 + 4}) dégâts tranchants."
+					]
+				},
+				{
+					"name": "Greataxe (Humanoid or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7} pour toucher, portée de 1,5 m, une cible. {@h}10 ({@damage 1d12 + 4}) dégâts tranchants."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Fragment of Krokulmar",
+			"source": "KftGV",
+			"page": 53,
+			"size": [
+				"T"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d4 + 3"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 12,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"persuasion": "+7",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"Deep Speech",
+				"telepathy 60 ft."
+			],
+			"cr": "0",
+			"action": [
+				{
+					"name": "Psionic Revitalization",
+					"entries": [
+						"Le fragment touche une créature qui a 0 point de vie dans l'espace du fragment. La cible regagne 10 points de vie, et chaque créature située dans un rayon de 3 mètres de la créature soignée subit 3 ({@damage 1d6}) dégâts psychiques."
+					]
+				},
+				{
+					"name": "Squirming Dodge",
+					"entries": [
+						"Jusqu'au début du prochain tour du fragment, tout jet d'attaque effectué contre le fragment est désavantagé, et le fragment effectue des jets de sauvegarde avec avantage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Juvenile Eldritch Horror",
+			"source": "KftGV",
+			"page": 24,
+			"_isCopy": true,
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 168,
+				"formula": "16d12 + 64"
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 40
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 18,
+			"int": 18,
+			"wis": 14,
+			"cha": 12,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"lightning"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"L'horreur eldritch lance l'un des sorts suivants, ne nécessitant aucune composante et utilisant l'Intelligence comme capacité de lanceur de sorts (sauvegarde {@dc 14}) :"
+					],
+					"daily": {
+						"1": [
+							"{@spell project image}"
+						],
+						"2e": [
+							"{@spell blindness/deafness}",
+							"{@spell blur}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"L'horreur eldritch fait deux attaques : une avec sa morsure et une pour étrangler."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} pour toucher, portée de 10 ft, une cible. {@h}22 ({@damage 3d10 + 6}) dégâts perforants."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 10} pour toucher, portée de 5 ft, une créature de taille Large ou plus petite. {@h}17 ({@damage 2d10 + 6}) dégâts de matraquage plus 17 ({@damage 2d10 + 6}) dégâts de découpe. La cible est {@condition grappled} (s'échapper {@dc 16}) si l'horreur eldritch n'étrangle pas déjà une créature, et la cible est {@condition restrained} jusqu'à la fin de ce grappin."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"L'horreur eldritch exhale une ligne d'éclairs qui fait 20 pieds de long et 5 pieds de large. Chaque créature de cette ligne doit effectuer un jet de sauvegarde de Dextérité {@dc 16}, subissant 66 ({@damage 12d10}) dégâts de foudre en cas d'échec, ou la moitié en cas de réussite."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"L'horreur eldritch fait une attaque de morsure contre une cible de taille moyenne ou plus petite qu'elle agrippe. Si l'attaque touche, la cible est également avalée, et le grappin prend fin. Pendant qu'elle est avalée, la cible est {@condition blinded} et {@condition restrained}, elle bénéficie d'une couverture totale contre les attaques et autres effets extérieurs à l'horreur eldritch, et elle subit 21 ({@damage 6d6}) dégâts d'acide au début de chaque tour de l'horreur eldritch. Une horreur ne peut avoir qu'une seule créature avalée à la fois.",
+						"Si l'horreur eldritch subit 30 points de dégâts ou plus en un seul tour à cause de la créature avalée, elle doit réussir un jet de sauvegarde de Constitution {@dc 14} à la fin de ce tour ou régurgiter la créature, qui tombe {@condition prone} dans un espace situé à 10 pieds de l'horreur. Si l'horreur eldritch meurt, une créature avalée n'est plus {@condition restrained} par elle et peut s'échapper du cadavre en utilisant 15 pieds de mouvement, en sortant {@condition prone}."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened"
+			]
+		},
+		{
+			"name": "King Jhaeros",
+			"source": "KftGV",
+			"page": 158,
+			"_isCopy": true,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 133,
+				"formula": "14d10 + 56"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 18,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common",
+				"Draconic",
+				"Elvish",
+				"and Ignan but can't speak"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Ashen Creature",
+					"entries": [
+						"Lorsque Jhaeros tombe à 0 point de vie, il explose dans un nuage de cendres inoffensif, ne laissant rien d'autre derrière lui."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Chaque fois que Jhaeros commence son tour avec 60 points de vie ou moins, lancez un {@dice d6}. Sur un 6, Jhaeros devient fou furieux. À chacun de ses tours pendant qu'il est berserk, Jhaeros attaque la créature la plus proche qu'il peut voir. Si aucune créature n'est assez proche pour se déplacer et attaquer, Jhaeros attaque un objet, avec une préférence pour un objet plus petit que lui. Une fois que Jhaeros est devenu berserk, il continue à le faire jusqu'à ce qu'il soit détruit ou qu'il regagne tous ses points de vie."
+					]
+				},
+				{
+					"name": "Fire Absorption",
+					"entries": [
+						"Chaque fois que Jhaeros subit des dégâts de feu, il ne subit aucun dégât et regagne à la place un nombre de points de vie égal aux dégâts de feu infligés."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Jhaeros est immunisé contre tout sort ou effet qui altérerait sa forme."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Jhaeros a un avantage sur les jets de sauvegarde contre les sorts et autres effets magiques."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Les attaques des armes de Jhaeros sont magiques."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Jhaeros fait deux attaques de slam."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} pour toucher, portée de 1,5 m, une cible. {@h}16 ({@damage 2d10 + 5}) dégâts de matraquage. Si la cible est une créature, elle doit réussir un jet de sauvegarde de {@dc 15} Constitution ou voir son maximum de points de vie réduit d'un montant égal aux dégâts subis. La cible meurt si cette attaque réduit son maximum de points de vie à 0. La réduction dure jusqu'à ce qu'elle soit annulée par le sort {@spell greater restoration} ou une autre magie."
+					]
+				},
+				{
+					"name": "Haste {@recharge 5}",
+					"entries": [
+						"Jusqu'à la fin de son prochain tour, Jhaeros gagne magiquement un bonus de +2 à sa CA, a l'avantage sur les jets de sauvegarde de Dextérité, et peut utiliser son attaque de claquage comme une action bonus."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR",
+				"E",
+				"IG"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Markos Delphi",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 53,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"warlock"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 12,
+			"int": 17,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"Celestial",
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Markos casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"daily": {
+						"1e": [
+							"{@spell arms of Hadar}",
+							"{@spell charm person}",
+							"{@spell mage armor}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Markos makes two Ceremonial Blade attacks, two Psychic Orb attacks, or one of each."
+					]
+				},
+				{
+					"name": "Ceremonial Blade",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 3 ({@damage 1d6}) poison damage. If the target is a creature, it must succeed on a {@dc 13} Constitution saving throw or become {@condition poisoned} for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Psychic Orb",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 60 ft., one creature. {@h}10 ({@damage 2d6 + 3}) psychic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Swap Space",
+					"entries": [
+						"Markos targets one Medium or Small creature he can see within 30 feet of himself. The target must succeed on a {@dc 13} Constitution saving throw or it teleports, along with any equipment it is wearing or carrying, exchanging positions with Markos."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"DS"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Prisoner 13",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 68,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf",
+					"monk"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"mountain tattoo"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 18,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+5",
+				"deception": "+9",
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"poison"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish",
+				"Thieves' cant",
+				"Undercommon"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"In an area of antimagic, Prisoner 13's tattoos and reactions don't function, and she suffers the following modifications to her statistics: her AC becomes 13, she loses her immunity to psychic damage and the charmed condition, and her Tattooed Strike becomes a melee attack that deals 7 ({@damage 1d8 + 3}) bludgeoning damage on a hit."
+					]
+				},
+				{
+					"name": "Mindlink Tattoos",
+					"entries": [
+						"Prisoner 13 has telepathic links with dozens of agents operating throughout the land. The links allow Prisoner 13 to communicate telepathically with each of these agents while they are both on the same plane of existence."
+					]
+				},
+				{
+					"name": "Mountain Tattoo",
+					"entries": [
+						"Prisoner 13's AC includes her Constitution modifier."
+					]
+				},
+				{
+					"name": "Shroud Tattoo",
+					"entries": [
+						"Prisoner 13 can't be targeted by divination spells or any feature that would read her thoughts, and she can't be perceived through magical scrying sensors. She can't be contacted telepathically unless she allows such contact."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Prisoner 13 makes two Tattooed Strike attacks."
+					]
+				},
+				{
+					"name": "Tattooed Strike",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 60 ft., one target. {@h}12 ({@damage 2d8 + 3}) force damage."
+					]
+				},
+				{
+					"name": "Firestorm Tattoo {@recharge 5}",
+					"entries": [
+						"Prisoner 13 magically unleashes flame from the tattoo across her back, filling a 20-foot-radius sphere centered on her. Each other creature in that area must make a {@dc 15} Dexterity saving throw. On a failed save, the creature takes 13 ({@damage 3d8}) fire damage and is knocked {@condition prone}. On a successful save, it takes half as much damage and isn't knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "River Tattoo",
+					"entries": [
+						"Prisoner 13 magically ends any effects causing the {@condition grappled} or {@condition restrained} conditions on herself. If she is bound with nonmagical restraints, she slips out of them."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Readiness",
+					"entries": [
+						"When a creature Prisoner 13 can see within 60 feet of herself ends its turn, Prisoner 13 makes one Tattooed Strike attack or uses River Tattoo. She can then move up to her speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E",
+				"TC",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sythian Skalderang",
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 117,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"bard",
+					"tiefling"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Graz'zt's gift"
+					]
+				}
+			],
+			"hp": {
+				"average": 99,
+				"formula": "18d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 13,
+			"int": 14,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"deception": "+6",
+				"performance": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Sythian casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell mage hand}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell charm person}",
+							"{@spell faerie fire}",
+							"{@spell unseen servant}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fear of Frogs and Toads",
+					"entries": [
+						"Sythian is {@condition frightened} while he is within 20 feet of a frog or a toad (of any size) that he can see."
+					]
+				},
+				{
+					"name": "Graz'zt's Gift",
+					"entries": [
+						"Sythian's AC includes his Charisma modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sythian makes two Poisoned Shortsword or Poisoned Dart attacks and uses Whispers of Azzagrat."
+					]
+				},
+				{
+					"name": "Poisoned Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 5 ({@damage 1d10}) poison damage."
+					]
+				},
+				{
+					"name": "Poisoned Dart",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 5 ({@damage 1d10}) poison damage."
+					]
+				},
+				{
+					"name": "Whispers of Azzagrat",
+					"entries": [
+						"Each creature in a 15-foot cube originating from Sythian must make a {@dc 14} Wisdom saving throw. On a failed save, a creature takes 18 ({@damage 4d8}) psychic damage and is {@condition incapacitated} until the end of its next turn. On a successful save, the creature takes half as much damage and isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fiendish Rebuke (3/Day)",
+					"entries": [
+						"Immediately after a creature within 5 feet of Sythian hits him with an attack roll, Sythian forces that creature to make a {@dc 14} Constitution saving throw. The creature takes 14 ({@damage 4d6}) fire damage on a failed saving throw, or half as much damage on a successful one."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Tixie Tockworth",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnome"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d6 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 18,
+			"int": 17,
+			"wis": 9,
+			"cha": 10,
+			"save": {
+				"int": "+6",
+				"wis": "+2"
+			},
+			"skill": {
+				"arcana": "+9",
+				"perception": "+2"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Gnomish",
+				"Terran",
+				"Undercommon"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Tockworth casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell nondetection} (self only)"
+					],
+					"daily": {
+						"2": [
+							"{@spell dimension door}"
+						],
+						"1e": [
+							"{@spell blindness/deafness}",
+							"{@spell blur}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Force Field",
+					"entries": [
+						"Tockworth generates a magical force field around herself. This force field has 15 hit points and regains all its hit points at the start of each of Tockworth's turns, but it ceases to function if Tockworth drops to 0 hit points. Any damage Tockworth takes is subtracted from the force field's hit points first. Each time the force field regains hit points, the following conditions end on Tockworth: {@condition grappled}, {@condition restrained}, and {@condition stunned}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tockworth makes three Shortsword or Lightning Discharge attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@damage 3d6}) force damage."
+					]
+				},
+				{
+					"name": "Lightning Discharge",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 60 ft., one creature. {@h}16 ({@damage 3d10}) lightning damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Scalding Steam {@recharge 5}",
+					"entries": [
+						"Tockworth emits a jet of piping-hot steam in a 15-foot cone. Each creature in that cone must make a {@dc 15} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"G",
+				"T",
+				"U"
+			],
+			"damageTags": [
+				"F",
+				"L",
+				"O",
+				"P"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zorhanna's Simulacrum",
+			"source": "KftGV",
+			"page": 184,
+			"_isCopy": true,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 99,
+				"formula": "18d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+13",
+				"history": "+13"
+			},
+			"passive": 12,
+			"resist": [
+				{
+					"special": "damage from spells"
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "(from stoneskin)",
+					"preNote": "nonmagical",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common",
+				"Deep Speech (when it is angry or frustrated)",
+				"Draconic",
+				"Elvish",
+				"Gnomish",
+				"Sylvan"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The simulacrum is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The simulacrum can cast disguise self and invisibility at will and has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell mage armor}*",
+								"{@spell magic missile}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fly}",
+								"{@spell lightning bolt}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell banishment}",
+								"{@spell fire shield}",
+								"{@spell stoneskin}*"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell scrying}",
+								"{@spell wall of force}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell globe of invulnerability}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell teleport}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell mind blank}*"
+							]
+						},
+						"9": {
+							"slots": 1,
+							"spells": [
+								"{@spell time stop}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*The simulacrum casts these spells on itself before combat."
+					],
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The simulacrum has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Simulacrum",
+					"entries": [
+						"The simulacrum can't regain expended spell slots or use the properties of the shard solitaire necklace. (The shard solitaire is currently attuned to the Far Realm entity trapped inside.) If the simulacrum drops to 0 hit points, it turns to snow and melts away, and the shard solitaire necklace teleports to the safe in Zorhanna's vault tower."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"DS",
+				"E",
+				"G",
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"hasFluff": true
+		}
+	]
+}
