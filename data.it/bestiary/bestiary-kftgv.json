@@ -1,5 +1,10 @@
 {
 	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
 		"otherSources": {
 			"monster": {
 				"MM": "KftGV"
@@ -11,39 +16,18 @@
 			"name": "Animatronic Allosaurus",
 			"source": "KftGV",
 			"page": 22,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Allosaurus",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "allosaurus",
+						"with": "animatronic allosaurus"
+					}
 				}
-			],
-			"hp": {
-				"average": 51,
-				"formula": "6d10 + 18"
 			},
-			"speed": {
-				"walk": 60
-			},
-			"str": 19,
-			"dex": 13,
-			"con": 17,
-			"int": 2,
-			"wis": 12,
-			"cha": 5,
-			"skill": {
-				"perception": "+5"
-			},
-			"passive": 15,
+			"type": "construct",
 			"immune": [
 				"poison",
 				"psychic"
@@ -54,147 +38,120 @@
 				"paralyzed",
 				"poisoned"
 			],
-			"cr": "2",
-			"trait": [
-				{
-					"name": "Pounce",
-					"entries": [
-						"Se l'allosauro si muove per almeno 9 metri dritto verso una creatura e poi la colpisce con un attacco di artigli nello stesso turno, quel bersaglio deve riuscire in un tiro salvezza di Forza {@dc 13} o essere colpito {@condition prone}. Se il bersaglio è {@condition prone}, l'allosauro può effettuare un attacco con morso contro di esso come azione bonus."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 6} per colpire, portata 5 ft., un bersaglio. {@h}15 ({@damage 2d10 + 4}) danni perforanti."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 6} per colpire, portata 5 ft., un bersaglio. {@h}8 ({@damage 1d8 + 4}) danni da taglio."
-					]
-				}
-			],
-			"traitTags": [
-				"Pounce"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasFluff": true
+		},
+		{
+			"name": "Arlo Kettletoe (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit Captain",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the captain",
+						"with": "Arlo Kettletoe",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Arlo Kettletoe (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the knight",
+						"with": "Arlo Kettletoe",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Arlo Kettletoe (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Mage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mage",
+						"with": "Arlo Kettletoe",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Ashen Animated Armor",
 			"source": "KftGV",
 			"page": 157,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Animated Armor",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Quando l'armatura scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 25
-			},
-			"str": 14,
-			"dex": 11,
-			"con": 13,
-			"int": 1,
-			"wis": 3,
-			"cha": 1,
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 6,
 			"immune": [
 				"fire",
 				"poison",
 				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"cr": "1",
-			"trait": [
-				{
-					"name": "Antimagic Susceptibility",
-					"entries": [
-						"L'armatura è incapacitata mentre si trova nell'area di un {@spell antimagic field}. Se bersagliata da {@spell dispel magic}, l'armatura deve riuscire a effettuare un tiro salvezza di Costituzione contro la DC dell'incantatore o cadere svenuta per 1 minuto."
-					]
-				},
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Quando l'armatura scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
-					]
-				},
-				{
-					"name": "False Appearance",
-					"entries": [
-						"Pur rimanendo immobile, l'armatura è indistinguibile da una normale armatura."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"L'armatura effettua due attacchi in mischia."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 4} per colpire, portata 5 ft., un bersaglio. {@h}5 ({@damage 1d6 + 2}) danni da percosse."
-					]
-				}
-			],
-			"traitTags": [
-				"Antimagic Susceptibility",
-				"False Appearance"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasFluff": true
 		},
@@ -202,99 +159,30 @@
 			"name": "Ashen Flying Sword",
 			"source": "KftGV",
 			"page": 157,
-			"_isCopy": true,
-			"size": [
-				"S"
-			],
+			"_copy": {
+				"name": "Flying Sword",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Quando la spada scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 17,
-				"formula": "5d6"
-			},
-			"speed": {
-				"walk": 0,
-				"fly": 50
-			},
-			"str": 12,
-			"dex": 15,
-			"con": 11,
-			"int": 1,
-			"wis": 5,
-			"cha": 1,
-			"save": {
-				"dex": "+4"
-			},
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 7,
 			"immune": [
 				"fire",
 				"poison",
 				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"cr": "1/4",
-			"trait": [
-				{
-					"name": "Antimagic Susceptibility",
-					"entries": [
-						"La spada è incapacitata mentre si trova nell'area di un {@spell antimagic field}. Se bersagliata da {@spell dispel magic}, la spada deve superare un tiro salvezza di Costituzione contro la D.C. dell'incantatore o cadere svenuta per 1 minuto."
-					]
-				},
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Quando la spada scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
-					]
-				},
-				{
-					"name": "False Appearance",
-					"entries": [
-						"Pur rimanendo immobile e non volando, la spada è indistinguibile da una spada normale."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Longsword",
-					"entries": [
-						"{@atk mw} {@hit 3} per colpire, portata 5 ft., un bersaglio. {@h}5 ({@damage 1d8 + 1}) danni da taglio."
-					]
-				}
-			],
-			"traitTags": [
-				"Antimagic Susceptibility",
-				"False Appearance"
-			],
-			"senseTags": [
-				"B"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasFluff": true
 		},
@@ -302,10 +190,26 @@
 			"name": "Ashen Knight",
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "knight",
+						"with": "ashen knight"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Quando il cavaliere scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
+							]
+						}
+					}
+				}
+			},
 			"type": {
 				"type": "elemental",
 				"tags": [
@@ -316,102 +220,8 @@
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"{@item plate armor|PHB|plate}"
-					]
-				}
-			],
-			"hp": {
-				"average": 52,
-				"formula": "8d8 + 16"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 16,
-			"dex": 11,
-			"con": 14,
-			"int": 11,
-			"wis": 11,
-			"cha": 15,
-			"save": {
-				"con": "+4",
-				"wis": "+2"
-			},
-			"passive": 10,
 			"immune": [
 				"fire"
-			],
-			"languages": [
-				"Any one language (usually Common)"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Quando il cavaliere scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
-					]
-				},
-				{
-					"name": "Brave",
-					"entries": [
-						"Il cavaliere ha un vantaggio sui tiri salvezza contro l'essere {@condition frightened}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Il cavaliere effettua due attacchi in mischia."
-					]
-				},
-				{
-					"name": "Greatsword",
-					"entries": [
-						"{@atk mw} {@hit 5} per colpire, portata 5 ft., un bersaglio. {@h}10 ({@damage 2d6 + 3}) danni da taglio."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 2} per colpire, gittata 100/400 ft., un bersaglio. {@h}5 ({@damage 1d10}) danni perforanti."
-					]
-				},
-				{
-					"name": "Leadership (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Per 1 minuto, il cavaliere può pronunciare un comando speciale o un avvertimento ogni volta che una creatura non ostile che può vedere entro 9 piedi da lui effettua un tiro di attacco o un tiro salvezza. La creatura può aggiungere un {@dice d4} al suo tiro di dado, a condizione che possa sentire e capire il cavaliere. Una creatura può beneficiare di un solo dado guida alla volta. Questo effetto termina se il cavaliere è {@condition incapacitated}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Il cavaliere aggiunge 2 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, il cavaliere deve vedere l'attaccante e brandire un'arma da mischia.eadership die alla volta. Questo effetto termina se il cavaliere è (%1%)."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RNG",
-				"RW"
 			],
 			"hasFluff": true
 		},
@@ -419,206 +229,60 @@
 			"name": "Ashen Shambling Mound",
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
+			"_copy": {
+				"name": "Shambling Mound",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Quando il tumulo barcollante scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 136,
-				"formula": "16d10 + 48"
-			},
-			"speed": {
-				"walk": 20,
-				"swim": 20
-			},
-			"str": 18,
-			"dex": 8,
-			"con": 16,
-			"int": 5,
-			"wis": 10,
-			"cha": 5,
-			"skill": {
-				"stealth": "+2"
-			},
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 10,
 			"resist": [
 				"cold"
 			],
 			"immune": [
 				"fire",
 				"lightning"
-			],
-			"conditionImmune": [
-				"blinded",
-				"deafened",
-				"exhaustion"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Quando il tumulo barcollante scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
-					]
-				},
-				{
-					"name": "Lightning Absorption",
-					"entries": [
-						"Ogni volta che il tumulo barcollante subisce danni da fulmine, non subisce danni e recupera un numero di punti ferita pari ai danni da fulmine inflitti."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Il tumulo barcollante compie due attacchi di tipo \"slam\". Se entrambi gli attacchi colpiscono un bersaglio Medio o più piccolo, il bersaglio subisce {@condition grappled} (evasione {@dc 14}) e il tumulo barcollante usa su di esso il suo Ingolfo."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 7} per colpire, portata 5 ft., un bersaglio. {@h}13 ({@damage 2d8 + 4}) danni da percosse."
-					]
-				},
-				{
-					"name": "Engulf",
-					"entries": [
-						"Il tumulo barcollante inghiotte una creatura media o più piccola {@condition grappled} vicino ad esso. Il bersaglio inghiottito è {@condition blinded}, {@condition restrained} e incapace di respirare, e deve riuscire in un tiro salvezza di Costituzione {@dc 14} all'inizio di ogni turno del tumulo o subire 13 ({@damage 2d8 + 4}) danni da percosse. Se il tumulo si muove, il bersaglio inghiottito si muove con lui. Il tumulo può avere una sola creatura inghiottita alla volta."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"blinded",
-				"grappled",
-				"restrained"
 			]
 		},
 		{
 			"name": "Ashen Veteran",
 			"source": "KftGV",
 			"page": 154,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Quando il veterano scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra.Il bersaglio inghiottito si muove con lui. Il tumulo può avere una sola creatura inghiottita alla volta."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"{@item splint armor|PHB|splint}"
-					]
-				}
-			],
-			"hp": {
-				"average": 58,
-				"formula": "9d8 + 18"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 16,
-			"dex": 13,
-			"con": 14,
-			"int": 10,
-			"wis": 11,
-			"cha": 10,
-			"skill": {
-				"athletics": "+5",
-				"perception": "+2"
-			},
-			"passive": 12,
 			"immune": [
 				"fire"
-			],
-			"languages": [
-				"Any one language (usually Common)"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Quando il veterano scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra.Il bersaglio inghiottito si muove con lui. Il tumulo può avere una sola creatura inghiottita alla volta."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Il veterano effettua due attacchi con la spada lunga. Se ha una spada corta estratta, può anche effettuare un attacco di spada corta."
-					]
-				},
-				{
-					"name": "Longsword",
-					"entries": [
-						"{@atk mw} {@hit 5} per colpire, portata 5 ft., un bersaglio. {@h}7 ({@damage 1d8 + 3}) danni da taglio, o 8 ({@damage 1d10 + 3}) danni da taglio se usato a due mani."
-					]
-				},
-				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 5} per colpire, portata 5 ft., un bersaglio. {@h}6 ({@damage 1d6 + 3}) danni perforanti."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 3} per colpire, gittata 100/400 ft., un bersaglio. {@h}6 ({@damage 1d10 + 1}) danni perforanti."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RNG",
-				"RW"
 			],
 			"hasFluff": true
 		},
@@ -626,70 +290,33 @@
 			"name": "Ashen Warhorse",
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
+			"_copy": {
+				"name": "Warhorse",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Quando il cavallo scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 19,
-				"formula": "3d10 + 3"
-			},
-			"speed": {
-				"walk": 60
-			},
-			"str": 18,
-			"dex": 12,
-			"con": 13,
-			"int": 2,
-			"wis": 12,
-			"cha": 7,
-			"passive": 11,
 			"immune": [
 				"fire"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Quando il cavallo scende a 0 punti ferita, si riduce a un mucchio di cenere e l'equipaggiamento che indossava o trasportava cade a terra."
-					]
-				},
-				{
-					"name": "Trampling Charge",
-					"entries": [
-						"Se il cavallo si muove per almeno 6 metri dritto verso una creatura e poi la colpisce con un attacco di zoccoli nello stesso turno, il bersaglio deve riuscire in un tiro salvezza di Forza {@dc 14} o essere colpito {@condition prone}. Se il bersaglio è {@condition prone}, il cavallo può effettuare un altro attacco con gli zoccoli contro di lui come azione bonus."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Hooves",
-					"entries": [
-						"{@atk mw} {@hit 6} per colpire, portata 5 ft., un bersaglio. {@h}11 ({@damage 2d6 + 4}) danni da percosse."
-					]
-				}
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"prone"
 			]
 		},
 		{
 			"name": "Charmayne Daymore",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 159,
@@ -842,6 +469,7 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -937,6 +565,7 @@
 			"conditionInflict": [
 				"grappled"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -1036,144 +665,94 @@
 			"languageTags": [
 				"CS"
 			],
+			"hasToken": true,
 			"hasFluff": true
+		},
+		{
+			"name": "Conservatory Student",
+			"source": "KftGV",
+			"_copy": {
+				"name": "Noble",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "removeArr",
+						"names": "Rapier"
+					}
+				}
+			},
+			"skill": {
+				"performance": "+7"
+			},
+			"reaction": null
+		},
+		{
+			"name": "Dr. Cassee Dannell",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"int": 10,
+			"hasToken": true
 		},
 		{
 			"name": "Eldritch Horror Hatchling",
 			"source": "KftGV",
 			"page": 24,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"natural armor"
-					]
-				},
-				{
-					"ac": 11,
-					"condition": "while prone"
-				}
-			],
-			"hp": {
-				"average": 39,
-				"formula": "6d10 + 6"
-			},
-			"speed": {
-				"walk": 30,
-				"burrow": 10
-			},
-			"str": 17,
-			"dex": 11,
-			"con": 13,
-			"int": 1,
-			"wis": 13,
-			"cha": 6,
-			"senses": [
-				"darkvision 60 ft.",
-				"tremorsense 60 ft."
-			],
-			"passive": 11,
-			"cr": "2",
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} per colpire, portata 5 ft., un bersaglio. {@h}10 ({@damage 2d6 + 3}) danni da taglio più 3 ({@damage 1d6}) danni da veleno. Se il bersaglio è una creatura Grande o più piccola, è {@condition grappled} (fuga {@dc 13}). Finché la presa non termina, l'orrore eldritico può mordere solo la creatura {@condition grappled} e ha vantaggio sui tiri di attacco per farlo."
-					]
-				},
-				{
-					"name": "Acid Spray {@recharge}",
-					"entries": [
-						"L'orrore eldritico sputa acido in una linea lunga 9 metri e larga 5 metri, a patto che non ci siano creature {@condition grappled}. Ogni creatura in quella linea deve effettuare un tiro salvezza di Destrezza {@dc 13}, subendo 10 ({@damage 3d6}) danni da acido se il tiro salvezza fallisce, o la metà dei danni se ha successo."
+			"_copy": {
+				"name": "Ankheg",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Bite",
+							"items": {
+								"name": "Bite",
+								"entries": [
+									"{@atk mw} {@hit 5} per colpire, portata 5 ft., un bersaglio. {@h}10 ({@damage 2d6 + 3}) danni da taglio più 3 ({@damage 1d6}) danni da veleno. Se il bersaglio è una creatura Grande o più piccola, è {@condition grappled} (fuga {@dc 13}). Finché la presa non termina, l'orrore eldritico può mordere solo la creatura {@condition grappled} e ha vantaggio sui tiri di attacco per farlo."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Acid Spray {@recharge}",
+							"items": {
+								"name": "Acid Spray {@recharge}",
+								"entries": [
+									"L'orrore eldritico sputa acido in una linea lunga 9 metri e larga 5 metri, a patto che non ci siano creature {@condition grappled}. Ogni creatura in quella linea deve effettuare un tiro salvezza di Destrezza {@dc 13}, subendo 10 ({@damage 3d6}) danni da acido se il tiro salvezza fallisce, o la metà dei danni se ha successo."
+								]
+							}
+						}
 					]
 				}
-			],
-			"senseTags": [
-				"D",
-				"T"
-			],
-			"damageTags": [
-				"A",
-				"I",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"grappled"
-			]
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Eliphas Adulare",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 188,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human",
-					"shapechanger"
-				]
-			},
-			"alignment": [
-				"N",
-				"G"
-			],
-			"ac": [
-				{
-					"ac": 10,
-					"condition": "in humanoid form"
-				},
-				{
-					"ac": 11,
-					"condition": "in bear and hybrid form"
+			"_copy": {
+				"name": "Werebear",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the werebear",
+							"with": "Eliphas",
+							"flags": "i"
+						}
+					]
 				}
-			],
-			"hp": {
-				"average": 135,
-				"formula": "18d8 + 54"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 19,
-			"dex": 10,
-			"con": 17,
 			"int": 18,
-			"wis": 12,
-			"cha": 12,
-			"skill": {
-				"perception": "+7"
-			},
-			"passive": 17,
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't silvered",
-					"cond": true
-				}
-			],
-			"languages": [
-				"Common (can't speak in bear form)"
-			],
-			"cr": "5",
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Humanoid or Hybrid Form Only)",
@@ -1199,75 +778,96 @@
 					"displayAs": "action"
 				}
 			],
-			"trait": [
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"Eliphas può usare la sua azione per polimorfizzarsi in un ibrido grande orso-umanoide o in un grande orso, oppure tornare alla sua vera forma, che è umanoide. Le sue statistiche, a parte la taglia e la CA, sono le stesse in ogni forma. L'equipaggiamento che indossa o porta con sé non viene trasformato. Se muore, ritorna alla sua vera forma."
-					]
-				},
-				{
-					"name": "Keen Smell",
-					"entries": [
-						"Eliphas ha vantaggio sulle prove di Saggezza (Percezione) che si basano sull'olfatto.rm se muore."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"In forma di orso, Eliphas effettua due attacchi con gli artigli. In forma umanoide, effettua due attacchi con l'ascia. In forma ibrida, può attaccare come un orso o un umanoide."
-					]
-				},
-				{
-					"name": "Bite (Bear or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} per colpire, portata 5 ft., un bersaglio. {@h}15 ({@damage 2d10 + 4}) danni perforanti. Se il bersaglio è un umanoide, deve riuscire a superare un tiro salvezza di Costituzione {@dc 14} o essere maledetto dalla licantropia mannara."
-					]
-				},
-				{
-					"name": "Claw (Bear or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} per colpire, portata 5 ft., un bersaglio. {@h}13 ({@damage 2d8 + 4}) danni da taglio."
-					]
-				},
-				{
-					"name": "Greataxe (Humanoid or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} per colpire, portata 5 ft., un bersaglio. {@h}10 ({@damage 1d12 + 4}) danni da taglio."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses",
-				"Shapechanger"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"damageTagsSpell": [
-				"T",
-				"Y"
-			],
-			"spellcastingTags": [
-				"F"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasFluff": true
 		},
 		{
+			"name": "Enna Galakiir (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Enna Galakiir",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Enna Galakiir (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Spy",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the spy",
+						"with": "Enna Galakiir",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Enna Galakiir (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Assassin",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the assassin",
+						"with": "Enna Galakiir",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Fragment of Krokulmar",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 53,
 			"size": [
@@ -1339,55 +939,249 @@
 			"miscTags": [
 				"AOE"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Frody Dartwild",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Zombie",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the zombie",
+						"with": "Frody",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"int": 10,
+			"languages": [
+				"Common"
+			]
+		},
+		{
+			"name": "Gregir Fendelsohn (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Gregir Fendelsohn",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Gregir Fendelsohn (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Thug",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the thug",
+						"with": "Gregir Fendelsohn",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Gregir Fendelsohn (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Gregir Fendelsohn",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Headless Body",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "knight",
+						"with": "headless body"
+					}
+				}
+			},
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Ignatius Inkblot",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Mind Flayer",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mind flayer",
+						"with": "Ignatius Inkblot",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Jalynvyr Nir'Thinn",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Smoke Mephit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mephit",
+						"with": "Jalynvyr Nir'Thinn",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"Common",
+				"Elvish"
+			]
+		},
+		{
+			"name": "Jarazoun",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Efreeti",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the efreeti",
+						"with": "Jarazoun",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Joster Mareet",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Incubus",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the fiend",
+						"with": "Joster Mareet",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"incubus"
+				]
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Juvenile Eldritch Horror",
 			"source": "KftGV",
 			"page": 24,
-			"_isCopy": true,
-			"size": [
-				"H"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Behir",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "behir",
+						"with": "eldritch horror"
+					}
 				}
-			],
-			"hp": {
-				"average": 168,
-				"formula": "16d12 + 64"
 			},
-			"speed": {
-				"walk": 50,
-				"climb": 40
-			},
-			"str": 23,
-			"dex": 16,
-			"con": 18,
 			"int": 18,
-			"wis": 14,
-			"cha": 12,
-			"skill": {
-				"perception": "+6",
-				"stealth": "+7"
-			},
-			"senses": [
-				"darkvision 90 ft."
-			],
-			"passive": 16,
-			"immune": [
-				"lightning"
-			],
-			"cr": "11",
+			"languages": null,
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -1407,108 +1201,99 @@
 					"displayAs": "action"
 				}
 			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"L'orrore eldritico compie due attacchi: uno con il morso e uno di costrizione."
-					]
+			"hasToken": true
+		},
+		{
+			"name": "Kavoda",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Deep Gnome (Svirfneblin)",
+				"source": "MM",
+				"_trait": {
+					"name": "Deep Gnome",
+					"source": "DMG"
 				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the gnome",
+						"with": "Kavoda",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Special Equipment",
+							"entries": [
+								"Kavoda porta un {@item spell scroll} di {@spell magic weapon} e un {@item Potion of Hill Giant Strength||potion of giant strength (hill)}."
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
 				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 10} per colpire, portata 10 ft., un bersaglio. {@h}22 ({@damage 3d10 + 6}) danni perforanti."
-					]
-				},
-				{
-					"name": "Constrict",
-					"entries": [
-						"{@atk mw} {@hit 10} per colpire, portata 5 ft., una creatura Grande o più piccola. {@h}17 ({@damage 2d10 + 6}) danni da percosse più 17 ({@damage 2d10 + 6}) danni da fendente. Il bersaglio subisce {@condition grappled} (fuga {@dc 16}) se l'orrore eldritch non sta già costringendo una creatura, e il bersaglio subisce {@condition restrained} finché la presa non termina."
-					]
-				},
-				{
-					"name": "Lightning Breath {@recharge 5}",
-					"entries": [
-						"L'orrore eldritch esala una linea di fulmini lunga 6 metri e larga 5 metri. Ogni creatura in quella linea deve effettuare un tiro salvezza di Destrezza {@dc 16}, subendo 66 ({@damage 12d10}) danni da fulmine se il tiro salvezza fallisce, o la metà dei danni se riesce."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"L'orrore eldritch effettua un attacco con morso contro un bersaglio Medio o più piccolo che sta afferrando. Se l'attacco va a segno, anche il bersaglio viene inghiottito e la presa termina. Mentre viene inghiottito, il bersaglio è {@condition blinded} e {@condition restrained}, ha una copertura totale contro gli attacchi e gli altri effetti esterni all'orrore eldritch e subisce 21 ({@damage 6d6}) danni da acido all'inizio di ogni turno dell'orrore eldritch. Un orrore può avere una sola creatura inghiottita alla volta.",
-						"Se l'orrore eldritch subisce 30 o più danni in un singolo turno dalla creatura inghiottita, l'orrore deve riuscire in un tiro salvezza di Costituzione {@dc 14} alla fine di quel turno o rigurgitare la creatura, che cade {@condition prone} in uno spazio entro 3 piedi dall'orrore. Se l'orrore eldritch muore, la creatura inghiottita non è più {@condition restrained} da esso e può fuggire dal cadavere utilizzando 15 piedi di movimento, uscendo {@condition prone}.d subisce 21 ({@condition restrained}) danni da acido all'inizio di ogni turno dell'orrore eldritch. Un orrore può avere una sola creatura inghiottita alla volta."
+					"ac": 12,
+					"from": [
+						"{@item robes|phb}"
 					]
 				}
 			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack",
-				"Swallow"
-			],
-			"damageTags": [
-				"A",
-				"B",
-				"L",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"blinded",
-				"grappled",
-				"restrained"
-			],
-			"conditionInflictSpell": [
-				"blinded",
-				"deafened"
+			"languages": [
+				"Common",
+				"Gnomish",
+				"Terran",
+				"Undercommon"
 			]
 		},
 		{
 			"name": "King Jhaeros",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"natural armor"
+			"_copy": {
+				"name": "Clay Golem",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the golem",
+						"with": "Jhaeros",
+						"flags": "i"
+					},
+					"trait": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Ashen Creature",
+								"entries": [
+									"Quando Jhaeros scende a 0 punti ferita, esplode in un'innocua nube di cenere, senza lasciare nient'altro. usando 15 piedi di movimento, uscendo (%3%).d subisce 21 ((%2%)) danni da acido all'inizio di ogni turno dell'orrore eldritch. Un orrore può avere una sola creatura inghiottita alla volta."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Acid Absorption",
+							"items": {
+								"name": "Fire Absorption",
+								"entries": [
+									"Ogni volta che Jhaeros subisce danni da fuoco, non subisce danni e recupera un numero di punti ferita pari ai danni da fuoco subiti. Una volta che Jhaeros va in berserk, continua a farlo finché non viene distrutto o non recupera tutti i suoi punti ferita."
+								]
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 133,
-				"formula": "14d10 + 56"
 			},
-			"speed": {
-				"walk": 20
-			},
-			"str": 20,
-			"dex": 9,
-			"con": 18,
 			"int": 10,
 			"wis": 10,
 			"cha": 10,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 9,
 			"immune": [
 				"poison",
 				"psychic",
@@ -1522,109 +1307,19 @@
 					"cond": true
 				}
 			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
 			"languages": [
 				"understands Common",
 				"Draconic",
 				"Elvish",
 				"and Ignan but can't speak"
 			],
-			"cr": "9",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Quando Jhaeros scende a 0 punti ferita, esplode in un'innocua nube di cenere, senza lasciare nient'altro. usando 15 piedi di movimento, uscendo (%3%).d subisce 21 ((%2%)) danni da acido all'inizio di ogni turno dell'orrore eldritch. Un orrore può avere una sola creatura inghiottita alla volta."
-					]
-				},
-				{
-					"name": "Berserk",
-					"entries": [
-						"Ogni volta che Jhaeros inizia il suo turno con 60 punti ferita o meno, tira un {@dice d6}. Con un 6, Jhaeros impazzisce. In ogni turno di berserk, Jhaeros attacca la creatura più vicina che riesce a vedere. Se nessuna creatura è abbastanza vicina da potersi muovere e attaccare, Jhaeros attacca un oggetto, preferendo un oggetto più piccolo di lui. Una volta che Jhaeros va in berserk, continua a farlo finché non viene distrutto o non recupera tutti i suoi punti ferita."
-					]
-				},
-				{
-					"name": "Fire Absorption",
-					"entries": [
-						"Ogni volta che Jhaeros subisce danni da fuoco, non subisce danni e recupera un numero di punti ferita pari ai danni da fuoco subiti. Una volta che Jhaeros va in berserk, continua a farlo finché non viene distrutto o non recupera tutti i suoi punti ferita."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"Jhaeros è immune a qualsiasi incantesimo o effetto che possa alterare la sua forma."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Jhaeros ha vantaggio nei tiri salvezza contro incantesimi e altri effetti magici."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"Gli attacchi delle armi di Jhaeros sono magici."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Jhaeros esegue due attacchi di tipo \"slam\"."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 8} per colpire, portata 5 ft., un bersaglio. {@h}16 ({@damage 2d10 + 5}) danni da percosse. Se il bersaglio è una creatura, deve riuscire in un tiro salvezza di Costituzione {@dc 15} o il suo massimo di punti ferita viene ridotto di un ammontare pari ai danni subiti. Il bersaglio muore se questo attacco riduce il suo massimo di punti ferita a 0. La riduzione dura finché non viene rimossa dall'incantesimo {@spell greater restoration} o da un'altra magia."
-					]
-				},
-				{
-					"name": "Haste {@recharge 5}",
-					"entries": [
-						"Fino alla fine del suo prossimo turno, Jhaeros ottiene magicamente un bonus di +2 alla sua CA, ha vantaggio ai tiri salvezza di Destrezza e può usare il suo attacco di slam come azione bonus.um a 0. La riduzione dura finché non viene rimossa dall'incantesimo (%5%) o da un'altra magia."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS",
-				"DR",
-				"E",
-				"IG"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Markos Delphi",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 53,
@@ -1756,11 +1451,101 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "Meera Raheer",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Naevys Tharesso",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the knight",
+						"with": "Naevys Tharesso",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Greatsword",
+						"items": {
+							"name": "Flame Tongue Longsword",
+							"entries": [
+								"{@atk mw} {@hit 4} per colpire, portata 5 ft., un bersaglio. {@h}6 ({@damage 1d8 + 2}) danni da taglio, o 7 ({@damage 1d10 + 2}) danni da taglio se usata a due mani. Il cavaliere può usare un'azione bonus per pronunciare la parola di comando di questa spada magica, facendo erompere le fiamme dalla lama. Queste fiamme diffondono una luce brillante in un raggio di 40 piedi e una luce fioca per altri 40 piedi. Mentre la spada è in fiamme, infligge 2d6 danni da fuoco extra a qualsiasi bersaglio colpito. Le fiamme durano finché non usa un'azione bonus per pronunciare nuovamente la parola di comando o finché non lascia cadere o ripone la spada."
+							]
+						}
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			]
+		},
+		{
+			"name": "Nixylanna Vidorant",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Assassin",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the Assassin",
+						"with": "Nixylanna Vidorant",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Prisoner 13",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 68,
@@ -1920,11 +1705,119 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "Rilago",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Ghost",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the ghost",
+						"with": "Rilago",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Sabrina Kilgore (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Sabrina Kilgore",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Sabrina Kilgore (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Thug",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the thug",
+						"with": "Sabrina Kilgore",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Sabrina Kilgore (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Sabrina Kilgore",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Sythian Skalderang",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 117,
@@ -2084,11 +1977,59 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "The Stranger",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Archmage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the archmage",
+						"with": "The Stranger",
+						"flags": "i"
+					}
+				}
+			},
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Lo Straniero indossa un {@item ring of mind shielding} invisibile che vanifica i tentativi magici di leggere i suoi pensieri. Lo Straniero indossa anche {@item dimensional shackles}, ma non vede l'ora di liberarsene. Un tocco della mazza-chiave di Omid fa cadere le catene, liberando lo Straniero. incandescente, infligge 2d6 danni da fuoco extra a qualsiasi bersaglio che colpisce. Le fiamme durano finché non usa un'azione bonus per pronunciare nuovamente la parola di comando o finché non lascia cadere o ripone la spada."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Le fiamme durano finché non usa un'azione bonus per pronunciare nuovamente la parola di comando o finché non lascia cadere o ripone la spada."
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tiefling Acrobat",
+			"source": "KftGV",
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"performance": "+4"
+			}
+		},
+		{
 			"name": "Tixie Tockworth",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 85,
 			"size": [
@@ -2235,61 +2176,277 @@
 				"blinded",
 				"deafened"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "Tixie's Shield Guardian",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Shield Guardian",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "removeArr",
+						"names": "Spell Storing"
+					}
+				}
+			}
+		},
+		{
+			"name": "Torgja Stonecrusher (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Torgja Stonecrusher",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Torgja Stonecrusher (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Thug",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the thug",
+						"with": "Torgja Stonecrusher",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Torgja Stonecrusher (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Torgja Stonecrusher",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tosh Starling (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Scout",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the scout",
+						"with": "Tosh Starling",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tosh Starling (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Spy",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the spy",
+						"with": "Tosh Starling",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tosh Starling (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Tosh Starling",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Zala Morphus",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Nothic",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the nothic",
+						"with": "Zala Morphus",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Zorhanna Adulare",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Archmage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the archmage",
+						"with": "Zorhanna Adulare",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"Auran",
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Sylvan"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Zorhanna's Simulacrum",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 184,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Archmage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "archmage",
+						"with": "simulacrum"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Simulacrum",
+							"entries": [
+								"Il simulacro non può recuperare gli incantesimi spesi o utilizzare le proprietà della collana del solitario di coccio. (Il solitario di frammenti è attualmente sintonizzato con l'entità del Reame Lontano intrappolata al suo interno). Se il simulacro scende a 0 punti ferita, si trasforma in neve e si scioglie, mentre la collana solitario di frammenti si teletrasporta nella cassaforte della torre del caveau di Zorhanna."
+							]
+						}
+					}
+				}
+			},
 			"type": "construct",
 			"alignment": [
 				"N",
 				"E"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 99,
-				"formula": "18d8 + 18"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 14,
-			"con": 12,
-			"int": 20,
-			"wis": 15,
-			"cha": 16,
-			"save": {
-				"int": "+9",
-				"wis": "+6"
-			},
-			"skill": {
-				"arcana": "+13",
-				"history": "+13"
-			},
-			"passive": 12,
-			"resist": [
-				{
-					"special": "damage from spells"
-				},
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "(from stoneskin)",
-					"preNote": "nonmagical",
-					"cond": true
-				}
 			],
 			"languages": [
 				"Common",
@@ -2299,148 +2456,7 @@
 				"Gnomish",
 				"Sylvan"
 			],
-			"cr": "12",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Il simulacro è un incantatore di 18° livello. La sua capacità di incantesimo è Intelligenza (tiro salvezza {@dc 17}, {@hit 9} per colpire con attacchi di incantesimi). Il simulacro può lanciare a piacimento Dissimulazione di sé e Invisibilità e ha preparato i seguenti incantesimi da mago:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell mage armor}*",
-								"{@spell magic missile}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
-							]
-						},
-						"3": {
-							"slots": 3,
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell lightning bolt}"
-							]
-						},
-						"4": {
-							"slots": 3,
-							"spells": [
-								"{@spell banishment}",
-								"{@spell fire shield}",
-								"{@spell stoneskin}*"
-							]
-						},
-						"5": {
-							"slots": 3,
-							"spells": [
-								"{@spell cone of cold}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
-							]
-						},
-						"6": {
-							"slots": 1,
-							"spells": [
-								"{@spell globe of invulnerability}"
-							]
-						},
-						"7": {
-							"slots": 1,
-							"spells": [
-								"{@spell teleport}"
-							]
-						},
-						"8": {
-							"slots": 1,
-							"spells": [
-								"{@spell mind blank}*"
-							]
-						},
-						"9": {
-							"slots": 1,
-							"spells": [
-								"{@spell time stop}"
-							]
-						}
-					},
-					"footerEntries": [
-						"*The simulacrum casts these spells on itself before combat."
-					],
-					"ability": "int"
-				}
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Il simulacro ha vantaggio nei tiri salvezza contro incantesimi e altri effetti magici."
-					]
-				},
-				{
-					"name": "Simulacrum",
-					"entries": [
-						"Il simulacro non può recuperare gli incantesimi spesi o utilizzare le proprietà della collana del solitario di coccio. (Il solitario di frammenti è attualmente sintonizzato con l'entità del Reame Lontano intrappolata al suo interno). Se il simulacro scende a 0 punti ferita, si trasforma in neve e si scioglie, mentre la collana solitario di frammenti si teletrasporta nella cassaforte della torre del caveau di Zorhanna."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} per colpire, raggio d'azione 5 ft. o 20/60 ft., un bersaglio. {@h}4 ({@damage 1d4 + 2}) danni da perforazione.porti alla cassaforte nella torre del caveau di Zorhanna."
-					]
-				}
-			],
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"DS",
-				"E",
-				"G",
-				"S"
-			],
-			"damageTags": [
-				"P"
-			],
-			"damageTagsSpell": [
-				"C",
-				"F",
-				"L",
-				"O"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"incapacitated"
-			],
+			"hasToken": true,
 			"hasFluff": true
 		}
 	]
