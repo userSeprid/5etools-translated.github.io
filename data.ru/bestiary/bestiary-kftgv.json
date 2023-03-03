@@ -1,5 +1,10 @@
 {
 	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
 		"otherSources": {
 			"monster": {
 				"MM": "KftGV"
@@ -11,39 +16,18 @@
 			"name": "Animatronic Allosaurus",
 			"source": "KftGV",
 			"page": 22,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Allosaurus",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "allosaurus",
+						"with": "animatronic allosaurus"
+					}
 				}
-			],
-			"hp": {
-				"average": 51,
-				"formula": "6d10 + 18"
 			},
-			"speed": {
-				"walk": 60
-			},
-			"str": 19,
-			"dex": 13,
-			"con": 17,
-			"int": 2,
-			"wis": 12,
-			"cha": 5,
-			"skill": {
-				"perception": "+5"
-			},
-			"passive": 15,
+			"type": "construct",
 			"immune": [
 				"poison",
 				"psychic"
@@ -54,147 +38,120 @@
 				"paralyzed",
 				"poisoned"
 			],
-			"cr": "2",
-			"trait": [
-				{
-					"name": "Pounce",
-					"entries": [
-						"Если аллозавр движется по меньшей мере на 30 футов прямо к существу, а затем бьет его атакой когтями в тот же ход, цель должна успешно выполнить бросок на спасение {@dc 13} силы или быть сбита с ног {@condition prone}. Если цель {@condition prone}, аллозавр может провести против нее одну атаку укусом в качестве бонусного действия."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 6} попадание, радиус действия 5 футов, одна цель. {@h}15 ({@damage 2d10 + 4}) колющего урона."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 6} попадание, досягаемость 5 футов, одна цель. {@h}8 ({@damage 1d8 + 4}) косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Pounce"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
 			"hasFluff": true
+		},
+		{
+			"name": "Arlo Kettletoe (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit Captain",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the captain",
+						"with": "Arlo Kettletoe",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Arlo Kettletoe (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the knight",
+						"with": "Arlo Kettletoe",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Arlo Kettletoe (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Mage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mage",
+						"with": "Arlo Kettletoe",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Ashen Animated Armor",
 			"source": "KftGV",
 			"page": 157,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Animated Armor",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Когда доспех опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 25
-			},
-			"str": 14,
-			"dex": 11,
-			"con": 13,
-			"int": 1,
-			"wis": 3,
-			"cha": 1,
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 6,
 			"immune": [
 				"fire",
 				"poison",
 				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"cr": "1",
-			"trait": [
-				{
-					"name": "Antimagic Susceptibility",
-					"entries": [
-						"Броня становится недееспособной, пока находится в зоне действия {@spell antimagic field}. Если целью является {@spell dispel magic}, доспех должен успешно выполнить бросок спасброска конституции против DC спасброска заклинателя или потерять сознание на 1 минуту."
-					]
-				},
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Когда доспех опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
-					]
-				},
-				{
-					"name": "False Appearance",
-					"entries": [
-						"Пока броня остается неподвижной, она неотличима от обычного доспеха."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Доспехи наносят две атаки ближнего боя."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 4} попадание, радиус действия 5 футов, одна цель. {@h}5 ({@damage 1d6 + 2}) урон от удара."
-					]
-				}
-			],
-			"traitTags": [
-				"Antimagic Susceptibility",
-				"False Appearance"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasFluff": true
 		},
@@ -202,99 +159,30 @@
 			"name": "Ashen Flying Sword",
 			"source": "KftGV",
 			"page": 157,
-			"_isCopy": true,
-			"size": [
-				"S"
-			],
+			"_copy": {
+				"name": "Flying Sword",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Когда меч опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 17,
-				"formula": "5d6"
-			},
-			"speed": {
-				"walk": 0,
-				"fly": 50
-			},
-			"str": 12,
-			"dex": 15,
-			"con": 11,
-			"int": 1,
-			"wis": 5,
-			"cha": 1,
-			"save": {
-				"dex": "+4"
-			},
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 7,
 			"immune": [
 				"fire",
 				"poison",
 				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"cr": "1/4",
-			"trait": [
-				{
-					"name": "Antimagic Susceptibility",
-					"entries": [
-						"Меч становится недееспособным, находясь в области действия {@spell antimagic field}. Если на него направлено {@spell dispel magic}, меч должен успешно выполнить бросок спасброска по конституции против DC спасброска заклинателя или потерять сознание на 1 минуту."
-					]
-				},
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Когда меч опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
-					]
-				},
-				{
-					"name": "False Appearance",
-					"entries": [
-						"Хотя меч остается неподвижным и не летает, он неотличим от обычного меча."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Longsword",
-					"entries": [
-						"{@atk mw} {@hit 3} попасть, досягаемость 5 футов, одна цель. {@h}5 ({@damage 1d8 + 1}) косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Antimagic Susceptibility",
-				"False Appearance"
-			],
-			"senseTags": [
-				"B"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
 			],
 			"hasFluff": true
 		},
@@ -302,10 +190,26 @@
 			"name": "Ashen Knight",
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "knight",
+						"with": "ashen knight"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Когда рыцарь опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
+							]
+						}
+					}
+				}
+			},
 			"type": {
 				"type": "elemental",
 				"tags": [
@@ -316,102 +220,8 @@
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"{@item plate armor|PHB|plate}"
-					]
-				}
-			],
-			"hp": {
-				"average": 52,
-				"formula": "8d8 + 16"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 16,
-			"dex": 11,
-			"con": 14,
-			"int": 11,
-			"wis": 11,
-			"cha": 15,
-			"save": {
-				"con": "+4",
-				"wis": "+2"
-			},
-			"passive": 10,
 			"immune": [
 				"fire"
-			],
-			"languages": [
-				"Any one language (usually Common)"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Когда рыцарь опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
-					]
-				},
-				{
-					"name": "Brave",
-					"entries": [
-						"Рыцарь имеет преимущество при бросках спасения против бытия {@condition frightened}."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Рыцарь делает две атаки ближнего боя."
-					]
-				},
-				{
-					"name": "Greatsword",
-					"entries": [
-						"{@atk mw} {@hit 5} попадание, досягаемость 5 футов, одна цель. {@h}10 ({@damage 2d6 + 3}) косой урон."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 2} на попадание, дальность 100/400 футов, одна цель. {@h}5 ({@damage 1d10}) колющего урона."
-					]
-				},
-				{
-					"name": "Leadership (Recharges after a Short or Long Rest)",
-					"entries": [
-						"В течение 1 минуты рыцарь может произносить особую команду или предупреждение всякий раз, когда невраждебное существо, которое он видит в радиусе 30 футов от него, делает бросок атаки или спасбросок. Существо может добавить {@dice d4} к своему броску, если оно слышит и понимает рыцаря. Одновременно существо может использовать только один кубик лидерства. Этот эффект заканчивается, если рыцарь {@condition incapacitated}."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Рыцарь прибавляет 2 к своему AC против одной атаки ближнего боя, которая могла бы его поразить. Для этого рыцарь должен видеть атакующего и владеть оружием ближнего боя."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RNG",
-				"RW"
 			],
 			"hasFluff": true
 		},
@@ -419,206 +229,60 @@
 			"name": "Ashen Shambling Mound",
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
+			"_copy": {
+				"name": "Shambling Mound",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Когда шамкающий курган опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 136,
-				"formula": "16d10 + 48"
-			},
-			"speed": {
-				"walk": 20,
-				"swim": 20
-			},
-			"str": 18,
-			"dex": 8,
-			"con": 16,
-			"int": 5,
-			"wis": 10,
-			"cha": 5,
-			"skill": {
-				"stealth": "+2"
-			},
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 10,
 			"resist": [
 				"cold"
 			],
 			"immune": [
 				"fire",
 				"lightning"
-			],
-			"conditionImmune": [
-				"blinded",
-				"deafened",
-				"exhaustion"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Когда шамкающий курган опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
-					]
-				},
-				{
-					"name": "Lightning Absorption",
-					"entries": [
-						"Если бродячий курган получает урон от молнии, он не получает урона и восстанавливает количество хит-пойнтов, равное нанесенному урону от молнии."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Атакующий курган наносит две косые атаки. Если обе атаки попадают в цель среднего или меньшего размера, цель становится {@condition grappled} (побег {@dc 14}), и Атакующий курган использует на нее свой Engulf."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, радиус действия 5 футов, одна цель. {@h}13 ({@damage 2d8 + 4}) урон от удара."
-					]
-				},
-				{
-					"name": "Engulf",
-					"entries": [
-						"Атакующий курган поглощает существо среднего или меньшего размера {@condition grappled}. Поглощенная цель становится {@condition blinded}, {@condition restrained}, не может дышать и должна успешно выполнить бросок спасброска на {@dc 14} конституцию в начале каждого хода кургана или получить 13 ({@damage 2d8 + 4}) повреждений от удара. Если курган перемещается, поглощенная цель перемещается вместе с ним. Одновременно курган может поглотить только одно существо."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"blinded",
-				"grappled",
-				"restrained"
 			]
 		},
 		{
 			"name": "Ashen Veteran",
 			"source": "KftGV",
 			"page": 154,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Когда ветеран опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"{@item splint armor|PHB|splint}"
-					]
-				}
-			],
-			"hp": {
-				"average": 58,
-				"formula": "9d8 + 18"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 16,
-			"dex": 13,
-			"con": 14,
-			"int": 10,
-			"wis": 11,
-			"cha": 10,
-			"skill": {
-				"athletics": "+5",
-				"perception": "+2"
-			},
-			"passive": 12,
 			"immune": [
 				"fire"
-			],
-			"languages": [
-				"Any one language (usually Common)"
-			],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Когда ветеран опускается до 0 хит-поинтов, он превращается в кучку пепла, а все снаряжение, которое было на нем или которое он нес, падает на землю."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Ветеран делает две атаки длинным мечом. Если у него нарисован меч, он также может сделать атаку мечом."
-					]
-				},
-				{
-					"name": "Longsword",
-					"entries": [
-						"{@atk mw} {@hit 5} попадание, радиус действия 5 футов, одна цель. {@h}7 ({@damage 1d8 + 3}) колющего урона или 8 ({@damage 1d10 + 3}) колющего урона при использовании двумя руками."
-					]
-				},
-				{
-					"name": "Shortsword",
-					"entries": [
-						"{@atk mw} {@hit 5} попадание, радиус действия 5 футов, одна цель. {@h}6 ({@damage 1d6 + 3}) колющего урона."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 3} попадание, дальность 100/400 футов, одна цель. {@h}6 ({@damage 1d10 + 1}) колющего урона."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RNG",
-				"RW"
 			],
 			"hasFluff": true
 		},
@@ -626,70 +290,33 @@
 			"name": "Ashen Warhorse",
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
+			"_copy": {
+				"name": "Warhorse",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Ashen Creature",
+							"entries": [
+								"Когда лошадь опускается до 0 хит-поинтов, она превращается в кучку пепла, а все снаряжение, которое было на ней надето или переносилось, падает на землю."
+							]
+						}
+					}
+				}
+			},
 			"type": "elemental",
 			"alignment": [
 				"L",
 				"E"
 			],
-			"ac": [
-				11
-			],
-			"hp": {
-				"average": 19,
-				"formula": "3d10 + 3"
-			},
-			"speed": {
-				"walk": 60
-			},
-			"str": 18,
-			"dex": 12,
-			"con": 13,
-			"int": 2,
-			"wis": 12,
-			"cha": 7,
-			"passive": 11,
 			"immune": [
 				"fire"
-			],
-			"cr": "1/2",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Когда лошадь опускается до 0 хит-поинтов, она превращается в кучку пепла, а все снаряжение, которое было на ней надето или переносилось, падает на землю."
-					]
-				},
-				{
-					"name": "Trampling Charge",
-					"entries": [
-						"Если лошадь движется не менее чем на 20 футов прямо к существу, а затем бьет его атакой копытами в тот же ход, цель должна успешно выполнить бросок на спасение {@dc 14} силы или быть сбита с ног {@condition prone}. Если цель {@condition prone}, лошадь может провести против нее еще одну атаку копытами в качестве бонусного действия."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Hooves",
-					"entries": [
-						"{@atk mw} {@hit 6} попадание, радиус действия 5 футов, одна цель. {@h}11 ({@damage 2d6 + 4}) урон от удара."
-					]
-				}
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"prone"
 			]
 		},
 		{
 			"name": "Charmayne Daymore",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 159,
@@ -842,6 +469,7 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -937,6 +565,7 @@
 			"conditionInflict": [
 				"grappled"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -1036,144 +665,94 @@
 			"languageTags": [
 				"CS"
 			],
+			"hasToken": true,
 			"hasFluff": true
+		},
+		{
+			"name": "Conservatory Student",
+			"source": "KftGV",
+			"_copy": {
+				"name": "Noble",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "removeArr",
+						"names": "Rapier"
+					}
+				}
+			},
+			"skill": {
+				"performance": "+7"
+			},
+			"reaction": null
+		},
+		{
+			"name": "Dr. Cassee Dannell",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"int": 10,
+			"hasToken": true
 		},
 		{
 			"name": "Eldritch Horror Hatchling",
 			"source": "KftGV",
 			"page": 24,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"natural armor"
-					]
-				},
-				{
-					"ac": 11,
-					"condition": "while prone"
-				}
-			],
-			"hp": {
-				"average": 39,
-				"formula": "6d10 + 6"
-			},
-			"speed": {
-				"walk": 30,
-				"burrow": 10
-			},
-			"str": 17,
-			"dex": 11,
-			"con": 13,
-			"int": 1,
-			"wis": 13,
-			"cha": 6,
-			"senses": [
-				"darkvision 60 ft.",
-				"tremorsense 60 ft."
-			],
-			"passive": 11,
-			"cr": "2",
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} попасть, досягаемость 5 футов, одна цель. {@h}10 ({@damage 2d6 + 3}) косых повреждений плюс 3 ({@damage 1d6}) повреждения ядом. Если цель - крупное или меньшее существо, то {@condition grappled} (побег {@dc 13}). Пока захват не закончится, птенец элдритч-ужаса может укусить только {@condition grappled} существо и имеет преимущество при бросках атаки для этого."
-					]
-				},
-				{
-					"name": "Acid Spray {@recharge}",
-					"entries": [
-						"Птенец эльдрического ужаса плюется кислотой по линии длиной 30 футов и шириной 5 футов, если на ней нет существа {@condition grappled}. Каждое существо в этой линии должно сделать бросок на ловкость {@dc 13} и получить 10 ({@damage 3d6}) урона кислотой при неудачном броске или вдвое меньше при удачном."
+			"_copy": {
+				"name": "Ankheg",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Bite",
+							"items": {
+								"name": "Bite",
+								"entries": [
+									"{@atk mw} {@hit 5} попасть, досягаемость 5 футов, одна цель. {@h}10 ({@damage 2d6 + 3}) косых повреждений плюс 3 ({@damage 1d6}) повреждения ядом. Если цель - крупное или меньшее существо, то {@condition grappled} (побег {@dc 13}). Пока захват не закончится, птенец элдритч-ужаса может укусить только {@condition grappled} существо и имеет преимущество при бросках атаки для этого."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Acid Spray {@recharge}",
+							"items": {
+								"name": "Acid Spray {@recharge}",
+								"entries": [
+									"Птенец эльдрического ужаса плюется кислотой по линии длиной 30 футов и шириной 5 футов, если на ней нет существа {@condition grappled}. Каждое существо в этой линии должно сделать бросок на ловкость {@dc 13} и получить 10 ({@damage 3d6}) урона кислотой при неудачном броске или вдвое меньше при удачном."
+								]
+							}
+						}
 					]
 				}
-			],
-			"senseTags": [
-				"D",
-				"T"
-			],
-			"damageTags": [
-				"A",
-				"I",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"grappled"
-			]
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Eliphas Adulare",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 188,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human",
-					"shapechanger"
-				]
-			},
-			"alignment": [
-				"N",
-				"G"
-			],
-			"ac": [
-				{
-					"ac": 10,
-					"condition": "in humanoid form"
-				},
-				{
-					"ac": 11,
-					"condition": "in bear and hybrid form"
+			"_copy": {
+				"name": "Werebear",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "the werebear",
+							"with": "Eliphas",
+							"flags": "i"
+						}
+					]
 				}
-			],
-			"hp": {
-				"average": 135,
-				"formula": "18d8 + 54"
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 19,
-			"dex": 10,
-			"con": 17,
 			"int": 18,
-			"wis": 12,
-			"cha": 12,
-			"skill": {
-				"perception": "+7"
-			},
-			"passive": 17,
-			"immune": [
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't silvered",
-					"cond": true
-				}
-			],
-			"languages": [
-				"Common (can't speak in bear form)"
-			],
-			"cr": "5",
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Humanoid or Hybrid Form Only)",
@@ -1199,75 +778,96 @@
 					"displayAs": "action"
 				}
 			],
-			"trait": [
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"Элифас может использовать свое действие, чтобы полиморфировать в гибрид крупного медведя и гуманоида или в крупного медведя, или обратно в свою истинную форму, которая является гуманоидной. Его статистика, за исключением размера и AC, одинакова в каждой форме. Любое снаряжение, которое он носит или несет, не трансформируется. Он возвращается в свою истинную форму, если умирает."
-					]
-				},
-				{
-					"name": "Keen Smell",
-					"entries": [
-						"Элифас имеет преимущество при проверках мудрости (восприятие), которые полагаются на обоняние."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"В форме медведя Элифас делает две атаки когтями. В гуманоидной форме он делает две атаки большим топором. В гибридной форме он может атаковать как медведь или гуманоид."
-					]
-				},
-				{
-					"name": "Bite (Bear or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, досягаемость 5 футов, одна цель. {@h}15 ({@damage 2d10 + 4}) колющего урона. Если цель - гуманоид, он должен успешно выполнить бросок на спасбросок по конституции {@dc 14} или быть проклятым ликантропией медведей."
-					]
-				},
-				{
-					"name": "Claw (Bear or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} попасть, досягаемость 5 футов, одна цель. {@h}13 ({@damage 2d8 + 4}) косой урон."
-					]
-				},
-				{
-					"name": "Greataxe (Humanoid or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 7} попадание, досягаемость 5 футов, одна цель. {@h}10 ({@damage 1d12 + 4}) косой урон."
-					]
-				}
-			],
-			"traitTags": [
-				"Keen Senses",
-				"Shapechanger"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"damageTagsSpell": [
-				"T",
-				"Y"
-			],
-			"spellcastingTags": [
-				"F"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasFluff": true
 		},
 		{
+			"name": "Enna Galakiir (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Enna Galakiir",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Enna Galakiir (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Spy",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the spy",
+						"with": "Enna Galakiir",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Enna Galakiir (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Assassin",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the assassin",
+						"with": "Enna Galakiir",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Fragment of Krokulmar",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 53,
 			"size": [
@@ -1339,55 +939,249 @@
 			"miscTags": [
 				"AOE"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Frody Dartwild",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Zombie",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the zombie",
+						"with": "Frody",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"int": 10,
+			"languages": [
+				"Common"
+			]
+		},
+		{
+			"name": "Gregir Fendelsohn (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Gregir Fendelsohn",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Gregir Fendelsohn (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Thug",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the thug",
+						"with": "Gregir Fendelsohn",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Gregir Fendelsohn (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Gregir Fendelsohn",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Headless Body",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "knight",
+						"with": "headless body"
+					}
+				}
+			},
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Ignatius Inkblot",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Mind Flayer",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mind flayer",
+						"with": "Ignatius Inkblot",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Jalynvyr Nir'Thinn",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Smoke Mephit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the mephit",
+						"with": "Jalynvyr Nir'Thinn",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"Common",
+				"Elvish"
+			]
+		},
+		{
+			"name": "Jarazoun",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Efreeti",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the efreeti",
+						"with": "Jarazoun",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Joster Mareet",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Incubus",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the fiend",
+						"with": "Joster Mareet",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"incubus"
+				]
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Juvenile Eldritch Horror",
 			"source": "KftGV",
 			"page": 24,
-			"_isCopy": true,
-			"size": [
-				"H"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Behir",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "behir",
+						"with": "eldritch horror"
+					}
 				}
-			],
-			"hp": {
-				"average": 168,
-				"formula": "16d12 + 64"
 			},
-			"speed": {
-				"walk": 50,
-				"climb": 40
-			},
-			"str": 23,
-			"dex": 16,
-			"con": 18,
 			"int": 18,
-			"wis": 14,
-			"cha": 12,
-			"skill": {
-				"perception": "+6",
-				"stealth": "+7"
-			},
-			"senses": [
-				"darkvision 90 ft."
-			],
-			"passive": 16,
-			"immune": [
-				"lightning"
-			],
-			"cr": "11",
+			"languages": null,
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
@@ -1407,108 +1201,99 @@
 					"displayAs": "action"
 				}
 			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Ужас элдритча делает две атаки: одну укусом и одну сжатием."
-					]
+			"hasToken": true
+		},
+		{
+			"name": "Kavoda",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Deep Gnome (Svirfneblin)",
+				"source": "MM",
+				"_trait": {
+					"name": "Deep Gnome",
+					"source": "DMG"
 				},
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the gnome",
+						"with": "Kavoda",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"name": "Special Equipment",
+							"entries": [
+								"Кавода несет {@item spell scroll} от {@spell magic weapon} и {@item Potion of Hill Giant Strength||potion of giant strength (hill)}."
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
 				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 10} попадание, радиус действия 10 футов, одна цель. {@h}22 ({@damage 3d10 + 6}) колющего урона."
-					]
-				},
-				{
-					"name": "Constrict",
-					"entries": [
-						"{@atk mw} {@hit 10} попасть, досягаемость 5 футов, одно большое или меньшее существо. {@h}17 ({@damage 2d10 + 6}) повреждений от удара плюс 17 ({@damage 2d10 + 6}) косых повреждений. Если эльдрический ужас еще не сжимает существо, цель {@condition grappled} (побег {@dc 16}), и цель {@condition restrained}, пока захват не закончится."
-					]
-				},
-				{
-					"name": "Lightning Breath {@recharge 5}",
-					"entries": [
-						"Элдрический ужас выдыхает линию молнии длиной 20 футов и шириной 5 футов. Каждое существо в этой линии должно сделать спасбросок на ловкость {@dc 16}, при неудачном спасброске оно получает 66 ({@damage 12d10}) урона молнией, при удачном - вдвое меньше."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Ужас элдритча делает одну атаку укусом против цели среднего или меньшего размера, которую он захватывает. Если атака попадает, цель также проглатывается, и захват заканчивается. Пока цель проглочена, она находится на {@condition blinded} и {@condition restrained}, имеет полное укрытие от атак и других эффектов вне элдритч-ужаса и получает 21 ({@damage 6d6}) урон кислотой в начале каждого хода элдритч-ужаса. За один раз ужас может проглотить только одно существо.",
-						"Если элдритч-ужас получает 30 или более повреждений от проглоченного существа за один ход, ужас должен преуспеть в броске спасброска на {@dc 14} конституцию в конце этого хода или изрыгнуть существо, которое падает {@condition prone} в пространстве в пределах 10 футов от ужаса. Если элдритч-ужас умирает, проглоченное существо больше не находится {@condition restrained} под его контролем и может выбраться из трупа, используя 15 футов движения, выходя {@condition prone}."
+					"ac": 12,
+					"from": [
+						"{@item robes|phb}"
 					]
 				}
 			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack",
-				"Swallow"
-			],
-			"damageTags": [
-				"A",
-				"B",
-				"L",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"blinded",
-				"grappled",
-				"restrained"
-			],
-			"conditionInflictSpell": [
-				"blinded",
-				"deafened"
+			"languages": [
+				"Common",
+				"Gnomish",
+				"Terran",
+				"Undercommon"
 			]
 		},
 		{
 			"name": "King Jhaeros",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 158,
-			"_isCopy": true,
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"natural armor"
+			"_copy": {
+				"name": "Clay Golem",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the golem",
+						"with": "Jhaeros",
+						"flags": "i"
+					},
+					"trait": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Ashen Creature",
+								"entries": [
+									"Когда Джаерос опускается до 0 хит-поинтов, он взрывается безвредным облаком пепла, не оставляя после себя ничего другого."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Acid Absorption",
+							"items": {
+								"name": "Fire Absorption",
+								"entries": [
+									"Когда Джаерос получает урон от огня, он не получает урона, а восстанавливает количество хит-пойнтов, равное нанесенному огнем урону."
+								]
+							}
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 133,
-				"formula": "14d10 + 56"
 			},
-			"speed": {
-				"walk": 20
-			},
-			"str": 20,
-			"dex": 9,
-			"con": 18,
 			"int": 10,
 			"wis": 10,
 			"cha": 10,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 9,
 			"immune": [
 				"poison",
 				"psychic",
@@ -1522,109 +1307,19 @@
 					"cond": true
 				}
 			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
 			"languages": [
 				"understands Common",
 				"Draconic",
 				"Elvish",
 				"and Ignan but can't speak"
 			],
-			"cr": "9",
-			"trait": [
-				{
-					"name": "Ashen Creature",
-					"entries": [
-						"Когда Джаерос опускается до 0 хит-поинтов, он взрывается безвредным облаком пепла, не оставляя после себя ничего другого."
-					]
-				},
-				{
-					"name": "Berserk",
-					"entries": [
-						"Каждый раз, когда Джаерос начинает свой ход с 60 хит-пойнтами или меньше, бросок {@dice d6}. Если выпадет 6, Джаерос впадает в ярость. На каждом своем ходу, пока Джаерос находится в состоянии берсерка, он атакует ближайшее существо, которое может видеть. Если ни одно существо не находится достаточно близко, чтобы переместиться к нему и атаковать, Джаерос атакует объект, отдавая предпочтение объекту меньше себя. Когда Джаерос впадает в ярость, он продолжает это делать до тех пор, пока не будет уничтожен или не восстановит все свои хит-пойнты."
-					]
-				},
-				{
-					"name": "Fire Absorption",
-					"entries": [
-						"Когда Джаерос получает урон от огня, он не получает урона, а восстанавливает количество хит-пойнтов, равное нанесенному огнем урону."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"Джаерос невосприимчив к любому заклинанию или эффекту, который изменит его форму."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Джаерос имеет преимущество в бросках спасения против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"Оружейные атаки Джаэроса являются магическими."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Джаерос делает две атаки слэмом."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 8} попадание, досягаемость 5 футов, одна цель. {@h}16 ({@damage 2d10 + 5}) повреждений от удара. Если цель - существо, оно должно успешно пройти спасбросок на {@dc 15} Конституцию или его максимальное количество хит-пойнтов уменьшится на величину, равную полученному урону. Цель умирает, если эта атака снижает ее максимальное количество хит-пойнтов до 0. Снижение длится до тех пор, пока не будет снято заклинанием {@spell greater restoration} или другой магией."
-					]
-				},
-				{
-					"name": "Haste {@recharge 5}",
-					"entries": [
-						"До конца своего следующего хода Джаерос магически получает бонус +2 к AC, имеет преимущество при бросках на ловкость и может использовать атаку слэмом как бонусное действие."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"CS",
-				"DR",
-				"E",
-				"IG"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Markos Delphi",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 53,
@@ -1756,11 +1451,101 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "Meera Raheer",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Naevys Tharesso",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Knight",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the knight",
+						"with": "Naevys Tharesso",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Greatsword",
+						"items": {
+							"name": "Flame Tongue Longsword",
+							"entries": [
+								"{@atk mw} {@hit 4} попадание, радиус действия 5 футов, одна цель. {@h}6 ({@damage 1d8 + 2}) колющего урона или 7 ({@damage 1d10 + 2}) колющего урона при использовании двумя руками. Рыцарь может использовать бонусное действие, чтобы произнести командное слово этого волшебного меча, в результате чего из клинка вырывается пламя. Это пламя проливает яркий свет в радиусе 40 футов и тусклый свет еще на 40 футов. Пока меч пылает, он наносит дополнительные 2d6 повреждений огнем любой цели, в которую попадает. Пламя длится до тех пор, пока она не использует бонусное действие, чтобы снова произнести командное слово, или пока она не уронит или не уберет меч."
+							]
+						}
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			]
+		},
+		{
+			"name": "Nixylanna Vidorant",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Assassin",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the Assassin",
+						"with": "Nixylanna Vidorant",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Prisoner 13",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 68,
@@ -1920,11 +1705,119 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "Rilago",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Ghost",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the ghost",
+						"with": "Rilago",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"name": "Sabrina Kilgore (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Sabrina Kilgore",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Sabrina Kilgore (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Thug",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the thug",
+						"with": "Sabrina Kilgore",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Sabrina Kilgore (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Sabrina Kilgore",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Sythian Skalderang",
+			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 117,
@@ -2084,11 +1977,59 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "The Stranger",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Archmage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the archmage",
+						"with": "The Stranger",
+						"flags": "i"
+					}
+				}
+			},
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Незнакомец носит невидимость {@item ring of mind shielding}, которая препятствует магическим попыткам прочитать его мысли. Незнакомец также носит {@item dimensional shackles}, но жаждет избавиться от них. Одним прикосновением булавы Омида оковы спадают, освобождая Незнакомца.слово снова или пока она не уронит или не уберет меч."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"У архимага есть преимущество при бросках спасбросков против заклинаний и других магических эффектов."
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tiefling Acrobat",
+			"source": "KftGV",
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"performance": "+4"
+			}
+		},
+		{
 			"name": "Tixie Tockworth",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 85,
 			"size": [
@@ -2235,61 +2176,277 @@
 				"blinded",
 				"deafened"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
+			"name": "Tixie's Shield Guardian",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Shield Guardian",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "removeArr",
+						"names": "Spell Storing"
+					}
+				}
+			}
+		},
+		{
+			"name": "Torgja Stonecrusher (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Bandit",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the bandit",
+						"with": "Torgja Stonecrusher",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Torgja Stonecrusher (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Thug",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the thug",
+						"with": "Torgja Stonecrusher",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Torgja Stonecrusher (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Torgja Stonecrusher",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tosh Starling (Levels 1-4)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Scout",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the scout",
+						"with": "Tosh Starling",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tosh Starling (Levels 5-8)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Spy",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the spy",
+						"with": "Tosh Starling",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Tosh Starling (Levels 9-11)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Veteran",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the veteran",
+						"with": "Tosh Starling",
+						"flags": "i"
+					}
+				}
+			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Zala Morphus",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Nothic",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the nothic",
+						"with": "Zala Morphus",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Elvish"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Zorhanna Adulare",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"_copy": {
+				"name": "Archmage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the archmage",
+						"with": "Zorhanna Adulare",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"Auran",
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Sylvan"
+			],
+			"hasToken": true
+		},
+		{
 			"name": "Zorhanna's Simulacrum",
+			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KftGV",
 			"page": 184,
-			"_isCopy": true,
-			"size": [
-				"M"
-			],
+			"_copy": {
+				"name": "Archmage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "archmage",
+						"with": "simulacrum"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Simulacrum",
+							"entries": [
+								"Симулякр не может восстановить потраченные слоты заклинаний или использовать свойства ожерелья из осколков солитера. (Осколок солитера в настоящее время настроен на сущность Дальнего царства, заключенную в нем). Если симулякр упадет до 0 хит-поинтов, он превратится в снег и растает, а ожерелье из осколков солитера телепортируется в сейф в башне хранилища Зорханны."
+							]
+						}
+					}
+				}
+			},
 			"type": "construct",
 			"alignment": [
 				"N",
 				"E"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 99,
-				"formula": "18d8 + 18"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 14,
-			"con": 12,
-			"int": 20,
-			"wis": 15,
-			"cha": 16,
-			"save": {
-				"int": "+9",
-				"wis": "+6"
-			},
-			"skill": {
-				"arcana": "+13",
-				"history": "+13"
-			},
-			"passive": 12,
-			"resist": [
-				{
-					"special": "damage from spells"
-				},
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "(from stoneskin)",
-					"preNote": "nonmagical",
-					"cond": true
-				}
 			],
 			"languages": [
 				"Common",
@@ -2299,148 +2456,7 @@
 				"Gnomish",
 				"Sylvan"
 			],
-			"cr": "12",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Симулякр - заклинатель 18-го уровня. Его способность к заклинаниям - Интеллект (спасбросок от заклинаний {@dc 17}, {@hit 9} к попаданию при атаках заклинаниями). Симулякр может произносить заклинания маскировки и невидимости по желанию и имеет наготове следующие заклинания волшебника:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell mage armor}*",
-								"{@spell magic missile}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
-							]
-						},
-						"3": {
-							"slots": 3,
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell lightning bolt}"
-							]
-						},
-						"4": {
-							"slots": 3,
-							"spells": [
-								"{@spell banishment}",
-								"{@spell fire shield}",
-								"{@spell stoneskin}*"
-							]
-						},
-						"5": {
-							"slots": 3,
-							"spells": [
-								"{@spell cone of cold}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
-							]
-						},
-						"6": {
-							"slots": 1,
-							"spells": [
-								"{@spell globe of invulnerability}"
-							]
-						},
-						"7": {
-							"slots": 1,
-							"spells": [
-								"{@spell teleport}"
-							]
-						},
-						"8": {
-							"slots": 1,
-							"spells": [
-								"{@spell mind blank}*"
-							]
-						},
-						"9": {
-							"slots": 1,
-							"spells": [
-								"{@spell time stop}"
-							]
-						}
-					},
-					"footerEntries": [
-						"*The simulacrum casts these spells on itself before combat."
-					],
-					"ability": "int"
-				}
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Симулякр имеет преимущество при бросках спасбросков против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Simulacrum",
-					"entries": [
-						"Симулякр не может восстановить потраченные слоты заклинаний или использовать свойства ожерелья из осколков солитера. (Осколок солитера в настоящее время настроен на сущность Дальнего царства, заключенную в нем). Если симулякр упадет до 0 хит-поинтов, он превратится в снег и растает, а ожерелье из осколков солитера телепортируется в сейф в башне хранилища Зорханны."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Dagger",
-					"entries": [
-						"{@atk mw,rw} {@hit 6} попадание, радиус действия 5 футов или дальность 20/60 футов, одна цель. {@h}4 ({@damage 1d4 + 2}) колющего урона."
-					]
-				}
-			],
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"DS",
-				"E",
-				"G",
-				"S"
-			],
-			"damageTags": [
-				"P"
-			],
-			"damageTagsSpell": [
-				"C",
-				"F",
-				"L",
-				"O"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflictSpell": [
-				"incapacitated"
-			],
+			"hasToken": true,
 			"hasFluff": true
 		}
 	]
