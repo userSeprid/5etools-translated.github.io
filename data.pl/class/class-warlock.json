@@ -2205,7 +2205,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Począwszy od 14 poziomu, możesz pogrążyć stworzenie w iluzorycznej krainie. Jako akcję wybierz istotę, którą widzisz w promieniu 60 stóp od siebie. Musi ono wykonać rzut obronny na mądrość przeciwko twojemu DC obrony przed zaklęciem czarnoksiężnika. W przypadku nieudanego testu, jest ono {@condition charmed} lub {@condition frightened} przez ciebie (do wyboru) przez 1 minutę lub do momentu, gdy twoja koncentracja zostanie przerwana (tak jakbyś koncentrował się na zaklęciu). Efekt ten kończy się wcześnie, jeśli stworzenie otrzyma jakiekolwiek obrażenia.",
+				"Począwszy od 14 poziomu, możesz pogrążyć istotę w iluzorycznej krainie. Jako akcję wybierz istotę, którą widzisz w promieniu 60 stóp od siebie. Musi ona wykonać rzut ratujący mądrość przeciwko twojemu DC obrony przed zaklęciem czarnoksiężnika. W przypadku nieudanego testu jest ono {@condition charmed} lub {@condition frightened} przez ciebie (twój wybór) przez 1 minutę lub do momentu, gdy twoje {@status concentration} zostanie złamane (tak jakbyś był {@status concentration||concentrating} na zaklęciu). Efekt ten kończy się wcześniej, jeśli stworzenie otrzyma jakiekolwiek obrażenia.",
 				"Dopóki iluzja się nie skończy, stworzenie myśli, że jest zagubione w mglistej krainie, której wygląd wybierzesz. Stworzenie widzi i słyszy tylko siebie, ciebie i iluzję.",
 				"Przed ponownym użyciem tej funkcji należy zakończyć krótki lub długi odpoczynek."
 			]
@@ -2708,7 +2708,7 @@
 			"entries": [
 				"{@i 10th-level Fathomless feature}",
 				"Uczysz się tego zaklęcia {@spell Evard's black tentacles}. Liczy się ono dla ciebie jako zaklęcie czarnoksiężnika, ale nie wlicza się do liczby zaklęć, które znasz. Możesz je rzucić raz bez slotu na zaklęcie, a zdolność tę odzyskujesz po zakończeniu długiego odpoczynku.",
-				"Za każdym razem, gdy rzucasz to zaklęcie, magia twojego patrona wzmacnia cię, dając ci liczbę tymczasowych punktów trafień równą twojemu poziomowi czarnoksiężnika. Ponadto obrażenia nie mogą przerwać twojej koncentracji na tym zaklęciu."
+				"Kiedykolwiek rzucasz to zaklęcie, magia twojego patrona wzmacnia cię, dając ci liczbę tymczasowych punktów trafień równą twojemu poziomowi czarnoksiężnika. Ponadto obrażenia nie mogą złamać twojego {@status concentration} na tym zaklęciu.l twoje (%2%) jest złamane (tak jakbyś był (%3%) na zaklęciu). Efekt ten kończy się wcześniej, jeśli stworzenie otrzyma jakiekolwiek obrażenia."
 			]
 		},
 		{
@@ -3309,7 +3309,7 @@
 			"entries": [
 				"{@i 14th-level Undead feature}",
 				"Twoje ciało jest teraz po prostu naczyniem dla twojego ducha. W ramach akcji możesz wyrzucać swojego ducha z ciała. Ciało, które opuszczasz, jest {@condition unconscious} i znajduje się w stanie zawieszonej animacji.",
-				"Twój duch może pozostawać poza ciałem przez maksymalnie 1 godzinę lub do momentu przerwania koncentracji (jak w przypadku koncentracji na zaklęciu). Po zakończeniu projekcji twój duch powraca do ciała lub twoje ciało magicznie teleportuje się do miejsca, w którym przebywa twój duch (wybór należy do ciebie).",
+				"Twój duch może pozostać poza ciałem do 1 godziny lub do czasu, gdy twoje {@status concentration} zostanie złamane (tak jakby {@status concentration||concentrating} na zaklęciu). Kiedy twoja projekcja się kończy, twój duch wraca do ciała lub twoje ciało magicznie teleportuje się do przestrzeni twojego ducha (twój wybór).e.",
 				"Podczas projekcji swojego ducha zyskujesz następujące korzyści:",
 				{
 					"type": "list",
@@ -4711,7 +4711,7 @@
 			"entries": [
 				"{@i 14th-level Undead feature}",
 				"Twój duch może zostać odłączony od twojej fizycznej postaci. Jako akcję, możesz wyrzucić swojego ducha z ciała. Ciało, które opuszczasz, jest {@condition unconscious} i znajduje się w stanie zawieszonej animacji.",
-				"Twój duch przypomina twoją śmiertelną postać niemal pod każdym względem, powielając twoje statystyki z gry, ale nie twój dobytek. Wszelkie obrażenia lub inne efekty, które dotyczą twojego ducha lub ciała fizycznego, mają wpływ na drugie z nich. Twój duch może pozostawać poza ciałem przez maksymalnie 1 godzinę lub do momentu przerwania koncentracji (jak w przypadku koncentracji na zaklęciu). Kiedy projekcja się kończy, twój duch wraca do ciała lub twoje ciało magicznie teleportuje się do przestrzeni twojego ducha (wybór należy do ciebie).",
+				"Twój duch przypomina twoją śmiertelną formę w niemal każdym aspekcie, replikując twoje statystyki z gry, ale nie twój dobytek. Wszelkie obrażenia lub inne efekty, które dotyczą twojego ducha lub ciała fizycznego, wpływają na to drugie. Twój duch może pozostać poza ciałem przez maksymalnie 1 godzinę lub do momentu, gdy jego {@status concentration} zostanie złamane (jak {@status concentration||concentrating} na zaklęciu). Kiedy twoja projekcja się kończy, twój duch wraca do ciała lub twoje ciało magicznie teleportuje się do przestrzeni twojego ducha (twój wybór).",
 				"Podczas projekcji swojego ducha zyskujesz następujące korzyści:",
 				{
 					"type": "list",

@@ -3373,7 +3373,7 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, która zastępuje cechę Ulubiony wróg i działa z cechą Zabójca wroga}",
-				"Kiedy trafisz istotę walką ataku, możesz przywołać swoją mistyczną więź z naturą i oznaczyć cel jako ulubionego wroga na 1 minutę lub do utraty koncentracji (tak jakbyś koncentrował się na zaklęciu).",
+				"Kiedy trafisz stworzenie rolką ataku, możesz wezwać swoją mistyczną więź z naturą, aby oznaczyć cel jako swojego ulubionego wroga na 1 minutę lub do momentu, gdy stracisz {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęciu).",
 				"Za pierwszym razem w każdej swojej turze, kiedy trafisz faworyzowanego wroga i zadasz mu obrażenia, wliczając w to zaznaczenie go, możesz zwiększyć te obrażenia o {@dice 1d4}.",
 				"Możesz użyć tej cechy do oznaczenia faworyzowanego wroga tyle razy, ile wynosi twoja premia do biegłości, a wszystkie zużyte środki odzyskujesz po zakończeniu długiego odpoczynku.",
 				"Dodatkowe obrażenia zadawane przez tę cechę zwiększają się po osiągnięciu określonych poziomów w tej klasie: do {@dice 1d6} na 6. poziomie i do {@dice 1d8} na 14. poziomie."
@@ -3389,7 +3389,7 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"{@i 1st-level ranger feature (replaces Favored Enemy)}",
-				"Możesz odwołać się do swojej więzi z naturą, aby na pewien czas oznaczyć stworzenie jako swojego ulubionego wroga: znasz to zaklęcie {@spell hunter's mark}, a Mądrość jest twoją umiejętnością rzucania zaklęć. Możesz go użyć określoną liczbę razy, nie zużywając slotu zaklęcia i nie wymagając koncentracji - liczbę razy równą twojemu modyfikatorowi mądrości (minimum raz). Po zakończeniu długiego odpoczynku odzyskujesz wszystkie zużyte ataki.",
+				"Możesz odwołać się do swojej więzi z naturą, by na pewien czas oznaczyć jakąś istotę jako swojego ulubionego wroga: znasz zaklęcie {@spell hunter's mark}, a Mądrość jest dla niego twoją zdolnością zaklinania. Możesz go użyć pewną liczbę razy bez wydawania slotu na zaklęcie i bez wymagania {@status concentration}- liczbę razy równą twojemu modyfikatorowi Mądrości (minimum raz). Odzyskujesz wszystkie zużyte użycia po zakończeniu długiego odpoczynku.",
 				"Po uzyskaniu cechy Rzucanie Zaklęć na 2. poziomie, Znak Łowcy nie wlicza się do liczby zaklęć strażnika, które znasz."
 			]
 		},
@@ -4198,7 +4198,7 @@
 			"entries": [
 				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, która zastępuje cechę Ulubiony wróg i działa z cechą Zabójca wroga}",
 				"{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Spell-less Ranger feature.}",
-				"Kiedy trafisz istotę walką ataku, możesz przywołać swoją mistyczną więź z naturą i oznaczyć cel jako ulubionego wroga na 1 minutę lub do utraty koncentracji (tak jakbyś koncentrował się na zaklęciu).",
+				"Kiedy trafisz stworzenie rolką ataku, możesz wezwać swoją mistyczną więź z naturą, aby oznaczyć cel jako swojego ulubionego wroga na 1 minutę lub do momentu, gdy stracisz {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęciu).",
 				"Za pierwszym razem w każdej swojej turze, kiedy trafisz faworyzowanego wroga i zadasz mu obrażenia, wliczając w to zaznaczenie go, możesz zwiększyć te obrażenia o {@dice 1d4}.",
 				"Możesz użyć tej cechy do oznaczenia faworyzowanego wroga tyle razy, ile wynosi twoja premia do biegłości, a wszystkie zużyte środki odzyskujesz po zakończeniu długiego odpoczynku.",
 				"Dodatkowe obrażenia zadawane przez tę cechę zwiększają się po osiągnięciu określonych poziomów w tej klasie: do {@dice 1d6} na 6. poziomie i do {@dice 1d8} na 14. poziomie."
@@ -4215,7 +4215,7 @@
 			"entries": [
 				"{@i 1st-level ranger feature (replaces Favored Enemy)}",
 				"{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Spell-less Ranger feature.}",
-				"Możesz odwołać się do swojej więzi z naturą, aby na pewien czas oznaczyć stworzenie jako swojego ulubionego wroga: znasz to zaklęcie {@spell hunter's mark}, a Mądrość jest twoją umiejętnością rzucania zaklęć. Możesz go użyć określoną liczbę razy, nie zużywając slotu zaklęcia i nie wymagając koncentracji - liczbę razy równą twojemu modyfikatorowi mądrości (minimum raz). Po zakończeniu długiego odpoczynku odzyskujesz wszystkie zużyte ataki.",
+				"Możesz odwołać się do swojej więzi z naturą, by na pewien czas oznaczyć jakąś istotę jako swojego ulubionego wroga: znasz zaklęcie {@spell hunter's mark}, a Mądrość jest dla niego twoją zdolnością zaklinania. Możesz go użyć pewną liczbę razy bez wydawania slotu na zaklęcie i bez wymagania {@status concentration}- liczbę razy równą twojemu modyfikatorowi Mądrości (minimum raz). Odzyskujesz wszystkie zużyte użycia po zakończeniu długiego odpoczynku.",
 				"Po uzyskaniu cechy Rzucanie Zaklęć na 2. poziomie, Znak Łowcy nie wlicza się do liczby zaklęć strażnika, które znasz."
 			]
 		},
@@ -5014,7 +5014,7 @@
 					"name": "Spirit Companion",
 					"entries": [
 						"Wszyscy strażnicy zyskują duchowego towarzysza i możliwość przywoływania jego magicznej mocy. (Twój duchowy towarzysz daje ci jedną korzyść, którą możesz przywołać w tej wersji playtestowej poprawionego strażnika, a na wyższych poziomach zyskujesz więcej korzyści). Zdolność do wezwania w ten sposób swojego duchowego towarzysza odzyskujesz po zakończeniu krótkiego lub długiego odpoczynku.",
-						"Raz dziennie, jako dodatkową akcję, możesz rozkazać swojemu duchowemu towarzyszowi zmaterializować się jako żywa istota, określona przez wybraną ścieżkę strażnika. Twój duchowy towarzysz objawia się jako zwierzę na 1 minutę lub do czasu, gdy twoja koncentracja zostanie przerwana (tak jakbyś koncentrował się na zaklęciu). Możesz go też oddalić jako akcję dodatkową.",
+						"Raz dziennie jako akcja dodatkowa, możesz nakazać swojemu duchowemu towarzyszowi zmaterializowanie się jako żywa istota, określona przez wybraną ścieżkę rangersów. Twój duchowy towarzysz manifestuje się jako zwierzę przez 1 minutę lub do czasu, gdy twoje {@status concentration} zostanie złamane (tak jakbyś był {@status concentration||concentrating} na zaklęciu). Możesz go również oddalić jako akcję bonusową.",
 						"Zamanifestowana istota zyskuje premię do ataku i rzutów ratunkowych równą twojemu modyfikatorowi mądrości. Używa punktów trafień z bloku statystyk zwierzęcia lub połowy twoich maksymalnych punktów trafień, w zależności od tego, która wartość jest wyższa.",
 						"Zamanifestowana istota wykonuje swoją turę na podstawie twojej inicjatywy i działa natychmiast po tobie. Kontrolujesz jego działania, nawet jeśli jesteś {@condition unconscious} lub w inny sposób niezdolny do działania."
 					]
@@ -5216,7 +5216,7 @@
 				"Począwszy od 3. poziomu, opanowanie wiedzy leśnika pozwala ci nawiązać potężną więź z bestiami i otaczającą cię krainą.",
 				"Masz wrodzoną zdolność porozumiewania się z bestiami, a one uznają cię za pokrewnego ducha. Za pomocą dźwięków i gestów możesz przekazać zwierzęciu proste idee jako akcję, a także odczytać jego podstawowy nastrój i intencje. Poznajesz jej stan emocjonalny, dowiadujesz się, czy jest pod wpływem jakiejś magii, poznajesz jej krótkoterminowe potrzeby (takie jak jedzenie lub bezpieczeństwo) oraz działania, które możesz podjąć, aby przekonać ją do nieatakowania.",
 				"Nie możesz użyć tej umiejętności przeciwko stworzeniu, które zaatakowałeś w ciągu ostatnich 10 minut.",
-				"Dodatkowo możesz dostroić swoje zmysły, aby sprawdzić, czy w pobliżu nie czają się twoi ulubieni wrogowie. Poświęcając 1 nieprzerwaną minutę na koncentrację (tak jakbyś koncentrował się na zaklęciu), możesz wyczuć, czy w promieniu 5 mil od ciebie znajdują się twoi ulubieni wrogowie. Cecha ta ujawnia, którzy z twoich ulubionych wrogów są obecni, jaka jest ich liczba, a także kierunek i odległość (w milach) od ciebie.",
+				"Dodatkowo możesz dostroić swoje zmysły, aby określić, czy któryś z twoich ulubionych wrogów czai się w pobliżu. Poświęcając 1 nieprzerwaną minutę w {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęcie), możesz wyczuć, czy któryś z twoich ulubionych wrogów jest obecny w promieniu 5 mil od ciebie. Ta cecha ujawnia, którzy z twoich ulubionych wrogów są obecni, ich liczbę oraz ogólny kierunek i odległość (w milach) od ciebie.",
 				"Jeśli w zasięgu znajduje się kilka grup twoich ulubionych wrogów, poznajesz tę informację dla każdej z nich."
 			]
 		},
@@ -6315,7 +6315,7 @@
 			"entries": [
 				"{@i 11th-level Fey Wanderer feature}",
 				"Królewskie dwory Feywild pobłogosławiły cię pomocą istot fey: znasz {@spell summon fey|tce}. Nie wlicza się ona do liczby zaklęć strażnika, które znasz, i możesz ją rzucać bez materialnego komponentu. Możesz je rzucić raz bez slotu na zaklęcie, a zdolność tę odzyskujesz po zakończeniu długiego odpoczynku.",
-				"Za każdym razem, gdy rozpoczynasz rzucanie zaklęcia, możesz zmodyfikować je tak, aby nie wymagało koncentracji. Jeśli to zrobisz, czas trwania zaklęcia wydłuża się do 1 minuty."
+				"Zawsze, gdy zaczynasz rzucać zaklęcie, możesz je zmodyfikować tak, by nie wymagało {@status concentration}. Jeśli to zrobisz, czas trwania zaklęcia staje się 1 minutą dla tego rzutu."
 			]
 		},
 		{
@@ -8856,7 +8856,7 @@
 			"entries": [
 				"{@i 11th-level Fey Wanderer feature}",
 				"Królewskie dwory Feywild pobłogosławiły cię pomocą istot fey: znasz {@spell summon fey|tce}. Nie wlicza się ona do liczby zaklęć strażnika, które znasz, i możesz ją rzucać bez materialnego komponentu. Możesz je rzucić raz bez slotu na zaklęcie, a zdolność tę odzyskujesz po zakończeniu długiego odpoczynku.",
-				"Za każdym razem, gdy rozpoczynasz rzucanie zaklęcia, możesz zmodyfikować je tak, aby nie wymagało koncentracji. Jeśli to zrobisz, czas trwania zaklęcia wydłuża się do 1 minuty."
+				"Zawsze, gdy zaczynasz rzucać zaklęcie, możesz je zmodyfikować tak, by nie wymagało {@status concentration}. Jeśli to zrobisz, czas trwania zaklęcia staje się 1 minutą dla tego rzutu."
 			]
 		},
 		{
@@ -10627,7 +10627,7 @@
 			"entries": [
 				"{@i 11th-level Fey Wanderer feature}",
 				"Królewskie dwory Feywild pobłogosławiły cię pomocą istot fey: znasz {@spell summon fey|tce}. Nie wlicza się ona do liczby zaklęć strażnika, które znasz, i możesz ją rzucać bez materialnego komponentu. Możesz je rzucić raz bez slotu na zaklęcie, a zdolność tę odzyskujesz po zakończeniu długiego odpoczynku.",
-				"Za każdym razem, gdy rozpoczynasz rzucanie zaklęcia, możesz zmodyfikować je tak, aby nie wymagało koncentracji. Jeśli to zrobisz, czas trwania zaklęcia wydłuża się do 1 minuty."
+				"Zawsze, gdy zaczynasz rzucać zaklęcie, możesz je zmodyfikować tak, by nie wymagało {@status concentration}. Jeśli to zrobisz, czas trwania zaklęcia staje się 1 minutą dla tego rzutu."
 			]
 		},
 		{

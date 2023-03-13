@@ -576,7 +576,7 @@
 				{
 					"name": "Blizzard Veil",
 					"entries": [
-						"Auril tworzy magiczną zamieć w kuli o promieniu 30 stóp, skupionej na niej samej. Obszar wewnątrz sfery jest mocno zasłonięty, a sfera porusza się wraz z Auril. Efekt trwa, dopóki Auril nie straci w tej postaci 0 punktów życia, dopóki nie zdecyduje się przerwać efektu (nie wymaga to żadnej akcji) lub dopóki jej koncentracja nie zostanie przerwana (jak w przypadku koncentracji na zaklęciu)."
+						"Auril tworzy magiczną zamieć w sferze o promieniu 30 stóp skupionej na sobie. Obszar wewnątrz sfery jest mocno przesłonięty, a sfera porusza się wraz z Auril. Efekt trwa, dopóki Auril nie spadnie do 0 punktów życia w tej formie, dopóki nie zdecyduje się zakończyć efektu (nie wymaga to żadnej akcji) lub dopóki jej {@status concentration} nie zostanie złamane (jak {@status concentration||concentrating} na zaklęciu)."
 					]
 				}
 			],
@@ -632,6 +632,7 @@
 		{
 			"name": "Avarice",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 269,
 			"size": [
@@ -1713,6 +1714,7 @@
 		{
 			"name": "Dzaan's Simulacrum",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 270,
 			"size": [
@@ -4211,6 +4213,7 @@
 		{
 			"name": "Kingsport",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 243,
 			"size": [
@@ -4958,6 +4961,7 @@
 		{
 			"name": "Nass Lantomir's Ghost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 272,
 			"size": [
@@ -5140,6 +5144,7 @@
 		{
 			"name": "Prisoner 237",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 160,
 			"size": [
@@ -5740,6 +5745,7 @@
 		{
 			"name": "Spellix Romwod",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 144,
 			"size": [
@@ -6323,6 +6329,7 @@
 		{
 			"name": "Vellynne Harpell",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 273,
 			"size": [
@@ -6876,7 +6883,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Xardorok magicznie zamienia się w {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia, nie użyje Powiększenia lub jego koncentracja nie zostanie przerwana (jak podczas skupiania się na zaklęciu). Wszelki ekwipunek, który Xardorok nosi lub nosi przy sobie, zostaje z nim w {@condition invisible}."
+						"Xardorok magicznie zmienia się w {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia, nie użyje swojego Powiększenia lub jego {@status concentration} nie zostanie złamane (tak jakby {@status concentration||concentrating} na zaklęciu). Każdy sprzęt, który Xardorok nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				}
 			],

@@ -42,7 +42,7 @@
 					},
 					"name": "Energy Adaptation",
 					"entries": [
-						"Jako akcję, możesz dotknąć jedno stworzenie i nadać mu odporność na obrażenia od kwasu, zimna, ognia, błyskawic lub piorunów (do wyboru), która trwa do końca koncentracji."
+						"Jako akcja, możesz dotknąć jedną istotę i dać jej odporność na obrażenia od kwasu, zimna, ognia, błyskawic lub piorunów (do wyboru), która trwa do momentu zakończenia {@status concentration}."
 					]
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"name": "Energy Immunity",
 					"entries": [
-						"Jako akcję, możesz dotknąć jedno stworzenie i nadać mu odporność na obrażenia od kwasu, zimna, ognia, błyskawic lub piorunów (do wyboru), która trwa do końca koncentracji."
+						"Jako akcję możesz dotknąć jedną istotę i dać jej odporność na obrażenia od kwasu, zimna, ognia, błyskawic lub piorunów (do wyboru), która trwa do czasu zakończenia {@status concentration}."
 					]
 				}
 			]
@@ -103,7 +103,7 @@
 					},
 					"name": "View Aura",
 					"entries": [
-						"Jako akcję badasz aurę jednej istoty. Do końca koncentracji, kiedy widzisz cel, dowiadujesz się, czy jest on pod działaniem efektów magicznych lub psionicznych, ile ma punktów życia i jaki jest jego podstawowy stan emocjonalny. Dopóki trwa ten efekt, masz przewagę w testach na Mądrość ({@skill Insight}) i Charyzmę, które wykonujesz przeciwko temu stworzeniu."
+						"Jako akcja, badasz aurę jednego stworzenia. Do czasu zakończenia {@status concentration}, gdy widzisz cel, dowiadujesz się, czy jest on pod wpływem jakichkolwiek efektów magicznych lub psionicznych, jego aktualnej sumy punktów trafień i podstawowego stanu emocjonalnego. Gdy efekt ten trwa, masz przewagę w testach Mądrości ({@skill Insight}) i Charyzmy, które wykonujesz przeciwko niemu."
 					]
 				},
 				{
@@ -117,7 +117,7 @@
 					},
 					"name": "Perceive the Unseen",
 					"entries": [
-						"Jako akcję dodatkową zyskujesz zdolność widzenia aury nawet {@condition invisible} lub ukrytych stworzeń. Do końca koncentracji możesz widzieć wszystkie stworzenia, także te ukryte i {@condition invisible}, niezależnie od warunków oświetlenia."
+						"Jako akcja bonusowa, zyskujesz zdolność widzenia aury nawet {@condition invisible} lub ukrytych stworzeń. Dopóki nie skończy się twoja {@status concentration}, możesz widzieć wszystkie stworzenia, także te ukryte i {@condition invisible}, niezależnie od warunków oświetlenia."
 					]
 				}
 			]
@@ -461,7 +461,7 @@
 					},
 					"name": "Call to Inaction",
 					"entries": [
-						"Jeśli spędzisz 1 minutę na rozmowie z jakimś stworzeniem, możesz spróbować zasiać w nim wszechogarniającą ennuę. Pod koniec minuty możesz użyć akcji, aby zmusić stworzenie do wykonania rzutu ratującego z Mądrości. Jeśli cel jest odporny na bycie {@condition charmed}, to automatycznie udaje mu się uratować. W przypadku nieudanego ataku siedzi i jest {@condition incapacitated} do końca twojej koncentracji. Efekt ten natychmiast się kończy, jeśli cel lub sojusznik, którego widzi, zostanie zaatakowany lub otrzyma obrażenia. W przypadku udanego ratunku, stworzenie pozostaje niewzruszone i nie wie, że próbujesz nagiąć jego wolę."
+						"Jeśli spędzisz 1 minutę na rozmowie z jakimś stworzeniem, możesz spróbować zasiać w nim wszechogarniającą ennui. Pod koniec minuty możesz użyć akcji, aby zmusić stworzenie do wykonania rzutu ratującego Mądrość. Rzut automatycznie się udaje, jeśli cel jest odporny na bycie {@condition charmed}. Przy nieudanym save'ie siedzi i jest {@condition incapacitated} do czasu zakończenia twojego {@status concentration}. Ten efekt natychmiast kończy się, jeśli cel lub jakikolwiek sojusznik, którego widzi, zostanie zaatakowany lub otrzyma obrażenia. Przy udanym save'ie stworzenie jest niewzruszone i nie ma pojęcia o twojej próbie nagięcia jego woli."
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					},
 					"name": "Dolorous Mind",
 					"entries": [
-						"Jako akcję wybierasz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Musi mu się udać rzut ratunkowy na Charyzmę, w przeciwnym razie jest {@condition incapacitated} i ma szybkość 0 do końca twojej koncentracji. Może powtarzać ten rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+						"Jako akcję wybierasz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Musi ona odnieść sukces w rzucie ratunkowym na Charyzmę, w przeciwnym razie jest {@condition incapacitated} i ma prędkość 0 do czasu zakończenia twojego {@status concentration}. Może powtórzyć ten rzut ratunkowy na koniec każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu. próba nagięcia swojej woli."
 					]
 				}
 			]
@@ -522,7 +522,7 @@
 					},
 					"name": "Wall of Repulsion",
 					"entries": [
-						"Jako akcję, tworzysz niewidzialną, nieruchomą ścianę energii w promieniu 60 stóp od siebie, o długości do 30 stóp, wysokości do 10 stóp i grubości do 1 stopy. Ściana trwa do końca twojej koncentracji. Każda istota próbująca się przez nią przedostać musi wykonać rzut na mądrość. W przypadku nieudanego testu, stworzenie nie może przejść przez ścianę do początku swojej następnej tury. W przypadku udanego testu, stworzenie może przez nią przejść. Stworzenie musi wykonać ten test za każdym razem, gdy próbuje przejść przez ścianę, niezależnie od tego, czy chce, czy nie chce."
+						"Jako akcja, tworzysz niewidzialną, nietrwałą ścianę energii w promieniu 60 stóp od ciebie, która ma do 30 stóp długości, 10 stóp wysokości i 1 stopę grubości. Ściana trwa do końca twojej {@status concentration} akcji. Każda istota próbująca się przez nią przedostać musi wykonać rzut ratujący mądrość. W przypadku nieudanego testu, stworzenie nie może przejść przez ścianę do początku swojej następnej tury. W przypadku udanego testu, stworzenie może przez nią przejść. Stworzenie musi wykonać ten test za każdym razem, gdy próbuje przejść przez ścianę, niezależnie od tego, czy chce, czy nie chce."
 					]
 				},
 				{
@@ -536,7 +536,7 @@
 					},
 					"name": "Visions of Disgust",
 					"entries": [
-						"Sprawiasz, że istota postrzega wszystkie inne istoty jako odrażające, obce byty. Jako akcję, wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać rzut ratujący z Mądrości. W przypadku niepowodzenia, otrzymuje {@damage 5d6} obrażeń psychicznych i do końca twojej koncentracji, na koniec każdej swojej tury otrzymuje {@damage 1d6} obrażeń psychicznych za każdą istotę w promieniu 5 stóp od niego. W przypadku udanego ataku cel otrzymuje tylko połowę początkowych obrażeń i nie odczuwa żadnego z pozostałych efektów."
+						"Powodujesz, że dana istota uważa wszystkie inne istoty za okropne, obce byty. Jako akcję wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać ratujący rzut Mądrości. Przy nieudanym rzucie otrzymuje {@damage 5d6} obrażeń psychicznych i do końca twojej {@status concentration} tury otrzymuje {@damage 1d6} obrażeń psychicznych za każdą istotę w promieniu 5 stóp od niego. Przy udanym save'ie cel otrzymuje tylko połowę początkowych obrażeń i nie cierpi na żaden z pozostałych efektów.gicznie lub mimowolnie."
 					]
 				},
 				{
@@ -550,7 +550,7 @@
 					},
 					"name": "World of Horror",
 					"entries": [
-						"Jako akcję, wybierz do sześciu stworzeń w promieniu 60 stóp od ciebie. Każdy cel musi wykonać rzut ratujący z Charyzmy. W przypadku nieudanego testu, cel otrzymuje {@damage 8d6} obrażeń psychicznych i wynosi ono {@condition frightened} do końca twojej koncentracji. W przypadku udanego ataku, cel otrzymuje o połowę mniej obrażeń. Podczas {@condition frightened} działania tego efektu, prędkość celu spada do 0, a cel może używać swoich akcji i wszelkich bonusowych akcji, jakie może mieć, tylko do ataków w walce wręcz. Cel {@condition frightened} może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+						"Jako akcję wybierz do sześciu stworzeń w promieniu 60 stóp od ciebie. Każdy cel musi wykonać rzut ratujący przed Charyzmą. W przypadku nieudanego rzutu, cel otrzymuje {@damage 8d6} obrażeń psychicznych i jest {@condition frightened} do czasu zakończenia twojej {@status concentration} akcji. Przy udanym save'ie cel otrzymuje o połowę mniej obrażeń. Podczas {@condition frightened} działania tego efektu, prędkość celu zostaje zredukowana do 0, a cel może użyć swojej akcji oraz wszelkich akcji bonusowych, które może posiadać, tylko do wykonania ataków wręcz. Cel {@condition frightened} może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				}
 			]
@@ -587,7 +587,7 @@
 					},
 					"name": "Fighting Words",
 					"entries": [
-						"Jeśli spędzisz 1 minutę na rozmowie z istotą, możesz spróbować pozostawić w jej umyśle kipiącą przemoc. Pod koniec minuty możesz użyć akcji, aby zmusić stworzenie do wykonania rzutu obronnego na Mądrość, aby oprzeć się odczuwaniu gwałtownych popędów wobec jednej istoty, którą mu opiszesz lub nazwiesz. Ratuje się automatycznie, jeśli cel jest odporny na bycie {@condition charmed}. W przypadku nieudanego testu, cel atakuje wybraną istotę, jeśli zobaczy ją przed zakończeniem koncentracji, używając broni lub zaklęć przeciwko istocie, wobec której był już wrogo nastawiony, lub uderzeń bez broni przeciwko sojusznikowi lub istocie, wobec której był neutralny. Po rozpoczęciu walki, atakuje jeszcze przez 5 rund, zanim efekt ten wygaśnie. Efekt ten kończy się natychmiast, jeśli cel lub sojusznik, którego widzi, zostanie zaatakowany lub otrzyma obrażenia od innego stworzenia niż to, przeciwko któremu został podburzony. W przypadku udanego ratunku, stworzenie pozostaje niewzruszone i nie wie, że próbujesz wpłynąć na jego wolę."
+						"Jeśli spędzisz 1 minutę na rozmowie ze stworzeniem, możesz spróbować pozostawić w jego umyśle duszącą się przemoc. Pod koniec minuty możesz użyć akcji, aby zmusić stworzenie do wykonania rzutu ratującego Mądrość, aby oprzeć się odczuwaniu gwałtownych popędów wobec jednej istoty, którą mu opiszesz lub nazwiesz. Save automatycznie się udaje, jeśli cel jest odporny na bycie {@condition charmed}. W przypadku niepowodzenia, cel atakuje wybraną istotę, jeśli zobaczy ją przed zakończeniem twojego {@status concentration}, używając broni lub czarów przeciwko istocie, do której był już wrogo nastawiony, lub uderzeń bez broni przeciwko sojusznikowi lub istocie, do której był neutralnie nastawiony. Po rozpoczęciu walki kontynuuje atak przez 5 rund, zanim ten efekt się skończy. Efekt ten kończy się natychmiast, jeśli cel lub sojusznik, którego widzi, zostanie zaatakowany lub otrzyma obrażenia od innej istoty niż ta, przeciwko której został podburzony. W przypadku udanego ratunku, stworzenie jest niewzruszone i nie ma pojęcia o twojej próbie nagięcia jego woli. tury, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				},
 				{
@@ -611,7 +611,7 @@
 					},
 					"name": "Punishing Fury",
 					"entries": [
-						"Powodujesz, że wściekłość stworzenia staje się tak wielka, że atakuje ono nie zważając na własne bezpieczeństwo. Jako działanie dodatkowe, wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Celowi musi udać się rzut obronny na Mądrość lub, do czasu zakończenia koncentracji, każda istota w promieniu 5 stóp od niego może użyć reakcji, aby zaatakować go w walce wręcz za każdym razem, gdy cel wykona atak w walce wręcz. Jeśli cel jest odporny na bycie {@condition charmed}, to automatycznie kończy się sukcesem."
+						"Powodujesz, że wściekłość istoty rośnie do tego stopnia, że atakuje ona nie zważając na własne bezpieczeństwo. Jako akcję dodatkową wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi odnieść sukces w rzucie ratunkowym Mądrości lub, do czasu zakończenia twojej {@status concentration} akcji, każda istota w promieniu 5 stóp od niego może użyć reakcji, aby wykonać atak wręcz przeciwko niemu, kiedy tylko cel wykona atak wręcz. Save automatycznie się udaje, jeśli cel jest odporny na bycie {@condition charmed}. stworzeniem innym niż to, przeciwko któremu został podburzony. W przypadku udanego ratunku, stworzenie jest niewzruszone i nie ma pojęcia o twojej próbie nagięcia jego woli. tury, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 					},
 					"name": "Miniature Form",
 					"entries": [
-						"Jako akcja dodatkowa stajesz się malutki do czasu zakończenia koncentracji. W tym rozmiarze otrzymujesz premię +5 do testów Zręczności ({@skill Stealth}) i możesz przechodzić przez szczeliny o szerokości do 6 cali bez przeciskania się."
+						"Jako akcja dodatkowa stajesz się Tiny do czasu zakończenia swojego {@status concentration}. W tym rozmiarze zyskujesz premię +5 do testów Zręczności ({@skill Stealth}) i możesz poruszać się przez szczeliny o szerokości do 6 cali bez przeciskania się.l save, stworzenie jest nienaruszone i nie ma pojęcia o twojej próbie nagięcia jego woli. tury, kończąc efekt na sobie przy sukcesie."
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					},
 					"name": "Microscopic Form",
 					"entries": [
-						"Jako akcja dodatkowa stajesz się mniejszy od Malutkiego aż do końca koncentracji. W tym rozmiarze zyskujesz premię +10 do testów Zręczności ({@skill Stealth}) i premię +5 do AC, możesz przechodzić przez szczeliny o szerokości do 1 cala bez przeciskania się i nie możesz wykonywać ataków bronią."
+						"Jako akcja bonusowa stajesz się mniejszy od Tiny do czasu, aż skończy się twój {@status concentration}. Będąc w tym rozmiarze zyskujesz premię +10 do kontroli Zręczności ({@skill Stealth}) i premię +5 do AC, możesz poruszać się przez szczeliny o szerokości do 1 cala bez przeciskania się i nie możesz wykonywać ataków bronią."
 					]
 				}
 			]
@@ -720,7 +720,7 @@
 					},
 					"name": "Ogre Form",
 					"entries": [
-						"Jako działanie dodatkowe zyskujesz 10 tymczasowych punktów trafienia. Ponadto, do końca koncentracji, twoje ataki bronią w walce wręcz zadają dodatkowe {@damage 1d4} obrażenia od obrażeń od trafienia, a twój zasięg zwiększa się o 5 stóp. Jeśli jesteś mniejszy niż Duży, na czas trwania koncentracji stajesz się również Duży."
+						"Jako akcja dodatkowa, zyskujesz 10 tymczasowych punktów trafień. Ponadto, dopóki nie skończy się twoja {@status concentration}, twoje ataki bronią do walki wręcz zadają dodatkowe {@damage 1d4} obrażeń od trafienia, a twój zasięg zwiększa się o 5 stóp. Jeśli jesteś mniejszy niż Large, stajesz się również Large na czas trwania."
 					]
 				},
 				{
@@ -734,7 +734,7 @@
 					},
 					"name": "Giant Form",
 					"entries": [
-						"Jako działanie dodatkowe zyskujesz 30 tymczasowych punktów trafienia. Ponadto, do końca koncentracji, twoje ataki bronią w walce wręcz zadają dodatkowe {@damage 2d6} obrażenia od obrażeń od trafienia, a twój zasięg zwiększa się o 10 stóp. Jeśli jesteś mniejszy niż Ogromny, na czas trwania koncentracji stajesz się Ogromny."
+						"Jako akcja dodatkowa, zyskujesz 30 tymczasowych punktów trafień. Ponadto, dopóki nie skończy się twoja {@status concentration}, twoje ataki bronią do walki wręcz zadają dodatkowe {@damage 2d6} obrażeń od trafienia, a twój zasięg zwiększa się o 10 stóp. Jeśli jesteś mniejszy niż Huge, stajesz się również Huge na czas trwania."
 					]
 				}
 			]
@@ -781,7 +781,7 @@
 					},
 					"name": "Psychic Redoubt",
 					"entries": [
-						"Jako akcję, tworzysz pole ochronnej energii psychicznej. Wybierz dowolną liczbę istot w promieniu 30 stóp od ciebie. Do czasu zakończenia koncentracji, każdy cel jest odporny na obrażenia psychiczne i ma przewagę w rzutach na inteligencję, mądrość i charyzmę."
+						"Jako akcja, tworzysz pole ochronnej energii psychicznej. Wybierz dowolną liczbę istot w promieniu 30 stóp od ciebie. Do czasu zakończenia działania {@status concentration}, każdy cel ma odporność na obrażenia psychiczne i przewagę w rzutach ratunkowych na inteligencję, mądrość i charyzmę."
 					]
 				}
 			]
@@ -828,7 +828,7 @@
 					},
 					"name": "Iron Resistance",
 					"entries": [
-						"Jako akcję zyskujesz odporność na obrażenia od ciosów, przebicia lub cięcia (do wyboru), która trwa do końca koncentracji."
+						"Jako akcja, zyskujesz odporność na obrażenia kłute, przeszywające lub ukośne (do wyboru), która trwa do czasu zakończenia twojej {@status concentration}."
 					]
 				}
 			]
@@ -875,7 +875,7 @@
 					},
 					"name": "Center of Attention",
 					"entries": [
-						"Jako akcja, roztaczasz wokół siebie aurę mocy, która przyciąga uwagę stworzenia. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Musi ono wykonać rzut ratujący z Charyzmy. W przypadku niepowodzenia, stwór jest tak rozproszony przez ciebie, że wszystkie inne stworzenia są dla niego {@condition invisible} do czasu zakończenia koncentracji. Efekt ten kończy się, jeśli stworzenie nie może cię zobaczyć lub usłyszeć, albo jeśli otrzyma obrażenia."
+						"Jako akcja, roztaczasz aurę mocy, która przykuwa uwagę stworzenia. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Musi ono wykonać ratujący rzut na Charyzmę. W przypadku nieudanego testu, stworzenie jest tak dokładnie rozproszone przez ciebie, że wszystkie inne stworzenia są dla niego {@condition invisible} do czasu zakończenia twojego {@status concentration}. Efekt ten kończy się, jeśli stworzenie nie może cię już widzieć lub słyszeć lub jeśli otrzyma obrażenia."
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					},
 					"name": "Invoke Awe",
 					"entries": [
-						"Jako akcja, roztaczasz wokół siebie aurę, która wzbudza respekt u innych. Wybierz do 5 stworzeń, które widzisz w promieniu 60 stóp od siebie. Każdy cel musi zdać rzut na inteligencję lub zostać {@condition charmed} przez ciebie zaatakowany do końca koncentracji. Podczas {@condition charmed} cel wykonuje wszystkie twoje polecenia słowne, najlepiej jak potrafi i nie robi nic wyraźnie autodestrukcyjnego. Cel {@condition charmed} będzie atakował tylko te stworzenia, które widział, jak atakują cię od czasu, gdy był {@condition charmed} lub te, wobec których był już wrogo nastawiony. Na koniec każdej swojej tury może powtórzyć rzut ratunkowy, kończąc efekt na sobie w przypadku sukcesu."
+						"Jako akcja, roztaczasz aurę, która wzbudza respekt u innych. Wybierz do 5 stworzeń, które widzisz w promieniu 60 stóp od siebie. Każdy cel musi odnieść sukces w rzucie ratunkowym na inteligencję lub zostać przez ciebie {@condition charmed}, aż do zakończenia twojego {@status concentration}. Podczas {@condition charmed} cel wykonuje wszystkie twoje słowne polecenia, najlepiej jak potrafi i nie robi nic ewidentnie autodestrukcyjnego. Cel {@condition charmed} będzie atakował tylko te stworzenia, które widział, jak cię atakują od czasu {@condition charmed} lub wobec których był już wrogo nastawiony. Na koniec każdej swojej tury może powtórzyć rzut ratunkowy, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				}
 			]
@@ -950,7 +950,7 @@
 					},
 					"name": "Strategic Mind",
 					"entries": [
-						"Jako akcja, roztaczasz wokół siebie aurę zaufania i dowodzenia, która jednoczy twoich sojuszników w spójną jednostkę. Dopóki twoja koncentracja nie wygaśnie, każdy sojusznik znajdujący się w promieniu 60 stóp od ciebie może w swojej turze, jako akcję dodatkową, wykonać akcję \"Kreska\" lub \"Odłączenie\" albo rzucić {@dice d4} i dodać wyliczoną liczbę do każdego ataku, który wykona w tej turze."
+						"Jako akcja, wywierasz aurę zaufania i dowodzenia, która łączy twoich sojuszników w spójną jednostkę. Dopóki nie skończy się twój {@status concentration}, każdy sojusznik w promieniu 60 stóp od ciebie w swojej turze może, jako akcja dodatkowa, wykonać akcję Dash lub Disengage lub rzucić {@dice d4} i dodać wytoczoną liczbę do każdego rzutu ataku, jaki wykona w tej turze.d każdej swojej tury może powtórzyć rzut ratujący, kończąc efekt na sobie przy sukcesie."
 					]
 				},
 				{
@@ -997,7 +997,7 @@
 					},
 					"name": "Aura of Victory",
 					"entries": [
-						"Jako akcja dodatkowa, rzucasz psioniczną energię do czasu zakończenia koncentracji. Energia ta wzmacnia ciebie i twoich sojuszników, gdy twoi wrogowie są wykańczani; za każdym razem, gdy wróg, którego widzisz, zostanie zredukowany do 0 punktów życia, ty i każdy z twoich sojuszników w promieniu 30 stóp od ciebie zyskuje tymczasowe punkty trafień równe podwojonej liczbie punktów psi wydanych na aktywację tego efektu."
+						"Jako akcja dodatkowa, rzutujesz energię psioniczną do czasu, gdy skończy się twój {@status concentration}. Energia ta wzmacnia ciebie i twoich sojuszników, gdy twoi wrogowie są ścinani; za każdym razem, gdy wróg, którego widzisz, zostanie zredukowany do 0 punktów trafień, ty i każdy z twoich sojuszników w promieniu 30 stóp od ciebie zyskuje tymczasowe punkty trafień równe podwójnej liczbie punktów psi wydanych na aktywację tego efektu."
 					]
 				},
 				{
@@ -1038,7 +1038,7 @@
 					},
 					"name": "Incite Fear",
 					"entries": [
-						"Jako akcję, wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Celowi musi się udać rzut obronny na Mądrość lub stanie się {@condition frightened} tobą do końca koncentracji. Ilekroć {@condition frightened} cel kończy swoją turę w miejscu, w którym cię nie widzi, może powtórzyć rzut ratunkowy, kończąc efekt na sobie w przypadku powodzenia."
+						"Jako akcję wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi odnieść sukces w rzucie ratunkowym Mądrości lub stać się {@condition frightened} tobą do czasu zakończenia twojej {@status concentration}. Kiedykolwiek {@condition frightened} cel kończy swoją turę w miejscu, w którym cię nie widzi, może powtórzyć rzut ratunkowy, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				},
 				{
@@ -1052,7 +1052,7 @@
 					},
 					"name": "Unsettling Aura",
 					"entries": [
-						"Jako akcja dodatkowa, okrywasz się niepokojącą energią psychiczną. Do czasu zakończenia koncentracji każdy wróg w promieniu 60 stóp od ciebie, który cię widzi, musi poświęcić 1 dodatkową stopę ruchu za każdą stopę, którą poruszy się w twoją stronę. Stworzenie ignoruje ten efekt, jeśli jest odporne na bycie {@condition frightened}."
+						"Jako akcja dodatkowa, płaszczysz się w niepokojącej energii psychicznej. Do czasu zakończenia {@status concentration} każdy wróg w promieniu 60 stóp od ciebie, który może cię zobaczyć, musi poświęcić 1 dodatkową stopę ruchu za każdą stopę, którą porusza się w twoim kierunku. Istota ignoruje ten efekt, jeśli jest odporna na bycie {@condition frightened}."
 					]
 				},
 				{
@@ -1066,7 +1066,7 @@
 					},
 					"name": "Incite Panic",
 					"entries": [
-						"Jako akcję, wybierz do ośmiu stworzeń w promieniu 90 stóp od ciebie, które cię widzą. Na początku każdej tury celu, zanim skończy się twoja koncentracja, musi on wykonać rzut obronny na Mądrość. W przypadku nieudanego ataku, cel jest {@condition frightened} do początku swojej następnej tury, a ty rzucasz kością. Jeśli wyrzucisz nieparzystą liczbę, cel {@condition frightened} porusza się z połową swojej prędkości w losowym kierunku i nie podejmuje żadnej akcji w tej turze, poza krzykiem przerażenia. Jeśli wyrzucisz parzystą liczbę, {@condition frightened} cel wykonuje jeden atak w walce wręcz przeciwko losowemu celowi w swoim zasięgu. Jeśli nie ma takiego celu, porusza się z połową swojej prędkości w losowym kierunku i nie podejmuje żadnej akcji w tej turze. Efekt ten kończy się na celu, jeśli uda mu się wykonać trzy rzuty ratunkowe przeciwko niemu."
+						"Jako akcję wybierz do ośmiu stworzeń w promieniu 90 stóp od ciebie, które mogą cię zobaczyć. Na początku każdej tury celu, zanim twoja {@status concentration} skończy się, cel musi wykonać rzut ratujący mądrość. W przypadku niepowodzenia, cel jest {@condition frightened} do początku swojej następnej tury, a ty rzucasz kością. Jeśli rzucisz nieparzystą liczbę, {@condition frightened} cel porusza się z połową swojej prędkości w losowym kierunku i nie podejmuje żadnej akcji w tej turze, poza krzykiem przerażenia. Jeśli rzucisz parzystą liczbę, {@condition frightened} cel wykonuje jeden atak wręcz przeciwko losowemu celowi w jego zasięgu. Jeśli nie ma takiego celu, porusza się z połową swojej prędkości w losowym kierunku i nie podejmuje żadnej akcji w tej turze. Efekt ten kończy się na celu, jeśli uda mu się na trzy rzuty ratunkowe przeciwko niemu."
 					]
 				}
 			]
@@ -1093,7 +1093,7 @@
 					},
 					"name": "Incite Fury",
 					"entries": [
-						"Jako akcję dodatkową, wybierz do trzech sojuszników, których widzisz w promieniu 60 stóp od siebie (możesz wybrać siebie zamiast jednego z sojuszników). Do czasu zakończenia koncentracji każdy cel może rzucić {@dice d4} przy zadawaniu obrażeń w ataku bronią do walki wręcz i dodać wyliczoną liczbę do zadawanych obrażeń."
+						"Jako akcja bonusowa wybierz do trzech sojuszników, których widzisz w promieniu 60 stóp od ciebie (możesz wybrać siebie w miejsce jednego z sojuszników). Dopóki nie skończy się twój {@status concentration}, każdy cel może rzucić {@dice d4} podczas toczenia obrażeń za atak bronią do walki wręcz i dodać wytoczoną liczbę do toczenia obrażeń.k przeciwko losowemu celowi w jego zasięgu. Jeśli nie ma takiego celu, porusza się z połową swojej prędkości w losowym kierunku i nie podejmuje żadnej akcji w tej turze. Efekt ten kończy się na celu, jeśli uda mu się na trzy rzuty ratunkowe przeciwko niemu."
 					]
 				},
 				{
@@ -1117,7 +1117,7 @@
 					},
 					"name": "Aura of Bloodletting",
 					"entries": [
-						"Jako akcja dodatkowa, wyzwalasz aurę wściekłości. Do czasu zakończenia koncentracji, ty i każda istota w promieniu 60 stóp od ciebie ma przewagę w rolkach ataku wręcz."
+						"Jako akcja dodatkowa, wyzwalasz aurę wściekłości. Dopóki nie skończy się {@status concentration}, ty i każda istota w promieniu 60 stóp od ciebie ma przewagę w rolkach ataku wręcz."
 					]
 				},
 				{
@@ -1131,7 +1131,7 @@
 					},
 					"name": "Overwhelming Fury",
 					"entries": [
-						"Jako akcję, zalewasz szałem jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Celowi musi udać się rzut ratujący z Charyzmy, w przeciwnym razie może on używać swoich akcji tylko do ataków w walce wręcz do czasu zakończenia twojej koncentracji. Może powtórzyć rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+						"Jako akcja, zalewasz furią jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi odnieść sukces w rzucie ratunkowym na Charyzmę, w przeciwnym razie może używać swoich akcji tylko do ataków wręcz, dopóki nie skończy się twoja {@status concentration}. Może powtórzyć rzut ratujący na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				}
 			]
@@ -1168,7 +1168,7 @@
 					},
 					"name": "Comforting Aura",
 					"entries": [
-						"Jako akcję dodatkową wybierz do trzech sojuszników, których widzisz (możesz wybrać siebie zamiast jednego z sojuszników). Do końca koncentracji każdy cel może rzucić {@dice d4} przy rzucie ratunkowym i dodać wyliczoną liczbę do całości."
+						"Jako akcja bonusowa wybierz do trzech sojuszników, których widzisz (możesz wybrać siebie w miejsce jednego z sojuszników). Dopóki nie skończy się twój {@status concentration}, każdy cel może rzucić {@dice d4} podczas wykonywania rzutu ratunkowego i dodać wytoczoną liczbę do całości."
 					]
 				},
 				{
@@ -1182,7 +1182,7 @@
 					},
 					"name": "Aura of Jubilation",
 					"entries": [
-						"Jako akcja dodatkowa, promieniujesz rozpraszającym śmiechem, dopóki nie wygaśnie twoja koncentracja. Każda istota w promieniu 60 stóp od ciebie, która cię widzi, ponosi minusy przy sprawdzaniu umiejętności {@skill Perception} i {@skill Investigation}."
+						"Jako akcja bonusowa promieniujesz rozpraszającym mirhem do czasu, aż skończy się twój {@status concentration}. Każda istota w promieniu 60 stóp od ciebie, która może cię zobaczyć, cierpi na minus przy sprawdzaniu umiejętności {@skill Perception} i {@skill Investigation}."
 					]
 				},
 				{
@@ -1239,7 +1239,7 @@
 					},
 					"name": "Cloak of Air",
 					"entries": [
-						"Jako dodatkowe działanie przejmujesz kontrolę nad powietrzem wokół siebie, tworząc ochronną zasłonę. Dopóki twoja koncentracja nie wygaśnie, ataki przeciwko tobie mają minusy, a kiedy istota, którą widzisz, chybi cię atakiem w walce wręcz, możesz użyć swojej reakcji, aby zmusić ją do powtórzenia ataku przeciwko sobie."
+						"Jako akcja dodatkowa, przejmujesz kontrolę nad powietrzem wokół siebie, tworząc ochronną zasłonę. Dopóki nie skończy się {@status concentration}, ataki na ciebie są niekorzystne, a gdy istota, którą widzisz, chybi cię atakiem w walce wręcz, możesz użyć swojej reakcji, by zmusić ją do powtórzenia ataku na siebie."
 					]
 				},
 				{
@@ -1253,7 +1253,7 @@
 					},
 					"name": "Wind Form",
 					"entries": [
-						"Jako działanie dodatkowe zyskujesz prędkość lotu 60 stóp, która trwa do końca koncentracji."
+						"Jako akcja dodatkowa, zyskujesz prędkość latania 60 stóp, która trwa do czasu zakończenia twojej {@status concentration}."
 					]
 				},
 				{
@@ -1267,7 +1267,7 @@
 					},
 					"name": "Misty Form",
 					"entries": [
-						"Jako akcję, twoje ciało staje się jak mglista chmura, aż do zakończenia koncentracji. W tej postaci zyskujesz odporność na obrażenia od ciosów, przebicia i cięcia, nie możesz też wykonywać innych akcji niż akcja \"Kreska\". Możesz przechodzić przez otwory, których szerokość nie przekracza 1 cala, bez przeciskania się."
+						"Jako akcja, twoje ciało staje się jak mglista chmura do czasu, aż skończy się twój {@status concentration}. W tej formie zyskujesz odporność na obrażenia kłute, przeszywające i skośne, nie możesz też podjąć innych akcji niż akcja Dash. Możesz przechodzić przez otwory o szerokości nie większej niż 1 cal bez przeciskania się."
 					]
 				},
 				{
@@ -1281,7 +1281,7 @@
 					},
 					"name": "Animate Air",
 					"entries": [
-						"Jako akcję, powodujesz pojawienie się żywiołaka powietrza w niezajętej przestrzeni, którą widzisz, w promieniu 120 stóp od siebie. Żywiołak trwa do końca twojej koncentracji i słucha twoich słownych rozkazów. W walce toczy się o jego inicjatywę i wybiera jego zachowanie podczas swoich tur. Kiedy ten efekt się kończy, żywiołak znika. Informacje o jego statystykach znajdziesz w Podręczniku Potworów."
+						"Jako akcja, powodujesz pojawienie się żywiołaka powietrza w niezajętej przestrzeni, którą widzisz w promieniu 120 stóp od ciebie. Żywiołak trwa do czasu, aż skończy się twój {@status concentration} i jest posłuszny twoim słownym rozkazom. W walce turlaj się za jego inicjatywę i wybieraj jego zachowanie podczas swoich tur. Kiedy ten efekt się kończy, elemental znika. Sprawdź w Podręczniku Potworów jego blok statystyk."
 					]
 				}
 			]
@@ -1308,7 +1308,7 @@
 					},
 					"name": "Combustion",
 					"entries": [
-						"Jako akcję, wybierz jedną istotę lub obiekt, który widzisz w promieniu 120 stóp od siebie. Cel musi wykonać test na Konstytucję. W przypadku nieudanego ataku, cel otrzymuje {@scaledamage 1d10|1-7|1d10|psi} obrażeń od ognia za każdy wydany punkt psi i zapala się, otrzymując {@damage 1d6} obrażeń od ognia na koniec każdej swojej tury, aż do końca twojej koncentracji lub do momentu, gdy on sam lub istota z nim sąsiadująca ugasi płomienie za pomocą akcji. Jeśli uda się uratować, cel otrzymuje o połowę mniejsze obrażenia i nie staje w płomieniach."
+						"Jako akcję wybierz jedno stworzenie lub obiekt, który widzisz w promieniu 120 stóp od siebie. Cel musi poddać się ratunkowi z Konstytucji. W przypadku niepowodzenia, cel otrzymuje {@scaledamage 1d10|1-7|1d10|psi} obrażeń od ognia za każdy wydany punkt psi i staje w płomieniach, otrzymując {@damage 1d6} obrażeń od ognia na koniec każdej swojej tury, dopóki nie skończy się twoja {@status concentration} lub dopóki on sam lub istota z nim sąsiadująca nie ugasi płomieni za pomocą akcji. W przypadku udanego ratunku cel otrzymuje o połowę mniejsze obrażenia i nie zapala się."
 					]
 				},
 				{
@@ -1322,7 +1322,7 @@
 					},
 					"name": "Rolling Flame",
 					"entries": [
-						"Jako akcję, tworzysz ogień w sześcianie o wymiarach 20 stóp na 20 stóp w promieniu 5 stóp od siebie. Ogień trwa do końca twojej koncentracji. Każda istota znajdująca się na tym obszarze w momencie użycia tej umiejętności oraz każda istota, która kończy tam swoją turę, otrzymuje 5 obrażeń od ognia."
+						"Jako akcja, tworzysz ogień w sześcianie o wymiarach 20 stóp na 20 stóp w odległości 5 stóp od ciebie. Ogień trwa do czasu zakończenia twojej {@status concentration} akcji. Każda istota znajdująca się na tym obszarze, gdy używasz tej zdolności oraz każda istota, która kończy tam swoją turę, otrzymuje 5 obrażeń od ognia."
 					]
 				},
 				{
@@ -1346,7 +1346,7 @@
 					},
 					"name": "Fire Form",
 					"entries": [
-						"Jako akcja dodatkowa, stajesz się spowity w płomienie do końca koncentracji. Każda istota, która zakończy swoją turę w promieniu 5 stóp od ciebie, otrzymuje {@damage 3d6} obrażeń od ognia."
+						"Jako akcja dodatkowa, stajesz się spowity w płomieniach do czasu, aż skończy się twój {@status concentration}. Każda istota, która kończy swoją turę w odległości 5 stóp od ciebie, otrzymuje {@damage 3d6} obrażeń od ognia."
 					]
 				},
 				{
@@ -1360,7 +1360,7 @@
 					},
 					"name": "Animate Fire",
 					"entries": [
-						"Jako akcję powodujesz pojawienie się żywiołaka ognia w niezajętej przestrzeni, którą widzisz, w promieniu 120 stóp od siebie. Żywiołak trwa do końca twojej koncentracji i słucha twoich słownych rozkazów. W walce toczy się o jego inicjatywę i wybiera jego zachowanie podczas swoich tur. Kiedy ten efekt się kończy, żywiołak znika. Informacje o jego statystykach znajdziesz w Podręczniku Potworów."
+						"Jako akcja, powodujesz pojawienie się żywiołaka ognia w niezajętej przestrzeni, którą widzisz w promieniu 120 stóp od ciebie. Żywiołak trwa do czasu, aż skończy się twój {@status concentration} i jest posłuszny twoim słownym rozkazom. W walce toczy się o jego inicjatywę i wybiera jego zachowanie podczas swoich tur. Kiedy ten efekt się kończy, elemental znika. Sprawdź w Podręczniku Potworów jego blok statystyk."
 					]
 				}
 			]
@@ -1458,7 +1458,7 @@
 					},
 					"name": "Telekinetic Barrier",
 					"entries": [
-						"Jako akcję, tworzysz przezroczystą ścianę energii telekinetycznej, której przynajmniej jedna część musi znajdować się w promieniu 60 stóp od ciebie. Ściana ma 40 stóp długości, 10 stóp wysokości i 1 cal grubości. Ściana trwa do końca twojej koncentracji. Każda 10-stopowa część ściany ma AC równe 10 i 10 punktów trafień."
+						"Jako akcja, tworzysz przezroczystą ścianę energii telekinetycznej, której przynajmniej jedna część musi znajdować się w odległości 60 stóp od ciebie. Ściana ma 40 stóp długości, 10 stóp wysokości i 1 cal grubości. Ściana trwa do czasu zakończenia twojej {@status concentration} akcji. Każdy 10-stopowy odcinek ściany ma AC równe 10 i 10 punktów trafień."
 					]
 				},
 				{
@@ -1472,7 +1472,7 @@
 					},
 					"name": "Grasp",
 					"entries": [
-						"Próbujesz pochwycić istotę w energię telekinetyczną i zatrzymać ją w niewoli. Jako akcję wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Celowi musi udać się rzut obronny na Wytrzymałość albo zostanie {@condition grappled} przez ciebie pochwycony, dopóki nie skończy się twoja koncentracja lub dopóki nie opuści twojego zasięgu, który w przypadku tego chwytu wynosi 60 stóp.",
+						"Próbujesz pochwycić istotę w energię telekinetyczną i trzymać ją w niewoli. Jako akcję wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi odnieść sukces w rzucie ratunkowym na wytrzymałość lub być {@condition grappled} przez ciebie, dopóki nie skończy się twój {@status concentration} lub dopóki cel nie opuści twojego zasięgu, który dla tego chwytu wynosi 60 stóp.",
 						"Cel {@condition grappled} może uciec, jeśli powiedzie mu się test na Siłę (Atletyka) lub Zręczność (Akrobatyka) w oparciu o twoją zdolność psioniczną plus premię do biegłości. Kiedy cel próbuje uciec w ten sposób, możesz wydać punkty psi, aby wzmocnić swój test, nie przekraczając swojego limitu psi. Otrzymujesz premię +1 za każdy wydany punkt psi.",
 						"Gdy cel znajduje się w {@condition grappled} w ten sposób, jako akcję tworzysz jeden z poniższych efektów:"
 					]
@@ -1551,7 +1551,7 @@
 					},
 					"name": "Frozen Rain",
 					"entries": [
-						"Jako akcję, wybierz punkt, który widzisz w promieniu 120 stóp od siebie. Powietrze w promieniu 20 stóp od tego punktu staje się śmiertelnie zimne i przesiąknięte wilgocią. Każda istota w tym obszarze musi wykonać rzut obronny na Konstytucję. W przypadku niepowodzenia, cel otrzymuje {@damage 6d6} obrażeń od zimna, a jego prędkość spada do 0, aż do zakończenia koncentracji. W przypadku udanego ataku, cel otrzymuje o połowę mniej obrażeń.",
+						"Jako akcję wybierz punkt, który możesz zobaczyć w promieniu 120 stóp od ciebie. Powietrze w sferze o promieniu 20 stóp skupionej na tym punkcie staje się śmiertelnie zimne i nasycone wilgocią. Każda istota w tym obszarze musi wykonać rzut ratunkowy na Konstytucję. W przypadku nieudanego testu, cel otrzymuje {@damage 6d6} obrażeń od zimna, a jego prędkość zostaje zredukowana do 0, aż do końca twojego {@status concentration} czasu. W przypadku udanego testu, cel otrzymuje o połowę mniej obrażeń.",
 						"Jako akcję, cel, któremu zmniejszono prędkość, może zakończyć efekt wcześniej, jeśli zda test na Wytrzymałość (Atletyka) z DC równym DC ratunku tego efektu.",
 						"Możesz zwiększyć obrażenia zadawane przez ten efekt o {@scaledamage 6d6|5-7|1d6|psi} za każdy dodatkowy punkt psi wydany na ten efekt."
 					]
@@ -1567,7 +1567,7 @@
 					},
 					"name": "Ice Barrier",
 					"entries": [
-						"Jako akcję tworzysz ścianę lodu, której przynajmniej jedna część musi znajdować się w promieniu 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do końca twojego skupienia. Każdy 10-stopowy odcinek ściany ma AC 12 i 30 punktów życia. Istota, która uszkodzi mur atakiem w walce wręcz, otrzymuje obrażenia od zimna równe obrażeniom, jakie zadała mu ta istota."
+						"Jako akcję tworzysz ścianę lodu, której przynajmniej jedna część musi znajdować się w odległości 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do czasu, aż skończy się twoja {@status concentration}. Każdy 10-stopowy odcinek muru ma AC 12 i 30 punktów trafień. Istota, która uszkodzi mur atakiem wręcz, otrzymuje obrażenia od zimna równe obrażeniom, jakie zadała mu ta istota."
 					]
 				}
 			]
@@ -1604,7 +1604,7 @@
 					},
 					"name": "Light",
 					"entries": [
-						"Jako akcja, przedmiot, którego dotkniesz, wypromieniowuje światło w promieniu 20 stóp i przyćmiewa je na dodatkowe 20 stóp. Światło utrzymuje się do końca koncentracji. Stworzenie, którego dotkniesz, może również promieniować światłem w ten sam sposób, jeśli nie powiedzie mu się rzut na Zręczność. Gdy jest oświetlone w ten sposób, nie może się ukryć, a ataki przeciwko niemu zyskują przewagę."
+						"Jako akcja, przedmiot, którego dotkniesz promieniuje światłem w promieniu 20 stóp i przyciemnionym światłem na dodatkowe 20 stóp. Światło trwa do czasu zakończenia twojej {@status concentration} akcji. Alternatywnie, stworzenie, którego dotkniesz, promieniuje światłem w ten sam sposób, jeśli nie powiedzie mu się rzut ratujący zręczność. Gdy jest oświetlona w ten sposób, nie może się ukryć, a ataki przeciwko niej zyskują przewagę."
 					]
 				},
 				{
@@ -1618,7 +1618,7 @@
 					},
 					"name": "Shadow Beasts",
 					"entries": [
-						"Jako akcję, powodujesz pojawienie się dwóch {@creature shadow||shadows} w niezajętych przestrzeniach, które widzisz w promieniu 60 stóp od siebie. {@creature shadow||shadows} trwa do końca twojej koncentracji, a one słuchają twoich słownych rozkazów. W walce, turlaj się za ich inicjatywę i wybieraj ich zachowanie podczas swoich tur. Kiedy ten efekt się kończy, {@creature shadow||shadows} znika. Ich blok statystyk znajdziesz w Podręczniku Potworów."
+						"Jako akcja powodujesz, że w niezajętych przestrzeniach, które widzisz w promieniu 60 stóp od ciebie, pojawiają się dwa {@creature shadow||shadows}. {@creature shadow||shadows} trwają do końca twojego {@status concentration} i są posłuszne twoim słownym rozkazom. W walce turlaj się za ich inicjatywę i wybieraj ich zachowanie podczas swoich tur. Gdy ten efekt się skończy, {@creature shadow||shadows} znikają. Zobacz Podręcznik Potworów, aby zobaczyć ich blok statystyk."
 					]
 				},
 				{
@@ -1632,7 +1632,7 @@
 					},
 					"name": "Radiant Beam",
 					"entries": [
-						"Jako akcję rzucasz promień światła na jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać rzut obronny na zręczność. W przypadku niepowodzenia, otrzymuje {@damage 6d6} obrażeń od promieniowania i jest {@condition blinded} do końca koncentracji. Jeśli się powiedzie, otrzymuje o połowę mniej obrażeń. Cel {@condition blinded} może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu.",
+						"Jako akcja, rzucasz wiązkę światła na jedną istotę, którą widzisz w odległości 60 stóp od ciebie. Cel musi wykonać rzut ratujący zręczność. W przypadku nieudanego rzutu, otrzymuje {@damage 6d6} obrażeń od promieniowania i jest {@condition blinded} do końca twojego {@status concentration} czasu. W przypadku udanego testu, otrzymuje o połowę mniej obrażeń. Cel {@condition blinded} może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu.",
 						"Możesz zwiększyć obrażenia zadawane przez ten efekt o {@scaledamage 6d6|5-7|1d6|psi} za każdy dodatkowy punkt psi wydany na ten efekt."
 					]
 				}
@@ -1700,7 +1700,7 @@
 					},
 					"name": "Water Sphere",
 					"entries": [
-						"Jako akcję powodujesz, że wokół stworzenia tworzy się kula wody. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać rzut obronny na zręczność. Jeśli nie uda mu się wykonać tego rzutu, zostanie uwięziony w kuli wody do końca twojej koncentracji. Gdy cel jest uwięziony, jego prędkość spada o połowę, ma problemy z wykonywaniem ataków i nie widzi niczego, co znajduje się dalej niż 10 stóp od niego. Jednak ataki przeciwko niemu również są osłabione. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku powodzenia."
+						"Jako akcja powodujesz, że wokół stworzenia tworzy się kula wody. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od ciebie. Cel musi wykonać rzut ratujący zręczność. W przypadku nieudanego rzutu, zostaje uwięziony w kuli wody do końca twojego {@status concentration} życia. Gdy cel jest uwięziony, jego prędkość jest zmniejszona o połowę, ma problemy z rzutami na atak i nie widzi niczego w odległości większej niż 10 stóp. Jednakże, ataki przeciwko niemu również cierpią na minus. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					},
 					"name": "Animate Water",
 					"entries": [
-						"Jako akcję, powodujesz pojawienie się żywiołaka wody w niezajętej przestrzeni, którą widzisz, w promieniu 120 stóp od siebie. Żywiołak trwa do końca twojej koncentracji i słucha twoich słownych poleceń. W walce toczy się o jego inicjatywę i wybiera jego zachowanie podczas swoich tur. Kiedy ten efekt się kończy, żywiołak znika. Informacje o jego statystykach znajdziesz w Podręczniku Potworów."
+						"Jako akcję, powodujesz pojawienie się żywiołaka wody w niezajętej przestrzeni, którą widzisz w promieniu 120 stóp od ciebie. Żywiołak trwa do czasu, aż skończy się twój {@status concentration} i jest posłuszny twoim słownym rozkazom. W walce turlaj się za jego inicjatywę i wybieraj jego zachowanie podczas swoich tur. Kiedy ten efekt się kończy, elemental znika. Zobacz w Podręczniku Potworów jego blok statystyk.d każdej ze swoich tur, kończąc efekt na sobie przy udanej."
 					]
 				}
 			]
@@ -1741,7 +1741,7 @@
 					},
 					"name": "Cloud Steps",
 					"entries": [
-						"W ramach akcji wyczarowujesz chmury, tworząc solidne, półprzezroczyste schody, które utrzymują się do końca koncentracji. Schody tworzą spiralę, która wypełnia obszar o wymiarach 10 stóp na 10 stóp i wznosi się na wysokość 20 stóp na każdy wydany punkt psi."
+						"Jako akcja, wyczarowujesz chmury, tworząc solidne, półprzezroczyste schody, które trwają do czasu zakończenia twojej {@status concentration}. Schody tworzą spiralę, która wypełnia obszar 10 stóp na 10 stóp i sięga w górę o 20 stóp na każdy wydany punkt psi."
 					]
 				},
 				{
@@ -1765,7 +1765,7 @@
 					},
 					"name": "Wall of Clouds",
 					"entries": [
-						"Jako akcję tworzysz ścianę chmur, z których przynajmniej jedna część musi znajdować się w promieniu 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do końca twojej koncentracji. Stworzenia mogą przechodzić przez nią bez przeszkód, ale ściana blokuje widzenie."
+						"Jako akcję tworzysz ścianę chmur, której przynajmniej jedna część musi znajdować się w odległości 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do końca twojej {@status concentration} akcji. Stworzenia mogą przechodzić przez nią bez przeszkód, ale ściana blokuje widzenie."
 					]
 				},
 				{
@@ -1800,7 +1800,7 @@
 					},
 					"name": "Wall of Thunder",
 					"entries": [
-						"Jako akcję, tworzysz ścianę piorunów, której przynajmniej jedna część musi znajdować się w promieniu 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do końca twojej koncentracji. Każda stopa przesunięta przez ścianę kosztuje 1 dodatkową stopę ruchu. Kiedy stworzenie wchodzi w obszar ściany po raz pierwszy w swojej turze lub zaczyna tam swoją turę, musi udać mu się rzut na Wytrzymałość, albo otrzyma {@damage 6d6} obrażeń od piorunów, zostanie odepchnięte w linii prostej na odległość do 30 stóp od ściany i powalone {@condition prone}."
+						"Jako akcję tworzysz ścianę piorunów, której przynajmniej jedna część musi znajdować się w promieniu 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do czasu, aż skończy się twoja {@status concentration}. Każda stopa przesunięta przez ścianę kosztuje 1 dodatkową stopę ruchu. Kiedy stworzenie wchodzi w przestrzeń muru po raz pierwszy w swojej turze lub zaczyna tam swoją turę, musi mu się udać rzut ratujący wytrzymałość, albo otrzyma {@damage 6d6} obrażeń od piorunów, zostanie odepchnięte w linii prostej do 30 stóp od muru i zostanie powalone {@condition prone}."
 					]
 				},
 				{
@@ -1867,7 +1867,7 @@
 					},
 					"name": "Wall of Wood",
 					"entries": [
-						"Jako akcję tworzysz ścianę z drewna, której przynajmniej jedna część musi znajdować się w promieniu 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do końca twojego skupienia. Każdy odcinek muru o szerokości 5 stóp ma AC 12 i 100 punktów życia. Wyłamanie jednej części muru tworzy w nim dziurę o wymiarach 5 stóp na 5 stóp, ale poza tym mur pozostaje nienaruszony."
+						"Jako akcję tworzysz ścianę z drewna, której przynajmniej jedna część musi znajdować się w odległości 60 stóp od ciebie. Ściana ma 60 stóp długości, 15 stóp wysokości i 1 stopę grubości. Ściana trwa do końca twojej {@status concentration} akcji. Każda sekcja muru o szerokości 5 stóp ma AC 12 i 100 punktów trafień. Wyłamanie jednej części tworzy dziurę o wymiarach 5 stóp na 5 stóp, ale poza tym ściana pozostaje nienaruszona. jest powalony (%2%)."
 					]
 				},
 				{
@@ -1881,7 +1881,7 @@
 					},
 					"name": "Armored Form",
 					"entries": [
-						"Jako działanie dodatkowe zyskujesz odporność na obrażenia od ciosów, przebicia i cięcia, która trwa do końca koncentracji."
+						"Jako akcja dodatkowa, zyskujesz odporność na obrażenia kłute, przeszywające i skośne, która trwa do czasu zakończenia twojej {@status concentration}."
 					]
 				},
 				{
@@ -1895,7 +1895,7 @@
 					},
 					"name": "Animate Earth",
 					"entries": [
-						"Jako akcję, powodujesz pojawienie się żywiołaka ziemi w niezajętej przestrzeni, którą widzisz, w promieniu 120 stóp od siebie. Żywiołak trwa do końca twojej koncentracji i słucha twoich słownych poleceń. W walce toczy się o jego inicjatywę i wybiera jego zachowanie podczas swoich tur. Po zakończeniu tego efektu żywiołak znika. Informacje o jego statystykach znajdziesz w Podręczniku Potworów."
+						"Jako akcja, powodujesz pojawienie się żywiołaka ziemi w niezajętej przestrzeni, którą widzisz w promieniu 120 stóp od ciebie. Żywiołak trwa do końca twojej {@status concentration} i jest posłuszny twoim słownym rozkazom. W walce turlaj się za jego inicjatywę i wybieraj jego zachowanie podczas swoich tur. Kiedy ten efekt się kończy, elemental znika. Sprawdź w Podręczniku Potworów jego blok statystyk."
 					]
 				}
 			]
@@ -1992,7 +1992,7 @@
 					},
 					"name": "Faithful Archer",
 					"entries": [
-						"Jako akcję dodatkową, nasycasz broń dystansową ograniczoną zdolnością odczuwania. Dopóki twoja koncentracja nie wygaśnie, możesz wykonać dodatkowy atak tą bronią na początku każdej swojej tury (nie wymaga to żadnej akcji). Jeśli jest to broń rzucana, wraca ona do ręki za każdym razem, gdy wykonujesz nią atak."
+						"Jako akcja bonusowa, nasączasz broń dystansową ograniczoną zdolnością odczuwania. Do czasu zakończenia {@status concentration} możesz wykonać dodatkowy atak tą bronią na początku każdej swojej tury (nie wymaga to żadnej akcji). Jeśli jest to broń rzucona, wraca ona do twojego chwytu za każdym razem, gdy wykonujesz nią jakikolwiek atak."
 					]
 				}
 			]
@@ -2029,7 +2029,7 @@
 					},
 					"name": "Step from Sight",
 					"entries": [
-						"Jako akcja dodatkowa, zasłaniasz się przed wzrokiem. Za każdy dodatkowy punkt psi wydany na tę umiejętność możesz obrać za cel jedną dodatkową istotę. Dodane cele muszą być dla ciebie widoczne i znajdować się w promieniu 60 stóp od ciebie. Każdy cel obraca się o {@condition invisible} i pozostaje w tym stanie do końca koncentracji lub do momentu, gdy bezpośrednio po tym zostanie namierzony, zadaje obrażenia lub w inny sposób wpływa na dowolną istotę za pomocą ataku, zaklęcia lub innej umiejętności."
+						"Jako akcja dodatkowa, zamaskuj się przed wzrokiem. Możesz obrać za cel jedną dodatkową istotę za każdy dodatkowy punkt psi, który wydasz na tę umiejętność. Dodane cele muszą być dla ciebie widoczne i znajdować się w odległości 60 stóp od ciebie. Każdy cel zmienia się w {@condition invisible} i pozostaje w takim stanie, dopóki nie skończy się twoja {@status concentration} zdolność lub dopóki bezpośrednio po tym nie wymierzy, nie zada obrażeń lub w inny sposób nie wpłynie na dowolną istotę za pomocą ataku, zaklęcia lub innej zdolności."
 					]
 				},
 				{
@@ -2043,7 +2043,7 @@
 					},
 					"name": "Enduring Invisibility",
 					"entries": [
-						"Jako akcja dodatkowa, obracasz się o {@condition invisible} i pozostajesz w tej pozycji do końca koncentracji."
+						"Jako akcja dodatkowa, obracasz się w {@condition invisible} i pozostajesz w tym stanie, dopóki nie skończy się twoje {@status concentration}."
 					]
 				}
 			]
@@ -2070,7 +2070,7 @@
 					},
 					"name": "Wandering Mind",
 					"entries": [
-						"Wchodzisz w głęboką kontemplację. Jeśli skoncentrujesz się przez cały czas trwania tej opcji, zyskujesz biegłość w maksymalnie trzech z następujących umiejętności (jedna umiejętność za każde wydane 2 punkty psi): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} i {@skill Survival}. Korzyść trwa przez 1 godzinę, nie wymaga koncentracji."
+						"Wchodzisz w głęboką kontemplację. Jeśli skupisz się przez pełny czas trwania tej opcji, zyskujesz wtedy biegłość w maksymalnie trzech z następujących umiejętności (jedna umiejętność za każde wydane 2 punkty psi): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} i {@skill Survival}. Korzyść trwa przez 1 godzinę, nie wymaga {@status concentration}."
 					]
 				},
 				{
@@ -2122,7 +2122,7 @@
 					},
 					"name": "Wandering Eye",
 					"entries": [
-						"Jako akcja, tworzysz psychiczny sensor w promieniu 60 stóp od ciebie. Czujnik trwa do momentu zakończenia twojej koncentracji. Sensor jest niewidzialny i unosi się w powietrzu. Mentalnie odbierasz od niego informacje wizualne, które mają normalne widzenie i ciemność z zasięgiem 60 stóp. Sensor może patrzeć we wszystkich kierunkach. Jako akcja, możesz przesunąć sensor do 30 stóp w dowolnym kierunku. Nie ma limitu, jak daleko od ciebie oko może się poruszać, ale nie może wejść na inną płaszczyznę istnienia. Solidna bariera blokuje ruch oka, ale oko może przejść przez otwór o średnicy zaledwie 1 cala."
+						"Jako akcja, tworzysz psychiczny sensor w promieniu 60 stóp od ciebie. Czujnik trwa do czasu zakończenia twojej {@status concentration}. Czujnik jest niewidzialny i unosi się w powietrzu. Mentalnie odbierasz od niego informacje wizualne, które mają normalne widzenie i ciemność z zasięgiem 60 stóp. Sensor może patrzeć we wszystkich kierunkach. Jako akcja, możesz przesunąć sensor do 30 stóp w dowolnym kierunku. Nie ma ograniczenia co do tego, jak daleko od ciebie może się poruszać oko, ale nie może wejść na inną płaszczyznę istnienia. Solidna bariera blokuje ruch oka, ale oko może przejść przez otwór o średnicy zaledwie 1 cala."
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					},
 					"name": "Nomad's Gate",
 					"entries": [
-						"W ramach akcji tworzysz sześcian szarego, przyćmionego światła o średnicy 5 stóp w promieniu 5 stóp od siebie. Tworzysz identyczny sześcian w dowolnym wybranym przez siebie miejscu w promieniu 1 mili, które widziałeś w ciągu ostatnich 24 godzin. Dopóki twoja koncentracja nie wygaśnie, każdy, kto wejdzie do jednego z sześcianów, natychmiast teleportuje się do drugiego, pojawiając się w niezajętym miejscu obok niego. Teleportacja nie powiedzie się, jeśli nie ma miejsca, w którym istota mogłaby się pojawić."
+						"Jako akcja, tworzysz 5-stopowy sześcian przyćmionego, szarego światła w promieniu 5 stóp od ciebie. Tworzysz identyczny sześcian w dowolnym wybranym przez siebie punkcie w promieniu 1 mili, który oglądałeś w ciągu ostatnich 24 godzin. Dopóki nie skończy się twoja {@status concentration}, każdy kto wejdzie do jednego z sześcianów natychmiast teleportuje się do drugiego, pojawiając się w niezajętej przestrzeni obok niego. Teleportacja nie udaje się, jeśli nie ma miejsca na pojawienie się istoty w.ruchu oka, ale oko może przejść przez otwór o średnicy nawet 1 cala."
 					]
 				}
 			]
@@ -2260,7 +2260,7 @@
 					},
 					"name": "Precognitive Hunch",
 					"entries": [
-						"Do końca koncentracji, za każdym razem, gdy wykonujesz atak, rzut obronny lub sprawdzasz umiejętność, rzucasz {@dice d4} i dodajesz go do wyniku."
+						"Jako akcja dodatkowa, otwierasz się na otrzymywanie chwilowych wglądów, które zwiększają twoje szanse na sukces; do czasu zakończenia {@status concentration}, za każdym razem, gdy wykonujesz rzut na atak, rzut ratunkowy lub kontrolę zdolności, rzucasz {@dice d4} i dodajesz go do całości."
 					]
 				},
 				{
@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"Jako akcję, tworzysz w swoim umyśle psychiczny model rzeczywistości i ustawiasz go tak, by pokazywał ci kilka sekund w przyszłość. Do czasu zakończenia koncentracji nie możesz być {@quickref Surprise|PHB|3|0|surprised}, rolki ataku przeciwko tobie nie mogą zyskać przewagi, a ty zyskujesz premię +10 do inicjatywy."
+						"Jako działanie, tworzysz w swoim umyśle psychiczny model rzeczywistości i ustawiasz go tak, aby pokazywał Ci kilka sekund w przyszłość. Dopóki nie skończy się twój {@status concentration}, nie możesz być {@quickref Surprise|PHB|3|0|surprised}, rolki ataku przeciwko tobie nie mogą zyskać przewagi, a ty zyskujesz premię +10 do inicjatywy."
 					]
 				},
 				{
@@ -2394,7 +2394,7 @@
 					},
 					"name": "Augmented Weapon",
 					"entries": [
-						"Jako akcja dodatkowa, dotknij jednej {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Do czasu zakończenia twojej koncentracji, ta broń staje się magiczną bronią z premią +3 do swoich rolek ataku i obrażeń."
+						"Jako akcja dodatkowa, dotknij jednego {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Dopóki nie skończy się twój {@status concentration}, ta broń staje się magiczną bronią z premią +3 do swoich rolek ataku i obrażeń."
 					]
 				}
 			]
@@ -2484,7 +2484,7 @@
 					},
 					"name": "Distracting Haze",
 					"entries": [
-						"Jako akcję, wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Istota ta musi wykonać rzut obronny na inteligencję. W przypadku nieudanego testu, otrzymuje {@scaledamage 1d10|1-7|1d10|psi} obrażeń psychicznych za każdy wydany punkt psi i nie może zobaczyć niczego w odległości większej niż 10 stóp, dopóki nie zakończy się twoja koncentracja. W przypadku udanego ataku, otrzymuje o połowę mniej obrażeń."
+						"Jako akcję wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. To stworzenie musi wykonać rzut ratujący inteligencję. W przypadku nieudanego testu, otrzymuje {@scaledamage 1d10|1-7|1d10|psi} obrażeń psychicznych za każdy wydany punkt psi i nie może zobaczyć niczego w odległości większej niż 10 stóp od siebie, aż do zakończenia twojego {@status concentration}. W przypadku udanego testu, otrzymuje o połowę mniej obrażeń."
 					]
 				},
 				{
@@ -2612,7 +2612,7 @@
 					},
 					"name": "Phantom Foe",
 					"entries": [
-						"Jako akcję wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać rzut ratujący inteligencję. W przypadku nieudanego testu, postrzega on przerażającą istotę sąsiadującą z nim do czasu zakończenia twojej koncentracji. W tym czasie cel nie może podejmować reakcji i otrzymuje {@damage 1d8} obrażeń psychicznych na początku każdej swojej tury. Cel może powtórzyć rzut ratunkowy na koniec każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu. Możesz zwiększyć obrażenia o {@scaledamage 1d8|3-7|1d8|psi} za każdy dodatkowy punkt psi wydany na tę umiejętność."
+						"Jako akcję wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać rzut ratujący inteligencję. Przy nieudanym save'ie postrzega sąsiadującą z nim przerażającą istotę do czasu, aż skończy się twój {@status concentration}. W tym czasie cel nie może podejmować reakcji, a na początku każdej swojej tury otrzymuje {@damage 1d8} obrażeń psychicznych. Cel może powtórzyć rzut ratunkowy na koniec każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu. Możesz zwiększyć obrażenia o {@scaledamage 1d8|3-7|1d8|psi} za każdy dodatkowy punkt psi wydany na tę umiejętność."
 					]
 				},
 				{
@@ -2626,7 +2626,7 @@
 					},
 					"name": "Phantom Betrayal",
 					"entries": [
-						"Jako akcję, zasiewasz w umyśle istoty paranoję urojeniową. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Celowi musi się udać rzut na inteligencję, albo do końca twojej koncentracji będzie musiał atakować swoich sojuszników i zadawać im inne obrażenia. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu. Istota jest odporna na tę umiejętność, jeśli jest odporna na bycie {@condition charmed}."
+						"Jako akcja, zasiewasz w umyśle istoty urojone paranoje. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi odnieść sukces w rzucie ratunkowym na inteligencję, lub do czasu zakończenia twojej {@status concentration} akcji musi kierować ataki i inne efekty obrażeń na swoich sojuszników. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu. Istota jest odporna na tę zdolność, jeśli jest odporna na bycie {@condition charmed}.pent na tę zdolność."
 					]
 				},
 				{
@@ -2640,7 +2640,7 @@
 					},
 					"name": "Phantom Riches",
 					"entries": [
-						"Jako akcję, zasiewasz w umyśle istoty fantom bardzo pożądanego przedmiotu. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać rzut obronny na inteligencję. W przypadku niepowodzenia, zyskujesz częściową kontrolę nad zachowaniem celu do czasu zakończenia koncentracji; cel porusza się w każdej turze tak, jak chcesz, myśląc, że ściga upiorny przedmiot, którego pragnie. Jeśli nie otrzymał obrażeń od swojej ostatniej tury, może użyć swojej akcji tylko do podziwiania przedmiotu, który stworzyłeś w jego percepcji. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+						"Jako akcja, zasadzasz w umyśle istoty fantom bardzo pożądanego przedmiotu. Wybierz jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi wykonać rzut ratujący inteligencję. W przypadku nieudanego rzutu, zyskujesz częściową kontrolę nad zachowaniem celu do końca swojego {@status concentration} życia; cel porusza się zgodnie z twoimi życzeniami w każdej swojej turze, tak jak myśli, że ściga upragniony fantom. Jeśli nie otrzymał obrażeń od swojej ostatniej tury, może użyć swojej akcji tylko do podziwiania obiektu, który stworzyłeś w jego percepcji. Cel może powtórzyć rzut ratunkowy na koniec każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				}
 			]
@@ -2697,7 +2697,7 @@
 					},
 					"name": "Psychic Grip",
 					"entries": [
-						"Jako akcję, celujesz w jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Celowi musi się udać rzut na inteligencję, w przeciwnym razie jest {@condition paralyzed} do końca twojej koncentracji. Na koniec każdej swojej tury może powtórzyć rzut ratujący. Jeśli się powiedzie, efekt ten wygasa. W przypadku porażki, możesz użyć swojej reakcji, aby zmusić cel do poruszenia się do połowy jego prędkości, nawet jeśli jest {@condition paralyzed}."
+						"Jako akcja, celujesz w jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Celowi musi się udać rzut ratujący inteligencję, w przeciwnym razie jest on {@condition paralyzed} do czasu zakończenia twojego {@status concentration}. Na koniec każdej swojej tury może powtórzyć rzut ratujący. W przypadku sukcesu, efekt ten kończy się. W przypadku porażki możesz użyć swojej reakcji, aby zmusić cel do poruszania się z prędkością do połowy jego prędkości, nawet jeśli jest to {@condition paralyzed}.Cel może powtórzyć rzut ratujący na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
 					]
 				},
 				{
@@ -2711,7 +2711,7 @@
 					},
 					"name": "Psychic Domination",
 					"entries": [
-						"Jako akcję, celujesz w jedną istotę, którą widzisz w promieniu 60 stóp od siebie. Cel musi zdać rzut na inteligencję, albo ty decydujesz o akcjach i ruchu stworzenia w jego turze, aż do końca twojej koncentracji. Na koniec każdej swojej tury może powtórzyć rzut ratunkowy, kończąc efekt na sobie w przypadku sukcesu. Stworzenie jest odporne na tę umiejętność, jeśli jest odporne na bycie {@condition charmed}."
+						"Jako akcja, celujesz w jedną istotę, którą widzisz w promieniu 60 stóp od Ciebie. Cel musi odnieść sukces w rzucie obronnym na inteligencję lub wybierasz akcje i ruchy stworzenia w jego turze, aż do końca twojej {@status concentration}. Na koniec każdej swojej tury może powtórzyć rzut ratujący, kończąc efekt na sobie w przypadku sukcesu. Stworzenie jest odporne na tę zdolność, jeśli jest odporne na bycie {@condition charmed}."
 					]
 				}
 			]
@@ -2738,7 +2738,7 @@
 					},
 					"name": "Tremorsense",
 					"entries": [
-						"Jako działanie dodatkowe zyskujesz zmysł drżenia o promieniu 30 stóp, który trwa do końca koncentracji."
+						"Jako akcja bonusowa zyskujesz tremorsense o promieniu 30 stóp, która trwa do czasu zakończenia twojej {@status concentration}."
 					]
 				},
 				{
@@ -2762,7 +2762,7 @@
 					},
 					"name": "Piercing Sight",
 					"entries": [
-						"Jako dodatkowe działanie, zyskujesz zdolność widzenia przez obiekty o grubości do 1 stopy w promieniu 30 stóp od ciebie. To widzenie trwa do końca koncentracji."
+						"Jako akcja bonusowa zyskujesz zdolność widzenia przez obiekty o grubości do 1 stopy w promieniu 30 stóp od ciebie. Ten wzrok trwa do momentu, gdy skończy się twoja {@status concentration}."
 					]
 				},
 				{
@@ -2776,7 +2776,7 @@
 					},
 					"name": "Truesight",
 					"entries": [
-						"Jako działanie dodatkowe zyskujesz zdolność widzenia w promieniu 30 stóp, która trwa do końca koncentracji."
+						"Jako akcja bonusowa zyskujesz truesight o promieniu 30 stóp, który trwa do czasu zakończenia twojej {@status concentration}."
 					]
 				}
 			]

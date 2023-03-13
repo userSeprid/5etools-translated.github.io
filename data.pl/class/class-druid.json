@@ -2709,7 +2709,7 @@
 					"items": [
 						"Twoje statystyki z gry zostają zastąpione statystykami bestii, ale zachowujesz swoje ułożenie, osobowość oraz wyniki Inteligencji, Mądrości i Charyzmy. Zachowujesz również wszystkie swoje umiejętności i przywileje rzutów ratunkowych, a także te, które posiada stworzenie. Jeśli stwór ma tę samą biegłość co ty, a premia w jego bloku statystyk jest wyższa niż twoja, użyj premii stwora zamiast swojej. Jeśli stworzenie ma legendarne lub legendarne akcje, nie możesz ich użyć.",
 						"Podczas przemiany przejmujesz punkty trafień i kostki trafień bestii. Kiedy powracasz do swojej normalnej postaci, wracasz do liczby punktów trafień, którą miałeś przed przemianą. Jeśli jednak przemiana nastąpiła w wyniku spadku do 0 punktów trafień, wszystkie nadmiarowe obrażenia przechodzą do normalnej postaci. Na przykład, jeśli w postaci zwierzęcia otrzymałeś 10 obrażeń i został ci tylko 1 punkt życia, to po przemianie otrzymasz 9 obrażeń. Dopóki nadwyżka obrażeń nie spowoduje, że Twoja normalna postać spadnie do 0 punktów życia, nie zostaniesz powalony {@condition unconscious}.",
-						"Nie możesz rzucać zaklęć, a twoja zdolność mówienia lub podejmowania jakichkolwiek działań wymagających użycia rąk jest ograniczona do możliwości twojej formy bestii. Przemiana nie przerywa koncentracji na już rzuconym zaklęciu ani nie uniemożliwia wykonywania akcji, które są częścią zaklęcia, takiego jak {@spell call lightning}, które już rzuciłeś.",
+						"Nie możesz rzucać zaklęć, a twoja zdolność mówienia lub podejmowania jakichkolwiek działań wymagających rąk jest ograniczona do możliwości twojej formy bestii. Przemiana nie przerywa jednak twojego {@status concentration} na już rzuconym zaklęciu, ani nie uniemożliwia ci wykonywania akcji będących częścią zaklęcia, takich jak {@spell call lightning}, które już rzuciłeś.",
 						"Zachowujesz wszystkie cechy swojej klasy, rasy lub innego źródła i możesz z nich korzystać, jeśli nowa postać jest fizycznie w stanie to zrobić. Nie możesz jednak korzystać ze swoich specjalnych zmysłów, takich jak {@sense darkvision}, chyba że twoja nowa postać również posiada ten zmysł.",
 						"Wybierasz, czy twój ekwipunek spadnie na ziemię w twojej przestrzeni, połączy się z twoją nową postacią, czy będzie przez nią noszony. Noszony ekwipunek działa normalnie, ale DM decyduje, czy nowa postać może nosić dany element wyposażenia, bazując na kształcie i rozmiarze stworzenia. Twój ekwipunek nie zmienia rozmiaru ani kształtu, aby dopasować się do nowej postaci, a każdy ekwipunek, którego nowa postać nie może nosić, musi albo upaść na ziemię, albo połączyć się z nią. Wyposażenie, które połączy się z postacią, nie działa, dopóki nie opuścisz tej postaci."
 					]
@@ -3797,7 +3797,7 @@
 					"type": "entries",
 					"name": "Dragon",
 					"entries": [
-						"Pojawia się na tobie gwiazdozbiór mądrego smoka. Kiedy wykonujesz test na Inteligencję, Mądrość lub Rzut na Konstytucję, aby utrzymać koncentrację na zaklęciu, możesz potraktować wynik 9 lub niższy na {@dice d20} jako 10."
+						"Pojawia się na tobie konstelacja mądrego smoka. Kiedy wykonujesz test Inteligencji lub Mądrości lub rzut ratujący Konstytucję, aby utrzymać {@status concentration} na zaklęciu, możesz potraktować wynik 9 lub niższy na {@dice d20} jako 10.eady cast."
 					]
 				}
 			]
@@ -4118,7 +4118,7 @@
 						{
 							"type": "item",
 							"name": "Dragon",
-							"entry": "Pojawia się na tobie gwiazdozbiór mądrego, starożytnego smoka. Kiedy wykonujesz test na Inteligencję, Mądrość lub Rzut na Konstytucję, aby utrzymać koncentrację na zaklęciu, możesz potraktować wynik 9 lub niższy na {@dice d20} jako 10."
+							"entry": "Pojawia się na tobie konstelacja mądrego, starożytnego smoka. Kiedy wykonujesz test Inteligencji lub Mądrości lub rzut ratunkowy Konstytucji, aby utrzymać {@status concentration} na zaklęciu, możesz potraktować wynik 9 lub niższy na {@dice d20} jako 10."
 						}
 					]
 				}
@@ -4874,7 +4874,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Od 14. poziomu, duchy natury, z którymi obcujesz, chronią cię, gdy jesteś najbardziej bezbronny. Jeśli zostaniesz zredukowany do 0 punktów trafień lub zostaniesz {@condition incapacitated} wbrew swojej woli, możesz natychmiast uzyskać korzyści z {@spell conjure animals}, tak jakby zostało rzucone ze slotu na zaklęcie 9. poziomu. Przywołuje ono cztery wybrane przez ciebie bestie, które mają poziom trudności 2 lub niższy. Wyczarowane bestie pojawiają się w promieniu 20 stóp od ciebie. Jeśli nie otrzymają od ciebie żadnych rozkazów, chronią cię przed obrażeniami i atakują twoich wrogów. Zaklęcie trwa przez 1 godzinę, nie wymagając koncentracji, lub do momentu, gdy je odwołasz (nie wymaga to żadnej akcji).",
+				"Począwszy od 14 poziomu, duchy natury, z którymi obcujesz, chronią cię, gdy jesteś najbardziej bezbronny. Jeśli zostaniesz zredukowany do 0 punktów trafień lub zostaniesz {@condition incapacitated} wbrew swojej woli, możesz natychmiast zyskać korzyści z {@spell conjure animals}, tak jakby zostało rzucone ze slotu zaklęcia 9. poziomu. Przywołuje on cztery wybrane przez ciebie bestie, które mają poziom wyzwania 2 lub niższy. Wyczarowane bestie pojawiają się w odległości 20 stóp od ciebie. Jeśli nie otrzymują od ciebie rozkazów, chronią cię przed krzywdą i atakują twoich wrogów. Zaklęcie trwa przez 1 godzinę, nie wymagając {@status concentration}, lub dopóki go nie odwołasz (nie wymaga akcji).",
 				"Po użyciu tej cechy nie można z niej skorzystać ponownie, dopóki nie zakończy się długiego odpoczynku."
 			]
 		},
@@ -5222,7 +5222,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Od 14. poziomu, duchy natury, z którymi obcujesz, chronią cię, gdy jesteś najbardziej bezbronny. Jeśli zostaniesz zredukowany do 0 punktów trafień lub zostaniesz {@condition incapacitated} wbrew swojej woli, możesz natychmiast uzyskać korzyści płynące z {@spell conjure animals}, tak jakby zostało rzucone przy użyciu 9-poziomowego slotu na zaklęcie. Przywołuje ono cztery wybrane przez ciebie bestie, które mają poziom trudności 2 lub niższy. Wyczarowane bestie pojawiają się w promieniu 20 stóp od ciebie. Jeśli nie otrzymają od ciebie żadnych rozkazów, chronią cię przed obrażeniami i atakują twoich wrogów. Zaklęcie trwa przez 1 godzinę, nie wymagając koncentracji, lub do czasu, aż je odwołasz (nie wymaga to żadnej akcji).",
+				"Począwszy od 14 poziomu, duchy natury, z którymi obcujesz, chronią cię, gdy jesteś najbardziej bezbronny. Jeśli zostaniesz zredukowany do 0 punktów trafień lub zostaniesz {@condition incapacitated} wbrew swojej woli, możesz natychmiast uzyskać korzyści z {@spell conjure animals}, tak jakby zostało rzucone przy użyciu 9. poziomu slotu na zaklęcie. Przywołuje cztery wybrane przez ciebie bestie, które mają wskaźnik wyzwania 2 lub niższy. Wyczarowane bestie pojawiają się w odległości 20 stóp od ciebie. Jeśli nie otrzymują od ciebie rozkazów, chronią cię przed krzywdą i atakują twoich wrogów. Zaklęcie trwa przez 1 godzinę, nie wymagając {@status concentration}, lub dopóki go nie odwołasz (nie wymaga akcji).ithin 20 feet of you. Jeśli nie otrzymują od ciebie rozkazów, chronią cię przed krzywdą i atakują twoich wrogów. Zaklęcie trwa przez 1 godzinę, nie wymagając {@status concentration}, lub dopóki go nie odwołasz (nie wymaga akcji).",
 				"Po użyciu tej cechy nie można z niej skorzystać ponownie, dopóki nie zakończy się długiego odpoczynku."
 			]
 		}

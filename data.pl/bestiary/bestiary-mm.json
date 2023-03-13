@@ -90,7 +90,7 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Pięć aarakoków znajdujących się w odległości 30 stóp od siebie może magicznie przywołać {@creature air elemental}. Każda z tych pięciu osób musi użyć swojej akcji i ruchu w trzech kolejnych turach, aby wykonać powietrzny taniec i musi zachować koncentrację podczas wykonywania tej czynności (tak jakby koncentrowała się na zaklęciu). Kiedy cała piątka zakończy swoją trzecią turę tańca, żywiołak pojawia się w niezajętej przestrzeni w promieniu 60 stóp od nich. Jest do nich przyjaźnie nastawiony i słucha ich poleceń. Pozostaje na 1 godzinę, dopóki on lub wszyscy jego przywoływacze nie zginą, lub dopóki któryś z przywoływaczy nie odwoła go w ramach akcji dodatkowej. Przywoływacz nie może ponownie wykonać tańca, dopóki nie zakończy krótkiego odpoczynku. Kiedy żywiołak wraca na płaszczyznę żywiołów powietrza, każda aarakokra w promieniu 5 stóp od niego może wrócić razem z nim."
+						"Pięć aarakokra w odległości 30 stóp od siebie może magicznie przywołać {@creature air elemental}. Każda z pięciu musi użyć swojej akcji i ruchu w trzech kolejnych turach, aby wykonać powietrzny taniec i musi utrzymać {@status concentration} podczas tego (tak jakby {@status concentration||concentrating} na zaklęciu). Kiedy cała piątka zakończy swoją trzecią turę tańca, żywiołak pojawia się w niezajętej przestrzeni w promieniu 60 stóp od nich. Jest przyjaźnie nastawiony do nich i słucha ich wypowiadanych poleceń. Pozostaje przez 1 godzinę, dopóki on lub wszyscy jego przywoływacze nie zginą, lub dopóki któryś z jego przywoływaczy nie odwoła go jako akcję bonusową. Przywoływacz nie może ponownie wykonać tańca, dopóki nie zakończy krótkiego odpoczynku. Kiedy żywiołak wraca na Płaszczyznę Żywiołów Powietrza, każda aarakokra w promieniu 5 stóp od niego może wrócić razem z nim."
 					]
 				}
 			],
@@ -15774,7 +15774,7 @@
 							"name": "Wind Aura",
 							"type": "entries",
 							"entries": [
-								"Olbrzyma otacza magiczna aura wiatru. Jest to sfera o promieniu 10 stóp, która trwa tak długo, jak długo olbrzym się na niej koncentruje (jak na zaklęciu). Podczas działania aury olbrzym zyskuje premię +2 do AC przeciwko atakom z broni dystansowej, a wszystkie otwarte płomienie w obrębie aury gasną, chyba że są magiczne."
+								"Magiczna aura wiatru otacza olbrzyma. Aura jest sferą o promieniu 10 stóp, która trwa tak długo, jak długo olbrzym utrzymuje na niej {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęciu). Podczas działania aury olbrzym zyskuje premię +2 do swojego AC przeciwko atakom bronią dystansową, a wszystkie otwarte płomienie w obrębie aury są gaszone, chyba że są magiczne.y z jego przywoływaczy odwołuje ją jako akcję dodatkową. Przywoływacz nie może ponownie wykonać tańca, dopóki nie zakończy krótkiego odpoczynku. Kiedy żywiołak wraca na Płaszczyznę Żywiołów Powietrza, każda aarakokra w promieniu 5 stóp od niego może wrócić razem z nim."
 							]
 						}
 					],
@@ -17731,7 +17731,7 @@
 				{
 					"name": "Darkness Aura (1/Day)",
 					"entries": [
-						"Ciemność o promieniu 15 stóp rozciąga się od mrocznego płaszcza, porusza się wraz z nim i rozprzestrzenia za rogami. Ciemność trwa tak długo, jak długo mroczny mag utrzymuje koncentrację, do 10 minut (jak w przypadku koncentracji na zaklęciu). Ciemnowidzenie nie może przeniknąć przez ciemność, a żadne naturalne światło nie może jej oświetlić. Jeśli jakakolwiek część ciemności pokryje się z obszarem światła stworzonym przez zaklęcie 2. poziomu lub niższe, zaklęcie tworzące światło jest rozpraszane."
+						"Od darkmantle rozciąga się magiczny mrok o promieniu 15 stóp, porusza się wraz z nim i rozchodzi się po kątach. Mrok trwa tak długo, jak długo darkmantle utrzymuje {@status concentration}, do 10 minut (jak {@status concentration||concentrating} na zaklęciu). Ciemnowidzenie nie może przeniknąć tej ciemności, ani żadne naturalne światło nie może jej oświetlić. Jeśli jakakolwiek część ciemności pokryje się z obszarem światła stworzonym przez czar 2. poziomu lub niższy, czar tworzący światło jest dispelled.lane of Air, każda aarakokra w promieniu 5 stóp od niego może z nim wrócić."
 					]
 				}
 			],
@@ -19528,7 +19528,7 @@
 				{
 					"name": "Create Whirlwind",
 					"entries": [
-						"Cylinder wirującego powietrza o promieniu 5 stóp i wysokości 30 stóp magicznie tworzy się na punkcie, który djinni widzi w promieniu 120 stóp od niego. Wicher trwa tak długo, jak długo djinni utrzymuje koncentrację (tak jakby koncentrował się na zaklęciu). Każda istota, oprócz djinni, która wejdzie w wir, musi wykonać {@dc 18} rzutu ratującego z Wytrzymałości albo zostanie przez niego {@condition restrained} porażona. Dżinni może poruszyć wirem na odległość do 60 stóp jako akcję, a stworzenia {@condition restrained} wciągnięte przez wir poruszają się razem z nim. Wicher kończy działanie, jeśli djinni straci go z oczu.",
+						"Cylinder wirującego powietrza o promieniu 5 stóp i wysokości 30 stóp magicznie tworzy się na punkcie, który djinni widzi w promieniu 120 stóp od niego. Wir trwa tak długo, jak długo djinni utrzymuje {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęciu). Każda istota oprócz djinni, która wejdzie w wir, musi odnieść sukces w rzucie ratunkowym na wytrzymałość {@dc 18} lub zostać przez niego {@condition restrained} porażona. Djinni może poruszyć wir na odległość do 60 stóp jako akcję, a stworzenia {@condition restrained} objęte wirem poruszają się razem z nim. Wir kończy się, jeśli djinni straci go z oczu.",
 						"Stworzenie może użyć swojej akcji, aby uwolnić istotę {@condition restrained} od wiru, w tym siebie, przez udany test {@dc 18} Wytrzymałości. Jeśli test się powiedzie, stworzenie przestaje być {@condition restrained} i przenosi się na najbliższe miejsce poza wirem."
 					]
 				}
@@ -19782,7 +19782,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Sobowtór w magiczny sposób odczytuje myśli jednej istoty znajdującej się w promieniu 60 stóp od niego. Efekt może przeniknąć przez bariery, ale 3 stopy drewna lub ziemi, 2 stopy kamienia, 2 cale metalu lub cienka warstwa ołowiu blokują go. Gdy cel znajduje się w zasięgu, sobowtór może kontynuować czytanie jego myśli, o ile koncentracja sobowtóra nie zostanie przerwana (jak w przypadku koncentrowania się na zaklęciu). Podczas czytania w myślach celu, sobowtór ma przewagę w testach Mądrości ({@skill Insight}) i Charyzmy ({@skill Deception}, {@skill Intimidation} i {@skill Persuasion}) przeciwko celowi."
+						"Doppelganger magicznie odczytuje powierzchniowe myśli jednej istoty w promieniu 60 stóp od niego. Efekt może przenikać przez bariery, ale 3 stopy drewna lub brudu, 2 stopy kamienia, 2 cale metalu lub cienki arkusz ołowiu blokują go. Gdy cel jest w zasięgu, doppelganger może kontynuować czytanie jego myśli, o ile {@status concentration} doppelgangera nie jest złamane (tak jakby {@status concentration||concentrating} na zaklęciu). Podczas czytania w myślach celu, sobowtór ma przewagę w sprawdzaniu Mądrości ({@skill Insight}) i Charyzmy ({@skill Deception}, {@skill Intimidation} i {@skill Persuasion}) przeciwko celowi."
 					]
 				}
 			],
@@ -21849,7 +21849,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Duergar magicznie zamienia się w {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia lub nie użyje Powiększenia, albo dopóki jego koncentracja nie zostanie przerwana, do 1 godziny (jak w przypadku koncentrowania się na zaklęciu). Wszelki ekwipunek, który duergar nosi lub nosi przy sobie, jest z nim {@condition invisible}."
+						"Duergar magicznie obraca się {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia lub nie użyje swojego Powiększenia, lub dopóki jego {@status concentration} nie zostanie złamane, do 1 godziny (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który duergar nosi lub nosi jest z nim {@condition invisible}. przeciwko celowi."
 					]
 				}
 			],
@@ -23620,7 +23620,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkową akcję, smok może magicznie obracać się o {@condition invisible} do momentu zakończenia koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który nosi lub nosi smok, jest {@condition invisible} z nim."
+						"Jako akcja bonusowa, smok może magicznie obracać się {@condition invisible}, dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który smok nosi lub niesie jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -23780,7 +23780,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkową akcję, smok może magicznie obracać się o {@condition invisible} do momentu zakończenia koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który nosi lub nosi smok, jest {@condition invisible} z nim."
+						"Jako akcja bonusowa, smok może magicznie obracać się {@condition invisible}, dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który smok nosi lub niesie jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -23937,7 +23937,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkową akcję, smok może magicznie obracać się o {@condition invisible} do momentu zakończenia koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który nosi lub nosi smok, jest {@condition invisible} z nim."
+						"Jako akcja bonusowa, smok może magicznie obracać się {@condition invisible}, dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który smok nosi lub niesie jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -24090,7 +24090,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkową akcję, smok może magicznie obracać się o {@condition invisible} do momentu zakończenia koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który nosi lub nosi smok, jest {@condition invisible} z nim."
+						"Jako akcja bonusowa, smok może magicznie obracać się {@condition invisible}, dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który smok nosi lub niesie jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -24246,7 +24246,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkową akcję, smok może magicznie obracać się o {@condition invisible} do momentu zakończenia koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który nosi lub nosi smok, jest {@condition invisible} z nim."
+						"Jako akcja bonusowa, smok może magicznie obracać się {@condition invisible}, dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który smok nosi lub niesie jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -24411,7 +24411,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkową akcję, smok może magicznie obracać się o {@condition invisible} do momentu zakończenia koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który nosi lub nosi smok, jest {@condition invisible} z nim."
+						"Jako akcja bonusowa, smok może magicznie obracać się {@condition invisible}, dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który smok nosi lub niesie jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -24565,7 +24565,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkową akcję, smok może magicznie obracać się o {@condition invisible} do momentu zakończenia koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który nosi lub nosi smok, jest {@condition invisible} z nim."
+						"Jako akcja bonusowa, smok może magicznie obracać się {@condition invisible}, dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który smok nosi lub niesie jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -26313,7 +26313,7 @@
 				{
 					"name": "Animate Boulders (1/Day)",
 					"entries": [
-						"Galeb duhr magicznie ożywia do dwóch głazów, które widzi w promieniu 60 stóp od siebie. Głaz ma statystyki takie jak galeb duhr, z wyjątkiem Inteligencji 1 i Charyzmy 1, nie może być {@condition charmed} lub {@condition frightened} i nie posiada tej opcji akcji. Głaz pozostaje ożywiony tak długo, jak długo galeb duhr utrzymuje koncentrację, do 1 minuty (tak jakby koncentrował się na zaklęciu)."
+						"Galeb duhr magicznie ożywia do dwóch głazów, które widzi w promieniu 60 stóp od siebie. Głaz ma statystyki jak galeb duhr, z wyjątkiem inteligencji 1 i charyzmy 1, nie może być {@condition charmed} lub {@condition frightened} i nie ma opcji akcji. Głaz pozostaje ożywiony tak długo, jak galeb duhr utrzymuje {@status concentration}, do 1 minuty (jak {@status concentration||concentrating} na zaklęciu)."
 					]
 				}
 			],
@@ -33308,7 +33308,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"Jaga magicznie obraca się o {@condition invisible}, dopóki nie zaatakuje lub nie rzuci zaklęcia, albo dopóki jej koncentracja się nie skończy (jak w przypadku koncentracji na zaklęciu). Podczas {@condition invisible} nie pozostawia żadnych fizycznych śladów swojego przejścia, więc można ją wytropić tylko za pomocą magii. Wszelki sprzęt, który nosi lub nosi przy sobie, pozostaje z nią {@condition invisible}."
+						"Hag magicznie obraca się {@condition invisible}, dopóki nie zaatakuje lub nie rzuci zaklęcia, lub dopóki jej {@status concentration} nie skończy się (tak jakby {@status concentration||concentrating} na zaklęciu). Podczas {@condition invisible} nie pozostawia fizycznych dowodów swojego przejścia, więc można ją śledzić tylko za pomocą magii. Wszelkie wyposażenie, które nosi lub niesie, zostaje {@condition invisible} z nią."
 					]
 				}
 			],
@@ -37733,7 +37733,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Imp magicznie zmienia się w {@condition invisible}, dopóki nie zaatakuje lub dopóki jego koncentracja się nie skończy (jak w przypadku koncentracji na zaklęciu). Wyposażenie, które imp nosi lub nosi przy sobie, jest {@condition invisible} z nim."
+						"Imp magicznie obraca się {@condition invisible}, dopóki nie zaatakuje, lub dopóki jego {@status concentration} się nie skończy (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który imp nosi lub niesie jest {@condition invisible} z nim."
 					]
 				}
 			],
@@ -49573,7 +49573,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Magia zmienia się w {@condition invisible} do momentu zakończenia koncentracji (jak w przypadku koncentracji na zaklęciu). Wszelki sprzęt, który nosi lub ma przy sobie, jest {@condition invisible} z nim."
+						"Piksele magicznie obracają się {@condition invisible}, dopóki nie skończy się ich {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki ekwipunek, który nosi lub niesie, zostaje z nim {@condition invisible}."
 					]
 				}
 			],
@@ -51504,7 +51504,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Quasit magicznie zamienia się w {@condition invisible}, dopóki nie zaatakuje lub nie użyje Strachu, albo dopóki nie skończy się jego koncentracja (jak w przypadku koncentracji na zaklęciu). Wszelki sprzęt, który quasit nosi lub nosi przy sobie, jest {@condition invisible} z nim."
+						"Quasit magicznie obraca się {@condition invisible}, dopóki nie zaatakuje lub nie użyje Strachu, lub dopóki jego {@status concentration} się nie skończy (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który quasit nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				}
 			],
@@ -57632,7 +57632,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Sprite magicznie obraca się o {@condition invisible}, dopóki nie zaatakuje lub nie rzuci zaklęcia, albo dopóki nie skończy się jego koncentracja (jak w przypadku koncentracji na zaklęciu). Wyposażenie, które nosi lub nosi sprite, jest {@condition invisible} z nim."
+						"Sprite magicznie obraca się {@condition invisible}, dopóki nie zaatakuje lub nie rzuci zaklęcia, lub dopóki jego {@status concentration} nie skończy się (tak jakby {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który sprite nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				}
 			],
@@ -66267,7 +66267,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Wilkołak i jego światło magicznie stają się {@condition invisible}, dopóki nie zaatakuje lub nie użyje Pożarcia życia, albo dopóki nie skończy się jego koncentracja (jak w przypadku koncentracji na zaklęciu)."
+						"Will-o'-wisp i jego światło stają się magicznie {@condition invisible}, dopóki nie zaatakuje lub nie użyje swojego Consume Life, lub dopóki jego {@status concentration} się nie skończy (jak {@status concentration||concentrating} na zaklęciu)."
 					]
 				}
 			],

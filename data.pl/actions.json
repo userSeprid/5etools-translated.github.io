@@ -33,7 +33,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"Niektóre magiczne przedmioty pozwalają użytkownikowi rzucić zaklęcie z tego przedmiotu, często po zużyciu ładunków. Zaklęcie jest rzucane na najniższy możliwy poziom zaklęcia i poziom magiczny, nie zużywa żadnego slotu na zaklęcie i nie wymaga żadnych składników, chyba że opis przedmiotu mówi inaczej. Zaklęcie ma swój normalny czas rzucania, zasięg i czas trwania, a użytkownik przedmiotu musi się skoncentrować, jeśli zaklęcie wymaga koncentracji. Niektóre przedmioty czynią wyjątki od tych zasad, zmieniając czas rzucania, czas trwania lub inne elementy zaklęcia.",
+						"Niektóre magiczne przedmioty pozwalają użytkownikowi rzucić czar z przedmiotu, często poprzez wydatkowanie z niego ładunków. Zaklęcie jest rzucane na najniższym możliwym poziomie zaklęcia i mistrza, nie zużywa żadnych slotów na zaklęcia użytkownika i nie wymaga żadnych składników, chyba że opis przedmiotu mówi inaczej. Zaklęcie wykorzystuje swój normalny czas rzucania, zasięg i czas trwania, a użytkownik przedmiotu musi się skoncentrować, jeśli zaklęcie wymaga {@status concentration}. Niektóre przedmioty robią wyjątki od tych zasad, zmieniając czas rzucania, czas trwania lub inne części zaklęcia.",
 						"Wiele przedmiotów, takich jak eliksiry, omija proces rzucania zaklęcia i nadaje efekty zaklęcia. Taki przedmiot nadal wykorzystuje czas trwania zaklęcia, chyba że jego opis mówi inaczej.",
 						"Magiczne przedmioty, takie jak niektóre laski, mogą wymagać użycia własnej zdolności rzucania zaklęć podczas rzucania zaklęć z tego przedmiotu. Jeśli posiadasz więcej niż jedną umiejętność, wybierasz, której z nich użyjesz z tym przedmiotem. Jeśli nie posiadasz umiejętności rzucania zaklęć - np. jesteś łotrzykiem z cechą Użyj Magicznych Urządzeń - twój modyfikator do umiejętności rzucania zaklęć wynosi +0 do przedmiotu, ale obowiązuje cię premia do biegłości."
 					]
@@ -197,7 +197,7 @@
 				"Free"
 			],
 			"entries": [
-				"Jeśli zaklęcie wymaga koncentracji, fakt ten pojawia się we wpisie Czas trwania, a zaklęcie określa, jak długo można się na nim skoncentrować. Koncentrację można zakończyć w dowolnym momencie (nie jest wymagana żadna akcja)."
+				"Jeśli zaklęcie musi być utrzymywane z {@status concentration}, fakt ten pojawia się w jego wpisie Duration, a zaklęcie określa, jak długo możesz się na nim skupić. Możesz zakończyć {@status concentration} w dowolnym momencie (nie wymaga to żadnej akcji).lub inne części zaklęcia."
 			]
 		},
 		{
@@ -448,7 +448,7 @@
 				"Czasami chcesz wyprzedzić przeciwnika lub poczekać na konkretną okoliczność przed podjęciem działania. W tym celu możesz w swojej turze wykonać akcję Gotowość, która pozwala ci działać w oparciu o swoją reakcję przed rozpoczęciem następnej tury.",
 				"Najpierw decydujemy, jaka dostrzegalna okoliczność wywoła naszą reakcję. Następnie wybierasz akcję, którą podejmiesz w odpowiedzi na tę okoliczność, lub decydujesz się zwiększyć swoją prędkość w odpowiedzi na nią. Przykłady to: \"Jeśli kultysta nadepnie na zapadnię, pociągnę za dźwignię, która ją otworzy\" oraz \"Jeśli goblin stanie obok mnie, odsuwam się\".",
 				"Kiedy nastąpi wyzwolenie, możesz wykonać swoją reakcję zaraz po jego zakończeniu lub zignorować wyzwolenie. Pamiętaj, że na rundę możesz wykonać tylko jedną reakcję.",
-				"Kiedy przygotowujesz zaklęcie, rzucasz je tak jak zwykle, ale zatrzymujesz jego energię, którą uwalniasz w reakcji, kiedy następuje wyzwolenie. Aby zaklęcie mogło zostać przygotowane, czas jego rzucenia musi wynosić 1 akcję, a utrzymanie magii zaklęcia wymaga koncentracji (wyjaśnione w {@book chapter 10|phb|10|concentration}). Jeśli twoja koncentracja zostanie przerwana, zaklęcie rozproszy się bez efektu. Na przykład, jeśli koncentrujesz się na zaklęciu Pajęczyna i jesteś gotowy do użycia magicznego pocisku, zaklęcie Pajęczyna kończy się, a jeśli otrzymasz obrażenia, zanim puścisz magiczny pocisk w reakcji, twoja koncentracja może zostać przerwana.",
+				"Kiedy przygotowujesz zaklęcie, rzucasz je jak zwykle, ale zatrzymujesz jego energię, którą uwalniasz swoją reakcją w momencie wystąpienia wyzwalacza. Aby być gotowym, zaklęcie musi mieć czas rzucania 1 akcji, a zatrzymanie magii zaklęcia wymaga {@status concentration} (wyjaśnione w {@book chapter 10|phb|10|concentration}). Jeśli twoje {@status concentration} zostanie złamane, zaklęcie rozprasza się bez efektu. Na przykład, jeśli jesteś {@status concentration||concentrating} na zaklęciu sieci i gotowy do użycia magicznego pocisku, twoje zaklęcie sieci kończy się, a jeśli otrzymasz obrażenia przed wypuszczeniem magicznego pocisku z reakcją, twoje {@status concentration} może zostać złamane.",
 				"Masz czas do początku swojej następnej tury, aby użyć przygotowanej akcji."
 			]
 		},

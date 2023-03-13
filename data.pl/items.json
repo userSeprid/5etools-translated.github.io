@@ -3000,7 +3000,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"Ten plecak zawiera ducha {@creature air elemental} i niewielki skórzany balon. Gdy nosisz plecak, możesz rozwinąć balon jako akcję i uzyskać efekt zaklęcia {@spell levitate} na 10 minut, skierowanego na siebie i niewymagającego koncentracji. Możesz też użyć reakcji, aby rozwinąć balon podczas spadania i uzyskać efekt zaklęcia {@spell feather fall} dla siebie.",
+				"Ten plecak zawiera ducha {@creature air elemental} i kompaktowy skórzany balon. Podczas noszenia plecaka możesz rozwinąć balon jako akcję i uzyskać efekt zaklęcia {@spell levitate} na 10 minut, skierowany na siebie i nie wymagający {@status concentration}. Możesz też użyć reakcji, by rozwinąć balon podczas spadania i zyskać efekt zaklęcia {@spell feather fall} dla siebie.",
 				"Gdy zaklęcie się kończy, balon powoli opróżnia się, a duch żywiołu ucieka i powraca do Płaszczyzny Żywiołów Powietrza. Gdy balonik się opróżnia, delikatnie opada w kierunku ziemi na odległość do 60 stóp. Jeśli pod koniec tego dystansu nadal znajdujesz się w powietrzu, spadasz, jeśli nie masz innego sposobu na utrzymanie się w górze.",
 				"Po odejściu ducha właściwości plecaka są bezużyteczne, chyba że plecak jest ładowany przez 1 godzinę w węźle żywiołu powietrza, co powoduje związanie z plecakiem innego ducha."
 			],
@@ -4177,7 +4177,7 @@
 					"type": "entries",
 					"entries": [
 						"Gdy trzymasz broń, jesteś świadomy obecności maleńkich lub większych stworzeń w promieniu 60 stóp od ciebie, które nie są konstruktami ani nieumarłymi. Nie możesz też być {@condition charmed} lub {@condition frightened}.",
-						"Blackrazor może rzucić na ciebie zaklęcie {@spell haste} raz dziennie. Sam decyduje, kiedy rzucić zaklęcie i utrzymuje koncentrację na nim, abyś nie musiał tego robić."
+						"Blackrazor może rzucić na ciebie czar {@spell haste} raz dziennie. Decyduje, kiedy rzucić zaklęcie i utrzymuje {@status concentration} na nim, abyś ty nie musiał."
 					]
 				},
 				{
@@ -7780,7 +7780,7 @@
 					"name": "Wealth of Information",
 					"entries": [
 						"Podstawowym celem obrazu jest obserwacja i przywołanie rozmów. Przez ostatnie kilkadziesiąt lat Portret Constantoriego obserwował po cichu niezliczone rozmowy i posiada teraz niepoliczalną ilość wiedzy - od kryminalnych spisków po tajne hasła. DM decyduje, co obraz wie, a czego nie.",
-						"Podczas dostrojenia do obrazu możesz podjąć akcję telepatycznego kontaktu na dowolną odległość, pod warunkiem, że ty i obraz jesteście na tej samej płaszczyźnie istnienia. Obraz nie może jednak skontaktować się z tobą telepatycznie. Utrzymanie telepatycznego kontaktu z obrazem wymaga twojej koncentracji (tak jakbyś koncentrował się na zaklęciu).s co obraz wie, a czego nie."
+						"Będąc dostrojonym do obrazu, możesz podjąć akcję telepatycznego kontaktu z nim na dowolną odległość, pod warunkiem, że ty i obraz jesteście na tej samej płaszczyźnie istnienia. Obraz nie może jednak skontaktować się z tobą telepatycznie. Utrzymanie kontaktu telepatycznego z obrazem wymaga Twojego {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęcie)."
 					]
 				},
 				{
@@ -12776,7 +12776,7 @@
 					"type": "entries",
 					"name": "Aberrant Ally",
 					"entries": [
-						"Możesz wyczarować aberracyjne stworzenie z chaosu multiwersum, które będzie ci służyć. Działa to jak zaklęcie {@spell conjure celestial} (nie wymaga koncentracji), z tą różnicą, że przywołana istota jest aberracją o stopniu trudności 4 lub niższym. Jeśli raz użyjesz tej cechy dalekiego ekwipunku, nie możesz jej użyć ponownie aż do następnego świtu."
+						"Możesz wyczarować aberracyjne stworzenie z chaosu multiwersum, aby ci służyło. Działa to jak zaklęcie {@spell conjure celestial} (nie wymaga {@status concentration}), z tą różnicą, że przyzywana istota jest aberracją o poziomie wyzwania 4 lub niższym. Gdy raz użyjesz tej cechy dalekiego ekwipunku, nie można jej użyć ponownie aż do następnego świtu."
 					]
 				},
 				{
@@ -12898,7 +12898,7 @@
 			],
 			"entries": [
 				"Ten ciepły kryształ mieni się kolorami zachodzącego słońca na niebie Feywild i przywołuje szepty emocjonalnych wspomnień. W ramach akcji możesz przyczepić odłamek do przedmiotu (np. broni lub biżuterii) lub odczepić go. Odpada, gdy kończy się twoje przywiązanie do niego. Trzymając lub nosząc odłamek, możesz używać go jako punktu skupienia zaklęć.",
-				"Kiedy używasz opcji Metamagii na zaklęciu, trzymając lub nosząc odłamek, możesz rzucać na {@table Wild Magic Surge|PHB} tabeli w {@book Player's Handbook|PHB}. Jeśli wynik jest zaklęciem, to jest ono zbyt dzikie, aby wpłynęła na nie twoja Metamagia, a jeśli normalnie wymaga koncentracji, to w tym przypadku nie wymaga koncentracji; zaklęcie trwa przez cały czas jego trwania.",
+				"Kiedy używasz opcji Metamagii na zaklęciu, gdy trzymasz lub nosisz odłamek, możesz toczyć na tabeli {@table Wild Magic Surge|PHB} w {@book Player's Handbook|PHB}. Jeśli wynikiem jest zaklęcie, jest ono zbyt dzikie, by wpłynęła na nie twoja Metamagia, a jeśli normalnie wymaga {@status concentration}, to w tym przypadku nie wymaga {@status concentration}; zaklęcie trwa przez cały czas jego trwania.",
 				"Jeśli nie posiadasz Czarodziejskiego Pochodzenia Dzikiej Magii, po użyciu tej właściwości do turlania na tabeli {@table Wild Magic Surge|PHB}, nie można jej użyć ponownie aż do następnego świtu."
 			],
 			"hasFluffImages": true
@@ -13836,7 +13836,7 @@
 			"entries": [
 				"Funkcją tego ozdobnego krzesła jest napędzanie i manewrowanie latającą cytadelą, na której zostało zainstalowane. Krzesło ma AC 15, 18 punktów życia i odporność na obrażenia od trucizny i psychiki. Zostaje zniszczone, jeśli spadnie do 0 punktów życia.",
 				"Uczucie dostrojenia do latającego hełmu cytadeli jest podobne do efektu szpilek i igieł, którego doświadcza się po tym, jak ręka lub noga zasypia, ale nie tak intensywnie.",
-				"Podczas dostrojenia się do latającego hełmu cytadeli i siedzenia w nim, zyskujesz następujące zdolności na tak długo, jak długo utrzymujesz koncentrację (tak jakbyś koncentrował się na zaklęciu):",
+				"Podczas dostrojenia do latającego hełmu cytadeli i siedzenia w nim, zyskujesz następujące zdolności na tak długo, jak długo utrzymujesz {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęciu):",
 				{
 					"type": "list",
 					"items": [
@@ -13845,7 +13845,7 @@
 						"W każdej chwili możesz widzieć i słyszeć z najwyższego punktu poza cytadelą, tak jakbyś był w tym miejscu."
 					]
 				},
-				"Jeśli żadna istota dostrojona do hełmu nie utrzymuje koncentracji, cytadela pozostaje nieruchoma w swojej przestrzeni.",
+				"Jeśli żadna istota dostrojona do hełmu nie utrzymuje {@status concentration}, cytadela pozostaje nieruchoma w swojej przestrzeni.",
 				{
 					"type": "entries",
 					"name": "Transfer Attunement",
@@ -16013,7 +16013,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Nosząc ten hełm, możesz użyć jednej akcji, aby rzucić z niego zaklęcie {@spell detect thoughts} (save DC 13). Tak długo, jak utrzymujesz koncentrację na zaklęciu, możesz użyć dodatkowej akcji, aby wysłać telepatyczną wiadomość do istoty, na której się skupiasz. Może ono odpowiedzieć - używając do tego dodatkowej akcji - podczas gdy twoja koncentracja na nim trwa.",
+				"Podczas noszenia tego hełmu możesz użyć akcji, by rzucić z niego {@spell detect thoughts} czar (save DC 13). Tak długo jak utrzymujesz {@status concentration} na zaklęciu, możesz użyć akcji bonusowej, aby wysłać telepatyczną wiadomość do istoty, na której się skupiasz. Może ono odpowiedzieć - używając dodatkowej akcji, by to zrobić - podczas gdy twoja koncentracja na nim trwa.",
 				"Skupiając się na stworzeniu z {@spell detect thoughts}, możesz użyć akcji, aby rzucić {@spell suggestion} zaklęcia (save DC 13) z hełmu na to stworzenie. Raz użyta właściwość sugestii nie może być użyta ponownie aż do następnego świtu."
 			],
 			"optionalfeatures": [
@@ -20849,7 +20849,7 @@
 					"type": "entries",
 					"name": "Enduring Vision",
 					"entries": [
-						"Podczas trzymania talii automatycznie udają ci się rzuty ratujące Konstytucję, wykonywane w celu utrzymania koncentracji na zaklęciach wróżbiarskich."
+						"Podczas trzymania talii automatycznie udają ci się rzuty ratunkowe na Konstytucję wykonywane w celu zachowania {@status concentration} na zaklęciach wróżbiarskich."
 					]
 				},
 				{
@@ -25786,7 +25786,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Po wypiciu tej mikstury uzyskujesz efekt \"redukcji\" zaklęcia {@spell enlarge/reduce} na {@dice 1d4} godzin (nie wymaga koncentracji). Czerwień w płynie mikstury stale kurczy się do postaci maleńkiej kulki, a następnie rozszerza się, zabarwiając przezroczystą ciecz wokół niej. Potrząsanie butelką nie przerywa tego procesu."
+				"Po wypiciu tej mikstury zyskujesz efekt \"zmniejszania\" zaklęcia {@spell enlarge/reduce} na {@dice 1d4} godzin (nie jest wymagane {@status concentration}). Czerwień w płynie mikstury nieustannie kurczy się do maleńkiego paciorka, a następnie rozszerza się, zabarwiając przezroczysty płyn wokół niego. Potrząsanie butelką nie przerywa tego procesu."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -25923,7 +25923,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Po wypiciu tej mikstury uzyskujesz efekt zaklęcia {@spell gaseous form} na 1 godzinę (nie jest wymagana koncentracja) lub do momentu zakończenia efektu jako akcji dodatkowej. Pojemnik tej mikstury wydaje się zawierać mgłę, która porusza się i leje jak woda."
+				"Kiedy wypijesz ten eliksir, zyskujesz efekt {@spell gaseous form} zaklęcia na 1 godzinę (nie jest wymagane {@status concentration}) lub do czasu zakończenia efektu jako akcji bonusowej. Pojemnik tej mikstury wydaje się utrzymywać mgłę, która porusza się i leje jak woda."
 			],
 			"attachedSpells": [
 				"gaseous form"
@@ -25969,7 +25969,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"Po wypiciu tej mikstury uzyskujesz efekt \"powiększenia\" z zaklęcia {@spell enlarge/reduce} na {@dice 1d4} godzin (nie wymaga koncentracji). Czerwień w płynie mikstury stale się rozszerza z maleńkiej kulki, aby zabarwić przezroczystą ciecz wokół niej, a następnie kurczy się. Potrząsanie butelką nie przerywa tego procesu."
+				"Po wypiciu tej mikstury zyskujesz efekt \"powiększenia\" zaklęcia {@spell enlarge/reduce} na {@dice 1d4} godzin (nie jest wymagane {@status concentration}). Czerwień w płynie mikstury nieustannie rozszerza się z maleńkiego paciorka i zabarwia otaczającą go przejrzystą ciecz, a następnie kurczy się. Potrząsanie butelką nie przerywa tego procesu."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -26010,7 +26010,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Przez 1 godzinę po jego wypiciu zyskujesz 10 tymczasowych punktów trafienia, które utrzymują się przez 1 godzinę. Przez ten sam czas jesteś pod działaniem zaklęcia {@spell bless} (nie wymaga koncentracji). Niebieska mikstura bulgocze i paruje, jakby się gotowała."
+				"Przez 1 godzinę po jej wypiciu zyskujesz 10 tymczasowych punktów trafień, które utrzymują się przez 1 godzinę. Przez ten sam czas pozostajesz pod efektem zaklęcia {@spell bless} (nie jest wymagane {@status concentration}). Ta niebieska mikstura bulgocze i paruje, jakby się gotowała."
 			],
 			"attachedSpells": [
 				"bless"
@@ -26134,7 +26134,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Kiedy wypijesz miksturę kontroli umysłu, możesz rzucić zaklęcie dominacji (save DC 15) na określoną istotę, jeśli zrobisz to przed końcem swojej następnej tury. Jeśli tego nie zrobisz, mikstura zostaje zmarnowana.",
-				"Mikstura kontroli umysłu wywołuje efekt {@spell dominate beast} zaklęcia. Jeśli celowi nie uda się pierwszy rzut na przetrwanie, efekt trwa przez godzinę, bez konieczności koncentracji z twojej strony. W tym czasie {@condition charmed} istota ma minusy do nowych rzutów ratujących, aby przerwać efekt."
+				"Mikstura kontroli umysłu wywołuje efekt {@spell dominate beast} zaklęcia. Jeśli początkowy rzut ratunkowy celu nie powiedzie się, efekt trwa przez 1 godzinę, bez konieczności {@status concentration} z twojej strony. W tym czasie {@condition charmed} stworzenie ma minus do nowych rzutów ratujących, aby przerwać efekt."
 			],
 			"attachedSpells": [
 				"dominate beast"
@@ -26148,7 +26148,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Kiedy wypijesz miksturę kontroli umysłu, możesz rzucić zaklęcie dominacji (save DC 15) na określoną istotę, jeśli zrobisz to przed końcem swojej następnej tury. Jeśli tego nie zrobisz, mikstura zostaje zmarnowana.",
-				"Mikstura kontroli umysłu wywołuje efekt {@spell dominate person} zaklęcia. Jeśli celowi nie uda się pierwszy rzut na przetrwanie, efekt trwa przez godzinę, bez konieczności koncentracji z twojej strony. W tym czasie {@condition charmed} istota ma minusy do nowych rzutów ratujących, aby przerwać efekt."
+				"Mikstura kontroli umysłu wywołuje efekt {@spell dominate person} zaklęcia. Jeśli początkowy rzut ratunkowy celu nie powiedzie się, efekt trwa przez 1 godzinę, bez konieczności {@status concentration} z twojej strony. W tym czasie {@condition charmed} stworzenie ma minus do nowych rzutów ratujących, aby przerwać efekt."
 			],
 			"attachedSpells": [
 				"dominate person"
@@ -26162,7 +26162,7 @@
 			"rarity": "very rare",
 			"entries": [
 				"Kiedy wypijesz miksturę kontroli umysłu, możesz rzucić zaklęcie dominacji (save DC 15) na określoną istotę, jeśli zrobisz to przed końcem swojej następnej tury. Jeśli tego nie zrobisz, mikstura zostaje zmarnowana.",
-				"Mikstura kontroli umysłu wywołuje efekt {@spell dominate monster} zaklęcia. Jeśli celowi nie uda się pierwszy rzut na przetrwanie, efekt trwa przez godzinę, bez konieczności koncentracji z twojej strony. W tym czasie {@condition charmed} istota ma minusy do nowych rzutów ratujących, aby przerwać efekt."
+				"Mikstura kontroli umysłu wywołuje efekt {@spell dominate monster} zaklęcia. Jeśli początkowy rzut ratunkowy celu nie powiedzie się, efekt trwa przez 1 godzinę, bez konieczności {@status concentration} z twojej strony. W tym czasie {@condition charmed} stworzenie ma minus do nowych rzutów ratujących, aby przerwać efekt."
 			],
 			"attachedSpells": [
 				"dominate monster"
@@ -26288,7 +26288,7 @@
 			"tier": "minor",
 			"rarity": "very rare",
 			"entries": [
-				"Po wypiciu tej mikstury uzyskujesz efekt zaklęcia {@spell haste} na 1 minutę (nie wymaga koncentracji). Żółty płyn mikstury jest czarny i sam wiruje."
+				"Kiedy wypijesz ten eliksir, zyskujesz efekt {@spell haste} zaklęcia na 1 minutę (nie jest wymagane {@status concentration}). Żółty płyn eliksiru jest smugowany czernią i sam wiruje."
 			],
 			"attachedSpells": [
 				"haste"
@@ -27708,7 +27708,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"entries": [
-				"Nosząc ten pierścień, możesz wypowiedzieć jego komendę jako akcję, aby przywołać konkretnego {@creature djinni} z Elementalnej Płaszczyzny Powietrza. Ten {@creature djinni} pojawia się w wybranym przez ciebie pustym miejscu w promieniu 120 stóp od ciebie. Pozostaje tak długo, jak długo się koncentrujesz (jak przy zaklęciu), maksymalnie do 1 godziny, lub do momentu, gdy spadnie do 0 punktów życia. Następnie powraca do swojej macierzystej płaszczyzny.",
+				"Podczas noszenia tego pierścienia możesz wypowiedzieć jego słowo rozkazujące jako akcję, aby przywołać konkretnego {@creature djinni} z Elemental Plane of Air. {@creature djinni} pojawia się w wybranej przez ciebie niezajętej przestrzeni w promieniu 120 stóp od ciebie. Pozostaje tak długo, jak długo się koncentrujesz (tak jakbyś {@status concentration||concentrating} rzucał zaklęcie), maksymalnie do 1 godziny, lub dopóki nie spadnie do 0 punktów życia. Następnie wraca do swojej macierzystej płaszczyzny.",
 				"Podczas przywołania {@creature djinni} jest przyjaźnie nastawiony do ciebie i twoich towarzyszy. Wykonuje wszystkie twoje polecenia, bez względu na to, jakiego języka używasz. Jeśli nie wydasz mu rozkazu, {@creature djinni} broni się przed napastnikami, ale nie podejmuje żadnych innych działań.",
 				"Po odejściu {@creature djinni} nie można go przywołać ponownie przez 24 godziny, a jeśli {@creature djinni} umrze, pierścień staje się niemagiczny."
 			],
@@ -28006,7 +28006,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"Ta żelazna opaska przypomina czaszkę i jest zimna w dotyku. Ma 3 ładunki i codziennie o świcie odzyskuje {@dice 1d3} zużytych ładunków. Jako akcję podczas noszenia pierścienia możesz zużyć 1 z jego ładunków, aby rzucić z niego zaklęcie {@spell fog cloud}, z następującymi zmianami: chmura jest skupiona na tobie, gdy pojawia się po raz pierwszy, a zaklęcie trwa przez 1 minutę (nie wymaga koncentracji)."
+				"Ta opaska z żelaza przypomina czaszkę i jest zimna w dotyku. Posiada 3 ładunki i odzyskuje {@dice 1d3} zużytych ładunków codziennie o świcie. Jako akcję podczas noszenia pierścienia możesz wydać 1 z jego ładunków, by rzucić z niego czar {@spell fog cloud}, z następującymi zmianami: chmura jest skupiona na tobie, gdy pojawia się po raz pierwszy, a czar trwa przez 1 minutę (nie wymaga {@status concentration})."
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -28192,7 +28192,7 @@
 					"type": "entries",
 					"entries": [
 						"W ramach akcji możesz zużyć 2 ładunki, aby stworzyć od jednej do czterech kul błyskawic o średnicy 3 stóp. Im więcej kul stworzysz, tym mniejsza jest moc każdej z nich z osobna.",
-						"Każda kula pojawia się w niezajętej przestrzeni, którą widzisz w promieniu 120 stóp od siebie. Kule utrzymują się tak długo, jak długo się koncentrujesz (tak jakbyś koncentrował się na zaklęciu), maksymalnie do 1 minuty. Każda kula rzuca przyćmione światło w promieniu 30 stóp.",
+						"Każda kula pojawia się w niezajętej przestrzeni, którą widzisz w promieniu 120 stóp od ciebie. Kule trwają tak długo, jak długo się koncentrujesz (tak jakbyś {@status concentration||concentrating} na zaklęciu), do 1 minuty. Każda kula rzuca słabe światło w promieniu 30 stóp.",
 						"Jako akcję dodatkową możesz przesunąć każdą kulę na odległość do 30 stóp, ale nie dalej niż 120 stóp od siebie. Gdy istota inna niż ty znajdzie się w promieniu 5 stóp od kuli, kula wyrzuca w jej kierunku piorun i znika. Stworzenie musi wykonać rzut obronny na zręczność DC 15. W przypadku nieudanego ataku, stworzenie otrzymuje obrażenia od błyskawic, zależne od liczby stworzonych przez ciebie kul. (4 sfery = {@dice 2d4}, 3 sfery = {@dice 2d6}, 2 sfery = {@dice 5d4}, 1 sfera = {@dice 4d12})"
 					]
 				},
@@ -28881,7 +28881,9 @@
 			"source": "DMG",
 			"page": 196,
 			"srd": true,
+			"baseItem": "mace|phb",
 			"type": "RD",
+			"typeAlt": "M",
 			"tier": "major",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30809,7 +30811,7 @@
 							"items": [
 								"Tarcza ma Inteligencję 22, Mądrość 18 i Charyzmę 24, a także słuch i {@sense truesight} zasięg do 120 stóp.",
 								"Tarcza potrafi mówić, czytać i rozumieć język potoczny i piekielny, a także porozumiewać się telepatycznie z każdą istotą, którą wyczuje w promieniu 120 stóp od niej. Jej głos jest głębokim, pustym szeptem.",
-								"Tarcza ma 3 ładunki. Możesz użyć akcji, aby zużyć 1 ładunek do rzucenia {@spell fireball} lub 2 ładunki do rzucenia {@spell wall of fire} z tarczy (save DC 21 dla każdego). Zaklęcie {@spell wall of fire} trwa przez 1 minutę (nie wymaga koncentracji). Tarcza odzyskuje wszystkie zużyte ładunki codziennie o świcie.",
+								"Tarcza posiada 3 ładunki. Możesz użyć akcji, by wydać 1 ładunek na rzucenie {@spell fireball} lub 2 ładunki na rzucenie {@spell wall of fire} z tarczy (save DC 21 dla każdego). Zaklęcie {@spell wall of fire} trwa przez 1 minutę (nie jest wymagane {@status concentration}). Tarcza odzyskuje wszystkie zużyte ładunki codziennie o świcie.",
 								"W dowolnym momencie twojej tury tarcza może na 1 minutę zacząć roztaczać wokół siebie aurę grozy (nie jest to moc tarczy, którą kontrolujesz). Każde wrogie ci stworzenie, które rozpocznie swoją turę w promieniu 20 stóp od tarczy, musi wykonać rzut ratunkowy na mądrość DC 18. W przypadku nieudanego ataku, stworzenie jest {@condition frightened} do początku swojej następnej tury. W przypadku udanego ataku, stworzenie jest odporne na tę moc tarczy przez następne 24 godziny. Gdy tarcza użyje tej mocy, nie może jej użyć ponownie aż do następnego świtu."
 							]
 						}
@@ -30872,7 +30874,7 @@
 					"type": "entries",
 					"name": "Bane",
 					"entries": [
-						"Możesz rzucić {@spell bane} zaklęcia z tarczy (save DC 17). Zaklęcie nie wymaga koncentracji i trwa przez 1 minutę. Po rzuceniu zaklęcia z tarczy nie możesz tego zrobić ponownie, dopóki nie zakończysz krótkiego lub długiego odpoczynku."
+						"Możesz rzucić {@spell bane} zaklęcia z tarczy (save DC 17). Zaklęcie nie wymaga {@status concentration} i trwa przez 1 minutę. Gdy raz rzucisz czar z tarczy, nie możesz tego zrobić ponownie, dopóki nie zakończysz krótkiego lub długiego odpoczynku."
 					]
 				},
 				{
@@ -32448,7 +32450,7 @@
 			"entries": [
 				"Funkcją tego ozdobnego krzesła jest napędzanie i manewrowanie statkiem na którym zostało ono zainstalowane poprzez przestrzeń i powietrze. Może również napędzać i manewrować statkiem na wodzie lub pod wodą, pod warunkiem, że statek jest zbudowany do takich podróży. Statek, o którym mowa musi ważyć 1 tonę lub więcej.",
 				"Uczucie dostrojenia do hełmu zaklinającego jest podobne do efektu szpilek i igieł, którego doświadcza się po tym, jak ręka lub noga zasypia, ale nie jest tak bolesne.",
-				"Podczas dostrojenia do hełmu zaklinania i siedzenia w nim, zyskujesz następujące zdolności na tak długo, jak długo utrzymujesz koncentrację (tak jakbyś koncentrował się na zaklęciu):",
+				"Podczas dostrojenia do hełmu zaklinającego i siedzenia w nim, zyskujesz następujące zdolności na tak długo, jak długo utrzymujesz {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęciu):",
 				{
 					"type": "list",
 					"items": [
@@ -32489,7 +32491,7 @@
 			"wondrous": true,
 			"entries": [
 				"Ten polerowany smoczy kamień z Eberronu mieści się w dłoni i przechowuje informacje podobnie jak książka. Odłamek może pomieścić równowartość jednej książki, która ma nie więcej niż 320 stron. Kartę można stworzyć pustą lub już wypełnioną informacjami. Po stworzeniu kartki, jej twórca może ustalić hasło, które należy wypowiedzieć, aby uzyskać dostęp do przechowywanych w niej informacji.",
-				"Trzymając kamień, możesz użyć akcji, aby otworzyć swój umysł na kamień i zobaczyć jego zawartość w swoim umyśle. W następnych rundach czytanie tekstu lub pisanie nowego tekstu na pustych \"kartkach\" w kamieniu wymaga koncentracji (tak jakbyś koncentrował się na zaklęciu) i zajmuje tyle samo czasu, ile normalne czytanie i pisanie. Myślenie o konkretnym zdaniu lub temacie przenosi cię do pierwszej części kartki, która go dotyczy.",
+				"Trzymając odłamek, możesz użyć akcji, aby otworzyć swój umysł na odłamek, widząc jego zawartość w swoim umyśle. W kolejnych turach czytanie tekstu lub bazgranie nowego tekstu na pustych \"stronach\" w odłamku wymaga {@status concentration} (jak {@status concentration||concentrating} na zaklęciu) i zajmuje tyle samo czasu, ile zajmuje ci normalne czytanie i pisanie. Myśląc o konkretnej frazie lub temacie przenosi Cię do pierwszej sekcji w shardzie, która go dotyczy.",
 				"Czarodziej może wykorzystać kamień zaklęć jako księgę zaklęć, przy czym kosztem złota i czasu jest \"wypisanie\" zaklęcia na kamieniu."
 			]
 		},
@@ -35874,7 +35876,7 @@
 					"entries": [
 						"Ogromne rozmiary Piekielnej Maszyny sprawiają, że jest ona w dużej mierze nieruchoma. Aby móc z niej korzystać na bieżąco (np. podczas przygód), można ją połączyć z jej dostrojonym użytkownikiem za pomocą srebrnego drutu, którego zapas można zawsze uzyskać z wnętrza maszyny. Ten srebrny drut ma taką samą naturę jak srebrny sznur {@spell astral projection} zaklęcia - łączy się z ciałem użytkownika i ciągnie się za nim. Po przymocowaniu, przewód staje się {@condition invisible} astralny i rozciąga się praktycznie na nieskończoną długość.",
 						"Tak długo, jak przewód pozostaje nienaruszony, dostrojony użytkownik może w pełni korzystać z mocy Piekielnej Maszyny, a ich efekty skupiają się wokół niego. Jeśli przewód zostanie przecięty - co może się zdarzyć tylko wtedy, gdy jakiś efekt wyraźnie mówi, że może przeciąć srebrzystą linkę {@spell astral projection} - użytkownik doznaje nagłego impulsu ze strony maszyny, który natychmiast go zabija.",
-						"Każdy efekt Piekielnej Maszyny, który wymaga koncentracji, może zostać skoncentrowany przez zdalnego użytkownika. Efekty Piekielnej Maszyny mają DC odporności na zaklęcia równe 14 lub DC odporności na zaklęcia dostrojonego użytkownika, w zależności od tego, które jest wyższe."
+						"Każdy efekt Piekielnej Maszyny, który wymaga {@status concentration} może zostać skoncentrowany przez zdalnego użytkownika. Efekty Piekielnej Maszyny mają spell save DC równe 14 lub spell save DC dostrojonego użytkownika, w zależności od tego, które jest wyższe."
 					]
 				},
 				{
@@ -40948,6 +40950,8 @@
 			"name": "Witchlight Vane",
 			"source": "WBtW",
 			"page": 27,
+			"baseItem": "mace|phb",
+			"typeAlt": "M",
 			"rarity": "legendary",
 			"reqAttune": "by a mister light or his handpicked successor",
 			"sentient": true,

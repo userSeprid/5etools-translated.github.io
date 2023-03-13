@@ -893,7 +893,7 @@
 					"name": "Foment Confusion",
 					"entries": [
 						"Każda istota niebędąca demonem, która rozpocznie swoją turę w promieniu 30 stóp od alkilithu, musi zdać {@dc 18} rzut ratunkowy na Mądrość, albo przez chwilę usłyszy słabe brzęczenie w głowie i będzie miała minusy przy następnym ataku, rzucie ratunkowym lub sprawdzaniu umiejętności.",
-						"Jeśli próba ratunkowa przeciwko Zamętowi nie powiedzie się o 5 lub więcej punktów, stworzenie zostaje poddane działaniu zaklęcia {@spell confusion} na 1 minutę (alkilith nie musi się koncentrować). Pod wpływem tego zamętu istota jest odporna na Zamęt."
+						"Jeśli rzut ratujący przeciwko Foment Confusion nie powiedzie się o 5 lub więcej, istota jest zamiast tego poddawana działaniu {@spell confusion} czaru przez 1 minutę (bez {@status concentration} wymaganego przez alkilith). Podczas gdy pod wpływem tego zamieszania, istota jest odporna na Foment Confusion."
 					]
 				},
 				{
@@ -3704,8 +3704,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Barghest wykonuje jeden atak Ugryzienia i jeden",
-						"Atak pazurami."
+						"Barghest wykonuje jeden atak typu Bite i jeden atak typu Claw."
 					]
 				},
 				{
@@ -4213,7 +4212,7 @@
 				{
 					"name": "Creeping Darkness {@recharge}",
 					"entries": [
-						"Abishai rzuca {@spell darkness} na punkt znajdujący się w promieniu 120 stóp od niego, nie wymaga składników zaklęcia ani koncentracji. Mądrość jest jego umiejętnością rzucania zaklęć dla tego zaklęcia. W czasie trwania zaklęcia abishai może przemieścić obszar ciemności na odległość do 60 stóp jako akcję dodatkową."
+						"Abishai rzuca {@spell darkness} na punkt w promieniu 120 stóp od niego, nie wymaga składników zaklęcia ani {@status concentration}. Mądrość jest jego zdolnością zaklinania dla tego zaklęcia. Podczas trwania zaklęcia, abishai może przemieścić obszar ciemności do 60 stóp jako akcja bonusowa."
 					]
 				}
 			],
@@ -11730,7 +11729,7 @@
 				{
 					"name": "Shared Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Duergar magicznie zamienia się w {@condition invisible} na maks. 1 godzinę lub do czasu, aż zaatakuje, zmusi istotę do wykonania rzutu ratunkowego lub jego koncentracja zostanie przerwana (jak w przypadku koncentracji na zaklęciu). Wszelki ekwipunek, który duergar nosi lub ma przy sobie, jest w {@condition invisible} z nim. Kiedy {@condition invisible} duergar jest dosiadany, jego wierzchowiec również jest {@condition invisible}. Niewidzialność kończy się na wierzchowcu wcześnie, zaraz po jego ataku."
+						"Duergar magicznie zamienia się w {@condition invisible} na maksymalnie 1 godzinę lub do czasu, gdy zaatakuje, zmusi jakąś istotę do wykonania rzutu ratunkowego lub jego {@status concentration} zostanie złamane (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który duergar nosi lub nosi, jest {@condition invisible} z nim. Gdy {@condition invisible} duergar jest dosiadany, wierzchowiec również jest {@condition invisible}. Niewidzialność kończy się wcześnie na wierzchowcu natychmiast po jego ataku."
 					]
 				}
 			],
@@ -11863,7 +11862,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Duergar magicznie zamienia się w {@condition invisible} na maks. 1 godzinę lub do czasu, aż zaatakuje, zmusi istotę do wykonania rzutu ratunkowego lub jego koncentracja zostanie przerwana (jak w przypadku koncentracji na zaklęciu). Wszelki ekwipunek, który duergar nosi lub nosi przy sobie, jest w {@condition invisible} z nim."
+						"Duergar magicznie zamienia się w {@condition invisible} na maksymalnie 1 godzinę lub do czasu, gdy zaatakuje, zmusi jakąś istotę do wykonania rzutu ratunkowego lub jego {@status concentration} zostanie złamane (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który duergar nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -12118,7 +12117,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Duergar magicznie zamienia się w {@condition invisible} na maks. 1 godzinę lub do czasu, aż zaatakuje, zmusi istotę do wykonania rzutu ratunkowego lub jego koncentracja zostanie przerwana (jak w przypadku koncentracji na zaklęciu). Wszelki ekwipunek, który duergar nosi lub nosi przy sobie, jest w {@condition invisible} z nim."
+						"Duergar magicznie zamienia się w {@condition invisible} na maksymalnie 1 godzinę lub do czasu, gdy zaatakuje, zmusi jakąś istotę do wykonania rzutu ratunkowego lub jego {@status concentration} zostanie złamane (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który duergar nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				}
 			],
@@ -12256,7 +12255,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Duergar magicznie zamienia się w {@condition invisible} na maks. 1 godzinę lub do czasu, aż zaatakuje, zmusi istotę do wykonania rzutu ratunkowego lub jego koncentracja zostanie przerwana (jak w przypadku koncentracji na zaklęciu). Wszelki ekwipunek, który duergar nosi lub nosi przy sobie, jest w {@condition invisible} z nim."
+						"Duergar magicznie zamienia się w {@condition invisible} na maksymalnie 1 godzinę lub do czasu, gdy zaatakuje, zmusi jakąś istotę do wykonania rzutu ratunkowego lub jego {@status concentration} zostanie złamane (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który duergar nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				}
 			],
@@ -12402,7 +12401,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Duergar magicznie zamienia się w {@condition invisible} na maks. 1 godzinę lub do czasu, aż zaatakuje, zmusi istotę do wykonania rzutu ratunkowego lub jego koncentracja zostanie przerwana (jak w przypadku koncentracji na zaklęciu). Wszelki ekwipunek, który duergar nosi lub nosi przy sobie, jest w {@condition invisible} z nim."
+						"Duergar magicznie zamienia się w {@condition invisible} na maksymalnie 1 godzinę lub do czasu, gdy zaatakuje, zmusi jakąś istotę do wykonania rzutu ratunkowego lub jego {@status concentration} zostanie złamane (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który duergar nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				}
 			],
@@ -12545,7 +12544,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Duergar magicznie zamienia się w {@condition invisible} na maks. 1 godzinę lub do czasu, aż zaatakuje, zmusi istotę do wykonania rzutu ratunkowego lub jego koncentracja zostanie przerwana (jak w przypadku koncentracji na zaklęciu). Wszelki ekwipunek, który duergar nosi lub nosi przy sobie, jest w {@condition invisible} z nim."
+						"Duergar magicznie zamienia się w {@condition invisible} na maksymalnie 1 godzinę lub do czasu, gdy zaatakuje, zmusi jakąś istotę do wykonania rzutu ratunkowego lub jego {@status concentration} zostanie złamane (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który duergar nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				}
 			],
@@ -13192,7 +13191,7 @@
 				{
 					"name": "Break Concentration",
 					"entries": [
-						"Starszy Mózg celuje w jedną istotę w promieniu 120 stóp od siebie, z którą ma połączenie psychiczne. Starszy Mózg przerywa koncentrację istoty na rzuconym przez nią zaklęciu. Istota otrzymuje też 2 ({@damage 1d4}) obrażenia psychiczne na poziom zaklęcia."
+						"Starszy mózg celuje w jedną istotę w promieniu 120 stóp od niego, z którą ma psychiczną więź. Starszy Mózg łamie {@status concentration} na rzuconym przez tę istotę zaklęciu. Istota otrzymuje również 2 ({@damage 1d4}) obrażeń psychicznych na poziom zaklęcia."
 					]
 				},
 				{
@@ -38594,7 +38593,7 @@
 					"name": "Invoke Nightmare (Recharges after a Short or Long Rest)",
 					"entries": [
 						"Yuan-ti wykorzystuje koszmary jednej istoty, którą widzi w promieniu 60 stóp od siebie i tworzy iluzoryczną, nieruchomą manifestację najgłębszych lęków tej istoty, widoczną tylko dla niej.",
-						"Cel musi wykonać {@dc 13} rzutu obronnego na inteligencję. W przypadku nieudanego ataku, cel otrzymuje 22 ({@damage 4d10}) obrażeń psychicznych i jest {@condition frightened} w stanie manifestacji, wierząc, że jest prawdziwa. yuan-ti musi się skoncentrować, aby utrzymać iluzję (tak jakby koncentrował się na zaklęciu), która trwa do 1 minuty i nie można go zranić. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc iluzję w przypadku sukcesu lub otrzymując 11 ({@damage 2d10}) obrażeń psychicznych w przypadku porażki."
+						"Cel musi wykonać rzut ratujący inteligencję {@dc 13}. Przy nieudanym save'ie cel otrzymuje 22 ({@damage 4d10}) obrażeń psychicznych i jest {@condition frightened} manifestacji, wierząc, że jest prawdziwa. Yuan-ti musi się skoncentrować, by utrzymać iluzję (tak jakby {@status concentration||concentrating} na zaklęciu), która trwa do 1 minuty i nie można jej uszkodzić. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc iluzję w przypadku sukcesu lub otrzymując 11 ({@damage 2d10}) obrażeń psychicznych w przypadku porażki."
 					]
 				}
 			],
@@ -38969,7 +38968,7 @@
 				{
 					"name": "Earth-Shaking Movement",
 					"entries": [
-						"Po przesunięciu się o co najmniej 10 stóp zaratan wysyła falę uderzeniową przez ziemię w promieniu 120 stóp, skupiając się na sobie. Obszar ten staje się {@quickref difficult terrain||3} przez 1 minutę. Każda istota na ziemi, która się koncentruje, musi wykonać {@dc 25} rzutu obronnego na Konstytucję, inaczej jej koncentracja zostanie przerwana. Fala uderzeniowa zadaje 100 obrażeń od piorunów wszystkim budowlom mającym kontakt z ziemią na tym obszarze. Jeśli stworzenie znajduje się w pobliżu budowli, która się zawali, może zostać pogrzebane; istota znajdująca się w odległości równej połowie wysokości budowli musi wykonać {@dc 25} rzutu na Zręczność. W przypadku nieudanego testu, stworzenie otrzymuje 17 ({@damage 5d6}) obrażeń od obrażeń kłutych, zostaje powalone {@condition prone} i uwięzione w gruzach. Uwięziona istota jest {@condition restrained} i wymaga udanego {@dc 20} testu Wytrzymałości ({@skill Athletics}) jako akcji, aby uciec. Inna istota w promieniu 5 stóp od zasypanego stworzenia może użyć swojej akcji do usunięcia gruzu i uzyskać przewagę w tym teście. Jeśli trzy stworzenia użyją swoich akcji w ten sposób, test automatycznie kończy się sukcesem. Przy udanym ocaleniu, stworzenie otrzymuje o połowę mniej obrażeń i nie spada {@condition prone} ani nie zostaje uwięzione."
+						"Po przesunięciu się o co najmniej 10 stóp po ziemi, zaratan wysyła falę uderzeniową przez ziemię w okręgu o promieniu 120 stóp skupionym na sobie. Obszar ten staje się {@quickref difficult terrain||3} przez 1 minutę. Każda istota na ziemi, która jest {@status concentration||concentrating} musi wykonać {@dc 25} rzut ratunkowy na Konstytucję lub jej {@status concentration} zostaje złamana. Fala uderzeniowa zadaje 100 obrażeń od piorunów wszystkim budowlom mającym kontakt z ziemią na danym obszarze. Jeśli istota znajduje się w pobliżu konstrukcji, która się zawaliła, może zostać pogrzebana; istota znajdująca się w odległości równej połowie wysokości konstrukcji musi wykonać {@dc 25} rzut ratujący zręczność. Przy nieudanym rzucie stwór otrzymuje 17 ({@damage 5d6}) obrażeń od uderzenia, zostaje powalony {@condition prone} i uwięziony w gruzach. Uwięzione stworzenie jest {@condition restrained}, wymaga udanego {@dc 20} sprawdzenia Wytrzymałości ({@skill Athletics}) jako akcji do ucieczki. Inna istota w promieniu 5 stóp od zasypanego stworzenia może użyć swojej akcji do oczyszczenia gruzu i przyznać przewagę na kontroli. Jeśli trzy stworzenia użyją swoich akcji w ten sposób, kontrola jest automatycznym sukcesem. Przy udanym save'ie stworzenie otrzymuje o połowę mniej obrażeń i nie spada {@condition prone} ani nie zostaje uwięzione."
 					]
 				}
 			],

@@ -1513,7 +1513,7 @@
 		{
 			"name": "Create Whirlwind (Djinni)",
 			"entries": [
-				"Cylinder wirującego powietrza o promieniu 5 stóp i wysokości 30 stóp magicznie tworzy się na punkcie, który <$short_name$> może zobaczyć w promieniu 120 stóp od niego. Wir trwa tak długo, jak <$short_name$> utrzymuje koncentrację (jak przy koncentracji na zaklęciu). Każda istota poza <$short_name$>, która wejdzie w wir, musi odnieść sukces na rzucie ratunkowym DC <$dc__str$> lub zostać przez niego {@condition restrained}. <$title_short_name$> może poruszyć wicher do 60 stóp jako akcję, a stworzenia {@condition restrained} przez wicher poruszają się z nim. Wicher kończy działanie, jeśli <$tytuł_krótka_nazwa$> straci go z oczu.",
+				"Cylinder wirującego powietrza o promieniu 5 stóp i wysokości 30 stóp magicznie tworzy się na punkcie, który <$krótka_nazwa$> może zobaczyć w promieniu 120 stóp od niego. Wir trwa tak długo, jak <$short_name$> utrzymuje {@status concentration} (jak {@status concentration||concentrating} na zaklęciu). Każda istota poza <$short_name$>, która wejdzie w wir, musi odnieść sukces na rzucie ratunkowym DC <$dc__str$> lub zostać przez niego {@condition restrained}. <$title_short_name$> może poruszyć wir do 60 stóp jako akcję, a stworzenia {@condition restrained} przez wir poruszają się z nim. Wicher kończy działanie, jeśli <$tytuł_krótka_nazwa$> straci go z oczu.",
 				"Istota może użyć swojej akcji, aby uwolnić istotę {@condition restrained} przez wir, w tym siebie, udając się na kontroli Wytrzymałości DC <$dc__str$>. Jeśli sprawdzenie się powiedzie, stworzenie nie jest już {@condition restrained} i przenosi się do najbliższej przestrzeni poza wirem."
 			]
 		},
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Darkness Aura (Darkmantle)",
 			"entries": [
-				"Magiczna ciemność o promieniu 15 stóp rozciąga się od <$short_name$>, porusza się wraz z nim i rozprzestrzenia się za rogami. Ciemność trwa tak długo, jak <$short_name$> utrzymuje koncentrację, do 10 minut (jak przy koncentracji na zaklęciu). Ciemnowidzenie nie może przeniknąć tej ciemności, a żadne naturalne światło nie może jej oświetlić. Jeśli jakakolwiek część ciemności pokryje się z obszarem światła stworzonym przez zaklęcie 2. poziomu lub niższe, zaklęcie tworzące światło zostaje rozwiane."
+				"Magiczna ciemność o promieniu 15 stóp rozciąga się od <$short_name$>, porusza się wraz z nim i rozchodzi się po kątach. Mrok trwa tak długo, jak <$short_name$> utrzymuje {@status concentration}, do 10 minut (jak {@status concentration||concentrating} na zaklęciu). Ciemnowidzenie nie może przeniknąć tej ciemności, a żadne naturalne światło nie może jej oświetlić. Jeśli jakakolwiek część ciemności pokrywa się z obszarem światła stworzonym przez zaklęcie 2. poziomu lub niższe, zaklęcie tworzące światło jest dispelled.ses sight of it."
 			]
 		},
 		{
@@ -1709,19 +1709,19 @@
 		{
 			"name": "Invisibility (Duergar)",
 			"entries": [
-				"<$title_short_name$> magicznie obraca się {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia lub nie użyje swojego Powiększenia, lub dopóki nie zostanie przerwana jego koncentracja, do 1 godziny (jak przy koncentracji na zaklęciu). Każdy sprzęt, który <$short_name$> nosi lub niesie jest z nim {@condition invisible}."
+				"<$title_short_name$> magicznie obraca się {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia lub nie użyje swojego Powiększenia, lub dopóki jego {@status concentration} nie zostanie złamane, do 1 godziny (tak jakby {@status concentration||concentrating} na zaklęciu). Każdy sprzęt, który <$short_name$> nosi lub niesie jest z nim {@condition invisible}."
 			]
 		},
 		{
 			"name": "Invisibility (Quasit)",
 			"entries": [
-				"<$title_short_name$> magicznie obraca się {@condition invisible}, dopóki nie zaatakuje lub nie użyje Strachu, lub dopóki nie skończy się jego koncentracja (jak przy koncentracji na zaklęciu). Wszelki sprzęt <$short_name$> nosi lub niesie jest z nim {@condition invisible}."
+				"<$title_short_name$> magicznie obraca się {@condition invisible}, dopóki nie zaatakuje lub nie użyje Strachu, lub dopóki jego {@status concentration} się nie skończy (tak jakby {@status concentration||concentrating} na zaklęciu). Każdy sprzęt, który <$short_name$> nosi lub niesie, jest z nim {@condition invisible}."
 			]
 		},
 		{
 			"name": "Invisibility (Sprite)",
 			"entries": [
-				"<$title_short_name$> magicznie obraca się {@condition invisible}, dopóki nie zaatakuje lub nie rzuci zaklęcia, lub dopóki nie skończy się jego koncentracja (jak w przypadku koncentracji na zaklęciu). Wszelki sprzęt <$short_name$> nosi lub niesie jest z nim {@condition invisible}."
+				"<$title_short_name$> magicznie obraca się {@condition invisible}, dopóki nie zaatakuje lub nie rzuci zaklęcia, lub dopóki jego {@status concentration} nie skończy się (jak {@status concentration||concentrating} na zaklęciu). Każdy sprzęt, który <$short_name$> nosi lub niesie, jest z nim {@condition invisible}."
 			]
 		},
 		{
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Read Thoughts (Doppelganger)",
 			"entries": [
-				"<$title_short_name$> magicznie odczytuje powierzchniowe myśli jednego stworzenia w promieniu 60 stóp od niego. Efekt może przenikać przez bariery, ale 3 stopy drewna lub brudu, 2 stopy kamienia, 2 cale metalu lub cienki arkusz ołowiu blokują go. Gdy cel jest w zasięgu, <$short_name$> może kontynuować czytanie jego myśli, o ile koncentracja <$short_name$> nie zostanie złamana (jak przy koncentracji na zaklęciu). Podczas czytania myśli celu, <$short_name$> ma przewagę w sprawdzaniu Mądrości ({@skill Insight}) i Charyzmy ({@skill Deception}, {@skill Intimidation} i {@skill Persuasion}) przeciwko celowi."
+				"<$title_short_name$> magicznie odczytuje powierzchniowe myśli jednej istoty w promieniu 60 stóp od niego. Efekt może przenikać przez bariery, ale 3 stopy drewna lub brudu, 2 stopy kamienia, 2 cale metalu lub cienki arkusz ołowiu blokują go. Gdy cel jest w zasięgu, <$short_name$> może kontynuować czytanie jego myśli, o ile {@status concentration} <$short_name$> nie jest złamane (tak jakby {@status concentration||concentrating} na zaklęciu). Podczas czytania myśli celu, <$short_name$> ma przewagę w sprawdzaniu Mądrości ({@skill Insight}) i Charyzmy ({@skill Deception}, {@skill Intimidation} i {@skill Persuasion}) przeciwko celowi."
 			]
 		},
 		{

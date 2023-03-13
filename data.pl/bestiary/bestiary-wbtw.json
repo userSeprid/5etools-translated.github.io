@@ -1963,6 +1963,7 @@
 		{
 			"name": "Gloam",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 93,
 			"size": [
@@ -4168,7 +4169,7 @@
 				{
 					"name": "Twin Sight (Recharges after a Short or Long Rest)",
 					"entries": [
-						"W swoim umyśle bliźniak Selenelion może widzieć to, co widzi drugi bliźniak, przez maksymalnie 1 minutę, pod warunkiem, że obaj bliźniacy żyją i znajdują się na tej samej płaszczyźnie egzystencji. Utrzymanie tego efektu wymaga koncentracji (jak w przypadku koncentracji na zaklęciu)."
+						"W swoim umyśle bliźniak Selenelion może widzieć to, co widzi drugi bliźniak przez maksymalnie 1 minutę, pod warunkiem, że obaj bliźniacy żyją i znajdują się na tej samej płaszczyźnie egzystencji. Utrzymanie tego efektu wymaga {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęcie)."
 					]
 				}
 			],
@@ -4274,7 +4275,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Jako dodatkowe działanie, Sir Talavar może magicznie obracać się o {@condition invisible} do końca swojej koncentracji (tak jakby koncentrował się na zaklęciu). Wszelki ekwipunek, który Sir Talavar nosi lub nosi przy sobie jest {@condition invisible} z nim."
+						"Jako akcja dodatkowa, Sir Talavar może magicznie obrócić {@condition invisible}, dopóki jego {@status concentration} się nie skończy (jak gdyby {@status concentration||concentrating} na zaklęciu). Każdy sprzęt, który Sir Talavar nosi lub nosi, jest {@condition invisible} z nim."
 					]
 				},
 				{
@@ -5010,6 +5011,7 @@
 		{
 			"name": "Thinnings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 15,
 			"_copy": {
@@ -5750,7 +5752,7 @@
 				{
 					"name": "Animate Corpse (1/Day)",
 					"entries": [
-						"Zargash celuje w martwe zwłoki jednego humanoida, którego widzi w promieniu 30 stóp od siebie i rozkazuje mu wstać, przekształcając go w zombie pod swoją kontrolą. Zombi wykonuje swoją turę zaraz po Zargashu. Animowanie zombie wymaga koncentracji Zargasha (tak jakby koncentrował się na zaklęciu). Zombi powraca do postaci martwego trupa po 10 minutach, kiedy spadnie do 0 punktów trafień lub kiedy koncentracja Zargasha się skończy."
+						"Zargash celuje w pozbawione życia zwłoki jednego Humanoida, którego widzi w promieniu 30 stóp od siebie i nakazuje mu wstać, przekształcając go w zombie pod jego kontrolą. Zombie wykonuje swoją turę zaraz po Zargashu. Animowanie zombie wymaga od Zargasha {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęcie). Zombie powraca do postaci martwego trupa po 10 minutach, gdy spadnie do 0 punktów trafień lub gdy skończy się {@status concentration} Zargasha."
 					]
 				}
 			],

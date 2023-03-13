@@ -642,8 +642,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Niektóre opcje wymagają koncentracji, aby utrzymać swoje efekty. Wymóg ten jest oznaczony symbolem \"conc.\" po koszcie punktu psi opcji. Po oznaczeniu \"conc.\" podany jest maksymalny czas trwania koncentracji. Na przykład, jeśli na opcji jest napisane \"conc., 1 min.\", to możesz koncentrować się na jej efekcie przez maksymalnie 1 minutę.",
-								"Koncentracja na dyscyplinie podlega tym samym zasadom, co koncentracja na zaklęciu. Oznacza to, że nie możesz skupić się na zaklęciu i dyscyplinie w tym samym czasie, ani na dwóch dyscyplinach w tym samym czasie. Zobacz {@book chapter 10|PHB|10}, \"Rzucanie czarów\" w Podręczniku Gracza, aby dowiedzieć się, jak działa koncentracja."
+								"Niektóre opcje wymagają {@status concentration} do utrzymania ich efektów. Wymóg ten jest oznaczony symbolem \"conc.\" po koszcie punktu psi opcji. Po zapisie \"conc.\" następuje maksymalny czas trwania {@status concentration}. Na przykład, jeśli opcja mówi \"conc., 1 min.\", możesz skoncentrować się na jej efekcie do 1 minuty.",
+								"Koncentracja na dyscyplinie podlega tym samym zasadom co {@status concentration||concentrating} na zaklęciu. Ta zasada oznacza, że nie możesz skupić się na zaklęciu i dyscyplinie w tym samym czasie, ani na dwóch dyscyplinach w tym samym czasie. Zobacz {@book chapter 10|PHB|10}, \"Rzucanie czarów\" w Podręczniku Gracza, aby dowiedzieć się jak działa {@status concentration}.inute."
 							]
 						}
 					]
@@ -813,7 +813,7 @@
 			"level": 11,
 			"entries": [
 				"Począwszy od 11 poziomu, twoje opanowanie energii psionicznej pozwala ci wykraczać poza normalne granice umysłu. Jako akcję, zyskujesz 9 specjalnych punktów psi, które możesz wydać tylko na dyscypliny wymagające akcji lub dodatkowej akcji. Możesz wykorzystać wszystkie 9 punktów na jedną dyscyplinę lub rozłożyć je na kilka dyscyplin. Nie możesz wydać normalnych punktów psi na te dyscypliny; możesz wydać tylko specjalne punkty uzyskane dzięki tej umiejętności. Kiedy kończysz długi odpoczynek, tracisz wszystkie punkty specjalne, których nie wydałeś.",
-				"Jeśli więcej niż jedna z dyscyplin, które aktywujesz za pomocą tych punktów, wymaga koncentracji, możesz skoncentrować się na nich wszystkich. Aktywacja jednej z nich kończy efekt, na którym się koncentrowałeś, a jeśli zaczniesz koncentrować się na efekcie, który nie wykorzystuje tych punktów specjalnych, kończą się dyscypliny, na których się koncentrujesz.",
+				"Jeśli więcej niż jedna z dyscyplin, które aktywujesz za pomocą tych punktów wymaga {@status concentration}, możesz skupić się na nich wszystkich. Aktywacja jednej z nich kończy każdy efekt, nad którym już byłeś {@status concentration||concentrating}, a jeśli zaczniesz {@status concentration||concentrating} nad efektem, który nie wykorzystuje tych punktów specjalnych, kończą się dyscypliny, na których jesteś {@status concentration||concentrating}.orks.inute.",
 				"Na 15. poziomie pula punktów psi, które zyskujesz dzięki tej umiejętności, wzrasta do 11.",
 				"Masz jedno użycie tej cechy i odzyskujesz ją po długim odpoczynku. Na 13, 15 i 17 poziomie zyskujesz jedno dodatkowe użycie tej cechy."
 			]
@@ -1123,7 +1123,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Od 3. poziomu możesz skupić swój umysł, aby odczytać psioniczny odcisk pozostawiony na przedmiocie. Jeśli trzymasz przedmiot i koncentrujesz się na nim przez 10 minut (tak jakbyś koncentrował się na dyscyplinie psionicznej), dowiadujesz się o nim kilku podstawowych faktów. Otrzymujesz mentalny obraz z punktu widzenia przedmiotu, pokazujący ostatnią istotę, która trzymała ten przedmiot w ciągu ostatnich 24 godzin.",
+				"Od 3 poziomu możesz skupić swój umysł, aby odczytać psioniczny odcisk pozostawiony na przedmiocie. Jeśli trzymasz przedmiot i koncentrujesz się na nim przez 10 minut (jak {@status concentration||concentrating} na dyscyplinie psionicznej), dowiadujesz się o nim kilku podstawowych faktów. Zyskujesz mentalny obraz z punktu widzenia przedmiotu, pokazujący ostatnią istotę, która trzymała ten przedmiot w ciągu ostatnich 24 godzin..orks.inute.",
 				"Dowiadujesz się także o wszelkich wydarzeniach, które miały miejsce w promieniu 20 stóp od obiektu w ciągu ostatniej godziny. Wydarzenia, które postrzegasz, rozgrywają się z perspektywy obiektu. Widzisz i słyszysz te wydarzenia tak, jakbyś tam był, ale nie możesz używać innych zmysłów.",
 				"Dodatkowo, możesz umieścić w przedmiocie niematerialny czujnik psioniczny. Przez następne 24 godziny możesz użyć akcji, aby poznać położenie przedmiotu względem ciebie (jego odległość i kierunek) i spojrzeć na otoczenie przedmiotu z jego punktu widzenia, tak jakbyś tam był. Ta percepcja trwa do początku twojej następnej tury.",
 				"Po użyciu tej funkcji nie można z niej korzystać ponownie, dopóki nie zakończy się krótkiego lub długiego odpoczynku."

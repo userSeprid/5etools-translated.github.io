@@ -527,7 +527,7 @@
 				{
 					"name": "Insect Gorge (Costs 2 Actions)",
 					"entries": [
-						"Baalzebul wypuszcza rój kąśliwych much (inaczej to samo, co plaga owadów), który zadaje 44 ({@damage 8d10}) obrażeń kłujących i nie wymaga koncentracji."
+						"Baalzebul wypuszcza rój gryzących much (inaczej to samo co plaga owadów), który zadaje 44 ({@damage 8d10}) obrażeń przeszywających i nie wymaga {@status concentration}."
 					]
 				}
 			],
@@ -2084,7 +2084,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Dagryn magicznie zamienia się w {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia lub dopóki jego koncentracja nie zostanie przerwana, do 1 godziny (jak w przypadku koncentracji na zaklęciu). Wszelki ekwipunek, który Dagryn nosi lub nosi przy sobie, jest z nim {@condition invisible}."
+						"Dagryn magicznie obraca się {@condition invisible}, dopóki nie zaatakuje, nie rzuci zaklęcia lub dopóki jego {@status concentration} nie zostanie złamane, do 1 godziny (jak {@status concentration||concentrating} na zaklęciu). Wszelki sprzęt, który Dagryn nosi lub nosi jest z nim {@condition invisible}."
 					]
 				}
 			],
@@ -2258,7 +2258,7 @@
 				{
 					"name": "Eldritch Mind",
 					"entries": [
-						"Darien ma przewagę w rzutach na uratowanie Konstytucji, które wykonuje, aby utrzymać koncentrację na zaklęciu."
+						"Darien ma przewagę w rzutach ratujących Konstytucję, które wykonuje, aby utrzymać {@status concentration} na zaklęciu."
 					]
 				}
 			],
@@ -3161,7 +3161,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Przerażający sobowtór w magiczny sposób odczytuje myśli jednej istoty znajdującej się w promieniu 60 stóp od niego. Efekt ten może przenikać przez bariery, ale 3 stopy drewna lub ziemi, 2 stopy kamienia, 2 cale metalu lub cienka warstwa ołowiu blokują go. Dopóki cel znajduje się w zasięgu, sobowtór strachu może kontynuować czytanie jego myśli, o ile nie zostanie przerwana koncentracja (jak w przypadku koncentrowania się na zaklęciu). Podczas czytania w myślach celu, sobowtór ma przewagę w testach Mądrości (Wnikliwość) i Charyzmy ({@skill Deception}, {@skill Intimidation} i {@skill Persuasion}) przeciwko celowi."
+						"Dread doppelganger magicznie odczytuje powierzchniowe myśli jednej istoty znajdującej się w odległości 60 stóp od niego. Efekt może przenikać przez bariery, ale 3 stopy drewna lub brudu, 2 stopy kamienia, 2 cale metalu lub cienki arkusz ołowiu blokują go. Gdy cel jest w zasięgu, dreadowy sobowtór może kontynuować czytanie jego myśli, o ile nie zostanie złamana Koncentracja dreadowego sobowtóra (tak jakby {@status concentration||concentrating} na zaklęciu). Podczas czytania w myślach celu, sobowtór ma przewagę w sprawdzaniu Mądrości (Wgląd) i Charyzmy ({@skill Deception}, {@skill Intimidation} i {@skill Persuasion}) przeciwko celowi."
 					]
 				}
 			],
@@ -3343,7 +3343,7 @@
 				{
 					"name": "Focused Conjuration",
 					"entries": [
-						"Gdy Edwin koncentruje się na zaklęciu Koniunkcja, jego koncentracja nie może zostać przerwana w wyniku otrzymania obrażeń."
+						"Podczas gdy Edwin jest {@status concentration||concentrating} na zaklęciu Koniugacji, jego {@status concentration} nie może zostać złamane w wyniku przyjęcia obrażeń.%), (%2%) i (%3%)) kontroli przeciwko celowi."
 					]
 				},
 				{
@@ -6237,7 +6237,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Mikstura heroizmu: Nauk zyskuje 10 tymczasowych punktów trafienia na 1 godzinę. Przez ten sam czas Nauk znajduje się pod działaniem zaklęcia {@spell bless} (nie wymaga koncentracji).",
+								"Mikstura heroizmu: Nauk zyskuje 10 tymczasowych punktów trafień na 1 godzinę. Przez ten sam czas Nauk znajduje się pod działaniem zaklęcia {@spell bless} (nie jest wymagane {@status concentration}).",
 								"Mikstura odporności: Nauk zyskuje odporność na jeden rodzaj obrażeń na 1 godzinę. Nauk wybiera jeden z następujących rodzajów obrażeń: zimno, ogień, błyskawica.",
 								"Mikstura doskonałego uzdrowienia: Nauk odzyskuje 28 punktów życia."
 							]
@@ -6885,7 +6885,7 @@
 				{
 					"name": "Extended Concentration",
 					"entries": [
-						"Phaerimm może skoncentrować się na dwóch różnych zaklęciach w tym samym czasie. Jeśli koncentracja zostanie przerwana, oba zaklęcia natychmiast zanikają."
+						"Phaerimm może skupić się na dwóch różnych zaklęciach w tym samym czasie. Jeśli {@status concentration} zostanie złamane, to oba zaklęcia natychmiast zanikają."
 					]
 				},
 				{
@@ -8738,7 +8738,7 @@
 				{
 					"name": "Mage Slaying",
 					"entries": [
-						"Kiedy Valygar zada obrażenia istocie, która koncentruje się na zaklęciu, ta istota ma minus przy rzucie ratunkowym, który wykonuje, aby utrzymać koncentrację."
+						"Kiedy Valygar zadaje obrażenia stworzeniu, które jest {@status concentration||concentrating} na zaklęciu, to stworzenie ma minus przy rzucie ratunkowym, który wykonuje, aby utrzymać swoje {@status concentration}."
 					]
 				}
 			],
@@ -9724,7 +9724,7 @@
 				{
 					"name": "Bladesong",
 					"entries": [
-						"Xan może użyć dodatkowej akcji, aby rozpocząć śpiew ostrzy. Piosenka o ostrzach trwa przez 1 minutę. Podczas używania bladesongu jego ruch zwiększa się do 40 stóp, zyskuje premię +3 do AC oraz premię +3 do wszystkich testów koncentracji."
+						"Xan może użyć dodatkowej akcji, aby rozpocząć śpiew ostrzy. Jego śpiew ostrzy trwa przez 1 minutę. Podczas używania bladesongu jego ruch zwiększa się do 40 stóp, zyskuje premię +3 do AC i zyskuje premię +3 do wszystkich kontroli {@status concentration}."
 					]
 				},
 				{

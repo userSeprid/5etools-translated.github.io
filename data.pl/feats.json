@@ -4270,7 +4270,7 @@
 							"type": "item",
 							"name": "Misty Form",
 							"entries": [
-								"Możesz rzucić zaklęcie {@spell blur} bez użycia slotu na zaklęcie lub składników materialnych. Kiedy rzucasz zaklęcie w ten sposób, nie wymaga ono od ciebie utrzymania koncentracji. Jeśli raz rzucisz zaklęcie w ten sposób, nie możesz tego zrobić ponownie, dopóki nie zakończysz długiego odpoczynku. Możesz też rzucić to zaklęcie w normalny sposób, używając slotów na zaklęcia odpowiedniego poziomu. Inteligencja, Mądrość lub Charyzma to twoje zdolności rzucania zaklęć dla tej cechy (wybierz je, gdy zdobędziesz ten wyczyn)."
+								"Możesz rzucić zaklęcie {@spell blur} bez użycia slotu na zaklęcie lub składników materialnych. Gdy rzucisz czar w ten sposób, czar nie wymaga od ciebie utrzymania {@status concentration} na nim. Gdy raz rzucisz zaklęcie w ten sposób, nie możesz tego zrobić ponownie, dopóki nie zakończysz długiego odpoczynku. Możesz również rzucić to zaklęcie w normalny sposób, używając slotów na czary, które posiadasz na odpowiednim poziomie. Inteligencja, Mądrość lub Charyzma to twoja zdolność rzucania czarów dla tej cechy (wybierz, gdy zdobędziesz ten wyczyn)."
 							]
 						},
 						{
@@ -4534,6 +4534,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"Płynie w tobie mocna krew bestii. Zyskujesz następujące korzyści:",
 				{
@@ -4562,6 +4566,10 @@
 				{
 					"con": 1
 				}
+			],
+			"resist": [
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"Płynie w tobie diabelska krew, która wyzwala w tobie odporność podobną do tej, jaką posiadają niektóre diabły. Zyskujesz następujące korzyści:",
@@ -5722,7 +5730,7 @@
 					"type": "list",
 					"items": [
 						"Kiedy istota w promieniu 5 stóp od ciebie rzuca zaklęcie, możesz wykorzystać swoją reakcję, aby wykonać atak bronią w walce wręcz przeciwko tej istocie.",
-						"Kiedy zadajesz obrażenia istocie, która koncentruje się na zaklęciu, ta istota ma minus przy rzucie ratunkowym, który wykonuje, aby utrzymać koncentrację.",
+						"Kiedy zadajesz obrażenia stworzeniu, które jest {@status concentration||concentrating} na zaklęciu, to stworzenie ma minus przy rzucie ratunkowym, który wykonuje, aby utrzymać swoje {@status concentration}.",
 						"Masz przewagę w rzutach na zaklęcia rzucane przez istoty znajdujące się w promieniu 5 stóp od ciebie."
 					]
 				}
@@ -9654,7 +9662,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Masz przewagę w rzutach ratunkowych na Konstytucję, które wykonujesz, aby utrzymać koncentrację na zaklęciu, kiedy otrzymujesz obrażenia.",
+						"Masz przewagę w rzutach ratujących Konstytucję, które wykonujesz, aby utrzymać swoje {@status concentration} na zaklęciu, gdy otrzymujesz obrażenia.",
 						"Możesz wykonywać somatyczne komponenty zaklęć, nawet jeśli w jednej lub obu rękach masz broń lub {@item shield|phb}.",
 						"Kiedy ruch wrogiej istoty sprowokuje cię do ataku, możesz użyć swojej reakcji, aby rzucić zaklęcie na tę istotę, zamiast wykonywać atak okazjonalny. Zaklęcie musi mieć czas rzucenia równy 1 akcji i musi być skierowane tylko do tego stworzenia."
 					]

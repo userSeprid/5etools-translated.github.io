@@ -1777,7 +1777,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Graviturgy Magic feature}",
-				"Jako akcję, możesz magicznie zmienić wagę jednego przedmiotu lub stworzenia, które widzisz w promieniu 30 stóp od siebie. Przedmiot lub stworzenie musi być duże lub mniejsze. Waga celu zostaje zmniejszona o połowę lub podwojona na okres do 1 minuty lub do zakończenia koncentracji (tak jakbyś koncentrował się na zaklęciu).",
+				"Jako akcja, możesz magicznie zmienić wagę jednego przedmiotu lub stworzenia, które widzisz w odległości 30 stóp od siebie. Przedmiot lub stworzenie musi być duże lub mniejsze. Waga celu zostaje zmniejszona o połowę lub podwojona na okres do 1 minuty lub do momentu, gdy skończy się twoje {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęciu).",
 				"Kiedy waga stworzenia jest zmniejszona o połowę, jego prędkość wzrasta o 10 stóp, może skoczyć na odległość dwukrotnie większą niż normalnie i ma minusy w testach na Siłę i rzutach ratujących z Siły. Kiedy waga stworzenia jest podwojona, jego prędkość zmniejsza się o 10 stóp, a ponadto ma przewagę w testach wytrzymałości i rzutach ratunkowych.",
 				"Po osiągnięciu 10. poziomu w tej klasie możesz obrać za cel przedmiot lub istotę o wielkości Ogromnej lub mniejszej."
 			]
@@ -1826,7 +1826,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Graviturgy Magic feature}",
-				"Jako akcję, możesz magicznie wytworzyć potężne pole grawitacyjne, które przyciąga inne istoty na maksymalnie 1 minutę lub do końca twojej koncentracji (tak jakbyś koncentrował się na zaklęciu). Przez ten czas, gdy wrogie ci stworzenie rozpoczyna swoją turę w promieniu 30 stóp od ciebie, musi wykonać rzut na Wytrzymałość przeciwko twojemu DC obrony przed zaklęciem. W przypadku niepowodzenia, otrzymuje {@damage 2d10} obrażeń od siły, a jego szybkość spada do 0, aż do początku jego następnej tury. W przypadku udanego ataku, otrzymuje o połowę mniejsze obrażenia, a każda stopa, którą poruszy się w tej turze, kosztuje go 2 dodatkowe stopy ruchu.",
+				"Jako akcja, możesz magicznie wyemitować potężne pole energii grawitacyjnej, które przyciąga inne istoty na okres do 1 minuty lub do momentu, gdy skończy się twoje {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęciu). Przez czas trwania, gdy wrogie ci stworzenie rozpoczyna swoją turę w odległości 30 stóp od ciebie, musi wykonać rzut ratujący z Wytrzymałości przeciwko twojemu DC obrony przed zaklęciem. W przypadku nieudanego testu otrzymuje {@damage 2d10} obrażeń od siły, a jego prędkość zostaje zredukowana do 0 do początku następnej tury. W przypadku udanego testu otrzymuje o połowę mniejsze obrażenia, a każda stopa, którą poruszy się w tej turze, kosztuje go 2 dodatkowe stopy ruchu.",
 				"Jeśli raz użyjesz tej cechy, nie możesz tego zrobić ponownie, dopóki nie zakończysz długiego odpoczynku lub nie wydasz na nią slotu zaklęcia 3. poziomu lub wyższego."
 			]
 		},
@@ -2001,7 +2001,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Od 10. poziomu, kiedy koncentrujesz się na zaklęciu Koncentracja nie może zostać przerwana w wyniku otrzymania obrażeń."
+				"Począwszy od 10 poziomu, podczas gdy jesteś {@status concentration||concentrating} na zaklęciu conjuration, twój {@status concentration} nie może zostać złamany w wyniku przyjęcia obrażeń.ry stopa, którą porusza się w tej turze, kosztuje 2 dodatkowe stopy ruchu."
 			]
 		},
 		{
@@ -2570,7 +2570,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"Począwszy od 2. poziomu, kiedy wybierasz tę szkołę, możesz tymczasowo zmienić fizyczne właściwości jednego niemagicznego przedmiotu, zamieniając go z jednej substancji w inną. Wykonujesz specjalną procedurę alchemiczną na jednym przedmiocie składającym się w całości z drewna, kamienia (ale nie z kamienia szlachetnego), żelaza, miedzi lub srebra, zmieniając go w inny z tych materiałów. Za każde 10 minut spędzone na wykonywaniu procedury możesz przekształcić do 1 stopy sześciennej materiału. Po 1 godzinie lub do utraty koncentracji (tak jakbyś koncentrował się na zaklęciu), materiał powraca do swojej pierwotnej postaci."
+				"Począwszy od 2. poziomu, gdy wybierzesz tę szkołę, możesz tymczasowo zmienić właściwości fizyczne jednego niemagicznego obiektu, zmieniając go z jednej substancji w inną. Wykonujesz specjalną procedurę alchemiczną na jednym przedmiocie składającym się w całości z drewna, kamienia (ale nie kamienia szlachetnego), żelaza, miedzi lub srebra, przekształcając go w inny z tych materiałów. Za każde 10 minut spędzone na wykonywaniu procedury możesz przekształcić do 1 stopy sześciennej materiału. Po 1 godzinie lub do momentu, gdy stracisz {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęciu), materiał powraca do swojej pierwotnej substancji."
 			]
 		},
 		{
@@ -2775,7 +2775,7 @@
 						"Zyskujesz premię do AC równą twojemu modyfikatorowi Inteligencji (minimum +1).",
 						"Twoja prędkość chodzenia wzrasta o 10 stóp.",
 						"Masz przewagę w testach Zręczności ({@skill Acrobatics}).",
-						"Otrzymujesz premię do wszystkich rzutów na uratowanie Konstytucji, które wykonujesz, aby utrzymać koncentrację na zaklęciu. Premia ta jest równa twojemu modyfikatorowi inteligencji (minimum +1)."
+						"Zyskujesz premię do wszelkich rzutów ratujących Konstytucję, które wykonujesz, aby utrzymać {@status concentration} na zaklęciu. Premia jest równa twojemu modyfikatorowi Inteligencji (minimum +1).tracisz swoje {@status concentration} (tak jakbyś był (%1%) na zaklęciu), materiał powraca do swojej pierwotnej substancji."
 					]
 				},
 				"Możesz użyć tej cechy tyle razy, ile wynosi twoja premia do biegłości, a po zakończeniu długiego odpoczynku odzyskujesz wszystkie zużyte jej efekty."
@@ -3089,7 +3089,7 @@
 			"entries": [
 				"{@i 10th-level Order of Scribes feature}",
 				"Jesteś teraz w stanie przywołać umysł swojej Przebudzonej księgi zaklęć. Jako akcję dodatkową, gdy księga znajduje się przy tobie, możesz sprawić, że umysł zamanifestuje się jako maleńka widmowa konstrukcja, unosząca się w wybranej przez ciebie niezajętej przestrzeni w promieniu 60 stóp od ciebie. Obecność ta jest niematerialna i nie zajmuje swojej przestrzeni, rzucając przyćmione światło w promieniu 10 stóp. Wygląda jak upiorne tomiszcze, kaskada tekstu lub uczony z przeszłości (do wyboru). Widmowy umysł ma liczbę punktów życia równą twojemu poziomowi czarodzieja plus twój modyfikator inteligencji, a także używa twoich modyfikatorów klasy pancerza i rzutów ratunkowych.",
-				"Podczas manifestacji Widmowy umysł może słyszeć i widzieć, a jego zasięg wynosi {@sense darkvision} 60 stóp. Jako akcję możesz słyszeć i widzieć używając jego zmysłów, zamiast własnych, aż do zakończenia koncentracji (jak w przypadku koncentracji na zaklęciu).",
+				"Podczas manifestacji widmowy umysł może słyszeć i widzieć, ma {@sense darkvision} o zasięgu 60 stóp. Jako akcja, możesz słyszeć i widzieć używając jego zmysłów, zamiast swoich własnych, aż do momentu, gdy skończy się twoje {@status concentration} (tak jakby {@status concentration||concentrating} na zaklęciu).",
 				"Za każdym razem, gdy rzucasz zaklęcie czarodzieja w swojej turze, możesz je rzucić tak, jakbyś znajdował się w przestrzeni Widmowego Umysłu, a nie swojej, używając jego zmysłów. Możesz to zrobić tyle razy dziennie, ile wynosi twoja premia do biegłości, a wszystkie zużyte czary odzyskujesz po zakończeniu długiego odpoczynku.",
 				"Jako działanie dodatkowe możesz sprawić, że Widmowy Umysł zawiśnie na odległość do 30 stóp do niezajętej przestrzeni, którą ty lub on widzicie. Może on przechodzić przez istoty, ale nie przez przedmioty. Widmowy umysł przestaje się manifestować, jeśli znajdzie się w odległości większej niż 300 stóp od ciebie, jeśli spadnie do 0 punktów życia, jeśli zginiesz lub jeśli oddalisz go w ramach akcji bonusowej."
 			]
@@ -3262,7 +3262,7 @@
 						}
 					]
 				},
-				"Runa wrogości utrzymuje się przez 1 minutę lub do utraty koncentracji (tak jakbyś koncentrował się na zaklęciu). Jeśli raz naznaczysz w ten sposób stworzenie, nie możesz tego zrobić ponownie, dopóki nie zakończysz długiego odpoczynku, chyba że wydasz slot zaklęcia 3. poziomu lub wyższy, aby ponownie użyć tej cechy."
+				"Runa wrogości trwa przez 1 minutę lub do momentu, gdy stracisz {@status concentration} (tak jakbyś miał {@status concentration||concentrating} na zaklęcie). Gdy raz naznaczysz w ten sposób stworzenie, nie możesz tego zrobić ponownie, aż do zakończenia długiego odpoczynku, chyba że wydasz slot na zaklęcie 3. poziomu lub wyższy, aby ponownie użyć tej cechy."
 			]
 		},
 		{
@@ -4094,7 +4094,7 @@
 			"entries": [
 				"Na 6. poziomie potrafisz umieścić zaklęcie w wybranym urządzeniu elektronicznym, tak że dotknięcie klawisza lub przełączenie przełącznika w ramach akcji powoduje aktywację zaklęcia. Wszystkie zmienne zaklęcia są ustalane w momencie rzucania. Moc obliczeniowa tego urządzenia musi być równa lub większa niż telefonu komórkowego.",
 				"Zaprogramowane zaklęcie pozostaje w urządzeniu przez 48 godzin, a po jego rozładowaniu przestaje istnieć. Możesz użyć tej funkcji, aby umieścić zaprogramowane zaklęcie tylko w jednym urządzeniu na raz, a jedno urządzenie może pomieścić tylko jedno zaprogramowane zaklęcie. Tylko ty możesz aktywować zaprogramowane zaklęcie w urządzeniu. Jeśli urządzenie zostanie zniszczone, zaprogramowane zaklęcie zostanie utracone.",
-				"Zaklęcie koncentrujące umieszczone w urządzeniu nie może być aktywowane, gdy koncentrujesz się na innym zaklęciu. Jeśli raz użyjesz tej umiejętności, nie możesz jej użyć ponownie, dopóki nie zakończysz długiego odpoczynku."
+				"{@status concentration} zaklęcie umieszczone w urządzeniu nie może być aktywowane, gdy jesteś {@status concentration||concentrating} na innym zaklęciu. Gdy raz użyjesz tej cechy, nie możesz jej ponownie użyć, dopóki nie zakończysz długiego odpoczynku."
 			]
 		},
 		{
@@ -4124,7 +4124,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Na 14. poziomie nauczyłeś się odciskać ślady swojej świadomości na urządzeniach elektronicznych o znacznej mocy obliczeniowej. Kiedy rzucasz zaklęcie koncentracji, możesz użyć urządzenia o mocy obliczeniowej równej lub większej od tabletu, aby utrzymać koncentrację zaklęcia w twoim imieniu. Aby utrzymać ten efekt, urządzenie musi być trzymane lub noszone przez ciebie. Jeśli urządzenie zostanie zniszczone, zabrane, upuszczone lub wyłączone, koncentracja kończy się. Jeśli raz użyjesz tej umiejętności, nie możesz jej użyć ponownie, dopóki nie zakończysz długiego odpoczynku."
+				"Na 14 poziomie nauczyłeś się odciskać ślady swojej świadomości na urządzeniach elektronicznych o znacznej mocy obliczeniowej. Kiedy rzucasz {@status concentration} zaklęcia, możesz użyć urządzenia, którego moc obliczeniowa jest równa lub większa od tabletu, aby utrzymało {@status concentration} zaklęcia w twoim imieniu. Urządzenie musi być trzymane lub noszone przez ciebie, aby utrzymać ten efekt. Jeśli urządzenie zostanie zniszczone, odebrane ci, upuszczone lub wyłączone, {@status concentration} kończy się. Po użyciu tej cechy, nie możesz jej ponownie użyć, aż do zakończenia długiego odpoczynku."
 			]
 		},
 		{
@@ -4899,7 +4899,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Począwszy od 10. poziomu, magia, którą się posługujesz, pomaga odeprzeć szkody. Gdy koncentrujesz się na zaklęciu, otrzymujesz premię +2 do AC i wszystkich rzutów obronnych."
+				"Począwszy od 10 poziomu, magia, którą rzucasz, pomaga odeprzeć szkody. Gdy utrzymujesz {@status concentration} na zaklęciu, masz premię +2 do AC i wszystkich rzutów ratunkowych.n do czasu zakończenia długiego odpoczynku."
 			]
 		},
 		{
@@ -4995,7 +4995,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Począwszy od 10. poziomu, magia, którą się posługujesz, pomaga odeprzeć szkody. Gdy koncentrujesz się na zaklęciu, otrzymujesz premię +2 do AC i wszystkich rzutów obronnych."
+				"Począwszy od 10 poziomu, magia, którą rzucasz, pomaga odeprzeć szkody. Gdy utrzymujesz {@status concentration} na zaklęciu, masz premię +2 do AC i wszystkich rzutów ratunkowych.n do czasu zakończenia długiego odpoczynku."
 			]
 		},
 		{

@@ -1654,7 +1654,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Jeśli rzucisz to zaklęcie, używając gniazda zaklęć 4. poziomu lub wyższego, czas trwania koncentracji wynosi do 10 minut. Jeśli użyjesz gniazda na zaklęcie 5. poziomu lub wyższego, czas trwania wynosi 8 godzin. Jeśli użyjesz gniazda zaklęć 7. poziomu lub wyższego, czas trwania wynosi 24 godziny. Jeśli użyjesz gniazda na zaklęcie 9. poziomu, zaklęcie trwa do momentu jego rozwiania. Użycie gniazda na zaklęcie 5. poziomu lub wyższego daje czas trwania, który nie wymaga koncentracji."
+						"Jeśli rzucisz to zaklęcie używając slotu na czary 4 poziomu lub wyższego, czas trwania wynosi {@status concentration}, do 10 minut. Jeśli użyjesz slotu na zaklęcie 5. poziomu lub wyższego, czas trwania wynosi 8 godzin. Jeśli użyjesz slotu na zaklęcie 7. poziomu lub wyższe, czas trwania wynosi 24 godziny. Jeśli użyjesz slotu na zaklęcie 9. poziomu, czar trwa aż do jego rozwiania. Użycie slotu na zaklęcie 5. poziomu lub wyższego daje czas trwania, który nie wymaga {@status concentration}."
 					]
 				}
 			],
@@ -3666,7 +3666,7 @@
 			"entries": [
 				"Przywołujesz sługę żywiołu. Wybierz obszar powietrza, ziemi, ognia lub wody, który wypełnia sześcian o boku 10 stóp w zasięgu. W niezajętej przestrzeni w promieniu 10 stóp od niego pojawia się {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} odpowiadający wybranemu obszarowi. Na przykład, {@creature fire elemental} wyłania się z ogniska, a {@creature earth elemental} wyrasta z ziemi. Elemental znika, gdy spadnie do 0 punktów życia lub gdy zaklęcie się skończy.",
 				"Żywiołak jest przyjaźnie nastawiony do ciebie i twoich towarzyszy przez cały czas trwania gry. Rzuć inicjatywę dla żywiołaka, który ma własną turę. Wykonuje on wszelkie polecenia słowne, które mu wydasz (nie wymaga to od ciebie żadnego działania). Jeśli nie wydasz mu żadnych rozkazów, broni się przed wrogimi istotami, ale poza tym nie podejmuje żadnych działań.",
-				"Jeśli twoja koncentracja zostanie przerwana, żywiołak nie znika. Zamiast tego tracisz nad nim kontrolę, staje się on wrogo nastawiony do ciebie i twoich towarzyszy oraz może zaatakować. Niekontrolowany żywiołak nie może zostać przez ciebie odrzucony i znika po 1 godzinie od przywołania.",
+				"Jeśli twoje {@status concentration} zostanie złamane, elemental nie znika. Zamiast tego tracisz kontrolę nad żywiołem, staje się on wrogo nastawiony do ciebie i twoich towarzyszy i może zaatakować. Niekontrolowany żywiołak nie może zostać przez ciebie odrzucony i znika po 1 godzinie od jego przywołania. Użycie slotu na zaklęcie 5. poziomu lub wyższego daje czas trwania, który nie wymaga (%1%).",
 				"DM posiada statystyki żywiołaka."
 			],
 			"entriesHigherLevel": [
@@ -3719,7 +3719,7 @@
 			"entries": [
 				"Przywołujesz {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm} lub ducha czarnoksiężnika, który przybiera postać {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. Pojawia się w niezajętej przestrzeni, którą widzisz w zasięgu. Fey creature znika, gdy spadnie do 0 punktów trafień lub gdy zaklęcie się skończy.",
 				"Istota jest przyjazna tobie i twoim towarzyszom przez cały czas trwania gry. Rzuć inicjatywę dla stworzenia, które ma własną turę. Posłusznie wykonuje wszystkie polecenia słowne, które mu wydasz (bez konieczności podejmowania przez ciebie akcji), o ile nie naruszają one jego wyrównania. Jeśli nie wydasz mu żadnych rozkazów, broni się przed wrogimi istotami, ale poza tym nie podejmuje żadnych działań.",
-				"Jeśli twoja koncentracja zostanie przerwana, stwór nie znika. Zamiast tego tracisz nad nim kontrolę, staje się on wrogo nastawiony do ciebie i twoich towarzyszy oraz może zaatakować. Niekontrolowana istota nie może zostać przez ciebie odrzucona i znika po upływie godziny od jej przywołania.",
+				"Jeśli twoje {@status concentration} zostanie złamane, feyowa istota nie znika. Zamiast tego tracisz nad nim kontrolę, staje się wrogo nastawiony do ciebie i twoich towarzyszy i może zaatakować. Niekontrolowana istota nie może zostać przez ciebie odrzucona i znika po 1 godzinie od jej przywołania.Poziom h lub wyższy daje czas trwania, który nie wymaga (%1%).",
 				"DM dysponuje statystykami stwora fey."
 			],
 			"entriesHigherLevel": [
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"Wiązka żółtego światła rozbłyska z twojego palca wskazującego, a następnie skrapla się i pozostaje w wybranym punkcie zasięgu w postaci świecącego paciorka przez cały czas trwania zaklęcia. Kiedy zaklęcie się kończy, czy to z powodu przerwania koncentracji, czy też dlatego, że sam decydujesz o jego zakończeniu, paciorek rozkwita z niskim rykiem w eksplozję płomieni, która rozprzestrzenia się po kątach. Każda istota w promieniu 20 stóp od tego punktu musi wykonać rzut obronny na zręczność. Stworzenie otrzymuje obrażenia od ognia równe całkowitym skumulowanym obrażeniom w przypadku nieudanego testu lub o połowę mniejsze w przypadku udanego testu.",
+				"Z Twojego wskazującego palca wylatuje wiązka żółtego światła, po czym kondensuje się, by na czas trwania zaklęcia pozostać w wybranym punkcie w zasięgu jako świecąca paciorka. Kiedy zaklęcie się kończy, czy to z powodu złamania twojego {@status concentration}, czy też dlatego, że sam zdecydujesz się je zakończyć, paciorek rozkwita z niskim rykiem w eksplozję płomieni, które rozchodzą się po kątach. Każda istota w promieniu 20 stóp skupiona na tym punkcie musi wykonać rzut ratujący zręczność. Stworzenie otrzymuje obrażenia od ognia równe całkowitym skumulowanym obrażeniom przy nieudanym rzucie, lub o połowę mniejsze przy udanym.mrówki czas trwania, który nie wymaga (%1%).",
 				"Podstawowe obrażenia zaklęcia wynoszą {@damage 12d6}. Jeśli na koniec twojej tury paciorek nie został jeszcze zdetonowany, obrażenia wzrastają o {@dice 1d6}.",
 				"Jeśli żarzący się paciorek zostanie dotknięty przed upływem czasu, dotykająca go istota musi wykonać rzut ratujący zręczność. W przypadku niepowodzenia, zaklęcie natychmiast się kończy, a paciorek staje w płomieniach. W przypadku udanego ataku, stworzenie może rzucić paciorkiem na odległość do 40 stóp. Kiedy paciorek uderzy w istotę lub stały obiekt, czar się kończy, a paciorek eksploduje.",
 				"Pożar niszczy przedmioty znajdujące się w pobliżu i powoduje zapłon przedmiotów łatwopalnych, które nie są noszone lub przewożone."
@@ -5906,7 +5906,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Kiedy rzucasz to zaklęcie z 5. poziomu gniazda zaklęć, czas trwania to koncentracja, do 10 minut. Jeśli użyjesz gniazda na zaklęcie 6. poziomu, czas trwania to koncentracja, do 1 godziny. Jeśli użyjesz gniazda na zaklęcie 7. poziomu lub wyższego, czas trwania to koncentracja, do 8 godzin."
+						"Gdy rzucasz to zaklęcie z 5. poziomowym slotem na czary, czas trwania wynosi {@status concentration}, do 10 minut. Gdy używasz slotu na czar 6. poziomu, czas trwania wynosi {@status concentration}, do 1 godziny. Gdy użyjesz slotu na czary 7. poziomu lub wyższe, czas trwania wynosi {@status concentration}, do 8 godzin.adius sfera skupiona na tym punkcie musi wykonać rzut ratujący zręczność. Stworzenie otrzymuje obrażenia od ognia równe całkowitym skumulowanym obrażeniom przy nieudanym rzucie, lub o połowę mniejsze przy udanym.mrówki czas trwania, który nie wymaga {@status concentration}."
 					]
 				}
 			],
@@ -5972,7 +5972,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Kiedy rzucasz to zaklęcie ze slotem zaklęć na 9. poziomie, czas trwania koncentracji wynosi do 8 godzin."
+						"Gdy rzucasz to zaklęcie ze slotem na czary 9. poziomu, czas trwania wynosi {@status concentration}, do 8 godzin.Rzut ratujący zręczność. Stworzenie otrzymuje obrażenia od ognia równe całkowitym skumulowanym obrażeniom przy nieudanym rzucie, lub o połowę mniejsze przy udanym.mrówki czas trwania, który nie wymaga (%1%)."
 					]
 				}
 			],
@@ -6035,7 +6035,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Kiedy rzucasz to zaklęcie używając 6. poziomu gniazda zaklęć, czas trwania to koncentracja, do 10 minut. Jeśli użyjesz gniazda na zaklęcie 7. poziomu, czas trwania to koncentracja, do 1 godziny. Jeśli użyjesz gniazda na zaklęcie 8. poziomu lub wyższego, czas trwania koncentracji wynosi do 8 godzin."
+						"Gdy rzucasz to zaklęcie używając slotu na zaklęcie 6 poziomu, czas trwania wynosi {@status concentration}, do 10 minut. Kiedy używasz 7-poziomowego slotu na zaklęcia, czas trwania wynosi {@status concentration}, do 1 godziny. Gdy użyjesz slotu na zaklęcie 8. poziomu lub wyższego, czas trwania wynosi {@status concentration}, do 8 godzin."
 					]
 				}
 			],
@@ -6230,8 +6230,8 @@
 			],
 			"entries": [
 				"Tworzysz zaburzenie sejsmiczne w punkcie na ziemi, który widzisz w zasięgu. Przez cały czas trwania tego efektu, w promieniu 100 stóp przez ziemię przebiega intensywny wstrząs, który wstrząsa istotami i budowlami mającymi kontakt z ziemią w tym obszarze.",
-				"Ziemia na tym obszarze staje się {@quickref difficult terrain||3}. Każda istota na ziemi, która się koncentruje, musi wykonać rzut na uratowanie Konstytucji. W przypadku niepowodzenia, koncentracja stworzenia zostaje przerwana.",
-				"Kiedy rzucasz to zaklęcie i na koniec każdej tury, podczas której się na nim koncentrujesz, każda istota na ziemi w okolicy musi wykonać rzut ratujący przed zręcznością. W przypadku nieudanego testu, stworzenie zostaje powalone {@condition prone}.",
+				"Ziemia na tym obszarze staje się {@quickref difficult terrain||3}. Każda istota na ziemi, która jest {@status concentration||concentrating} musi wykonać rzut ratujący Konstytucję. W przypadku nieudanego testu, {@status concentration} stworzenia zostaje złamane.",
+				"Kiedy rzucasz to zaklęcie i na koniec każdej tury, w której wydasz na nie {@status concentration||concentrating}, każda istota na ziemi w okolicy musi wykonać rzut ratujący zręczność. W przypadku nieudanego testu, stworzenie zostaje powalone na ziemię {@condition prone}.",
 				"To zaklęcie może mieć dodatkowe efekty w zależności od terenu na danym obszarze, określone przez DM.",
 				{
 					"type": "entries",
@@ -7903,7 +7903,7 @@
 				"Próbujesz zamienić w kamień jedną istotę, którą widzisz w zasięgu. Jeśli ciało celu jest zbudowane z ciała, stworzenie musi wykonać rzut ratunkowy na Konstytucję. W przypadku nieudanego testu, traci {@condition restrained}, ponieważ jej ciało zaczyna twardnieć. W przypadku udanego ataku, stworzenie nie zostaje dotknięte.",
 				"Stworzenie {@condition restrained} dotknięte tym zaklęciem musi wykonać kolejny rzut na uratowanie Konstytucji na koniec każdej swojej tury. Jeśli trzy razy uda jej się obronić przed tym zaklęciem, zaklęcie kończy działanie. Jeśli trzy razy nie uda jej się uratować, zostaje zamieniona w kamień i podlega warunkowi {@condition petrified} na czas trwania zaklęcia. Sukcesy i porażki nie muszą następować po sobie; notuj je, dopóki cel nie zbierze trzech takich samych.",
 				"Jeśli stworzenie zostało fizycznie uszkodzone w czasie {@condition petrified}, cierpi na podobne deformacje, jeśli powróci do swojego pierwotnego stanu.",
-				"Jeśli utrzymasz koncentrację na tym zaklęciu przez cały możliwy czas jego trwania, istota zostanie zamieniona w kamień, dopóki efekt nie zostanie usunięty."
+				"Jeśli utrzymasz swoje {@status concentration} na tym zaklęciu przez cały możliwy czas trwania, istota zostaje zamieniona w kamień do czasu usunięcia efektu."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -8653,7 +8653,7 @@
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"W glifie można przechowywać przygotowane zaklęcie 3. poziomu lub niższe, rzucając je w trakcie tworzenia glifu. Zaklęcie musi być skierowane na pojedynczą istotę lub obszar. Przechowywane zaklęcie nie ma natychmiastowego efektu, gdy zostanie rzucone w ten sposób. Kiedy glif zostanie uruchomiony, rzucane jest przechowywane zaklęcie. Jeśli zaklęcie ma cel, to jest nim istota, która uruchomiła glif. Jeśli zaklęcie działa na obszar, obszar ten jest skupiony na tym stworzeniu. Jeśli zaklęcie przywołuje wrogie istoty lub tworzy szkodliwe przedmioty czy pułapki, pojawiają się one jak najbliżej intruza i atakują go. Jeśli zaklęcie wymaga koncentracji, trwa do końca pełnego czasu jego trwania."
+						"Możesz przechowywać w glifie przygotowane zaklęcie 3. poziomu lub niższe, rzucając je jako część tworzenia glifu. Zaklęcie musi być skierowane na pojedynczą istotę lub obszar. Przechowywane zaklęcie nie ma natychmiastowego efektu, gdy zostanie rzucone w ten sposób. Kiedy glif zostanie uruchomiony, przechowywane zaklęcie zostaje rzucone. Jeśli zaklęcie ma cel, to jest nim istota, która uruchomiła glif. Jeśli zaklęcie działa na obszar, to obszar ten jest skupiony na tym stworzeniu. Jeśli zaklęcie przywołuje wrogie stworzenia lub tworzy szkodliwe obiekty lub pułapki, pojawiają się one jak najbliżej intruza i atakują go. Jeśli zaklęcie wymaga {@status concentration}, trwa ono do końca pełnego czasu trwania."
 					]
 				}
 			],
@@ -9921,7 +9921,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Kiedy rzucasz to zaklęcie, używając gniazda zaklęć 3. lub 4. poziomu, możesz utrzymać koncentrację na zaklęciu przez 8 godzin. Jeśli użyjesz gniazda na zaklęcie 5. poziomu lub wyższego, możesz utrzymać koncentrację na zaklęciu do 24 godzin."
+						"Kiedy rzucasz to zaklęcie używając slotu na czary 3 lub 4 poziomu, możesz utrzymać swoje {@status concentration} na zaklęciu do 8 godzin. Kiedy używasz slotu na zaklęcie 5. poziomu lub wyższego, możesz utrzymać swoje {@status concentration} na zaklęciu do 24 godzin.e stworzenia lub tworzy szkodliwe przedmioty lub pułapki, pojawiają się one jak najbliżej intruza i atakują go. Jeśli zaklęcie wymaga {@status concentration}, trwa ono do końca pełnego czasu trwania."
 					]
 				}
 			],
@@ -10225,7 +10225,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Kiedy rzucasz to zaklęcie, używając gniazda zaklęć 3. lub 4. poziomu, możesz utrzymać koncentrację na zaklęciu przez 8 godzin. Jeśli użyjesz gniazda na zaklęcie 5. poziomu lub wyższego, możesz utrzymać koncentrację na zaklęciu do 24 godzin."
+						"Kiedy rzucasz to zaklęcie używając slotu na czary 3 lub 4 poziomu, możesz utrzymać swoje {@status concentration} na zaklęciu do 8 godzin. Kiedy używasz slotu na zaklęcie 5. poziomu lub wyższego, możesz utrzymać swoje {@status concentration} na zaklęciu do 24 godzin.e stworzenia lub tworzy szkodliwe przedmioty lub pułapki, pojawiają się one jak najbliżej intruza i atakują go. Jeśli zaklęcie wymaga {@status concentration}, trwa ono do końca pełnego czasu trwania."
 					]
 				}
 			],
@@ -11803,7 +11803,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Kiedy rzucasz to zaklęcie, używając gniazda zaklęć 6. poziomu lub wyższego, trwa ono do momentu jego rozwiania, nie wymagając koncentracji."
+						"Kiedy rzucasz to zaklęcie używając slotu na zaklęcie 6 poziomu lub wyższego, zaklęcie trwa do momentu rozwiania, nie wymagając Twojego {@status concentration}.sible do intruza i zaatakowania go. Jeśli zaklęcie wymaga {@status concentration}, trwa ono do końca pełnego czasu trwania."
 					]
 				}
 			],
@@ -12961,7 +12961,7 @@
 			],
 			"entries": [
 				"Wybierz obszar terenu o powierzchni nie większej niż 40 stóp z jednej strony w zasięgu. Możesz zmienić kształt ziemi, piasku lub gliny na tym obszarze w dowolny sposób na czas trwania umiejętności. Możesz podnieść lub obniżyć wysokość terenu, stworzyć lub zasypać rów, wznieść lub spłaszczyć ścianę albo uformować filar. Zakres tych zmian nie może przekroczyć połowy największego wymiaru obszaru. Tak więc, jeśli masz wpływ na kwadrat o boku 40 stóp, możesz postawić filar o wysokości do 20 stóp, podnieść lub obniżyć wysokość kwadratu o maksymalnie 20 stóp, wykopać rów o głębokości do 20 stóp itd. Wprowadzenie tych zmian zajmuje 10 minut.",
-				"Na koniec każdych 10 minut koncentracji nad zaklęciem można wybrać nowy obszar terenu, na który będzie ono oddziaływać.",
+				"Na koniec każdych 10 minut, które spędzisz {@status concentration||concentrating} na zaklęciu, możesz wybrać nowy obszar terenu, na który będzie oddziaływać.",
 				"Ponieważ transformacja terenu zachodzi powoli, stworzenia znajdujące się na tym obszarze zazwyczaj nie mogą zostać uwięzione lub zranione przez ruchy ziemi.",
 				"To zaklęcie nie może manipulować naturalnym kamieniem ani kamiennymi budowlami. Skały i budowle przesuwają się, aby dostosować się do nowego terenu. Jeśli sposób, w jaki ukształtujesz teren, sprawi, że konstrukcja będzie niestabilna, może się zawalić.",
 				"Podobnie, to zaklęcie nie ma bezpośredniego wpływu na wzrost roślin. Poruszona ziemia przenosi ze sobą wszystkie rośliny."
@@ -16458,7 +16458,7 @@
 			"entries": [
 				"Do czasu zakończenia zaklęcia mroźny deszcz i sople spadają w cylindrze o wysokości 20 stóp i promieniu 40 stóp, skupionym na wybranym przez ciebie punkcie w zasięgu. Obszar ten jest {@quickref Vision and Light|PHB|2||heavily obscured}, a odsłonięte płomienie w tym obszarze zostają zgaszone.",
 				"Ziemia na tym obszarze jest pokryta śliskim lodem, co sprawia, że jest {@quickref difficult terrain||3}. Kiedy stworzenie wchodzi na obszar objęty zaklęciem po raz pierwszy w turze lub zaczyna tam swoją turę, musi wykonać rzut ratujący zręczność. Przy nieudanym rzucie spada {@condition prone}.",
-				"Jeśli istota rozpoczyna swoją turę w obszarze działania zaklęcia i koncentruje się na zaklęciu, musi wykonać udany rzut na uratowanie Konstytucji przeciwko DC zaklęcia lub stracić koncentrację."
+				"Jeśli istota rozpoczyna swoją turę w obszarze działania zaklęcia i jest {@status concentration||concentrating} na zaklęciu, musi wykonać udany rzut ratujący Konstytucję przeciwko twojemu DC ratowania zaklęcia lub stracić {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -17142,7 +17142,7 @@
 			],
 			"entries": [
 				"Tworzy się kłębiąca się chmura burzowa, skupiona w widocznym punkcie i rozprzestrzeniająca się w promieniu 360 stóp. W okolicy błyskają pioruny, rozlegają się grzmoty i huczy silny wiatr. Każda istota znajdująca się pod chmurą (nie więcej niż 5000 stóp pod chmurą) w momencie jej pojawienia się musi wykonać rzut ratunkowy na Konstytucję. W przypadku nieudanego testu, stworzenie otrzymuje {@damage 2d6} obrażeń od piorunów i staje się {@condition deafened} na 5 minut.",
-				"W każdej rundzie, w której utrzymujesz koncentrację na tym zaklęciu, burza wywołuje inne efekty w twojej turze.",
+				"W każdej rundzie, w której utrzymujesz {@status concentration} na tym zaklęciu, burza wywołuje różne efekty w twojej turze.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -17168,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Podmuchy i marznący deszcz atakują obszar pod chmurą. Obszar staje się {@quickref difficult terrain||3} i jest {@quickref Vision and Light|PHB|2||heavily obscured}. Każde znajdujące się tam stworzenie otrzymuje {@damage 1d6} obrażeń od zimna. Ataki bronią dystansową na tym obszarze są niemożliwe. Wiatr i deszcz liczą się jako poważne rozproszenie uwagi dla celów utrzymania koncentracji na zaklęciach. Wreszcie, podmuchy silnego wiatru (od 20 do 50 mil na godzinę) automatycznie rozpraszają mgłę, mgły i podobne zjawiska w okolicy, zarówno te zwykłe, jak i magiczne."
+						"Podmuchy i marznący deszcz atakują obszar pod chmurą. Obszar ten staje się {@quickref difficult terrain||3} i jest {@quickref Vision and Light|PHB|2||heavily obscured}. Każda znajdująca się tam istota otrzymuje {@damage 1d6} obrażeń od zimna. Ataki bronią dystansową na tym obszarze są niemożliwe. Wiatr i deszcz liczą się jako poważne rozproszenie uwagi dla celów zachowania {@status concentration} na zaklęcia. Wreszcie, podmuchy silnego wiatru (od 20 do 50 mil na godzinę) automatycznie rozpraszają mgłę, mgły i podobne zjawiska w okolicy, zarówno te zwykłe, jak i magiczne."
 					]
 				}
 			],
@@ -18912,7 +18912,7 @@
 				"Ściana może mieć dowolny kształt, ale nie może zajmować tej samej przestrzeni co istota lub przedmiot. Ściana nie musi być pionowa ani opierać się na żadnym mocnym fundamencie. Musi jednak łączyć się z istniejącym kamieniem i być przez niego solidnie podtrzymywana. W ten sposób możesz użyć tego zaklęcia do zasypania przepaści lub stworzenia rampy.",
 				"Jeśli tworzysz przęsło o długości większej niż 20 stóp, musisz zmniejszyć o połowę rozmiar każdego panelu, aby utworzyć podpory. Można nadać mu surowy kształt, tworząc krenelaże, mury obronne itp.",
 				"Mur jest kamiennym obiektem, który może zostać uszkodzony, a tym samym naruszony. Każdy panel ma AC 15 i 30 punktów trafień na cal grubości. Zmniejszenie panelu do 0 punktów trafień niszczy go i może spowodować zawalenie się połączonych paneli, według uznania DM.",
-				"Jeśli utrzymasz koncentrację na tym zaklęciu przez cały czas jego trwania, ściana staje się trwała i nie można jej rozproszyć. W przeciwnym razie ściana znika po zakończeniu zaklęcia."
+				"Jeśli utrzymasz swoje {@status concentration} na tym zaklęciu przez cały czas jego trwania, ściana staje się trwała i nie może zostać rozwiana. W przeciwnym razie ściana znika po zakończeniu zaklęcia. podmuchy silnego wiatru (od 20 do 50 mil na godzinę) automatycznie rozpraszają mgłę, mgły i podobne zjawiska w okolicy, zarówno te przyziemne, jak i magiczne."
 			],
 			"savingThrow": [
 				"dexterity"

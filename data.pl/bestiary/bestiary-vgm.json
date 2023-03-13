@@ -6478,7 +6478,7 @@
 				{
 					"name": "Break Concentration",
 					"entries": [
-						"Starszy Mózg celuje w istotę znajdującą się w promieniu 120 stóp od niego, z którą ma więź psychiczną. Starszy Mózg przerywa koncentrację istoty na rzuconym przez nią zaklęciu. Istota otrzymuje również {@dice 1d4} obrażeń psychicznych na poziom zaklęcia."
+						"Starszy mózg celuje w istotę w promieniu 120 stóp od niego, z którą ma psychiczną więź. Starszy Mózg łamie {@status concentration} na rzuconym przez siebie zaklęciu. Istota otrzymuje również {@dice 1d4} obrażeń psychicznych na poziom zaklęcia."
 					]
 				},
 				{
@@ -20816,7 +20816,7 @@
 				{
 					"name": "Invoke Nightmare (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Yuan-ti sięga do koszmarów istoty, którą widzi w promieniu 60 stóp od siebie i tworzy iluzoryczną, nieruchomą manifestację najgłębszych lęków tej istoty, widoczną tylko dla niej. Cel musi wykonać {@dc 13} rzut obronny na inteligencję. W przypadku nieudanego ataku, cel otrzymuje 11 ({@damage 2d10}) obrażeń psychicznych i jest {@condition frightened} w stanie przejawu, wierząc, że jest prawdziwy. yuan-ti musi się skoncentrować, aby utrzymać iluzję (tak jakby koncentrował się na zaklęciu), która trwa do 1 minuty i nie można go zranić. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc iluzję w przypadku sukcesu lub otrzymując 11 ({@damage 2d10}) obrażeń psychicznych w przypadku porażki."
+						"Yuan-ti sięga do koszmarów istoty, którą widzi w promieniu 60 stóp i tworzy iluzoryczną, nieruchomą manifestację najgłębszych lęków tej istoty, widoczną tylko dla niej. Cel musi wykonać rzut ratujący inteligencję {@dc 13}. W przypadku nieudanego testu, cel otrzymuje 11 ({@damage 2d10}) obrażeń psychicznych i jest {@condition frightened} manifestacji, wierząc, że jest prawdziwa. Yuan-ti musi się skoncentrować, by utrzymać iluzję (tak jakby {@status concentration||concentrating} na zaklęciu), która trwa do 1 minuty i nie można jej uszkodzić. Cel może powtórzyć rzut ratunkowy na koniec każdej swojej tury, kończąc iluzję w przypadku sukcesu lub otrzymując 11 ({@damage 2d10}) obrażeń psychicznych w przypadku porażki."
 					]
 				}
 			],
