@@ -1777,7 +1777,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Graviturgy Magic feature}",
-				"Som en åtgärd kan du magiskt ändra vikten på ett föremål eller en varelse som du kan se inom 30 fot från dig. Föremålet eller varelsen måste vara Large eller mindre. Målets vikt halveras eller fördubblas i upp till 1 minut eller tills din koncentration upphör (som om du koncentrerade dig på en besvärjelse).",
+				"Som en åtgärd kan du magiskt ändra vikten på ett föremål eller en varelse som du kan se inom 30 fot från dig. Föremålet eller varelsen måste vara Large eller mindre. Målets vikt halveras eller fördubblas i upp till 1 minut eller tills din {@status concentration} upphör (som om du var {@status concentration||concentrating} på en besvärjelse).",
 				"Medan en varelses vikt halveras av den här effekten ökar varelsens hastighet med 10 fot, den kan hoppa dubbelt så långt som normalt och har nackdel på styrkekontroller och räddningskast för styrka. Medan en varelses vikt fördubblas genom denna effekt, reduceras varelsens hastighet med 10 fot och den har fördel på styrkaskontroller och räddningskast.",
 				"När du når 10:e nivån i den här klassen kan du rikta in dig på ett föremål eller en varelse som är Huge eller mindre."
 			]
@@ -1826,7 +1826,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Graviturgy Magic feature}",
-				"Som en handling kan du på magiskt sätt sända ut ett kraftfullt fält av gravitationsenergi som drar till sig andra varelser i upp till 1 minut eller tills din koncentration upphör (som om du koncentrerade dig på en trollformel). Under hela tiden måste en varelse som är fientligt inställd till dig, närhelst den börjar sin tur inom 30 fot från dig, göra ett räddningskast i styrka mot din trollformels räddnings-DC. Vid ett misslyckat räddningsförsök tar den {@damage 2d10} kraftskada och dess hastighet reduceras till 0 fram till början av nästa tur. Vid ett lyckat räddningsförsök tar den hälften så mycket skada, och varje fot som den rör sig den här vändan kostar 2 extra fot för rörelse.",
+				"Som en handling kan du på magisk väg sända ut ett kraftfullt fält av gravitationsenergi som drar till sig andra varelser i upp till 1 minut eller tills din {@status concentration} upphör (som om du var {@status concentration||concentrating} på en besvärjelse). Under varaktigheten måste en varelse som är fientlig mot dig, närhelst den börjar sin tur inom 30 fot från dig, göra ett räddningskast i styrka mot din trollformels räddnings-DC. Vid ett misslyckat räddningsförsök tar den {@damage 2d10} kraftskada och dess hastighet reduceras till 0 fram till början av nästa tur. Vid ett lyckat räddningsförsök tar den hälften så mycket skada, och varje fot som den rör sig den här vändan kostar 2 extra fot för rörelse.",
 				"När du använder den här funktionen kan du inte göra det igen förrän du avslutar en lång vila eller förrän du använder en trollformel på 3:e nivån eller högre för den."
 			]
 		},
@@ -2001,7 +2001,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Från och med 10:e nivån, när du koncentrerar dig på en trollformel, kan din koncentration inte brytas av att du tar skada."
+				"Från och med 10:e nivån, medan du är {@status concentration||concentrating} på en trollformel, kan din {@status concentration} inte brytas som ett resultat av att ta skada.Varje fot som den rör sig under den här vändan kostar 2 extra fot för rörelse."
 			]
 		},
 		{
@@ -2570,7 +2570,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"Från och med nivå 2 när du väljer den här skolan kan du tillfälligt förändra de fysiska egenskaperna hos ett icke-magiskt föremål och ändra det från en substans till en annan. Du utför en speciell alkemisk procedur på ett föremål som består helt av trä, sten (men inte en ädelsten), järn, koppar eller silver och förvandlar det till ett annat av dessa material. För varje 10 minuter du spenderar på att utföra proceduren kan du omvandla upp till 1 kubikfot material. Efter 1 timme, eller tills du förlorar din koncentration (som om du koncentrerade dig på en trollformel), återgår materialet till sin ursprungliga substans."
+				"Från och med nivå 2 när du väljer den här skolan kan du tillfälligt förändra de fysiska egenskaperna hos ett icke-magiskt föremål och ändra det från en substans till en annan. Du utför en speciell alkemisk procedur på ett föremål som består helt av trä, sten (men inte en ädelsten), järn, koppar eller silver och förvandlar det till ett annat av dessa material. För varje 10 minuter du spenderar på att utföra proceduren kan du omvandla upp till 1 kubikfot material. Efter 1 timme, eller tills du förlorar din {@status concentration} (som om du var {@status concentration||concentrating} på en besvärjelse), återgår materialet till sin ursprungliga substans."
 			]
 		},
 		{
@@ -2775,7 +2775,7 @@
 						"Du får en bonus på din AC som är lika med din intelligensmodifierare (minst +1).",
 						"Din gånghastighet ökar med 10 fot.",
 						"Du har en fördel på Dexterity ({@skill Acrobatics})-kontroller.",
-						"Du får en bonus på alla räddningskast som du gör för att behålla koncentrationen på en trollformel. Bonusen är lika med din intelligensmodifierare (minst +1)."
+						"Du får en bonus på alla räddningsförsök med konstitutionen som du gör för att upprätthålla {@status concentration} på en besvärjelse. Bonusen är lika med din intelligensmodifierare (minst +1).Du förlorar din {@status concentration} (som om du var (%1%) på en besvärjelse), materialet återgår till sin ursprungliga substans."
 					]
 				},
 				"Du kan använda den här egenskapen ett antal gånger som är lika med din kompetensbonus, och du återfår alla förbrukade användningar av den när du avslutar en lång vila."
@@ -3089,7 +3089,7 @@
 			"entries": [
 				"{@i 10th-level Order of Scribes feature}",
 				"Du kan nu frammana sinnet i din uppvaknade trollbok. Som en bonusåtgärd medan boken är på dig kan du få sinnet att manifestera sig som en liten spektral konstruktion som svävar i ett obebott utrymme som du väljer inom 60 fot från dig. Den här närvaron är immateriell och upptar inte sitt utrymme, och den avger svagt ljus i en radie på 10 fot. Den ser ut som en spökliknande bok, en kaskad av text eller en lärd från det förflutna (ditt val). Spektralsinnet har ett antal träffpunkter som är lika med din trollkarlsnivå plus din intelligensmodifierare, och det använder din rustningsklass och dina räddningskastmodifierare.",
-				"När den är manifesterad kan den spektrala hjärnan höra och se, och den har {@sense darkvision} med en räckvidd på 60 fot. Som en handling kan du höra och se med hjälp av dess sinnen, istället för dina egna, tills din koncentration upphör (som om du koncentrerar dig på en besvärjelse).",
+				"När den är manifesterad kan den spektrala hjärnan höra och se, och den har {@sense darkvision} med en räckvidd på 60 fot. Som en handling kan du höra och se med hjälp av dess sinnen, istället för dina egna, tills din {@status concentration} upphör (som om {@status concentration||concentrating} på en besvärjelse).",
 				"När du kastar en trollformel under din tur kan du kasta den som om du befann dig i spektralhjärnans rum istället för ditt eget och använda dess sinnen. Du kan göra detta ett antal gånger per dag som är lika med din kompetensbonus, och du återfår alla förbrukade användningar när du avslutar en lång vila.",
 				"Som en bonusåtgärd kan du få spektralsinnet att sväva upp till 30 fot till ett obebott utrymme som du eller det kan se. Det kan passera genom varelser men inte objekt. Spektralsinnet slutar manifestera sig om det någonsin är mer än 300 fot från dig, om det sjunker till 0 träffpunkter, om du dör eller om du avfärdar det som en bonushandling."
 			]
@@ -3262,7 +3262,7 @@
 						}
 					]
 				},
-				"Fientlighetens runa varar i 1 minut eller tills du tappar koncentrationen (som om du koncentrerade dig på en trollformel). När du har markerat en varelse på detta sätt kan du inte göra det igen förrän du avslutar en lång vila, såvida du inte förbrukar en trollformelplats på 3:e nivån eller högre för att använda denna egenskap igen."
+				"Fientlighetsrunan varar i 1 minut eller tills du förlorar din {@status concentration} (som om du var {@status concentration||concentrating} på en besvärjelse). När du har markerat en varelse på det här sättet kan du inte göra det igen förrän du avslutar en lång vila, såvida du inte förbrukar en trollformelplats på 3:e nivån eller högre för att använda den här egenskapen igen."
 			]
 		},
 		{
@@ -4094,7 +4094,7 @@
 			"entries": [
 				"På sjätte nivån kan du infoga en trollformel i en elektronisk enhet som du väljer, så att trollformeln aktiveras genom att du trycker på en tangent eller trycker på en strömbrytare med hjälp av en handling. Alla variabler för trollformeln är inställda vid tidpunkten för utgivningen. Datakraften i denna enhet måste vara lika stor som eller större än en mobiltelefon.",
 				"En programmerad trollformel förblir placerad i enheten i 48 timmar och försvinner när den laddas ur. Du kan använda den här funktionen för att placera en programmerad trollformel i endast en enhet åt gången, och en enhet kan endast innehålla en programmerad trollformel. Endast du kan aktivera den programmerade förtrollningen i enheten. Om enheten förstörs går den programmerade förtrollningen förlorad.",
-				"En koncentrationsbesvärjelse som placeras i en anordning kan inte aktiveras medan du koncentrerar dig på en annan besvärjelse. När du har använt den här funktionen kan du inte använda den igen förrän du har avslutat en lång vila."
+				"En {@status concentration} besvärjelse som är placerad i en anordning kan inte aktiveras medan du är {@status concentration||concentrating} på en annan besvärjelse. När du har använt den här funktionen kan du inte använda den igen förrän du avslutar en lång vila."
 			]
 		},
 		{
@@ -4124,7 +4124,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"På den 14:e nivån har du lärt dig att prägla rester av ditt medvetande på elektroniska enheter med betydande datorkraft. När du uttalar en koncentrationsspell kan du använda en enhet vars datorkraft är lika med eller större än en surfplatta för att upprätthålla koncentrationen av besvärjelsen för din räkning. Enheten måste hållas eller bäras av dig för att upprätthålla denna effekt. Om enheten förstörs, tas ifrån dig, tappas eller stängs av upphör koncentrationen. När du har använt den här funktionen kan du inte använda den igen förrän du har avslutat en lång vila."
+				"På den 14:e nivån har du lärt dig att prägla rester av ditt medvetande på elektroniska enheter med betydande datorkraft. När du kastar en {@status concentration} besvärjelse kan du använda en enhet vars datorkraft är lika med eller större än en surfplatta för att upprätthålla {@status concentration} av besvärjelsen för din räkning. Enheten måste hållas eller bäras av dig för att upprätthålla denna effekt. Om enheten förstörs, tas från dig, tappas eller stängs av upphör {@status concentration}. När du har använt den här egenskapen kan du inte använda den igen förrän du har avslutat en lång vila."
 			]
 		},
 		{
@@ -4899,7 +4899,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Från och med 10:e nivån hjälper magin du kanaliserar till att avvärja skada. När du håller koncentrationen på en trollformel har du en +2 bonus på AC och alla räddningskast."
+				"Från och med 10:e nivån hjälper magin du kanaliserar till att avvärja skada. Medan du upprätthåller {@status concentration} på en besvärjelse har du en +2 bonus på AC och alla räddningskast.n tills du avslutar en lång vila."
 			]
 		},
 		{
@@ -4995,7 +4995,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Från och med 10:e nivån hjälper magin du kanaliserar till att avvärja skada. När du håller koncentrationen på en trollformel har du en +2 bonus på AC och alla räddningskast."
+				"Från och med 10:e nivån hjälper magin du kanaliserar till att avvärja skada. Medan du upprätthåller {@status concentration} på en besvärjelse har du en +2 bonus på AC och alla räddningskast.n tills du avslutar en lång vila."
 			]
 		},
 		{

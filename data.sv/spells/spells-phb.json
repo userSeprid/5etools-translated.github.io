@@ -1654,7 +1654,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Om du kastar den här besvärjelsen med en spell slot på 4:e nivån eller högre, är varaktigheten koncentration, upp till 10 minuter. Om du använder en trollformel på 5:e nivån eller högre är varaktigheten 8 timmar. Om du använder en trollformelplats på 7:e nivån eller högre är varaktigheten 24 timmar. Om du använder en trollformel på 9:e nivån varar trollformeln tills den försvinner. Om du använder en trollformelplats på 5:e nivå eller högre får du en varaktighet som inte kräver koncentration."
+						"Om du kastar den här besvärjelsen med en spell slot på 4:e nivån eller högre är varaktigheten {@status concentration}, upp till 10 minuter. Om du använder en trollformel på 5:e nivån eller högre är varaktigheten 8 timmar. Om du använder en trollformelplats på 7:e nivån eller högre är varaktigheten 24 timmar. Om du använder en trollformelplats på 9:e nivån varar trollformeln tills den försvinner. Om du använder en trollformelplats på 5:e nivå eller högre får du en varaktighet som inte kräver {@status concentration}."
 					]
 				}
 			],
@@ -3666,7 +3666,7 @@
 			"entries": [
 				"Du kallar på en elementartjänare. Välj ett område av luft, jord, eld eller vatten som fyller en tre meters kub inom räckhåll. En {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} som är lämplig för det område du valt visas i ett obebott utrymme inom 10 fot från det. Till exempel, en {@creature fire elemental} dyker upp från en brasa, och en {@creature earth elemental} stiger upp från marken. Elementaren försvinner när den sjunker till 0 träffpunkter eller när förtrollningen upphör.",
 				"Elementarvarelsen är vänligt inställd till dig och dina följeslagare så länge den är kvar. Ta initiativ för elementaren, som har sina egna turer. Den lyder alla verbala kommandon som du ger den (ingen åtgärd krävs av dig). Om du inte ger några kommandon till elementaren försvarar den sig mot fientliga varelser, men gör i övrigt inga åtgärder.",
-				"Om din koncentration bryts försvinner inte elementaren. Istället förlorar du kontrollen över elementaren, den blir fientlig mot dig och dina följeslagare, och den kan attackera. En okontrollerad elemental kan inte avfärdas av dig, och den försvinner 1 timme efter att du kallade på den.",
+				"Om din {@status concentration} är trasig försvinner inte elementaren. Istället förlorar du kontrollen över elementaren, den blir fientlig mot dig och dina följeslagare och kan attackera. En okontrollerad elemental kan inte avfärdas av dig, och den försvinner 1 timme efter att du kallade på den.",
 				"DM har elementarens statistik."
 			],
 			"entriesHigherLevel": [
@@ -3719,7 +3719,7 @@
 			"entries": [
 				"Du kallar på en {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, eller en fey ande som tar formen av en {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. Den dyker upp i ett obebott utrymme som du kan se inom räckhåll. Feyvarelsen försvinner när den sjunker till 0 träffpunkter eller när förtrollningen upphör.",
 				"Feyvarelsen är vänligt inställd till dig och dina följeslagare så länge den är kvar. Ta initiativ för varelsen, som har sina egna turer. Den lyder alla verbala kommandon som du ger den (ingen handling krävs av dig), så länge de inte bryter mot dess inriktning. Om du inte ger några kommandon till den feyvarelsen försvarar den sig mot fientliga varelser men gör i övrigt inga åtgärder.",
-				"Om du inte kan koncentrera dig försvinner den feyvarelsen inte. Istället förlorar du kontrollen över feyvarelsen, den blir fientlig mot dig och dina följeslagare, och den kan attackera. En okontrollerad feyvarelse kan inte avfärdas av dig, och den försvinner 1 timme efter att du kallade på den.",
+				"Om din {@status concentration} är bruten, försvinner inte den fey varelsen. Istället förlorar du kontrollen över feyvarelsen, den blir fientlig mot dig och dina följeslagare, och den kan attackera. En okontrollerad feyvarelse kan inte avfärdas av dig, och den försvinner 1 timme efter att du kallade på den.",
 				"DM har feyvarelsens statistik."
 			],
 			"entriesHigherLevel": [
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"En stråle av gult ljus blinkar från ditt pekfinger och kondenserar sedan för att stanna kvar på en vald punkt inom räckhåll som en glödande pärla under hela tiden. När förtrollningen upphör, antingen för att din koncentration bryts eller för att du bestämmer dig för att avsluta den, blommar pärlan med ett lågt vrål till en explosion av flammor som sprider sig runt hörn. Varje varelse i en sfär med en radie på 20 fot centrerad på den punkten måste göra ett Dexterity saving throw. En varelse tar brandskador lika med den totala ackumulerade skadan vid ett misslyckat räddningsförsök, eller halva skadan vid ett lyckat räddningsförsök.",
+				"En stråle av gult ljus blinkar från ditt pekfinger och kondenserar sedan för att stanna kvar på en utvald punkt inom räckhåll som en glödande pärla under hela tiden. När förtrollningen upphör, antingen för att din {@status concentration} bryts eller för att du bestämmer dig för att avsluta den, blommar pärlan med ett lågt vrål till en explosion av flammor som sprider sig runt hörn. Varje varelse i en sfär på 20 fot radie centrerad på den punkten måste göra ett Dexterity räddningskast. En varelse tar brandskador lika med den totala ackumulerade skadan vid ett misslyckat räddningsförsök, eller halva skadan vid ett lyckat räddningsförsök.",
 				"Besvärjelsens grundskada är {@damage 12d6}. Om pärlan ännu inte har detonerat i slutet av din tur ökar skadan med {@dice 1d6}.",
 				"Om den glödande pärlan berörs innan intervallet har löpt ut måste den varelse som rör vid den göra ett räddningskast i Dexterity. Vid ett misslyckat räddningsförsök avslutas förtrollningen omedelbart, vilket gör att pärlan bryter ut i flammor. Vid ett lyckat räddningsförsök kan varelsen kasta pärlan upp till 40 fot. När den träffar en varelse eller ett fast föremål upphör förtrollningen och pärlan exploderar.",
 				"Branden skadar föremål i området och antänder brännbara föremål som inte bärs eller bärs."
@@ -5906,7 +5906,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"När du kastar den här besvärjelsen med en spell slot på 5:e nivå är varaktigheten koncentration, upp till 10 minuter. När du använder en trollformel på sjätte nivån är varaktigheten koncentration, upp till 1 timme. När du använder en trollformelplats på 7:e nivån eller högre är varaktigheten koncentration, upp till 8 timmar."
+						"När du kastar den här besvärjelsen med en spelledare på 5:e nivån är varaktigheten {@status concentration}, upp till 10 minuter. När du använder en trollformelplats på 6:e nivån är varaktigheten {@status concentration}, upp till 1 timme. När du använder en trollformelplats på 7:e nivån eller högre är varaktigheten {@status concentration}, upp till 8 timmar.ed skada på en misslyckad räddning, eller hälften så mycket skada på en lyckad."
 					]
 				}
 			],
@@ -5972,7 +5972,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"När du kastar den här besvärjelsen med en spell slot på 9:e nivån är varaktigheten koncentration, upp till 8 timmar."
+						"När du kastar den här besvärjelsen med en spelledare på 9:e nivån är varaktigheten {@status concentration}, upp till 8 timmar."
 					]
 				}
 			],
@@ -6035,7 +6035,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"När du kastar den här besvärjelsen med en spell slot på 6:e nivån är varaktigheten koncentration, upp till 10 minuter. När du använder en spellplats på sjunde nivån är varaktigheten koncentration, upp till 1 timme. När du använder en trollformel på 8:e nivån eller högre är varaktigheten koncentration, upp till 8 timmar."
+						"När du kastar den här besvärjelsen med en spell slot på 6:e nivån är varaktigheten {@status concentration}, upp till 10 minuter. När du använder en spellplats på sjunde nivån är varaktigheten {@status concentration}, upp till 1 timme. När du använder en trollformelplats på 8:e nivån eller högre är varaktigheten {@status concentration}, upp till 8 timmar."
 					]
 				}
 			],
@@ -6230,8 +6230,8 @@
 			],
 			"entries": [
 				"Du skapar en seismisk störning på en punkt på marken som du kan se inom räckhåll. Under den här tiden slits en intensiv skakning genom marken i en cirkel med en radie på 100 fot centrerad på den punkten och skakar varelser och strukturer som är i kontakt med marken i det området.",
-				"Marken i området blir {@quickref difficult terrain||3}. Varje varelse på marken som koncentrerar sig måste göra ett räddningskast för konstitutionen. Vid ett misslyckat räddningsförsök bryts varelsens koncentration.",
-				"När du uttalar den här besvärjelsen och i slutet av varje vändning som du ägnar åt att koncentrera dig på den, måste varje varelse på marken i området göra ett räddningskast i Dexterity. Vid ett misslyckat räddningsförsök slås varelsen omkull {@condition prone}.",
+				"Marken i området blir {@quickref difficult terrain||3}. Varje varelse på marken som är {@status concentration||concentrating} måste göra ett räddningskast för konstitution. Vid ett misslyckat räddningsförsök bryts varelsens {@status concentration}.",
+				"När du kastar den här besvärjelsen och i slutet av varje tur du spenderar {@status concentration||concentrating} på den, måste varje varelse på marken i området göra ett räddningskast i Dexterity. Vid ett misslyckat räddningsförsök slås varelsen ner {@condition prone}.",
 				"Den här besvärjelsen kan ha ytterligare effekter beroende på terrängen i området, vilket bestäms av DM.",
 				{
 					"type": "entries",
@@ -7903,7 +7903,7 @@
 				"Du försöker förvandla en varelse som du kan se inom räckhåll till sten. Om målets kropp är gjord av kött måste varelsen göra ett räddningskast för att rädda sin konstitution. Vid ett misslyckat räddningsförsök blir den {@condition restrained} när dess kött börjar hårdna. Vid ett lyckat räddningsförsök påverkas inte varelsen.",
 				"En varelse {@condition restrained} som drabbas av denna besvärjelse måste göra ett nytt räddningskast för konstitutionen i slutet av varje tur. Om den lyckas rädda mot denna besvärjelse tre gånger upphör besvärjelsen. Om den misslyckas med sitt räddningsförsök tre gånger förvandlas den till sten och utsätts för tillståndet {@condition petrified} under hela varaktigheten. Framgångarna och misslyckandena behöver inte vara på varandra följande; håll koll på båda tills målet samlar tre av samma slag.",
 				"Om varelsen är fysiskt skadad medan {@condition petrified} lider den av liknande missbildningar om den återgår till sitt ursprungliga tillstånd.",
-				"Om du behåller din koncentration på denna besvärjelse under hela den möjliga varaktigheten förvandlas varelsen till sten tills effekten tas bort."
+				"Om du behåller din {@status concentration} på den här besvärjelsen under hela den möjliga varaktigheten förvandlas varelsen till sten tills effekten tas bort."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -8653,7 +8653,7 @@
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"Du kan lagra en förberedd trollformel på 3:e nivån eller lägre i glyfen genom att kasta den som en del av skapandet av glyfen. Besvärjelsen måste rikta sig mot en enda varelse eller ett område. Besvärjelsen som lagras har ingen omedelbar effekt när den kastas på detta sätt. När glyfen utlöses kastas den lagrade trollformeln. Om trollformeln har ett mål riktar den sig mot den varelse som utlöste glyfen. Om förtrollningen påverkar ett område är området centrerat på den varelsen. Om trollformeln kallar på fientliga varelser eller skapar skadliga föremål eller fällor, visas de så nära som möjligt till inkräktaren och attackerar den. Om trollformeln kräver koncentration varar den tills slutet av dess fulla varaktighet."
+						"Du kan lagra en förberedd trollformel på tredje nivån eller lägre i glyfen genom att kasta den som en del av skapandet av glyfen. Besvärjelsen måste rikta sig mot en enda varelse eller ett område. Besvärjelsen som lagras har ingen omedelbar effekt när den kastas på detta sätt. När glyfen utlöses kastas den lagrade besvärjelsen. Om trollformeln har ett mål riktar den sig mot den varelse som utlöste glyfen. Om förtrollningen påverkar ett område är området centrerat på den varelsen. Om trollformeln kallar på fientliga varelser eller skapar skadliga föremål eller fällor, visas de så nära som möjligt till inkräktaren och attackerar den. Om trollformeln kräver {@status concentration} varar den till slutet av sin fulla varaktighet."
 					]
 				}
 			],
@@ -9921,7 +9921,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"När du kastar den här besvärjelsen med hjälp av en spell slot på 3:e eller 4:e nivån kan du behålla din koncentration på besvärjelsen i upp till 8 timmar. När du använder en trollformel på 5:e nivån eller högre kan du behålla din koncentration på trollformeln i upp till 24 timmar."
+						"När du kastar den här besvärjelsen med en spell slot på 3:e eller 4:e nivån kan du behålla din {@status concentration} på besvärjelsen i upp till 8 timmar. När du använder en trollformel på 5:e nivå eller högre kan du behålla din {@status concentration} på trollformeln i upp till 24 timmar. e som möjligt till inkräktaren och attackera den. Om trollformeln kräver {@status concentration} varar den till slutet av sin fulla varaktighet."
 					]
 				}
 			],
@@ -10225,7 +10225,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"När du kastar den här besvärjelsen med hjälp av en spell slot på 3:e eller 4:e nivån kan du behålla din koncentration på besvärjelsen i upp till 8 timmar. När du använder en trollformel på 5:e nivån eller högre kan du behålla din koncentration på trollformeln i upp till 24 timmar."
+						"När du kastar den här besvärjelsen med en spell slot på 3:e eller 4:e nivån kan du behålla din {@status concentration} på besvärjelsen i upp till 8 timmar. När du använder en trollformel på 5:e nivå eller högre kan du behålla din {@status concentration} på trollformeln i upp till 24 timmar. e som möjligt till inkräktaren och attackera den. Om trollformeln kräver {@status concentration} varar den till slutet av sin fulla varaktighet."
 					]
 				}
 			],
@@ -11803,7 +11803,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"När du kastar den här besvärjelsen med en spell slot på 6:e nivån eller högre, varar besvärjelsen tills den försvinner, utan att du behöver koncentrera dig."
+						"När du kastar den här besvärjelsen med en spell slot på 6:e nivån eller högre, håller besvärjelsen tills den försvinner, utan att du behöver använda din {@status concentration}."
 					]
 				}
 			],
@@ -12961,7 +12961,7 @@
 			],
 			"entries": [
 				"Välj ett område i terrängen som inte är större än 40 fot på en sida inom räckvidd. Du kan omforma jord, sand eller lera i området på det sätt du vill under hela tiden. Du kan höja eller sänka områdets höjd, skapa eller fylla ut ett dike, resa eller platta till en mur eller forma en pelare. Omfattningen av sådana förändringar kan inte överstiga halva områdets största dimension. Så om du påverkar en fyrkant på 40 fot kan du skapa en pelare som är upp till 20 fot hög, höja eller sänka fyrkantens höjd med upp till 20 fot, gräva ett dike som är upp till 20 fot djupt, och så vidare. Det tar 10 minuter för dessa ändringar att slutföra.",
-				"I slutet av varje 10 minuter som du koncentrerar dig på besvärjelsen kan du välja ett nytt terrängområde att påverka.",
+				"I slutet av varje 10 minuter du spenderar {@status concentration||concentrating} på besvärjelsen kan du välja ett nytt terrängområde att påverka.",
 				"Eftersom terrängens omvandling sker långsamt kan varelser i området vanligtvis inte fastna eller skadas av markens rörelser.",
 				"Den här besvärjelsen kan inte manipulera natursten eller stenkonstruktioner. Stenar och konstruktioner flyttas för att passa in i den nya terrängen. Om sättet du formar terrängen på skulle göra en konstruktion instabil kan den kollapsa.",
 				"Den här besvärjelsen påverkar inte heller växttillväxten direkt. Den flyttade jorden bär med sig alla växter."
@@ -16458,7 +16458,7 @@
 			"entries": [
 				"Tills förtrollningen tar slut faller fruset regn och slask i en sex meter hög cylinder med en radie på sex meter centrerad på en punkt du väljer inom räckvidd. Området är {@quickref Vision and Light|PHB|2||heavily obscured}, och utsatta lågor i området släcks.",
 				"Marken i området är täckt av is, vilket gör den {@quickref difficult terrain||3}. När en varelse går in i trollformelns område för första gången under en tur eller börjar sin tur där måste den göra ett räddningskast i Dexterity. Vid ett misslyckat räddningsförsök faller den {@condition prone}.",
-				"Om en varelse börjar sin tur i trollformelns område och koncentrerar sig på en trollformel måste varelsen göra ett lyckat konstitutionellt räddningskast mot trollformelns räddnings-DC eller förlora koncentrationen."
+				"Om en varelse börjar sin tur i trollformelns område och är {@status concentration||concentrating} på en trollformel, måste varelsen göra ett lyckat konstitutionellt räddningskast mot trollformelns räddnings-DC eller förlora {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -17142,7 +17142,7 @@
 			],
 			"entries": [
 				"Det bildas ett stormmoln som är centrerat kring en punkt som du kan se och som sprider sig inom en radie av 360 fot. Blixten blinkar i området, åskan dundrar och starka vindar dånar. Varje varelse som befinner sig under molnet (inte mer än 5 000 fot under molnet) när det dyker upp måste göra ett konstitutionellt räddningskast. Vid ett misslyckat räddningsförsök tar en varelse {@damage 2d6} åskskskada och blir {@condition deafened} i 5 minuter.",
-				"Varje runda du behåller koncentrationen på den här besvärjelsen ger stormen olika effekter på din tur.",
+				"Varje runda du bibehåller {@status concentration} på den här besvärjelsen ger stormen olika effekter på din tur.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -17168,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Vindbyar och isande regn drabbar området under molnet. Området blir {@quickref difficult terrain||3} och är {@quickref Vision and Light|PHB|2||heavily obscured}. Varje varelse där tar {@damage 1d6} köldskada. Attacker med distansvapen i området är omöjliga. Vinden och regnet räknas som en allvarlig distraktion när det gäller att behålla koncentrationen på trollformler. Slutligen, kraftiga vindbyar (mellan 20 och 50 miles per timme) skingrar automatiskt dimma, dimma och liknande fenomen i området, oavsett om de är jordiska eller magiska."
+						"Vindbyar och isande regn drabbar området under molnet. Området blir {@quickref difficult terrain||3} och är {@quickref Vision and Light|PHB|2||heavily obscured}. Varje varelse där tar {@damage 1d6} köldskada. Attacker med distansvapen i området är omöjliga. Vinden och regnet räknas som en allvarlig distraktion när det gäller att bibehålla {@status concentration} på trollformler. Slutligen, vindbyar av stark vind (mellan 20 och 50 miles per timme) skingrar automatiskt dimma, dimma och liknande fenomen i området, vare sig de är jordiska eller magiska."
 					]
 				}
 			],
@@ -18912,7 +18912,7 @@
 				"Väggen kan ha vilken form du vill, men den kan inte uppta samma utrymme som en varelse eller ett föremål. Väggen behöver inte vara vertikal eller vila på någon fast grund. Den måste dock smälta samman med och få ett stabilt stöd av befintlig sten. Således kan du använda denna besvärjelse för att överbrygga en klyfta eller skapa en ramp.",
 				"Om du skapar ett spann som är längre än sex meter måste du halvera storleken på varje panel för att skapa stöd. Du kan grovt forma muren för att skapa krenelurer, tinnar och så vidare.",
 				"Muren är ett objekt av sten som kan skadas och därmed brytas. Varje panel har AC 15 och 30 träffpunkter per tum tjocklek. Om en panel reduceras till 0 träffpunkter förstörs den och kan få anslutna paneler att kollapsa enligt DM:s bedömning.",
-				"Om du behåller din koncentration på denna besvärjelse under hela dess varaktighet blir muren permanent och kan inte avlägsnas. Annars försvinner muren när förtrollningen upphör."
+				"Om du behåller din {@status concentration} på den här besvärjelsen under hela dess varaktighet, blir muren permanent och kan inte avföras. Annars försvinner muren när förtrollningen upphör."
 			],
 			"savingThrow": [
 				"dexterity"

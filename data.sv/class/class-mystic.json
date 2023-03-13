@@ -642,8 +642,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Vissa alternativ kräver koncentration för att bibehålla sina effekter. Detta krav anges med \"conc.\" efter alternativets psi-poängkostnad. Noteringen \"conc.\" följs av koncentrationens maximala varaktighet. Om det till exempel står \"conc., 1 min.\" på ett alternativ kan du koncentrera dig på dess effekt i upp till 1 minut.",
-								"Att koncentrera sig på en disciplin följer samma regler som att koncentrera sig på en trollformel. Denna regel innebär att du inte kan koncentrera dig på en besvärjelse och en disciplin samtidigt, och inte heller kan du koncentrera dig på två discipliner samtidigt. Se {@book chapter 10|PHB|10}, \"Spellcasting\" i Spelarhandboken för hur koncentration fungerar."
+								"Vissa alternativ kräver {@status concentration} för att bibehålla sina effekter. Detta krav noteras med \"conc.\" efter alternativets psi-poängkostnad. Noteringen \"conc.\" följs av den maximala varaktigheten av {@status concentration}. Om det till exempel står \"conc., 1 min.\" på ett alternativ kan du koncentrera dig på dess effekt i upp till 1 minut.",
+								"Att koncentrera sig på en disciplin följer samma regler som {@status concentration||concentrating} på en trollformel. Denna regel innebär att du inte kan koncentrera dig på en besvärjelse och en disciplin samtidigt, och inte heller kan du koncentrera dig på två discipliner samtidigt. Se {@book chapter 10|PHB|10}, \"Spellcasting\", i Spelarhandboken för hur {@status concentration} fungerar."
 							]
 						}
 					]
@@ -813,7 +813,7 @@
 			"level": 11,
 			"entries": [
 				"Från och med 11:e nivån kan du med din behärskning av psionisk energi driva ditt sinne bortom dess normala gränser. Som en handling får du 9 speciella psi-poäng som du endast kan använda på discipliner som kräver en handling eller en bonushandling för att använda. Du kan använda alla 9 poäng på en disciplin, eller så kan du sprida dem över flera discipliner. Du kan inte heller spendera dina normala psi-poäng på dessa discipliner; du kan bara spendera de speciella poäng som du får genom den här egenskapen. När du avslutar en lång vila förlorar du alla dessa specialpoäng som du inte har spenderat.",
-				"Om mer än en av de discipliner som du aktiverar med dessa poäng kräver koncentration kan du koncentrera dig på dem alla. Att aktivera en av dem avslutar alla effekter du redan var koncentrerad på, och om du börjar koncentrera dig på en effekt som inte använder dessa specialpoäng avslutas de discipliner som du koncentrerar dig på.",
+				"Om mer än en av de discipliner som du aktiverar med dessa poäng kräver {@status concentration} kan du koncentrera dig på dem alla. Att aktivera en av dem avslutar alla effekter du redan var {@status concentration||concentrating} på, och om du börjar {@status concentration||concentrating} på en effekt som inte använder dessa specialpoäng, avslutar disciplinerna som du är {@status concentration||concentrating} på.",
 				"På 15:e nivån ökar antalet psi-poäng som du får genom den här funktionen till 11.",
 				"Du kan använda den här egenskapen en gång, och du återfår den om du har använt den med en lång vila. Du får ytterligare en användning av denna egenskap på 13:e, 15:e och 17:e nivån."
 			]
@@ -1123,7 +1123,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Från och med 3:e nivån kan du fokusera ditt sinne för att läsa det psioniska avtrycket som lämnats på ett föremål. Om du håller ett föremål och koncentrerar dig på det i 10 minuter (som om du koncentrerar dig på en psionisk disciplin) lär du dig några grundläggande fakta om det. Du får en mental bild från objektets synvinkel, som visar den senaste varelsen som hållit objektet inom de senaste 24 timmarna.",
+				"Från och med 3:e nivån kan du fokusera ditt sinne för att läsa det psioniska avtrycket som lämnats på ett föremål. Om du håller ett föremål och koncentrerar dig på det i 10 minuter (som om {@status concentration||concentrating} på en psionisk disciplin) får du veta några grundläggande fakta om det. Du får en mental bild från objektets synvinkel, som visar den senaste varelsen som hållit objektet inom de senaste 24 timmarna.",
 				"Du får också veta vilka händelser som har inträffat inom sex meter från objektet under den senaste timmen. De händelser som du uppfattar utspelar sig ur objektets perspektiv. Du ser och hör sådana händelser som om du var där, men kan inte använda andra sinnen.",
 				"Dessutom kan du bädda in en immateriell psionisk sensor i föremålet. Under de kommande 24 timmarna kan du använda en åtgärd för att lära dig objektets position i förhållande till dig (dess avstånd och riktning) och för att titta på objektets omgivning från dess synvinkel som om du vore där. Den här uppfattningen varar fram till början av din nästa vändning.",
 				"När du har använt den här funktionen kan du inte använda den igen förrän du har avslutat en kort eller lång vila."

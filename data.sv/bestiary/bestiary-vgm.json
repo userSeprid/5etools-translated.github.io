@@ -6478,7 +6478,7 @@
 				{
 					"name": "Break Concentration",
 					"entries": [
-						"Den äldre hjärnan riktar sig till en varelse inom 120 fot från den som den har en psykisk länk till. Den äldre hjärnan bryter varelsens koncentration på en besvärjelse som den har kastat. Varelsen tar också {@dice 1d4} psykisk skada per nivå av besvärjelsen."
+						"Den äldre hjärnan riktar sig till en varelse inom 120 fot från den som den har en psykisk länk till. Den äldre hjärnan bryter varelsens {@status concentration} på en besvärjelse som den har kastat. Varelsen tar också {@dice 1d4} psykisk skada per nivå av besvärjelsen."
 					]
 				},
 				{
@@ -20816,7 +20816,7 @@
 				{
 					"name": "Invoke Nightmare (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Yuan-ti kopplar sig till mardrömmarna hos en varelse som den kan se inom 60 fot från sig och skapar en illusorisk, orörlig manifestation av varelsens djupaste rädslor, synlig endast för den varelsen. Målet måste göra ett {@dc 13} intelligenssparande kast. Vid ett misslyckat räddningsförsök tar målet 11 ({@damage 2d10}) psykisk skada och är {@condition frightened} av manifestationen och tror att den är verklig. Yuan-ti måste koncentrera sig för att upprätthålla illusionen (som om han koncentrerar sig på en besvärjelse), som varar i upp till 1 minut och inte kan skadas. Målet kan upprepa räddningskastet i slutet av var och en av sina turer, vilket avslutar illusionen vid en framgång eller tar 11 ({@damage 2d10}) psykisk skada vid ett misslyckande."
+						"Yuan-ti kopplar sig till mardrömmarna hos en varelse som den kan se inom en radie av 60 fot och skapar en illusorisk, orörlig manifestation av varelsens djupaste rädslor, som bara är synlig för den varelsen. Målet måste göra ett {@dc 13} intelligenssparande kast. Vid ett misslyckat räddningsförsök tar målet 11 ({@damage 2d10}) psykisk skada och är {@condition frightened} av manifestationen och tror att den är verklig. Yuan-ti måste koncentrera sig för att upprätthålla illusionen (som om {@status concentration||concentrating} på en besvärjelse), som varar i upp till 1 minut och inte kan skadas. Målet kan upprepa räddningskastet i slutet av var och en av sina turer, vilket avslutar illusionen vid en framgång eller tar 11 ({@damage 2d10}) psykisk skada vid ett misslyckande."
 					]
 				}
 			],

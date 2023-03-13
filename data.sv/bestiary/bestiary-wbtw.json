@@ -1963,6 +1963,7 @@
 		{
 			"name": "Gloam",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 93,
 			"size": [
@@ -4168,7 +4169,7 @@
 				{
 					"name": "Twin Sight (Recharges after a Short or Long Rest)",
 					"entries": [
-						"En Selenelion-tvilling kan i sitt sinnesöga se vad den andra tvillingen ser i upp till en minut, förutsatt att båda tvillingarna lever och befinner sig på samma existensplan. Att upprätthålla denna effekt kräver koncentration (som om man koncentrerar sig på en trollformel)."
+						"En Selenelion-tvilling kan se vad den andra tvillingen ser i sitt inre öga i upp till en minut, förutsatt att båda tvillingarna lever och befinner sig på samma existensplan. Att upprätthålla denna effekt kräver {@status concentration} (som om {@status concentration||concentrating} på en besvärjelse)."
 					]
 				}
 			],
@@ -4274,7 +4275,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan Sir Talavar magiskt förvandla sig {@condition invisible} tills koncentrationen upphör (som om han koncentrerar sig på en trollformel). All utrustning som Sir Talavar bär eller har med sig är {@condition invisible} med honom."
+						"Som en bonusåtgärd kan Sir Talavar magiskt förvandla {@condition invisible} tills hans {@status concentration} upphör (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som Sir Talavar bär eller har med sig är {@condition invisible} med honom."
 					]
 				},
 				{
@@ -5010,6 +5011,7 @@
 		{
 			"name": "Thinnings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 15,
 			"_copy": {
@@ -5750,7 +5752,7 @@
 				{
 					"name": "Animate Corpse (1/Day)",
 					"entries": [
-						"Zargash riktar in sig på den livlösa kroppen av en människa som han kan se inom en radie på 30 fot och beordrar den att resa sig, vilket förvandlar den till en zombie under hans kontroll. Zombien tar sin tur omedelbart efter Zargash. Att animera zombien kräver Zargashs koncentration (som att koncentrera sig på en besvärjelse). Zombien återgår till ett livlöst lik efter 10 minuter, när den sjunker till 0 träffpunkter eller när Zargashs koncentration upphör."
+						"Zargash riktar in sig på den livlösa kroppen av en humanoid som han kan se inom 30 fot från honom och beordrar den att resa sig, vilket förvandlar den till en zombie under hans kontroll. Zombien tar sin tur omedelbart efter Zargash. Att animera zombien kräver Zargashs {@status concentration} (som om {@status concentration||concentrating} på en besvärjelse). Zombien återgår till ett livlöst lik efter 10 minuter, när den sjunker till 0 träffpunkter eller när Zargashs {@status concentration} upphör."
 					]
 				}
 			],

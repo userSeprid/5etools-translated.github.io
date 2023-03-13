@@ -580,18 +580,18 @@
 			"srd": true,
 			"basicRules": true,
 			"entries": [
-				"Vissa trollformler kräver att du håller dig koncentrerad för att hålla magin aktiv. Om du tappar koncentrationen upphör en sådan besvärjelse.",
-				"Om en trollformel måste upprätthållas med koncentration visas detta i dess Duration-angivelse, och trollformeln anger hur länge du kan koncentrera dig på den. Du kan avsluta koncentrationen när som helst (ingen åtgärd krävs).",
-				"Normal aktivitet, som att röra sig och attackera, stör inte koncentrationen. Följande faktorer kan dock störa koncentrationen:",
+				"Vissa trollformler kräver att du upprätthåller {@status concentration} för att deras magi ska vara aktiv. Om du förlorar {@status concentration} upphör en sådan besvärjelse.",
+				"Om en besvärjelse måste upprätthållas med {@status concentration} visas detta i dess Duration-angivelse och besvärjelsen anger hur länge du kan koncentrera dig på den. Du kan avsluta {@status concentration} när som helst (ingen åtgärd krävs).",
+				"Normal aktivitet, som att röra sig och attackera, stör inte {@status concentration}. Följande faktorer kan störa {@status concentration}:",
 				{
 					"type": "list",
 					"items": [
-						"{@b Casting another spell that requires concentration.} Du förlorar koncentrationen på en besvärjelse om du kastar en annan besvärjelse som kräver koncentration. Du kan inte koncentrera dig på två trollformler samtidigt.",
-						"{@b Taking damage.} När du tar skada medan du koncentrerar dig på en trollformel måste du göra ett räddningskast i konstitutionen för att behålla din koncentration. DC är lika med 10 eller halva skadan du tar, vilket antal som är högst. Om du tar skada från flera källor, till exempel en pil och en drakandning, gör du ett separat räddningskast för varje skadekälla.",
-						"{@b Being incapacitated or killed.} Du förlorar koncentrationen på en besvärjelse om du är {@condition incapacitated} eller om du dör."
+						"{@b Casting another spell that requires concentration.} Du förlorar {@status concentration} på en besvärjelse om du kastar en annan besvärjelse som kräver {@status concentration}. Du kan inte koncentrera dig på två trollformler samtidigt.",
+						"{@b Taking damage.} När du tar skada medan du är {@status concentration||concentrating} på en trollformel måste du göra ett räddningskast i konstitutionen för att behålla din {@status concentration}. DC är lika med 10 eller halva skadan du tar, vilket antal som är högst. Om du tar skada från flera källor, till exempel en pil och en drakandning, gör du ett separat räddningskast för varje skadekälla.",
+						"{@b Being incapacitated or killed.} Du förlorar {@status concentration} på en besvärjelse om du är {@condition incapacitated} eller om du dör."
 					]
 				},
-				"DM kan också bestämma att vissa miljöfenomen, t.ex. en våg som slår över dig när du befinner dig på ett stormdrabbat skepp, kräver att du måste lyckas med ett räddningskast på DC 10 för att bibehålla koncentrationen på en trollformel."
+				"DM kan också bestämma att vissa miljöfenomen, t.ex. en våg som slår över dig när du befinner dig på ett stormdrabbat skepp, kräver att du måste lyckas med ett räddningskast på DC 10 för att behålla {@status concentration} på en besvärjelse."
 			]
 		}
 	]

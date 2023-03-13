@@ -1513,7 +1513,7 @@
 		{
 			"name": "Create Whirlwind (Djinni)",
 			"entries": [
-				"En 5-fots radie, 30-fots hög cylinder av virvlande luft bildas magiskt på en punkt som <$short_name$> kan se inom 120 fot från den. Virvelvinden varar så länge som <$short_name$> upprätthåller koncentrationen (som om han koncentrerar sig på en besvärjelse). Alla varelser utom <$short_name$> som kommer in i virvelvinden måste lyckas med ett DC <$dc__str$> räddningskast eller bli {@condition restrained} av den. <$title_short_name$> kan flytta virvelvinden upp till 60 fot som en handling, och varelser {@condition restrained} av virvelvinden rör sig med den. Virvelvinden upphör om <$short_name$> förlorar synen på den.",
+				"En 5-fots radie, 30-fots hög cylinder av virvlande luft bildas magiskt på en punkt som <$short_name$> kan se inom 120 fot från den. Virvelvinden varar så länge som <$short_name$> upprätthåller {@status concentration} (som om {@status concentration||concentrating} på en besvärjelse). Alla varelser utom <$short_name$> som kommer in i virvelvinden måste lyckas med ett DC <$dc__str$> räddningskast eller bli {@condition restrained} av den. <$title_short_name$> kan flytta virvelvinden upp till 60 fot som en handling, och varelser {@condition restrained} av virvelvinden rör sig med den. Virvelvinden upphör om <$short_name$> förlorar synen på den.",
 				"En varelse kan använda sin handling för att befria en varelse {@condition restrained} från virvelvinden, inklusive sig själv, genom att lyckas med en DC <$dc__str$> Styrkekontroll. Om testet lyckas är varelsen inte längre {@condition restrained} och flyttar sig till närmaste utrymme utanför virvelvinden."
 			]
 		},
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Darkness Aura (Darkmantle)",
 			"entries": [
-				"En 15-fots radie av magiskt mörker sträcker sig ut från <$short_name$>, rör sig med den och sprider sig runt hörn. Mörkret varar så länge <$short_name$> upprätthåller koncentrationen, upp till 10 minuter (som om man koncentrerar sig på en besvärjelse). Darkvision kan inte tränga igenom detta mörker, och inget naturligt ljus kan belysa det. Om någon del av mörkret överlappar med ett ljusområde som skapats av en trollformel på 2:a nivån eller lägre, så fördunklas den trollformel som skapat ljuset."
+				"En 15-fots radie av magiskt mörker sträcker sig ut från <$short_name$>, rör sig med den och sprider sig runt hörn. Mörkret varar så länge som <$short_name$> upprätthåller {@status concentration}, upp till 10 minuter (som om {@status concentration||concentrating} på en besvärjelse). Darkvision kan inte tränga igenom detta mörker, och inget naturligt ljus kan belysa det. Om något av mörkret överlappar med ett ljusområde som skapats av en besvärjelse på 2:a nivån eller lägre, så förkastas den besvärjelse som skapar ljuset.ses synen på det."
 			]
 		},
 		{
@@ -1709,19 +1709,19 @@
 		{
 			"name": "Invisibility (Duergar)",
 			"entries": [
-				"<$title_short_name$> förvandlas magiskt {@condition invisible} tills den attackerar, kastar en trollformel eller använder sin förstoring, eller tills dess koncentration bryts, upp till 1 timme (som om den koncentrerar sig på en trollformel). All utrustning som <$short_name$> bär eller har med sig blir {@condition invisible} med den."
+				"<$title_short_name$> förvandlas magiskt till {@condition invisible} tills den attackerar, kastar en trollformel eller använder sin förstoring, eller tills dess {@status concentration} bryts, upp till 1 timme (som om {@status concentration||concentrating} på en trollformel). All utrustning som <$short_name$> bär eller har med sig är {@condition invisible} med den."
 			]
 		},
 		{
 			"name": "Invisibility (Quasit)",
 			"entries": [
-				"<$title_short_name$> förvandlas magiskt {@condition invisible} tills den attackerar eller använder Scare, eller tills dess koncentration upphör (som om den koncentrerar sig på en besvärjelse). All utrustning som <$short_name$> bär eller har med sig blir {@condition invisible} med den."
+				"<$title_short_name$> förvandlas magiskt till {@condition invisible} tills den attackerar eller använder Scare, eller tills dess {@status concentration} slutar (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som <$short_name$> bär eller har med sig blir {@condition invisible} med den."
 			]
 		},
 		{
 			"name": "Invisibility (Sprite)",
 			"entries": [
-				"<$title_short_name$> förvandlas magiskt {@condition invisible} tills den attackerar eller kastar en trollformel, eller tills dess koncentration upphör (som om den koncentrerar sig på en trollformel). All utrustning som <$short_name$> bär eller har med sig blir {@condition invisible} med den."
+				"<$title_short_name$> förvandlas magiskt {@condition invisible} tills den attackerar eller kastar en besvärjelse, eller tills dess {@status concentration} slutar (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som <$short_name$> bär eller har med sig blir {@condition invisible} med den."
 			]
 		},
 		{
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Read Thoughts (Doppelganger)",
 			"entries": [
-				"<$title_short_name$> läser magiskt av tankarna hos en varelse inom en radie av 60 fot. Effekten kan tränga igenom barriärer, men 3 fot trä eller jord, 2 fot sten, 2 tum metall eller en tunn plåt av bly blockerar den. Medan målet är inom räckhåll kan <$short_name$> fortsätta läsa dess tankar, så länge <$short_name$>s koncentration inte bryts (som om man koncentrerar sig på en besvärjelse). Medan <$short_name$> läser målets tankar har <$short_name$> fördel på Visdom ({@skill Insight}) och Charisma ({@skill Deception}, {@skill Intimidation} och {@skill Persuasion}) kontroller mot målet."
+				"<$title_short_name$> läser magiskt av tankarna hos en varelse inom en radie av 60 fot. Effekten kan tränga igenom barriärer, men 3 fot trä eller jord, 2 fot sten, 2 tum metall eller en tunn plåt av bly blockerar den. Medan målet är inom räckhåll kan <$short_name$> fortsätta läsa dess tankar, så länge <$short_name$>s {@status concentration} inte bryts (som om {@status concentration||concentrating} på en besvärjelse). Medan <$short_name$> läser målets tankar har <$short_name$> fördel på Visdom ({@skill Insight}) och Charisma ({@skill Deception}, {@skill Intimidation} och {@skill Persuasion}) kontroller mot målet."
 			]
 		},
 		{

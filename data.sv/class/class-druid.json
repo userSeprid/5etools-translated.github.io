@@ -2709,7 +2709,7 @@
 					"items": [
 						"Din spelstatistik ersätts av djurets statistik, men du behåller din inriktning, personlighet och dina poäng för intelligens, visdom och karisma. Du behåller också alla dina färdighets- och räddningskastprofessioner, förutom att du får varelsens. Om varelsen har samma färdighet som du och bonusen i dess statblock är högre än din, använd varelsens bonus istället för din. Om varelsen har några legendariska handlingar eller handlingar i en håla kan du inte använda dem.",
 						"När du förvandlar dig tar du över djurets träffpunkter och Hit Dice. När du återgår till din normala form återgår du till det antal träffpunkter du hade innan du förvandlades. Men om du återvänder som ett resultat av att du sjunkit till 0 träffpoäng, överförs all överskottsskada till din normala form. Om du till exempel tar 10 skador i djurform och bara har 1 träffpunkt kvar, återvänder du och tar 9 skador. Så länge den överskjutande skadan inte sänker din normala form till 0 träffpoäng, blir du inte knockad {@condition unconscious}.",
-						"Du kan inte kasta trollformler, och din förmåga att tala eller göra något som kräver händerna är begränsad till din djurforms kapacitet. Att förvandlas bryter dock inte din koncentration på en besvärjelse som du redan har kastat, eller hindrar dig från att vidta åtgärder som är en del av en besvärjelse, som {@spell call lightning}, som du redan har kastat.",
+						"Du kan inte kasta trollformler, och din förmåga att tala eller göra något som kräver händerna är begränsad till din djurforms kapacitet. Att förvandlas bryter dock inte din {@status concentration} på en besvärjelse som du redan har kastat, eller hindrar dig från att utföra handlingar som är en del av en besvärjelse, såsom {@spell call lightning}, som du redan har kastat.",
 						"Du behåller fördelarna med alla egenskaper från din klass, ras eller annan källa och kan använda dem om den nya formen är fysiskt kapabel att göra det. Du kan dock inte använda något av dina speciella sinnen, till exempel {@sense darkvision}, om inte din nya form också har det sinnet.",
 						"Du väljer själv om din utrustning ska falla till marken i ditt utrymme, smälta in i din nya form eller om den ska bäras av den. Bärd utrustning fungerar som vanligt, men DM avgör om det är praktiskt för den nya formen att bära en utrustning, baserat på varelsens form och storlek. Din utrustning ändrar inte storlek eller form för att passa den nya formen, och all utrustning som den nya formen inte kan bära måste antingen falla till marken eller smälta samman med den. Utrustning som smälter samman med formen har ingen effekt tills du lämnar formen."
 					]
@@ -3797,7 +3797,7 @@
 					"type": "entries",
 					"name": "Dragon",
 					"entries": [
-						"En konstellation av en klok drake visas på dig. När du gör en intelligens- eller visdomskontroll eller ett räddningskast i konstitutionen för att bibehålla koncentrationen på en trollformel, kan du behandla ett kast på 9 eller lägre på {@dice d20} som en 10:a."
+						"En konstellation av en klok drake visas på dig. När du gör en intelligens- eller visdomskontroll eller ett räddningskast i konstitutionen för att bibehålla {@status concentration} på en besvärjelse, kan du behandla ett kast på 9 eller lägre på {@dice d20} som en 10:a."
 					]
 				}
 			]
@@ -4118,7 +4118,7 @@
 						{
 							"type": "item",
 							"name": "Dragon",
-							"entry": "En konstellation av en klok, gammal drake visas på dig. När du gör en intelligens- eller visdomskontroll eller ett räddningskast i konstitutionen för att bibehålla koncentrationen på en trollformel kan du behandla ett kast på 9 eller lägre på {@dice d20} som en 10:a."
+							"entry": "En konstellation av en klok, gammal drake visas på dig. När du gör en intelligens- eller visdomskontroll eller ett räddningskast i konstitutionen för att upprätthålla {@status concentration} på en besvärjelse, kan du behandla ett kast på 9 eller lägre på {@dice d20} som en 10:a."
 						}
 					]
 				}
@@ -4874,7 +4874,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Från och med 14:e nivån skyddar de naturandar du kommunicerar med dig när du är som mest försvarslös. Om du reduceras till 0 träffpunkter eller blir {@condition incapacitated} mot din vilja kan du omedelbart få fördelarna med {@spell conjure animals} som om den kastades med en trollformel på 9:e nivån. Den framkallar fyra bestar av ditt val som har utmaningsgrad 2 eller lägre. De trollade odjuren dyker upp inom sex meter från dig. Om de inte får några kommandon från dig skyddar de dig från skada och attackerar dina fiender. Besvärjelsen varar i 1 timme och kräver ingen koncentration, eller tills du avbryter den (ingen handling krävs).",
+				"Från och med 14:e nivån skyddar de naturandar du kommunicerar med dig när du är som mest försvarslös. Om du reduceras till 0 träffpunkter eller blir {@condition incapacitated} mot din vilja kan du omedelbart få fördelarna med {@spell conjure animals} som om den kastades med en trollformel på 9:e nivån. Den framkallar fyra odjur av ditt val som har utmaningsgrad 2 eller lägre. De trollade odjuren dyker upp inom sex meter från dig. Om de inte får några kommandon från dig skyddar de dig från skada och attackerar dina fiender. Besvärjelsen varar i 1 timme och kräver ingen {@status concentration}, eller tills du avbryter den (ingen åtgärd krävs).",
 				"När du har använt den här funktionen kan du inte använda den igen förrän du har vilat länge."
 			]
 		},
@@ -5222,7 +5222,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Från och med 14:e nivån skyddar de naturandar du kommunicerar med dig när du är som mest försvarslös. Om du reduceras till 0 träffpunkter eller blir {@condition incapacitated} mot din vilja, kan du omedelbart få fördelarna med {@spell conjure animals} som om den kastades med en trollformel på 9:e nivån. Den framkallar fyra odjur av ditt val som har utmaningsgrad 2 eller lägre. De trollade odjuren dyker upp inom sex meter från dig. Om de inte får några kommandon från dig skyddar de dig från skada och attackerar dina fiender. Besvärjelsen varar i 1 timme och kräver ingen koncentration, eller tills du avbryter den (ingen handling krävs).",
+				"Från och med 14:e nivån skyddar de naturandar du kommunicerar med dig när du är som mest försvarslös. Om du reduceras till 0 träffpunkter eller blir {@condition incapacitated} mot din vilja kan du omedelbart få fördelarna med {@spell conjure animals} som om den kastades med en trollformel på 9:e nivån. Den framkallar fyra odjur av ditt val som har utmaningsgrad 2 eller lägre. De trollade odjuren dyker upp inom sex meter från dig. Om de inte får några kommandon från dig skyddar de dig från skada och attackerar dina fiender. Besvärjelsen varar i 1 timme och kräver ingen {@status concentration}, eller tills du avbryter den (ingen åtgärd krävs). timme och kräver ingen {@status concentration}, eller tills du avbryter den (ingen åtgärd krävs).",
 				"När du har använt den här funktionen kan du inte använda den igen förrän du har vilat länge."
 			]
 		}

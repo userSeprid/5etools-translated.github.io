@@ -13,7 +13,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Aboleth kastar {@spell phantasmal force} (inga komponenter krävs) på alla varelser som den kan se inom en radie av 60 fot. Medan aboleth håller koncentrationen på denna effekt kan den inte göra andra åtgärder för att gömma sig. Om ett mål lyckas med räddningskastet eller om effekten upphör för det, är målet immunt mot abolethens fantasmatiska krafts lair-åtgärd under de kommande 24 timmarna, även om en sådan varelse kan välja att påverkas.",
+						"Aboleth kastar {@spell phantasmal force} (inga komponenter krävs) på alla varelser som den kan se inom en radie av 60 fot. Medan den upprätthåller {@status concentration} på den här effekten kan aboleten inte göra andra åtgärder i lyan. Om ett mål lyckas med räddningskastet eller om effekten upphör för det, är målet immunt mot abolethens fantasmatiska krafts lair-handling under de kommande 24 timmarna, även om en sådan varelse kan välja att påverkas.",
 						"Vattenmassor inom 90 fot från aboleth svämmar utåt i ett greppande vattenflöde. Alla varelser på marken inom sex meter från en sådan bassäng måste lyckas med ett {@dc 14} räddningskast i styrka eller dras upp till sex meter in i vattnet och slås {@condition prone}. Aboleth kan inte använda den här lair-åtgärden igen förrän den har använt en annan.",
 						"Vattnet i aboleths lya blir på magisk väg en kanal för varelsens raseri. Aboleth kan rikta in sig på valfritt antal varelser som den kan se i sådant vatten inom 90 fot från den. Ett mål måste lyckas med ett {@dc 14} visdomssparande kast eller ta 7 ({@damage 2d6}) psykisk skada. Aboleth kan inte använda denna lair-åtgärd igen förrän den har använt en annan åtgärd."
 					]
@@ -26,7 +26,7 @@
 					"items": [
 						"Underjordiska ytor inom 1 mil från aboleths lya är slemmiga och våta och är {@quickref difficult terrain||3}.",
 						"Vattenkällor inom en kilometer från lyan är överjordiskt förorenade. Aboleths fiender som dricker sådant vatten spyr upp det inom några minuter.",
-						"Som en handling kan aboleth skapa en illusorisk bild av sig själv inom en radie av 1 mil från lyan. Kopian kan dyka upp på vilken plats som helst som aboleth har sett tidigare eller på vilken plats som helst som en varelse {@condition charmed} av aboleth för närvarande kan se. När bilden väl har skapats varar den så länge som aboleth upprätthåller koncentrationen, som om den koncentrerar sig på en trollformel. Även om bilden är immateriell ser den ut, låter och kan röra sig som aboleth. Aboleth kan känna, tala och använda telepati från bildens position som om han vore närvarande på den positionen. Om bilden tar skada försvinner den."
+						"Som en handling kan aboleth skapa en illusorisk bild av sig själv inom en radie av 1 mil från lyan. Kopian kan dyka upp på vilken plats som helst som aboleth har sett tidigare eller på vilken plats som helst som en varelse {@condition charmed} av aboleth för närvarande kan se. En gång skapad varar bilden så länge som aboleth upprätthåller {@status concentration}, som om {@status concentration||concentrating} på en förtrollning. Även om bilden är immateriell ser den ut, låter och kan röra sig som aboleth. Aboleth kan känna, tala och använda telepati från bildens position som om den vore närvarande på den positionen. Om bilden tar skada försvinner den."
 					]
 				},
 				"If the aboleth dies, the first two effects fade over the course of {@dice 3d10} days."
@@ -36,7 +36,7 @@
 			"name": "Aerisi Kalinoth",
 			"source": "PotA",
 			"lairActions": [
-				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while concentrating on a spell cast as a lair action.",
+				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action.",
 				"If Aerisi casts {@spell invisibility} using this lair action, she also draws the power of the air node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},
@@ -985,7 +985,7 @@
 					"items": [
 						"Magiska ristningar av drakens leende ansikte kan ses inarbetade i stenterräng och föremål inom 6 miles från drakens lya.",
 						"Små djur som gnagare och fåglar som normalt inte kan tala får den magiska förmågan att tala och förstå drakoniska när de befinner sig inom en kilometer från drakens lya. Dessa varelser talar väl om draken, men kan inte avslöja var den befinner sig.",
-						"Intelligenta varelser inom 1 mil från drakens lya är {@condition prone} utsatta för fniss. Även allvarliga saker verkar plötsligt roliga."
+						"Intelligenta varelser inom 1 mil från drakens lya är benägna att fnissa. Till och med allvarliga saker verkar plötsligt roliga. Om bilden tar skada försvinner den."
 					]
 				},
 				"If the dragon dies, the magic carvings fade over the course of {@dice 1d10} days. The other effects end immediately.",
@@ -1781,7 +1781,7 @@
 								],
 								[
 									"81–00",
-									"\"Min verklighetsuppfattning stämmer inte överens med någon annans. Det gör mig {@condition prone} till våldsamma vanföreställningar som inte är begripliga för någon annan.\""
+									"\"Min verklighetsuppfattning stämmer inte överens med någon annans. Det gör mig benägen att få våldsamma vanföreställningar som inte är begripliga för någon annan.\""
 								]
 							]
 						}
@@ -1799,7 +1799,7 @@
 					"type": "list",
 					"items": [
 						"Gar kan teleportera sig var som helst inom korallberget och ta med sig upp till fem villiga varelser.",
-						"Korallerna inom en radie på 60 fot växer snabbt runt varelser i korallberget. Varje varelse måste lyckas med ett {@dc 18} styrka-sparkast eller bli {@condition restrained}. Fasthållna varelser kan ta en handling på sin tur för att göra en {@dc 18} styrka ({@skill Athletics}) eller fingerfärdighet ({@skill Acrobatics}) kontroll för att frigöra sig. Den här effekten varar i 1 minut om den inte förkastas (den räknas som en trollformel på 6:e nivån), och kräver inte att Gar upprätthåller koncentrationen. Gar Shatterkeel och alla varelser som han utser är immuna mot denna effekt.",
+						"Korallerna i en radie på 60 fot växer snabbt runt varelser i korallberget. Varje varelse måste lyckas med ett {@dc 18} styrka-sparkast eller bli {@condition restrained}. Fasthållna varelser kan ta en handling på sin tur för att göra en {@dc 18} styrka ({@skill Athletics}) eller fingerfärdighet ({@skill Acrobatics}) kontroll för att frigöra sig. Den här effekten varar i 1 minut om den inte förkastas (den räknas som en trollformel på 6:e nivån), och kräver inte Gar för att upprätthålla {@status concentration}. Gar Shatterkeel och alla varelser som han utser är immuna mot denna effekt.",
 						"Upp till fem lik som Gar kan se inom 60 fot reser sig upp som {@creature drowned blade|GoS|drowned blades} och attackerar vem Gar vill att de ska attackera på sin tur."
 					]
 				}
@@ -1809,7 +1809,7 @@
 			"name": "Gar Shatterkeel",
 			"source": "PotA",
 			"lairActions": [
-				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while concentrating on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
+				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
 				"If Gar casts {@spell cure wounds} using this lair action, he regains the maximum number of hit points from the spell (28)."
 			]
 		},
@@ -1918,7 +1918,7 @@
 							"name": "Create Object",
 							"type": "item",
 							"entries": [
-								"Anarken kastar skapelsebesvärjelsen (som en besvärjelse på 9:e nivån) med hjälp av Limbos oformade substans istället för skuggmaterial. Om det används i Limbo förblir föremålet kvar tills anarkens koncentration bryts, oavsett dess sammansättning. Om anarken rör sig mer än 120 fot från föremålet bryts anarkens koncentration."
+								"Anarken kastar skapelsebesvärjelsen (som en besvärjelse på 9:e nivån) med hjälp av Limbos oformade substans istället för skuggmaterial. Om det används i Limbo förblir föremålet kvar tills anarkens {@status concentration} bryts, oavsett dess sammansättning. Om anarken rör sig mer än 120 fot från föremålet bryts anarkens {@status concentration}.ect."
 							]
 						},
 						{
@@ -1972,7 +1972,7 @@
 					"type": "list",
 					"items": [
 						"Anarken kastar {@spell lightning bolt}-besvärjelsen (på 5:e nivån), men anarken kan ändra skadetyp från blixt till kyla, eld, psykisk, strålande eller åska. Om trollformeln ger annan skada än eld eller blixtnedslag antänder den inte brännbara föremål.",
-						"Anarken kastar {@spell creation} besvärjelsen (som en besvärjelse på 9:e nivån) med hjälp av Limbos oformade substans istället för skuggmaterial. Om det används i Limbo, förblir föremålet kvar tills anarkens koncentration bryts, oavsett dess sammansättning. Om anarken rör sig mer än 120 fot från föremålet bryts dess koncentration.",
+						"Anarken kastar {@spell creation} besvärjelsen (som en besvärjelse på 9:e nivån) genom att använda Limbos oformade substans istället för skuggmaterial. Om det används i Limbo, förblir föremålet kvar tills anarkens {@status concentration} bryts, oavsett dess sammansättning. Om anarken rör sig mer än 120 fot från föremålet bryts dess {@status concentration}.",
 						"Anarken kan magiskt förflytta ett föremål som den kan se inom en radie av 150 fot genom att göra en Visdomskontroll med fördel. DC:n beror på objektets storlek: {@dc 5} för Tiny, {@dc 10} för Small, {@dc 15} för Medium, {@dc 20} för Large och {@dc 25} för Huge eller större."
 					]
 				}
@@ -2735,8 +2735,8 @@
 				{
 					"type": "list",
 					"items": [
-						"Kyrilla gipsavgjutningar {@spell moonbeam} (inga komponenter behövs). Medan hon behåller koncentrationen på denna effekt kan hon inte göra andra åtgärder i lair.",
-						"Kyrilla kastar {@spell cloud of daggers} (inga komponenter krävs), förutom att dolkarna är flygande ormar och att besvärjelsen ger genomträngande skada. Medan hon upprätthåller koncentrationen på denna effekt kan hon inte vidta andra lair-åtgärder.",
+						"Kyrilla gipsavgjutningar {@spell moonbeam} (inga komponenter behövs). Medan hon bibehåller {@status concentration} på denna effekt kan hon inte göra andra åtgärder i lyan.",
+						"Kyrilla kastar {@spell cloud of daggers} (inga komponenter krävs), förutom att dolkarna är flygande ormar och att besvärjelsen ger genomträngande skada. Medan hon upprätthåller {@status concentration} på den här effekten kan hon inte göra andra lair-åtgärder.",
 						"Vätskebassänger inom 60 fot från Kyrilla svallar och skummar, stänker och blöter ner alla varelser på marken inom 5 fot från sådana bassänger. Varelser som lyckas med ett DC 14 Dexterity räddningskast undviker att få vätska i sina ögon och munnar. Kyrilla kan inte använda den här lair-åtgärden igen förrän hon har använt en annan."
 					]
 				}
@@ -2787,7 +2787,7 @@
 			"name": "Marlos Urnrayle",
 			"source": "PotA",
 			"lairActions": [
-				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains concentration on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while concentrating on {@spell earthquake}.",
+				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains {@status concentration} on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while {@status concentration||concentrating} on {@spell earthquake}.",
 				"Marlos's second option for a lair action is to draw power from the earth node to heal. When he does so, he regains 30 ({@dice 6d8 + 3}) hit points."
 			]
 		},
@@ -2799,7 +2799,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Mephistopheles kastar vilken trollformel som helst från sin trollkarlslista och om den normalt kräver koncentration, varar den i stället under hela varaktigheten.",
+						"Mephistopheles kastar vilken trollformel som helst från sin trollkarlslista och om den normalt kräver {@status concentration}, varar den i stället hela varaktigheten.",
 						"Mephistopheles täcker ett 5-fots område med Hellfire. Alla varelser som börjar sin tur på det området lider 27 ({@damage 6d8}) eldskador. Helveteselden finns kvar tills Mephistopheles avfärdar den eller tills han använder den här förmågan igen."
 					]
 				}
@@ -3994,7 +3994,7 @@
 			"name": "Vanifer",
 			"source": "PotA",
 			"lairActions": [
-				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while concentrating on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
+				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
 				"If Vanifer casts {@spell misty step} using this lair action, she also draws the power of the fire node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},

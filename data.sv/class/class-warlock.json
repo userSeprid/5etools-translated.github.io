@@ -2205,7 +2205,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Från och med 14:e nivån kan du kasta en varelse in i en illusorisk värld. Som en handling väljer du en varelse som du kan se inom 60 fot från dig. Den måste göra ett visdomssparande kast mot din trollkarlsbesvärjelses räddnings-DC. Vid ett misslyckat räddningsförsök är den {@condition charmed} eller {@condition frightened} av dig (ditt val) i 1 minut eller tills din koncentration bryts (som om du koncentrerar dig på en trollformel). Effekten upphör tidigt om varelsen tar skada.",
+				"Från och med 14:e nivån kan du kasta en varelse in i en illusorisk värld. Som en handling väljer du en varelse som du kan se inom 60 fot från dig. Den måste göra ett visdomssparande kast mot din trollkarlsbesvärjelses räddnings-DC. Vid ett misslyckat räddningsförsök är den {@condition charmed} eller {@condition frightened} av dig (ditt val) i 1 minut eller tills din {@status concentration} bryts (som om du är {@status concentration||concentrating} på en besvärjelse). Den här effekten upphör tidigt om varelsen tar någon skada.",
 				"Tills illusionen upphör tror varelsen att den är vilse i en dimmig värld, vars utseende du väljer. Varelsen kan bara se och höra sig själv, dig och illusionen.",
 				"Du måste avsluta en kort eller lång vila innan du kan använda den här funktionen igen."
 			]
@@ -2708,7 +2708,7 @@
 			"entries": [
 				"{@i 10th-level Fathomless feature}",
 				"Du lär dig besvärjelsen {@spell Evard's black tentacles}. Den räknas som en warlock-besvärjelse för dig, men den räknas inte mot antalet besvärjelser du kan. Du kan också kasta den en gång utan en trollformelplats, och du återfår förmågan att göra det när du avslutar en lång vila.",
-				"När du uttalar den här besvärjelsen får du stöd av din beskyddares magi, vilket ger dig ett antal tillfälliga träffpoäng som är lika med din warlocknivå. Dessutom kan skador inte bryta din koncentration på denna besvärjelse."
+				"När du uttalar den här besvärjelsen får du stöd av din beskyddares magi som ger dig ett antal tillfälliga träffpoäng som är lika med din trollkarlsnivå. Dessutom kan skada inte bryta din {@status concentration} på den här besvärjelsen."
 			]
 		},
 		{
@@ -3309,7 +3309,7 @@
 			"entries": [
 				"{@i 14th-level Undead feature}",
 				"Din kropp är nu bara ett kärl för din ande. Som en handling kan du projicera din ande från din kropp. Den kropp du lämnar bakom dig är {@condition unconscious} och befinner sig i ett tillstånd av suspenderad animation.",
-				"Din ande kan stanna utanför din kropp i upp till 1 timme eller tills din koncentration bryts (som om du koncentrerar dig på en trollformel). När din projektion slutar återvänder din ande till din kropp eller så teleporterar sig din kropp magiskt till din andes utrymme (ditt val).",
+				"Din ande kan stanna utanför din kropp i upp till 1 timme eller tills din {@status concentration} bryts (som om {@status concentration||concentrating} på en besvärjelse). När din projektion slutar återvänder din ande till din kropp eller så teleporterar sig din kropp magiskt till din andes utrymme (ditt val).",
 				"När du projicerar din ande får du följande fördelar:",
 				{
 					"type": "list",
@@ -4711,7 +4711,7 @@
 			"entries": [
 				"{@i 14th-level Undead feature}",
 				"Din ande kan bli lösgjord från din fysiska form. Som en åtgärd kan du projicera din ande från din kropp. Kroppen du lämnar bakom dig är {@condition unconscious} och i ett tillstånd av uppskjuten animation.",
-				"Din ande liknar din dödliga form på nästan alla sätt och kopierar din spelstatistik men inte dina ägodelar. Alla skador eller andra effekter som gäller din ande eller fysiska kropp påverkar den andra. Din ande kan stanna utanför din kropp i upp till 1 timme eller tills din koncentration bryts (som om du koncentrerar dig på en trollformel). När din projektion slutar återvänder din ande till din kropp eller så teleporterar sig din kropp magiskt till din andes utrymme (ditt val).",
+				"Din ande liknar din dödliga form på nästan alla sätt och kopierar din spelstatistik men inte dina ägodelar. Alla skador eller andra effekter som gäller din ande eller fysiska kropp påverkar den andra. Din ande kan stanna utanför din kropp i upp till 1 timme eller tills din {@status concentration} bryts (som om {@status concentration||concentrating} på en besvärjelse). När din projektion slutar återvänder din ande till din kropp eller så teleporterar sig din kropp magiskt till din andes utrymme (ditt val).",
 				"När du projicerar din ande får du följande fördelar:",
 				{
 					"type": "list",

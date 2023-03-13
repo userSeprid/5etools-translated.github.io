@@ -33,7 +33,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"Vissa magiska föremål gör det möjligt för användaren att kasta en trollformel från föremålet, ofta genom att använda laddningar från föremålet. Besvärjelsen kastas på lägsta möjliga spell- och casternivå, förbrukar inga av användarens spell slots och kräver inga komponenter om inte föremålets beskrivning säger något annat. Besvärjelsen använder sin normala kasttid, räckvidd och varaktighet, och användaren av föremålet måste koncentrera sig om besvärjelsen kräver koncentration. Vissa föremål gör undantag från dessa regler och ändrar kasttiden, varaktigheten eller andra delar av en trollformel.",
+						"Vissa magiska föremål gör det möjligt för användaren att kasta en trollformel från föremålet, ofta genom att använda laddningar från föremålet. Besvärjelsen kastas på lägsta möjliga spell- och casternivå, förbrukar inga av användarens spell slots och kräver inga komponenter om inte föremålets beskrivning säger något annat. Besvärjelsen använder sin normala kasttid, räckvidd och varaktighet, och användaren av föremålet måste koncentrera sig om besvärjelsen kräver {@status concentration}. Vissa föremål gör undantag från dessa regler och ändrar kasttiden, varaktigheten eller andra delar av en trollformel.",
 						"Många föremål, t.ex. trolldrycker, kringgår besvärjelsen och ger trollformelns effekter. Ett sådant föremål använder fortfarande trollformelns varaktighet om inte föremålets beskrivning säger något annat.",
 						"Ett magiskt föremål, till exempel vissa stavar, kan kräva att du använder din egen trollkonstförmåga när du kastar en trollformel från föremålet. Om du har mer än en förtrollningsförmåga väljer du vilken du ska använda med föremålet. Om du inte har någon förtrollningsförmåga - kanske är du en skurk med funktionen Use Magic Device - är din förtrollningsförmågemodifierare +0 för föremålet, och din kompetensbonus gäller."
 					]
@@ -197,7 +197,7 @@
 				"Free"
 			],
 			"entries": [
-				"Om en trollformel måste upprätthållas med koncentration visas detta i dess Duration-angivelse, och trollformeln anger hur länge du kan koncentrera dig på den. Du kan avsluta koncentrationen när som helst (ingen åtgärd krävs)."
+				"Om en besvärjelse måste upprätthållas med {@status concentration} visas detta i dess Duration-angivelse och besvärjelsen anger hur länge du kan koncentrera dig på den. Du kan avsluta {@status concentration} när som helst (ingen åtgärd krävs).eller andra delar av en besvärjelse."
 			]
 		},
 		{
@@ -448,7 +448,7 @@
 				"Ibland vill du få ett övertag på en fiende eller vänta på en viss omständighet innan du agerar. För att göra det kan du ta åtgärden Ready på din tur, vilket låter dig agera med hjälp av din reaktion innan du börjar din nästa tur.",
 				"Först bestämmer du vilken omständighet som ska utlösa din reaktion. Sedan väljer du vilken åtgärd du ska vidta som svar på den utlösande faktorn, eller så väljer du att öka din hastighet som svar på den. Exempel på detta är \"Om kultisten trampar på luckan drar jag i spaken som öppnar den\" och \"Om trollet trampar bredvid mig rör jag mig bort\".",
 				"När utlösaren inträffar kan du antingen reagera direkt efter att utlösaren har avslutats eller ignorera utlösaren. Kom ihåg att du bara kan ta en reaktion per runda.",
-				"När du förbereder en trollformel kastar du den som vanligt, men behåller dess energi som du släpper ut med din reaktion när den utlösande faktorn inträffar. För att vara redo måste en trollformel ha en kasttid på 1 handling, och att hålla kvar trollformelns magi kräver koncentration (förklaras i {@book chapter 10|phb|10|concentration}). Om din koncentration bryts försvinner förtrollningen utan att ha effekt. Om du till exempel koncentrerar dig på nätbesvärjelsen och är redo för magisk missil, upphör din nätbesvärjelse, och om du tar skada innan du släpper magisk missil med din reaktion kan din koncentration brytas.",
+				"När du förbereder en trollformel kastar du den som vanligt men behåller dess energi, som du släpper ut med din reaktion när den utlösande faktorn inträffar. För att vara redo måste en trollformel ha en kasttid på 1 handling, och att hålla kvar trollformelns magi kräver {@status concentration} (förklaras i {@book chapter 10|phb|10|concentration}). Om din {@status concentration} bryts, försvinner trollformeln utan att ha effekt. Om du till exempel har {@status concentration||concentrating} på nätbesvärjelsen och är redo för magisk missil upphör din nätbesvärjelse, och om du tar skada innan du släpper magisk missil med din reaktion kan din {@status concentration} brytas.",
 				"Du har fram till början av nästa vändning på dig att använda en förberedd åtgärd."
 			]
 		},

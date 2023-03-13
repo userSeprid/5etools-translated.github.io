@@ -42,7 +42,7 @@
 					},
 					"name": "Energy Adaptation",
 					"entries": [
-						"Som en handling kan du röra vid en varelse och ge den motståndskraft mot syra, kyla, eld, blixtar eller åska (ditt val), vilket varar tills din koncentration upphör."
+						"Som en handling kan du röra vid en varelse och ge den motståndskraft mot syra, kyla, eld, blixtar eller åska (ditt val), som varar tills din {@status concentration} upphör."
 					]
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"name": "Energy Immunity",
 					"entries": [
-						"Som en handling kan du röra vid en varelse och ge den immunitet mot syra, kyla, eld, blixtar eller åska (ditt val), som varar tills din koncentration upphör."
+						"Som en handling kan du röra vid en varelse och ge den immunitet mot syra, kyla, eld, blixtar eller åska (ditt val), som varar tills din {@status concentration} upphör."
 					]
 				}
 			]
@@ -103,7 +103,7 @@
 					},
 					"name": "View Aura",
 					"entries": [
-						"Som en handling kan du studera en varelses aura. Tills din koncentration upphör, medan du kan se målet, får du veta om det är under effekt av magiska eller psioniska effekter, dess nuvarande antal träffpunkter och dess grundläggande känslomässiga tillstånd. Medan denna effekt varar har du fördel på Visdom ({@skill Insight}) och Charismakontroller som du gör mot den."
+						"Som en handling kan du studera en varelses aura. Tills din {@status concentration} slutar, medan du kan se målet, får du veta om det är under effekt av magiska eller psioniska effekter, dess nuvarande antal träffpunkter och dess grundläggande känslomässiga tillstånd. Medan denna effekt varar har du fördel på Visdom ({@skill Insight}) och Charismakontroller som du gör mot den."
 					]
 				},
 				{
@@ -117,7 +117,7 @@
 					},
 					"name": "Perceive the Unseen",
 					"entries": [
-						"Som en bonusåtgärd får du förmågan att se auror även av {@condition invisible} eller dolda varelser. Tills din koncentration upphör kan du se alla varelser, även dolda och {@condition invisible} varelser, oavsett ljusförhållanden."
+						"Som en bonusåtgärd får du förmågan att se auror även av {@condition invisible} eller dolda varelser. Tills din {@status concentration} slutar kan du se alla varelser, även dolda och {@condition invisible} varelser, oavsett ljusförhållanden."
 					]
 				}
 			]
@@ -461,7 +461,7 @@
 					},
 					"name": "Call to Inaction",
 					"entries": [
-						"Om du spenderar 1 minut med att samtala med en varelse kan du försöka att ge den en överväldigande tristess. I slutet av minuten kan du använda en handling för att tvinga varelsen att göra ett räddningskast för visdom. Räddningsförsöket lyckas automatiskt om målet är immun mot att vara {@condition charmed}. Vid ett misslyckat räddningsförsök sitter den och är {@condition incapacitated} tills din koncentration upphör. Denna effekt upphör omedelbart om målet eller någon allierad som det kan se attackeras eller tar skada. Vid en lyckad räddning är varelsen opåverkad och har ingen aning om ditt försök att böja dess vilja."
+						"Om du spenderar 1 minut med att samtala med en varelse kan du försöka att ge den en överväldigande tristess. I slutet av minuten kan du använda en handling för att tvinga varelsen att göra ett räddningskast för visdom. Räddningsförsöket lyckas automatiskt om målet är immun mot att vara {@condition charmed}. Vid ett misslyckat räddningsförsök sitter den och är {@condition incapacitated} tills din {@status concentration} slutar. Denna effekt upphör omedelbart om målet eller någon allierad som det kan se blir attackerad eller tar skada. Vid en lyckad räddning är varelsen opåverkad och har ingen aning om ditt försök att böja dess vilja."
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					},
 					"name": "Dolorous Mind",
 					"entries": [
-						"Som en handling kan du välja en varelse som du kan se inom 60 fot från dig. Den måste lyckas med ett Charisma räddningskast, annars är den {@condition incapacitated} och har en hastighet på 0 tills din koncentration upphör. Den kan upprepa detta räddningskast i slutet av var och en av sina vändningar, vilket avslutar effekten på den själv om den lyckas."
+						"Som en handling kan du välja en varelse som du kan se inom en radie på 60 fot. Den måste lyckas med ett räddningskast på Charisma, annars blir den {@condition incapacitated} och har en hastighet på 0 tills din {@status concentration} upphör. Den kan upprepa detta räddningskast i slutet av var och en av sina vändor, och avslutar effekten på sig själv vid en framgång. försök att böja sin vilja."
 					]
 				}
 			]
@@ -522,7 +522,7 @@
 					},
 					"name": "Wall of Repulsion",
 					"entries": [
-						"Som en handling skapar du en osynlig, icke-kroppslig vägg av energi inom 60 fot från dig som är upp till 30 fot lång, 10 fot hög och 1 fot tjock. Muren varar tills din koncentration upphör. Varje varelse som försöker röra sig genom den måste göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök kan en varelse inte röra sig genom muren förrän i början av nästa tur. Vid ett lyckat räddningsförsök kan varelsen passera igenom den. En varelse måste göra detta räddningsförsök varje gång den försöker passera genom väggen, vare sig den vill eller inte vill."
+						"Som en handling kan du skapa en osynlig, icke-kroppslig vägg av energi inom 60 fot från dig som är upp till 30 fot lång, 10 fot hög och 1 fot tjock. Muren varar tills din {@status concentration} upphör. Alla varelser som försöker röra sig genom den måste göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök kan en varelse inte röra sig genom muren förrän i början av nästa tur. Vid ett lyckat räddningsförsök kan varelsen passera igenom den. En varelse måste göra detta räddningsförsök varje gång den försöker passera genom väggen, vare sig den vill eller inte vill."
 					]
 				},
 				{
@@ -536,7 +536,7 @@
 					},
 					"name": "Visions of Disgust",
 					"entries": [
-						"Du får en varelse att betrakta alla andra varelser som hemska, främmande varelser. Som en handling väljer du en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med visdom. Vid ett misslyckat räddningsförsök tar det {@damage 5d6} psykisk skada, och tills din koncentration upphör tar det {@damage 1d6} psykisk skada per varelse inom 5 fot från det i slutet av var och en av dess turer. Vid en lyckad räddning tar målet bara hälften av den ursprungliga skadan och drabbas inte av någon av de andra effekterna."
+						"Du får en varelse att betrakta alla andra varelser som hemska, främmande varelser. Som en handling väljer du en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med visdom. Vid ett misslyckat räddningsförsök tar det {@damage 5d6} psykisk skada, och tills din {@status concentration} upphör tar det {@damage 1d6} psykisk skada per varelse inom 5 fot från det i slutet av var och en av dess turer. Vid en lyckad räddning tar målet bara hälften av den ursprungliga skadan och drabbas inte av någon av de andra effekterna. gly eller ofrivilligt."
 					]
 				},
 				{
@@ -550,7 +550,7 @@
 					},
 					"name": "World of Horror",
 					"entries": [
-						"Som en handling kan du välja upp till sex varelser inom 60 fot från dig. Varje mål måste göra ett räddningskast på Charisma. Vid ett misslyckat räddningsförsök tar ett mål {@damage 8d6} psykisk skada, och det är {@condition frightened} tills din koncentration upphör. Vid ett lyckat räddningsförsök tar ett mål hälften så mycket skada. Medan {@condition frightened} av den här effekten reduceras målets hastighet till 0, och målet kan använda sin handling, och eventuella bonushandlingar som det kan ha, endast för att göra närstridsattacker. Målet {@condition frightened} kan upprepa räddningskastet i slutet av var och en av sina vändningar, vilket avslutar effekten på sig själv vid en framgång."
+						"Som en handling kan du välja upp till sex varelser inom 60 fot från dig. Varje mål måste göra ett räddningskast på Charisma. Vid ett misslyckat räddningsförsök tar ett mål {@damage 8d6} psykisk skada, och det är {@condition frightened} tills din {@status concentration} upphör. Vid ett lyckat räddningsförsök tar ett mål hälften så mycket skada. Medan {@condition frightened} av den här effekten reduceras målets hastighet till 0, och målet kan använda sin handling, och eventuella bonushandlingar som det kan ha, endast för att göra närstridsattacker. Målet {@condition frightened} kan upprepa räddningskastet i slutet av var och en av sina vändningar, vilket avslutar effekten på sig själv vid en framgång."
 					]
 				}
 			]
@@ -587,7 +587,7 @@
 					},
 					"name": "Fighting Words",
 					"entries": [
-						"Om du spenderar 1 minut med att samtala med en varelse kan du försöka att lämna ett sjudande våld i dess sinne. I slutet av minuten kan du använda en handling för att tvinga varelsen att göra ett Visdomsbesparingskast för att motstå att känna våldsamma drifter mot en varelse som du beskriver för den eller namnger. Räddningsförsöket lyckas automatiskt om målet är immun mot att vara {@condition charmed}. Vid ett misslyckat räddningsförsök attackerar målet den valda varelsen om det ser den varelsen innan din koncentration upphör, med hjälp av vapen eller trollformler mot en varelse som det redan var fientligt inställt till eller obeväpnade slag mot en allierad eller en varelse som det var neutralt inställt till. När striden väl börjar fortsätter den att attackera i 5 ronder innan denna effekt upphör. Den här effekten upphör omedelbart om målet eller någon allierad som det kan se attackeras eller tar skada av någon annan varelse än den som det har uppviglats mot. Vid en lyckad räddning är varelsen opåverkad och har ingen aning om ditt försök att böja dess vilja."
+						"Om du spenderar 1 minut med att samtala med en varelse kan du försöka att lämna ett sjudande våld i dess sinne. I slutet av minuten kan du använda en handling för att tvinga varelsen att göra ett Visdomsbesparingskast för att motstå att känna våldsamma drifter mot en varelse som du beskriver för den eller namnger. Räddningsförsöket lyckas automatiskt om målet är immun mot att vara {@condition charmed}. Vid ett misslyckat räddningsförsök attackerar målet den valda varelsen om det ser den varelsen innan din {@status concentration} slutar, med hjälp av vapen eller trollformler mot en varelse som det redan var fientligt inställt till eller obeväpnade slag mot en allierad eller en varelse som det var neutralt inställt till. När striden väl har börjat fortsätter den att attackera i 5 ronder innan den här effekten upphör. Den här effekten upphör omedelbart om målet eller någon allierad som den kan se attackeras eller tar skada av någon annan varelse än den som den har blivit uppviglad mot. Vid ett lyckat räddningsförsök är varelsen opåverkad och har ingen aning om ditt försök att böja dess vilja. vänder, och avslutar effekten på sig själv vid en framgång."
 					]
 				},
 				{
@@ -611,7 +611,7 @@
 					},
 					"name": "Punishing Fury",
 					"entries": [
-						"Du får en varelse att bli så arg att den attackerar utan att tänka på sin egen säkerhet. Som en bonusåtgärd kan du välja en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett Visdoms räddningskast eller, tills din koncentration upphör, kan alla varelser inom 5 fot från det använda en reaktion för att göra en närkampsattack mot det när målet gör en närkampsattack. Räddningsförsöket lyckas automatiskt om målet är immun mot att vara {@condition charmed}."
+						"Du får en varelse att bli så arg att den attackerar utan att tänka på sin egen säkerhet. Som en bonusåtgärd kan du välja en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett Visdomsbesparingskast eller, tills din {@status concentration} slutar, kan alla varelser inom 5 fot från det använda en reaktion för att göra en närkampsattack mot det när målet gör en närkampsattack. Räddningsförsöket lyckas automatiskt om målet är immun mot att vara {@condition charmed}. annan varelse än den som den har blivit uppviglad mot. Vid ett lyckat räddningsförsök är varelsen opåverkad och har ingen aning om ditt försök att böja dess vilja. vänder, och avslutar effekten på sig själv vid en framgång."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 					},
 					"name": "Miniature Form",
 					"entries": [
-						"Som en bonusåtgärd kan du bli Tiny tills din koncentration upphör. När du är i den här storleken får du en +5-bonus på Dexterity ({@skill Stealth})-kontroller och kan röra dig genom luckor på upp till 15 cm utan att klämma dig."
+						"Som en bonusåtgärd blir du Tiny tills din {@status concentration} upphör. När du är i den här storleken får du en +5 bonus på Dexterity ({@skill Stealth})-kontroller och kan förflytta dig genom luckor på upp till 15 cm utan att klämma dig.Om du räddar är varelsen opåverkad och har ingen aning om ditt försök att böja sin vilja."
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					},
 					"name": "Microscopic Form",
 					"entries": [
-						"Som en bonusåtgärd blir du mindre än Tiny tills din koncentration upphör. Medan du är i denna storlek får du en +10 bonus på Dexterity ({@skill Stealth}) kontroller och en +5 bonus på AC, du kan röra dig genom luckor upp till 1 tum i diameter utan att klämma dig, och du kan inte göra vapenattacker."
+						"Som en bonusåtgärd blir du mindre än Tiny tills din {@status concentration} upphör. Under denna storlek får du en +10 bonus på Dexterity ({@skill Stealth})-kontroller och en +5 bonus på AC, du kan förflytta dig genom luckor på upp till 1 tum i diameter utan att klämma dig, och du kan inte göra vapenattacker."
 					]
 				}
 			]
@@ -720,7 +720,7 @@
 					},
 					"name": "Ogre Form",
 					"entries": [
-						"Som en bonusåtgärd får du 10 tillfälliga träffpunkter. Dessutom, tills din koncentration upphör, ger dina närstridsvapenattacker en extra {@damage 1d4} dödande skada vid en träff, och din räckvidd ökar med 5 fot. Om du är mindre än Large blir du också Large under hela tiden."
+						"Som en bonusåtgärd får du 10 tillfälliga träffpunkter. Dessutom, tills din {@status concentration} upphör, ger dina närstridsvapenattacker en extra {@damage 1d4} dödande skada vid en träff, och din räckvidd ökar med 5 fot. Om du är mindre än Large blir du också Large under hela tiden."
 					]
 				},
 				{
@@ -734,7 +734,7 @@
 					},
 					"name": "Giant Form",
 					"entries": [
-						"Som en bonusåtgärd får du 30 tillfälliga träffpunkter. Dessutom, tills din koncentration upphör, ger dina närstridsvapenattacker en extra {@damage 2d6} dödande skada vid en träff, och din räckvidd ökar med 10 fot. Om du är mindre än Huge blir du också Huge under hela tiden."
+						"Som en bonusåtgärd får du 30 tillfälliga träffpunkter. Dessutom, tills din {@status concentration} upphör, ger dina närstridsvapenattacker en extra {@damage 2d6} dödande skada vid en träff, och din räckvidd ökar med 10 fot. Om du är mindre än Huge blir du också Huge under hela tiden."
 					]
 				}
 			]
@@ -781,7 +781,7 @@
 					},
 					"name": "Psychic Redoubt",
 					"entries": [
-						"Som en åtgärd skapar du ett fält av skyddande psykisk energi. Välj ett valfritt antal varelser inom 30 fot från dig. Tills din koncentration upphör har varje mål motstånd mot psykisk skada och fördel på räddningskast på intelligens, visdom och karisma."
+						"Som en åtgärd skapar du ett fält av skyddande psykisk energi. Välj ett valfritt antal varelser inom 30 fot från dig. Tills din {@status concentration} slutar har varje mål motstånd mot psykisk skada och fördel på räddningskast på intelligens, visdom och karisma."
 					]
 				}
 			]
@@ -828,7 +828,7 @@
 					},
 					"name": "Iron Resistance",
 					"entries": [
-						"Som en handling får du motståndskraft mot slående, genomträngande eller skärande skador (ditt val), vilket varar tills din koncentration upphör."
+						"Som en handling får du motståndskraft mot dödande, genomträngande eller skärande skada (ditt val), vilket varar tills din {@status concentration} slutar."
 					]
 				}
 			]
@@ -875,7 +875,7 @@
 					},
 					"name": "Center of Attention",
 					"entries": [
-						"Som en handling kan du skapa en aura av kraft som fångar en varelses uppmärksamhet. Välj en varelse som du kan se inom 60 fot från dig. Den måste göra ett räddningskast med Charisma. Vid ett misslyckat räddningsförsök blir varelsen så grundligt distraherad av dig att alla andra varelser är {@condition invisible} till den tills din koncentration upphör. Effekten upphör om varelsen inte längre kan se eller höra dig eller om den tar skada."
+						"Som en handling kan du utöva en kraftfull aura som fångar en varelses uppmärksamhet. Välj en varelse som du kan se inom 60 fot från dig. Den måste göra ett räddningskast med Charisma. Vid ett misslyckat räddningsförsök blir varelsen så grundligt distraherad av dig att alla andra varelser är {@condition invisible} till den tills din {@status concentration} upphör. Effekten upphör om varelsen inte längre kan se eller höra dig eller om den tar skada."
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					},
 					"name": "Invoke Awe",
 					"entries": [
-						"Som en handling kan du utöva en aura som väcker respekt hos andra. Välj upp till 5 varelser som du kan se inom 60 fot från dig. Varje mål måste lyckas med ett räddningskast i intelligens eller bli {@condition charmed} av dig tills din koncentration upphör. Medan {@condition charmed} lyder målet alla dina verbala kommandon efter bästa förmåga och utan att göra något uppenbart självdestruktivt. {@condition charmed}-målet attackerar endast varelser som det har sett attackera dig sedan det var {@condition charmed} eller som det redan var fientligt inställt till. I slutet av var och en av sina turer kan den upprepa räddningskastet, vilket avslutar effekten på den själv om den lyckas."
+						"Som en åtgärd kan du utstråla en aura som väcker vördnad hos andra. Välj upp till 5 varelser som du kan se inom 60 fot från dig. Varje mål måste lyckas med ett räddningskast i intelligens eller bli {@condition charmed} av dig tills din {@status concentration} upphör. Under {@condition charmed} lyder målet alla dina verbala kommandon efter bästa förmåga och utan att göra något uppenbart självdestruktivt. {@condition charmed}-målet attackerar endast varelser som det har sett attackera dig sedan det var {@condition charmed} eller som det redan var fientligt inställt till. I slutet av var och en av sina turer kan den upprepa räddningskastet, vilket avslutar effekten på den själv om den lyckas."
 					]
 				}
 			]
@@ -950,7 +950,7 @@
 					},
 					"name": "Strategic Mind",
 					"entries": [
-						"Som en handling kan du utöva en aura av tillit och befäl som förenar dina allierade till en sammanhållen enhet. Tills din koncentration upphör kan alla allierade som befinner sig inom 60 fot från dig på deras tur, som en bonusåtgärd, utföra åtgärden Dash eller Disengage eller kasta en {@dice d4} och lägga till det kastade talet till varje attackkast de gör den gången."
+						"Som en handling kan du utöva en aura av tillit och befäl som förenar dina allierade till en sammanhållen enhet. Tills din {@status concentration} slutar kan alla allierade inom 60 fot från dig på deras tur som en bonusåtgärd ta åtgärden Dash eller Disengage eller kasta en {@dice d4} och lägga till det kastade antalet till varje attackkast de gör den vändan. d av var och en av deras vändor kan de upprepa räddningskastet, vilket avslutar effekten på dem själva vid en framgång."
 					]
 				},
 				{
@@ -997,7 +997,7 @@
 					},
 					"name": "Aura of Victory",
 					"entries": [
-						"Som en bonusåtgärd kan du projicera psionisk energi tills din koncentration upphör. Energin stärker dig och dina allierade när dina fiender fälls; varje gång en fiende du kan se reduceras till 0 träffpoäng får du och var och en av dina allierade inom 30 fot från dig tillfälliga träffpoäng som är lika med dubbla antalet psi-poäng som du spenderade för att aktivera den här effekten."
+						"Som en bonusåtgärd kan du projicera psionisk energi tills din {@status concentration} upphör. Energin stärker dig och dina allierade när dina fiender fälls; varje gång en fiende som du kan se reduceras till 0 träffpoäng får du och var och en av dina allierade inom 30 fot från dig tillfälliga träffpoäng som är lika med dubbla antalet psi-poäng som du spenderade för att aktivera den här effekten."
 					]
 				},
 				{
@@ -1038,7 +1038,7 @@
 					},
 					"name": "Incite Fear",
 					"entries": [
-						"Som en åtgärd kan du välja en varelse som du kan se inom en radie på 60 fot. Målet måste lyckas med ett räddningskast i Visdom eller bli {@condition frightened} av dig tills din koncentration upphör. Närhelst {@condition frightened} målet avslutar sin tur på en plats där det inte kan se dig kan det upprepa räddningskastet och avsluta effekten på sig själv vid en framgång."
+						"Som en åtgärd kan du välja en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i Visdom eller bli {@condition frightened} av dig tills din {@status concentration} upphör. Närhelst {@condition frightened}-målet avslutar sin tur på en plats där det inte kan se dig kan det upprepa räddningskastet och avsluta effekten på sig själv om det lyckas."
 					]
 				},
 				{
@@ -1052,7 +1052,7 @@
 					},
 					"name": "Unsettling Aura",
 					"entries": [
-						"Som en bonusåtgärd kan du hölja dig själv i oroväckande psykisk energi. Tills din koncentration upphör måste alla fiender inom 60 fot från dig som kan se dig spendera 1 extra fot rörelse för varje fot de rör sig mot dig. En varelse ignorerar den här effekten om den är immun mot att vara {@condition frightened}."
+						"Som en bonusåtgärd kan du hölja dig själv i oroväckande psykisk energi. Tills din {@status concentration} upphör måste alla fiender inom 60 fot från dig som kan se dig spendera 1 extra fot rörelse för varje fot de rör sig mot dig. En varelse ignorerar den här effekten om den är immun mot att vara {@condition frightened}."
 					]
 				},
 				{
@@ -1066,7 +1066,7 @@
 					},
 					"name": "Incite Panic",
 					"entries": [
-						"Som en handling kan du välja upp till åtta varelser som du kan se inom 90 fot från dig och som kan se dig. I början av varje tur för ett mål innan din koncentration slutar måste målet göra ett räddningskast i Visdom. Vid ett misslyckat räddningsförsök är målet {@condition frightened} tills början av sin nästa vändning, och du kastar en tärning. Om du kastar ett udda tal rör sig {@condition frightened} målet med halva sin hastighet i slumpmässig riktning och gör ingen handling under den vändningen, annat än att skrika av skräck. Om du kastar ett jämnt tal gör {@condition frightened} målet en närkampsattack mot ett slumpmässigt mål inom dess räckvidd. Om det inte finns något sådant mål flyttar det sig med halva sin hastighet i en slumpmässig riktning och utför ingen åtgärd den vändan. Denna effekt slutar på ett mål om det lyckas på tre räddningskast mot det."
+						"Som en åtgärd kan du välja upp till åtta varelser som du kan se inom 90 fot från dig och som kan se dig. I början av varje tur för ett mål innan din {@status concentration} slutar måste målet göra ett räddningskast i Visdom. Vid ett misslyckat räddningsförsök är målet {@condition frightened} tills början av nästa vändning, och du kastar en tärning. Om du kastar ett udda tal rör sig {@condition frightened} målet med halva sin hastighet i slumpmässig riktning och gör ingen handling under den vändningen, annat än att skrika av skräck. Om du kastar ett jämnt tal gör {@condition frightened} målet en närkampsattack mot ett slumpmässigt mål inom dess räckvidd. Om det inte finns något sådant mål flyttar det sig med halva sin hastighet i en slumpmässig riktning och utför ingen åtgärd den vändan. Denna effekt slutar på ett mål om det lyckas på tre räddningskast mot det."
 					]
 				}
 			]
@@ -1093,7 +1093,7 @@
 					},
 					"name": "Incite Fury",
 					"entries": [
-						"Som en bonusåtgärd kan du välja upp till tre allierade som du kan se inom 60 fot från dig (du kan välja dig själv i stället för en av de allierade). Tills din koncentration upphör kan varje måltavla kasta en {@dice d4} när den rullar skada för en närstridsvapenattack och lägga till det rullade antalet till skaderullen."
+						"Som en bonusåtgärd kan du välja upp till tre allierade som du kan se inom 60 fot från dig (du kan välja dig själv i stället för en av de allierade). Tills din {@status concentration} upphör kan varje mål rulla en {@dice d4} när du beräknar skadan för en närstridsvapenattack och lägga till antalet som rullats till skaderullen.k mot ett slumpmässigt mål inom dess räckvidd. Om det inte finns något sådant mål flyttar det sig med halva sin hastighet i en slumpmässig riktning och utför ingen åtgärd den vändan. Denna effekt slutar på ett mål om det lyckas på tre räddningskast mot det."
 					]
 				},
 				{
@@ -1117,7 +1117,7 @@
 					},
 					"name": "Aura of Bloodletting",
 					"entries": [
-						"Som en bonusåtgärd släpper du ut en aura av raseri. Tills din koncentration upphör har du och alla varelser inom 60 fot från dig fördel på närkampsattacker."
+						"Som en bonusåtgärd släpper du ut en aura av raseri. Tills din {@status concentration} slutar har du och alla varelser inom 60 fot från dig fördel på närstridsattacker."
 					]
 				},
 				{
@@ -1131,7 +1131,7 @@
 					},
 					"name": "Overwhelming Fury",
 					"entries": [
-						"Som en handling kan du översvämmas av raseri hos en varelse som du kan se inom en radie på 60 fot. Målet måste lyckas med ett Charisma-sparkast, annars kan det använda sina handlingar endast för att göra närstridsattacker tills din koncentration upphör. Den kan upprepa räddningskastet i slutet av var och en av sina vändningar, vilket avslutar effekten på den själv om den lyckas."
+						"Som en handling kan du översvämmas av raseri hos en varelse som du kan se inom en radie på 60 fot. Målet måste lyckas med ett Charisma-sparkast, annars kan det använda sina handlingar för att göra närstridsattacker tills din {@status concentration} upphör. Den kan upprepa räddningskastet i slutet av var och en av sina vändningar, vilket avslutar effekten på den själv om den lyckas."
 					]
 				}
 			]
@@ -1168,7 +1168,7 @@
 					},
 					"name": "Comforting Aura",
 					"entries": [
-						"Som en bonusåtgärd kan du välja upp till tre allierade som du kan se (du kan välja dig själv i stället för en av de allierade). Tills din koncentration upphör kan varje måltavla kasta en {@dice d4} när du gör ett räddningskast och lägga till det antal som kastats till summan."
+						"Som en bonusåtgärd kan du välja upp till tre allierade som du kan se (du kan välja dig själv i stället för en av de allierade). Tills din {@status concentration} upphör kan varje måltavla kasta en {@dice d4} när den gör ett räddningskast och lägga till det antal som kastats till summan."
 					]
 				},
 				{
@@ -1182,7 +1182,7 @@
 					},
 					"name": "Aura of Jubilation",
 					"entries": [
-						"Som en bonusåtgärd kan du utstråla en distraherande munterhet tills din koncentration upphör. Varje varelse inom 60 fot från dig som kan se dig lider nackdel på alla kontroller som använder {@skill Perception} och {@skill Investigation} färdigheterna."
+						"Som en bonusåtgärd utstrålar du en distraherande munterhet tills din {@status concentration} upphör. Varje varelse inom 60 fot från dig som kan se dig lider nackdel på alla kontroller som använder {@skill Perception} och {@skill Investigation} färdigheterna."
 					]
 				},
 				{
@@ -1239,7 +1239,7 @@
 					},
 					"name": "Cloak of Air",
 					"entries": [
-						"Som en bonusåtgärd kan du ta kontroll över luften runt omkring dig för att skapa en skyddande slöja. Tills din koncentration upphör har attackkast mot dig nackdel, och när en varelse som du kan se missar dig med en närstridsattack kan du använda din reaktion för att tvinga varelsen att upprepa attackkastet mot sig själv."
+						"Som en bonusåtgärd kan du ta kontroll över luften runt omkring dig för att skapa en skyddande slöja. Tills din {@status concentration} upphör har attackkast mot dig nackdel, och när en varelse du kan se missar dig med en närstridsattack kan du använda din reaktion för att tvinga varelsen att upprepa attackkastet mot sig själv."
 					]
 				},
 				{
@@ -1253,7 +1253,7 @@
 					},
 					"name": "Wind Form",
 					"entries": [
-						"Som en bonusåtgärd får du en flyghastighet på 60 fot som varar tills din koncentration upphör."
+						"Som en bonusåtgärd får du en flyghastighet på 60 fot som varar tills din {@status concentration} upphör."
 					]
 				},
 				{
@@ -1267,7 +1267,7 @@
 					},
 					"name": "Misty Form",
 					"entries": [
-						"Som en handling blir din kropp som ett dimmigt moln tills din koncentration upphör. I den här formen får du motståndskraft mot slagskador, piercing och slashing, och du kan inte göra andra åtgärder än Dash-åtgärden. Du kan passera genom öppningar som inte är mer än 1 tum breda utan att klämma dig."
+						"Som en handling blir din kropp som ett dimmigt moln tills din {@status concentration} slutar. I den här formen får du resistens mot slagskador, genomträngande skador och snittskador, och du kan inte utföra andra åtgärder än Dash-åtgärden. Du kan passera genom öppningar som inte är mer än 1 tum breda utan att klämma."
 					]
 				},
 				{
@@ -1281,7 +1281,7 @@
 					},
 					"name": "Animate Air",
 					"entries": [
-						"Som en handling får du en luftelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementarvarelsen varar tills din koncentration upphör och den lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess statblock."
+						"Som en handling får du en luftelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementaren varar tills din {@status concentration} upphör och lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess statblock."
 					]
 				}
 			]
@@ -1308,7 +1308,7 @@
 					},
 					"name": "Combustion",
 					"entries": [
-						"Som en åtgärd kan du välja en varelse eller ett föremål som du kan se inom 120 fot från dig. Målet måste göra en konstitutionell räddning. Om räddningen misslyckas tar målet {@scaledamage 1d10|1-7|1d10|psi} brandskada per spenderad psi-poäng, och det fattar eld och tar {@damage 1d6} brandskada i slutet av var och en av sina vändor tills din koncentration upphör eller tills det eller en varelse intill det släcker lågorna med en handling. Vid en lyckad räddning tar målet hälften så mycket skada och fattar inte eld."
+						"Som en åtgärd kan du välja en varelse eller ett föremål som du kan se inom 120 fot från dig. Målet måste göra en konstitutionell räddning. Om räddningen misslyckas tar målet {@scaledamage 1d10|1-7|1d10|psi} brandskada per spenderad psi-poäng, och det fattar eld och tar {@damage 1d6} brandskada i slutet av var och en av sina turer tills din {@status concentration} slutar eller tills det eller en varelse intill det släcker lågorna med en handling. Vid en lyckad räddning tar målet hälften så mycket skada och fattar inte eld."
 					]
 				},
 				{
@@ -1322,7 +1322,7 @@
 					},
 					"name": "Rolling Flame",
 					"entries": [
-						"Som en handling kan du skapa eld i en kub på 6 meter på 6 meter inom 5 meter från dig. Elden varar tills din koncentration upphör. Alla varelser i det området när du använder den här förmågan och alla varelser som avslutar sin tur där tar 5 brandskador."
+						"Som en handling kan du skapa eld i en kub på 6 meter på 6 meter inom 5 meter från dig. Elden varar tills din {@status concentration} upphör. Alla varelser i det området när du använder den här förmågan och alla varelser som avslutar sin tur där tar 5 brandskador."
 					]
 				},
 				{
@@ -1346,7 +1346,7 @@
 					},
 					"name": "Fire Form",
 					"entries": [
-						"Som en bonusåtgärd blir du omgiven av lågor tills din koncentration upphör. Alla varelser som avslutar sin tur inom 5 fot från dig tar {@damage 3d6} brandskada."
+						"Som en bonusåtgärd blir du omgiven av lågor tills din {@status concentration} upphör. Alla varelser som avslutar sin tur inom 5 fot från dig tar {@damage 3d6} brandskada."
 					]
 				},
 				{
@@ -1360,7 +1360,7 @@
 					},
 					"name": "Animate Fire",
 					"entries": [
-						"Som en handling får du en eldelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementaren varar tills din koncentration upphör, och den lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess statblock."
+						"Som en handling får du en eldelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementaren varar tills din {@status concentration} slutar, och den lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess statblock."
 					]
 				}
 			]
@@ -1458,7 +1458,7 @@
 					},
 					"name": "Telekinetic Barrier",
 					"entries": [
-						"Som en handling skapar du en genomskinlig vägg av telekinetisk energi, varav minst en del måste vara inom 60 fot från dig. Väggen är 40 fot lång, 10 fot hög och 1 tum tjock. Väggen varar tills din koncentration upphör. Varje 10-fots sektion av väggen har en AC på 10 och 10 träffpunkter."
+						"Som en handling skapar du en genomskinlig vägg av telekinetisk energi, varav minst en del måste befinna sig inom 60 fot från dig. Väggen är 40 fot lång, 10 fot hög och 1 tum tjock. Muren varar tills din {@status concentration} upphör. Varje 10 fot lång sektion av väggen har en AC på 10 och 10 träffpunkter."
 					]
 				},
 				{
@@ -1472,7 +1472,7 @@
 					},
 					"name": "Grasp",
 					"entries": [
-						"Du försöker gripa tag i en varelse med telekinetisk energi och hålla den fången. Som en handling väljer du en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i styrka eller bli {@condition grappled} av dig tills din koncentration upphör eller tills målet lämnar din räckvidd, vilket är 60 fot för det här gripandet.",
+						"Du försöker gripa en varelse med telekinetisk energi och hålla den fången. Som en handling väljer du en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i styrka eller bli {@condition grappled} av dig tills din {@status concentration} upphör eller tills målet lämnar din räckvidd, vilket är 60 fot för det här gripandet.",
 						"Målet {@condition grappled} kan fly genom att lyckas med en kontroll av styrka (atletik) eller skicklighet (akrobatik), som kontrolleras av din psioniska förmåga plus din kompetensbonus. När ett mål försöker fly på detta sätt kan du spendera psi-poäng för att öka din kontroll, med respekt för din psi-gräns. Du får en +1 bonus per spenderad psi-punkt.",
 						"Medan ett mål är {@condition grappled} på detta sätt skapar du en av följande effekter som en handling:"
 					]
@@ -1551,7 +1551,7 @@
 					},
 					"name": "Frozen Rain",
 					"entries": [
-						"Som en åtgärd kan du välja en punkt som du kan se inom 120 fot från dig. Luften i en sfär med en radie på 20 fot centrerad på den punkten blir dödligt kall och mättad med fukt. Varje varelse i det området måste göra ett räddningskast för konstitutionen. Vid ett misslyckat räddningsförsök tar ett mål {@damage 6d6} kallskada och dess hastighet reduceras till 0 tills din koncentration upphör. Vid ett lyckat räddningsförsök tar ett mål hälften så mycket skada.",
+						"Som en åtgärd kan du välja en punkt som du kan se inom 120 fot från dig. Luften i en sfär med en radie på 20 fot centrerad på den punkten blir dödligt kall och mättad med fukt. Varje varelse i det området måste göra ett räddningskast för konstitutionen. Vid ett misslyckat räddningsförsök tar ett mål {@damage 6d6} kallskada och dess hastighet reduceras till 0 tills din {@status concentration} upphör. Vid ett lyckat räddningsförsök tar ett mål hälften så mycket skada.",
 						"Som en handling kan ett mål som har fått sin hastighet reducerad avsluta effekten i förtid om det lyckas med en kontroll av styrka (atletik) med en DC som är lika med den här effektens räddningsDC.",
 						"Du kan öka den här effektens skada med {@scaledamage 6d6|5-7|1d6|psi} för varje ytterligare psi-poäng som spenderas på den."
 					]
@@ -1567,7 +1567,7 @@
 					},
 					"name": "Ice Barrier",
 					"entries": [
-						"Som en handling skapar du en isvägg, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din koncentration upphör. Varje 10-fots sektion av muren har AC 12 och 30 träffpunkter. En varelse som skadar muren med en närkampsattack tar kallskada lika stor som den skada som varelsen orsakade muren."
+						"Som en handling skapar du en isvägg, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din {@status concentration} upphör. Varje 10-fots sektion av muren har AC 12 och 30 träffpunkter. En varelse som skadar muren med en närkampsattack tar kallskada lika stor som den skada som varelsen orsakade muren."
 					]
 				}
 			]
@@ -1604,7 +1604,7 @@
 					},
 					"name": "Light",
 					"entries": [
-						"Som en åtgärd kan ett föremål som du rör vid utstrålar ljus i en radie av 6 meter och dämpar ljuset i ytterligare 6 meter. Ljuset varar tills din koncentration upphör. Alternativt utstrålar en varelse du rör vid ljus på samma sätt om den misslyckas med ett räddningskast för Dexterity. Medan den är upplyst på detta sätt kan den inte gömma sig, och attackkast mot den får fördel."
+						"Som en åtgärd kan ett föremål som du rör vid utstrålar ljus i en radie av 6 meter och dämpar ljuset i ytterligare 6 meter. Ljuset varar tills din {@status concentration} upphör. Alternativt utstrålar en varelse som du rör vid ljus på samma sätt om den misslyckas med ett Dexterity räddningskast. Medan den är upplyst på detta sätt kan den inte gömma sig och attackkast mot den får fördel."
 					]
 				},
 				{
@@ -1618,7 +1618,7 @@
 					},
 					"name": "Shadow Beasts",
 					"entries": [
-						"Som en åtgärd får du två {@creature shadow||shadows} att dyka upp i obebodda utrymmen som du kan se inom 60 fot från dig. {@creature shadow||shadows} varar tills din koncentration upphör och de lyder dina verbala kommandon. I strid kastar du för deras initiativ och väljer deras beteende under deras turer. När den här effekten upphör försvinner {@creature shadow||shadows}. Se Monstermanualen för deras statblock."
+						"Som en åtgärd får du två {@creature shadow||shadows} att dyka upp i obebodda utrymmen som du kan se inom 60 fot från dig. De {@creature shadow||shadows} varar tills din {@status concentration} slutar, och de lyder dina verbala kommandon. I strid kastar du för deras initiativ och väljer deras beteende under deras turer. När den här effekten upphör försvinner de {@creature shadow||shadows}. Se Monstermanualen för deras statblock."
 					]
 				},
 				{
@@ -1632,7 +1632,7 @@
 					},
 					"name": "Radiant Beam",
 					"entries": [
-						"Som en handling kan du projicera en ljusstråle mot en varelse som du kan se inom en radie av 60 fot från dig. Målet måste göra ett Dexterity räddningskast. Vid ett misslyckat räddningsförsök tar det {@damage 6d6} strålningsskada och är {@condition blinded} tills din koncentration upphör. Vid ett lyckat räddningsförsök tar den hälften så mycket skada. Ett {@condition blinded} mål kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv vid ett lyckat försök.",
+						"Som en handling kan du projicera en ljusstråle mot en varelse som du kan se inom en radie av 60 fot från dig. Målet måste göra ett Dexterity räddningskast. Vid ett misslyckat räddningsförsök tar det {@damage 6d6} strålningsskada och är {@condition blinded} tills din {@status concentration} upphör. Vid ett lyckat räddningsförsök tar det hälften så mycket skada. Ett {@condition blinded} mål kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv vid en lyckad räddning.",
 						"Du kan öka den här effektens skada med {@scaledamage 6d6|5-7|1d6|psi} för varje ytterligare psi-poäng som spenderas på den."
 					]
 				}
@@ -1700,7 +1700,7 @@
 					},
 					"name": "Water Sphere",
 					"entries": [
-						"Som en handling kan du få en vattensfär att bildas runt en varelse. Välj en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med Dexterity. Vid ett misslyckat räddningsförsök blir den fångad i vattensfären tills din koncentration upphör. Medan målet är fångat är dess hastighet halverad, det lider nackdel på attackkast och kan inte se något mer än 10 fot från sig själv. Attackrullar mot den lider dock också av nackdel. Målet kan upprepa räddningskastet i slutet av var och en av sina vändningar, och avslutar effekten på sig själv vid ett lyckat försök."
+						"Som en handling får du en vattensfär att bildas runt en varelse. Välj en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med Dexterity. Vid ett misslyckat räddningsförsök blir den fångad i vattensfären tills din {@status concentration} slutar. Medan målet är fångat är dess hastighet halverad, det lider nackdel på attackkast och kan inte se något mer än 10 fot från sig själv. Attackrullar mot den lider dock också av nackdel. Målet kan upprepa räddningskastet i slutet av var och en av sina vändor, och avslutar effekten på sig själv vid ett lyckat försök."
 					]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					},
 					"name": "Animate Water",
 					"entries": [
-						"Som en handling får du en vattenelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementarvarelsen varar tills din koncentration upphör, och den lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess statblock."
+						"Som en handling får du en vattenelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementarvarelsen varar tills din {@status concentration} slutar, och den lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess stat block.d av var och en av dess turer, och avslutar effekten på sig själv vid en lyckad tur."
 					]
 				}
 			]
@@ -1741,7 +1741,7 @@
 					},
 					"name": "Cloud Steps",
 					"entries": [
-						"Som en handling kan du trolla fram moln för att skapa en solid, genomskinlig trappa som varar tills din koncentration upphör. Trappan bildar en spiral som fyller ett område på 10 fot gånger 10 fot och når uppåt 20 fot per spenderad psi-poäng."
+						"Som en handling trollar du fram moln för att skapa en solid, genomskinlig trappa som varar tills din {@status concentration} slutar. Trappan bildar en spiral som fyller ett område på 10 fot gånger 10 fot och når uppåt 20 fot per spenderad psi-poäng."
 					]
 				},
 				{
@@ -1765,7 +1765,7 @@
 					},
 					"name": "Wall of Clouds",
 					"entries": [
-						"Som en åtgärd skapar du en molnvägg, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din koncentration upphör. Varelser kan passera igenom den utan hinder, men muren blockerar synen."
+						"Som en åtgärd skapar du en molnvägg, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din {@status concentration} upphör. Varelser kan passera igenom den utan hinder, men muren blockerar synen."
 					]
 				},
 				{
@@ -1800,7 +1800,7 @@
 					},
 					"name": "Wall of Thunder",
 					"entries": [
-						"Som en handling skapar du en vägg av åska, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din koncentration upphör. Varje fot som flyttas genom muren kostar 1 extra fot i rörelse. När en varelse rör sig in i murens utrymme för första gången på en tur eller börjar sin tur där, måste den varelsen lyckas med ett räddningskast i styrka, annars tar den {@damage 6d6} åskskskada, skjuts i en rak linje upp till 30 fot bort från muren och slås {@condition prone}."
+						"Som en handling skapar du en vägg av åska, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din {@status concentration} upphör. Varje fot som flyttas genom muren kostar 1 extra fot i rörelse. När en varelse rör sig in i murens utrymme för första gången på en tur eller börjar sin tur där måste den varelsen lyckas med ett räddningskast i styrka, annars tar den {@damage 6d6} åskskskada, knuffas i en rak linje upp till 30 fot bort från muren och slås {@condition prone}."
 					]
 				},
 				{
@@ -1867,7 +1867,7 @@
 					},
 					"name": "Wall of Wood",
 					"entries": [
-						"Som en åtgärd skapar du en vägg av trä, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din koncentration upphör. Varje 5 fot bred del av muren har AC 12 och 100 träffpunkter. Att bryta en sektion skapar ett 5 fot gånger 5 fot stort hål i den, men i övrigt förblir muren intakt."
+						"Som en åtgärd skapar du en vägg av trä, varav minst en del måste vara inom 60 fot från dig. Muren är 60 fot lång, 15 fot hög och 1 fot tjock. Muren varar tills din {@status concentration} upphör. Varje 5 fot bred del av muren har AC 12 och 100 träffpunkter. Att bryta en sektion skapar ett 5 fot gånger 5 fot stort hål i den, men i övrigt förblir muren intakt. slås (%2%)."
 					]
 				},
 				{
@@ -1881,7 +1881,7 @@
 					},
 					"name": "Armored Form",
 					"entries": [
-						"Som en bonusåtgärd får du motstånd mot dödande, genomträngande och slående skador, vilket varar tills din koncentration upphör."
+						"Som en bonusåtgärd får du motstånd mot dödande, genomträngande och skärande skador, vilket varar tills din {@status concentration} slutar."
 					]
 				},
 				{
@@ -1895,7 +1895,7 @@
 					},
 					"name": "Animate Earth",
 					"entries": [
-						"Som en handling får du en jordelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementarvarelsen varar tills din koncentration upphör och den lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess statblock."
+						"Som en handling får du en jordelementar att dyka upp i ett obebott utrymme som du kan se inom 120 fot från dig. Elementarvarelsen varar tills din {@status concentration} slutar, och den lyder dina verbala kommandon. I strid kastar du för dess initiativ och väljer dess beteende under dess turer. När den här effekten upphör försvinner elementaren. Se Monstermanualen för dess statblock."
 					]
 				}
 			]
@@ -1992,7 +1992,7 @@
 					},
 					"name": "Faithful Archer",
 					"entries": [
-						"Som en bonusåtgärd kan du ge ett distansvapen en begränsad känslighet. Tills din koncentration upphör kan du göra en extra attack med vapnet i början av varje varv (ingen handling krävs). Om det är ett kastat vapen återgår det till ditt grepp varje gång du gör någon attack med det."
+						"Som en bonusåtgärd kan du ge ett distansvapen en begränsad känslighet. Tills din {@status concentration} upphör kan du göra en extra attack med vapnet i början av var och en av dina turer (ingen handling krävs). Om det är ett kastat vapen återgår det till ditt grepp varje gång du gör någon attack med det."
 					]
 				}
 			]
@@ -2029,7 +2029,7 @@
 					},
 					"name": "Step from Sight",
 					"entries": [
-						"Som en bonusåtgärd kan du dölja dig själv. Du kan sikta på ytterligare en varelse för varje ytterligare psi-poäng du spenderar på den här förmågan. De tillagda målen måste vara synliga för dig och inom 60 fot från dig. Varje mål blir {@condition invisible} och förblir så tills din koncentration upphör eller tills omedelbart efter det att den riktar sig mot, skadar eller på annat sätt påverkar en varelse med en attack, en besvärjelse eller en annan förmåga."
+						"Som en bonusåtgärd kan du dölja dig själv. Du kan sikta på ytterligare en varelse för varje ytterligare psi-poäng du spenderar på den här förmågan. De tillagda målen måste vara synliga för dig och vara inom 60 fot från dig. Varje mål blir {@condition invisible} och förblir så tills din {@status concentration} slutar eller tills omedelbart efter att den riktar sig mot, skadar eller på annat sätt påverkar en varelse med en attack, en besvärjelse eller en annan förmåga."
 					]
 				},
 				{
@@ -2043,7 +2043,7 @@
 					},
 					"name": "Enduring Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan du förvandlas {@condition invisible} och förbli så tills din koncentration upphör."
+						"Som en bonusåtgärd blir du {@condition invisible} och förblir så tills din {@status concentration} upphör."
 					]
 				}
 			]
@@ -2070,7 +2070,7 @@
 					},
 					"name": "Wandering Mind",
 					"entries": [
-						"Du går in i en djup kontemplation. Om du koncentrerar dig under hela den här möjligheten får du upp till tre av följande färdigheter (en färdighet för varje 2 psi-poäng som spenderas): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} och {@skill Survival}. Förmånen varar i 1 timme, ingen koncentration krävs."
+						"Du går in i en djup kontemplation. Om du koncentrerar dig under hela den här möjligheten får du upp till tre av följande färdigheter (en färdighet för varje 2 psi-poäng som spenderas): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} och {@skill Survival}. Förmånen varar i 1 timme, ingen {@status concentration} krävs."
 					]
 				},
 				{
@@ -2122,7 +2122,7 @@
 					},
 					"name": "Wandering Eye",
 					"entries": [
-						"Som en åtgärd skapar du en psykisk sensor inom 60 fot från dig. Sensorn varar tills din koncentration upphör. Sensorn är osynlig och svävar i luften. Du får mentalt visuell information från den, som har normal syn och mörkerseende med en räckvidd på 60 fot. Sensorn kan se i alla riktningar. Som en handling kan du flytta sensorn upp till 30 fot i vilken riktning som helst. Det finns ingen gräns för hur långt bort från dig ögat kan röra sig, men det kan inte gå in i ett annat existensplan. En fast barriär blockerar ögats rörelse, men ögat kan passera genom en öppning så liten som 1 tum i diameter."
+						"Som en åtgärd skapar du en psykisk sensor inom 60 fot från dig. Sensorn varar tills din {@status concentration} slutar. Sensorn är osynlig och svävar i luften. Du får mentalt visuell information från den, som har normal syn och mörkerseende med en räckvidd på 60 fot. Sensorn kan se i alla riktningar. Som en handling kan du flytta sensorn upp till 30 fot i vilken riktning som helst. Det finns ingen gräns för hur långt bort från dig ögat kan röra sig, men det kan inte gå in i ett annat existensplan. En fast barriär blockerar ögats rörelse, men ögat kan passera genom en öppning så liten som 1 tum i diameter."
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					},
 					"name": "Nomad's Gate",
 					"entries": [
-						"Som en handling skapar du en 5-fots kub av dunkelt, grått ljus inom 5 fot från dig. Du skapar en identisk kub på en valfri punkt inom 1 mil som du har sett inom de senaste 24 timmarna. Tills din koncentration upphör, teleporterar sig alla som går in i en av kuberna omedelbart till den andra kuben och dyker upp i ett obebott utrymme bredvid den. Teleporteringen misslyckas om det inte finns något utrymme för varelsen att dyka upp i."
+						"Som en handling skapar du en 5-fots kub av dunkelt, grått ljus inom 5 fot från dig. Du skapar en identisk kub på en valfri punkt inom 1 mil som du har sett inom de senaste 24 timmarna. Tills din {@status concentration} slutar, teleporterar sig alla som går in i en av kuberna omedelbart till den andra kuben och dyker upp i ett obebott utrymme bredvid den. Teleporteringen misslyckas om det inte finns något utrymme för varelsen att framträda i.ögats rörelse, men ögat kan passera genom en så liten öppning som 1 tum i diameter."
 					]
 				}
 			]
@@ -2260,7 +2260,7 @@
 					},
 					"name": "Precognitive Hunch",
 					"entries": [
-						"Som en bonusåtgärd öppnar du dig för att få tillfälliga insikter som förbättrar dina chanser att lyckas; tills din koncentration upphör, varje gång du gör ett anfallskast, ett räddningskast eller en förmågekontroll, kastar du en {@dice d4} och lägger till den till den totala summan."
+						"Som en bonusåtgärd öppnar du dig för att få tillfälliga insikter som förbättrar dina chanser att lyckas; tills din {@status concentration} upphör, varje gång du gör ett anfallskast, ett räddningskast eller en förmågekontroll, kastar du en {@dice d4} och lägger till den till den totala summan."
 					]
 				},
 				{
@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"Som en åtgärd skapar du en psykisk modell av verkligheten i ditt sinne och ställer in den så att den visar dig några sekunder in i framtiden. Tills din koncentration upphör kan du inte vara {@quickref Surprise|PHB|3|0|surprised}, attackkast mot dig kan inte få fördel och du får en +10 bonus på initiativ."
+						"Som en åtgärd skapar du en psykisk modell av verkligheten i ditt sinne och ställer in den så att den visar dig några sekunder in i framtiden. Tills din {@status concentration} slutar kan du inte vara {@quickref Surprise|PHB|3|0|surprised}, attackkast mot dig kan inte få fördel och du får en +10 bonus på initiativ."
 					]
 				},
 				{
@@ -2394,7 +2394,7 @@
 					},
 					"name": "Augmented Weapon",
 					"entries": [
-						"Som en bonusåtgärd kan du beröra en {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Tills din koncentration upphör blir det vapnet ett magiskt vapen med en +3 bonus på dess attack- och skaderullar."
+						"Som en bonusåtgärd kan du beröra en {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Tills din {@status concentration} slutar blir det vapnet ett magiskt vapen med en +3 bonus på dess attack- och skaderullar."
 					]
 				}
 			]
@@ -2484,7 +2484,7 @@
 					},
 					"name": "Distracting Haze",
 					"entries": [
-						"Som en åtgärd kan du välja en varelse som du kan se inom en radie på 60 fot. Den varelsen måste göra ett räddningskast med intelligens. Vid ett misslyckat räddningsförsök tar den {@scaledamage 1d10|1-7|1d10|psi} psykisk skada per spenderad psi-punkt och kan inte se något mer än 10 fot från den tills din koncentration upphör. Vid ett lyckat räddningsförsök tar den hälften så mycket skada."
+						"Som en åtgärd kan du välja en varelse som du kan se inom 60 fot från dig. Den varelsen måste göra ett räddningskast med intelligens. Vid ett misslyckat räddningsförsök tar den {@scaledamage 1d10|1-7|1d10|psi} psykisk skada per spenderad psi-punkt och kan inte se något mer än 10 fot från den tills din {@status concentration} upphör. Vid ett lyckat räddningsförsök tar den hälften så mycket skada."
 					]
 				},
 				{
@@ -2612,7 +2612,7 @@
 					},
 					"name": "Phantom Foe",
 					"entries": [
-						"Som en åtgärd kan du välja en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med intelligens. Vid ett misslyckat räddningsförsök uppfattar det en hemsk varelse intill det tills din koncentration upphör. Under den här tiden kan målet inte ta reaktioner och det tar {@damage 1d8} psykisk skada i början av var och en av sina turer. Målet kan upprepa räddningskastet i slutet av var och en av sina vändningar, och avslutar effekten på sig själv vid en framgång. Du kan öka skadan med {@scaledamage 1d8|3-7|1d8|psi} för varje ytterligare psi-punkt som spenderas på förmågan."
+						"Som en åtgärd kan du välja en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med intelligens. Vid ett misslyckat räddningsförsök uppfattar det en hemsk varelse intill det tills din {@status concentration} slutar. Under den här tiden kan målet inte ta reaktioner och det tar {@damage 1d8} psykisk skada i början av var och en av sina turer. Målet kan upprepa räddningskastet i slutet av var och en av sina vändor, och avslutar effekten på sig själv vid en framgång. Du kan öka skadan med {@scaledamage 1d8|3-7|1d8|psi} för varje ytterligare psi-punkt som spenderas på förmågan."
 					]
 				},
 				{
@@ -2626,7 +2626,7 @@
 					},
 					"name": "Phantom Betrayal",
 					"entries": [
-						"Som en handling kan du plantera vanföreställningar om paranoia i en varelses sinne. Välj en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i intelligens, eller tills din koncentration upphör måste det rikta sina allierade med attacker och andra skadliga effekter. Målet kan upprepa räddningskastet i slutet av var och en av sina turer, vilket avslutar effekten på sig själv vid en framgång. En varelse är immun mot den här förmågan om den är immun mot att vara {@condition charmed}."
+						"Som en handling kan du plantera vanföreställningar om paranoia i en varelses sinne. Välj en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i intelligens, eller tills din {@status concentration} slutar måste det rikta sig mot sina allierade med attacker och andra skadliga effekter. Målet kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv vid en framgång. En varelse är immun mot den här förmågan om den är immun mot att bli {@condition charmed}.pent på förmågan."
 					]
 				},
 				{
@@ -2640,7 +2640,7 @@
 					},
 					"name": "Phantom Riches",
 					"entries": [
-						"Som en handling kan du plantera in en spöke av ett mycket önskat föremål i en varelses sinne. Välj en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med intelligens. Vid ett misslyckat räddningsförsök får du delvis kontroll över målets beteende tills din koncentration upphör; målet rör sig som du vill på var och en av sina turer, eftersom det tror att det förföljer det fantomobjekt som det önskar. Om det inte har tagit skada sedan dess senaste tur kan det använda sin handling endast för att beundra föremålet som du skapat i dess uppfattning. Målet kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar effekten på det självt om det lyckas."
+						"Som en handling kan du plantera in en spöke av ett mycket önskat föremål i en varelses sinne. Välj en varelse som du kan se inom 60 fot från dig. Målet måste göra ett räddningskast med intelligens. Vid ett misslyckat räddningsförsök får du delvis kontroll över målets beteende tills din {@status concentration} slutar; målet rör sig som du vill på var och en av sina turer, eftersom det tror att det förföljer det fantomobjekt som det önskar. Om det inte har tagit skada sedan dess senaste tur kan det använda sin handling endast för att beundra föremålet som du skapat i dess uppfattning. Målet kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar effekten på det självt om det lyckas."
 					]
 				}
 			]
@@ -2697,7 +2697,7 @@
 					},
 					"name": "Psychic Grip",
 					"entries": [
-						"Som en handling kan du rikta in dig på en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i intelligens, annars är det {@condition paralyzed} tills din koncentration upphör. I slutet av var och en av sina turer kan den upprepa räddningskastet. Vid ett lyckat försök upphör den här effekten. Vid ett misslyckande kan du använda din reaktion för att tvinga målet att röra sig upp till halva sin hastighet, även om det är {@condition paralyzed}."
+						"Som en åtgärd kan du rikta in dig på en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i intelligens, annars blir det {@condition paralyzed} tills din {@status concentration} upphör. I slutet av var och en av sina turer kan den upprepa räddningskastet. Vid ett lyckat försök upphör den här effekten. Vid ett misslyckande kan du använda din reaktion för att tvinga målet att röra sig upp till halva sin hastighet, även om det är {@condition paralyzed}. målet kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv vid en framgång."
 					]
 				},
 				{
@@ -2711,7 +2711,7 @@
 					},
 					"name": "Psychic Domination",
 					"entries": [
-						"Som en handling kan du rikta in dig på en varelse som du kan se inom 60 fot från dig. Målet måste lyckas med ett räddningskast i intelligens, eller så väljer du varelsens handlingar och rörelse på dess turer tills din koncentration upphör. I slutet av var och en av dess vändor kan den upprepa räddningskastet och avsluta effekten på sig själv om den lyckas. En varelse är immun mot den här förmågan om den är immun mot att vara {@condition charmed}."
+						"Som en åtgärd kan du rikta in dig på en varelse som du kan se inom en radie på 60 fot. Målet måste lyckas med ett räddningskast i intelligens, eller så väljer du varelsens handlingar och rörelse på dess turer tills din {@status concentration} slutar. I slutet av var och en av dess vändor kan den upprepa räddningskastet och avsluta effekten på sig själv om den lyckas. En varelse är immun mot den här förmågan om den är immun mot att vara {@condition charmed}."
 					]
 				}
 			]
@@ -2738,7 +2738,7 @@
 					},
 					"name": "Tremorsense",
 					"entries": [
-						"Som en bonusåtgärd får du tremorsense med en radie på 30 fot, som varar tills din koncentration upphör."
+						"Som en bonusåtgärd får du en tremorsense med en radie på 30 fot, som varar tills din {@status concentration} upphör."
 					]
 				},
 				{
@@ -2762,7 +2762,7 @@
 					},
 					"name": "Piercing Sight",
 					"entries": [
-						"Som en bonusåtgärd får du förmågan att se genom föremål som är upp till 1 fot tjocka inom 30 fot från dig. Denna syn varar tills din koncentration upphör."
+						"Som en bonusåtgärd får du förmågan att se genom föremål som är upp till 1 fot tjocka inom 30 fot från dig. Den här synen varar tills din {@status concentration} upphör."
 					]
 				},
 				{
@@ -2776,7 +2776,7 @@
 					},
 					"name": "Truesight",
 					"entries": [
-						"Som en bonusåtgärd får du en sann syn med en radie på 30 fot, som varar tills din koncentration upphör."
+						"Som en bonusåtgärd får du en sann syn med en radie på 30 fot, som varar tills din {@status concentration} slutar."
 					]
 				}
 			]

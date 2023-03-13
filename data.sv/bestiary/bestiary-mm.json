@@ -90,7 +90,7 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Fem aarakocra inom 30 fot från varandra kan magiskt framkalla en {@creature air elemental}. Var och en av de fem måste använda sin handling och rörelse på tre på varandra följande varv för att utföra en luftdans och måste behålla koncentrationen medan de gör det (som om de koncentrerar sig på en trollformel). När alla fem har avslutat sin tredje vändning av dansen dyker elementaren upp i ett obebott utrymme inom 60 fot från dem. Den är vänlig mot dem och lyder deras talade kommandon. Den stannar kvar i 1 timme, tills den eller alla dess tillkallare dör, eller tills någon av dess tillkallare avfärdar den som en bonusaktion. En frammanare kan inte utföra dansen igen förrän den avslutar en kort vila. När elementaren återvänder till Elemental Plane of Air kan alla aarakocra inom 5 fot från den återvända med den."
+						"Fem aarakocra inom 30 fot från varandra kan magiskt framkalla en {@creature air elemental}. Var och en av de fem måste använda sin handling och rörelse på tre på varandra följande varv för att utföra en luftdans och måste bibehålla {@status concentration} medan de gör det (som om {@status concentration||concentrating} på en besvärjelse). När alla fem har avslutat sin tredje vändning av dansen dyker elementaren upp i ett obebott utrymme inom 60 fot från dem. Den är vänlig mot dem och lyder deras talade kommandon. Den stannar kvar i 1 timme, tills den eller alla dess tillkallare dör, eller tills någon av dess tillkallare avfärdar den som en bonusaktion. En frammanare kan inte utföra dansen igen förrän den avslutar en kort vila. När elementaren återvänder till Elemental Plane of Air kan alla aarakocra inom 5 fot från den återvända med den."
 					]
 				}
 			],
@@ -15774,7 +15774,7 @@
 							"name": "Wind Aura",
 							"type": "entries",
 							"entries": [
-								"En magisk aura av vind omger jätten. Auran är en sfär med en radie på 10 fot som varar så länge jätten behåller koncentrationen på den (som om han koncentrerar sig på en besvärjelse). Medan auran är i kraft får jätten en +2 bonus på sin AC mot distansvapenattacker, och alla öppna lågor inom auran släcks om de inte är magiska."
+								"En magisk aura av vind omger jätten. Auran är en sfär med en radie på tre meter som varar så länge jätten upprätthåller {@status concentration} på den (som om {@status concentration||concentrating} på en besvärjelse). Medan auran är i kraft får jätten en +2 bonus på sin AC mot distansvapenattacker, och alla öppna lågor inom auran släcks om de inte är magiska. y av dess sammankallare avfärdar den som en bonushandling. En frammanare kan inte utföra dansen igen förrän den avslutar en kort vila. När elementaren återvänder till Elemental Plane of Air kan alla aarakocra inom 5 fot från den återvända med den."
 							]
 						}
 					],
@@ -17731,7 +17731,7 @@
 				{
 					"name": "Darkness Aura (1/Day)",
 					"entries": [
-						"En 15-fots radie av magiskt mörker sträcker sig ut från darkmantle, rör sig med den och sprider sig runt hörn. Mörkret varar så länge som darkmantle upprätthåller koncentrationen, upp till 10 minuter (som om man koncentrerar sig på en besvärjelse). Darkvision kan inte tränga igenom detta mörker, och inget naturligt ljus kan belysa det. Om någon del av mörkret överlappar med ett ljusområde som skapats av en trollformel på 2:a nivån eller lägre, så fördunklas den trollformel som skapat ljuset."
+						"En 15-fots radie av magiskt mörker sträcker sig ut från darkmantle, rör sig med den och sprider sig runt hörn. Mörkret varar så länge som darkmanteln upprätthåller {@status concentration}, upp till 10 minuter (som om {@status concentration||concentrating} på en besvärjelse). Darkvision kan inte tränga igenom detta mörker, och inget naturligt ljus kan belysa det. Om något av mörkret överlappar med ett ljusområde som skapats av en besvärjelse på 2:a nivå eller lägre, fördunklas den besvärjelse som skapat ljuset. lane of Air, kan alla aarakocra inom 5 fot av den återvända med den."
 					]
 				}
 			],
@@ -19528,7 +19528,7 @@
 				{
 					"name": "Create Whirlwind",
 					"entries": [
-						"En 5 fot radie, 30 fot hög cylinder av virvlande luft bildas magiskt på en punkt som djinnin kan se inom 120 fot från den. Virvelvinden varar så länge djinnin behåller koncentrationen (som om han koncentrerar sig på en trollformel). Alla varelser utom djinnin som kommer in i virvelvinden måste lyckas med ett {@dc 18} styrka räddningskast eller bli {@condition restrained} av den. Djinnin kan flytta virvelvinden upp till 60 fot som en handling, och varelser {@condition restrained} av virvelvinden flyttar med den. Virvelvinden upphör om djinnin förlorar synen på den.",
+						"En cylinder av virvlande luft med en radie på 5 fot och en höjd på 30 fot bildas magiskt på en punkt som djinnin kan se inom 120 fot från den. Virvelvinden varar så länge djinnin upprätthåller {@status concentration} (som om {@status concentration||concentrating} på en besvärjelse). Alla varelser utom djinnin som kommer in i virvelvinden måste lyckas med ett {@dc 18} styrka räddningskast eller bli {@condition restrained} av den. Djinnin kan flytta virvelvinden upp till 60 fot som en handling, och varelser {@condition restrained} av virvelvinden rör sig med den. Virvelvinden upphör om djinnin förlorar synen på den.",
 						"En varelse kan använda sin handling för att befria en varelse {@condition restrained} från virvelvinden, inklusive sig själv, genom att lyckas med en {@dc 18} styrkekontroll. Om testet lyckas är varelsen inte längre {@condition restrained} och flyttar sig till närmaste utrymme utanför virvelvinden."
 					]
 				}
@@ -19782,7 +19782,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Dubbelgångaren läser magiskt av tankarna hos en varelse som befinner sig inom en radie av 60 fot. Effekten kan penetrera barriärer, men 3 fot trä eller jord, 2 fot sten, 2 tum metall eller en tunn plåt av bly blockerar den. Medan målet är inom räckhåll kan dubbelgångaren fortsätta läsa dess tankar, så länge dubbelgångarens koncentration inte bryts (som om han koncentrerar sig på en trollformel). Medan han läser målets tankar har dubbelgångaren fördel på Visdom ({@skill Insight}) och Charisma ({@skill Deception}, {@skill Intimidation} och {@skill Persuasion}) kontroller mot målet."
+						"Dubbelgångaren läser på magiskt sätt tankarna hos en varelse inom en radie av 60 fot. Effekten kan tränga igenom barriärer, men 3 fot trä eller jord, 2 fot sten, 2 tum metall eller en tunn plåt av bly blockerar den. Medan målet är inom räckhåll kan dubbelgångaren fortsätta läsa dess tankar, så länge dubbelgångarens {@status concentration} inte bryts (som om {@status concentration||concentrating} på en besvärjelse). Medan han läser målets tankar har dubbelgångaren fördel på Visdom ({@skill Insight}) och Charisma ({@skill Deception}, {@skill Intimidation} och {@skill Persuasion}) kontroller mot målet."
 					]
 				}
 			],
@@ -21849,7 +21849,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Duergaren förvandlas magiskt {@condition invisible} tills den angriper, kastar en trollformel eller använder sin förstoring, eller tills dess att koncentrationen bryts, upp till 1 timme (som om den koncentrerar sig på en trollformel). All utrustning som duergaren bär eller har med sig blir {@condition invisible} med den."
+						"Duergaren förvandlas magiskt {@condition invisible} tills den attackerar, kastar en besvärjelse eller använder sin förstoring, eller tills dess att dess {@status concentration} bryts, upp till 1 timme (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som duergaren bär eller har med sig är {@condition invisible} med den. mot målet."
 					]
 				}
 			],
@@ -23620,7 +23620,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan draken magiskt vända sig {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
+						"Som en bonushandling kan draken magiskt vända sig {@condition invisible} tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
 					]
 				},
 				{
@@ -23780,7 +23780,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan draken magiskt vända sig {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
+						"Som en bonushandling kan draken magiskt vända sig {@condition invisible} tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
 					]
 				},
 				{
@@ -23937,7 +23937,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan draken magiskt vända sig {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
+						"Som en bonushandling kan draken magiskt vända sig {@condition invisible} tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
 					]
 				},
 				{
@@ -24090,7 +24090,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan draken magiskt vända sig {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
+						"Som en bonushandling kan draken magiskt vända sig {@condition invisible} tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
 					]
 				},
 				{
@@ -24246,7 +24246,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan draken magiskt vända sig {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
+						"Som en bonushandling kan draken magiskt vända sig {@condition invisible} tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
 					]
 				},
 				{
@@ -24411,7 +24411,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan draken magiskt vända sig {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
+						"Som en bonushandling kan draken magiskt vända sig {@condition invisible} tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
 					]
 				},
 				{
@@ -24565,7 +24565,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Som en bonusåtgärd kan draken magiskt vända sig {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
+						"Som en bonushandling kan draken magiskt vända sig {@condition invisible} tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en trollformel). All utrustning som draken bär eller har med sig är {@condition invisible} med den."
 					]
 				},
 				{
@@ -26313,7 +26313,7 @@
 				{
 					"name": "Animate Boulders (1/Day)",
 					"entries": [
-						"Galeb duhr besjälar på magisk väg upp till två stenblock som den kan se inom en radie av 60 fot. Ett stenblock har samma statistik som en galeb duhr, förutom att det har Intelligence 1 och Charisma 1, det kan inte vara {@condition charmed} eller {@condition frightened}, och det saknar detta handlingsalternativ. Ett stenblock förblir animerat så länge galeb duhr behåller koncentrationen, upp till 1 minut (som om han koncentrerar sig på en trollformel)."
+						"Galeb duhr besjälar på magisk väg upp till två stenblock som den kan se inom en radie av 60 fot. Ett stenblock har samma statistik som en galeb duhr, förutom att det har Intelligence 1 och Charisma 1, det kan inte vara {@condition charmed} eller {@condition frightened}, och det saknar detta handlingsalternativ. Ett stenblock förblir animerat så länge som galeb duhr bibehåller {@status concentration}, upp till 1 minut (som om {@status concentration||concentrating} på en besvärjelse)."
 					]
 				}
 			],
@@ -33308,7 +33308,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"Hagan förvandlas magiskt {@condition invisible} tills hon attackerar eller kastar en trollformel, eller tills hennes koncentration upphör (som om hon koncentrerar sig på en trollformel). Medan hon {@condition invisible} lämnar hon inga fysiska bevis på sin förflyttning, så hon kan endast spåras med hjälp av magi. All utrustning som hon bär eller har med sig är {@condition invisible} med henne."
+						"Häxan förvandlas magiskt {@condition invisible} tills hon attackerar eller kastar en besvärjelse, eller tills hennes {@status concentration} upphör (som om {@status concentration||concentrating} på en besvärjelse). Medan {@condition invisible} lämnar hon inga fysiska bevis på sin vandring, så hon kan endast spåras med hjälp av magi. All utrustning som hon bär eller har med sig är {@condition invisible} med henne."
 					]
 				}
 			],
@@ -37733,7 +37733,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Trollet förvandlas magiskt {@condition invisible} tills det angriper, eller tills dess koncentration upphör (som om det koncentrerar sig på en trollformel). All utrustning som impsen bär eller har med sig är {@condition invisible} med den."
+						"Trollkarlen förvandlas magiskt {@condition invisible} tills den attackerar, eller tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som impsen bär eller har med sig är {@condition invisible} med den."
 					]
 				}
 			],
@@ -49573,7 +49573,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Pixien förvandlas magiskt {@condition invisible} tills koncentrationen upphör (som om den koncentrerar sig på en trollformel). All utrustning som alfen bär eller har med sig blir {@condition invisible} med den."
+						"Älvan förvandlas magiskt {@condition invisible} tills dess {@status concentration} slutar (som om {@status concentration||concentrating} på en trollformel). All utrustning som alfen bär eller har med sig är {@condition invisible} med den."
 					]
 				}
 			],
@@ -51504,7 +51504,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Kvasit blir magiskt förvandlad {@condition invisible} tills den attackerar eller använder Scare, eller tills dess koncentration upphör (som om den koncentrerar sig på en trollformel). All utrustning som kvasit bär eller har med sig blir {@condition invisible} med den."
+						"Kvasit blir magiskt {@condition invisible} tills den attackerar eller använder Scare, eller tills dess {@status concentration} upphör (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som kvasit bär eller har med sig är {@condition invisible} med den."
 					]
 				}
 			],
@@ -57632,7 +57632,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Spriten förvandlas magiskt {@condition invisible} tills den attackerar eller kastar en trollformel, eller tills dess koncentration upphör (som om den koncentrerar sig på en trollformel). All utrustning som spriten bär eller har med sig är {@condition invisible} med den."
+						"Spriten förvandlas magiskt {@condition invisible} tills den attackerar eller kastar en besvärjelse, eller tills dess {@status concentration} slutar (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som spriten bär eller har med sig är {@condition invisible} med den."
 					]
 				}
 			],
@@ -66267,7 +66267,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Viskan och dess ljus blir magiskt {@condition invisible} tills den attackerar eller använder sin Consume Life, eller tills dess koncentration upphör (som om den koncentrerar sig på en besvärjelse)."
+						"Viskan och dess ljus blir magiskt {@condition invisible} tills den attackerar eller använder sin Consume Life, eller tills dess {@status concentration} slutar (som om {@status concentration||concentrating} på en besvärjelse)."
 					]
 				}
 			],

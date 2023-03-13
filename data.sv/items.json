@@ -3000,7 +3000,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"Den här ryggsäcken innehåller andan från en {@creature air elemental} och en kompakt läderballong. Medan du bär ryggsäcken kan du använda ballongen som en handling och få effekten av {@spell levitate} besvärjelsen i 10 minuter, riktad mot dig själv och utan att kräva någon koncentration. Alternativt kan du använda en reaktion för att använda ballongen när du faller och få effekten av {@spell feather fall}-besvärjelsen för dig själv.",
+				"Den här ryggsäcken innehåller andan från en {@creature air elemental} och en kompakt läderballong. Medan du bär ryggsäcken kan du använda ballongen som en handling och få effekten av {@spell levitate} besvärjelsen i 10 minuter, riktad mot dig själv och utan krav på {@status concentration}. Alternativt kan du använda en reaktion för att använda ballongen när du faller och få effekten av {@spell feather fall} trollformeln för dig själv.",
 				"När någon av trollformlerna avslutas, tar ballongen långsamt slut när elementaranden flyr och återvänder till elementarplanet Air. När ballongen töms på luft, sjunker du försiktigt ner mot marken i upp till 60 fot. Om du fortfarande är i luften i slutet av denna sträcka faller du om du inte har något annat sätt att hålla dig uppe.",
 				"När anden försvinner är ryggsäckens egenskaper oanvändbara om inte ryggsäcken laddas upp i 1 timme i en elementär luftnod, vilket binder en annan ande till ryggsäcken."
 			],
@@ -4177,7 +4177,7 @@
 					"type": "entries",
 					"entries": [
 						"Medan du håller i vapnet är du medveten om närvaron av Tiny eller större varelser inom 60 fot från dig som inte är konstruktioner eller odöda. Du kan inte heller vara {@condition charmed} eller {@condition frightened}.",
-						"Blackrazor kan kasta {@spell haste} besvärjelsen på dig en gång om dagen. Den bestämmer när den ska kasta besvärjelsen och behåller koncentrationen på den så att du inte behöver göra det."
+						"Blackrazor kan kasta {@spell haste} besvärjelsen på dig en gång om dagen. Den bestämmer när den ska kasta besvärjelsen och upprätthåller {@status concentration} på den så att du inte behöver göra det."
 					]
 				},
 				{
@@ -7780,7 +7780,7 @@
 					"name": "Wealth of Information",
 					"entries": [
 						"Målningens främsta syfte är att observera och minnas samtal. Under de senaste decennierna har Constantoris porträtt i tysthet observerat oräkneliga samtal och har nu en oöverskådlig mängd kunskap - allt från kriminella konspirationer till hemliga lösenord. DM bestämmer vad målningen vet och vad den inte vet.",
-						"När du är inställd på målningen kan du göra en åtgärd för att telepatiskt kontakta den över vilket avstånd som helst, förutsatt att du och målningen befinner er på samma existensplan. Målningen kan dock inte ta telepatisk kontakt med dig. Att upprätthålla telepatisk kontakt med målningen kräver din koncentration (som om du koncentrerar dig på en besvärjelse)."
+						"När du är inställd på målningen kan du göra en åtgärd för att telepatiskt kontakta den över vilket avstånd som helst, förutsatt att du och målningen befinner er på samma existensplan. Målningen kan dock inte ta telepatisk kontakt med dig. Att upprätthålla telepatisk kontakt med målningen kräver din {@status concentration} (som om {@status concentration||concentrating} på en besvärjelse)."
 					]
 				},
 				{
@@ -12776,7 +12776,7 @@
 					"type": "entries",
 					"name": "Aberrant Ally",
 					"entries": [
-						"Du kan trolla fram en avvikande varelse från multiversums kaos för att tjäna dig. Detta fungerar som {@spell conjure celestial}-besvärjelsen (ingen koncentration krävs), förutom att varelsen du kallar på är en aberration med utmaningsgrad 4 eller lägre. När du väl har använt den här egenskapen hos den avlägsna utrustningen kan den inte användas igen förrän nästa gryning."
+						"Du kan trolla fram en avvikande varelse från multiversums kaos för att tjäna dig. Detta fungerar som {@spell conjure celestial} besvärjelsen (ingen {@status concentration} krävs), förutom att varelsen du kallar på är en aberration med utmaningsgrad 4 eller lägre. När du en gång har använt denna egenskap hos den avlägsna utrustningen kan den inte användas igen förrän nästa gryning."
 					]
 				},
 				{
@@ -12898,7 +12898,7 @@
 			],
 			"entries": [
 				"Denna varma kristall glittrar med solnedgångsfärgerna från Feywild-himlen och framkallar viskningar av känslomässiga minnen. Som en handling kan du fästa skärvan på ett Tiny-objekt (t.ex. ett vapen eller ett smycke) eller ta loss den. Den faller av om din intoning till den upphör. Du kan använda skärvan som ett fokus för besvärjelser medan du håller eller bär den.",
-				"När du använder ett metamagiskt alternativ på en besvärjelse medan du håller eller bär skärvan kan du rulla på {@table Wild Magic Surge|PHB}-tabellen i {@book Player's Handbook|PHB}. Om resultatet är en besvärjelse är den för vild för att påverkas av din Metamagi, och om den normalt kräver koncentration krävs det inte koncentration i det här fallet; besvärjelsen varar under hela sin varaktighet.",
+				"När du använder ett metamagiskt alternativ på en besvärjelse medan du håller eller bär skärvan kan du rulla på {@table Wild Magic Surge|PHB}-tabellen i {@book Player's Handbook|PHB}. Om resultatet är en besvärjelse är den för vild för att påverkas av din Metamagic, och om den normalt kräver {@status concentration} behöver den inte {@status concentration} i det här fallet; besvärjelsen varar under hela sin varaktighet.",
 				"Om du inte har Wild Magic Sorcerous Origin kan den här egenskapen inte användas igen förrän vid nästa gryning när den används för att rulla på {@table Wild Magic Surge|PHB}-tabellen."
 			],
 			"hasFluffImages": true
@@ -13836,7 +13836,7 @@
 			"entries": [
 				"Denna utsmyckade stol har till uppgift att driva och manövrera en flygande citadell som den har installerats på. Stolen har AC 15, 18 träffpunkter och är immun mot gift och psykisk skada. Den förstörs om den reduceras till 0 träffpunkter.",
 				"Känslan av att vara inställd på en flygande citadellhjälm liknar den känsla av nålar som man upplever när en arm eller ett ben somnar, men inte lika intensivt.",
-				"När du är inställd på en flygande citadellhjälm och sitter i den får du följande förmågor så länge du behåller koncentrationen (som om du koncentrerar dig på en trollformel):",
+				"När du är inställd på en flygande citadellhjälm och sitter i den får du följande förmågor så länge du upprätthåller {@status concentration} (som om {@status concentration||concentrating} på en besvärjelse):",
 				{
 					"type": "list",
 					"items": [
@@ -13845,7 +13845,7 @@
 						"Du kan när som helst se och höra från den högsta punkten utanför citadellet som om du befann dig där."
 					]
 				},
-				"Om ingen varelse som är inställd på hjälmen upprätthåller koncentrationen, förblir citadellet orörligt i sitt utrymme.",
+				"Om ingen varelse som är inställd på hjälmen är underhållande {@status concentration}, förblir citadellet orörligt i sitt utrymme.",
 				{
 					"type": "entries",
 					"name": "Transfer Attunement",
@@ -16013,7 +16013,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"När du bär den här hjälmen kan du använda en handling för att kasta {@spell detect thoughts} besvärjelsen (räddning DC 13) från den. Så länge du behåller koncentrationen på besvärjelsen kan du använda en bonushandling för att skicka ett telepatiskt meddelande till en varelse som du är fokuserad på. Den kan svara - genom att använda en bonushandling för att göra det - medan din koncentration på den fortsätter.",
+				"När du bär den här hjälmen kan du använda en handling för att kasta {@spell detect thoughts} besvärjelsen (räddning DC 13) från den. Så länge du håller {@status concentration} på besvärjelsen kan du använda en bonushandling för att skicka ett telepatiskt meddelande till en varelse som du fokuserar på. Den kan svara - genom att använda en bonushandling för att göra det - medan ditt fokus på den fortsätter.",
 				"När du fokuserar på en varelse med {@spell detect thoughts} kan du använda en handling för att kasta {@spell suggestion} besvärjelsen (räddning DC 13) från hjälmen på den varelsen. När den väl har använts kan suggestionsegenskapen inte användas igen förrän nästa gryning."
 			],
 			"optionalfeatures": [
@@ -20849,7 +20849,7 @@
 					"type": "entries",
 					"name": "Enduring Vision",
 					"entries": [
-						"När du håller i kortleken lyckas du automatiskt på konstitutionella räddningskast för att bibehålla din koncentration på spådomar."
+						"När du håller i kortleken lyckas du automatiskt med konstitutionella räddningskast för att bibehålla din {@status concentration} på spådomsformler."
 					]
 				},
 				{
@@ -25786,7 +25786,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"När du dricker den här drycken får du \"reducera\" effekten av {@spell enlarge/reduce} trollformeln i {@dice 1d4} timmar (ingen koncentration krävs). Det röda i dryckens vätska drar kontinuerligt ihop sig till en liten pärla och expanderar sedan för att färga den klara vätskan runt omkring. Att skaka flaskan lyckas inte avbryta denna process."
+				"När du dricker den här drycken får du \"minska\"-effekten av {@spell enlarge/reduce} trollformeln i {@dice 1d4} timmar (ingen {@status concentration} krävs). Det röda i dryckens vätska drar kontinuerligt ihop sig till en liten pärla och expanderar sedan för att färga den klara vätskan runt omkring. Att skaka flaskan lyckas inte avbryta denna process."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -25923,7 +25923,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"När du dricker den här drycken får du effekten av {@spell gaseous form} trollformeln i 1 timme (ingen koncentration krävs) eller tills du avslutar effekten som en bonusåtgärd. Den här dryckens behållare verkar innehålla dimma som rör sig och rinner som vatten."
+				"När du dricker den här drycken får du effekten av {@spell gaseous form} trollformeln i 1 timme (ingen {@status concentration} krävs) eller tills du avslutar effekten som en bonusåtgärd. Den här dryckens behållare verkar innehålla dimma som rör sig och rinner som vatten."
 			],
 			"attachedSpells": [
 				"gaseous form"
@@ -25969,7 +25969,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"När du dricker den här drycken får du \"förstora\" effekten av {@spell enlarge/reduce} trollformeln i {@dice 1d4} timmar (ingen koncentration krävs). Det röda i dryckens vätska expanderar kontinuerligt från en liten pärla till att färga den klara vätskan runt omkring och drar sedan ihop sig. Att skaka flaskan lyckas inte avbryta denna process."
+				"När du dricker den här drycken får du \"förstora\"-effekten av {@spell enlarge/reduce} trollformeln i {@dice 1d4} timmar (ingen {@status concentration} krävs). Det röda i dryckens vätska expanderar kontinuerligt från en liten pärla för att färga den klara vätskan runt omkring och drar sedan ihop sig. Att skaka flaskan lyckas inte avbryta denna process."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -26010,7 +26010,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"I 1 timme efter att du har druckit den får du 10 tillfälliga träffpunkter som varar i 1 timme. Under samma tid är du under effekt av {@spell bless} trollformeln (ingen koncentration krävs). Den här blå drycken bubblar och ångar som om den kokar."
+				"I 1 timme efter att du har druckit den får du 10 tillfälliga träffpunkter som varar i 1 timme. Under samma tid är du under effekt av {@spell bless} besvärjelsen (ingen {@status concentration} krävs). Den här blå drycken bubblar och ångar som om den kokar."
 			],
 			"attachedSpells": [
 				"bless"
@@ -26134,7 +26134,7 @@
 			"rarity": "rare",
 			"entries": [
 				"När du dricker en dryck med tankekontroll kan du kasta en dominansbesvärjelse (räddning DC 15) på en specifik varelse om du gör det före slutet av din nästa tur. Om du inte gör det är drycken bortkastad.",
-				"En dryck med tankekontroll ger effekten av en {@spell dominate beast} besvärjelse. Om målets första räddningskast misslyckas, varar effekten i 1 timme, utan att du behöver koncentrera dig. Den {@condition charmed} varelsen har nackdel på nya räddningskast för att bryta effekten under denna tid."
+				"En dryck med tankekontroll ger effekten av en {@spell dominate beast} besvärjelse. Om målets första räddningskast misslyckas, varar effekten i 1 timme, utan att du behöver göra något {@status concentration}. Den {@condition charmed} varelsen har nackdel på nya räddningskast för att bryta effekten under denna tid."
 			],
 			"attachedSpells": [
 				"dominate beast"
@@ -26148,7 +26148,7 @@
 			"rarity": "rare",
 			"entries": [
 				"När du dricker en dryck med tankekontroll kan du kasta en dominansbesvärjelse (räddning DC 15) på en specifik varelse om du gör det före slutet av din nästa tur. Om du inte gör det är drycken bortkastad.",
-				"En dryck med tankekontroll ger effekten av en {@spell dominate person} besvärjelse. Om målets första räddningskast misslyckas, varar effekten i 1 timme, utan att du behöver koncentrera dig. Den {@condition charmed} varelsen har nackdel på nya räddningskast för att bryta effekten under denna tid."
+				"En dryck med tankekontroll ger effekten av en {@spell dominate person} besvärjelse. Om målets första räddningskast misslyckas, varar effekten i 1 timme, utan att du behöver göra något {@status concentration}. Den {@condition charmed} varelsen har nackdel på nya räddningskast för att bryta effekten under denna tid."
 			],
 			"attachedSpells": [
 				"dominate person"
@@ -26162,7 +26162,7 @@
 			"rarity": "very rare",
 			"entries": [
 				"När du dricker en dryck med tankekontroll kan du kasta en dominansbesvärjelse (räddning DC 15) på en specifik varelse om du gör det före slutet av din nästa tur. Om du inte gör det är drycken bortkastad.",
-				"En dryck med tankekontroll ger effekten av en {@spell dominate monster} besvärjelse. Om målets första räddningskast misslyckas, varar effekten i 1 timme, utan att du behöver koncentrera dig. Den {@condition charmed} varelsen har nackdel på nya räddningskast för att bryta effekten under denna tid."
+				"En dryck med tankekontroll ger effekten av en {@spell dominate monster} besvärjelse. Om målets första räddningskast misslyckas, varar effekten i 1 timme, utan att du behöver göra något {@status concentration}. Den {@condition charmed} varelsen har nackdel på nya räddningskast för att bryta effekten under denna tid."
 			],
 			"attachedSpells": [
 				"dominate monster"
@@ -26288,7 +26288,7 @@
 			"tier": "minor",
 			"rarity": "very rare",
 			"entries": [
-				"När du dricker den här drycken får du effekten av {@spell haste} trollformeln i 1 minut (ingen koncentration krävs). Dryckens gula vätska är strimmig med svart och virvlar på egen hand."
+				"När du dricker den här drycken får du effekten av {@spell haste} trollformeln i 1 minut (ingen {@status concentration} krävs). Dryckens gula vätska är strimmig med svart och virvlar på egen hand."
 			],
 			"attachedSpells": [
 				"haste"
@@ -27708,7 +27708,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"entries": [
-				"När du bär den här ringen kan du tala dess kommandorad som en handling för att kalla på en viss {@creature djinni} från elementarplanet Air. Den {@creature djinni} dyker upp i ett obebott utrymme som du väljer inom 120 fot från dig. Den stannar kvar så länge du koncentrerar dig (som om du koncentrerar dig på en besvärjelse), till maximalt 1 timme, eller tills den sjunker till 0 träffpunkter. Den återvänder sedan till sitt hemplan.",
+				"När du bär den här ringen kan du tala dess ord som en handling för att framkalla en viss {@creature djinni} från Elemental Plane of Air. Den {@creature djinni} dyker upp i ett obebott utrymme som du väljer inom 120 fot från dig. Den stannar kvar så länge du koncentrerar dig (som om du {@status concentration||concentrating} på en besvärjelse), till högst 1 timme, eller tills den sjunker till 0 träffpunkter. Den återvänder sedan till sitt hemplan.",
 				"När den är kallad är {@creature djinni} vänligt inställd till dig och dina följeslagare. Den lyder alla kommandon du ger den, oavsett vilket språk du använder. Om du misslyckas med att beordra den försvarar sig {@creature djinni} mot angripare men vidtar inga andra åtgärder.",
 				"Efter att {@creature djinni} har gått kan den inte åkallas igen på 24 timmar, och ringen blir icke-magisk om {@creature djinni} dör."
 			],
@@ -28006,7 +28006,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"Järnbandet liknar en dödskalle och känns kallt vid beröring. Det har 3 laddningar och återfår {@dice 1d3} förbrukade laddningar dagligen i gryningen. Som en handling när du bär ringen kan du använda 1 av dess laddningar för att kasta {@spell fog cloud} besvärjelsen från den, med följande förändringar: molnet är centrerat på dig när det först dyker upp, och besvärjelsen varar i 1 minut (ingen koncentration krävs)."
+				"Järnbandet liknar en dödskalle och känns kallt vid beröring. Det har 3 laddningar och återfår {@dice 1d3} förbrukade laddningar dagligen i gryningen. Som en handling medan du bär ringen kan du använda 1 av dess laddningar för att kasta {@spell fog cloud} besvärjelsen från den, med följande förändringar: molnet är centrerat på dig när det först dyker upp, och besvärjelsen varar i 1 minut (ingen {@status concentration} krävs)."
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -28192,7 +28192,7 @@
 					"type": "entries",
 					"entries": [
 						"Du kan använda 2 laddningar som en handling för att skapa en till fyra blixtar med en diameter på en till fyra meter. Ju fler sfärer du skapar, desto mindre kraftfull är varje sfär för sig.",
-						"Varje sfär dyker upp i ett obebott utrymme som du kan se inom 120 fot från dig. Sfärerna varar så länge du koncentrerar dig (som om du koncentrerar dig på en trollformel), upp till 1 minut. Varje sfär avger svagt ljus i en radie på 30 fot.",
+						"Varje sfär dyker upp i ett obebott utrymme som du kan se inom 120 fot från dig. Sfärerna varar så länge som du koncentrerar dig (som om du {@status concentration||concentrating} är på en trollformel), upp till 1 minut. Varje sfär avger svagt ljus i en radie på 30 fot.",
 						"Som en bonusåtgärd kan du flytta varje sfär upp till 30 fot, men inte längre än 120 fot från dig. När en annan varelse än du kommer inom 5 fot från en sfär, avger sfären blixtar mot den varelsen och försvinner. Den varelsen måste göra ett DC 15 Dexterity räddningskast. Vid ett misslyckat räddningsförsök tar varelsen blixtskada baserat på antalet sfärer du skapat. (4 sfärer = {@dice 2d4}, 3 sfärer = {@dice 2d6}, 2 sfärer = {@dice 5d4}, 1 sfär = {@dice 4d12})"
 					]
 				},
@@ -28881,7 +28881,9 @@
 			"source": "DMG",
 			"page": 196,
 			"srd": true,
+			"baseItem": "mace|phb",
 			"type": "RD",
+			"typeAlt": "M",
 			"tier": "major",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30809,7 +30811,7 @@
 							"items": [
 								"Skölden har en intelligens på 22, en visdom på 18 och en karisma på 24 samt hörsel och {@sense truesight} en räckvidd på 120 fot.",
 								"Skölden kan tala, läsa och förstå vanliga och infernaliska språk, och den kan kommunicera telepatiskt med alla varelser som den kan känna inom en radie av 120 fot. Dess röst är en djup, ihålig viskning.",
-								"Skölden har 3 laddningar. Du kan använda en handling för att använda 1 laddning för att kasta {@spell fireball} eller 2 laddningar för att kasta {@spell wall of fire} från skölden (räddning DC 21 för varje). Besvärjelsen {@spell wall of fire} varar i 1 minut (ingen koncentration krävs). Skölden återfår alla förbrukade laddningar dagligen i gryningen.",
+								"Skölden har 3 laddningar. Du kan använda en handling för att använda 1 laddning för att kasta {@spell fireball} eller 2 laddningar för att kasta {@spell wall of fire} från skölden (räddning DC 21 för varje). Besvärjelsen {@spell wall of fire} varar i 1 minut (ingen {@status concentration} krävs). Skölden återfår alla förbrukade laddningar dagligen i gryningen.",
 								"När som helst under din tur kan skölden välja att utstråla en aura av skräck i 1 minut. (Detta är inte en egenskap hos skölden som du kontrollerar.) Alla varelser som är fientligt inställda till dig och som börjar sin tur inom sex meter från skölden måste göra ett räddningskast på DC 18 i Visdom. Vid ett misslyckat räddningsförsök är varelsen {@condition frightened} tills början av nästa vändning. Vid ett lyckat räddningsförsök är varelsen immun mot denna kraft hos skölden under de kommande 24 timmarna. När skölden väl använder den här kraften kan den inte använda den igen förrän vid nästa gryning."
 							]
 						}
@@ -30872,7 +30874,7 @@
 					"type": "entries",
 					"name": "Bane",
 					"entries": [
-						"Du kan kasta en {@spell bane} besvärjelse från skölden (räddning DC 17). Besvärjelsen kräver ingen koncentration och varar i 1 minut. När du väl har kastat förtrollningen från skölden kan du inte göra det igen förrän du avslutar en kort eller lång vila."
+						"Du kan kasta {@spell bane} trollformeln från skölden (räddning DC 17). Besvärjelsen kräver inte {@status concentration} och varar i 1 minut. När du väl har kastat besvärjelsen från skölden kan du inte göra det igen förrän du avslutar en kort eller lång vila."
 					]
 				},
 				{
@@ -32448,7 +32450,7 @@
 			"entries": [
 				"Den här utsmyckade stolen har till uppgift att driva och manövrera ett skepp på vilket den har installerats genom rymden och luften. Den kan också driva och manövrera ett fartyg på vatten eller under vatten, förutsatt att fartyget är byggt för sådana resor. Skeppet i fråga måste väga 1 ton eller mer.",
 				"Känslan av att vara inställd på en förtrollningshjälm liknar den känsla som man upplever när en arm eller ett ben somnar, men den är inte lika smärtsam.",
-				"När du är inställd på en spelljamminghjälm och sitter i den får du följande förmågor så länge du behåller koncentrationen (som om du koncentrerar dig på en trollformel):",
+				"När du är inställd på en spelljamminghjälm och sitter i den får du följande förmågor så länge du upprätthåller {@status concentration} (som om {@status concentration||concentrating} på en trollformel):",
 				{
 					"type": "list",
 					"items": [
@@ -32489,7 +32491,7 @@
 			"wondrous": true,
 			"entries": [
 				"Den här polerade Eberron-dragonsharden passar i handen och lagrar information på samma sätt som en bok. Skärvan kan rymma motsvarande en bok som inte är mer än 320 sidor lång. En shard kan skapas tom eller redan fylld med information. När sharden skapas kan skaparen ställa in en lösenfras som måste uttalas för att få tillgång till den information som lagras i den.",
-				"När du håller i skärvan kan du använda en åtgärd för att öppna ditt sinne för skärvan och se dess innehåll i ditt sinne. Under efterföljande rundor kräver läsning av texten eller skrivande av ny text på tomma \"sidor\" i skärvan koncentration (som om du koncentrerar dig på en besvärjelse) och tar lika lång tid som det tar dig att läsa och skriva normalt. När du tänker på en viss fras eller ett visst ämne dras du till det första avsnittet i skärvan som tar upp det.",
+				"När du håller i skärvan kan du använda en åtgärd för att öppna ditt sinne för skärvan och se dess innehåll i ditt sinne. I efterföljande rundor kräver {@status concentration} för att läsa texten eller skriva ny text på tomma \"sidor\" i skärvan (som om {@status concentration||concentrating} på en besvärjelse) och tar lika lång tid som det tar dig att läsa och skriva normalt. Om du tänker på en viss fras eller ett visst ämne dras du till det första avsnittet i shardet som tar upp det.",
 				"En trollkarl kan använda en spellshard som en trollbok, med den vanliga kostnaden i guld och tid för att \"skriva in\" en trollformel i skärvan."
 			]
 		},
@@ -35874,7 +35876,7 @@
 					"entries": [
 						"Den infernaliska maskinens stora storlek gör att den i stort sett inte kan röra sig. För att kunna använda maskinen kontinuerligt (t.ex. under äventyr) kan den anslutas till den inställda användaren med en silvertråd, som alltid kan produceras från maskinens inre. Denna silvertråd har samma allmänna karaktär som den silverfärgade sladden i en {@spell astral projection} förtrollning, som ansluter till användarens kropp och följer efter honom eller henne. När den är så fäst blir tråden {@condition invisible}, astral och sträcker sig till praktiskt taget oändlig längd.",
 						"Så länge ledningen är intakt kan den inställda användaren använda sig av Infernal Machine's krafter fullt ut, med deras effekter centrerade runt användaren. Om tråden skärs av - något som bara kan hända när en effekt uttryckligen anger att den kan skära av en {@spell astral projection} silvriga sladd - drabbas användaren av en plötslig återkoppling från maskinen som dödar honom eller henne omedelbart.",
-						"Alla effekter av Infernal Machine som kräver koncentration kan koncentreras av en fjärranvändare. Den infernaliska maskinens effekter har en trollerisäkring DC på 14 eller den inställda användarens trollerisäkring DC, beroende på vilket som är högst."
+						"Alla effekter av Infernal Machine som kräver {@status concentration} kan koncentreras av en fjärranvändare. Den infernaliska maskinens effekter har ett trollformelskydd DC på 14 eller den inställda användarens trollformelskydd DC, beroende på vilket som är högst."
 					]
 				},
 				{
@@ -40948,6 +40950,8 @@
 			"name": "Witchlight Vane",
 			"source": "WBtW",
 			"page": 27,
+			"baseItem": "mace|phb",
+			"typeAlt": "M",
 			"rarity": "legendary",
 			"reqAttune": "by a mister light or his handpicked successor",
 			"sentient": true,

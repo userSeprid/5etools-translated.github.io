@@ -4270,7 +4270,7 @@
 							"type": "item",
 							"name": "Misty Form",
 							"entries": [
-								"Du kan kasta {@spell blur} besvärjelsen utan att använda en spell slot eller materiella komponenter. När du kastar besvärjelsen på det här sättet kräver inte besvärjelsen att du håller koncentrationen på den. När du väl har kastat besvärjelsen på det här sättet kan du inte göra det igen förrän du avslutar en lång vila. Du kan också kasta den här besvärjelsen på det normala sättet med hjälp av besvärjelseplatser som du har av lämplig nivå. Intelligens, Visdom eller Charisma är din förtrollningsförmåga för den här funktionen (välj när du får den här bedriften)."
+								"Du kan kasta {@spell blur} besvärjelsen utan att använda en spell slot eller materiella komponenter. När du kastar besvärjelsen på det här sättet kräver inte besvärjelsen att du upprätthåller {@status concentration} på den. När du har kastat besvärjelsen på det här sättet kan du inte göra det igen förrän du avslutar en lång vila. Du kan också kasta den här besvärjelsen på det normala sättet med hjälp av besvärjelseplatser som du har av lämplig nivå. Intelligens, Visdom eller Charisma är din förtrollningsförmåga för den här funktionen (välj när du får den här bedriften)."
 							]
 						},
 						{
@@ -4534,6 +4534,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"Djävulsblodet är starkt i dig. Du får följande fördelar:",
 				{
@@ -4562,6 +4566,10 @@
 				{
 					"con": 1
 				}
+			],
+			"resist": [
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"Djävulsblodet är starkt i dig, vilket ger dig en motståndskraft som liknar den som vissa djävlar har. Du får följande fördelar:",
@@ -5722,7 +5730,7 @@
 					"type": "list",
 					"items": [
 						"När en varelse inom 1,5 meter från dig kastar en trollformel kan du använda din reaktion för att göra en närstridsattack mot den varelsen.",
-						"När du skadar en varelse som koncentrerar sig på en trollformel har den varelsen nackdel på det räddningskast den gör för att behålla sin koncentration.",
+						"När du skadar en varelse som är {@status concentration||concentrating} på en trollformel har den varelsen nackdel på det räddningskast den gör för att behålla sin {@status concentration}.",
 						"Du har fördel på räddningskast mot trollformler som kastas av varelser inom en radie av en halv meter från dig."
 					]
 				}
@@ -9654,7 +9662,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Du har en fördel vid konstitutionella räddningskast som du gör för att bibehålla din koncentration på en trollformel när du tar skada.",
+						"Du har en fördel på de räddningskast som du gör för att bibehålla din {@status concentration} på en besvärjelse när du tar skada.",
 						"Du kan utföra de somatiska delarna av trollformler även när du har vapen eller en {@item shield|phb} i en eller båda händerna.",
 						"När en fientlig varelses rörelse framkallar en möjlighet till attack från dig kan du använda din reaktion för att kasta en besvärjelse mot varelsen, istället för att göra en möjlighet till attack. Besvärjelsen måste ha en kasttid på 1 handling och måste rikta sig mot endast den varelsen."
 					]

@@ -527,7 +527,7 @@
 				{
 					"name": "Insect Gorge (Costs 2 Actions)",
 					"entries": [
-						"Baalzebul spyr ut en svärm av bitande flugor (annars samma som insektspest) som ger 44 ({@damage 8d10}) stickande skada och kräver ingen koncentration."
+						"Baalzebul spyr ut en svärm av bitande flugor (annars samma som insektspest) som ger 44 ({@damage 8d10}) stickande skada och kräver inte {@status concentration}."
 					]
 				}
 			],
@@ -2084,7 +2084,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Dagryn förvandlas magiskt {@condition invisible} tills han attackerar, kastar en trollformel eller tills koncentrationen bryts, upp till 1 timme (som om han koncentrerar sig på en trollformel). All utrustning som Dagryn bär eller har med sig blir {@condition invisible} med den."
+						"Dagryn förvandlas magiskt {@condition invisible} tills han attackerar, kastar en besvärjelse eller tills dess {@status concentration} bryts, upp till 1 timme (som om {@status concentration||concentrating} på en besvärjelse). All utrustning som Dagryn bär eller har med sig är {@condition invisible} med den."
 					]
 				}
 			],
@@ -2258,7 +2258,7 @@
 				{
 					"name": "Eldritch Mind",
 					"entries": [
-						"Darien har en fördel på de räddningskast som hon gör för att bibehålla koncentrationen på en trollformel."
+						"Darien har fördel på de räddningskast för konstitution som hon gör för att bibehålla {@status concentration} på en besvärjelse."
 					]
 				}
 			],
@@ -3161,7 +3161,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Den fruktansvärda dubbelgångaren läser magiskt av en varelses ytliga tankar inom en radie av 60 fot. Effekten kan tränga igenom barriärer, men 3 fot trä eller jord, 2 fot sten, 2 tum metall eller en tunn plåt av bly blockerar den. Medan målet är inom räckhåll kan den fruktansvärda dubbelgångaren fortsätta läsa dess tankar, så länge som den fruktansvärda dubbelgångarens Koncentration inte bryts (som om den koncentrerar sig på en besvärjelse). Medan han läser målets tankar har dubbelgångaren fördel på Visdom (Insight) och Charisma ({@skill Deception}, {@skill Intimidation} och {@skill Persuasion}) kontroller mot målet."
+						"Den fruktansvärda dubbelgångaren läser magiskt av en varelses ytliga tankar inom en radie av 60 fot. Effekten kan penetrera barriärer, men 3 fot trä eller jord, 2 fot sten, 2 tum metall eller en tunn plåt av bly blockerar den. Medan målet är inom räckhåll kan den fruktansvärda dubbelgångaren fortsätta läsa dess tankar, så länge den fruktansvärda dubbelgångarens Koncentration inte bryts (som om {@status concentration||concentrating} på en besvärjelse). Medan han läser målets tankar har dubbelgångaren fördel på Visdom (Insight) och Charisma ({@skill Deception}, {@skill Intimidation} och {@skill Persuasion}) kontroller mot målet."
 					]
 				}
 			],
@@ -3343,7 +3343,7 @@
 				{
 					"name": "Focused Conjuration",
 					"entries": [
-						"När Edwin koncentrerar sig på en trollformel kan koncentrationen inte brytas om han tar skada."
+						"Medan Edwin är {@status concentration||concentrating} på en trollformel kan hans {@status concentration} inte brytas som ett resultat av att ta skada.%), (%2%) och (%3%)) kontroller mot målet."
 					]
 				},
 				{
@@ -6237,7 +6237,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Hjältedryck: Nauk får 10 tillfälliga träffpunkter i 1 timme. Under samma tid är Nauk under effekt av {@spell bless} trollformeln (ingen koncentration krävs).",
+								"Hjältemodets dryck: Nauk får 10 tillfälliga träffpunkter i 1 timme. Under samma tid är Nauk under effekt av {@spell bless} besvärjelsen (ingen {@status concentration} krävs).",
 								"Motståndsdryck: Nauk får motstånd mot en skadetyp i 1 timme. Nauk väljer en av dessa skadetyper: kyla, eld, blixtnedslag.",
 								"Dryck för överlägsen läkning: Nauk återfår 28 träffpunkter."
 							]
@@ -6885,7 +6885,7 @@
 				{
 					"name": "Extended Concentration",
 					"entries": [
-						"En phaerimm kan koncentrera sig på två olika trollformler samtidigt. Om koncentrationen bryts, försvinner båda trollformlerna omedelbart."
+						"En phaerimm kan koncentrera sig på två olika trollformler samtidigt. Om {@status concentration} bryts, försvinner båda trollformlerna omedelbart."
 					]
 				},
 				{
@@ -8738,7 +8738,7 @@
 				{
 					"name": "Mage Slaying",
 					"entries": [
-						"När Valygar skadar en varelse som koncentrerar sig på en trollformel har den varelsen nackdel på det räddningskast den gör för att behålla sin koncentration."
+						"När Valygar skadar en varelse som är {@status concentration||concentrating} på en besvärjelse har den varelsen nackdel på det räddningskast den gör för att behålla sin {@status concentration}."
 					]
 				}
 			],
@@ -9724,7 +9724,7 @@
 				{
 					"name": "Bladesong",
 					"entries": [
-						"Xan kan använda en bonusåtgärd för att starta en klingande sång. Hans bladesong varar i 1 minut. Medan han använder bladesong ökar hans rörelse till 40 fot, han får en +3 bonus på sin AC och han får en +3 bonus på alla koncentrationskontroller."
+						"Xan kan använda en bonusåtgärd för att starta en klingande sång. Hans bladesong varar i 1 minut. Medan han använder bladesong ökar hans rörelse till 40 fot, han får en +3 bonus på sin AC och han får en +3 bonus på alla {@status concentration} kontroller."
 					]
 				},
 				{
