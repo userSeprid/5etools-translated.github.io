@@ -4270,7 +4270,7 @@
 							"type": "item",
 							"name": "Misty Form",
 							"entries": [
-								"Puedes lanzar el hechizo {@spell blur} sin usar una ranura de hechizo o componentes materiales. Cuando lanzas el hechizo de esta manera, el hechizo no requiere que mantengas la concentración en él. Una vez que lanzas el hechizo de esta manera, no puedes volver a hacerlo hasta que termines un descanso largo. También puedes lanzar este conjuro de forma normal utilizando las ranuras de conjuro que tengas del nivel apropiado. Inteligencia, Sabiduría o Carisma es tu capacidad de lanzamiento de conjuros para esta característica (elige cuando obtengas esta hazaña)."
+								"Puedes lanzar el hechizo {@spell blur} sin usar una ranura de hechizo o componentes materiales. Cuando lanzas el hechizo de esta manera, el hechizo no requiere que mantengas {@status concentration} en él. Una vez que lanzas el hechizo de esta forma, no puedes volver a hacerlo hasta que termines un descanso largo. También puedes lanzar este conjuro de la forma normal utilizando las ranuras de conjuro que tengas del nivel apropiado. Inteligencia, Sabiduría o Carisma es tu habilidad de lanzamiento de conjuros para esta característica (elígela cuando obtengas esta hazaña)."
 							]
 						},
 						{
@@ -4534,6 +4534,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"La sangre diabólica corre fuerte en ti. Obtienes los siguientes beneficios:",
 				{
@@ -4562,6 +4566,10 @@
 				{
 					"con": 1
 				}
+			],
+			"resist": [
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"La sangre diabólica corre con fuerza en ti, desbloqueando una resistencia similar a la que poseen algunos demonios. Obtienes los siguientes beneficios:",
@@ -5722,7 +5730,7 @@
 					"type": "list",
 					"items": [
 						"Cuando una criatura a menos de 1,5 metros de ti lanza un hechizo, puedes usar tu reacción para hacer un ataque de arma cuerpo a cuerpo contra esa criatura.",
-						"Cuando dañas a una criatura que se está concentrando en un hechizo, esa criatura tiene desventaja en la tirada de salvación que hace para mantener su concentración.",
+						"Cuando dañas a una criatura que está {@status concentration||concentrating} en un hechizo, esa criatura tiene desventaja en la tirada de salvación que haga para mantener su {@status concentration}.",
 						"Tienes ventaja en las tiradas de salvación contra hechizos lanzados por criaturas a menos de 1,5 metros de ti."
 					]
 				}
@@ -9654,7 +9662,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Tienes ventaja en las tiradas de salvación de Constitución que hagas para mantener tu concentración en un hechizo cuando recibas daño.",
+						"Tienes ventaja en las tiradas de salvación de Constitución que hagas para mantener tu {@status concentration} en un hechizo cuando recibes daño.",
 						"Puedes realizar los componentes somáticos de los hechizos incluso cuando tienes armas o un {@item shield|phb} en una o ambas manos.",
 						"Cuando el movimiento de una criatura hostil provoca un ataque de oportunidad por tu parte, puedes utilizar tu reacción para lanzar un hechizo a la criatura, en lugar de realizar un ataque de oportunidad. El hechizo debe tener un tiempo de lanzamiento de 1 acción y debe tener como objetivo sólo a esa criatura."
 					]

@@ -527,7 +527,7 @@
 				{
 					"name": "Insect Gorge (Costs 2 Actions)",
 					"entries": [
-						"Baalzebul vomita un enjambre de moscas mordedoras (por lo demás, igual que la plaga de insectos) que inflige 44 ({@damage 8d10}) de daño perforante y no requiere concentración."
+						"Baalzebul vomita un enjambre de moscas picadoras (por lo demás, igual que la plaga de insectos) que inflige 44 ({@damage 8d10}) de daño perforante y no requiere {@status concentration}."
 					]
 				}
 			],
@@ -2084,7 +2084,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Dagryn se vuelve mágicamente {@condition invisible} hasta que ataca, lanza un hechizo o hasta que se rompe su concentración, hasta 1 hora (como si se concentrara en un hechizo). Todo el equipo que Dagryn lleve o vista es {@condition invisible} con él."
+						"Dagryn se vuelve mágicamente {@condition invisible} hasta que ataca, lanza un hechizo, o hasta que su {@status concentration} se rompe, hasta 1 hora (como si {@status concentration||concentrating} en un hechizo). Cualquier equipo que Dagryn lleve o vista se {@condition invisible} con él."
 					]
 				}
 			],
@@ -2258,7 +2258,7 @@
 				{
 					"name": "Eldritch Mind",
 					"entries": [
-						"Darien tiene ventaja en las tiradas de salvación de Constitución que realiza para mantener la concentración en un hechizo."
+						"Darien tiene ventaja en las tiradas de salvación de Constitución que haga para mantener {@status concentration} un hechizo."
 					]
 				}
 			],
@@ -3161,7 +3161,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"El doppelganger temible lee mágicamente los pensamientos superficiales de una criatura en un radio de 60 pies. El efecto puede penetrar las barreras, pero 3 pies de madera o tierra, 2 pies de piedra, 2 pulgadas de metal o una fina lámina de plomo lo bloquean. Mientras el objetivo esté dentro del alcance, el dread doppelganger puede continuar leyendo sus pensamientos, siempre que la Concentración del dread doppelganger no se rompa (como si se concentrara en un hechizo). Mientras lee la mente del objetivo, el doppelganger tiene ventaja en los chequeos de Sabiduría (Perspicacia) y Carisma ({@skill Deception}, {@skill Intimidation} y {@skill Persuasion}) contra el objetivo."
+						"El Dread Doppelganger lee mágicamente los pensamientos superficiales de una criatura en un radio de 60 pies. El efecto puede atravesar barreras, pero 3 pies de madera o tierra, 2 pies de piedra, 2 pulgadas de metal o una fina lámina de plomo lo bloquean. Mientras el objetivo esté dentro del alcance, el dread doppelganger puede continuar leyendo sus pensamientos, siempre que la Concentración del dread doppelganger no se rompa (como si {@status concentration||concentrating} en un conjuro). Mientras lee la mente del objetivo, el doble tiene ventaja en los chequeos de Sabiduría (Perspicacia) y Carisma ({@skill Deception}, {@skill Intimidation} y {@skill Persuasion}) contra el objetivo."
 					]
 				}
 			],
@@ -3343,7 +3343,7 @@
 				{
 					"name": "Focused Conjuration",
 					"entries": [
-						"Mientras Edwin esté concentrado en un hechizo de conjuro, su concentración no puede romperse por recibir daño."
+						"Mientras Edwin esté {@status concentration||concentrating} en un conjuro de conjuración, su {@status concentration} no puede romperse como resultado de recibir daño.roken (como si estuviera {@status concentration||concentrating} en un conjuro). Mientras lee la mente del objetivo, el doble tiene ventaja en los chequeos de Sabiduría (Perspicacia) y Carisma ({@status concentration}, (%2%) y (%3%)) contra el objetivo."
 					]
 				},
 				{
@@ -6237,7 +6237,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Poción de heroísmo: Nauk gana 10 puntos de golpe temporales durante 1 hora. Durante la misma duración, Nauk está bajo el efecto del hechizo {@spell bless} (no requiere concentración).",
+								"Poción de heroísmo: Nauk gana 10 puntos de golpe temporales durante 1 hora. Durante el mismo tiempo, Nauk está bajo el efecto del hechizo {@spell bless} (no requiere {@status concentration}).",
 								"Poción de resistencia: Nauk gana resistencia a un tipo de daño durante 1 hora. Nauk elige uno de estos tipos de daño: frío, fuego, rayo.",
 								"Poción de curación superior: Nauk recupera 28 puntos de vida."
 							]
@@ -6885,7 +6885,7 @@
 				{
 					"name": "Extended Concentration",
 					"entries": [
-						"El phaerimm puede concentrarse en dos hechizos diferentes al mismo tiempo. Si se rompe la concentración, ambos hechizos se desvanecen inmediatamente."
+						"El phaerimm puede concentrarse en dos hechizos diferentes al mismo tiempo. Si se rompe {@status concentration}, ambos hechizos se desvanecen inmediatamente."
 					]
 				},
 				{
@@ -8738,7 +8738,7 @@
 				{
 					"name": "Mage Slaying",
 					"entries": [
-						"Cuando Valygar inflige daño a una criatura que se está concentrando en un hechizo, esa criatura tiene desventaja en la tirada de salvación que hace para mantener su concentración."
+						"Cuando Valygar inflige daño a una criatura que está {@status concentration||concentrating} en un hechizo, esa criatura tiene desventaja en la tirada de salvación que haga para mantener su {@status concentration}."
 					]
 				}
 			],
@@ -9724,7 +9724,7 @@
 				{
 					"name": "Bladesong",
 					"entries": [
-						"Xan puede utilizar una acción adicional para iniciar un canto de cuchillas. Su canto de cuchillas dura 1 minuto. Mientras usa el canto de las cuchillas, su movimiento aumenta a 40 pies, gana un bono de +3 a su CA y gana un bono de +3 a todos los chequeos de concentración."
+						"Xan puede usar una acción adicional para iniciar un canto de espadas. Su canto de espada dura 1 minuto. Mientras usa el canto de cuchillas, su movimiento aumenta a 40 pies, obtiene un bonificador +3 a su CA y un bonificador +3 a todos los chequeos {@status concentration}."
 					]
 				},
 				{

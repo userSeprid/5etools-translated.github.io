@@ -3000,7 +3000,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"Esta mochila contiene el espíritu de un {@creature air elemental} y un globo de cuero compacto. Mientras llevas la mochila, puedes desplegar el globo como acción y obtener el efecto del hechizo {@spell levitate} durante 10 minutos, apuntando a ti mismo y sin requerir concentración. Alternativamente, puedes usar una reacción para desplegar el globo cuando estés cayendo y ganar el efecto del hechizo {@spell feather fall} para ti.",
+				"Esta mochila contiene el espíritu de un {@creature air elemental} y un globo de cuero compacto. Mientras lleves la mochila, puedes desplegar el globo como acción y obtener el efecto del hechizo {@spell levitate} durante 10 minutos, apuntándote a ti mismo y sin requerir {@status concentration}. Alternativamente, puedes usar una reacción para desplegar el globo cuando estás cayendo y obtener el efecto del hechizo {@spell feather fall} para ti.",
 				"Cuando cualquiera de los dos hechizos termina, el globo se desinfla lentamente mientras el espíritu elemental escapa y regresa al Plano Elemental del Aire. Cuando el globo se desinfla, desciendes suavemente hacia el suelo durante un máximo de 60 pies. Si al final de esta distancia sigues en el aire, caes si no tienes otros medios para mantenerte en el aire.",
 				"Después de que el espíritu se vaya, la propiedad de la mochila es inutilizable a menos que la mochila se recargue durante 1 hora en un nodo de aire elemental, lo que une a otro espíritu a la mochila."
 			],
@@ -4177,7 +4177,7 @@
 					"type": "entries",
 					"entries": [
 						"Mientras sostienes el arma. eres consciente de la presencia de criaturas diminutas o mayores en un radio de 60 pies de ti que no sean constructos o muertos vivientes. Tampoco puedes ser {@condition charmed} o {@condition frightened}.",
-						"Blackrazor puede lanzarte el hechizo {@spell haste} una vez al día. Decide cuándo lanzar el hechizo y mantiene la concentración en él para que tú no tengas que hacerlo."
+						"Blackrazor puede lanzarte el hechizo {@spell haste} una vez al día. Decide cuándo lanzar el hechizo y mantiene un {@status concentration} sobre él para que tú no tengas que hacerlo."
 					]
 				},
 				{
@@ -7780,7 +7780,7 @@
 					"name": "Wealth of Information",
 					"entries": [
 						"El objetivo principal del cuadro es observar y recordar conversaciones. Durante las últimas décadas, el Retrato de Constantori ha observado en silencio innumerables conversaciones y ahora posee una cantidad incuantificable de conocimientos, desde conspiraciones criminales hasta contraseñas secretas. El DM decide lo que el cuadro sabe y lo que no.",
-						"Mientras estés en sintonía con el cuadro, puedes realizar una acción para contactar telepáticamente con él a cualquier distancia, siempre que tú y el cuadro estéis en el mismo plano de existencia. Sin embargo, el cuadro no puede contactar telepáticamente contigo. Mantener el contacto telepático con el cuadro requiere tu concentración (como si te concentraras en un hechizo)."
+						"Mientras estés en sintonía con el cuadro, puedes realizar una acción para contactar telepáticamente con él a cualquier distancia, siempre que tú y el cuadro estéis en el mismo plano de existencia. Sin embargo, el cuadro no puede contactar telepáticamente contigo. Mantener el contacto telepático con el cuadro requiere tu {@status concentration} (como si fuera {@status concentration||concentrating} en un hechizo)."
 					]
 				},
 				{
@@ -12776,7 +12776,7 @@
 					"type": "entries",
 					"name": "Aberrant Ally",
 					"entries": [
-						"Puedes conjurar una criatura aberrante del caos del multiverso para que te sirva. Esto funciona como el hechizo {@spell conjure celestial} (no requiere concentración), excepto que la criatura que invocas es una aberración de grado de desafío 4 o inferior. Una vez que utilizas este rasgo del engranaje lejano, no se puede volver a utilizar hasta el siguiente amanecer."
+						"Puedes conjurar a una criatura aberrante del caos del multiverso para que te sirva. Esto funciona como el conjuro {@spell conjure celestial} (no requiere {@status concentration}), excepto que la criatura que invocas es una aberración de nivel de desafío 4 o inferior. Una vez que utilizas este rasgo del engranaje lejano, no se puede volver a utilizar hasta el siguiente amanecer."
 					]
 				},
 				{
@@ -12898,7 +12898,7 @@
 			],
 			"entries": [
 				"Este cálido cristal brilla con los colores del atardecer del cielo de Feywild y evoca susurros de memoria emocional. Como acción, puedes fijar el fragmento a un objeto diminuto (como un arma o una pieza de joyería) o desprenderlo. Se desprende si termina tu sintonía con él. Puedes utilizar el fragmento como foco de conjuro mientras lo tengas o lo lleves puesto.",
-				"Cuando usas una opción de Metamagia en un hechizo mientras tienes o llevas el fragmento, puedes tirar en la tabla {@table Wild Magic Surge|PHB} en el {@book Player's Handbook|PHB}. Si el resultado es un hechizo, es demasiado salvaje para que le afecte tu Metamagia, y si normalmente requiere concentración, en este caso no requiere concentración; el hechizo dura toda su duración.",
+				"Cuando usas una opción de Metamagia en un hechizo mientras sostienes o llevas el fragmento, puedes tirar en la tabla del {@table Wild Magic Surge|PHB} en el {@book Player's Handbook|PHB}. Si el resultado es un hechizo, es demasiado salvaje para verse afectado por tu Metamagia, y si normalmente requiere {@status concentration}, no requiere {@status concentration} en este caso; el hechizo dura toda su duración.",
 				"Si no tienes el Origen Hechicero de la Magia Salvaje, una vez que se usa esta propiedad para tirar en la tabla {@table Wild Magic Surge|PHB}, no se puede volver a usar hasta el siguiente amanecer."
 			],
 			"hasFluffImages": true
@@ -13836,7 +13836,7 @@
 			"entries": [
 				"La función de esta silla ornamentada es propulsar y maniobrar una ciudadela voladora en la que ha sido instalada. La silla tiene CA 15, 18 puntos de vida e inmunidad al veneno y al daño psíquico. Se destruye si queda reducida a 0 puntos de vida.",
 				"La sensación de estar en sintonía con un yelmo de ciudadela voladora es parecida al efecto de hormigueo que se experimenta cuando se duerme un brazo o una pierna, pero no tan intensa.",
-				"Mientras estés sintonizado con un yelmo de ciudadela voladora y sentado en él, obtienes las siguientes habilidades mientras mantengas la concentración (como si te concentraras en un hechizo):",
+				"Mientras estés sintonizado con un yelmo de ciudadela voladora y sentado en él, obtienes las siguientes habilidades mientras mantengas {@status concentration} (como si {@status concentration||concentrating} fuera un hechizo):",
 				{
 					"type": "list",
 					"items": [
@@ -13845,7 +13845,7 @@
 						"En cualquier momento, puedes ver y oír desde el punto más alto fuera de la ciudadela como si estuvieras en ese lugar."
 					]
 				},
-				"Si ninguna criatura sintonizada con el yelmo mantiene la concentración, la ciudadela permanece inmóvil en su espacio.",
+				"Si ninguna criatura sintonizada con el yelmo se mantiene {@status concentration}, la ciudadela permanece inmóvil en su espacio.",
 				{
 					"type": "entries",
 					"name": "Transfer Attunement",
@@ -16013,7 +16013,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Mientras lleves este yelmo, puedes usar una acción para lanzar el conjuro {@spell detect thoughts} (salvación DC 13) desde él. Mientras mantengas la concentración en el conjuro, puedes utilizar una acción adicional para enviar un mensaje telepático a una criatura en la que estés concentrado. Esta puede responder -utilizando una acción adicional para hacerlo- mientras tu concentración en ella continúa.",
+				"Mientras lleves este yelmo, puedes usar una acción para lanzar el hechizo {@spell detect thoughts} (salvación DC 13) desde él. Mientras mantengas el {@status concentration} en el conjuro, puedes usar una acción adicional para enviar un mensaje telepático a una criatura en la que estés concentrado. Ésta puede responder -utilizando una acción adicional para hacerlo- mientras sigas concentrado en ella.",
 				"Mientras te concentras en una criatura con {@spell detect thoughts}, puedes usar una acción para lanzar el hechizo {@spell suggestion} (salvación DC 13) del timón sobre esa criatura. Una vez utilizada, la propiedad de sugestión no puede volver a utilizarse hasta el siguiente amanecer."
 			],
 			"optionalfeatures": [
@@ -20849,7 +20849,7 @@
 					"type": "entries",
 					"name": "Enduring Vision",
 					"entries": [
-						"Mientras sostienes el mazo, tienes éxito automáticamente en las tiradas de salvación de Constitución realizadas para mantener tu concentración en los hechizos de adivinación."
+						"Mientras sostienes el mazo, tienes éxito automáticamente en las tiradas de salvación de Constitución realizadas para mantener tu {@status concentration} en hechizos de adivinación."
 					]
 				},
 				{
@@ -25786,7 +25786,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Cuando bebes esta poción, obtienes el efecto \"reducir\" del hechizo {@spell enlarge/reduce} durante {@dice 1d4} horas (no se requiere concentración). El rojo del líquido de la poción se contrae continuamente hasta formar una pequeña perla y luego se expande para colorear el líquido claro que lo rodea. Agitar el frasco no interrumpe este proceso."
+				"Cuando bebes esta poción, obtienes el efecto \"reducir\" del hechizo {@spell enlarge/reduce} durante {@dice 1d4} horas (no requiere {@status concentration}). El rojo del líquido de la poción se contrae continuamente hasta formar una pequeña perla y luego se expande para colorear el líquido transparente que lo rodea. Agitar el frasco no interrumpe este proceso."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -25923,7 +25923,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Cuando bebes esta poción, obtienes el efecto del hechizo {@spell gaseous form} durante 1 hora (sin necesidad de concentración) o hasta que termines el efecto como acción adicional. El recipiente de esta poción parece contener niebla que se mueve y se derrama como el agua."
+				"Cuando bebes esta poción, obtienes el efecto del hechizo {@spell gaseous form} durante 1 hora (no requiere {@status concentration}) o hasta que finalices el efecto como acción adicional. El recipiente de esta poción parece contener niebla que se mueve y se derrama como el agua."
 			],
 			"attachedSpells": [
 				"gaseous form"
@@ -25969,7 +25969,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"Cuando bebes esta poción, obtienes el efecto \"agrandar\" del hechizo {@spell enlarge/reduce} durante {@dice 1d4} horas (no se requiere concentración). El rojo del líquido de la poción se expande continuamente a partir de una pequeña perla para colorear el líquido claro que lo rodea y luego se contrae. Agitar el frasco no interrumpe este proceso."
+				"Cuando bebes esta poción, obtienes el efecto \"agrandar\" del hechizo {@spell enlarge/reduce} durante {@dice 1d4} horas (no requiere {@status concentration}). El rojo del líquido de la poción se expande continuamente desde una pequeña perla hasta colorear el líquido transparente que la rodea y luego se contrae. Agitar el frasco no interrumpe este proceso."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -26010,7 +26010,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Durante 1 hora después de beberlo, ganas 10 puntos de golpe temporales que duran 1 hora. Durante la misma duración, estás bajo el efecto del hechizo {@spell bless} (no requiere concentración). Esta poción azul burbujea y humea como si estuviera hirviendo."
+				"Durante 1 hora después de beberlo, ganas 10 puntos de golpe temporales que duran 1 hora. Durante el mismo tiempo, estás bajo el efecto del hechizo {@spell bless} (no requiere {@status concentration}). Esta poción azul burbujea y humea como si hirviera."
 			],
 			"attachedSpells": [
 				"bless"
@@ -26134,7 +26134,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Cuando bebes una poción de control mental, puedes lanzar un hechizo de dominación (salvación DC 15) sobre una criatura específica si lo haces antes del final de tu siguiente turno. Si no lo haces, la poción se desperdicia.",
-				"Una poción de control mental produce el efecto de un hechizo {@spell dominate beast}. Si la tirada de salvación inicial del objetivo falla, el efecto dura 1 hora, sin necesidad de concentración por tu parte. La criatura {@condition charmed} tiene desventaja en nuevas tiradas de salvación para romper el efecto durante este tiempo."
+				"Una poción de control mental produce el efecto de un hechizo {@spell dominate beast}. Si la tirada de salvación inicial del objetivo falla, el efecto dura 1 hora, sin necesidad de {@status concentration} por tu parte. La criatura {@condition charmed} tiene desventaja en nuevas tiradas de salvación para romper el efecto durante este tiempo."
 			],
 			"attachedSpells": [
 				"dominate beast"
@@ -26148,7 +26148,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Cuando bebes una poción de control mental, puedes lanzar un hechizo de dominación (salvación DC 15) sobre una criatura específica si lo haces antes del final de tu siguiente turno. Si no lo haces, la poción se desperdicia.",
-				"Una poción de control mental produce el efecto de un hechizo {@spell dominate person}. Si la tirada de salvación inicial del objetivo falla, el efecto dura 1 hora, sin necesidad de concentración por tu parte. La criatura {@condition charmed} tiene desventaja en nuevas tiradas de salvación para romper el efecto durante este tiempo."
+				"Una poción de control mental produce el efecto de un hechizo {@spell dominate person}. Si la tirada de salvación inicial del objetivo falla, el efecto dura 1 hora, sin {@status concentration} necesario por tu parte. La criatura {@condition charmed} tiene desventaja en nuevas tiradas de salvación para romper el efecto durante este tiempo."
 			],
 			"attachedSpells": [
 				"dominate person"
@@ -26162,7 +26162,7 @@
 			"rarity": "very rare",
 			"entries": [
 				"Cuando bebes una poción de control mental, puedes lanzar un hechizo de dominación (salvación DC 15) sobre una criatura específica si lo haces antes del final de tu siguiente turno. Si no lo haces, la poción se desperdicia.",
-				"Una poción de control mental produce el efecto de un hechizo {@spell dominate monster}. Si la tirada de salvación inicial del objetivo falla, el efecto dura 1 hora, sin necesidad de concentración por tu parte. La criatura {@condition charmed} tiene desventaja en nuevas tiradas de salvación para romper el efecto durante este tiempo."
+				"Una poción de control mental produce el efecto de un hechizo {@spell dominate monster}. Si la tirada de salvación inicial del objetivo falla, el efecto dura 1 hora, sin {@status concentration} necesario por tu parte. La criatura {@condition charmed} tiene desventaja en nuevas tiradas de salvación para romper el efecto durante este tiempo."
 			],
 			"attachedSpells": [
 				"dominate monster"
@@ -26288,7 +26288,7 @@
 			"tier": "minor",
 			"rarity": "very rare",
 			"entries": [
-				"Cuando bebes esta poción, obtienes el efecto del hechizo {@spell haste} durante 1 minuto (no requiere concentración). El fluido amarillo de la poción se tiñe de negro y se arremolina solo."
+				"Cuando bebes esta poción, obtienes el efecto del hechizo {@spell haste} durante 1 minuto (no requiere {@status concentration}). El líquido amarillo de la poción se tiñe de negro y se arremolina solo."
 			],
 			"attachedSpells": [
 				"haste"
@@ -27708,7 +27708,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"entries": [
-				"Mientras lleves este anillo, puedes pronunciar su palabra de mando como acción para invocar a un {@creature djinni} particular del Plano Elemental del Aire. El {@creature djinni} aparece en un espacio desocupado que elijas a menos de 120 pies de ti. Permanece mientras te concentras (como si te concentraras en un hechizo), hasta un máximo de 1 hora, o hasta que baja a 0 puntos de vida. Luego regresa a su plano de origen.",
+				"Mientras lleves este anillo, puedes pronunciar su palabra de mando como acción para invocar a un particular {@creature djinni} del Plano Elemental del Aire. El {@creature djinni} aparece en un espacio desocupado que elijas en un radio de 120 pies de ti. Permanece mientras te concentras (como si {@status concentration||concentrating} en un hechizo), hasta un máximo de 1 hora, o hasta que cae a 0 puntos de golpe. Luego regresa a su plano de origen.",
 				"Mientras está invocado, el {@creature djinni} es amistoso contigo y con tus compañeros. Obedece cualquier orden que le des, sin importar el idioma que utilices. Si no le das la orden, el {@creature djinni} se defiende de los atacantes pero no realiza ninguna otra acción.",
 				"Después de que el {@creature djinni} se vaya, no puede ser invocado de nuevo durante 24 horas, y el anillo se vuelve no mágico si el {@creature djinni} muere."
 			],
@@ -28006,7 +28006,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"Esta banda de hierro se asemeja a una calavera y es fría al tacto. Tiene 3 cargas y recupera {@dice 1d3} las cargas gastadas diariamente al amanecer. Como acción mientras llevas el anillo, puedes gastar 1 de sus cargas para lanzar el hechizo {@spell fog cloud} desde él, con los siguientes cambios: la nube se centra en ti cuando aparece por primera vez, y el hechizo dura 1 minuto (no requiere concentración)."
+				"Esta banda de hierro se parece a una calavera y es fría al tacto. Tiene 3 cargas y recupera {@dice 1d3} las cargas gastadas diariamente al amanecer. Como acción mientras llevas el anillo, puedes gastar 1 de sus cargas para lanzar el hechizo {@spell fog cloud} desde él, con los siguientes cambios: la nube se centra en ti cuando aparece por primera vez, y el hechizo dura 1 minuto (no requiere {@status concentration})."
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -28192,7 +28192,7 @@
 					"type": "entries",
 					"entries": [
 						"Puedes gastar 2 cargas como acción para crear de una a cuatro esferas de rayos de 3 pies de diámetro. Cuantas más esferas crees, menos poderosa será cada esfera por separado.",
-						"Cada esfera aparece en un espacio desocupado que puedas ver en un radio de 120 pies. Las esferas duran tanto como te concentres (como si te concentraras en un hechizo), hasta 1 minuto. Cada esfera arroja una luz tenue en un radio de 30 pies.",
+						"Cada esfera aparece en un espacio desocupado que puedas ver en un radio de 120 pies. Las esferas duran tanto como te concentres (como si estuvieras {@status concentration||concentrating} en un hechizo), hasta 1 minuto. Cada esfera arroja una luz tenue en un radio de 30 pies.",
 						"Como acción de bonificación, puedes mover cada esfera hasta 30 pies, pero no más allá de 120 pies de ti. Cuando una criatura que no seas tú se acerque a menos de 1,5 metros de una esfera, ésta descargará un rayo sobre esa criatura y desaparecerá. Esa criatura debe hacer una tirada de salvación de Destreza DC 15. Si falla la tirada de salvación, la criatura recibe un daño de rayo basado en el número de esferas que hayas creado. (4 esferas = {@dice 2d4}, 3 esferas = {@dice 2d6}, 2 esferas = {@dice 5d4}, 1 esfera = {@dice 4d12})"
 					]
 				},
@@ -28881,7 +28881,9 @@
 			"source": "DMG",
 			"page": 196,
 			"srd": true,
+			"baseItem": "mace|phb",
 			"type": "RD",
+			"typeAlt": "M",
 			"tier": "major",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30809,7 +30811,7 @@
 							"items": [
 								"El escudo tiene una Inteligencia de 22, una Sabiduría de 18 y un Carisma de 24, así como oído y {@sense truesight} hasta un alcance de 120 pies.",
 								"El escudo puede hablar, leer y entender el idioma común y el infernal, y puede comunicarse telepáticamente con cualquier criatura que pueda percibir en un radio de 120 pies. Su voz es un susurro profundo y hueco.",
-								"El escudo tiene 3 cargas. Puedes usar una acción para gastar 1 carga para lanzar {@spell fireball} o 2 cargas para lanzar {@spell wall of fire} desde el escudo (salvación DC 21 para cada una). El hechizo {@spell wall of fire} dura 1 minuto (no requiere concentración). El escudo recupera todas las cargas gastadas diariamente al amanecer.",
+								"El escudo tiene 3 cargas. Puedes usar una acción para gastar 1 carga para lanzar {@spell fireball} o 2 cargas para lanzar {@spell wall of fire} desde el escudo (salvación DC 21 para cada una). El hechizo {@spell wall of fire} dura 1 minuto (no requiere {@status concentration}). El escudo recupera todas las cargas gastadas al amanecer.",
 								"En cualquier momento de tu turno, el escudo puede elegir irradiar un aura de terror durante 1 minuto. Cualquier criatura hostil que comience su turno a menos de 6 metros del escudo debe hacer una tirada de salvación de Sabiduría DC 18. Si falla la tirada, la criatura queda {@condition frightened} atrapada hasta el comienzo de su siguiente turno. En caso de fallar la salvación, la criatura queda {@condition frightened} hasta el comienzo de su siguiente turno. Con una salvación exitosa, la criatura es inmune a este poder del escudo durante las siguientes 24 horas. Una vez que el escudo utiliza este poder, no puede volver a utilizarlo hasta el siguiente amanecer."
 							]
 						}
@@ -30872,7 +30874,7 @@
 					"type": "entries",
 					"name": "Bane",
 					"entries": [
-						"Puedes lanzar el hechizo {@spell bane} desde el escudo (salvación DC 17). El hechizo no requiere concentración y dura 1 minuto. Una vez que lanzas el hechizo desde el escudo, no puedes volver a hacerlo hasta que termines un descanso corto o largo."
+						"Puedes lanzar el hechizo {@spell bane} desde el escudo (salvación DC 17). El hechizo no requiere {@status concentration} y dura 1 minuto. Una vez que lanzas el hechizo desde el escudo, no puedes volver a hacerlo hasta que termines un descanso corto o largo."
 					]
 				},
 				{
@@ -32448,7 +32450,7 @@
 			"entries": [
 				"La función de esta silla ornamental es propulsar y maniobrar una nave en la que se ha instalado a través del espacio y el aire. También puede propulsar y maniobrar una nave en el agua o bajo el agua, siempre que la nave esté construida para ello. La nave en cuestión debe pesar 1 tonelada o más.",
 				"La sensación de estar en sintonía con un yelmo de hechizo es similar al efecto de alfileres y agujas que uno experimenta después de que se le duerma el brazo o la pierna, pero no tan doloroso.",
-				"Mientras estés en sintonía con un yelmo de bloqueo de hechizos y estés sentado en él, obtienes las siguientes habilidades mientras mantengas la concentración (como si te concentraras en un hechizo):",
+				"Mientras estés en sintonía con un yelmo de bloqueo de hechizos y sentado en él, obtienes las siguientes habilidades mientras mantengas {@status concentration} (como si {@status concentration||concentrating} en un hechizo):",
 				{
 					"type": "list",
 					"items": [
@@ -32489,7 +32491,7 @@
 			"wondrous": true,
 			"entries": [
 				"Este pulido dragonshard de Eberron cabe en la mano y almacena información de forma similar a un libro. El fragmento puede contener el equivalente a un libro de no más de 320 páginas. Un fragmento puede crearse en blanco o ya lleno de información. Cuando se crea el fragmento, el creador puede establecer una frase de contraseña que debe pronunciarse para acceder a la información almacenada en su interior.",
-				"Mientras sostienes el fragmento, puedes usar una acción para abrir tu mente al fragmento, viendo su contenido en tu mente. En los siguientes asaltos, leer el texto o escribir un nuevo texto en las \"páginas\" en blanco del fragmento requiere concentración (como si te concentraras en un hechizo) y te lleva el mismo tiempo que leer y escribir normalmente. Al pensar en una frase o un tema en particular, te diriges a la primera sección del fragmento que lo aborda.",
+				"Mientras sostienes el fragmento, puedes utilizar una acción para abrir tu mente al fragmento, viendo su contenido en tu mente. En los siguientes asaltos, leer el texto o garabatear texto nuevo en las \"páginas\" en blanco del fragmento requiere {@status concentration} (como si fuera {@status concentration||concentrating} de un hechizo) y lleva el mismo tiempo que leer y escribir normalmente. Pensar en una frase o un tema concreto te lleva a la primera sección del fragmento que lo trate.",
 				"Un mago puede utilizar un fragmento de hechizo como libro de hechizos, con el coste habitual en oro y tiempo para \"escribir\" un hechizo en el fragmento."
 			]
 		},
@@ -35874,7 +35876,7 @@
 					"entries": [
 						"El gran tamaño de la Máquina Infernal la hace prácticamente inmóvil. Para hacer un uso continuado de la máquina (por ejemplo, durante una aventura), puede conectarse a su usuario sintonizado mediante un cable de plata, cuyo suministro siempre puede producirse desde el funcionamiento interno de la máquina. Este hilo de plata comparte la misma naturaleza general que el cordón plateado de un hechizo {@spell astral projection}, conectándose al cuerpo del usuario y arrastrándose tras él. Cuando está unido, el cable se convierte en {@condition invisible}, astral, y se extiende hasta una longitud prácticamente infinita.",
 						"Mientras el cable permanezca intacto, el usuario sintonizado puede hacer pleno uso de los poderes de la Máquina Infernal, cuyos efectos se centran en el usuario. Si el cable se corta -algo que sólo puede ocurrir cuando un efecto establece específicamente que puede cortar el cordón plateado de un {@spell astral projection}- el usuario sufre una repentina ráfaga de retroalimentación de la máquina que lo mata al instante.",
-						"Cualquier efecto de la Máquina Infernal que requiera concentración puede ser concentrado por un usuario a distancia. Los efectos de la Máquina Infernal tienen una DC de salvación de hechizos de 14 o la DC de salvación de hechizos del usuario sintonizado, la que sea mayor."
+						"Cualquier efecto de la Máquina Infernal que requiera {@status concentration} puede ser concentrado por un usuario remoto. Los efectos de la Máquina Infernal tienen una DC de salvación de conjuro de 14 o la DC de salvación de conjuro del usuario sintonizado, la que sea mayor."
 					]
 				},
 				{
@@ -40948,6 +40950,8 @@
 			"name": "Witchlight Vane",
 			"source": "WBtW",
 			"page": 27,
+			"baseItem": "mace|phb",
+			"typeAlt": "M",
 			"rarity": "legendary",
 			"reqAttune": "by a mister light or his handpicked successor",
 			"sentient": true,

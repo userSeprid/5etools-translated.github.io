@@ -42,7 +42,7 @@
 					},
 					"name": "Energy Adaptation",
 					"entries": [
-						"Como acción, puedes tocar a una criatura y darle resistencia al daño de ácido, frío, fuego, rayo o trueno (a tu elección), que dura hasta que termine tu concentración."
+						"Como acción, puedes tocar a una criatura y otorgarle resistencia al daño de ácido, frío, fuego, relámpago o trueno (a tu elección), que dura hasta que termina tu {@status concentration}."
 					]
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"name": "Energy Immunity",
 					"entries": [
-						"Como acción, puedes tocar a una criatura y darle inmunidad al daño por ácido, frío, fuego, rayo o trueno (a tu elección), que dura hasta que termine tu concentración."
+						"Como acción, puedes tocar a una criatura y otorgarle inmunidad al daño de ácido, frío, fuego, rayo o trueno (a tu elección), que dura hasta que termina tu {@status concentration}."
 					]
 				}
 			]
@@ -103,7 +103,7 @@
 					},
 					"name": "View Aura",
 					"entries": [
-						"Como acción, estudias el aura de una criatura. Hasta que tu concentración termine, mientras puedas ver al objetivo, aprendes si está bajo el efecto de algún efecto mágico o psiónico, su total de puntos de golpe actuales y su estado emocional básico. Mientras dure este efecto, tienes ventaja en los chequeos de Sabiduría ({@skill Insight}) y Carisma que hagas contra él."
+						"Como acción, estudias el aura de una criatura. Hasta que termine tu {@status concentration}, mientras puedas ver al objetivo, averiguas si está bajo el efecto de algún efecto mágico o psiónico, su total actual de puntos de golpe y su estado emocional básico. Mientras dure este efecto, tienes ventaja en los chequeos de Sabiduría ({@skill Insight}) y Carisma que hagas contra él."
 					]
 				},
 				{
@@ -117,7 +117,7 @@
 					},
 					"name": "Perceive the Unseen",
 					"entries": [
-						"Como acción adicional, obtienes la capacidad de ver las auras incluso de las criaturas {@condition invisible} u ocultas. Hasta que termine tu concentración, puedes ver todas las criaturas, incluidas las ocultas y las del {@condition invisible}, independientemente de las condiciones de iluminación."
+						"Como acción adicional, obtienes la habilidad de ver auras incluso de {@condition invisible} o criaturas ocultas. Hasta que termine tu {@status concentration}, puedes ver todas las criaturas, incluidas las ocultas y las {@condition invisible}, independientemente de las condiciones de iluminación.ks que hagas contra ella."
 					]
 				}
 			]
@@ -461,7 +461,7 @@
 					},
 					"name": "Call to Inaction",
 					"entries": [
-						"Si pasas 1 minuto conversando con una criatura, puedes intentar sembrar en ella un hastío abrumador. Al final del minuto, puedes utilizar una acción para obligar a la criatura a realizar una tirada de salvación de Sabiduría. La salvación tiene éxito automáticamente si el objetivo es inmune al ser {@condition charmed}. En caso de fallar la salvación, se sienta y es {@condition incapacitated} hasta que termine tu concentración. Este efecto termina inmediatamente si el objetivo o cualquier aliado que pueda ver es atacado o recibe daño. Si la salvación es satisfactoria, la criatura no se ve afectada y no percibe tu intento de doblegar su voluntad."
+						"Si pasas 1 minuto conversando con una criatura, puedes intentar sembrarla de un hastío abrumador. Al final del minuto, puedes utilizar una acción para obligar a la criatura a realizar una tirada de salvación de Sabiduría. La salvación tiene éxito automáticamente si el objetivo es inmune al ser {@condition charmed}. En una salvación fallida, se sienta y queda {@condition incapacitated} hasta que termine tu {@status concentration}. Este efecto termina inmediatamente si el objetivo o cualquier aliado que pueda ver es atacado o recibe daño. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					},
 					"name": "Dolorous Mind",
 					"entries": [
-						"Como acción, eliges una criatura que puedas ver en un radio de 60 pies de ti. Debe tener éxito en una tirada de salvación de Carisma, o queda {@condition incapacitated} y tiene una velocidad de 0 hasta que termine tu concentración. Puede repetir esta tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito."
+						"Como acción, eliges una criatura que puedas ver en un radio de 60 pies de ti. Debe tener éxito en una tirada de salvación de Carisma, o es {@condition incapacitated} y tiene una velocidad de 0 hasta que termine tu {@status concentration}. Puede repetir esta tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito.rget o cualquier aliado que pueda ver es atacado o recibe daño. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				}
 			]
@@ -522,7 +522,7 @@
 					},
 					"name": "Wall of Repulsion",
 					"entries": [
-						"Como acción, creas un muro invisible e insustancial de energía en un radio de 60 pies de ti que tiene hasta 30 pies de largo, 10 pies de alto y 1 pie de espesor. El muro dura hasta que termina tu concentración. Cualquier criatura que intente atravesarlo debe realizar una tirada de salvación de Sabiduría. Si falla la tirada de salvación, la criatura no puede atravesar el muro hasta el comienzo de su siguiente turno. Con una salvación exitosa, la criatura puede atravesarlo. Una criatura debe realizar esta salvación siempre que intente atravesar el muro, ya sea de forma voluntaria o involuntaria."
+						"Como acción, creas un muro invisible e insustancial de energía en un radio de 60 pies de ti que mide hasta 30 pies de largo, 10 pies de alto y 1 pie de grosor. El muro dura hasta que finaliza tu {@status concentration}. Cualquier criatura que intente atravesarlo debe realizar una tirada de salvación de Sabiduría. Si falla la tirada de salvación, la criatura no puede atravesar el muro hasta el comienzo de su siguiente turno. Con una salvación exitosa, la criatura puede atravesarlo. Una criatura debe realizar esta salvación siempre que intente atravesar el muro, ya sea voluntaria o involuntariamente. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				},
 				{
@@ -536,7 +536,7 @@
 					},
 					"name": "Visions of Disgust",
 					"entries": [
-						"Haces que una criatura considere a todos los demás seres como entidades horribles y alienígenas. Como acción, elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe hacer una tirada de salvación de Sabiduría. En caso de fallar la salvación, recibe {@damage 5d6} de daño psíquico, y hasta que tu concentración termine, recibe {@damage 1d6} de daño psíquico por cada criatura a 5 pies de distancia al final de cada uno de sus turnos. Con una salvación exitosa, el objetivo sólo recibe la mitad del daño inicial y no sufre ninguno de los otros efectos."
+						"Haces que una criatura considere a todos los demás seres como entidades horribles y alienígenas. Como acción, elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe realizar una tirada de salvación de Sabiduría. En una salvación fallida, recibe {@damage 5d6} de daño psíquico, y hasta que tu {@status concentration} termine, recibe {@damage 1d6} de daño psíquico por criatura a 5 pies de él al final de cada uno de sus turnos. Con una salvación con éxito, el objetivo sólo recibe la mitad del daño inicial y no sufre ninguno de los otros efectos. salvación, la criatura puede atravesarlo. Una criatura debe realizar esta salvación siempre que intente atravesar el muro, ya sea voluntaria o involuntariamente. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				},
 				{
@@ -550,7 +550,7 @@
 					},
 					"name": "World of Horror",
 					"entries": [
-						"Como acción, elige hasta seis criaturas en un radio de 60 pies de ti. Cada objetivo debe realizar una tirada de salvación de Carisma. Si fallas la tirada de salvación, el objetivo recibe un {@damage 8d6} de daño psíquico, y es un {@condition frightened} hasta que finalice tu concentración. Con una salvación exitosa, el objetivo recibe la mitad de daño. Mientras {@condition frightened} por este efecto, la velocidad de un objetivo se reduce a 0, y el objetivo puede utilizar su acción, y cualquier acción de bonificación que pueda tener, sólo para hacer ataques cuerpo a cuerpo. El {@condition frightened} objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito."
+						"Como acción, elige hasta seis criaturas en un radio de 60 pies de ti. Cada objetivo debe realizar una tirada de salvación de Carisma. En una salvación fallida, el objetivo recibe {@damage 8d6} de daño psíquico, y es {@condition frightened} hasta que termine tu {@status concentration}. Con una salvación exitosa, el objetivo recibe la mitad de daño. Mientras esté {@condition frightened} bajo este efecto, la velocidad de un objetivo se reduce a 0, y el objetivo puede usar su acción, y cualquier acción adicional que pueda tener, sólo para realizar ataques cuerpo a cuerpo. El {@condition frightened} objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito.rs ninguno de los otros efectos. salvación, la criatura puede atravesarlo. Una criatura debe realizar esta salvación siempre que intente atravesar el muro, ya sea voluntaria o involuntariamente. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				}
 			]
@@ -587,7 +587,7 @@
 					},
 					"name": "Fighting Words",
 					"entries": [
-						"Si pasas 1 minuto conversando con una criatura, puedes intentar dejar una violencia latente en su mente. Al final del minuto, puedes usar una acción para obligar a la criatura a hacer una tirada de salvación de Sabiduría para resistirse a sentir impulsos violentos contra una criatura que le describas o nombres. La salvación tiene éxito automáticamente si el objetivo es inmune a ser {@condition charmed}. En caso de fallar la salvación, el objetivo ataca a la criatura elegida si la ve antes de que termine tu concentración, utilizando armas o conjuros contra una criatura hacia la que ya era hostil o golpes sin armas contra un aliado o una criatura hacia la que era neutral. Una vez que el combate comienza, sigue atacando durante 5 asaltos antes de que este efecto termine. Este efecto termina inmediatamente si el objetivo o cualquier aliado que pueda ver es atacado o recibe daño de cualquier criatura que no sea aquella contra la que ha sido incitado. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
+						"Si pasas 1 minuto conversando con una criatura, puedes intentar dejar una violencia latente en su mente. Al final del minuto, puedes utilizar una acción para obligar a la criatura a realizar una tirada de salvación de Sabiduría para resistirse a sentir impulsos violentos contra una criatura que le describas o nombres. La salvación tiene éxito automáticamente si el objetivo es inmune a serlo {@condition charmed}. En una salvación fallida, el objetivo ataca a la criatura elegida si ve a esa criatura antes de que termine tu {@status concentration}, usando armas o conjuros contra una criatura hacia la que ya era hostil o golpes desarmados contra un aliado o una criatura hacia la que era neutral. Una vez iniciado el combate, sigue atacando durante 5 asaltos antes de que finalice este efecto. Este efecto termina inmediatamente si el objetivo o cualquier aliado que pueda ver es atacado o recibe daño de cualquier criatura que no sea aquella contra la que ha sido incitado. Con una salvación con éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad. turnos, terminando el efecto sobre sí misma con un éxito.rs ninguno de los otros efectos. salvación, la criatura puede atravesarlo. Una criatura debe realizar esta salvación siempre que intente atravesar el muro, ya sea voluntaria o involuntariamente. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				},
 				{
@@ -611,7 +611,7 @@
 					},
 					"name": "Punishing Fury",
 					"entries": [
-						"Haces que la rabia de una criatura aumente tanto que ataca sin tener en cuenta su propia seguridad. Como acción de bonificación, elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Sabiduría o, hasta que tu concentración termine, cualquier criatura en un radio de 5 pies puede usar una reacción para hacer un ataque cuerpo a cuerpo contra él siempre que el objetivo haga un ataque cuerpo a cuerpo. La salvación tiene éxito automáticamente si el objetivo es inmune a ser {@condition charmed}."
+						"Haces que la furia de una criatura aumente tanto que ataca sin tener en cuenta su propia seguridad. Como acción de bonificación, elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Sabiduría o, hasta que tu {@status concentration} termine, cualquier criatura a 5 pies de él puede usar una reacción para hacer un ataque cuerpo a cuerpo contra él siempre que el objetivo haga un ataque cuerpo a cuerpo. La salvación tiene éxito automáticamente si el objetivo es inmune a ser {@condition charmed}. criatura contra la que ha sido incitado. Con una salvación con éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad. turnos, terminando el efecto sobre sí misma con un éxito.rs ninguno de los otros efectos. salvación, la criatura puede atravesarlo. Una criatura debe realizar esta salvación siempre que intente atravesar el muro, ya sea voluntaria o involuntariamente. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 					},
 					"name": "Miniature Form",
 					"entries": [
-						"Como acción adicional, te conviertes en Diminuto hasta que finalice tu concentración. Con este tamaño, obtienes un bonificador +5 a los chequeos de Destreza ({@skill Stealth}) y puedes moverte por huecos de hasta 15 cm de ancho sin apretarte."
+						"Como acción adicional, te vuelves Diminuto hasta que termine tu {@status concentration}. Mientras tengas este tamaño, obtienes un bonificador +5 a los chequeos de Destreza ({@skill Stealth}) y puedes moverte a través de huecos de hasta 15 cm de ancho sin apretarte.t sobre sí mismo con un éxito.rs ninguno de los otros efectos. salvar, la criatura puede atravesarlo. Una criatura debe realizar esta salvación siempre que intente atravesar el muro, ya sea voluntaria o involuntariamente. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					},
 					"name": "Microscopic Form",
 					"entries": [
-						"Como acción de bonificación, te vuelves más pequeño que Tiny hasta que termine tu concentración. Mientras tengas este tamaño, ganas un bonificador +10 a los chequeos de Destreza ({@skill Stealth}) y un bonificador +5 a la CA, puedes moverte por huecos de hasta 1 pulgada de ancho sin apretarte y no puedes hacer ataques con armas."
+						"Como acción adicional, te vuelves más pequeño que Tiny hasta que tu {@status concentration} termina. Mientras tengas este tamaño, obtienes un bonificador +10 a los chequeos de Destreza ({@skill Stealth}) y un bonificador +5 a la CA, puedes moverte por huecos de hasta 2,5 cm de ancho sin apretarte y no puedes realizar ataques con armas.ya sea voluntaria o involuntariamente.atacas o recibes daño. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				}
 			]
@@ -720,7 +720,7 @@
 					},
 					"name": "Ogre Form",
 					"entries": [
-						"Como acción adicional, ganas 10 puntos de golpe temporales. Además, hasta que termine tu concentración, tus ataques con armas cuerpo a cuerpo infligen un {@damage 1d4} de daño contundente adicional al impactar, y tu alcance aumenta en 5 pies. Si eres más pequeño que Large, también te conviertes en Large mientras dure el efecto."
+						"Como acción de bonificación, ganas 10 puntos de golpe temporales. Además, hasta que tu {@status concentration} termine, tus ataques con armas cuerpo a cuerpo infligen un {@damage 1d4} de daño contundente adicional al impactar, y tu alcance aumenta en 5 pies. Si eres más pequeño que Large, también te conviertes en Large mientras dure el ataque o el daño. Si la salvación tiene éxito, la criatura no se ve afectada y no se da cuenta de tu intento de doblegar su voluntad."
 					]
 				},
 				{
@@ -734,7 +734,7 @@
 					},
 					"name": "Giant Form",
 					"entries": [
-						"Como acción adicional, ganas 30 puntos de golpe temporales. Además, hasta que termine tu concentración, tus ataques con armas cuerpo a cuerpo infligen un {@damage 2d6} de daño contundente adicional al impactar, y tu alcance aumenta en 3 metros. Si eres más pequeño que Huge, también te conviertes en Huge mientras dure el efecto."
+						"Como acción adicional, ganas 30 puntos de golpe temporales. Además, hasta que tu {@status concentration} termine, tus ataques con armas cuerpo a cuerpo infligen un {@damage 2d6} de daño contundente adicional al impactar, y tu alcance aumenta en 3 metros. Si tu tamaño es inferior a Enorme, también te conviertes en Enorme mientras dure el efecto. Si la salvación tiene éxito, la criatura no se ve afectada y no se entera de tu intento de doblegar su voluntad."
 					]
 				}
 			]
@@ -781,7 +781,7 @@
 					},
 					"name": "Psychic Redoubt",
 					"entries": [
-						"Como acción, creas un campo de energía psíquica protectora. Elige cualquier número de criaturas en un radio de 30 pies de ti. Hasta que termine tu concentración, cada objetivo tiene resistencia al daño psíquico y ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma."
+						"Como acción, creas un campo de energía psíquica protectora. Elige cualquier número de criaturas en un radio de 30 pies de ti. Hasta que tu {@status concentration} termine, cada objetivo tiene resistencia al daño psíquico y ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma."
 					]
 				}
 			]
@@ -828,7 +828,7 @@
 					},
 					"name": "Iron Resistance",
 					"entries": [
-						"Como acción, obtienes resistencia al daño contundente, perforante o cortante (a tu elección), que dura hasta que termina tu concentración."
+						"Como acción, obtienes resistencia al daño contundente, perforante o cortante (a tu elección), que dura hasta que finaliza tu {@status concentration}. intento de doblegar su voluntad."
 					]
 				}
 			]
@@ -875,7 +875,7 @@
 					},
 					"name": "Center of Attention",
 					"entries": [
-						"Como acción, ejerces un aura de poder que atrae la atención de una criatura. Elige una criatura que puedas ver en un radio de 60 pies de ti. Debe hacer una tirada de salvación de Carisma. Si falla la tirada de salvación, la criatura está tan distraída por ti que todas las demás criaturas están {@condition invisible} a ella hasta que tu concentración termine. Este efecto termina si la criatura ya no puede verte u oírte o si recibe daño."
+						"Como acción, ejerces un aura de poder que atrae la atención de una criatura. Elige una criatura que puedas ver en un radio de 60 pies. Debe realizar una tirada de salvación de Carisma. Si falla la tirada de salvación, la criatura se distrae tanto contigo que todas las demás criaturas se vuelven {@condition invisible} hacia ella hasta que termina tu {@status concentration}. Este efecto termina si la criatura ya no puede verte ni oírte o si recibe daño."
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					},
 					"name": "Invoke Awe",
 					"entries": [
-						"Como acción, ejerces un aura que inspira temor en los demás. Elige hasta 5 criaturas que puedas ver en un radio de 60 pies de ti. Cada objetivo debe tener éxito en una tirada de salvación de Inteligencia o ser {@condition charmed} por ti hasta que termine tu concentración. Mientras {@condition charmed}, el objetivo obedece todas tus órdenes verbales lo mejor posible y sin hacer nada obviamente autodestructivo. El objetivo del {@condition charmed} sólo atacará a las criaturas que haya visto atacarte desde el {@condition charmed} o hacia las que ya era hostil. Al final de cada uno de sus turnos, puede repetir la tirada de salvación, terminando el efecto sobre sí mismo en caso de éxito."
+						"Como acción, ejerces un aura que inspira temor en los demás. Elige hasta 5 criaturas que puedas ver en un radio de 60 pies de ti. Cada objetivo debe tener éxito en una tirada de salvación de Inteligencia o ser {@condition charmed} por ti hasta que tu {@status concentration} termine. Mientras {@condition charmed}, el objetivo obedece todas tus órdenes verbales lo mejor que puede y sin hacer nada obviamente autodestructivo. El {@condition charmed} objetivo sólo atacará a las criaturas que haya visto atacarte desde que era {@condition charmed} o hacia las que ya era hostil. Al final de cada uno de sus turnos, puede repetir la tirada de salvación, terminando el efecto sobre sí mismo en caso de éxito.ct termina si la criatura ya no puede verte u oírte o si recibe daño."
 					]
 				}
 			]
@@ -950,7 +950,7 @@
 					},
 					"name": "Strategic Mind",
 					"entries": [
-						"Como acción, ejerces un aura de confianza y mando que une a tus aliados en una unidad cohesionada. Hasta que termine tu concentración, cualquier aliado que se encuentre a 60 pies de ti en su turno puede, como acción adicional, realizar la acción de Dash o Disengage o tirar un {@dice d4} y añadir el número obtenido a cada tirada de ataque que realice ese turno."
+						"Como acción, ejerces un aura de confianza y mando que une a tus aliados en una unidad cohesionada. Hasta que termine tu {@status concentration}, cualquier aliado que esté a 60 pies de ti en su turno puede, como acción adicional, realizar la acción de Dash o Disengage o tirar un {@dice d4} y sumar el número obtenido a cada tirada de ataque que haga ese turno.desde que era (%4%) o hacia el que ya era hostil. Al final de cada uno de sus turnos, puede repetir la tirada de salvación, terminando el efecto sobre sí mismo en caso de éxito.ct termina si la criatura ya no puede verte u oírte o si recibe daño."
 					]
 				},
 				{
@@ -997,7 +997,7 @@
 					},
 					"name": "Aura of Victory",
 					"entries": [
-						"Como acción adicional, proyectas energía psiónica hasta que finaliza tu concentración. La energía te fortalece a ti y a tus aliados cuando tus enemigos son abatidos; siempre que un enemigo que puedas ver se reduzca a 0 puntos de golpe, tú y cada uno de tus aliados en un radio de 30 pies ganáis puntos de golpe temporales iguales al doble de los puntos de psi gastados para activar este efecto."
+						"Como acción adicional, proyectas energía psiónica hasta que termine tu {@status concentration}. La energía te fortalece a ti y a tus aliados cuando tus enemigos son abatidos; siempre que un enemigo que puedas ver quede reducido a 0 puntos de golpe, tú y cada uno de tus aliados en un radio de 30 pies de ti ganáis puntos de golpe temporales iguales al doble de los puntos de psi gastados para activar este efecto.d de cada uno de sus turnos, puede repetir la tirada de salvación, terminando el efecto sobre sí mismo en caso de éxito.ct termina si la criatura ya no puede verte ni oírte o si recibe daño."
 					]
 				},
 				{
@@ -1038,7 +1038,7 @@
 					},
 					"name": "Incite Fear",
 					"entries": [
-						"Como acción, elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Sabiduría o convertirse en {@condition frightened} de ti hasta que termine tu concentración. Siempre que el {@condition frightened} objetivo termine su turno en un lugar donde no pueda verte, puede repetir la tirada de salvación, terminando el efecto sobre sí mismo si tiene éxito."
+						"Como acción, elige una criatura que puedas ver en un radio de 60 pies. El objetivo debe tener éxito en una tirada de salvación de Sabiduría o convertirse en {@condition frightened} de ti hasta que termine tu {@status concentration}. Siempre que el {@condition frightened} objetivo termine su turno en un lugar donde no pueda verte, puede repetir la tirada de salvación, terminando el efecto sobre sí mismo en caso de éxito."
 					]
 				},
 				{
@@ -1052,7 +1052,7 @@
 					},
 					"name": "Unsettling Aura",
 					"entries": [
-						"Como acción adicional, te envuelves en una energía psíquica inquietante. Hasta que tu concentración termine, cualquier enemigo en un radio de 60 pies que pueda verte debe gastar 1 pie extra de movimiento por cada pie que se mueva hacia ti. Una criatura ignora este efecto si es inmune a ser {@condition frightened}."
+						"Como acción adicional, te envuelves en una inquietante energía psíquica. Hasta que tu {@status concentration} termine, cualquier enemigo en un radio de 60 pies que pueda verte debe gastar 1 pie extra de movimiento por cada pie que se mueva hacia ti. Una criatura ignora este efecto si es inmune a ser {@condition frightened}.elfo en una tirada con éxito, terminando el efecto sobre sí misma en una tirada con éxito.ct termina si la criatura ya no puede verte u oírte o si recibe daño."
 					]
 				},
 				{
@@ -1066,7 +1066,7 @@
 					},
 					"name": "Incite Panic",
 					"entries": [
-						"Como acción, elige hasta ocho criaturas que puedas ver en un radio de 90 pies que puedan verte. Al comienzo de cada uno de los turnos del objetivo antes de que termine tu concentración, el objetivo debe hacer una tirada de salvación de Sabiduría. Si falla la tirada de salvación, el objetivo queda {@condition frightened} hasta el comienzo de su siguiente turno, y tú tiras un dado. Si sacas un número impar, el objetivo {@condition frightened} se mueve a la mitad de su velocidad en dirección aleatoria y no realiza ninguna acción en ese turno, salvo gritar de terror. Si sacas un número par, el objetivo {@condition frightened} realiza un ataque cuerpo a cuerpo contra un objetivo aleatorio que esté a su alcance. Si no hay tal objetivo, se mueve la mitad de su velocidad en una dirección aleatoria y no realiza ninguna acción en ese turno. Este efecto termina en un objetivo si tiene éxito en tres tiradas de salvación contra él."
+						"Como acción, elige hasta ocho criaturas que puedas ver en un radio de 90 pies que puedan verte. Al comienzo de cada uno de los turnos del objetivo antes de que termine tu {@status concentration}, el objetivo debe realizar una tirada de salvación de Sabiduría. Si falla la tirada de salvación, el objetivo queda {@condition frightened} incapacitado hasta el inicio de su siguiente turno, y tú tiras un dado. Si sacas un número impar, el {@condition frightened} objetivo se mueve la mitad de su velocidad en dirección aleatoria y no realiza ninguna acción en ese turno, salvo gritar de terror. Si sacas un número par, el {@condition frightened} objetivo realiza un ataque cuerpo a cuerpo contra un objetivo aleatorio a su alcance. Si no hay tal objetivo, se mueve la mitad de su velocidad en una dirección aleatoria y no realiza ninguna acción en ese turno. Este efecto termina sobre un objetivo si tiene éxito en tres tiradas de salvación contra él.niendo el efecto sobre sí mismo con éxito.ct termina si la criatura ya no puede verte ni oírte o si recibe daño."
 					]
 				}
 			]
@@ -1093,7 +1093,7 @@
 					},
 					"name": "Incite Fury",
 					"entries": [
-						"Como acción de bonificación, elige hasta tres aliados que puedas ver en un radio de 60 pies de ti (puedes elegirte a ti mismo en lugar de uno de los aliados). Hasta que termine tu concentración, cada objetivo puede tirar un {@dice d4} al tirar el daño de un ataque con arma cuerpo a cuerpo y añadir el número obtenido a la tirada de daño."
+						"Como acción de bonificación, elige hasta tres aliados que puedas ver en un radio de 60 pies de ti (puedes elegirte a ti mismo en lugar de uno de los aliados). Hasta que termine tu {@status concentration}, cada objetivo puede tirar un {@dice d4} al tirar el daño de un ataque con arma cuerpo a cuerpo y sumar el número obtenido a la tirada de daño.k contra un objetivo aleatorio a su alcance. Si no hay tal objetivo, se mueve la mitad de su velocidad en una dirección aleatoria y no realiza ninguna acción en ese turno. Este efecto termina sobre un objetivo si tiene éxito en tres tiradas de salvación contra él.niendo el efecto sobre sí mismo con éxito.ct termina si la criatura ya no puede verte ni oírte o si recibe daño."
 					]
 				},
 				{
@@ -1117,7 +1117,7 @@
 					},
 					"name": "Aura of Bloodletting",
 					"entries": [
-						"Como acción adicional, desatas un aura de furia. Hasta que termine tu concentración, tú y cualquier criatura en un radio de 60 pies tenéis ventaja en las tiradas de ataque cuerpo a cuerpo."
+						"Como acción adicional, desatas un aura de rabia. Hasta que termine tu {@status concentration}, tú y cualquier criatura en un radio de 60 pies de ti tenéis ventaja en las tiradas de ataque cuerpo a cuerpo. una dirección aleatoria y no realizáis ninguna acción en ese turno. Este efecto termina sobre un objetivo si tiene éxito en tres tiradas de salvación contra él.niendo el efecto sobre sí mismo con éxito.ct termina si la criatura ya no puede verte ni oírte o si recibe daño."
 					]
 				},
 				{
@@ -1131,7 +1131,7 @@
 					},
 					"name": "Overwhelming Fury",
 					"entries": [
-						"Como acción, inundas de rabia a una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Carisma, o puede usar sus acciones sólo para hacer ataques cuerpo a cuerpo hasta que tu concentración termine. Puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo si tiene éxito."
+						"Como acción, inundas de rabia a una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Carisma, o puede usar sus acciones sólo para hacer ataques cuerpo a cuerpo hasta que termine tu {@status concentration}. Puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito. un éxito.ct termina si la criatura ya no puede verte u oírte o si recibe daño."
 					]
 				}
 			]
@@ -1168,7 +1168,7 @@
 					},
 					"name": "Comforting Aura",
 					"entries": [
-						"Como acción adicional, elige hasta tres aliados que puedas ver (puedes elegirte a ti mismo en lugar de uno de los aliados). Hasta que termine tu concentración, cada objetivo puede tirar un {@dice d4} al hacer una tirada de salvación y sumar el número obtenido al total."
+						"Como acción de bonificación, elige hasta tres aliados que puedas ver (puedes elegirte a ti mismo en lugar de uno de los aliados). Hasta que termine tu {@status concentration}, cada objetivo puede tirar un {@dice d4} al hacer una tirada de salvación y sumar el número obtenido al total.ss. un éxito.ct termina si la criatura ya no puede verte ni oírte o si recibe daño."
 					]
 				},
 				{
@@ -1182,7 +1182,7 @@
 					},
 					"name": "Aura of Jubilation",
 					"entries": [
-						"Como acción de bonificación, irradias una alegría distractora hasta que finalice tu concentración. Cada criatura en un radio de 60 pies que pueda verte sufre desventaja en cualquier chequeo que utilice las habilidades {@skill Perception} y {@skill Investigation}."
+						"Como acción adicional, irradias una alegría distractora hasta que tu {@status concentration} termina. Cada criatura en un radio de 60 pies que pueda verte sufre desventaja en cualquier chequeo que utilice las habilidades {@skill Perception} y {@skill Investigation}.sufre daño."
 					]
 				},
 				{
@@ -1239,7 +1239,7 @@
 					},
 					"name": "Cloak of Air",
 					"entries": [
-						"Como acción adicional, tomas el control del aire que te rodea para crear un velo protector. Hasta que termine tu concentración, las tiradas de ataque contra ti tienen desventaja, y cuando una criatura que puedas ver te falle un ataque cuerpo a cuerpo, puedes usar tu reacción para obligar a la criatura a repetir la tirada de ataque contra sí misma."
+						"Como acción adicional, tomas el control del aire que te rodea para crear un velo protector. Hasta que termine tu {@status concentration}, las tiradas de ataque contra ti tienen desventaja, y cuando una criatura que puedas ver te falla con un ataque cuerpo a cuerpo, puedes usar tu reacción para obligar a la criatura a repetir la tirada de ataque contra sí misma."
 					]
 				},
 				{
@@ -1253,7 +1253,7 @@
 					},
 					"name": "Wind Form",
 					"entries": [
-						"Como acción de bonificación, obtienes una velocidad de vuelo de 60 pies, que dura hasta que termina tu concentración."
+						"Como acción adicional, obtienes una velocidad de vuelo de 60 pies, que dura hasta que finaliza tu {@status concentration}."
 					]
 				},
 				{
@@ -1267,7 +1267,7 @@
 					},
 					"name": "Misty Form",
 					"entries": [
-						"Como acción, tu cuerpo se convierte en una nube de niebla hasta que termina tu concentración. En esta forma, obtienes resistencia al daño contundente, perforante y cortante, y no puedes realizar otras acciones que no sean la acción de correr. Puedes pasar a través de aberturas que no tengan más de 2,5 cm de ancho sin apretar."
+						"Como acción, tu cuerpo se convierte en una nube brumosa hasta que tu {@status concentration} termina. En esta forma, obtienes resistencia al daño contundente, perforante y cortante, y no puedes realizar más acciones que la acción de correr. Puedes atravesar aberturas de no más de 2,5 cm de ancho sin apretarte."
 					]
 				},
 				{
@@ -1281,7 +1281,7 @@
 					},
 					"name": "Animate Air",
 					"entries": [
-						"Como acción, haces aparecer un elemental de aire en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu concentración, y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el elemental desaparece. Consulta el Manual de Monstruos para ver su bloque de estadísticas."
+						"Como acción, haces aparecer un elemental de aire en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu {@status concentration} y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando termina este efecto, el elemental desaparece. Consulta su bloque de estadísticas en el Manual del Monstruo."
 					]
 				}
 			]
@@ -1308,7 +1308,7 @@
 					},
 					"name": "Combustion",
 					"entries": [
-						"Como acción, elige una criatura u objeto que puedas ver en un radio de 120 pies. El objetivo debe realizar una salvación de Constitución. En caso de fallar la salvación, el objetivo recibe {@scaledamage 1d10|1-7|1d10|psi} de daño por fuego por punto de psi gastado, y se incendia, recibiendo {@damage 1d6} de daño por fuego al final de cada uno de sus turnos hasta que tu concentración termine o hasta que él o una criatura adyacente a él extinga las llamas con una acción. Si la salvación tiene éxito, el objetivo recibe la mitad de daño y no se incendia."
+						"Como acción, elige una criatura u objeto que puedas ver en un radio de 120 pies. El objetivo debe realizar una salvación de Constitución. En una salvación fallida, el objetivo recibe {@scaledamage 1d10|1-7|1d10|psi} de daño de fuego por punto de psi gastado, y se incendia, recibiendo {@damage 1d6} de daño de fuego al final de cada uno de sus turnos hasta que tu {@status concentration} termine o hasta que él o una criatura adyacente a él extinga las llamas con una acción. Con una salvación exitosa, el objetivo recibe la mitad de daño y no se incendia.peras. Consulta su bloque de estadísticas en el Manual del Monstruo."
 					]
 				},
 				{
@@ -1322,7 +1322,7 @@
 					},
 					"name": "Rolling Flame",
 					"entries": [
-						"Como acción, creas fuego en un cubo de 20 por 20 pies dentro de 5 pies de ti. El fuego dura hasta que termina tu concentración. Cualquier criatura que se encuentre en esa área cuando usas esta habilidad y cualquier criatura que termine su turno allí recibe 5 de daño por fuego."
+						"Como acción, creas fuego en un cubo de 20 pies por 20 pies a 5 pies de ti. El fuego dura hasta que termina tu {@status concentration}. Cualquier criatura en esa área cuando usas esta habilidad y cualquier criatura que termine su turno allí recibe 5 puntos de daño por fuego.n. En una salvación con éxito, el objetivo recibe la mitad de daño y no se incendia.pears. Consulta su bloque de estadísticas en el Manual del Monstruo."
 					]
 				},
 				{
@@ -1346,7 +1346,7 @@
 					},
 					"name": "Fire Form",
 					"entries": [
-						"Como acción de bonificación, te envuelves en llamas hasta que finalice tu concentración. Cualquier criatura que termine su turno a menos de 5 pies de ti recibe {@damage 3d6} de daño por fuego."
+						"Como acción adicional, te envuelves en llamas hasta que termina tu {@status concentration}. Cualquier criatura que termine su turno a menos de 5 pies de ti recibe {@damage 3d6} de daño por fuego.tch on fire.pears. Consulta su bloque de estadísticas en el Manual del Monstruo."
 					]
 				},
 				{
@@ -1360,7 +1360,7 @@
 					},
 					"name": "Animate Fire",
 					"entries": [
-						"Como acción, haces aparecer un elemental de fuego en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu concentración, y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el elemental desaparece. Consulta el Manual del Monstruo para ver su bloque de estadísticas."
+						"Como acción, haces aparecer un elemental de fuego en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu {@status concentration}, y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el elemental desaparece. Consulta su bloque de estadísticas en el Manual del Monstruo."
 					]
 				}
 			]
@@ -1458,7 +1458,7 @@
 					},
 					"name": "Telekinetic Barrier",
 					"entries": [
-						"Como acción, creas un muro transparente de energía telequinética, al menos una parte del cual debe estar a menos de 60 pies de ti. El muro mide 40 pies de largo, 10 pies de alto y 1 pulgada de espesor. El muro dura hasta que termina tu concentración. Cada sección de 10 pies del muro tiene una CA de 10 y 10 puntos de golpe."
+						"Como acción, creas un muro transparente de energía telequinética, al menos una parte del cual debe estar a 60 pies de ti. El muro mide 40 pies de largo, 10 pies de alto y 1 pulgada de grosor. El muro dura hasta que finaliza tu {@status concentration}. Cada sección de 10 pies del muro tiene una CA de 10 y 10 puntos de golpe.peras. Consulta su bloque de estadísticas en el Manual del Monstruo."
 					]
 				},
 				{
@@ -1472,7 +1472,7 @@
 					},
 					"name": "Grasp",
 					"entries": [
-						"Intentas atrapar a una criatura con energía telequinética y mantenerla cautiva. Como acción, elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Fuerza o ser {@condition grappled} por ti hasta que tu concentración termine o hasta que el objetivo salga de tu alcance, que es de 60 pies para este agarre.",
+						"Intentas atrapar a una criatura con energía telequinética y mantenerla cautiva. Como acción, elige una criatura que puedas ver en un radio de 60 pies. El objetivo debe tener éxito en una tirada de salvación de Fuerza o ser {@condition grappled} por ti hasta que termine tu {@status concentration} o hasta que el objetivo salga de tu alcance, que es de 60 pies para este grapple.Manual para su bloque de estadísticas.",
 						"El objetivo {@condition grappled} puede escapar teniendo éxito en un chequeo de Fuerza (Atletismo) o Destreza (Acrobacia) impugnado por tu habilidad psiónica más tu bono de competencia. Cuando un objetivo intenta escapar de esta manera, puedes gastar puntos de psi para aumentar tu chequeo, respetando tu límite de psi. Obtienes un bonificador de +1 por cada punto de psi gastado.",
 						"Mientras un objetivo está {@condition grappled} de esta manera, creas uno de los siguientes efectos como acción:"
 					]
@@ -1551,7 +1551,7 @@
 					},
 					"name": "Frozen Rain",
 					"entries": [
-						"Como acción, elige un punto que puedas ver en un radio de 120 pies. El aire en una esfera de 20 pies de radio centrada en ese punto se vuelve mortalmente frío y saturado de humedad. Cada criatura en esa área debe hacer una tirada de salvación de Constitución. En caso de fallar la salvación, el objetivo recibe {@damage 6d6} de daño por frío y su velocidad se reduce a 0 hasta que termine tu concentración. Si la salvación es satisfactoria, el objetivo recibe la mitad de daño.",
+						"Como acción, elige un punto que puedas ver en un radio de 120 pies. El aire en una esfera de 20 pies de radio centrada en ese punto se vuelve mortalmente frío y saturado de humedad. Cada criatura en esa área debe hacer una tirada de salvación de Constitución. En una salvación fallida, el objetivo recibe {@damage 6d6} de daño por frío, y su velocidad se reduce a 0 hasta que termine tu {@status concentration}. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas.",
 						"Como acción, un objetivo que tenga su velocidad reducida puede terminar el efecto antes de tiempo si tiene éxito en un chequeo de Fuerza (Atletismo) con una DC igual a la DC de salvación de este efecto.",
 						"Puedes aumentar el daño de este efecto en {@scaledamage 6d6|5-7|1d6|psi} por cada punto de psi adicional gastado en él."
 					]
@@ -1567,7 +1567,7 @@
 					},
 					"name": "Ice Barrier",
 					"entries": [
-						"Como acción, creas un muro de hielo, del que al menos una parte debe estar a menos de 60 pies de ti. El muro tiene 60 pies de largo, 15 pies de alto y 1 pie de grosor. El muro dura hasta que termina tu concentración. Cada sección de 10 pies del muro tiene CA 12 y 30 puntos de golpe. Una criatura que dañe el muro con un ataque cuerpo a cuerpo recibe un daño por frío igual al daño que la criatura haya causado al muro."
+						"Como acción, creas un muro de hielo, al menos una parte del cual debe estar a 60 pies de ti. El muro mide 60 pies de largo, 15 pies de alto y 1 pie de grosor. El muro dura hasta que termina tu {@status concentration}. Cada sección de 10 pies del muro tiene CA 12 y 30 puntos de golpe. Una criatura que dañe el muro con un ataque cuerpo a cuerpo recibe un daño de frío igual al daño que la criatura infligió al muro.peed se reduce a 0 hasta que tu (%1%) termina. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				}
 			]
@@ -1604,7 +1604,7 @@
 					},
 					"name": "Light",
 					"entries": [
-						"Como acción, un objeto que toques irradia luz en un radio de 20 pies y luz tenue durante 20 pies adicionales. La luz dura hasta que termina tu concentración. Alternativamente, una criatura que toques irradia luz de la misma manera si falla una tirada de salvación de Destreza. Mientras esté iluminada de esta manera, no puede esconderse, y las tiradas de ataque contra ella ganan ventaja."
+						"Como acción, un objeto que toques irradia luz en un radio de 20 pies y luz tenue durante 20 pies adicionales. La luz dura hasta que termina tu {@status concentration}. Alternativamente, una criatura que toques irradia luz de la misma manera si falla una tirada de salvación de Destreza. Mientras está iluminada de esta manera, no puede esconderse, y las tiradas de ataque contra ella obtienen ventaja.k recibe un daño de frío igual al daño que la criatura infligió a la pared.peed se reduce a 0 hasta que tu (%1%) termina. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1618,7 +1618,7 @@
 					},
 					"name": "Shadow Beasts",
 					"entries": [
-						"Como acción, haces aparecer dos {@creature shadow||shadows} en espacios desocupados que puedes ver en un radio de 60 pies de ti. Los {@creature shadow||shadows} duran hasta que termina tu concentración, y obedecen tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el {@creature shadow||shadows} desaparece. Consulta el Manual de Monstruos para ver su bloque de estadísticas."
+						"Como acción, haces aparecer dos {@creature shadow||shadows} en espacios desocupados que puedas ver en un radio de 60 pies de ti. El {@creature shadow||shadows} dura hasta que termina tu {@status concentration}, y obedecen tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el {@creature shadow||shadows} desaparece. Consulta el Manual de Monstruos para ver su bloque de estadísticas.edad que la criatura infligió a la pared.peed se reduce a 0 hasta que finalice tu {@creature shadow||shadows}. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1632,7 +1632,7 @@
 					},
 					"name": "Radiant Beam",
 					"entries": [
-						"Como acción, proyectas un rayo de luz hacia una criatura que puedas ver en un radio de 60 pies. El objetivo debe hacer una tirada de salvación de Destreza. Si falla la salvación, recibe {@damage 6d6} de daño radiante y queda {@condition blinded} hasta que termine tu concentración. Si la salvación es satisfactoria, recibe la mitad de daño. Un {@condition blinded} objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito.",
+						"Como acción, proyectas un haz de luz hacia una criatura que puedas ver en un radio de 60 pies. El objetivo debe realizar una tirada de salvación de Destreza. Si falla la tirada de salvación, recibe {@damage 6d6} de daño radiante y queda {@condition blinded} hasta que tu {@status concentration} termine. Con una salvación exitosa, recibe la mitad de daño. Un objetivo {@condition blinded} puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito.e wall.peed se reduce a 0 hasta que termine tu {@condition blinded}. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas.",
 						"Puedes aumentar el daño de este efecto en {@scaledamage 6d6|5-7|1d6|psi} por cada punto de psi adicional gastado en él."
 					]
 				}
@@ -1700,7 +1700,7 @@
 					},
 					"name": "Water Sphere",
 					"entries": [
-						"Como acción, haces que se forme una esfera de agua alrededor de una criatura. Elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe hacer una tirada de salvación de Destreza. Si falla la tirada de salvación, queda atrapado en la esfera de agua hasta que termine tu concentración. Mientras el objetivo está atrapado, su velocidad se reduce a la mitad, sufre desventaja en las tiradas de ataque y no puede ver nada que esté a más de 3 metros de él. Sin embargo, las tiradas de ataque contra él también sufren desventaja. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito."
+						"Como acción, haces que se forme una esfera de agua alrededor de una criatura. Elige una criatura que puedas ver en un radio de 60 pies. El objetivo debe realizar una tirada de salvación de Destreza. Si falla, queda atrapado en la esfera de agua hasta que tu {@status concentration} termine. Mientras el objetivo está atrapado, su velocidad se reduce a la mitad, sufre desventaja en las tiradas de ataque y no puede ver nada que esté a más de 10 pies de él. Sin embargo, las tiradas de ataque contra él también sufren desventaja. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en uno exitoso. sí mismo en uno exitoso.e wall.peed se reduce a 0 hasta que termine su (%1%). Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					},
 					"name": "Animate Water",
 					"entries": [
-						"Como acción, haces aparecer un elemental de agua en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu concentración, y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el elemental desaparece. Consulta el Manual de Monstruos para ver su bloque de estadísticas."
+						"Como acción, haces aparecer un elemental de agua en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu {@status concentration}, y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el elemental desaparece. Consulta el Manual de Monstruos para ver su bloque de estadísticas.d de cada uno de sus turnos, finalizando el efecto sobre sí mismo en caso de éxito. sí mismo en caso de éxito.e muro.peed se reduce a 0 hasta que finalice tu (%1%). Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				}
 			]
@@ -1741,7 +1741,7 @@
 					},
 					"name": "Cloud Steps",
 					"entries": [
-						"Como acción, conjuras nubes para crear una escalera sólida y translúcida que dura hasta que termina tu concentración. La escalera forma una espiral que llena un área de 3 metros por 3 metros y se eleva 6 metros por punto de psi gastado."
+						"Como acción, conjuras nubes para crear una escalera sólida y translúcida que dura hasta que termina tu {@status concentration}. La escalera forma una espiral que llena un área de 3 metros por 3 metros y asciende 6 metros por cada punto de psi gastado. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1765,7 +1765,7 @@
 					},
 					"name": "Wall of Clouds",
 					"entries": [
-						"Como acción, creas un muro de nubes, del que al menos una parte debe estar a menos de 60 pies de ti. El muro tiene 60 pies de largo, 15 pies de alto y 1 pie de espesor. El muro dura hasta que termina tu concentración. Las criaturas pueden atravesarlo sin obstáculos, pero el muro bloquea la visión."
+						"Como acción, creas un muro de nubes, al menos una parte del cual debe estar a 60 pies de ti. El muro mide 60 pies de largo, 15 pies de alto y 1 pie de grosor. El muro dura hasta que termina tu {@status concentration}. Las criaturas pueden atravesarlo sin impedimentos, pero el muro bloquea la visión.s se reduce a 0 hasta que finaliza tu (%1%). Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1800,7 +1800,7 @@
 					},
 					"name": "Wall of Thunder",
 					"entries": [
-						"Como acción, creas un muro de truenos, al menos una parte del cual debe estar a 60 pies de ti. El muro tiene 60 pies de largo, 15 pies de alto y 1 pie de grosor. El muro dura hasta que termina tu concentración. Cada pie movido a través del muro cuesta 1 pie extra de movimiento. Cuando una criatura se mueve en el espacio del muro por primera vez en un turno o comienza su turno allí, esa criatura debe tener éxito en una tirada de salvación de Fuerza, o recibe {@damage 6d6} de daño por trueno, es empujada en línea recta hasta 30 pies de distancia del muro, y es derribada {@condition prone}."
+						"Como acción, creas un muro de truenos, al menos una parte del cual debe estar a 60 pies de ti. El muro mide 60 pies de largo, 15 pies de alto y 1 pie de grosor. El muro dura hasta que tu {@status concentration} termina. Cada pie movido a través del muro cuesta 1 pie extra de movimiento. Cuando una criatura se mueve en el espacio del muro por primera vez en un turno o comienza su turno allí, esa criatura debe tener éxito en una tirada de salvación de Fuerza, o recibe {@damage 6d6} de daño de trueno, es empujada en línea recta hasta 30 pies de distancia del muro, y es derribada {@condition prone}. termina. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1867,7 +1867,7 @@
 					},
 					"name": "Wall of Wood",
 					"entries": [
-						"Como acción, creas un muro de madera del que al menos una parte debe estar a menos de 60 pies de ti. El muro tiene 60 pies de largo, 15 pies de alto y 1 pie de grosor. El muro dura hasta que termina tu concentración. Cada sección de 5 pies de ancho del muro tiene CA 12 y 100 puntos de golpe. Romper una sección crea un agujero de 5 pies por 5 pies en ella, pero el muro por lo demás permanece intacto."
+						"Como acción, creas un muro de madera al menos una parte del cual debe estar a 60 pies de ti. El muro mide 60 pies de largo, 15 pies de alto y 1 pie de grosor. El muro dura hasta que termina tu {@status concentration}. Cada sección de 5 pies de ancho del muro tiene CA 12 y 100 puntos de golpe. Romper una sección crea un agujero de 5 pies por 5 pies en ella, pero por lo demás el muro permanece intacto.st tiene éxito en una tirada de salvación de Fuerza, o recibe (%1%) de daño de trueno, es empujado en línea recta hasta 30 pies de distancia del muro, y es derribado (%2%).) termina. Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1881,7 +1881,7 @@
 					},
 					"name": "Armored Form",
 					"entries": [
-						"Como acción adicional, obtienes resistencia al daño contundente, perforante y cortante, que dura hasta que finaliza tu concentración."
+						"Como acción adicional, obtienes resistencia al daño contundente, perforante y cortante, que dura hasta que finaliza tu {@status concentration}.gth tirada de salvación, o recibe (%1%) de daño de trueno, es empujado en línea recta hasta 30 pies de distancia de la pared, y es derribado (%2%).). Si la salvación tiene éxito, el objetivo recibe la mitad de daño.rapple.Manual para su bloque de estadísticas."
 					]
 				},
 				{
@@ -1895,7 +1895,7 @@
 					},
 					"name": "Animate Earth",
 					"entries": [
-						"Como acción, haces aparecer un elemental de tierra en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu concentración, y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el elemental desaparece. Consulta el Manual de Monstruos para ver su bloque de estadísticas."
+						"Como acción, haces aparecer un elemental de tierra en un espacio desocupado que puedas ver en un radio de 120 pies de ti. El elemental dura hasta que termina tu {@status concentration}, y obedece tus órdenes verbales. En combate, tira por su iniciativa y elige su comportamiento durante sus turnos. Cuando este efecto termina, el elemental desaparece. Consulta el Manual de monstruos para ver su bloque de estadísticas.s mucho daño.rapple.Manual para ver su bloque de estadísticas."
 					]
 				}
 			]
@@ -1992,7 +1992,7 @@
 					},
 					"name": "Faithful Archer",
 					"entries": [
-						"Como acción adicional, imbuyes un arma a distancia con una sensibilidad limitada. Hasta que termine tu concentración, puedes hacer un ataque extra con el arma al comienzo de cada uno de tus turnos (no requiere acción). Si se trata de un arma arrojadiza, vuelve a tu alcance cada vez que realizas un ataque con ella."
+						"Como acción adicional, imbuyes un arma a distancia con una sensibilidad limitada. Hasta que termine tu {@status concentration}, puedes realizar un ataque extra con el arma al inicio de cada uno de tus turnos (no requiere acción). Si es un arma arrojadiza, vuelve a tu alcance cada vez que realizas cualquier ataque con ella. desaparece. Consulta el Manual de monstruos para ver su bloque de estadísticas.s mucho daño.rapple.Manual para ver su bloque de estadísticas."
 					]
 				}
 			]
@@ -2029,7 +2029,7 @@
 					},
 					"name": "Step from Sight",
 					"entries": [
-						"Como acción adicional, te ocultas de la vista. Puedes apuntar a una criatura adicional por cada punto de psi adicional que gastes en esta habilidad. Los objetivos añadidos deben ser visibles para ti y estar a menos de 60 pies de ti. Cada objetivo se convierte en {@condition invisible} y permanece así hasta que tu concentración termine o hasta inmediatamente después de que apunte, dañe o afecte de otro modo a cualquier criatura con un ataque, un hechizo u otra habilidad."
+						"Como acción adicional, te ocultas de la vista. Puedes apuntar a una criatura adicional por cada punto de Psi adicional que gastes en esta habilidad. Los objetivos añadidos deben ser visibles para ti y estar a menos de 60 pies de ti. Cada objetivo se vuelve {@condition invisible} y permanece así hasta que tu {@status concentration} finaliza o hasta inmediatamente después de que haga objetivo, dañe o afecte de otro modo a cualquier criatura con un ataque, un hechizo u otra habilidad.onster Manual for its stat block.s much damage.rapple.Manual for its stat block."
 					]
 				},
 				{
@@ -2043,7 +2043,7 @@
 					},
 					"name": "Enduring Invisibility",
 					"entries": [
-						"Como acción adicional, te giras {@condition invisible} y permaneces así hasta que termina tu concentración."
+						"Como acción de bonificación, te giras {@condition invisible} y permaneces así hasta que tu {@status concentration} finalice.amagos, o afecta de otro modo a cualquier criatura con un ataque, un hechizo u otra habilidad.onster Manual for its stat block.s mucho daño.rapple.Manual for its stat block."
 					]
 				}
 			]
@@ -2070,7 +2070,7 @@
 					},
 					"name": "Wandering Mind",
 					"entries": [
-						"Entras en una profunda contemplación. Si te concentras durante toda la duración de esta opción, obtienes competencia en hasta tres de las siguientes habilidades (una habilidad por cada 2 puntos de psi gastados): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} y {@skill Survival}. El beneficio dura 1 hora, sin necesidad de concentración."
+						"Entras en una profunda contemplación. Si te concentras durante toda la duración de esta opción, obtienes competencia en hasta tres de las siguientes habilidades (una habilidad por cada 2 puntos psi gastados): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} y {@skill Survival}. El beneficio dura 1 hora, no se requiere {@status concentration}."
 					]
 				},
 				{
@@ -2122,7 +2122,7 @@
 					},
 					"name": "Wandering Eye",
 					"entries": [
-						"Como acción, creas un sensor psíquico en un radio de 60 pies de ti. El sensor dura hasta que termina tu concentración. El sensor es invisible y flota en el aire. Recibes mentalmente información visual de él, que tiene visión normal y visión oscura con un alcance de 60 pies. El sensor puede mirar en todas direcciones. Como acción, puedes mover el sensor hasta 9 metros en cualquier dirección. No hay límite a la distancia que el ojo puede alejarse de ti, pero no puede entrar en otro plano de existencia. Una barrera sólida bloquea el movimiento del ojo, pero éste puede atravesar una abertura de tan sólo 2,5 cm de diámetro."
+						"Como acción, creas un sensor psíquico en un radio de 60 pies de ti. El sensor dura hasta que termina tu {@status concentration}. El sensor es invisible y flota en el aire. Recibes mentalmente información visual de él, que tiene visión normal y visión oscura con un alcance de 60 pies. El sensor puede mirar en todas direcciones. Como acción, puedes mover el sensor hasta 30 pies en cualquier dirección. No hay límite a la distancia que el ojo puede alejarse de ti, pero no puede entrar en otro plano de existencia. Una barrera sólida bloquea el movimiento del ojo, pero éste puede atravesar una abertura de tan sólo 2,5 cm de diámetro."
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					},
 					"name": "Nomad's Gate",
 					"entries": [
-						"Como acción, creas un cubo de 5 pies de luz tenue y gris a 5 pies de ti. Creas un cubo idéntico en cualquier punto de tu elección dentro de 1 milla que hayas visto en las últimas 24 horas. Hasta que tu concentración termine, cualquiera que entre en uno de los cubos se teletransporta inmediatamente al otro, apareciendo en un espacio desocupado junto a él. El teletransporte falla si no hay espacio en el que pueda aparecer la criatura."
+						"Como acción, creas un cubo de 5 pies de luz tenue y gris a 5 pies de ti. Creas un cubo idéntico en cualquier punto de tu elección en un radio de 1 milla que hayas visto en las últimas 24 horas. Hasta que termine tu {@status concentration}, cualquiera que entre en uno de los cubos se teletransporta inmediatamente al otro, apareciendo en un espacio desocupado junto a él. El teletransporte falla si no hay espacio en el que pueda aparecer la criatura. No hay límite para la distancia a la que puede alejarse el ojo, pero no puede entrar en otro plano de existencia. Una barrera sólida bloquea el movimiento del ojo, pero éste puede atravesar una abertura de tan sólo 2,5 cm de diámetro."
 					]
 				}
 			]
@@ -2260,7 +2260,7 @@
 					},
 					"name": "Precognitive Hunch",
 					"entries": [
-						"Como acción de bonificación, te abres a recibir percepciones momentáneas que mejoran tus probabilidades de éxito; hasta que tu concentración termine, siempre que hagas una tirada de ataque, una tirada de salvación o un chequeo de habilidad, tiras un {@dice d4} y lo sumas al total."
+						"Como acción adicional, te abres a recibir percepciones momentáneas que mejoran tus probabilidades de éxito; hasta que termine tu {@status concentration}, siempre que hagas una tirada de ataque, una tirada de salvación o un chequeo de habilidad, tiras un {@dice d4} y lo sumas al total. espacio para que aparezca la criatura. No hay límite para la distancia a la que puede alejarse el ojo, pero no puede entrar en otro plano de existencia. Una barrera sólida bloquea el movimiento del ojo, pero éste puede atravesar una abertura de tan sólo 2,5 cm de diámetro."
 					]
 				},
 				{
@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"Como acción, creas un modelo psíquico de la realidad en tu mente y lo configuras para que te muestre unos segundos en el futuro. Hasta que tu concentración termine, no puedes ser {@quickref Surprise|PHB|3|0|surprised}, las tiradas de ataque contra ti no pueden obtener ventaja y ganas un bono de +10 a la iniciativa."
+						"Como acción, creas un modelo psíquico de la realidad en tu mente y lo configuras para que te muestre unos segundos en el futuro. Hasta que termine tu {@status concentration}, no puedes ser {@quickref Surprise|PHB|3|0|surprised}, las tiradas de ataque contra ti no pueden obtener ventaja y obtienes un bonificador +10 a la iniciativa. te el ojo puede moverse, pero no puede entrar en otro plano de existencia. Una barrera sólida bloquea el movimiento del ojo, pero éste puede atravesar una abertura de tan sólo 2,5 cm de diámetro."
 					]
 				},
 				{
@@ -2394,7 +2394,7 @@
 					},
 					"name": "Augmented Weapon",
 					"entries": [
-						"Como acción adicional, toca una {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Hasta que termine tu concentración, esa arma se convierte en un arma mágica con un bono de +3 a sus tiradas de ataque y daño."
+						"Como acción de bonificación, toca un {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Hasta que termine tu {@status concentration}, esa arma se convierte en un arma mágica con un bonificador +3 a sus tiradas de ataque y daño. de existencia. Una barrera sólida bloquea el movimiento del ojo, pero éste puede atravesar una abertura de tan sólo 2,5 cm de diámetro."
 					]
 				}
 			]
@@ -2484,7 +2484,7 @@
 					},
 					"name": "Distracting Haze",
 					"entries": [
-						"Como acción, elige una criatura que puedas ver en un radio de 60 pies de ti. Esa criatura debe hacer una tirada de salvación de Inteligencia. Si fallas la tirada de salvación, recibe {@scaledamage 1d10|1-7|1d10|psi} de daño psíquico por punto de psi gastado y no puede ver nada a más de 10 pies de distancia hasta que termine tu concentración. Si la salvación tiene éxito, recibe la mitad de daño."
+						"Como acción, elige una criatura que puedas ver en un radio de 60 pies. Esa criatura debe realizar una tirada de salvación de Inteligencia. Si falla, recibe {@scaledamage 1d10|1-7|1d10|psi} de daño psíquico por punto de psi gastado y no puede ver nada que esté a más de 10 pies de ella hasta que termine tu {@status concentration}. Con una salvación exitosa, recibe la mitad de daño."
 					]
 				},
 				{
@@ -2612,7 +2612,7 @@
 					},
 					"name": "Phantom Foe",
 					"entries": [
-						"Como acción, elige una criatura que puedas ver en un radio de 60 pies. El objetivo debe realizar una tirada de salvación de Inteligencia. Si falla la tirada de salvación, percibe una criatura horrenda adyacente a él hasta que termine tu concentración. Durante este tiempo, el objetivo no puede realizar reacciones, y recibe {@damage 1d8} de daño psíquico al comienzo de cada uno de sus turnos. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito. Puedes aumentar el daño en {@scaledamage 1d8|3-7|1d8|psi} por cada punto de psi adicional gastado en la habilidad."
+						"Como acción, elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe realizar una tirada de salvación de Inteligencia. En una salvación fallida, percibe una criatura horrenda adyacente a él hasta que su {@status concentration} termina. Durante este tiempo, el objetivo no puede realizar reacciones, y recibe {@damage 1d8} de daño psíquico al comienzo de cada uno de sus turnos. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito. Puedes aumentar el daño en un {@scaledamage 1d8|3-7|1d8|psi} por cada punto psi adicional gastado en la habilidad.h daño."
 					]
 				},
 				{
@@ -2626,7 +2626,7 @@
 					},
 					"name": "Phantom Betrayal",
 					"entries": [
-						"Como acción, plantas una paranoia delirante en la mente de una criatura. Elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Inteligencia, o hasta que tu concentración termine, debe apuntar a sus aliados con ataques y otros efectos dañinos. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito. Una criatura es inmune a esta habilidad si es inmune a ser {@condition charmed}."
+						"Como acción, siembras paranoia delirante en la mente de una criatura. Elige una criatura que puedas ver en un radio de 60 pies. El objetivo debe tener éxito en una tirada de salvación de Inteligencia, o hasta que termine tu {@status concentration}, debe apuntar a sus aliados con ataques y otros efectos dañinos. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito. Una criatura es inmune a esta habilidad si es inmune a ser {@condition charmed}. cada uno de sus turnos, finalizando el efecto sobre sí misma con un éxito. Puedes aumentar el daño en un (%2%) por cada punto psi adicional gastado en la habilidad.h daño."
 					]
 				},
 				{
@@ -2640,7 +2640,7 @@
 					},
 					"name": "Phantom Riches",
 					"entries": [
-						"Como acción, plantas el fantasma de un objeto muy deseado en la mente de una criatura. Elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe realizar una tirada de salvación de Inteligencia. Si fallas la tirada de salvación, obtienes un control parcial sobre el comportamiento del objetivo hasta que termine tu concentración; el objetivo se mueve como tú quieras en cada uno de sus turnos, mientras cree que persigue el objeto fantasma que desea. Si no ha recibido daño desde su último turno, puede utilizar su acción sólo para admirar el objeto que has creado en su percepción. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito."
+						"Como acción, plantas el fantasma de un objeto muy deseado en la mente de una criatura. Elige una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe realizar una tirada de salvación de Inteligencia. Si fallas la tirada de salvación, obtienes control parcial sobre el comportamiento del objetivo hasta que termine tu {@status concentration}; el objetivo se mueve como desees en cada uno de sus turnos, mientras piensa que persigue el objeto fantasma que desea. Si no ha recibido daño desde su último turno, puede usar su acción sólo para admirar el objeto que creaste en su percepción. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito. Una criatura es inmune a esta habilidad si es inmune a ser (%1%). cada uno de sus turnos, finalizando el efecto sobre sí misma con un éxito. Puedes aumentar el daño en un (%2%) por cada punto psi adicional gastado en la habilidad.h daño."
 					]
 				}
 			]
@@ -2697,7 +2697,7 @@
 					},
 					"name": "Psychic Grip",
 					"entries": [
-						"Como acción, apuntas a una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Inteligencia, o queda {@condition paralyzed} hasta que termine tu concentración. Al final de cada uno de sus turnos, puede repetir la tirada de salvación. Si tiene éxito, este efecto termina. Si fallas, puedes usar tu reacción para obligar al objetivo a moverse hasta la mitad de su velocidad, aunque sea {@condition paralyzed}."
+						"Como acción, eliges como objetivo a una criatura que puedas ver en un radio de 60 pies. El objetivo debe tener éxito en una tirada de salvación de Inteligencia, o queda {@condition paralyzed} hasta que termine tu {@status concentration}. Al final de cada uno de sus turnos, puede repetir la tirada de salvación. Si tiene éxito, este efecto termina. En caso de fallo, puedes usar tu reacción para obligar al objetivo a moverse hasta la mitad de su velocidad, aunque sea {@condition paralyzed}.El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en caso de éxito. Una criatura es inmune a esta habilidad si es inmune a ser {@status concentration}. cada uno de sus turnos, finalizando el efecto sobre sí misma con un éxito. Puedes aumentar el daño en un {@condition paralyzed} por cada punto psi adicional gastado en la habilidad.h daño."
 					]
 				},
 				{
@@ -2711,7 +2711,7 @@
 					},
 					"name": "Psychic Domination",
 					"entries": [
-						"Como acción, apuntas a una criatura que puedas ver en un radio de 60 pies de ti. El objetivo debe tener éxito en una tirada de salvación de Inteligencia, o tú eliges las acciones y el movimiento de la criatura en sus turnos hasta que tu concentración termine. Al final de cada uno de sus turnos, puede repetir la tirada de salvación, terminando el efecto sobre sí mismo en caso de éxito. Una criatura es inmune a esta habilidad si es inmune a ser {@condition charmed}."
+						"Como acción, eliges como objetivo a una criatura que puedas ver en un radio de 60 pies. El objetivo debe tener éxito en una tirada de salvación de Inteligencia, o eliges las acciones y el movimiento de la criatura en sus turnos hasta que termine tu {@status concentration}. Al final de cada uno de sus turnos, puede repetir la tirada de salvación, terminando el efecto sobre sí misma en caso de éxito. Una criatura es inmune a esta habilidad si es inmune a ser {@condition charmed}.finalizando el efecto sobre sí misma con éxito. Una criatura es inmune a esta habilidad si es inmune a ser {@condition charmed}. cada uno de sus turnos, finalizando el efecto sobre sí misma con un éxito. Puedes aumentar el daño en un (%2%) por cada punto psi adicional gastado en la habilidad.h daño."
 					]
 				}
 			]
@@ -2738,7 +2738,7 @@
 					},
 					"name": "Tremorsense",
 					"entries": [
-						"Como acción de bonificación, obtienes sentido del temblor con un radio de 30 pies, que dura hasta que tu concentración termine."
+						"Como acción adicional, obtienes sentido del temblor con un radio de 30 pies, que dura hasta que tu {@status concentration} termina.e es inmune a esta habilidad si es inmune a ser (%1%). cada uno de sus turnos, terminando el efecto sobre sí mismo con un éxito. Puedes aumentar el daño en un (%2%) por cada punto psi adicional gastado en la habilidad.h daño."
 					]
 				},
 				{
@@ -2762,7 +2762,7 @@
 					},
 					"name": "Piercing Sight",
 					"entries": [
-						"Como acción de bonificación, obtienes la capacidad de ver a través de objetos de hasta 1 pie de grosor en un radio de 30 pies de ti. Esta visión dura hasta que termina tu concentración."
+						"Como acción adicional, obtienes la habilidad de ver a través de objetos de hasta 1 pie de grosor en un radio de 30 pies de ti. Esta visión dura hasta que tu {@status concentration} termina.ty.h daño."
 					]
 				},
 				{
@@ -2776,7 +2776,7 @@
 					},
 					"name": "Truesight",
 					"entries": [
-						"Como acción de bonificación, obtienes una visión verdadera con un radio de 30 pies, que dura hasta que termina tu concentración."
+						"Como acción adicional, obtienes visión verdadera con un radio de 30 pies, que dura hasta que finaliza tu {@status concentration}."
 					]
 				}
 			]

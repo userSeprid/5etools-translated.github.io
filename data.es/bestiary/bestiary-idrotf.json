@@ -576,7 +576,7 @@
 				{
 					"name": "Blizzard Veil",
 					"entries": [
-						"Auril crea una ventisca mágica en una esfera de 30 pies de radio centrada en ella misma. El área dentro de la esfera está muy oscurecida, y la esfera se mueve con Auril. El efecto dura hasta que Auril baja a 0 puntos de vida en esta forma, hasta que elige terminar el efecto (no requiere acción), o hasta que su concentración se rompe (como si se concentrara en un hechizo)."
+						"Auril crea una ventisca mágica en una esfera de 9 metros de radio centrada en sí misma. El área dentro de la esfera queda muy oscurecida y la esfera se mueve con Auril. El efecto dura hasta que Auril desciende a 0 puntos de golpe en esta forma, hasta que elige terminar el efecto (no requiere acción), o hasta que su {@status concentration} se rompe (como si {@status concentration||concentrating} en un hechizo)."
 					]
 				}
 			],
@@ -632,6 +632,7 @@
 		{
 			"name": "Avarice",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 269,
 			"size": [
@@ -1713,6 +1714,7 @@
 		{
 			"name": "Dzaan's Simulacrum",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 270,
 			"size": [
@@ -4211,6 +4213,7 @@
 		{
 			"name": "Kingsport",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 243,
 			"size": [
@@ -4958,6 +4961,7 @@
 		{
 			"name": "Nass Lantomir's Ghost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 272,
 			"size": [
@@ -5140,6 +5144,7 @@
 		{
 			"name": "Prisoner 237",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 160,
 			"size": [
@@ -5740,6 +5745,7 @@
 		{
 			"name": "Spellix Romwod",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 144,
 			"size": [
@@ -6323,6 +6329,7 @@
 		{
 			"name": "Vellynne Harpell",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 273,
 			"size": [
@@ -6876,7 +6883,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Xardorok se convierte mágicamente en {@condition invisible} hasta que ataca, lanza un hechizo, utiliza su Agrandar o se rompe su concentración (como si se concentrara en un hechizo). Todo el equipo que Xardorok lleva o usa es {@condition invisible} con él."
+						"Xardorok se vuelve mágicamente {@condition invisible} hasta que ataca, lanza un hechizo, usa su Agrandar, o su {@status concentration} se rompe (como si {@status concentration||concentrating} en un hechizo). Cualquier equipo que Xardorok lleve o porte se {@condition invisible} con él."
 					]
 				}
 			],

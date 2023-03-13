@@ -33,7 +33,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"Algunos objetos mágicos permiten al usuario lanzar un hechizo desde el objeto, a menudo gastando cargas del mismo. El hechizo se lanza al nivel de hechizo y de lanzador más bajo posible, no gasta ninguna de las ranuras de hechizo del usuario y no requiere componentes a menos que la descripción del objeto diga lo contrario. El hechizo utiliza su tiempo de lanzamiento, alcance y duración normales, y el usuario del objeto debe concentrarse si el hechizo requiere concentración. Algunos objetos hacen excepciones a estas reglas, cambiando el tiempo de lanzamiento, la duración u otras partes del hechizo.",
+						"Algunos objetos mágicos permiten al usuario lanzar un hechizo desde el objeto, a menudo gastando cargas del mismo. El hechizo se lanza al nivel de hechizo y de lanzador más bajo posible, no gasta ninguna de las ranuras de hechizo del usuario y no requiere componentes a menos que la descripción del objeto diga lo contrario. El hechizo utiliza su tiempo de lanzamiento, alcance y duración normales, y el usuario del objeto debe concentrarse si el hechizo lo requiere {@status concentration}. Ciertos objetos hacen excepciones a estas reglas, cambiando el tiempo de lanzamiento, la duración u otras partes de un hechizo.",
 						"Muchos objetos, como las pociones, evitan el lanzamiento del hechizo y confieren sus efectos. Estos objetos siguen utilizando la duración del hechizo a menos que la descripción del objeto diga lo contrario.",
 						"Un objeto mágico, como ciertos báculos, puede requerir que uses tu propia habilidad de lanzamiento de hechizos cuando lanzas un hechizo desde el objeto. Si tienes más de una habilidad de lanzamiento de hechizos, eliges cuál usar con el objeto. Si no tienes una habilidad de lanzamiento de conjuros -tal vez seas un pícaro con la característica de Usar Dispositivo Mágico- tu modificador de habilidad de lanzamiento de conjuros es +0 para el objeto, y tu bonificador de competencia sí se aplica."
 					]
@@ -197,7 +197,7 @@
 				"Free"
 			],
 			"entries": [
-				"Si un hechizo debe mantenerse con concentración, ese hecho aparece en su entrada de Duración, y el hechizo especifica cuánto tiempo puedes concentrarte en él. Puedes terminar la concentración en cualquier momento (no se requiere ninguna acción)."
+				"Si un hechizo debe mantenerse con {@status concentration}, ese hecho aparece en su entrada Duración, y el hechizo especifica cuánto tiempo puedes concentrarte en él. Puedes terminar {@status concentration} en cualquier momento (no requiere acción).st concentrarse si el hechizo requiere {@status concentration}. Ciertos objetos hacen excepciones a estas reglas, cambiando el tiempo de lanzamiento, la duración u otras partes de un hechizo."
 			]
 		},
 		{
@@ -448,7 +448,7 @@
 				"A veces quieres adelantarte a un enemigo o esperar a una circunstancia concreta antes de actuar. Para ello, puedes realizar la acción Preparado en tu turno, que te permite actuar utilizando tu reacción antes del comienzo de tu siguiente turno.",
 				"Primero, decides qué circunstancia perceptible desencadenará tu reacción. Luego, eliges la acción que realizarás en respuesta a ese desencadenante, o eliges moverte a tu velocidad en respuesta a él. Algunos ejemplos son: \"Si el cultista pisa la trampilla, tiraré de la palanca que la abre\" y \"Si el duende se pone a mi lado, me alejo\".",
 				"Cuando se produce el disparo, puedes tomar tu reacción justo después de que termine el disparo o ignorar el disparo. Recuerda que sólo puedes tomar una reacción por ronda.",
-				"Cuando preparas un hechizo, lo lanzas de forma normal pero mantienes su energía, que liberas con tu reacción cuando se produce el disparo. Para ser preparado, un hechizo debe tener un tiempo de lanzamiento de 1 acción, y mantener la magia del hechizo requiere concentración (explicada en {@book chapter 10|phb|10|concentration}). Si tu concentración se rompe, el hechizo se disipa sin hacer efecto. Por ejemplo, si estás concentrado en el hechizo de telaraña y preparas misil mágico, tu hechizo de telaraña termina, y si recibes daño antes de soltar misil mágico con tu reacción, tu concentración podría romperse.",
+				"Cuando preparas un hechizo, lo lanzas de forma normal pero retienes su energía, que liberas con tu reacción cuando se produce el desencadenamiento. Para ser preparado, un hechizo debe tener un tiempo de lanzamiento de 1 acción, y retener la magia del hechizo requiere {@status concentration} (explicado en {@book chapter 10|phb|10|concentration}). Si su {@status concentration} se rompe, el hechizo se disipa sin hacer efecto. Por ejemplo, si estás {@status concentration||concentrating} en el hechizo de telaraña y preparas misil mágico, tu hechizo de telaraña termina, y si recibes daño antes de soltar misil mágico con tu reacción, tu {@status concentration} podría romperse.l tiempo de lanzamiento, la duración u otras partes de un hechizo.",
 				"Tienes hasta el inicio de tu siguiente turno para usar una acción preparada."
 			]
 		},

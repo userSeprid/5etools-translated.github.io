@@ -580,18 +580,18 @@
 			"srd": true,
 			"basicRules": true,
 			"entries": [
-				"Algunos hechizos requieren que mantengas la concentración para mantener su magia activa. Si pierdes la concentración, dicho hechizo termina.",
-				"Si un hechizo debe mantenerse con concentración, ese hecho aparece en su entrada de Duración, y el hechizo especifica cuánto tiempo puedes concentrarte en él. Puedes terminar la concentración en cualquier momento (no se requiere ninguna acción).",
-				"La actividad normal, como moverse y atacar, no interfiere con la concentración. Los siguientes factores pueden romper la concentración:",
+				"Algunos hechizos requieren que mantengas {@status concentration} para mantener su magia activa. Si pierdes {@status concentration}, dicho hechizo termina.",
+				"Si un hechizo debe mantenerse con {@status concentration}, ese hecho aparece en su entrada Duración, y el hechizo especifica cuánto tiempo puedes concentrarte en él. Puedes terminar {@status concentration} en cualquier momento (no requiere ninguna acción).",
+				"La actividad normal, como moverse y atacar, no interfiere {@status concentration}. Los siguientes factores pueden romper el {@status concentration}:",
 				{
 					"type": "list",
 					"items": [
-						"{@b Casting another spell that requires concentration.} Pierdes la concentración en un hechizo si lanzas otro que requiera concentración. No puedes concentrarte en dos hechizos a la vez.",
-						"{@b Taking damage.} Siempre que recibas daño mientras estás concentrado en un hechizo, debes hacer una tirada de salvación de Constitución para mantener tu concentración. La tirada de salvación es igual a 10 o a la mitad del daño que recibas, lo que sea mayor. Si recibes daño de varias fuentes, como una flecha y un aliento de dragón, haces una tirada de salvación distinta por cada fuente de daño.",
-						"{@b Being incapacitated or killed.} Pierdes la concentración en un hechizo si eres {@condition incapacitated} o si mueres."
+						"{@b Casting another spell that requires concentration.} Pierdes {@status concentration} en un hechizo si lanzas otro hechizo que requiera {@status concentration}. No puedes concentrarte en dos hechizos a la vez.",
+						"{@b Taking damage.} Siempre que recibas daño mientras estás {@status concentration||concentrating} en un hechizo, debes hacer una tirada de salvación de Constitución para mantener tu {@status concentration}. La tirada de salvación es igual a 10 o la mitad del daño recibido, lo que sea mayor. Si recibes daño de múltiples fuentes, como una flecha y el aliento de un dragón, haces una tirada de salvación separada por cada fuente de daño.",
+						"{@b Being incapacitated or killed.} Pierdes {@status concentration} en un hechizo si eres {@condition incapacitated} o si mueres."
 					]
 				},
-				"El DM también puede decidir que ciertos fenómenos ambientales, como una ola que se desploma sobre ti mientras estás en un barco azotado por la tormenta, requieren que tengas éxito en una tirada de salvación de Constitución DC 10 para mantener la concentración en un hechizo."
+				"El DM también puede decidir que ciertos fenómenos ambientales, como una ola rompiendo sobre ti mientras estás en un barco azotado por una tormenta, requieren que tengas éxito en una tirada de salvación de Constitución DC 10 para mantener {@status concentration} en un hechizo."
 			]
 		}
 	]

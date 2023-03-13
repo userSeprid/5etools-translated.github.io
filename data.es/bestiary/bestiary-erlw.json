@@ -598,6 +598,7 @@
 		{
 			"name": "Corrin Delmaco",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 271,
 			"_copy": {
@@ -1341,6 +1342,7 @@
 		{
 			"name": "Garra",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 272,
 			"_copy": {
@@ -2763,7 +2765,7 @@
 					"name": "Spell Mimicry {@recharge 5}",
 					"entries": [
 						"El hechizo vivir crea una esfera de niebla de 40 pies de diámetro en un radio de 60 pies (la niebla se extiende por las esquinas). Cuando una criatura entra en la niebla por primera vez en un turno o comienza su turno en ella, debe hacer una tirada de salvación de Constitución {@dc 16}, recibiendo 22 ({@damage 5d8}) de daño por veneno si falla la tirada de salvación, o la mitad de daño si tiene éxito.",
-						"La niebla se aleja 3 metros del hechizo viviente al comienzo de cada uno de sus turnos, rodando por el suelo y a través de aberturas. La niebla dura 10 minutos o hasta que termina la concentración del hechizo viviente (como si se concentrara en un hechizo)."
+						"La niebla se aleja 3 metros del hechizo viviente al inicio de cada uno de sus turnos, rodando por el suelo y a través de aberturas. La niebla dura 10 minutos o hasta que finaliza el {@status concentration} del hechizo viviente (como si se tratara del {@status concentration||concentrating} de un hechizo)."
 					]
 				}
 			],
@@ -3787,7 +3789,7 @@
 				{
 					"name": "Master of Magic",
 					"entries": [
-						"Sul Khatesh tiene ventaja en las tiradas de salvación de Constitución para mantener la concentración."
+						"Sul Khatesh tiene ventaja en las tiradas de salvación de Constitución para mantenerse {@status concentration}."
 					]
 				}
 			],
@@ -3834,7 +3836,7 @@
 				{
 					"name": "Consume Magic (Costs 2 Actions)",
 					"entries": [
-						"Sul Khatesh tiene como objetivo una criatura en un radio de 120 pies que se esté concentrando en un hechizo. El objetivo debe tener éxito en una tirada de salvación de Constitución {@dc 26} o su concentración se rompe en el hechizo, y Sul Khatesh gana 5 puntos de golpe temporales por nivel de ese hechizo."
+						"Sul Khatesh tiene como objetivo a una criatura en un radio de 120 pies que esté {@status concentration||concentrating} hechizada. El objetivo debe tener éxito en una tirada de salvación de Constitución del {@dc 26} o se rompe su {@status concentration} en el hechizo, y Sul Khatesh gana 5 puntos de golpe temporales por nivel de ese hechizo."
 					]
 				},
 				{

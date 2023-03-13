@@ -1654,7 +1654,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Si lanzas este hechizo utilizando una ranura de hechizo de 4º nivel o superior, la duración es de concentración, hasta 10 minutos. Si utilizas una ranura de hechizo de 5º nivel o superior, la duración es de 8 horas. Si utilizas una ranura de hechizo de 7º nivel o superior, la duración es de 24 horas. Si utilizas una ranura de hechizo de 9º nivel, el hechizo dura hasta que se disipa. El uso de una ranura de hechizo de 5º nivel o superior otorga una duración que no requiere concentración."
+						"Si lanzas este hechizo utilizando una ranura de hechizo de 4º nivel o superior, la duración es de {@status concentration}, hasta 10 minutos. Si utilizas una ranura de hechizo de 5º nivel o superior, la duración es de 8 horas. Si utilizas una casilla de hechizo de 7º nivel o superior, la duración es de 24 horas. Si utilizas un espacio de 9º nivel, el hechizo dura hasta que es disipado. Usar un espacio de 5º nivel o superior otorga una duración que no requiere {@status concentration}."
 					]
 				}
 			],
@@ -3666,7 +3666,7 @@
 			"entries": [
 				"Invocas a un sirviente elemental. Elige un área de aire, tierra, fuego o agua que llene un cubo de 3 metros dentro del alcance. Un {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} apropiado para el área que elegiste aparece en un espacio desocupado dentro de los 10 pies de distancia. Por ejemplo, un {@creature fire elemental} emerge de una hoguera, y un {@creature earth elemental} se levanta del suelo. El elemental desaparece cuando baja a 0 puntos de vida o cuando el hechizo termina.",
 				"El elemental es amigo tuyo y de tus compañeros mientras dure. Tira la iniciativa para el elemental, que tiene sus propios turnos. Obedece las órdenes verbales que le des (no requiere ninguna acción por tu parte). Si no le das ninguna orden, el elemental se defiende de las criaturas hostiles, pero no realiza ninguna otra acción.",
-				"Si tu concentración se rompe, el elemental no desaparece. En cambio, pierdes el control del elemental, se vuelve hostil hacia ti y tus compañeros, y puede atacar. Un elemental incontrolado no puede ser rechazado por ti, y desaparece 1 hora después de que lo hayas invocado.",
+				"Si tu {@status concentration} se rompe, el elemental no desaparece. En cambio, pierdes el control del elemental, se vuelve hostil hacia ti y tus compañeros, y puede atacar. Un elemental no controlado no puede ser rechazado por ti, y desaparece 1 hora después de que lo invocaras.. El uso de una ranura de conjuro de 5º nivel o superior otorga una duración que no requiere (%1%).",
 				"El DM tiene las estadísticas del elemental."
 			],
 			"entriesHigherLevel": [
@@ -3719,7 +3719,7 @@
 			"entries": [
 				"Invocas un {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, o un espíritu feérico que toma la forma de un {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. Aparece en un espacio desocupado que puedas ver dentro del alcance. La criatura feérica desaparece cuando baja a 0 puntos de golpe o cuando el hechizo termina.",
 				"La criatura feérica es amistosa contigo y con tus compañeros mientras dure. Tira la iniciativa por la criatura, que tiene sus propios turnos. Obedece cualquier orden verbal que le des (no requiere ninguna acción por tu parte), siempre que no infrinja su alineamiento. Si no le das ninguna orden a la criatura feérica, se defiende de las criaturas hostiles, pero no realiza ninguna otra acción.",
-				"Si tu concentración se rompe, la criatura feérica no desaparece. En cambio, pierdes el control de la criatura feérica, se vuelve hostil hacia ti y tus compañeros, y puede atacar. Una criatura feérica no controlada no puede ser rechazada por ti, y desaparece 1 hora después de haberla invocado.",
+				"Si tu {@status concentration} se rompe, la criatura feérica no desaparece. En cambio, pierdes el control de la criatura feérica, se vuelve hostil hacia ti y tus compañeros y puede atacar. Una criatura feérica no controlada no puede ser rechazada por ti y desaparece 1 hora después de que la invocaras.h nivel o superior otorga una duración que no requiere (%1%).",
 				"El DM tiene las estadísticas de la criatura feérica."
 			],
 			"entriesHigherLevel": [
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"Un rayo de luz amarilla brota de tu dedo y se condensa para permanecer en un punto elegido dentro del alcance como una cuenta brillante mientras dure el hechizo. Cuando el hechizo termina, ya sea porque tu concentración se rompe o porque decides ponerle fin, la cuenta florece con un rugido bajo en una explosión de llamas que se extiende por las esquinas. Cada criatura en una esfera de 20 pies de radio centrada en ese punto debe hacer una tirada de salvación de Destreza. La criatura recibe un daño por fuego igual al daño total acumulado si falla la tirada de salvación, o la mitad de daño si tiene éxito.",
+				"Un rayo de luz amarilla parpadea desde el dedo que apuntas y luego se condensa para permanecer en un punto elegido dentro del alcance como una perla incandescente mientras dure el hechizo. Cuando el hechizo termina, ya sea porque tu {@status concentration} se rompe o porque decides ponerle fin, la cuenta se convierte con un rugido grave en una explosión de llamas que se extiende por las esquinas. Cada criatura en una esfera de 20 pies de radio centrada en ese punto debe hacer una tirada de salvación de Destreza. Una criatura recibe daño de fuego igual al daño total acumulado en una salvación fallida, o la mitad de daño en una exitosa.ants una duración que no requiere (%1%).",
 				"El daño base del hechizo es de {@damage 12d6}. Si al final de tu turno el abalorio aún no ha detonado, el daño aumenta un {@dice 1d6}.",
 				"Si se toca el abalorio brillante antes de que haya transcurrido el intervalo, la criatura que lo toque debe hacer una tirada de salvación de Destreza. Si se falla la tirada de salvación, el hechizo termina inmediatamente, haciendo que el abalorio estalle en llamas. Si la salvación es satisfactoria, la criatura puede lanzar el cordón hasta 40 pies. Cuando golpea a una criatura o a un objeto sólido, el hechizo termina y el abalorio explota.",
 				"El fuego daña los objetos que se encuentran en la zona y enciende los objetos inflamables que no se llevan puestos ni se transportan."
@@ -5906,7 +5906,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este hechizo con una ranura de hechizo de 5º nivel, la duración es de concentración, hasta 10 minutos. Cuando utilizas una ranura de hechizo de 6º nivel, la duración es de concentración, hasta 1 hora. Cuando utilizas una ranura de hechizo de 7º nivel o superior, la duración es de concentración, hasta 8 horas."
+						"Cuando lanzas este conjuro con una ranura de conjuro de 5º nivel, la duración es de {@status concentration}, hasta 10 minutos. Cuando utilizas una ranura de conjuro de 6º nivel, la duración es de {@status concentration}, hasta 1 hora. Cuando usas una ranura de conjuro de 7º nivel o superior, la duración es de {@status concentration}, hasta 8 horas.La esfera adius centrada en ese punto debe hacer una tirada de salvación de Destreza. Una criatura recibe daño de fuego igual al daño total acumulado en una salvación fallida, o la mitad de daño en una exitosa.ants una duración que no requiere {@status concentration}."
 					]
 				}
 			],
@@ -5972,7 +5972,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este hechizo con una ranura de hechizo de 9º nivel, la duración es de concentración, hasta 8 horas."
+						"Cuando lanzas este hechizo con una ranura de hechizo de 9º nivel, la duración es de {@status concentration}, hasta 8 horas. Una criatura recibe daño de fuego igual al daño total acumulado en una salvación fallida, o la mitad de daño en una exitosa.ants una duración que no requiere (%1%)."
 					]
 				}
 			],
@@ -6035,7 +6035,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este hechizo usando una ranura de hechizo de 6º nivel, la duración es de concentración, hasta 10 minutos. Cuando utilizas una ranura de hechizo de 7º nivel, la duración es de concentración, hasta 1 hora. Cuando utilizas una ranura de hechizo de 8º nivel o superior, la duración es de concentración, hasta 8 horas."
+						"Cuando lanzas este hechizo utilizando una ranura de hechizo de 6º nivel, la duración es de {@status concentration}, hasta 10 minutos. Cuando utilizas una casilla de hechizo de 7º nivel, la duración es de {@status concentration}, hasta 1 hora. Cuando utilizas una ranura de hechizo de 8º nivel o superior, la duración es de {@status concentration}, hasta 8 horas."
 					]
 				}
 			],
@@ -6230,8 +6230,8 @@
 			],
 			"entries": [
 				"Creas una perturbación sísmica en un punto del suelo que puedas ver dentro del alcance. Mientras dure, un intenso temblor recorre el suelo en un círculo de 30 metros de radio centrado en ese punto y sacude a las criaturas y estructuras en contacto con el suelo en esa zona.",
-				"El suelo del área se convierte en {@quickref difficult terrain||3}. Cada criatura en el suelo que se esté concentrando debe hacer una tirada de salvación de Constitución. Si falla la tirada de salvación, la concentración de la criatura se rompe.",
-				"Cuando lanzas este hechizo y al final de cada turno que pasas concentrado en él, cada criatura en el suelo del área debe hacer una tirada de salvación de Destreza. Si falla la tirada de salvación, la criatura es derribada {@condition prone}.",
+				"El suelo de la zona se convierte en {@quickref difficult terrain||3}. Cada criatura en el suelo que sea {@status concentration||concentrating} debe realizar una tirada de salvación de Constitución. Si falla la tirada de salvación, el {@status concentration} de la criatura se rompe.",
+				"Cuando lanzas este hechizo y al final de cada turno que gastes {@status concentration||concentrating} en él, cada criatura en el suelo en el área debe hacer una tirada de salvación de Destreza. Si falla, la criatura es derribada {@condition prone}.",
 				"Este hechizo puede tener efectos adicionales dependiendo del terreno de la zona, según determine el DM.",
 				{
 					"type": "entries",
@@ -7903,7 +7903,7 @@
 				"Intentas convertir en piedra a una criatura que puedas ver dentro de tu alcance. Si el cuerpo del objetivo es de carne, la criatura debe hacer una tirada de salvación de Constitución. Si fallas la tirada de salvación, su carne comienza a endurecerse {@condition restrained}. Si la salvación tiene éxito, la criatura no se ve afectada.",
 				"Una criatura {@condition restrained} por este hechizo debe hacer otra tirada de salvación de Constitución al final de cada uno de sus turnos. Si se salva con éxito de este hechizo tres veces, el hechizo termina. Si falla sus salvaciones tres veces, se convierte en piedra y está sujeta a la condición de {@condition petrified} mientras dure. No es necesario que los éxitos y los fracasos sean consecutivos; lleva la cuenta de ambos hasta que el objetivo reúna tres de una clase.",
 				"Si la criatura está físicamente rota mientras {@condition petrified}, sufre deformaciones similares si vuelve a su estado original.",
-				"Si mantienes la concentración en este hechizo durante toda la duración posible, la criatura se convierte en piedra hasta que se elimine el efecto."
+				"Si mantienes tu {@status concentration} en este hechizo durante toda la duración posible, la criatura se convierte en piedra hasta que se elimine el efecto."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -8653,7 +8653,7 @@
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"Puedes almacenar un hechizo preparado de 3er nivel o inferior en el glifo lanzándolo como parte de la creación del glifo. El hechizo debe tener como objetivo una sola criatura o un área. El hechizo almacenado no tiene efecto inmediato cuando se lanza de esta manera. Cuando el glifo se activa, el hechizo almacenado se lanza. Si el hechizo tiene un objetivo, se dirige a la criatura que activó el glifo. Si el hechizo afecta a un área, el área se centra en esa criatura. Si el hechizo invoca criaturas hostiles o crea objetos o trampas dañinas, éstas aparecen lo más cerca posible del intruso y lo atacan. Si el hechizo requiere concentración, dura hasta el final de su duración completa."
+						"Puedes almacenar un hechizo preparado de 3er nivel o inferior en el glifo lanzándolo como parte de la creación del glifo. El hechizo debe tener como objetivo una única criatura o un área. El hechizo almacenado no tiene efecto inmediato cuando se lanza de esta forma. Cuando se activa el glifo, se lanza el hechizo almacenado. Si el hechizo tiene un objetivo, se dirige a la criatura que activó el glifo. Si el hechizo afecta a un área, el área se centra en esa criatura. Si el hechizo invoca criaturas hostiles o crea objetos dañinos o trampas, éstas aparecen lo más cerca posible del intruso y lo atacan. Si el hechizo requiere {@status concentration}, dura hasta el final de su duración completa."
 					]
 				}
 			],
@@ -9921,7 +9921,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este hechizo usando una ranura de hechizo de 3º o 4º nivel, puedes mantener tu concentración en el hechizo hasta 8 horas. Cuando utilizas una ranura de hechizo de 5º nivel o superior, puedes mantener tu concentración en el hechizo hasta 24 horas."
+						"Cuando lanzas este hechizo utilizando una ranura de hechizo de 3º o 4º nivel, puedes mantener tu {@status concentration} en el hechizo hasta 8 horas. Cuando utilizas una ranura de conjuro de 5º nivel o superior, puedes mantener tu {@status concentration} en el conjuro hasta 24 horas. área se centra en esa criatura. Si el hechizo invoca criaturas hostiles o crea objetos dañinos o trampas, éstas aparecen lo más cerca posible del intruso y lo atacan. Si el hechizo requiere {@status concentration}, dura hasta el final de su duración completa."
 					]
 				}
 			],
@@ -10225,7 +10225,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este hechizo usando una ranura de hechizo de 3º o 4º nivel, puedes mantener tu concentración en el hechizo hasta 8 horas. Cuando utilizas una ranura de hechizo de 5º nivel o superior, puedes mantener tu concentración en el hechizo hasta 24 horas."
+						"Cuando lanzas este hechizo utilizando una ranura de hechizo de 3º o 4º nivel, puedes mantener tu {@status concentration} en el hechizo hasta 8 horas. Cuando utilizas una ranura de conjuro de 5º nivel o superior, puedes mantener tu {@status concentration} en el conjuro hasta 24 horas. área se centra en esa criatura. Si el hechizo invoca criaturas hostiles o crea objetos dañinos o trampas, éstas aparecen lo más cerca posible del intruso y lo atacan. Si el hechizo requiere {@status concentration}, dura hasta el final de su duración completa."
 					]
 				}
 			],
@@ -11803,7 +11803,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este hechizo usando una ranura de hechizo de 6º nivel o superior, el hechizo dura hasta que se disipa, sin requerir tu concentración."
+						"Cuando lanzas este hechizo utilizando una ranura de hechizo de 6º nivel o superior, el hechizo dura hasta que se disipa, sin requerir tu {@status concentration}.o crea objetos dañinos o trampas, aparecen lo más cerca posible del intruso y lo atacan. Si el hechizo requiere {@status concentration}, dura hasta el final de su duración completa."
 					]
 				}
 			],
@@ -12961,7 +12961,7 @@
 			],
 			"entries": [
 				"Elige un área de terreno de no más de 40 pies de lado dentro del alcance. Puedes remodelar la tierra, la arena o la arcilla de la zona de la manera que elijas mientras dure la acción. Puedes subir o bajar la elevación del área, crear o rellenar una zanja, levantar o aplanar un muro o formar un pilar. La extensión de estos cambios no puede superar la mitad de la dimensión mayor del área. Por lo tanto, si afecta a un cuadrado de 40 pies, puede crear un pilar de hasta 20 pies de altura, subir o bajar la elevación del cuadrado hasta 20 pies, cavar una zanja de hasta 20 pies de profundidad, etc. Estos cambios tardan 10 minutos en completarse.",
-				"Al final de cada 10 minutos que pases concentrado en el hechizo, puedes elegir una nueva zona del terreno a la que afectar.",
+				"Al final de cada 10 minutos que gastes {@status concentration||concentrating} en el hechizo, puedes elegir una nueva zona de terreno a la que afectar.",
 				"Como la transformación del terreno se produce lentamente, las criaturas que se encuentran en la zona no suelen quedar atrapadas o heridas por el movimiento del suelo.",
 				"Este hechizo no puede manipular la piedra natural o las construcciones de piedra. Las rocas y las estructuras se desplazan para adaptarse al nuevo terreno. Si la forma del terreno hace que una estructura sea inestable, podría derrumbarse.",
 				"Del mismo modo, este hechizo no afecta directamente al crecimiento de las plantas. La tierra movida arrastra las plantas con ella."
@@ -16458,7 +16458,7 @@
 			"entries": [
 				"Hasta que el hechizo termine, la lluvia helada y el aguanieve caen en un cilindro de 20 pies de altura con un radio de 40 pies centrado en un punto que elijas dentro del alcance. El área es {@quickref Vision and Light|PHB|2||heavily obscured}, y las llamas expuestas en la zona se apagan.",
 				"El suelo de la zona se cubre de hielo resbaladizo, lo que lo convierte en {@quickref difficult terrain||3}. Cuando una criatura entra en el área del hechizo por primera vez en un turno o comienza su turno allí, debe hacer una tirada de salvación de Destreza. Si falla la tirada de salvación, cae {@condition prone}.",
-				"Si una criatura comienza su turno en el área del hechizo y se está concentrando en un hechizo, la criatura debe hacer una tirada de salvación de Constitución exitosa contra su DC de salvación del hechizo o perder la concentración."
+				"Si una criatura comienza su turno en el área del hechizo y está {@status concentration||concentrating} en un hechizo, la criatura debe realizar una tirada de salvación de Constitución con éxito contra tu DC de salvación de hechizo o perderá {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -17142,7 +17142,7 @@
 			],
 			"entries": [
 				"Se forma una agitada nube de tormenta, centrada en un punto que puedes ver y que se extiende en un radio de 360 pies. Los relámpagos brillan en la zona, los truenos retumban y los fuertes vientos rugen. Cada criatura que se encuentre bajo la nube (a no más de 5.000 pies por debajo de la nube) cuando ésta aparezca debe realizar una tirada de salvación de Constitución. En caso de fallar la salvación, la criatura recibe {@damage 2d6} de daño por trueno y se convierte en {@condition deafened} durante 5 minutos.",
-				"Cada ronda que mantengas la concentración en este hechizo, la tormenta produce diferentes efectos en tu turno.",
+				"Cada ronda que mantengas {@status concentration} en este hechizo, la tormenta produce efectos diferentes en tu turno.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -17168,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Ráfagas y lluvia helada asaltan la zona bajo la nube. El área se vuelve {@quickref difficult terrain||3} y se {@quickref Vision and Light|PHB|2||heavily obscured}. Cada criatura allí recibe {@damage 1d6} de daño por frío. Los ataques con armas a distancia en la zona son imposibles. El viento y la lluvia cuentan como distracción grave a efectos de mantener la concentración en los hechizos. Por último, las ráfagas de viento fuerte (de 20 a 50 millas por hora) dispersan automáticamente la niebla, las brumas y fenómenos similares en la zona, ya sean mundanos o mágicos."
+						"Ráfagas y lluvia helada asaltan la zona bajo la nube. La zona se vuelve {@quickref difficult terrain||3} y se {@quickref Vision and Light|PHB|2||heavily obscured}. Cada criatura recibe {@damage 1d6} de daño por frío. Los ataques con armas a distancia en la zona son imposibles. El viento y la lluvia cuentan como una distracción grave a efectos de mantener {@status concentration} en los hechizos. Por último, las ráfagas de viento fuerte (de 20 a 50 millas por hora) dispersan automáticamente la niebla, las brumas y fenómenos similares en la zona, ya sean mundanos o mágicos."
 					]
 				}
 			],
@@ -18912,7 +18912,7 @@
 				"El muro puede tener cualquier forma que desees, aunque no puede ocupar el mismo espacio que una criatura u objeto. No es necesario que el muro sea vertical ni que se apoye en ningún cimiento firme. Sin embargo, debe fundirse con la piedra existente y apoyarse sólidamente en ella. Así, puedes utilizar este hechizo para salvar un abismo o crear una rampa.",
 				"Si crea un tramo de más de 6 metros de longitud, debe reducir a la mitad el tamaño de cada panel para crear soportes. Puedes dar forma a la pared para crear almenas, almenas, etc.",
 				"El muro es un objeto de piedra que puede ser dañado y, por tanto, atravesado. Cada panel tiene una CA de 15 y 30 puntos de vida por cada pulgada de grosor. Reducir un panel a 0 puntos de vida lo destruye y puede hacer que los paneles conectados se derrumben a discreción del DM.",
-				"Si mantienes la concentración en este hechizo durante toda su duración, el muro se convierte en permanente y no puede ser disipado. De lo contrario, el muro desaparece cuando el hechizo termina."
+				"Si mantienes tu {@status concentration} en este hechizo durante toda su duración, el muro se vuelve permanente y no puede disiparse. De lo contrario, el muro desaparece cuando termina el hechizo. ráfagas de viento fuerte (de 20 a 50 millas por hora) dispersan automáticamente la niebla, las brumas y fenómenos similares en la zona, ya sean mundanos o mágicos."
 			],
 			"savingThrow": [
 				"dexterity"

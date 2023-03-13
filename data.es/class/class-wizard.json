@@ -1777,7 +1777,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Graviturgy Magic feature}",
-				"Como acción, puedes alterar mágicamente el peso de un objeto o criatura que puedas ver en un radio de 30 pies de ti. El objeto o criatura debe ser grande o más pequeño. El peso del objetivo se reduce a la mitad o se duplica durante un minuto o hasta que termine tu concentración (como si estuvieras concentrado en un hechizo).",
+				"Como acción, puedes alterar mágicamente el peso de un objeto o criatura que puedas ver en un radio de 30 pies de ti. El objeto o criatura debe ser Grande o más pequeño. El peso del objetivo se reduce a la mitad o al doble durante un máximo de 1 minuto o hasta que tu {@status concentration} termine (como si estuvieras {@status concentration||concentrating} en un hechizo).",
 				"Mientras el peso de una criatura se reduce a la mitad por este efecto, la velocidad de la criatura aumenta en 3 metros, puede saltar el doble de lo normal y tiene desventaja en los chequeos de Fuerza y en las tiradas de salvación de Fuerza. Mientras el peso de una criatura se duplica por este efecto, la velocidad de la criatura se reduce en 3 metros y tiene ventaja en los chequeos de Fuerza y en las tiradas de salvación de Fuerza.",
 				"Al alcanzar el 10º nivel en esta clase, puedes apuntar a un objeto o a una criatura que sea Enorme o más pequeña."
 			]
@@ -1826,7 +1826,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Graviturgy Magic feature}",
-				"Como acción, puedes emitir mágicamente un poderoso campo de energía gravitatoria que atrae a otras criaturas hasta 1 minuto o hasta que tu concentración termine (como si estuvieras concentrado en un conjuro). Mientras dure, cada vez que una criatura hostil a ti comience su turno a menos de 30 pies de ti, debe hacer una tirada de salvación de Fuerza contra tu DC de salvación del conjuro. Si falla la tirada de salvación, recibe {@damage 2d10} de daño de fuerza y su velocidad se reduce a 0 hasta el comienzo de su siguiente turno. Si la salvación es satisfactoria, recibe la mitad de daño y cada pie que se mueva en este turno le cuesta 2 pies adicionales de movimiento.",
+				"Como acción, puedes emitir mágicamente un poderoso campo de energía gravitatoria que atrae a otras criaturas durante un máximo de 1 minuto o hasta que tu {@status concentration} termine (como si estuvieras {@status concentration||concentrating} en un hechizo). Mientras dure, siempre que una criatura hostil comience su turno a menos de 30 pies de ti, debe hacer una tirada de salvación de Fuerza contra tu DC de salvación de conjuro. Si falla, recibe {@damage 2d10} de daño de fuerza y su velocidad se reduce a 0 hasta el inicio de su siguiente turno. Si la tirada de salvación tiene éxito, recibe la mitad de daño y cada pie que mueva este turno le cuesta 2 pies extra de movimiento.",
 				"Una vez que usas este rasgo, no puedes volver a hacerlo hasta que termines un descanso largo o hasta que gastes una ranura de hechizo de 3er nivel o superior en él."
 			]
 		},
@@ -2001,7 +2001,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"A partir del 10º nivel, mientras estés concentrado en un hechizo de conjuro, tu concentración no puede romperse como resultado de recibir daño."
+				"A partir del 10º nivel, mientras esté {@status concentration||concentrating} en un conjuro de conjuración, su {@status concentration} no puede romperse como resultado de recibir daño. daño de fuerza, y su velocidad se reduce a 0 hasta el comienzo de su siguiente turno. Si la tirada de salvación tiene éxito, recibe la mitad de daño y cada pie que mueva este turno le cuesta 2 pies extra de movimiento."
 			]
 		},
 		{
@@ -2570,7 +2570,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"A partir del 2º nivel, cuando seleccionas esta escuela, puedes alterar temporalmente las propiedades físicas de un objeto no mágico, cambiándolo de una sustancia a otra. Realizas un procedimiento alquímico especial sobre un objeto compuesto enteramente de madera, piedra (pero no una piedra preciosa), hierro, cobre o plata, transformándolo en otro de esos materiales. Por cada 10 minutos que pases realizando el procedimiento, puedes transformar hasta 1 pie cúbico de material. Después de 1 hora, o hasta que pierdas la concentración (como si estuvieras concentrado en un hechizo), el material vuelve a su sustancia original."
+				"A partir del 2º nivel cuando seleccionas esta escuela, puedes alterar temporalmente las propiedades físicas de un objeto no mágico, cambiándolo de una sustancia a otra. Realizas un procedimiento alquímico especial sobre un objeto compuesto enteramente de madera, piedra (pero no una piedra preciosa), hierro, cobre o plata, transformándolo en uno diferente de esos materiales. Por cada 10 minutos que pases realizando el procedimiento, puedes transformar hasta 1 pie cúbico de material. Después de 1 hora, o hasta que pierdas tu {@status concentration} (como si estuvieras {@status concentration||concentrating} en un hechizo), el material vuelve a su sustancia original.f movimiento."
 			]
 		},
 		{
@@ -2775,7 +2775,7 @@
 						"Obtienes un bono a tu CA igual a tu modificador de Inteligencia (mínimo de +1).",
 						"Tu velocidad al caminar aumenta en 3 metros.",
 						"Tienes ventaja en los chequeos de Destreza ({@skill Acrobatics}).",
-						"Obtienes un bonificador a cualquier tirada de salvación de Constitución que hagas para mantener la concentración en un hechizo. El bono es igual a tu modificador de Inteligencia (mínimo de +1)."
+						"Ganas un bonificador a cualquier tirada de salvación de Constitución que hagas para mantenerte {@status concentration} en un hechizo. El bonificador es igual a tu modificador de Inteligencia (mínimo de +1).. Por cada 10 minutos que pases realizando el procedimiento, puedes transformar hasta 1 pie cúbico de material. Después de 1 hora, o hasta que pierdas tu {@status concentration} (como si estuvieras (%1%) en un hechizo), el material vuelve a su sustancia original.f movimiento."
 					]
 				},
 				"Puedes usar este rasgo un número de veces igual a tu bonificación de competencia, y recuperas todos los usos gastados de él cuando terminas un descanso largo."
@@ -3089,7 +3089,7 @@
 			"entries": [
 				"{@i 10th-level Order of Scribes feature}",
 				"Ahora puedes conjurar la mente de tu Libro de Hechizos Despertado. Como acción de bonificación, mientras el libro esté en tu persona, puedes hacer que la mente se manifieste como una diminuta construcción espectral, que flota en un espacio desocupado de tu elección en un radio de 60 pies. Esta presencia es intangible y no ocupa su espacio, y arroja una luz tenue en un radio de 10 pies. Tiene el aspecto de un tomo fantasmal, una cascada de texto o un erudito del pasado (a tu elección). La mente espectral tiene un número de puntos de golpe igual a tu nivel de mago más tu modificador de Inteligencia, y utiliza tus modificadores de Clase de Armadura y de tirada de salvación.",
-				"Mientras se manifiesta, la mente espectral puede oír y ver, y tiene {@sense darkvision} con un alcance de 60 pies. Como acción, puedes oír y ver usando sus sentidos, en lugar de los tuyos, hasta que tu concentración termine (como si te concentraras en un hechizo).",
+				"Mientras está manifestada, la mente espectral puede oír y ver, y tiene {@sense darkvision} con un alcance de 60 pies. Como acción, puedes oír y ver usando sus sentidos, en lugar de los tuyos, hasta que tu {@status concentration} termine (como si estuvieras {@status concentration||concentrating} en un hechizo).e tu {@sense darkvision} (como si estuvieras {@status concentration} en un hechizo), el material vuelve a su sustancia original.f movimiento.",
 				"Siempre que lances un hechizo de mago en tu turno, puedes lanzarlo como si estuvieras en el espacio de la mente espectral, en lugar del tuyo, utilizando sus sentidos. Puedes hacerlo un número de veces al día igual a tu bonificación de competencia, y recuperas todos los usos gastados cuando terminas un descanso largo.",
 				"Como acción de bonificación, puedes hacer que la mente espectral se desplace hasta 30 pies a un espacio desocupado que tú o ella podáis ver. Puede atravesar criaturas pero no objetos. La mente espectral deja de manifestarse si está a más de 300 pies de ti, si baja a 0 puntos de golpe, si mueres o si la descartas como acción de bonificación."
 			]
@@ -3262,7 +3262,7 @@
 						}
 					]
 				},
-				"La runa de enemistad dura 1 minuto o hasta que pierdas la concentración (como si estuvieras concentrado en un hechizo). Una vez que hayas marcado a una criatura de este modo, no podrás volver a hacerlo hasta que termines un descanso largo, a menos que gastes una ranura de conjuro de 3er nivel o superior para volver a usar este rasgo."
+				"La runa de enemistad dura 1 minuto o hasta que pierdes tu {@status concentration} (como si estuvieras {@status concentration||concentrating} en un hechizo). Una vez has marcado a una criatura de esta forma, no puedes volver a hacerlo hasta que termines un descanso largo, a menos que gastes una ranura de conjuro de 3er nivel o superior para volver a usar este rasgo.stance.f movimiento."
 			]
 		},
 		{
@@ -4094,7 +4094,7 @@
 			"entries": [
 				"A 6º nivel, puedes insertar un hechizo dentro de un dispositivo electrónico de tu elección, de modo que al tocar una tecla o pulsar un interruptor mediante una acción, el hechizo se activa. Todas las variables del hechizo se fijan en el momento del lanzamiento. La potencia de cálculo de este dispositivo debe ser igual o superior a la de un teléfono móvil.",
 				"Un hechizo programado permanece colocado en su dispositivo durante 48 horas, y desaparece una vez que se descarga. Puedes utilizar esta característica para colocar un hechizo programado en un solo dispositivo a la vez, y un dispositivo sólo puede contener un hechizo programado. Sólo tú puedes activar el hechizo programado en el dispositivo. Si el dispositivo se destruye, el hechizo programado se pierde.",
-				"Un hechizo de concentración colocado en un dispositivo no puede activarse mientras estás concentrado en otro hechizo. Una vez que usas este rasgo, no puedes volver a usarlo hasta que termines un descanso largo."
+				"Un hechizo {@status concentration} colocado en un dispositivo no puede activarse mientras estás {@status concentration||concentrating} con otro hechizo. Una vez que usas este rasgo, no puedes volver a usarlo hasta que termines un descanso largo."
 			]
 		},
 		{
@@ -4124,7 +4124,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"A 14º nivel, has aprendido a imprimir vestigios de tu conciencia en dispositivos electrónicos con una potencia de cálculo considerable. Cuando lanzas un conjuro de concentración, puedes utilizar un dispositivo cuya potencia de cálculo sea igual o superior a la de una tableta para mantener la concentración del conjuro en tu nombre. El dispositivo debe ser sostenido o llevado por ti para mantener este efecto. Si el dispositivo se destruye, se te quita, se te cae o se apaga, la concentración termina. Una vez que utilices este rasgo, no podrás volver a utilizarlo hasta que termines un descanso prolongado."
+				"En el nivel 14, has aprendido a imprimir vestigios de tu conciencia en dispositivos electrónicos con una potencia de cálculo considerable. Cuando lanzas un conjuro {@status concentration}, puedes utilizar un dispositivo cuya potencia de cálculo sea igual o superior a la de una tableta informática para mantener {@status concentration} del conjuro en tu nombre. Debes sostener o llevar puesto el dispositivo para mantener este efecto. Si el dispositivo se destruye, te lo quitan, se cae o se apaga, el {@status concentration} termina. Una vez que usas este rasgo, no puedes volver a usarlo hasta que termines un descanso largo."
 			]
 		},
 		{
@@ -4899,7 +4899,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"A partir del 10º nivel, la magia que canalizas te ayuda a evitar el daño. Mientras mantienes la concentración en un conjuro, tienes un bonificador +2 a la CA y a todas las tiradas de salvación."
+				"A partir del 10º nivel, la magia que canalizas te ayuda a evitar el daño. Mientras mantienes el {@status concentration} en un conjuro, tienes un bonificador +2 a la CA y a todas las tiradas de salvación. Si el dispositivo se destruye, te lo quitan, se cae o se apaga, el (%2%) termina. Una vez que usas este rasgo, no puedes volver a usarlo hasta que termines un descanso largo."
 			]
 		},
 		{
@@ -4995,7 +4995,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"A partir del 10º nivel, la magia que canalizas te ayuda a evitar el daño. Mientras mantienes la concentración en un conjuro, tienes un bonificador +2 a la CA y a todas las tiradas de salvación."
+				"A partir del 10º nivel, la magia que canalizas te ayuda a evitar el daño. Mientras mantienes el {@status concentration} en un conjuro, tienes un bonificador +2 a la CA y a todas las tiradas de salvación. Si el dispositivo se destruye, te lo quitan, se cae o se apaga, el (%2%) termina. Una vez que usas este rasgo, no puedes volver a usarlo hasta que termines un descanso largo."
 			]
 		},
 		{

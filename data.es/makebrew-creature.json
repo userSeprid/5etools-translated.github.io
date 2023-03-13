@@ -1513,7 +1513,7 @@
 		{
 			"name": "Create Whirlwind (Djinni)",
 			"entries": [
-				"Un cilindro de aire arremolinado de 5 pies de radio y 30 pies de altura se forma mágicamente sobre un punto que <$short_name$> pueda ver en un radio de 120 pies. El torbellino dura mientras <$short_name$> mantenga la concentración (como si se concentrara en un hechizo). Cualquier criatura excepto <$short_name$> que entre en el torbellino debe tener éxito en una tirada de salvación DC <$dc__str$> o ser {@condition restrained} por él. <$title_short_name$> puede mover el torbellino hasta 60 pies como acción, y las criaturas {@condition restrained} por el torbellino se mueven con él. El torbellino termina si <$nombre_corto$> lo pierde de vista.",
+				"Un cilindro de aire arremolinado de 5 pies de radio y 30 pies de altura se forma mágicamente sobre un punto que <$short_name$> pueda ver en un radio de 120 pies. El torbellino dura mientras <$short_name$> mantenga {@status concentration} (como si fuera {@status concentration||concentrating} en un hechizo). Cualquier criatura excepto <$short_name$> que entre en el torbellino debe tener éxito en una tirada de salvación DC <$dc__str$> o ser {@condition restrained} por él. <$title_short_name$> puede mover el torbellino hasta 60 pies como acción, y las criaturas {@condition restrained} por el torbellino se mueven con él. El torbellino termina si <$nombre_corto$> lo pierde de vista.",
 				"Una criatura puede usar su acción para liberar a una criatura {@condition restrained} por el torbellino, incluyéndose a sí misma, teniendo éxito en un chequeo de Fuerza DC <$dc__str$>. Si el chequeo tiene éxito, la criatura deja de estar {@condition restrained} y se mueve al espacio más cercano fuera del torbellino."
 			]
 		},
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Darkness Aura (Darkmantle)",
 			"entries": [
-				"Un radio de 15 pies de oscuridad mágica se extiende desde <$short_name$>, se mueve con él y se extiende por las esquinas. La oscuridad dura mientras <$short_name$> mantenga la concentración, hasta 10 minutos (como si se concentrara en un hechizo). Darkvision no puede penetrar esta oscuridad, y ninguna luz natural puede iluminarla. Si parte de la oscuridad se solapa con un área de luz creada por un conjuro de 2º nivel o inferior, el conjuro que crea la luz se disipa."
+				"Un radio de 15 pies de oscuridad mágica se extiende desde <$short_name$>, se mueve con él y se extiende por las esquinas. La oscuridad dura tanto como <$short_name$> mantenga {@status concentration}, hasta 10 minutos (como si fuera {@status concentration||concentrating} de un hechizo). Darkvision no puede penetrar esta oscuridad, y ninguna luz natural puede iluminarla. Si alguna parte de la oscuridad se solapa con un área de luz creada por un conjuro de 2º nivel o inferior, el conjuro que crea la luz se disipa.ses la vista."
 			]
 		},
 		{
@@ -1709,19 +1709,19 @@
 		{
 			"name": "Invisibility (Duergar)",
 			"entries": [
-				"<$title_short_name$> gira mágicamente {@condition invisible} hasta que ataca, lanza un hechizo o usa su Agrandar, o hasta que se rompe su concentración, hasta 1 hora (como si se concentrara en un hechizo). Cualquier equipo que <$short_name$> lleve o porte se vuelve {@condition invisible} con él."
+				"<$title_short_name$> gira mágicamente {@condition invisible} hasta que ataca, lanza un hechizo o usa su Agrandar, o hasta que su {@status concentration} se rompe, hasta 1 hora (como si {@status concentration||concentrating} en un hechizo). Cualquier equipo que <$short_name$> lleve o vista se {@condition invisible} con él."
 			]
 		},
 		{
 			"name": "Invisibility (Quasit)",
 			"entries": [
-				"<$title_short_name$> gira mágicamente {@condition invisible} hasta que ataca o usa Asustar, o hasta que termina su concentración (como si se concentrara en un hechizo). Cualquier equipo que <$short_name$> lleve o porte se {@condition invisible} con él."
+				"<$title_short_name$> gira mágicamente {@condition invisible} hasta que ataca o usa Asustar, o hasta que su {@status concentration} termina (como si fuera {@status concentration||concentrating} en un hechizo). Cualquier equipo que <$short_name$> lleve o porte se {@condition invisible} con él."
 			]
 		},
 		{
 			"name": "Invisibility (Sprite)",
 			"entries": [
-				"<$title_short_name$> gira mágicamente {@condition invisible} hasta que ataca o lanza un hechizo, o hasta que termina su concentración (como si se concentrara en un hechizo). Cualquier equipo que <$short_name$> lleve o porte se {@condition invisible} con él."
+				"<$title_short_name$> gira mágicamente {@condition invisible} hasta que ataca o lanza un hechizo, o hasta que su {@status concentration} termina (como si {@status concentration||concentrating} en un hechizo). Cualquier equipo que <$short_name$> lleve o porte se {@condition invisible} con él."
 			]
 		},
 		{
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Read Thoughts (Doppelganger)",
 			"entries": [
-				"<$title_short_name$> lee mágicamente los pensamientos superficiales de una criatura en un radio de 60 pies. El efecto puede atravesar barreras, pero 3 pies de madera o tierra, 2 pies de piedra, 2 pulgadas de metal o una fina lámina de plomo lo bloquean. Mientras el objetivo esté dentro del alcance, <$short_name$> puede seguir leyendo sus pensamientos, siempre que la concentración de <$short_name$> no se rompa (como si se concentrara en un hechizo). Mientras lee la mente del objetivo, <$short_name$> tiene ventaja en los chequeos de Sabiduría ({@skill Insight}) y Carisma ({@skill Deception}, {@skill Intimidation} y {@skill Persuasion}) contra el objetivo."
+				"<$title_short_name$> lee mágicamente los pensamientos superficiales de una criatura en un radio de 60 pies. El efecto puede atravesar barreras, pero 3 pies de madera o tierra, 2 pies de piedra, 2 pulgadas de metal o una fina lámina de plomo lo bloquean. Mientras el objetivo esté dentro del alcance, <$short_name$> puede seguir leyendo sus pensamientos, siempre que el {@status concentration} de <$short_name$> no esté roto (como si se tratara del {@status concentration||concentrating} de un hechizo). Mientras lee la mente del objetivo, <$short_name$> tiene ventaja en los chequeos de Sabiduría ({@skill Insight}) y Carisma ({@skill Deception}, {@skill Intimidation} y {@skill Persuasion}) contra el objetivo."
 			]
 		},
 		{

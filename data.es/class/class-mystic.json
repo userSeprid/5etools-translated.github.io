@@ -642,8 +642,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Algunas opciones requieren concentración para mantener sus efectos. Este requisito se anota con \"conc.\" después del coste en puntos psi de la opción. La notación \"conc.\" va seguida de la duración máxima de la concentración. Por ejemplo, si una opción dice \"conc., 1 min.\", puedes concentrarte en su efecto hasta 1 minuto.",
-								"La concentración en una disciplina sigue las mismas reglas que la concentración en un hechizo. Esta regla significa que no puedes concentrarte en un hechizo y una disciplina al mismo tiempo, ni puedes concentrarte en dos disciplinas al mismo tiempo. Consulta {@book chapter 10|PHB|10}, \"Lanzamiento de hechizos\", en el Manual del Jugador para saber cómo funciona la concentración."
+								"Algunas opciones requieren {@status concentration} para mantener sus efectos. Este requisito se indica con \"conc.\" después del coste en puntos psi de la opción. La notación \"conc.\" va seguida de la duración máxima del {@status concentration}. Por ejemplo, si una opción dice \"conc., 1 min.\", puedes concentrarte en su efecto hasta 1 minuto.",
+								"Concentrarse en una disciplina sigue las mismas reglas que {@status concentration||concentrating} en un hechizo. Esta regla significa que no puedes concentrarte en un hechizo y una disciplina al mismo tiempo, ni puedes concentrarte en dos disciplinas al mismo tiempo. Ver {@book chapter 10|PHB|10}, \"Lanzamiento de Conjuros\", en el Manual del Jugador para saber cómo funciona {@status concentration}."
 							]
 						}
 					]
@@ -813,7 +813,7 @@
 			"level": 11,
 			"entries": [
 				"A partir del 11º nivel, tu dominio de la energía psiónica te permite llevar tu mente más allá de sus límites normales. Como acción, obtienes 9 puntos de psi especiales que puedes gastar sólo en disciplinas que requieran una acción o una acción de bonificación para su uso. Puedes usar los 9 puntos en una sola disciplina, o puedes repartirlos entre varias disciplinas. No puedes gastar tus puntos de psi normales en estas disciplinas; sólo puedes gastar los puntos especiales ganados con este rasgo. Cuando terminas un descanso largo, pierdes los puntos especiales que no hayas gastado.",
-				"Si más de una de las disciplinas que activas con estos puntos requiere concentración, puedes concentrarte en todas ellas. La activación de una de ellas pone fin a cualquier efecto en el que ya estuvieras concentrado, y si empiezas a concentrarte en un efecto que no utiliza estos puntos especiales, las disciplinas terminan en las que estás concentrado.",
+				"Si más de una de las disciplinas que activas con estos puntos requiere {@status concentration}, puedes concentrarte en todas ellas. Activar una de ellas termina cualquier efecto en el que ya estuvieras {@status concentration||concentrating}, y si comienzas {@status concentration||concentrating} en un efecto que no utiliza estos puntos especiales, terminan las disciplinas en las que estés {@status concentration||concentrating}.orks.inute.",
 				"A 15º nivel, la reserva de puntos de psi que obtienes con este rasgo aumenta a 11.",
 				"Tienes un uso de esta característica, y recuperas cualquier uso gastado con un descanso largo. Obtienes un uso adicional de este rasgo a 13º, 15º y 17º nivel."
 			]
@@ -1123,7 +1123,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"A partir del 3º nivel, puedes concentrar tu mente para leer la huella psiónica dejada en un objeto. Si sostienes un objeto y te concentras en él durante 10 minutos (como si te concentraras en una disciplina psiónica), aprendes algunos datos básicos sobre él. Obtienes una imagen mental desde el punto de vista del objeto, que muestra la última criatura que lo sostuvo en las últimas 24 horas.",
+				"A partir del 3er nivel, puedes concentrar tu mente para leer la huella psiónica dejada en un objeto. Si sostienes un objeto y te concentras en él durante 10 minutos (como si estuvieras {@status concentration||concentrating} en una disciplina psiónica), aprendes algunos datos básicos sobre él. Obtienes una imagen mental desde el punto de vista del objeto, que muestra la última criatura que sostuvo el objeto en las últimas 24 horas..orks.inute.",
 				"También te enteras de cualquier acontecimiento que haya ocurrido a menos de 6 metros del objeto en la última hora. Los acontecimientos que percibes se desarrollan desde la perspectiva del objeto. Ves y oyes esos acontecimientos como si estuvieras allí, pero no puedes utilizar otros sentidos.",
 				"Además, puedes incrustar un sensor psiónico intangible dentro del objeto. Durante las siguientes 24 horas, puedes utilizar una acción para conocer la ubicación del objeto con respecto a ti (su distancia y dirección) y observar el entorno del objeto desde su punto de vista como si estuvieras allí. Esta percepción dura hasta el inicio de tu siguiente turno.",
 				"Una vez que utilices esta función, no podrás volver a utilizarla hasta que termines un descanso corto o largo."

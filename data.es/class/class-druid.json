@@ -2709,7 +2709,7 @@
 					"items": [
 						"Tus estadísticas de juego son reemplazadas por las de la bestia, pero conservas tu alineamiento, personalidad y tus puntuaciones de Inteligencia, Sabiduría y Carisma. También conservas todas tus habilidades y tiradas de salvación, además de obtener las de la criatura. Si la criatura tiene la misma competencia que tú y el bono de su bloque de estadísticas es mayor que el tuyo, utiliza el bono de la criatura en lugar del tuyo. Si la criatura tiene acciones legendarias o de guarida, no puedes utilizarlas.",
 						"Cuando te transformas, asumes los puntos de golpe y los dados de golpe de la bestia. Cuando vuelves a tu forma normal, vuelves al número de puntos de golpe que tenías antes de transformarte. Sin embargo, si te transformas como resultado de bajar a 0 puntos de golpe, cualquier exceso de daño se traslada a tu forma normal. Por ejemplo, si recibes 10 puntos de daño en tu forma animal y sólo te queda 1 punto de vida, te transformas y recibes 9 puntos de daño. Mientras el exceso de daño no reduzca tu forma normal a 0 puntos de vida, no serás golpeado {@condition unconscious}.",
-						"No puedes lanzar hechizos, y tu capacidad para hablar o realizar cualquier acción que requiera las manos está limitada a las capacidades de tu forma de bestia. Sin embargo, la transformación no rompe tu concentración en un hechizo que ya hayas lanzado, ni te impide realizar acciones que formen parte de un hechizo, como {@spell call lightning}, que ya hayas lanzado.",
+						"No puedes lanzar hechizos, y tu capacidad para hablar o realizar cualquier acción que requiera las manos está limitada a las capacidades de tu forma de bestia. Sin embargo, la transformación no interrumpe tu {@status concentration} en un hechizo que ya hayas lanzado, ni te impide realizar acciones que formen parte de un hechizo, como {@spell call lightning}, que ya hayas lanzado.",
 						"Conservas el beneficio de cualquier característica de tu clase, raza u otra fuente y puedes usarla si la nueva forma es físicamente capaz de hacerlo. Sin embargo, no puedes usar ninguno de tus sentidos especiales, como {@sense darkvision}, a menos que tu nueva forma también tenga ese sentido.",
 						"Tú eliges si tu equipo cae al suelo en tu espacio, se funde con tu nueva forma o lo lleva puesto. El equipo usado funciona normalmente, pero el DM decide si es práctico para la nueva forma llevar una pieza de equipo, basándose en la forma y el tamaño de la criatura. Tu equipo no cambia de tamaño o forma para adaptarse a la nueva forma, y cualquier equipo que la nueva forma no pueda llevar debe caer al suelo o fusionarse con él. El equipo que se fusiona con la forma no tiene ningún efecto hasta que se abandona la forma."
 					]
@@ -3797,7 +3797,7 @@
 					"type": "entries",
 					"name": "Dragon",
 					"entries": [
-						"Una constelación de un dragón sabio aparece sobre ti. Cuando hagas un chequeo de Inteligencia o Sabiduría o una tirada de salvación de Constitución para mantener la concentración en un hechizo, puedes tratar una tirada de 9 o menos en el {@dice d20} como un 10."
+						"Una constelación de un dragón sabio aparece sobre ti. Cuando hagas un chequeo de Inteligencia o de Sabiduría o una tirada de salvación de Constitución para mantener el {@status concentration} de un hechizo, puedes tratar una tirada de 9 o menos en el {@dice d20} como un 10."
 					]
 				}
 			]
@@ -4118,7 +4118,7 @@
 						{
 							"type": "item",
 							"name": "Dragon",
-							"entry": "Una constelación de un dragón sabio y antiguo aparece sobre ti. Cuando hagas un chequeo de Inteligencia o Sabiduría o una tirada de salvación de Constitución para mantener la concentración en un hechizo, puedes tratar una tirada de 9 o menos en el {@dice d20} como un 10."
+							"entry": "Una constelación de un dragón sabio y antiguo aparece sobre ti. Cuando hagas un chequeo de Inteligencia o Sabiduría o una tirada de salvación de Constitución para mantener el {@status concentration} de un hechizo, puedes tratar una tirada de 9 o menos en el {@dice d20} como un 10."
 						}
 					]
 				}
@@ -4874,7 +4874,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"A partir del 14º nivel, los espíritus de la naturaleza con los que comulgas te protegen cuando estás más indefenso. Si quedas reducido a 0 puntos de golpe o estás {@condition incapacitated} en contra de tu voluntad, puedes obtener inmediatamente los beneficios de {@spell conjure animals} como si fuera lanzado con una ranura de conjuro de 9º nivel. Invoca a cuatro bestias de tu elección que tengan un índice de desafío 2 o inferior. Las bestias conjuradas aparecen a menos de 6 metros de ti. Si no reciben órdenes tuyas, te protegen del daño y atacan a tus enemigos. El hechizo dura 1 hora, sin necesidad de concentración, o hasta que lo descartes (no requiere acción).",
+				"A partir del 14º nivel, los espíritus de la naturaleza con los que comulgas te protegen cuando estás más indefenso. Si quedas reducido a 0 puntos de golpe o eres {@condition incapacitated} contra tu voluntad, puedes obtener inmediatamente los beneficios de {@spell conjure animals} como si fuera lanzado con una ranura de conjuro de 9º nivel. Invoca a cuatro bestias de tu elección que tengan un índice de desafío 2 o inferior. Las bestias conjuradas aparecen a 20 pies de ti. Si no reciben órdenes tuyas, te protegen del daño y atacan a tus enemigos. El hechizo dura 1 hora, sin requerir {@status concentration}, o hasta que lo descartes (no requiere acción).",
 				"Una vez que utilices esta función, no podrás volver a usarla hasta que termines un descanso largo."
 			]
 		},
@@ -5222,7 +5222,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"A partir del 14º nivel, los espíritus de la naturaleza con los que comulgas te protegen cuando estás más indefenso. Si quedas reducido a 0 puntos de golpe o estás {@condition incapacitated} en contra de tu voluntad, puedes obtener inmediatamente los beneficios de {@spell conjure animals} como si fuera lanzado usando una ranura de conjuro de 9º nivel. Invoca a cuatro bestias de tu elección que tengan un índice de desafío 2 o inferior. Las bestias conjuradas aparecen a menos de 6 metros de ti. Si no reciben órdenes tuyas, te protegen del daño y atacan a tus enemigos. El hechizo dura 1 hora, sin necesidad de concentración, o hasta que lo descartes (no requiere acción).",
+				"A partir del 14º nivel, los espíritus de la naturaleza con los que comulgas te protegen cuando estás más indefenso. Si eres reducido a 0 puntos de golpe o eres {@condition incapacitated} contra tu voluntad, puedes obtener inmediatamente los beneficios de {@spell conjure animals} como si fuera lanzado usando una ranura de conjuro de 9º nivel. Invoca a cuatro bestias de tu elección que tengan un índice de desafío 2 o inferior. Las bestias conjuradas aparecen a 20 pies de ti. Si no reciben órdenes tuyas, te protegen de cualquier daño y atacan a tus enemigos. El hechizo dura 1 hora, sin requerir {@status concentration}, o hasta que lo descartes (no requiere acción). hora, sin requerir {@status concentration}, o hasta que lo descartes (no requiere acción).",
 				"Una vez que utilices esta función, no podrás volver a usarla hasta que termines un descanso largo."
 			]
 		}

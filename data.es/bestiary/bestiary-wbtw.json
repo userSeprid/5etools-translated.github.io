@@ -1963,6 +1963,7 @@
 		{
 			"name": "Gloam",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 93,
 			"size": [
@@ -4168,7 +4169,7 @@
 				{
 					"name": "Twin Sight (Recharges after a Short or Long Rest)",
 					"entries": [
-						"En su ojo mental, una gemela Selenelion puede ver lo que ve la otra durante un minuto, siempre que ambas estén vivas y en el mismo plano de existencia. Mantener este efecto requiere concentración (como si se concentrara en un hechizo)."
+						"En el ojo de su mente, una gemela Selenelion puede ver lo que ve la otra durante un máximo de 1 minuto, siempre que ambas estén vivas y en el mismo plano de existencia. Mantener este efecto requiere {@status concentration} (como si fuera {@status concentration||concentrating} de un hechizo)."
 					]
 				}
 			],
@@ -4274,7 +4275,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, Sir Talavar puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Todo el equipo que Sir Talavar lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, Sir Talavar puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que Sir Talavar lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -5010,6 +5011,7 @@
 		{
 			"name": "Thinnings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 15,
 			"_copy": {
@@ -5750,7 +5752,7 @@
 				{
 					"name": "Animate Corpse (1/Day)",
 					"entries": [
-						"Zargash apunta al cadáver sin vida de un Humanoide que pueda ver a menos de 30 pies de él y le ordena que se levante, transformándolo en un zombi bajo su control. El zombi hace su turno inmediatamente después de Zargash. Animar al zombi requiere la concentración de Zargash (como si se concentrara en un hechizo). El zombi vuelve a ser un cadáver inanimado después de 10 minutos, cuando baja a 0 puntos de vida, o cuando la concentración de Zargash termina."
+						"Zargash apunta al cadáver sin vida de un Humanoide que pueda ver en un radio de 30 pies y le ordena que se levante, transformándolo en un zombi bajo su control. El zombi toma su turno inmediatamente después de Zargash. Animar al zombi requiere el {@status concentration} de Zargash (como si se tratara del {@status concentration||concentrating} de un hechizo). El zombi vuelve a ser un cadáver inanimado al cabo de 10 minutos, cuando baja a 0 puntos de golpe, o cuando termina el {@status concentration} de Zargash."
 					]
 				}
 			],

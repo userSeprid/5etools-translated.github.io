@@ -6478,7 +6478,7 @@
 				{
 					"name": "Break Concentration",
 					"entries": [
-						"El cerebro anciano tiene como objetivo una criatura en un radio de 120 pies con la que tiene un vínculo psíquico. El cerebro anciano rompe la concentración de la criatura en un hechizo que haya lanzado. La criatura también recibe {@dice 1d4} de daño psíquico por nivel del hechizo."
+						"El cerebro anciano tiene como objetivo a una criatura en un radio de 120 pies con la que tenga un vínculo psíquico. El cerebro anciano rompe el {@status concentration} de la criatura en un hechizo que haya lanzado. La criatura también sufre {@dice 1d4} de daño psíquico por nivel del hechizo."
 					]
 				},
 				{
@@ -20816,7 +20816,7 @@
 				{
 					"name": "Invoke Nightmare (Recharges after a Short or Long Rest)",
 					"entries": [
-						"El yuan-ti recurre a las pesadillas de una criatura que pueda ver en un radio de 60 pies y crea una manifestación ilusoria e inmóvil de los miedos más profundos de la criatura, visible sólo para ella. El objetivo debe realizar una tirada de salvación de Inteligencia {@dc 13}. Si falla la tirada de salvación, el objetivo recibe 11 ({@damage 2d10}) de daño psíquico y es {@condition frightened} de la manifestación, creyendo que es real. El yuan-ti debe concentrarse para mantener la ilusión (como si se concentrara en un hechizo), que dura hasta 1 minuto y no puede ser dañado. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando la ilusión en caso de éxito, o recibiendo 11 ({@damage 2d10}) de daño psíquico en caso de fracaso."
+						"El yuan-ti recurre a las pesadillas de una criatura que pueda ver en un radio de 60 pies y crea una manifestación ilusoria e inmóvil de los miedos más profundos de la criatura, visible sólo para ella. El objetivo debe realizar una tirada de salvación de Inteligencia {@dc 13}. Si falla la tirada de salvación, el objetivo sufre 11 ({@damage 2d10}) de daño psíquico y es {@condition frightened} de la manifestación, creyendo que es real. El yuan-ti debe concentrarse para mantener la ilusión (como si estuviera {@status concentration||concentrating} en un hechizo), que dura hasta 1 minuto y no puede sufrir daño. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando la ilusión en caso de éxito, o recibiendo 11 ({@damage 2d10}) de daño psíquico en caso de fracaso."
 					]
 				}
 			],

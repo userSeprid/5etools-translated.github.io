@@ -90,7 +90,7 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Cinco aarakocra en un radio de 30 pies entre sí pueden convocar mágicamente un {@creature air elemental}. Cada uno de los cinco debe utilizar su acción y movimiento en tres turnos consecutivos para realizar una danza aérea y debe mantener la concentración mientras lo hace (como si se concentrara en un hechizo). Cuando los cinco han terminado su tercer turno de la danza, el elemental aparece en un espacio desocupado a menos de 60 pies de ellos. Se muestra amistoso con ellos y obedece sus órdenes verbales. Permanece durante 1 hora, hasta que él o todos sus invocadores mueran, o hasta que cualquiera de sus invocadores lo rechace como acción adicional. El invocador no puede volver a realizar la danza hasta que termine un breve descanso. Cuando el elemental regresa al Plano Elemental del Aire, cualquier aarakocra a menos de 1,5 m de distancia puede regresar con él."
+						"Cinco aarakocra en un radio de 30 pies pueden invocar mágicamente un {@creature air elemental}. Cada uno de los cinco debe utilizar su acción y movimiento en tres turnos consecutivos para realizar una danza aérea y debe mantener {@status concentration} mientras lo hace (como si {@status concentration||concentrating} en un hechizo). Cuando los cinco han terminado su tercer turno de la danza, el elemental aparece en un espacio desocupado a menos de 60 pies de ellos. Se muestra amistoso con ellos y obedece sus órdenes habladas. Permanece durante 1 hora, hasta que él o todos sus invocadores mueran, o hasta que cualquiera de sus invocadores lo elimine como acción adicional. Un invocador no puede volver a realizar la danza hasta que termine un breve descanso. Cuando el elemental regresa al Plano Elemental del Aire, cualquier aarakocra en un radio de 1,5 m puede regresar con él."
 					]
 				}
 			],
@@ -15774,7 +15774,7 @@
 							"name": "Wind Aura",
 							"type": "entries",
 							"entries": [
-								"Un aura mágica de viento rodea al gigante. El aura es una esfera de 10 pies de radio que dura mientras el gigante mantiene la concentración en ella (como si se concentrara en un hechizo). Mientras el aura está en efecto, el gigante gana un bonificador +2 a su CA contra ataques de armas a distancia, y todas las llamas abiertas dentro del aura se extinguen a menos que sean mágicas."
+								"Un aura mágica de viento rodea al gigante. El aura es una esfera de 10 pies de radio que dura mientras el gigante mantenga {@status concentration} sobre ella (como si {@status concentration||concentrating} sobre un hechizo). Mientras el aura está en efecto, el gigante gana un bonificador +2 a su CA contra ataques con armas a distancia, y todas las llamas abiertas dentro del aura se extinguen a menos que sean mágicas.y de sus invocadores la desecha como acción de bonificación. Un invocador no puede volver a realizar la danza hasta que termine un breve descanso. Cuando el elemental regresa al Plano Elemental del Aire, cualquier aarakocra en un radio de 1,5 m puede regresar con él."
 							]
 						}
 					],
@@ -17731,7 +17731,7 @@
 				{
 					"name": "Darkness Aura (1/Day)",
 					"entries": [
-						"Un radio de 15 pies de oscuridad mágica se extiende desde el manto oscuro, se mueve con él y se extiende por las esquinas. La oscuridad dura tanto como el manto oscuro mantenga la concentración, hasta 10 minutos (como si se concentrara en un hechizo). La visión oscura no puede penetrar esta oscuridad, y ninguna luz natural puede iluminarla. Si alguna parte de la oscuridad se solapa con un área de luz creada por un conjuro de 2º nivel o inferior, el conjuro que crea la luz se disipa."
+						"Un radio de 15 pies de oscuridad mágica se extiende desde el manto oscuro, se mueve con él y se extiende por las esquinas. La oscuridad dura tanto como el manto oscuro mantenga {@status concentration}, hasta 10 minutos (como si fuera {@status concentration||concentrating} de un hechizo). Darkvision no puede penetrar esta oscuridad, y ninguna luz natural puede iluminarla. Si parte de la oscuridad se solapa con un área de luz creada por un conjuro de 2º nivel o inferior, el conjuro que crea la luz se disipa.carril de Aire, cualquier aarakocra a menos de 5 pies de él puede volver con él."
 					]
 				}
 			],
@@ -19528,7 +19528,7 @@
 				{
 					"name": "Create Whirlwind",
 					"entries": [
-						"Un cilindro de aire arremolinado de 5 pies de radio y 30 pies de altura se forma mágicamente en un punto que el djinni pueda ver en un radio de 120 pies. El torbellino dura mientras el djinni mantenga la concentración (como si se concentrara en un hechizo). Cualquier criatura, excepto el djinni, que entre en el torbellino debe tener éxito en una tirada de salvación de Fuerza {@dc 18} o ser {@condition restrained} por él. El djinni puede mover el torbellino hasta 60 pies como acción, y las criaturas {@condition restrained} por el torbellino se mueven con él. El torbellino termina si el djinni lo pierde de vista.",
+						"Un cilindro de aire arremolinado de 5 pies de radio y 30 pies de altura se forma mágicamente en un punto que el djinni pueda ver en un radio de 120 pies. El torbellino dura tanto como el djinni mantenga {@status concentration} (como si fuera {@status concentration||concentrating} de un hechizo). Cualquier criatura excepto el djinni que entre en el torbellino debe tener éxito en una tirada de salvación de Fuerza {@dc 18} o ser {@condition restrained} por él. El djinni puede mover el torbellino hasta 60 pies como acción, y las criaturas {@condition restrained} por el torbellino se mueven con él. El torbellino termina si el djinni lo pierde de vista.",
 						"Una criatura puede usar su acción para liberar a una criatura {@condition restrained} por el torbellino, incluyéndose a sí misma, teniendo éxito en un chequeo de Fuerza {@dc 18}. Si el chequeo tiene éxito, la criatura deja de estar {@condition restrained} y se mueve al espacio más cercano fuera del torbellino."
 					]
 				}
@@ -19782,7 +19782,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"El doppelganger lee mágicamente los pensamientos superficiales de una criatura en un radio de 60 pies. El efecto puede penetrar las barreras, pero 3 pies de madera o tierra, 2 pies de piedra, 2 pulgadas de metal o una fina lámina de plomo lo bloquean. Mientras el objetivo esté dentro del alcance, el doppelganger puede seguir leyendo sus pensamientos, siempre que la concentración del doppelganger no se rompa (como si se concentrara en un hechizo). Mientras lee la mente del objetivo, el doble tiene ventaja en los chequeos de Sabiduría ({@skill Insight}) y Carisma ({@skill Deception}, {@skill Intimidation} y {@skill Persuasion}) contra el objetivo."
+						"El doble lee mágicamente los pensamientos superficiales de una criatura en un radio de 60 pies. El efecto puede atravesar barreras, pero 3 pies de madera o tierra, 2 pies de piedra, 2 pulgadas de metal o una fina lámina de plomo lo bloquean. Mientras el objetivo esté dentro del alcance, el doble puede seguir leyendo sus pensamientos, siempre que el {@status concentration} del doble no se rompa (como si se tratara de un {@status concentration||concentrating} de un hechizo). Mientras lee la mente del objetivo, el doble tiene ventaja en los chequeos de Sabiduría ({@skill Insight}) y Carisma ({@skill Deception}, {@skill Intimidation} y {@skill Persuasion}) contra el objetivo."
 					]
 				}
 			],
@@ -21849,7 +21849,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"El duergar se vuelve mágicamente {@condition invisible} hasta que ataca, lanza un hechizo o utiliza su Agrandar, o hasta que se rompe su concentración, hasta 1 hora (como si se concentrara en un hechizo). Todo el equipo que el duergar lleve o porte es {@condition invisible} con él."
+						"El duergar se vuelve mágicamente {@condition invisible} hasta que ataca, lanza un hechizo o usa su Agrandar, o hasta que su {@status concentration} se rompe, hasta 1 hora (como si {@status concentration||concentrating} en un hechizo). Cualquier equipo que el duergar lleve o porte se {@condition invisible} con él. contra el objetivo."
 					]
 				}
 			],
@@ -23620,7 +23620,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Cualquier equipo que el dragón lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el dragón lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -23780,7 +23780,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Cualquier equipo que el dragón lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el dragón lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -23937,7 +23937,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Cualquier equipo que el dragón lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el dragón lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -24090,7 +24090,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Cualquier equipo que el dragón lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el dragón lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -24246,7 +24246,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Cualquier equipo que el dragón lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el dragón lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -24411,7 +24411,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Cualquier equipo que el dragón lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el dragón lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -24565,7 +24565,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que termine su concentración (como si se concentrara en un hechizo). Cualquier equipo que el dragón lleve o porte es {@condition invisible} con él."
+						"Como acción adicional, el dragón puede girar mágicamente {@condition invisible} hasta que su {@status concentration} termine (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el dragón lleve o porte se {@condition invisible} con él."
 					]
 				},
 				{
@@ -26313,7 +26313,7 @@
 				{
 					"name": "Animate Boulders (1/Day)",
 					"entries": [
-						"El galeb duhr anima mágicamente hasta dos rocas que pueda ver en un radio de 60 pies. Un canto rodado tiene estadísticas como las de un galeb duhr, excepto que tiene Inteligencia 1 y Carisma 1, no puede ser {@condition charmed} o {@condition frightened}, y carece de esta opción de acción. Un canto rodado permanece animado mientras el galeb duhr mantenga la concentración, hasta 1 minuto (como si se concentrara en un hechizo)."
+						"El galeb duhr anima mágicamente hasta dos rocas que pueda ver en un radio de 60 pies. Una roca tiene las mismas estadísticas que un galeb duhr, salvo que tiene Inteligencia 1 y Carisma 1, no puede ser {@condition charmed} ni {@condition frightened} y carece de esta opción de acción. Un canto rodado permanece animado mientras el galeb duhr mantenga {@status concentration}, hasta 1 minuto (como si {@status concentration||concentrating} en un hechizo)."
 					]
 				}
 			],
@@ -33308,7 +33308,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"La bruja gira mágicamente {@condition invisible} hasta que ataca o lanza un hechizo, o hasta que termina su concentración (como si se concentrara en un hechizo). Mientras {@condition invisible}, no deja evidencia física de su paso, por lo que sólo puede ser rastreada por magia. Todo el equipo que lleva consigo es {@condition invisible} con ella."
+						"La bruja se vuelve mágicamente {@condition invisible} hasta que ataca o lanza un hechizo, o hasta que su {@status concentration} termina (como si {@status concentration||concentrating} en un hechizo). Mientras {@condition invisible}, no deja evidencia física de su paso, por lo que sólo puede ser rastreada por magia. Todo el equipo que lleve consigo se {@condition invisible} con ella."
 					]
 				}
 			],
@@ -37733,7 +37733,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"El diablillo se vuelve mágicamente {@condition invisible} hasta que ataca, o hasta que termina su concentración (como si se concentrara en un hechizo). Todo el equipo que el diablillo lleve o porte es {@condition invisible} con él."
+						"El diablillo se vuelve mágicamente {@condition invisible} hasta que ataca, o hasta que su {@status concentration} termina (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el diablillo lleve o porte se {@condition invisible} con él."
 					]
 				}
 			],
@@ -49573,7 +49573,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"El duendecillo se vuelve mágicamente {@condition invisible} hasta que termina su concentración (como si se concentrara en un hechizo). Todo el equipo que el duendecillo lleve o porte es {@condition invisible} con él."
+						"El duendecillo gira mágicamente {@condition invisible} hasta que su {@status concentration} termina (como si {@status concentration||concentrating} de un hechizo). Cualquier equipo que el duendecillo lleve o vista se {@condition invisible} con él."
 					]
 				}
 			],
@@ -51504,7 +51504,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"El quasit se convierte mágicamente en {@condition invisible} hasta que ataca o usa Susto, o hasta que termina su concentración (como si se concentrara en un hechizo). Todo el equipo que el quasit lleve o porte es {@condition invisible} con él."
+						"El quasit se vuelve mágicamente {@condition invisible} hasta que ataca o usa Asustar, o hasta que su {@status concentration} termina (como si fuera {@status concentration||concentrating} en un hechizo). Cualquier equipo que el quasit lleve o porte se {@condition invisible} con él."
 					]
 				}
 			],
@@ -57632,7 +57632,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"El sprite gira mágicamente {@condition invisible} hasta que ataca o lanza un hechizo, o hasta que su concentración termina (como si se concentrara en un hechizo). Todo el equipo que el sprite lleve o porte es {@condition invisible} con él."
+						"El sprite gira mágicamente {@condition invisible} hasta que ataca o lanza un hechizo, o hasta que su {@status concentration} termina (como si {@status concentration||concentrating} en un hechizo). Cualquier equipo que el sprite lleve o vista se {@condition invisible} con él."
 					]
 				}
 			],
@@ -66267,7 +66267,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"La voluntad-o'-wisp y su luz se convierten mágicamente en {@condition invisible} hasta que ataca o utiliza su Consumir Vida, o hasta que termina su concentración (como si se concentrara en un hechizo)."
+						"El will-o'-wisp y su luz se convierten mágicamente en {@condition invisible} hasta que ataca o usa su Consumir Vida, o hasta que su {@status concentration} termina (como si fuera {@status concentration||concentrating} en un hechizo)."
 					]
 				}
 			],
