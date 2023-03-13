@@ -1654,7 +1654,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Wenn du diesen Zauber mit einem Zauberspruch der 4. Stufe oder höher wirkst, beträgt die Dauer Konzentration, bis zu 10 Minuten. Wenn du einen Zauberspruch der 5. Stufe oder höher wirkst, beträgt die Dauer 8 Stunden. Wenn du einen Zauberspruch der 7. Stufe oder höher wirkst, beträgt die Dauer 24 Stunden. Wenn du einen Zauberspruch der 9. Stufe wirkst, dauert der Zauber so lange, bis er gebannt wird. Wenn du einen Zauberspruch der 5. Stufe oder höher wirkst, beträgt die Dauer, die keine Konzentration erfordert."
+						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 4 oder höher wirkst, beträgt die Dauer {@status concentration}, bis zu 10 Minuten. Wenn du einen Zauberspruch der 5. Stufe oder höher verwendest, beträgt die Dauer 8 Stunden. Wenn du einen Zauberspruch der 7. Stufe oder höher verwendest, beträgt die Dauer 24 Stunden. Wenn du einen Zauberplatz der 9. Stufe verwendest, hält der Zauber an, bis er gebannt wird. Die Verwendung eines Zauberslots der Stufe 5 oder höher gewährt eine Dauer, die keine {@status concentration} erfordert."
 					]
 				}
 			],
@@ -3666,7 +3666,7 @@
 			"entries": [
 				"Du rufst einen elementaren Diener herbei. Wähle einen Bereich aus Luft, Erde, Feuer oder Wasser, der einen Würfel von 10 Fuß innerhalb der Reichweite ausfüllt. Ein {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm}, das zu dem von dir gewählten Bereich passt, erscheint in einem unbesetzten Raum innerhalb von 10 Fuß davon. Zum Beispiel taucht ein {@creature fire elemental} aus einem Lagerfeuer auf, und ein {@creature earth elemental} erhebt sich aus dem Boden. Das Elementar verschwindet, wenn es auf 0 Trefferpunkte fällt oder wenn der Zauber endet.",
 				"Das Elementar ist dir und deinen Begleitern für die Dauer der Aktion freundlich gesinnt. Würfle die Initiative für das Elementar, das seine eigenen Spielzüge hat. Es gehorcht allen verbalen Befehlen, die du ihm gibst (keine Aktion von dir erforderlich). Wenn du dem Elementar keine Befehle gibst, verteidigt es sich gegen feindliche Kreaturen, führt aber ansonsten keine Aktionen aus.",
-				"Wenn deine Konzentration unterbrochen wird, verschwindet das Elementar nicht. Stattdessen verlierst du die Kontrolle über das Elementar, es wird dir und deinen Begleitern gegenüber feindselig und kann angreifen. Ein unkontrolliertes Elementar kann von dir nicht entlassen werden und verschwindet 1 Stunde, nachdem du es beschworen hast.",
+				"Wenn Ihr {@status concentration} gebrochen ist, verschwindet das Elementar nicht. Stattdessen verlierst du die Kontrolle über das Elementar, es wird dir und deinen Begleitern gegenüber feindselig und kann angreifen. Ein unkontrolliertes Elementar kann von dir nicht entlassen werden, und es verschwindet 1 Stunde, nachdem du es beschworen hast. Die Verwendung eines Zauberslots der Stufe 5 oder höher gewährt eine Dauer, die keine (%1%) benötigt.",
 				"Der DM hat die Statistiken des Elementars."
 			],
 			"entriesHigherLevel": [
@@ -3719,7 +3719,7 @@
 			"entries": [
 				"Du beschwörst einen {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm} oder einen Feengeist, der die Form eines {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm} annimmt. Er erscheint in einem unbesetzten Raum, den du in Reichweite sehen kannst. Die Feenkreatur verschwindet, wenn sie auf 0 Trefferpunkte fällt oder wenn der Zauber endet.",
 				"Die Feen-Kreatur ist dir und deinen Begleitern für die Dauer des Spiels freundlich gesinnt. Würfle die Initiative für die Kreatur, die ihre eigenen Spielzüge hat. Es gehorcht allen verbalen Befehlen, die du ihm erteilst (keine Aktion von dir erforderlich), solange sie nicht gegen seine Ausrichtung verstoßen. Wenn du dem Feenwesen keine Befehle erteilst, verteidigt es sich gegen feindliche Kreaturen, führt aber ansonsten keine Aktionen durch.",
-				"Wenn deine Konzentration unterbrochen wird, verschwindet die Feenkreatur nicht. Stattdessen verlierst du die Kontrolle über die Feenkreatur, sie wird dir und deinen Begleitern gegenüber feindselig und kann angreifen. Eine unkontrollierte Feenkreatur kann von dir nicht entlassen werden und verschwindet 1 Stunde, nachdem du sie beschworen hast.",
+				"Wenn dein {@status concentration} gebrochen wird, verschwindet die Feenkreatur nicht. Stattdessen verlierst du die Kontrolle über die Feenkreatur, sie wird dir und deinen Begleitern gegenüber feindselig und kann angreifen. Eine unkontrollierte Feenkreatur kann von dir nicht entlassen werden und verschwindet 1 Stunde, nachdem du sie beschworen hast.h Stufe oder höher gewährt eine Dauer, die keine (%1%) erfordert.",
 				"Der DM hat die Statistiken der Fee."
 			],
 			"entriesHigherLevel": [
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"Ein Strahl gelben Lichts blinkt aus deinem Zeigefinger, verdichtet sich dann und verweilt für die Dauer des Zaubers als glühende Perle an einem ausgewählten Punkt in Reichweite. Wenn der Zauber endet, entweder weil deine Konzentration unterbrochen wird oder weil du dich entscheidest, ihn zu beenden, blüht die Perle mit einem leisen Gebrüll zu einer Flammenexplosion auf, die sich um Ecken herum ausbreitet. Jede Kreatur in einem Umkreis von 20 Fuß um diesen Punkt muss einen Rettungswurf in Geschicklichkeit machen. Bei einem misslungenen Schutzwurf erleidet eine Kreatur Feuerschaden in Höhe des gesamten akkumulierten Schadens, bei einem erfolgreichen Schutzwurf die Hälfte des Schadens.",
+				"Ein Strahl gelben Lichts blitzt von deinem Zeigefinger auf, verdichtet sich dann und verweilt für die Dauer des Zaubers als glühende Perle an einem ausgewählten Punkt in Reichweite. Wenn der Zauber endet, entweder weil dein {@status concentration} gebrochen ist oder weil du dich entscheidest, ihn zu beenden, blüht die Perle mit einem leisen Brüllen zu einer Flammenexplosion auf, die sich um Ecken herum ausbreitet. Jede Kreatur in einem Umkreis von 20 Fuß um diesen Punkt muss einen Rettungswurf in Geschicklichkeit machen. Eine Kreatur erleidet Feuerschaden in Höhe des gesamten akkumulierten Schadens bei einem fehlgeschlagenen Rettungswurf, oder die Hälfte des Schadens bei einem erfolgreichen Rettungswurf.",
 				"Der Grundschaden des Zaubers beträgt {@damage 12d6}. Wenn die Perle am Ende deines Zuges noch nicht detoniert ist, erhöht sich der Schaden um {@dice 1d6}.",
 				"Wenn die glühende Perle berührt wird, bevor das Intervall abgelaufen ist, muss die Kreatur, die sie berührt, einen Rettungswurf in Geschicklichkeit machen. Bei einem misslungenen Schutzwurf endet der Zauber sofort und die Perle geht in Flammen auf. Bei einem erfolgreichen Rettungswurf kann die Kreatur die Perle bis zu 40 Fuß weit werfen. Wenn sie auf eine Kreatur oder einen festen Gegenstand trifft, endet der Zauber und die Perle explodiert.",
 				"Das Feuer beschädigt Gegenstände in der Umgebung und entzündet brennbare Gegenstände, die nicht getragen werden."
@@ -5906,7 +5906,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Wenn du diesen Zauber mit einem Zauberspruch der 5. Stufe wirkst, ist die Dauer Konzentration, bis zu 10 Minuten. Wenn du einen Zauberspruch der 6. Stufe verwendest, ist die Dauer Konzentration, bis zu 1 Stunde. Wenn du einen Zauberspruch der 7. Stufe oder höher verwendest, ist die Dauer Konzentration, bis zu 8 Stunden."
+						"Wenn du diesen Zauber mit einem Zauberspruch der Stufe 5 wirkst, beträgt die Dauer {@status concentration}, bis zu 10 Minuten. Wenn du einen Zauberplatz der Stufe 6 verwendest, beträgt die Dauer {@status concentration}, bis zu 1 Stunde. Wenn du einen Zauberplatz der Stufe 7 oder höher verwendest, beträgt die Dauer {@status concentration}, bis zu 8 Stunden.hrow. Eine Kreatur erleidet Feuerschaden in Höhe des gesamten akkumulierten Schadens bei einem fehlgeschlagenen Rettungswurf, oder die Hälfte des Schadens bei einem erfolgreichen Rettungswurf."
 					]
 				}
 			],
@@ -5972,7 +5972,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 9 wirkst, ist die Dauer Konzentration, bis zu 8 Stunden."
+						"Wenn du diesen Zauber mit einem Zauberschlitz der Stufe 9 wirkst, beträgt die Dauer {@status concentration}, bis zu 8 Stunden.kumulierter Schaden bei einem fehlgeschlagenen Schutzversuch oder die Hälfte des Schadens bei einem erfolgreichen Schutzversuch.ants eine Dauer, die nicht (%1%) erfordert."
 					]
 				}
 			],
@@ -6035,7 +6035,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Wenn du diesen Zauber mit einem Zauberspruch der Stufe 6 wirkst, beträgt die Dauer Konzentration bis zu 10 Minuten. Wenn du einen Zauberspruch der Stufe 7 wirkst, beträgt die Dauer Konzentration bis zu 1 Stunde. Wenn du einen Zauberspruch der Stufe 8 oder höher wirkst, beträgt die Dauer Konzentration bis zu 8 Stunden."
+						"Wenn du diesen Zauber mit einem Zauberspruch der Stufe 6 wirkst, beträgt die Dauer {@status concentration}, bis zu 10 Minuten. Wenn du einen Zauberplatz der Stufe 7 verwendest, beträgt die Dauer {@status concentration}, bis zu 1 Stunde. Wenn du einen Zauberspruchplatz der Stufe 8 oder höher verwendest, beträgt die Dauer {@status concentration}, bis zu 8 Stunden."
 					]
 				}
 			],
@@ -6230,8 +6230,8 @@
 			],
 			"entries": [
 				"Du verursachst eine seismische Störung an einem Punkt auf dem Boden, den du in Reichweite sehen kannst. Für die Dauer der Störung wird der Boden in einem Kreis mit einem Radius von 100 Fuß um diesen Punkt herum von einem starken Beben erschüttert, das Kreaturen und Strukturen erschüttert, die in diesem Bereich mit dem Boden in Kontakt sind.",
-				"Der Boden in diesem Gebiet wird zu {@quickref difficult terrain||3}. Jede Kreatur, die sich auf dem Boden befindet und sich konzentriert, muss einen Rettungswurf auf Konstitution machen. Bei einem misslungenen Schutzwurf ist die Konzentration der Kreatur gebrochen.",
-				"Wenn du diesen Zauber sprichst und am Ende jeder Runde, die du damit verbringst, sich darauf zu konzentrieren, muss jede Kreatur auf dem Boden in diesem Gebiet einen Rettungswurf in Geschicklichkeit machen. Bei einem misslungenen Schutzwurf wird die Kreatur umgeworfen {@condition prone}.",
+				"Der Boden in diesem Gebiet wird zu {@quickref difficult terrain||3}. Jede Kreatur auf dem Boden, die {@status concentration||concentrating} ist, muss einen Rettungswurf auf Konstitution machen. Bei einem misslungenen Schutzwurf ist die {@status concentration} der Kreatur gebrochen.",
+				"Wenn du diesen Zauber sprichst und am Ende jeder Runde, in der du {@status concentration||concentrating} dafür ausgibst, muss jede Kreatur auf dem Boden in diesem Gebiet einen Rettungswurf in Geschicklichkeit machen. Bei einem misslungenen Schutzwurf wird die Kreatur um {@condition prone} geschlagen.",
 				"Dieser Zauber kann zusätzliche Effekte haben, die vom Gelände in dem Gebiet abhängen und vom DM bestimmt werden.",
 				{
 					"type": "entries",
@@ -7903,7 +7903,7 @@
 				"Du versuchst, eine Kreatur, die du in Reichweite sehen kannst, in Stein zu verwandeln. Wenn der Körper des Ziels aus Fleisch besteht, muss die Kreatur einen Rettungswurf auf Konstitution machen. Bei einem misslungenen Schutzwurf wird die Kreatur {@condition restrained} versteinert, da ihr Fleisch zu verhärten beginnt. Bei einem erfolgreichen Schutzwurf ist die Kreatur nicht betroffen.",
 				"Eine Kreatur {@condition restrained}, die von diesem Zauber betroffen ist, muss am Ende jeder ihrer Runden einen weiteren Rettungswurf gegen die Konstitution machen. Wenn sie dreimal erfolgreich gegen diesen Zauber rettet, endet der Zauber. Misslingt ihr der Rettungswurf dreimal, wird sie zu Stein verwandelt und unterliegt für die Dauer des Zaubers dem Zustand {@condition petrified}. Die Erfolge und Misserfolge müssen nicht aufeinander folgen; behalte beide im Auge, bis das Ziel drei von einer Art gesammelt hat.",
 				"Wenn die Kreatur physisch gebrochen ist, während sie {@condition petrified} ist, leidet sie unter ähnlichen Deformationen, wenn sie in ihren ursprünglichen Zustand zurückkehrt.",
-				"Wenn du deine Konzentration auf diesen Zauber für die gesamte mögliche Dauer aufrechterhältst, wird die Kreatur zu Stein verwandelt, bis der Effekt aufgehoben wird."
+				"Wenn du deine {@status concentration} auf diesen Zauber für die gesamte mögliche Dauer beibehältst, wird die Kreatur zu Stein verwandelt, bis der Effekt entfernt wird."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -8653,7 +8653,7 @@
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"Du kannst einen vorbereiteten Zauber der Stufe 3 oder niedriger in der Glyphe speichern, indem du ihn als Teil der Glyphenerschaffung wirkst. Der Zauber muss auf eine einzelne Kreatur oder ein Gebiet abzielen. Der gespeicherte Zauber hat keine unmittelbare Wirkung, wenn er auf diese Weise gewirkt wird. Wenn die Glyphe ausgelöst wird, wird der gespeicherte Zauber gewirkt. Wenn der Zauber ein Ziel hat, richtet er sich gegen die Kreatur, die die Glyphe ausgelöst hat. Wenn der Zauber feindliche Kreaturen beschwört oder schädliche Objekte oder Fallen erzeugt, erscheinen sie so nah wie möglich am Eindringling und greifen ihn an. Wenn der Zauber Konzentration erfordert, hält er bis zum Ende seiner vollen Dauer an."
+						"Du kannst einen vorbereiteten Zauber der Stufe 3 oder niedriger in der Glyphe speichern, indem du ihn als Teil der Erstellung der Glyphe wirkst. Der Zauber muss auf eine einzelne Kreatur oder ein Gebiet gerichtet sein. Der gespeicherte Zauber hat keine unmittelbare Wirkung, wenn er auf diese Weise gewirkt wird. Wenn die Glyphe ausgelöst wird, wird der gespeicherte Zauber gewirkt. Wenn der Zauber ein Ziel hat, zielt er auf die Kreatur, die die Glyphe ausgelöst hat. Wirkt der Zauber auf ein Gebiet, wird das Gebiet auf diese Kreatur zentriert. Wenn der Zauber feindliche Kreaturen beschwört oder schädliche Objekte oder Fallen erzeugt, erscheinen diese so nah wie möglich am Eindringling und greifen ihn an. Wenn der Zauber {@status concentration} benötigt, hält er bis zum Ende seiner vollen Dauer an."
 					]
 				}
 			],
@@ -9921,7 +9921,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Wenn du diesen Zauber mit einem Zauberspruchplatz der 3. oder 4. Stufe wirkst, kannst du deine Konzentration auf den Zauber bis zu 8 Stunden aufrechterhalten. Wenn du einen Zauberspruchplatz der 5. Stufe oder höher verwendest, kannst du deine Konzentration auf den Zauber bis zu 24 Stunden aufrechterhalten."
+						"Wenn du diesen Zauber mit einem Zauberspruch der 3. oder 4. Stufe wirkst, kannst du deine {@status concentration} auf den Zauberspruch bis zu 8 Stunden lang aufrechterhalten. Wenn du einen Zauberspruch der 5. Stufe oder höher verwendest, kannst du deine {@status concentration} für den Zauber bis zu 24 Stunden lang aufrechterhalten.e Kreaturen oder erzeugt schädliche Gegenstände oder Fallen, erscheinen sie so nah wie möglich am Eindringling und greifen ihn an. Wenn der Zauber {@status concentration} benötigt, hält er bis zum Ende seiner vollen Dauer an."
 					]
 				}
 			],
@@ -10225,7 +10225,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Wenn du diesen Zauber mit einem Zauberspruchplatz der 3. oder 4. Stufe wirkst, kannst du deine Konzentration auf den Zauber bis zu 8 Stunden aufrechterhalten. Wenn du einen Zauberspruchplatz der 5. Stufe oder höher verwendest, kannst du deine Konzentration auf den Zauber bis zu 24 Stunden aufrechterhalten."
+						"Wenn du diesen Zauber mit einem Zauberspruch der 3. oder 4. Stufe wirkst, kannst du deine {@status concentration} auf den Zauberspruch bis zu 8 Stunden lang aufrechterhalten. Wenn du einen Zauberspruch der 5. Stufe oder höher verwendest, kannst du deine {@status concentration} für den Zauber bis zu 24 Stunden lang aufrechterhalten.e Kreaturen oder erzeugt schädliche Gegenstände oder Fallen, erscheinen sie so nah wie möglich am Eindringling und greifen ihn an. Wenn der Zauber {@status concentration} benötigt, hält er bis zum Ende seiner vollen Dauer an."
 					]
 				}
 			],
@@ -11803,7 +11803,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Wenn du diesen Zauber mit einem Zauberslot der Stufe 6 oder höher wirkst, hält der Zauber an, bis er gebannt wird, ohne dass du dich konzentrieren musst."
+						"Wenn du diesen Zauber mit einem Zauberspruch der Stufe 6 oder höher wirkst, hält der Zauber an, bis er gebannt wird, ohne dass du {@status concentration} benötigst. Wenn der Zauber {@status concentration} benötigt, hält er bis zum Ende seiner vollen Dauer an."
 					]
 				}
 			],
@@ -12961,7 +12961,7 @@
 			],
 			"entries": [
 				"Du wählst einen Bereich des Geländes aus, der an einer Seite nicht größer als 40 Fuß ist. Du kannst Erde, Sand oder Lehm in diesem Bereich auf jede beliebige Art und Weise umgestalten. Du kannst die Höhe des Bereichs anheben oder senken, einen Graben anlegen oder auffüllen, eine Mauer errichten oder abflachen oder einen Pfeiler formen. Das Ausmaß solcher Veränderungen darf die Hälfte der größten Abmessung des Bereichs nicht überschreiten. Wenn du also ein 40-Fuß-Quadrat beeinflusst, kannst du einen bis zu 20 Fuß hohen Pfeiler errichten, die Höhe des Bereichs um bis zu 20 Fuß anheben oder senken, einen bis zu 20 Fuß tiefen Graben ausheben usw. Es dauert 10 Minuten, bis diese Veränderungen abgeschlossen sind.",
-				"Am Ende jeder 10 Minuten, die du mit der Konzentration auf den Zauber verbringst, kannst du einen neuen Bereich des Geländes wählen, auf den der Zauber wirken soll.",
+				"Am Ende jeder 10 Minuten, die du mit dem Zauber verbringst {@status concentration||concentrating}, kannst du ein neues Gebiet wählen, das du beeinflussen möchtest.",
 				"Da sich das Gelände nur langsam verändert, können die Lebewesen in diesem Gebiet in der Regel nicht durch die Bewegung des Bodens gefangen oder verletzt werden.",
 				"Dieser Zauber kann weder Naturstein noch Steinkonstruktionen manipulieren. Felsen und Strukturen verschieben sich, um sich dem neuen Terrain anzupassen. Wenn die Art und Weise, wie du das Terrain formst, eine Struktur instabil machen würde, könnte sie einstürzen.",
 				"Dieser Zauber wirkt sich auch nicht direkt auf das Pflanzenwachstum aus, da die bewegte Erde alle Pflanzen mit sich trägt."
@@ -16458,7 +16458,7 @@
 			"entries": [
 				"Bis zum Ende des Zaubers fallen gefrierender Regen und Graupel in einem 20 Fuß hohen Zylinder mit einem Radius von 40 Fuß, der auf einen Punkt eurer Wahl innerhalb der Reichweite zentriert ist. Das Gebiet ist {@quickref Vision and Light|PHB|2||heavily obscured}, und offene Flammen in diesem Gebiet werden gelöscht.",
 				"Der Boden in dem Gebiet ist mit glattem Eis bedeckt, wodurch es {@quickref difficult terrain||3}. Wenn eine Kreatur den Bereich des Zaubers zum ersten Mal in einem Zug betritt oder ihren Zug dort beginnt, muss sie einen Rettungswurf in Geschicklichkeit machen. Bei einem misslungenen Schutzwurf fällt sie {@condition prone}.",
-				"Wenn eine Kreatur ihren Zug im Bereich des Zaubers beginnt und sich auf einen Zauber konzentriert, muss sie einen erfolgreichen Rettungswurf der Konstitution gegen den Schutz-DC des Zaubers machen oder die Konzentration verlieren."
+				"Wenn eine Kreatur ihren Zug im Bereich des Zaubers beginnt und {@status concentration||concentrating} auf einen Zauber wirkt, muss die Kreatur einen erfolgreichen Rettungswurf der Konstitution gegen den Schutz-DC des Zaubers machen oder verliert {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -17142,7 +17142,7 @@
 			],
 			"entries": [
 				"Es bildet sich eine aufgewühlte Gewitterwolke, die sich auf einen Punkt konzentriert, den Sie sehen können, und sich in einem Radius von 360 Fuß ausbreitet. Blitze zucken durch die Gegend, Donner dröhnt und starke Winde brausen. Jede Kreatur unter der Wolke (nicht mehr als 5.000 Fuß unter der Wolke), wenn sie erscheint, muss einen Rettungswurf auf Konstitution machen. Bei einem misslungenen Schutzwurf erleidet die Kreatur {@damage 2d6} Donnerschaden und wird für 5 Minuten zu {@condition deafened}.",
-				"In jeder Runde, in der du die Konzentration auf diesen Zauber aufrechterhältst, erzeugt der Sturm andere Effekte in deinem Zug.",
+				"Jede Runde, in der du diesen Zauber aufrechterhältst {@status concentration}, erzeugt der Sturm andere Effekte in deinem Zug.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -17168,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Böen und gefrierender Regen treffen auf das Gebiet unter der Wolke. Das Gebiet wird {@quickref difficult terrain||3} und ist {@quickref Vision and Light|PHB|2||heavily obscured}. Jede Kreatur dort erleidet {@damage 1d6} Kälteschaden. Angriffe mit Fernkampfwaffen sind in diesem Gebiet unmöglich. Wind und Regen gelten als starke Ablenkung, wenn es darum geht, die Konzentration auf Zauber aufrechtzuerhalten. Schließlich zerstreuen starke Windböen (zwischen 20 und 50 Meilen pro Stunde) automatisch Nebel, Dunst und ähnliche Phänomene in dem Gebiet, egal ob weltlich oder magisch."
+						"Böen und gefrierender Regen treffen auf das Gebiet unter der Wolke. Das Gebiet wird {@quickref difficult terrain||3} und ist {@quickref Vision and Light|PHB|2||heavily obscured}. Jede Kreatur dort erleidet {@damage 1d6} Kälteschaden. Angriffe mit Fernkampfwaffen sind in diesem Gebiet unmöglich. Der Wind und der Regen zählen als starke Ablenkung, um {@status concentration} auf Zauber zu erhalten. Schließlich zerstreuen starke Windböen (zwischen 20 und 50 Meilen pro Stunde) automatisch Nebel, Dunst und ähnliche Phänomene in dem Gebiet, egal ob weltlich oder magisch."
 					]
 				}
 			],
@@ -18912,7 +18912,7 @@
 				"Die Wand kann jede beliebige Form haben, sie darf jedoch nicht denselben Raum wie ein Wesen oder ein Objekt einnehmen. Die Wand muss nicht senkrecht sein oder auf einem festen Fundament stehen. Sie muss jedoch mit bereits vorhandenem Stein verschmelzen und von diesem solide gestützt werden. So könnt ihr mit diesem Zauber eine Kluft überbrücken oder eine Rampe errichten.",
 				"Wenn Sie eine Spannweite von mehr als 20 Fuß Länge schaffen, müssen Sie die Größe jeder Platte halbieren, um Stützen zu schaffen. Sie können die Mauer grob formen, um Zinnen, Zinnen usw. zu schaffen.",
 				"Die Mauer ist ein Objekt aus Stein, das beschädigt und somit durchbrochen werden kann. Jede Platte hat AC 15 und 30 Trefferpunkte pro Zoll Dicke. Wird eine Platte auf 0 Trefferpunkte reduziert, wird sie zerstört und kann nach Ermessen des DM zusammenhängende Platten zum Einsturz bringen.",
-				"Wenn du dich während der gesamten Dauer des Zaubers auf ihn konzentrierst, wird die Mauer dauerhaft und kann nicht gebannt werden, andernfalls verschwindet sie, wenn der Zauber endet."
+				"Wenn du deine {@status concentration} auf diesen Zauber während seiner gesamten Dauer beibehältst, wird die Wand permanent und kann nicht gebannt werden. Andernfalls verschwindet die Wand, wenn der Zauber endet. Starke Windböen (zwischen 20 und 50 Meilen pro Stunde) zerstreuen automatisch Nebel, Dunst und ähnliche Phänomene in der Umgebung, egal ob weltlich oder magisch."
 			],
 			"savingThrow": [
 				"dexterity"

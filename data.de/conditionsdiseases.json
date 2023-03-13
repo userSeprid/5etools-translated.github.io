@@ -580,18 +580,18 @@
 			"srd": true,
 			"basicRules": true,
 			"entries": [
-				"Bei manchen Zaubern muss man sich konzentrieren, um die Magie aufrechtzuerhalten. Wenn man die Konzentration verliert, endet ein solcher Zauber.",
-				"Wenn ein Zauber mit Konzentration aufrechterhalten werden muss, erscheint diese Tatsache im Eintrag Dauer, und der Zauberspruch gibt an, wie lange man sich darauf konzentrieren kann. Man kann die Konzentration jederzeit beenden (keine Aktion erforderlich).",
-				"Normale Aktivitäten wie Bewegungen und Angriffe beeinträchtigen die Konzentration nicht. Die folgenden Faktoren können die Konzentration beeinträchtigen:",
+				"Bei einigen Zaubern musst du {@status concentration} beibehalten, damit ihre Magie aktiv bleibt. Wenn du {@status concentration} verlierst, endet ein solcher Zauberspruch.",
+				"Wenn ein Zauber mit {@status concentration} aufrechterhalten werden muss, erscheint diese Tatsache in seinem Eintrag Dauer, und der Zauber gibt an, wie lange man sich darauf konzentrieren kann. Du kannst {@status concentration} jederzeit beenden (keine Aktion erforderlich).",
+				"Normale Aktivitäten, wie Bewegungen und Angriffe, stören nicht {@status concentration}. Die folgenden Faktoren können {@status concentration} unterbrechen:",
 				{
 					"type": "list",
 					"items": [
-						"{@b Casting another spell that requires concentration.} Du verlierst die Konzentration auf einen Zauber, wenn du einen anderen Zauber sprichst, der Konzentration erfordert. Du kannst dich nicht auf zwei Zauber gleichzeitig konzentrieren.",
-						"{@b Taking damage.} Immer wenn du Schaden nimmst, während du dich auf einen Zauber konzentrierst, musst du einen Rettungswurf auf Konstitution machen, um deine Konzentration aufrechtzuerhalten. Der DC beträgt 10 oder die Hälfte des erlittenen Schadens, je nachdem, welcher Wert höher ist. Wenn du Schaden aus mehreren Quellen erleidest, wie z.B. durch einen Pfeil und den Atem eines Drachens, musst du für jede Schadensquelle einen eigenen Rettungswurf machen.",
-						"{@b Being incapacitated or killed.} Du verlierst die Konzentration auf einen Zauber, wenn du {@condition incapacitated} bist oder wenn du stirbst."
+						"{@b Casting another spell that requires concentration.} Du verlierst {@status concentration} auf einen Zauber, wenn du einen anderen Zauber sprichst, der {@status concentration} benötigt. Du kannst dich nicht auf zwei Zaubersprüche gleichzeitig konzentrieren.",
+						"{@b Taking damage.} Immer wenn du Schaden nimmst, während du {@status concentration||concentrating} auf einen Zauber wirkst, musst du einen Rettungswurf auf Konstitution machen, um deine {@status concentration} aufrechtzuerhalten. Der DC beträgt 10 oder die Hälfte des erlittenen Schadens, je nachdem, welche Zahl höher ist. Wenn du aus mehreren Quellen Schaden erleidest, z.B. durch einen Pfeil und den Atem eines Drachens, musst du für jede Schadensquelle einen eigenen Rettungswurf machen.",
+						"{@b Being incapacitated or killed.} Du verlierst {@status concentration} auf einen Zauber, wenn du {@condition incapacitated} bist oder stirbst. Für jede Schadensquelle gibt es einen eigenen Rettungswurf."
 					]
 				},
-				"Der DM kann auch entscheiden, dass bestimmte Umweltphänomene, wie z.B. eine Welle, die über dich hereinbricht, während du dich auf einem sturmgepeitschten Schiff befindest, es erforderlich machen, dass du einen Rettungswurf der Konstitution DC 10 bestehst, um die Konzentration auf einen Zauber aufrechtzuerhalten."
+				"Der DM kann auch entscheiden, dass bestimmte Umweltphänomene, wie z.B. eine Welle, die über dich hereinbricht, während du dich auf einem sturmgepeitschten Schiff befindest, erfordern, dass du einen Rettungswurf der Konstitution DC 10 bestehst, um {@status concentration} eines Zaubers aufrechtzuerhalten."
 			]
 		}
 	]

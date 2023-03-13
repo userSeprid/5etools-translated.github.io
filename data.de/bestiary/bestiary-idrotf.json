@@ -576,7 +576,7 @@
 				{
 					"name": "Blizzard Veil",
 					"entries": [
-						"Auril erschafft einen magischen Schneesturm in einem Radius von 30 Fuß um sich herum. Der Bereich innerhalb der Sphäre ist stark verdunkelt, und die Sphäre bewegt sich mit Auril. Der Effekt hält an, bis Auril in dieser Form auf 0 Trefferpunkte sinkt, bis sie sich entscheidet, den Effekt zu beenden (keine Aktion erforderlich), oder bis ihre Konzentration gebrochen ist (als ob sie sich auf einen Zauber konzentrieren würde)."
+						"Auril erschafft einen magischen Schneesturm in einem Radius von 30 Fuß um sich herum. Der Bereich innerhalb der Sphäre ist stark verdunkelt, und die Sphäre bewegt sich mit Auril. Der Effekt hält an, bis Auril in dieser Form auf 0 Trefferpunkte fällt, bis sie sich entscheidet, den Effekt zu beenden (keine Aktion erforderlich), oder bis ihre {@status concentration} gebrochen sind (wie bei {@status concentration||concentrating} auf einem Zauber)."
 					]
 				}
 			],
@@ -632,6 +632,7 @@
 		{
 			"name": "Avarice",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 269,
 			"size": [
@@ -1713,6 +1714,7 @@
 		{
 			"name": "Dzaan's Simulacrum",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 270,
 			"size": [
@@ -4211,6 +4213,7 @@
 		{
 			"name": "Kingsport",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 243,
 			"size": [
@@ -4958,6 +4961,7 @@
 		{
 			"name": "Nass Lantomir's Ghost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 272,
 			"size": [
@@ -5140,6 +5144,7 @@
 		{
 			"name": "Prisoner 237",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 160,
 			"size": [
@@ -5740,6 +5745,7 @@
 		{
 			"name": "Spellix Romwod",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 144,
 			"size": [
@@ -6323,6 +6329,7 @@
 		{
 			"name": "Vellynne Harpell",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 273,
 			"size": [
@@ -6876,7 +6883,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Xardorok verwandelt sich magisch {@condition invisible}, bis er angreift, einen Zauber wirkt, seine Vergrößerung einsetzt oder seine Konzentration unterbrochen wird (als ob er sich auf einen Zauber konzentriert). Jede Ausrüstung, die Xardorok trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Xardorok verwandelt sich auf magische Weise in {@condition invisible}, bis er angreift, einen Zauber wirkt, seine Vergrößerung einsetzt oder seine {@status concentration} gebrochen wird (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jegliche Ausrüstung, die Xardorok trägt oder mit sich führt, ist {@condition invisible} mit ihm."
 					]
 				}
 			],

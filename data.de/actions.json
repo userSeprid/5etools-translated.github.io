@@ -33,7 +33,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"Einige magische Gegenstände erlauben es dem Benutzer, einen Zauber von dem Gegenstand aus zu wirken, oft indem er Ladungen von ihm verbraucht. Der Zauber wird auf der niedrigsten möglichen Zauber- und Wirkerstufe gewirkt, verbraucht keine der Zauberplätze des Benutzers und benötigt keine Komponenten, es sei denn, die Beschreibung des Gegenstands sagt etwas anderes. Der Zauber verwendet seine normale Wirkzeit, Reichweite und Dauer, und der Benutzer des Gegenstands muss sich konzentrieren, wenn der Zauber Konzentration erfordert. Bestimmte Gegenstände machen Ausnahmen von diesen Regeln, indem sie die Wirkzeit, Dauer oder andere Teile eines Zaubers verändern.",
+						"Einige magische Gegenstände erlauben es dem Benutzer, einen Zauber von dem Gegenstand aus zu wirken, indem er oft Ladungen von ihm verbraucht. Der Zauber wird auf der niedrigstmöglichen Zauber- und Wirkerstufe gewirkt, verbraucht keine Zauberplätze des Benutzers und benötigt keine Komponenten, es sei denn, die Beschreibung des Gegenstands sagt etwas anderes. Der Zauber verwendet seine normale Wirkzeit, Reichweite und Dauer, und der Benutzer des Gegenstands muss sich konzentrieren, wenn der Zauber {@status concentration} erfordert. Bestimmte Gegenstände machen Ausnahmen von diesen Regeln und verändern die Wirkzeit, Dauer oder andere Teile eines Zaubers.",
 						"Viele Gegenstände, wie z.B. Tränke, umgehen das Wirken des Zaubers und verleihen die Wirkungen des Zaubers. Ein solcher Gegenstand verwendet trotzdem die Dauer des Zaubers, es sei denn, die Beschreibung des Gegenstands sagt etwas anderes.",
 						"Ein magischer Gegenstand, wie z.B. bestimmte Stäbe, kann es erforderlich machen, dass du deine eigene Zauberfähigkeit einsetzt, wenn du einen Zauber mit dem Gegenstand wirkst. Wenn du mehr als eine Zauberfähigkeit hast, wählst du aus, welche du mit dem Gegenstand verwendest. Wenn du keine Zauberfähigkeit hast - z.B. wenn du ein Schurke mit der Eigenschaft \"Magisches Gerät benutzen\" bist - ist dein Modifikator für die Zauberfähigkeit +0 für den Gegenstand und dein Beherrschungsbonus gilt."
 					]
@@ -197,7 +197,7 @@
 				"Free"
 			],
 			"entries": [
-				"Wenn ein Zauber mit Konzentration aufrechterhalten werden muss, erscheint diese Tatsache im Eintrag Dauer, und der Zauberspruch gibt an, wie lange man sich darauf konzentrieren kann. Man kann die Konzentration jederzeit beenden (keine Aktion erforderlich)."
+				"Wenn ein Zauber mit {@status concentration} aufrechterhalten werden muss, erscheint diese Tatsache in seinem Eintrag Dauer, und der Zauber gibt an, wie lange du dich darauf konzentrieren kannst. Du kannst {@status concentration} jederzeit beenden (keine Aktion erforderlich).oder andere Teile eines Zaubers."
 			]
 		},
 		{
@@ -448,7 +448,7 @@
 				"Wenn du einen Gegner überrumpeln oder eine bestimmte Situation abwarten willst, bevor du handelst, kannst du in deinem Zug die Aktion \"Bereit\" ausführen, mit der du vor Beginn deines nächsten Zuges mit deiner Reaktion handeln kannst.",
 				"Zuerst entscheidest du, welcher wahrnehmbare Umstand deine Reaktion auslöst. Dann wählst du die Aktion, mit der du auf diesen Auslöser reagierst, oder du entscheidest dich dafür, dich als Reaktion auf den Auslöser bis zu deiner Geschwindigkeit zu bewegen. Beispiele sind \"Wenn der Kultist auf die Falltür tritt, ziehe ich den Hebel, der sie öffnet\" und \"Wenn der Kobold neben mich tritt, gehe ich weg\".",
 				"Wenn der Auslöser auftritt, kannst du deine Reaktion entweder direkt nach dem Ende des Auslösers ausführen oder den Auslöser ignorieren. Bedenke, dass du nur eine Reaktion pro Runde ausführen kannst.",
-				"Wenn du einen Zauber vorbereitest, wirkst du ihn wie gewohnt, hältst aber seine Energie zurück, die du mit deiner Reaktion freisetzt, wenn der Auslöser eintritt. Um bereit zu sein, muss ein Zauber eine Wirkzeit von 1 Aktion haben, und das Festhalten der Magie des Zaubers erfordert Konzentration (erklärt in {@book chapter 10|phb|10|concentration}). Wenn deine Konzentration unterbrochen wird, löst sich der Zauber auf, ohne Wirkung zu zeigen. Wenn du dich zum Beispiel auf den Netzzauber konzentrierst und ein magisches Geschoss vorbereitest, endet dein Netzzauber, und wenn du Schaden nimmst, bevor du das magische Geschoss mit deiner Reaktion freisetzt, kann deine Konzentration unterbrochen werden.",
+				"Wenn du einen Zauber vorbereitest, wirkst du ihn wie gewohnt, hältst aber seine Energie zurück, die du mit deiner Reaktion freisetzt, wenn der Auslöser erfolgt. Um bereit zu sein, muss ein Zauber eine Wirkzeit von 1 Aktion haben, und das Festhalten der Magie des Zaubers erfordert {@status concentration} (erklärt in {@book chapter 10|phb|10|concentration}). Wenn dein {@status concentration} gebrochen wird, löst sich der Zauber auf, ohne Wirkung zu zeigen. Wenn du zum Beispiel {@status concentration||concentrating} auf dem Netzzauber stehst und ein magisches Geschoss bereit hast, endet dein Netzzauber, und wenn du Schaden nimmst, bevor du das magische Geschoss mit deiner Reaktion auslöst, könnte dein {@status concentration} gebrochen sein.",
 				"Du hast bis zum Beginn deines nächsten Zuges Zeit, eine vorbereitete Aktion zu nutzen."
 			]
 		},

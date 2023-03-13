@@ -2205,7 +2205,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Ab Stufe 14 kannst du eine Kreatur in ein illusorisches Reich stürzen. Als Aktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Sie muss einen Rettungswurf in Weisheit gegen den Schutz-DC deines Hexenmeister-Zaubers ablegen. Bei einem misslungenen Schutzwurf wird die Kreatur {@condition charmed} oder {@condition frightened} von dir (deiner Wahl) für 1 Minute oder bis zur Unterbrechung deiner Konzentration (als würdest du dich auf einen Zauber konzentrieren) angezogen. Dieser Effekt endet vorzeitig, wenn die Kreatur Schaden erleidet.",
+				"Ab der 14. Stufe kannst du eine Kreatur in ein illusorisches Reich stürzen. Als Aktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Es muss einen Rettungswurf in Weisheit gegen den Schutz-DC deines Hexenmeister-Zaubers machen. Bei einem misslungenen Schutzwurf wird die Kreatur von dir {@condition charmed} oder {@condition frightened} (nach deiner Wahl) 1 Minute lang oder so lange, bis dein {@status concentration} gebrochen ist (als ob du {@status concentration||concentrating} auf einen Zauber wirkst). Dieser Effekt endet vorzeitig, wenn die Kreatur Schaden erleidet.",
 				"Bis diese Illusion endet, glaubt die Kreatur, sie sei in einem nebligen Reich verloren, dessen Aussehen du wählst. Die Kreatur kann nur sich selbst, dich und die Illusion sehen und hören.",
 				"Sie müssen eine kurze oder lange Pause machen, bevor Sie diese Funktion wieder nutzen können."
 			]
@@ -2708,7 +2708,7 @@
 			"entries": [
 				"{@i 10th-level Fathomless feature}",
 				"Du erlernst den Zauber {@spell Evard's black tentacles}. Er zählt für dich als Hexenmeisterzauber, wird aber nicht auf die Anzahl der Zauber angerechnet, die du kennst. Du kannst ihn auch einmal ohne Zauberslot wirken, und du erlangst die Fähigkeit dazu wieder, wenn du eine lange Pause beendest.",
-				"Immer wenn du diesen Zauber sprichst, stärkt dich die Magie deines Gönners und verleiht dir vorübergehend so viele Trefferpunkte wie deine Hexenmeisterstufe. Außerdem kann Schaden deine Konzentration auf diesen Zauber nicht unterbrechen."
+				"Immer wenn du diesen Zauber wirkst, stärkt dich die Magie deines Gönners und verleiht dir vorübergehend so viele Trefferpunkte wie deine Hexenmeisterstufe. Außerdem kann Schaden deine {@status concentration} auf diesen Zauber nicht brechen."
 			]
 		},
 		{
@@ -3309,7 +3309,7 @@
 			"entries": [
 				"{@i 14th-level Undead feature}",
 				"Dein Körper ist jetzt nur noch ein Gefäß für deinen Geist. Als Aktion kannst du deinen Geist aus deinem Körper projizieren. Der Körper, den du zurücklässt, ist {@condition unconscious} und befindet sich in einem Zustand des Schwebezustands.",
-				"Dein Geist kann bis zu 1 Stunde außerhalb deines Körpers bleiben oder bis deine Konzentration unterbrochen wird (als ob du dich auf einen Zauber konzentrierst). Wenn deine Projektion endet, kehrt dein Geist in deinen Körper zurück oder dein Körper teleportiert sich auf magische Weise in den Raum deines Geistes (deine Wahl).",
+				"Dein Geist kann bis zu 1 Stunde außerhalb deines Körpers bleiben oder bis dein {@status concentration} gebrochen ist (wie bei {@status concentration||concentrating} auf einem Zauber). Wenn deine Projektion endet, kehrt dein Geist in deinen Körper zurück oder dein Körper teleportiert sich auf magische Weise in den Raum deines Geistes (deine Wahl).",
 				"Wenn du deinen Geist projizierst, erhältst du die folgenden Vorteile:",
 				{
 					"type": "list",
@@ -4711,7 +4711,7 @@
 			"entries": [
 				"{@i 14th-level Undead feature}",
 				"Dein Geist kann sich von deiner physischen Form lösen. Als Aktion kannst du deinen Geist aus deinem Körper projizieren. Der Körper, den du zurücklässt, ist {@condition unconscious} und befindet sich in einem Zustand des Schwebezustands.",
-				"Dein Geist ähnelt deiner sterblichen Gestalt in fast jeder Hinsicht, er kopiert deine Spielstatistiken, aber nicht deine Besitztümer. Jeder Schaden oder andere Effekt, der deinen Geist oder deinen physischen Körper betrifft, wirkt sich auf den jeweils anderen aus. Dein Geist kann bis zu 1 Stunde außerhalb deines Körpers bleiben oder bis deine Konzentration unterbrochen wird (als ob du dich auf einen Zauber konzentrierst). Wenn deine Projektion endet, kehrt dein Geist in deinen Körper zurück oder dein Körper teleportiert sich auf magische Weise in den Raum deines Geistes (deine Wahl).",
+				"Ihr Geist ähnelt in fast jeder Hinsicht Ihrer sterblichen Form und übernimmt Ihre Spielstatistiken, nicht aber Ihre Besitztümer. Jeglicher Schaden oder andere Effekte, die Ihren Geist oder Ihren physischen Körper betreffen, wirken sich auf den jeweils anderen aus. Dein Geist kann bis zu 1 Stunde lang außerhalb deines Körpers verbleiben oder bis dein {@status concentration} gebrochen ist (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Wenn deine Projektion endet, kehrt dein Geist in deinen Körper zurück oder dein Körper teleportiert sich auf magische Weise in den Raum deines Geistes (deine Wahl).",
 				"Wenn du deinen Geist projizierst, erhältst du die folgenden Vorteile:",
 				{
 					"type": "list",

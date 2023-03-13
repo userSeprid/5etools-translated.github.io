@@ -42,7 +42,7 @@
 					},
 					"name": "Energy Adaptation",
 					"entries": [
-						"Als Aktion kannst du eine Kreatur berühren und ihr Resistenz gegen Säure-, Kälte-, Feuer-, Blitz- oder Donnerschaden (nach deiner Wahl) verleihen, die so lange anhält, bis deine Konzentration endet."
+						"Als Aktion kannst du eine Kreatur berühren und ihr Resistenz gegen Säure-, Kälte-, Feuer-, Blitz- oder Donnerschaden (deiner Wahl) verleihen, die bis zum Ende deiner {@status concentration} anhält."
 					]
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"name": "Energy Immunity",
 					"entries": [
-						"Als Aktion kannst du eine Kreatur berühren und ihr Immunität gegen Säure-, Kälte-, Feuer-, Blitz- oder Donnerschaden (nach deiner Wahl) verleihen, die anhält, bis deine Konzentration endet."
+						"Als Aktion kannst du eine Kreatur berühren und ihr Immunität gegen Säure-, Kälte-, Feuer-, Blitz- oder Donnerschaden (deiner Wahl) verleihen, die bis zum Ende deiner {@status concentration} anhält."
 					]
 				}
 			]
@@ -103,7 +103,7 @@
 					},
 					"name": "View Aura",
 					"entries": [
-						"Als Aktion kannst du die Aura einer Kreatur studieren. Bis zum Ende deiner Konzentration erfährst du, solange du das Ziel sehen kannst, ob es unter dem Einfluss magischer oder psionischer Effekte steht, wie viele Trefferpunkte es hat und in welchem emotionalen Grundzustand es sich befindet. Solange dieser Effekt anhält, hast du einen Vorteil bei Weisheits- ({@skill Insight}) und Charisma-Proben, die du gegen dieses Wesen ablegst."
+						"Als Aktion kannst du die Aura einer Kreatur studieren. Solange du das Ziel sehen kannst, erfährst du bis zum Ende deines {@status concentration}, ob es unter dem Einfluss eines magischen oder psionischen Effekts steht, seine aktuelle Trefferpunktzahl und seinen emotionalen Grundzustand. Solange dieser Effekt anhält, hast du einen Vorteil bei Weisheits- ({@skill Insight}) und Charisma-Proben, die du gegen das Ziel machst."
 					]
 				},
 				{
@@ -117,7 +117,7 @@
 					},
 					"name": "Perceive the Unseen",
 					"entries": [
-						"Als Bonusaktion erhältst du die Fähigkeit, Auren auch von {@condition invisible} oder versteckten Kreaturen zu sehen. Bis zum Ende deiner Konzentration kannst du alle Kreaturen sehen, einschließlich versteckter und {@condition invisible} Kreaturen, unabhängig von den Lichtverhältnissen."
+						"Als Bonusaktion erhältst du die Fähigkeit, Auren auch von {@condition invisible} oder versteckten Kreaturen zu sehen. Bis zum Ende deines {@status concentration} kannst du alle Kreaturen sehen, auch versteckte und {@condition invisible}, unabhängig von den Lichtverhältnissen. ks, die du dagegen machst."
 					]
 				}
 			]
@@ -461,7 +461,7 @@
 					},
 					"name": "Call to Inaction",
 					"entries": [
-						"Wenn du dich 1 Minute lang mit einer Kreatur unterhältst, kannst du versuchen, sie mit überwältigendem Ennui zu beglücken. Am Ende der Minute kannst du eine Aktion einsetzen, um die Kreatur zu einem Rettungswurf in Weisheit zu zwingen. Der Schutzwurf gelingt automatisch, wenn das Ziel immun gegen das Wesen ist {@condition charmed}. Bei einem misslungenen Schutzwurf bleibt es sitzen und ist {@condition incapacitated}, bis deine Konzentration endet. Dieser Effekt endet sofort, wenn das Ziel oder ein Verbündeter, den es sehen kann, angegriffen wird oder Schaden erleidet. Bei einem erfolgreichen Schutz bleibt die Kreatur unbeeinflusst und hat keine Ahnung von deinem Versuch, ihren Willen zu beugen."
+						"Wenn du dich 1 Minute lang mit einer Kreatur unterhältst, kannst du versuchen, sie mit überwältigendem Ennui zu beglücken. Am Ende dieser Minute kannst du eine Aktion einsetzen, um die Kreatur zu einem Rettungswurf in Weisheit zu zwingen. Der Schutzwurf gelingt automatisch, wenn das Ziel immun gegen das Wesen ist {@condition charmed}. Bei einem misslungenen Schutzwurf bleibt es sitzen und ist {@condition incapacitated}, bis deine {@status concentration} endet. Dieser Effekt endet sofort, wenn das Ziel oder ein Verbündeter, den es sehen kann, angegriffen wird oder Schaden erleidet. Bei einem erfolgreichen Schutz bleibt die Kreatur unbeeinflusst und ahnt nichts von deinem Versuch, ihren Willen zu beugen."
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					},
 					"name": "Dolorous Mind",
 					"entries": [
-						"Als Aktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Sie muss einen Rettungswurf in Charisma bestehen, oder sie ist {@condition incapacitated} und hat eine Geschwindigkeit von 0, bis deine Konzentration endet. Es kann diesen Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet."
+						"Als Aktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Sie muss einen Rettungswurf in Charisma bestehen, oder sie ist {@condition incapacitated} und hat eine Geschwindigkeit von 0, bis deine {@status concentration} endet. Sie kann diesen Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet.rget oder ein Verbündeter, den sie sehen kann, wird angegriffen oder erleidet Schaden. Bei einem erfolgreichen Schutz bleibt die Kreatur unbeeinflusst und ahnt nichts von deinem Versuch, ihren Willen zu beugen."
 					]
 				}
 			]
@@ -522,7 +522,7 @@
 					},
 					"name": "Wall of Repulsion",
 					"entries": [
-						"Als Aktion erschaffst du im Umkreis von 60 Fuß eine unsichtbare, substanzlose Energiewand, die bis zu 30 Fuß lang, 10 Fuß hoch und 1 Fuß dick ist. Die Wand bleibt bestehen, bis deine Konzentration endet. Jede Kreatur, die versucht, sich durch sie hindurch zu bewegen, muss einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf kann sich die Kreatur bis zum Beginn ihres nächsten Zuges nicht durch die Mauer bewegen. Bei einem erfolgreichen Schutzwurf kann die Kreatur die Wand durchqueren. Eine Kreatur muss diesen Schutzwurf jedes Mal machen, wenn sie versucht, die Wand zu durchqueren, egal ob freiwillig oder unfreiwillig."
+						"Als Aktion erschaffst du eine unsichtbare, substanzlose Energiewand im Umkreis von 60 Fuß um dich herum, die bis zu 30 Fuß lang, 10 Fuß hoch und 1 Fuß dick ist. Die Wand bleibt bestehen, bis dein {@status concentration} endet. Jede Kreatur, die versucht, sie zu durchqueren, muss einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf kann sich die Kreatur bis zum Beginn ihres nächsten Zuges nicht durch die Mauer bewegen. Bei einem erfolgreichen Schutzwurf kann die Kreatur die Wand durchqueren. Eine Kreatur muss diesen Schutzwurf jedes Mal machen, wenn sie versucht, die Wand zu durchqueren, egal ob freiwillig oder unfreiwillig.betroffen und hat keine Ahnung von deinem Versuch, ihren Willen zu beugen."
 					]
 				},
 				{
@@ -536,7 +536,7 @@
 					},
 					"name": "Visions of Disgust",
 					"entries": [
-						"Du bringst eine Kreatur dazu, alle anderen Wesen als schreckliche, fremde Wesen zu betrachten. Als Aktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf erleidet es {@damage 5d6} psychischen Schaden, und bis zum Ende deiner Konzentration erleidet es am Ende jeder seiner Runden {@damage 1d6} psychischen Schaden pro Kreatur im Umkreis von 5 Fuß. Bei einem erfolgreichen Schutz erleidet das Ziel nur die Hälfte des ursprünglichen Schadens und keinen der anderen Effekte."
+						"Du bringst eine Kreatur dazu, alle anderen Wesen als schreckliche, fremde Wesen zu betrachten. Als Aktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf in Weisheit machen. Bei einem misslungenen Schutzwurf erleidet es {@damage 5d6} psychischen Schaden, und bis zum Ende deines {@status concentration} erleidet es am Ende jeder seiner Runden {@damage 1d6} psychischen Schaden pro Kreatur im Umkreis von 5 Fuß. Bei einem erfolgreichen Schutz erleidet das Ziel nur die Hälfte des ursprünglichen Schadens und keinen der anderen Effekte. Wenn es versucht, die Wand zu durchqueren, egal ob freiwillig oder unfreiwillig, muss es sich vor dem Schutz schützen und ahnt nicht, dass du versuchst, seinen Willen zu beugen."
 					]
 				},
 				{
@@ -550,7 +550,7 @@
 					},
 					"name": "World of Horror",
 					"entries": [
-						"Wähle als Aktion bis zu sechs Kreaturen im Umkreis von 60 Fuß von dir. Jedes Ziel muss einen Rettungswurf in Charisma ablegen. Bei einem misslungenen Schutzwurf erleidet das Ziel {@damage 8d6} psychischen Schaden, und zwar {@condition frightened}, bis deine Konzentration endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel halb so viel Schaden. Während {@condition frightened} dieses Effekts wird die Geschwindigkeit des Ziels auf 0 reduziert, und das Ziel kann seine Aktion und alle Bonusaktionen, die es möglicherweise hat, nur für Nahkampfangriffe nutzen. Das {@condition frightened} Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für das Ziel endet."
+						"Wähle als Aktion bis zu sechs Kreaturen im Umkreis von 60 Fuß von dir. Jedes Ziel muss einen Rettungswurf in Charisma ablegen. Bei einem misslungenen Schutzwurf erleidet das Ziel {@damage 8d6} psychischen Schaden und ist {@condition frightened}, bis dein {@status concentration} endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel halb so viel Schaden. Während {@condition frightened} dieses Effekts wird die Geschwindigkeit des Ziels auf 0 reduziert, und das Ziel kann seine Aktion und alle Bonusaktionen, die es möglicherweise hat, nur für Nahkampfangriffe nutzen. Das {@condition frightened} Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet. Es muss immer dann einen Rettungswurf machen, wenn es versucht, die Wand zu durchqueren, egal ob es dies will oder nicht."
 					]
 				}
 			]
@@ -587,7 +587,7 @@
 					},
 					"name": "Fighting Words",
 					"entries": [
-						"Wenn du dich 1 Minute lang mit einer Kreatur unterhältst, kannst du versuchen, eine schwelende Gewalt in ihrem Geist zu hinterlassen. Am Ende der Minute kannst du eine Aktion einsetzen, um die Kreatur zu zwingen, einen Rettungswurf in Weisheit zu machen, um dem Gewalttrieb gegenüber einer Kreatur zu widerstehen, die du ihr beschreibst oder nennst. Der Schutzwurf ist automatisch erfolgreich, wenn das Ziel immun gegen das Wesen ist {@condition charmed}. Bei einem misslungenen Schutzwurf greift das Ziel die gewählte Kreatur an, wenn es diese Kreatur sieht, bevor deine Konzentration endet, und zwar mit Waffen oder Zaubern gegen eine Kreatur, der es bereits feindlich gesinnt war, oder mit unbewaffneten Schlägen gegen einen Verbündeten oder eine Kreatur, der es neutral gegenüberstand. Sobald der Kampf beginnt, greift es 5 Runden lang weiter an, bevor dieser Effekt endet. Dieser Effekt endet sofort, wenn das Ziel oder ein Verbündeter, den es sehen kann, von einer anderen Kreatur als der, gegen die es aufgehetzt wurde, angegriffen wird oder Schaden erleidet. Bei einem erfolgreichen Schutzversuch ist die Kreatur nicht betroffen und hat keine Ahnung von deinem Versuch, ihren Willen zu beugen."
+						"Wenn du dich 1 Minute lang mit einer Kreatur unterhältst, kannst du versuchen, eine schwelende Gewalt in ihrem Geist zu hinterlassen. Am Ende der Minute kannst du eine Aktion einsetzen, um die Kreatur zu zwingen, einen Rettungswurf in Weisheit zu machen, um dem Gewalttrieb gegen eine Kreatur, die du ihr beschreibst oder nennst, zu widerstehen. Der Schutzwurf ist automatisch erfolgreich, wenn das Ziel immun gegen {@condition charmed} ist. Bei einem misslungenen Schutzwurf greift das Ziel die gewählte Kreatur an, wenn es diese Kreatur sieht, bevor dein {@status concentration} endet, und zwar mit Waffen oder Zaubern gegen eine Kreatur, der es bereits feindlich gesinnt war, oder mit unbewaffneten Schlägen gegen einen Verbündeten oder eine Kreatur, der es neutral gegenüberstand. Sobald der Kampf beginnt, greift er 5 Runden lang weiter an, bevor dieser Effekt endet. Dieser Effekt endet sofort, wenn das Ziel oder ein Verbündeter, den es sehen kann, von einer anderen Kreatur als der, gegen die es aufgehetzt wurde, angegriffen wird oder Schaden erleidet. Bei einem erfolgreichen Rettungswurf ist die Kreatur nicht betroffen und ahnt nichts von deinem Versuch, ihren Willen zu beugen. (%4%) Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet, und es hat keinen der anderen Effekte."
 					]
 				},
 				{
@@ -611,7 +611,7 @@
 					},
 					"name": "Punishing Fury",
 					"entries": [
-						"Du lässt die Wut einer Kreatur so stark ansteigen, dass sie ohne Rücksicht auf ihre eigene Sicherheit angreift. Als Bonusaktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Das Ziel muss einen Rettungswurf in Weisheit bestehen, oder bis zum Ende deiner Konzentration kann jede Kreatur im Umkreis von 1,5 Metern eine Reaktion einsetzen, um einen Nahkampfangriff gegen das Ziel auszuführen, sobald es einen Nahkampfangriff ausführt. Der Schutzwurf gelingt automatisch, wenn das Ziel immun gegen Wesen ist {@condition charmed}."
+						"Du lässt die Wut einer Kreatur so stark ansteigen, dass sie ohne Rücksicht auf ihre eigene Sicherheit angreift. Als Bonusaktion wählst du eine Kreatur in einem Umkreis von 60 Fuß, die du sehen kannst. Das Ziel muss einen Rettungswurf in Weisheit bestehen, oder bis zum Ende deines {@status concentration} kann jede Kreatur im Umkreis von 5 Fuß eine Reaktion einsetzen, um einen Nahkampfangriff gegen sie auszuführen, wenn das Ziel einen Nahkampfangriff ausführt. Der Schutzwurf gelingt automatisch, wenn das Ziel immun gegen {@condition charmed} ist. eine andere Kreatur als die, gegen die es aufgehetzt wurde. Bei einem erfolgreichen Rettungswurf ist die Kreatur nicht betroffen und ahnt nichts von deinem Versuch, ihren Willen zu beugen. (%4%) Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet, und es hat keinen der anderen Effekte."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 					},
 					"name": "Miniature Form",
 					"entries": [
-						"Als Bonusaktion wirst du zu Tiny, bis deine Konzentration endet. In dieser Größe erhältst du einen Bonus von +5 auf Geschicklichkeitsprüfungen ({@skill Stealth}) und kannst dich durch Lücken von bis zu 15 cm Durchmesser bewegen, ohne dich einzuengen."
+						"Als Bonusaktion wirst du winzig, bis dein {@status concentration} endet. Solange du diese Größe hast, erhältst du einen Bonus von +5 auf Geschicklichkeitsprüfungen ({@skill Stealth}) und kannst dich durch Lücken von bis zu 6 Zoll Durchmesser bewegen, ohne dich zu quetschen.Wenn du dich rettest, bleibt die Kreatur unberührt und ahnt nichts von deinem Versuch, ihren Willen zu beugen. Das (%4%)-Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet.rs keinen der anderen Effekte."
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					},
 					"name": "Microscopic Form",
 					"entries": [
-						"Als Bonusaktion wirst du kleiner als Tiny, bis deine Konzentration endet. In dieser Größe erhältst du einen Bonus von +10 auf Geschicklichkeitsprüfungen ({@skill Stealth}) und einen Bonus von +5 auf AC, du kannst dich durch Lücken von bis zu 1 Zoll Durchmesser bewegen, ohne dich zu quetschen, und du kannst keine Waffenangriffe durchführen."
+						"Als Bonusaktion wirst du kleiner als Winzig, bis dein {@status concentration} endet. Solange du diese Größe hast, erhältst du einen Bonus von +10 auf Geschicklichkeitsüberprüfungen ({@skill Stealth}) und einen Bonus von +5 auf AC, du kannst dich durch Lücken von bis zu 1 Zoll Durchmesser bewegen, ohne dich zu quetschen, und du kannst keine Waffenangriffe durchführen. selbst bei einem Erfolg. rettet, wann immer er versucht, die Wand zu durchqueren, ob freiwillig oder unfreiwillig."
 					]
 				}
 			]
@@ -720,7 +720,7 @@
 					},
 					"name": "Ogre Form",
 					"entries": [
-						"Als Bonusaktion erhältst du 10 temporäre Trefferpunkte. Außerdem fügst du mit deinen Nahkampfwaffen bis zum Ende deiner Konzentration bei einem Treffer zusätzlichen {@damage 1d4} Wuchtschaden zu, und deine Reichweite erhöht sich um 5 Fuß. Wenn du kleiner als Groß bist, wirst du für diesen Zeitraum ebenfalls groß."
+						"Als Bonusaktion erhältst du 10 temporäre Trefferpunkte. Außerdem verursachen deine Nahkampfangriffe bis zum Ende deiner {@status concentration} einen zusätzlichen {@damage 1d4} Wuchtschaden bei einem Treffer, und deine Reichweite erhöht sich um 5 Fuß. Wenn du kleiner als Groß bist, wirst du für die Dauer des Effekts ebenfalls groß. Du musst jedes Mal einen Rettungsversuch machen, wenn er versucht, die Wand zu durchqueren, egal ob er das will oder nicht will."
 					]
 				},
 				{
@@ -734,7 +734,7 @@
 					},
 					"name": "Giant Form",
 					"entries": [
-						"Als Bonusaktion erhältst du 30 temporäre Trefferpunkte. Außerdem fügst du mit deinen Nahkampfwaffen bis zum Ende deiner Konzentration bei einem Treffer zusätzlichen {@damage 2d6} Wuchtschaden zu, und deine Reichweite erhöht sich um 10 Fuß. Wenn du kleiner als \"Riesig\" bist, wirst du für diesen Zeitraum ebenfalls riesig."
+						"Als Bonusaktion erhältst du 30 temporäre Trefferpunkte. Außerdem verursachen deine Nahkampfangriffe bis zum Ende deiner {@status concentration} einen zusätzlichen {@damage 2d6} Wuchtschaden bei einem Treffer und deine Reichweite erhöht sich um 10 Fuß. Wenn du kleiner als \"Riesig\" bist, wirst du für die Dauer des Zaubers ebenfalls \"Riesig\". durch die Wand hindurchgehen, ob freiwillig oder unfreiwillig."
 					]
 				}
 			]
@@ -781,7 +781,7 @@
 					},
 					"name": "Psychic Redoubt",
 					"entries": [
-						"Als Aktion erschaffst du ein Feld aus schützender psychischer Energie. Wähle eine beliebige Anzahl von Kreaturen im Umkreis von 30 Fuß um dich herum. Bis zum Ende deiner Konzentration hat jedes Ziel Resistenz gegen psychischen Schaden und einen Vorteil bei Rettungswürfen in Intelligenz, Weisheit und Charisma."
+						"Als Aktion erschaffst du ein Feld aus schützender psychischer Energie. Wähle eine beliebige Anzahl von Kreaturen im Umkreis von 30 Fuß um dich herum. Bis zum Ende deines {@status concentration} hat jedes Ziel Resistenz gegen psychischen Schaden und einen Vorteil bei Rettungswürfen in Intelligenz, Weisheit und Charisma.gly oder unfreiwillig.betroffen und ahnt nichts von deinem Versuch, seinen Willen zu beugen."
 					]
 				}
 			]
@@ -828,7 +828,7 @@
 					},
 					"name": "Iron Resistance",
 					"entries": [
-						"Als Aktion erhältst du Widerstand gegen Wucht-, Stich- oder Hiebschaden (nach deiner Wahl), der bis zum Ende deiner Konzentration anhält."
+						"Als Aktion erhältst du eine Resistenz gegen Wucht-, Stich- oder Hiebschaden (nach deiner Wahl), die so lange anhält, bis dein {@status concentration} endet.g deines Versuchs, seinen Willen zu beugen."
 					]
 				}
 			]
@@ -875,7 +875,7 @@
 					},
 					"name": "Center of Attention",
 					"entries": [
-						"Als Aktion übst du eine Aura der Macht aus, die die Aufmerksamkeit einer Kreatur erregt. Wähle eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Sie muss einen Rettungswurf in Charisma ablegen. Bei einem misslungenen Schutzwurf wird die Kreatur so stark von dir abgelenkt, dass alle anderen Kreaturen {@condition invisible} auf sie aufmerksam werden, bis deine Konzentration endet. Dieser Effekt endet, wenn die Kreatur dich nicht mehr sehen oder hören kann oder wenn sie Schaden erleidet."
+						"Als Aktion übst du eine Aura der Macht aus, die die Aufmerksamkeit einer Kreatur erregt. Wähle eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Sie muss einen Rettungswurf in Charisma machen. Bei einem misslungenen Schutzwurf wird die Kreatur so stark von dir abgelenkt, dass alle anderen Kreaturen {@condition invisible} auf sie aufmerksam werden, bis dein {@status concentration} endet. Dieser Effekt endet, wenn die Kreatur dich nicht mehr sehen oder hören kann oder wenn sie Schaden erleidet."
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					},
 					"name": "Invoke Awe",
 					"entries": [
-						"Als Aktion übst du eine Aura aus, die andere in Ehrfurcht erstarren lässt. Wähle bis zu 5 Kreaturen, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Jedes Ziel muss einen Intelligenz-Rettungswurf bestehen oder {@condition charmed} von dir angegriffen werden, bis deine Konzentration endet. Während {@condition charmed} gehorcht das Ziel allen deinen verbalen Befehlen nach bestem Wissen und Gewissen, ohne etwas offensichtlich Selbstzerstörerisches zu tun. Das {@condition charmed}-Ziel greift nur Kreaturen an, die es angreifen sah, seit es {@condition charmed} ist, oder denen es bereits feindlich gesinnt war. Am Ende jeder seiner Runden kann es den Rettungswurf wiederholen, wobei es bei einem Erfolg den Effekt auf sich selbst beendet."
+						"Als Aktion übst du eine Aura aus, die andere in Ehrfurcht erstarren lässt. Wähle bis zu 5 Kreaturen, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Jedes Ziel muss einen Intelligenz-Rettungswurf bestehen oder {@condition charmed} von dir getroffen werden, bis dein {@status concentration} endet. Während {@condition charmed} gehorcht das Ziel allen deinen verbalen Befehlen nach bestem Wissen und Gewissen, ohne etwas offensichtlich Selbstzerstörerisches zu tun. Das {@condition charmed}-Ziel greift nur Kreaturen an, die es angreifen sah, seit es {@condition charmed} war, oder denen es bereits feindlich gesinnt war. Am Ende jeder seiner Runden kann es den Rettungswurf wiederholen, wobei es bei einem Erfolg den Effekt für sich selbst beendet. Die Wirkung endet, wenn die Kreatur dich nicht mehr sehen oder hören kann oder wenn sie Schaden nimmt."
 					]
 				}
 			]
@@ -950,7 +950,7 @@
 					},
 					"name": "Strategic Mind",
 					"entries": [
-						"Als Aktion übst du eine Aura des Vertrauens und der Befehlsgewalt aus, die deine Verbündeten zu einer geschlossenen Einheit zusammenschweißt. Bis deine Konzentration endet, kann jeder Verbündete, der sich in seinem Zug innerhalb von 60 Fuß um dich herum befindet, als Bonusaktion die Aktion \"Hetzen\" oder \"Lösen\" ausführen oder einen {@dice d4} würfeln und die gewürfelte Zahl zu jedem Angriffswurf in diesem Zug addieren."
+						"Als Aktion übst du eine Aura des Vertrauens und der Befehlsgewalt aus, die deine Verbündeten zu einer geschlossenen Einheit zusammenschweißt. Bis zum Ende deines {@status concentration} kann jeder Verbündete, der sich in seinem Zug innerhalb von 60 Fuß um dich herum befindet, als Bonusaktion die Aktion Dash oder Disengage ausführen oder einen {@dice d4} würfeln und die gewürfelte Zahl zu jedem Angriffswurf addieren, den er in diesem Zug ausführt.seit (%4%) oder dem er bereits feindlich gesinnt war. Am Ende jeder seiner Runden kann es den Rettungswurf wiederholen, wobei es bei einem Erfolg den Effekt für sich selbst beendet. Die Wirkung endet, wenn die Kreatur dich nicht mehr sehen oder hören kann oder wenn sie Schaden nimmt."
 					]
 				},
 				{
@@ -997,7 +997,7 @@
 					},
 					"name": "Aura of Victory",
 					"entries": [
-						"Als Bonusaktion projizierst du psionische Energie, bis deine Konzentration endet. Die Energie stärkt dich und deine Verbündeten, wenn deine Feinde niedergestreckt werden. Jedes Mal, wenn ein Feind, den du sehen kannst, auf 0 Trefferpunkte reduziert wird, erhalten du und jeder deiner Verbündeten im Umkreis von 30 Fuß temporäre Trefferpunkte in Höhe des Doppelten der Psi-Punkte, die zur Aktivierung dieses Effekts ausgegeben wurden."
+						"Als Bonusaktion projizierst du psionische Energie, bis dein {@status concentration} endet. Die Energie stärkt dich und deine Verbündeten, wenn deine Feinde niedergestreckt werden; jedes Mal, wenn ein Feind, den du sehen kannst, auf 0 Trefferpunkte reduziert wird, erhältst du und jeder deiner Verbündeten im Umkreis von 30 Fuß temporäre Trefferpunkte, die dem Doppelten der Psi-Punkte entsprechen, die für die Aktivierung dieses Effekts ausgegeben wurden.Die Wirkung endet, wenn die Kreatur dich nicht mehr sehen oder hören kann oder wenn sie Schaden nimmt."
 					]
 				},
 				{
@@ -1038,7 +1038,7 @@
 					},
 					"name": "Incite Fear",
 					"entries": [
-						"Wähle als Aktion eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf in Weisheit bestehen oder wird {@condition frightened} von dir entfernt, bis deine Konzentration endet. Immer wenn das {@condition frightened} Ziel seinen Zug an einem Ort beendet, an dem es dich nicht sehen kann, kann es den Rettungswurf wiederholen und den Effekt bei einem Erfolg für sich selbst beenden."
+						"Wähle als Aktion eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf in Weisheit bestehen oder wird {@condition frightened} von dir entfernt, bis dein {@status concentration} endet. Immer wenn das {@condition frightened} Ziel seinen Zug an einem Ort beendet, an dem es dich nicht sehen kann, kann es den Rettungswurf wiederholen und den Effekt bei einem Erfolg für sich selbst beenden."
 					]
 				},
 				{
@@ -1052,7 +1052,7 @@
 					},
 					"name": "Unsettling Aura",
 					"entries": [
-						"Als Bonusaktion hüllst du dich in beunruhigende psychische Energie. Bis deine Konzentration endet, muss jeder Feind im Umkreis von 60 Fuß, der dich sehen kann, für jeden Fuß, den er sich auf dich zubewegt, 1 zusätzlichen Fuß Bewegung aufwenden. Eine Kreatur ignoriert diesen Effekt, wenn sie immun dagegen ist, {@condition frightened} zu sein."
+						"Als Bonusaktion hüllst du dich in beunruhigende psychische Energie. Bis zum Ende deines {@status concentration} muss jeder Feind im Umkreis von 60 Fuß, der dich sehen kann, für jeden Fuß, den er sich auf dich zubewegt, 1 zusätzlichen Fuß an Bewegung aufwenden. Eine Kreatur ignoriert diesen Effekt, wenn sie immun gegen {@condition frightened}.elf bei einem Erfolg.reatur dich nicht mehr sehen oder hören kann oder wenn sie Schaden nimmt."
 					]
 				},
 				{
@@ -1066,7 +1066,7 @@
 					},
 					"name": "Incite Panic",
 					"entries": [
-						"Wähle als Aktion bis zu acht Kreaturen im Umkreis von 90 Fuß, die dich sehen können. Zu Beginn jeder Runde des Ziels, bevor deine Konzentration endet, muss das Ziel einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf ist das Ziel bis zum Beginn seines nächsten Zuges {@condition frightened}, und du wirfst einen Würfel. Wenn du eine ungerade Zahl würfelst, bewegt sich das {@condition frightened} Ziel mit halber Geschwindigkeit in eine zufällige Richtung und führt in diesem Zug keine Aktion aus, außer vor Schreck zu schreien. Wenn du eine gerade Zahl würfelst, führt das {@condition frightened} Ziel einen Nahkampfangriff gegen ein zufälliges Ziel in seiner Reichweite aus. Wenn es kein solches Ziel gibt, bewegt es sich mit halber Geschwindigkeit in eine zufällige Richtung und führt in diesem Zug keine Aktion aus. Dieser Effekt endet für ein Ziel, wenn es drei Rettungswürfe gegen ihn besteht."
+						"Wähle als Aktion bis zu acht Kreaturen im Umkreis von 90 Fuß, die dich sehen können. Zu Beginn jeder Runde eines Ziels, bevor dein {@status concentration} endet, muss das Ziel einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf ist das Ziel bis zum Beginn seines nächsten Zuges {@condition frightened}, und du wirfst einen Würfel. Wenn du eine ungerade Zahl würfelst, bewegt sich das {@condition frightened} Ziel mit halber Geschwindigkeit in eine zufällige Richtung und führt in diesem Zug keine Aktion aus, außer vor Schreck zu schreien. Wenn du eine gerade Zahl würfelst, führt das {@condition frightened} Ziel einen Nahkampfangriff gegen ein zufälliges Ziel in seiner Reichweite aus. Wenn es kein solches Ziel gibt, bewegt es sich mit halber Geschwindigkeit in eine zufällige Richtung und führt in diesem Zug keine Aktion aus. Dieser Effekt endet für ein Ziel, wenn es drei Rettungswürfe gegen dich besteht, dich nicht mehr sieht oder hört oder Schaden nimmt."
 					]
 				}
 			]
@@ -1093,7 +1093,7 @@
 					},
 					"name": "Incite Fury",
 					"entries": [
-						"Wähle als Bonusaktion bis zu drei Verbündete, die du im Umkreis von 60 Fuß sehen kannst (du kannst dich selbst anstelle eines der Verbündeten wählen). Bis deine Konzentration endet, kann jedes Ziel beim Schadenswurf für einen Nahkampfwaffenangriff einen {@dice d4} würfeln und die gewürfelte Zahl zum Schadenswurf addieren."
+						"Wähle als Bonusaktion bis zu drei Verbündete, die du im Umkreis von 60 Fuß sehen kannst (du kannst dich selbst anstelle eines der Verbündeten wählen). Bis zum Ende deines {@status concentration} kann jedes Ziel einen {@dice d4} würfeln, wenn es Schaden für einen Nahkampfwaffenangriff würfelt, und die gewürfelte Zahl zum Schadenswurf addieren.k gegen ein zufälliges Ziel in seiner Reichweite. Wenn es kein solches Ziel gibt, bewegt es sich mit halber Geschwindigkeit in eine zufällige Richtung und führt in diesem Zug keine Aktion aus. Dieser Effekt endet für ein Ziel, wenn es drei Rettungswürfe gegen dich besteht, dich nicht mehr sieht oder hört oder Schaden nimmt."
 					]
 				},
 				{
@@ -1117,7 +1117,7 @@
 					},
 					"name": "Aura of Bloodletting",
 					"entries": [
-						"Als Bonusaktion entfesselst du eine Aura der Wut. Bis deine Konzentration endet, hast du und jede Kreatur im Umkreis von 60 Fuß um dich herum Vorteil bei Nahkampfangriffswürfen."
+						"Als Bonusaktion entfesselst du eine Aura der Wut. Bis zum Ende deiner {@status concentration} hast du und jede Kreatur im Umkreis von 60 Fuß um dich herum Vorteil bei Nahkampfangriffswürfen.d auf ein Ziel, wenn es drei Rettungswürfe gegen dich besteht.nicht mehr sehen oder hören oder wenn es Schaden nimmt."
 					]
 				},
 				{
@@ -1131,7 +1131,7 @@
 					},
 					"name": "Overwhelming Fury",
 					"entries": [
-						"Als Aktion überflutest du eine Kreatur im Umkreis von 60 Fuß, die du sehen kannst, mit Wut. Das Ziel muss einen Rettungswurf in Charisma bestehen, oder es kann seine Aktionen nur für Nahkampfangriffe nutzen, bis deine Konzentration endet. Es kann den Rettungswurf am Ende jeder seiner Runden wiederholen und den Effekt bei einem Erfolg auf sich selbst beenden."
+						"Als Aktion flutest du eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst, mit Wut. Das Ziel muss einen Rettungswurf in Charisma bestehen, oder es kann seine Aktionen nur für Nahkampfangriffe nutzen, bis dein {@status concentration} endet. Es kann den Rettungswurf am Ende jeder seiner Runden wiederholen und den Effekt bei einem Erfolg auf sich selbst beenden."
 					]
 				}
 			]
@@ -1168,7 +1168,7 @@
 					},
 					"name": "Comforting Aura",
 					"entries": [
-						"Wähle als Bonusaktion bis zu drei Verbündete, die du sehen kannst (du kannst dich selbst anstelle eines der Verbündeten wählen). Bis deine Konzentration endet, kann jedes Ziel einen {@dice d4} würfeln, wenn es einen Rettungswurf macht, und die gewürfelte Zahl zur Gesamtzahl addieren."
+						"Wähle als Bonusaktion bis zu drei Verbündete, die du sehen kannst (du kannst dich selbst anstelle eines der Verbündeten wählen). Bis zum Ende deiner {@status concentration} kann jedes Ziel einen {@dice d4} würfeln, wenn es einen Rettungswurf macht, und die gewürfelte Zahl zur Gesamtzahl addieren."
 					]
 				},
 				{
@@ -1182,7 +1182,7 @@
 					},
 					"name": "Aura of Jubilation",
 					"entries": [
-						"Als Bonusaktion strahlst du eine ablenkende Fröhlichkeit aus, bis deine Konzentration endet. Jede Kreatur im Umkreis von 60 Fuß um dich, die dich sehen kann, erleidet bei allen Überprüfungen der Fertigkeiten {@skill Perception} und {@skill Investigation} einen Nachteil."
+						"Als Bonusaktion strahlst du eine ablenkende Heiterkeit aus, bis dein {@status concentration} endet. Jede Kreatur im Umkreis von 60 Fuß um dich, die dich sehen kann, erleidet bei allen Überprüfungen der Fertigkeiten {@skill Perception} und {@skill Investigation} einen Nachteil."
 					]
 				},
 				{
@@ -1239,7 +1239,7 @@
 					},
 					"name": "Cloak of Air",
 					"entries": [
-						"Als Bonusaktion ergreifst du die Kontrolle über die Luft um dich herum, um einen schützenden Schleier zu erzeugen. Bis zum Ende deiner Konzentration haben Angriffswürfe gegen dich einen Nachteil, und wenn eine Kreatur, die du sehen kannst, dich mit einem Nahkampfangriff verfehlt, kannst du deine Reaktion nutzen, um die Kreatur zu zwingen, den Angriffswurf gegen sich selbst zu wiederholen."
+						"Als Bonusaktion ergreifst du die Kontrolle über die Luft um dich herum, um einen schützenden Schleier zu erzeugen. Bis zum Ende deines {@status concentration} haben Angriffswürfe gegen dich Nachteil, und wenn eine Kreatur, die du sehen kannst, dich mit einem Nahkampfangriff verfehlt, kannst du deine Reaktion nutzen, um die Kreatur zu zwingen, den Angriffswurf gegen sich selbst zu wiederholen."
 					]
 				},
 				{
@@ -1253,7 +1253,7 @@
 					},
 					"name": "Wind Form",
 					"entries": [
-						"Als Bonusaktion erhältst du eine Fluggeschwindigkeit von 60 Fuß, die anhält, bis deine Konzentration endet."
+						"Als Bonusaktion erhältst du eine Fluggeschwindigkeit von 60 Fuß, die anhält, bis dein {@status concentration} endet."
 					]
 				},
 				{
@@ -1267,7 +1267,7 @@
 					},
 					"name": "Misty Form",
 					"entries": [
-						"Als Aktion wird dein Körper zu einer nebligen Wolke, bis deine Konzentration endet. In dieser Form erhältst du Resistenz gegen Wucht-, Stich- und Hiebschaden und kannst keine anderen Aktionen als die Aktion Hieb ausführen. Du kannst durch Öffnungen, die nicht breiter als 1 Zoll sind, hindurchgehen, ohne dich zu quetschen."
+						"Als Aktion wird dein Körper zu einer nebligen Wolke, bis dein {@status concentration} endet. In dieser Form erhältst du Resistenz gegen Wucht-, Stich- und Hiebschaden und kannst keine anderen Aktionen außer der Aktion \"Hieb\" ausführen. Du kannst durch Öffnungen, die nicht breiter als 1 Zoll sind, hindurchgehen, ohne dich zu quetschen."
 					]
 				},
 				{
@@ -1281,7 +1281,7 @@
 					},
 					"name": "Animate Air",
 					"entries": [
-						"Als Aktion lässt du ein Luftelementar in einem unbesetzten Raum erscheinen, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt bestehen, bis deine Konzentration endet, und es gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seiner Runden. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monsterhandbuch für seinen Statutenblock."
+						"Als Aktion lässt du ein Luftelementar in einem unbesetzten Raum erscheinen, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt bestehen, bis dein {@status concentration} endet, und es gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seines Zuges. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monsterhandbuch für seinen Statutenblock."
 					]
 				}
 			]
@@ -1308,7 +1308,7 @@
 					},
 					"name": "Combustion",
 					"entries": [
-						"Wähle als Aktion eine Kreatur oder ein Objekt, das du im Umkreis von 120 Fuß sehen kannst. Das Ziel muss einen Konstitutionsschutz ablegen. Bei einem misslungenen Schutzwurf erleidet das Ziel {@scaledamage 1d10|1-7|1d10|psi} Feuerschaden pro ausgegebenem Psi-Punkt und fängt Feuer, wobei es am Ende jeder seiner Runden {@damage 1d6} Feuerschaden erleidet, bis deine Konzentration endet oder bis es oder eine benachbarte Kreatur die Flammen mit einer Aktion löscht. Bei einem erfolgreichen Schutz erleidet das Ziel nur halb so viel Schaden und fängt nicht Feuer."
+						"Wähle als Aktion eine Kreatur oder ein Objekt, das du im Umkreis von 120 Fuß sehen kannst. Das Ziel muss einen Konstitutions-Save machen. Bei einem misslungenen Schutzwurf erleidet das Ziel {@scaledamage 1d10|1-7|1d10|psi} Feuerschaden pro ausgegebenem Psi-Punkt und fängt Feuer, wobei es am Ende jeder seiner Runden {@damage 1d6} Feuerschaden erleidet, bis dein {@status concentration} endet oder bis es oder eine benachbarte Kreatur die Flammen mit einer Aktion löscht. Bei einem erfolgreichen Schutz erleidet das Ziel nur halb so viel Schaden und fängt kein Feuer. Siehe das Monsterhandbuch für seinen Statutenblock."
 					]
 				},
 				{
@@ -1322,7 +1322,7 @@
 					},
 					"name": "Rolling Flame",
 					"entries": [
-						"Als Aktion erschaffst du Feuer in einem 20 Fuß mal 20 Fuß großen Würfel im Umkreis von 5 Fuß um dich. Das Feuer hält an, bis deine Konzentration endet. Jede Kreatur, die sich in diesem Bereich befindet, wenn du diese Fähigkeit einsetzt, und jede Kreatur, die ihren Zug dort beendet, erleidet 5 Feuerschaden."
+						"Als Aktion erschaffst du Feuer in einem 20 Fuß mal 20 Fuß großen Würfel im Umkreis von 5 Fuß um dich. Das Feuer hält an, bis deine {@status concentration} endet. Jede Kreatur, die sich in diesem Bereich aufhält, wenn du diese Fähigkeit einsetzt, und jede Kreatur, die ihren Zug dort beendet, erleidet 5 Feuerschaden.n. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden und fängt kein Feuer. Siehe das Monsterhandbuch für seinen Statutenblock."
 					]
 				},
 				{
@@ -1346,7 +1346,7 @@
 					},
 					"name": "Fire Form",
 					"entries": [
-						"Als Bonusaktion wirst du in Flammen gehüllt, bis deine Konzentration endet. Jede Kreatur, die ihren Zug innerhalb von 5 Fuß um dich herum beendet, erleidet {@damage 3d6} Feuerschaden."
+						"Als Bonusaktion wirst du in Flammen gehüllt, bis dein {@status concentration} endet. Jede Kreatur, die ihren Zug in einem Umkreis von 5 Fuß von dir beendet, erleidet {@damage 3d6} Feuerschaden.tch on fire.pears. Siehe das Monsterhandbuch für seinen Statutenblock."
 					]
 				},
 				{
@@ -1360,7 +1360,7 @@
 					},
 					"name": "Animate Fire",
 					"entries": [
-						"Als Aktion lässt du ein Feuerelementar in einem unbesetzten Raum erscheinen, den du in einem Umkreis von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt bestehen, bis deine Konzentration endet, und es gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seiner Runden. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monsterhandbuch für seinen Statutenblock."
+						"Als Aktion lässt du ein Feuerelementar in einem unbesetzten Raum erscheinen, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt bis zum Ende deiner {@status concentration} bestehen und gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seiner Züge. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monsterhandbuch für seinen Statutenblock."
 					]
 				}
 			]
@@ -1458,7 +1458,7 @@
 					},
 					"name": "Telekinetic Barrier",
 					"entries": [
-						"Als Aktion erschaffst du eine transparente Wand aus telekinetischer Energie, von der sich mindestens ein Teil in einem Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 40 Fuß lang, 10 Fuß hoch und 1 Zoll dick. Die Wand bleibt bestehen, bis deine Konzentration endet. Jeder 10 Fuß lange Abschnitt der Wand hat einen AC von 10 und 10 Trefferpunkte."
+						"Als Aktion erschaffst du eine transparente Wand aus telekinetischer Energie, von der sich mindestens ein Teil in einem Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 40 Fuß lang, 10 Fuß hoch und 1 Zoll dick. Die Wand bleibt bestehen, bis dein {@status concentration} endet. Jeder 10-Fuß-Abschnitt der Mauer hat einen AC-Wert von 10 und 10 Trefferpunkte.birnen. Siehe das Monsterhandbuch für seinen Statutenblock."
 					]
 				},
 				{
@@ -1472,7 +1472,7 @@
 					},
 					"name": "Grasp",
 					"entries": [
-						"Du versuchst, eine Kreatur mit telekinetischer Energie zu ergreifen und sie gefangen zu halten. Als Aktion wählst du eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf auf Stärke bestehen oder {@condition grappled} von dir getroffen werden, bis deine Konzentration endet oder bis das Ziel deine Reichweite verlässt, die bei diesem Greifen 60 Fuß beträgt.",
+						"Du versuchst, eine Kreatur mit telekinetischer Energie zu ergreifen und sie gefangen zu halten. Wähle als Aktion eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf in Stärke bestehen oder {@condition grappled} von dir festgehalten werden, bis dein {@status concentration} endet oder bis das Ziel deine Reichweite verlässt, die für diesen Greifhaken 60 Fuß beträgt.",
 						"Das {@condition grappled} Ziel kann entkommen, indem es eine Stärke- (Athletik) oder Geschicklichkeitsüberprüfung (Akrobatik) besteht, die durch deine psionische Fähigkeit plus deinen Fertigkeitsbonus bestritten wird. Wenn ein Ziel auf diese Weise zu entkommen versucht, kannst du Psi-Punkte ausgeben, um deine Prüfung zu verbessern, wobei du dich an dein Psi-Limit halten musst. Du erhältst einen Bonus von +1 pro ausgegebenem Psi-Punkt.",
 						"Während ein Ziel auf diese Weise {@condition grappled} ist, erzeugst du einen der folgenden Effekte als Aktion:"
 					]
@@ -1551,7 +1551,7 @@
 					},
 					"name": "Frozen Rain",
 					"entries": [
-						"Wähle als Aktion einen Punkt, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Die Luft in einem Umkreis von 20 Fuß um diesen Punkt wird tödlich kalt und mit Feuchtigkeit gesättigt. Jede Kreatur in diesem Gebiet muss einen Rettungswurf auf Konstitution machen. Bei einem misslungenen Schutzwurf erleidet das Ziel {@damage 6d6} Kälteschaden, und seine Geschwindigkeit wird auf 0 reduziert, bis deine Konzentration endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.",
+						"Wähle als Aktion einen Punkt, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Die Luft in einem Umkreis von 20 Fuß um diesen Punkt wird tödlich kalt und mit Feuchtigkeit gesättigt. Jede Kreatur in diesem Gebiet muss einen Rettungswurf auf Konstitution machen. Bei einem misslungenen Schutzwurf erleidet das Ziel {@damage 6d6} Kälteschaden und seine Geschwindigkeit wird auf 0 reduziert, bis dein {@status concentration} endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block.",
 						"Als Aktion kann ein Ziel, dessen Geschwindigkeit reduziert wurde, den Effekt vorzeitig beenden, wenn es eine Stärke (Athletik)-Prüfung mit einem DC gleich dem Schutz-DC dieses Effekts besteht.",
 						"Du kannst den Schaden dieses Effekts um {@scaledamage 6d6|5-7|1d6|psi} pro zusätzlichem Psi-Punkt, der dafür ausgegeben wird, erhöhen."
 					]
@@ -1567,7 +1567,7 @@
 					},
 					"name": "Ice Barrier",
 					"entries": [
-						"Als Aktion erschaffst du eine Eiswand, von der sich mindestens ein Teil in einem Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand bleibt bestehen, bis deine Konzentration endet. Jeder 10-Fuß-Abschnitt der Wand hat AC 12 und 30 Trefferpunkte. Eine Kreatur, die die Wand mit einem Nahkampfangriff beschädigt, erleidet Kälteschaden in Höhe des Schadens, den die Kreatur an der Wand verursacht hat."
+						"Als Aktion erschaffst du eine Wand aus Eis, von der sich mindestens ein Teil im Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand bleibt bestehen, bis dein {@status concentration} endet. Jeder 10-Fuß-Abschnitt der Mauer hat AC 12 und 30 Trefferpunkte. Eine Kreatur, die die Wand mit einem Nahkampfangriff beschädigt, erleidet Kälteschaden in Höhe des Schadens, den die Kreatur der Wand zugefügt hat. Der Kälteschaden wird auf 0 reduziert, bis dein (%1%) endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block."
 					]
 				}
 			]
@@ -1604,7 +1604,7 @@
 					},
 					"name": "Light",
 					"entries": [
-						"Als Aktion strahlt ein Gegenstand, den du berührst, Licht in einem Radius von 20 Fuß und gedämpftes Licht für weitere 20 Fuß aus. Das Licht hält an, bis deine Konzentration endet. Alternativ dazu strahlt eine Kreatur, die du berührst, auf dieselbe Weise Licht aus, wenn sie einen Rettungswurf für Geschicklichkeit nicht besteht. Solange sie auf diese Weise beleuchtet ist, kann sie sich nicht verstecken und Angriffswürfe gegen sie haben einen Vorteil."
+						"Als Aktion strahlt ein Gegenstand, den du berührst, Licht in einem Radius von 20 Fuß und gedämpftes Licht für weitere 20 Fuß aus. Das Licht hält an, bis dein {@status concentration} endet. Alternativ dazu strahlt eine Kreatur, die du berührst, auf dieselbe Weise Licht aus, wenn sie einen Rettungswurf für Geschicklichkeit nicht besteht. Solange es auf diese Weise beleuchtet ist, kann es sich nicht verstecken und Angriffswürfe gegen es sind vorteilhaft. wall.peed wird auf 0 reduziert, bis dein (%1%) endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block."
 					]
 				},
 				{
@@ -1618,7 +1618,7 @@
 					},
 					"name": "Shadow Beasts",
 					"entries": [
-						"Als Aktion lässt du zwei {@creature shadow||shadows} in unbesetzten Räumen erscheinen, die du im Umkreis von 60 Fuß von dir sehen kannst. Die {@creature shadow||shadows} halten an, bis deine Konzentration endet, und sie gehorchen deinen verbalen Befehlen. Im Kampf würfelst du für ihre Initiative und wählst ihr Verhalten während ihres Zuges. Wenn dieser Effekt endet, verschwinden die {@creature shadow||shadows}. Siehe das Monsterhandbuch für ihren Statutenblock."
+						"Als Aktion lässt du zwei {@creature shadow||shadows} in unbesetzten Räumen erscheinen, die du im Umkreis von 60 Fuß von dir sehen kannst. Die {@creature shadow||shadows} halten an, bis dein {@status concentration} endet, und sie gehorchen deinen verbalen Befehlen. Im Kampf würfelst du für ihre Initiative und wählst ihr Verhalten während ihres Zuges. Wenn dieser Effekt endet, verschwinden die {@creature shadow||shadows}. Siehe das Monsterhandbuch für ihren Statutenblock.%1%) endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block."
 					]
 				},
 				{
@@ -1632,7 +1632,7 @@
 					},
 					"name": "Radiant Beam",
 					"entries": [
-						"Als Aktion projizierst du einen Lichtstrahl auf eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf in Geschicklichkeit ablegen. Bei einem misslungenen Schutzwurf erleidet es {@damage 6d6} Strahlenschaden und ist {@condition blinded}, bis deine Konzentration endet. Bei einem erfolgreichen Schutzwurf erleidet es nur halb so viel Schaden. Ein {@condition blinded} Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet.",
+						"Als Aktion projizierst du einen Lichtstrahl auf eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf in Geschicklichkeit ablegen. Bei einem misslungenen Schutzwurf erleidet es {@damage 6d6} Strahlenschaden und ist {@condition blinded}, bis dein {@status concentration} endet. Bei einem erfolgreichen Schutzwurf erleidet es nur halb so viel Schaden. Ein {@condition blinded}-Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet.ee im Monsterhandbuch für ihren Statuenblock.%1%) endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block.",
 						"Du kannst den Schaden dieses Effekts um {@scaledamage 6d6|5-7|1d6|psi} pro zusätzlichem Psi-Punkt, der dafür ausgegeben wird, erhöhen."
 					]
 				}
@@ -1700,7 +1700,7 @@
 					},
 					"name": "Water Sphere",
 					"entries": [
-						"Als Aktion lässt du eine Sphäre aus Wasser um eine Kreatur entstehen. Wähle eine Kreatur im Umkreis von 60 Fuß, die du sehen kannst. Das Ziel muss einen Rettungswurf in Geschicklichkeit machen. Bei einem misslungenen Schutzwurf wird es in der Wasserkugel gefangen, bis deine Konzentration endet. Während das Ziel gefangen ist, wird seine Geschwindigkeit halbiert, es erleidet einen Nachteil bei Angriffswürfen und kann nichts sehen, was weiter als 10 Fuß von ihm entfernt ist. Aber auch Angriffswürfe gegen es erleiden Nachteil. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem erfolgreichen Wurf für es selbst endet."
+						"Als Aktion lässt du eine Kugel aus Wasser um eine Kreatur entstehen. Wähle eine Kreatur, die du im Umkreis von 60 Fuß von dir sehen kannst. Das Ziel muss einen Rettungswurf in Geschicklichkeit machen. Bei einem misslungenen Schutzwurf wird es in der Wasserkugel gefangen, bis dein {@status concentration} endet. Während das Ziel gefangen ist, wird seine Geschwindigkeit halbiert, es erleidet einen Nachteil bei Angriffswürfen und kann nichts sehen, was weiter als 10 Fuß von ihm entfernt ist. Aber auch Angriffswürfe gegen es erleiden Nachteil. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem erfolgreichen Rettungswurf für es selbst endet. siehe Monsterhandbuch für den entsprechenden Werteblock.%1%) endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block."
 					]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					},
 					"name": "Animate Water",
 					"entries": [
-						"Als Aktion lässt du ein Wasserelementar in einem unbesetzten Raum erscheinen, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt so lange bestehen, bis deine Konzentration endet, und es gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seiner Runden. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monsterhandbuch für seinen Statutenblock."
+						"Als Aktion lässt du ein Wasserelementar in einem unbesetzten Raum erscheinen, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt bis zum Ende deiner {@status concentration} bestehen und gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seiner Runden. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monster-Handbuch für seinen Statutenblock.d jeder seiner Züge und beendet den Effekt auf sich selbst bei einem Erfolg.ee das Monster-Handbuch für seinen Statutenblock.%1%) endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block."
 					]
 				}
 			]
@@ -1741,7 +1741,7 @@
 					},
 					"name": "Cloud Steps",
 					"entries": [
-						"Als Aktion beschwörst du Wolken herauf, um eine feste, durchsichtige Treppe zu erschaffen, die so lange anhält, bis deine Konzentration endet. Die Treppe bildet eine Spirale, die einen Bereich von 10 Fuß mal 10 Fuß ausfüllt und pro ausgegebenem Psi-Punkt 20 Fuß nach oben reicht."
+						"Als Aktion beschwörst du Wolken herauf, um eine feste, durchsichtige Treppe zu erschaffen, die so lange anhält, bis dein {@status concentration} endet. Die Treppe bildet eine Spirale, die einen Bereich von 10 Fuß mal 10 Fuß ausfüllt und pro ausgegebenem Psi-Punkt 20 Fuß nach oben reicht.Erfolg.ee das Monster-Handbuch für ihren Stat-Block.%1%) endet. Bei einem erfolgreichen Schutzwurf erleidet das Ziel nur halb so viel Schaden.rapple.Manual für seinen Stat-Block."
 					]
 				},
 				{
@@ -1765,7 +1765,7 @@
 					},
 					"name": "Wall of Clouds",
 					"entries": [
-						"Als Aktion erschaffst du eine Wolkenwand, von der sich mindestens ein Teil im Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand bleibt bestehen, bis deine Konzentration endet. Kreaturen können sie ungehindert durchqueren, aber die Wand blockiert die Sicht."
+						"Als Aktion erschaffst du eine Wolkenwand, von der sich mindestens ein Teil im Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand bleibt bestehen, bis dein {@status concentration} endet. Kreaturen können sie ungehindert durchqueren, aber die Wand blockiert die Sicht.ave, ein Ziel erleidet halb so viel Schaden.rapple.Manual für seinen Stat-Block."
 					]
 				},
 				{
@@ -1800,7 +1800,7 @@
 					},
 					"name": "Wall of Thunder",
 					"entries": [
-						"Als Aktion erschaffst du eine Donnerwand, von der sich mindestens ein Teil im Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand hält an, bis deine Konzentration endet. Jeder Fuß, der durch die Wand bewegt wird, kostet 1 zusätzlichen Fuß an Bewegung. Wenn sich eine Kreatur in einem Zug zum ersten Mal in den Bereich der Mauer bewegt oder ihren Zug dort beginnt, muss diese Kreatur einen Rettungswurf auf Stärke bestehen, oder sie erleidet {@damage 6d6} Donnerschaden, wird in einer geraden Linie bis zu 30 Fuß von der Mauer weggestoßen und wird {@condition prone} umgeworfen."
+						"Als Aktion erschaffst du eine Donnerwand, von der sich mindestens ein Teil innerhalb von 60 Fuß um dich herum befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand bleibt bestehen, bis dein {@status concentration} endet. Jeder Fuß, der durch die Mauer bewegt wird, kostet 1 zusätzlichen Fuß an Bewegung. Wenn sich eine Kreatur in einem Zug zum ersten Mal in den Bereich der Mauer bewegt oder ihren Zug dort beginnt, muss diese Kreatur einen Rettungswurf in Stärke bestehen, oder sie erleidet {@damage 6d6} Donnerschaden, wird in einer geraden Linie bis zu 30 Fuß von der Mauer weggeschoben und wird {@condition prone} umgeworfen.h damage.rapple.Manual für ihren Statblock."
 					]
 				},
 				{
@@ -1867,7 +1867,7 @@
 					},
 					"name": "Wall of Wood",
 					"entries": [
-						"Als Aktion erschaffst du eine Wand aus Holz, von der sich mindestens ein Teil im Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand bleibt bestehen, bis deine Konzentration endet. Jeder 5 Fuß breite Abschnitt der Mauer hat AC 12 und 100 Trefferpunkte. Wenn du einen Abschnitt durchbrichst, entsteht ein 1,5 mal 1,5 Meter großes Loch in der Mauer, aber ansonsten bleibt die Mauer intakt."
+						"Als Aktion erschaffst du eine Wand aus Holz, von der sich mindestens ein Teil im Umkreis von 60 Fuß um dich befinden muss. Die Wand ist 60 Fuß lang, 15 Fuß hoch und 1 Fuß dick. Die Wand bleibt bestehen, bis dein {@status concentration} endet. Jeder 5 Fuß breite Abschnitt der Mauer hat AC 12 und 100 Trefferpunkte. Wenn du einen Abschnitt durchbrichst, entsteht ein 1,5 mal 1,5 Meter großes Loch in der Wand, aber die Wand bleibt ansonsten intakt. Wenn du einen Rettungswurf in Stärke schaffst, erleidet er (%1%) Donnerschaden, wird in einer geraden Linie bis zu 30 Fuß von der Wand weggestoßen und wird (%2%) umgeworfen."
 					]
 				},
 				{
@@ -1881,7 +1881,7 @@
 					},
 					"name": "Armored Form",
 					"entries": [
-						"Als Bonusaktion erhältst du Widerstand gegen Wucht-, Stich- und Hiebschaden, der bis zum Ende deiner Konzentration anhält."
+						"Als Bonusaktion erhältst du Resistenz gegen Wucht-, Stich- und Hiebschaden, die anhält, bis dein {@status concentration} Rettungswurf endet.gth oder er (%1%) Donnerschaden erleidet, in einer geraden Linie bis zu 30 Fuß von der Wand weggeschoben wird und (%2%).h Schaden.rapple.Manual für seinen Stat-Block umwirft."
 					]
 				},
 				{
@@ -1895,7 +1895,7 @@
 					},
 					"name": "Animate Earth",
 					"entries": [
-						"Als Aktion lässt du ein Erdelementar in einem unbesetzten Raum erscheinen, den du innerhalb von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt bestehen, bis deine Konzentration endet, und es gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seiner Runden. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monsterhandbuch für seinen Statutenblock."
+						"Als Aktion lässt du ein Erdelementar in einem unbesetzten Raum erscheinen, den du im Umkreis von 120 Fuß um dich herum sehen kannst. Das Elementar bleibt bestehen, bis dein {@status concentration} endet, und es gehorcht deinen verbalen Befehlen. Im Kampf würfelst du für seine Initiative und wählst sein Verhalten während seines Zuges. Wenn dieser Effekt endet, verschwindet das Elementar. Siehe das Monster-Handbuch für seinen Stat-Block.ck."
 					]
 				}
 			]
@@ -1992,7 +1992,7 @@
 					},
 					"name": "Faithful Archer",
 					"entries": [
-						"Als Bonusaktion kannst du einer Fernkampfwaffe eine begrenzte Empfindsamkeit verleihen. Bis zum Ende deiner Konzentration kannst du zu Beginn jeder deiner Runden einen zusätzlichen Angriff mit der Waffe durchführen (keine Aktion erforderlich). Wenn es sich um eine Wurfwaffe handelt, kehrt sie jedes Mal in deinen Griff zurück, wenn du einen Angriff mit ihr ausführst."
+						"Als Bonusaktion verleihst du einer Fernkampfwaffe eine begrenzte Empfindsamkeit. Bis zum Ende deiner {@status concentration} kannst du mit dieser Waffe zu Beginn jeder deiner Runden einen zusätzlichen Angriff ausführen (keine Aktion erforderlich). Wenn es sich um eine Wurfwaffe handelt, kehrt sie jedes Mal in deinen Griff zurück, wenn du einen Angriff mit ihr ausführst. verschwindet. Siehe das Monster-Handbuch für seinen Stat-Block.ck."
 					]
 				}
 			]
@@ -2029,7 +2029,7 @@
 					},
 					"name": "Step from Sight",
 					"entries": [
-						"Als Bonusaktion kannst du dich vor Blicken schützen. Für jeden zusätzlichen Psi-Punkt, den du für diese Fähigkeit ausgibst, kannst du eine zusätzliche Kreatur anvisieren. Die zusätzlichen Ziele müssen für dich sichtbar sein und sich in einem Umkreis von 60 Fuß um dich befinden. Jedes Ziel wird zu {@condition invisible} und bleibt so, bis deine Konzentration endet oder bis es unmittelbar danach eine Kreatur mit einem Angriff, einem Zauber oder einer anderen Fähigkeit angreift, schädigt oder anderweitig beeinflusst."
+						"Als Bonusaktion kannst du dich vor Blicken schützen. Für jeden zusätzlichen Psi-Punkt, den du für diese Fähigkeit ausgibst, kannst du eine zusätzliche Kreatur anvisieren. Die zusätzlichen Ziele müssen für dich sichtbar sein und sich in einem Umkreis von 60 Fuß von dir befinden. Jedes Ziel verwandelt sich in {@condition invisible} und bleibt so, bis dein {@status concentration} endet oder bis es unmittelbar danach eine Kreatur mit einem Angriff, einem Zauber oder einer anderen Fähigkeit angreift, schädigt oder anderweitig beeinflusst."
 					]
 				},
 				{
@@ -2043,7 +2043,7 @@
 					},
 					"name": "Enduring Invisibility",
 					"entries": [
-						"Als Bonusaktion verwandelst du dich zu {@condition invisible} und bleibst so, bis deine Konzentration endet."
+						"Als Bonusaktion verwandelst du dich {@condition invisible} und bleibst so, bis dein {@status concentration} endet.amages, oder beeinflusst auf andere Weise eine Kreatur mit einem Angriff, einem Zauber oder einer anderen Fähigkeit.onster Manual for its stat block.ck."
 					]
 				}
 			]
@@ -2070,7 +2070,7 @@
 					},
 					"name": "Wandering Mind",
 					"entries": [
-						"Sie geraten in eine tiefe Kontemplation. Wenn du dich für die gesamte Dauer dieser Option konzentrierst, erlangst du die Beherrschung von bis zu drei der folgenden Fertigkeiten (eine Fertigkeit für je 2 ausgegebene Psi-Punkte): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion}, und {@skill Survival}. Der Vorteil hält 1 Stunde lang an, keine Konzentration erforderlich."
+						"Sie treten in eine tiefe Kontemplation ein. Wenn du dich für die gesamte Dauer dieser Option konzentrierst, erlangst du die Beherrschung von bis zu drei der folgenden Fertigkeiten (eine Fertigkeit für je 2 ausgegebene Psi-Punkte): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion}, und {@skill Survival}. Der Vorteil hält 1 Stunde lang an, kein {@status concentration} erforderlich."
 					]
 				},
 				{
@@ -2122,7 +2122,7 @@
 					},
 					"name": "Wandering Eye",
 					"entries": [
-						"Als Aktion erschaffst du einen psychischen Sensor im Umkreis von 60 Fuß um dich herum. Der Sensor hält an, bis deine Konzentration endet. Der Sensor ist unsichtbar und schwebt in der Luft. Du empfängst geistig visuelle Informationen von ihm, der normale Sicht und Nachtsicht mit einer Reichweite von 60 Fuß hat. Der Sensor kann in alle Richtungen sehen. Als Aktion kannst du den Sensor bis zu 30 Fuß in eine beliebige Richtung bewegen. Es gibt keine Begrenzung, wie weit sich das Auge von dir entfernen kann, aber es kann keine andere Dimension betreten. Eine feste Barriere blockiert die Bewegung des Auges, aber das Auge kann durch eine Öffnung mit einem Durchmesser von nur 1 Zoll hindurchgehen."
+						"Als Aktion erschaffst du einen psychischen Sensor im Umkreis von 60 Fuß von dir. Der Sensor hält an, bis dein {@status concentration} endet. Der Sensor ist unsichtbar und schwebt in der Luft. Du empfängst geistig visuelle Informationen von ihm, der normale Sicht und Nachtsicht mit einer Reichweite von 60 Fuß hat. Der Sensor kann in alle Richtungen sehen. Als Aktion kannst du den Sensor bis zu 30 Fuß in eine beliebige Richtung bewegen. Es gibt keine Begrenzung, wie weit sich das Auge von dir entfernen kann, aber es kann keine andere Dimension betreten. Eine feste Barriere blockiert die Bewegung des Auges, aber das Auge kann durch eine Öffnung mit einem Durchmesser von nur 1 Zoll hindurchgehen."
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					},
 					"name": "Nomad's Gate",
 					"entries": [
-						"Als Aktion erschaffst du einen 5-Fuß-Würfel aus grauem Licht im Umkreis von 5 Fuß um dich herum. Du erschaffst einen identischen Würfel an einem beliebigen Punkt deiner Wahl innerhalb von 1 Meile, den du in den letzten 24 Stunden gesehen hast. Bis zum Ende deiner Konzentration teleportiert sich jeder, der einen der Würfel betritt, sofort in den anderen und erscheint in einem unbesetzten Raum neben ihm. Die Teleportation schlägt fehl, wenn es keinen Platz gibt, an dem die Kreatur erscheinen kann."
+						"Als Aktion erschaffst du einen 5-Fuß-Würfel aus trübem, grauem Licht im Umkreis von 5 Fuß um dich. Du erschaffst einen identischen Würfel an einem beliebigen Punkt deiner Wahl innerhalb von 1 Meile, den du in den letzten 24 Stunden gesehen hast. Bis dein {@status concentration} endet, teleportiert sich jeder, der einen der Würfel betritt, sofort in den anderen und erscheint in einem unbesetzten Raum daneben. Die Teleportation scheitert, wenn es keinen Raum gibt, in dem die Kreatur erscheinen kann. Sie kann keine andere Dimension der Existenz betreten. Eine feste Barriere blockiert die Bewegung des Auges, aber das Auge kann durch eine Öffnung mit einem Durchmesser von nur 1 Zoll hindurchgehen."
 					]
 				}
 			]
@@ -2260,7 +2260,7 @@
 					},
 					"name": "Precognitive Hunch",
 					"entries": [
-						"Bis zum Ende deiner Konzentration wirfst du bei jedem Angriffswurf, Rettungswurf oder jeder Fähigkeitsprüfung einen {@dice d4} und addierst ihn zur Gesamtsumme."
+						"Als Bonusaktion öffnest du dich, um momentane Einsichten zu erhalten, die deine Erfolgschancen verbessern; bis dein {@status concentration} endet, würfelst du bei jedem Angriffswurf, Rettungswurf oder einer Fähigkeitsprüfung einen {@dice d4} und addierst ihn zur Gesamtsumme. Eine feste Barriere blockiert die Bewegung des Auges, aber das Auge kann durch eine Öffnung mit einem Durchmesser von nur 1 Zoll hindurchgehen."
 					]
 				},
 				{
@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"Als Aktion erschaffst du ein übersinnliches Modell der Realität in deinem Geist und stellst es so ein, dass es dir ein paar Sekunden in die Zukunft zeigt. Bis zum Ende deiner Konzentration kannst du nicht {@quickref Surprise|PHB|3|0|surprised} sein, Angriffswürfe gegen dich können keinen Vorteil bringen, und du erhältst einen Bonus von +10 auf Initiative."
+						"Als Aktion erschaffst du ein psychisches Modell der Realität in deinem Geist und stellst es so ein, dass es dir ein paar Sekunden in die Zukunft zeigt. Bis dein {@status concentration} endet, kannst du nicht {@quickref Surprise|PHB|3|0|surprised} sein, Angriffswürfe gegen dich können keinen Vorteil bringen und du erhältst einen Bonus von +10 auf Initiative. durch eine Öffnung mit einem Durchmesser von nur 1 Zoll gehen."
 					]
 				},
 				{
@@ -2394,7 +2394,7 @@
 					},
 					"name": "Augmented Weapon",
 					"entries": [
-						"Berühre als Bonusaktion eine {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Bis deine Konzentration endet, wird diese Waffe zu einer magischen Waffe mit einem Bonus von +3 auf ihre Angriffs- und Schadenswürfe."
+						"Berühre als Bonusaktion eine {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Bis zum Ende deiner {@status concentration} wird diese Waffe zu einer magischen Waffe mit einem Bonus von +3 auf ihre Angriffs- und Schadenswürfe.er.quired."
 					]
 				}
 			]
@@ -2484,7 +2484,7 @@
 					},
 					"name": "Distracting Haze",
 					"entries": [
-						"Wähle als Aktion eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Diese Kreatur muss einen Rettungswurf auf Intelligenz machen. Bei einem misslungenen Schutzwurf erleidet es {@scaledamage 1d10|1-7|1d10|psi} psychischen Schaden pro ausgegebenem Psi-Punkt und kann bis zum Ende deiner Konzentration nichts sehen, was weiter als 10 Fuß von ihm entfernt ist. Bei einem erfolgreichen Schutzwurf erleidet es nur halb so viel Schaden."
+						"Wähle als Aktion eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Diese Kreatur muss einen Intelligenz-Rettungswurf machen. Bei einem misslungenen Schutzwurf erleidet es {@scaledamage 1d10|1-7|1d10|psi} psychischen Schaden pro ausgegebenem Psi-Punkt und kann bis zum Ende deines {@status concentration} nichts sehen, was weiter als 10 Fuß von ihm entfernt ist. Bei einem erfolgreichen Schutzwurf erleidet es nur halb so viel Schaden."
 					]
 				},
 				{
@@ -2612,7 +2612,7 @@
 					},
 					"name": "Phantom Foe",
 					"entries": [
-						"Wähle als Aktion eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Intelligenzschutzwurf machen. Bei einem misslungenen Schutzwurf nimmt es eine schreckliche Kreatur in seiner Nähe wahr, bis deine Konzentration endet. Während dieser Zeit kann das Ziel keine Reaktionen ausführen und erleidet zu Beginn jeder seiner Runden {@damage 1d8} psychischen Schaden. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei es bei einem Erfolg den Effekt auf sich selbst beendet. Für jeden zusätzlichen Psi-Punkt, der für diese Fähigkeit ausgegeben wird, kann der Schaden um {@scaledamage 1d8|3-7|1d8|psi} erhöht werden."
+						"Wähle als Aktion eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf für Intelligenz machen. Bei einem misslungenen Schutzwurf nimmt es eine schreckliche Kreatur in seiner Nähe wahr, bis dein {@status concentration} endet. Während dieser Zeit kann das Ziel keine Reaktionen ausführen und erleidet zu Beginn jeder seiner Runden {@damage 1d8} psychischen Schaden. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für das Ziel endet. Für jeden zusätzlichen Psi-Punkt, den du für die Fähigkeit ausgibst, kannst du den Schaden um {@scaledamage 1d8|3-7|1d8|psi} erhöhen.h Schaden."
 					]
 				},
 				{
@@ -2626,7 +2626,7 @@
 					},
 					"name": "Phantom Betrayal",
 					"entries": [
-						"Als Aktion pflanzt du einer Kreatur wahnhafte Paranoia ein. Wähle eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Das Ziel muss einen Rettungswurf der Intelligenz bestehen, oder es muss bis zum Ende deiner Konzentration seine Verbündeten mit Angriffen und anderen schädigenden Effekten angreifen. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen und den Effekt bei einem Erfolg für sich selbst beenden. Eine Kreatur ist immun gegen diese Fähigkeit, wenn sie immun gegen das Sein ist {@condition charmed}."
+						"Als Aktion pflanzt du wahnhafte Paranoia in den Geist einer Kreatur. Wähle eine Kreatur im Umkreis von 60 Fuß, die du sehen kannst. Das Ziel muss einen Intelligenz-Rettungswurf bestehen, oder es muss bis zum Ende deines {@status concentration} seine Verbündeten mit Angriffen und anderen schädigenden Effekten angreifen. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei es bei einem Erfolg den Effekt auf sich selbst beendet. Eine Kreatur ist immun gegen diese Fähigkeit, wenn sie immun gegen {@condition charmed} ist. in jeder ihrer Runden, wobei der Effekt für sie bei einem Erfolg endet. Für jeden zusätzlichen Psi-Punkt, den du für die Fähigkeit ausgibst, kannst du den Schaden um (%2%) erhöhen.h Schaden."
 					]
 				},
 				{
@@ -2640,7 +2640,7 @@
 					},
 					"name": "Phantom Riches",
 					"entries": [
-						"Als Aktion pflanzt du das Phantom eines heiß ersehnten Objekts in den Geist einer Kreatur. Wähle eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Rettungswurf auf Intelligenz machen. Bei einem misslungenen Schutzwurf erhältst du eine teilweise Kontrolle über das Verhalten des Ziels, bis deine Konzentration endet; das Ziel bewegt sich in jedem seiner Züge so, wie du es möchtest, während es denkt, dass es das Phantomobjekt verfolgt, das es begehrt. Wenn es seit seinem letzten Zug keinen Schaden erlitten hat, kann es seine Aktion nur dazu nutzen, das von dir erschaffene Objekt in seiner Wahrnehmung zu bewundern. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet."
+						"Als Aktion pflanzt du das Phantom eines lang ersehnten Objekts in den Geist einer Kreatur. Wähle eine Kreatur, die du im Umkreis von 60 Fuß um dich herum sehen kannst. Das Ziel muss einen Rettungswurf auf Intelligenz machen. Bei einem fehlgeschlagenen Schutzwurf erhältst du eine teilweise Kontrolle über das Verhalten des Ziels, bis dein {@status concentration} endet; das Ziel bewegt sich in jeder seiner Runden so, wie du es möchtest, während es denkt, dass es das Phantomobjekt verfolgt, das es begehrt. Wenn es seit seinem letzten Zug keinen Schaden erlitten hat, kann es seine Aktion nur nutzen, um das von dir erschaffene Objekt in seiner Wahrnehmung zu bewundern. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es selbst endet. Für jeden zusätzlichen Psi-Punkt, den du für die Fähigkeit ausgibst, kannst du den Schaden um (%2%) erhöhen.h Schaden."
 					]
 				}
 			]
@@ -2697,7 +2697,7 @@
 					},
 					"name": "Psychic Grip",
 					"entries": [
-						"Als Aktion zielst du auf eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Intelligenz-Rettungswurf bestehen, oder es ist {@condition paralyzed}, bis deine Konzentration endet. Am Ende jeder seiner Runden kann es den Rettungswurf wiederholen. Bei einem Erfolg endet dieser Effekt. Bei einem Fehlschlag kannst du deine Reaktion nutzen, um das Ziel zu zwingen, sich bis zur Hälfte seiner Geschwindigkeit zu bewegen, auch wenn es {@condition paralyzed} ist."
+						"Als Aktion zielst du auf eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Intelligenz-Rettungswurf bestehen, oder es ist {@condition paralyzed}, bis dein {@status concentration} endet. Am Ende jeder seiner Runden kann es den Rettungswurf wiederholen. Bei einem Erfolg endet dieser Effekt. Bei einem Fehlschlag kannst du deine Reaktion nutzen, um das Ziel zu zwingen, sich bis zur Hälfte seiner Geschwindigkeit zu bewegen, obwohl es {@condition paralyzed} ist. Das Ziel kann den Rettungswurf am Ende jeder seiner Runden wiederholen, wobei der Effekt bei einem Erfolg für es endet. Für jeden zusätzlichen Psi-Punkt, den du für die Fähigkeit ausgibst, kannst du den Schaden um {@condition paralyzed} erhöhen.h Schaden."
 					]
 				},
 				{
@@ -2711,7 +2711,7 @@
 					},
 					"name": "Psychic Domination",
 					"entries": [
-						"Als Aktion zielst du auf eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Intelligenz-Rettungswurf bestehen, oder du bestimmst die Aktionen und Bewegungen der Kreatur in ihrem Zug, bis deine Konzentration endet. Am Ende jeder seiner Runden kann es den Rettungswurf wiederholen, wobei es den Effekt bei einem Erfolg für sich selbst beendet. Eine Kreatur ist immun gegen diese Fähigkeit, wenn sie immun gegen das Sein ist {@condition charmed}."
+						"Als Aktion zielst du auf eine Kreatur, die du im Umkreis von 60 Fuß sehen kannst. Das Ziel muss einen Intelligenz-Rettungswurf bestehen, oder du bestimmst die Aktionen und Bewegungen der Kreatur in ihrem Zug, bis dein {@status concentration} endet. Am Ende jeder seiner Runden kann es den Rettungswurf wiederholen, wobei es den Effekt bei einem Erfolg für sich selbst beendet. Eine Kreatur ist immun gegen diese Fähigkeit, wenn sie immun gegen {@condition charmed} ist.arget kann den Rettungswurf am Ende jedes seiner Züge wiederholen, wobei der Effekt für ihn selbst bei einem Erfolg endet.o sein {@condition charmed}. Für jeden zusätzlichen Psi-Punkt, den du für die Fähigkeit ausgibst, kannst du den Schaden um (%2%) erhöhen.h Schaden."
 					]
 				}
 			]
@@ -2738,7 +2738,7 @@
 					},
 					"name": "Tremorsense",
 					"entries": [
-						"Als Bonusaktion erhältst du einen Zittersinn mit einem Radius von 30 Fuß, der anhält, bis deine Konzentration endet."
+						"Als Bonusaktion erhältst du einen Zittersinn mit einem Radius von 30 Fuß, der so lange anhält, bis deine {@status concentration} endet. Runden, wobei der Effekt bei einem Erfolg auf sich selbst endet. Für jeden zusätzlichen Psi-Punkt, den du für die Fähigkeit ausgibst, kannst du den Schaden um (%2%) erhöhen.h Schaden."
 					]
 				},
 				{
@@ -2762,7 +2762,7 @@
 					},
 					"name": "Piercing Sight",
 					"entries": [
-						"Als Bonusaktion erhältst du die Fähigkeit, durch Objekte zu sehen, die bis zu 1 Fuß dick sind und sich in einem Umkreis von 30 Fuß um dich befinden. Diese Sicht hält an, bis deine Konzentration endet."
+						"Als Bonusaktion erhältst du die Fähigkeit, durch Objekte zu sehen, die bis zu 1 Fuß dick sind und sich in einem Umkreis von 30 Fuß um dich befinden. Diese Sicht hält an, bis dein {@status concentration} endet.ty.h Schaden."
 					]
 				},
 				{
@@ -2776,7 +2776,7 @@
 					},
 					"name": "Truesight",
 					"entries": [
-						"Als Bonusaktion erlangst du Wahrsicht mit einem Radius von 30 Fuß, die anhält, bis deine Konzentration endet."
+						"Als Bonusaktion erlangst du Wahrsicht mit einem Radius von 30 Fuß, die anhält, bis deine {@status concentration} endet."
 					]
 				}
 			]

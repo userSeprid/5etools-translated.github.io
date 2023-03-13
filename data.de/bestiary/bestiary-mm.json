@@ -90,7 +90,7 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Fünf Aarakocra im Umkreis von 30 Fuß können auf magische Weise einen {@creature air elemental} beschwören. Jeder der fünf muss seine Aktion und Bewegung in drei aufeinanderfolgenden Runden nutzen, um einen Tanz in der Luft zu vollführen, und muss dabei seine Konzentration aufrechterhalten (als ob er sich auf einen Zauber konzentrieren würde). Wenn alle fünf ihre dritte Runde des Tanzes beendet haben, erscheint das Elementar in einem unbesetzten Raum innerhalb von 60 Fuß um sie herum. Es ist freundlich zu ihnen und gehorcht ihren gesprochenen Befehlen. Es bleibt für 1 Stunde, bis es selbst oder alle seine Beschwörer sterben oder bis einer seiner Beschwörer es als Bonusaktion entlässt. Ein Beschwörer kann den Tanz erst nach einer kurzen Ruhepause erneut ausführen. Wenn das Elementar in die Dimension der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
+						"Fünf Aarakocra im Umkreis von 30 Fuß können einen {@creature air elemental} magisch herbeirufen. Jeder der fünf muss seine Aktion und Bewegung in drei aufeinanderfolgenden Runden nutzen, um einen Lufttanz zu vollführen, und muss dabei {@status concentration} aufrechterhalten (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Wenn alle fünf ihre dritte Runde des Tanzes beendet haben, erscheint das Elementar in einem unbesetzten Raum innerhalb von 60 Fuß um sie herum. Es ist freundlich zu ihnen und gehorcht ihren gesprochenen Befehlen. Es bleibt für 1 Stunde, bis es selbst oder alle seine Beschwörer sterben oder bis einer seiner Beschwörer es als Bonusaktion entlässt. Ein Beschwörer kann den Tanz erst nach einer kurzen Ruhepause erneut ausführen. Wenn das Elementar in die Dimension der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				}
 			],
@@ -15774,7 +15774,7 @@
 							"name": "Wind Aura",
 							"type": "entries",
 							"entries": [
-								"Eine magische Aura aus Wind umgibt den Riesen. Die Aura ist eine Kugel mit einem Radius von 10 Fuß, die so lange anhält, wie der Riese seine Konzentration darauf aufrecht erhält (als ob er sich auf einen Zauber konzentrieren würde). Solange die Aura wirkt, erhält der Riese einen Bonus von +2 auf seinen AC gegen Angriffe mit Fernkampfwaffen, und alle offenen Flammen innerhalb der Aura werden gelöscht, sofern sie nicht magisch sind."
+								"Eine magische Aura aus Wind umgibt den Riesen. Die Aura ist eine Kugel mit einem Radius von 10 Fuß, die so lange anhält, wie der Riese {@status concentration} darauf hält (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Während die Aura in Kraft ist, erhält der Riese einen Bonus von +2 auf seinen AC gegen Angriffe mit Fernkampfwaffen, und alle offenen Flammen innerhalb der Aura erlöschen, es sei denn, sie sind magisch. Ein Beschwörer kann den Tanz erst nach einer kurzen Ruhepause erneut ausführen. Wenn das Elementar in die Dimension der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 							]
 						}
 					],
@@ -17731,7 +17731,7 @@
 				{
 					"name": "Darkness Aura (1/Day)",
 					"entries": [
-						"Ein 15-Fuß-Radius magischer Dunkelheit erstreckt sich vom Dunkelmantel aus, bewegt sich mit ihm und breitet sich um Ecken aus. Die Dunkelheit hält so lange an, wie der Dunkelmantler seine Konzentration aufrechterhält, bis zu 10 Minuten (als ob er sich auf einen Zauber konzentrieren würde). Dunkelheitssicht kann diese Dunkelheit nicht durchdringen, und kein natürliches Licht kann sie erhellen. Wenn sich ein Teil der Dunkelheit mit einem Lichtbereich überschneidet, der durch einen Zauber der Stufe 2 oder niedriger erzeugt wurde, wird der Zauber, der das Licht erzeugt hat, gebannt."
+						"Ein 15-Fuß-Radius magischer Dunkelheit erstreckt sich vom Dunkelmantel aus, bewegt sich mit ihm und breitet sich um Ecken aus. Die Dunkelheit hält so lange an, wie der Dunkelmantel {@status concentration} aufrechterhält, bis zu 10 Minuten (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Dunkelheitssicht kann diese Finsternis nicht durchdringen, und kein natürliches Licht kann sie erhellen. Wenn sich ein Teil der Dunkelheit mit einem Lichtbereich überschneidet, der durch einen Zauber der Stufe 2 oder niedriger erzeugt wurde, wird der Zauber, der das Licht erzeugt hat, gebannt.us-Aktion. Ein Beschwörer kann den Tanz erst nach einer kurzen Ruhepause erneut ausführen. Wenn das Elementar in die Dimension der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				}
 			],
@@ -19528,7 +19528,7 @@
 				{
 					"name": "Create Whirlwind",
 					"entries": [
-						"Ein Zylinder aus wirbelnder Luft mit einem Radius von 5 Fuß und einer Höhe von 30 Fuß bildet sich auf magische Weise an einem Punkt, den der Dschinn im Umkreis von 120 Fuß um sich herum sehen kann. Der Wirbelwind hält so lange an, wie der Dschinn seine Konzentration aufrecht erhält (als ob er sich auf einen Zauber konzentrieren würde). Jede Kreatur außer dem Dschinn, die in den Wirbelwind gerät, muss einen {@dc 18} Rettungswurf auf Stärke bestehen oder wird {@condition restrained} von ihm getroffen. Der Dschinn kann den Wirbelwind als Aktion bis zu 60 Fuß weit bewegen, und Kreaturen {@condition restrained}, die vom Wirbelwind erfasst werden, bewegen sich mit ihm. Der Wirbelwind endet, wenn der Dschinn die Sicht auf ihn verliert.",
+						"Ein Zylinder aus wirbelnder Luft mit einem Radius von 5 Fuß und einer Höhe von 30 Fuß bildet sich auf magische Weise an einem Punkt, den der Dschinn im Umkreis von 120 Fuß um sich herum sehen kann. Der Wirbelwind hält so lange an, wie der Dschinn {@status concentration} aufrechterhält (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jede Kreatur außer dem Dschinn, die in den Wirbelwind gerät, muss einen {@dc 18} Rettungswurf auf Stärke bestehen oder wird {@condition restrained} von ihm getroffen. Der Dschinn kann den Wirbelwind als Aktion bis zu 60 Fuß weit bewegen, und Kreaturen {@condition restrained}, die vom Wirbelwind erfasst werden, bewegen sich mit ihm. Der Wirbelwind endet, wenn der Dschinn ihn aus den Augen verliert.d.us Aktion. Der Beschwörer kann den Tanz erst nach einer kurzen Ruhepause wieder ausführen. Wenn das Elementar in die Dimension der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren.",
 						"Eine Kreatur kann ihre Aktion nutzen, um eine Kreatur {@condition restrained} durch den Wirbelwind zu befreien, einschließlich sich selbst, indem sie eine {@dc 18} Stärkeprobe besteht. Wenn die Probe gelingt, ist die Kreatur nicht mehr {@condition restrained} und bewegt sich zum nächsten Raum außerhalb des Wirbelwinds."
 					]
 				}
@@ -19782,7 +19782,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Der Doppelgänger liest auf magische Weise die oberflächlichen Gedanken einer Kreatur im Umkreis von 60 Fuß um ihn herum. Der Effekt kann Barrieren durchdringen, aber 3 Fuß Holz oder Erde, 2 Fuß Stein, 2 Zoll Metall oder eine dünne Bleiplatte blockieren ihn. Solange sich das Ziel in Reichweite befindet, kann der Doppelgänger weiterhin dessen Gedanken lesen, solange die Konzentration des Doppelgängers nicht unterbrochen wird (als ob er sich auf einen Zauber konzentrieren würde). Während er die Gedanken des Ziels liest, hat der Doppelgänger einen Vorteil bei Weisheits- ({@skill Insight}) und Charisma-Proben ({@skill Deception}, {@skill Intimidation} und {@skill Persuasion}) gegen das Ziel."
+						"Der Doppelgänger liest auf magische Weise die oberflächlichen Gedanken einer Kreatur im Umkreis von 60 Fuß. Der Effekt kann Barrieren durchdringen, aber 3 Fuß Holz oder Erde, 2 Fuß Stein, 2 Zoll Metall oder eine dünne Bleiplatte blockieren ihn. Solange sich das Ziel in Reichweite befindet, kann der Doppelgänger weiterhin dessen Gedanken lesen, solange die {@status concentration} des Doppelgängers nicht gebrochen ist (wie bei {@status concentration||concentrating} bei einem Zauber). Während er die Gedanken des Ziels liest, hat der Doppelgänger einen Vorteil auf Weisheit ({@skill Insight}) und Charisma ({@skill Deception}, {@skill Intimidation} und {@skill Persuasion}) gegen das Ziel. Wenn das Elementar in die Dimension der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				}
 			],
@@ -21849,7 +21849,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Der Duergar verwandelt sich magisch {@condition invisible}, bis er angreift, einen Zauber wirkt oder seine Vergrößerung einsetzt, oder bis seine Konzentration unterbrochen wird, bis zu 1 Stunde (als ob er sich auf einen Zauber konzentriert). Jegliche Ausrüstung, die der Duergar trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Der Duergar verwandelt sich auf magische Weise in {@condition invisible}, bis er angreift, einen Zauber wirkt oder seine Vergrößerung einsetzt, oder bis seine {@status concentration} gebrochen wird, und zwar bis zu 1 Stunde (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jegliche Ausrüstung, die der Duergar trägt oder mit sich führt, ist {@condition invisible} mit dabei.Weisheits- ({@status concentration||concentrating}) und Charisma- ({@condition invisible}, (%4%) und (%5%)) Überprüfungen gegen das Ziel.orm den Tanz erneut, bis er eine kurze Pause beendet. Wenn das Elementar in die Dimension der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				}
 			],
@@ -23620,7 +23620,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann sich der Drache magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die der Drache trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann der Drache {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Drache trägt oder mit sich führt, sind {@condition invisible} mit ihm. Wenn der Drache in die Elementarebene der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				},
 				{
@@ -23780,7 +23780,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann sich der Drache magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die der Drache trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann der Drache {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Drache trägt oder mit sich führt, sind {@condition invisible} mit ihm. Wenn der Drache in die Elementarebene der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				},
 				{
@@ -23937,7 +23937,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann sich der Drache magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die der Drache trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann der Drache {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Drache trägt oder mit sich führt, sind {@condition invisible} mit ihm. Wenn der Drache in die Elementarebene der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				},
 				{
@@ -24090,7 +24090,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann sich der Drache magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die der Drache trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann der Drache {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Drache trägt oder mit sich führt, sind {@condition invisible} mit ihm. Wenn der Drache in die Elementarebene der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				},
 				{
@@ -24246,7 +24246,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann sich der Drache magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die der Drache trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann der Drache {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Drache trägt oder mit sich führt, sind {@condition invisible} mit ihm. Wenn der Drache in die Elementarebene der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				},
 				{
@@ -24411,7 +24411,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann sich der Drache magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die der Drache trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann der Drache {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Drache trägt oder mit sich führt, sind {@condition invisible} mit ihm. Wenn der Drache in die Elementarebene der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				},
 				{
@@ -24565,7 +24565,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann sich der Drache magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die der Drache trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann der Drache {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Drache trägt oder mit sich führt, sind {@condition invisible} mit ihm. Wenn der Drache in die Elementarebene der Luft zurückkehrt, kann jeder Aarakocra im Umkreis von 5 Fuß mit ihm zurückkehren."
 					]
 				},
 				{
@@ -26313,7 +26313,7 @@
 				{
 					"name": "Animate Boulders (1/Day)",
 					"entries": [
-						"Der Galeb Duhr belebt auf magische Weise bis zu zwei Felsbrocken, die er im Umkreis von 60 Fuß sieht. Ein Felsbrocken hat die gleichen statistischen Werte wie ein Galeb Duhr, außer dass er Intelligenz 1 und Charisma 1 hat, er kann nicht {@condition charmed} oder {@condition frightened} sein und ihm fehlt diese Aktionsoption. Ein Felsbrocken bleibt so lange beseelt, wie der Galeb Duhr seine Konzentration aufrechterhält, bis zu 1 Minute (als ob er sich auf einen Zauber konzentrieren würde)."
+						"Der Galeb Duhr belebt auf magische Weise bis zu zwei Felsbrocken, die er im Umkreis von 60 Fuß sieht. Ein Felsbrocken hat die gleichen Statistiken wie ein Galeb Duhr, außer dass er Intelligenz 1 und Charisma 1 hat, er kann nicht {@condition charmed} oder {@condition frightened} sein und ihm fehlt diese Aktionsoption. Ein Felsbrocken bleibt so lange animiert, wie der Galeb Duhr {@status concentration} beibehält, bis zu 1 Minute (als ob {@status concentration||concentrating} auf einen Zauber wirken würde)."
 					]
 				}
 			],
@@ -33308,7 +33308,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"Die Hexe verwandelt sich auf magische Weise {@condition invisible}, bis sie angreift oder einen Zauber wirkt, oder bis ihre Konzentration endet (als ob sie sich auf einen Zauber konzentriert). Solange sie {@condition invisible} ist, hinterlässt sie keine physischen Spuren, so dass sie nur durch Magie aufgespürt werden kann. Jegliche Ausrüstung, die sie trägt oder mit sich führt, ist {@condition invisible} mit ihr."
+						"Die Hexe verwandelt sich auf magische Weise in {@condition invisible}, bis sie angreift oder einen Zauber wirkt, oder bis ihr {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirkt). Solange sie {@condition invisible} ist, hinterlässt sie keine physischen Spuren, so dass sie nur durch Magie aufgespürt werden kann. Jegliche Ausrüstung, die sie trägt oder mit sich führt, ist {@condition invisible} mit ihr.{@status concentration||concentrating}, bis zu 1 Minute (als ob {@condition invisible} auf einen Zauber wirkt)."
 					]
 				}
 			],
@@ -37733,7 +37733,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Der Kobold verwandelt sich auf magische Weise {@condition invisible}, bis er angreift oder bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Alle Ausrüstungsgegenstände, die der Kobold trägt oder mit sich führt, sind {@condition invisible} mit ihm."
+						"Der Kobold verwandelt sich auf magische Weise in {@condition invisible}, bis er angreift, oder bis sein {@status concentration} endet (wie bei {@status concentration||concentrating} auf einem Zauberspruch). Alle Ausrüstungsgegenstände, die der Kobold trägt oder mit sich führt, werden {@condition invisible} mit ihm verbunden.%) bei einem Zauber)."
 					]
 				}
 			],
@@ -49573,7 +49573,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Der Kobold verwandelt sich magisch {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Alle Ausrüstungsgegenstände, die der Kobold trägt oder mit sich führt, sind {@condition invisible}."
+						"Der Elf verwandelt sich auf magische Weise {@condition invisible}, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} ein Zauber wirkt). Alle Ausrüstungsgegenstände, die der Kobold trägt, sind {@condition invisible} mit ihm."
 					]
 				}
 			],
@@ -51504,7 +51504,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Der Quasit verwandelt sich auf magische Weise {@condition invisible}, bis er angreift oder Angst einsetzt, oder bis seine Konzentration endet (als ob er sich auf einen Zauber konzentriert). Jegliche Ausrüstung, die der Quasit trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Der Quasit verwandelt sich auf magische Weise in {@condition invisible}, bis er angreift oder Furcht einsetzt, oder bis seine {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jegliche Ausrüstung, die der Quasit trägt oder mit sich führt, ist {@condition invisible} mit ihm."
 					]
 				}
 			],
@@ -57632,7 +57632,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Der Kobold dreht sich magisch {@condition invisible}, bis er angreift oder einen Zauber wirkt, oder bis seine Konzentration endet (als ob er sich auf einen Zauber konzentriert). Alle Ausrüstungsgegenstände, die der Kobold trägt oder mit sich führt, sind {@condition invisible}."
+						"Der Kobold verwandelt sich auf magische Weise {@condition invisible}, bis er angreift oder einen Zauber wirkt, oder bis seine {@status concentration} endet (als ob {@status concentration||concentrating} einen Zauber wirken würde). Alle Ausrüstungsgegenstände, die der Kobold trägt oder mit sich führt, sind {@condition invisible} mit ihm."
 					]
 				}
 			],
@@ -66267,7 +66267,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Das Irrlicht und sein Licht werden auf magische Weise {@condition invisible}, bis es angreift oder seinen Lebensverbrauch einsetzt, oder bis seine Konzentration endet (als ob es sich auf einen Zauber konzentriert)."
+						"Das Irrlicht und sein Licht werden auf magische Weise zu {@condition invisible}, bis es angreift oder seinen Lebensverbrauch einsetzt, oder bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirkt)."
 					]
 				}
 			],

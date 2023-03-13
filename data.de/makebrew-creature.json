@@ -1513,7 +1513,7 @@
 		{
 			"name": "Create Whirlwind (Djinni)",
 			"entries": [
-				"Ein Zylinder aus wirbelnder Luft mit einem Radius von 5 Fuß und einer Höhe von 30 Fuß bildet sich auf magische Weise an einem Punkt, den <$kurzer_Name$> im Umkreis von 120 Fuß um sich herum sehen kann. Der Wirbelwind hält so lange an, wie <$short_name$> seine Konzentration aufrechterhält (als ob er sich auf einen Zauber konzentrieren würde). Jede Kreatur außer <$short_name$>, die in den Wirbelwind gerät, muss einen DC <$dc__str$> Rettungswurf bestehen oder wird {@condition restrained} von ihm getroffen. <$title_short_name$> kann den Wirbelwind bis zu 60 Fuß als Aktion bewegen, und Kreaturen {@condition restrained}, die vom Wirbelwind erfasst werden, bewegen sich mit ihm. Der Wirbelwind endet, wenn <$kurzer_Name$> ihn aus den Augen verliert.",
+				"Ein Zylinder aus wirbelnder Luft mit einem Radius von 5 Fuß und einer Höhe von 30 Fuß bildet sich auf magische Weise an einem Punkt, den <$kurzer_Name$> im Umkreis von 120 Fuß sehen kann. Der Wirbelwind hält so lange an, wie <$short_name$> {@status concentration} aufrechterhält (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jede Kreatur außer <$short_name$>, die in den Wirbelwind gerät, muss einen DC <$dc__str$> Rettungswurf bestehen oder wird {@condition restrained} von ihm getroffen. <$title_short_name$> kann den Wirbelwind bis zu 60 Fuß als Aktion bewegen, und Kreaturen {@condition restrained}, die vom Wirbelwind erfasst werden, bewegen sich mit ihm. Der Wirbelwind endet, wenn <$kurzer_Name$> ihn aus den Augen verliert.",
 				"Eine Kreatur kann ihre Aktion nutzen, um eine Kreatur {@condition restrained} durch den Wirbelwind zu befreien, einschließlich sich selbst, indem sie einen DC <$dc__str$> Stärkecheck besteht. Gelingt der Check, ist die Kreatur nicht mehr {@condition restrained} und bewegt sich in den nächstgelegenen Raum außerhalb des Wirbelwinds."
 			]
 		},
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Darkness Aura (Darkmantle)",
 			"entries": [
-				"Ein 15-Fuß-Radius magischer Dunkelheit erstreckt sich von <$kurzer_Name$> aus, bewegt sich mit ihm und breitet sich um Ecken aus. Die Dunkelheit hält so lange an, wie <$kurzer_Name$> seine Konzentration aufrechterhält, bis zu 10 Minuten (als ob er sich auf einen Zauber konzentrieren würde). Dunkelheitssicht kann diese Dunkelheit nicht durchdringen, und kein natürliches Licht kann sie erhellen. Wenn sich ein Teil der Dunkelheit mit einem Lichtbereich überschneidet, der durch einen Zauber der Stufe 2 oder niedriger erzeugt wurde, wird der Zauber, der das Licht erzeugt hat, gebannt."
+				"Ein 15-Fuß-Radius magischer Dunkelheit erstreckt sich von <$kurzer_Name$> aus, bewegt sich mit ihm und breitet sich um Ecken aus. Die Dunkelheit hält so lange an, wie <$kurzer_Name$> {@status concentration} aufrechterhält, bis zu 10 Minuten (wie bei {@status concentration||concentrating} eines Zaubers). Dunkelheitssicht kann diese Dunkelheit nicht durchdringen, und kein natürliches Licht kann sie erhellen. Wenn sich ein Teil der Dunkelheit mit einem Lichtbereich überschneidet, der durch einen Zauber der Stufe 2 oder niedriger erzeugt wurde, wird der Zauber, der das Licht erzeugt hat, gebannt.ses Sichtfeld."
 			]
 		},
 		{
@@ -1709,19 +1709,19 @@
 		{
 			"name": "Invisibility (Duergar)",
 			"entries": [
-				"<$title_short_name$> verwandelt sich magisch {@condition invisible}, bis er angreift, einen Zauber wirkt oder seine Vergrößerung einsetzt, oder bis seine Konzentration unterbrochen wird, bis zu 1 Stunde (als ob er sich auf einen Zauber konzentriert). Jegliche Ausrüstung, die <$kurzer_Name$> trägt oder mit sich führt, ist {@condition invisible}."
+				"<$title_short_name$> verwandelt sich auf magische Weise in {@condition invisible}, bis er angreift, einen Zauber wirkt oder seine Vergrößerung einsetzt, oder bis seine {@status concentration} gebrochen wird, und zwar bis zu 1 Stunde (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jegliche Ausrüstung, die <$kurzer_Name$> trägt oder mit sich führt, ist {@condition invisible} mit ihm."
 			]
 		},
 		{
 			"name": "Invisibility (Quasit)",
 			"entries": [
-				"<$title_short_name$> verwandelt sich magisch in {@condition invisible}, bis er angreift oder Furcht benutzt, oder bis seine Konzentration endet (als ob er sich auf einen Zauber konzentriert). Jegliche Ausrüstung, die <$kurzer_Name$> trägt oder mit sich führt, ist {@condition invisible}."
+				"<$title_short_name$> verwandelt sich auf magische Weise in {@condition invisible}, bis er angreift oder Furcht einsetzt, oder bis seine {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jegliche Ausrüstung, die <$short_name$> trägt oder mit sich führt, ist {@condition invisible} mit ihm."
 			]
 		},
 		{
 			"name": "Invisibility (Sprite)",
 			"entries": [
-				"<$title_short_name$> verwandelt sich magisch {@condition invisible}, bis er angreift oder einen Zauber wirkt, oder bis seine Konzentration endet (als ob er sich auf einen Zauber konzentriert). Jegliche Ausrüstung, die <$short_name$> trägt oder mit sich führt, ist {@condition invisible}."
+				"<$title_short_name$> verwandelt sich magisch in {@condition invisible}, bis er angreift oder einen Zauber wirkt, oder bis sein {@status concentration} endet (wie bei {@status concentration||concentrating} bei einem Zauber). Jegliche Ausrüstung, die <$short_name$> trägt oder mit sich führt, ist {@condition invisible} mit ihm."
 			]
 		},
 		{
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Read Thoughts (Doppelganger)",
 			"entries": [
-				"<$title_short_name$> liest auf magische Weise die Oberflächengedanken einer Kreatur im Umkreis von 60 Fuß. Der Effekt kann Barrieren durchdringen, aber 3 Fuß Holz oder Erde, 2 Fuß Stein, 2 Zoll Metall oder eine dünne Bleiplatte blockieren ihn. Solange sich das Ziel in Reichweite befindet, kann <$kurzer_Name$> seine Gedanken lesen, solange die Konzentration von <$kurzer_Name$> nicht unterbrochen wird (als ob er sich auf einen Zauber konzentriert). Während <$short_name$> die Gedanken des Ziels liest, hat er einen Vorteil bei Weisheits- ({@skill Insight}) und Charisma-Proben ({@skill Deception}, {@skill Intimidation} und {@skill Persuasion}) gegen das Ziel."
+				"<$title_short_name$> liest auf magische Weise die Oberflächengedanken einer Kreatur im Umkreis von 60 Fuß. Der Effekt kann Barrieren durchdringen, aber 3 Fuß Holz oder Erde, 2 Fuß Stein, 2 Zoll Metall oder eine dünne Bleiplatte blockieren ihn. Solange sich das Ziel in Reichweite befindet, kann <$kurzer_Name$> weiter seine Gedanken lesen, solange <$kurzer_Name$>s {@status concentration} nicht gebrochen ist (wie bei {@status concentration||concentrating} bei einem Zauber). Während <$short_name$> die Gedanken des Ziels liest, hat er einen Vorteil bei Weisheits- ({@skill Insight}) und Charisma-Proben ({@skill Deception}, {@skill Intimidation} und {@skill Persuasion}) gegen das Ziel."
 			]
 		},
 		{

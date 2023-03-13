@@ -2709,7 +2709,7 @@
 					"items": [
 						"Deine Spielstatistiken werden durch die Statistiken der Bestie ersetzt, aber du behältst deine Ausrichtung, Persönlichkeit und deine Intelligenz-, Weisheits- und Charisma-Werte. Außerdem behältst du alle deine Fertigkeiten und Rettungswürfe und erhältst zusätzlich die der Kreatur. Wenn die Kreatur dieselbe Fertigkeit wie du hat und der Bonus in ihrem Werteblock höher ist als deiner, dann verwende den Bonus der Kreatur anstelle deines Bonus. Wenn die Kreatur über legendäre oder versteckte Aktionen verfügt, kannst du sie nicht benutzen.",
 						"Wenn du dich verwandelst, nimmst du die Trefferpunkte und Trefferwürfel des Tieres an. Wenn du in deine normale Form zurückkehrst, erhältst du wieder die Anzahl der Trefferpunkte, die du vor der Verwandlung hattest. Wenn du jedoch zurückkehrst, weil du auf 0 Trefferpunkte gefallen bist, wird jeglicher überschüssige Schaden auf deine normale Form übertragen. Wenn du zum Beispiel 10 Schaden in der Tierform nimmst und nur noch 1 Trefferpunkt übrig hast, kehrst du zurück und nimmst 9 Schaden. Solange der überschüssige Schaden deine normale Form nicht auf 0 Trefferpunkte reduziert, wirst du nicht umgeworfen {@condition unconscious}.",
-						"Die Verwandlung unterbricht jedoch nicht die Konzentration auf einen bereits gewirkten Zauber und hindert dich auch nicht daran, Aktionen auszuführen, die Teil eines bereits gewirkten Zaubers sind, wie z.B. {@spell call lightning}, die du bereits gewirkt hast.",
+						"Du kannst nicht zaubern, und deine Fähigkeit zu sprechen oder irgendetwas zu tun, wofür du deine Hände brauchst, ist auf die Fähigkeiten deiner Bestienform beschränkt. Die Verwandlung unterbricht jedoch nicht deine {@status concentration} auf einen bereits gewirkten Zauber oder hindert dich daran, Aktionen auszuführen, die Teil eines bereits gewirkten Zaubers sind, wie z.B. {@spell call lightning}, die du bereits gewirkt hast.",
 						"Du behältst die Vorteile aller Eigenschaften deiner Klasse, deines Volkes oder einer anderen Quelle und kannst sie nutzen, wenn die neue Form körperlich dazu in der Lage ist. Allerdings kannst du keinen deiner besonderen Sinne nutzen, wie z.B. {@sense darkvision}, es sei denn, deine neue Form hat diesen Sinn ebenfalls.",
 						"Du wählst, ob deine Ausrüstung in deinem Raum zu Boden fällt, mit deiner neuen Form verschmilzt oder von ihr getragen wird. Getragene Ausrüstung funktioniert normal, aber der DM entscheidet, ob es für die neue Form praktisch ist, ein Ausrüstungsteil zu tragen, basierend auf der Form und Größe der Kreatur. Deine Ausrüstung ändert weder Größe noch Form, um sich der neuen Form anzupassen, und jede Ausrüstung, die die neue Form nicht tragen kann, muss entweder zu Boden fallen oder mit ihr verschmelzen. Ausrüstung, die mit der Form verschmilzt, hat keine Wirkung, bis du die Form verlässt."
 					]
@@ -3797,7 +3797,7 @@
 					"type": "entries",
 					"name": "Dragon",
 					"entries": [
-						"Eine Konstellation eines weisen Drachens erscheint auf dir. Wenn du eine Intelligenz- oder Weisheitsprüfung oder einen Rettungswurf auf Konstitution machst, um die Konzentration auf einen Zauber aufrechtzuerhalten, kannst du einen Wurf von 9 oder weniger auf die {@dice d20} als 10 behandeln."
+						"Eine Konstellation eines weisen Drachens erscheint auf dir. Wenn du eine Intelligenz- oder Weisheitsprüfung oder einen Rettungswurf auf Konstitution machst, um {@status concentration} auf einem Zauber aufrechtzuerhalten, kannst du einen Wurf von 9 oder niedriger auf den {@dice d20} als 10 behandeln."
 					]
 				}
 			]
@@ -4118,7 +4118,7 @@
 						{
 							"type": "item",
 							"name": "Dragon",
-							"entry": "Eine Konstellation eines weisen, uralten Drachens erscheint auf dir. Wenn du eine Intelligenz- oder Weisheitsüberprüfung oder einen Rettungswurf auf Konstitution machst, um die Konzentration auf einen Zauber aufrechtzuerhalten, kannst du einen Wurf von 9 oder weniger auf den {@dice d20} als 10 behandeln."
+							"entry": "Eine Konstellation eines weisen, uralten Drachens erscheint auf dir. Wenn du eine Intelligenz- oder Weisheitsprüfung oder einen Rettungswurf auf Konstitution machst, um {@status concentration} auf einem Zauber aufrechtzuerhalten, kannst du einen Wurf von 9 oder weniger auf den {@dice d20} als 10 behandeln."
 						}
 					]
 				}
@@ -4874,7 +4874,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Ab der 14. Stufe schützen dich die Naturgeister, mit denen du kommunizierst, wenn du am wehrlosesten bist. Wenn du auf 0 Trefferpunkte reduziert wirst oder gegen deinen Willen {@condition incapacitated} bist, kannst du sofort die Vorteile von {@spell conjure animals} nutzen, als ob er mit einem Zauberslot der 9. Stufe gewirkt worden wäre. Er beschwört vier Bestien deiner Wahl, die einen Herausforderungswert von 2 oder niedriger haben. Die beschworenen Bestien erscheinen in einem Umkreis von 20 Fuß um dich. Wenn sie keine Befehle von dir erhalten, schützen sie dich vor Schaden und greifen deine Feinde an. Der Zauber hält 1 Stunde lang an, ohne dass du dich konzentrieren musst, oder bis du ihn abbrichst (keine Aktion erforderlich).",
+				"Ab der 14. Stufe schützen dich die Naturgeister, mit denen du kommunizierst, wenn du am wehrlosesten bist. Wenn du auf 0 Trefferpunkte reduziert wirst oder {@condition incapacitated} gegen deinen Willen bist, kannst du sofort die Vorteile von {@spell conjure animals} erlangen, als ob er mit einem Zauberslot der Stufe 9 gewirkt würde. Er beschwört vier Bestien deiner Wahl, die einen Herausforderungswert von 2 oder niedriger haben. Die beschworenen Bestien erscheinen in einem Umkreis von 20 Fuß von dir. Wenn sie keine Befehle von dir erhalten, schützen sie dich vor Schaden und greifen deine Feinde an. Der Zauber hält 1 Stunde lang an und benötigt keine {@status concentration}, oder bis du ihn abbrichst (keine Aktion erforderlich).",
 				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
 			]
 		},
@@ -5222,7 +5222,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Ab der 14. Stufe schützen dich die Naturgeister, mit denen du kommunizierst, wenn du am wehrlosesten bist. Wenn du auf 0 Trefferpunkte reduziert wirst oder gegen deinen Willen {@condition incapacitated} bist, kannst du sofort die Vorteile von {@spell conjure animals} nutzen, als ob er mit einem Zauberslot der 9. Stufe gewirkt worden wäre. Er beschwört vier Bestien deiner Wahl, die einen Herausforderungswert von 2 oder niedriger haben. Die beschworenen Bestien erscheinen in einem Umkreis von 20 Fuß um dich. Wenn sie keine Befehle von dir erhalten, schützen sie dich vor Schaden und greifen deine Feinde an. Der Zauber hält 1 Stunde lang an, ohne dass du dich konzentrieren musst, oder bis du ihn abbrichst (keine Aktion erforderlich).",
+				"Ab der 14. Stufe schützen dich die Naturgeister, mit denen du kommunizierst, wenn du am wehrlosesten bist. Wenn du auf 0 Trefferpunkte reduziert oder gegen deinen Willen {@condition incapacitated} bist, kannst du sofort die Vorteile von {@spell conjure animals} erlangen, als ob er mit einem Zauberslot der Stufe 9 gewirkt würde. Er beschwört vier Bestien deiner Wahl, die einen Herausforderungswert von 2 oder niedriger haben. Die beschworenen Bestien erscheinen in einem Umkreis von 20 Fuß von dir. Wenn sie keine Befehle von dir erhalten, schützen sie dich vor Schaden und greifen deine Feinde an. Der Zauber hält 1 Stunde lang an und benötigt keine {@status concentration}, oder bis du ihn abbrichst (keine Aktion erforderlich). Stunde lang an und benötigt keine {@status concentration}, oder bis du ihn abbrichst (keine Aktion erforderlich).",
 				"Wenn du diese Funktion einmal benutzt hast, kannst du sie erst wieder benutzen, wenn du eine lange Pause gemacht hast."
 			]
 		}

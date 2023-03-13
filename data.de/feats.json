@@ -4270,7 +4270,7 @@
 							"type": "item",
 							"name": "Misty Form",
 							"entries": [
-								"Du kannst den {@spell blur}-Zauber wirken, ohne einen Zauberplatz oder materielle Komponenten zu verwenden. Wenn du den Zauber auf diese Weise wirkst, musst du dich nicht mehr auf den Zauber konzentrieren. Wenn du den Zauber einmal auf diese Weise gewirkt hast, kannst du ihn erst nach einer langen Ruhepause wiederholen. Du kannst diesen Zauber auch auf normale Weise wirken, indem du Zauberslots der entsprechenden Stufe benutzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für diese Eigenschaft (wähle sie, wenn du diese Fähigkeit erhältst)."
+								"Du kannst den {@spell blur}-Zauber wirken, ohne einen Zauberslot oder materielle Komponenten zu verwenden. Wenn du den Zauber auf diese Weise wirkst, musst du für den Zauber keine {@status concentration} aufwenden. Wenn du den Zauber einmal auf diese Weise gewirkt hast, kannst du ihn erst wieder nach einer langen Ruhepause sprechen. Du kannst diesen Zauber auch auf die normale Art und Weise wirken, indem du Zauberslots der entsprechenden Stufe benutzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für diese Eigenschaft (wähle sie, wenn du diese Fähigkeit erhältst)."
 							]
 						},
 						{
@@ -4534,6 +4534,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"Du trägst teuflisches Blut in dir und erhältst die folgenden Vorteile:",
 				{
@@ -4562,6 +4566,10 @@
 				{
 					"con": 1
 				}
+			],
+			"resist": [
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"Du hast starkes teuflisches Blut in dir und verfügst über eine Widerstandsfähigkeit, die der einiger Unholde ähnelt. Du erhältst die folgenden Vorteile:",
@@ -5722,7 +5730,7 @@
 					"type": "list",
 					"items": [
 						"Wenn eine Kreatur im Umkreis von 5 Fuß um dich einen Zauber wirkt, kannst du deine Reaktion nutzen, um einen Nahkampfangriff gegen diese Kreatur auszuführen.",
-						"Wenn du einer Kreatur Schaden zufügst, die sich auf einen Zauber konzentriert, hat diese Kreatur einen Nachteil bei dem Rettungswurf, den sie macht, um ihre Konzentration aufrechtzuerhalten.",
+						"Wenn du einer Kreatur Schaden zufügst, die {@status concentration||concentrating} auf einen Zauber wirkt, hat diese Kreatur einen Nachteil bei dem Rettungswurf, den sie macht, um ihre {@status concentration} zu erhalten.",
 						"Du hast einen Vorteil bei Rettungswürfen gegen Zauber, die von Kreaturen im Umkreis von 5 Fuß gewirkt werden."
 					]
 				}
@@ -9654,7 +9662,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Du hast einen Vorteil bei Rettungswürfen auf Konstitution, die du machst, um deine Konzentration auf einen Zauber aufrechtzuerhalten, wenn du Schaden nimmst.",
+						"Du hast einen Vorteil bei Rettungswürfen auf Konstitution, die du machst, um deine {@status concentration} auf einen Zauber aufrechtzuerhalten, wenn du Schaden nimmst.",
 						"Du kannst die somatischen Komponenten von Zaubern ausführen, auch wenn du Waffen oder {@item shield|phb} in einer oder beiden Händen hältst.",
 						"Wenn die Bewegung einer feindlichen Kreatur einen Gelegenheitsangriff von dir provoziert, kannst du deine Reaktion nutzen, um einen Zauber auf die Kreatur zu wirken, anstatt einen Gelegenheitsangriff zu machen. Der Zauber muss eine Wirkzeit von 1 Aktion haben und darf nur diese Kreatur zum Ziel haben."
 					]

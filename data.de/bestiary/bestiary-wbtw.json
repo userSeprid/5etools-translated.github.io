@@ -1963,6 +1963,7 @@
 		{
 			"name": "Gloam",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 93,
 			"size": [
@@ -4168,7 +4169,7 @@
 				{
 					"name": "Twin Sight (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Vor ihrem geistigen Auge kann ein Selenelion-Zwilling das, was der andere Zwilling sieht, bis zu 1 Minute lang sehen, vorausgesetzt, beide Zwillinge sind am Leben und befinden sich in derselben Dimension der Existenz. Die Aufrechterhaltung dieses Effekts erfordert Konzentration (wie bei einem Zauber)."
+						"Vor ihrem geistigen Auge kann ein Selenelion-Zwilling bis zu 1 Minute lang sehen, was der andere Zwilling sieht, vorausgesetzt, beide Zwillinge sind am Leben und befinden sich in der gleichen Dimension der Existenz. Die Aufrechterhaltung dieses Effekts erfordert {@status concentration} (als ob {@status concentration||concentrating} auf einen Zauber wirken würde)."
 					]
 				}
 			],
@@ -4274,7 +4275,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als Bonusaktion kann Sir Talavar sich magisch drehen {@condition invisible}, bis seine Konzentration endet (als ob er sich auf einen Zauber konzentrieren würde). Jegliche Ausrüstung, die Sir Talavar trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Als Bonusaktion kann Sir Talavar {@condition invisible} magisch drehen, bis sein {@status concentration} endet (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Jegliche Ausrüstung, die Sir Talavar trägt oder mit sich führt, ist {@condition invisible} mit ihm."
 					]
 				},
 				{
@@ -5010,6 +5011,7 @@
 		{
 			"name": "Thinnings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 15,
 			"_copy": {
@@ -5750,7 +5752,7 @@
 				{
 					"name": "Animate Corpse (1/Day)",
 					"entries": [
-						"Zargash zielt auf den leblosen Körper eines Humanoiden, den er im Umkreis von 30 Fuß sehen kann, und befiehlt ihm, sich zu erheben, um ihn in einen Zombie unter seiner Kontrolle zu verwandeln. Der Zombie kommt unmittelbar nach Zargash an die Reihe. Die Animation des Zombies erfordert Zargashs Konzentration (als ob er sich auf einen Zauberspruch konzentrieren würde). Der Zombie verwandelt sich nach 10 Minuten in einen leblosen Körper zurück, wenn er auf 0 Trefferpunkte fällt oder wenn Zargashs Konzentration endet."
+						"Zargash zielt auf den leblosen Körper eines Humanoiden, den er im Umkreis von 30 Fuß sehen kann, und befiehlt ihm, sich zu erheben und ihn in einen Zombie unter seiner Kontrolle zu verwandeln. Der Zombie kommt unmittelbar nach Zargash an die Reihe. Die Animation des Zombies erfordert Zargashs {@status concentration} (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Der Zombie verwandelt sich nach 10 Minuten in einen leblosen Körper zurück, wenn er auf 0 Trefferpunkte fällt oder wenn Zargashs {@status concentration} endet."
 					]
 				}
 			],

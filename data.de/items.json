@@ -3000,7 +3000,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"Dieser Rucksack enthält den Geist eines {@creature air elemental} und einen kompakten Lederballon. Während du den Rucksack trägst, kannst du den Ballon als Aktion entfalten und den Effekt des {@spell levitate} Zaubers für 10 Minuten erhalten, der auf dich selbst gerichtet ist und keine Konzentration erfordert. Alternativ kannst du eine Reaktion verwenden, um den Ballon zu entfalten, wenn du fällst und den Effekt des {@spell feather fall} Zaubers für dich selbst erhalten.",
+				"Dieser Rucksack enthält den Geist eines {@creature air elemental} und einen kompakten Lederballon. Während du den Rucksack trägst, kannst du den Ballon als Aktion einsetzen und den Effekt des {@spell levitate}-Zaubers für 10 Minuten erhalten, der auf dich selbst gerichtet ist und keine {@status concentration} benötigt. Alternativ kannst du den Ballon als Reaktion einsetzen, wenn du fällst, und den Effekt des {@spell feather fall}-Zaubers für dich nutzen.",
 				"Wenn einer der beiden Zauber endet, entleert sich der Ballon langsam, während der Elementargeist entweicht und in die Elementarebene der Luft zurückkehrt. Wenn die Luft aus dem Ballon entweicht, sinkt man sanft bis zu 60 Fuß in Richtung Boden. Wenn du dich am Ende dieser Strecke noch in der Luft befindest, fällst du, wenn du keine andere Möglichkeit hast, dich in der Luft zu halten.",
 				"Nach dem Weggang des Geistes ist die Eigenschaft des Rucksacks unbrauchbar, es sei denn, der Rucksack wird 1 Stunde lang in einem Elementarluftknoten aufgeladen, der einen anderen Geist an den Rucksack bindet."
 			],
@@ -4177,7 +4177,7 @@
 					"type": "entries",
 					"entries": [
 						"Während du die Waffe hältst, bist du dir der Anwesenheit von winzigen oder größeren Kreaturen im Umkreis von 60 Fuß um dich herum bewusst, die keine Konstrukte oder Untoten sind. Du kannst auch nicht {@condition charmed} oder {@condition frightened} sein.",
-						"Blackrazor kann einmal am Tag den Zauber {@spell haste} auf dich wirken. Er entscheidet, wann er den Zauber wirkt, und hält die Konzentration darauf aufrecht, damit du es nicht tun musst."
+						"Blackrazor kann einmal am Tag den Zauber {@spell haste} auf dich wirken. Er entscheidet, wann der Zauber gewirkt wird, und behält {@status concentration} auf sich, so dass du nicht in den Ballon steigen musst, wenn du fällst, und den Effekt des (%3%)-Zaubers für dich nutzen kannst."
 					]
 				},
 				{
@@ -7780,7 +7780,7 @@
 					"name": "Wealth of Information",
 					"entries": [
 						"Das Gemälde dient in erster Linie der Beobachtung und Erinnerung von Gesprächen. In den letzten Jahrzehnten hat Constantoris Porträt im Stillen zahllose Gespräche beobachtet und verfügt nun über eine nicht zu beziffernde Menge an Wissen - von kriminellen Verschwörungen bis hin zu geheimen Passwörtern. Der Spielleiter entscheidet, was das Gemälde weiß und was es nicht weiß.",
-						"Während du auf das Gemälde eingestimmt bist, kannst du eine Aktion ausführen, um es über eine beliebige Entfernung telepathisch zu kontaktieren, vorausgesetzt, du und das Gemälde befinden sich auf derselben Dimension der Existenz. Das Gemälde kann dich jedoch nicht telepathisch kontaktieren. Um den telepathischen Kontakt mit dem Gemälde aufrechtzuerhalten, musst du dich konzentrieren (als ob du dich auf einen Zauberspruch konzentrieren würdest)."
+						"Während du auf das Gemälde eingestimmt bist, kannst du eine Aktion ausführen, um es über eine beliebige Entfernung telepathisch zu kontaktieren, vorausgesetzt, du und das Gemälde befinden sich auf derselben Dimension. Das Gemälde kann dich jedoch nicht telepathisch kontaktieren. Um den telepathischen Kontakt mit dem Gemälde aufrechtzuerhalten, musst du {@status concentration} aufwenden (als ob du {@status concentration||concentrating} auf einen Zauber wirken würdest)."
 					]
 				},
 				{
@@ -12776,7 +12776,7 @@
 					"type": "entries",
 					"name": "Aberrant Ally",
 					"entries": [
-						"Du kannst eine aberrante Kreatur aus dem Chaos des Multiversums beschwören, die dir zu Diensten ist. Dies funktioniert wie der Zauber {@spell conjure celestial} (keine Konzentration erforderlich), mit dem Unterschied, dass die Kreatur, die du beschwörst, eine Anomalie mit dem Herausforderungsgrad 4 oder niedriger ist. Wenn du diese Eigenschaft der fernen Ausrüstung einmal benutzt hast, kann sie bis zur nächsten Morgendämmerung nicht wieder benutzt werden."
+						"Du kannst eine abnorme Kreatur aus dem Chaos des Multiversums beschwören, die dir dient. Dies funktioniert wie der {@spell conjure celestial}-Zauber (kein {@status concentration} erforderlich), mit dem Unterschied, dass es sich bei der beschworenen Kreatur um eine Aberration der Schwierigkeitsstufe 4 oder niedriger handelt. Wenn du diese Eigenschaft der Fernausrüstung einmal benutzt hast, kann sie bis zur nächsten Morgendämmerung nicht wieder benutzt werden. ein Zauber)."
 					]
 				},
 				{
@@ -12898,7 +12898,7 @@
 			],
 			"entries": [
 				"Dieser warme Kristall schimmert in den Farben des Sonnenuntergangs am Himmel des Feenreichs und ruft flüsternde, emotionale Erinnerungen hervor. Als Aktion kannst du den Splitter an einem Winzigen Gegenstand (wie einer Waffe oder einem Schmuckstück) befestigen oder ihn abnehmen. Er fällt ab, wenn deine Einstimmung auf ihn endet. Du kannst den Splitter als Zauberfokus verwenden, während du ihn hältst oder trägst.",
-				"Wenn du eine Metamagie-Option auf einen Zauber anwendest, während du den Splitter in der Hand hältst oder trägst, kannst du auf der Tabelle {@table Wild Magic Surge|PHB} auf {@book Player's Handbook|PHB} würfeln. Wenn das Ergebnis ein Zauber ist, ist er zu wild, um von deiner Metamagie beeinflusst zu werden, und wenn er normalerweise Konzentration erfordert, braucht er in diesem Fall keine Konzentration; der Zauber hält für seine volle Dauer an.",
+				"Wenn du eine Metamagie-Option auf einen Zauber anwendest, während du den Splitter hältst oder trägst, kannst du auf der {@table Wild Magic Surge|PHB}-Tabelle im {@book Player's Handbook|PHB} würfeln. Wenn das Ergebnis ein Zauber ist, ist er zu wild, um von deiner Metamagie beeinflusst zu werden, und wenn er normalerweise {@status concentration} benötigt, benötigt er in diesem Fall keine {@status concentration}; der Zauber hält für seine volle Dauer an (z.B. nächste Morgendämmerung).",
 				"Wenn du nicht über die Herkunft \"Wilde Magie - Zauberei\" verfügst, kann diese Eigenschaft, sobald sie zum Würfeln auf der Tabelle {@table Wild Magic Surge|PHB} verwendet wurde, bis zur nächsten Morgendämmerung nicht mehr verwendet werden."
 			],
 			"hasFluffImages": true
@@ -13836,7 +13836,7 @@
 			"entries": [
 				"Die Funktion dieses kunstvollen Stuhls ist es, eine fliegende Zitadelle, auf der er installiert wurde, anzutreiben und zu manövrieren. Der Stuhl hat AC 15, 18 Trefferpunkte und ist immun gegen Gift und psychischen Schaden. Er wird zerstört, wenn er auf 0 Trefferpunkte reduziert wird.",
 				"Das Gefühl, auf einen fliegenden Zitadellenhelm eingestimmt zu sein, ist vergleichbar mit dem Nadelstich-Effekt, den man erlebt, wenn einem der Arm oder das Bein einschläft, nur nicht so intensiv.",
-				"Wenn du auf einen fliegenden Zitadellenhelm eingestimmt bist und auf ihm sitzt, erhältst du die folgenden Fähigkeiten, solange du deine Konzentration aufrechterhältst (als ob du dich auf einen Zauber konzentrieren würdest):",
+				"Während du auf einen fliegenden Zitadellenhelm eingestimmt bist und in ihm sitzt, erhältst du die folgenden Fähigkeiten, solange du {@status concentration} aufrechterhältst (als ob {@status concentration||concentrating} auf einem Zauber liegen würde): n.e. next dawn. a spell).",
 				{
 					"type": "list",
 					"items": [
@@ -13845,7 +13845,7 @@
 						"Sie können jederzeit vom höchsten Punkt außerhalb der Zitadelle sehen und hören, als ob Sie sich an diesem Ort befänden."
 					]
 				},
-				"Wenn keine Kreatur, die auf den Helm eingestimmt ist, die Konzentration aufrechterhält, bleibt die Zitadelle unbeweglich in ihrem Raum.",
+				"Wenn sich keine Kreatur, die auf den Helm eingestimmt ist, aufhält {@status concentration}, bleibt die Zitadelle unbeweglich in ihrem Raum.",
 				{
 					"type": "entries",
 					"name": "Transfer Attunement",
@@ -16013,7 +16013,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Solange du diesen Helm trägst, kannst du eine Aktion nutzen, um den Zauber {@spell detect thoughts} zu wirken (Schutzwurf DC 13). Solange du dich auf den Zauber konzentrierst, kannst du eine Bonusaktion nutzen, um eine telepathische Nachricht an eine Kreatur zu senden, auf die du dich konzentrierst. Diese kann mit einer Bonusaktion antworten, solange du dich auf sie konzentrierst.",
+				"Während du diesen Helm trägst, kannst du eine Aktion verwenden, um den {@spell detect thoughts}-Zauber (Schutz DC 13) von ihm zu wirken. Solange du den Zauber {@status concentration} aufrechterhältst, kannst du eine Bonusaktion nutzen, um eine telepathische Nachricht an eine Kreatur zu senden, auf die du konzentriert bist. Das Wesen kann mit einer Bonusaktion darauf antworten, während du dich weiterhin auf es konzentrierst.",
 				"Während du dich mit {@spell detect thoughts} auf eine Kreatur konzentrierst, kannst du eine Aktion nutzen, um den Zauber {@spell suggestion} vom Helm aus auf diese Kreatur zu wirken (Schutzwurf DC 13). Einmal eingesetzt, kann die Eigenschaft Suggestion bis zur nächsten Morgendämmerung nicht erneut genutzt werden."
 			],
 			"optionalfeatures": [
@@ -20849,7 +20849,7 @@
 					"type": "entries",
 					"name": "Enduring Vision",
 					"entries": [
-						"Solange du das Deck in der Hand hältst, hast du automatisch Erfolg bei Rettungswürfen auf die Konstitution, um deine Konzentration auf Wahrsagezauber aufrechtzuerhalten."
+						"Solange du das Deck in der Hand hältst, hast du automatisch Erfolg bei Rettungswürfen für die Konstitution, um deine {@status concentration} bei Wahrsagezaubern aufrechtzuerhalten."
 					]
 				},
 				{
@@ -25786,7 +25786,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Wenn du diesen Trank trinkst, erhältst du für {@dice 1d4} Stunden den \"Reduzieren\"-Effekt des Zaubers {@spell enlarge/reduce} (keine Konzentration erforderlich). Das Rot in der Flüssigkeit des Trankes zieht sich kontinuierlich zu einer winzigen Perle zusammen und dehnt sich dann aus, um die klare Flüssigkeit um sie herum zu färben. Das Schütteln der Flasche unterbricht diesen Prozess nicht."
+				"Wenn du diesen Trank trinkst, erhältst du für {@dice 1d4} Stunden den Effekt \"Reduzieren\" des Zaubers {@spell enlarge/reduce} (kein {@status concentration} erforderlich). Das Rot in der Flüssigkeit des Trankes zieht sich kontinuierlich zu einer kleinen Perle zusammen und dehnt sich dann aus, um die klare Flüssigkeit um sie herum zu färben. Das Schütteln der Flasche unterbricht diesen Prozess nicht."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -25923,7 +25923,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Wenn du diesen Trank trinkst, erhältst du den Effekt des Zaubers {@spell gaseous form} für 1 Stunde (keine Konzentration erforderlich) oder bis du den Effekt als Bonusaktion beendest. Der Behälter dieses Trankes scheint Nebel zu enthalten, der sich wie Wasser bewegt und fließt."
+				"Wenn du diesen Trank trinkst, erhältst du den Effekt des {@spell gaseous form} Zaubers für 1 Stunde (kein {@status concentration} erforderlich) oder bis du den Effekt als Bonusaktion beendest. Der Behälter dieses Trankes scheint Nebel zu enthalten, der sich wie Wasser bewegt und gießt."
 			],
 			"attachedSpells": [
 				"gaseous form"
@@ -25969,7 +25969,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"Wenn du diesen Trank trinkst, erhältst du für {@dice 1d4} Stunden den \"Vergrößerungs\"-Effekt des Zaubers {@spell enlarge/reduce} (keine Konzentration erforderlich). Das Rot in der Flüssigkeit des Trankes dehnt sich kontinuierlich von einer winzigen Perle aus, um die klare Flüssigkeit um sie herum zu färben und zieht sich dann zusammen. Das Schütteln der Flasche unterbricht diesen Prozess nicht."
+				"Wenn du diesen Trank trinkst, erhältst du für {@dice 1d4} Stunden den \"Vergrößern\"-Effekt des {@spell enlarge/reduce}-Zaubers (kein {@status concentration} erforderlich). Das Rot in der Flüssigkeit des Trankes dehnt sich kontinuierlich von einer winzigen Perle aus, um die klare Flüssigkeit um sie herum zu färben und zieht sich dann zusammen. Das Schütteln der Flasche unterbricht diesen Prozess nicht."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -26010,7 +26010,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"1 Stunde nach dem Trinken erhältst du vorübergehend 10 Trefferpunkte, die 1 Stunde lang anhalten. Für die gleiche Dauer stehst du unter dem Einfluss des Zaubers {@spell bless} (keine Konzentration erforderlich). Dieser blaue Trank blubbert und dampft, als würde er kochen."
+				"Nach dem Trinken erhältst du 1 Stunde lang 10 temporäre Trefferpunkte, die 1 Stunde lang anhalten. Für die gleiche Dauer stehst du unter dem Einfluss des Zaubers {@spell bless} (kein {@status concentration} erforderlich). Dieser blaue Trank blubbert und dampft, als würde er kochen."
 			],
 			"attachedSpells": [
 				"bless"
@@ -26134,7 +26134,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Wenn du einen Trank der Gedankenkontrolle trinkst, kannst du einen Beherrschungszauber (Schutzwurf DC 15) auf eine bestimmte Kreatur wirken, wenn du dies vor dem Ende deines nächsten Zuges tust. Wenn du dies nicht tust, ist der Trank verschwendet.",
-				"Ein Trank der Gedankenkontrolle erzeugt die Wirkung eines {@spell dominate beast} Zaubers. Wenn der anfängliche Rettungswurf des Ziels misslingt, hält der Effekt 1 Stunde lang an, ohne dass du dich dafür konzentrieren musst. Die {@condition charmed} Kreatur hat während dieser Zeit einen Nachteil bei neuen Rettungswürfen, um den Effekt zu durchbrechen."
+				"Ein Trank der Gedankenkontrolle erzeugt den Effekt eines {@spell dominate beast} Zaubers. Wenn der anfängliche Rettungswurf des Ziels misslingt, hält der Effekt 1 Stunde lang an, ohne dass du {@status concentration} dafür tun musst. Die {@condition charmed} Kreatur hat während dieser Zeit einen Nachteil bei neuen Rettungswürfen, um den Effekt zu brechen."
 			],
 			"attachedSpells": [
 				"dominate beast"
@@ -26148,7 +26148,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Wenn du einen Trank der Gedankenkontrolle trinkst, kannst du einen Beherrschungszauber (Schutzwurf DC 15) auf eine bestimmte Kreatur wirken, wenn du dies vor dem Ende deines nächsten Zuges tust. Wenn du dies nicht tust, ist der Trank verschwendet.",
-				"Ein Trank der Gedankenkontrolle erzeugt die Wirkung eines {@spell dominate person} Zaubers. Wenn der anfängliche Rettungswurf des Ziels misslingt, hält der Effekt 1 Stunde lang an, ohne dass du dich dafür konzentrieren musst. Die {@condition charmed} Kreatur hat während dieser Zeit einen Nachteil bei neuen Rettungswürfen, um den Effekt zu durchbrechen."
+				"Ein Trank der Gedankenkontrolle erzeugt den Effekt eines {@spell dominate person} Zaubers. Wenn der anfängliche Rettungswurf des Ziels misslingt, hält der Effekt 1 Stunde lang an, ohne dass du {@status concentration} dafür tun musst. Die {@condition charmed} Kreatur hat während dieser Zeit einen Nachteil bei neuen Rettungswürfen, um den Effekt zu brechen."
 			],
 			"attachedSpells": [
 				"dominate person"
@@ -26162,7 +26162,7 @@
 			"rarity": "very rare",
 			"entries": [
 				"Wenn du einen Trank der Gedankenkontrolle trinkst, kannst du einen Beherrschungszauber (Schutzwurf DC 15) auf eine bestimmte Kreatur wirken, wenn du dies vor dem Ende deines nächsten Zuges tust. Wenn du dies nicht tust, ist der Trank verschwendet.",
-				"Ein Trank der Gedankenkontrolle erzeugt die Wirkung eines {@spell dominate monster} Zaubers. Wenn der anfängliche Rettungswurf des Ziels misslingt, hält der Effekt 1 Stunde lang an, ohne dass du dich dafür konzentrieren musst. Die {@condition charmed} Kreatur hat während dieser Zeit einen Nachteil bei neuen Rettungswürfen, um den Effekt zu durchbrechen."
+				"Ein Trank der Gedankenkontrolle erzeugt die Wirkung eines {@spell dominate monster} Zaubers. Wenn der anfängliche Rettungswurf des Ziels misslingt, hält der Effekt 1 Stunde lang an, ohne dass du {@status concentration} dafür tun musst. Die {@condition charmed} Kreatur hat während dieser Zeit einen Nachteil bei neuen Rettungswürfen, um den Effekt zu brechen."
 			],
 			"attachedSpells": [
 				"dominate monster"
@@ -26288,7 +26288,7 @@
 			"tier": "minor",
 			"rarity": "very rare",
 			"entries": [
-				"Wenn du diesen Trank trinkst, erhältst du für 1 Minute den Effekt des Zaubers {@spell haste} (keine Konzentration erforderlich). Die gelbe Flüssigkeit des Trankes ist schwarz durchzogen und wirbelt von selbst."
+				"Wenn du diesen Trank trinkst, erhältst du 1 Minute lang die Wirkung des Zaubers {@spell haste} (kein {@status concentration} erforderlich). Die gelbe Flüssigkeit des Trankes ist schwarz durchzogen und wirbelt um sich selbst."
 			],
 			"attachedSpells": [
 				"haste"
@@ -27708,7 +27708,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"entries": [
-				"Während du diesen Ring trägst, kannst du sein Befehlswort als Aktion sprechen, um einen bestimmten {@creature djinni} aus der Elementarebene der Luft zu beschwören. Der {@creature djinni} erscheint in einem unbesetzten Raum deiner Wahl innerhalb von 120 Fuß um dich herum. Er bleibt so lange, wie du dich konzentrierst (als ob du dich auf einen Zauber konzentrierst), bis zu einem Maximum von 1 Stunde, oder bis er auf 0 Trefferpunkte fällt. Dann kehrt er in seine Heimatdimension zurück.",
+				"Während du diesen Ring trägst, kannst du sein Befehlswort als Aktion sprechen, um einen bestimmten {@creature djinni} aus der Elementarebene der Luft zu beschwören. Der {@creature djinni} erscheint in einem unbesetzten Raum deiner Wahl innerhalb von 120 Fuß um dich herum. Er bleibt so lange, wie du dich konzentrierst (als ob du {@status concentration||concentrating} auf einen Zauber sprichst), bis zu einem Maximum von 1 Stunde, oder bis er auf 0 Trefferpunkte fällt. Dann kehrt er in seine Heimatdimension zurück.",
 				"Während der Beschwörung ist der {@creature djinni} freundlich zu dir und deinen Begleitern. Er gehorcht allen Befehlen, die du ihm gibst, unabhängig von der Sprache, die du verwendest. Wenn du ihm keine Befehle gibst, verteidigt sich der {@creature djinni} gegen Angreifer, führt aber keine anderen Aktionen aus.",
 				"Nachdem der {@creature djinni} abgereist ist, kann er 24 Stunden lang nicht mehr beschworen werden, und der Ring wird unmagisch, wenn der {@creature djinni} stirbt."
 			],
@@ -28006,7 +28006,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"Dieses Eisenband ähnelt einem Totenkopf und fühlt sich kalt an. Es hat 3 Ladungen und erhält täglich bei Sonnenaufgang {@dice 1d3} verbrauchte Ladungen zurück. Während du den Ring trägst, kannst du als Aktion 1 seiner Ladungen verbrauchen, um den Zauber {@spell fog cloud} zu wirken, mit folgenden Änderungen: Die Wolke ist auf dich zentriert, wenn sie zum ersten Mal erscheint, und der Zauber dauert 1 Minute (keine Konzentration erforderlich)."
+				"Dieses Eisenband ähnelt einem Schädel und fühlt sich kalt an. Es hat 3 Aufladungen und erhält täglich im Morgengrauen {@dice 1d3} verbrauchte Aufladungen zurück. Während du den Ring trägst, kannst du als Aktion 1 seiner Ladungen verbrauchen, um den {@spell fog cloud}-Zauber von ihm zu wirken, mit den folgenden Änderungen: Die Wolke ist auf dich zentriert, wenn sie zum ersten Mal erscheint, und der Zauber hält 1 Minute lang an (keine {@status concentration} erforderlich) oder bis sie auf 0 Trefferpunkte fällt. Dann kehrt er in seine Heimatdimension zurück."
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -28192,7 +28192,7 @@
 					"type": "entries",
 					"entries": [
 						"Du kannst 2 Ladungen als Aktion ausgeben, um eine bis vier Blitzkugeln mit einem Durchmesser von 3 Fuß zu erschaffen. Je mehr Kugeln du erschaffst, desto weniger mächtig ist jede einzelne Kugel.",
-						"Jede Sphäre erscheint in einem unbesetzten Raum, den du im Umkreis von 120 Fuß sehen kannst. Die Sphären halten so lange an, wie du dich konzentrierst (als ob du dich auf einen Zauber konzentrierst), bis zu 1 Minute. Jede Sphäre wirft ein schwaches Licht in einem Radius von 30 Fuß.",
+						"Jede Kugel erscheint in einem unbesetzten Raum, den du in einem Umkreis von 120 Fuß um dich herum sehen kannst. Die Sphären halten so lange an, wie du dich konzentrierst (als ob du {@status concentration||concentrating} auf einen Zauber sprichst), bis zu 1 Minute. Jede Sphäre wirft ein schwaches Licht in einem Radius von 30 Fuß ab, und der Zauber hält 1 Minute lang an (keine (%2%) erforderlich) oder bis er auf 0 Trefferpunkte fällt. Dann kehrt er in seine Heimatdimension zurück.",
 						"Als Bonusaktion kannst du jede Kugel bis zu 30 Fuß, aber nicht weiter als 120 Fuß von dir weg bewegen. Wenn eine andere Kreatur als du in einen Umkreis von 5 Fuß um eine Kugel kommt, entlädt die Kugel einen Blitz auf diese Kreatur und verschwindet. Diese Kreatur muss einen Rettungswurf von DC 15 für Geschicklichkeit ablegen. Bei einem misslungenen Schutzwurf erleidet die Kreatur Blitzschaden entsprechend der Anzahl der von dir erschaffenen Sphären. (4 Kugeln = {@dice 2d4}, 3 Kugeln = {@dice 2d6}, 2 Kugeln = {@dice 5d4}, 1 Kugel = {@dice 4d12})"
 					]
 				},
@@ -28881,7 +28881,9 @@
 			"source": "DMG",
 			"page": 196,
 			"srd": true,
+			"baseItem": "mace|phb",
 			"type": "RD",
+			"typeAlt": "M",
 			"tier": "major",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30809,7 +30811,7 @@
 							"items": [
 								"Der Schild hat eine Intelligenz von 22, eine Weisheit von 18 und ein Charisma von 24 sowie ein Gehör und {@sense truesight} mit einer Reichweite von 120 Fuß.",
 								"Der Schild kann Common und Infernal sprechen, lesen und verstehen, und er kann telepathisch mit jedem Wesen kommunizieren, das er im Umkreis von 120 Fuß wahrnimmt. Seine Stimme ist ein tiefes, hohles Flüstern.",
-								"Der Schild hat 3 Ladungen. Du kannst eine Aktion nutzen, um 1 Ladung für {@spell fireball} oder 2 Ladungen für {@spell wall of fire} zu verbrauchen (Schutzwurf DC 21). Der Zauber {@spell wall of fire} hält 1 Minute lang an (keine Konzentration erforderlich). Der Schild erhält täglich im Morgengrauen alle verbrauchten Ladungen zurück.",
+								"Der Schild hat 3 Ladungen. Du kannst eine Aktion nutzen, um 1 Ladung für einen {@spell fireball} oder 2 Ladungen für einen {@spell wall of fire} Zauber aus dem Schild zu verbrauchen (Schutzwurf DC 21 für jeden). Der {@spell wall of fire}-Zauber hält 1 Minute lang an (kein {@status concentration} erforderlich). Der Schild erhält täglich im Morgengrauen alle verbrauchten Ladungen zurück. Dann kehrt er in seine Heimatdimension zurück.",
 								"Während deines Zuges kann der Schild 1 Minute lang eine Aura des Schreckens ausstrahlen (dies ist keine Fähigkeit des Schildes, die du kontrollierst). Jede dir feindlich gesinnte Kreatur, die ihren Zug innerhalb von 20 Fuß um den Schild beginnt, muss einen Rettungswurf der Weisheit mit DC 18 ablegen. Bei einem misslungenen Schutzwurf ist die Kreatur {@condition frightened} bis zum Beginn ihres nächsten Zuges. Bei einem erfolgreichen Schutzwurf ist die Kreatur für die nächsten 24 Stunden immun gegen diese Kraft des Schildes. Sobald der Schild diese Macht benutzt, kann er sie bis zur nächsten Morgendämmerung nicht mehr benutzen."
 							]
 						}
@@ -30872,7 +30874,7 @@
 					"type": "entries",
 					"name": "Bane",
 					"entries": [
-						"Du kannst den Zauber {@spell bane} vom Schild aus wirken (Schutzwurf DC 17). Der Zauber erfordert keine Konzentration und hält 1 Minute lang an. Wenn du den Zauber einmal vom Schild aus gewirkt hast, kannst du ihn erst wieder nach einer kurzen oder langen Pause wirken."
+						"Du kannst den {@spell bane}-Zauber vom Schild aus wirken (Sicherheit DC 17). Der Zauber benötigt keine {@status concentration} und hält 1 Minute lang an. Wenn du den Zauber einmal aus dem Schild gewirkt hast, kannst du ihn erst wieder nach einer kurzen oder langen Pause anwenden."
 					]
 				},
 				{
@@ -32448,7 +32450,7 @@
 			"entries": [
 				"Die Funktion dieses kunstvollen Stuhls besteht darin, ein Schiff, auf dem er installiert ist, durch Raum und Luft anzutreiben und zu manövrieren. Er kann auch ein Schiff auf dem Wasser oder unter Wasser antreiben und manövrieren, vorausgesetzt, das Schiff ist für eine solche Fahrt gebaut. Das betreffende Schiff muss 1 Tonne oder mehr wiegen.",
 				"Das Gefühl, auf einen Bannhelm eingestimmt zu sein, ähnelt dem Nadelstich-Effekt, den man verspürt, wenn einem der Arm oder das Bein einschläft, nur nicht so schmerzhaft.",
-				"Wenn du auf einen Zauberstopp-Helm eingestimmt bist und auf ihm sitzt, erhältst du die folgenden Fähigkeiten, solange du deine Konzentration aufrechterhältst (als ob du dich auf einen Zauber konzentrierst):",
+				"Wenn du auf einen Zauberstopp-Helm eingestimmt bist und auf ihm sitzt, erhältst du die folgenden Fähigkeiten, solange du {@status concentration} beibehältst (als ob {@status concentration||concentrating} auf einem Zauber liegen würde):",
 				{
 					"type": "list",
 					"items": [
@@ -32489,7 +32491,7 @@
 			"wondrous": true,
 			"entries": [
 				"Dieser polierte Eberron-Drachenstein passt in die Hand und speichert Informationen ähnlich wie ein Buch. Der Stein kann das Äquivalent eines Buches enthalten, das nicht mehr als 320 Seiten lang ist. Ein Stein kann leer oder bereits mit Informationen gefüllt erstellt werden. Wenn der Stein erstellt wird, kann der Ersteller eine Passphrase festlegen, die gesprochen werden muss, um auf die gespeicherten Informationen zuzugreifen.",
-				"Während du den Splitter in der Hand hältst, kannst du eine Aktion ausführen, um deinen Geist für den Splitter zu öffnen und seinen Inhalt in deinem Geist zu sehen. In den folgenden Runden erfordert das Lesen des Textes oder das Schreiben von neuem Text auf leere \"Seiten\" im Splitter Konzentration (als ob du dich auf einen Zauberspruch konzentrieren würdest) und dauert genauso lange wie das normale Lesen und Schreiben. Wenn du an einen bestimmten Satz oder ein bestimmtes Thema denkst, wirst du zum ersten Abschnitt im Splitter geführt, der dieses Thema behandelt.",
+				"Während du den Splitter in der Hand hältst, kannst du mit einer Aktion deinen Geist für den Splitter öffnen und seinen Inhalt in deinem Geist sehen. In den folgenden Runden erfordert das Lesen des Textes oder das Schreiben von neuem Text auf leeren \"Seiten\" des Scherbens {@status concentration} (wie {@status concentration||concentrating} bei einem Zauber) und dauert genauso lange wie das normale Lesen und Schreiben. Wenn du an einen bestimmten Satz oder ein bestimmtes Thema denkst, wird der erste Abschnitt im Splitter angezeigt, der dieses Thema behandelt.",
 				"Ein Zauberer kann einen Zaubersplitter als Zauberbuch verwenden, wobei die üblichen Kosten in Form von Gold und Zeit anfallen, um einen Zauber in den Splitter zu \"ritzen\"."
 			]
 		},
@@ -35874,7 +35876,7 @@
 					"entries": [
 						"Die Höllenmaschine ist aufgrund ihrer Größe weitgehend unbeweglich. Um die Maschine ständig nutzen zu können (z.B. während eines Abenteuers), kann sie durch einen Silberdraht, der jederzeit aus dem Inneren der Maschine hergestellt werden kann, mit ihrem eingestimmten Benutzer verbunden werden. Dieser Silberdraht ist im Prinzip wie die silberne Schnur eines {@spell astral projection} Zaubers, die sich mit dem Körper des Benutzers verbindet und hinter ihm herzieht. Wenn er so befestigt ist, wird der Draht zu {@condition invisible}, astral und kann praktisch unendlich lang werden.",
 						"Solange der Draht intakt ist, kann der eingestellte Benutzer die Kräfte der Höllenmaschine in vollem Umfang nutzen, wobei sich die Auswirkungen auf den Benutzer konzentrieren. Wird der Draht durchtrennt - was nur passieren kann, wenn ein Effekt ausdrücklich angibt, dass er die silberne Schnur von {@spell astral projection} durchtrennen kann -, erleidet der Benutzer eine plötzliche Rückkopplung von der Maschine, die ihn auf der Stelle tötet.",
-						"Jeder Effekt der Höllenmaschine, der Konzentration erfordert, kann von einem entfernten Anwender konzentriert werden. Die Effekte der Höllenmaschine haben einen Zauberschutz-DC von 14 oder den Zauberschutz-DC des eingestimmten Anwenders, je nachdem, welcher höher ist."
+						"Jeder Effekt der Infernal Machine, der {@status concentration} benötigt, kann von einem entfernten Benutzer konzentriert werden. Die Effekte der Höllenmaschine haben einen Zauberschutz-DC von 14 oder den Zauberschutz-DC des eingestimmten Anwenders, je nachdem, welcher Wert höher ist.normalerweise. Wenn du an einen bestimmten Satz oder ein bestimmtes Thema denkst, wird der erste Abschnitt im Splitter angezeigt, der dieses Thema behandelt."
 					]
 				},
 				{
@@ -40948,6 +40950,8 @@
 			"name": "Witchlight Vane",
 			"source": "WBtW",
 			"page": 27,
+			"baseItem": "mace|phb",
+			"typeAlt": "M",
 			"rarity": "legendary",
 			"reqAttune": "by a mister light or his handpicked successor",
 			"sentient": true,

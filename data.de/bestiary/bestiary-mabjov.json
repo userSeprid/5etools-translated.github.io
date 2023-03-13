@@ -527,7 +527,7 @@
 				{
 					"name": "Insect Gorge (Costs 2 Actions)",
 					"entries": [
-						"Baalzebul spuckt einen Schwarm Stechfliegen aus (ansonsten wie Insektenplage), der 44 ({@damage 8d10}) Stichschaden verursacht und keine Konzentration erfordert."
+						"Baalzebul spuckt einen Schwarm Stechfliegen aus (ansonsten wie Insektenplage), der 44 ({@damage 8d10}) Stichschaden verursacht und keine {@status concentration} benötigt."
 					]
 				}
 			],
@@ -2084,7 +2084,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Der Dagryn verwandelt sich magisch {@condition invisible}, bis er angreift, einen Zauber wirkt oder bis seine Konzentration unterbrochen wird, bis zu 1 Stunde (als ob er sich auf einen Zauber konzentriert). Jegliche Ausrüstung, die Dagryn trägt oder mit sich führt, ist {@condition invisible} mit ihm."
+						"Dagryn verwandelt sich magisch {@condition invisible}, bis er angreift, einen Zauber wirkt oder bis sein {@status concentration} gebrochen wird, bis zu 1 Stunde (als ob {@status concentration||concentrating} auf einen Zauber wirken). Alle Ausrüstungsgegenstände, die Dagryn trägt oder mit sich führt, sind {@condition invisible} mit ihm."
 					]
 				}
 			],
@@ -2258,7 +2258,7 @@
 				{
 					"name": "Eldritch Mind",
 					"entries": [
-						"Darien hat einen Vorteil bei Rettungswürfen auf Konstitution, die sie macht, um die Konzentration auf einen Zauber aufrechtzuerhalten."
+						"Darien hat einen Vorteil bei Rettungswürfen auf die Konstitution, die sie macht, um einen Zauber aufrechtzuerhalten {@status concentration}."
 					]
 				}
 			],
@@ -3161,7 +3161,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Der Schreckliche Doppelgänger liest auf magische Weise die Gedanken einer Kreatur im Umkreis von 60 Fuß. Der Effekt kann Barrieren durchdringen, aber 3 ft. Holz oder Schmutz, 2 ft. Stein, 2 Zoll Metall oder eine dünne Bleiplatte blockieren ihn. Solange sich das Ziel in Reichweite befindet, kann der Schreckliche Doppelgänger dessen Gedanken lesen, solange die Konzentration des Schrecklichen Doppelgängers nicht unterbrochen ist (als ob er sich auf einen Zauber konzentrieren würde). Während er die Gedanken des Ziels liest, hat der Doppelgänger einen Vorteil auf Weisheit (Einsicht) und Charisma ({@skill Deception}, {@skill Intimidation} und {@skill Persuasion}) gegen das Ziel."
+						"Der Schreckliche Doppelgänger liest auf magische Weise die oberflächlichen Gedanken einer Kreatur im Umkreis von 60 Fuß. Der Effekt kann Barrieren durchdringen, aber 3 ft. Holz oder Erde, 2 ft. Stein, 2 Zoll Metall oder eine dünne Bleiplatte blockieren ihn. Solange sich das Ziel in Reichweite befindet, kann der Schreckliche Doppelgänger dessen Gedanken lesen, solange die Konzentration des Schrecklichen Doppelgängers nicht gebrochen ist (als ob {@status concentration||concentrating} auf einen Zauber wirken würde). Während er die Gedanken des Ziels liest, hat der Doppelgänger einen Vorteil auf Weisheit (Einsicht) und Charisma ({@skill Deception}, {@skill Intimidation} und {@skill Persuasion}) gegen das Ziel."
 					]
 				}
 			],
@@ -3343,7 +3343,7 @@
 				{
 					"name": "Focused Conjuration",
 					"entries": [
-						"Während Edwin sich auf einen Beschwörungszauber konzentriert, kann seine Konzentration nicht durch erlittenen Schaden unterbrochen werden."
+						"Solange Edwin {@status concentration||concentrating} auf einen Beschwörungszauber wirkt, können seine {@status concentration} Überprüfungen gegen das Ziel nicht gebrochen werden, wenn er Schaden erleidet.%), (%2%) und (%3%))."
 					]
 				},
 				{
@@ -6237,7 +6237,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Zaubertrank des Heldentums: Nauk erhält für 1 Stunde vorübergehend 10 Trefferpunkte. Für die gleiche Dauer steht Nauk unter dem Einfluss des Zaubers {@spell bless} (keine Konzentration erforderlich).",
+								"Trank des Heldentums: Nauk erhält 1 Stunde lang vorübergehend 10 Trefferpunkte. Für die gleiche Dauer steht Nauk unter dem Einfluss des Zaubers {@spell bless} (kein {@status concentration} erforderlich).",
 								"Zaubertrank des Widerstands: Nauk erhält 1 Stunde lang Widerstand gegen eine Schadensart. Nauk wählt eine der folgenden Schadensarten: Kälte, Feuer, Blitz.",
 								"Trank der besseren Heilung: Nauk erhält 28 Trefferpunkte zurück."
 							]
@@ -6885,7 +6885,7 @@
 				{
 					"name": "Extended Concentration",
 					"entries": [
-						"Der Phaerimm kann sich auf zwei verschiedene Zaubersprüche gleichzeitig konzentrieren. Wird die Konzentration unterbrochen, so erlöschen beide Zauber sofort."
+						"Der Phaerimm kann sich auf zwei verschiedene Zaubersprüche gleichzeitig konzentrieren. Wenn {@status concentration} gebrochen wird, dann verblassen beide Zauber sofort."
 					]
 				},
 				{
@@ -8738,7 +8738,7 @@
 				{
 					"name": "Mage Slaying",
 					"entries": [
-						"Wenn Valygar einer Kreatur, die sich auf einen Zauber konzentriert, Schaden zufügt, hat diese Kreatur einen Nachteil bei dem Rettungswurf, den sie macht, um ihre Konzentration aufrechtzuerhalten."
+						"Wenn Valygar einer Kreatur, die {@status concentration||concentrating} auf einem Zauber steht, Schaden zufügt, hat diese Kreatur einen Nachteil bei dem Rettungswurf, den sie macht, um ihre {@status concentration} zu erhalten."
 					]
 				}
 			],
@@ -9724,7 +9724,7 @@
 				{
 					"name": "Bladesong",
 					"entries": [
-						"Xan kann eine Bonusaktion nutzen, um einen Klingengesang zu beginnen. Sein Klingengesang dauert 1 Minute. Während er den Klingengesang einsetzt, erhöht sich seine Bewegung auf 40 Fuß, er erhält einen Bonus von +3 auf seine AC und einen Bonus von +3 auf alle Konzentrationsprüfungen."
+						"Xan kann eine Bonusaktion nutzen, um einen Klingengesang zu beginnen. Sein Klingengesang dauert 1 Minute. Während er den Klingengesang einsetzt, erhöht sich seine Bewegung auf 40 Fuß, er erhält einen Bonus von +3 auf seine AC und einen Bonus von +3 auf alle {@status concentration} Checks."
 					]
 				},
 				{

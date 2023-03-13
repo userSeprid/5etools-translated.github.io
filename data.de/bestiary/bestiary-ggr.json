@@ -204,7 +204,7 @@
 				{
 					"name": "Pacifying Presence",
 					"entries": [
-						"Jede Kreatur nach Wahl des Archons, die der Archon im Umkreis von 120 Fuß sehen kann, muss einen {@dc 18} Rettungswurf in Weisheit bestehen, andernfalls lässt das Ziel alle Waffen fallen, die es in der Hand hält, beendet seine Konzentration auf Zauber oder andere Effekte und wird für 1 Minute vom Archon {@condition charmed}. Die {@condition charmed} Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die Beruhigende Präsenz des Archons."
+						"Jede Kreatur nach Wahl des Archons, die der Archon im Umkreis von 120 Fuß sehen kann, muss einen {@dc 18} Rettungswurf in Weisheit bestehen, sonst lässt das Ziel alle Waffen fallen, die es in der Hand hält, beendet seine {@status concentration} auf alle Zauber oder anderen Effekte und wird 1 Minute lang {@condition charmed} vom Archon angegriffen. Die {@condition charmed} Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet. Wenn der Rettungswurf einer Kreatur erfolgreich ist oder der Effekt für sie endet, ist die Kreatur für die nächsten 24 Stunden immun gegen die Beruhigende Präsenz des Archons."
 					]
 				}
 			],
@@ -6957,7 +6957,7 @@
 				{
 					"name": "Locus of the Firemind",
 					"entries": [
-						"Niv-Mizzet kann die Konzentration auf zwei verschiedene Zauber gleichzeitig aufrechterhalten. Außerdem hat er einen Vorteil bei Rettungswürfen, um die Konzentration auf Zauber aufrechtzuerhalten."
+						"Niv-Mizzet kann {@status concentration} auf zwei verschiedenen Zaubern gleichzeitig aufrechterhalten. Außerdem hat er einen Vorteil bei Rettungswürfen, um {@status concentration} auf Zaubern aufrechtzuerhalten. Verstärkende Anwesenheit für die nächsten 24 Stunden."
 					]
 				},
 				{
@@ -7797,7 +7797,7 @@
 				{
 					"name": "Touch of Pain (Costs 3 Actions)",
 					"entries": [
-						"Rakdos führt einen Klauenangriff gegen eine Kreatur im Umkreis von 10 Fuß um ihn herum aus. Das Ziel muss einen {@dc 25} Rettungswurf auf die Konstitution bestehen oder 1 Minute lang {@condition poisoned} sein. Solange die Kreatur auf diese Weise {@condition poisoned} ist, kann sie sich nicht auf einen Zauber oder einen anderen Effekt konzentrieren, der Konzentration erfordert. Die {@condition poisoned} Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+						"Rakdos führt einen Klauenangriff gegen eine Kreatur im Umkreis von 10 Fuß um ihn herum aus. Das Ziel muss einen {@dc 25} Rettungswurf auf die Konstitution bestehen oder 1 Minute lang {@condition poisoned} sein. Solange die Kreatur auf diese Weise {@condition poisoned} gelähmt ist, kann sie keinen {@status concentration} Zauber oder einen anderen Effekt aufrechterhalten, der {@status concentration} erfordert. Die {@condition poisoned}-Kreatur kann den Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
 					]
 				}
 			],

@@ -642,8 +642,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Einige Optionen erfordern Konzentration, um ihre Wirkung aufrechtzuerhalten. Diese Anforderung wird mit \"konz.\" nach den Psi-Punkt-Kosten der Option angegeben. Nach der Schreibweise \"konz.\" folgt die maximale Dauer der Konzentration. Wenn zum Beispiel auf einer Option \"konz., 1 Min.\" steht, kannst du dich bis zu 1 Minute lang auf ihre Wirkung konzentrieren.",
-								"Die Konzentration auf eine Disziplin folgt den gleichen Regeln wie die Konzentration auf einen Zauber. Das bedeutet, dass man sich nicht gleichzeitig auf einen Zauber und eine Disziplin konzentrieren kann, und auch nicht auf zwei Disziplinen gleichzeitig. Siehe {@book chapter 10|PHB|10}, \"Spellcasting,\" im Player's Handbook, um zu erfahren, wie Konzentration funktioniert."
+								"Einige Optionen erfordern {@status concentration}, um ihre Wirkung zu erhalten. Diese Anforderung wird mit \"conc.\" nach den Psi-Punkt-Kosten der Option angegeben. Der \"conc.\"-Schreibweise folgt die maximale Dauer der {@status concentration}. Wenn zum Beispiel auf einer Option \"konz. 1 Min.\" steht, kannst du dich bis zu 1 Minute lang auf ihre Wirkung konzentrieren.",
+								"Die Konzentration auf eine Disziplin folgt den gleichen Regeln wie {@status concentration||concentrating} auf einen Zauberspruch. Diese Regel bedeutet, dass man sich nicht gleichzeitig auf einen Zauber und eine Disziplin konzentrieren kann, noch kann man sich auf zwei Disziplinen zur gleichen Zeit konzentrieren. Siehe {@book chapter 10|PHB|10}, \"Zaubern\", im Spielerhandbuch, wie {@status concentration} funktioniert."
 							]
 						}
 					]
@@ -813,7 +813,7 @@
 			"level": 11,
 			"entries": [
 				"Ab der 11. Stufe erlaubt dir deine Beherrschung der psionischen Energie, deinen Geist über seine normalen Grenzen hinaus zu bringen. Als Aktion erhältst du 9 spezielle Psi-Punkte, die du nur für Disziplinen ausgeben kannst, die eine Aktion oder eine Bonusaktion erfordern. Du kannst alle 9 Punkte für eine Disziplin verwenden oder sie auf mehrere Disziplinen verteilen. Du kannst auch nicht deine normalen Psi-Punkte für diese Disziplinen ausgeben, sondern nur die speziellen Punkte, die du durch diese Eigenschaft erhalten hast. Wenn du eine lange Ruhepause beendest, verlierst du alle diese speziellen Punkte, die du nicht ausgegeben hast.",
-				"Wenn mehr als eine der Disziplinen, die du mit diesen Punkten aktivierst, Konzentration erfordert, kannst du dich auf alle konzentrieren. Die Aktivierung einer dieser Disziplinen beendet jeden Effekt, auf den du dich bereits konzentriert hast, und wenn du beginnst, dich auf einen Effekt zu konzentrieren, der diese Spezialpunkte nicht verwendet, endet die Disziplin, auf die du dich gerade konzentrierst.",
+				"Wenn mehr als eine der Disziplinen, die Sie mit diesen Punkten aktivieren, {@status concentration} erfordern, können Sie sich auf alle konzentrieren. Die Aktivierung einer dieser Disziplinen beendet jeden Effekt, an dem du bereits {@status concentration||concentrating} gearbeitet hast, und wenn du {@status concentration||concentrating} mit einem Effekt beginnst, der diese Spezialpunkte nicht benötigt, enden die Disziplinen, an denen du gerade {@status concentration||concentrating} arbeitest.",
 				"Auf der 15. Stufe erhöht sich der Pool an Psi-Punkten, die du durch diese Eigenschaft erhältst, auf 11.",
 				"Du kannst diese Fähigkeit einmal benutzen und erhältst jede verbrauchte Fähigkeit durch eine lange Ruhepause zurück. 13, 15 und 17 Jahre lang erhältst du eine zusätzliche Benutzung dieser Fähigkeit."
 			]
@@ -1123,7 +1123,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Ab Stufe 3 kannst du deinen Geist fokussieren, um den psionischen Abdruck auf einem Gegenstand zu lesen. Wenn du einen Gegenstand hältst und dich 10 Minuten lang darauf konzentrierst (als ob du dich auf eine psionische Disziplin konzentrierst), erfährst du ein paar grundlegende Fakten über ihn. Du erhältst ein geistiges Bild aus der Sicht des Gegenstands, das zeigt, welche Kreatur den Gegenstand in den letzten 24 Stunden zuletzt gehalten hat.",
+				"Ab der 3. Stufe kannst du deinen Geist fokussieren, um den psionischen Abdruck auf einem Gegenstand zu lesen. Wenn du einen Gegenstand hältst und dich 10 Minuten lang darauf konzentrierst (wie bei {@status concentration||concentrating} einer psionischen Disziplin), erfährst du ein paar grundlegende Fakten über ihn. Du erhältst ein mentales Bild aus der Sicht des Objekts, das die letzte Kreatur zeigt, die das Objekt innerhalb der letzten 24 Stunden gehalten hat.",
 				"Du erfährst auch von allen Ereignissen, die sich innerhalb der letzten Stunde im Umkreis von 20 Fuß um das Objekt ereignet haben. Die Ereignisse, die du wahrnimmst, spielen sich aus der Perspektive des Objekts ab. Du siehst und hörst solche Ereignisse, als wärst du dabei, kannst aber keine anderen Sinne benutzen.",
 				"Zusätzlich kannst du einen nicht greifbaren psionischen Sensor in das Objekt einbetten. In den nächsten 24 Stunden kannst du eine Aktion nutzen, um den Standort des Objekts relativ zu dir zu erfahren (seine Entfernung und Richtung) und die Umgebung des Objekts aus seiner Sicht zu betrachten, als ob du dort wärst. Diese Wahrnehmung hält bis zum Beginn deiner nächsten Runde an.",
 				"Wenn Sie diese Funktion verwenden, können Sie sie erst wieder nach einer kurzen oder langen Pause nutzen."
