@@ -976,106 +976,36 @@
 			"name": "Dragon Tortoise",
 			"source": "CM",
 			"page": 205,
-			"size": [
-				"G"
-			],
-			"type": "dragon",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Dragon Turtle",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "removeArr",
+						"names": "Amphibious"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Steam Breath {@recharge 5}",
+						"items": {
+							"name": "Sand Breath {@recharge 5}",
+							"entries": [
+								"龙龟在60英尺的范围内吐出磨砂。该区域内的每个生物都必须做一个{@dc 18}体质判定，如果判定失败，将受到52({@damage 15d6})的砍伤，如果判定成功，将受到一半的伤害。"
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 341,
-				"formula": "22d20 + 110"
 			},
 			"speed": {
 				"walk": 20
 			},
-			"str": 25,
-			"dex": 10,
-			"con": 20,
-			"int": 10,
-			"wis": 12,
-			"cha": 12,
-			"save": {
-				"dex": "+6",
-				"con": "+11",
-				"wis": "+7"
-			},
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 11,
-			"resist": [
-				"fire"
-			],
 			"languages": [
 				"Draconic",
 				"Terran"
 			],
-			"cr": "17",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"龙龟有三次攻击：一次是咬，两次是爪。它可以用一次尾巴攻击来代替它的两次爪子攻击。"
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 13}击中，到达15英尺，一个目标。{@h}26 ({@damage 3d12 + 7})穿刺伤害。"
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 13}击中，到达10英尺，一个目标。{@h}16 ({@damage 2d8 + 7})砍击伤害。"
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 13}击中，到达15英尺，一个目标。{@h}26 ({@damage 3d12 + 7})重击伤害。如果目标是一个生物，它必须在一个{@dc 20}力量救赎上成功，或者被推到离龙龟10英尺远的地方，并被击倒{@condition prone}。"
-					]
-				},
-				{
-					"name": "Steam Breath {@recharge 5}",
-					"entries": [
-						"龙龟在60英尺的范围内吐出磨砂。该区域内的每个生物都必须做一个{@dc 18}体质判定，如果判定失败，将受到52({@damage 15d6})的砍伤，如果判定成功，将受到一半的伤害。"
-					]
-				}
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
 			"languageTags": [
 				"DR",
 				"T"
-			],
-			"damageTags": [
-				"B",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true

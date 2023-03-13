@@ -13,7 +13,7 @@
 				{
 					"type": "list",
 					"items": [
-						"aboleth对它周围60英尺内能看到的任何数量的生物施放（%0%）（不需要组件）。在保持对这个效果的专注时，aboleth不能采取其他巢穴行动。如果目标在蓄力时成功，或者效果对其结束，则该目标在接下来的24小时内对aboleth的幻影之力巢穴行动免疫，尽管这样的生物可以选择被影响。",
+						"Aboleth对它周围60英尺内能看到的任何数量的生物施展（%0%）（不需要组件）。在保持{@status concentration}这个效果的时候，aboleth不能采取其他巢穴行动。如果目标在蓄力时成功，或者效果对其结束，那么在接下来的24小时内，目标对aboleth的幻影之力巢穴行动免疫，尽管这样的生物可以选择被影响。",
 						"Aboleth 90英尺范围内的水潭会以抓取的方式向外涌动。任何在水池20英尺范围内的地面上的生物都必须成功地进行一次力量储蓄，否则就会被拉到20英尺的水中并被击倒（1%）。在使用另一个动作之前，阿波利特不能再次使用这个巢穴动作。",
 						"Aboleth巢穴中的水神奇地成为该生物愤怒的通道。aboleth可以针对它周围90英尺范围内它能看到的水中的任何数量的生物。目标必须在{@dc 14}智慧救赎中成功，否则会受到7({@damage 2d6})精神伤害。在使用另一个动作之前，亚伯拉罕不能再次使用这个巢穴动作。"
 					]
@@ -26,7 +26,7 @@
 					"items": [
 						"阿波勒斯巢穴1英里范围内的地下表面粘稠而潮湿，并且是（%0%）。",
 						"巢穴1英里内的水源会被超自然地污染。喝了这种水的阿波利斯的敌人会在几分钟内呕吐出来。",
-						"作为一个动作，boleth可以在巢穴的1英里范围内创造一个自己的虚幻形象。这个副本可以出现在aboleth以前见过的任何地方，或者出现在aboleth目前能看到的任何生物（%0%）的地方。一旦创造出来，图像就会持续到aboleth保持注意力的时候，就像集中注意力于一个法术一样。虽然图像是无形的，但它看起来、听起来和移动起来都和Aboleth一样。aboleth可以从图像的位置感知、说话和使用心灵感应，就像在那个位置上一样。如果图像受到任何伤害，它就会消失。"
+						"作为一个动作，aboleth可以在巢穴周围1英里内创造一个自己的虚幻形象。这个副本可以出现在aboleth以前见过的任何地方，或者出现在aboleth目前能看到的生物（%0%）的任何地方。一旦被创造出来，影像会持续到aboleth保持{@status concentration}的时间，就像{@status concentration||concentrating}的咒语一样。虽然这个影像是无形的，但它看起来、听起来和移动起来都与Aboleth一样。aboleth可以从图像的位置感知、说话和使用心灵感应，就像在那个位置一样。如果图像受到任何伤害，它就会在接下来的24小时内消失，尽管这样的生物可以选择受到影响。"
 					]
 				},
 				"If the aboleth dies, the first two effects fade over the course of {@dice 3d10} days."
@@ -36,7 +36,7 @@
 			"name": "Aerisi Kalinoth",
 			"source": "PotA",
 			"lairActions": [
-				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while concentrating on a spell cast as a lair action.",
+				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action.",
 				"If Aerisi casts {@spell invisibility} using this lair action, she also draws the power of the air node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},
@@ -985,7 +985,7 @@
 					"items": [
 						"在龙的巢穴6英里范围内，可以看到龙的微笑面孔的魔法雕刻在石头地形和物体上。",
 						"诸如啮齿动物和鸟类等通常不能说话的小动物，在距离龙的巢穴1英里的范围内，会获得说话和理解龙语的神奇能力。这些生物对龙的评价很好，但不能泄露它的行踪。",
-						"在龙的巢穴1英里范围内的智能生物会有（%0%）的笑声。即使是严肃的事情也会突然显得很有趣。"
+						"在龙的巢穴1英里范围内的智能生物很容易发出笑声。即使是严肃的事情也会突然显得很有趣。并能像aboleth一样移动。aboleth可以从图像的位置感知、说话和使用心灵感应，就像在那个位置一样。如果图像受到任何伤害，它就会在接下来的24小时内消失，尽管这样的生物可以选择受到影响。"
 					]
 				},
 				"If the dragon dies, the magic carvings fade over the course of {@dice 1d10} days. The other effects end immediately.",
@@ -1781,7 +1781,7 @@
 								],
 								[
 									"81–00",
-									"\"我对现实的认知与其他人的认知不一致。它使我（%0%）对暴力的妄想，对其他人没有意义。\""
+									"\"我对现实的感知与其他人的感知不一致。它使我容易产生暴力的妄想，而这些妄想对其他人来说毫无意义。\"ppears.for force lair action for the next 24 hours, although such a creature can choose to be affected."
 								]
 							]
 						}
@@ -1799,7 +1799,7 @@
 					"type": "list",
 					"items": [
 						"加尔可以传送到珊瑚山的任何地方，最多可以带着五个愿意的生物一起传送。",
-						"半径60英尺的珊瑚在珊瑚山内的生物周围迅速生长。每个生物都必须在一个{@dc 18}的力量投掷中成功，否则会变成{@condition restrained}。被束缚的生物可以在他们的回合中采取一个行动，做一个{@dc 18}力量({@skill Athletics})或灵巧({@skill Acrobatics})的检查来释放自己。这个效果持续1分钟，除非被驱散（它算作6级法术），并且不需要加尔保持注意力。加尔-沙特基尔和他指定的任何生物都对这个效果免疫。",
+						"半径60英尺的珊瑚在珊瑚山内的生物周围迅速生长。每个生物都必须成功地进行一次力量救赎，否则就会变成{@dc 18}。被束缚的生物可以在他们的回合中采取行动，进行{@dc 18}力量({@skill Athletics})或灵巧({@skill Acrobatics})检查来释放自己。这个效果持续1分钟，除非被驱散（它算作6级法术），并且不需要加尔维持（%5%）。加尔-沙特基尔和他指定的任何生物都对这个效果免疫。",
 						"加尔在60英尺范围内可以看到的最多五具尸体上升为（%0%），并在他的回合中攻击加尔指示的任何人。"
 					]
 				}
@@ -1809,7 +1809,7 @@
 			"name": "Gar Shatterkeel",
 			"source": "PotA",
 			"lairActions": [
-				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while concentrating on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
+				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
 				"If Gar casts {@spell cure wounds} using this lair action, he regains the maximum number of hit points from the spell (28)."
 			]
 		},
@@ -1918,7 +1918,7 @@
 							"name": "Create Object",
 							"type": "item",
 							"entries": [
-								"无政府主义者使用Limbo的未成形物质而不是影子材料来施展创造法术（作为第九级法术）。如果在Limbo中使用，该物体会一直保留到archer的注意力被打破，无论其成分如何。如果无政府主义者从该物体上移动超过120英尺，无政府主义者的注意力就会中断。"
+								"无政府主义者使用Limbo的未成形物质而不是影子材料来施展创造法术（作为9级法术）。如果在Limbo中使用，该物体会一直保持到archer的{@status concentration}被打破，无论其成分如何。如果无政府主义者从该物体上移动超过120英尺，无政府主义者的{@status concentration}就会自我打破。这个效果持续1分钟，除非被驱散（它算作6级法术），并且不需要加尔维持（%5%）。加尔-沙特基尔和他指定的任何生物都对这个效果免疫。"
 							]
 						},
 						{
@@ -1972,7 +1972,7 @@
 					"type": "list",
 					"items": [
 						"无政府主义者施展（%0%）法术（5级），但无政府主义者可以将伤害类型从闪电改为冷、火、精神、辐射或雷霆。如果该法术造成火或闪电以外的伤害，它不会点燃易燃物体。",
-						"无政府主义者使用Limbo的未成形物质而不是影子材料来施展（%0%）的法术（作为9级法术）。如果在Limbo中使用，该物体会一直保留到无政府主义者的注意力被打破，无论其成分如何。如果无政府主义者从该物体上移动超过120英尺，其注意力就会被打破。",
+						"无政府主义者使用Limbo的未成形物质而不是影子材料来施展（%0%）法术（作为9级法术）。如果在Limbo中使用，该物体会一直保留到archer的{@status concentration}被打破，无论其成分如何。如果无政府主义者从该物体上移动超过120英尺，它的{@status concentration}破损.1%)破损.自己。这个效果持续1分钟，除非被驱散（它算作6级法术），并且不需要加尔维持（%5%）。加尔-沙特基尔和他指定的任何生物都对这个效果免疫。",
 						"无政府主义者可以用魔法移动它所看到的150英尺范围内的物体，方法是用智慧检查，并取得优势。智慧检定取决于物体的大小：小的为0%，小的为1%，中的为2%，大的为3%，巨大或更大的为4%。"
 					]
 				}
@@ -2735,8 +2735,8 @@
 				{
 					"type": "list",
 					"items": [
-						"Kyrilla施放{@spell moonbeam}(不需要组件)。在保持对该效果的注意力时，她不能采取其他巢穴行动。",
-						"Kyrilla施展{@spell cloud of daggers}(不需要任何组件)，只是匕首是飞蛇，而且法术造成穿刺伤害。在保持对这个效果的注意力时，她不能采取其他巢穴行动。",
+						"Kyrilla铸造（％0％）（不需要组件）。在维持{@status concentration}这个效果时，她不能采取其他的巢穴行动。S.1%)打破.自己。这个效果持续1分钟，除非被驱散（它算作6级法术），并且不需要加尔维持（%5%）。加尔-沙特基尔和他指定的任何生物都对这个效果免疫。",
+						"Kyrilla施放{@spell cloud of daggers}(不需要任何组件)，只是匕首是飞蛇，法术造成穿透伤害。在维持{@status concentration}这个效果的时候，她不能采取其他的巢穴行动。他指定的文化对这个效果是免疫的。",
 						"在Kyrilla 60英尺范围内的液体池涌动并起泡，溅起并浸泡在此类池子5英尺范围内的任何生物。生物如果在DC14的灵巧救赎下成功，就可以避免液体进入他们的眼睛和嘴巴。Kyrilla不能再次使用这个巢穴动作，直到她使用了另一个动作。"
 					]
 				}
@@ -2787,7 +2787,7 @@
 			"name": "Marlos Urnrayle",
 			"source": "PotA",
 			"lairActions": [
-				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains concentration on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while concentrating on {@spell earthquake}.",
+				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains {@status concentration} on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while {@status concentration||concentrating} on {@spell earthquake}.",
 				"Marlos's second option for a lair action is to draw power from the earth node to heal. When he does so, he regains 30 ({@dice 6d8 + 3}) hit points."
 			]
 		},
@@ -2799,7 +2799,7 @@
 				{
 					"type": "list",
 					"items": [
-						"梅菲斯特从他的巫师列表中施放任何法术，如果该法术通常需要集中注意力，那么它将持续整个持续时间。",
+						"梅菲斯特从他的巫师列表中施放任何法术，如果它通常需要{@status concentration}，它反而会持续整个时间。",
 						"梅菲斯特用地狱之火覆盖一个5英尺的区域。任何在该区域开始回合的生物都会受到27({@damage 6d8})的火焰伤害。地狱之火会一直存在，直到梅菲斯特解除它或者他再次使用这个能力。"
 					]
 				}
@@ -3994,7 +3994,7 @@
 			"name": "Vanifer",
 			"source": "PotA",
 			"lairActions": [
-				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while concentrating on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
+				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
 				"If Vanifer casts {@spell misty step} using this lair action, she also draws the power of the fire node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},
