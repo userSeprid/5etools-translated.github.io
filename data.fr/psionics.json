@@ -42,7 +42,7 @@
 					},
 					"name": "Energy Adaptation",
 					"entries": [
-						"Comme action, vous pouvez toucher une créature et lui conférer une résistance aux dégâts d'acide, de froid, de feu, de foudre ou de tonnerre (au choix), qui dure jusqu'à la fin de votre concentration."
+						"Au cours d'une action, vous pouvez toucher une créature et lui conférer une résistance aux dégâts d'acide, de froid, de feu, de foudre ou de tonnerre (au choix), qui dure jusqu'à la fin de votre {@status concentration}."
 					]
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"name": "Energy Immunity",
 					"entries": [
-						"Comme action, vous pouvez toucher une créature et lui conférer une immunité aux dégâts d'acide, de froid, de feu, de foudre ou de tonnerre (au choix), qui dure jusqu'à la fin de votre concentration."
+						"Au cours d'une action, vous pouvez toucher une créature et lui conférer une immunité aux dégâts d'acide, de froid, de feu, de foudre ou de tonnerre (au choix), qui dure jusqu'à la fin de votre {@status concentration}."
 					]
 				}
 			]
@@ -103,7 +103,7 @@
 					},
 					"name": "View Aura",
 					"entries": [
-						"En tant qu'action, vous étudiez l'aura d'une créature. Jusqu'à la fin de votre concentration, tant que vous pouvez voir la cible, vous apprenez si elle est sous l'effet d'un quelconque effet magique ou psionique, son total de points de vie actuel et son état émotionnel de base. Tant que cet effet dure, vous avez l'avantage sur les tests de Sagesse ({@skill Insight}) et de Charisme que vous effectuez contre elle."
+						"Comme action, vous étudiez l'aura d'une créature. Jusqu'à la fin de votre {@status concentration}, tant que vous pouvez voir la cible, vous apprenez si elle est sous l'effet d'un effet magique ou psionique, son nombre de points de vie et son état émotionnel de base. Tant que dure cet effet, vous avez l'avantage aux tests de Sagesse ({@skill Insight}) et de Charisme que vous effectuez contre elle."
 					]
 				},
 				{
@@ -117,7 +117,7 @@
 					},
 					"name": "Perceive the Unseen",
 					"entries": [
-						"Comme action bonus, vous gagnez la capacité de voir les auras même des créatures {@condition invisible} ou cachées. Jusqu'à la fin de votre concentration, vous pouvez voir toutes les créatures, y compris celles qui sont cachées et {@condition invisible}, quelles que soient les conditions d'éclairage."
+						"Comme action bonus, vous gagnez la capacité de voir les auras même de {@condition invisible} ou de créatures cachées. Jusqu'à la fin de votre {@status concentration}, vous pouvez voir toutes les créatures, y compris celles qui sont cachées et {@condition invisible}, quelles que soient les conditions d'éclairage."
 					]
 				}
 			]
@@ -461,7 +461,7 @@
 					},
 					"name": "Call to Inaction",
 					"entries": [
-						"Si vous passez 1 minute à converser avec une créature, vous pouvez tenter de l'ensemencer d'un ennui accablant. À la fin de la minute, vous pouvez utiliser une action pour forcer la créature à effectuer un jet de sauvegarde de Sagesse. La sauvegarde réussit automatiquement si la cible est immunisée contre l'ennui {@condition charmed}. En cas d'échec, elle reste assise et est {@condition incapacitated} jusqu'à la fin de votre concentration. Cet effet prend fin immédiatement si la cible ou un allié qu'elle peut voir est attaqué ou subit des dégâts. En cas de sauvegarde réussie, la créature n'est pas affectée et ne se doute pas que vous tentez de plier sa volonté."
+						"Si vous passez 1 minute à converser avec une créature, vous pouvez tenter de l'ensemencer avec un ennui écrasant. A la fin de la minute, vous pouvez utiliser une action pour forcer la créature à faire un jet de sauvegarde de Sagesse. La sauvegarde réussit automatiquement si la cible est immunisée contre l'être {@condition charmed}. En cas d'échec, elle reste assise et est {@condition incapacitated} jusqu'à la fin de votre {@status concentration}. Cet effet prend fin immédiatement si la cible ou un allié qu'elle peut voir est attaqué ou subit des dégâts. En cas de sauvegarde réussie, la créature n'est pas affectée et n'a aucune idée de votre tentative d'infléchir sa volonté."
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					},
 					"name": "Dolorous Mind",
 					"entries": [
-						"Comme une action, vous choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. Elle doit réussir un jet de sauvegarde de Charisme, sinon elle est {@condition incapacitated} et a une vitesse de 0 jusqu'à la fin de votre concentration. Elle peut répéter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
+						"Comme action, vous choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. Elle doit réussir un jet de sauvegarde de Charisme, ou elle est {@condition incapacitated} et a une vitesse de 0 jusqu'à la fin de votre {@status concentration}. Elle peut répéter ce jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de succès. tenter de plier sa volonté."
 					]
 				}
 			]
@@ -522,7 +522,7 @@
 					},
 					"name": "Wall of Repulsion",
 					"entries": [
-						"Comme une action, vous créez un mur d'énergie invisible et insubstantiel dans un rayon de 60 pieds autour de vous qui est jusqu'à 30 pieds de long, 10 pieds de haut, et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre concentration. Toute créature qui tente de le traverser doit effectuer un jet de sauvegarde de Sagesse. En cas d'échec, la créature ne peut pas traverser le mur avant le début de son prochain tour. En cas de sauvegarde réussie, la créature peut le traverser. Une créature doit effectuer ce jet de sauvegarde à chaque fois qu'elle tente de traverser le mur, que ce soit volontairement ou non."
+						"Comme action, vous créez un mur d'énergie invisible et insubstantiel dans un rayon de 60 pieds autour de vous, d'une longueur maximale de 30 pieds, d'une hauteur de 10 pieds et d'une épaisseur de 1 pied. Le mur dure jusqu'à la fin de votre {@status concentration}. Toute créature tentant de le traverser doit effectuer un jet de sauvegarde de Sagesse. En cas de sauvegarde ratée, la créature ne peut pas traverser le mur avant le début de son prochain tour. En cas de sauvegarde réussie, la créature peut le traverser. Une créature doit faire ce jet de sauvegarde chaque fois qu'elle tente de traverser le mur, que ce soit volontairement ou non."
 					]
 				},
 				{
@@ -536,7 +536,7 @@
 					},
 					"name": "Visions of Disgust",
 					"entries": [
-						"Vous amenez une créature à considérer tous les autres êtres comme des entités horribles et étrangères. Comme une action, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds de vous. La cible doit effectuer un jet de sauvegarde de Sagesse. En cas d'échec, elle subit {@damage 5d6} de dégâts psychiques, et jusqu'à la fin de votre concentration, elle subit {@damage 1d6} de dégâts psychiques par créature située à moins de 1,5 m d'elle à la fin de chacun de ses tours. En cas de sauvegarde réussie, la cible ne subit que la moitié des dégâts initiaux et ne subit aucun des autres effets."
+						"Vous amenez une créature à considérer tous les autres êtres comme des entités horribles et étrangères. Comme action, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit effectuer un jet de sauvegarde de Sagesse. En cas de sauvegarde ratée, elle subit {@damage 5d6} de dégâts psychiques, et jusqu'à la fin de votre {@status concentration}, elle subit {@damage 1d6} de dégâts psychiques par créature à moins de 5 pieds d'elle à la fin de chacun de ses tours. Sur une sauvegarde réussie, la cible ne subit que la moitié des dégâts initiaux et ne souffre d'aucun des autres effets.Gly ou unwillingly."
 					]
 				},
 				{
@@ -550,7 +550,7 @@
 					},
 					"name": "World of Horror",
 					"entries": [
-						"Comme une action, choisissez jusqu'à six créatures dans un rayon de 60 pieds de vous. Chaque cible doit effectuer un jet de sauvegarde de Charisme. Sur une sauvegarde ratée, une cible subit {@damage 8d6} de dégâts psychiques, et elle subit {@condition frightened} jusqu'à la fin de votre concentration. En cas de sauvegarde réussie, la cible subit la moitié des dégâts. Pendant que {@condition frightened} par cet effet, la vitesse d'une cible est réduite à 0, et la cible ne peut utiliser son action, et toute action bonus qu'elle pourrait avoir, que pour effectuer des attaques de mêlée. La cible {@condition frightened} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
+						"Au cours d'une action, choisissez jusqu'à six créatures dans un rayon de 60 pieds autour de vous. Chaque cible doit effectuer un jet de sauvegarde de Charisme. En cas de sauvegarde ratée, la cible subit {@damage 8d6} de dégâts psychiques, et elle est {@condition frightened} jusqu'à la fin de votre {@status concentration}. En cas de sauvegarde réussie, la cible subit deux fois moins de dégâts. Pendant que {@condition frightened} est affecté par cet effet, la vitesse de la cible est réduite à 0, et la cible ne peut utiliser son action, et tout bonus d'action qu'elle pourrait avoir, que pour effectuer des attaques de mêlée. La cible {@condition frightened} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de succès."
 					]
 				}
 			]
@@ -587,7 +587,7 @@
 					},
 					"name": "Fighting Words",
 					"entries": [
-						"Si vous passez 1 minute à converser avec une créature, vous pouvez tenter de laisser une violence couvée dans son esprit. À la fin de la minute, vous pouvez utiliser une action pour forcer la créature à effectuer un jet de sauvegarde de Sagesse pour résister à ressentir des pulsions violentes contre une créature que vous lui décrivez ou nommez. Le jet de sauvegarde réussit automatiquement si la cible est immunisée contre le fait d'être {@condition charmed}. En cas d'échec, la cible attaque la créature choisie si elle la voit avant la fin de votre concentration, en utilisant des armes ou des sorts contre une créature envers laquelle elle était déjà hostile ou des frappes à mains nues contre un allié ou une créature envers laquelle elle était neutre. Une fois le combat commencé, elle continue à attaquer pendant 5 rounds avant que cet effet ne prenne fin. Cet effet prend immédiatement fin si la cible ou un allié qu'elle peut voir est attaqué ou subit des dégâts par une créature autre que celle contre laquelle elle a été incitée. En cas de sauvegarde réussie, la créature n'est pas affectée et ne se doute pas que vous tentez de faire plier sa volonté."
+						"Si vous passez 1 minute à converser avec une créature, vous pouvez tenter de laisser une violence latente dans son esprit. À la fin de la minute, vous pouvez utiliser une action pour forcer la créature à faire un jet de sauvegarde de Sagesse pour résister à des pulsions violentes contre une créature que vous lui décrivez ou nommez. La sauvegarde réussit automatiquement si la cible est immunisée contre l'être {@condition charmed}. En cas de sauvegarde ratée, la cible attaque la créature choisie si elle la voit avant la fin de votre {@status concentration}, en utilisant des armes ou des sorts contre une créature à laquelle elle était déjà hostile ou des coups sans arme contre un allié ou une créature à l'égard de laquelle elle était neutre. Une fois le combat engagé, elle continue d'attaquer pendant 5 rounds avant que cet effet ne prenne fin. Cet effet prend fin immédiatement si la cible ou un allié qu'elle peut voir est attaqué ou subit des dégâts par une créature autre que celle contre laquelle elle a été incitée. En cas de sauvegarde réussie, la créature n'est pas affectée et n'a aucune idée de votre tentative d'infléchir sa volonté. La créature peut être attaquée pendant 5 tours, mettant fin à l'effet sur elle-même en cas de succès."
 					]
 				},
 				{
@@ -611,7 +611,7 @@
 					},
 					"name": "Punishing Fury",
 					"entries": [
-						"Vous provoquez la rage d'une créature au point qu'elle attaque sans se soucier de sa propre sécurité. Comme action bonus, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde de Sagesse ou, jusqu'à la fin de votre concentration, toute créature située à 1,5 mètre d'elle peut utiliser une réaction pour effectuer une attaque de mêlée contre elle chaque fois que la cible effectue une attaque de mêlée. La sauvegarde réussit automatiquement si la cible est immunisée contre l'être {@condition charmed}."
+						"Vous provoquez la rage d'une créature au point qu'elle attaque sans se soucier de sa propre sécurité. Comme action bonus, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde de Sagesse ou, jusqu'à la fin de votre {@status concentration}, toute créature située à moins de 5 pieds d'elle peut utiliser une réaction pour effectuer une attaque de mêlée contre elle chaque fois que la cible effectue une attaque de mêlée. La sauvegarde réussit automatiquement si la cible est immunisée contre le fait d'être {@condition charmed}. une créature autre que celle contre laquelle elle a été incitée. En cas de sauvegarde réussie, la créature n'est pas affectée et n'a aucune idée de votre tentative d'infléchir sa volonté. La créature peut être attaquée pendant 5 tours, mettant fin à l'effet sur elle-même en cas de succès."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 					},
 					"name": "Miniature Form",
 					"entries": [
-						"Comme action bonus, vous devenez minuscule jusqu'à la fin de votre concentration. Lorsque vous êtes de cette taille, vous bénéficiez d'un bonus de +5 aux tests de Dextérité ({@skill Stealth}) et vous pouvez vous déplacer dans des espaces de 15 cm de large sans vous serrer."
+						"Comme action bonus, vous devenez minuscule jusqu'à ce que votre {@status concentration} se termine. A cette taille, vous gagnez un bonus de +5 aux tests de Dextérité ({@skill Stealth}) et pouvez vous déplacer à travers des espaces allant jusqu'à 6 pouces de large sans vous presser.l save, la créature n'est pas affectée et n'a aucune idée de votre tentative de plier sa volonté. tours, mettant fin à l'effet sur lui-même en cas de succès."
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					},
 					"name": "Microscopic Form",
 					"entries": [
-						"Comme action bonus, vous devenez plus petit que Tiny jusqu'à la fin de votre concentration. À cette taille, vous bénéficiez d'un bonus de +10 aux tests de Dextérité ({@skill Stealth}) et d'un bonus de +5 à la CA, vous pouvez vous déplacer dans des espaces d'un diamètre maximal de 2 cm sans vous serrer, et vous ne pouvez pas effectuer d'attaques avec une arme."
+						"Comme action bonus, vous devenez plus petit que Tiny jusqu'à la fin de votre {@status concentration}. À cette taille, vous bénéficiez d'un bonus de +10 aux tests de Dextérité ({@skill Stealth}) et d'un bonus de +5 à la CA, vous pouvez vous déplacer dans des espaces allant jusqu'à 1 pouce de large sans vous presser, et vous ne pouvez pas effectuer d'attaques à l'arme."
 					]
 				}
 			]
@@ -720,7 +720,7 @@
 					},
 					"name": "Ogre Form",
 					"entries": [
-						"Comme action bonus, vous gagnez 10 points de vie temporaires. De plus, jusqu'à la fin de votre concentration, vos attaques de mêlée infligent un pourcentage supplémentaire de {@damage 1d4} de dégâts de matraquage en cas de succès, et votre portée augmente de 1,5 mètre. Si vous êtes plus petit que Large, vous devenez également Large pour la durée de l'action."
+						"Comme action bonus, vous gagnez 10 points de vie temporaires. De plus, jusqu'à la fin de votre {@status concentration}, vos attaques à l'arme de mêlée infligent {@damage 1d4} de dégâts de matraquage supplémentaires sur un coup, et votre portée augmente de 5 pieds. Si vous êtes plus petit que Grand, vous devenez également Grand pour la durée."
 					]
 				},
 				{
@@ -734,7 +734,7 @@
 					},
 					"name": "Giant Form",
 					"entries": [
-						"Comme action bonus, vous gagnez 30 points de vie temporaires. De plus, jusqu'à la fin de votre concentration, vos attaques de mêlée infligent des dégâts de matraquage supplémentaires {@damage 2d6} en cas de succès, et votre portée augmente de 3 mètres. Si vous êtes plus petit qu'Énorme, vous devenez également Énorme pour la durée de l'action."
+						"Comme action bonus, vous gagnez 30 points de vie temporaires. De plus, jusqu'à la fin de votre {@status concentration}, vos attaques à l'arme de mêlée infligent {@damage 2d6} de dégâts de matraquage supplémentaires sur un coup, et votre portée augmente de 3 mètres. Si vous êtes plus petit qu'Énorme, vous devenez également Énorme pour la durée."
 					]
 				}
 			]
@@ -781,7 +781,7 @@
 					},
 					"name": "Psychic Redoubt",
 					"entries": [
-						"En tant qu'action, vous créez un champ d'énergie psychique protectrice. Choisissez un nombre quelconque de créatures dans un rayon de 30 pieds autour de vous. Jusqu'à la fin de votre concentration, chaque cible bénéficie d'une résistance aux dégâts psychiques et d'un avantage aux jets de sauvegarde d'Intelligence, de Sagesse et de Charisme."
+						"Comme action, vous créez un champ d'énergie psychique protectrice. Choisissez un nombre quelconque de créatures dans un rayon de 30 pieds autour de vous. Jusqu'à la fin de votre {@status concentration}, chaque cible a une résistance aux dégâts psychiques et un avantage aux jets de sauvegarde d'Intelligence, de Sagesse et de Charisme."
 					]
 				}
 			]
@@ -828,7 +828,7 @@
 					},
 					"name": "Iron Resistance",
 					"entries": [
-						"En tant qu'action, vous gagnez une résistance aux dégâts de matraquage, de perçage ou de coupure (au choix), qui dure jusqu'à la fin de votre concentration."
+						"Au cours d'une action, vous gagnez une résistance aux dégâts de matraquage, de perforation ou d'entaille (au choix), qui dure jusqu'à la fin de votre {@status concentration}."
 					]
 				}
 			]
@@ -875,7 +875,7 @@
 					},
 					"name": "Center of Attention",
 					"entries": [
-						"En tant qu'action, vous exercez une aura de pouvoir qui attire l'attention d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. Elle doit effectuer un jet de sauvegarde de Charisme. En cas d'échec, la créature est si profondément distraite par vous que toutes les autres créatures lui sont {@condition invisible} jusqu'à la fin de votre concentration. Cet effet prend fin si la créature ne peut plus vous voir ou vous entendre ou si elle subit des dégâts."
+						"Comme action, vous exercez une aura de puissance qui attire l'attention d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. Elle doit effectuer un jet de sauvegarde de Charisme. Sur un jet de sauvegarde raté, la créature est tellement distraite par vous que toutes les autres créatures sont {@condition invisible} pour elle jusqu'à ce que votre {@status concentration} se termine. Cet effet prend fin si la créature ne peut plus vous voir ou vous entendre ou si elle subit des dégâts."
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					},
 					"name": "Invoke Awe",
 					"entries": [
-						"En tant qu'action, vous exercez une aura qui inspire la crainte aux autres. Choisissez jusqu'à 5 créatures que vous pouvez voir dans un rayon de 60 pieds autour de vous. Chaque cible doit réussir un jet de sauvegarde d'Intelligence ou être {@condition charmed} par vous jusqu'à la fin de votre concentration. Pendant {@condition charmed}, la cible obéit à tous vos ordres verbaux au mieux de ses capacités et sans rien faire d'autodestructeur évident. La cible de {@condition charmed} n'attaque que les créatures qu'elle a vu vous attaquer depuis qu'elle est {@condition charmed} ou envers lesquelles elle était déjà hostile. À la fin de chacun de ses tours, elle peut répéter le jet de sauvegarde, mettant fin à l'effet sur elle-même en cas de réussite."
+						"En tant qu'action, vous exercez une aura qui inspire l'admiration aux autres. Choisissez jusqu'à 5 créatures que vous pouvez voir dans un rayon de 60 pieds autour de vous. Chaque cible doit réussir un jet de sauvegarde d'Intelligence ou être {@condition charmed} par vous jusqu'à ce que votre {@status concentration} se termine. Pendant {@condition charmed}, la cible obéit à tous vos ordres verbaux au mieux de ses capacités et sans faire quoi que ce soit de manifestement autodestructeur. La cible {@condition charmed} n'attaque que les créatures qu'elle a vu vous attaquer depuis qu'elle est {@condition charmed} ou envers lesquelles elle était déjà hostile. À la fin de chacun de ses tours, elle peut répéter le jet de sauvegarde, mettant fin à l'effet sur elle-même en cas de succès."
 					]
 				}
 			]
@@ -950,7 +950,7 @@
 					},
 					"name": "Strategic Mind",
 					"entries": [
-						"En tant qu'action, vous exercez une aura de confiance et de commandement qui unit vos alliés en une unité cohésive. Jusqu'à la fin de votre concentration, tout allié se trouvant à moins de 60 pieds de vous à son tour peut, en tant qu'action bonus, effectuer l'action Dash ou Disengage ou lancer un {@dice d4} et ajouter le nombre obtenu à chaque jet d'attaque qu'il effectue à ce tour."
+						"En tant qu'action, vous exercez une aura de confiance et de commandement qui unit vos alliés en une unité cohérente. Jusqu'à la fin de votre {@status concentration}, tout allié situé à moins de 60 pieds de vous à son tour peut, en tant qu'action bonus, entreprendre l'action Dash ou Disengage ou lancer un {@dice d4} et ajouter le nombre obtenu à chaque jet d'attaque qu'il effectue ce tour.d de chacun de ses tours, il peut répéter le jet de sauvegarde, mettant fin à l'effet sur lui-même en cas de succès."
 					]
 				},
 				{
@@ -997,7 +997,7 @@
 					},
 					"name": "Aura of Victory",
 					"entries": [
-						"Comme action bonus, vous projetez de l'énergie psionique jusqu'à la fin de votre concentration. L'énergie vous fortifie, vous et vos alliés, lorsque vos ennemis sont abattus ; chaque fois qu'un ennemi que vous pouvez voir est réduit à 0 point de vie, vous et chacun de vos alliés dans un rayon de 30 pieds de vous gagnez des points de vie temporaires égaux au double des points psi dépensés pour activer cet effet."
+						"Comme action bonus, vous projetez de l'énergie psionique jusqu'à la fin de votre {@status concentration}. L'énergie vous fortifie, vous et vos alliés, lorsque vos ennemis sont abattus ; chaque fois qu'un ennemi que vous pouvez voir est réduit à 0 point de vie, vous et chacun de vos alliés dans un rayon de 30 pieds gagnez temporairement un nombre de points de vie égal au double des points psi dépensés pour activer cet effet."
 					]
 				},
 				{
@@ -1038,7 +1038,7 @@
 					},
 					"name": "Incite Fear",
 					"entries": [
-						"Comme une action, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde de Sagesse ou devenir {@condition frightened} de vous jusqu'à la fin de votre concentration. Chaque fois que la cible {@condition frightened} termine son tour dans un endroit où elle ne peut pas vous voir, elle peut répéter le jet de sauvegarde, mettant fin à l'effet sur elle-même en cas de réussite."
+						"Au cours d'une action, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde de Sagesse ou devenir {@condition frightened} de vous jusqu'à ce que votre {@status concentration} prenne fin. Chaque fois que la cible {@condition frightened} termine son tour dans un endroit où elle ne peut pas vous voir, elle peut répéter le jet de sauvegarde, mettant fin à l'effet sur elle-même en cas de succès."
 					]
 				},
 				{
@@ -1052,7 +1052,7 @@
 					},
 					"name": "Unsettling Aura",
 					"entries": [
-						"Comme action bonus, vous vous enveloppez d'une énergie psychique inquiétante. Jusqu'à la fin de votre concentration, tout ennemi situé à 60 pieds de vous et pouvant vous voir doit dépenser 1 pied de mouvement supplémentaire pour chaque pied qu'il avance vers vous. Une créature ignore cet effet si elle est immunisée contre les {@condition frightened}."
+						"Comme action bonus, vous vous enveloppez d'une énergie psychique troublante. Jusqu'à la fin de votre {@status concentration}, tout ennemi situé à moins de 60 pieds de vous et qui peut vous voir doit dépenser 1 pied de mouvement supplémentaire pour chaque pied qu'il fait vers vous. Une créature ignore cet effet si elle est immunisée contre l'énergie psychique {@condition frightened}."
 					]
 				},
 				{
@@ -1066,7 +1066,7 @@
 					},
 					"name": "Incite Panic",
 					"entries": [
-						"En tant qu'action, choisissez jusqu'à huit créatures que vous pouvez voir dans un rayon de 90 pieds autour de vous et qui peuvent vous voir. Au début de chacun des tours d'une cible avant la fin de votre concentration, la cible doit effectuer un jet de sauvegarde de Sagesse. En cas d'échec, la cible est {@condition frightened} jusqu'au début de son prochain tour, et vous lancez un dé. Si vous obtenez un nombre impair, la cible {@condition frightened} se déplace à la moitié de sa vitesse dans une direction aléatoire et n'entreprend aucune action pendant ce tour, si ce n'est de hurler de terreur. Si vous obtenez un nombre pair, la cible {@condition frightened} effectue une attaque de mêlée contre une cible aléatoire à sa portée. S'il n'y a pas de telle cible, elle se déplace à la moitié de sa vitesse dans une direction aléatoire et ne fait aucune action pendant ce tour. Cet effet prend fin sur une cible si elle réussit trois jets de sauvegarde contre lui."
+						"Au cours d'une action, choisissez jusqu'à huit créatures que vous pouvez voir dans un rayon de 90 pieds et qui peuvent vous voir. Au début de chacun des tours de la cible avant la fin de votre {@status concentration}, la cible doit effectuer un jet de sauvegarde de Sagesse. En cas d'échec, la cible est {@condition frightened} jusqu'au début de son prochain tour, et vous lancez un dé. Si vous obtenez un nombre impair, la cible {@condition frightened} se déplace à la moitié de sa vitesse dans une direction aléatoire et n'entreprend aucune action pendant ce tour, si ce n'est de hurler de terreur. Si le résultat est pair, la cible {@condition frightened} effectue une attaque de mêlée contre une cible aléatoire à sa portée. S'il n'y a pas de cible, elle se déplace à la moitié de sa vitesse dans une direction aléatoire et n'entreprend aucune action à ce tour. Cet effet prend fin sur une cible si elle réussit trois jets de sauvegarde contre lui."
 					]
 				}
 			]
@@ -1093,7 +1093,7 @@
 					},
 					"name": "Incite Fury",
 					"entries": [
-						"Comme action bonus, choisissez jusqu'à trois alliés que vous pouvez voir dans un rayon de 60 pieds autour de vous (vous pouvez vous choisir à la place de l'un des alliés). Jusqu'à la fin de votre concentration, chaque cible peut effectuer un jet de {@dice d4} lors du calcul des dégâts pour une attaque d'arme de mêlée et ajouter le nombre obtenu au jet de dégâts."
+						"Comme action bonus, choisissez jusqu'à trois alliés que vous pouvez voir dans un rayon de 60 pieds autour de vous (vous pouvez vous choisir à la place d'un des alliés). Jusqu'à la fin de votre {@status concentration}, chaque cible peut effectuer un jet de {@dice d4} lors du calcul des dégâts d'une attaque à l'arme de mêlée et ajouter le nombre obtenu au jet de dégâts.k contre une cible aléatoire à sa portée. S'il n'y a pas de cible, elle se déplace à la moitié de sa vitesse dans une direction aléatoire et n'entreprend aucune action à ce tour. Cet effet prend fin sur une cible si elle réussit trois jets de sauvegarde contre lui."
 					]
 				},
 				{
@@ -1117,7 +1117,7 @@
 					},
 					"name": "Aura of Bloodletting",
 					"entries": [
-						"Comme action bonus, vous libérez une aura de rage. Jusqu'à la fin de votre concentration, vous et toute créature située à moins de 60 pieds de vous avez l'avantage sur les jets d'attaque en mêlée."
+						"Comme action bonus, vous libérez une aura de rage. Jusqu'à la fin de votre {@status concentration}, vous et toute créature située à moins de 60 pieds de vous avez l'avantage sur les jets d'attaque en mêlée."
 					]
 				},
 				{
@@ -1131,7 +1131,7 @@
 					},
 					"name": "Overwhelming Fury",
 					"entries": [
-						"En tant qu'action, vous inondez de rage une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde de Charisme, sinon elle ne peut utiliser ses actions que pour effectuer des attaques de mêlée jusqu'à la fin de votre concentration. Elle peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
+						"Comme action, vous inondez de rage une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde de Charisme, ou elle ne peut utiliser ses actions que pour effectuer des attaques de mêlée jusqu'à la fin de votre {@status concentration}. Elle peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de succès."
 					]
 				}
 			]
@@ -1168,7 +1168,7 @@
 					},
 					"name": "Comforting Aura",
 					"entries": [
-						"Comme action bonus, choisissez jusqu'à trois alliés que vous pouvez voir (vous pouvez vous choisir à la place de l'un des alliés). Jusqu'à la fin de votre concentration, chaque cible peut lancer un {@dice d4} lorsqu'elle effectue un jet de sauvegarde et ajouter le nombre obtenu au total."
+						"Comme action bonus, choisissez jusqu'à trois alliés que vous pouvez voir (vous pouvez vous choisir à la place d'un des alliés). Jusqu'à la fin de votre {@status concentration}, chaque cible peut obtenir un {@dice d4} lors d'un jet de sauvegarde et ajouter le nombre obtenu au total."
 					]
 				},
 				{
@@ -1182,7 +1182,7 @@
 					},
 					"name": "Aura of Jubilation",
 					"entries": [
-						"Comme action bonus, vous rayonnez une hilarité distrayante jusqu'à la fin de votre concentration. Chaque créature située à moins de 60 pieds de vous et qui peut vous voir subit un désavantage sur tous les tests utilisant les compétences {@skill Perception} et {@skill Investigation}."
+						"Comme action bonus, vous rayonnez une hilarité distrayante jusqu'à la fin de votre {@status concentration}. Toute créature située à moins de 60 pieds de vous et qui peut vous voir subit un désavantage à tous les tests utilisant les compétences {@skill Perception} et {@skill Investigation}."
 					]
 				},
 				{
@@ -1239,7 +1239,7 @@
 					},
 					"name": "Cloak of Air",
 					"entries": [
-						"Comme action bonus, vous prenez le contrôle de l'air qui vous entoure pour créer un voile protecteur. Jusqu'à la fin de votre concentration, les jets d'attaque contre vous ont un désavantage, et lorsqu'une créature que vous pouvez voir vous rate avec une attaque de mêlée, vous pouvez utiliser votre réaction pour forcer la créature à répéter le jet d'attaque contre elle-même."
+						"Comme action bonus, vous prenez le contrôle de l'air autour de vous pour créer un voile protecteur. Jusqu'à la fin de votre {@status concentration}, les jets d'attaque contre vous ont un désavantage, et lorsqu'une créature que vous pouvez voir vous manque avec une attaque de mêlée, vous pouvez utiliser votre réaction pour forcer la créature à répéter le jet d'attaque contre elle-même."
 					]
 				},
 				{
@@ -1253,7 +1253,7 @@
 					},
 					"name": "Wind Form",
 					"entries": [
-						"Comme action bonus, vous gagnez une vitesse de vol de 60 pieds, qui dure jusqu'à la fin de votre concentration."
+						"Comme action bonus, vous gagnez une vitesse de vol de 60 pieds, qui dure jusqu'à la fin de votre {@status concentration}."
 					]
 				},
 				{
@@ -1267,7 +1267,7 @@
 					},
 					"name": "Misty Form",
 					"entries": [
-						"En tant qu'action, votre corps devient comme un nuage brumeux jusqu'à la fin de votre concentration. Sous cette forme, vous gagnez une résistance aux dégâts de matraquage, de perçage et de taillade, et vous ne pouvez pas entreprendre d'autres actions que l'action Dash. Vous pouvez passer à travers des ouvertures qui ne font pas plus d'un pouce de large sans vous serrer."
+						"En tant qu'action, votre corps devient comme un nuage brumeux jusqu'à la fin de votre {@status concentration}. Sous cette forme, vous gagnez une résistance aux dégâts de matraquage, de perforation et d'entaille, et vous ne pouvez pas entreprendre d'action autre que l'action de fuite. Vous pouvez passer à travers des ouvertures qui ne font pas plus d'un pouce de large sans vous presser."
 					]
 				},
 				{
@@ -1281,7 +1281,7 @@
 					},
 					"name": "Animate Air",
 					"entries": [
-						"En tant qu'action, vous faites apparaître un élémentaire d'air dans un espace inoccupé que vous pouvez voir dans un rayon de 120 pieds autour de vous. L'élémentaire dure jusqu'à la fin de votre concentration, et il obéit à vos ordres verbaux. En combat, faites un jet pour son initiative, et choisissez son comportement pendant ses tours. Lorsque cet effet prend fin, l'élémentaire disparaît. Voir le Manuel des monstres pour son bloc de statistiques."
+						"En une action, vous faites apparaître un élémentaire d'air dans un espace inoccupé que vous pouvez voir à moins de 120 pieds de vous. L'élémentaire dure jusqu'à la fin de votre {@status concentration}, et il obéit à vos ordres verbaux. En combat, vous lancez son initiative et choisissez son comportement pendant ses tours. A la fin de cet effet, l'élémentaire disparaît. Voir le Manuel des Monstres pour son bloc de stat."
 					]
 				}
 			]
@@ -1308,7 +1308,7 @@
 					},
 					"name": "Combustion",
 					"entries": [
-						"Comme une action, choisissez une créature ou un objet que vous pouvez voir dans un rayon de 120 pieds autour de vous. La cible doit effectuer une sauvegarde de Constitution. En cas d'échec, la cible subit {@scaledamage 1d10|1-7|1d10|psi} de dégâts de feu par point psi dépensé, et elle prend feu, subissant {@damage 1d6} de dégâts de feu à la fin de chacun de ses tours jusqu'à la fin de votre concentration ou jusqu'à ce qu'elle ou une créature adjacente à elle éteigne les flammes avec une action. En cas de sauvegarde réussie, la cible subit la moitié des dégâts et ne prend pas feu."
+						"Comme action, choisissez une créature ou un objet que vous pouvez voir dans un rayon de 120 pieds autour de vous. La cible doit faire une sauvegarde de Constitution. En cas de sauvegarde ratée, la cible subit {@scaledamage 1d10|1-7|1d10|psi} de dégâts de feu par point psi dépensé, et elle prend feu, subissant {@damage 1d6} de dégâts de feu à la fin de chacun de ses tours jusqu'à ce que votre {@status concentration} se termine ou jusqu'à ce qu'elle ou une créature adjacente à elle éteigne les flammes par une action. En cas de sauvegarde réussie, la cible subit deux fois moins de dégâts et ne s'enflamme pas."
 					]
 				},
 				{
@@ -1322,7 +1322,7 @@
 					},
 					"name": "Rolling Flame",
 					"entries": [
-						"En tant qu'action, vous créez du feu dans un cube de 20 pieds par 20 pieds dans un rayon de 5 pieds autour de vous. Le feu dure jusqu'à la fin de votre concentration. Toute créature se trouvant dans cette zone lorsque vous utilisez cette capacité et toute créature qui termine son tour à cet endroit subit 5 dégâts de feu."
+						"Comme action, vous créez du feu dans un cube de 20 pieds par 20 pieds à moins de 5 pieds de vous. Le feu dure jusqu'à la fin de votre {@status concentration}. Toute créature se trouvant dans cette zone lorsque vous utilisez cette capacité et toute créature qui y termine son tour subit 5 dégâts de feu."
 					]
 				},
 				{
@@ -1346,7 +1346,7 @@
 					},
 					"name": "Fire Form",
 					"entries": [
-						"Comme action bonus, vous devenez enveloppé de flammes jusqu'à la fin de votre concentration. Toute créature qui termine son tour à moins de 1,5 m de vous subit {@damage 3d6} de dégâts de feu."
+						"Comme action bonus, vous êtes enveloppé de flammes jusqu'à la fin de votre {@status concentration}. Toute créature qui termine son tour à moins de 5 pieds de vous subit {@damage 3d6} de dégâts de feu."
 					]
 				},
 				{
@@ -1360,7 +1360,7 @@
 					},
 					"name": "Animate Fire",
 					"entries": [
-						"En tant qu'action, vous faites apparaître un élémentaire de feu dans un espace inoccupé que vous pouvez voir dans un rayon de 120 pieds autour de vous. L'élémentaire dure jusqu'à la fin de votre concentration, et il obéit à vos ordres verbaux. En combat, faites un jet pour son initiative, et choisissez son comportement pendant ses tours. Lorsque cet effet prend fin, l'élémentaire disparaît. Voir le Manuel des monstres pour son bloc de statistiques."
+						"En une action, vous faites apparaître un élémentaire de feu dans un espace inoccupé que vous pouvez voir à moins de 120 pieds de vous. L'élémentaire dure jusqu'à la fin de votre {@status concentration}, et il obéit à vos ordres verbaux. En combat, lancez son initiative, et choisissez son comportement pendant ses tours. A la fin de cet effet, l'élémentaire disparaît. Voir le Manuel des Monstres pour son bloc de stat."
 					]
 				}
 			]
@@ -1458,7 +1458,7 @@
 					},
 					"name": "Telekinetic Barrier",
 					"entries": [
-						"En tant qu'action, vous créez un mur transparent d'énergie télékinétique, dont au moins une partie doit se trouver à moins de 60 pieds de vous. Le mur fait 40 pieds de long, 10 pieds de haut, et 1 pouce d'épaisseur. Le mur dure jusqu'à la fin de votre concentration. Chaque section de 10 pieds du mur a une CA de 10 et 10 points de vie."
+						"En une action, vous créez un mur transparent d'énergie télékinésique, dont au moins une partie doit se trouver à moins de 60 pieds de vous. Le mur mesure 40 pieds de long, 10 pieds de haut et 1 pouce d'épaisseur. Le mur dure jusqu'à la fin de votre {@status concentration}. Chaque section de 10 pieds du mur a une CA de 10 et 10 points de vie."
 					]
 				},
 				{
@@ -1472,7 +1472,7 @@
 					},
 					"name": "Grasp",
 					"entries": [
-						"Vous tentez de saisir une créature dans l'énergie télékinétique et de la retenir captive. Comme action, choisissez une créature que vous pouvez voir à moins de 60 pieds de vous. La cible doit réussir un jet de sauvegarde de Force ou être {@condition grappled} par vous jusqu'à la fin de votre concentration ou jusqu'à ce que la cible quitte votre portée, qui est de 60 pieds pour ce grappin.",
+						"Vous tentez de saisir une créature dans l'énergie télékinétique et de la retenir prisonnière. Comme action, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde de Force ou être {@condition grappled} par vous jusqu'à la fin de votre {@status concentration} ou jusqu'à ce que la cible quitte votre portée, qui est de 60 pieds pour cette prise.",
 						"La cible {@condition grappled} peut s'échapper en réussissant un test de Force (Athlétisme) ou de Dextérité (Acrobaties) contesté par votre capacité psionique plus votre bonus de compétence. Lorsqu'une cible tente de s'échapper de cette manière, vous pouvez dépenser des points psi pour augmenter votre test, en respectant votre limite psi. Vous gagnez un bonus de +1 par point psi dépensé.",
 						"Pendant qu'une cible est {@condition grappled} de cette manière, vous créez l'un des effets suivants en tant qu'action :"
 					]
@@ -1551,7 +1551,7 @@
 					},
 					"name": "Frozen Rain",
 					"entries": [
-						"Comme action, choisissez un point que vous pouvez voir dans un rayon de 120 pieds autour de vous. L'air dans une sphère de 20 pieds de rayon centrée sur ce point devient mortellement froid et saturé d'humidité. Chaque créature dans cette zone doit effectuer un jet de sauvegarde de Constitution. En cas d'échec, la cible subit {@damage 6d6} de dégâts de froid et sa vitesse est réduite à 0 jusqu'à la fin de votre concentration. En cas de sauvegarde réussie, la cible subit deux fois moins de dégâts.",
+						"Comme action, choisissez un point que vous pouvez voir dans un rayon de 120 pieds autour de vous. L'air dans une sphère de 20 pieds de rayon centrée sur ce point devient mortellement froid et saturé d'humidité. Chaque créature dans cette zone doit faire un jet de sauvegarde de Constitution. En cas d'échec, la cible subit {@damage 6d6} de dégâts de froid et sa vitesse est réduite à 0 jusqu'à la fin de votre {@status concentration}. Si elle réussit son jet de sauvegarde, la cible subit deux fois moins de dégâts.",
 						"Comme action, une cible dont la vitesse est réduite peut mettre fin à l'effet plus tôt si elle réussit un test de Force (Athlétisme) avec un DC égal au DC de sauvegarde de cet effet.",
 						"Vous pouvez augmenter les dégâts de cet effet de {@scaledamage 6d6|5-7|1d6|psi} pour chaque point psi supplémentaire dépensé pour cet effet."
 					]
@@ -1567,7 +1567,7 @@
 					},
 					"name": "Ice Barrier",
 					"entries": [
-						"En tant qu'action, vous créez un mur de glace, dont au moins une partie doit se trouver à 60 pieds de vous. Le mur fait 60 pieds de long, 15 pieds de haut, et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre concentration. Chaque section de 10 pieds du mur a une CA de 12 et 30 points de vie. Une créature qui endommage le mur avec une attaque de mêlée subit des dégâts de froid égaux aux dégâts que la créature a infligés au mur."
+						"Comme action, vous créez un mur de glace, dont au moins une partie doit se trouver à moins de 60 pieds de vous. Le mur mesure 60 pieds de long, 15 pieds de haut et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre {@status concentration}. Chaque section de 10 pieds du mur a une CA de 12 et 30 points de vie. Une créature qui endommage le mur avec une attaque de mêlée subit des dégâts de froid égaux aux dégâts qu'elle a infligés au mur."
 					]
 				}
 			]
@@ -1604,7 +1604,7 @@
 					},
 					"name": "Light",
 					"entries": [
-						"En tant qu'action, un objet que vous touchez rayonne de la lumière dans un rayon de 20 pieds et une lumière tamisée sur 20 pieds supplémentaires. La lumière dure jusqu'à la fin de votre concentration. Alternativement, une créature que vous touchez rayonne de la lumière de la même manière si elle échoue à un jet de sauvegarde de Dextérité. Lorsqu'elle est éclairée de cette manière, elle ne peut pas se cacher, et les jets d'attaque contre elle bénéficient d'un avantage."
+						"Comme action, un objet que vous touchez irradie de la lumière dans un rayon de 20 pieds et de la lumière tamisée sur 20 pieds supplémentaires. La lumière dure jusqu'à la fin de votre {@status concentration}. Alternativement, une créature que vous touchez irradie de la lumière de la même manière si elle échoue à un jet de sauvegarde de Dextérité. Lorsqu'elle est éclairée de cette manière, elle ne peut pas se cacher et les jets d'attaque contre elle bénéficient d'un avantage."
 					]
 				},
 				{
@@ -1618,7 +1618,7 @@
 					},
 					"name": "Shadow Beasts",
 					"entries": [
-						"Comme action, vous faites apparaître deux {@creature shadow||shadows} dans des espaces inoccupés que vous pouvez voir dans un rayon de 60 pieds autour de vous. Les {@creature shadow||shadows} durent jusqu'à la fin de votre concentration, et ils obéissent à vos ordres verbaux. En combat, faites un jet pour leur initiative, et choisissez leur comportement pendant leurs tours. Lorsque cet effet prend fin, les {@creature shadow||shadows} disparaissent. Consultez le Manuel des monstres pour leur bloc de statistiques."
+						"Comme action, vous faites apparaître deux {@creature shadow||shadows} dans des espaces inoccupés que vous pouvez voir dans un rayon de 60 pieds autour de vous. Les {@creature shadow||shadows} durent jusqu'à la fin de votre {@status concentration}, et ils obéissent à vos ordres verbaux. En combat, lancez leur initiative et choisissez leur comportement pendant leur tour. A la fin de cet effet, les {@creature shadow||shadows} disparaissent. Voir le Manuel des Monstres pour leur bloc de stat."
 					]
 				},
 				{
@@ -1632,7 +1632,7 @@
 					},
 					"name": "Radiant Beam",
 					"entries": [
-						"Comme une action, vous projetez un faisceau de lumière sur une créature que vous pouvez voir dans un rayon de 60 pieds de vous. La cible doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, elle subit {@damage 6d6} de dégâts radiants et est {@condition blinded} jusqu'à la fin de votre concentration. En cas de sauvegarde réussie, elle subit deux fois moins de dégâts. Une cible {@condition blinded} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite.",
+						"Comme action, vous projetez un rayon de lumière sur une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, elle subit {@damage 6d6} de dégâts radiants et est {@condition blinded} jusqu'à la fin de votre {@status concentration}. En cas de sauvegarde réussie, elle subit la moitié des dégâts. Une cible de {@condition blinded} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite.",
 						"Vous pouvez augmenter les dégâts de cet effet de {@scaledamage 6d6|5-7|1d6|psi} pour chaque point psi supplémentaire dépensé pour cet effet."
 					]
 				}
@@ -1700,7 +1700,7 @@
 					},
 					"name": "Water Sphere",
 					"entries": [
-						"En tant qu'action, vous provoquez la formation d'une sphère d'eau autour d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, elle est piégée dans la sphère d'eau jusqu'à la fin de votre concentration. Pendant que la cible est piégée, sa vitesse est réduite de moitié, elle subit un désavantage aux jets d'attaque et elle ne peut rien voir à plus de 3 mètres d'elle. Cependant, les jets d'attaque contre elle subissent également un désavantage. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
+						"En tant qu'action, vous provoquez la formation d'une sphère d'eau autour d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, elle est piégée dans la sphère d'eau jusqu'à la fin de votre {@status concentration}. Tant que la cible est piégée, sa vitesse est réduite de moitié, elle subit un désavantage aux jets d'attaque, et elle ne peut rien voir à plus de 3 mètres d'elle. Cependant, les jets d'attaque contre elle subissent également un désavantage. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
 					]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					},
 					"name": "Animate Water",
 					"entries": [
-						"En tant qu'action, vous faites apparaître un élémentaire d'eau dans un espace inoccupé que vous pouvez voir dans un rayon de 120 pieds autour de vous. L'élémentaire dure jusqu'à la fin de votre concentration, et il obéit à vos ordres verbaux. En combat, faites un jet pour son initiative, et choisissez son comportement pendant ses tours. Lorsque cet effet prend fin, l'élémentaire disparaît. Voir le manuel des monstres pour son bloc de statistiques."
+						"Comme action, vous faites apparaître un élémentaire d'eau dans un espace inoccupé que vous pouvez voir dans un rayon de 120 pieds autour de vous. L'élémentaire dure jusqu'à la fin de votre {@status concentration}, et il obéit à vos ordres verbaux. En combat, lancez son initiative et choisissez son comportement pendant ses tours. A la fin de cet effet, l'élémentaire disparaît. Voir le Manuel des Monstres pour son bloc de stat.d de chacun de ses tours, mettant fin à l'effet sur lui-même en cas de succès."
 					]
 				}
 			]
@@ -1741,7 +1741,7 @@
 					},
 					"name": "Cloud Steps",
 					"entries": [
-						"En tant qu'action, vous conjurez des nuages pour créer un escalier solide et translucide qui dure jusqu'à la fin de votre concentration. L'escalier forme une spirale qui remplit une zone de 10 pieds par 10 pieds et s'élève de 20 pieds par point psi dépensé."
+						"Comme action, vous conjurez les nuages pour créer un escalier solide et translucide qui dure jusqu'à la fin de votre {@status concentration}. L'escalier forme une spirale qui remplit une zone de 3 mètres par 3 mètres et s'élève de 2 mètres par point psi dépensé."
 					]
 				},
 				{
@@ -1765,7 +1765,7 @@
 					},
 					"name": "Wall of Clouds",
 					"entries": [
-						"En tant qu'action, vous créez un mur de nuages, dont au moins une partie doit se trouver à 60 pieds de vous. Le mur mesure 60 pieds de long, 15 pieds de haut et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre concentration. Les créatures peuvent passer à travers sans être gênées, mais le mur bloque la vision."
+						"Comme action, vous créez un mur de nuages, dont au moins une partie doit se trouver à moins de 60 pieds de vous. Le mur mesure 60 pieds de long, 15 pieds de haut et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre {@status concentration}. Les créatures peuvent le traverser sans encombre, mais le mur bloque la vision."
 					]
 				},
 				{
@@ -1800,7 +1800,7 @@
 					},
 					"name": "Wall of Thunder",
 					"entries": [
-						"En tant qu'action, vous créez un mur de tonnerre, dont au moins une partie doit se trouver à 60 pieds de vous. Le mur mesure 60 pieds de long, 15 pieds de haut et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre concentration. Chaque pied déplacé à travers le mur coûte 1 pied supplémentaire de mouvement. Lorsqu'une créature se déplace dans l'espace du mur pour la première fois lors d'un tour ou commence son tour à cet endroit, cette créature doit réussir un jet de sauvegarde de Force, ou elle subit {@damage 6d6} de dégâts de tonnerre, est poussée en ligne droite jusqu'à 30 pieds du mur, et est assommée {@condition prone}."
+						"Comme action, vous créez un mur de tonnerre, dont au moins une partie doit se trouver à moins de 60 pieds de vous. Le mur mesure 60 pieds de long, 15 pieds de haut et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre {@status concentration}. Chaque pied franchi par le mur coûte 1 pied de mouvement supplémentaire. Lorsqu'une créature entre dans l'espace du mur pour la première fois lors d'un tour ou commence son tour à cet endroit, elle doit réussir un jet de sauvegarde de Force, sinon elle subit {@damage 6d6} de dégâts de tonnerre, est repoussée en ligne droite jusqu'à 30 pieds du mur et subit un choc de {@condition prone}."
 					]
 				},
 				{
@@ -1867,7 +1867,7 @@
 					},
 					"name": "Wall of Wood",
 					"entries": [
-						"En tant qu'action, vous créez un mur de bois dont au moins une partie doit se trouver à 60 pieds de vous. Le mur fait 60 pieds de long, 15 pieds de haut, et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre concentration. Chaque section de 5 pieds de large du mur a un CA de 12 et 100 points de vie. La rupture d'une section crée un trou de 5 pieds par 5 pieds, mais le mur reste intact."
+						"Comme action, vous créez un mur de bois dont au moins une partie doit se trouver à moins de 60 pieds de vous. Le mur mesure 60 pieds de long, 15 pieds de haut et 1 pied d'épaisseur. Le mur dure jusqu'à la fin de votre {@status concentration}. Chaque section de 5 pieds de large du mur a une CA de 12 et 100 points de vie. Briser une section crée un trou de 1,5 m sur 1,5 m, mais le mur reste intact. est frappé (%2%)."
 					]
 				},
 				{
@@ -1881,7 +1881,7 @@
 					},
 					"name": "Armored Form",
 					"entries": [
-						"Comme action bonus, vous gagnez une résistance aux dégâts de matraquage, de perçage et de coupure, qui dure jusqu'à la fin de votre concentration."
+						"En tant qu'action bonus, vous gagnez une résistance aux dégâts de matraquage, de perforation et d'entaille, qui dure jusqu'à la fin de votre {@status concentration}."
 					]
 				},
 				{
@@ -1895,7 +1895,7 @@
 					},
 					"name": "Animate Earth",
 					"entries": [
-						"En tant qu'action, vous faites apparaître un élémentaire de terre dans un espace inoccupé que vous pouvez voir dans un rayon de 120 pieds autour de vous. L'élémentaire dure jusqu'à la fin de votre concentration, et il obéit à vos ordres verbaux. En combat, faites un jet pour son initiative, et choisissez son comportement pendant ses tours. Lorsque cet effet prend fin, l'élémentaire disparaît. Voir le manuel des monstres pour son bloc de statistiques."
+						"En une action, vous faites apparaître un élémentaire de terre dans un espace inoccupé que vous pouvez voir à moins de 120 pieds de vous. L'élémentaire dure jusqu'à la fin de votre {@status concentration}, et il obéit à vos ordres verbaux. En combat, vous lancez son initiative et choisissez son comportement pendant ses tours. A la fin de cet effet, l'élémentaire disparaît. Voir le Manuel des Monstres pour son bloc de stat."
 					]
 				}
 			]
@@ -1992,7 +1992,7 @@
 					},
 					"name": "Faithful Archer",
 					"entries": [
-						"Comme action bonus, vous imprégnez une arme à distance d'une sensibilité limitée. Jusqu'à la fin de votre concentration, vous pouvez effectuer une attaque supplémentaire avec l'arme au début de chacun de vos tours (aucune action requise). S'il s'agit d'une arme jetée, elle revient dans votre main à chaque fois que vous effectuez une attaque avec elle."
+						"Comme action bonus, vous imprégnez une arme à distance d'une sensibilité limitée. Jusqu'à la fin de votre {@status concentration}, vous pouvez effectuer une attaque supplémentaire avec l'arme au début de chacun de vos tours (aucune action requise). S'il s'agit d'une arme jetée, elle revient à votre portée à chaque fois que vous portez une attaque avec elle."
 					]
 				}
 			]
@@ -2029,7 +2029,7 @@
 					},
 					"name": "Step from Sight",
 					"entries": [
-						"Comme action bonus, cachez-vous de la vue. Vous pouvez cibler une créature supplémentaire pour chaque point psi supplémentaire que vous dépensez pour cette capacité. Les cibles ajoutées doivent être visibles pour vous et se trouver à moins de 60 pieds de vous. Chaque cible devient {@condition invisible} et le reste jusqu'à la fin de votre concentration ou jusqu'à ce qu'elle cible, endommage ou affecte autrement une créature avec une attaque, un sort ou une autre capacité."
+						"En tant qu'action bonus, vous vous dissimulez à la vue. Vous pouvez cibler une créature supplémentaire pour chaque point psi supplémentaire que vous dépensez pour cette capacité. Les cibles ajoutées doivent être visibles et se trouver à moins de 60 pieds de vous. Chaque cible devient {@condition invisible} et le reste jusqu'à la fin de votre {@status concentration} ou jusqu'à ce qu'elle cible, endommage ou affecte une créature avec une attaque, un sort ou une autre capacité."
 					]
 				},
 				{
@@ -2043,7 +2043,7 @@
 					},
 					"name": "Enduring Invisibility",
 					"entries": [
-						"Comme action bonus, vous vous transformez en {@condition invisible} et le restez jusqu'à la fin de votre concentration."
+						"Comme action bonus, vous vous transformez en {@condition invisible} et restez ainsi jusqu'à la fin de votre {@status concentration}."
 					]
 				}
 			]
@@ -2070,7 +2070,7 @@
 					},
 					"name": "Wandering Mind",
 					"entries": [
-						"Vous entrez dans une profonde contemplation. Si vous vous concentrez pendant toute la durée de cette option, vous gagnez alors la maîtrise d'un maximum de trois des compétences suivantes (une compétence pour chaque 2 points psi dépensés) : {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} et {@skill Survival}. Le bénéfice dure 1 heure, aucune concentration n'est requise."
+						"Vous entrez dans une profonde contemplation. Si vous vous concentrez pendant toute la durée de cette option, vous gagnez jusqu'à trois des compétences suivantes (une compétence par 2 points psi dépensés) : {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} et {@skill Survival}. Le bénéfice dure 1 heure, aucun {@status concentration} n'est requis."
 					]
 				},
 				{
@@ -2122,7 +2122,7 @@
 					},
 					"name": "Wandering Eye",
 					"entries": [
-						"En tant qu'action, vous créez un capteur psychique dans un rayon de 60 pieds autour de vous. Le capteur dure jusqu'à la fin de votre concentration. Le capteur est invisible et plane dans l'air. Vous recevez mentalement des informations visuelles de sa part, qui a une vision normale et une vision sombre avec une portée de 60 pieds. Le capteur peut regarder dans toutes les directions. Comme une action, vous pouvez déplacer le capteur jusqu'à 30 pieds dans n'importe quelle direction. Il n'y a pas de limite à la distance à laquelle l'œil peut se déplacer, mais il ne peut pas entrer dans un autre plan d'existence. Une barrière solide bloque le mouvement de l'œil, mais celui-ci peut passer par une ouverture d'un diamètre de 1 pouce."
+						"En une action, vous créez un capteur psychique dans un rayon de 60 pieds autour de vous. Le capteur dure jusqu'à la fin de votre {@status concentration}. Le capteur est invisible et plane dans l'air. Vous recevez mentalement des informations visuelles de lui, qui a une vision normale et une vision dans le noir avec une portée de 60 pieds. Le capteur peut regarder dans toutes les directions. Comme action, vous pouvez déplacer le capteur jusqu'à 30 pieds dans n'importe quelle direction. Il n'y a pas de limite à la distance à laquelle l'œil peut s'éloigner de vous, mais il ne peut pas entrer dans un autre plan d'existence. Une barrière solide bloque le mouvement de l'œil, mais l'œil peut passer à travers une ouverture d'un pouce de diamètre."
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					},
 					"name": "Nomad's Gate",
 					"entries": [
-						"Comme une action, vous créez un cube de 5 pieds de lumière grise et faible dans un rayon de 5 pieds de vous. Vous créez un cube identique à n'importe quel point de votre choix dans un rayon de 1 mile que vous avez vu au cours des dernières 24 heures. Jusqu'à la fin de votre concentration, toute personne entrant dans l'un des cubes se téléporte immédiatement dans l'autre, apparaissant dans un espace inoccupé à côté de lui. La téléportation échoue s'il n'y a pas d'espace où la créature peut apparaître."
+						"En tant qu'action, vous créez un cube de lumière grise et faible de 1,5 mètre dans un rayon de 1,5 mètre autour de vous. Vous créez un cube identique à n'importe quel point de votre choix dans un rayon de 1 mile que vous avez vu au cours des dernières 24 heures. Jusqu'à la fin de votre {@status concentration}, toute personne entrant dans l'un des cubes se téléporte immédiatement dans l'autre, apparaissant dans un espace inoccupé à côté. La téléportation échoue s'il n'y a pas d'espace pour que la créature apparaisse dans le mouvement de l'œil, mais l'œil peut passer par une ouverture aussi petite que 1 pouce de diamètre."
 					]
 				}
 			]
@@ -2260,7 +2260,7 @@
 					},
 					"name": "Precognitive Hunch",
 					"entries": [
-						"En tant qu'action bonus, vous pouvez recevoir des informations momentanées qui améliorent vos chances de réussite ; jusqu'à la fin de votre concentration, chaque fois que vous faites un jet d'attaque, un jet de sauvegarde ou un test de capacité, vous lancez un {@dice d4} et l'ajoutez au total."
+						"Jusqu'à la fin de votre {@status concentration}, chaque fois que vous faites un jet d'attaque, un jet de sauvegarde ou un test de capacité, vous obtenez un {@dice d4} et l'ajoutez au total."
 					]
 				},
 				{
@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"En tant qu'action, vous créez un modèle psychique de la réalité dans votre esprit et vous le réglez pour qu'il vous montre quelques secondes dans le futur. Jusqu'à la fin de votre concentration, vous ne pouvez pas être {@quickref Surprise|PHB|3|0|surprised}, les jets d'attaque contre vous ne peuvent pas gagner d'avantage, et vous gagnez un bonus de +10 à l'initiative."
+						"En tant qu'action, vous créez un modèle psychique de la réalité dans votre esprit et vous lui demandez de vous montrer quelques secondes dans le futur. Jusqu'à la fin de votre {@status concentration}, vous ne pouvez pas être {@quickref Surprise|PHB|3|0|surprised}, les jets d'attaque contre vous ne peuvent pas bénéficier d'un avantage, et vous gagnez un bonus de +10 à l'initiative."
 					]
 				},
 				{
@@ -2394,7 +2394,7 @@
 					},
 					"name": "Augmented Weapon",
 					"entries": [
-						"Comme action bonus, touchez un {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Jusqu'à la fin de votre concentration, cette arme devient une arme magique avec un bonus de +3 à ses jets d'attaque et de dégâts."
+						"Comme action bonus, touchez un {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Jusqu'à la fin de votre {@status concentration}, cette arme devient une arme magique avec un bonus de +3 à ses jets d'attaque et de dégâts."
 					]
 				}
 			]
@@ -2484,7 +2484,7 @@
 					},
 					"name": "Distracting Haze",
 					"entries": [
-						"Comme une action, choisissez une créature que vous pouvez voir à moins de 60 pieds de vous. Cette créature doit effectuer un jet de sauvegarde d'Intelligence. En cas d'échec, elle subit {@scaledamage 1d10|1-7|1d10|psi} de dégâts psychiques par point psi dépensé et ne peut rien voir à plus de 3 mètres d'elle jusqu'à la fin de votre concentration. En cas de sauvegarde réussie, elle subit la moitié des dégâts."
+						"Au cours d'une action, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. Cette créature doit effectuer un jet de sauvegarde d'Intelligence. En cas d'échec, elle subit {@scaledamage 1d10|1-7|1d10|psi} de dégâts psychiques par point psi dépensé et ne peut rien voir à plus de 3 mètres d'elle jusqu'à ce que votre {@status concentration} prenne fin. Si elle réussit son jet de sauvegarde, elle subit deux fois moins de dégâts."
 					]
 				},
 				{
@@ -2612,7 +2612,7 @@
 					},
 					"name": "Phantom Foe",
 					"entries": [
-						"Comme une action, choisissez une créature que vous pouvez voir à moins de 60 pieds de vous. La cible doit effectuer un jet de sauvegarde d'Intelligence. En cas d'échec, elle perçoit une créature horrible adjacente à elle jusqu'à la fin de votre concentration. Pendant ce temps, la cible ne peut pas effectuer de réactions, et elle subit {@damage 1d8} de dégâts psychiques au début de chacun de ses tours. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite. Vous pouvez augmenter les dégâts de {@scaledamage 1d8|3-7|1d8|psi} pour chaque point psi supplémentaire dépensé pour cette capacité."
+						"Au cours d'une action, choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit effectuer un jet de sauvegarde d'Intelligence. En cas de sauvegarde ratée, elle perçoit une créature horrifique adjacente à elle jusqu'à la fin de votre {@status concentration}. Pendant ce temps, la cible ne peut pas réagir et subit {@damage 1d8} de dégâts psychiques au début de chacun de ses tours. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de succès. Vous pouvez augmenter les dégâts de {@scaledamage 1d8|3-7|1d8|psi} pour chaque point psi supplémentaire dépensé pour cette capacité."
 					]
 				},
 				{
@@ -2626,7 +2626,7 @@
 					},
 					"name": "Phantom Betrayal",
 					"entries": [
-						"En tant qu'action, vous plantez une paranoïa délirante dans l'esprit d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde d'Intelligence, ou jusqu'à la fin de votre concentration, elle doit cibler ses alliés avec des attaques et autres effets dommageables. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite. Une créature est immunisée contre cette capacité si elle est immunisée contre le fait d'être {@condition charmed}."
+						"Au cours d'une action, vous implantez une paranoïa délirante dans l'esprit d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde d'Intelligence, ou jusqu'à ce que votre {@status concentration} se termine, elle doit cibler ses alliés avec des attaques et d'autres effets de dégâts. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de succès. Une créature est immunisée contre cette capacité si elle est immunisée contre le fait d'être {@condition charmed}.pent sur la capacité."
 					]
 				},
 				{
@@ -2640,7 +2640,7 @@
 					},
 					"name": "Phantom Riches",
 					"entries": [
-						"Comme une action, vous plantez le fantôme d'un objet grandement désiré dans l'esprit d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit effectuer un jet de sauvegarde d'Intelligence. En cas d'échec, vous contrôlez partiellement le comportement de la cible jusqu'à la fin de votre concentration ; la cible se déplace comme vous le souhaitez à chacun de ses tours, en pensant poursuivre l'objet fantôme qu'elle désire. Si elle n'a pas subi de dégâts depuis son dernier tour, elle ne peut utiliser son action que pour admirer l'objet que vous avez créé dans sa perception. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
+						"Comme action, vous plantez le fantôme d'un objet très désiré dans l'esprit d'une créature. Choisissez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit effectuer un jet de sauvegarde d'Intelligence. Sur un jet de sauvegarde raté, vous gagnez un contrôle partiel sur le comportement de la cible jusqu'à la fin de votre {@status concentration} ; la cible se déplace comme vous le souhaitez à chacun de ses tours, alors qu'elle pense poursuivre l'objet fantôme qu'elle désire. Si elle n'a pas subi de dégâts depuis son dernier tour, elle ne peut utiliser son action que pour admirer l'objet que vous avez créé dans sa perception. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de succès."
 					]
 				}
 			]
@@ -2697,7 +2697,7 @@
 					},
 					"name": "Psychic Grip",
 					"entries": [
-						"Comme une action, vous ciblez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde d'Intelligence, sinon elle subit {@condition paralyzed} jusqu'à la fin de votre concentration. À la fin de chacun de ses tours, elle peut répéter le jet de sauvegarde. En cas de réussite, cet effet prend fin. En cas d'échec, vous pouvez utiliser votre réaction pour forcer la cible à se déplacer jusqu'à la moitié de sa vitesse, même si elle est à {@condition paralyzed}."
+						"Comme action, vous ciblez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde d'Intelligence, ou elle est {@condition paralyzed} jusqu'à la fin de votre {@status concentration}. A la fin de chacun de ses tours, elle peut répéter son jet de sauvegarde. En cas de réussite, cet effet prend fin. En cas d'échec, vous pouvez utiliser votre réaction pour forcer la cible à se déplacer jusqu'à la moitié de sa vitesse, même si elle est à {@condition paralyzed}.La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
 					]
 				},
 				{
@@ -2711,7 +2711,7 @@
 					},
 					"name": "Psychic Domination",
 					"entries": [
-						"Comme une action, vous ciblez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde d'Intelligence, ou vous choisissez les actions et le mouvement de la créature à ses tours jusqu'à la fin de votre concentration. À la fin de chacun de ses tours, elle peut répéter le jet de sauvegarde, mettant fin à l'effet sur elle-même en cas de réussite. Une créature est immunisée contre cette capacité si elle est immunisée contre le fait d'être {@condition charmed}."
+						"Comme action, vous ciblez une créature que vous pouvez voir dans un rayon de 60 pieds autour de vous. La cible doit réussir un jet de sauvegarde d'Intelligence, ou vous choisissez les actions et le mouvement de la créature à ses tours jusqu'à la fin de votre {@status concentration}. À la fin de chacun de ses tours, elle peut répéter le jet de sauvegarde, mettant fin à l'effet sur elle-même en cas de réussite. Une créature est immunisée contre cette capacité si elle est immunisée contre le fait d'être {@condition charmed}."
 					]
 				}
 			]
@@ -2738,7 +2738,7 @@
 					},
 					"name": "Tremorsense",
 					"entries": [
-						"Comme action bonus, vous gagnez un sens du tremblement avec un rayon de 30 pieds, qui dure jusqu'à la fin de votre concentration."
+						"En tant qu'action bonus, vous gagnez une sensation de tremblement dans un rayon de 30 pieds, qui dure jusqu'à ce que votre {@status concentration} se termine."
 					]
 				},
 				{
@@ -2762,7 +2762,7 @@
 					},
 					"name": "Piercing Sight",
 					"entries": [
-						"Comme une action bonus, vous gagnez la capacité de voir à travers les objets qui sont jusqu'à 1 pied d'épaisseur dans un rayon de 30 pieds de vous. Cette vision dure jusqu'à la fin de votre concentration."
+						"Comme action bonus, vous gagnez la capacité de voir à travers des objets d'une épaisseur maximale de 1 pied dans un rayon de 30 pieds autour de vous. Cette vision dure jusqu'à la fin de votre {@status concentration}."
 					]
 				},
 				{
@@ -2776,7 +2776,7 @@
 					},
 					"name": "Truesight",
 					"entries": [
-						"En tant qu'action bonus, vous gagnez la vision réelle avec un rayon de 30 pieds, qui dure jusqu'à la fin de votre concentration."
+						"En tant qu'action bonus, vous gagnez une vision de vérité d'un rayon de 30 pieds, qui dure jusqu'à ce que votre {@status concentration} prenne fin."
 					]
 				}
 			]

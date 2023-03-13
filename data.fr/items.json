@@ -3000,7 +3000,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"Ce sac à dos contient l'esprit d'un {@creature air elemental} et un ballon de cuir compact. Lorsque vous portez le sac à dos, vous pouvez déployer le ballon en tant qu'action et obtenir l'effet du sort {@spell levitate} pendant 10 minutes, en vous ciblant vous-même et sans nécessiter de concentration. Vous pouvez également utiliser une réaction pour déployer le ballon lorsque vous tombez et bénéficier de l'effet du sort {@spell feather fall} pour vous-même.",
+				"Ce sac à dos contient l'esprit d'un {@creature air elemental} et un ballon en cuir compact. Lorsque vous portez le sac à dos, vous pouvez déployer le ballon en tant qu'action et bénéficier de l'effet du sort {@spell levitate} pendant 10 minutes, vous ciblant vous-même et ne nécessitant pas de {@status concentration}. Vous pouvez également utiliser une réaction pour déployer le ballon lorsque vous tombez et bénéficier de l'effet du sort {@spell feather fall} pour vous-même.",
 				"Lorsque l'un ou l'autre de ces sorts prend fin, le ballon se dégonfle lentement tandis que l'esprit élémentaire s'échappe et retourne dans le plan élémentaire de l'air. Lorsque le ballon se dégonfle, vous descendez doucement vers le sol sur une distance maximale de 60 pieds. Si vous êtes toujours en l'air à la fin de cette distance, vous tombez si vous n'avez aucun autre moyen de rester en l'air.",
 				"Après le départ de l'esprit, les propriétés du sac à dos sont inutilisables, sauf si le sac à dos est rechargé pendant 1 heure dans un nœud d'air élémentaire, ce qui lie un autre esprit au sac à dos."
 			],
@@ -4177,7 +4177,7 @@
 					"type": "entries",
 					"entries": [
 						"Tant que vous tenez l'arme. vous êtes conscient de la présence de créatures minuscules ou plus grandes dans un rayon de 60 pieds autour de vous qui ne sont pas des constructions ou des morts-vivants. Vous ne pouvez pas non plus être {@condition charmed} ou {@condition frightened}.",
-						"Blackrazor peut vous lancer le sort {@spell haste} une fois par jour. Il décide du moment où il lance le sort et maintient sa concentration sur celui-ci pour que vous n'ayez pas à le faire."
+						"Blackrazor peut lancer le sort {@spell haste} sur vous une fois par jour. Il décide quand lancer le sort et maintient {@status concentration} sur celui-ci pour que vous n'ayez pas à le faire."
 					]
 				},
 				{
@@ -7780,7 +7780,7 @@
 					"name": "Wealth of Information",
 					"entries": [
 						"Le but premier du tableau est d'observer et de se souvenir des conversations. Au cours des dernières décennies, le Portrait de Constantori a discrètement observé d'innombrables conversations et possède maintenant une quantité non quantifiable de connaissances, allant des conspirations criminelles aux mots de passe secrets. Le MJ décide de ce que le tableau sait et de ce qu'il ne sait pas.",
-						"Lorsque vous êtes en accord avec le tableau, vous pouvez entreprendre une action pour entrer en contact télépathique avec lui sur n'importe quelle distance, à condition que vous et le tableau soyez sur le même plan d'existence. En revanche, le tableau ne peut pas vous contacter par télépathie. Le maintien du contact télépathique avec le tableau requiert votre concentration (comme si vous vous concentriez sur un sort).s ce que le tableau sait et ce qu'il ne sait pas."
+						"Lorsque vous êtes en phase avec le tableau, vous pouvez entreprendre une action pour le contacter télépathiquement à n'importe quelle distance, à condition que vous et le tableau soyez sur le même plan d'existence. Le tableau ne peut cependant pas vous contacter par télépathie. Maintenir le contact télépathique avec le tableau nécessite votre {@status concentration} (comme si {@status concentration||concentrating} sur un sort)."
 					]
 				},
 				{
@@ -12776,7 +12776,7 @@
 					"type": "entries",
 					"name": "Aberrant Ally",
 					"entries": [
-						"Vous pouvez conjurer une créature aberrante issue du chaos du multivers pour qu'elle vous serve. Cela fonctionne comme le sort {@spell conjure celestial} (aucune concentration requise), sauf que la créature que vous invoquez est une aberration de niveau de défi 4 ou moins. Une fois que vous avez utilisé cette caractéristique de l'équipement lointain, elle ne peut plus être utilisée jusqu'à la prochaine aube."
+						"Vous pouvez conjurer une créature aberrante issue du chaos du multivers pour qu'elle vous serve. Cela fonctionne comme le sort {@spell conjure celestial} (pas de {@status concentration} requis), sauf que la créature que vous invoquez est une aberration de niveau de défi 4 ou moins. Une fois que vous avez utilisé cette caractéristique de l'équipement lointain, elle ne peut plus être utilisée jusqu'à la prochaine aube."
 					]
 				},
 				{
@@ -12898,7 +12898,7 @@
 			],
 			"entries": [
 				"Ce cristal chaud scintille avec les couleurs du coucher de soleil du ciel de Feywild et évoque les murmures de la mémoire émotionnelle. Comme action, vous pouvez attacher le tesson à un objet minuscule (comme une arme ou un bijou) ou le détacher. Il se détache si votre harmonisation avec lui prend fin. Vous pouvez utiliser le tesson comme point de focalisation de vos sorts tant que vous le tenez ou le portez.",
-				"Lorsque vous utilisez une option de métamagie sur un sort alors que vous tenez ou portez le tesson, vous pouvez effectuer un jet sur la table {@table Wild Magic Surge|PHB} dans le {@book Player's Handbook|PHB}. Si le résultat est un sort, il est trop sauvage pour être affecté par votre Métamagie, et s'il nécessite normalement de la concentration, il n'en a pas besoin dans ce cas ; le sort dure pendant toute sa durée.",
+				"Lorsque vous utilisez une option de métamagie sur un sort alors que vous tenez ou portez le tesson, vous pouvez effectuer un jet sur la table {@table Wild Magic Surge|PHB} dans le {@book Player's Handbook|PHB}. Si le résultat est un sort, il est trop sauvage pour être affecté par votre métamagie, et s'il nécessite normalement {@status concentration}, il ne nécessite pas {@status concentration} dans ce cas ; le sort dure pour toute sa durée.",
 				"Si vous ne possédez pas l'origine Sorcier de la magie sauvage, une fois que cette propriété est utilisée pour effectuer un jet sur la table {@table Wild Magic Surge|PHB}, elle ne peut pas être réutilisée avant l'aube suivante."
 			],
 			"hasFluffImages": true
@@ -13836,7 +13836,7 @@
 			"entries": [
 				"La fonction de cette chaise ornée est de propulser et de manœuvrer une citadelle volante sur laquelle elle a été installée. La chaise a un CA de 15, 18 points de vie, et une immunité au poison et aux dégâts psychiques. Elle est détruite si elle est réduite à 0 point de vie.",
 				"La sensation d'être en harmonie avec un casque de citadelle volant est semblable à l'effet de picotement que l'on ressent après que son bras ou sa jambe se soit endormi, mais pas aussi intense.",
-				"Lorsque vous êtes accordé à un casque de citadelle volant et que vous êtes assis dessus, vous gagnez les capacités suivantes tant que vous maintenez votre concentration (comme si vous vous concentriez sur un sort) :",
+				"Lorsque vous êtes en accord avec un heaume de citadelle volant et que vous vous y asseyez, vous gagnez les capacités suivantes tant que vous maintenez {@status concentration} (comme si {@status concentration||concentrating} était sur un sort) :",
 				{
 					"type": "list",
 					"items": [
@@ -13845,7 +13845,7 @@
 						"À tout moment, vous pouvez voir et entendre depuis le point le plus élevé à l'extérieur de la citadelle, comme si vous étiez à cet endroit."
 					]
 				},
-				"Si aucune créature accordée à la barre ne maintient sa concentration, la citadelle reste immobile dans son espace.",
+				"Si aucune créature accordée au heaume ne se maintient {@status concentration}, la citadelle reste immobile dans son espace.",
 				{
 					"type": "entries",
 					"name": "Transfer Attunement",
@@ -16013,7 +16013,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Lorsque vous portez ce casque, vous pouvez utiliser une action pour lancer le sort {@spell detect thoughts} (sauvegarde DC 13) qu'il contient. Tant que vous maintenez votre concentration sur le sort, vous pouvez utiliser une action bonus pour envoyer un message télépathique à une créature sur laquelle vous êtes concentré. Elle peut répondre - en utilisant une action bonus pour le faire - tant que votre concentration sur elle se poursuit.",
+				"Lorsque vous portez ce casque, vous pouvez utiliser une action pour lancer le sort {@spell detect thoughts} (sauvegarde DC 13) qu'il contient. Tant que vous maintenez {@status concentration} sur le sort, vous pouvez utiliser une action bonus pour envoyer un message télépathique à une créature sur laquelle vous êtes concentré. Elle peut répondre - en utilisant une action bonus pour le faire - pendant que vous maintenez votre concentration sur elle.",
 				"Lorsque vous vous concentrez sur une créature dotée de {@spell detect thoughts}, vous pouvez utiliser une action pour lancer le sort {@spell suggestion} (sauvegarde DC 13) du heaume sur cette créature. Une fois utilisée, la propriété de suggestion ne peut plus être utilisée jusqu'à l'aube suivante."
 			],
 			"optionalfeatures": [
@@ -20849,7 +20849,7 @@
 					"type": "entries",
 					"name": "Enduring Vision",
 					"entries": [
-						"Lorsque vous tenez le jeu, vous réussissez automatiquement les jets de sauvegarde de Constitution effectués pour maintenir votre concentration sur les sorts de divination."
+						"Lorsque vous tenez le paquet, vous réussissez automatiquement vos jets de sauvegarde de Constitution pour maintenir votre {@status concentration} sur les sorts de divination."
 					]
 				},
 				{
@@ -25786,7 +25786,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet \"réduire\" du sort {@spell enlarge/reduce} pendant {@dice 1d4} heures (aucune concentration requise). Le rouge contenu dans le liquide de la potion se contracte continuellement pour former une minuscule perle, puis se dilate pour colorer le liquide clair qui l'entoure. Secouer la bouteille ne permet pas d'interrompre ce processus."
+				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet \"réduction\" du sort {@spell enlarge/reduce} pendant {@dice 1d4} heures (pas de {@status concentration} requis). Le rouge contenu dans le liquide de la potion se contracte continuellement jusqu'à devenir une minuscule perle, puis se dilate pour colorer le liquide clair qui l'entoure. Secouer la bouteille n'interrompt pas ce processus."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -25923,7 +25923,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet du sort {@spell gaseous form} pendant 1 heure (aucune concentration requise) ou jusqu'à ce que vous mettiez fin à l'effet par une action bonus. Le récipient de cette potion semble contenir un brouillard qui se déplace et se déverse comme de l'eau."
+				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet du sort {@spell gaseous form} pendant 1 heure (pas de {@status concentration} requis) ou jusqu'à ce que vous mettiez fin à l'effet par une action bonus. Le récipient de cette potion semble contenir du brouillard qui se déplace et coule comme de l'eau."
 			],
 			"attachedSpells": [
 				"gaseous form"
@@ -25969,7 +25969,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet \"agrandir\" du sort {@spell enlarge/reduce} pendant {@dice 1d4} heures (aucune concentration requise). Le rouge contenu dans le liquide de la potion se dilate continuellement à partir d'une minuscule perle pour colorer le liquide clair qui l'entoure, puis se contracte. Secouer la bouteille ne permet pas d'interrompre ce processus."
+				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet \"agrandissement\" du sort {@spell enlarge/reduce} pendant {@dice 1d4} heures (pas de {@status concentration} requis). Le rouge contenu dans le liquide de la potion s'étend continuellement à partir d'une minuscule perle pour colorer le liquide clair qui l'entoure, puis se contracte. Secouer la bouteille n'interrompt pas ce processus."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -26010,7 +26010,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Pendant 1 heure après l'avoir bu, vous gagnez 10 points de vie temporaires qui durent 1 heure. Pour la même durée, vous êtes sous l'effet du sort {@spell bless} (aucune concentration requise). Cette potion bleue fait des bulles et de la vapeur comme si elle était en ébullition."
+				"Pendant 1 heure après l'avoir bu, vous gagnez 10 points de vie temporaires qui durent 1 heure. Pour la même durée, vous êtes sous l'effet du sort {@spell bless} (pas de {@status concentration} requis). Cette potion bleue fait des bulles et de la vapeur comme si elle était en ébullition."
 			],
 			"attachedSpells": [
 				"bless"
@@ -26134,7 +26134,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Lorsque vous buvez une potion de contrôle mental, vous pouvez lancer un sort de domination (sauvegarde DC 15) sur une créature spécifique si vous le faites avant la fin de votre prochain tour. Si vous ne le faites pas, la potion est gaspillée.",
-				"Une potion de contrôle mental produit l'effet d'un sort de {@spell dominate beast}. Si le jet de sauvegarde initial de la cible échoue, l'effet dure 1 heure, sans que vous ayez à vous concentrer. La créature {@condition charmed} a un désavantage sur les nouveaux jets de sauvegarde pour rompre l'effet pendant cette période."
+				"Une potion de contrôle mental produit l'effet d'un sort de {@spell dominate beast}. Si le jet de sauvegarde initial de la cible échoue, l'effet dure 1 heure, sans que vous ayez besoin de faire un {@status concentration}. La créature {@condition charmed} a un désavantage sur les nouveaux jets de sauvegarde pour briser l'effet pendant cette période."
 			],
 			"attachedSpells": [
 				"dominate beast"
@@ -26148,7 +26148,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Lorsque vous buvez une potion de contrôle mental, vous pouvez lancer un sort de domination (sauvegarde DC 15) sur une créature spécifique si vous le faites avant la fin de votre prochain tour. Si vous ne le faites pas, la potion est gaspillée.",
-				"Une potion de contrôle mental produit l'effet d'un sort de {@spell dominate person}. Si le jet de sauvegarde initial de la cible échoue, l'effet dure 1 heure, sans que vous ayez à vous concentrer. La créature {@condition charmed} a un désavantage sur les nouveaux jets de sauvegarde pour rompre l'effet pendant cette période."
+				"Une potion de contrôle mental produit l'effet d'un sort de {@spell dominate person}. Si le jet de sauvegarde initial de la cible échoue, l'effet dure 1 heure, sans que vous ayez besoin de faire un {@status concentration}. La créature {@condition charmed} a un désavantage sur les nouveaux jets de sauvegarde pour briser l'effet pendant cette période."
 			],
 			"attachedSpells": [
 				"dominate person"
@@ -26162,7 +26162,7 @@
 			"rarity": "very rare",
 			"entries": [
 				"Lorsque vous buvez une potion de contrôle mental, vous pouvez lancer un sort de domination (sauvegarde DC 15) sur une créature spécifique si vous le faites avant la fin de votre prochain tour. Si vous ne le faites pas, la potion est gaspillée.",
-				"Une potion de contrôle mental produit l'effet d'un sort de {@spell dominate monster}. Si le jet de sauvegarde initial de la cible échoue, l'effet dure 1 heure, sans que vous ayez à vous concentrer. La créature {@condition charmed} a un désavantage sur les nouveaux jets de sauvegarde pour rompre l'effet pendant cette période."
+				"Une potion de contrôle mental produit l'effet d'un sort de {@spell dominate monster}. Si le jet de sauvegarde initial de la cible échoue, l'effet dure 1 heure, sans que vous ayez besoin de faire un {@status concentration}. La créature {@condition charmed} a un désavantage sur les nouveaux jets de sauvegarde pour briser l'effet pendant cette période."
 			],
 			"attachedSpells": [
 				"dominate monster"
@@ -26288,7 +26288,7 @@
 			"tier": "minor",
 			"rarity": "very rare",
 			"entries": [
-				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet du sort {@spell haste} pendant 1 minute (aucune concentration requise). Le liquide jaune de la potion est strié de noir et tourbillonne tout seul."
+				"Lorsque vous buvez cette potion, vous bénéficiez de l'effet du sort {@spell haste} pendant 1 minute (pas de {@status concentration} requis). Le liquide jaune de la potion est strié de noir et tourbillonne tout seul."
 			],
 			"attachedSpells": [
 				"haste"
@@ -27708,7 +27708,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"entries": [
-				"Lorsque vous portez cet anneau, vous pouvez prononcer son mot de commande comme une action pour invoquer un {@creature djinni} particulier du plan élémentaire de l'air. Le {@creature djinni} apparaît dans un espace inoccupé de votre choix dans un rayon de 120 pieds autour de vous. Il reste aussi longtemps que vous vous concentrez (comme si vous vous concentriez sur un sort), jusqu'à un maximum de 1 heure, ou jusqu'à ce qu'il tombe à 0 point de vie. Il retourne ensuite sur son plan d'origine.",
+				"Lorsque vous portez cet anneau, vous pouvez prononcer son mot de commande comme action pour invoquer un élément particulier {@creature djinni} du plan élémentaire de l'air. Le {@creature djinni} apparaît dans un espace inoccupé que vous choisissez dans un rayon de 120 pieds autour de vous. Il reste là aussi longtemps que vous vous concentrez (comme si vous {@status concentration||concentrating} lanciez un sort), jusqu'à un maximum de 1 heure, ou jusqu'à ce qu'il tombe à 0 point de vie. Il retourne alors dans son plan d'origine.",
 				"Pendant son invocation, le {@creature djinni} est amical envers vous et vos compagnons. Il obéit à tous les ordres que vous lui donnez, quelle que soit la langue que vous utilisez. Si vous ne lui donnez pas d'ordres, le {@creature djinni} se défend contre les attaquants mais ne fait rien d'autre.",
 				"Après le départ du {@creature djinni}, il ne peut plus être invoqué pendant 24 heures, et l'anneau devient non magique si le {@creature djinni} meurt."
 			],
@@ -28006,7 +28006,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"Cette bande de fer ressemble à un crâne et est froide au toucher. Il possède 3 charges et regagne {@dice 1d3} de charges dépensées chaque jour à l'aube. Comme action pendant que vous portez l'anneau, vous pouvez dépenser 1 de ses charges pour lancer le sort {@spell fog cloud} qu'il contient, avec les modifications suivantes : le nuage est centré sur vous lorsqu'il apparaît pour la première fois, et le sort dure 1 minute (aucune concentration requise)."
+				"Cette bande de fer ressemble à un crâne et est froide au toucher. Elle possède 3 charges et regagne {@dice 1d3} des charges dépensées chaque jour à l'aube. Comme action lorsque vous portez l'anneau, vous pouvez dépenser 1 de ses charges pour lancer le sort {@spell fog cloud} qu'il contient, avec les changements suivants : le nuage est centré sur vous lorsqu'il apparaît pour la première fois, et le sort dure 1 minute (aucun {@status concentration} n'est requis)."
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -28192,7 +28192,7 @@
 					"type": "entries",
 					"entries": [
 						"Vous pouvez dépenser 2 charges en tant qu'action pour créer une à quatre sphères d'éclairs de 3 pieds de diamètre. Plus vous créez de sphères, moins chaque sphère est puissante individuellement.",
-						"Chaque sphère apparaît dans un espace inoccupé que vous pouvez voir dans un rayon de 120 pieds autour de vous. Les sphères durent aussi longtemps que vous vous concentrez (comme si vous vous concentriez sur un sort), jusqu'à 1 minute. Chaque sphère diffuse une faible lumière dans un rayon de 30 pieds.",
+						"Chaque sphère apparaît dans un espace inoccupé que vous pouvez voir dans un rayon de 120 pieds autour de vous. Les sphères durent aussi longtemps que vous vous concentrez (comme si vous étiez {@status concentration||concentrating} sur un sort), jusqu'à 1 minute. Chaque sphère diffuse une faible lumière dans un rayon de 30 pieds.",
 						"Comme une action bonus, vous pouvez déplacer chaque sphère jusqu'à 30 pieds, mais pas plus loin que 120 pieds de vous. Lorsqu'une créature autre que vous s'approche à moins de 1,5 mètre d'une sphère, celle-ci décharge des éclairs sur cette créature et disparaît. Cette créature doit effectuer un jet de sauvegarde de Dextérité DC 15. En cas d'échec, la créature subit des dégâts de foudre en fonction du nombre de sphères que vous avez créées. (4 sphères = {@dice 2d4}, 3 sphères = {@dice 2d6}, 2 sphères = {@dice 5d4}, 1 sphère = {@dice 4d12})"
 					]
 				},
@@ -28881,7 +28881,9 @@
 			"source": "DMG",
 			"page": 196,
 			"srd": true,
+			"baseItem": "mace|phb",
 			"type": "RD",
+			"typeAlt": "M",
 			"tier": "major",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30809,7 +30811,7 @@
 							"items": [
 								"Le bouclier a une Intelligence de 22, une Sagesse de 18, et un Charisme de 24, ainsi qu'une ouïe et {@sense truesight} jusqu'à une portée de 120 pieds.",
 								"Le bouclier peut parler, lire et comprendre le commun et l'infernal, et il peut communiquer par télépathie avec toute créature qu'il peut sentir dans un rayon de 120 pieds autour de lui. Sa voix est un chuchotement profond et creux.",
-								"Le bouclier possède 3 charges. Vous pouvez utiliser une action pour dépenser 1 charge pour lancer {@spell fireball} ou 2 charges pour lancer {@spell wall of fire} depuis le bouclier (sauvegarde DC 21 pour chacune). Le sort {@spell wall of fire} dure 1 minute (aucune concentration requise). Le bouclier récupère toutes les charges dépensées chaque jour à l'aube.",
+								"Le bouclier a 3 charges. Vous pouvez utiliser une action pour dépenser 1 charge pour lancer {@spell fireball} ou 2 charges pour lancer {@spell wall of fire} à partir du bouclier (sauvegarde DC 21 pour chaque). Le sort {@spell wall of fire} dure 1 minute (pas de {@status concentration} requis). Le bouclier récupère toutes les charges dépensées chaque jour à l'aube.",
 								"À tout moment pendant votre tour, le bouclier peut choisir d'irradier une aura d'effroi pendant 1 minute (ce n'est pas un pouvoir du bouclier que vous contrôlez). Toute créature hostile à vous qui commence son tour à moins de 20 pieds du bouclier doit effectuer un jet de sauvegarde de Sagesse DC 18. En cas d'échec, la créature est {@condition frightened} jusqu'au début de son prochain tour. En cas de sauvegarde réussie, la créature est immunisée contre ce pouvoir du bouclier pendant les 24 heures suivantes. Une fois que le bouclier a utilisé ce pouvoir, il ne peut plus l'utiliser avant l'aube suivante."
 							]
 						}
@@ -30872,7 +30874,7 @@
 					"type": "entries",
 					"name": "Bane",
 					"entries": [
-						"Vous pouvez lancer le sort {@spell bane} depuis le bouclier (sauvegarde DC 17). Le sort ne nécessite pas de concentration et dure 1 minute. Une fois que vous avez lancé le sort depuis le bouclier, vous ne pouvez plus le faire jusqu'à ce que vous terminiez un repos court ou long."
+						"Vous pouvez lancer le sort {@spell bane} du bouclier (sauvegarde DC 17). Le sort ne nécessite pas de {@status concentration} et dure 1 minute. Une fois que vous avez lancé le sort à partir du bouclier, vous ne pouvez plus le faire avant d'avoir terminé un repos court ou long."
 					]
 				},
 				{
@@ -32448,7 +32450,7 @@
 			"entries": [
 				"La fonction de cette chaise ornée est de propulser et de manœuvrer un navire sur lequel elle a été installée dans l'espace et dans l'air. Il peut également propulser et manœuvrer un navire sur l'eau ou sous l'eau, à condition que le navire soit construit pour ce type de voyage. Le vaisseau en question doit peser 1 tonne ou plus.",
 				"La sensation d'être en accord avec un casque de brouillage de sorts est semblable à l'effet de picotement que l'on ressent après que son bras ou sa jambe se soit endormi, mais pas aussi douloureux.",
-				"Lorsque vous êtes accordé à un casque de brouilleur de sorts et que vous êtes assis dessus, vous gagnez les capacités suivantes tant que vous maintenez votre concentration (comme si vous vous concentriez sur un sort) :",
+				"Lorsque vous êtes en accord avec un casque de blocage des sorts et que vous êtes assis dedans, vous gagnez les capacités suivantes tant que vous maintenez {@status concentration} (comme si {@status concentration||concentrating} était sur un sort) :",
 				{
 					"type": "list",
 					"items": [
@@ -32489,7 +32491,7 @@
 			"wondrous": true,
 			"entries": [
 				"Cette dragonshard Eberron polie tient dans la main et stocke des informations comme un livre. Le tesson peut contenir l'équivalent d'un livre de 320 pages maximum. Un tesson peut être créé vierge ou déjà rempli d'informations. Lorsque le tesson est créé, le créateur peut définir une phrase de passe qui doit être prononcée pour accéder aux informations qu'il contient.",
-				"Lorsque vous tenez le tesson, vous pouvez utiliser une action pour ouvrir votre esprit au tesson et voir son contenu dans votre esprit. Lors des rounds suivants, lire le texte ou écrire un nouveau texte sur les \"pages\" vierges du tesson requiert de la concentration (comme si vous vous concentriez sur un sort) et prend le même temps qu'il vous faut pour lire et écrire normalement. Penser à une phrase ou à un sujet particulier vous amène à la première section du tesson qui en parle.",
+				"Lorsque vous tenez le tesson, vous pouvez utiliser une action pour ouvrir votre esprit au tesson et voir son contenu dans votre esprit. Lors des rounds suivants, lire le texte ou écrire un nouveau texte sur les \"pages\" vierges du tesson nécessite {@status concentration} (comme si {@status concentration||concentrating} était un sort) et prend le même temps qu'il vous faut pour lire et écrire normalement. Si vous pensez à une phrase ou à un sujet particulier, vous êtes redirigé vers la première section de l'amas qui en traite.",
 				"Un magicien peut utiliser un tesson de sort comme un livre de sorts, avec le coût habituel en or et en temps pour \"graver\" un sort dans le tesson."
 			]
 		},
@@ -35874,7 +35876,7 @@
 					"entries": [
 						"La grande taille de la machine infernale la rend pratiquement immobile. Pour l'utiliser en permanence (par exemple lors d'une aventure), elle peut être reliée à son utilisateur par un fil d'argent, qui peut toujours être produit à partir des mécanismes internes de la machine. Ce fil d'argent a la même nature générale que le cordon argenté d'un sort {@spell astral projection}, se connectant au corps de l'utilisateur et traînant derrière lui. Lorsqu'il est ainsi attaché, le fil devient {@condition invisible}, astral, et s'étend sur une longueur virtuellement infinie.",
 						"Tant que le fil reste intact, l'utilisateur accordé peut utiliser pleinement les pouvoirs de la Machine Infernale, dont les effets sont centrés sur l'utilisateur. Si le fil est coupé - ce qui ne peut se produire que lorsqu'un effet indique spécifiquement qu'il peut couper le cordon argenté d'un {@spell astral projection} - l'utilisateur subit une soudaine explosion de rétroaction de la machine qui le tue instantanément.",
-						"Tout effet de la Machine Infernale qui nécessite une concentration peut être concentré par un utilisateur distant. Les effets de la Machine infernale ont un DC de sauvegarde des sorts de 14 ou le DC de sauvegarde des sorts de l'utilisateur accordé, le plus élevé des deux."
+						"Tout effet de la Machine Infernale nécessitant {@status concentration} peut être concentré par un utilisateur distant. Les effets de la machine infernale ont un DC de sauvegarde contre les sorts de 14 ou le DC de sauvegarde contre les sorts de l'utilisateur accordé, le plus élevé des deux."
 					]
 				},
 				{
@@ -40948,6 +40950,8 @@
 			"name": "Witchlight Vane",
 			"source": "WBtW",
 			"page": 27,
+			"baseItem": "mace|phb",
+			"typeAlt": "M",
 			"rarity": "legendary",
 			"reqAttune": "by a mister light or his handpicked successor",
 			"sentient": true,

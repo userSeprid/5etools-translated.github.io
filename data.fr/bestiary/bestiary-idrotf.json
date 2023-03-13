@@ -576,7 +576,7 @@
 				{
 					"name": "Blizzard Veil",
 					"entries": [
-						"Auril crée un blizzard magique dans une sphère de 30 pieds de rayon centrée sur elle. La zone à l'intérieur de la sphère est fortement obscurcie, et la sphère se déplace avec Auril. L'effet dure jusqu'à ce qu'Auril tombe à 0 point de vie sous cette forme, jusqu'à ce qu'elle choisisse de mettre fin à l'effet (aucune action requise), ou jusqu'à ce que sa concentration soit brisée (comme si elle se concentrait sur un sort)."
+						"Auril crée un blizzard magique dans une sphère de 30 pieds de rayon centrée sur elle. La zone à l'intérieur de la sphère est fortement obscurcie et la sphère se déplace avec Auril. L'effet dure jusqu'à ce qu'Auril tombe à 0 point de vie sous cette forme, jusqu'à ce qu'elle choisisse de mettre fin à l'effet (aucune action requise), ou jusqu'à ce que son {@status concentration} soit brisé (comme si {@status concentration||concentrating} était sur un sort)."
 					]
 				}
 			],
@@ -632,6 +632,7 @@
 		{
 			"name": "Avarice",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 269,
 			"size": [
@@ -1713,6 +1714,7 @@
 		{
 			"name": "Dzaan's Simulacrum",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 270,
 			"size": [
@@ -4211,6 +4213,7 @@
 		{
 			"name": "Kingsport",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 243,
 			"size": [
@@ -4958,6 +4961,7 @@
 		{
 			"name": "Nass Lantomir's Ghost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 272,
 			"size": [
@@ -5140,6 +5144,7 @@
 		{
 			"name": "Prisoner 237",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 160,
 			"size": [
@@ -5740,6 +5745,7 @@
 		{
 			"name": "Spellix Romwod",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 144,
 			"size": [
@@ -6323,6 +6329,7 @@
 		{
 			"name": "Vellynne Harpell",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 273,
 			"size": [
@@ -6876,7 +6883,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Xardorok se transforme magiquement en {@condition invisible} jusqu'à ce qu'il attaque, qu'il lance un sort, qu'il utilise son Élargissement, ou que sa concentration soit rompue (comme s'il se concentrait sur un sort). Tout équipement que Xardorok porte ou transporte est {@condition invisible} avec lui."
+						"Xardorok devient magiquement {@condition invisible} jusqu'à ce qu'il attaque, qu'il lance un sort, qu'il utilise son Enlarge, ou que son {@status concentration} soit brisé (comme si {@status concentration||concentrating} sur un sort). Tout équipement que Xardorok porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],

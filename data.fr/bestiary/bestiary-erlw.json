@@ -598,6 +598,7 @@
 		{
 			"name": "Corrin Delmaco",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 271,
 			"_copy": {
@@ -1341,6 +1342,7 @@
 		{
 			"name": "Garra",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 272,
 			"_copy": {
@@ -2763,7 +2765,7 @@
 					"name": "Spell Mimicry {@recharge 5}",
 					"entries": [
 						"Le sort vivant crée une sphère de brouillard de 40 pieds de diamètre dans un rayon de 60 pieds autour de lui (le brouillard se propage autour des coins). Lorsqu'une créature pénètre dans le brouillard pour la première fois lors d'un tour ou commence son tour à cet endroit, elle doit effectuer un jet de sauvegarde de Constitution {@dc 16}, subissant 22 ({@damage 5d8}) dégâts de poison en cas d'échec, ou la moitié des dégâts en cas de réussite.",
-						"Le brouillard s'éloigne de 10 pieds du sort vivant au début de chacun de ses tours, roulant sur le sol et à travers les ouvertures. Le brouillard dure 10 minutes ou jusqu'à ce que la concentration du sort vivant prenne fin (comme s'il se concentrait sur un sort)."
+						"Le brouillard s'éloigne de 10 pieds du sort vivant au début de chacun de ses tours, roulant sur le sol et à travers les ouvertures. Le brouillard dure 10 minutes ou jusqu'à ce que le {@status concentration} du sort vivant prenne fin (comme si le {@status concentration||concentrating} d'un sort)."
 					]
 				}
 			],
@@ -3787,7 +3789,7 @@
 				{
 					"name": "Master of Magic",
 					"entries": [
-						"Sul Khatesh a l'avantage sur les jets de sauvegarde de la Constitution pour maintenir sa concentration."
+						"Sul Khatesh a un avantage sur les jets de sauvegarde de Constitution pour maintenir {@status concentration}."
 					]
 				}
 			],
@@ -3834,7 +3836,7 @@
 				{
 					"name": "Consume Magic (Costs 2 Actions)",
 					"entries": [
-						"Sul Khatesh cible une créature dans un rayon de 120 pieds autour d'elle qui se concentre sur un sort. La cible doit réussir un jet de sauvegarde de Constitution {@dc 26} ou sa concentration sur le sort est rompue, et Sul Khatesh gagne 5 points de vie temporaires par niveau de ce sort."
+						"Sul Khatesh cible une créature à moins de 120 pieds d'elle qui est {@status concentration||concentrating} sur un sort. La cible doit réussir un jet de sauvegarde de Constitution de {@dc 26} ou son {@status concentration} est brisé par le sort, et Sul Khatesh gagne 5 points de vie temporaires par niveau de ce sort."
 					]
 				},
 				{

@@ -90,7 +90,7 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Cinq aarakocra situés à moins de 30 pieds les uns des autres peuvent invoquer magiquement un {@creature air elemental}. Chacun des cinq doit utiliser son action et son mouvement sur trois tours consécutifs pour effectuer une danse aérienne et doit maintenir sa concentration tout en le faisant (comme s'il se concentrait sur un sort). Lorsque les cinq ont terminé leur troisième tour de danse, l'élémentaire apparaît dans un espace inoccupé à moins de 60 pieds d'eux. Il est amical envers eux et obéit à leurs ordres verbaux. Il reste pendant 1 heure, jusqu'à ce qu'il meure ou que tous ses invocateurs meurent, ou jusqu'à ce que l'un de ses invocateurs le congédie par une action bonus. Un invocateur ne peut plus exécuter la danse avant d'avoir terminé un court repos. Lorsque l'élémentaire retourne au plan élémentaire de l'air, tout aarakocra situé à moins de 1,5 mètre de lui peut y retourner avec lui."
+						"Cinq aarakocrates situés à moins de 30 pieds les uns des autres peuvent invoquer magiquement un {@creature air elemental}. Chacun des cinq doit utiliser son action et son mouvement pendant trois tours consécutifs pour effectuer une danse aérienne et doit maintenir {@status concentration} pendant qu'il le fait (comme si {@status concentration||concentrating} sur un sort). Lorsque les cinq ont terminé leur troisième tour de danse, l'élémentaire apparaît dans un espace inoccupé à moins de 60 pieds d'eux. Il se montre amical envers eux et obéit à leurs ordres. Il reste en place pendant 1 heure, jusqu'à ce qu'il meure ou que tous ses invocateurs meurent, ou jusqu'à ce que l'un d'entre eux le rejette par une action bonus. L'invocateur ne peut plus exécuter la danse tant que l'élémentaire n'a pas terminé une courte période de repos. Lorsque l'élémentaire retourne dans le plan élémentaire de l'air, tout aarakocra se trouvant à moins de 5 pieds de lui peut revenir avec lui."
 					]
 				}
 			],
@@ -15774,7 +15774,7 @@
 							"name": "Wind Aura",
 							"type": "entries",
 							"entries": [
-								"Une aura magique de vent entoure le géant. L'aura est une sphère de 3 mètres de rayon qui dure aussi longtemps que le géant se concentre sur elle (comme s'il se concentrait sur un sort). Tant que l'aura est en vigueur, le géant gagne un bonus de +2 à sa CA contre les attaques d'armes à distance, et toutes les flammes ouvertes dans l'aura sont éteintes, sauf si elles sont magiques."
+								"Une aura magique de vent entoure le géant. L'aura est une sphère de 3 mètres de rayon qui dure aussi longtemps que le géant maintient {@status concentration} sur elle (comme si {@status concentration||concentrating} sur un sort). Tant que l'aura est en vigueur, le géant gagne un bonus de +2 à sa CA contre les attaques d'armes à distance, et toutes les flammes ouvertes dans l'aura sont éteintes à moins qu'elles ne soient magiques.y de ses invocateurs la dissipe comme une action bonus. L'invocateur ne peut plus exécuter la danse tant que l'élémentaire n'a pas terminé une courte période de repos. Lorsque l'élémentaire retourne dans le plan élémentaire de l'air, tout aarakocra se trouvant à moins de 5 pieds de lui peut revenir avec lui."
 							]
 						}
 					],
@@ -17731,7 +17731,7 @@
 				{
 					"name": "Darkness Aura (1/Day)",
 					"entries": [
-						"Un rayon de 15 pieds de ténèbres magiques s'étend à partir du darkmantle, se déplace avec lui et se répand dans les coins. L'obscurité dure aussi longtemps que le darkmantle maintient sa concentration, jusqu'à 10 minutes (comme s'il se concentrait sur un sort). La vision noire ne peut pas pénétrer cette obscurité, et aucune lumière naturelle ne peut l'éclairer. Si une partie des ténèbres chevauche une zone de lumière créée par un sort de 2e niveau ou moins, le sort créant la lumière est dissipé."
+						"Un rayon de 15 pieds de ténèbres magiques s'étend à partir du manteau sombre, se déplace avec lui et se répand dans les coins. Les ténèbres durent aussi longtemps que le manteau noir maintient {@status concentration}, jusqu'à 10 minutes (comme si {@status concentration||concentrating} sur un sort). La vision dans le noir ne peut pas pénétrer cette obscurité, et aucune lumière naturelle ne peut l'éclairer. Si une partie des ténèbres chevauche une zone de lumière créée par un sort de 2e niveau ou moins, le sort créant la lumière est dissipé.Voie de l'air, tout aarakocra situé à moins de 5 pieds de lui peut revenir avec lui."
 					]
 				}
 			],
@@ -19528,7 +19528,7 @@
 				{
 					"name": "Create Whirlwind",
 					"entries": [
-						"Un cylindre d'air tourbillonnant de 5 pieds de rayon et de 30 pieds de haut se forme magiquement sur un point que le djinni peut voir dans un rayon de 120 pieds autour de lui. Le tourbillon dure aussi longtemps que le djinni maintient sa concentration (comme s'il se concentrait sur un sort). Toute créature, à l'exception du djinni, qui entre dans le tourbillon doit réussir un jet de sauvegarde de {@dc 18} de Force ou être {@condition restrained} par celui-ci. Le djinni peut déplacer le tourbillon jusqu'à 60 pieds comme une action, et les créatures {@condition restrained} par le tourbillon se déplacent avec lui. Le tourbillon prend fin si le djinni le perd de vue.",
+						"Un cylindre d'air tourbillonnant de 5 pieds de rayon et de 30 pieds de haut se forme magiquement sur un point que le djinni peut voir dans un rayon de 120 pieds. Le tourbillon dure aussi longtemps que le djinni maintient {@status concentration} (comme si {@status concentration||concentrating} sur un sort). Toute créature entrant dans le tourbillon, à l'exception du djinni, doit réussir un jet de sauvegarde de Force {@dc 18} ou être {@condition restrained} par le tourbillon. Le djinni peut déplacer le tourbillon jusqu'à 60 pieds comme une action, et les créatures {@condition restrained} par le tourbillon se déplacent avec lui. Le tourbillon prend fin si le djinni le perd de vue.",
 						"Une créature peut utiliser son action pour libérer une créature {@condition restrained} par le tourbillon, y compris elle-même, en réussissant un test de Force {@dc 18}. Si le test est réussi, la créature n'est plus {@condition restrained} et se déplace vers l'espace le plus proche en dehors du tourbillon."
 					]
 				}
@@ -19782,7 +19782,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Le sosie lit magiquement les pensées superficielles d'une créature située à moins de 60 pieds de lui. L'effet peut traverser les barrières, mais 3 pieds de bois ou de terre, 2 pieds de pierre, 2 pouces de métal, ou une fine feuille de plomb le bloquent. Tant que la cible est à portée, le double peut continuer à lire ses pensées, tant que la concentration du double n'est pas rompue (comme s'il se concentrait sur un sort). Lorsqu'il lit les pensées de la cible, le double a un avantage sur les tests de Sagesse ({@skill Insight}) et de Charisme ({@skill Deception}, {@skill Intimidation}, et {@skill Persuasion}) contre la cible."
+						"Le double lit magiquement les pensées de surface d'une créature située à moins de 60 pieds de lui. L'effet peut pénétrer les barrières, mais 3 pieds de bois ou de terre, 2 pieds de pierre, 2 pouces de métal, ou une fine feuille de plomb le bloque. Tant que la cible est à portée, le double peut continuer à lire ses pensées, tant que son {@status concentration} n'est pas brisé (comme si le {@status concentration||concentrating} d'un sort). Lorsqu'il lit les pensées de la cible, le double a l'avantage aux tests de Sagesse ({@skill Insight}) et de Charisme ({@skill Deception}, {@skill Intimidation}, et {@skill Persuasion}) contre la cible."
 					]
 				}
 			],
@@ -21849,7 +21849,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Le duergar se transforme magiquement de {@condition invisible} jusqu'à ce qu'il attaque, lance un sort ou utilise son Élargissement, ou jusqu'à ce que sa concentration soit rompue, jusqu'à 1 heure (comme s'il se concentrait sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
+						"Le duergar se transforme magiquement {@condition invisible} jusqu'à ce qu'il attaque, lance un sort ou utilise son Enlarge, ou jusqu'à ce que son {@status concentration} soit brisé, jusqu'à 1 heure (comme si {@status concentration||concentrating} sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui. contre la cible."
 					]
 				}
 			],
@@ -23620,7 +23620,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
+						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -23780,7 +23780,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
+						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -23937,7 +23937,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
+						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -24090,7 +24090,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
+						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -24246,7 +24246,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
+						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -24411,7 +24411,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
+						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -24565,7 +24565,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
+						"Comme action bonus, le dragon peut tourner magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le dragon porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -26313,7 +26313,7 @@
 				{
 					"name": "Animate Boulders (1/Day)",
 					"entries": [
-						"Le galeb duhr anime magiquement jusqu'à deux rochers qu'il peut voir dans un rayon de 60 pieds autour de lui. Un rocher a les mêmes statistiques qu'un galeb duhr, sauf qu'il a une Intelligence de 1 et un Charisme de 1, qu'il ne peut pas être {@condition charmed} ou {@condition frightened}, et qu'il n'a pas cette option d'action. Un rocher reste animé tant que le galeb duhr maintient sa concentration, jusqu'à 1 minute (comme s'il se concentrait sur un sort)."
+						"Le galeb duhr anime magiquement jusqu'à deux rochers qu'il peut voir dans un rayon de 60 pieds. Un rocher a les mêmes statistiques qu'un galeb duhr, sauf qu'il a 1 Intelligence et 1 Charisme, qu'il ne peut pas être {@condition charmed} ou {@condition frightened}, et qu'il n'a pas cette option d'action. Un rocher reste animé tant que le galeb duhr maintient {@status concentration}, jusqu'à 1 minute (comme si {@status concentration||concentrating} sur un sort)."
 					]
 				}
 			],
@@ -33308,7 +33308,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"La sorcière se transforme magiquement en {@condition invisible} jusqu'à ce qu'elle attaque ou lance un sort, ou jusqu'à la fin de sa concentration (comme si elle se concentrait sur un sort). Pendant qu'elle se transforme en {@condition invisible}, elle ne laisse aucune trace physique de son passage, de sorte qu'on ne peut la suivre que par magie. Tout équipement qu'elle porte ou transporte est {@condition invisible} avec elle."
+						"La sorcière se transforme magiquement de {@condition invisible} jusqu'à ce qu'elle attaque ou lance un sort, ou jusqu'à ce que son {@status concentration} prenne fin (comme si {@status concentration||concentrating} était sur un sort). Pendant qu'elle se transforme en {@condition invisible}, elle ne laisse aucune trace physique de son passage et ne peut donc être suivie que par la magie. Tout l'équipement qu'elle porte ou transporte est {@condition invisible} avec elle."
 					]
 				}
 			],
@@ -37733,7 +37733,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Le diablotin se transforme magiquement en {@condition invisible} jusqu'à ce qu'il attaque, ou jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le diablotin porte ou transporte est {@condition invisible} avec lui."
+						"Le diablotin se transforme magiquement {@condition invisible} jusqu'à ce qu'il attaque, ou jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était un sort). Tout équipement que le diablotin porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -49573,7 +49573,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Le lutin se transforme magiquement en {@condition invisible} jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le lutin porte ou transporte est {@condition invisible} avec lui."
+						"Le lutin se transforme magiquement {@condition invisible} jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le lutin porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -51504,7 +51504,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Le quasit se transforme magiquement en {@condition invisible} jusqu'à ce qu'il attaque ou utilise Effrayer, ou jusqu'à ce que sa concentration se termine (comme s'il se concentrait sur un sort). Tout équipement que le quasit porte ou transporte est {@condition invisible} avec lui."
+						"Le quasit devient magiquement {@condition invisible} jusqu'à ce qu'il attaque ou utilise Peur, ou jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} sur un sort). Tout équipement que le quasit porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -57632,7 +57632,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Le lutin se transforme magiquement en {@condition invisible} jusqu'à ce qu'il attaque ou lance un sort, ou jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort). Tout équipement que le lutin porte ou transporte est {@condition invisible} avec lui."
+						"Le lutin se transforme magiquement {@condition invisible} jusqu'à ce qu'il attaque ou lance un sort, ou jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} était sur un sort). Tout équipement que le lutin porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -66267,7 +66267,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Le feu follet et sa lumière deviennent magiquement {@condition invisible} jusqu'à ce qu'il attaque ou utilise sa consommation de vie, ou jusqu'à la fin de sa concentration (comme s'il se concentrait sur un sort)."
+						"Le feu follet et sa lumière deviennent magiquement {@condition invisible} jusqu'à ce qu'il attaque ou utilise Consume Life, ou jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} sur un sort)."
 					]
 				}
 			],

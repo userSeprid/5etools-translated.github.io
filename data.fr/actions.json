@@ -33,7 +33,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"Certains objets magiques permettent à l'utilisateur de lancer un sort à partir de l'objet, souvent en dépensant des charges à partir de celui-ci. Le sort est lancé au niveau de lanceur de sorts et de lanceur de sorts le plus bas possible, ne consomme aucun des emplacements de sorts de l'utilisateur et ne nécessite aucun composant, sauf si la description de l'objet indique le contraire. Le sort utilise son temps d'incantation, sa portée et sa durée normaux, et l'utilisateur de l'objet doit se concentrer si le sort requiert de la concentration. Certains objets font exception à ces règles, en modifiant le temps d'incantation, la durée ou d'autres éléments d'un sort.",
+						"Certains objets magiques permettent à l'utilisateur de lancer un sort à partir de l'objet, souvent en dépensant des charges. Le sort est lancé au niveau de sort et de lanceur le plus bas possible, ne dépense aucun emplacement de sort de l'utilisateur et ne nécessite aucun composant, sauf si la description de l'objet indique le contraire. Le sort utilise son temps d'incantation, sa portée et sa durée normaux, et l'utilisateur de l'objet doit se concentrer si le sort nécessite {@status concentration}. Certains objets font exception à ces règles et modifient le temps d'incantation, la durée ou d'autres éléments du sort.",
 						"De nombreux objets, tels que les potions, contournent l'incantation du sort et confèrent les effets du sort. Un tel objet utilise toujours la durée du sort, sauf si la description de l'objet indique le contraire.",
 						"Un objet magique, comme certains bâtons, peut vous obliger à utiliser votre propre capacité de lanceur de sorts lorsque vous lancez un sort à partir de l'objet. Si vous avez plus d'une capacité de lanceur de sorts, vous choisissez laquelle utiliser avec l'objet. Si vous n'avez pas de capacité de lanceur de sorts (par exemple, si vous êtes un voleur avec le trait Utiliser un dispositif magique), votre modificateur de capacité de lanceur de sorts est de +0 pour l'objet, et votre bonus de compétence s'applique."
 					]
@@ -197,7 +197,7 @@
 				"Free"
 			],
 			"entries": [
-				"Si un sort doit être maintenu par la concentration, ce fait apparaît dans son entrée Durée, et le sort précise combien de temps vous pouvez vous concentrer sur lui. Vous pouvez mettre fin à la concentration à tout moment (aucune action requise)."
+				"Si un sort doit être maintenu avec {@status concentration}, ce fait apparaît dans sa rubrique Durée, et le sort précise combien de temps vous pouvez vous concentrer dessus. Vous pouvez mettre fin à {@status concentration} à tout moment (aucune action requise).ou d'autres parties d'un sort."
 			]
 		},
 		{
@@ -448,7 +448,7 @@
 				"Parfois, vous voulez prendre de l'avance sur un ennemi ou attendre une circonstance particulière avant d'agir. Pour ce faire, vous pouvez effectuer l'action Prêt pendant votre tour, ce qui vous permet d'agir en utilisant votre réaction avant le début de votre prochain tour.",
 				"D'abord, vous décidez quelle circonstance perceptible va déclencher votre réaction. Ensuite, vous choisissez l'action que vous allez entreprendre en réponse à ce déclencheur, ou vous choisissez de vous déplacer à votre vitesse en réponse à ce déclencheur. Par exemple : \"Si le cultiste marche sur la trappe, je tire le levier qui l'ouvre\", et \"Si le gobelin marche à côté de moi, je m'éloigne\".",
 				"Lorsque le déclencheur se produit, vous pouvez soit prendre votre réaction juste après la fin du déclencheur, soit ignorer le déclencheur. N'oubliez pas que vous ne pouvez effectuer qu'une seule réaction par round.",
-				"Lorsque vous préparez un sort, vous le lancez normalement mais vous retenez son énergie, que vous libérez avec votre réaction lorsque le déclencheur se produit. Pour être préparé, un sort doit avoir un temps d'incantation de 1 action, et retenir la magie du sort demande de la concentration (expliqué dans {@book chapter 10|phb|10|concentration}). Si votre concentration est rompue, le sort se dissipe sans faire d'effet. Par exemple, si vous vous concentrez sur le sort toile et que vous préparez missile magique, votre sort toile prend fin, et si vous subissez des dégâts avant de libérer missile magique avec votre réaction, votre concentration risque d'être rompue.",
+				"Lorsque vous préparez un sort, vous le lancez normalement mais vous conservez son énergie, que vous libérez avec votre réaction lorsque le déclencheur se produit. Pour être prêt, un sort doit avoir un temps d'incantation de 1 action, et retenir la magie du sort nécessite {@status concentration} (expliqué dans {@book chapter 10|phb|10|concentration}). Si votre {@status concentration} est rompu, le sort se dissipe sans faire effet. Par exemple, si vous êtes à {@status concentration||concentrating} sur le sort de toile et que vous préparez missile magique, votre sort de toile se termine, et si vous subissez des dégâts avant de relâcher missile magique avec votre réaction, votre {@status concentration} risque d'être brisé.",
 				"Vous avez jusqu'au début de votre prochain tour pour utiliser une action préparée."
 			]
 		},

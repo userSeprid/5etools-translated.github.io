@@ -527,7 +527,7 @@
 				{
 					"name": "Insect Gorge (Costs 2 Actions)",
 					"entries": [
-						"Baalzebul dégorge un essaim de mouches piqueuses (autrement identique à la peste des insectes) qui inflige 44 ({@damage 8d10}) de dégâts perforants et ne nécessite pas de concentration."
+						"Baalzebul vomit un essaim de mouches piqueuses (identique à la peste d'insectes) qui inflige 44 ({@damage 8d10}) points de dégâts perforants et ne nécessite pas de {@status concentration}."
 					]
 				}
 			],
@@ -2084,7 +2084,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Dagryn se transforme magiquement en {@condition invisible} jusqu'à ce qu'il attaque, lance un sort ou que sa concentration soit rompue, jusqu'à 1 heure (comme s'il se concentrait sur un sort). Tout équipement que Dagryn porte ou transporte est {@condition invisible} avec lui."
+						"Dagryn se transforme magiquement de {@condition invisible} jusqu'à ce qu'il attaque, lance un sort, ou jusqu'à ce que son {@status concentration} soit brisé, jusqu'à 1 heure (comme si {@status concentration||concentrating} sur un sort). Tout équipement que Dagryn porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -2258,7 +2258,7 @@
 				{
 					"name": "Eldritch Mind",
 					"entries": [
-						"Darien a un avantage sur les jets de sauvegarde de Constitution qu'elle effectue pour maintenir sa concentration sur un sort."
+						"Darien a l'avantage sur les jets de sauvegarde de Constitution qu'elle fait pour maintenir {@status concentration} sur un sort."
 					]
 				}
 			],
@@ -3161,7 +3161,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Le redoutable sosie lit magiquement les pensées superficielles d'une créature située à 60 ft. de lui. L'effet peut traverser les barrières, mais 3 ft. de bois ou de terre, 2 ft. de pierre, 2 pouces de métal, ou une fine feuille de plomb le bloque. Tant que la cible est à portée, le sosie redoutable peut continuer à lire ses pensées, tant que la concentration du sosie redoutable n'est pas rompue (comme s'il se concentrait sur un sort). Lorsqu'il lit les pensées de la cible, le double a l'avantage sur les tests de Sagesse (perspicacité) et de Charisme ({@skill Deception}, {@skill Intimidation} et {@skill Persuasion}) contre la cible."
+						"Le double effrayant lit magiquement les pensées de surface d'une créature située à moins de 60 pieds de lui. L'effet peut pénétrer les barrières, mais 3 pieds de bois ou de terre, 2 pieds de pierre, 2 pouces de métal ou une fine feuille de plomb le bloquent. Tant que la cible est à portée, le double effrayant peut continuer à lire ses pensées, tant que sa concentration n'est pas brisée (comme si elle était de {@status concentration||concentrating} sur un sort). Lorsqu'il lit dans les pensées de la cible, le double a l'avantage aux tests de Sagesse (perspicacité) et de Charisme ({@skill Deception}, {@skill Intimidation} et {@skill Persuasion}) contre la cible."
 					]
 				}
 			],
@@ -3343,7 +3343,7 @@
 				{
 					"name": "Focused Conjuration",
 					"entries": [
-						"Lorsqu'Edwin se concentre sur un sort de conjuration, sa concentration ne peut pas être interrompue par des dégâts."
+						"Lorsqu'Edwin est {@status concentration||concentrating} sur un sort de conjuration, son {@status concentration} ne peut pas être brisé suite à des tests de dégâts.%), (%2%), et (%3%)) contre la cible."
 					]
 				},
 				{
@@ -6237,7 +6237,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Potion d'héroïsme : Nauk gagne 10 points de vie temporaires pendant 1 heure. Pour la même durée, Nauk est sous l'effet du sort {@spell bless} (aucune concentration requise).",
+								"Potion d'héroïsme : Nauk gagne 10 points de vie temporaires pendant 1 heure. Pour la même durée, Nauk est sous l'effet du sort {@spell bless} (pas de {@status concentration} requis).",
 								"Potion de résistance : Nauk gagne une résistance à un type de dégâts pendant 1 heure. Nauk choisit l'un de ces types de dégâts : froid, feu, foudre.",
 								"Potion de guérison supérieure : Nauk regagne 28 points de vie."
 							]
@@ -6885,7 +6885,7 @@
 				{
 					"name": "Extended Concentration",
 					"entries": [
-						"Le phaerimm peut se concentrer sur deux sorts différents en même temps. Si la concentration est rompue, les deux sorts s'évanouissent immédiatement."
+						"Le phaerimm peut se concentrer sur deux sorts différents en même temps. Si {@status concentration} est rompu, les deux sorts s'évanouissent immédiatement."
 					]
 				},
 				{
@@ -8738,7 +8738,7 @@
 				{
 					"name": "Mage Slaying",
 					"entries": [
-						"Lorsque Valygar inflige des dégâts à une créature qui se concentre sur un sort, cette dernière a un désavantage au jet de sauvegarde qu'elle effectue pour maintenir sa concentration."
+						"Lorsque Valygar inflige des dégâts à une créature qui est {@status concentration||concentrating} sur un sort, cette créature a un désavantage au jet de sauvegarde qu'elle fait pour maintenir son {@status concentration}."
 					]
 				}
 			],
@@ -9724,7 +9724,7 @@
 				{
 					"name": "Bladesong",
 					"entries": [
-						"Xan peut utiliser une action bonus pour commencer un chant de lames. Son bladesong dure 1 minute. Pendant qu'il utilise le chant des lames, son mouvement passe à 12 mètres, il bénéficie d'un bonus de +3 à sa CA et d'un bonus de +3 à tous les tests de concentration."
+						"Xan peut utiliser une action bonus pour commencer un chant des lames. Son chant de lames dure 1 minute. Pendant qu'il utilise le chant des lames, son déplacement passe à 40 pieds, il gagne un bonus de +3 à sa CA et il gagne un bonus de +3 à tous les tests {@status concentration}."
 					]
 				},
 				{

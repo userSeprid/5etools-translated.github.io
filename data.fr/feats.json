@@ -4270,7 +4270,7 @@
 							"type": "item",
 							"name": "Misty Form",
 							"entries": [
-								"Vous pouvez lancer le sort {@spell blur} sans utiliser d'emplacement de sort ni de composants matériels. Lorsque vous lancez le sort de cette façon, vous n'avez pas besoin de maintenir votre concentration sur le sort. Une fois que vous avez jeté le sort de cette façon, vous ne pouvez plus le faire jusqu'à ce que vous ayez terminé un long repos. Vous pouvez également lancer ce sort de manière normale en utilisant les emplacements de sorts dont vous disposez au niveau approprié. L'Intelligence, la Sagesse ou le Charisme est votre capacité de lanceur de sorts pour cette caractéristique (à choisir lorsque vous gagnez cet exploit)."
+								"Vous pouvez lancer le sort {@spell blur} sans utiliser d'emplacement de sort ni de composantes matérielles. Lorsque vous lancez le sort de cette façon, vous n'avez pas besoin de maintenir {@status concentration} sur le sort. Une fois que vous avez lancé le sort de cette façon, vous ne pouvez plus le faire avant d'avoir terminé un long repos. Vous pouvez également lancer ce sort de façon normale en utilisant les emplacements de sorts que vous possédez au niveau approprié. L'Intelligence, la Sagesse ou le Charisme est votre capacité de lanceur de sorts pour cette caractéristique (à choisir lorsque vous obtenez cet exploit)."
 							]
 						},
 						{
@@ -4534,6 +4534,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"Le sang du démon coule en vous. Vous gagnez les avantages suivants :",
 				{
@@ -4562,6 +4566,10 @@
 				{
 					"con": 1
 				}
+			],
+			"resist": [
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"Le sang du démon coule en vous, ce qui vous confère une résilience semblable à celle de certains démons. Vous gagnez les avantages suivants :",
@@ -5722,7 +5730,7 @@
 					"type": "list",
 					"items": [
 						"Lorsqu'une créature située à moins de 1,5 mètre de vous lance un sort, vous pouvez utiliser votre réaction pour effectuer une attaque d'arme de mêlée contre cette créature.",
-						"Lorsque vous endommagez une créature qui se concentre sur un sort, celle-ci a un désavantage au jet de sauvegarde qu'elle effectue pour maintenir sa concentration.",
+						"Lorsque vous infligez des dégâts à une créature qui est {@status concentration||concentrating} sur un sort, cette créature a un désavantage au jet de sauvegarde qu'elle fait pour maintenir son {@status concentration}.",
 						"Vous avez un avantage sur les jets de sauvegarde contre les sorts lancés par des créatures situées à moins de 1,5 mètre de vous."
 					]
 				}
@@ -9654,7 +9662,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Vous avez un avantage sur les jets de sauvegarde de Constitution que vous effectuez pour maintenir votre concentration sur un sort lorsque vous subissez des dégâts.",
+						"Vous avez un avantage sur les jets de sauvegarde de Constitution que vous faites pour maintenir votre {@status concentration} sur un sort lorsque vous subissez des dégâts.",
 						"Vous pouvez exécuter les composantes somatiques des sorts même si vous avez des armes ou un {@item shield|phb} dans une ou deux mains.",
 						"Lorsque le mouvement d'une créature hostile provoque une attaque d'opportunité de votre part, vous pouvez utiliser votre réaction pour lancer un sort sur la créature, plutôt que de faire une attaque d'opportunité. Le sort doit avoir un temps d'incantation de 1 action et ne doit cibler que cette créature."
 					]

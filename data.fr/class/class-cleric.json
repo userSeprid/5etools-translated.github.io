@@ -2909,7 +2909,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"À partir du 17e niveau, vous pouvez invoquer des visions du passé qui se rapportent à un objet que vous tenez ou à votre environnement immédiat. Vous passez au moins 1 minute en méditation et en prière, puis vous recevez des aperçus oniriques et ombrageux d'événements récents. Vous pouvez méditer de cette façon pendant un nombre de minutes égal à votre score de Sagesse et devez maintenir votre concentration pendant ce temps, comme si vous lanciez un sort.",
+				"À partir du 17ème niveau, vous pouvez invoquer des visions du passé liées à un objet que vous tenez ou à votre environnement immédiat. Vous passez au moins 1 minute à méditer et à prier, puis vous recevez des aperçus oniriques et ombrageux d'événements récents. Vous pouvez méditer de cette façon pendant un nombre de minutes égal à votre score de Sagesse et devez maintenir {@status concentration} pendant ce temps, comme si vous lanciez un sort.",
 				"Une fois que vous avez utilisé cette fonction, vous ne pouvez plus l'utiliser jusqu'à ce que vous ayez terminé un repos court ou long.",
 				{
 					"type": "entries",
@@ -3738,7 +3738,7 @@
 			},
 			"entries": [
 				"À partir du 2e niveau, vous pouvez utiliser votre canal de divinité pour créer un double illusoire de vous-même.",
-				"En tant qu'action, vous créez une illusion parfaite de vous-même qui dure 1 minute, ou jusqu'à ce que vous perdiez votre concentration (comme si vous vous concentriez sur un sort). L'illusion apparaît dans un espace inoccupé que vous pouvez voir dans un rayon de 30 pieds autour de vous. Comme action bonus à votre tour, vous pouvez déplacer l'illusion jusqu'à 30 pieds dans un espace que vous pouvez voir, mais elle doit rester dans un rayon de 120 pieds de vous.",
+				"Comme action, vous créez une illusion parfaite de vous-même qui dure 1 minute, ou jusqu'à ce que vous perdiez votre {@status concentration} (comme si vous étiez {@status concentration||concentrating} sur un sort). L'illusion apparaît dans un espace inoccupé que vous pouvez voir dans un rayon de 30 pieds autour de vous. Comme action bonus à votre tour, vous pouvez déplacer l'illusion jusqu'à 30 pieds dans un espace que vous pouvez voir, mais elle doit rester à moins de 120 pieds de vous.",
 				"Pour la durée, vous pouvez lancer des sorts comme si vous étiez dans l'espace de l'illusion, mais vous devez utiliser vos propres sens. De plus, lorsque vous et votre illusion êtes à moins de 1,5 mètre d'une créature qui peut voir l'illusion, vous avez un avantage sur les jets d'attaque contre cette créature, étant donné que l'illusion distrait la cible."
 			]
 		},
@@ -4081,7 +4081,7 @@
 			},
 			"entries": [
 				"À partir du 2e niveau, vous pouvez utiliser votre canal de divinité pour créer un double illusoire de vous-même.",
-				"En tant qu'action, vous créez une illusion parfaite de vous-même qui dure 1 minute, ou jusqu'à ce que vous perdiez votre concentration (comme si vous vous concentriez sur un sort). L'illusion apparaît dans un espace inoccupé que vous pouvez voir dans un rayon de 30 pieds autour de vous. Comme action bonus à votre tour, vous pouvez déplacer l'illusion jusqu'à 30 pieds dans un espace que vous pouvez voir, mais elle doit rester dans un rayon de 120 pieds de vous.",
+				"Comme action, vous créez une illusion parfaite de vous-même qui dure 1 minute, ou jusqu'à ce que vous perdiez votre {@status concentration} (comme si vous étiez {@status concentration||concentrating} sur un sort). L'illusion apparaît dans un espace inoccupé que vous pouvez voir dans un rayon de 30 pieds autour de vous. Comme action bonus à votre tour, vous pouvez déplacer l'illusion jusqu'à 30 pieds dans un espace que vous pouvez voir, mais elle doit rester à moins de 120 pieds de vous.",
 				"Pour la durée, vous pouvez lancer des sorts comme si vous étiez dans l'espace de l'illusion, mais vous devez utiliser vos propres sens. De plus, lorsque vous et votre illusion êtes à moins de 1,5 mètre d'une créature qui peut voir l'illusion, vous avez un avantage sur les jets d'attaque contre cette créature, étant donné que l'illusion distrait la cible."
 			]
 		},
@@ -4850,7 +4850,7 @@
 				"À partir du 2e niveau, vous pouvez utiliser votre canal de divinité pour abjurer les créatures d'un autre monde.",
 				"En tant qu'action, vous présentez votre symbole sacré, et une créature céleste, élémentaire, féerique ou démoniaque de votre choix qui se trouve à moins de 30 pieds de vous doit effectuer un jet de sauvegarde de Sagesse, à condition que la créature puisse vous voir ou vous entendre. Si la créature échoue à son jet de sauvegarde, elle est transformée pendant 1 minute ou jusqu'à ce qu'elle subisse des dégâts.",
 				"Une créature retournée doit passer ses tours à essayer de s'éloigner le plus possible de vous, et elle ne peut pas volontairement terminer son mouvement dans un espace à moins de 30 pieds de vous. Elle ne peut pas non plus avoir de réactions. Pour son action, il ne peut utiliser que l'action {@action Dash} ou essayer d'échapper à un effet qui l'empêche de se déplacer. S'il n'y a nulle part où se déplacer, la créature peut alors utiliser l'action {@action Dodge}.",
-				"Après avoir atteint le 5e niveau, lorsqu'une créature rate son jet de sauvegarde contre votre caractéristique d'abjuration des arcanes, elle est bannie pendant 1 minute (comme dans le sort {@spell banishment}, aucune concentration n'est requise) si elle ne se trouve pas sur son plan d'origine et si son indice de défi est inférieur ou égal à un certain seuil, comme indiqué ci-dessous.",
+				"Après avoir atteint le 5e niveau, lorsqu'une créature rate son jet de sauvegarde contre votre caractéristique Abjuration des arcanes, elle est bannie pendant 1 minute (comme dans le sort {@spell banishment}, pas de {@status concentration} requis) si elle ne se trouve pas sur son plan d'origine et si sa valeur de défi est inférieure ou égale à un certain seuil, comme indiqué ci-dessous.",
 				{
 					"type": "table",
 					"caption": "Arcane Banishment",
@@ -6271,7 +6271,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 2nd-level Fate Domain Feature}",
-				"Vous pouvez utiliser votre divinité de canal pour voir et manipuler les fils du destin qui se tissent autour d'autres individus. Comme action bonus, vous pouvez entrer dans cet état pour une durée maximale de 1 minute ou jusqu'à ce que vous perdiez votre concentration (comme si vous vous concentriez sur un sort). Pendant cette durée, chaque fois qu'une autre créature que vous pouvez voir effectue un jet d'attaque ou un test de capacité, vous pouvez utiliser une réaction pour donner à ce jet un avantage ou un désavantage (au choix)."
+				"Vous pouvez utiliser votre Divinité de Canal pour voir et manipuler les fils du destin qui se tissent autour des autres individus. Comme action bonus, vous pouvez entrer dans cet état pendant 1 minute ou jusqu'à ce que vous perdiez votre {@status concentration} (comme si vous étiez à {@status concentration||concentrating} sur un sort). Pendant cette durée, chaque fois qu'une autre créature que vous pouvez voir fait un jet d'attaque ou un test de capacité, vous pouvez utiliser une réaction pour donner au jet un avantage ou un désavantage (au choix)."
 			]
 		},
 		{

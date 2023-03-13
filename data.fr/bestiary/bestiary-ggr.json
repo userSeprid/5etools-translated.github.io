@@ -204,7 +204,7 @@
 				{
 					"name": "Pacifying Presence",
 					"entries": [
-						"Chaque créature du choix de l'archonte que celui-ci peut voir à moins de 120 pieds de lui doit réussir un jet de sauvegarde de Sagesse {@dc 18}, sinon la cible lâche toute arme qu'elle tient, met fin à sa concentration sur tout sort ou autre effet, et devient {@condition charmed} par l'archonte pendant 1 minute. La créature {@condition charmed} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite. Si le jet de sauvegarde d'une créature est réussi ou si l'effet prend fin pour elle, la créature est immunisée contre la Présence apaisante de l'archonte pendant les 24 heures suivantes."
+						"Chaque créature du choix de l'archonte que ce dernier peut voir dans un rayon de 120 pieds doit réussir un jet de sauvegarde de {@dc 18} Sagesse, sans quoi la cible lâche toutes les armes qu'elle tient, met fin à son {@status concentration} sur les sorts ou autres effets, et devient {@condition charmed} de l'archonte pendant 1 minute. La créature {@condition charmed} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de succès. Si le jet de sauvegarde d'une créature est réussi ou si l'effet prend fin pour elle, la créature est immunisée contre la Présence pacificatrice de l'archonte pendant les 24 heures suivantes."
 					]
 				}
 			],
@@ -6957,7 +6957,7 @@
 				{
 					"name": "Locus of the Firemind",
 					"entries": [
-						"Niv-Mizzet peut maintenir sa concentration sur deux sorts différents en même temps. De plus, il a un avantage sur les jets de sauvegarde pour maintenir sa concentration sur les sorts."
+						"Niv-Mizzet peut maintenir {@status concentration} sur deux sorts différents en même temps. De plus, il a un avantage aux jets de sauvegarde pour maintenir {@status concentration} sur les sorts.acifying Presence pour les prochaines 24 heures."
 					]
 				},
 				{
@@ -7797,7 +7797,7 @@
 				{
 					"name": "Touch of Pain (Costs 3 Actions)",
 					"entries": [
-						"Rakdos effectue une attaque de griffes contre une créature située à 3 mètres de lui. La cible doit réussir un jet de sauvegarde de Constitution {@dc 25} ou être {@condition poisoned} pendant 1 minute. Pendant que {@condition poisoned} ainsi, la créature ne peut pas maintenir sa concentration sur un sort ou tout autre effet nécessitant de la concentration. La créature de {@condition poisoned} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
+						"Rakdos effectue une attaque de griffes contre une créature située à moins de 10 pieds de lui. La cible doit réussir un jet de sauvegarde de Constitution de {@dc 25} ou être {@condition poisoned} pendant 1 minute. Pendant qu'elle est {@condition poisoned} de cette façon, la créature ne peut pas maintenir {@status concentration} sur un sort ou tout autre effet qui nécessite {@status concentration}. La créature {@condition poisoned} peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet sur elle-même en cas de réussite."
 					]
 				}
 			],

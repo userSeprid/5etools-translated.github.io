@@ -580,18 +580,18 @@
 			"srd": true,
 			"basicRules": true,
 			"entries": [
-				"Certains sorts exigent que vous restiez concentré pour que leur magie reste active. Si vous perdez votre concentration, un tel sort prend fin.",
-				"Si un sort doit être maintenu par la concentration, ce fait apparaît dans son entrée Durée, et le sort précise combien de temps vous pouvez vous concentrer sur lui. Vous pouvez mettre fin à la concentration à tout moment (aucune action requise).",
-				"L'activité normale, comme le déplacement et l'attaque, n'interfère pas avec la concentration. Les facteurs suivants peuvent nuire à la concentration :",
+				"Certains sorts exigent que vous conserviez {@status concentration} pour que leur magie reste active. Si vous perdez {@status concentration}, le sort prend fin.",
+				"Si un sort doit être entretenu avec {@status concentration}, ce fait apparaît dans la rubrique Durée, et le sort précise combien de temps vous pouvez vous concentrer dessus. Vous pouvez mettre fin à {@status concentration} à tout moment (aucune action n'est requise).",
+				"L'activité normale, telle que le déplacement et l'attaque, n'interfère pas avec {@status concentration}. Les facteurs suivants peuvent interrompre {@status concentration} :",
 				{
 					"type": "list",
 					"items": [
-						"{@b Casting another spell that requires concentration.} Vous perdez votre concentration sur un sort si vous lancez un autre sort qui nécessite de la concentration. Vous ne pouvez pas vous concentrer sur deux sorts à la fois.",
-						"{@b Taking damage.} Chaque fois que vous subissez des dégâts pendant que vous vous concentrez sur un sort, vous devez effectuer un jet de sauvegarde de Constitution pour maintenir votre concentration. Le jet de sauvegarde est égal à 10 ou à la moitié des dégâts que vous subissez, le chiffre le plus élevé étant retenu. Si vous subissez des dégâts de plusieurs sources, comme une flèche et un souffle de dragon, vous effectuez un jet de sauvegarde distinct pour chaque source de dégâts.",
-						"{@b Being incapacitated or killed.} Vous perdez votre concentration sur un sort si vous êtes {@condition incapacitated} ou si vous mourez."
+						"{@b Casting another spell that requires concentration.} Vous perdez {@status concentration} sur un sort si vous lancez un autre sort qui nécessite {@status concentration}. Vous ne pouvez pas vous concentrer sur deux sorts à la fois.",
+						"{@b Taking damage.} Lorsque vous subissez des dégâts alors que vous êtes {@status concentration||concentrating} sur un sort, vous devez effectuer un jet de sauvegarde de Constitution pour maintenir votre {@status concentration}. Le DC est égal à 10 ou à la moitié des dégâts subis, selon le chiffre le plus élevé. Si vous subissez des dégâts de sources multiples, comme une flèche et un souffle de dragon, vous devez effectuer un jet de sauvegarde pour chaque source de dégâts.",
+						"{@b Being incapacitated or killed.} Vous perdez {@status concentration} sur un sort si vous êtes {@condition incapacitated} ou si vous mourez."
 					]
 				},
-				"Le DM peut également décider que certains phénomènes environnementaux, comme une vague qui s'abat sur vous alors que vous êtes sur un navire en pleine tempête, vous obligent à réussir un jet de sauvegarde de Constitution DC 10 pour rester concentré sur un sort."
+				"Le DM peut également décider que certains phénomènes environnementaux, comme une vague qui s'écrase sur vous alors que vous êtes sur un navire battu par la tempête, vous obligent à réussir un jet de sauvegarde de Constitution DC 10 pour maintenir {@status concentration} sur un sort."
 			]
 		}
 	]

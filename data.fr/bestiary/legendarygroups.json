@@ -13,7 +13,7 @@
 				{
 					"type": "list",
 					"items": [
-						"L'aboleth lance {@spell phantasmal force} (aucun composant requis) sur un nombre quelconque de créatures qu'il peut voir dans un rayon de 60 pieds autour de lui. Tout en maintenant sa concentration sur cet effet, l'aboleth ne peut pas effectuer d'autres actions de tanière. Si une cible réussit le jet de sauvegarde ou si l'effet prend fin pour elle, elle est immunisée contre l'action de repaire de force fantasmatique de l'aboleth pendant les 24 heures suivantes, bien qu'une telle créature puisse choisir d'être affectée.",
+						"L'aboleth lance des sorts {@spell phantasmal force} (aucune composante requise) sur un nombre quelconque de créatures qu'il peut voir dans un rayon de 60 pieds. Pendant qu'il maintient {@status concentration} sur cet effet, l'aboleth ne peut pas entreprendre d'autres actions de repaire. Si une cible réussit son jet de sauvegarde ou si l'effet prend fin pour elle, elle est immunisée contre l'action de repaire de force fantasmatique de l'aboleth pour les 24 heures suivantes, bien qu'une telle créature puisse choisir d'être affectée.",
 						"Les flaques d'eau situées dans un rayon de 90 pieds autour de l'aboleth déferlent vers l'extérieur en une marée saisissante. Toute créature au sol située à moins de 6 mètres d'une telle mare doit réussir un jet de sauvegarde de Force {@dc 14} ou être entraînée jusqu'à 6 mètres dans l'eau et assommée {@condition prone}. L'aboleth ne peut plus utiliser cette action de repaire tant qu'il n'en a pas utilisé une autre.",
 						"L'eau du repaire de l'aboleth devient magiquement un conduit pour la rage de la créature. L'aboleth peut cibler un nombre quelconque de créatures qu'il peut voir dans cette eau dans un rayon de 90 pieds autour de lui. Une cible doit réussir un jet de sauvegarde de Sagesse {@dc 14} ou subir 7 ({@damage 2d6}) dégâts psychiques. L'aboleth ne peut plus utiliser cette action de repaire tant qu'il n'en a pas utilisé une autre."
 					]
@@ -26,7 +26,7 @@
 					"items": [
 						"Les surfaces souterraines situées à moins d'un kilomètre du repaire de l'aboleth sont gluantes et humides et sont {@quickref difficult terrain||3}.",
 						"Les sources d'eau situées à moins d'un kilomètre du repaire sont surnaturellement souillées. Les ennemis de l'aboleth qui boivent cette eau la vomissent en quelques minutes.",
-						"En tant qu'action, l'aboleth peut créer une image illusoire de lui-même dans un rayon de 1 mile autour de sa tanière. La copie peut apparaître à tout endroit que l'aboleth a déjà vu ou à tout endroit qu'une créature {@condition charmed} de l'aboleth peut actuellement voir. Une fois créée, l'image dure aussi longtemps que l'aboleth maintient sa concentration, comme s'il se concentrait sur un sort. Bien que l'image soit intangible, elle ressemble, sonne et peut se déplacer comme l'aboleth. L'aboleth peut sentir, parler et utiliser la télépathie depuis la position de l'image comme s'il était présent à cette position. Si l'image subit des dégâts, elle disparaît."
+						"Comme action, l'aboleth peut créer une image illusoire de lui-même dans un rayon de 1 mile autour de son repaire. La copie peut apparaître à n'importe quel endroit que l'aboleth a déjà vu ou à n'importe quel endroit qu'une créature {@condition charmed} de l'aboleth peut actuellement voir. Une fois créée, l'image dure aussi longtemps que l'aboleth maintient {@status concentration}, comme si {@status concentration||concentrating} sur un sort. Bien que l'image soit intangible, elle a l'apparence, les sons et les mouvements de l'aboleth. L'aboleth peut sentir, parler et utiliser la télépathie depuis la position de l'image comme s'il était présent à cette position. Si l'image subit des dégâts, elle disparaît."
 					]
 				},
 				"If the aboleth dies, the first two effects fade over the course of {@dice 3d10} days."
@@ -36,7 +36,7 @@
 			"name": "Aerisi Kalinoth",
 			"source": "PotA",
 			"lairActions": [
-				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while concentrating on a spell cast as a lair action.",
+				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action.",
 				"If Aerisi casts {@spell invisibility} using this lair action, she also draws the power of the air node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},
@@ -985,7 +985,7 @@
 					"items": [
 						"Des gravures magiques du visage souriant du dragon peuvent être vues sur des terrains et des objets en pierre dans un rayon de 6 miles autour du repaire du dragon.",
 						"Les petites bêtes, telles que les rongeurs et les oiseaux, qui sont normalement incapables de parler, acquièrent la capacité magique de parler et de comprendre le draconique lorsqu'elles se trouvent à moins d'un kilomètre de la tanière du dragon. Ces créatures parlent en bien du dragon, mais ne peuvent pas divulguer sa localisation.",
-						"Les créatures intelligentes situées à moins d'un kilomètre du repaire du dragon sont {@condition prone} sujettes à des crises de fou rire. Même les sujets sérieux semblent soudain amusants."
+						"Les créatures intelligentes situées à moins de 1 mile de l'antre du dragon sont sujettes à des crises de rire. Même les sujets les plus sérieux semblent soudain amusants. Si l'image subit des dégâts, elle disparaît."
 					]
 				},
 				"If the dragon dies, the magic carvings fade over the course of {@dice 1d10} days. The other effects end immediately.",
@@ -1781,7 +1781,7 @@
 								],
 								[
 									"81–00",
-									"\"Ma perception de la réalité ne correspond à celle de personne d'autre. Cela me rend {@condition prone} à des délires violents qui n'ont aucun sens pour les autres.\""
+									"\"Ma perception de la réalité ne correspond à celle de personne d'autre. Cela me rend sujette à des délires violents qui n'ont de sens pour personne d'autre.\""
 								]
 							]
 						}
@@ -1799,7 +1799,7 @@
 					"type": "list",
 					"items": [
 						"Gar peut se téléporter n'importe où dans la montagne de corail, en emmenant avec lui jusqu'à cinq créatures consentantes.",
-						"Le corail dans un rayon de 60 pieds se développe rapidement autour des créatures à l'intérieur de la montagne de corail. Chaque créature doit réussir un jet de sauvegarde de {@dc 18} Force ou devenir {@condition restrained}. Les créatures retenues peuvent prendre une action à leur tour pour faire un test de {@dc 18} de Force ({@skill Athletics}) ou de Dextérité ({@skill Acrobatics}) pour se libérer. Cet effet dure 1 minute, sauf s'il est dissipé (il compte comme un sort de 6e niveau), et ne nécessite pas que Gar maintienne sa concentration. Gar Shatterkeel et toutes les créatures qu'il désigne sont immunisés contre cet effet.",
+						"Le corail dans un rayon de 60 pieds croît rapidement autour des créatures à l'intérieur de la montagne de corail. Chaque créature doit réussir un jet de sauvegarde de Force {@dc 18} ou devenir {@condition restrained}. Les créatures entravées peuvent prendre une action à leur tour pour faire un test de {@dc 18} de Force ({@skill Athletics}) ou de Dextérité ({@skill Acrobatics}) pour se libérer. Cet effet dure 1 minute à moins d'être dissipé (il compte comme un sort de 6ème niveau), et ne nécessite pas que Gar maintienne {@status concentration}. Gar Shatterkeel et les créatures qu'il désigne sont immunisés contre cet effet.",
 						"Jusqu'à cinq cadavres que Gar peut voir dans un rayon de 60 pieds se lèvent en tant que {@creature drowned blade|GoS|drowned blades} et attaquent toute personne que Gar dirige vers eux à son tour."
 					]
 				}
@@ -1809,7 +1809,7 @@
 			"name": "Gar Shatterkeel",
 			"source": "PotA",
 			"lairActions": [
-				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while concentrating on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
+				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
 				"If Gar casts {@spell cure wounds} using this lair action, he regains the maximum number of hit points from the spell (28)."
 			]
 		},
@@ -1918,7 +1918,7 @@
 							"name": "Create Object",
 							"type": "item",
 							"entries": [
-								"L'anarque lance le sort de création (comme un sort de 9e niveau) en utilisant la substance non formée des Limbes au lieu de la matière de l'ombre. S'il est utilisé dans les Limbes, l'objet reste jusqu'à ce que la concentration de l'anarque soit rompue, quelle que soit sa composition. Si l'anarque se déplace à plus de 120 pieds de l'objet, la concentration de l'anarque est rompue."
+								"L'anarque lance le sort de création (comme un sort de 9ème niveau) en utilisant la substance informe des Limbes au lieu de la matière de l'ombre. S'il est utilisé dans les Limbes, l'objet reste en place jusqu'à ce que le {@status concentration} de l'anarque soit brisé, quelle que soit sa composition. Si l'anarque se déplace à plus de 120 pieds de l'objet, le {@status concentration} de l'anarque se brise.ect."
 							]
 						},
 						{
@@ -1972,7 +1972,7 @@
 					"type": "list",
 					"items": [
 						"L'anarque lance le sort {@spell lightning bolt} (au 5e niveau), mais il peut changer le type de dégâts de foudre à froid, feu, psychique, radiant ou tonnerre. Si le sort inflige des dégâts autres que le feu ou la foudre, il n'enflamme pas les objets inflammables.",
-						"L'anarque lance le sort {@spell creation} (comme un sort de 9e niveau) en utilisant la substance informe des Limbes au lieu de la matière de l'ombre. S'il est utilisé dans les Limbes, l'objet reste jusqu'à ce que la concentration de l'anarque soit rompue, quelle que soit sa composition. Si l'anarque se déplace à plus de 120 pieds de l'objet, sa concentration se brise.",
+						"L'anarque lance le sort {@spell creation} (comme un sort de 9ème niveau) en utilisant la substance informe des Limbes au lieu de la matière de l'ombre. S'il est utilisé dans les Limbes, l'objet reste en place jusqu'à ce que le {@status concentration} de l'anarque soit brisé, quelle que soit sa composition. Si l'anarque se déplace à plus de 120 pieds de l'objet, son {@status concentration} se brise.",
 						"L'anarque peut déplacer magiquement un objet qu'il peut voir dans un rayon de 150 pieds autour de lui en faisant un test de Sagesse avec avantage. Le DC dépend de la taille de l'objet : {@dc 5} pour minuscule, {@dc 10} pour petit, {@dc 15} pour moyen, {@dc 20} pour grand, et {@dc 25} pour énorme ou plus."
 					]
 				}
@@ -2735,8 +2735,8 @@
 				{
 					"type": "list",
 					"items": [
-						"Kyrilla lance {@spell moonbeam} (aucun composant requis). Tout en maintenant sa concentration sur cet effet, elle ne peut pas effectuer d'autres actions de repaire.",
-						"Kyrilla lance {@spell cloud of daggers} (aucune composante requise), sauf que les dagues sont des serpents volants et que le sort inflige des dégâts perforants. Pendant qu'elle se concentre sur cet effet, elle ne peut pas faire d'autres actions de repaire.",
+						"Plâtres de Kyrilla {@spell moonbeam} (aucun composant requis). Pendant qu'elle maintient {@status concentration} sur cet effet, elle ne peut pas faire d'autres actions de repaire.",
+						"Kyrilla lance {@spell cloud of daggers} (aucune composante requise), sauf que les dagues sont des serpents volants et que le sort inflige des dégâts perforants. Pendant qu'elle maintient {@status concentration} sur cet effet, elle ne peut pas faire d'autres actions de repaire.",
 						"Les flaques de liquide situées dans un rayon de 60 pieds de Kyrilla s'agitent et écument, éclaboussant et trempant toute créature au sol dans un rayon de 5 pieds de ces flaques. Les créatures qui réussissent un jet de sauvegarde de Dextérité DC 14 évitent de recevoir du liquide dans les yeux et la bouche. Kyrilla ne peut plus utiliser cette action de repaire tant qu'elle n'en a pas utilisé une autre."
 					]
 				}
@@ -2787,7 +2787,7 @@
 			"name": "Marlos Urnrayle",
 			"source": "PotA",
 			"lairActions": [
-				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains concentration on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while concentrating on {@spell earthquake}.",
+				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains {@status concentration} on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while {@status concentration||concentrating} on {@spell earthquake}.",
 				"Marlos's second option for a lair action is to draw power from the earth node to heal. When he does so, he regains 30 ({@dice 6d8 + 3}) hit points."
 			]
 		},
@@ -2799,7 +2799,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Méphistophélès lance n'importe quel sort de sa liste de sorciers et s'il nécessite normalement une concentration, il dure toute la durée à la place.",
+						"Méphistophélès lance n'importe quel sort de sa liste de sorciers et s'il nécessite normalement {@status concentration}, il dure la totalité de la durée à la place.",
 						"Méphistophélès couvre une zone de 1,5 m de feu grégeois. Toute créature qui commence son tour sur cette zone subit 27 ({@damage 6d8}) de dégâts de feu. Le feu de l'enfer demeure jusqu'à ce que Méphistophélès le dissipe ou qu'il utilise à nouveau cette capacité."
 					]
 				}
@@ -3994,7 +3994,7 @@
 			"name": "Vanifer",
 			"source": "PotA",
 			"lairActions": [
-				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while concentrating on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
+				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
 				"If Vanifer casts {@spell misty step} using this lair action, she also draws the power of the fire node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},

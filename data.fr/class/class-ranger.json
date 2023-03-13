@@ -3373,7 +3373,7 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, qui remplace la fonction Ennemi favorisé et fonctionne avec la fonction Tueur d'ennemi}.",
-				"Lorsque vous touchez une créature avec un jet d'attaque, vous pouvez faire appel à votre lien mystique avec la nature pour marquer la cible comme votre ennemi préféré pendant 1 minute ou jusqu'à ce que vous perdiez votre concentration (comme si vous vous concentriez sur un sort).",
+				"Lorsque vous touchez une créature avec un jet d'attaque, vous pouvez faire appel à votre lien mystique avec la nature pour marquer la cible comme votre ennemi favori pendant 1 minute ou jusqu'à ce que vous perdiez votre {@status concentration} (comme si vous étiez à {@status concentration||concentrating} sur un sort).",
 				"La première fois, à chacun de vos tours, que vous touchez l'ennemi favorisé et lui infligez des dégâts, y compris lorsque vous le marquez, vous pouvez augmenter ces dégâts de {@dice 1d4}.",
 				"Vous pouvez utiliser cette caractéristique pour marquer un ennemi favorisé un nombre de fois égal à votre bonus de compétence, et vous récupérez toutes les utilisations dépensées lorsque vous terminez un long repos.",
 				"Les dégâts supplémentaires de cette caractéristique augmentent lorsque vous atteignez certains niveaux dans cette classe : à {@dice 1d6} au 6e niveau et à {@dice 1d8} au 14e niveau."
@@ -3389,7 +3389,7 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"{@i 1st-level ranger feature (replaces Favored Enemy)}",
-				"Vous pouvez faire appel à votre lien avec la nature pour marquer une créature comme votre ennemi préféré pour un temps : vous connaissez le sort {@spell hunter's mark}, et la Sagesse est votre capacité de lanceur de sorts pour celui-ci. Vous pouvez l'utiliser un certain nombre de fois sans dépenser un emplacement de sort et sans nécessiter de concentration - un nombre de fois égal à votre modificateur de Sagesse (au minimum une fois). Vous récupérez toutes les utilisations dépensées lorsque vous terminez un long repos.",
+				"Vous pouvez faire appel à votre lien avec la nature pour marquer une créature comme votre ennemi préféré pendant un certain temps : vous connaissez le sort {@spell hunter's mark}, et la Sagesse est votre capacité de lanceur de sorts pour ce sort. Vous pouvez l'utiliser un certain nombre de fois sans dépenser d'emplacement de sort et sans avoir besoin de {@status concentration} - un nombre de fois égal à votre modificateur de Sagesse (au minimum une fois). Vous regagnez toutes les utilisations dépensées à la fin d'un long repos.",
 				"Lorsque vous obtenez la caractéristique Lancer de sorts au 2e niveau, la marque du chasseur ne compte pas dans le nombre de sorts de ranger que vous connaissez."
 			]
 		},
@@ -4198,7 +4198,7 @@
 			"entries": [
 				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, qui remplace la fonction Ennemi favorisé et fonctionne avec la fonction Tueur d'ennemi}.",
 				"{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Spell-less Ranger feature.}",
-				"Lorsque vous touchez une créature avec un jet d'attaque, vous pouvez faire appel à votre lien mystique avec la nature pour marquer la cible comme votre ennemi préféré pendant 1 minute ou jusqu'à ce que vous perdiez votre concentration (comme si vous vous concentriez sur un sort).",
+				"Lorsque vous touchez une créature avec un jet d'attaque, vous pouvez faire appel à votre lien mystique avec la nature pour marquer la cible comme votre ennemi favori pendant 1 minute ou jusqu'à ce que vous perdiez votre {@status concentration} (comme si vous étiez à {@status concentration||concentrating} sur un sort).",
 				"La première fois, à chacun de vos tours, que vous touchez l'ennemi favorisé et lui infligez des dégâts, y compris lorsque vous le marquez, vous pouvez augmenter ces dégâts de {@dice 1d4}.",
 				"Vous pouvez utiliser cette caractéristique pour marquer un ennemi favorisé un nombre de fois égal à votre bonus de compétence, et vous récupérez toutes les utilisations dépensées lorsque vous terminez un long repos.",
 				"Les dégâts supplémentaires de cette caractéristique augmentent lorsque vous atteignez certains niveaux dans cette classe : à {@dice 1d6} au 6e niveau et à {@dice 1d8} au 14e niveau."
@@ -4215,7 +4215,7 @@
 			"entries": [
 				"{@i 1st-level ranger feature (replaces Favored Enemy)}",
 				"{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Spell-less Ranger feature.}",
-				"Vous pouvez faire appel à votre lien avec la nature pour marquer une créature comme votre ennemi préféré pour un temps : vous connaissez le sort {@spell hunter's mark}, et la Sagesse est votre capacité de lanceur de sorts pour celui-ci. Vous pouvez l'utiliser un certain nombre de fois sans dépenser un emplacement de sort et sans nécessiter de concentration - un nombre de fois égal à votre modificateur de Sagesse (au minimum une fois). Vous récupérez toutes les utilisations dépensées lorsque vous terminez un long repos.",
+				"Vous pouvez faire appel à votre lien avec la nature pour marquer une créature comme votre ennemi préféré pendant un certain temps : vous connaissez le sort {@spell hunter's mark}, et la Sagesse est votre capacité de lanceur de sorts pour ce sort. Vous pouvez l'utiliser un certain nombre de fois sans dépenser d'emplacement de sort et sans avoir besoin de {@status concentration} - un nombre de fois égal à votre modificateur de Sagesse (au minimum une fois). Vous regagnez toutes les utilisations dépensées à la fin d'un long repos.",
 				"Lorsque vous obtenez la caractéristique Lancer de sorts au 2e niveau, la marque du chasseur ne compte pas dans le nombre de sorts de ranger que vous connaissez."
 			]
 		},
@@ -5014,7 +5014,7 @@
 					"name": "Spirit Companion",
 					"entries": [
 						"Tous les rangers gagnent un compagnon spirituel et la capacité d'invoquer son pouvoir magique. (Votre compagnon spirituel vous accorde un avantage auquel vous pouvez faire appel dans cette version de playtest du ranger révisé, d'autres avantages étant acquis aux niveaux supérieurs). Vous retrouvez votre capacité à invoquer votre compagnon spirituel de cette manière lorsque vous terminez un repos court ou long.",
-						"Une fois par jour, comme action bonus, vous pouvez commander à votre compagnon spirituel de se matérialiser sous la forme d'une créature vivante, déterminée par la voie de ranger que vous avez choisie. Votre compagnon spirituel se manifeste sous la forme d'un animal pendant 1 minute ou jusqu'à ce que votre concentration soit rompue (comme si vous vous concentriez sur un sort). Vous pouvez également le renvoyer comme une action bonus.",
+						"Une fois par jour, en tant qu'action bonus, vous pouvez ordonner à votre compagnon spirituel de se matérialiser sous la forme d'une créature vivante, déterminée par la voie de ranger que vous avez choisie. Votre compagnon spirituel se manifeste sous la forme d'un animal pendant 1 minute ou jusqu'à ce que votre {@status concentration} soit brisé (comme si vous étiez à {@status concentration||concentrating} sur un sort). Vous pouvez également le congédier en tant qu'action bonus.",
 						"La créature manifestée gagne un bonus aux jets d'attaque et aux jets de sauvegarde égal à votre modificateur de Sagesse. Elle utilise les points de vie du bloc de stat de l'animal ou la moitié de votre maximum de points de vie, le chiffre le plus élevé étant retenu.",
 						"La créature manifestée prend son tour sur votre initiative et agit immédiatement après vous. Vous contrôlez ses actions, même si vous êtes {@condition unconscious} ou autrement incapable d'agir."
 					]
@@ -5216,7 +5216,7 @@
 				"À partir du 3e niveau, votre maîtrise du savoir des rangers vous permet d'établir un lien puissant avec les bêtes et la terre qui vous entoure.",
 				"Vous avez une capacité innée à communiquer avec les bêtes, et elles vous reconnaissent comme une âme sœur. Par des sons et des gestes, vous pouvez communiquer des idées simples à une bête comme une action, et vous pouvez lire son humeur et ses intentions. Vous apprenez son état émotionnel, si elle est affectée par une quelconque magie, ses besoins à court terme (comme la nourriture ou la sécurité), et les actions que vous pouvez entreprendre (le cas échéant) pour la persuader de ne pas attaquer.",
 				"Vous ne pouvez pas utiliser cette capacité contre une créature que vous avez attaquée au cours des 10 dernières minutes.",
-				"De plus, vous pouvez accorder vos sens pour déterminer si l'un de vos ennemis préférés se cache à proximité. En dépensant 1 minute ininterrompue de concentration (comme si vous vous concentriez sur un sort), vous pouvez sentir si l'un de vos ennemis préférés est présent dans un rayon de 8 km autour de vous. Cette caractéristique révèle quels sont vos ennemis préférés présents, leur nombre, ainsi que la direction générale des créatures et leur distance (en miles) par rapport à vous.",
+				"De plus, vous pouvez accorder vos sens pour déterminer si l'un de vos ennemis préférés se cache à proximité. En passant 1 minute ininterrompue à {@status concentration} (comme si vous étiez à {@status concentration||concentrating} sur un sort), vous pouvez sentir si l'un de vos ennemis favoris est présent dans un rayon de 5 miles autour de vous. Cette caractéristique vous permet de savoir lesquels de vos ennemis favoris sont présents, leur nombre, leur direction générale et la distance (en miles) qui les sépare de vous.",
 				"S'il y a plusieurs groupes d'ennemis favoris à portée, vous apprenez cette information pour chaque groupe."
 			]
 		},
@@ -6315,7 +6315,7 @@
 			"entries": [
 				"{@i 11th-level Fey Wanderer feature}",
 				"Les cours royales du Feywild vous ont béni de l'assistance des êtres féeriques : vous connaissez {@spell summon fey|tce}. Il ne compte pas dans le nombre de sorts de ranger que vous connaissez, et vous pouvez le lancer sans composante matérielle. Vous pouvez également le lancer une fois sans emplacement de sort, et vous regagnez la capacité de le faire lorsque vous terminez un long repos.",
-				"Lorsque vous commencez à lancer le sort, vous pouvez le modifier pour qu'il ne nécessite pas de concentration. Si vous faites cela, la durée du sort devient 1 minute pour cette incantation."
+				"Lorsque vous commencez à lancer le sort, vous pouvez le modifier pour qu'il ne nécessite pas {@status concentration}. Dans ce cas, la durée du sort devient de 1 minute pour cette incantation."
 			]
 		},
 		{
@@ -8856,7 +8856,7 @@
 			"entries": [
 				"{@i 11th-level Fey Wanderer feature}",
 				"Les cours royales du Feywild vous ont béni de l'assistance des êtres féeriques : vous connaissez {@spell summon fey|tce}. Il ne compte pas dans le nombre de sorts de ranger que vous connaissez, et vous pouvez le lancer sans composante matérielle. Vous pouvez également le lancer une fois sans emplacement de sort, et vous regagnez la capacité de le faire lorsque vous terminez un long repos.",
-				"Lorsque vous commencez à lancer le sort, vous pouvez le modifier pour qu'il ne nécessite pas de concentration. Si vous faites cela, la durée du sort devient 1 minute pour cette incantation."
+				"Lorsque vous commencez à lancer le sort, vous pouvez le modifier pour qu'il ne nécessite pas {@status concentration}. Dans ce cas, la durée du sort devient de 1 minute pour cette incantation."
 			]
 		},
 		{
@@ -10627,7 +10627,7 @@
 			"entries": [
 				"{@i 11th-level Fey Wanderer feature}",
 				"Les cours royales du Feywild vous ont béni de l'assistance des êtres féeriques : vous connaissez {@spell summon fey|tce}. Il ne compte pas dans le nombre de sorts de ranger que vous connaissez, et vous pouvez le lancer sans composante matérielle. Vous pouvez également le lancer une fois sans emplacement de sort, et vous regagnez la capacité de le faire lorsque vous terminez un long repos.",
-				"Lorsque vous commencez à lancer le sort, vous pouvez le modifier pour qu'il ne nécessite pas de concentration. Si vous faites cela, la durée du sort devient 1 minute pour cette incantation."
+				"Lorsque vous commencez à lancer le sort, vous pouvez le modifier pour qu'il ne nécessite pas {@status concentration}. Dans ce cas, la durée du sort devient de 1 minute pour cette incantation."
 			]
 		},
 		{

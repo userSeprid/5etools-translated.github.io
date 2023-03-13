@@ -1654,7 +1654,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Si vous lancez ce sort en utilisant un emplacement de sort de 4e niveau ou plus, la durée est la concentration, jusqu'à 10 minutes. Si vous utilisez un emplacement de sort de 5e niveau ou plus, la durée est de 8 heures. Si vous utilisez un emplacement de sort de 7e niveau ou plus, la durée est de 24 heures. Si vous utilisez un emplacement de sort de 9e niveau, le sort dure jusqu'à ce qu'il soit dissipé. L'utilisation d'un emplacement de sort de 5e niveau ou plus confère une durée qui ne nécessite pas de concentration."
+						"Si vous lancez ce sort en utilisant un emplacement de sort de 4ème niveau ou plus, la durée est de {@status concentration}, jusqu'à 10 minutes. Si vous utilisez un emplacement de sort de 5ème niveau ou plus, la durée est de 8 heures. Si vous utilisez un emplacement de 7ème niveau ou plus, la durée est de 24 heures. Si vous utilisez un emplacement de sort de 9ème niveau, le sort dure jusqu'à ce qu'il soit dissipé. L'utilisation d'un emplacement de sort de 5ème niveau ou plus accorde une durée qui ne nécessite pas {@status concentration}."
 					]
 				}
 			],
@@ -3666,7 +3666,7 @@
 			"entries": [
 				"Vous appelez un serviteur élémentaire. Choisissez une zone d'air, de terre, de feu ou d'eau qui remplit un cube de 3 mètres de côté à portée. Un {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} approprié à la zone que vous avez choisie apparaît dans un espace inoccupé dans un rayon de 3 mètres autour d'elle. Par exemple, un {@creature fire elemental} émerge d'un feu de joie, et un {@creature earth elemental} s'élève du sol. L'élémentaire disparaît lorsqu'il tombe à 0 point de vie ou lorsque le sort prend fin.",
 				"L'élémental est amical envers vous et vos compagnons pour la durée. Faites un jet d'initiative pour l'élémental, qui a ses propres tours. Il obéit à tous les ordres verbaux que vous lui donnez (aucune action n'est requise de votre part). Si vous ne lui donnez aucun ordre, l'élémental se défend contre les créatures hostiles mais ne fait rien d'autre.",
-				"Si votre concentration est rompue, l'élémental ne disparaît pas. Au contraire, vous perdez le contrôle de l'élémental, il devient hostile envers vous et vos compagnons, et il peut attaquer. Un élémentaire non contrôlé ne peut pas être renvoyé par vous, et il disparaît 1 heure après que vous l'ayez invoqué.",
+				"Si votre {@status concentration} est cassé, l'élémentaire ne disparaît pas. Au lieu de cela, vous perdez le contrôle de l'élémentaire, il devient hostile envers vous et vos compagnons, et il peut attaquer. Un élémentaire incontrôlé ne peut pas être renvoyé par vous, et il disparaît 1 heure après que vous l'ayez invoqué.",
 				"Le DM dispose des statistiques de l'élémentaire."
 			],
 			"entriesHigherLevel": [
@@ -3719,7 +3719,7 @@
 			"entries": [
 				"Vous invoquez un {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, ou un esprit féerique qui prend la forme d'un {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. Il apparaît dans un espace inoccupé que vous pouvez voir à portée. La créature féerique disparaît lorsqu'elle tombe à 0 point de vie ou lorsque le sort prend fin.",
 				"La créature féerique est amicale envers vous et vos compagnons pour la durée. Faites un jet d'initiative pour la créature, qui dispose de ses propres tours. Elle obéit à tous les ordres verbaux que vous lui donnez (aucune action requise de votre part), tant qu'ils ne violent pas son alignement. Si vous ne donnez aucun ordre à la créature féerique, elle se défend contre les créatures hostiles mais ne fait aucune autre action.",
-				"Si votre concentration est rompue, la créature féerique ne disparaît pas. Au contraire, vous perdez le contrôle de la créature féerique, elle devient hostile envers vous et vos compagnons, et elle peut attaquer. Une créature féerique incontrôlée ne peut pas être renvoyée par vous, et elle disparaît 1 heure après que vous l'ayez invoquée.",
+				"Si votre {@status concentration} est brisé, la créature féerique ne disparaît pas. Au lieu de cela, vous perdez le contrôle de la créature féerique, elle devient hostile envers vous et vos compagnons, et elle peut attaquer. Une créature féerique incontrôlée ne peut pas être renvoyée par vous, et elle disparaît 1 heure après que vous l'ayez invoquée.",
 				"Le DM dispose des statistiques de la créature féerique."
 			],
 			"entriesHigherLevel": [
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"Un faisceau de lumière jaune jaillit de votre doigt pointé, puis se condense pour s'attarder à un point choisi dans le rayon d'action sous la forme d'une perle lumineuse pendant toute la durée du sort. Lorsque le sort prend fin, soit parce que votre concentration est rompue, soit parce que vous décidez d'y mettre fin, la perle se transforme, dans un faible grondement, en une explosion de flammes qui se propage dans les coins. Chaque créature dans une sphère de 20 pieds de rayon centrée sur ce point doit effectuer un jet de sauvegarde de Dextérité. Une créature subit des dégâts de feu égaux au total des dégâts accumulés en cas de sauvegarde ratée, ou la moitié en cas de réussite.",
+				"Un faisceau de lumière jaune jaillit de votre doigt pointé, puis se condense pour s'attarder à un point choisi à portée sous forme de perle incandescente pendant la durée de l'opération. Lorsque le sort prend fin, soit parce que votre {@status concentration} est brisé, soit parce que vous décidez d'y mettre fin, la perle s'épanouit dans un grondement sourd en une explosion de flammes qui se propage dans les coins. Chaque créature dans une sphère de 20 pieds de rayon centrée sur ce point doit faire un jet de sauvegarde de Dextérité. Une créature subit des dégâts de feu égaux au total des dégâts accumulés en cas de sauvegarde ratée, ou la moitié des dégâts en cas de sauvegarde réussie.",
 				"Les dégâts de base du sort sont de {@damage 12d6}. Si, à la fin de votre tour, la perle n'a pas encore explosé, les dégâts augmentent de {@dice 1d6}.",
 				"Si la perle incandescente est touchée avant l'expiration de l'intervalle, la créature qui la touche doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, le sort prend fin immédiatement et la perle s'enflamme. En cas de sauvegarde réussie, la créature peut lancer la perle jusqu'à 12 mètres. Si elle touche une créature ou un objet solide, le sort prend fin et la perle explose.",
 				"Le feu endommage les objets dans la zone et enflamme les objets inflammables qui ne sont pas portés ou transportés."
@@ -5906,7 +5906,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Lorsque vous lancez ce sort avec un emplacement de 5ème niveau, la durée est la concentration, jusqu'à 10 minutes. Lorsque vous utilisez un emplacement de sort de 6e niveau, la durée est la concentration, jusqu'à 1 heure. Lorsque vous utilisez un emplacement de sort de 7e niveau ou plus, la durée est la concentration, jusqu'à 8 heures."
+						"Lorsque vous lancez ce sort avec un emplacement de 5e niveau, la durée est de {@status concentration}, jusqu'à 10 minutes. Lorsque vous utilisez un emplacement de 6ème niveau, la durée est de {@status concentration}, jusqu'à 1 heure. Lorsque vous utilisez un emplacement de sort de 7ème niveau ou plus, la durée est de {@status concentration}, jusqu'à 8 heures.ed dégâts en cas de sauvegarde ratée, ou moitié moins de dégâts en cas de sauvegarde réussie."
 					]
 				}
 			],
@@ -5972,7 +5972,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Lorsque vous lancez ce sort avec un emplacement de sort de 9e niveau, la durée est la concentration, jusqu'à 8 heures."
+						"Lorsque vous lancez ce sort avec un emplacement de sort du 9ème niveau, la durée est de {@status concentration}, jusqu'à 8 heures."
 					]
 				}
 			],
@@ -6035,7 +6035,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Lorsque vous lancez ce sort en utilisant un emplacement de 6e niveau, la durée est la concentration, jusqu'à 10 minutes. Lorsque vous utilisez un emplacement de sort de 7e niveau, la durée est la concentration, jusqu'à 1 heure. Lorsque vous utilisez un emplacement de sort de 8e niveau ou plus, la durée est la concentration, jusqu'à 8 heures."
+						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 6ème niveau, la durée est de {@status concentration}, jusqu'à 10 minutes. Lorsque vous utilisez un emplacement de sort de 7ème niveau, la durée est de {@status concentration}, jusqu'à 1 heure. Lorsque vous utilisez un emplacement de sort de 8ème niveau ou plus, la durée est de {@status concentration}, jusqu'à 8 heures."
 					]
 				}
 			],
@@ -6230,8 +6230,8 @@
 			],
 			"entries": [
 				"Vous créez une perturbation sismique en un point du sol que vous pouvez voir à portée. Pendant la durée de l'opération, une secousse intense déchire le sol dans un cercle de 100 pieds de rayon centré sur ce point et fait trembler les créatures et les structures en contact avec le sol dans cette zone.",
-				"Le sol de la zone devient {@quickref difficult terrain||3}. Chaque créature au sol qui se concentre doit effectuer un jet de sauvegarde de Constitution. En cas d'échec, la concentration de la créature est rompue.",
-				"Lorsque vous lancez ce sort et à la fin de chaque tour que vous passez à vous concentrer dessus, chaque créature au sol dans la zone doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, la créature est assommée {@condition prone}.",
+				"Le sol de la zone devient {@quickref difficult terrain||3}. Chaque créature au sol qui est {@status concentration||concentrating} doit faire un jet de sauvegarde de Constitution. En cas d'échec, le {@status concentration} de la créature est brisé.",
+				"Lorsque vous lancez ce sort et à la fin de chaque tour où vous dépensez {@status concentration||concentrating} pour celui-ci, chaque créature au sol dans la zone doit faire un jet de sauvegarde de Dextérité. En cas d'échec, la créature est assommée {@condition prone}.",
 				"Ce sort peut avoir des effets supplémentaires en fonction du terrain de la zone, comme déterminé par le DM.",
 				{
 					"type": "entries",
@@ -7903,7 +7903,7 @@
 				"Vous tentez de transformer en pierre une créature que vous pouvez voir à portée. Si le corps de la cible est fait de chair, la créature doit effectuer un jet de sauvegarde de Constitution. En cas d'échec, elle subit une perte de {@condition restrained} alors que sa chair commence à durcir. En cas de réussite, la créature n'est pas affectée.",
 				"Une créature {@condition restrained} par ce sort doit effectuer un autre jet de sauvegarde de Constitution à la fin de chacun de ses tours. Si elle réussit ses sauvegardes contre ce sort trois fois, le sort prend fin. Si elle échoue trois fois à ses jets de sauvegarde, elle est transformée en pierre et soumise à la condition {@condition petrified} pour la durée du sort. Les succès et les échecs n'ont pas besoin d'être consécutifs ; tenez-en compte jusqu'à ce que la cible obtienne trois succès de ce type.",
 				"Si la créature est physiquement brisée pendant {@condition petrified}, elle souffre de déformations similaires si elle revient à son état d'origine.",
-				"Si vous maintenez votre concentration sur ce sort pendant toute la durée possible, la créature est transformée en pierre jusqu'à ce que l'effet soit supprimé."
+				"Si vous maintenez votre {@status concentration} sur ce sort pendant toute la durée possible, la créature est transformée en pierre jusqu'à ce que l'effet soit retiré."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -8653,7 +8653,7 @@
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"Vous pouvez stocker un sort préparé de 3e niveau ou moins dans le glyphe en le lançant dans le cadre de la création du glyphe. Le sort doit cibler une seule créature ou une zone. Le sort stocké n'a pas d'effet immédiat lorsqu'il est lancé de cette manière. Lorsque la glyphe est déclenchée, le sort stocké est lancé. Si le sort a une cible, il vise la créature qui a déclenché le glyphe. Si le sort affecte une zone, celle-ci est centrée sur cette créature. Si le sort invoque des créatures hostiles ou crée des objets ou des pièges nuisibles, ils apparaissent aussi près que possible de l'intrus et l'attaquent. Si le sort nécessite une concentration, il dure jusqu'à la fin de sa durée complète."
+						"Vous pouvez stocker un sort préparé de niveau 3 ou inférieur dans le glyphe en le lançant lors de la création du glyphe. Le sort doit cibler une seule créature ou une zone. Le sort stocké n'a pas d'effet immédiat lorsqu'il est lancé de cette manière. Lorsque le glyphe est déclenché, le sort stocké est lancé. Si le sort a une cible, il vise la créature qui a déclenché le glyphe. Si le sort affecte une zone, la zone est centrée sur cette créature. Si le sort convoque des créatures hostiles ou crée des objets ou des pièges nuisibles, ils apparaissent le plus près possible de l'intrus et l'attaquent. Si le sort nécessite {@status concentration}, il dure jusqu'à la fin de sa durée totale."
 					]
 				}
 			],
@@ -9921,7 +9921,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 3e ou 4e niveau, vous pouvez maintenir votre concentration sur le sort jusqu'à 8 heures. Lorsque vous utilisez un emplacement de sort de 5e niveau ou plus, vous pouvez maintenir votre concentration sur le sort jusqu'à 24 heures."
+						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 3ème ou 4ème niveau, vous pouvez maintenir votre {@status concentration} sur le sort jusqu'à 8 heures. Lorsque vous utilisez un emplacement de sort de 5e niveau ou plus, vous pouvez maintenir votre {@status concentration} sur le sort jusqu'à 24 heures.e que possible à l'intrus et l'attaquer. Si le sort nécessite {@status concentration}, il dure jusqu'à la fin de sa durée totale."
 					]
 				}
 			],
@@ -10225,7 +10225,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 3e ou 4e niveau, vous pouvez maintenir votre concentration sur le sort jusqu'à 8 heures. Lorsque vous utilisez un emplacement de sort de 5e niveau ou plus, vous pouvez maintenir votre concentration sur le sort jusqu'à 24 heures."
+						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 3ème ou 4ème niveau, vous pouvez maintenir votre {@status concentration} sur le sort jusqu'à 8 heures. Lorsque vous utilisez un emplacement de sort de 5e niveau ou plus, vous pouvez maintenir votre {@status concentration} sur le sort jusqu'à 24 heures.e que possible à l'intrus et l'attaquer. Si le sort nécessite {@status concentration}, il dure jusqu'à la fin de sa durée totale."
 					]
 				}
 			],
@@ -11803,7 +11803,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 6e niveau ou plus, le sort dure jusqu'à ce qu'il soit dissipé, sans nécessiter votre concentration."
+						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 6ème niveau ou plus, le sort dure jusqu'à ce qu'il soit dissipé, sans nécessiter votre {@status concentration}."
 					]
 				}
 			],
@@ -12961,7 +12961,7 @@
 			],
 			"entries": [
 				"Choisissez une zone de terrain ne dépassant pas 40 pieds sur un côté à portée. Vous pouvez remodeler la terre, le sable ou l'argile de la zone de la manière de votre choix pendant la durée du jet. Vous pouvez élever ou abaisser l'élévation de la zone, créer ou combler une tranchée, ériger ou aplatir un mur, ou former un pilier. L'étendue de ces changements ne peut pas dépasser la moitié de la plus grande dimension de la zone. Ainsi, si vous affectez un carré de 40 pieds, vous pouvez créer un pilier d'une hauteur maximale de 20 pieds, élever ou abaisser l'élévation du carré de 20 pieds au maximum, creuser une tranchée d'une profondeur maximale de 20 pieds, et ainsi de suite. Il faut 10 minutes pour que ces modifications soient effectuées.",
-				"À la fin de chaque période de 10 minutes que vous passez à vous concentrer sur le sort, vous pouvez choisir une nouvelle zone de terrain à affecter.",
+				"A la fin de chaque période de 10 minutes que vous passez {@status concentration||concentrating} sur le sort, vous pouvez choisir une nouvelle zone de terrain à affecter.",
 				"Comme la transformation du terrain se fait lentement, les créatures de la zone ne peuvent généralement pas être piégées ou blessées par le mouvement du sol.",
 				"Ce sort ne peut pas manipuler les pierres naturelles ou les constructions en pierre. Les roches et les structures se déplacent pour s'adapter au nouveau terrain. Si la façon dont vous façonnez le terrain rend une structure instable, elle risque de s'effondrer.",
 				"De même, ce sort n'affecte pas directement la croissance des plantes. La terre déplacée entraîne les plantes avec elle."
@@ -16458,7 +16458,7 @@
 			"entries": [
 				"Jusqu'à la fin du sort, la pluie verglaçante et le grésil tombent dans un cylindre de 20 pieds de haut avec un rayon de 40 pieds centré sur un point que vous choisissez à portée. La zone est {@quickref Vision and Light|PHB|2||heavily obscured}, et les flammes exposées dans la zone sont éteintes.",
 				"Le sol de la zone est recouvert de glace glissante, ce qui le rend {@quickref difficult terrain||3}. Lorsqu'une créature pénètre dans la zone du sort pour la première fois lors d'un tour ou commence son tour à cet endroit, elle doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, elle tombe de {@condition prone}.",
-				"Si une créature commence son tour dans la zone du sort et se concentre sur un sort, elle doit réussir un jet de sauvegarde de Constitution contre le DC de sauvegarde de votre sort ou perdre sa concentration."
+				"Si une créature commence son tour dans la zone du sort et qu'elle est {@status concentration||concentrating} sur un sort, elle doit réussir un jet de sauvegarde de Constitution contre le DC de sauvegarde du sort ou perdre {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -17142,7 +17142,7 @@
 			],
 			"entries": [
 				"Un nuage d'orage se forme, centré sur un point que vous pouvez voir et s'étendant dans un rayon de 360 pieds. La foudre jaillit dans la zone, le tonnerre gronde et les vents violents se déchaînent. Chaque créature se trouvant sous le nuage (pas plus de 5 000 pieds sous le nuage) lorsqu'il apparaît doit effectuer un jet de sauvegarde de Constitution. En cas d'échec, la créature subit {@damage 2d6} de dégâts de tonnerre et devient {@condition deafened} pendant 5 minutes.",
-				"Chaque round où vous maintenez votre concentration sur ce sort, la tempête produit des effets différents à votre tour.",
+				"Chaque round où vous maintenez {@status concentration} sur ce sort, la tempête produit des effets différents à votre tour.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -17168,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Des rafales et des pluies verglaçantes assaillent la zone sous le nuage. La zone devient {@quickref difficult terrain||3} et est {@quickref Vision and Light|PHB|2||heavily obscured}. Chaque créature qui s'y trouve subit {@damage 1d6} de dégâts de froid. Les attaques à l'arme à distance dans la zone sont impossibles. Le vent et la pluie comptent comme une distraction grave dans le but de maintenir la concentration sur les sorts. Enfin, les rafales de vent fort (entre 20 et 50 miles par heure) dispersent automatiquement le brouillard, les brumes et autres phénomènes similaires dans la zone, qu'ils soient terrestres ou magiques."
+						"Des rafales et de la pluie verglaçante assaillent la zone sous le nuage. La zone devient {@quickref difficult terrain||3} et est {@quickref Vision and Light|PHB|2||heavily obscured}. Chaque créature qui s'y trouve subit {@damage 1d6} de dégâts de froid. Les attaques à l'arme à distance dans la zone sont impossibles. Le vent et la pluie comptent comme une distraction grave pour les besoins du maintien de {@status concentration} sur les sorts. Enfin, les rafales de vent violent (de 20 à 50 miles par heure) dispersent automatiquement le brouillard, les brumes et autres phénomènes similaires dans la zone, qu'ils soient terrestres ou magiques."
 					]
 				}
 			],
@@ -18912,7 +18912,7 @@
 				"Le mur peut avoir la forme que vous souhaitez, mais il ne peut pas occuper le même espace qu'une créature ou un objet. Le mur n'a pas besoin d'être vertical ou de reposer sur une fondation solide. Il doit cependant se fondre dans la pierre existante et être solidement soutenu par elle. Ainsi, vous pouvez utiliser ce sort pour combler un gouffre ou créer une rampe.",
 				"Si vous créez une travée de plus de 20 pieds de long, vous devez diviser par deux la taille de chaque panneau pour créer des supports. Vous pouvez façonner grossièrement le mur pour créer des créneaux, des créneaux, etc.",
 				"Le mur est un objet en pierre qui peut être endommagé et donc percé. Chaque panneau a un AC de 15 et 30 points de vie par pouce d'épaisseur. Réduire un panneau à 0 point de vie le détruit et peut provoquer l'effondrement des panneaux connectés, à la discrétion du MD.",
-				"Si vous maintenez votre concentration sur ce sort pendant toute sa durée, le mur devient permanent et ne peut être dissipé. Sinon, le mur disparaît lorsque le sort prend fin."
+				"Si vous maintenez votre {@status concentration} sur ce sort pendant toute sa durée, le mur devient permanent et ne peut être dissipé. Sinon, le mur disparaît à la fin du sort."
 			],
 			"savingThrow": [
 				"dexterity"

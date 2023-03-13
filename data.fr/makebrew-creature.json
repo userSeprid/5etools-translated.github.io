@@ -1513,7 +1513,7 @@
 		{
 			"name": "Create Whirlwind (Djinni)",
 			"entries": [
-				"Un cylindre d'air tourbillonnant de 5 pieds de rayon et de 30 pieds de haut se forme magiquement sur un point que <$short_name$> peut voir dans un rayon de 120 pieds autour de lui. Le tourbillon dure aussi longtemps que <$short_name$> maintient sa concentration (comme s'il se concentrait sur un sort). Toute créature autre que <$short_name$> qui entre dans le tourbillon doit réussir un jet de sauvegarde DC <$dc__str$> ou être {@condition restrained} par celui-ci. <$title_short_name$> peut déplacer le tourbillon jusqu'à 60 pieds en tant qu'action, et les créatures {@condition restrained} par le tourbillon se déplacent avec lui. Le tourbillon prend fin si <$titre_court_nom$> le perd de vue.",
+				"Un cylindre d'air tourbillonnant de 5 pieds de rayon et de 30 pieds de haut se forme magiquement sur un point que <$short_name$> peut voir dans un rayon de 120 pieds. Le tourbillon dure aussi longtemps que <$nom_court$> maintient {@status concentration} (comme si {@status concentration||concentrating} sur un sort). Toute créature autre que <$short_name$> qui entre dans le tourbillon doit réussir un jet de sauvegarde DC <$dc__str$> ou être {@condition restrained} par lui. <$title_short_name$> peut déplacer le tourbillon jusqu'à 60 pieds comme action, et les créatures {@condition restrained} par le tourbillon se déplacent avec lui. Le tourbillon prend fin si <$nom_court_$> le perd de vue.",
 				"Une créature peut utiliser son action pour libérer une créature {@condition restrained} par le tourbillon, y compris elle-même, en réussissant un test de Force DC <$dc__str$>. Si le test est réussi, la créature n'est plus {@condition restrained} et se déplace vers l'espace le plus proche à l'extérieur du tourbillon."
 			]
 		},
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Darkness Aura (Darkmantle)",
 			"entries": [
-				"Un rayon de 15 pieds de ténèbres magiques s'étend à partir de <$short_name$>, se déplace avec lui et se répand dans les coins. L'obscurité dure aussi longtemps que <$short_name$> maintient sa concentration, jusqu'à 10 minutes (comme s'il se concentrait sur un sort). La vision noire ne peut pas pénétrer cette obscurité, et aucune lumière naturelle ne peut l'éclairer. Si une partie des ténèbres chevauche une zone de lumière créée par un sort de 2e niveau ou moins, le sort créant la lumière est dissipé."
+				"Un rayon de 15 pieds de ténèbres magiques s'étend depuis <$short_name$>, se déplace avec lui et se répand dans les coins. Les ténèbres durent aussi longtemps que <$nom_court> maintient {@status concentration}, jusqu'à 10 minutes (comme si {@status concentration||concentrating} sur un sort). La vision dans le noir ne peut pas pénétrer cette obscurité, et aucune lumière naturelle ne peut l'éclairer. Si une partie des ténèbres chevauche une zone de lumière créée par un sort de 2e niveau ou moins, le sort créant la lumière est dissipé."
 			]
 		},
 		{
@@ -1709,19 +1709,19 @@
 		{
 			"name": "Invisibility (Duergar)",
 			"entries": [
-				"<$title_short_name$> se transforme magiquement de {@condition invisible} jusqu'à ce qu'il attaque, jette un sort ou utilise son Agrandissement, ou jusqu'à ce que sa concentration soit rompue, jusqu'à 1 heure (comme s'il se concentrait sur un sort). Tout équipement que <$short_name$> porte ou transporte est {@condition invisible} avec lui."
+				"<$title_short_name$> se transforme magiquement de {@condition invisible} jusqu'à ce qu'il attaque, lance un sort ou utilise son Agrandissement, ou jusqu'à ce que son {@status concentration} soit brisé, jusqu'à 1 heure (comme si {@status concentration||concentrating} sur un sort). Tout équipement que <$short_name$> porte ou transporte est {@condition invisible} avec lui."
 			]
 		},
 		{
 			"name": "Invisibility (Quasit)",
 			"entries": [
-				"<$title_short_name$> se transforme magiquement en {@condition invisible} jusqu'à ce qu'il attaque ou utilise Scare, ou jusqu'à ce que sa concentration prenne fin (comme s'il se concentrait sur un sort). Tout équipement que <$titre_court_nom$> porte ou transporte est {@condition invisible} avec lui."
+				"<$title_short_name$> devient magiquement {@condition invisible} jusqu'à ce qu'il attaque ou utilise Peur, ou jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} sur un sort). Tout équipement que <$short_name$> porte ou transporte est {@condition invisible} avec lui."
 			]
 		},
 		{
 			"name": "Invisibility (Sprite)",
 			"entries": [
-				"<$title_short_name$> tourne magiquement {@condition invisible} jusqu'à ce qu'il attaque ou lance un sort, ou jusqu'à ce que sa concentration prenne fin (comme s'il se concentrait sur un sort). Tout équipement que <$titre_court_nom$> porte ou transporte est {@condition invisible} avec lui."
+				"<$title_short_name$> tourne magiquement {@condition invisible} jusqu'à ce qu'il attaque ou lance un sort, ou jusqu'à ce que son {@status concentration} se termine (comme si {@status concentration||concentrating} sur un sort). Tout équipement que <$short_name$> porte ou transporte est {@condition invisible} avec lui."
 			]
 		},
 		{
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Read Thoughts (Doppelganger)",
 			"entries": [
-				"<$title_short_name$> lit magiquement les pensées superficielles d'une créature située à moins de 60 pieds de lui. L'effet peut traverser les barrières, mais 3 pieds de bois ou de terre, 2 pieds de pierre, 2 pouces de métal ou une fine feuille de plomb le bloquent. Tant que la cible est à portée, <$short_name$> peut continuer à lire ses pensées, tant que la concentration de <$short_name$> n'est pas brisée (comme si elle se concentrait sur un sort). Pendant qu'il lit l'esprit de la cible, <$short_name$> a un avantage sur les tests de Sagesse ({@skill Insight}) et de Charisme ({@skill Deception}, {@skill Intimidation} et {@skill Persuasion}) contre la cible."
+				"<$title_short_name$> lit magiquement les pensées de surface d'une créature située à moins de 60 pieds de lui. L'effet peut traverser les barrières, mais 3 pieds de bois ou de terre, 2 pieds de pierre, 2 pouces de métal, ou une fine feuille de plomb le bloque. Tant que la cible est à portée, <$short_name$> peut continuer à lire ses pensées, tant que le {@status concentration} de <$short_name$> n'est pas brisé (comme si le {@status concentration||concentrating} d'un sort). Pendant qu'il lit les pensées de la cible, <$nom_court$> a l'avantage aux tests de Sagesse ({@skill Insight}) et de Charisme ({@skill Deception}, {@skill Intimidation}, et {@skill Persuasion}) contre la cible."
 			]
 		},
 		{

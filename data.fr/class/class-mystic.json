@@ -642,8 +642,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Certaines options nécessitent une concentration pour maintenir leurs effets. Cette exigence est notée par \"conc.\" après le coût en points psi de l'option. La mention \"conc.\" est suivie de la durée maximale de la concentration. Par exemple, si une option indique \"conc., 1 min.\", vous pouvez vous concentrer sur son effet pendant une minute au maximum.",
-								"Se concentrer sur une discipline suit les mêmes règles que se concentrer sur un sort. Cette règle signifie que vous ne pouvez pas vous concentrer sur un sort et une discipline en même temps, ni sur deux disciplines en même temps. Voir {@book chapter 10|PHB|10}, \"Lancer des sorts\", dans le Manuel du joueur pour savoir comment fonctionne la concentration."
+								"Certaines options nécessitent {@status concentration} pour maintenir leurs effets. Cette exigence est indiquée par la mention \"conc.\" après le coût en points psi de l'option. La mention \"conc.\" est suivie de la durée maximale du {@status concentration}. Par exemple, si une option indique \"conc., 1 min.\", vous pouvez vous concentrer sur son effet pendant 1 minute maximum.",
+								"La concentration sur une discipline suit les mêmes règles que le {@status concentration||concentrating} sur un sort. Cette règle signifie que vous ne pouvez pas vous concentrer sur un sort et une discipline en même temps, ni sur deux disciplines en même temps. Voir {@book chapter 10|PHB|10}, \"Lancer des sorts\", dans le Manuel du joueur pour savoir comment fonctionne {@status concentration}."
 							]
 						}
 					]
@@ -813,7 +813,7 @@
 			"level": 11,
 			"entries": [
 				"À partir du 11e niveau, votre maîtrise de l'énergie psionique vous permet de pousser votre esprit au-delà de ses limites normales. En tant qu'action, vous gagnez 9 points psi spéciaux que vous pouvez dépenser uniquement pour des disciplines dont l'utilisation nécessite une action ou une action bonus. Vous pouvez utiliser les 9 points pour une seule discipline, ou vous pouvez les répartir sur plusieurs disciplines. Vous ne pouvez pas également dépenser vos points psi normaux pour ces disciplines ; vous ne pouvez dépenser que les points spéciaux obtenus grâce à cette caractéristique. Lorsque vous terminez un long repos, vous perdez tous les points spéciaux que vous n'avez pas dépensés.",
-				"Si plus d'une des disciplines que vous activez avec ces points nécessitent une concentration, vous pouvez vous concentrer sur toutes. L'activation de l'une d'entre elles met fin à tout effet sur lequel vous étiez déjà concentré, et si vous commencez à vous concentrer sur un effet qui n'utilise pas ces points spéciaux, les disciplines sur lesquelles vous vous concentrez prennent fin.",
+				"Si plusieurs des disciplines que vous activez avec ces points nécessitent {@status concentration}, vous pouvez vous concentrer sur chacune d'entre elles. L'activation de l'une d'entre elles met fin à tout effet sur lequel vous étiez déjà {@status concentration||concentrating}, et si vous commencez {@status concentration||concentrating} sur un effet qui n'utilise pas ces points spéciaux, les disciplines sur lesquelles vous êtes {@status concentration||concentrating} prennent fin.",
 				"Au 15e niveau, le nombre de points psi que vous gagnez grâce à cette caractéristique passe à 11.",
 				"Vous disposez d'une utilisation de cette caractéristique, et vous récupérez toute utilisation dépensée avec un long repos. Vous gagnez une utilisation supplémentaire de cette caractéristique aux 13e, 15e et 17e niveaux."
 			]
@@ -1123,7 +1123,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"À partir du 3e niveau, vous pouvez concentrer votre esprit pour lire l'empreinte psionique laissée sur un objet. Si vous tenez un objet et vous concentrez sur lui pendant 10 minutes (comme si vous vous concentriez sur une discipline psionique), vous apprenez quelques faits de base à son sujet. Vous obtenez une image mentale du point de vue de l'objet, montrant la dernière créature à avoir tenu l'objet au cours des dernières 24 heures.",
+				"À partir du 3e niveau, vous pouvez concentrer votre esprit pour lire l'empreinte psionique laissée sur un objet. Si vous tenez un objet et vous concentrez sur lui pendant 10 minutes (comme si vous faisiez un {@status concentration||concentrating} sur une discipline psionique), vous apprenez quelques informations de base à son sujet. Vous obtenez une image mentale du point de vue de l'objet, montrant la dernière créature à avoir tenu l'objet au cours des dernières 24 heures.",
 				"Vous êtes également informé de tout événement survenu dans un rayon de 6 mètres autour de l'objet au cours de l'heure écoulée. Les événements que vous percevez se déroulent du point de vue de l'objet. Vous voyez et entendez ces événements comme si vous y étiez, mais vous ne pouvez pas utiliser vos autres sens.",
 				"De plus, vous pouvez intégrer un capteur psionique intangible dans l'objet. Pendant les 24 heures suivantes, vous pouvez utiliser une action pour connaître l'emplacement de l'objet par rapport à vous (sa distance et sa direction) et pour regarder les environs de l'objet de son point de vue comme si vous y étiez. Cette perception dure jusqu'au début de votre prochain tour.",
 				"Une fois que vous avez utilisé cette fonction, vous ne pouvez plus l'utiliser jusqu'à ce que vous ayez terminé un repos court ou long."

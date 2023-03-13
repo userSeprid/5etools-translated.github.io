@@ -893,7 +893,7 @@
 					"name": "Foment Confusion",
 					"entries": [
 						"Toute créature qui n'est pas un démon et qui commence son tour à moins de 30 pieds de l'alkilith doit réussir un jet de sauvegarde de Sagesse {@dc 18}, sinon elle entend un faible bourdonnement dans sa tête pendant un moment et a un désavantage sur son prochain jet d'attaque, jet de sauvegarde ou test de capacité.",
-						"Si le jet de sauvegarde contre Foment Confusion échoue par 5 ou plus, la créature est à la place soumise au sort {@spell confusion} pendant 1 minute (aucune concentration requise par l'alcilith). Tant qu'elle est sous l'effet de cette confusion, la créature est immunisée contre Foment Confusion."
+						"Si le jet de sauvegarde contre Foment Confusion échoue de 5 ou plus, la créature est soumise au sort {@spell confusion} pendant 1 minute (pas de {@status concentration} requis par l'alkilith). Tant qu'elle est sous l'effet de cette confusion, la créature est immunisée contre le sort Foment Confusion."
 					]
 				},
 				{
@@ -3704,8 +3704,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Le barghest fait une attaque de type morsure et une attaque de type",
-						"Attaque de griffe."
+						"Le barghest effectue une attaque de morsure et une attaque de griffes."
 					]
 				},
 				{
@@ -4213,7 +4212,7 @@
 				{
 					"name": "Creeping Darkness {@recharge}",
 					"entries": [
-						"L'abishai lance {@spell darkness} à un point situé dans un rayon de 120 pieds autour de lui, ne nécessitant aucune composante de sort ni concentration. La Sagesse est sa capacité de lanceur de sorts pour ce sort. Tant que le sort persiste, l'abishai peut déplacer la zone d'obscurité jusqu'à 60 pieds comme une action bonus."
+						"L'abishai lance {@spell darkness} à un point situé à moins de 120 pieds de lui, sans nécessiter de composantes de sort ou de {@status concentration}. La Sagesse est sa capacité de lanceur de sorts pour ce sort. Tant que le sort persiste, l'abishai peut déplacer la zone de ténèbres jusqu'à 60 pieds comme action bonus."
 					]
 				}
 			],
@@ -11730,7 +11729,7 @@
 				{
 					"name": "Shared Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à effectuer un jet de sauvegarde ou que sa concentration soit rompue (comme s'il se concentrait sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui. Lorsque le {@condition invisible} duergar est monté, sa monture est également {@condition invisible}. L'invisibilité prend fin prématurément sur la monture immédiatement après qu'elle ait attaqué."
+						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à faire un jet de sauvegarde ou que son {@status concentration} soit brisé (comme si le {@status concentration||concentrating} était sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui. Tant que le {@condition invisible} duergar est monté, sa monture est également {@condition invisible}. L'invisibilité prend fin prématurément sur la monture dès qu'elle attaque."
 					]
 				}
 			],
@@ -11863,7 +11862,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à effectuer un jet de sauvegarde ou que sa concentration soit rompue (comme s'il se concentrait sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
+						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à faire un jet de sauvegarde ou que son {@status concentration} soit brisé (comme si le {@status concentration||concentrating} était sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
 					]
 				},
 				{
@@ -12118,7 +12117,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à effectuer un jet de sauvegarde ou que sa concentration soit rompue (comme s'il se concentrait sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
+						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à faire un jet de sauvegarde ou que son {@status concentration} soit brisé (comme si le {@status concentration||concentrating} était sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -12256,7 +12255,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à effectuer un jet de sauvegarde ou que sa concentration soit rompue (comme s'il se concentrait sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
+						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à faire un jet de sauvegarde ou que son {@status concentration} soit brisé (comme si le {@status concentration||concentrating} était sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -12402,7 +12401,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à effectuer un jet de sauvegarde ou que sa concentration soit rompue (comme s'il se concentrait sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
+						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à faire un jet de sauvegarde ou que son {@status concentration} soit brisé (comme si le {@status concentration||concentrating} était sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -12545,7 +12544,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à effectuer un jet de sauvegarde ou que sa concentration soit rompue (comme s'il se concentrait sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
+						"Le duergar se transforme magiquement en {@condition invisible} pendant 1 heure maximum ou jusqu'à ce qu'il attaque, qu'il oblige une créature à faire un jet de sauvegarde ou que son {@status concentration} soit brisé (comme si le {@status concentration||concentrating} était sur un sort). Tout équipement que le duergar porte ou transporte est {@condition invisible} avec lui."
 					]
 				}
 			],
@@ -13192,7 +13191,7 @@
 				{
 					"name": "Break Concentration",
 					"entries": [
-						"Le cerveau aîné cible une créature dans un rayon de 120 pieds avec laquelle il a un lien psychique. Le cerveau aîné brise la concentration de la créature sur un sort qu'elle a lancé. La créature subit également 2 ({@damage 1d4}) de dégâts psychiques par niveau du sort."
+						"Le cerveau âgé prend pour cible une créature à moins de 120 pieds de lui avec laquelle il a un lien psychique. La cervelle de vieillard brise le {@status concentration} de la créature sur un sort qu'elle a lancé. La créature subit également 2 ({@damage 1d4}) dégâts psychiques par niveau du sort."
 					]
 				},
 				{
@@ -38594,7 +38593,7 @@
 					"name": "Invoke Nightmare (Recharges after a Short or Long Rest)",
 					"entries": [
 						"Le yuan-ti puise dans les cauchemars d'une créature qu'il peut voir dans un rayon de 60 pieds autour de lui et crée une manifestation illusoire et immobile de ses peurs les plus profondes, visible uniquement par cette créature.",
-						"La cible doit effectuer un jet de sauvegarde d'Intelligence {@dc 13}. En cas d'échec, la cible subit 22 ({@damage 4d10}) de dégâts psychiques et est {@condition frightened} de la manifestation, croyant qu'elle est réelle. Le yuan-ti doit se concentrer pour maintenir l'illusion (comme s'il se concentrait sur un sort), qui dure jusqu'à 1 minute et ne peut pas être blessée. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'illusion en cas de réussite ou subissant 11 ({@damage 2d10}) de dégâts psychiques en cas d'échec."
+						"La cible doit effectuer un jet de sauvegarde d'Intelligence {@dc 13}. En cas d'échec, la cible subit 22 ({@damage 4d10}) dégâts psychiques et est {@condition frightened} de la manifestation, croyant qu'elle est réelle. Le yuan-ti doit se concentrer pour maintenir l'illusion (comme s'il était {@status concentration||concentrating} sur un sort), qui dure jusqu'à 1 minute et ne peut être blessée. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'illusion en cas de réussite ou subissant 11 ({@damage 2d10}) dégâts psychiques en cas d'échec."
 					]
 				}
 			],
@@ -38969,7 +38968,7 @@
 				{
 					"name": "Earth-Shaking Movement",
 					"entries": [
-						"Après s'être déplacé d'au moins 10 pieds sur le sol, le zaratan envoie une onde de choc à travers le sol dans un cercle de 120 pieds de rayon centré sur lui-même. Cette zone devient {@quickref difficult terrain||3} pendant 1 minute. Chaque créature au sol qui se concentre doit réussir un jet de sauvegarde de Constitution {@dc 25} ou la concentration de la créature est brisée. L'onde de choc inflige 100 dégâts de tonnerre à toutes les structures en contact avec le sol dans la zone. Si une créature se trouve près d'une structure qui s'effondre, elle risque d'être ensevelie ; une créature se trouvant à une distance égale à la moitié de la hauteur de la structure doit réussir un jet de sauvegarde de {@dc 25} de Dextérité. En cas d'échec, la créature subit 17 ({@damage 5d6}) de dégâts de matraquage, est assommée {@condition prone} et est piégée dans les décombres. Une créature piégée est {@condition restrained}, et doit réussir un test de Force ({@skill Athletics}) comme action pour s'échapper. Une autre créature située à moins de 1,5 mètre de la créature ensevelie peut utiliser son action pour dégager les décombres et lui accorder l'avantage sur ce test. Si trois créatures utilisent leurs actions de cette manière, le test est automatiquement réussi. En cas de sauvegarde réussie, la créature subit deux fois moins de dégâts et ne tombe pas {@condition prone} ou ne se retrouve pas piégée."
+						"Après s'être déplacé d'au moins 10 pieds sur le sol, le zaratan envoie une onde de choc à travers le sol dans un cercle de 120 pieds de rayon centré sur lui-même. Cette zone devient {@quickref difficult terrain||3} pendant 1 minute. Chaque créature au sol qui est {@status concentration||concentrating} doit réussir un jet de sauvegarde de Constitution de {@dc 25} ou le {@status concentration} de la créature est brisé. L'onde de choc inflige 100 dégâts de tonnerre à toutes les structures en contact avec le sol dans la zone. Si une créature se trouve à proximité d'une structure qui s'effondre, elle risque d'être ensevelie ; une créature située à la moitié de la distance de la hauteur de la structure doit effectuer un jet de sauvegarde de Dextérité {@dc 25}. En cas de sauvegarde ratée, la créature subit 17 ({@damage 5d6}) points de dégâts de matraquage, est assommée {@condition prone} et se retrouve piégée dans les décombres. Une créature prise au piège est {@condition restrained}, et doit réussir un test de Force {@dc 20} {@skill Athletics} comme action pour s'échapper. Une autre créature située à moins de 5 pieds de la créature ensevelie peut utiliser son action pour dégager les décombres et accorder l'avantage sur le test. Si trois créatures utilisent leurs actions de cette manière, le test est automatiquement réussi. En cas de sauvegarde réussie, la créature subit deux fois moins de dégâts et ne tombe pas {@condition prone} ou n'est pas piégée."
 					]
 				}
 			],
