@@ -2709,7 +2709,7 @@
 					"items": [
 						"Le tue statistiche di gioco sono sostituite da quelle della bestia, ma mantieni il tuo allineamento, la tua personalità e i tuoi punteggi di Intelligenza, Saggezza e Carisma. Manterrai anche tutte le tue capacità di abilità e di tiro salvezza, oltre a guadagnare quelle della creatura. Se la creatura ha la tua stessa abilità e il bonus nel suo blocco di statistiche è più alto del tuo, usa il bonus della creatura invece del tuo. Se la creatura ha delle azioni leggendarie o di tana, non puoi usarle.",
 						"Quando ti trasformi, assumi i punti ferita e i dadi di attacco della bestia. Quando torni alla tua forma normale, ritorni al numero di punti ferita che avevi prima della trasformazione. Tuttavia, se ti trasformi come risultato di una caduta a 0 punti ferita, qualsiasi danno in eccesso viene riportato alla tua forma normale. Per esempio, se prendi 10 danni in forma animale e ti rimane solo 1 punto ferita, ti trasformi e prendi 9 danni. Finché il danno in eccesso non riduce la tua forma normale a 0 punti ferita, non vieni colpito {@condition unconscious}.",
-						"Non puoi lanciare incantesimi e la tua capacità di parlare o compiere qualsiasi azione che richieda le mani è limitata alle capacità della tua forma di bestia. Tuttavia, la trasformazione non interrompe la tua concentrazione su un incantesimo che hai già lanciato, né ti impedisce di compiere azioni che fanno parte di un incantesimo, come {@spell call lightning}, che hai già lanciato.",
+						"Non si possono lanciare incantesimi e la capacità di parlare o di compiere azioni che richiedono l'uso delle mani è limitata alle capacità della propria forma di bestia. Tuttavia, la trasformazione non interrompe il {@status concentration} su un incantesimo già lanciato, né impedisce di compiere azioni che fanno parte di un incantesimo, come il {@spell call lightning}, già lanciato.",
 						"Manterrai il beneficio di qualsiasi caratteristica della tua classe, razza o altra fonte e potrai usarla se la nuova forma è fisicamente in grado di farlo. Tuttavia, non puoi usare nessuno dei tuoi sensi speciali, come il {@sense darkvision}, a meno che anche la tua nuova forma non abbia quel senso.",
 						"Puoi scegliere se il tuo equipaggiamento cade a terra nel tuo spazio, si fonde nella tua nuova forma o viene indossato da essa. L'equipaggiamento indossato funziona normalmente, ma il DM decide se è pratico per la nuova forma indossare un pezzo di equipaggiamento, in base alla forma e alle dimensioni della creatura. Il tuo equipaggiamento non cambia dimensione o forma per adattarsi alla nuova forma, e qualsiasi equipaggiamento che la nuova forma non può indossare deve cadere a terra o fondersi con essa. L'equipaggiamento che si fonde con la forma non ha effetto finché non lasci la forma."
 					]
@@ -3797,7 +3797,7 @@
 					"type": "entries",
 					"name": "Dragon",
 					"entries": [
-						"Una costellazione di un drago saggio appare su di te. Quando effettui una prova di Intelligenza o di Saggezza o un tiro salvezza di Costituzione per mantenere la concentrazione su un incantesimo, puoi considerare un tiro di 9 o inferiore sul {@dice d20} come un 10."
+						"Una costellazione di un drago saggio appare su di voi. Quando si effettua una prova di Intelligenza o di Saggezza o un tiro salvezza di Costituzione per mantenere il {@status concentration} su un incantesimo, si può considerare un tiro di 9 o inferiore sul {@dice d20} come un lancio di 10.eady."
 					]
 				}
 			]
@@ -4118,7 +4118,7 @@
 						{
 							"type": "item",
 							"name": "Dragon",
-							"entry": "Una costellazione di un antico e saggio drago appare su di te. Quando effettui una prova di Intelligenza o di Saggezza o un tiro salvezza di Costituzione per mantenere la concentrazione su un incantesimo, puoi considerare un tiro di 9 o inferiore sul {@dice d20} come un 10."
+							"entry": "Su di voi appare la costellazione di un drago antico e saggio. Quando si effettua una prova di Intelligenza o di Saggezza o un tiro salvezza di Costituzione per mantenere il {@status concentration} su un incantesimo, si può considerare un tiro di 9 o inferiore sul {@dice d20} come un 10."
 						}
 					]
 				}
@@ -4874,7 +4874,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"A partire dal 14° livello, gli spiriti della natura con cui sei in comunione ti proteggono quando sei più indifeso. Se sei ridotto a 0 punti ferita o sei {@condition incapacitated} contro la tua volontà, puoi ottenere immediatamente i benefici di {@spell conjure animals} come se fosse lanciato con un incantesimo di 9° livello. Evoca quattro bestie a tua scelta con grado di sfida 2 o inferiore. Le bestie evocate appaiono entro 6 metri da te. Se non ricevono ordini da te, ti proteggono dai danni e attaccano i tuoi nemici. L'incantesimo dura per 1 ora, senza bisogno di concentrazione, o fino a quando non lo scioglierai (non è richiesta alcuna azione).",
+				"A partire dal 14° livello, gli spiriti della natura con cui siete in comunione vi proteggono quando siete più indifesi. Se venite ridotti a 0 punti ferita o subite {@condition incapacitated} contro la vostra volontà, potete ottenere immediatamente i benefici di {@spell conjure animals} come se fosse stato lanciato con uno slot di incantesimo di 9° livello. Evoca quattro bestie a scelta di grado di sfida 2 o inferiore. Le bestie evocate appaiono entro 6 metri da voi. Se non ricevono alcun comando da parte vostra, vi proteggono dai danni e attaccano i vostri nemici. L'incantesimo dura per 1 ora, senza richiedere {@status concentration}, o fino a quando non lo si elimina (non è richiesta alcuna azione).",
 				"Una volta che hai usato questa funzione, non puoi usarla di nuovo finché non finisci un lungo riposo."
 			]
 		},
@@ -5222,7 +5222,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"A partire dal 14° livello, gli spiriti della natura con cui sei in comunione ti proteggono quando sei più indifeso. Se sei ridotto a 0 punti ferita o sei {@condition incapacitated} contro la tua volontà, puoi ottenere immediatamente i benefici di {@spell conjure animals} come se fosse lanciato utilizzando uno slot incantesimo di 9° livello. Evoca quattro bestie a tua scelta di grado di sfida 2 o inferiore. Le bestie evocate appaiono entro 6 metri da te. Se non ricevono ordini da te, ti proteggono dai danni e attaccano i tuoi nemici. L'incantesimo dura per 1 ora, senza bisogno di concentrazione, o fino a quando non lo scioglierai (non è richiesta alcuna azione).",
+				"A partire dal 14° livello, gli spiriti della natura con cui siete in comunione vi proteggono quando siete più indifesi. Se venite ridotti a 0 punti ferita o subite {@condition incapacitated} contro la vostra volontà, potete ottenere immediatamente i benefici di {@spell conjure animals} come se fosse stato lanciato utilizzando uno slot per incantesimi di 9° livello. Evoca quattro bestie a scelta di grado di sfida 2 o inferiore. Le bestie evocate appaiono entro 6 metri da voi. Se non ricevono alcun comando da parte vostra, vi proteggono dai danni e attaccano i vostri nemici. L'incantesimo dura per 1 ora, senza richiedere alcuna azione {@status concentration}, o finché non lo si elimina (non è richiesta alcuna azione). Se non ricevono alcun comando da parte vostra, vi proteggono dai danni e attaccano i vostri nemici. L'incantesimo dura per 1 ora, senza richiedere {@status concentration}, o fino a quando non lo si elimina (non è richiesta alcuna azione).",
 				"Una volta che hai usato questa funzione, non puoi usarla di nuovo finché non finisci un lungo riposo."
 			]
 		}

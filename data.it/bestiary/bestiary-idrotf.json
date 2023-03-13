@@ -576,7 +576,7 @@
 				{
 					"name": "Blizzard Veil",
 					"entries": [
-						"Auril crea una tormenta magica in una sfera di 30 piedi di raggio centrata su se stessa. L'area all'interno della sfera è pesantemente oscurata e la sfera si muove con Auril. L'effetto dura finché Auril non scende a 0 punti ferita in questa forma, finché non sceglie di terminare l'effetto (nessuna azione richiesta) o finché la sua concentrazione non viene interrotta (come se si concentrasse su un incantesimo)."
+						"Auril crea una bufera magica in una sfera di 30 piedi di raggio centrata su di sé. L'area all'interno della sfera è fortemente oscurata e la sfera si muove con Auril. L'effetto dura finché Auril non scende a 0 punti ferita in questa forma, finché non sceglie di terminare l'effetto (non è richiesta alcuna azione) o finché il suo {@status concentration} non viene spezzato (come se {@status concentration||concentrating} su un incantesimo)."
 					]
 				}
 			],
@@ -632,6 +632,7 @@
 		{
 			"name": "Avarice",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 269,
 			"size": [
@@ -1713,6 +1714,7 @@
 		{
 			"name": "Dzaan's Simulacrum",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 270,
 			"size": [
@@ -4211,6 +4213,7 @@
 		{
 			"name": "Kingsport",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 243,
 			"size": [
@@ -4958,6 +4961,7 @@
 		{
 			"name": "Nass Lantomir's Ghost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 272,
 			"size": [
@@ -5140,6 +5144,7 @@
 		{
 			"name": "Prisoner 237",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 160,
 			"size": [
@@ -5740,6 +5745,7 @@
 		{
 			"name": "Spellix Romwod",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 144,
 			"size": [
@@ -6323,6 +6329,7 @@
 		{
 			"name": "Vellynne Harpell",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 273,
 			"size": [
@@ -6876,7 +6883,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Xardorok si trasforma magicamente {@condition invisible} finché non attacca, non lancia un incantesimo, non usa il suo Enlarge o la sua concentrazione non viene rotta (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che Xardorok indossa o porta con sé è {@condition invisible} con lui."
+						"Xardorok diventa magicamente {@condition invisible} finché non attacca, non lancia un incantesimo, non usa il suo Ingrandimento o il suo {@status concentration} viene spezzato (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi equipaggiamento che Xardorok indossa o porta con sé è {@condition invisible} con lui (come se {@status concentration} su un incantesimo)."
 					]
 				}
 			],

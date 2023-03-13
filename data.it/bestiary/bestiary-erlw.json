@@ -598,6 +598,7 @@
 		{
 			"name": "Corrin Delmaco",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 271,
 			"_copy": {
@@ -1341,6 +1342,7 @@
 		{
 			"name": "Garra",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 272,
 			"_copy": {
@@ -2763,7 +2765,7 @@
 					"name": "Spell Mimicry {@recharge 5}",
 					"entries": [
 						"L'incantesimo vivente crea una sfera di nebbia di 40 piedi di diametro entro 60 piedi da esso (la nebbia si espande intorno agli angoli). Quando una creatura entra nella nebbia per la prima volta in un turno o vi inizia il suo turno, deve effettuare un tiro salvezza di Costituzione {@dc 16}, subendo 22 ({@damage 5d8}) danni da veleno se fallisce il tiro salvezza, o la metà dei danni se riesce.",
-						"La nebbia si allontana di 3 metri dall'incantatore vivente all'inizio di ogni suo turno, rotolando lungo il terreno e attraverso le aperture. La nebbia dura per 10 minuti o finché la concentrazione dell'incantatore vivente non termina (come se si concentrasse su un incantesimo)."
+						"La nebbia si allontana di 3 metri dall'incantatore vivente all'inizio di ogni suo turno, rotolando lungo il terreno e attraverso le aperture. La nebbia dura per 10 minuti o finché non termina il {@status concentration} dell'incantesimo vivente (come se {@status concentration||concentrating} su un incantesimo)."
 					]
 				}
 			],
@@ -3787,7 +3789,7 @@
 				{
 					"name": "Master of Magic",
 					"entries": [
-						"Sul Khatesh ha un vantaggio nei tiri salvezza di Costituzione per mantenere la concentrazione."
+						"Sul Khatesh ha un vantaggio sui tiri salvezza di Costituzione da mantenere {@status concentration}."
 					]
 				}
 			],
@@ -3834,7 +3836,7 @@
 				{
 					"name": "Consume Magic (Costs 2 Actions)",
 					"entries": [
-						"Sul Khatesh prende di mira una creatura entro 120 piedi da lei che si sta concentrando su un incantesimo. Il bersaglio deve riuscire in un tiro salvezza di Costituzione {@dc 26} o la sua concentrazione sull'incantesimo viene interrotta, e Sul Khatesh guadagna 5 punti ferita temporanei per livello di quell'incantesimo."
+						"Sul Khatesh prende di mira una creatura entro 120 piedi da lei che è {@status concentration||concentrating} su un incantesimo. Il bersaglio deve riuscire in un tiro salvezza di Costituzione {@dc 26} o il suo {@status concentration} viene interrotto dall'incantesimo, e Sul Khatesh guadagna 5 punti ferita temporanei per ogni livello dell'incantesimo."
 					]
 				},
 				{

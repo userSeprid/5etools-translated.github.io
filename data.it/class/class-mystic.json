@@ -642,8 +642,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Alcune opzioni richiedono concentrazione per mantenere i loro effetti. Questo requisito è annotato con \"conc.\" dopo il costo del punto psi dell'opzione. La notazione \"conc.\" è seguita dalla durata massima della concentrazione. Per esempio, se un'opzione dice \"conc., 1 min.\", puoi concentrare il suo effetto per un massimo di 1 minuto.",
-								"La concentrazione su una disciplina segue le stesse regole della concentrazione su un incantesimo. Questa regola significa che non puoi concentrarti su un incantesimo e una disciplina allo stesso tempo, né puoi concentrarti su due discipline allo stesso tempo. Vedi {@book chapter 10|PHB|10}, \"Incantesimi\", nel Manuale del Giocatore per sapere come funziona la concentrazione."
+								"Alcune opzioni richiedono {@status concentration} per mantenere i loro effetti. Questo requisito è indicato con \"conc.\" dopo il costo in punti psi dell'opzione. La notazione \"conc.\" è seguita dalla durata massima del {@status concentration}. Ad esempio, se un'opzione dice \"conc., 1 min.\", si può concentrare il suo effetto per un massimo di 1 minuto.",
+								"La concentrazione su una disciplina segue le stesse regole del {@status concentration||concentrating} su un incantesimo. Questa regola significa che non ci si può concentrare su un incantesimo e una disciplina allo stesso tempo, né su due discipline allo stesso tempo. Per sapere come funziona {@status concentration}, vedere {@book chapter 10|PHB|10}, \"Incantesimi\", nel Manuale del Giocatore."
 							]
 						}
 					]
@@ -813,7 +813,7 @@
 			"level": 11,
 			"entries": [
 				"A partire dall'11° livello, la tua padronanza dell'energia psionica ti permette di spingere la tua mente oltre i suoi normali limiti. Come azione, guadagnerai 9 punti psi speciali che potrai spendere solo nelle discipline che richiedono un'azione o un'azione bonus per essere utilizzate. Puoi usare tutti e 9 i punti su una sola disciplina, oppure puoi distribuirli su più discipline. Non puoi anche spendere i tuoi normali punti psi su queste discipline; puoi spendere solo i punti speciali ottenuti da questa caratteristica. Quando finisci un riposo lungo, perdi tutti i punti speciali che non hai speso.",
-				"Se più di una delle discipline che attivi con questi punti richiede concentrazione, puoi concentrarti su tutte. L'attivazione di una di esse termina qualsiasi effetto su cui ti stavi già concentrando, e se inizi a concentrarti su un effetto che non utilizza questi punti speciali, terminano le discipline su cui ti stai concentrando.",
+				"Se più di una delle discipline attivate con questi punti richiede {@status concentration}, ci si può concentrare su tutte. L'attivazione di una di queste termina qualsiasi effetto su cui si stava già lavorando {@status concentration||concentrating} e se si inizia {@status concentration||concentrating} un effetto che non utilizza questi punti speciali, le discipline su cui si stava lavorando terminano {@status concentration||concentrating}.orks.inute.",
 				"Al 15° livello, il pool di punti psi che guadagni da questa caratteristica aumenta a 11.",
 				"Hai a disposizione un solo utilizzo di questa caratteristica, e potrai riguadagnare ogni utilizzo consumato con un riposo lungo. Otterrai un uso aggiuntivo di questa caratteristica al 13°, 15° e 17° livello."
 			]
@@ -1123,7 +1123,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"A partire dal 3° livello, puoi concentrare la tua mente per leggere l'impronta psionica lasciata su un oggetto. Se tieni in mano un oggetto e ti concentri su di esso per 10 minuti (come se ti concentrassi su una disciplina psionica), apprendi alcuni fatti fondamentali su di esso. Ottieni un'immagine mentale dal punto di vista dell'oggetto, che mostra l'ultima creatura che ha tenuto l'oggetto nelle ultime 24 ore.",
+				"A partire dal 3° livello, si può concentrare la mente per leggere l'impronta psionica lasciata su un oggetto. Se si tiene un oggetto e ci si concentra su di esso per 10 minuti (come se {@status concentration||concentrating} su una disciplina psionica), si apprendono alcune informazioni di base su di esso. Si ottiene un'immagine mentale dal punto di vista dell'oggetto, che mostra l'ultima creatura che ha tenuto l'oggetto nelle ultime 24 ore..orks.inute.",
 				"Apprendi anche tutti gli eventi che si sono verificati entro 6 metri dall'oggetto nell'ultima ora. Gli eventi che percepisci si svolgono dalla prospettiva dell'oggetto. Vedi e senti tali eventi come se fossi lì, ma non puoi usare gli altri sensi.",
 				"Inoltre, puoi incorporare un sensore psionico intangibile all'interno dell'oggetto. Per le successive 24 ore, puoi usare un'azione per conoscere la posizione dell'oggetto rispetto a te (la sua distanza e direzione) e per guardare i dintorni dell'oggetto dal suo punto di vista come se tu fossi lì. Questa percezione dura fino all'inizio del tuo prossimo turno.",
 				"Una volta che si utilizza questa funzione, non è possibile utilizzarla di nuovo fino a quando non si finisce un riposo breve o lungo."

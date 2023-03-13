@@ -1963,6 +1963,7 @@
 		{
 			"name": "Gloam",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 93,
 			"size": [
@@ -4168,7 +4169,7 @@
 				{
 					"name": "Twin Sight (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Nell'occhio della sua mente, un gemello Selenelion può vedere ciò che vede l'altro gemello per un massimo di 1 minuto, a condizione che entrambi i gemelli siano vivi e sullo stesso piano di esistenza. Mantenere questo effetto richiede concentrazione (come se si concentrasse su un incantesimo)."
+						"Nell'occhio della mente, un gemello Selenelion può vedere ciò che vede l'altro gemello per un massimo di 1 minuto, purché entrambi i gemelli siano vivi e sullo stesso piano di esistenza. Mantenere questo effetto richiede {@status concentration} (come se {@status concentration||concentrating} su un incantesimo)."
 					]
 				}
 			],
@@ -4274,7 +4275,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, Sir Talavar può girare magicamente {@condition invisible} fino alla fine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che Sir Talavar indossa o porta con sé è {@condition invisible} con lui."
+						"Come azione bonus, Sir Talavar può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che Sir Talavar indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -5010,6 +5011,7 @@
 		{
 			"name": "Thinnings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 15,
 			"_copy": {
@@ -5750,7 +5752,7 @@
 				{
 					"name": "Animate Corpse (1/Day)",
 					"entries": [
-						"Zargash prende di mira il cadavere senza vita di un umanoide che può vedere entro 30 piedi da lui e gli ordina di alzarsi, trasformandolo in uno zombie sotto il suo controllo. Lo zombie prende il suo turno immediatamente dopo Zargash. Animare lo zombie richiede la concentrazione di Zargash (come se si concentrasse su un incantesimo). Lo zombie ritorna ad essere un cadavere inanimato dopo 10 minuti, quando scende a 0 punti ferita o quando la concentrazione di Zargash finisce."
+						"Zargash prende di mira il cadavere senza vita di un umanoide che riesce a vedere nel raggio di 9 metri e gli ordina di alzarsi, trasformandolo in uno zombie sotto il suo controllo. Lo zombie passa il suo turno subito dopo Zargash. Animare lo zombi richiede il {@status concentration} di Zargash (come se {@status concentration||concentrating} su un incantesimo). Lo zombi torna a essere un cadavere inanimato dopo 10 minuti, quando scende a 0 punti ferita o quando termina il {@status concentration} di Zargash."
 					]
 				}
 			],

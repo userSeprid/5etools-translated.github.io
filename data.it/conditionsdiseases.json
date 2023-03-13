@@ -580,18 +580,18 @@
 			"srd": true,
 			"basicRules": true,
 			"entries": [
-				"Alcuni incantesimi richiedono di mantenere la concentrazione per mantenere attiva la loro magia. Se perdi la concentrazione, tale incantesimo termina.",
-				"Se un incantesimo deve essere mantenuto con la concentrazione, questo fatto appare nella sua voce Durata, e l'incantesimo specifica per quanto tempo puoi concentrarti su di esso. Si può terminare la concentrazione in qualsiasi momento (nessuna azione richiesta).",
-				"L'attività normale, come muoversi e attaccare, non interferisce con la concentrazione. I seguenti fattori possono rompere la concentrazione:",
+				"Alcuni incantesimi richiedono di mantenere il {@status concentration} per mantenere attiva la loro magia. Se si perde {@status concentration}, l'incantesimo termina.",
+				"Se un incantesimo deve essere mantenuto con {@status concentration}, questo fatto appare nella voce Durata e l'incantesimo specifica per quanto tempo ci si può concentrare su di esso. È possibile terminare {@status concentration} in qualsiasi momento (non è richiesta alcuna azione).",
+				"Le normali attività, come muoversi e attaccare, non interferiscono con {@status concentration}. I seguenti fattori possono interrompere il {@status concentration}:",
 				{
 					"type": "list",
 					"items": [
-						"{@b Casting another spell that requires concentration.} Perdi la concentrazione su un incantesimo se lanci un altro incantesimo che richiede concentrazione. Non puoi concentrarti su due incantesimi contemporaneamente.",
-						"{@b Taking damage.} Ogni volta che subisci danni mentre sei concentrato su un incantesimo, devi effettuare un tiro salvezza di Costituzione per mantenere la concentrazione. La CD è pari a 10 o alla metà del danno subito, qualunque sia il numero più alto. Se subisci danni da più fonti, come una freccia e un soffio di drago, dovrai effettuare un tiro salvezza separato per ogni fonte di danno.",
-						"{@b Being incapacitated or killed.} Perdi la concentrazione su un incantesimo se sei {@condition incapacitated} o se muori."
+						"{@b Casting another spell that requires concentration.} Si perde {@status concentration} su un incantesimo se si lancia un altro incantesimo che richiede {@status concentration}. Non è possibile concentrarsi su due incantesimi contemporaneamente.",
+						"{@b Taking damage.} Ogni volta che si subisce un danno mentre si è {@status concentration||concentrating} su un incantesimo, si deve effettuare un tiro salvezza di Costituzione per mantenere il proprio {@status concentration}. La DC è pari a 10 o alla metà dei danni subiti, a seconda di quale sia il numero più alto. Se si subiscono danni da più fonti, come una freccia e un soffio di drago, bisogna effettuare un tiro salvezza separato per ogni fonte di danno.",
+						"{@b Being incapacitated or killed.} Si perde {@status concentration} su un incantesimo se si è {@condition incapacitated} o se si muore."
 					]
 				},
-				"Il DM potrebbe anche decidere che certi fenomeni ambientali, come un'onda che si infrange su di te mentre sei su una nave in tempesta, richiedono che tu riesca a fare un tiro salvezza di Costituzione a Dc 10 per mantenere la concentrazione su un incantesimo."
+				"Il DM può anche decidere che alcuni fenomeni ambientali, come un'onda che si abbatte su di voi mentre siete su una nave in tempesta, richiedano di riuscire un tiro salvezza di Costituzione a DC 10 per mantenere {@status concentration} un incantesimo."
 			]
 		}
 	]

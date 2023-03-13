@@ -3000,7 +3000,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"Questo zaino contiene lo spirito di un {@creature air elemental} e un pallone di cuoio compatto. Mentre indossi lo zaino, puoi dispiegare il pallone come azione e ottenere l'effetto dell'incantesimo {@spell levitate} per 10 minuti, mirando a te stesso e non richiedendo concentrazione. In alternativa, puoi usare una reazione per dispiegare il pallone quando stai cadendo e ottenere l'effetto dell'incantesimo {@spell feather fall} per te stesso.",
+				"Questo zaino contiene lo spirito di un {@creature air elemental} e un pallone di pelle compatto. Mentre si indossa lo zaino, si può dispiegare il pallone come azione e ottenere l'effetto dell'incantesimo {@spell levitate} per 10 minuti, che ha come bersaglio se stessi e non richiede {@status concentration}. In alternativa, si può usare una reazione per dispiegare il pallone quando si sta cadendo e ottenere l'effetto dell'incantesimo {@spell feather fall} per se stessi.",
 				"Quando uno dei due incantesimi termina, il pallone si sgonfia lentamente mentre lo spirito elementale fugge e ritorna al Piano Elementale dell'Aria. Mentre il pallone si sgonfia, scendi dolcemente verso il suolo per un massimo di 60 piedi. Se sei ancora in aria alla fine di questa distanza, cadi se non hai altri mezzi per restare in alto.",
 				"Dopo la partenza dello spirito, la proprietà dello zaino è inutilizzabile a meno che lo zaino non venga ricaricato per 1 ora in un nodo elementale dell'aria, che lega un altro spirito allo zaino."
 			],
@@ -4177,7 +4177,7 @@
 					"type": "entries",
 					"entries": [
 						"Mentre impugni l'arma, sei consapevole della presenza di creature minuscole o più grandi entro 60 piedi da te che non siano costrutti o non morti. Inoltre non puoi essere {@condition charmed} o {@condition frightened}.",
-						"Blackrazor può lanciare l'incantesimo {@spell haste} su di te una volta al giorno. Decide quando lanciare l'incantesimo e mantiene la concentrazione su di esso in modo che tu non debba farlo."
+						"Blackrazor può lanciare l'incantesimo {@spell haste} su di voi una volta al giorno. Decide quando lanciare l'incantesimo e mantiene il {@status concentration} su di esso in modo che non dobbiate farlo voi."
 					]
 				},
 				{
@@ -7780,7 +7780,7 @@
 					"name": "Wealth of Information",
 					"entries": [
 						"Lo scopo principale del dipinto è osservare e ricordare le conversazioni. Negli ultimi decenni, il Ritratto di Constantori ha osservato silenziosamente innumerevoli conversazioni e ora possiede una quantità non quantificabile di informazioni, da cospirazioni criminali a password segrete. Il DM decide cosa il dipinto sa e cosa non sa.",
-						"Mentre si è sintonizzati con il dipinto, si può compiere un'azione per contattarlo telepaticamente a qualsiasi distanza, a patto che si sia sullo stesso piano di esistenza. Tuttavia, il dipinto non può contattarvi telepaticamente. Mantenere il contatto telepatico con il dipinto richiede la concentrazione (come se ci si concentrasse su un incantesimo)."
+						"Mentre si è in sintonia con il dipinto, si può compiere un'azione per contattarlo telepaticamente a qualsiasi distanza, a patto che si sia sullo stesso piano di esistenza. Tuttavia, il dipinto non può contattarvi telepaticamente. Mantenere il contatto telepatico con il dipinto richiede il vostro {@status concentration} (come se {@status concentration||concentrating} su un incantesimo)."
 					]
 				},
 				{
@@ -12776,7 +12776,7 @@
 					"type": "entries",
 					"name": "Aberrant Ally",
 					"entries": [
-						"Puoi evocare una creatura aberrante dal caos del multiverso per servirti. Questo funziona come l'incantesimo {@spell conjure celestial} (non richiede concentrazione), tranne che la creatura che evochi è un'aberrazione di grado di sfida 4 o inferiore. Una volta che hai usato questa caratteristica dell'ingranaggio lontano, non può essere usata di nuovo fino all'alba successiva."
+						"Potete evocare una creatura aberrante dal caos del multiverso per servirvi. Funziona come l'incantesimo {@spell conjure celestial} (non è richiesto il {@status concentration}), ma la creatura evocata è un'aberrazione di grado di sfida 4 o inferiore. Una volta utilizzata questa caratteristica dell'ingranaggio lontano, non può essere usata di nuovo fino all'alba successiva."
 					]
 				},
 				{
@@ -12898,7 +12898,7 @@
 			],
 			"entries": [
 				"Questo caldo cristallo luccica con i colori del tramonto del cielo del Feywild ed evoca sussurri di memoria emotiva. Come azione, puoi attaccare il frammento a un oggetto minuscolo (come un'arma o un gioiello) o staccarlo. Cade se la tua sintonia con esso termina. Puoi usare il frammento come fulcro dell'incantesimo mentre lo tieni in mano o lo indossi.",
-				"Quando usi un'opzione di Metamagia su un incantesimo mentre stai tenendo o indossando il frammento, puoi tirare sulla tabella {@table Wild Magic Surge|PHB} nel {@book Player's Handbook|PHB}. Se il risultato è un incantesimo, è troppo selvaggio per essere influenzato dalla tua Metamagia, e se normalmente richiede concentrazione, in questo caso non richiede concentrazione; l'incantesimo dura per tutta la sua durata.",
+				"Quando si usa un'opzione di Metamagia su un incantesimo mentre si tiene o si indossa il frammento, si può tirare sulla tabella {@table Wild Magic Surge|PHB} nel {@book Player's Handbook|PHB}. Se il risultato è un incantesimo, è troppo selvaggio per essere influenzato dalla Metamagia, e se normalmente richiede {@status concentration}, in questo caso non richiede {@status concentration}; l'incantesimo dura per tutta la sua durata.",
 				"Se non hai l'Origine Magica Selvaggia Stregonesca, una volta che questa proprietà viene usata per tirare sulla tabella {@table Wild Magic Surge|PHB}, non può essere usata di nuovo fino all'alba successiva."
 			],
 			"hasFluffImages": true
@@ -13836,7 +13836,7 @@
 			"entries": [
 				"La funzione di questa sedia ornata è quella di spingere e manovrare una cittadella volante su cui è stata installata. La sedia ha CA 15, 18 punti ferita e immunità ai danni da veleno e psichici. Si distrugge se viene ridotta a 0 punti ferita.",
 				"La sensazione di essere in sintonia con un elmo volante della cittadella è simile all'effetto di spilli e aghi che si prova quando si addormenta un braccio o una gamba, ma non così intenso.",
-				"Quando si è sintonizzati con un elmo della cittadella volante e si è seduti su di esso, si ottengono le seguenti capacità per tutto il tempo in cui si mantiene la concentrazione (come se ci si concentrasse su un incantesimo):",
+				"Mentre si è sintonizzati con un elmo della cittadella volante e si è seduti su di esso, si ottengono le seguenti capacità per tutto il tempo in cui si mantiene il {@status concentration} (come se il {@status concentration||concentrating} fosse un incantesimo):",
 				{
 					"type": "list",
 					"items": [
@@ -13845,7 +13845,7 @@
 						"In qualsiasi momento, si può vedere e sentire dal punto più alto all'esterno della cittadella come se ci si trovasse in quel luogo."
 					]
 				},
-				"Se nessuna creatura sintonizzata con il timone mantiene la concentrazione, la cittadella rimane immobile nel suo spazio.",
+				"Se nessuna creatura sintonizzata con l'elmo si mantiene {@status concentration}, la cittadella rimane immobile nel suo spazio.",
 				{
 					"type": "entries",
 					"name": "Transfer Attunement",
@@ -16013,7 +16013,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Mentre indossi questo elmo, puoi usare un'azione per lanciare l'incantesimo {@spell detect thoughts} (tiro salvezza DC 13) da esso. Finché si mantiene la concentrazione sull'incantesimo, è possibile utilizzare un'azione bonus per inviare un messaggio telepatico a una creatura su cui si è concentrati. Essa può rispondere - usando un'azione bonus per farlo - mentre la tua concentrazione su di essa continua.",
+				"Mentre si indossa questo elmo, si può usare un'azione per lanciare l'incantesimo {@spell detect thoughts} (tiro salvezza DC 13) da esso. Finché si mantiene il {@status concentration} sull'incantesimo, si può usare un'azione bonus per inviare un messaggio telepatico a una creatura su cui si è concentrati. La creatura può rispondere - utilizzando un'azione bonus per farlo - mentre la concentrazione su di essa continua.",
 				"Mentre ti concentri su una creatura con {@spell detect thoughts}, puoi usare un'azione per lanciare l'incantesimo {@spell suggestion} (tiro salvezza DC 13) del timone su quella creatura. Una volta usata, la proprietà di suggestione non può essere usata di nuovo fino all'alba successiva."
 			],
 			"optionalfeatures": [
@@ -20849,7 +20849,7 @@
 					"type": "entries",
 					"name": "Enduring Vision",
 					"entries": [
-						"Mentre si tiene il mazzo, si riesce automaticamente a superare i tiri salvezza di Costituzione effettuati per mantenere la concentrazione sugli incantesimi di divinazione."
+						"Mentre si tiene il mazzo, si riesce automaticamente a superare i tiri salvezza di Costituzione effettuati per mantenere il proprio {@status concentration} sugli incantesimi di divinazione."
 					]
 				},
 				{
@@ -25786,7 +25786,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Quando bevi questa pozione, ottieni l'effetto \"ridurre\" dell'incantesimo {@spell enlarge/reduce} per {@dice 1d4} ore (nessuna concentrazione richiesta). Il rosso nel liquido della pozione si contrae continuamente fino a diventare una piccola perla e poi si espande per colorare il liquido chiaro intorno ad essa. Scuotendo la bottiglia non si interrompe questo processo."
+				"Quando si beve questa pozione, si ottiene l'effetto \"ridurre\" dell'incantesimo {@spell enlarge/reduce} per {@dice 1d4} ore (non è necessario {@status concentration}). Il rosso contenuto nel liquido della pozione si contrae continuamente fino a diventare una piccola perla e poi si espande per colorare il liquido chiaro che la circonda. Scuotere la bottiglia non interrompe questo processo."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -25923,7 +25923,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Quando bevi questa pozione, ottieni l'effetto dell'incantesimo {@spell gaseous form} per 1 ora (non è richiesta alcuna concentrazione) o fino a quando non termini l'effetto come azione bonus. Il contenitore di questa pozione sembra contenere nebbia che si muove e si riversa come l'acqua."
+				"Quando si beve questa pozione, si ottiene l'effetto dell'incantesimo {@spell gaseous form} per 1 ora (non è richiesto il {@status concentration}) o finché non si termina l'effetto come azione bonus. Il contenitore di questa pozione sembra contenere nebbia che si muove e si riversa come acqua."
 			],
 			"attachedSpells": [
 				"gaseous form"
@@ -25969,7 +25969,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"Quando bevi questa pozione, ottieni l'effetto \"ingrandimento\" dell'incantesimo {@spell enlarge/reduce} per {@dice 1d4} ore (nessuna concentrazione richiesta). Il rosso nel liquido della pozione si espande continuamente da una piccola perla fino a colorare il liquido chiaro intorno ad essa e poi si contrae. Scuotendo la bottiglia non si interrompe questo processo."
+				"Quando si beve questa pozione, si ottiene l'effetto \"ingrandire\" dell'incantesimo {@spell enlarge/reduce} per {@dice 1d4} ore (non è necessario {@status concentration}). Il rosso contenuto nel liquido della pozione si espande continuamente da una minuscola perlina fino a colorare il liquido chiaro intorno ad essa e poi si contrae. Scuotere la bottiglia non interrompe questo processo."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -26010,7 +26010,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Per 1 ora dopo averlo bevuto, guadagni 10 punti ferita temporanei che durano per 1 ora. Per la stessa durata, sei sotto l'effetto dell'incantesimo {@spell bless} (non è necessaria la concentrazione). Questa pozione blu bolle e vaporizza come se stesse bollendo."
+				"Per 1 ora dopo averla bevuta, si guadagnano 10 punti ferita temporanei che durano per 1 ora. Per la stessa durata, si è sotto l'effetto dell'incantesimo {@spell bless} (non è richiesto il {@status concentration}). Questa pozione blu bolle e vaporizza come se stesse bollendo."
 			],
 			"attachedSpells": [
 				"bless"
@@ -26134,7 +26134,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Quando bevi una pozione di controllo mentale, puoi lanciare un incantesimo di dominio (tiro salvezza DC 15) su una specifica creatura se lo fai prima della fine del tuo prossimo turno. Se non lo fai, la pozione viene sprecata.",
-				"Una pozione di controllo mentale produce l'effetto di un incantesimo {@spell dominate beast}. Se il tiro salvezza iniziale del bersaglio fallisce, l'effetto dura per 1 ora, senza che tu debba concentrarti. La creatura {@condition charmed} ha svantaggio su nuovi tiri salvezza per interrompere l'effetto durante questo periodo."
+				"Una pozione di controllo mentale produce l'effetto di un incantesimo {@spell dominate beast}. Se il tiro salvezza iniziale del bersaglio fallisce, l'effetto dura per 1 ora, senza bisogno di {@status concentration} da parte vostra. La creatura {@condition charmed} ha svantaggio sui nuovi tiri salvezza per interrompere l'effetto durante questo periodo."
 			],
 			"attachedSpells": [
 				"dominate beast"
@@ -26148,7 +26148,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Quando bevi una pozione di controllo mentale, puoi lanciare un incantesimo di dominio (tiro salvezza DC 15) su una specifica creatura se lo fai prima della fine del tuo prossimo turno. Se non lo fai, la pozione viene sprecata.",
-				"Una pozione di controllo mentale produce l'effetto di un incantesimo {@spell dominate person}. Se il tiro salvezza iniziale del bersaglio fallisce, l'effetto dura per 1 ora, senza che tu debba concentrarti. La creatura {@condition charmed} ha svantaggio su nuovi tiri salvezza per interrompere l'effetto durante questo periodo."
+				"Una pozione di controllo mentale produce l'effetto di un incantesimo {@spell dominate person}. Se il tiro salvezza iniziale del bersaglio fallisce, l'effetto dura per 1 ora, senza bisogno di {@status concentration} da parte vostra. La creatura {@condition charmed} ha svantaggio sui nuovi tiri salvezza per interrompere l'effetto durante questo periodo."
 			],
 			"attachedSpells": [
 				"dominate person"
@@ -26162,7 +26162,7 @@
 			"rarity": "very rare",
 			"entries": [
 				"Quando bevi una pozione di controllo mentale, puoi lanciare un incantesimo di dominio (tiro salvezza DC 15) su una specifica creatura se lo fai prima della fine del tuo prossimo turno. Se non lo fai, la pozione viene sprecata.",
-				"Una pozione di controllo mentale produce l'effetto di un incantesimo {@spell dominate monster}. Se il tiro salvezza iniziale del bersaglio fallisce, l'effetto dura per 1 ora, senza che tu debba concentrarti. La creatura {@condition charmed} ha svantaggio su nuovi tiri salvezza per interrompere l'effetto durante questo periodo."
+				"Una pozione di controllo mentale produce l'effetto di un incantesimo {@spell dominate monster}. Se il tiro salvezza iniziale del bersaglio fallisce, l'effetto dura per 1 ora, senza bisogno di {@status concentration} da parte vostra. La creatura {@condition charmed} ha svantaggio sui nuovi tiri salvezza per interrompere l'effetto durante questo periodo."
 			],
 			"attachedSpells": [
 				"dominate monster"
@@ -26288,7 +26288,7 @@
 			"tier": "minor",
 			"rarity": "very rare",
 			"entries": [
-				"Quando bevi questa pozione, ottieni l'effetto dell'incantesimo {@spell haste} per 1 minuto (non è richiesta concentrazione). Il fluido giallo della pozione è striato di nero e vortica da solo."
+				"Quando si beve questa pozione, si ottiene l'effetto dell'incantesimo {@spell haste} per 1 minuto (non è richiesto il {@status concentration}). Il fluido giallo della pozione è striato di nero e si muove da solo."
 			],
 			"attachedSpells": [
 				"haste"
@@ -27708,7 +27708,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"entries": [
-				"Mentre indossi questo anello, puoi pronunciare la sua parola di comando come azione per evocare un particolare {@creature djinni} dal Piano Elementale dell'Aria. Il {@creature djinni} appare in uno spazio non occupato a tua scelta entro 120 piedi da te. Rimane per tutto il tempo in cui ti concentri (come se ti concentrassi su un incantesimo), fino a un massimo di 1 ora, o fino a quando non scende a 0 punti ferita. Poi ritorna al suo piano d'origine.",
+				"Quando si indossa questo anello, si può pronunciare la sua parola di comando come azione per evocare un particolare {@creature djinni} dal Piano Elementale dell'Aria. Il {@creature djinni} appare in uno spazio non occupato a vostra scelta entro 120 piedi da voi. Rimane finché ci si concentra (come se si {@status concentration||concentrating} su un incantesimo), fino a un massimo di 1 ora, o finché non scende a 0 punti ferita. A quel punto ritorna al suo piano d'origine.",
 				"Mentre viene evocato, il {@creature djinni} è amichevole con te e i tuoi compagni. Obbedisce a qualsiasi comando tu gli dia, indipendentemente dalla lingua che usi. Se non riesci a impartirgli un comando, il {@creature djinni} si difende dagli attacchi ma non compie altre azioni.",
 				"Dopo che il {@creature djinni} se ne va, non può essere evocato di nuovo per 24 ore, e l'anello diventa non magico se il {@creature djinni} muore."
 			],
@@ -28006,7 +28006,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"Questa fascia di ferro assomiglia a un teschio ed è fredda al tatto. Ha 3 cariche e recupera {@dice 1d3} le cariche consumate ogni giorno all'alba. Come azione mentre indossi l'anello, puoi spendere 1 delle sue cariche per lanciare l'incantesimo {@spell fog cloud} da esso, con le seguenti modifiche: la nuvola è centrata su di te quando appare per la prima volta e l'incantesimo dura 1 minuto (non è richiesta concentrazione)."
+				"Questa fascia di ferro assomiglia a un teschio ed è fredda al tatto. Ha 3 cariche e recupera {@dice 1d3} le cariche spese ogni giorno all'alba. Come azione mentre si indossa l'anello, si può spendere 1 delle sue cariche per lanciare l'incantesimo {@spell fog cloud} da esso, con le seguenti modifiche: la nube è centrata su di voi quando appare per la prima volta e l'incantesimo dura 1 minuto (non è richiesto {@status concentration})."
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -28192,7 +28192,7 @@
 					"type": "entries",
 					"entries": [
 						"Puoi spendere 2 cariche come azione per creare da una a quattro sfere di fulmini di 3 piedi di diametro. Più sfere crei, meno potente è ogni singola sfera.",
-						"Ogni sfera appare in uno spazio non occupato che puoi vedere entro 120 piedi da te. Le sfere durano per tutto il tempo in cui ti concentri (come se ti concentrassi su un incantesimo), fino a 1 minuto. Ogni sfera emette una luce fioca in un raggio di 30 piedi.",
+						"Ogni sfera appare in uno spazio non occupato che si può vedere nel raggio di 120 piedi. Le sfere durano per tutto il tempo in cui ci si concentra (come se {@status concentration||concentrating} su un incantesimo), fino a 1 minuto. Ogni sfera diffonde una luce fioca in un raggio di 9 metri.",
 						"Come azione bonus, puoi spostare ogni sfera fino a 30 piedi, ma non più lontano di 120 piedi da te. Quando una creatura diversa da te si trova a meno di 5 piedi da una sfera, la sfera scarica un fulmine su quella creatura e scompare. Quella creatura deve effettuare un tiro salvezza di Destrezza DC 15. Se il tiro salvezza viene fallito, la creatura subisce danni da fulmine in base al numero di sfere che hai creato. (4 sfere = {@dice 2d4}, 3 sfere = {@dice 2d6}, 2 sfere = {@dice 5d4}, 1 sfera = {@dice 4d12})"
 					]
 				},
@@ -28881,7 +28881,9 @@
 			"source": "DMG",
 			"page": 196,
 			"srd": true,
+			"baseItem": "mace|phb",
 			"type": "RD",
+			"typeAlt": "M",
 			"tier": "major",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30809,7 +30811,7 @@
 							"items": [
 								"Lo scudo ha un'Intelligenza di 22, una Saggezza di 18 e un Carisma di 24, così come l'udito e {@sense truesight} una portata di 120 piedi.",
 								"Lo scudo può parlare, leggere e capire il comune e l'infernale, e può comunicare telepaticamente con qualsiasi creatura che può percepire entro 120 piedi da esso. La sua voce è un sussurro profondo e vuoto.",
-								"Lo scudo ha 3 cariche. Puoi usare un'azione per spendere 1 carica per lanciare {@spell fireball} o 2 cariche per lanciare {@spell wall of fire} dallo scudo (tiro salvezza DC 21 per ciascuno). L'incantesimo {@spell wall of fire} dura 1 minuto (non è richiesta concentrazione). Lo scudo recupera tutte le cariche consumate ogni giorno all'alba.",
+								"Lo scudo ha 3 cariche. Si può usare un'azione per spendere 1 carica per lanciare {@spell fireball} o 2 cariche per lanciare {@spell wall of fire} dallo scudo (tiro salvezza DC 21 per ciascuno). L'incantesimo {@spell wall of fire} dura 1 minuto (non è richiesto il {@status concentration}). Lo scudo recupera tutte le cariche spese ogni giorno all'alba.",
 								"In qualsiasi momento durante il tuo turno, lo scudo può scegliere di irradiare un'aura di terrore per 1 minuto. Qualsiasi creatura ostile a te che inizi il suo turno entro un raggio di 6 metri dallo scudo deve effettuare un tiro salvezza di Saggezza di DC 18. Se il tiro salvezza è fallito, la creatura è {@condition frightened} fino all'inizio del suo prossimo turno. Con un tiro salvezza fallito, la creatura è {@condition frightened} fino all'inizio del suo prossimo turno. Con un tiro salvezza riuscito, la creatura è immune a questo potere dello scudo per le prossime 24 ore. Una volta che lo scudo usa questo potere, non può usarlo di nuovo fino all'alba successiva."
 							]
 						}
@@ -30872,7 +30874,7 @@
 					"type": "entries",
 					"name": "Bane",
 					"entries": [
-						"Puoi lanciare l'incantesimo {@spell bane} dallo scudo (tiro salvezza DC 17). L'incantesimo non richiede concentrazione e dura 1 minuto. Una volta lanciato l'incantesimo dallo scudo, non puoi farlo di nuovo finché non finisci un riposo breve o lungo."
+						"Si può lanciare l'incantesimo {@spell bane} dallo scudo (tiro salvezza DC 17). L'incantesimo non richiede {@status concentration} e dura 1 minuto. Una volta lanciato l'incantesimo dallo scudo, non è possibile farlo di nuovo fino al termine di un riposo breve o lungo."
 					]
 				},
 				{
@@ -32448,7 +32450,7 @@
 			"entries": [
 				"La funzione di questa sedia ornata è quella di spingere e manovrare una nave su cui è stata installata attraverso lo spazio e l'aria. Può anche spingere e manovrare una nave sull'acqua o sott'acqua, a condizione che la nave sia costruita per questo tipo di viaggio. La nave in questione deve pesare almeno 1 tonnellata.",
 				"La sensazione di essere in sintonia con un elmo incantatore è simile all'effetto di spilli e aghi che si prova quando si addormenta un braccio o una gamba, ma non è altrettanto dolorosa.",
-				"Quando si è sintonizzati con un elmo incantatore e si è seduti su di esso, si ottengono le seguenti capacità per tutto il tempo in cui si mantiene la concentrazione (come se ci si concentrasse su un incantesimo):",
+				"Quando si è sintonizzati con un elmo incantatore e si è seduti al suo interno, si ottengono le seguenti capacità per tutto il tempo in cui si mantiene il {@status concentration} (come se il {@status concentration||concentrating} fosse su un incantesimo):",
 				{
 					"type": "list",
 					"items": [
@@ -32489,7 +32491,7 @@
 			"wondrous": true,
 			"entries": [
 				"Questo lucido coccio di drago di Eberron sta nella mano e immagazzina informazioni simili a un libro. Il frammento può contenere l'equivalente di un libro che non supera le 320 pagine. Un frammento può essere creato vuoto o già riempito di informazioni. Quando il frammento viene creato, il creatore può impostare una passphrase che deve essere pronunciata per accedere alle informazioni memorizzate all'interno.",
-				"Mentre si tiene il frammento, si può usare un'azione per aprire la propria mente al frammento, vedendone il contenuto nella propria mente. Nei turni successivi, leggere il testo o scrivere nuovo testo sulle \"pagine\" bianche del frammento richiede concentrazione (come se ci si concentrasse su un incantesimo) e richiede lo stesso tempo che si impiega per leggere e scrivere normalmente. Pensando a una particolare frase o argomento si viene indirizzati alla prima sezione del frammento che lo tratta.",
+				"Mentre si tiene il frammento, si può usare un'azione per aprire la mente al frammento, vedendone il contenuto nella propria mente. Nei round successivi, leggere il testo o scriverne di nuovo su \"pagine\" vuote del frammento richiede {@status concentration} (come se {@status concentration||concentrating} fosse un incantesimo) e richiede lo stesso tempo che si impiega a leggere e scrivere normalmente. Pensando a una frase o a un argomento particolare, si va alla prima sezione del frammento che lo tratta.",
 				"Un mago può usare un frammento di incantesimo come un libro di incantesimi, con il solito costo in oro e tempo per \"incidere\" un incantesimo nel frammento."
 			]
 		},
@@ -35874,7 +35876,7 @@
 					"entries": [
 						"Le grandi dimensioni della Macchina Infernale la rendono in gran parte immobile. Per fare un uso continuo della macchina (ad esempio durante un'avventura), essa può essere collegata al suo utilizzatore sintonizzato da un filo d'argento, una scorta del quale può sempre essere prodotta dai meccanismi interni della macchina. Questo filo d'argento ha la stessa natura generale della corda argentea di un incantesimo {@spell astral projection}, che si collega al corpo dell'utente e si trascina dietro di lui. Quando è così attaccato, il filo diventa {@condition invisible}, astrale, e si estende per una lunghezza praticamente infinita.",
 						"Finché il filo rimane intatto, l'utente sintonizzato può fare pieno uso dei poteri della Macchina Infernale, con i loro effetti centrati sull'utente. Se il filo viene tagliato - cosa che può accadere solo quando un effetto dichiara specificamente che può tagliare il cavo argenteo di un {@spell astral projection} - l'utente subisce un'improvvisa esplosione di feedback dalla macchina che lo uccide istantaneamente.",
-						"Qualsiasi effetto della Macchina Infernale che richieda concentrazione può essere concentrato da un utente remoto. Gli effetti della Macchina Infernale hanno una DC di tiro salvezza di 14 o la DC di tiro salvezza dell'utente sintonizzato, se superiore."
+						"Qualsiasi effetto della Macchina Infernale che richiede {@status concentration} può essere concentrato da un utente remoto. Gli effetti della Macchina Infernale hanno una D.C. di tiro di incantesimi pari a 14 o alla D.C. di tiro di incantesimi dell'utente sintonizzato, a seconda di quale sia più alta."
 					]
 				},
 				{
@@ -40948,6 +40950,8 @@
 			"name": "Witchlight Vane",
 			"source": "WBtW",
 			"page": 27,
+			"baseItem": "mace|phb",
+			"typeAlt": "M",
 			"rarity": "legendary",
 			"reqAttune": "by a mister light or his handpicked successor",
 			"sentient": true,

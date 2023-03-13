@@ -1513,7 +1513,7 @@
 		{
 			"name": "Create Whirlwind (Djinni)",
 			"entries": [
-				"Un cilindro d'aria vorticosa di 5 piedi di raggio e di 30 piedi di altezza si forma magicamente su un punto che <$nome_corto$> può vedere entro 120 piedi da esso. Il vortice dura finché <$nome_corto$> mantiene la concentrazione (come se si concentrasse su un incantesimo). Qualsiasi creatura, eccetto <$nome_corto$>, che entra nel vortice deve riuscire a superare un tiro salvezza con DC <$dc__str$> o esserne colpita {@condition restrained}. <$titolo_nome_breve$> può muovere il turbine fino a 60 piedi come azione, e le creature {@condition restrained} dal turbine si muovono con esso. Il turbine termina se <$nome_corto$> lo perde di vista.",
+				"Un cilindro d'aria vorticosa di 5 piedi di raggio e di 30 piedi di altezza si forma magicamente su un punto che <$nome_corto$> può vedere entro 120 piedi da esso. Il vortice dura finché <$nome_corto$> mantiene {@status concentration} (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi creatura, eccetto <$nome_corto$>, che entra nel vortice deve riuscire a superare un tiro salvezza con DC <$dc__str$> o esserne colpita {@condition restrained}. <$titolo_nome_breve$> può muovere il turbine fino a 60 piedi come azione, e le creature {@condition restrained} dal turbine si muovono con esso. Il turbine termina se <$nome_corto$> lo perde di vista.",
 				"Una creatura può usare la sua azione per liberare una creatura {@condition restrained} dal turbine, inclusa se stessa, riuscendo a superare una prova di Forza a CC <$dc__str$>. Se la prova ha successo, la creatura non è più {@condition restrained} e si sposta nello spazio più vicino al di fuori del vortice."
 			]
 		},
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Darkness Aura (Darkmantle)",
 			"entries": [
-				"Un raggio di 15 piedi di oscurità magica si estende da <$nome_breve$>, si muove con lui e si diffonde intorno agli angoli. L'oscurità dura finché <$nome_corto$> mantiene la concentrazione, fino a 10 minuti (come se si concentrasse su un incantesimo). La scurovisione non può penetrare questa oscurità e nessuna luce naturale può illuminarla. Se una parte dell'oscurità si sovrappone a un'area di luce creata da un incantesimo di 2° livello o inferiore, l'incantesimo che ha creato la luce viene annullato."
+				"Un raggio di 15 piedi di oscurità magica si estende da <$nome_corto$>, si muove con esso e si diffonde intorno agli angoli. L'oscurità dura finché <$nome_corto$> mantiene il {@status concentration}, fino a 10 minuti (come se {@status concentration||concentrating} fosse un incantesimo). La scurovisione non può penetrare questa oscurità e nessuna luce naturale può illuminarla. Se una parte dell'oscurità si sovrappone a un'area di luce creata da un incantesimo di 2° livello o inferiore, l'incantesimo che ha creato la luce viene annullato.Vortice fino a 60 piedi come azione, e le creature (%3%) dal vortice si muovono con esso. Il turbine termina se <$nome_corto$> lo perde di vista."
 			]
 		},
 		{
@@ -1709,19 +1709,19 @@
 		{
 			"name": "Invisibility (Duergar)",
 			"entries": [
-				"<$titolo_nome_breve$> diventa magicamente {@condition invisible} finché non attacca, non lancia un incantesimo o non usa l'Ingrandimento, o finché la sua concentrazione non viene interrotta, fino a 1 ora (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che <$nome_corto$> indossa o porta con sé diventa {@condition invisible} con lui."
+				"<$titolo_nome_breve$> diventa magicamente {@condition invisible} finché non attacca, lancia un incantesimo o usa l'Ingrandimento, o finché il suo {@status concentration} non viene spezzato, fino a 1 ora (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi equipaggiamento che <$nome_breve$> indossa o porta con sé viene {@condition invisible} con esso. da un incantesimo di 2° livello o inferiore, l'incantesimo che crea la luce viene dissipato.Vortice fino a 60 piedi come azione, e le creature {@condition invisible} dal vortice si muovono con esso. Il turbine termina se <$nome_corto$> lo perde di vista."
 			]
 		},
 		{
 			"name": "Invisibility (Quasit)",
 			"entries": [
-				"<$titolo_nome_breve$> diventa magicamente {@condition invisible} finché non attacca o usa Spavento, o finché la sua concentrazione non termina (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che <$nome_breve$> indossa o porta con sé diventa {@condition invisible} con esso."
+				"<$titolo_breve_nome$> gira magicamente {@condition invisible} finché non attacca o usa Spavento, o finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi equipaggiamento che <$nome_corto$> indossa o trasporta viene {@condition invisible} con esso.d fino a 60 piedi come azione, e le creature {@condition invisible} dal vortice si muovono con esso. Il turbine termina se <$nome_corto$> lo perde di vista."
 			]
 		},
 		{
 			"name": "Invisibility (Sprite)",
 			"entries": [
-				"<$titolo_nome_breve$> diventa magicamente {@condition invisible} finché non attacca o lancia un incantesimo, o finché la sua concentrazione non termina (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che <$nome_breve$> indossa o porta con sé è {@condition invisible} con esso."
+				"<$titolo_breve_nome$> si trasforma magicamente {@condition invisible} finché non attacca o lancia un incantesimo, o finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi equipaggiamento che <$nome_breve$> indossa o porta con sé è {@condition invisible} con esso._nome$> lo perde di vista."
 			]
 		},
 		{
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Read Thoughts (Doppelganger)",
 			"entries": [
-				"<$titolo_nome_breve$> legge magicamente i pensieri di superficie di una creatura nel raggio di 60 piedi. L'effetto può penetrare le barriere, ma un metro di legno o terra, un metro di pietra, un metro di metallo o una sottile lastra di piombo lo bloccano. Mentre il bersaglio è nel raggio d'azione, <$nome_corto$> può continuare a leggere i suoi pensieri, purché la concentrazione di <$nome_corto$> non venga interrotta (come se si stesse concentrando su un incantesimo). Mentre legge la mente del bersaglio, <$nome_corto$> ha un vantaggio sulle prove di Saggezza ({@skill Insight}) e Carisma ({@skill Deception}, {@skill Intimidation} e {@skill Persuasion}) contro il bersaglio."
+				"<$title_short_name$> legge magicamente i pensieri di superficie di una creatura nel raggio di 60 piedi. L'effetto può penetrare le barriere, ma un metro di legno o terra, un metro di pietra, un metro di metallo o una sottile lastra di piombo lo bloccano. Mentre il bersaglio è nel raggio d'azione, <$nome_corto$> può continuare a leggere i suoi pensieri, purché il {@status concentration} di <$nome_corto$> non venga interrotto (come se {@status concentration||concentrating} fosse un incantesimo). Mentre legge la mente del bersaglio, <$nome_corto$> ha vantaggio sulle prove di Saggezza ({@skill Insight}) e Carisma ({@skill Deception}, {@skill Intimidation} e {@skill Persuasion}) contro il bersaglio."
 			]
 		},
 		{

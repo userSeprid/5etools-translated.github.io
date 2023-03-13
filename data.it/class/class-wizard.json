@@ -1777,7 +1777,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Graviturgy Magic feature}",
-				"Come azione, puoi alterare magicamente il peso di un oggetto o di una creatura che puoi vedere entro 30 piedi da te. L'oggetto o la creatura deve essere Grande o più piccolo. Il peso del bersaglio viene dimezzato o raddoppiato per un massimo di 1 minuto o fino al termine della tua concentrazione (come se ti stessi concentrando su un incantesimo).",
+				"Come azione, si può alterare magicamente il peso di un oggetto o di una creatura visibile entro 9 metri da noi. L'oggetto o la creatura deve essere Grande o più piccolo. Il peso del bersaglio viene dimezzato o raddoppiato per un massimo di 1 minuto o finché il vostro {@status concentration} non termina (come se foste {@status concentration||concentrating} su un incantesimo).",
 				"Mentre il peso di una creatura viene dimezzato da questo effetto, la velocità della creatura aumenta di 3 metri, può saltare il doppio della distanza normale e ha svantaggio sulle prove di Forza e sui tiri salvezza di Forza. Mentre il peso di una creatura viene raddoppiato da questo effetto, la velocità della creatura viene ridotta di 3 metri e ha vantaggio sulle prove di Forza e sui tiri salvezza di Forza.",
 				"Al raggiungimento del 10° livello di questa classe, puoi bersagliare un oggetto o una creatura di dimensioni enormi o più piccole."
 			]
@@ -1826,7 +1826,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Graviturgy Magic feature}",
-				"Come azione, puoi emettere magicamente un potente campo di energia gravitazionale che attira le altre creature per un massimo di 1 minuto o fino alla fine della tua concentrazione (come se ti stessi concentrando su un incantesimo). Per tutta la durata, ogni volta che una creatura a te ostile inizia il suo turno entro 30 piedi da te, deve effettuare un tiro salvezza di Forza contro la tua CD di salvataggio dell'incantesimo. Se il tiro salvezza viene fallito, prende {@damage 2d10} danni da forza e la sua velocità viene ridotta a 0 fino all'inizio del suo prossimo turno. Con un tiro salvezza riuscito, prende la metà dei danni e ogni metro che muove in questo turno costa 2 metri in più di movimento.",
+				"Come azione, si può emettere magicamente un potente campo di energia gravitazionale che attira le altre creature per un massimo di 1 minuto o finché il proprio {@status concentration} non termina (come se si stesse facendo {@status concentration||concentrating} un incantesimo). Per tutta la durata, ogni volta che una creatura a voi ostile inizia il suo turno entro 9 piedi da voi, deve effettuare un tiro salvezza di Forza contro la vostra DC di incantesimo. Se il tiro salvezza fallisce, subisce {@damage 2d10} danni da forza e la sua velocità è ridotta a 0 fino all'inizio del suo prossimo turno. Se il tiro salvezza va a buon fine, subisce danni dimezzati e ogni piede che muove in questo turno costa 2 piedi di movimento in più.",
 				"Una volta che usi questa caratteristica, non puoi farlo di nuovo finché non finisci un riposo lungo o finché non spendi uno slot per incantesimi di 3° livello o superiore."
 			]
 		},
@@ -2001,7 +2001,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"A partire dal 10° livello, mentre ti stai concentrando su un incantesimo di evocazione, la tua concentrazione non può essere interrotta a causa dei danni subiti."
+				"A partire dal 10° livello, mentre si è {@status concentration||concentrating} su un incantesimo di evocazione, il proprio {@status concentration} non può essere spezzato a causa di danni subiti.Ogni piede che si muove in questo turno costa 2 piedi di movimento extra."
 			]
 		},
 		{
@@ -2570,7 +2570,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"A partire dal 2° livello, quando scegli questa scuola, puoi alterare temporaneamente le proprietà fisiche di un oggetto non magico, trasformandolo da una sostanza a un'altra. Esegui una speciale procedura alchemica su un oggetto composto interamente di legno, pietra (ma non una pietra preziosa), ferro, rame o argento, trasformandolo in un altro di questi materiali. Per ogni 10 minuti trascorsi a eseguire la procedura, puoi trasformare fino a 1 piede cubo di materiale. Dopo 1 ora, o finché non perdi la concentrazione (come se ti stessi concentrando su un incantesimo), il materiale ritorna alla sua sostanza originale."
+				"A partire dal 2° livello, quando si sceglie questa scuola, si possono alterare temporaneamente le proprietà fisiche di un oggetto non magico, trasformandolo da una sostanza a un'altra. Si esegue una speciale procedura alchemica su un oggetto composto interamente di legno, pietra (ma non gemme), ferro, rame o argento, trasformandolo in un altro di questi materiali. Per ogni 10 minuti trascorsi a eseguire la procedura, è possibile trasformare fino a 1 metro cubo di materiale. Dopo 1 ora, o finché non si perde il {@status concentration} (come se si fosse al {@status concentration||concentrating} su un incantesimo), il materiale torna alla sua sostanza originale."
 			]
 		},
 		{
@@ -2775,7 +2775,7 @@
 						"Ottieni un bonus alla tua CA pari al tuo modificatore di Intelligenza (minimo +1).",
 						"La tua velocità di camminata aumenta di 10 piedi.",
 						"Hai un vantaggio sulle prove di Destrezza ({@skill Acrobatics}).",
-						"Guadagni un bonus ai tiri salvezza di Costituzione che effettui per mantenere la concentrazione su un incantesimo. Il bonus è pari al tuo modificatore di Intelligenza (minimo +1)."
+						"Si ottiene un bonus ai tiri salvezza di Costituzione per mantenere il {@status concentration} su un incantesimo. Il bonus è pari al proprio modificatore di Intelligenza (minimo +1).Se si perde il {@status concentration} (come se si fosse al (%1%) su un incantesimo), il materiale ritorna alla sua sostanza originale."
 					]
 				},
 				"Puoi usare questa caratteristica un numero di volte pari al tuo bonus di competenza e riacquisti tutti gli usi consumati quando finisci un riposo lungo."
@@ -3089,7 +3089,7 @@
 			"entries": [
 				"{@i 10th-level Order of Scribes feature}",
 				"Ora sei in grado di evocare la mente del tuo libro di incantesimi risvegliato. Come azione bonus mentre il libro è sulla tua persona, puoi far sì che la mente si manifesti come un Piccolo costrutto spettrale, che si libra in uno spazio non occupato di tua scelta entro 60 piedi da te. Questa presenza è intangibile e non occupa il suo spazio, e diffonde una luce fioca in un raggio di 10 piedi. Ha l'aspetto di un tomo spettrale, di una cascata di testo o di uno studioso del passato (a tua scelta). La mente spettrale ha un numero di punti ferita pari al tuo livello da mago più il tuo modificatore di Intelligenza e utilizza i tuoi modificatori di Classe Armatura e tiro salvezza.",
-				"Mentre si manifesta, la mente spettrale può sentire e vedere, e ha {@sense darkvision} con una portata di 60 piedi. Come azione, puoi sentire e vedere usando i suoi sensi, invece che i tuoi, finché la tua concentrazione non termina (come se ti concentrassi su un incantesimo).",
+				"Quando si manifesta, la mente spettrale può sentire e vedere, e ha {@sense darkvision} una portata di 60 piedi. Come azione, si può sentire e vedere usando i suoi sensi, invece dei propri, finché il proprio {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo).",
 				"Ogni volta che lanci un incantesimo da mago nel tuo turno, puoi lanciarlo come se fossi nello spazio della mente spettrale, invece che nel tuo, usando i suoi sensi. Puoi farlo un numero di volte al giorno pari al tuo bonus di competenza, e riacquisti tutti gli usi consumati quando finisci un riposo lungo.",
 				"Come azione bonus, puoi indurre la mente spettrale a librarsi fino a 30 piedi in uno spazio non occupato che tu o essa possiate vedere. Può passare attraverso le creature ma non gli oggetti. La mente spettrale smette di manifestarsi se si trova a più di 300 piedi da te, se scende a 0 punti ferita, se muori o se la respingi come azione bonus."
 			]
@@ -3262,7 +3262,7 @@
 						}
 					]
 				},
-				"La runa di inimicizia dura per 1 minuto o finché non si perde la concentrazione (come se ci si stesse concentrando su un incantesimo). Una volta che si è marcata una creatura in questo modo, non è possibile farlo di nuovo fino al termine di un riposo lungo, a meno che non si spenda uno slot incantesimo di 3° livello o superiore per usare di nuovo questa caratteristica."
+				"La runa dell'inimicizia dura per 1 minuto o finché non si perde il {@status concentration} (come se si avesse il {@status concentration||concentrating} su un incantesimo). Una volta che si è marcata una creatura in questo modo, non è possibile farlo di nuovo fino al termine di un riposo lungo, a meno che non si spenda uno slot incantesimo di 3° livello o superiore per usare di nuovo questa caratteristica."
 			]
 		},
 		{
@@ -4094,7 +4094,7 @@
 			"entries": [
 				"Al 6° livello, puoi inserire un incantesimo in un dispositivo elettronico di tua scelta, in modo che toccando un tasto o premendo un interruttore con un'azione, l'incantesimo si attivi. Tutte le variabili dell'incantesimo sono impostate al momento del lancio. La potenza di calcolo di questo dispositivo deve essere pari o superiore a quella di un telefono cellulare.",
 				"Un incantesimo programmato rimane inserito nel suo dispositivo per 48 ore, e sparisce una volta scaricato. Puoi usare questa funzione per inserire un incantesimo programmato in un solo dispositivo alla volta, e un dispositivo può contenere un solo incantesimo programmato. Solo tu puoi attivare l'incantesimo programmato nel dispositivo. Se il dispositivo viene distrutto, l'incantesimo programmato va perso.",
-				"Un incantesimo di concentrazione inserito in un dispositivo non può essere attivato mentre ti stai concentrando su un altro incantesimo. Una volta che hai usato questa caratteristica, non puoi usarla di nuovo finché non finisci un lungo riposo."
+				"Un incantesimo {@status concentration} collocato in un dispositivo non può essere attivato mentre si è {@status concentration||concentrating} su un altro incantesimo. Una volta utilizzata questa caratteristica, non è possibile utilizzarla di nuovo fino al termine di un riposo lungo."
 			]
 		},
 		{
@@ -4124,7 +4124,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Al 14° livello, hai imparato a imprimere vestigia della tua coscienza su dispositivi elettronici di notevole potenza di calcolo. Quando lanci un incantesimo di concentrazione, puoi utilizzare un dispositivo la cui potenza di calcolo sia pari o superiore a quella di un computer tablet per mantenere la concentrazione dell'incantesimo al posto tuo. Il dispositivo deve essere tenuto o indossato da te per mantenere questo effetto. Se il dispositivo viene distrutto, preso da te, fatto cadere o spento, la concentrazione termina. Una volta usata questa caratteristica, non puoi usarla di nuovo finché non finisci un lungo riposo."
+				"Al 14° livello, avete imparato a imprimere le vestigia della vostra coscienza su dispositivi elettronici con una notevole potenza di calcolo. Quando lanciate un incantesimo {@status concentration}, potete usare un dispositivo la cui potenza di calcolo è pari o superiore a quella di una tavoletta per mantenere {@status concentration} l'incantesimo per vostro conto. Per mantenere questo effetto, il dispositivo deve essere tenuto in mano o indossato da voi. Se il dispositivo viene distrutto, sottratto, lasciato cadere o spento, il {@status concentration} termina. Una volta utilizzata questa caratteristica, non è possibile utilizzarla di nuovo fino al termine di un lungo riposo."
 			]
 		},
 		{
@@ -4899,7 +4899,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"A partire dal 10° livello, la magia che incanali ti aiuta ad allontanare i danni. Mentre ti concentri su un incantesimo, hai un bonus di +2 alla CA e a tutti i tiri salvezza."
+				"A partire dal 10° livello, la magia che si incanala aiuta ad allontanare i danni. Mentre si mantiene {@status concentration} su un incantesimo, si ha un bonus di +2 alla CA e a tutti i tiri salvezza.n fino al termine di un riposo lungo."
 			]
 		},
 		{
@@ -4995,7 +4995,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"A partire dal 10° livello, la magia che incanali ti aiuta ad allontanare i danni. Mentre ti concentri su un incantesimo, hai un bonus di +2 alla CA e a tutti i tiri salvezza."
+				"A partire dal 10° livello, la magia che si incanala aiuta ad allontanare i danni. Mentre si mantiene {@status concentration} su un incantesimo, si ha un bonus di +2 alla CA e a tutti i tiri salvezza.n fino al termine di un riposo lungo."
 			]
 		},
 		{

@@ -6478,7 +6478,7 @@
 				{
 					"name": "Break Concentration",
 					"entries": [
-						"Il cervello anziano prende di mira una creatura entro 120 piedi da lui con la quale ha un legame psichico. Il cervello anziano interrompe la concentrazione della creatura su un incantesimo che ha lanciato. La creatura subisce inoltre {@dice 1d4} danni psichici per livello dell'incantesimo."
+						"Il cervello anziano prende di mira una creatura nel raggio di 120 piedi con cui ha un legame psichico. Il cervello anziano interrompe il {@status concentration} di un incantesimo lanciato dalla creatura. La creatura subisce inoltre {@dice 1d4} danni psichici per livello dell'incantesimo."
 					]
 				},
 				{
@@ -20816,7 +20816,7 @@
 				{
 					"name": "Invoke Nightmare (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Lo yuan-ti attinge agli incubi di una creatura che può vedere entro 60 piedi da lui e crea una manifestazione illusoria e immobile delle paure più profonde della creatura, visibile solo a quella creatura. Il bersaglio deve effettuare un tiro salvezza di Intelligenza {@dc 13}. Con un tiro salvezza fallito, il bersaglio subisce 11 ({@damage 2d10}) danni psichici ed è {@condition frightened} della manifestazione, credendola reale. Lo yuan-ti deve concentrarsi per mantenere l'illusione (come se si concentrasse su un incantesimo), che dura fino a 1 minuto e non può essere danneggiata. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, ponendo fine all'illusione in caso di successo o subendo 11 ({@damage 2d10}) danni psichici in caso di fallimento."
+						"Lo yuan-ti attinge agli incubi di una creatura che può vedere nel raggio di 60 piedi e crea una manifestazione illusoria e immobile delle sue paure più profonde, visibile solo a quella creatura. Il bersaglio deve effettuare un tiro salvezza di Intelligenza {@dc 13}. Se il tiro salvezza fallisce, il bersaglio subisce 11 ({@damage 2d10}) danni psichici ed è {@condition frightened} della manifestazione, credendola reale. Lo yuan-ti deve concentrarsi per mantenere l'illusione (come se {@status concentration||concentrating} su un incantesimo), che dura fino a 1 minuto e non può essere danneggiata. Il bersaglio può ripetere il tiro salvezza alla fine di ogni turno, terminando l'illusione in caso di successo o subendo 11 ({@damage 2d10}) danni psichici in caso di fallimento."
 					]
 				}
 			],

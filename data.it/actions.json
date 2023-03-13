@@ -33,7 +33,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"Alcuni oggetti magici permettono all'utente di lanciare un incantesimo dall'oggetto, spesso spendendo delle cariche da esso. L'incantesimo viene lanciato al livello più basso possibile di incantesimo e incantatore, non consuma nessuno degli slot incantesimo dell'utente e non richiede componenti, a meno che la descrizione dell'oggetto non dica altrimenti. L'incantesimo utilizza il suo normale tempo di lancio, raggio d'azione e durata, e l'utilizzatore dell'oggetto deve concentrarsi se l'incantesimo richiede concentrazione. Alcuni oggetti fanno eccezione a queste regole, cambiando il tempo di lancio, la durata o altre parti di un incantesimo.",
+						"Alcuni oggetti magici permettono all'utilizzatore di lanciare un incantesimo dall'oggetto, spesso spendendo delle cariche. L'incantesimo viene lanciato al livello di incantatore e di incantatore più basso possibile, non consuma alcuno slot incantesimo dell'utilizzatore e non richiede componenti, a meno che la descrizione dell'oggetto non indichi diversamente. L'incantesimo utilizza il suo normale tempo di lancio, la sua portata e la sua durata, e l'utilizzatore dell'oggetto deve concentrarsi se l'incantesimo richiede {@status concentration}. Alcuni oggetti fanno eccezione a queste regole, modificando il tempo di lancio, la durata o altre parti di un incantesimo.",
 						"Molti oggetti, come le pozioni, bypassano il lancio dell'incantesimo e conferiscono gli effetti dell'incantesimo. Un tale oggetto utilizza ancora la durata dell'incantesimo, a meno che la descrizione dell'oggetto non dica altrimenti.",
 						"Un oggetto magico, come alcuni bastoni, potrebbe richiederti di utilizzare la tua capacità di incantatore quando lanci un incantesimo dall'oggetto. Se hai più di un'abilità da incantatore, scegli quale usare con l'oggetto. Se non hai un'abilità da incantatore, ad esempio se sei un ladro con la caratteristica Usare dispositivi magici, il tuo modificatore di abilità da incantatore è pari a +0 per l'oggetto, e il tuo bonus di competenza si applica."
 					]
@@ -197,7 +197,7 @@
 				"Free"
 			],
 			"entries": [
-				"Se un incantesimo deve essere mantenuto con la concentrazione, questo fatto appare nella sua voce Durata, e l'incantesimo specifica per quanto tempo puoi concentrarti su di esso. Si può terminare la concentrazione in qualsiasi momento (nessuna azione richiesta)."
+				"Se un incantesimo deve essere mantenuto con il {@status concentration}, questo fatto appare nella voce Durata e l'incantesimo specifica per quanto tempo ci si può concentrare su di esso. Si può terminare {@status concentration} in qualsiasi momento (non è richiesta alcuna azione).st concentrarsi se l'incantesimo richiede {@status concentration}. Alcuni oggetti fanno eccezione a queste regole, modificando il tempo di lancio, la durata o altre parti di un incantesimo."
 			]
 		},
 		{
@@ -448,7 +448,7 @@
 				"A volte vuoi avere il vantaggio su un nemico o aspettare una circostanza particolare prima di agire. Per farlo, puoi prendere l'azione Pronto al tuo turno, che ti permette di agire usando la tua reazione prima dell'inizio del tuo prossimo turno.",
 				"Per prima cosa, decidete quale circostanza percepibile scatenerà la vostra reazione. Poi, scegliete l'azione che farete in risposta a quell'innesco, o scegliete di muovervi alla vostra velocità in risposta ad essa. Esempi: \"Se il cultista calpesta la botola, tiro la leva che la apre\" e \"Se il goblin si avvicina a me, mi allontano\".",
 				"Quando si verifica l'innesco, puoi prendere la tua reazione subito dopo la fine dell'innesco o ignorare l'innesco. Ricorda che puoi prendere solo una reazione per round.",
-				"Quando prepari un incantesimo, lo lanci normalmente ma trattieni la sua energia, che rilasci con la tua reazione quando avviene l'innesco. Per essere pronto, un incantesimo deve avere un tempo di lancio di 1 azione, e trattenere la magia dell'incantesimo richiede concentrazione (spiegata in {@book chapter 10|phb|10|concentration}). Se la tua concentrazione viene meno, l'incantesimo si disperde senza avere effetto. Per esempio, se ti stai concentrando sull'incantesimo ragnatela e sei pronto per il missile magico, l'incantesimo ragnatela termina, e se subisci danni prima di rilasciare il missile magico con la tua reazione, la tua concentrazione potrebbe essere rotta.",
+				"Quando si prepara un incantesimo, lo si lancia normalmente ma se ne trattiene l'energia, che viene rilasciata con la reazione quando si verifica l'attivazione. Per essere pronto, un incantesimo deve avere un tempo di lancio di 1 azione e trattenere la magia dell'incantesimo richiede {@status concentration} (spiegato in {@book chapter 10|phb|10|concentration}). Se il vostro {@status concentration} viene interrotto, l'incantesimo si dissipa senza avere effetto. Ad esempio, se si ha il {@status concentration||concentrating} sull'incantesimo Ragnatela e si prepara Missile Magico, l'incantesimo Ragnatela termina, e se si subisce un danno prima di rilasciare Missile Magico con la reazione, il {@status concentration} potrebbe essere interrotto.l tempo di lancio, la durata o altre parti di un incantesimo.",
 				"Hai fino all'inizio del tuo prossimo turno per usare un'azione pronta."
 			]
 		},

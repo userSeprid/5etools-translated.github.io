@@ -42,7 +42,7 @@
 					},
 					"name": "Energy Adaptation",
 					"entries": [
-						"Come azione, puoi toccare una creatura e darle resistenza ai danni da acido, freddo, fuoco, fulmine o tuono (a tua scelta), che dura fino alla fine della concentrazione."
+						"Come azione, si può toccare una creatura e conferirle una resistenza ai danni da acido, freddo, fuoco, fulmine o tuono (a scelta), che dura fino al termine della propria {@status concentration}."
 					]
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"name": "Energy Immunity",
 					"entries": [
-						"Come azione, puoi toccare una creatura e darle l'immunità ai danni da acido, freddo, fuoco, fulmine o tuono (a tua scelta), che dura fino alla fine della tua concentrazione."
+						"Come azione, si può toccare una creatura e conferirle l'immunità ai danni da acido, freddo, fuoco, fulmine o tuono (a scelta), che dura fino al termine della propria {@status concentration}."
 					]
 				}
 			]
@@ -103,7 +103,7 @@
 					},
 					"name": "View Aura",
 					"entries": [
-						"Come azione, studi l'aura di una creatura. Finché la tua concentrazione non termina, mentre puoi vedere il bersaglio, scoprirai se è sotto l'effetto di qualche effetto magico o psionico, i suoi punti ferita attuali e il suo stato emotivo di base. Finché dura questo effetto, avrai un vantaggio nelle prove di Saggezza ({@skill Insight}) e Carisma che effettui contro di esso."
+						"Come azione, si può studiare l'aura di una creatura. Fino al termine del {@status concentration}, mentre si vede il bersaglio, si apprende se è sotto l'effetto di effetti magici o psionici, il suo totale attuale di punti ferita e il suo stato emotivo di base. Finché questo effetto dura, si ha un vantaggio nelle prove di Saggezza ({@skill Insight}) e Carisma che si effettuano contro il bersaglio."
 					]
 				},
 				{
@@ -117,7 +117,7 @@
 					},
 					"name": "Perceive the Unseen",
 					"entries": [
-						"Come azione bonus, ottieni la capacità di vedere le aure anche di creature {@condition invisible} o nascoste. Fino al termine della tua concentrazione, puoi vedere tutte le creature, anche quelle nascoste e {@condition invisible}, indipendentemente dalle condizioni di luce."
+						"Come azione bonus, si ottiene la capacità di vedere le auree anche delle creature {@condition invisible} o nascoste. Fino a quando il vostro {@status concentration} non termina, potete vedere tutte le creature, comprese quelle nascoste e {@condition invisible}, indipendentemente dalle condizioni di luce."
 					]
 				}
 			]
@@ -461,7 +461,7 @@
 					},
 					"name": "Call to Inaction",
 					"entries": [
-						"Se passi 1 minuto a conversare con una creatura, puoi tentare di seminarla con una noia opprimente. Alla fine del minuto, puoi usare un'azione per costringere la creatura a effettuare un tiro salvezza di Saggezza. Il tiro salvezza ha automaticamente successo se il bersaglio è immune all'essere {@condition charmed}. Se il tiro salvezza viene fallito, si siede e rimane {@condition incapacitated} fino alla fine della tua concentrazione. Questo effetto termina immediatamente se il bersaglio o qualsiasi alleato che può vedere viene attaccato o subisce danni. Con un tiro salvezza riuscito, la creatura non è influenzata e non ha alcun sentore del tuo tentativo di piegare la sua volontà."
+						"Se si trascorre 1 minuto a conversare con una creatura, si può tentare di seminarla di ennui schiacciante. Alla fine del minuto, si può usare un'azione per costringere la creatura a effettuare un tiro salvezza di Saggezza. Il tiro salvezza riesce automaticamente se il bersaglio è immune all'essere {@condition charmed}. Se il tiro salvezza fallisce, si siede e rimane {@condition incapacitated} fino al termine del tuo {@status concentration}. Questo effetto termina immediatamente se il bersaglio o qualsiasi alleato che può vedere viene attaccato o subisce danni. Se il tiro salvezza ha successo, la creatura non è influenzata e non si accorge del tentativo di piegare la sua volontà."
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					},
 					"name": "Dolorous Mind",
 					"entries": [
-						"Come azione, scegli una creatura che puoi vedere entro 60 piedi da te. Deve riuscire in un tiro salvezza di Carisma, o è {@condition incapacitated} e ha una velocità di 0 fino alla fine della tua concentrazione. Può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+						"Come azione, si sceglie una creatura visibile entro 60 piedi da noi. Deve riuscire in un tiro salvezza di Carisma, altrimenti è {@condition incapacitated} e ha una velocità pari a 0 fino al termine del vostro {@status concentration}. Può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa in caso di successo. tentativo di piegare la sua volontà."
 					]
 				}
 			]
@@ -522,7 +522,7 @@
 					},
 					"name": "Wall of Repulsion",
 					"entries": [
-						"Come azione, crei un muro invisibile e inconsistente di energia entro 60 piedi da te, lungo fino a 30 piedi, alto 10 piedi e spesso 1 piede. Il muro dura fino alla fine della tua concentrazione. Qualsiasi creatura che tenti di attraversarlo deve effettuare un tiro salvezza di Saggezza. Con un tiro salvezza fallito, una creatura non può muoversi attraverso il muro fino all'inizio del suo prossimo turno. Con un tiro salvezza riuscito, la creatura può attraversarlo. Una creatura deve effettuare questo tiro salvezza ogni volta che tenta di attraversare il muro, volontariamente o meno."
+						"Come azione, si crea un muro di energia invisibile e inconsistente entro 60 piedi di distanza, lungo fino a 30 piedi, alto 3 piedi e spesso 1 piede. Il muro dura fino al termine del vostro {@status concentration}. Qualsiasi creatura che tenti di attraversarlo deve effettuare un tiro salvezza di Saggezza. Se il tiro salvezza fallisce, la creatura non può muoversi attraverso il muro fino all'inizio del suo turno successivo. Con un tiro salvezza riuscito, la creatura può attraversarlo. Una creatura deve effettuare questo tiro salvezza ogni volta che tenta di attraversare il muro, volontariamente o meno."
 					]
 				},
 				{
@@ -536,7 +536,7 @@
 					},
 					"name": "Visions of Disgust",
 					"entries": [
-						"Fai in modo che una creatura consideri tutti gli altri esseri come orribili entità aliene. Come azione, scegli una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve effettuare un tiro salvezza di Saggezza. Con un tiro salvezza fallito, prende {@damage 5d6} danni psichici, e fino alla fine della tua concentrazione, prende {@damage 1d6} danni psichici per ogni creatura entro 5 piedi da lui alla fine di ogni suo turno. Con un tiro salvezza riuscito, il bersaglio prende solo la metà del danno iniziale e non subisce nessuno degli altri effetti."
+						"Si induce una creatura a considerare tutti gli altri esseri come entità orribili e aliene. Come azione, scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve effettuare un tiro salvezza di Saggezza. Se il tiro salvezza fallisce, subisce {@damage 5d6} danni psichici e, fino alla fine del vostro {@status concentration}, subisce {@damage 1d6} danni psichici per ogni creatura entro un raggio di 5 piedi alla fine di ogni suo turno. Se il tiro salvezza ha successo, il bersaglio subisce solo la metà dei danni iniziali e non subisce nessuno degli altri effetti."
 					]
 				},
 				{
@@ -550,7 +550,7 @@
 					},
 					"name": "World of Horror",
 					"entries": [
-						"Come azione, scegli fino a sei creature entro 60 piedi da te. Ogni bersaglio deve effettuare un tiro salvezza di Carisma. Con un tiro salvezza fallito, un bersaglio subisce {@damage 8d6} danni psichici, ed è {@condition frightened} fino al termine della tua concentrazione. Con un tiro salvezza riuscito, un bersaglio prende la metà dei danni. Mentre {@condition frightened} da questo effetto, la velocità di un bersaglio è ridotta a 0, e il bersaglio può usare la sua azione, e qualsiasi azione bonus che potrebbe avere, solo per effettuare attacchi in mischia. Il {@condition frightened} bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso con un successo."
+						"Come azione, scegliete fino a sei creature entro 60 piedi da voi. Ogni bersaglio deve effettuare un tiro salvezza di Carisma. Se il tiro salvezza fallisce, il bersaglio subisce {@damage 8d6} danni psichici e subisce {@condition frightened} danni fino al termine del tuo {@status concentration}. Se il tiro salvezza riesce, il bersaglio subisce la metà dei danni. Mentre {@condition frightened} da questo effetto, la velocità di un bersaglio è ridotta a 0, e il bersaglio può usare la sua azione, e qualsiasi azione bonus che potrebbe avere, solo per effettuare attacchi in mischia. Il bersaglio {@condition frightened} può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo."
 					]
 				}
 			]
@@ -587,7 +587,7 @@
 					},
 					"name": "Fighting Words",
 					"entries": [
-						"Se passi 1 minuto a conversare con una creatura, puoi tentare di lasciare una violenza ribollente nella sua mente. Alla fine del minuto, puoi usare un'azione per costringere la creatura a effettuare un tiro salvezza di Saggezza per resistere a provare impulsi violenti contro una creatura che le descrivi o che nomini. Il tiro salvezza ha automaticamente successo se il bersaglio è immune all'essere {@condition charmed}. Con un tiro salvezza fallito, il bersaglio attacca la creatura scelta se la vede prima che la tua concentrazione finisca, usando armi o incantesimi contro una creatura verso cui era già ostile o colpi disarmati contro un alleato o una creatura verso cui era neutrale. Una volta iniziato il combattimento, continua ad attaccare per 5 round prima che questo effetto finisca. Questo effetto termina immediatamente se il bersaglio o qualsiasi alleato che può vedere viene attaccato o subisce danni da qualsiasi creatura diversa da quella contro cui è stato incitato. Se il tiro salvezza ha successo, la creatura non è influenzata e non ha alcun sentore del tuo tentativo di piegare la sua volontà."
+						"Se si trascorre 1 minuto a conversare con una creatura, si può tentare di lasciare nella sua mente un ribollire di violenza. Alla fine del minuto, si può usare un'azione per costringere la creatura a effettuare un tiro salvezza della Saggezza per resistere a provare impulsi violenti contro una creatura che le si descrive o che si nomina. Il tiro salvezza riesce automaticamente se il bersaglio è immune all'essere {@condition charmed}. Se il tiro salvezza fallisce, il bersaglio attacca la creatura scelta se la vede prima che il suo {@status concentration} finisca, usando armi o incantesimi contro una creatura verso cui era già ostile o colpi senz'armi contro un alleato o una creatura verso cui era neutrale. Una volta iniziato il combattimento, continua ad attaccare per 5 round prima che l'effetto termini. Questo effetto termina immediatamente se il bersaglio o un alleato che può vedere viene attaccato o subisce danni da una creatura diversa da quella contro cui è stato incitato. Se il tiro salvezza ha successo, la creatura non è influenzata e non si accorge del tentativo di piegare la sua volontà. turni, terminando l'effetto su se stessa in caso di successo."
 					]
 				},
 				{
@@ -611,7 +611,7 @@
 					},
 					"name": "Punishing Fury",
 					"entries": [
-						"Fai in modo che la rabbia di una creatura cresca così tanto da indurla ad attaccare senza badare alla propria sicurezza. Come azione bonus, scegli una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve riuscire in un tiro salvezza di Saggezza o, fino alla fine della tua concentrazione, qualsiasi creatura entro 5 piedi da esso può usare una reazione per effettuare un attacco in mischia contro di esso ogni volta che il bersaglio effettua un attacco in mischia. Il tiro salvezza ha automaticamente successo se il bersaglio è immune all'essere {@condition charmed}."
+						"La rabbia di una creatura cresce a tal punto da spingerla ad attaccare senza curarsi della propria sicurezza. Come azione bonus, scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve riuscire in un tiro salvezza di Saggezza o, finché il tuo {@status concentration} non termina, qualsiasi creatura entro un raggio di 5 piedi da esso può usare una reazione per effettuare un attacco in mischia contro di lui ogni volta che il bersaglio effettua un attacco in mischia. Il tiro salvezza riesce automaticamente se il bersaglio è immune all'essere {@condition charmed}. creatura diversa da quella contro cui è stato incitato. Se il tiro salvezza ha successo, la creatura non è influenzata e non si accorge del tentativo di piegare la sua volontà. turni, terminando l'effetto su se stessa in caso di successo."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 					},
 					"name": "Miniature Form",
 					"entries": [
-						"Come azione bonus, diventi Piccolo fino al termine della tua concentrazione. Mentre sei di queste dimensioni, guadagni un bonus di +5 alle prove di Destrezza ({@skill Stealth}) e puoi muoverti attraverso spazi fino a 15 cm di larghezza senza stringere."
+						"Come azione bonus, si diventa Minuscoli fino al termine del {@status concentration}. In questa dimensione, si ottiene un bonus di +5 alle prove di Destrezza ({@skill Stealth}) e ci si può muovere attraverso spazi larghi fino a 15 centimetri senza stringere.l salvataggio, la creatura non è influenzata e non ha sentore del tentativo di piegare la sua volontà. turni, terminando l'effetto su se stessa in caso di successo."
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					},
 					"name": "Microscopic Form",
 					"entries": [
-						"Come azione bonus, diventi più piccolo di Piccolo fino alla fine della tua concentrazione. In questa dimensione, otterrai un bonus di +10 alle prove di Destrezza ({@skill Stealth}) e un bonus di +5 alla CA, potrai muoverti attraverso spazi fino a 1 pollice di larghezza senza schiacciarti e non potrai effettuare attacchi con armi."
+						"Come azione bonus, diventate più piccoli di Tiny fino a quando il vostro {@status concentration} finisce. Con questa taglia, si ottiene un bonus di +10 alle prove di Destrezza ({@skill Stealth}) e un bonus di +5 alla CA, ci si può muovere attraverso spazi larghi fino a 1 pollice senza stringere e non si possono effettuare attacchi con armi."
 					]
 				}
 			]
@@ -720,7 +720,7 @@
 					},
 					"name": "Ogre Form",
 					"entries": [
-						"Come azione bonus, guadagni 10 punti ferita temporanei. Inoltre, finché la tua concentrazione non termina, i tuoi attacchi con armi da mischia infliggono un danno extra {@damage 1d4} da randellate se colpiti e la tua portata aumenta di 5 piedi. Se sei più piccolo di Large, diventi anche Large per la durata dell'azione."
+						"Come azione bonus, si guadagnano 10 punti ferita temporanei. Inoltre, fino al termine del {@status concentration}, gli attacchi con armi da mischia infliggono un extra {@damage 1d4} di danni da percosse quando vengono colpiti e la portata aumenta di 3 metri. Se sei più piccolo di Grande, diventi anche Grande per tutta la durata."
 					]
 				},
 				{
@@ -734,7 +734,7 @@
 					},
 					"name": "Giant Form",
 					"entries": [
-						"Come azione bonus, guadagnerai 30 punti ferita temporanei. Inoltre, finché la tua concentrazione non termina, i tuoi attacchi con armi da mischia infliggono un danno extra {@damage 2d6} da randellate se colpiti e la tua portata aumenta di 10 piedi. Se sei più piccolo di Huge, diventi anche Huge per la durata dell'azione."
+						"Come azione bonus, si guadagnano 30 punti ferita temporanei. Inoltre, fino al termine del {@status concentration}, i vostri attacchi con armi da mischia infliggono un extra {@damage 2d6} di danni da percosse su un colpo andato a segno e la vostra portata aumenta di 3 metri. Se si è di taglia inferiore a Enorme, si diventa anche Enormi per tutta la durata."
 					]
 				}
 			]
@@ -781,7 +781,7 @@
 					},
 					"name": "Psychic Redoubt",
 					"entries": [
-						"Come azione, crei un campo di energia psichica protettiva. Scegli un numero qualsiasi di creature entro 30 piedi da te. Fino al termine della tua concentrazione, ogni bersaglio ha resistenza ai danni psichici e vantaggio nei tiri salvezza di Intelligenza, Saggezza e Carisma."
+						"Come azione, si crea un campo di energia psichica protettiva. Scegliete un numero qualsiasi di creature entro 9 metri da voi. Fino al termine dell'azione {@status concentration}, ogni bersaglio ha resistenza ai danni psichici e vantaggio nei tiri salvezza di Intelligenza, Saggezza e Carisma."
 					]
 				}
 			]
@@ -828,7 +828,7 @@
 					},
 					"name": "Iron Resistance",
 					"entries": [
-						"Come azione, ottieni resistenza ai danni da randellate, da perforazione o da taglio (a tua scelta), che dura fino alla fine della tua concentrazione."
+						"Come azione, si ottiene una resistenza ai danni da percosse, perforazione o taglio (a scelta), che dura fino al termine del proprio {@status concentration}."
 					]
 				}
 			]
@@ -875,7 +875,7 @@
 					},
 					"name": "Center of Attention",
 					"entries": [
-						"Come azione, eserciti un'aura di potere che attira l'attenzione di una creatura. Scegli una creatura che puoi vedere entro 60 piedi da te. Essa deve effettuare un tiro salvezza di Carisma. Se il tiro salvezza viene fallito, la creatura è talmente distratta da te che tutte le altre creature lo sono {@condition invisible} fino alla fine della tua concentrazione. Questo effetto termina se la creatura non può più vederti o sentirti o se subisce danni."
+						"Come azione, si esercita un'aura di potere che attira l'attenzione di una creatura. Scegliete una creatura che potete vedere entro 60 piedi da voi. Essa deve effettuare un tiro salvezza di Carisma. Se il tiro salvezza fallisce, la creatura viene distratta a tal punto da far sì che tutte le altre creature siano {@condition invisible} verso di lei fino al termine del tiro salvezza {@status concentration}. Questo effetto termina se la creatura non riesce più a vedervi o a sentirvi o se subisce danni."
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					},
 					"name": "Invoke Awe",
 					"entries": [
-						"Come azione, eserciti un'aura che ispira soggezione agli altri. Scegli fino a 5 creature che puoi vedere entro 60 piedi da te. Ogni bersaglio deve riuscire in un tiro salvezza di Intelligenza o essere {@condition charmed} da te fino alla fine della tua concentrazione. Durante il {@condition charmed}, il bersaglio obbedisce a tutti i tuoi comandi verbali al meglio delle sue capacità e senza fare nulla di palesemente autodistruttivo. Il {@condition charmed} bersaglio attaccherà solo le creature che ha visto attaccarti da quando è stato {@condition charmed} o verso le quali era già ostile. Alla fine di ogni suo turno, può ripetere il tiro salvezza, terminando l'effetto su se stesso con un successo."
+						"Come azione, esercitate un'aura che ispira soggezione agli altri. Scegliete fino a 5 creature che potete vedere entro 60 piedi da voi. Ogni bersaglio deve riuscire in un tiro salvezza di Intelligenza o essere {@condition charmed} da voi fino al termine del vostro {@status concentration}. Mentre {@condition charmed}, il bersaglio obbedisce a tutti i vostri comandi verbali al meglio delle sue capacità e senza fare nulla di palesemente autodistruttivo. Il bersaglio {@condition charmed} attaccherà solo le creature che ha visto attaccarvi da quando era {@condition charmed} o verso le quali era già ostile. Alla fine di ogni turno, può ripetere il tiro salvezza, terminando l'effetto su se stesso in caso di successo."
 					]
 				}
 			]
@@ -950,7 +950,7 @@
 					},
 					"name": "Strategic Mind",
 					"entries": [
-						"Come azione, eserciti un'aura di fiducia e comando che unisce i tuoi alleati in un'unità coesa. Fino al termine della tua concentrazione, ogni alleato entro 60 piedi da te nel suo turno può, come azione bonus, effettuare l'azione Dash o Disengage o tirare un {@dice d4} e aggiungere il numero tirato a ogni tiro di attacco che effettua in quel turno."
+						"Come azione, eserciti un'aura di fiducia e comando che unisce i tuoi alleati in un'unità coesa. Finché il tuo {@status concentration} non termina, ogni alleato entro 60 piedi da te nel suo turno può, come azione bonus, effettuare l'azione Fuga o Disimpegno o tirare un {@dice d4} e aggiungere il numero tirato a ogni tiro di attacco che effettua in quel turno.d di ogni suo turno, può ripetere il tiro salvezza, terminando l'effetto su se stesso in caso di successo."
 					]
 				},
 				{
@@ -997,7 +997,7 @@
 					},
 					"name": "Aura of Victory",
 					"entries": [
-						"Come azione bonus, si proietta energia psionica fino al termine della concentrazione. L'energia fortifica voi e i vostri alleati quando i nemici vengono abbattuti; ogni volta che un nemico che potete vedere viene ridotto a 0 punti ferita, voi e ciascuno dei vostri alleati entro 9 metri guadagnate punti ferita temporanei pari al doppio dei punti psi spesi per attivare questo effetto."
+						"Come azione bonus, si proietta energia psionica fino al termine del {@status concentration}. L'energia fortifica voi e i vostri alleati quando i nemici vengono abbattuti; ogni volta che un nemico che potete vedere viene ridotto a 0 punti ferita, voi e ciascuno dei vostri alleati entro 9 metri guadagnate punti ferita temporanei pari al doppio dei punti psi spesi per attivare questo effetto."
 					]
 				},
 				{
@@ -1038,7 +1038,7 @@
 					},
 					"name": "Incite Fear",
 					"entries": [
-						"Come azione, scegli una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve riuscire in un tiro salvezza di Saggezza o diventare {@condition frightened} di te fino alla fine della tua concentrazione. Ogni volta che il {@condition frightened} bersaglio termina il suo turno in un luogo in cui non può vederti, può ripetere il tiro salvezza, terminando l'effetto su se stesso con un successo."
+						"Come azione, scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve superare un tiro salvezza di Saggezza o diventare {@condition frightened} di voi fino al termine del vostro {@status concentration}. Ogni volta che il bersaglio {@condition frightened} finisce il suo turno in un luogo in cui non può vedervi, può ripetere il tiro salvezza, terminando l'effetto su se stesso in caso di successo."
 					]
 				},
 				{
@@ -1052,7 +1052,7 @@
 					},
 					"name": "Unsettling Aura",
 					"entries": [
-						"Come azione bonus, ti ammanti di un'inquietante energia psichica. Finché la tua concentrazione non termina, qualsiasi nemico entro 60 piedi da te che possa vederti deve spendere 1 piede extra di movimento per ogni piede che muove verso di te. Una creatura ignora questo effetto se immune all'essere {@condition frightened}."
+						"Come azione bonus, ci si ammanta di un'energia psichica inquietante. Fino al termine di {@status concentration}, qualsiasi nemico entro 60 piedi da voi che possa vedervi deve spendere 1 piede di movimento extra per ogni piede che muove verso di voi. Una creatura ignora questo effetto se è immune all'essere {@condition frightened}."
 					]
 				},
 				{
@@ -1066,7 +1066,7 @@
 					},
 					"name": "Incite Panic",
 					"entries": [
-						"Come azione, scegli fino a otto creature entro 90 piedi da te che possono vederti. All'inizio di ogni turno di un bersaglio prima che la tua concentrazione finisca, il bersaglio deve effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, il bersaglio è {@condition frightened} fino all'inizio del suo prossimo turno e tu tiri un dado. Se si tira un numero dispari, il bersaglio {@condition frightened} si muove a metà della sua velocità in una direzione casuale e non compie alcuna azione in quel turno, se non urlare di terrore. Se tiri un numero pari, il bersaglio {@condition frightened} effettua un attacco in mischia contro un bersaglio a caso alla sua portata. Se non c'è tale bersaglio, si muove a metà della sua velocità in una direzione casuale e non compie alcuna azione in quel turno. Questo effetto termina su un bersaglio se riesce a superare tre tiri salvezza contro di esso."
+						"Come azione, scegliete fino a otto creature che potete vedere entro 90 piedi da voi e che possono vedervi. All'inizio di ogni turno di un bersaglio prima della fine del vostro {@status concentration}, il bersaglio deve effettuare un tiro salvezza della Saggezza. Se il tiro salvezza viene fallito, il bersaglio subisce {@condition frightened} fino all'inizio del suo turno successivo e si tira un dado. Se si tira un numero dispari, il bersaglio {@condition frightened} si sposta di metà della sua velocità in una direzione casuale e non compie alcuna azione in quel turno, se non urlare di terrore. Se si tira un numero pari, il bersaglio {@condition frightened} effettua un attacco in mischia contro un bersaglio casuale nel suo raggio d'azione. Se non c'è un bersaglio, si sposta di metà della sua velocità in una direzione casuale e non compie alcuna azione in quel turno. Questo effetto termina su un bersaglio se riesce a superare tre tiri salvezza contro di esso."
 					]
 				}
 			]
@@ -1093,7 +1093,7 @@
 					},
 					"name": "Incite Fury",
 					"entries": [
-						"Come azione bonus, scegli fino a tre alleati che puoi vedere entro 60 piedi da te (puoi scegliere te stesso al posto di uno degli alleati). Fino al termine della tua concentrazione, ogni bersaglio può tirare un {@dice d4} quando tira i danni per un attacco con un'arma da mischia e aggiungere il numero tirato al tiro dei danni."
+						"Come azione bonus, scegliete fino a tre alleati che potete vedere entro 60 piedi da voi (potete scegliere voi stessi al posto di uno degli alleati). Fino a quando il vostro {@status concentration} non termina, ogni bersaglio può tirare un {@dice d4} quando tira i danni per un attacco con un'arma da mischia e aggiungere il numero tirato al tiro per i danni.k contro un bersaglio casuale alla sua portata. Se non c'è un bersaglio, si sposta di metà della sua velocità in una direzione casuale e non compie alcuna azione in quel turno. Questo effetto termina su un bersaglio se riesce a superare tre tiri salvezza contro di esso."
 					]
 				},
 				{
@@ -1117,7 +1117,7 @@
 					},
 					"name": "Aura of Bloodletting",
 					"entries": [
-						"Come azione bonus, si scatena un'aura di rabbia. Finché la concentrazione non termina, voi e qualsiasi creatura entro 60 piedi da voi ha vantaggio nei tiri di attacco in mischia."
+						"Come azione bonus, si scatena un'aura di rabbia. Fino al termine del {@status concentration}, voi e qualsiasi creatura entro 60 piedi da voi ha vantaggio nei tiri di attacco in mischia."
 					]
 				},
 				{
@@ -1131,7 +1131,7 @@
 					},
 					"name": "Overwhelming Fury",
 					"entries": [
-						"Come azione, inondi di rabbia una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve riuscire in un tiro salvezza di Carisma, oppure può usare le sue azioni solo per effettuare attacchi in mischia fino alla fine della tua concentrazione. Può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso con un successo."
+						"Come azione, si può riversare la rabbia su una creatura visibile entro 60 piedi da noi. Il bersaglio deve riuscire in un tiro salvezza di Carisma, oppure può usare le sue azioni solo per effettuare attacchi in mischia finché non termina il tuo {@status concentration}. Può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo."
 					]
 				}
 			]
@@ -1168,7 +1168,7 @@
 					},
 					"name": "Comforting Aura",
 					"entries": [
-						"Come azione bonus, scegli fino a tre alleati che puoi vedere (puoi scegliere te stesso al posto di uno degli alleati). Fino al termine della concentrazione, ogni bersaglio può tirare un {@dice d4} quando effettua un tiro salvezza e aggiungere il numero tirato al totale."
+						"Come azione bonus, può scegliere fino a tre alleati che può vedere (può scegliere se stesso al posto di uno degli alleati). Fino a quando il vostro {@status concentration} non termina, ogni bersaglio può tirare un {@dice d4} quando effettua un tiro salvezza e aggiungere il numero tirato al totale."
 					]
 				},
 				{
@@ -1182,7 +1182,7 @@
 					},
 					"name": "Aura of Jubilation",
 					"entries": [
-						"Come azione bonus, irradi un'allegria distraente fino al termine della tua concentrazione. Ogni creatura entro 60 piedi da te che può vederti subisce svantaggio in tutte le prove che utilizzano le abilità {@skill Perception} e {@skill Investigation}."
+						"Come azione bonus, irradiate un'allegria distraente finché il vostro {@status concentration} non termina. Ogni creatura entro 60 piedi da voi che può vedervi subisce svantaggio su qualsiasi prova che utilizzi le abilità {@skill Perception} e {@skill Investigation}."
 					]
 				},
 				{
@@ -1239,7 +1239,7 @@
 					},
 					"name": "Cloak of Air",
 					"entries": [
-						"Come azione bonus, prendi il controllo dell'aria intorno a te per creare un velo protettivo. Fino al termine della tua concentrazione, i tiri di attacco contro di te hanno svantaggio, e quando una creatura che puoi vedere ti manca con un attacco in mischia, puoi usare la tua reazione per costringere la creatura a ripetere il tiro di attacco contro se stessa."
+						"Come azione bonus, si prende il controllo dell'aria intorno a sé per creare un velo protettivo. Fino al termine del {@status concentration}, i tiri di attacco contro di voi hanno svantaggio e quando una creatura che potete vedere vi manca con un attacco in mischia, potete usare la vostra reazione per costringere la creatura a ripetere il tiro di attacco contro se stessa."
 					]
 				},
 				{
@@ -1253,7 +1253,7 @@
 					},
 					"name": "Wind Form",
 					"entries": [
-						"Come azione bonus, ottieni una velocità di volo di 60 piedi, che dura fino alla fine della tua concentrazione."
+						"Come azione bonus, si guadagna una velocità di volo di 60 piedi, che dura fino al termine della propria {@status concentration}."
 					]
 				},
 				{
@@ -1267,7 +1267,7 @@
 					},
 					"name": "Misty Form",
 					"entries": [
-						"Come azione, il tuo corpo diventa come una nuvola nebbiosa finché la tua concentrazione non termina. In questa forma, guadagni resistenza ai danni da randellate, perforazioni e fendenti e non puoi compiere azioni diverse dall'azione Fuga. Puoi passare attraverso aperture larghe non più di 1 pollice senza stringere."
+						"Come azione, il vostro corpo diventa come una nuvola nebbiosa finché non termina il vostro {@status concentration}. In questa forma, si guadagna resistenza ai danni da percosse, perforazioni e fendenti e non si possono compiere azioni diverse dall'azione Dash. Si può passare attraverso aperture larghe non più di 1 pollice senza stringere."
 					]
 				},
 				{
@@ -1281,7 +1281,7 @@
 					},
 					"name": "Animate Air",
 					"entries": [
-						"Come azione, fai apparire un elementale dell'aria in uno spazio non occupato che puoi vedere entro 120 piedi da te. L'elementale dura fino alla fine della tua concentrazione e obbedisce ai tuoi comandi verbali. In combattimento, tira per la sua iniziativa e scegli il suo comportamento durante i suoi turni. Quando questo effetto finisce, l'elementale scompare. Vedi il manuale dei mostri per il suo blocco statistico."
+						"Come azione, causate la comparsa di un elementale dell'aria in uno spazio non occupato che potete vedere entro 120 piedi da voi. L'elementale dura fino al termine del vostro {@status concentration} e obbedisce ai vostri comandi verbali. In combattimento, si tira per la sua iniziativa e si sceglie il suo comportamento durante i suoi turni. Quando questo effetto termina, l'elementale scompare. Vedere il Manuale dei Mostri per il suo blocco di statistiche."
 					]
 				}
 			]
@@ -1308,7 +1308,7 @@
 					},
 					"name": "Combustion",
 					"entries": [
-						"Come azione, scegli una creatura o un oggetto che puoi vedere entro 120 piedi da te. Il bersaglio deve effettuare un tiro salvezza di Costituzione. Con un tiro salvezza fallito, il bersaglio subisce {@scaledamage 1d10|1-7|1d10|psi} danni da fuoco per ogni punto psi speso, e prende fuoco, subendo {@damage 1d6} danni da fuoco alla fine di ogni suo turno finché la tua concentrazione non termina o finché lui o una creatura adiacente non spegne le fiamme con un'azione. Con un tiro salvezza riuscito, il bersaglio subisce la metà dei danni e non prende fuoco."
+						"Come azione, scegliete una creatura o un oggetto che potete vedere entro 120 piedi da voi. Il bersaglio deve effettuare un tiro salvezza di Costituzione. Se il tiro salvezza fallisce, il bersaglio subisce {@scaledamage 1d10|1-7|1d10|psi} danni da fuoco per ogni punto psi speso e prende fuoco, subendo {@damage 1d6} danni da fuoco alla fine di ogni turno fino alla fine del vostro {@status concentration} o fino a quando lui o una creatura adiacente non spegne le fiamme con un'azione. Se il tiro salvezza riesce, il bersaglio subisce la metà dei danni e non prende fuoco."
 					]
 				},
 				{
@@ -1322,7 +1322,7 @@
 					},
 					"name": "Rolling Flame",
 					"entries": [
-						"Come azione, crei il fuoco in un cubo di 2 metri per 2 metri entro 5 metri da te. Il fuoco dura fino alla fine della tua concentrazione. Qualsiasi creatura in quell'area quando usi questa abilità e qualsiasi creatura che termina il suo turno in quell'area subisce 5 danni da fuoco."
+						"Come azione, si crea un fuoco in un cubo di 6 metri per 8 entro un raggio di 2 metri. Il fuoco dura fino al termine del vostro {@status concentration}. Ogni creatura che si trova in quell'area quando si usa questa abilità e ogni creatura che vi termina il proprio turno subisce 5 danni da fuoco."
 					]
 				},
 				{
@@ -1346,7 +1346,7 @@
 					},
 					"name": "Fire Form",
 					"entries": [
-						"Come azione bonus, diventi avvolto dalle fiamme fino al termine della tua concentrazione. Qualsiasi creatura che finisca il suo turno entro 5 piedi da te prende {@damage 3d6} danni da fuoco."
+						"Come azione bonus, si viene avvolti dalle fiamme fino al termine del {@status concentration}. Ogni creatura che termina il suo turno entro un raggio di 2 metri da voi subisce {@damage 3d6} danni da fuoco."
 					]
 				},
 				{
@@ -1360,7 +1360,7 @@
 					},
 					"name": "Animate Fire",
 					"entries": [
-						"Come azione, fai apparire un elementale del fuoco in uno spazio non occupato che puoi vedere entro 120 piedi da te. L'elementale dura fino alla fine della tua concentrazione e obbedisce ai tuoi comandi verbali. In combattimento, tira per la sua iniziativa e scegli il suo comportamento durante i suoi turni. Quando questo effetto finisce, l'elementale scompare. Vedi il manuale dei mostri per il suo blocco statistico."
+						"Come azione, causate la comparsa di un elementale del fuoco in uno spazio non occupato che potete vedere entro 120 piedi da voi. L'elementale dura fino al termine del vostro {@status concentration} e obbedisce ai vostri comandi verbali. In combattimento, tirate per la sua iniziativa e scegliete il suo comportamento durante i suoi turni. Quando questo effetto termina, l'elementale scompare. Vedere il Manuale dei Mostri per il suo blocco di statistiche."
 					]
 				}
 			]
@@ -1458,7 +1458,7 @@
 					},
 					"name": "Telekinetic Barrier",
 					"entries": [
-						"Come azione, crei un muro trasparente di energia telecinetica, di cui almeno una porzione deve trovarsi entro 60 piedi da te. Il muro è lungo 40 piedi, alto 10 piedi e spesso 1 pollice. Il muro dura fino alla fine della tua concentrazione. Ogni sezione di 10 piedi del muro ha una CA di 10 e 10 punti ferita."
+						"Come azione, si crea un muro trasparente di energia telecinetica, di cui almeno una parte deve trovarsi entro 60 piedi da voi. Il muro è lungo 6 metri, alto 3 metri e spesso 1 pollice. Il muro dura fino al termine del vostro {@status concentration}. Ogni sezione di 3 metri del muro ha una CA di 10 e 10 punti ferita."
 					]
 				},
 				{
@@ -1472,7 +1472,7 @@
 					},
 					"name": "Grasp",
 					"entries": [
-						"Tenti di afferrare una creatura con energia telecinetica e tenerla prigioniera. Come azione, scegli una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve riuscire in un tiro salvezza di Forza o essere {@condition grappled} da te fino al termine della tua concentrazione o fino a quando il bersaglio non lascia la tua portata, che è di 60 piedi per questa presa.",
+						"Si tenta di afferrare una creatura con l'energia telecinetica e di tenerla prigioniera. Come azione, scegliete una creatura visibile entro 60 piedi da voi. Il bersaglio deve riuscire in un tiro salvezza di Forza o essere {@condition grappled} da voi fino a quando non termina il vostro {@status concentration} o fino a quando il bersaglio non esce dalla vostra portata, che per questa presa è di 60 piedi.",
 						"Il bersaglio {@condition grappled} può sfuggire riuscendo a superare una prova di Forza (Atletica) o Destrezza (Acrobatica) contestata dalla tua capacità psionica più il tuo bonus di competenza. Quando un bersaglio tenta di fuggire in questo modo, puoi spendere punti psi per aumentare la tua prova, rispettando il tuo limite di psi. Otterrai un bonus di +1 per ogni punto psi speso.",
 						"Mentre un bersaglio è {@condition grappled} in questo modo, crei uno dei seguenti effetti come azione:"
 					]
@@ -1551,7 +1551,7 @@
 					},
 					"name": "Frozen Rain",
 					"entries": [
-						"Come azione, scegli un punto che puoi vedere entro 120 piedi da te. L'aria in una sfera di 20 piedi centrata su quel punto diventa mortalmente fredda e satura di umidità. Ogni creatura in quell'area deve effettuare un tiro salvezza di Costituzione. Con un tiro salvezza fallito, un bersaglio subisce {@damage 6d6} danni da freddo e la sua velocità è ridotta a 0 fino al termine della tua concentrazione. Con un tiro salvezza riuscito, il bersaglio subisce la metà dei danni.",
+						"Come azione, scegliete un punto che potete vedere entro 120 piedi da voi. L'aria in una sfera di 6 metri di raggio centrata su quel punto diventa mortalmente fredda e satura di umidità. Ogni creatura in quell'area deve effettuare un tiro salvezza di Costituzione. Se il tiro salvezza fallisce, il bersaglio subisce {@damage 6d6} danni da freddo e la sua velocità è ridotta a 0 fino al termine del tiro salvezza {@status concentration}. Se il tiro salvezza riesce, il bersaglio subisce la metà dei danni.",
 						"Come azione, un bersaglio a cui è stata ridotta la velocità può terminare l'effetto in anticipo se riesce a fare una prova di Forza (Atletica) con una CD pari alla CD di salvataggio di questo effetto.",
 						"Puoi aumentare il danno di questo effetto di {@scaledamage 6d6|5-7|1d6|psi} per ogni punto psi addizionale speso su di esso."
 					]
@@ -1567,7 +1567,7 @@
 					},
 					"name": "Ice Barrier",
 					"entries": [
-						"Come azione, crei un muro di ghiaccio, di cui almeno una porzione deve trovarsi entro 60 piedi da te. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino alla fine della tua concentrazione. Ogni sezione di 10 piedi del muro ha CA 12 e 30 punti ferita. Una creatura che danneggia il muro con un attacco in mischia subisce un danno da freddo pari al danno che la creatura ha inflitto al muro."
+						"Come azione, si crea un muro di ghiaccio, di cui almeno una parte deve trovarsi entro 60 piedi da voi. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino al termine del vostro {@status concentration}. Ogni sezione di 3 metri del muro ha CA 12 e 30 punti ferita. Una creatura che danneggia il muro con un attacco in mischia subisce danni da freddo pari ai danni che la creatura ha inflitto al muro."
 					]
 				}
 			]
@@ -1604,7 +1604,7 @@
 					},
 					"name": "Light",
 					"entries": [
-						"Come azione, un oggetto che tocchi irradia luce in un raggio di 20 piedi e luce fioca per altri 20 piedi. La luce dura finché la tua concentrazione non termina. In alternativa, una creatura che tocchi irradia luce nello stesso modo se fallisce un tiro salvezza di Destrezza. Mentre è illuminata in questo modo, non può nascondersi e i tiri di attacco contro di essa ottengono un vantaggio."
+						"Come azione, un oggetto che si tocca irradia luce in un raggio di 6 metri e luce fioca per altri 6 metri. La luce dura fino al termine del vostro {@status concentration}. In alternativa, una creatura toccata irradia luce nello stesso modo se fallisce un tiro salvezza di Destrezza. Quando è illuminata in questo modo, non può nascondersi e i tiri di attacco contro di essa ottengono un vantaggio."
 					]
 				},
 				{
@@ -1618,7 +1618,7 @@
 					},
 					"name": "Shadow Beasts",
 					"entries": [
-						"Come azione, fai apparire due {@creature shadow||shadows} in spazi non occupati che puoi vedere entro 60 piedi da te. I {@creature shadow||shadows} durano fino alla fine della tua concentrazione e obbediscono ai tuoi comandi verbali. In combattimento, tira per la loro iniziativa e scegli il loro comportamento durante i loro turni. Quando questo effetto finisce, il {@creature shadow||shadows} scompare. Vedi il manuale dei mostri per il loro blocco statistico."
+						"Come azione, ne fate apparire due {@creature shadow||shadows} in spazi non occupati che potete vedere entro 60 piedi da voi. I {@creature shadow||shadows} durano fino al termine del vostro {@status concentration} e obbediscono ai vostri comandi verbali. In combattimento, tirate per la loro iniziativa e scegliete il loro comportamento durante i loro turni. Quando questo effetto termina, i {@creature shadow||shadows} scompaiono. Vedere il Manuale dei Mostri per il loro blocco di statistiche."
 					]
 				},
 				{
@@ -1632,7 +1632,7 @@
 					},
 					"name": "Radiant Beam",
 					"entries": [
-						"Come azione, proietti un raggio di luce verso una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza è fallito, subisce {@damage 6d6} danni radianti ed è {@condition blinded} fino al termine della tua concentrazione. Se il tiro salvezza è riuscito, subisce la metà dei danni. Un bersaglio {@condition blinded} può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso con un successo.",
+						"Come azione, si proietta un raggio di luce verso una creatura visibile entro 60 piedi da noi. Il bersaglio deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza fallisce, subisce {@damage 6d6} danni radianti e subisce {@condition blinded} danni fino al termine del vostro {@status concentration}. Se il tiro salvezza va a buon fine, subisce la metà dei danni. Un bersaglio {@condition blinded} può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo.",
 						"Puoi aumentare il danno di questo effetto di {@scaledamage 6d6|5-7|1d6|psi} per ogni punto psi addizionale speso su di esso."
 					]
 				}
@@ -1700,7 +1700,7 @@
 					},
 					"name": "Water Sphere",
 					"entries": [
-						"Come azione, provochi la formazione di una sfera d'acqua intorno a una creatura. Scegli una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza viene fallito, rimane intrappolato nella sfera d'acqua fino al termine della tua concentrazione. Mentre il bersaglio è intrappolato, la sua velocità è dimezzata, subisce uno svantaggio nei tiri di attacco e non può vedere nulla a più di 3 metri da lui. Tuttavia, anche i tiri di attacco contro di esso subiscono svantaggio. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, ponendo fine all'effetto su se stesso in caso di successo."
+						"Come azione, si fa sì che una sfera d'acqua si formi attorno a una creatura. Scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza è fallito, rimane intrappolato nella sfera d'acqua fino al termine del tiro salvezza {@status concentration}. Mentre il bersaglio è intrappolato, la sua velocità è dimezzata, subisce svantaggio ai tiri di attacco e non può vedere nulla a più di 3 metri di distanza. Tuttavia, anche i tiri per colpire subiscono svantaggio. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo."
 					]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					},
 					"name": "Animate Water",
 					"entries": [
-						"Come azione, fai apparire un elementale dell'acqua in uno spazio non occupato che puoi vedere entro 120 piedi da te. L'elementale dura fino alla fine della tua concentrazione e obbedisce ai tuoi comandi verbali. In combattimento, tira per la sua iniziativa e scegli il suo comportamento durante i suoi turni. Quando questo effetto finisce, l'elementale scompare. Vedi il manuale dei mostri per il suo blocco statistico."
+						"Come azione, fate apparire un elementale dell'acqua in uno spazio non occupato che potete vedere entro 120 piedi da voi. L'elementale dura fino al termine del vostro {@status concentration} e obbedisce ai vostri comandi verbali. In combattimento, tirate per la sua iniziativa e scegliete il suo comportamento durante i suoi turni. Quando questo effetto termina, l'elementale scompare. Vedere il Manuale dei Mostri per il suo blocco di statistiche.d di ogni suo turno, terminando l'effetto su se stesso in caso di successo."
 					]
 				}
 			]
@@ -1741,7 +1741,7 @@
 					},
 					"name": "Cloud Steps",
 					"entries": [
-						"Come azione, evochi delle nuvole per creare una scala solida e traslucida che dura fino alla fine della tua concentrazione. Le scale formano una spirale che riempie un'area di 10 piedi per 10 piedi e si estende verso l'alto di 20 piedi per ogni punto psi speso."
+						"Come azione, si evocano le nuvole per creare una scala solida e traslucida che dura fino al termine del proprio {@status concentration}. Le scale formano una spirale che riempie un'area di 10 piedi per 10 piedi e sale di 6 metri per ogni punto psi speso."
 					]
 				},
 				{
@@ -1765,7 +1765,7 @@
 					},
 					"name": "Wall of Clouds",
 					"entries": [
-						"Come azione, crei un muro di nuvole, di cui almeno una porzione deve trovarsi entro 60 piedi da te. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino alla fine della tua concentrazione. Le creature possono attraversarlo senza impedimenti, ma il muro blocca la vista."
+						"Come azione, si crea un muro di nuvole, di cui almeno una parte deve trovarsi entro 60 piedi da voi. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino al termine del vostro {@status concentration}. Le creature possono attraversarlo senza problemi, ma il muro blocca la vista."
 					]
 				},
 				{
@@ -1800,7 +1800,7 @@
 					},
 					"name": "Wall of Thunder",
 					"entries": [
-						"Come azione, crei un muro di tuoni, di cui almeno una porzione deve trovarsi entro 60 piedi da te. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino alla fine della tua concentrazione. Ogni piede spostato attraverso il muro costa 1 piede extra di movimento. Quando una creatura si muove nello spazio del muro per la prima volta in un turno o inizia il suo turno lì, quella creatura deve riuscire in un tiro salvezza di Forza, o prende {@damage 6d6} danni da tuono, viene spinta in linea retta fino a 30 piedi di distanza dal muro e viene colpita {@condition prone}."
+						"Come azione, si crea un muro di tuono, di cui almeno una parte deve trovarsi entro 60 piedi da voi. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino al termine del vostro {@status concentration}. Ogni piede mosso attraverso il muro costa 1 piede di movimento in più. Quando una creatura si muove nello spazio del muro per la prima volta in un turno o inizia il suo turno lì, deve riuscire in un tiro salvezza di Forza, altrimenti subisce {@damage 6d6} danni da tuono, viene spinta in linea retta fino a 9 metri di distanza dal muro e subisce un colpo {@condition prone}."
 					]
 				},
 				{
@@ -1867,7 +1867,7 @@
 					},
 					"name": "Wall of Wood",
 					"entries": [
-						"Come azione, crei un muro di legno di cui almeno una porzione deve trovarsi entro 60 piedi da te. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino alla fine della tua concentrazione. Ogni sezione di 5 piedi di larghezza del muro ha CA 12 e 100 punti ferita. Rompere una sezione crea un buco di 5 piedi per 5 piedi in essa, ma il muro rimane altrimenti intatto."
+						"Come azione, si crea un muro di legno di cui almeno una parte deve trovarsi entro 60 piedi da voi. Il muro è lungo 60 piedi, alto 15 piedi e spesso 1 piede. Il muro dura fino al termine del vostro {@status concentration}. Ogni sezione del muro larga 5 piedi ha CA 12 e 100 punti ferita. Se si rompe una sezione, si crea un buco di un metro e mezzo per un metro e mezzo, ma per il resto il muro rimane intatto. viene abbattuto (%2%)."
 					]
 				},
 				{
@@ -1881,7 +1881,7 @@
 					},
 					"name": "Armored Form",
 					"entries": [
-						"Come azione bonus, ottieni resistenza ai danni da randellate, da perforazione e da taglio, che dura fino al termine della tua concentrazione."
+						"Come azione bonus, si ottiene una resistenza ai danni da percosse, perforazione e taglio, che dura fino al termine della propria {@status concentration}."
 					]
 				},
 				{
@@ -1895,7 +1895,7 @@
 					},
 					"name": "Animate Earth",
 					"entries": [
-						"Come azione, fai apparire un elementale della terra in uno spazio non occupato che puoi vedere entro 120 piedi da te. L'elementale dura fino alla fine della tua concentrazione e obbedisce ai tuoi comandi verbali. In combattimento, tira per la sua iniziativa e scegli il suo comportamento durante i suoi turni. Quando questo effetto finisce, l'elementale scompare. Vedi il manuale dei mostri per il suo blocco statistico."
+						"Come azione, fate apparire un elementale della terra in uno spazio non occupato che potete vedere entro 120 piedi da voi. L'elementale dura fino al termine del vostro {@status concentration} e obbedisce ai vostri comandi verbali. In combattimento, tirate per la sua iniziativa e scegliete il suo comportamento durante i suoi turni. Quando questo effetto termina, l'elementale scompare. Vedere il Manuale dei Mostri per il suo blocco di statistiche."
 					]
 				}
 			]
@@ -1992,7 +1992,7 @@
 					},
 					"name": "Faithful Archer",
 					"entries": [
-						"Come azione bonus, infondi un'arma a distanza con una sensibilità limitata. Fino alla fine della tua concentrazione, puoi effettuare un attacco extra con l'arma all'inizio di ogni tuo turno (nessuna azione richiesta). Se si tratta di un'arma da lancio, essa ritorna nella tua presa ogni volta che effettui un attacco con essa."
+						"Come azione bonus, si può dotare un'arma a distanza di una sensibilità limitata. Fino a quando non termina il tuo {@status concentration}, puoi effettuare un attacco extra con l'arma all'inizio di ogni tuo turno (non è richiesta alcuna azione). Se si tratta di un'arma da lancio, torna in mano ogni volta che si effettua un attacco con essa."
 					]
 				}
 			]
@@ -2029,7 +2029,7 @@
 					},
 					"name": "Step from Sight",
 					"entries": [
-						"Come azione bonus, nasconditi alla vista. Puoi bersagliare una creatura in più per ogni punto Psi aggiuntivo che spendi per questa abilità. I bersagli aggiunti devono essere visibili a te ed entro 60 piedi da te. Ogni bersaglio si trasforma {@condition invisible} e rimane tale fino al termine della tua concentrazione o fino a quando non prende di mira, danneggia o influenza in altro modo una creatura con un attacco, un incantesimo o un'altra capacità."
+						"Come azione bonus, ci si può occultare alla vista. Si può bersagliare una creatura aggiuntiva per ogni punto psi aggiuntivo speso per questa abilità. I bersagli aggiunti devono essere visibili e trovarsi entro 60 piedi da voi. Ogni bersaglio diventa {@condition invisible} e rimane tale finché il vostro {@status concentration} non termina o finché non viene immediatamente dopo aver bersagliato, danneggiato o influenzato in altro modo una creatura con un attacco, un incantesimo o un'altra abilità."
 					]
 				},
 				{
@@ -2043,7 +2043,7 @@
 					},
 					"name": "Enduring Invisibility",
 					"entries": [
-						"Come azione bonus, ti trasformi {@condition invisible} e rimani tale fino alla fine della tua concentrazione."
+						"Come azione bonus, ci si trasforma in {@condition invisible} e si rimane tali fino al termine del proprio {@status concentration}."
 					]
 				}
 			]
@@ -2070,7 +2070,7 @@
 					},
 					"name": "Wandering Mind",
 					"entries": [
-						"Entri in una profonda contemplazione. Se ti concentri per l'intera durata di questa opzione, ottieni la competenza per un massimo di tre delle seguenti abilità (un'abilità per ogni 2 punti psi spesi): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} e {@skill Survival}. Il beneficio dura per 1 ora, non è richiesta alcuna concentrazione."
+						"Si entra in una profonda contemplazione. Se ci si concentra per l'intera durata di questa opzione, si ottiene una competenza con un massimo di tre delle seguenti abilità (un'abilità per ogni 2 punti psi spesi): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} e {@skill Survival}. Il beneficio dura 1 ora, non è richiesto il {@status concentration}."
 					]
 				},
 				{
@@ -2122,7 +2122,7 @@
 					},
 					"name": "Wandering Eye",
 					"entries": [
-						"Come azione, si crea un sensore psichico nel raggio di 60 piedi. Il sensore dura fino al termine della concentrazione. Il sensore è invisibile e si libra nell'aria. Si ricevono mentalmente informazioni visive dal sensore, che ha una visione normale e una visione oscura con un raggio di 60 piedi. Il sensore può guardare in tutte le direzioni. Come azione, è possibile spostare il sensore fino a 9 metri in qualsiasi direzione. Non c'è limite alla distanza da cui l'occhio può muoversi, ma non può entrare in un altro piano di esistenza. Una barriera solida blocca il movimento dell'occhio, ma l'occhio può passare attraverso un'apertura di appena un centimetro di diametro."
+						"Come azione, si crea un sensore psichico nel raggio di 60 piedi. Il sensore dura fino al termine del vostro {@status concentration}. Il sensore è invisibile e si libra nell'aria. Si ricevono mentalmente informazioni visive dal sensore, che ha una visione normale e una visione oscura con un raggio di 60 piedi. Il sensore può guardare in tutte le direzioni. Come azione, è possibile spostare il sensore fino a 9 metri in qualsiasi direzione. Non c'è limite alla distanza da cui l'occhio può muoversi, ma non può entrare in un altro piano di esistenza. Una barriera solida blocca il movimento dell'occhio, ma l'occhio può passare attraverso un'apertura di appena un centimetro di diametro."
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					},
 					"name": "Nomad's Gate",
 					"entries": [
-						"Come azione, crei un cubo di 5 piedi di luce grigia e fioca entro 5 piedi da te. Crei un cubo identico in qualsiasi punto a tua scelta entro 1 miglio che hai visto nelle ultime 24 ore. Fino al termine della tua concentrazione, chiunque entri in uno dei cubi si teletrasporta immediatamente nell'altro, apparendo in uno spazio non occupato accanto ad esso. Il teletrasporto fallisce se non c'è spazio in cui la creatura possa apparire."
+						"Come azione, si crea un cubo di 5 piedi di luce grigia e fioca entro un raggio di 5 piedi. Si crea un cubo identico in qualsiasi punto a scelta entro 1 miglio che si è visto nelle ultime 24 ore. Finché il vostro {@status concentration} non termina, chiunque entri in uno dei cubi si teletrasporta immediatamente nell'altro, apparendo in uno spazio non occupato accanto ad esso. Il teletrasporto fallisce se non c'è spazio per far apparire la creatura nel movimento dell'occhio, ma l'occhio può passare attraverso un'apertura del diametro di 1 pollice."
 					]
 				}
 			]
@@ -2260,7 +2260,7 @@
 					},
 					"name": "Precognitive Hunch",
 					"entries": [
-						"Come azione bonus, ti apri a ricevere intuizioni momentanee che migliorano le tue probabilità di successo; finché la tua concentrazione non termina, ogni volta che effettui un tiro di attacco, un tiro salvezza o una prova di abilità, tiri un {@dice d4} e lo aggiungi al totale."
+						"Come azione bonus, ci si apre a ricevere intuizioni momentanee che migliorano le proprie probabilità di successo; fino a quando non termina il proprio {@status concentration}, ogni volta che si effettua un tiro di attacco, un tiro salvezza o una prova di abilità, si tira un {@dice d4} e lo si aggiunge al totale."
 					]
 				},
 				{
@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"Come azione, si crea un modello psichico della realtà nella propria mente e lo si imposta per mostrarsi qualche secondo nel futuro. Finché la concentrazione non termina, non si può essere {@quickref Surprise|PHB|3|0|surprised}, i tiri di attacco contro di voi non possono ottenere vantaggio e si ottiene un bonus di +10 all'iniziativa."
+						"Come azione, create un modello psichico della realtà nella vostra mente e lo impostate in modo che vi mostri qualche secondo nel futuro. Fino a quando il vostro {@status concentration} non termina, non potete essere {@quickref Surprise|PHB|3|0|surprised}, i tiri di attacco contro di voi non possono ottenere vantaggio e ottenete un bonus di +10 all'iniziativa."
 					]
 				},
 				{
@@ -2394,7 +2394,7 @@
 					},
 					"name": "Augmented Weapon",
 					"entries": [
-						"Come azione bonus, toccare un'arma {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Finché la concentrazione non termina, quell'arma diventa un'arma magica con un bonus di +3 ai tiri di attacco e di danno."
+						"Come azione bonus, toccare uno {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Finché il tuo {@status concentration} non termina, quell'arma diventa un'arma magica con un bonus di +3 ai tiri di attacco e di danno."
 					]
 				}
 			]
@@ -2484,7 +2484,7 @@
 					},
 					"name": "Distracting Haze",
 					"entries": [
-						"Come azione, scegli una creatura che puoi vedere entro 60 piedi da te. Quella creatura deve effettuare un tiro salvezza di Intelligenza. Con un tiro salvezza fallito, prende {@scaledamage 1d10|1-7|1d10|psi} danni psichici per ogni punto psi speso e non può vedere nulla a più di 3 metri da lei finché la tua concentrazione non termina. Con un tiro salvezza riuscito, subisce la metà dei danni."
+						"Come azione, scegliete una creatura che potete vedere entro 60 piedi da voi. Quella creatura deve effettuare un tiro salvezza di Intelligenza. Se il tiro salvezza fallisce, subisce {@scaledamage 1d10|1-7|1d10|psi} danni psichici per ogni punto psi speso e non può vedere nulla a più di 3 metri di distanza fino al termine del tiro salvezza {@status concentration}. Con un tiro salvezza riuscito, subisce la metà dei danni."
 					]
 				},
 				{
@@ -2612,7 +2612,7 @@
 					},
 					"name": "Phantom Foe",
 					"entries": [
-						"Come azione, scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve effettuare un tiro salvezza di Intelligenza. Se il tiro salvezza fallisce, percepisce una creatura orrida adiacente a lui fino al termine della concentrazione. Durante questo periodo, il bersaglio non può compiere reazioni e subisce {@damage 1d8} danni psichici all'inizio di ogni suo turno. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo. È possibile aumentare i danni del {@scaledamage 1d8|3-7|1d8|psi} per ogni punto psi aggiuntivo speso per l'abilità."
+						"Come azione, scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve effettuare un tiro salvezza di Intelligenza. Se il tiro salvezza fallisce, percepisce un'orrida creatura adiacente a lui fino al termine del suo {@status concentration}. Durante questo periodo, il bersaglio non può compiere reazioni e subisce {@damage 1d8} danni psichici all'inizio di ogni suo turno. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo. È possibile aumentare i danni del {@scaledamage 1d8|3-7|1d8|psi} per ogni punto psi aggiuntivo speso per l'abilità."
 					]
 				},
 				{
@@ -2626,7 +2626,7 @@
 					},
 					"name": "Phantom Betrayal",
 					"entries": [
-						"Come azione, impianta una paranoia delirante nella mente di una creatura. Scegli una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve riuscire in un tiro salvezza di Intelligenza, o fino alla fine della tua concentrazione, deve colpire i suoi alleati con attacchi e altri effetti dannosi. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso con un successo. Una creatura è immune a questa capacità se è immune all'essere {@condition charmed}."
+						"Con un'azione, si può seminare la paranoia delirante nella mente di una creatura. Scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve riuscire in un tiro salvezza di Intelligenza o, finché non termina l'azione {@status concentration}, deve colpire i suoi alleati con attacchi e altri effetti dannosi. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo. Una creatura è immune a questa capacità se è immune all'essere {@condition charmed}.pentata sulla capacità."
 					]
 				},
 				{
@@ -2640,7 +2640,7 @@
 					},
 					"name": "Phantom Riches",
 					"entries": [
-						"Come azione, imposti il fantasma di un oggetto molto desiderato nella mente di una creatura. Scegli una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve effettuare un tiro salvezza di Intelligenza. Se il tiro salvezza viene fallito, ottieni un controllo parziale sul comportamento del bersaglio fino alla fine della tua concentrazione; il bersaglio si muove come desideri in ogni suo turno, mentre pensa di inseguire l'oggetto fantasma che desidera. Se non ha subito danni dal suo ultimo turno, può usare la sua azione solo per ammirare l'oggetto che avete creato nella sua percezione. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, ponendo fine all'effetto su se stesso con un successo."
+						"Con un'azione, si può impiantare il fantasma di un oggetto molto desiderato nella mente di una creatura. Scegliete una creatura che potete vedere entro 60 piedi da voi. Il bersaglio deve effettuare un tiro salvezza di Intelligenza. Se il tiro salvezza fallisce, si ottiene un controllo parziale sul comportamento del bersaglio fino alla fine del proprio {@status concentration}; il bersaglio si muove come si desidera in ogni suo turno, mentre pensa di inseguire l'oggetto fantasma che desidera. Se non ha subito danni dal suo ultimo turno, può usare la sua azione solo per ammirare l'oggetto creato nella sua percezione. Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo."
 					]
 				}
 			]
@@ -2697,7 +2697,7 @@
 					},
 					"name": "Psychic Grip",
 					"entries": [
-						"Come azione, prendi di mira una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve riuscire in un tiro salvezza di Intelligenza, o è {@condition paralyzed} fino alla fine della tua concentrazione. Alla fine di ogni suo turno, può ripetere il tiro salvezza. Con un successo, questo effetto termina. In caso di fallimento, puoi usare la tua reazione per costringere il bersaglio a muoversi fino a metà della sua velocità, anche se è {@condition paralyzed}."
+						"Come azione, si prende di mira una creatura visibile entro 60 piedi da noi. Il bersaglio deve riuscire a superare un tiro salvezza di Intelligenza, altrimenti subisce {@condition paralyzed} fino alla fine del proprio {@status concentration}. Alla fine di ogni suo turno, può ripetere il tiro salvezza. In caso di successo, l'effetto termina. Se fallisce, può usare la sua reazione per costringere il bersaglio a muoversi fino a metà della sua velocità, anche se è {@condition paralyzed}.Il bersaglio può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stesso in caso di successo."
 					]
 				},
 				{
@@ -2711,7 +2711,7 @@
 					},
 					"name": "Psychic Domination",
 					"entries": [
-						"Come azione, prendi di mira una creatura che puoi vedere entro 60 piedi da te. Il bersaglio deve riuscire in un tiro salvezza di Intelligenza, oppure scegli le azioni e i movimenti della creatura nei suoi turni fino alla fine della tua concentrazione. Alla fine di ogni suo turno, può ripetere il tiro salvezza, terminando l'effetto su se stessa con un successo. Una creatura è immune a questa capacità se è immune all'essere {@condition charmed}."
+						"Come azione, si può bersagliare una creatura visibile entro 60 piedi da noi. Il bersaglio deve riuscire a superare un tiro salvezza di Intelligenza, altrimenti sarete voi a scegliere le azioni e il movimento della creatura nei suoi turni fino al termine del vostro {@status concentration}. Alla fine di ogni turno, la creatura può ripetere il tiro salvezza, terminando l'effetto su se stessa in caso di successo. Una creatura è immune a questa capacità se è immune all'essere {@condition charmed}."
 					]
 				}
 			]
@@ -2738,7 +2738,7 @@
 					},
 					"name": "Tremorsense",
 					"entries": [
-						"Come azione bonus, ottieni tremorsense con un raggio di 30 piedi, che dura fino alla fine della tua concentrazione."
+						"Come azione bonus, si ottiene il senso del tremore con un raggio di 9 metri, che dura fino al termine della propria {@status concentration}."
 					]
 				},
 				{
@@ -2762,7 +2762,7 @@
 					},
 					"name": "Piercing Sight",
 					"entries": [
-						"Come azione bonus, ottieni la capacità di vedere attraverso oggetti spessi fino a 1 piede entro 30 piedi da te. Questa vista dura fino al termine della tua concentrazione."
+						"Come azione bonus, si acquisisce la capacità di vedere attraverso gli oggetti spessi fino a un metro nel raggio di 9 metri. Questa visione dura fino al termine del vostro {@status concentration}."
 					]
 				},
 				{
@@ -2776,7 +2776,7 @@
 					},
 					"name": "Truesight",
 					"entries": [
-						"Come azione bonus, ottieni la truesight con un raggio di 30 piedi, che dura fino alla fine della tua concentrazione."
+						"Come azione bonus, si ottiene una vista reale con un raggio di 9 metri, che dura fino al termine della propria {@status concentration}."
 					]
 				}
 			]

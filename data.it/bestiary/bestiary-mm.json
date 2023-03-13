@@ -90,7 +90,7 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Cinque aarakocra entro 30 piedi l'uno dall'altro possono evocare magicamente un {@creature air elemental}. Ognuno dei cinque deve usare la sua azione e il suo movimento per tre turni consecutivi per eseguire una danza aerea e deve mantenere la concentrazione mentre lo fa (come se si concentrasse su un incantesimo). Quando tutti e cinque hanno finito il loro terzo turno di danza, l'elementale appare in uno spazio non occupato entro 60 piedi da loro. È amichevole nei loro confronti e obbedisce ai loro comandi verbali. Rimane per 1 ora, finché lui o tutti i suoi evocatori non muoiono, o finché uno dei suoi evocatori non lo congeda come azione bonus. Un evocatore non può eseguire nuovamente la danza fino a quando non finisce un breve riposo. Quando l'elementale torna nel Piano Elementale dell'Aria, qualsiasi aarakocra entro 5 piedi da esso può tornare con lui."
+						"Cinque aarakocra entro 9 metri l'uno dall'altro possono evocare magicamente un {@creature air elemental}. Ognuno dei cinque deve usare la sua azione e il suo movimento per tre turni consecutivi per eseguire una danza aerea e deve mantenere il {@status concentration} mentre lo fa (come se {@status concentration||concentrating} su un incantesimo). Quando tutti e cinque hanno terminato il loro terzo turno di danza, l'elementale appare in uno spazio non occupato entro 60 piedi da loro. È amichevole nei loro confronti e obbedisce ai loro comandi vocali. Rimane per 1 ora, fino alla morte sua o di tutti i suoi evocatori, o fino a quando uno dei suoi evocatori non lo congeda con un'azione bonus. Un evocatore non può eseguire nuovamente la danza finché non termina un breve riposo. Quando l'elementale torna sul Piano Elementale dell'Aria, qualsiasi aarakocra entro un raggio di 2 metri può tornare con lui."
 					]
 				}
 			],
@@ -15774,7 +15774,7 @@
 							"name": "Wind Aura",
 							"type": "entries",
 							"entries": [
-								"Un'aura magica di vento circonda il gigante. L'aura è una sfera di 10 piedi di raggio che dura finché il gigante mantiene la concentrazione su di essa (come se si concentrasse su un incantesimo). Mentre l'aura è in vigore, il gigante guadagna un bonus di +2 alla propria CA contro gli attacchi con armi a distanza e tutte le fiamme aperte all'interno dell'aura si spengono, a meno che non siano magiche."
+								"Un'aura magica di vento circonda il gigante. L'aura è una sfera di 3 metri di raggio che dura finché il gigante mantiene {@status concentration} su di essa (come se {@status concentration||concentrating} su un incantesimo). Mentre l'aura è in vigore, il gigante ottiene un bonus di +2 alla CA contro gli attacchi con armi a distanza e tutte le fiamme aperte all'interno dell'aura si spengono, a meno che non siano magiche. Un evocatore non può eseguire nuovamente la danza finché non termina un breve riposo. Quando l'elementale torna sul Piano Elementale dell'Aria, qualsiasi aarakocra entro un raggio di 2 metri può tornare con lui."
 							]
 						}
 					],
@@ -17731,7 +17731,7 @@
 				{
 					"name": "Darkness Aura (1/Day)",
 					"entries": [
-						"Un raggio di 15 piedi di oscurità magica si estende dal darkmantle, si muove con esso e si diffonde intorno agli angoli. L'oscurità dura finché il darkmantle mantiene la concentrazione, fino a 10 minuti (come se si concentrasse su un incantesimo). Darkvision non può penetrare questa oscurità e nessuna luce naturale può illuminarla. Se una parte dell'oscurità si sovrappone a un'area di luce creata da un incantesimo di 2° livello o inferiore, l'incantesimo che crea la luce viene dissipato."
+						"Un raggio di 15 piedi di oscurità magica si estende dal darkmantle, si muove con esso e si diffonde intorno agli angoli. L'oscurità dura finché la darkmantle mantiene {@status concentration}, fino a 10 minuti (come se {@status concentration||concentrating} fosse un incantesimo). La scurovisione non può penetrare questa oscurità e nessuna luce naturale può illuminarla. Se una parte dell'oscurità si sovrappone a un'area di luce creata da un incantesimo di 2° livello o inferiore, l'incantesimo che ha creato la luce viene annullato.Corsia d'aria, qualsiasi aarakocra entro un raggio di 3 metri da essa può tornare con essa."
 					]
 				}
 			],
@@ -19528,7 +19528,7 @@
 				{
 					"name": "Create Whirlwind",
 					"entries": [
-						"Un cilindro di aria vorticosa di 5 piedi di raggio e 30 piedi di altezza si forma magicamente su un punto che il djinni può vedere entro 120 piedi da esso. Il vortice dura finché il djinni mantiene la concentrazione (come se si concentrasse su un incantesimo). Qualsiasi creatura tranne il djinni che entra nel vortice deve riuscire in un tiro salvezza di Forza {@dc 18} o essere {@condition restrained} colpito da esso. Il djinni può muovere il turbine fino a 60 piedi come azione, e le creature {@condition restrained} dal turbine si muovono con esso. Il turbine termina se il djinni lo perde di vista.",
+						"Un cilindro d'aria vorticosa di 5 piedi di raggio e di 30 piedi di altezza si forma magicamente su un punto che il djinni può vedere entro 120 piedi da esso. Il vortice dura finché il djinni mantiene {@status concentration} (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi creatura, tranne lo djinni, che entra nel vortice deve superare un tiro salvezza di Forza {@dc 18} o esserne colpita {@condition restrained}. Il djinni può muovere il vortice fino a 60 piedi come azione, e le creature {@condition restrained} dal vortice si muovono con lui. Il vortice termina se il djinni lo perde di vista.",
 						"Una creatura può usare la sua azione per liberare una creatura {@condition restrained} dal turbine, inclusa se stessa, riuscendo a effettuare una prova di Forza {@dc 18}. Se la prova ha successo, la creatura non è più {@condition restrained} e si sposta nello spazio più vicino al di fuori del vortice."
 					]
 				}
@@ -19782,7 +19782,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Il doppelganger legge magicamente i pensieri superficiali di una creatura entro 60 piedi da lui. L'effetto può penetrare le barriere, ma un metro di legno o terra, un metro di pietra, due pollici di metallo o una sottile lastra di piombo lo bloccano. Mentre il bersaglio è nel raggio d'azione, il doppelganger può continuare a leggere i suoi pensieri, finché la concentrazione del doppelganger non viene interrotta (come se si concentrasse su un incantesimo). Mentre legge la mente del bersaglio, il doppelganger ha un vantaggio nelle prove di Saggezza ({@skill Insight}) e Carisma ({@skill Deception}, {@skill Intimidation} e {@skill Persuasion}) contro il bersaglio."
+						"Il doppelganger legge magicamente i pensieri di superficie di una creatura entro 60 piedi da lui. L'effetto può penetrare le barriere, ma un metro di legno o terra, un metro di pietra, un metro di metallo o una sottile lastra di piombo lo bloccano. Mentre il bersaglio è nel raggio d'azione, il doppelganger può continuare a leggerne i pensieri, purché il {@status concentration} del doppelganger non venga interrotto (come se il {@status concentration||concentrating} di un incantesimo). Mentre legge la mente del bersaglio, il doppelganger ha vantaggio sulle prove di Saggezza ({@skill Insight}) e Carisma ({@skill Deception}, {@skill Intimidation} e {@skill Persuasion}) contro il bersaglio."
 					]
 				}
 			],
@@ -21849,7 +21849,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Il duergar si trasforma magicamente {@condition invisible} finché non attacca, lancia un incantesimo o usa il suo Enlarge, o finché la sua concentrazione non viene rotta, fino a 1 ora (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il duergar indossa o trasporta è {@condition invisible} con lui."
+						"Il duergar si trasforma magicamente {@condition invisible} finché non attacca, non lancia un incantesimo o non usa il suo Ingrandire, o finché il suo {@status concentration} non viene spezzato, fino a 1 ora (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi equipaggiamento che il duergar indossa o porta con sé è {@condition invisible} con esso. contro il bersaglio."
 					]
 				}
 			],
@@ -23620,7 +23620,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, il drago può girare magicamente {@condition invisible} fino al termine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con esso."
+						"Come azione bonus, il drago può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -23780,7 +23780,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, il drago può girare magicamente {@condition invisible} fino al termine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con esso."
+						"Come azione bonus, il drago può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -23937,7 +23937,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, il drago può girare magicamente {@condition invisible} fino al termine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con esso."
+						"Come azione bonus, il drago può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -24090,7 +24090,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, il drago può girare magicamente {@condition invisible} fino al termine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con esso."
+						"Come azione bonus, il drago può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -24246,7 +24246,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, il drago può girare magicamente {@condition invisible} fino al termine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con esso."
+						"Come azione bonus, il drago può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -24411,7 +24411,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, il drago può girare magicamente {@condition invisible} fino al termine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con esso."
+						"Come azione bonus, il drago può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -24565,7 +24565,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Come azione bonus, il drago può girare magicamente {@condition invisible} fino al termine della sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con esso."
+						"Come azione bonus, il drago può girare magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). Qualsiasi equipaggiamento che il drago indossa o porta con sé è {@condition invisible} con lui."
 					]
 				},
 				{
@@ -26313,7 +26313,7 @@
 				{
 					"name": "Animate Boulders (1/Day)",
 					"entries": [
-						"Il galeb duhr anima magicamente fino a due massi che può vedere entro 60 piedi da lui. Un masso ha statistiche simili a quelle di un galeb duhr, tranne che ha Intelligenza 1 e Carisma 1, non può essere {@condition charmed} o {@condition frightened} e non ha questa opzione di azione. Un masso rimane animato finché il galeb duhr mantiene la concentrazione, fino a 1 minuto (come se si concentrasse su un incantesimo)."
+						"Il galeb duhr anima magicamente fino a due massi che riesce a vedere entro 60 piedi da lui. Un masso ha statistiche simili a quelle di un galeb duhr, tranne che per il fatto che ha Intelligenza 1 e Carisma 1, non può essere {@condition charmed} o {@condition frightened} e non ha questa opzione di azione. Un masso rimane animato finché il galeb duhr mantiene {@status concentration}, fino a 1 minuto (come se {@status concentration||concentrating} su un incantesimo)."
 					]
 				}
 			],
@@ -33308,7 +33308,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"La megera si trasforma magicamente {@condition invisible} finché non attacca o lancia un incantesimo, o finché non termina la sua concentrazione (come se si concentrasse su un incantesimo). Mentre {@condition invisible}, non lascia alcuna prova fisica del suo passaggio, quindi può essere rintracciata solo con la magia. L'equipaggiamento che indossa o porta con sé è {@condition invisible} con lei."
+						"La megera si trasforma magicamente {@condition invisible} finché non attacca o lancia un incantesimo, o finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo). Mentre {@condition invisible} non lascia alcuna traccia fisica del suo passaggio, quindi può essere rintracciata solo con la magia. L'equipaggiamento che indossa o porta con sé rimane {@condition invisible} con lei."
 					]
 				}
 			],
@@ -37733,7 +37733,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Il folletto si trasforma magicamente {@condition invisible} finché non attacca, o finché la sua concentrazione non termina (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il folletto indossa o porta con sé è {@condition invisible} con esso."
+						"L'imp si trasforma magicamente {@condition invisible} finché non attacca, o finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo). Qualsiasi equipaggiamento che il folletto indossa o porta con sé è {@condition invisible} con esso."
 					]
 				}
 			],
@@ -49573,7 +49573,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Il folletto diventa magicamente {@condition invisible} finché la sua concentrazione non termina (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il folletto indossa o porta con sé è {@condition invisible} con esso."
+						"Il folletto si trasforma magicamente {@condition invisible} finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} fosse un incantesimo). L'equipaggiamento che il folletto indossa o porta con sé è {@condition invisible} con esso."
 					]
 				}
 			],
@@ -51504,7 +51504,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Il quasit si trasforma magicamente {@condition invisible} finché non attacca o usa Spaventare, o finché la sua concentrazione finisce (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il quasit indossa o porta con sé è {@condition invisible} con esso."
+						"Il quasit diventa magicamente {@condition invisible} finché non attacca o usa Spavento, o finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo). L'equipaggiamento che il quasit indossa o porta con sé è {@condition invisible} con lui."
 					]
 				}
 			],
@@ -57632,7 +57632,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Il folletto si trasforma magicamente {@condition invisible} finché non attacca o lancia un incantesimo, o finché non termina la sua concentrazione (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che il folletto indossa o porta con sé è {@condition invisible} con esso."
+						"Il folletto si trasforma magicamente {@condition invisible} finché non attacca o lancia un incantesimo, o finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo). L'equipaggiamento che il folletto indossa o porta con sé è {@condition invisible} con esso."
 					]
 				}
 			],
@@ -66267,7 +66267,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"Il will-o'-wisp e la sua luce diventano magicamente {@condition invisible} finché non attacca o usa il suo Consume Life, o finché la sua concentrazione non finisce (come se si concentrasse su un incantesimo)."
+						"Il will-o'-wisp e la sua luce diventano magicamente {@condition invisible} finché non attacca o usa il suo Consuma Vita, o finché il suo {@status concentration} non termina (come se {@status concentration||concentrating} su un incantesimo)."
 					]
 				}
 			],

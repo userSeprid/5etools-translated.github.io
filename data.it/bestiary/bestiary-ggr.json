@@ -204,7 +204,7 @@
 				{
 					"name": "Pacifying Presence",
 					"entries": [
-						"Ogni creatura a scelta dell'arconte che l'arconte può vedere entro 120 piedi da lui deve riuscire in un tiro salvezza di Saggezza {@dc 18}, altrimenti il bersaglio lascia cadere le armi che impugna, termina la sua concentrazione su qualsiasi incantesimo o altro effetto e diventa {@condition charmed} dell'arconte per 1 minuto. La creatura {@condition charmed} può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo. Se il tiro salvezza di una creatura ha successo o l'effetto termina per essa, la creatura è immune alla Presenza Pacificatrice dell'arconte per le successive 24 ore."
+						"Ogni creatura a scelta dell'arconte che l'arconte può vedere nel raggio di 120 piedi deve riuscire in un tiro salvezza di Saggezza {@dc 18}, altrimenti il bersaglio lascia cadere le armi che tiene in mano, termina il suo {@status concentration} su qualsiasi incantesimo o altro effetto e diventa {@condition charmed} dell'arconte per 1 minuto. La creatura {@condition charmed} può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa in caso di successo. Se il tiro salvezza di una creatura ha successo o se l'effetto termina per lei, la creatura è immune alla Presenza Pacificatrice dell'arconte per le 24 ore successive."
 					]
 				}
 			],
@@ -6957,7 +6957,7 @@
 				{
 					"name": "Locus of the Firemind",
 					"entries": [
-						"Niv-Mizzet può mantenere la concentrazione su due diversi incantesimi contemporaneamente. Inoltre, ha un vantaggio nei tiri salvezza per mantenere la concentrazione sugli incantesimi."
+						"Niv-Mizzet può mantenere {@status concentration} su due incantesimi diversi contemporaneamente. Inoltre, ha un vantaggio ai tiri salvezza per mantenere {@status concentration} sugli incantesimi. su se stesso con un successo. Se il tiro salvezza di una creatura ha successo o se l'effetto termina per lei, la creatura è immune alla Presenza Pacificatrice dell'arconte per le 24 ore successive."
 					]
 				},
 				{
@@ -7797,7 +7797,7 @@
 				{
 					"name": "Touch of Pain (Costs 3 Actions)",
 					"entries": [
-						"Rakdos effettua un attacco con gli artigli contro una creatura entro 3 metri da lui. Il bersaglio deve riuscire in un tiro salvezza di Costituzione {@dc 25} o essere {@condition poisoned} per 1 minuto. Mentre {@condition poisoned} in questo modo, la creatura non può mantenere la concentrazione su un incantesimo o qualsiasi altro effetto che richieda concentrazione. La {@condition poisoned} creatura può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+						"Rakdos effettua un attacco con gli artigli contro una creatura entro 3 metri da lui. Il bersaglio deve riuscire in un tiro salvezza di Costituzione {@dc 25} o essere {@condition poisoned} per 1 minuto. Mentre {@condition poisoned} in questo modo, la creatura non può mantenere {@status concentration} un incantesimo o qualsiasi altro effetto che richieda {@status concentration}. La creatura {@condition poisoned} può ripetere il tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa in caso di successo.Nelle 24 ore successive."
 					]
 				}
 			],

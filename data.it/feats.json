@@ -4270,7 +4270,7 @@
 							"type": "item",
 							"name": "Misty Form",
 							"entries": [
-								"È possibile lanciare l'incantesimo {@spell blur} senza utilizzare uno slot incantesimo o componenti materiali. Quando si lancia l'incantesimo in questo modo, non è necessario mantenere la concentrazione su di esso. Una volta lanciato l'incantesimo in questo modo, non è possibile farlo di nuovo fino al termine di un lungo riposo. Si può anche lanciare questo incantesimo in modo normale utilizzando gli slot incantesimi di cui si dispone del livello appropriato. Intelligenza, Saggezza o Carisma sono le capacità di incantesimo per questa caratteristica (da scegliere quando si ottiene questa caratteristica)."
+								"Si può lanciare l'incantesimo {@spell blur} senza utilizzare uno slot incantesimo o componenti materiali. Quando si lancia l'incantesimo in questo modo, non è necessario mantenere il {@status concentration} su di esso. Una volta lanciato l'incantesimo in questo modo, non è possibile farlo di nuovo fino al termine di un lungo riposo. L'incantesimo può essere lanciato anche in modo normale, utilizzando gli slot incantesimo del livello appropriato. Intelligenza, Saggezza o Carisma sono le capacità di incantesimo per questa caratteristica (da scegliere quando si ottiene questa caratteristica)."
 							]
 						},
 						{
@@ -4534,6 +4534,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"Il sangue demoniaco scorre forte in te. Ottieni i seguenti benefici:",
 				{
@@ -4562,6 +4566,10 @@
 				{
 					"con": 1
 				}
+			],
+			"resist": [
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"Il sangue demoniaco scorre forte in te, sbloccando una resilienza simile a quella posseduta da alcuni demoni. Ottieni i seguenti benefici:",
@@ -5722,7 +5730,7 @@
 					"type": "list",
 					"items": [
 						"Quando una creatura entro 5 piedi da te lancia un incantesimo, puoi usare la tua reazione per effettuare un attacco con un'arma da mischia contro quella creatura.",
-						"Quando danneggi una creatura che si sta concentrando su un incantesimo, questa ha svantaggio nel tiro salvezza che effettua per mantenere la concentrazione.",
+						"Quando si danneggia una creatura che è {@status concentration||concentrating} su un incantesimo, quella creatura ha svantaggio al tiro salvezza che effettua per mantenere il suo {@status concentration}.",
 						"Hai un vantaggio nei tiri salvezza contro gli incantesimi lanciati da creature entro un raggio di 2 metri da te."
 					]
 				}
@@ -9654,7 +9662,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Hai un vantaggio nei tiri salvezza di Costituzione che effettui per mantenere la tua concentrazione su un incantesimo quando subisci danni.",
+						"Si ha vantaggio nei tiri salvezza di Costituzione che si effettuano per mantenere il proprio {@status concentration} su un incantesimo quando si subiscono danni.",
 						"Puoi eseguire le componenti somatiche degli incantesimi anche quando hai armi o un {@item shield|phb} in una o entrambe le mani.",
 						"Quando il movimento di una creatura ostile provoca un attacco di opportunità da parte tua, puoi usare la tua reazione per lanciare un incantesimo contro la creatura, piuttosto che effettuare un attacco di opportunità. L'incantesimo deve avere un tempo di lancio di 1 azione e deve colpire solo quella creatura."
 					]

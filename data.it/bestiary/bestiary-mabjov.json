@@ -527,7 +527,7 @@
 				{
 					"name": "Insect Gorge (Costs 2 Actions)",
 					"entries": [
-						"Baalzebul disgorga uno sciame di mosche pungenti (altrimenti uguale alla peste degli insetti) che infligge 44 ({@damage 8d10}) danni perforanti e non richiede concentrazione."
+						"Il Baalzebul disgrega uno sciame di mosche pungenti (altrimenti uguale alla piaga degli insetti) che infligge 44 ({@damage 8d10}) danni perforanti e non richiede {@status concentration}."
 					]
 				}
 			],
@@ -2084,7 +2084,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Dagryn si trasforma magicamente {@condition invisible} finché non attacca, lancia un incantesimo o finché la sua concentrazione non viene rotta, fino a 1 ora (come se si concentrasse su un incantesimo). Qualsiasi equipaggiamento che Dagryn indossa o porta con sé diventa {@condition invisible}."
+						"Il Dagryn si trasforma magicamente {@condition invisible} finché non attacca, non lancia un incantesimo o finché il suo {@status concentration} non viene spezzato, fino a 1 ora (come se {@status concentration||concentrating} su un incantesimo). L'equipaggiamento che Dagryn indossa o porta con sé è {@condition invisible} con esso."
 					]
 				}
 			],
@@ -2258,7 +2258,7 @@
 				{
 					"name": "Eldritch Mind",
 					"entries": [
-						"Darien ha un vantaggio nei tiri salvezza di Costituzione che effettua per mantenere la concentrazione su un incantesimo."
+						"Darien ha un vantaggio sui tiri salvezza di Costituzione che effettua per mantenere {@status concentration} un incantesimo."
 					]
 				}
 			],
@@ -3161,7 +3161,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"Il doppelganger del terrore legge magicamente i pensieri superficiali di una creatura entro 60 piedi da lui. L'effetto può penetrare le barriere, ma 3 piedi di legno o terra, 2 piedi di pietra, 2 pollici di metallo o una sottile lastra di piombo lo bloccano. Mentre il bersaglio è nel raggio d'azione, il dread doppelganger può continuare a leggere i suoi pensieri, finché la Concentrazione del dread doppelganger non viene interrotta (come se si concentrasse su un incantesimo). Mentre legge la mente del bersaglio, il doppelganger ha un vantaggio nelle prove di Saggezza (Intuito) e Carisma ({@skill Deception}, {@skill Intimidation} e {@skill Persuasion}) contro il bersaglio."
+						"Il temibile doppelganger legge magicamente i pensieri superficiali di una creatura entro 60 ft. da lui. L'effetto può penetrare le barriere, ma 3 metri di legno o terra, 2 metri di pietra, 5 centimetri di metallo o una sottile lastra di piombo lo bloccano. Mentre il bersaglio è nel raggio d'azione, il doppelganger può continuare a leggere i suoi pensieri, purché la concentrazione del doppelganger non venga interrotta (come se {@status concentration||concentrating} su un incantesimo). Mentre legge la mente del bersaglio, il doppelganger ha vantaggio sulle prove di Saggezza (Intuizione) e Carisma ({@skill Deception}, {@skill Intimidation} e {@skill Persuasion}) contro il bersaglio."
 					]
 				}
 			],
@@ -3343,7 +3343,7 @@
 				{
 					"name": "Focused Conjuration",
 					"entries": [
-						"Mentre Edwin si sta concentrando su un incantesimo di evocazione, la sua concentrazione non può essere interrotta a causa dei danni subiti."
+						"Mentre Edwin è {@status concentration||concentrating} impegnato in un incantesimo di evocazione, il suo {@status concentration} non può essere spezzato a causa di danni subiti.roken (come se {@status concentration||concentrating} fosse impegnato in un incantesimo). Mentre legge la mente del bersaglio, il doppelganger ha vantaggio sulle prove di Saggezza (Intuizione) e Carisma ({@status concentration}, (%2%) e (%3%)) contro il bersaglio."
 					]
 				},
 				{
@@ -6237,7 +6237,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Pozione di eroismo: Nauk guadagna 10 punti ferita temporanei per 1 ora. Per la stessa durata, Nauk è sotto l'effetto dell'incantesimo {@spell bless} (non richiede concentrazione).",
+								"Pozione di eroismo: Nauk guadagna 10 punti ferita temporanei per 1 ora. Per la stessa durata, Nauk è sotto l'effetto dell'incantesimo {@spell bless} (non è richiesto il {@status concentration}).",
 								"Pozione di resistenza: Nauk guadagna resistenza da un tipo di danno per 1 ora. Nauk sceglie uno di questi tipi di danno: freddo, fuoco, fulmine.",
 								"Pozione di guarigione superiore: Nauk recupera 28 punti ferita."
 							]
@@ -6885,7 +6885,7 @@
 				{
 					"name": "Extended Concentration",
 					"entries": [
-						"Il phaerimm può concentrarsi su due diversi incantesimi allo stesso tempo. Se la concentrazione viene interrotta, entrambi gli incantesimi svaniscono immediatamente."
+						"Il phaerimm può concentrarsi su due diversi incantesimi contemporaneamente. Se {@status concentration} viene interrotto, entrambi gli incantesimi svaniscono immediatamente."
 					]
 				},
 				{
@@ -8738,7 +8738,7 @@
 				{
 					"name": "Mage Slaying",
 					"entries": [
-						"Quando Valygar infligge danno a una creatura che si sta concentrando su un incantesimo, quella creatura ha svantaggio nel tiro salvezza che effettua per mantenere la concentrazione."
+						"Quando Valygar infligge danno a una creatura che ha {@status concentration||concentrating} su un incantesimo, quella creatura ha svantaggio al tiro salvezza che effettua per mantenere il suo {@status concentration}."
 					]
 				}
 			],
@@ -9724,7 +9724,7 @@
 				{
 					"name": "Bladesong",
 					"entries": [
-						"Xan può usare un'azione bonus per iniziare un bladesong. Il suo bladesong dura 1 minuto. Mentre usa il bladesong il suo movimento aumenta a 40 piedi, guadagna un bonus di +3 alla sua CA e un bonus di +3 a tutte le prove di concentrazione."
+						"Xan può usare un'azione bonus per iniziare un canto delle lame. Il suo bladesong dura 1 minuto. Mentre usa bladesong, il suo movimento aumenta a 40 piedi, ottiene un bonus di +3 alla CA e un bonus di +3 a tutte le prove di {@status concentration}."
 					]
 				},
 				{

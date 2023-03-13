@@ -1654,7 +1654,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Se lanci questo incantesimo usando un incantesimo di 4° livello o superiore, la durata è la concentrazione, fino a 10 minuti. Se usi un incantesimo di 5° livello o superiore, la durata è di 8 ore. Se usi un incantesimo di 7° livello o superiore, la durata è di 24 ore. Se si utilizza uno slot per incantesimi di 9° livello, l'incantesimo dura finché non viene dissipato. L'utilizzo di uno slot per incantesimi di 5° livello o superiore garantisce una durata che non richiede concentrazione."
+						"Se si lancia questo incantesimo utilizzando uno slot incantesimo di 4° livello o superiore, la durata è {@status concentration}, fino a 10 minuti. Se si utilizza uno slot per incantesimi di 5° livello o superiore, la durata è di 8 ore. Se si utilizza uno slot per incantesimi di 7° livello o superiore, la durata è di 24 ore. Se si utilizza un incantesimo di 9° livello, la durata dell'incantesimo è di 24 ore. L'utilizzo di uno slot per incantesimi di 5° livello o superiore garantisce una durata che non richiede {@status concentration}."
 					]
 				}
 			],
@@ -3666,7 +3666,7 @@
 			"entries": [
 				"Richiami un servitore elementale. Scegli un'area di aria, terra, fuoco o acqua che riempia un cubo di 3 metri entro il raggio d'azione. Un {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} appropriato all'area che hai scelto appare in uno spazio non occupato entro 3 metri da essa. Per esempio, un {@creature fire elemental} emerge da un falò e un {@creature earth elemental} si alza da terra. L'elementale scompare quando scende a 0 punti ferita o quando l'incantesimo termina.",
 				"L'elementale è amichevole con te e i tuoi compagni per tutta la durata. Tira l'iniziativa per l'elementale, che ha i suoi turni. Obbedisce a tutti i comandi verbali che gli impartisci (nessuna azione richiesta da te). Se non impartisci alcun comando all'elementale, esso si difende dalle creature ostili ma non compie altre azioni.",
-				"Se la tua concentrazione viene meno, l'elementale non scompare. Invece, perdi il controllo dell'elementale, diventa ostile verso di te e i tuoi compagni e potrebbe attaccare. Un elementale non controllato non può essere allontanato da te e scompare 1 ora dopo che lo hai evocato.",
+				"Se il tuo {@status concentration} viene infranto, l'elementale non scompare. Al contrario, si perde il controllo dell'elementale, che diventa ostile nei confronti di voi e dei vostri compagni e potrebbe attaccare. Un elementale non controllato non può essere respinto da voi e scompare 1 ora dopo averlo evocato. L'utilizzo di un incantesimo di 5° livello o superiore garantisce una durata che non richiede (%1%).",
 				"Il DM ha le statistiche dell'elementale."
 			],
 			"entriesHigherLevel": [
@@ -3719,7 +3719,7 @@
 			"entries": [
 				"Evochi un {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, o uno spirito fey che prende la forma di un {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. Appare in uno spazio non occupato che puoi vedere nel raggio d'azione. La creatura fey scompare quando scende a 0 punti ferita o quando l'incantesimo termina.",
 				"La creatura fey è amichevole con te e i tuoi compagni per tutta la durata. Tira l'iniziativa per la creatura, che ha i suoi turni. Obbedisce a tutti i comandi verbali che le impartisci (nessuna azione richiesta da te), purché non violino il suo allineamento. Se non impartisci alcun comando alla creatura fey, essa si difende dalle creature ostili ma non compie altre azioni.",
-				"Se la tua concentrazione è rotta, la creatura fey non scompare. Al contrario, perdi il controllo della creatura fey, essa diventa ostile verso di te e i tuoi compagni e potrebbe attaccare. Una creatura magica non controllata non può essere respinta da te e scompare 1 ora dopo che l'hai evocata.",
+				"Se il tuo {@status concentration} viene infranto, la creatura fey non scompare. Al contrario, si perde il controllo della creatura, che diventa ostile a voi e ai vostri compagni e potrebbe attaccare. Una creatura fey non controllata non può essere allontanata da voi e scompare un'ora dopo averla evocata.h livello o superiore garantisce una durata che non richiede (%1%).",
 				"Il DM ha le statistiche della creatura fey."
 			],
 			"entriesHigherLevel": [
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"Un fascio di luce gialla lampeggia dal tuo dito puntato, poi si condensa per indugiare in un punto scelto entro il raggio d'azione come una perlina incandescente per tutta la durata. Quando l'incantesimo termina, o perché la tua concentrazione viene meno o perché decidi di terminarlo, la sfera sboccia con un basso ruggito in un'esplosione di fiamme che si propaga intorno agli angoli. Ogni creatura in una sfera di 20 piedi centrata su quel punto deve effettuare un tiro salvezza di Destrezza. Una creatura subisce danni da fuoco pari al totale dei danni accumulati se il tiro salvezza è fallito, o la metà dei danni se è riuscito.",
+				"Un fascio di luce gialla si sprigiona dal dito puntato e si condensa in un punto prescelto nel raggio d'azione sotto forma di perlina incandescente per tutta la durata dell'incantesimo. Quando l'incantesimo termina, o perché il vostro {@status concentration} viene spezzato o perché decidete di terminarlo, la perla sboccia con un basso ruggito in un'esplosione di fiamme che si diffonde negli angoli. Ogni creatura in una sfera di 6 metri di raggio centrata su quel punto deve effettuare un tiro salvezza di Destrezza. Una creatura subisce danni da fuoco pari al totale dei danni accumulati in caso di tiro salvezza fallito, o la metà dei danni in caso di tiro salvezza riuscito.ants una durata che non richiede (%1%).",
 				"Il danno base dell'incantesimo è {@damage 12d6}. Se alla fine del tuo turno la sfera non è ancora esplosa, il danno aumenta di {@dice 1d6}.",
 				"Se la sfera incandescente viene toccata prima che l'intervallo sia scaduto, la creatura che la tocca deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza viene fallito, l'incantesimo termina immediatamente, facendo scoppiare la sfera in fiamme. Con un tiro salvezza riuscito, la creatura può lanciare la sfera fino a 40 piedi. Quando colpisce una creatura o un oggetto solido, l'incantesimo termina e la sfera esplode.",
 				"Il fuoco danneggia gli oggetti nella zona e incendia gli oggetti infiammabili che non vengono indossati o trasportati."
@@ -5906,7 +5906,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Quando lanci questo incantesimo con uno slot per incantesimi di 5° livello, la durata è concentrazione, fino a 10 minuti. Quando usi uno slot per incantesimi di 6° livello, la durata è concentrazione, fino a 1 ora. Quando usi uno slot per incantesimi di 7° livello o superiore, la durata è concentrazione fino a 8 ore."
+						"Quando si lancia questo incantesimo con uno slot di 5° livello, la durata è {@status concentration}, fino a 10 minuti. Quando si utilizza uno slot per incantesimi di 6° livello, la durata è {@status concentration}, fino a 1 ora. Quando si utilizza un incantesimo di 7° livello o superiore, la durata è {@status concentration}, fino a 8 ore.La sfera di adius centrata su quel punto deve effettuare un tiro salvezza di Destrezza. Una creatura subisce danni da fuoco pari al totale dei danni accumulati in caso di tiro salvezza fallito, o la metà dei danni in caso di tiro salvezza riuscito.ants una durata che non richiede {@status concentration}."
 					]
 				}
 			],
@@ -5972,7 +5972,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Quando lanci questo incantesimo con uno slot incantesimo di 9° livello, la durata è la concentrazione, fino a 8 ore."
+						"Quando si lancia questo incantesimo con uno slot di 9° livello, la durata è del {@status concentration}, fino a 8 ore.Tiro salvezza di Destrezza. Una creatura subisce danni da fuoco pari al totale dei danni accumulati in caso di tiro salvezza fallito, o la metà dei danni in caso di tiro salvezza riuscito.ants una durata che non richiede (%1%)."
 					]
 				}
 			],
@@ -6035,7 +6035,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Quando lanci questo incantesimo usando uno slot per incantesimi di 6° livello, la durata è concentrazione, fino a 10 minuti. Quando usi uno slot per incantesimi di 7° livello, la durata è concentrazione fino a 1 ora. Quando usi uno slot per incantesimi di 8° livello o superiore, la durata è concentrazione fino a 8 ore."
+						"Quando si lancia questo incantesimo utilizzando uno slot di 6° livello, la durata è {@status concentration}, fino a 10 minuti. Quando si utilizza uno slot per incantesimi di 7° livello, la durata è {@status concentration}, fino a 1 ora. Quando si utilizza uno slot per incantesimi di 8° livello o superiore, la durata è {@status concentration}, fino a 8 ore."
 					]
 				}
 			],
@@ -6230,8 +6230,8 @@
 			],
 			"entries": [
 				"Crei una perturbazione sismica in un punto del terreno che puoi vedere a portata di mano. Per la durata, un'intensa scossa squarcia il terreno in un cerchio di 100 piedi di raggio centrato su quel punto e scuote le creature e le strutture a contatto con il terreno in quell'area.",
-				"Il terreno nell'area diventa {@quickref difficult terrain||3}. Ogni creatura sul terreno che si sta concentrando deve effettuare un tiro salvezza di Costituzione. Se il tiro salvezza è fallito, la concentrazione della creatura è rotta.",
-				"Quando lanci questo incantesimo e alla fine di ogni turno in cui ti concentri su di esso, ogni creatura a terra nell'area deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza viene fallito, la creatura viene abbattuta {@condition prone}.",
+				"Il terreno nell'area diventa {@quickref difficult terrain||3}. Ogni creatura sul terreno che è {@status concentration||concentrating} deve effettuare un tiro salvezza di Costituzione. Se il tiro salvezza fallisce, il {@status concentration} della creatura viene spezzato.",
+				"Quando si lancia questo incantesimo e alla fine di ogni turno in cui si spende {@status concentration||concentrating} per esso, ogni creatura a terra nell'area deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza fallisce, la creatura viene colpita {@condition prone}.",
 				"Questo incantesimo può avere effetti aggiuntivi a seconda del terreno nella zona, come determinato dal DM.",
 				{
 					"type": "entries",
@@ -7903,7 +7903,7 @@
 				"Tenti di trasformare in pietra una creatura che puoi vedere nel raggio d'azione. Se il corpo del bersaglio è fatto di carne, la creatura deve effettuare un tiro salvezza di Costituzione. Se il tiro salvezza viene fallito, la sua carne comincia a indurirsi {@condition restrained}. Con un tiro salvezza riuscito, la creatura non viene colpita.",
 				"Una creatura {@condition restrained} colpita da questo incantesimo deve effettuare un altro tiro salvezza di Costituzione alla fine di ogni suo turno. Se riesce a salvarsi contro questo incantesimo per tre volte, l'incantesimo termina. Se fallisce i tiri salvezza per tre volte, viene trasformata in pietra e soggetta alla condizione {@condition petrified} per tutta la durata. Non è necessario che i successi e i fallimenti siano consecutivi; tieni traccia di entrambi fino a quando il bersaglio non ne colleziona tre.",
 				"Se la creatura è fisicamente rotta mentre {@condition petrified}, soffre di deformazioni simili se ritorna al suo stato originale.",
-				"Se mantieni la tua concentrazione su questo incantesimo per tutta la durata possibile, la creatura viene trasformata in pietra finché l'effetto non viene rimosso."
+				"Se si mantiene il proprio {@status concentration} su questo incantesimo per l'intera durata possibile, la creatura viene trasformata in pietra finché l'effetto non viene rimosso."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -8653,7 +8653,7 @@
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"Puoi memorizzare un incantesimo preparato di 3° livello o inferiore nel glifo lanciandolo come parte della creazione del glifo. L'incantesimo deve avere come bersaglio una singola creatura o un'area. L'incantesimo memorizzato non ha un effetto immediato quando viene lanciato in questo modo. Quando il glifo viene attivato, l'incantesimo memorizzato viene lanciato. Se l'incantesimo ha un bersaglio, esso prende di mira la creatura che ha attivato il glifo. Se l'incantesimo colpisce un'area, l'area è centrata su quella creatura. Se l'incantesimo evoca creature ostili o crea oggetti dannosi o trappole, queste appaiono il più vicino possibile all'intruso e lo attaccano. Se l'incantesimo richiede concentrazione, dura fino alla fine della sua durata completa."
+						"È possibile memorizzare nel glifo un incantesimo preparato di 3° livello o inferiore lanciandolo come parte della creazione del glifo. L'incantesimo deve avere come bersaglio una singola creatura o un'area. L'incantesimo memorizzato non ha effetto immediato quando viene lanciato in questo modo. Quando il glifo viene attivato, l'incantesimo memorizzato viene lanciato. Se l'incantesimo ha un bersaglio, prende di mira la creatura che ha attivato il glifo. Se l'incantesimo ha effetto su un'area, l'area è centrata su quella creatura. Se l'incantesimo evoca creature ostili o crea oggetti o trappole dannose, queste appaiono il più vicino possibile all'intruso e lo attaccano. Se l'incantesimo richiede {@status concentration}, dura fino alla fine della sua durata completa."
 					]
 				}
 			],
@@ -9921,7 +9921,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Quando lanci questo incantesimo usando un incantesimo di 3° o 4° livello, puoi mantenere la concentrazione sull'incantesimo per un massimo di 8 ore. Quando usi uno slot per incantesimi di 5° livello o superiore, puoi mantenere la concentrazione sull'incantesimo per un massimo di 24 ore."
+						"Quando si lancia questo incantesimo utilizzando uno slot per incantesimi di 3° o 4° livello, si può mantenere il {@status concentration} sull'incantesimo per un massimo di 8 ore. Quando si utilizza uno slot per incantesimi di 5° livello o superiore, si può mantenere il proprio {@status concentration} sull'incantesimo per un massimo di 24 ore.e creature o crea oggetti dannosi o trappole, appaiono il più vicino possibile all'intruso e lo attaccano. Se l'incantesimo richiede {@status concentration}, dura fino alla fine della sua durata completa."
 					]
 				}
 			],
@@ -10225,7 +10225,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Quando lanci questo incantesimo usando un incantesimo di 3° o 4° livello, puoi mantenere la concentrazione sull'incantesimo per un massimo di 8 ore. Quando usi uno slot per incantesimi di 5° livello o superiore, puoi mantenere la concentrazione sull'incantesimo per un massimo di 24 ore."
+						"Quando si lancia questo incantesimo utilizzando uno slot per incantesimi di 3° o 4° livello, si può mantenere il {@status concentration} sull'incantesimo per un massimo di 8 ore. Quando si utilizza uno slot per incantesimi di 5° livello o superiore, si può mantenere il proprio {@status concentration} sull'incantesimo per un massimo di 24 ore.e creature o crea oggetti dannosi o trappole, appaiono il più vicino possibile all'intruso e lo attaccano. Se l'incantesimo richiede {@status concentration}, dura fino alla fine della sua durata completa."
 					]
 				}
 			],
@@ -11803,7 +11803,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Quando lanci questo incantesimo usando uno slot incantesimo di 6° livello o superiore, l'incantesimo dura fino a quando non viene dissipato, senza richiedere la tua concentrazione."
+						"Quando si lancia questo incantesimo utilizzando uno slot incantesimo di 6° livello o superiore, l'incantesimo dura fino a quando non viene dissipato, senza richiedere il proprio {@status concentration}.sibile all'intruso e attaccarlo. Se l'incantesimo richiede {@status concentration}, dura fino alla fine della sua durata completa."
 					]
 				}
 			],
@@ -12961,7 +12961,7 @@
 			],
 			"entries": [
 				"Scegli un'area di terreno non più grande di 40 piedi su un lato entro il raggio d'azione. Puoi rimodellare la terra, la sabbia o l'argilla dell'area in qualsiasi modo tu scelga per la durata. Puoi alzare o abbassare l'altezza dell'area, creare o riempire una trincea, erigere o appiattire un muro o formare un pilastro. L'estensione di tali cambiamenti non può superare la metà della dimensione maggiore dell'area. Quindi, se influisci su un quadrato di 40 piedi, puoi creare un pilastro alto fino a 20 piedi, alzare o abbassare l'altezza del quadrato fino a 20 piedi, scavare una trincea profonda fino a 20 piedi, e così via. Ci vogliono 10 minuti per completare questi cambiamenti.",
-				"Alla fine di ogni 10 minuti che trascorri concentrandoti sull'incantesimo, puoi scegliere una nuova area di terreno da influenzare.",
+				"Alla fine di ogni 10 minuti spesi {@status concentration||concentrating} per l'incantesimo, è possibile scegliere una nuova area di terreno da influenzare.",
 				"Poiché la trasformazione del terreno avviene lentamente, le creature nella zona non possono di solito essere intrappolate o ferite dal movimento del terreno.",
 				"Questo incantesimo non può manipolare la pietra naturale o le costruzioni in pietra. Le rocce e le strutture si spostano per adattarsi al nuovo terreno. Se il modo in cui modifichi il terreno renderebbe instabile una struttura, questa potrebbe crollare.",
 				"Allo stesso modo, questo incantesimo non influenza direttamente la crescita delle piante. La terra spostata porta con sé tutte le piante."
@@ -16458,7 +16458,7 @@
 			"entries": [
 				"Finché l'incantesimo non termina, la pioggia e il nevischio gelati cadono in un cilindro alto 6 metri e con un raggio di 40 metri, centrato su un punto a scelta nel raggio d'azione. L'area è {@quickref Vision and Light|PHB|2||heavily obscured} e le fiamme esposte nell'area sono spente.",
 				"Il terreno nell'area è coperto di ghiaccio scivoloso, rendendolo {@quickref difficult terrain||3}. Quando una creatura entra nell'area dell'incantesimo per la prima volta in un turno o vi inizia il suo turno, deve effettuare un tiro salvezza di Destrezza. Se il tiro salvezza è fallito, cade {@condition prone}.",
-				"Se una creatura inizia il suo turno nell'area dell'incantesimo e si sta concentrando su un incantesimo, la creatura deve effettuare con successo un tiro salvezza di Costituzione contro la tua CD di salvataggio dell'incantesimo o perdere la concentrazione."
+				"Se una creatura inizia il suo turno nell'area dell'incantesimo ed è {@status concentration||concentrating} su un incantesimo, la creatura deve effettuare con successo un tiro salvezza di Costituzione contro la DC di salvataggio dell'incantesimo o perdere {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -17142,7 +17142,7 @@
 			],
 			"entries": [
 				"Si forma un'agitata nube temporalesca, centrata su un punto che si può vedere e che si estende per un raggio di 360 piedi. I fulmini lampeggiano nell'area, i tuoni rimbombano e i forti venti ruggiscono. Ogni creatura sotto la nube (non più di 5.000 piedi sotto la nube) quando appare deve effettuare un tiro salvezza di Costituzione. Se il tiro salvezza viene fallito, la creatura subisce {@damage 2d6} danni da tuono e diventa {@condition deafened} per 5 minuti.",
-				"Ogni turno in cui mantieni la concentrazione su questo incantesimo, la tempesta produce effetti diversi nel tuo turno.",
+				"Per ogni round in cui si mantiene {@status concentration} su questo incantesimo, la tempesta produce effetti diversi nel proprio turno.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -17168,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Raffiche e pioggia gelata assalgono l'area sotto la nuvola. L'area diventa {@quickref difficult terrain||3} ed è {@quickref Vision and Light|PHB|2||heavily obscured}. Ogni creatura presente subisce {@damage 1d6} danni da freddo. Gli attacchi con armi a distanza nell'area sono impossibili. Il vento e la pioggia contano come una grave distrazione per mantenere la concentrazione sugli incantesimi. Infine, le raffiche di vento forte (da 20 a 50 miglia orarie) disperdono automaticamente la nebbia, le nebbie e i fenomeni simili presenti nell'area, siano essi mondani o magici."
+						"Raffiche e pioggia gelata assalgono l'area sotto la nuvola. L'area diventa {@quickref difficult terrain||3} ed è {@quickref Vision and Light|PHB|2||heavily obscured}. Ogni creatura presente subisce {@damage 1d6} danni da freddo. Gli attacchi con armi a distanza nell'area sono impossibili. Il vento e la pioggia contano come una grave distrazione ai fini del mantenimento del {@status concentration} sugli incantesimi. Infine, le raffiche di vento forte (da 20 a 50 miglia orarie) disperdono automaticamente la nebbia, le nebbie e i fenomeni simili presenti nell'area, siano essi mondani o magici."
 					]
 				}
 			],
@@ -18912,7 +18912,7 @@
 				"Il muro può avere qualsiasi forma tu desideri, anche se non può occupare lo stesso spazio di una creatura o di un oggetto. Non è necessario che il muro sia verticale o che poggi su una base solida. Deve, tuttavia, fondersi con la pietra esistente ed essere solidamente sostenuto da essa. Pertanto, puoi usare questo incantesimo per colmare un abisso o creare una rampa.",
 				"Se crei una campata di lunghezza superiore a 20 piedi, devi dimezzare la dimensione di ogni pannello per creare dei supporti. Puoi modellare grossolanamente il muro per creare merli, merlature e così via.",
 				"Il muro è un oggetto di pietra che può essere danneggiato e quindi violato. Ogni pannello ha CA 15 e 30 punti ferita per pollice di spessore. Ridurre un pannello a 0 punti ferita lo distrugge e potrebbe far crollare i pannelli collegati a discrezione del DM.",
-				"Se mantieni la concentrazione su questo incantesimo per tutta la sua durata, il muro diventa permanente e non può essere dissipato. Altrimenti, il muro scompare al termine dell'incantesimo."
+				"Se si mantiene il {@status concentration} su questo incantesimo per tutta la sua durata, il muro diventa permanente e non può essere dissipato. In caso contrario, il muro scompare al termine dell'incantesimo. raffiche di vento forte (da 20 a 50 miglia orarie) disperdono automaticamente la nebbia, le nebbie e altri fenomeni simili nell'area, sia mondani che magici."
 			],
 			"savingThrow": [
 				"dexterity"
