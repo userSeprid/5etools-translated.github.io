@@ -13,7 +13,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Аболет накладывает заклинание {@spell phantasmal force} (компоненты не требуются) на любое количество существ, которых он может видеть в радиусе 60 футов от себя. Сохраняя концентрацию на этом эффекте, аболет не может выполнять другие действия в логове. Если цель успешно выполнит бросок на спасбросок или если эффект закончится для нее, цель становится невосприимчивой к действию призрачной силы логова аболета на следующие 24 часа, хотя такое существо может выбрать, чтобы на него воздействовали.",
+						"Аболет накладывает {@spell phantasmal force} (компоненты не требуются) на любое количество существ, которых он может видеть в радиусе 60 футов от себя. Поддерживая {@status concentration} этого эффекта, аболет не может выполнять другие действия в логове. Если цель успешно выполнит бросок спасброска или если эффект закончится для нее, цель становится невосприимчивой к действию призрачной силы логова аболета на следующие 24 часа, хотя такое существо может выбрать, чтобы на него повлияли.",
 						"Бассейны воды в радиусе 90 футов от аболета всплескиваются наружу цепким приливом. Любое существо, находящееся на земле в радиусе 20 футов от такого водоема, должно успешно выполнить бросок на спасение силы {@dc 14} или быть втянуто в воду на 20 футов и сбито с ног {@condition prone}. Аболет не может использовать это действие в логове снова, пока не применит другое.",
 						"Вода в логове аболета магическим образом становится проводником ярости этого существа. Аболет может атаковать любое количество существ, которых он видит в такой воде в радиусе 90 футов от себя. Цель должна успешно выполнить бросок на спасбросок {@dc 14} мудрости или получить 7 ({@damage 2d6}) психических повреждений. Аболет не может использовать это действие в логове снова, пока не использует другое."
 					]
@@ -26,7 +26,7 @@
 					"items": [
 						"Подземные поверхности в радиусе 1 мили от логова аболета склизкие и влажные и составляют {@quickref difficult terrain||3}.",
 						"Источники воды в радиусе 1 мили от логова загрязняются сверхъестественным образом. Враги аболета, выпившие такую воду, извергают ее в течение нескольких минут.",
-						"В качестве действия аболет может создать иллюзорное изображение себя в радиусе 1 мили от логова. Копия может появиться в любом месте, которое аболет видел раньше, или в любом месте, которое в данный момент может видеть существо {@condition charmed} аболета. После создания образ длится до тех пор, пока аболет сохраняет концентрацию, как если бы он концентрировался на заклинании. Хотя образ неосязаем, он выглядит, звучит и может двигаться, как и сам аболет. Аболет может чувствовать, говорить и использовать телепатию из положения образа, как если бы он находился в этом положении. Если образ получает урон, он исчезает."
+						"В качестве действия аболет может создать иллюзорный образ себя в радиусе 1 мили от логова. Копия может появиться в любом месте, которое аболет видел раньше, или в любом месте, которое в данный момент может видеть существо {@condition charmed} аболета. После создания образ длится столько, сколько аболет сохраняет {@status concentration}, как если бы {@status concentration||concentrating} на заклинании. Хотя образ неосязаем, он выглядит, звучит и может двигаться, как и сам аболет. Аболет может чувствовать, говорить и использовать телепатию из позиции образа, как если бы он присутствовал в этой позиции. Если изображение получает урон, оно исчезает."
 					]
 				},
 				"If the aboleth dies, the first two effects fade over the course of {@dice 3d10} days."
@@ -36,7 +36,7 @@
 			"name": "Aerisi Kalinoth",
 			"source": "PotA",
 			"lairActions": [
-				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while concentrating on a spell cast as a lair action.",
+				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action.",
 				"If Aerisi casts {@spell invisibility} using this lair action, she also draws the power of the air node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},
@@ -985,7 +985,7 @@
 					"items": [
 						"В радиусе 6 миль от логова дракона можно увидеть магическую резьбу с изображением улыбающегося лица дракона, сделанную на каменных поверхностях и предметах.",
 						"Крошечные зверьки, такие как грызуны и птицы, которые обычно не умеют говорить, обретают магическую способность говорить и понимать драконий язык в радиусе 1 мили от логова дракона. Эти существа хорошо отзываются о драконе, но не могут разгласить его местонахождение.",
-						"Разумные существа в радиусе 1 мили от логова дракона подвержены приступам хихиканья {@condition prone}. Даже серьезные вопросы внезапно кажутся забавными."
+						"Разумные существа в радиусе 1 мили от логова дракона склонны к приступам хихиканья. Даже серьезные вещи внезапно кажутся забавными. Если изображение получает какой-либо урон, оно исчезает."
 					]
 				},
 				"If the dragon dies, the magic carvings fade over the course of {@dice 1d10} days. The other effects end immediately.",
@@ -1781,7 +1781,7 @@
 								],
 								[
 									"81–00",
-									"\"Мое восприятие реальности не совпадает ни с чьим другим. Это побуждает меня {@condition prone} к жестоким заблуждениям, которые не имеют смысла для других\"."
+									"\"Мое восприятие реальности не совпадает с восприятием других людей. Это делает меня склонным к жестоким галлюцинациям, которые не имеют смысла для других\"."
 								]
 							]
 						}
@@ -1799,7 +1799,7 @@
 					"type": "list",
 					"items": [
 						"Гар может телепортироваться в любое место коралловой горы, прихватив с собой до пяти желающих существ.",
-						"Кораллы в радиусе 60 футов быстро растут вокруг существ, находящихся внутри коралловой горы. Каждое существо должно успешно пройти спасбросок на {@dc 18} силу или стать {@condition restrained}. В свой ход скованные существа могут совершить действие, чтобы сделать {@dc 18} проверку силы ({@skill Athletics}) или ловкости ({@skill Acrobatics}), чтобы освободиться. Этот эффект длится 1 минуту, если его не развеять (он считается заклинанием 6-го уровня), и не требует от Гара концентрации. Гар Шаттеркил и все указанные им существа невосприимчивы к этому эффекту.",
+						"Кораллы в радиусе 60 футов быстро растут вокруг существ, находящихся внутри коралловой горы. Каждое существо должно успешно выполнить бросок на спасбросок силы {@dc 18} или стать {@condition restrained}. В свой ход скованные существа могут совершить действие, чтобы сделать {@dc 18} проверку силы ({@skill Athletics}) или ловкости ({@skill Acrobatics}), чтобы освободиться. Этот эффект длится 1 минуту, если не рассеивается (считается заклинанием 6-го уровня), и не требует от Гара поддержания {@status concentration}. Гар Шаттеркил и все указанные им существа невосприимчивы к этому эффекту.",
 						"До пяти трупов, которые Гар может видеть в радиусе 60 футов, поднимаются как {@creature drowned blade|GoS|drowned blades} и атакуют любого, на кого Гар направит их в свой ход."
 					]
 				}
@@ -1809,7 +1809,7 @@
 			"name": "Gar Shatterkeel",
 			"source": "PotA",
 			"lairActions": [
-				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while concentrating on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
+				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
 				"If Gar casts {@spell cure wounds} using this lair action, he regains the maximum number of hit points from the spell (28)."
 			]
 		},
@@ -1918,7 +1918,7 @@
 							"name": "Create Object",
 							"type": "item",
 							"entries": [
-								"Анарх произносит заклинание сотворения (как заклинание 9-го уровня), используя вместо материала тени неоформленную субстанцию Лимбо. Если предмет используется в Лимбе, он остается там до тех пор, пока концентрация анарха не будет нарушена, независимо от его состава. Если анарх удаляется от объекта более чем на 120 футов, концентрация анарха нарушается."
+								"Анарх произносит заклинание сотворения (как заклинание 9-го уровня), используя вместо материала тени неоформленную субстанцию Лимбо. Если предмет используется в Лимбе, он остается там до тех пор, пока не будет разрушен {@status concentration} анарха, независимо от его состава. Если анарх удаляется от предмета более чем на 120 футов, его {@status concentration} разрушается.ect."
 							]
 						},
 						{
@@ -1972,7 +1972,7 @@
 					"type": "list",
 					"items": [
 						"Анарх произносит заклинание {@spell lightning bolt} (на 5-м уровне), но анарх может изменить тип повреждения с молнии на холод, огонь, медиум, излучение или гром. Если заклинание наносит урон, отличный от огня или молнии, оно не воспламеняет легковоспламеняющиеся предметы.",
-						"Анарх произносит заклинание {@spell creation} (как заклинание 9-го уровня), используя вместо теневого материала неоформленную субстанцию Лимбо. Если предмет используется в Лимбе, он остается там до тех пор, пока концентрация анарха не будет нарушена, независимо от его состава. Если анарх удаляется от предмета более чем на 120 футов, его концентрация нарушается.",
+						"Анарх произносит заклинание {@spell creation} (как заклинание 9-го уровня), используя вместо материала тени неоформленную субстанцию Лимбо. Если предмет использован в Лимбе, он остается там до тех пор, пока не будет разрушен {@status concentration} анарха, независимо от его состава. Если анарх удаляется от объекта более чем на 120 футов, его {@status concentration} разрушается.",
 						"Анарх может магически переместить объект, который он видит в радиусе 150 футов от себя, сделав проверку мудрости с преимуществом. DC зависит от размера объекта: {@dc 5} для крошечного, {@dc 10} для маленького, {@dc 15} для среднего, {@dc 20} для большого и {@dc 25} для огромного или больше."
 					]
 				}
@@ -2735,8 +2735,8 @@
 				{
 					"type": "list",
 					"items": [
-						"Кирилла накладывает {@spell moonbeam} (компоненты не требуются). Пока она сохраняет концентрацию на этом эффекте, она не может выполнять другие действия в логове.",
-						"Кирилла произносит заклинание {@spell cloud of daggers} (компоненты не требуются), только кинжалы - это летающие змеи, а заклинание наносит пронзительный урон. Пока она сохраняет концентрацию на этом эффекте, она не может выполнять другие действия в логове.",
+						"Касты Кирилла {@spell moonbeam} (компоненты не требуются). Пока она поддерживает {@status concentration} этого эффекта, она не может выполнять другие действия в логове.",
+						"Кирилла накладывает заклинание {@spell cloud of daggers} (компоненты не требуются), только кинжалы - это летающие змеи, а заклинание наносит пронзительный урон. Пока она поддерживает {@status concentration} этого эффекта, она не может предпринимать другие действия в логове.",
 						"Бассейны жидкости в радиусе 60 футов от Кирилла всплескивают и пенятся, разбрызгивая и смачивая любое существо на земле в радиусе 5 футов от таких бассейнов. Существа, успешно выполнившие бросок на ловкость DC 14, избегают попадания жидкости в глаза и рот. Кирилла не может использовать это действие в логове снова, пока не использует другое."
 					]
 				}
@@ -2787,7 +2787,7 @@
 			"name": "Marlos Urnrayle",
 			"source": "PotA",
 			"lairActions": [
-				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains concentration on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while concentrating on {@spell earthquake}.",
+				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains {@status concentration} on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while {@status concentration||concentrating} on {@spell earthquake}.",
 				"Marlos's second option for a lair action is to draw power from the earth node to heal. When he does so, he regains 30 ({@dice 6d8 + 3}) hit points."
 			]
 		},
@@ -2799,7 +2799,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Мефистофель произносит любое заклинание из своего списка магов, и если оно обычно требует концентрации, то вместо этого оно действует в течение всего времени.",
+						"Мефистофель произносит любое заклинание из своего списка магов, и если обычно оно требует {@status concentration}, то вместо этого длится полную продолжительность.",
 						"Мефистофель покрывает адским огнем область в 5 футов. Любое существо, которое начинает свой ход в этой области, получает 27 ({@damage 6d8}) повреждений огнем. Адский огонь остается до тех пор, пока Мефистофель не сбросит его или не использует эту способность снова."
 					]
 				}
@@ -3994,7 +3994,7 @@
 			"name": "Vanifer",
 			"source": "PotA",
 			"lairActions": [
-				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while concentrating on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
+				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
 				"If Vanifer casts {@spell misty step} using this lair action, she also draws the power of the fire node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},
