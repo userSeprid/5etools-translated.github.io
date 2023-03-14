@@ -527,7 +527,7 @@
 				{
 					"name": "Insect Gorge (Costs 2 Actions)",
 					"entries": [
-						"Baalzebul verspreidt een zwerm bijtende vliegen (verder hetzelfde als insectenplaag) die 44 ({@damage 8d10}) doordringende schade toebrengt en geen concentratie vereist."
+						"Baalzebul verspreidt een zwerm bijtende vliegen (anders hetzelfde als insectenplaag) die 44 ({@damage 8d10}) doordringende schade toebrengt en geen {@status concentration} vereist."
 					]
 				}
 			],
@@ -2084,7 +2084,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Dagryn wordt {@condition invisible} magisch tot hij aanvalt, een spreuk uitspreekt, of tot zijn concentratie verbroken wordt, tot 1 uur (alsof hij zich op een spreuk concentreert). Alle uitrusting die Dagryn draagt of bij zich draagt is {@condition invisible} mee."
+						"Dagryn draait magisch {@condition invisible} totdat hij aanvalt, een spreuk uitspreekt, of totdat de {@status concentration} wordt verbroken, tot 1 uur (alsof {@status concentration||concentrating} op een spreuk). Elke uitrusting die Dagryn draagt of bij zich draagt wordt {@condition invisible} mee."
 					]
 				}
 			],
@@ -2258,7 +2258,7 @@
 				{
 					"name": "Eldritch Mind",
 					"entries": [
-						"Darien heeft voordeel bij het redden van de grondwet als ze zich moet concentreren op een spreuk."
+						"Darien heeft voordeel op de reddingsworpen van Constitution die ze maakt om een spreuk te handhaven {@status concentration}."
 					]
 				}
 			],
@@ -3161,7 +3161,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"De Dread Doppelganger leest op magische wijze de oppervlakkige gedachten van één wezen binnen een straal van 60 meter. Het effect kan door barrières heen, maar 3 voet hout of aarde, 2 voet steen, 2 duim metaal, of een dunne laag lood blokkeert het. Terwijl het doelwit binnen bereik is, kan de dubbelganger doorgaan met het lezen van de gedachten van het doelwit, zolang de concentratie van de dubbelganger niet is verbroken (alsof hij zich concentreert op een spreuk). Tijdens het lezen van de gedachten van het doelwit heeft de dubbelganger voordeel bij de Wisdom (Inzicht) en Charisma ({@skill Deception}, {@skill Intimidation}, en {@skill Persuasion}) controles tegen het doelwit."
+						"De gevreesde dubbelganger leest op magische wijze de oppervlaktegedachten van één wezen binnen 60 ft. van hem. Het effect kan door barrières heen dringen, maar een meter hout of aarde, een meter steen, een centimeter metaal of een dunne laag lood houdt het tegen. Zolang het doelwit binnen bereik is, kan de dubbelganger zijn gedachten blijven lezen, zolang de concentratie van de dubbelganger niet wordt verbroken (alsof {@status concentration||concentrating} op een spreuk). Tijdens het lezen van de gedachten van het doelwit heeft de dubbelganger voordeel bij controles van wijsheid (inzicht) en charisma ({@skill Deception}, {@skill Intimidation} en {@skill Persuasion}) tegen het doelwit."
 					]
 				}
 			],
@@ -3343,7 +3343,7 @@
 				{
 					"name": "Focused Conjuration",
 					"entries": [
-						"Als Edwin zich concentreert op een bezweringsspreuk, kan zijn concentratie niet worden verbroken als gevolg van het oplopen van schade."
+						"Terwijl Edwin {@status concentration||concentrating} bezig is met een bezweringsspreuk, kan zijn {@status concentration} niet gebroken worden als gevolg van het nemen van schade.%), (%2%), en (%3%)) controles tegen het doelwit."
 					]
 				},
 				{
@@ -6237,7 +6237,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Heldhaftig drankje: Nauk krijgt 10 tijdelijke hit points voor 1 uur. Voor dezelfde duur is Nauk onder het effect van de {@spell bless} spreuk (geen concentratie vereist).",
+								"Heldendrank: Nauk krijgt 10 tijdelijke hit points voor 1 uur. Voor dezelfde duur staat Nauk onder het effect van de {@spell bless} spreuk (geen {@status concentration} vereist).",
 								"Potion of resistance: Nauk krijgt weerstand tegen één type schade gedurende 1 uur. Nauk kiest uit een van deze schade types: koud, vuur, bliksem.",
 								"Potion of superior healing: Nauk krijgt 28 hit points terug."
 							]
@@ -6885,7 +6885,7 @@
 				{
 					"name": "Extended Concentration",
 					"entries": [
-						"De phaerimm kan zich op twee verschillende spreuken tegelijk concentreren. Als de concentratie wordt verbroken, vervagen beide spreuken onmiddellijk."
+						"De phaerimm kan zich op twee verschillende spreuken tegelijk concentreren. Als {@status concentration} wordt verbroken, dan vervagen beide spreuken onmiddellijk."
 					]
 				},
 				{
@@ -8738,7 +8738,7 @@
 				{
 					"name": "Mage Slaying",
 					"entries": [
-						"Wanneer Valygar schade toebrengt aan een wezen dat zich concentreert op een spreuk, heeft dat wezen nadeel bij de saving throw die het doet om zijn concentratie te behouden."
+						"Wanneer Valygar schade toebrengt aan een wezen dat {@status concentration||concentrating} op een spreuk staat, heeft dat wezen nadeel bij de reddingsworp die het doet om zijn {@status concentration} te behouden."
 					]
 				}
 			],
@@ -9724,7 +9724,7 @@
 				{
 					"name": "Bladesong",
 					"entries": [
-						"Xan kan een bonus actie gebruiken om een bladesong te starten. Zijn bladesong duurt 1 minuut. Tijdens het gebruik van bladesong neemt zijn bewegingsvrijheid toe tot 40 ft., krijgt hij een +3 bonus op zijn AC en krijgt hij een +3 bonus op alle concentratie checks."
+						"Xan kan een bonusactie gebruiken om een bladesong te starten. Zijn bladesong duurt 1 minuut. Terwijl hij bladesong gebruikt, neemt zijn bewegingsvrijheid toe tot 40 ft., krijgt hij een +3 bonus op zijn AC en een +3 bonus op alle {@status concentration} controles."
 					]
 				},
 				{

@@ -4270,7 +4270,7 @@
 							"type": "item",
 							"name": "Misty Form",
 							"entries": [
-								"Je kunt de {@spell blur} spreuk uitspreken zonder een spell slot of materiële componenten te gebruiken. Als je de spreuk op deze manier uitspreekt, hoef je je er niet op te concentreren. Als je de spreuk eenmaal op deze manier hebt uitgesproken, kun je dat niet meer doen totdat je een lange rustperiode achter de rug hebt. Je kunt deze spreuk ook op de normale manier uitspreken met behulp van je eigen spell slots van het juiste niveau. Intelligentie, Wijsheid of Charisma is je bezweringsvaardigheid voor deze eigenschap (kies wanneer je deze prestatie verkrijgt)."
+								"Je kunt de {@spell blur} spreuk uitspreken zonder een spreukslot of materiële componenten te gebruiken. Wanneer je de spreuk op deze manier uitspreekt, hoef je er geen {@status concentration} op te onderhouden. Als je de spreuk eenmaal op deze manier hebt uitgesproken, kun je dat niet meer doen totdat je een lange rustperiode hebt voltooid. Je kunt deze spreuk ook op de normale manier uitspreken met behulp van spreukenslots die je hebt van het juiste niveau. Intelligentie, Wijsheid of Charisma is uw spreukvaardigheid voor deze eigenschap (kies wanneer u deze prestatie krijgt)."
 							]
 						},
 						{
@@ -4534,6 +4534,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"Duivelsbloed stroomt sterk in je. Je krijgt de volgende voordelen:",
 				{
@@ -4562,6 +4566,10 @@
 				{
 					"con": 1
 				}
+			],
+			"resist": [
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"Duivelsbloed stroomt sterk in je, waardoor je een veerkracht vrijmaakt die lijkt op die van sommige duivels. Je krijgt de volgende voordelen:",
@@ -5722,7 +5730,7 @@
 					"type": "list",
 					"items": [
 						"Wanneer een wezen binnen een straal van 5 meter van je een spreuk uitspreekt, kun je je reactie gebruiken om een aanval met het handwapen tegen dat wezen uit te voeren.",
-						"Wanneer je een wezen dat zich op een spreuk concentreert, beschadigt, heeft dat wezen nadeel bij de reddingsworp die het doet om zijn concentratie te behouden.",
+						"Wanneer je een wezen beschadigt dat {@status concentration||concentrating} op een spreuk staat, heeft dat wezen nadeel bij de reddingsworp die het maakt om zijn {@status concentration} te behouden.",
 						"Je hebt voordeel op saving throws tegen spreuken van wezens binnen 5 voet van je."
 					]
 				}
@@ -9654,7 +9662,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Je hebt voordeel op grondwettelijke saving throws die je maakt om je concentratie op een spreuk te behouden als je schade oploopt.",
+						"Je hebt voordeel op reddingsworpen van Constitution die je maakt om je {@status concentration} op een spreuk te behouden als je schade oploopt.",
 						"Je kunt de somatische componenten van spreuken ook uitvoeren als je wapens of een {@item shield|phb} in een of beide handen hebt.",
 						"Als de beweging van een vijandig wezen een gelegenheidsaanval van jou uitlokt, kun je je reactie gebruiken om een spreuk op dat wezen te richten in plaats van een gelegenheidsaanval uit te voeren. De spreuk moet een worp-tijd van 1 actie hebben en mag alleen op dat wezen gericht zijn."
 					]

@@ -576,7 +576,7 @@
 				{
 					"name": "Blizzard Veil",
 					"entries": [
-						"Auril creëert een magische sneeuwstorm in een bol met een straal van 30 voet rond haarzelf. Het gebied binnen de sfeer is zwaar verduisterd, en de sfeer beweegt met Auril mee. Het effect duurt totdat Auril in deze vorm tot 0 hit points is gedaald, totdat ze ervoor kiest het effect te beëindigen (geen actie nodig), of totdat haar concentratie is verbroken (alsof ze zich op een spreuk concentreert)."
+						"Auril creëert een magische sneeuwstorm in een straal van 30 voet rond haarzelf. Het gebied binnen de bol is zwaar verduisterd en de bol beweegt met Auril mee. Het effect duurt totdat Auril in deze vorm tot 0 hitpoints daalt, totdat ze ervoor kiest het effect te beëindigen (geen actie vereist), of totdat haar {@status concentration} wordt verbroken (alsof {@status concentration||concentrating} op een spreuk staat)."
 					]
 				}
 			],
@@ -632,6 +632,7 @@
 		{
 			"name": "Avarice",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 269,
 			"size": [
@@ -1713,6 +1714,7 @@
 		{
 			"name": "Dzaan's Simulacrum",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 270,
 			"size": [
@@ -4211,6 +4213,7 @@
 		{
 			"name": "Kingsport",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 243,
 			"size": [
@@ -4958,6 +4961,7 @@
 		{
 			"name": "Nass Lantomir's Ghost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 272,
 			"size": [
@@ -5140,6 +5144,7 @@
 		{
 			"name": "Prisoner 237",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 160,
 			"size": [
@@ -5740,6 +5745,7 @@
 		{
 			"name": "Spellix Romwod",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 144,
 			"size": [
@@ -6323,6 +6329,7 @@
 		{
 			"name": "Vellynne Harpell",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IDRotF",
 			"page": 273,
 			"size": [
@@ -6876,7 +6883,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"Xardorok wordt {@condition invisible} magisch tot hij aanvalt, hij een spreuk uitspreekt, hij zijn Vergroting gebruikt, of zijn concentratie wordt verbroken (alsof hij zich op een spreuk concentreert). Alle uitrusting die Xardorok draagt of bij zich draagt is {@condition invisible} bij hem."
+						"Xardorok wordt magisch {@condition invisible} totdat hij aanvalt, hij een spreuk uitspreekt, hij zijn Vergroting gebruikt, of zijn {@status concentration} wordt verbroken (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die Xardorok draagt of bij zich draagt is {@condition invisible} bij hem."
 					]
 				}
 			],

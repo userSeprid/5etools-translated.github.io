@@ -3000,7 +3000,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"Deze rugzak bevat de geest van een {@creature air elemental} en een compacte lederen ballon. Als je de rugzak draagt, kun je de ballon als actie gebruiken om gedurende 10 minuten het effect van de {@spell levitate} spreuk te verkrijgen, die tegen jezelf gericht is en geen concentratie vereist. Je kunt ook een reactie gebruiken om de ballon op te laten als je valt en het effect van de {@spell feather fall} spreuk voor jezelf te verkrijgen.",
+				"Deze rugzak bevat de geest van een {@creature air elemental} en een compacte leren ballon. Terwijl je de rugzak draagt, kun je de ballon als actie oplaten en krijg je het effect van de {@spell levitate} spreuk gedurende 10 minuten, gericht op jezelf en zonder {@status concentration}. Je kunt ook een reactie gebruiken om de ballon op te laten wanneer je valt en het effect van de {@spell feather fall} spreuk voor jezelf krijgen.",
 				"Als een van beide spreuken eindigt, loopt de ballon langzaam leeg als de elementaire geest ontsnapt en terugkeert naar het Elementaire Vlak van Lucht. Als de ballon leegloopt, daal je zachtjes af naar de grond voor maximaal 60 voet. Als je aan het einde van deze afstand nog steeds in de lucht bent, val je als je geen andere manier hebt om in de lucht te blijven.",
 				"Nadat de geest is vertrokken, is de eigenschap van de rugzak onbruikbaar, tenzij de rugzak gedurende 1 uur wordt opgeladen in een elementair luchtknooppunt, dat een andere geest aan de rugzak bindt."
 			],
@@ -4177,7 +4177,7 @@
 					"type": "entries",
 					"entries": [
 						"Terwijl je het wapen vasthoudt, ben je je bewust van de aanwezigheid van Tiny of grotere wezens binnen 60 voet van je die geen constructies of ondoden zijn. Je kan ook niet {@condition charmed} of {@condition frightened}.",
-						"Blackrazor kan de {@spell haste} spreuk eenmaal per dag over jou uitspreken. Hij beslist wanneer hij de spreuk uitspreekt en houdt de concentratie erop zodat jij dat niet hoeft te doen."
+						"Blackrazor kan de {@spell haste} spreuk eenmaal per dag over je uitspreken. Hij beslist wanneer hij de spreuk uitspreekt en houdt {@status concentration} aan zodat jij dat niet hoeft te doen."
 					]
 				},
 				{
@@ -7780,7 +7780,7 @@
 					"name": "Wealth of Information",
 					"entries": [
 						"Het voornaamste doel van het schilderij is het observeren en herinneren van gesprekken. In de afgelopen decennia heeft Constantori's Portret in stilte talloze gesprekken geobserveerd en bezit nu een niet te becijferen hoeveelheid kennis, van criminele samenzweringen tot geheime wachtwoorden. De DM beslist wat het schilderij weet en wat niet.",
-						"Als u op het schilderij bent afgestemd, kunt u een actie ondernemen om telepathisch contact op te nemen over een willekeurige afstand, mits u en het schilderij zich op hetzelfde bestaansniveau bevinden. Het schilderij kan echter geen telepathisch contact met u opnemen. Om telepathisch contact met het schilderij te houden, moet je je concentreren (alsof je je concentreert op een spreuk)."
+						"Als je op het schilderij bent afgestemd, kun je een actie ondernemen om telepathisch contact op te nemen over een willekeurige afstand, mits jij en het schilderij zich op hetzelfde bestaansniveau bevinden. Het schilderij kan echter geen telepathisch contact met u opnemen. Voor het onderhouden van telepathisch contact met het schilderij is uw {@status concentration} nodig (alsof {@status concentration||concentrating} op een spreuk)."
 					]
 				},
 				{
@@ -12776,7 +12776,7 @@
 					"type": "entries",
 					"name": "Aberrant Ally",
 					"entries": [
-						"Je kunt een afwijkend wezen uit de chaos van het multiversum oproepen om je te dienen. Dit werkt als de {@spell conjure celestial} spreuk (geen concentratie vereist), behalve dat het wezen dat je oproept een aberratie is met uitdagingswaarde 4 of lager. Als je deze eigenschap van de verre uitrusting eenmaal hebt gebruikt, kan hij niet meer worden gebruikt tot de volgende dageraad."
+						"Je kunt een afwijkend wezen uit de chaos van het multiversum toveren om je te dienen. Dit werkt als de {@spell conjure celestial} spreuk (geen {@status concentration} vereist), behalve dat het wezen dat je oproept een aberratie is met een uitdaging van 4 of lager. Als je deze eigenschap van het verre tuig eenmaal gebruikt, kan het niet opnieuw worden gebruikt tot de volgende dageraad."
 					]
 				},
 				{
@@ -12898,7 +12898,7 @@
 			],
 			"entries": [
 				"Dit warme kristal glinstert met de zonsondergangskleuren van de Feywild-hemel en roept fluisteringen van emotionele herinneringen op. Als actie kun je de scherf aan een Tiny voorwerp (zoals een wapen of sieraad) bevestigen of losmaken. Hij valt eraf als je afstemming erop eindigt. Je kunt de scherf als een toverspreuk gebruiken als je hem vasthoudt of draagt.",
-				"Als je een Metamagic optie gebruikt op een spreuk terwijl je de scherf vasthoudt of draagt, kun je rollen op de {@table Wild Magic Surge|PHB} tabel in de {@book Player's Handbook|PHB}. Als het resultaat een spreuk is, is deze te wild om door je Metamagic te worden beïnvloed, en als de spreuk normaal concentratie vereist, vereist hij in dit geval geen concentratie; de spreuk blijft voor zijn volledige duur bestaan.",
+				"Wanneer je een Metamagic optie gebruikt op een spreuk terwijl je de scherf vasthoudt of draagt, kun je rollen op de {@table Wild Magic Surge|PHB} tabel in de {@book Player's Handbook|PHB}. Als het resultaat een spreuk is, is deze te wild om door je Metamagic te worden beïnvloed, en als deze normaal gesproken {@status concentration} vereist, heeft deze in dit geval {@status concentration} niet nodig; de spreuk duurt de volledige duur.",
 				"Als je de Wild Magic Sorcerous Origin niet hebt, kan deze eigenschap, zodra ze gebruikt is om te rollen op de {@table Wild Magic Surge|PHB} tabel, niet meer gebruikt worden tot de volgende dageraad."
 			],
 			"hasFluffImages": true
@@ -13836,7 +13836,7 @@
 			"entries": [
 				"De functie van deze sierlijke stoel is het voortbewegen en manoeuvreren van een vliegende citadel waarop hij is geïnstalleerd. De stoel heeft AC 15, 18 hitpoints en immuniteit voor gif en psychische schade. Hij wordt vernietigd als hij 0 hitpoints heeft.",
 				"Het gevoel van afstemming op een vliegende citadelhelm lijkt op het speldenprik-effect dat je ervaart als je arm of been in slaap valt, maar niet zo intens.",
-				"Als je afgestemd bent op een vliegende citadelhelm en erin zit, krijg je de volgende vaardigheden zolang je je blijft concentreren (alsof je je concentreert op een spreuk):",
+				"Als je afgestemd bent op een vliegende citadelhelm en erin zit, krijg je de volgende vaardigheden zolang je {@status concentration} volhoudt (alsof {@status concentration||concentrating} op een spreuk staat):",
 				{
 					"type": "list",
 					"items": [
@@ -13845,7 +13845,7 @@
 						"Op elk moment kun je vanaf het hoogste punt buiten de citadel zien en horen alsof je op die plek bent."
 					]
 				},
-				"Als geen enkel wezen dat op het roer is afgestemd zijn concentratie behoudt, blijft de citadel roerloos in zijn ruimte.",
+				"Als geen enkel wezen dat is afgestemd op het roer standhoudt {@status concentration}, blijft de citadel roerloos in zijn ruimte.",
 				{
 					"type": "entries",
 					"name": "Transfer Attunement",
@@ -16013,7 +16013,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Als je deze helm draagt, kun je een actie gebruiken om de spreuk {@spell detect thoughts} uit te spreken (save DC 13). Zolang je geconcentreerd blijft op de spreuk, kun je een bonusactie gebruiken om een telepathische boodschap te sturen naar een wezen waarop je geconcentreerd bent. Het kan antwoorden - en daarvoor een bonusactie gebruiken - terwijl je concentratie op dat wezen blijft.",
+				"Terwijl je deze helm draagt, kun je een actie gebruiken om de {@spell detect thoughts} spreuk (save DC 13) ervan uit te spreken. Zolang je {@status concentration} op de spreuk gericht blijft, kun je met een bonusactie een telepathische boodschap sturen naar een wezen waarop je gericht bent. Het kan antwoorden - met een bonusactie - terwijl je erop gericht blijft.",
 				"Terwijl je je concentreert op een schepsel met {@spell detect thoughts}, kun je een actie gebruiken om de {@spell suggestion} spreuk (save DC 13) van het helmteken op dat schepsel uit te spreken. Eenmaal gebruikt, kan de suggestie eigenschap niet opnieuw worden gebruikt tot de volgende dageraad."
 			],
 			"optionalfeatures": [
@@ -20849,7 +20849,7 @@
 					"type": "entries",
 					"name": "Enduring Vision",
 					"entries": [
-						"Als je het deck vasthoudt, slaag je automatisch op grondwettelijke reddingen om je concentratie bij waarzegspreuken te behouden."
+						"Als je het deck vasthoudt, slaag je automatisch op de reddingsworpen van Constitution om je {@status concentration} op waarzeggerijspreuken te behouden."
 					]
 				},
 				{
@@ -25786,7 +25786,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Wanneer je dit drankje drinkt, krijg je het \"reduce\" effect van de {@spell enlarge/reduce} spreuk voor {@dice 1d4} uur (geen concentratie nodig). Het rood in de vloeistof van het drankje krimpt voortdurend tot een klein pareltje en zet dan uit om de heldere vloeistof eromheen te kleuren. Schudden van de fles onderbreekt dit proces niet."
+				"Als je dit drankje drinkt, krijg je het \"verminder\" effect van de {@spell enlarge/reduce} spreuk voor {@dice 1d4} uur (geen {@status concentration} nodig). Het rood in de vloeistof van het drankje trekt voortdurend samen tot een klein bolletje en zet dan uit om de heldere vloeistof eromheen te kleuren. Het schudden van de fles onderbreekt dit proces niet."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -25923,7 +25923,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Wanneer je dit drankje drinkt, krijg je het effect van de {@spell gaseous form} spreuk voor 1 uur (geen concentratie nodig) of totdat je het effect beëindigt als een bonus actie. De houder van dit drankje lijkt mist te bevatten die beweegt en stroomt als water."
+				"Wanneer je dit drankje drinkt, krijg je het effect van de {@spell gaseous form} spreuk gedurende 1 uur (geen {@status concentration} vereist) of totdat je het effect beëindigt als bonusactie. De verpakking van dit drankje lijkt mist te bevatten die beweegt en giet als water."
 			],
 			"attachedSpells": [
 				"gaseous form"
@@ -25969,7 +25969,7 @@
 			"tier": "minor",
 			"rarity": "uncommon",
 			"entries": [
-				"Wanneer je dit drankje drinkt, krijg je het \"vergroot\" effect van de {@spell enlarge/reduce} spreuk voor {@dice 1d4} uur (geen concentratie nodig). Het rood in de vloeistof van het drankje zet voortdurend uit van een klein kraaltje om de heldere vloeistof eromheen te kleuren en trekt dan weer in. Schudden van de fles onderbreekt dit proces niet."
+				"Als je dit drankje drinkt, krijg je het \"vergroot\"-effect van de {@spell enlarge/reduce} spreuk voor {@dice 1d4} uur (geen {@status concentration} nodig). Het rood in de vloeistof van het drankje zet voortdurend uit vanuit een klein bolletje om de heldere vloeistof eromheen te kleuren en krimpt dan in. Het schudden van de fles onderbreekt dit proces niet."
 			],
 			"attachedSpells": [
 				"enlarge/reduce"
@@ -26010,7 +26010,7 @@
 			"tier": "minor",
 			"rarity": "rare",
 			"entries": [
-				"Gedurende 1 uur na het drinken ervan, krijg je 10 tijdelijke hit points die 1 uur blijven staan. Voor dezelfde duur ben je onder het effect van de {@spell bless} spreuk (geen concentratie nodig). Dit blauwe drankje borrelt en stoomt alsof het kookt."
+				"Gedurende 1 uur na het drinken krijg je 10 tijdelijke hitpunten die 1 uur aanhouden. Voor dezelfde duur ben je onder het effect van de {@spell bless} spreuk (geen {@status concentration} nodig). Dit blauwe drankje borrelt en stoomt alsof het kookt."
 			],
 			"attachedSpells": [
 				"bless"
@@ -26134,7 +26134,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Als je een potion of mind control drinkt, kun je een dominate spell (save DC 15) op een specifiek wezen uitspreken als je dat doet voor het einde van je volgende beurt. Als je dat niet doet, wordt het drankje verspild.",
-				"Een potion of mind control geeft het effect van een {@spell dominate beast} spreuk. Als de eerste reddingsworp van het doelwit mislukt, duurt het effect 1 uur, zonder dat concentratie van jouw kant nodig is. Het {@condition charmed} wezen heeft nadeel bij nieuwe reddingspogingen om het effect te verbreken gedurende deze tijd."
+				"Een geestbeheersingsdrankje heeft het effect van een {@spell dominate beast} spreuk. Als de eerste reddingsworp van het doelwit faalt, duurt het effect 1 uur, zonder dat u {@status concentration} nodig hebt. Het {@condition charmed} wezen heeft nadeel bij nieuwe reddingsworpen om het effect gedurende deze tijd te doorbreken."
 			],
 			"attachedSpells": [
 				"dominate beast"
@@ -26148,7 +26148,7 @@
 			"rarity": "rare",
 			"entries": [
 				"Als je een potion of mind control drinkt, kun je een dominate spell (save DC 15) op een specifiek wezen uitspreken als je dat doet voor het einde van je volgende beurt. Als je dat niet doet, wordt het drankje verspild.",
-				"Een potion of mind control geeft het effect van een {@spell dominate person} spreuk. Als de eerste reddingsworp van het doelwit mislukt, duurt het effect 1 uur, zonder dat concentratie van jouw kant nodig is. Het {@condition charmed} wezen heeft nadeel bij nieuwe reddingspogingen om het effect te verbreken gedurende deze tijd."
+				"Een geestbeheersingsdrankje heeft het effect van een {@spell dominate person} spreuk. Als de eerste reddingsworp van het doelwit faalt, duurt het effect 1 uur, zonder dat u {@status concentration} nodig hebt. Het {@condition charmed} wezen heeft nadeel bij nieuwe reddingsworpen om het effect gedurende deze tijd te doorbreken."
 			],
 			"attachedSpells": [
 				"dominate person"
@@ -26162,7 +26162,7 @@
 			"rarity": "very rare",
 			"entries": [
 				"Als je een potion of mind control drinkt, kun je een dominate spell (save DC 15) op een specifiek wezen uitspreken als je dat doet voor het einde van je volgende beurt. Als je dat niet doet, wordt het drankje verspild.",
-				"Een potion of mind control geeft het effect van een {@spell dominate monster} spreuk. Als de eerste reddingsworp van het doelwit mislukt, duurt het effect 1 uur, zonder dat concentratie van jouw kant nodig is. Het {@condition charmed} wezen heeft nadeel bij nieuwe reddingspogingen om het effect te verbreken gedurende deze tijd."
+				"Een geestbeheersingsdrankje heeft het effect van een {@spell dominate monster} spreuk. Als de eerste reddingsworp van het doelwit mislukt, duurt het effect 1 uur, zonder dat jij daar iets voor hoeft te doen. Het {@condition charmed} wezen heeft nadeel bij nieuwe reddingsworpen om het effect gedurende deze tijd te doorbreken."
 			],
 			"attachedSpells": [
 				"dominate monster"
@@ -26288,7 +26288,7 @@
 			"tier": "minor",
 			"rarity": "very rare",
 			"entries": [
-				"Wanneer je dit drankje drinkt, krijg je het effect van de {@spell haste} spreuk voor 1 minuut (geen concentratie vereist). De gele vloeistof van het drankje is zwart gestreept en wervelt vanzelf."
+				"Wanneer je dit drankje drinkt, krijg je gedurende 1 minuut het effect van de {@spell haste} spreuk (geen {@status concentration} nodig). De gele vloeistof van het drankje is gestreept met zwart en wervelt vanzelf."
 			],
 			"attachedSpells": [
 				"haste"
@@ -27708,7 +27708,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"entries": [
-				"Als je deze ring draagt, kun je als actie het bijbehorende commando uitspreken om een bepaalde {@creature djinni} van het Elementaire Vlak Lucht op te roepen. De {@creature djinni} verschijnt in een onbezette ruimte die je kiest binnen 120 voet van je. Hij blijft zolang je je concentreert (alsof je je concentreert op een spreuk), tot maximaal 1 uur, of tot hij geen hit points meer heeft. Daarna keert hij terug naar zijn thuisvlak.",
+				"Terwijl je deze ring draagt, kun je het commando ervan uitspreken als een actie om een bepaalde {@creature djinni} van het Elementaire Vlak van Lucht op te roepen. De {@creature djinni} verschijnt in een onbezette ruimte naar keuze binnen 120 voet van jou. Het blijft zo lang als je je concentreert (alsof {@status concentration||concentrating} op een spreuk), tot maximaal 1 uur, of totdat het tot 0 hitpoints daalt. Daarna keert het terug naar zijn thuisvlak.",
 				"Als hij wordt opgeroepen, is de {@creature djinni} vriendelijk tegen jou en je metgezellen. Hij gehoorzaamt alle commando's die je hem geeft, ongeacht de taal die je gebruikt. Als je geen commando geeft, verdedigt de {@creature djinni} zich tegen aanvallers, maar onderneemt verder geen actie.",
 				"Nadat de {@creature djinni} vertrokken is, kan hij 24 uur lang niet meer opgeroepen worden, en de ring wordt niet-magisch als de {@creature djinni} sterft."
 			],
@@ -28006,7 +28006,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"Deze band van ijzer lijkt op een schedel en voelt koud aan. Hij heeft 3 ladingen en krijgt dagelijks {@dice 1d3} verbruikte ladingen terug bij zonsopgang. Als actie tijdens het dragen van de ring kun je 1 van de ladingen gebruiken om de {@spell fog cloud} spreuk van de ring uit te spreken, met de volgende veranderingen: de wolk is op jou gecentreerd als hij voor het eerst verschijnt, en de spreuk duurt 1 minuut (geen concentratie vereist)."
+				"Deze band van ijzer lijkt op een schedel en voelt koud aan. Hij heeft 3 ladingen en krijgt dagelijks bij zonsopgang {@dice 1d3} aan gebruikte ladingen terug. Als een actie tijdens het dragen van de ring kun je 1 van zijn ladingen gebruiken om de {@spell fog cloud} spreuk ervan uit te spreken, met de volgende veranderingen: de wolk is op jou gecentreerd als hij voor het eerst verschijnt, en de spreuk duurt 1 minuut (geen {@status concentration} vereist)."
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -28192,7 +28192,7 @@
 					"type": "entries",
 					"entries": [
 						"Je kunt 2 ladingen als actie gebruiken om één tot vier bliksembollen van 3 voet groot te maken. Hoe meer bollen je maakt, hoe minder krachtig elke bol afzonderlijk is.",
-						"Elke bol verschijnt in een onbezette ruimte die je kunt zien binnen een straal van 120 meter van jou. De bollen blijven zolang als je je concentreert (alsof je je concentreert op een spreuk), tot 1 minuut. Elke bol verspreidt zwak licht in een straal van 30 voet.",
+						"Elke bol verschijnt in een onbezette ruimte die je kunt zien binnen 120 voet van je. De bollen blijven zolang je je concentreert (alsof {@status concentration||concentrating} op een spreuk), maximaal 1 minuut. Elke bol werpt zwak licht in een straal van 30 voet.",
 						"Als bonusactie kun je elke bol tot 30 voet verplaatsen, maar niet verder dan 120 voet van je vandaan. Als een ander wezen dan jij binnen 2 meter van een bol komt, ontlaadt de bol bliksem naar dat wezen en verdwijnt. Dat wezen moet een Dexterity-poging van DC 15 doen. Als hij niet slaagt, loopt het wezen bliksemschade op, gebaseerd op het aantal bollen dat je hebt gemaakt. (4 Sferen = {@dice 2d4}, 3 Sferen = {@dice 2d6}, 2 Sferen = {@dice 5d4}, 1 Sfeer = {@dice 4d12})"
 					]
 				},
@@ -28881,7 +28881,9 @@
 			"source": "DMG",
 			"page": 196,
 			"srd": true,
+			"baseItem": "mace|phb",
 			"type": "RD",
+			"typeAlt": "M",
 			"tier": "major",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30809,7 +30811,7 @@
 							"items": [
 								"Het schild heeft een intelligentie van 22, een wijsheid van 18, en een charisma van 24, en een gehoor en {@sense truesight} tot een bereik van 120 voet.",
 								"Het schild spreekt, leest en verstaat gewone en helse taal, en het kan telepathisch communiceren met elk wezen dat het kan voelen binnen een straal van 120 meter. Zijn stem is een diepe, holle fluistering.",
-								"Het schild heeft 3 ladingen. Je kunt een actie gebruiken om 1 lading te gebruiken om {@spell fireball} of 2 ladingen te gebruiken om {@spell wall of fire} te spreuken met het schild (save DC 21 voor elke spreuk). De {@spell wall of fire} spreuk duurt 1 minuut (geen concentratie vereist). Het schild krijgt alle verbruikte ladingen dagelijks terug bij zonsopgang.",
+								"Het schild heeft 3 ladingen. Je kunt een actie gebruiken om 1 lading te gebruiken om {@spell fireball} of 2 ladingen om {@spell wall of fire} van het schild af te werpen (save DC 21 voor elk). De {@spell wall of fire} spreuk duurt 1 minuut (geen {@status concentration} vereist). Het schild hervat alle gebruikte ladingen dagelijks bij dageraad.",
 								"Op elk moment tijdens je beurt kan het schild ervoor kiezen om een aura van angst uit te stralen gedurende 1 minuut. (Dit is geen kracht van het schild die jij controleert.) Elk wezen dat jou vijandig gezind is en zijn beurt begint binnen 20 voet van het schild moet een DC 18 Wisdom saving throw maken. Als je niet slaagt, is het wezen {@condition frightened} uitgeschakeld tot het begin van zijn volgende beurt. Bij een succesvolle save, is het wezen immuun voor deze kracht van het schild voor de komende 24 uur. Zodra het schild deze kracht gebruikt, kan het deze niet meer gebruiken tot de volgende dageraad."
 							]
 						}
@@ -30872,7 +30874,7 @@
 					"type": "entries",
 					"name": "Bane",
 					"entries": [
-						"Je kunt de spreuk {@spell bane} vanuit het schild uitspreken (save DC 17). De spreuk vereist geen concentratie en duurt 1 minuut. Als je de spreuk eenmaal van het schild hebt gehaald, kun je dat niet meer doen totdat je een korte of lange rustpauze hebt genomen."
+						"Je kunt de {@spell bane} spreuk vanaf het schild uitspreken (save DC 17). De spreuk vereist geen {@status concentration} en duurt 1 minuut. Eens je de spreuk van het schild hebt uitgesproken, kan je dat niet meer doen tot je een korte of lange rustpauze hebt beëindigd."
 					]
 				},
 				{
@@ -32448,7 +32450,7 @@
 			"entries": [
 				"De functie van deze sierlijke stoel is het voortbewegen en manoeuvreren van een schip waarop hij is geïnstalleerd door de ruimte en de lucht. Hij kan ook een schip op het water of onder water voortstuwen en manoeuvreren, op voorwaarde dat het schip voor dergelijke reizen is gebouwd. Het schip in kwestie moet 1 ton of meer wegen.",
 				"Het gevoel van afstemming op een spelljamming-helm lijkt op het spelden-en-naalden-effect dat je ervaart als je arm of been in slaap valt, maar dan niet zo pijnlijk.",
-				"Als je bent afgestemd op een spelljamming-helm en erin zit, krijg je de volgende vaardigheden zolang je geconcentreerd blijft (alsof je je concentreert op een spreuk):",
+				"Als je afgestemd bent op een spelljamming-helm en erin zit, krijg je de volgende vaardigheden zolang je {@status concentration} volhoudt (alsof {@status concentration||concentrating} op een spreuk zit):",
 				{
 					"type": "list",
 					"items": [
@@ -32489,7 +32491,7 @@
 			"wondrous": true,
 			"entries": [
 				"Deze gepolijste Eberron drakenhard past in de hand en slaat informatie op zoals in een boek. De scherf kan het equivalent van een boek bevatten dat niet meer dan 320 bladzijden telt. Een scherf kan leeg worden aangemaakt of al gevuld zijn met informatie. Wanneer de scherf wordt gemaakt, kan de maker een wachtwoordzin instellen die moet worden uitgesproken om toegang te krijgen tot de informatie die erin is opgeslagen.",
-				"Als je de scherf vasthoudt, kun je een actie gebruiken om je geest open te stellen voor de scherf, zodat je de inhoud in je geest ziet. In volgende rondes vereist het lezen van de tekst of het schrijven van nieuwe tekst op lege \"pagina's\" in de scherf concentratie (alsof je je concentreert op een spreuk) en neemt het evenveel tijd in beslag als het normaal lezen en schrijven kost. Als je aan een bepaalde zin of onderwerp denkt, ga je naar het eerste deel in de scherf dat daarover gaat.",
+				"Terwijl je de scherf vasthoudt, kun je met een actie je geest openen voor de scherf en de inhoud ervan in je geest zien. In volgende rondes vereist het lezen van de tekst of het schrijven van nieuwe tekst op lege \"pagina's\" in de scherf {@status concentration} (alsof {@status concentration||concentrating} op een spreuk) en duurt het even lang als het normaal lezen en schrijven. Als je aan een bepaalde zin of onderwerp denkt, ga je naar de eerste sectie in de scherf die daarover gaat.",
 				"Een tovenaar kan een scherf gebruiken als een spreukenboek, met de gebruikelijke kosten in goud en tijd om een spreuk in de scherf te \"scriben\"."
 			]
 		},
@@ -35874,7 +35876,7 @@
 					"entries": [
 						"De Infernal Machine is zo groot dat hij grotendeels onbeweeglijk is. Om de machine voortdurend te kunnen gebruiken (bijvoorbeeld tijdens een avontuur), kan hij met de afgestemde gebruiker worden verbonden door een zilverdraad, waarvan altijd een voorraad kan worden gemaakt uit het binnenste van de machine. Dit zilverdraad heeft dezelfde algemene aard als het zilverkleurige koord van een {@spell astral projection} spreuk, dat zich verbindt met het lichaam van de gebruiker en achter hem aansleept. Wanneer de draad aldus is bevestigd, wordt hij {@condition invisible} astraal en strekt hij zich uit tot vrijwel oneindige lengte.",
 						"Zolang de draad intact blijft, kan de afgestemde gebruiker ten volle gebruik maken van de krachten van de helse machine, met hun effecten rond de gebruiker. Als de draad wordt doorgesneden - wat alleen kan gebeuren als een effect specifiek vermeldt dat het het zilverkleurige koord van een {@spell astral projection} kan doorsnijden - ondergaat de gebruiker een plotselinge uitbarsting van feedback van de machine die hem onmiddellijk doodt.",
-						"Elk effect van de helse machine dat concentratie vereist, kan door een gebruiker op afstand worden geconcentreerd. De effecten van de helse machine hebben een spell save DC van 14 of de spell save DC van de afgestemde gebruiker, afhankelijk van welke hoger is."
+						"Elk effect van de Infernal Machine dat {@status concentration} vereist, kan worden geconcentreerd door een gebruiker op afstand. De effecten van de Infernal Machine hebben een spell save DC van 14 of de spell save DC van de afgestemde gebruiker, wat het hoogste is."
 					]
 				},
 				{
@@ -40948,6 +40950,8 @@
 			"name": "Witchlight Vane",
 			"source": "WBtW",
 			"page": 27,
+			"baseItem": "mace|phb",
+			"typeAlt": "M",
 			"rarity": "legendary",
 			"reqAttune": "by a mister light or his handpicked successor",
 			"sentient": true,

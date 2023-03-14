@@ -13,7 +13,7 @@
 				{
 					"type": "list",
 					"items": [
-						"De aboleth richt {@spell phantasmal force} (geen componenten vereist) op een willekeurig aantal wezens die hij kan zien binnen 60 voet van hem. Terwijl hij zich concentreert op dit effect, kan de aboleth geen andere hol-acties uitvoeren. Als een doelwit slaagt op de saving throw of als het effect voor hem eindigt, is het doelwit immuun voor de phantasmal force lair actie van de aboleth voor de komende 24 uur, hoewel zo'n wezen ervoor kan kiezen om beïnvloed te worden.",
+						"De aboleth werpt {@spell phantasmal force} (geen componenten vereist) op elk aantal wezens die hij kan zien binnen 60 voet van hem. Terwijl dit effect {@status concentration} aanhoudt, kan de aboleth geen andere hol-acties uitvoeren. Als een doelwit slaagt voor de reddingsworp of als het effect voor hem eindigt, is het doelwit de komende 24 uur immuun voor de spookkracht-holactie van de aboleth, hoewel zo'n wezen ervoor kan kiezen om beïnvloed te worden.",
 						"Plassen water binnen 90 voet van de aboleth stromen naar buiten in een grijpende vloed. Elk wezen op de grond binnen 20 meter van zo'n poel moet slagen op een {@dc 14} krachtsprong of tot 20 meter in het water worden getrokken en {@condition prone} worden neergeslagen. De aboleth kan deze hol-actie pas weer gebruiken nadat hij een andere heeft gebruikt.",
 						"Water in het hol van de aboleth wordt op magische wijze een geleider voor de woede van het wezen. De aboleth kan zich richten op een willekeurig aantal wezens die hij kan zien in het water binnen 90 meter van hem. Een doelwit moet slagen op een {@dc 14} Wisdom saving throw of 7 ({@damage 2d6}) psychische schade oplopen. De aboleth kan deze hol-actie pas weer gebruiken nadat hij een andere heeft gebruikt."
 					]
@@ -26,7 +26,7 @@
 					"items": [
 						"Ondergrondse oppervlaktes binnen 1 mijl van het hol van de aboleth zijn slijmerig en nat en zijn {@quickref difficult terrain||3}.",
 						"Waterbronnen binnen 1 mijl van het hol zijn bovennatuurlijk vervuild. Vijanden van de aboleth die zulk water drinken, braken het binnen enkele minuten uit.",
-						"Als actie kan de aboleth een illusoir beeld van zichzelf creëren binnen 1 mijl van het hol. De kopie kan verschijnen op elke locatie die de aboleth eerder heeft gezien of op elke locatie die een wezen {@condition charmed} van de aboleth op dat moment kan zien. Eenmaal gecreëerd, blijft de afbeelding bestaan zolang de aboleth geconcentreerd blijft, alsof hij zich concentreert op een spreuk. Hoewel het beeld ontastbaar is, ziet het eruit, klinkt het en kan het bewegen zoals de aboleth. De aboleth kan voelen, spreken en telepathie gebruiken vanaf de positie van het beeld, alsof hij op die positie aanwezig is. Als het beeld schade oploopt, verdwijnt het."
+						"Als een actie kan de aboleth een illusoir beeld van zichzelf creëren binnen 1 mijl van het hol. De kopie kan verschijnen op elke locatie die de aboleth eerder heeft gezien of op elke locatie die een wezen {@condition charmed} van de aboleth momenteel kan zien. Eenmaal gemaakt, duurt het beeld zolang de aboleth {@status concentration} volhoudt, alsof {@status concentration||concentrating} op een spreuk staat. Hoewel het beeld ongrijpbaar is, ziet het eruit, klinkt het en kan het bewegen als de aboleth. De aboleth kan vanuit de positie van het beeld voelen, spreken en telepathie gebruiken alsof hij op die positie aanwezig is. Als het beeld schade oploopt, verdwijnt het."
 					]
 				},
 				"If the aboleth dies, the first two effects fade over the course of {@dice 3d10} days."
@@ -36,7 +36,7 @@
 			"name": "Aerisi Kalinoth",
 			"source": "PotA",
 			"lairActions": [
-				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while concentrating on a spell cast as a lair action.",
+				"If Aerisi is in the air node while {@creature Yan-C-Bin|PotA} isn't, Aerisi can take lair actions. On initiative count 20 (losing initiative ties), Aerisi uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Aerisi can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action.",
 				"If Aerisi casts {@spell invisibility} using this lair action, she also draws the power of the air node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},
@@ -985,7 +985,7 @@
 					"items": [
 						"Magische gravures van het lachende gezicht van de draak kunnen worden gezien in stenen terreinen en voorwerpen binnen 6 mijl van het hol van de draak.",
 						"Kleine dieren zoals knaagdieren en vogels die normaal niet kunnen spreken, krijgen de magische mogelijkheid om Draconisch te spreken en te begrijpen als ze zich binnen 1 mijl van het hol van de draak bevinden. Deze wezens spreken goed over de draak, maar kunnen niet onthullen waar hij zich bevindt.",
-						"Intelligente wezens binnen 1 mijl van het hol van de draak zijn {@condition prone} aan aanvallen van gegiechel. Zelfs ernstige zaken lijken plotseling amusant."
+						"Intelligente wezens binnen 1 mijl van het hol van de draak zijn vatbaar voor gegiechel. Zelfs ernstige zaken lijken plotseling grappig. Als het beeld schade oploopt, verdwijnt het."
 					]
 				},
 				"If the dragon dies, the magic carvings fade over the course of {@dice 1d10} days. The other effects end immediately.",
@@ -1781,7 +1781,7 @@
 								],
 								[
 									"81–00",
-									"\"Mijn perceptie van de realiteit komt niet overeen met die van iemand anders. Het maakt me {@condition prone} tot gewelddadige waanideeën die voor een ander nergens op slaan.\""
+									"\"Mijn perceptie van de realiteit komt niet overeen met die van anderen. Het maakt me vatbaar voor gewelddadige waanideeën die geen steek houden voor iemand anders.\""
 								]
 							]
 						}
@@ -1799,7 +1799,7 @@
 					"type": "list",
 					"items": [
 						"Gar kan overal in de koraalberg teleporteren en tot vijf gewillige wezens met hem meenemen.",
-						"Het koraal in een straal van 60 voet groeit snel rond de wezens in de koraalberg. Elk wezen moet slagen op een {@dc 18} Strength saving throw of {@condition restrained} worden. Geblokkeerde wezens kunnen in hun beurt een actie doen om een {@dc 18} Strength ({@skill Athletics}) of Dexterity ({@skill Acrobatics}) check te doen om zichzelf te bevrijden. Dit effect duurt 1 minuut tenzij het wordt ontkracht (het telt als een spreuk van het 6e niveau), en Gar hoeft zich er niet voor te blijven concentreren. Gar Shatterkeel en alle wezens die hij aanwijst, zijn immuun voor dit effect.",
+						"Het koraal in een straal van 60 voet groeit snel rond wezens in de koraalberg. Elk wezen moet slagen in een {@dc 18} Sterkte reddingsslag of wordt {@condition restrained}. Beperkte wezens kunnen tijdens hun beurt een actie uitvoeren om een {@dc 18} Sterkte ({@skill Athletics}) of Dexterity ({@skill Acrobatics}) controle uit te voeren om zichzelf te bevrijden. Dit effect duurt 1 minuut, tenzij het ongedaan wordt gemaakt (het telt als een spreuk van 6e niveau), en Gar hoeft geen {@status concentration} controle uit te voeren. Gar Shatterkeel en alle door hem aangewezen wezens zijn immuun voor dit effect.",
 						"Tot vijf lijken die Gar binnen 60 voet kan zien, staan op als {@creature drowned blade|GoS|drowned blades} en vallen iedereen aan die Gar ze in zijn beurt aanwijst."
 					]
 				}
@@ -1809,7 +1809,7 @@
 			"name": "Gar Shatterkeel",
 			"source": "PotA",
 			"lairActions": [
-				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while concentrating on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
+				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
 				"If Gar casts {@spell cure wounds} using this lair action, he regains the maximum number of hit points from the spell (28)."
 			]
 		},
@@ -1918,7 +1918,7 @@
 							"name": "Create Object",
 							"type": "item",
 							"entries": [
-								"De anarch spreekt de scheppingsspreuk uit (als een spreuk van het 9e niveau) met de ongevormde substantie van Limbo in plaats van met schaduwmateriaal. Als het in Limbo wordt gebruikt, blijft het voorwerp staan totdat de concentratie van de anarch wordt verbroken, ongeacht de samenstelling. Als de anarch zich meer dan 120 voet van het voorwerp beweegt, wordt de concentratie van de anarch verbroken."
+								"De anarch spreekt de scheppingsspreuk uit (als een spreuk op 9e niveau) met de ongevormde substantie van Limbo in plaats van schaduwmateriaal. Bij gebruik in Limbo blijft het voorwerp staan totdat de {@status concentration} van de anarch wordt verbroken, ongeacht de samenstelling. Als de anarch zich meer dan 120 voet van het voorwerp verwijdert, breekt de {@status concentration} van de anarch.ect."
 							]
 						},
 						{
@@ -1972,7 +1972,7 @@
 					"type": "list",
 					"items": [
 						"De anarch spreekt de spreuk {@spell lightning bolt} uit (op 5e niveau), maar de anarch kan het type schade veranderen van bliksem naar koud, vuur, psychisch, radiant of donder. Als de spreuk andere schade toebrengt dan vuur of bliksem, ontsteekt hij geen brandbare voorwerpen.",
-						"De anarch spreekt de {@spell creation} spreuk uit (als een spreuk van het 9e niveau) met de ongevormde substantie van Limbo in plaats van schaduwmateriaal. Als de spreuk in Limbo wordt gebruikt, blijft het voorwerp staan totdat de concentratie van de anarch wordt verbroken, ongeacht de samenstelling. Als de anarch zich meer dan 120 voet van het voorwerp beweegt, wordt de concentratie verbroken.",
+						"De anarch spreekt de {@spell creation} spreuk uit (als een spreuk op 9e niveau) met gebruikmaking van de ongevormde substantie van Limbo in plaats van schaduwmateriaal. Bij gebruik in Limbo blijft het voorwerp staan totdat de {@status concentration} van de anarch wordt verbroken, ongeacht de samenstelling. Als de anarch zich meer dan 120 voet van het voorwerp verwijdert, breekt zijn {@status concentration}.",
 						"De anarch kan een voorwerp dat hij kan zien binnen een straal van 150 meter op magische wijze verplaatsen door een Wijsheidscontrole met voordeel uit te voeren. De DC is afhankelijk van de grootte van het voorwerp: {@dc 5} voor Tiny, {@dc 10} voor Small, {@dc 15} voor Medium, {@dc 20} voor Large, en {@dc 25} voor Huge of groter."
 					]
 				}
@@ -2735,8 +2735,8 @@
 				{
 					"type": "list",
 					"items": [
-						"Kyrilla cast {@spell moonbeam} (geen componenten nodig). Terwijl ze geconcentreerd blijft op dit effect, kan ze geen andere hol-acties uitvoeren.",
-						"Kyrilla cast {@spell cloud of daggers} (geen componenten nodig), behalve dat de dolken vliegende slangen zijn en de spreuk doordringende schade toebrengt. Terwijl ze geconcentreerd blijft op dit effect, kan ze geen andere hol acties uitvoeren.",
+						"Kyrilla gooit {@spell moonbeam} (geen onderdelen nodig). Terwijl ze dit effect {@status concentration} aanhoudt, kan ze geen andere hol-acties uitvoeren.",
+						"Kyrilla spreekt {@spell cloud of daggers} uit (geen componenten nodig), behalve dat de dolken vliegende slangen zijn en de spreuk doordringende schade toebrengt. Terwijl ze {@status concentration} aan dit effect vasthoudt, kan ze geen andere hol acties uitvoeren.",
 						"Zwembaden van vloeistof binnen 60 voet van Kyrilla golven en schuimen, spatten en doordrenken elk wezen op de grond binnen 5 voet van zulke plassen. Wezens die slagen op een DC 14 Dexterity saving throw krijgen geen vloeistof in hun ogen en monden. Kyrilla kan deze hol-actie pas weer gebruiken als ze een andere heeft gebruikt."
 					]
 				}
@@ -2787,7 +2787,7 @@
 			"name": "Marlos Urnrayle",
 			"source": "PotA",
 			"lairActions": [
-				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains concentration on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while concentrating on {@spell earthquake}.",
+				"If Marlos is in the earth node while {@creature Ogrémoch|PotA} isn't, the medusa can take lair actions. On initiative count 20 (losing initiative ties), Marlos uses a lair action to cast {@spell earthquake} without using components. As long as he maintains {@status concentration} on {@spell earthquake}, initiative count 20 is the start of Marlos's turn for the purpose of the spell. He can take no other lair actions while {@status concentration||concentrating} on {@spell earthquake}.",
 				"Marlos's second option for a lair action is to draw power from the earth node to heal. When he does so, he regains 30 ({@dice 6d8 + 3}) hit points."
 			]
 		},
@@ -2799,7 +2799,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Mephistopheles spreekt een spreuk uit zijn tovenaarslijst uit en als deze normaal concentratie vereist, duurt deze in plaats daarvan de volledige duur.",
+						"Mephistopheles spreekt een willekeurige spreuk uit zijn tovenaarslijst uit en als die normaal gesproken {@status concentration} vereist, duurt hij in plaats daarvan de volledige duur.",
 						"Mephistopheles bedekt een gebied van 5 voet met Hellfire. Elk wezen dat zijn beurt in dat gebied begint, lijdt 27 ({@damage 6d8}) vuurschade. Het hellevuur blijft totdat Mephistopheles het wegdoet of hij deze vaardigheid opnieuw gebruikt."
 					]
 				}
@@ -3994,7 +3994,7 @@
 			"name": "Vanifer",
 			"source": "PotA",
 			"lairActions": [
-				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while concentrating on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
+				"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
 				"If Vanifer casts {@spell misty step} using this lair action, she also draws the power of the fire node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
 			]
 		},

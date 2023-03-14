@@ -42,7 +42,7 @@
 					},
 					"name": "Energy Adaptation",
 					"entries": [
-						"Als actie kun je een wezen aanraken en het weerstand geven tegen zuur-, koude-, vuur-, bliksem-, of donderschade (jouw keuze), die duurt tot je concentratie ophoudt."
+						"Als actie kun je een wezen aanraken en het weerstand geven tegen zuur-, koude-, vuur-, bliksem- of donderschade (naar keuze), die duurt tot je {@status concentration} eindigt."
 					]
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"name": "Energy Immunity",
 					"entries": [
-						"Als actie kun je een wezen aanraken en het immuniteit geven tegen zuur-, koud-, vuur-, bliksem-, of donderschade (jouw keuze), die duurt tot je concentratie ophoudt."
+						"Als een actie kun je een wezen aanraken en het immuniteit geven tegen zuur-, koude-, vuur-, bliksem- of donderschade (jouw keuze), die duurt tot je {@status concentration} eindigt."
 					]
 				}
 			]
@@ -103,7 +103,7 @@
 					},
 					"name": "View Aura",
 					"entries": [
-						"Als actie bestudeer je de aura van een wezen. Tot je concentratie ophoudt, leer je, zolang je het doelwit kunt zien, of het onder invloed is van magische of psionische effecten, wat zijn huidige totaal aantal hitpoints is en wat zijn emotionele basistoestand is. Zolang dit effect duurt, heb je voordeel bij de wijsheids- ({@skill Insight}) en charismatische controles die je tegen hem uitvoert."
+						"Als een actie, bestudeer je de aura van een wezen. Tot je {@status concentration} eindigt, terwijl je het doelwit kunt zien, leer je of het onder invloed staat van magische of psionische effecten, zijn huidige hitpointtotaal en zijn emotionele basistoestand. Zolang dit effect duurt, heb je voordeel bij Wisdom ({@skill Insight}) en Charisma controles die je tegen hem uitvoert."
 					]
 				},
 				{
@@ -117,7 +117,7 @@
 					},
 					"name": "Perceive the Unseen",
 					"entries": [
-						"Als bonus actie krijg je het vermogen om aura's te zien, zelfs van {@condition invisible} of verborgen wezens. Totdat je concentratie ophoudt, kun je alle wezens zien, ook verborgen en {@condition invisible} wezens, ongeacht de lichtomstandigheden."
+						"Als bonusactie krijg je het vermogen om aura's te zien, zelfs van {@condition invisible} of verborgen wezens. Tot je {@status concentration} eindigt, kun je alle wezens zien, inclusief verborgen en {@condition invisible} wezens, ongeacht de lichtomstandigheden."
 					]
 				}
 			]
@@ -461,7 +461,7 @@
 					},
 					"name": "Call to Inaction",
 					"entries": [
-						"Als je 1 minuut met een wezen in gesprek bent, kun je proberen het te overstelpen met overweldigende ennui. Aan het eind van de minuut kun je een actie gebruiken om het wezen te dwingen een Wisdom saving throw te doen. De reddingsworp slaagt automatisch als het doelwit immuun is voor zijn {@condition charmed}. Bij een mislukte redding blijft het zitten en is het {@condition incapacitated} totdat je concentratie ophoudt. Dit effect eindigt onmiddellijk als het doelwit of een bondgenoot die het kan zien, wordt aangevallen of schade oploopt. Bij een succesvolle save is het wezen onaangetast en heeft het niets in de gaten van je poging om zijn wil te buigen."
+						"Als je 1 minuut praat met een wezen, kun je proberen het te bezaaien met overweldigende ennui. Aan het eind van de minuut kun je een actie gebruiken om het wezen te dwingen een Wisdom saving throw te doen. De reddingsworp slaagt automatisch als het doelwit immuun is voor het zijn {@condition charmed}. Bij een mislukte save zit het en is het {@condition incapacitated} totdat je {@status concentration} eindigt. Dit effect eindigt onmiddellijk als het doelwit of een bondgenoot die het kan zien, wordt aangevallen of schade oploopt. Bij een geslaagde save is het wezen onaangetast en heeft het geen weet van je poging om zijn wil te buigen."
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					},
 					"name": "Dolorous Mind",
 					"entries": [
-						"Als actie kies je een wezen dat je kunt zien binnen 60 meter van je. Het moet slagen op een Charisma saving throw, of het is {@condition incapacitated} en heeft een snelheid van 0 tot je concentratie eindigt. Het kan deze worp herhalen aan het einde van elke beurt, en het effect op zichzelf beëindigen als het slaagt."
+						"Als actie kies je een wezen dat je kunt zien binnen 60 voet van je. Het moet slagen in een Charisma saving throw, of het is {@condition incapacitated} en heeft een snelheid van 0 tot je {@status concentration} eindigt. Het kan deze reddingsworp aan het einde van elke beurt herhalen, waarbij het effect op zichzelf eindigt als het slaagt. poging zijn wil te buigen."
 					]
 				}
 			]
@@ -522,7 +522,7 @@
 					},
 					"name": "Wall of Repulsion",
 					"entries": [
-						"Als actie creëer je een onzichtbare, niet-substantiële muur van energie binnen 60 voet van je die tot 30 voet lang, 10 voet hoog, en 1 voet dik is. De muur blijft bestaan totdat je concentratie ophoudt. Elk wezen dat zich erdoor probeert te bewegen moet een Wisdom saving throw doen. Als je niet slaagt, kan het wezen niet door de muur heen bewegen tot het begin van zijn volgende beurt. Als hij slaagt, kan het wezen erdoorheen. Een wezen moet deze reddingspoging doen telkens wanneer het door de muur probeert te gaan, vrijwillig of onwillig."
+						"Als een actie creëer je een onzichtbare, niet-substantiële muur van energie binnen 60 voet van je die maximaal 30 voet lang, 10 voet hoog en 1 voet dik is. De muur blijft bestaan totdat je {@status concentration} eindigt. Elk wezen dat zich erdoorheen wil bewegen, moet een reddingsslag van Wisdom uitvoeren. Als hij niet slaagt, kan het wezen zich niet door de muur bewegen tot het begin van zijn volgende beurt. Als hij slaagt, kan het wezen erdoorheen. Een wezen moet deze save uitvoeren telkens als het probeert door de muur te gaan, gewild of ongewild."
 					]
 				},
 				{
@@ -536,7 +536,7 @@
 					},
 					"name": "Visions of Disgust",
 					"entries": [
-						"Je zorgt ervoor dat een wezen alle andere wezens als afschuwelijke, buitenaardse wezens beschouwt. Als actie kies je een wezen dat je kunt zien binnen 60 meter van je. Het doelwit moet een Wisdom saving throw doen. Als hij niet slaagt, loopt hij {@damage 5d6} psychische schade op, en totdat je concentratie ophoudt, loopt hij {@damage 1d6} psychische schade op per wezen dat zich op 2 meter van hem bevindt, aan het eind van elke beurt. Bij een succesvolle save, neemt het doelwit slechts de helft van de initiële schade en lijdt geen van de andere effecten."
+						"Je zorgt ervoor dat een wezen alle andere wezens ziet als afschuwelijke, vreemde entiteiten. Kies als actie een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet een Wisdom saving throw doen. Als hij niet slaagt, loopt hij {@damage 5d6} psychische schade op, en totdat je {@status concentration} eindigt, loopt hij {@damage 1d6} psychische schade op per wezen binnen 5 meter van hem aan het einde van elke beurt. Bij een succesvolle save neemt het doelwit slechts de helft van de initiële schade op en lijdt het geen van de andere effecten."
 					]
 				},
 				{
@@ -550,7 +550,7 @@
 					},
 					"name": "World of Horror",
 					"entries": [
-						"Als een actie, kies je tot zes wezens binnen 60 voet van je. Elk doelwit moet een Charisma saving throw doen. Als je niet slaagt, loopt het doelwit {@damage 8d6} psychische schade op, en die blijft {@condition frightened} totdat je concentratie ophoudt. Bij een succesvolle save, een doelwit neemt de helft van de schade. Terwijl het {@condition frightened} door dit effect wordt geraakt, wordt de snelheid van het doelwit tot 0 gereduceerd, en kan het doelwit zijn actie en eventuele bonusacties alleen gebruiken om mêlee-aanvallen uit te voeren. Het {@condition frightened} doelwit kan de worp aan het einde van elke beurt herhalen, en het effect op zichzelf beëindigen als hij slaagt."
+						"Kies als actie maximaal zes wezens binnen 60 voet van je. Elk doelwit moet een Charisma saving throw doen. Als je niet slaagt, krijgt het doelwit {@damage 8d6} psychische schade, en is het {@condition frightened} tot je {@status concentration} eindigt. Bij een succesvolle reddingsslag krijgt het doelwit half zoveel schade. Terwijl {@condition frightened} door dit effect, wordt de snelheid van een doelwit verminderd tot 0, en het doelwit kan zijn actie, en elke bonusactie die het zou kunnen hebben, alleen gebruiken om melee aanvallen uit te voeren. Het {@condition frightened} doelwit kan de reddingsworp aan het eind van elke beurt herhalen, waarbij het effect op zichzelf eindigt bij succes."
 					]
 				}
 			]
@@ -587,7 +587,7 @@
 					},
 					"name": "Fighting Words",
 					"entries": [
-						"Als je 1 minuut met een wezen praat, kun je proberen een sudderend geweld in zijn geest achter te laten. Aan het eind van de minuut kun je een actie gebruiken om het wezen te dwingen een Wisdom saving throw te doen om weerstand te bieden aan het voelen van gewelddadige neigingen tegen één wezen dat je beschrijft of noemt. De redding slaagt automatisch als het doelwit immuun is voor het zijn {@condition charmed}. Als je niet slaagt, valt het doelwit het gekozen wezen aan als het dat wezen ziet voordat je concentratie ophoudt, met wapens of spreuken tegen een wezen waar het al vijandig tegenover stond of met ongewapende slagen tegen een bondgenoot of een wezen waar het neutraal tegenover stond. Zodra het gevecht begint, blijft het gedurende 5 ronden aanvallen voordat dit effect eindigt. Dit effect eindigt onmiddellijk als het doelwit of een medestander die het kan zien, wordt aangevallen of schade oploopt van een ander wezen dan waartegen het is aangezet. Bij een succesvolle save is het wezen onaangetast en heeft het niets in de gaten van je poging om zijn wil te buigen."
+						"Als je 1 minuut met een wezen praat, kun je proberen een sudderend geweld in zijn geest achter te laten. Aan het eind van de minuut kun je een actie gebruiken om het wezen te dwingen een Wisdom saving throw te doen om gewelddadige neigingen te weerstaan tegen één wezen dat je beschrijft of noemt. De reddingsworp slaagt automatisch als het doelwit immuun is voor {@condition charmed}. Bij een mislukte reddingsslag valt het doelwit het gekozen wezen aan als het dat wezen ziet voordat je {@status concentration} eindigt, met wapens of spreuken tegen een wezen waar het al vijandig tegenover stond of ongewapende slagen tegen een bondgenoot of een wezen waar het neutraal tegenover stond. Zodra het gevecht begint, blijft het 5 rondes lang aanvallen voordat dit effect eindigt. Dit effect eindigt onmiddellijk als het doelwit of een bondgenoot die het kan zien, wordt aangevallen of schade oploopt van een ander wezen dan het wezen waartegen het is opgehitst. Bij een succesvolle save is het wezen niet beïnvloed en heeft het geen weet van jouw poging om zijn wil te beïnvloeden."
 					]
 				},
 				{
@@ -611,7 +611,7 @@
 					},
 					"name": "Punishing Fury",
 					"entries": [
-						"Je zorgt ervoor dat de woede van een wezen zo groot wordt dat het aanvalt zonder acht te slaan op zijn eigen veiligheid. Als een bonus actie kies je een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet slagen op een Wisdom saving throw of, tot je concentratie ophoudt, kan elk wezen binnen een straal van 2 meter een reactie gebruiken om een aanval tegen hem uit te voeren telkens als het doelwit een aanval uitvoert. De save slaagt automatisch als het doelwit immuun is {@condition charmed}."
+						"Je maakt een wezen zo woedend dat het aanvalt zonder op zijn eigen veiligheid te letten. Als bonusactie kies je een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet slagen in een Wisdom saving throw of, totdat je {@status concentration} eindigt, kan elk wezen binnen 5 meter een reactie gebruiken om een melee aanval tegen hem uit te voeren wanneer het doelwit een melee aanval doet. De save slaagt automatisch als het doelwit immuun is voor een {@condition charmed}. ander wezen dan waartegen het is opgehitst. Bij een succesvolle save is het wezen niet beïnvloed en heeft het geen weet van jouw poging om zijn wil te beïnvloeden."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 					},
 					"name": "Miniature Form",
 					"entries": [
-						"Als bonus actie word je Tiny totdat je concentratie ophoudt. In deze grootte krijg je een +5 bonus op Dexterity ({@skill Stealth}) checks en kun je door openingen tot 5 cm gaan zonder te knijpen."
+						"Als bonusactie word je Tiny totdat je {@status concentration} eindigt. Als je zo groot bent, krijg je een bonus van +5 bij vaardigheidscontroles en kun je je door kieren van maximaal 5 cm breed bewegen zonder te knellen. Als je de reddingsactie uitvoert, wordt het wezen niet beïnvloed en heeft het geen idee van je poging om zijn wil te beïnvloeden."
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					},
 					"name": "Microscopic Form",
 					"entries": [
-						"Als een bonus actie, word je kleiner dan Tiny tot je concentratie ophoudt. In deze grootte krijg je een +10 bonus op Dexterity ({@skill Stealth}) checks en een +5 bonus op AC, je kunt je door openingen tot 2,5 cm verplaatsen zonder te knijpen en je kunt geen wapenaanvallen doen."
+						"Als bonusactie word je kleiner dan Tiny tot je {@status concentration} eindigt. In deze grootte krijg je een bonus van +10 bij vaardigheidscontroles en een bonus van +5 bij AC, je kunt je door kieren tot 1 inch verplaatsen zonder te knellen, en je kunt geen wapenaanvallen uitvoeren."
 					]
 				}
 			]
@@ -720,7 +720,7 @@
 					},
 					"name": "Ogre Form",
 					"entries": [
-						"Als een bonus actie, krijg je 10 tijdelijke hit points. Bovendien, totdat je concentratie ophoudt, je mêlee wapen aanvallen een extra {@damage 1d4} vernietiging schade op een hit, en je bereik verhoogt met 5 meter. Als je kleiner bent dan Large, word je voor de duur ook Large."
+						"Als bonusactie krijg je 10 tijdelijke hitpoints. Bovendien, tot je {@status concentration} eindigt, geven je aanvallen met melee wapens een extra {@damage 1d4} stompschade bij een treffer, en je bereik wordt 5 voet groter. Als je kleiner bent dan Large, word je ook Large voor de duur van de aanval."
 					]
 				},
 				{
@@ -734,7 +734,7 @@
 					},
 					"name": "Giant Form",
 					"entries": [
-						"Als een bonus actie, krijg je 30 tijdelijke hit points. Bovendien, totdat je concentratie eindigt, je mêlee wapen aanvallen een extra {@damage 2d6} vernietiging schade op een hit, en je bereik verhoogt met 10 meter. Als je kleiner bent dan Huge, word je ook Huge voor de duur van je concentratie."
+						"Als bonusactie krijg je 30 tijdelijke hitpoints. Bovendien, tot je {@status concentration} eindigt, geven je aanvallen met melee wapens een extra {@damage 2d6} stompschade bij een treffer, en je bereik wordt 10 voet groter. Als je kleiner bent dan Huge, word je ook Huge voor de duur."
 					]
 				}
 			]
@@ -781,7 +781,7 @@
 					},
 					"name": "Psychic Redoubt",
 					"entries": [
-						"Als een actie, creëer je een veld van beschermende psychische energie. Kies een willekeurig aantal wezens binnen 30 meter van je. Totdat je concentratie ophoudt, heeft elk doelwit weerstand tegen psychische schade en voordeel op Intelligentie, Wijsheid en Charisma saving throws."
+						"Als een actie, creëer je een veld van beschermende psychische energie. Kies een willekeurig aantal wezens binnen 30 meter van je. Tot je {@status concentration} eindigt, heeft elk doelwit weerstand tegen psychische schade en voordeel op intelligentie, wijsheid en Charisma reddingsworpen."
 					]
 				}
 			]
@@ -828,7 +828,7 @@
 					},
 					"name": "Iron Resistance",
 					"entries": [
-						"Als actie krijg je weerstand tegen knuppel-, steek-, of hakschade (jouw keuze), die duurt tot je concentratie ophoudt."
+						"Als een actie, krijg je weerstand tegen stomp-, steek- of steekschade (naar keuze), die duurt tot je {@status concentration} eindigt."
 					]
 				}
 			]
@@ -875,7 +875,7 @@
 					},
 					"name": "Center of Attention",
 					"entries": [
-						"Als actie kun je een aura van kracht uitstralen dat de aandacht van een wezen trekt. Kies een wezen dat je kunt zien binnen 60 meter van jou. Het moet een Charisma saving throw doen. Als je niet slaagt, wordt het wezen zo grondig door jou afgeleid dat alle andere wezens {@condition invisible} naar jou worden afgeleid tot je concentratie ophoudt. Dit effect eindigt als het wezen je niet meer kan zien of horen of als het schade oploopt."
+						"Als een actie oefen je een aura van kracht uit die de aandacht van een wezen trekt. Kies een wezen dat je kunt zien binnen 60 voet van je. Het moet een Charisma saving throw doen. Bij een mislukte save is het wezen zo grondig door jou afgeleid dat alle andere wezens {@condition invisible} voor hem zijn totdat je {@status concentration} eindigt. Dit effect eindigt als het wezen je niet langer kan zien of horen of als het schade oploopt."
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					},
 					"name": "Invoke Awe",
 					"entries": [
-						"Als actie kun je een aura uitstralen dat anderen ontzag inboezemt. Kies tot 5 wezens die je kunt zien binnen 60 voet van je. Elk doelwit moet slagen op een intelligentie-spaarworp of {@condition charmed} door jou worden gezien totdat je concentratie ophoudt. Terwijl {@condition charmed}, het doelwit gehoorzaamt al uw verbale commando's naar beste vermogen en zonder iets te doen duidelijk zelf-destructief. Het {@condition charmed} doelwit zal alleen wezens aanvallen die het jou heeft zien aanvallen sinds het {@condition charmed} was of waar het al vijandig tegenover stond. Aan het eind van elke beurt kan het de worp herhalen, waarbij het effect op zichzelf eindigt als het slaagt."
+						"Als actie straal je een aura uit die anderen ontzag inboezemt. Kies maximaal 5 wezens die je kunt zien binnen 60 voet van je. Elk doelwit moet slagen in een reddingsworp van intelligentie of {@condition charmed} door jou worden geraakt tot je {@status concentration} eindigt. Terwijl {@condition charmed}, gehoorzaamt het doelwit al je verbale commando's naar beste vermogen en zonder iets duidelijk zelfdestructiefs te doen. Het {@condition charmed} doelwit zal alleen wezens aanvallen die het jou heeft zien aanvallen sinds het {@condition charmed} of waar het al vijandig tegenover stond. Aan het einde van elke beurt kan het de reddingsworp herhalen, waarbij het effect op zichzelf eindigt bij succes."
 					]
 				}
 			]
@@ -950,7 +950,7 @@
 					},
 					"name": "Strategic Mind",
 					"entries": [
-						"Als actie oefen je een aura van vertrouwen en commando uit dat je bondgenoten tot een hechte eenheid verenigt. Totdat je concentratie ophoudt, kan elke bondgenoot binnen 60 voet van jou in zijn beurt, als bonusactie, de actie Dash of Disengage uitvoeren of een {@dice d4} gooien en het gerolde getal toevoegen aan elke aanvalsrol die hij die beurt maakt."
+						"Als actie oefen je een aura van vertrouwen en bevel uit die je bondgenoten verenigt in een samenhangende eenheid. Tot je {@status concentration} eindigt, kan elke bondgenoot binnen 60 meter van je tijdens zijn beurt, als bonusactie, de actie Dash of Disengage uitvoeren of een {@dice d4} gooien en het gegooide getal toevoegen aan elke aanvalsworp die hij die beurt maakt.d van elke van zijn beurten kan hij de reddingsworp herhalen, waarbij het effect op zichzelf eindigt bij succes."
 					]
 				},
 				{
@@ -997,7 +997,7 @@
 					},
 					"name": "Aura of Victory",
 					"entries": [
-						"Als bonusactie projecteer je psionische energie totdat je concentratie ophoudt. De energie versterkt jou en je bondgenoten als je vijanden worden geveld; telkens als een vijand die je kunt zien tot 0 hitpoints wordt gereduceerd, krijgen jij en elk van je bondgenoten binnen 30 voet van je tijdelijke hitpoints gelijk aan het dubbele van de psi-punten die zijn besteed om dit effect te activeren."
+						"Als bonusactie projecteer je psionische energie tot je {@status concentration} eindigt. De energie versterkt u en uw bondgenoten wanneer uw vijanden worden geveld; telkens wanneer een vijand die u kunt zien tot 0 hitpoints wordt gereduceerd, krijgen u en elk van uw bondgenoten binnen 30 voet van u tijdelijke hitpoints gelijk aan het dubbele van de psi-punten die zijn besteed om dit effect te activeren."
 					]
 				},
 				{
@@ -1038,7 +1038,7 @@
 					},
 					"name": "Incite Fear",
 					"entries": [
-						"Als actie kies je een wezen dat je kunt zien binnen 60 meter van je. Het doelwit moet slagen op een wijze reddingsworp of {@condition frightened} van je worden totdat je concentratie eindigt. Telkens wanneer het {@condition frightened} doelwit zijn beurt beëindigt op een plaats waar hij je niet kan zien, kan hij de reddende worp herhalen, waarbij hij het effect op zichzelf beëindigt als hij slaagt."
+						"Kies als actie een wezen dat je binnen 60 voet van je kunt zien. Het doelwit moet slagen in een Wisdom saving throw of wordt {@condition frightened} van je tot je {@status concentration} eindigt. Telkens wanneer het {@condition frightened} doelwit zijn beurt beëindigt op een plaats waar het jou niet kan zien, kan het de reddingsworp herhalen en het effect op zichzelf beëindigen als het slaagt."
 					]
 				},
 				{
@@ -1052,7 +1052,7 @@
 					},
 					"name": "Unsettling Aura",
 					"entries": [
-						"Als een bonus actie kun je jezelf hullen in verontrustende psychische energie. Totdat je concentratie ophoudt, moet elke vijand binnen 60 voet van je die je kan zien, 1 voet extra bewegen voor elke voet die hij naar je toe beweegt. Een wezen negeert dit effect als het er immuun voor is {@condition frightened}."
+						"Als een bonusactie, verhul je jezelf in verontrustende psychische energie. Totdat je {@status concentration} eindigt, moet elke vijand binnen 60 voet van je die je kan zien 1 extra voet bewegen voor elke voet die hij naar je toe beweegt. Een wezen negeert dit effect als het immuun is voor {@condition frightened}."
 					]
 				},
 				{
@@ -1066,7 +1066,7 @@
 					},
 					"name": "Incite Panic",
 					"entries": [
-						"Als actie kies je tot acht wezens die je kunt zien binnen 90 voet van je die jou kunnen zien. Aan het begin van elke beurt van het doelwit voordat je concentratie ophoudt, moet het doelwit een Wijsheid-reddingsworp doen. Als je niet slaagt, is het doelwit {@condition frightened} tot het begin van zijn volgende beurt, en gooi je een dobbelsteen. Als je een oneven getal gooit, beweegt het {@condition frightened} doelwit met de helft van zijn snelheid in een willekeurige richting en onderneemt het die beurt geen actie, behalve dat het van schrik gilt. Als je een even getal gooit, voert het {@condition frightened} doelwit een mêlee-aanval uit tegen een willekeurig doelwit binnen zijn bereik. Als er geen doelwit is, beweegt het met de helft van zijn snelheid in een willekeurige richting en onderneemt het geen actie in die beurt. Dit effect eindigt op een doelwit als het slaagt op drie saving throws tegen het."
+						"Kies als actie maximaal acht wezens binnen 90 voet van je die je kunnen zien. Aan het begin van elke beurt van een doelwit voordat je {@status concentration} eindigt, moet het doelwit een Wisdom saving throw doen. Bij een mislukte reddingsworp is het doelwit {@condition frightened} tot het begin van zijn volgende beurt, en rol je een dobbelsteen. Als je een oneven getal gooit, beweegt het {@condition frightened} doelwit de helft van zijn snelheid in een willekeurige richting en onderneemt het die beurt geen actie, behalve dat het van schrik schreeuwt. Als je een even getal gooit, doet het {@condition frightened} doelwit één melee aanval tegen een willekeurig doelwit binnen zijn bereik. Als dat doelwit er niet is, beweegt het de helft van zijn snelheid in een willekeurige richting en onderneemt het die beurt geen actie. Dit effect eindigt bij een doelwit als het slaagt voor drie reddingsslagen."
 					]
 				}
 			]
@@ -1093,7 +1093,7 @@
 					},
 					"name": "Incite Fury",
 					"entries": [
-						"Als bonusactie kies je tot drie bondgenoten die je kunt zien binnen 60 voet van je (je kunt jezelf kiezen in plaats van een van de bondgenoten). Totdat je concentratie ophoudt, mag elk doelwit een {@dice d4} rollen bij het bepalen van de schade voor een aanval met een mêleegeweer en het gerolde getal bij de schade optellen."
+						"Kies als bonusactie maximaal drie bondgenoten die je kunt zien binnen 60 voet van je (je kunt jezelf kiezen in plaats van een van de bondgenoten). Tot je {@status concentration} eindigt, kan elk doelwit een {@dice d4} rollen bij het rollen van schade voor een melee wapenaanval en het gerolde getal toevoegen aan de schadeworp.k tegen een willekeurig doelwit binnen zijn bereik. Als dat doelwit er niet is, beweegt het de helft van zijn snelheid in een willekeurige richting en onderneemt het die beurt geen actie. Dit effect eindigt bij een doelwit als het slaagt voor drie reddingsslagen."
 					]
 				},
 				{
@@ -1117,7 +1117,7 @@
 					},
 					"name": "Aura of Bloodletting",
 					"entries": [
-						"Als bonusactie ontketen je een aura van woede. Tot je concentratie eindigt, hebben jij en elk wezen binnen 60 voet van je voordeel op melee aanvalsrollen."
+						"Als bonusactie ontketen je een aura van woede. Tot je {@status concentration} eindigt, hebben jij en elk wezen binnen 60 voet van je voordeel op melee aanvalsrollen."
 					]
 				},
 				{
@@ -1131,7 +1131,7 @@
 					},
 					"name": "Overwhelming Fury",
 					"entries": [
-						"Als actie laat je een wezen dat je kunt zien binnen 60 meter van je in woede uitbarsten. Het doelwit moet slagen op een Charisma saving throw, of het kan zijn acties alleen gebruiken om melee aanvallen te doen totdat je concentratie eindigt. Het kan de worp herhalen aan het eind van elke beurt, en het effect op zichzelf beëindigen als het slaagt."
+						"Als een actie, stroomt je woede in een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet slagen op een Charisma saving throw, of het kan zijn acties alleen gebruiken om melee aanvallen uit te voeren tot je {@status concentration} eindigt. Het kan de reddingsworp herhalen aan het eind van elke beurt, waarbij het effect op zichzelf eindigt als het slaagt."
 					]
 				}
 			]
@@ -1168,7 +1168,7 @@
 					},
 					"name": "Comforting Aura",
 					"entries": [
-						"Als bonusactie kies je tot drie bondgenoten die je kunt zien (je kunt jezelf kiezen in plaats van een van de bondgenoten). Totdat je concentratie ophoudt, mag elk doelwit een {@dice d4} gooien bij het maken van een reddingsworp en het gegooide getal bij het totaal optellen."
+						"Kies als bonusactie maximaal drie bondgenoten die je kunt zien (je kunt jezelf kiezen in plaats van een van de bondgenoten). Tot je {@status concentration} eindigt, kan elk doelwit een {@dice d4} gooien bij het doen van een reddingsworp en het gegooide aantal toevoegen aan het totaal."
 					]
 				},
 				{
@@ -1182,7 +1182,7 @@
 					},
 					"name": "Aura of Jubilation",
 					"entries": [
-						"Als bonusactie straal je een afleidende vrolijkheid uit tot je concentratie ophoudt. Elk schepsel binnen 60 voet van je dat je kan zien ondervindt nadeel bij elke controle met behulp van de {@skill Perception} en {@skill Investigation} vaardigheden."
+						"Als bonusactie straal je een afleidende vrolijkheid uit tot je {@status concentration} eindigt. Elk wezen binnen 60 voet van je dat je kan zien, heeft nadeel bij alle controles met de vaardigheden {@skill Perception} en {@skill Investigation}."
 					]
 				},
 				{
@@ -1239,7 +1239,7 @@
 					},
 					"name": "Cloak of Air",
 					"entries": [
-						"Als bonusactie kun je de controle over de lucht om je heen overnemen om een beschermende sluier te creëren. Totdat je concentratie ophoudt, zijn aanvalsrollen tegen jou nadelig, en als een wezen dat je kunt zien jou mist met een mêlee-aanval, kun je je reactie gebruiken om het wezen te dwingen de aanvalsrol tegen zichzelf te herhalen."
+						"Als bonusactie neem je de controle over de lucht om je heen om een beschermende sluier te creëren. Tot je {@status concentration} eindigt, hebben aanvalsrollen tegen je nadeel, en als een wezen dat je kunt zien je mist met een melee aanval, kun je je reactie gebruiken om het wezen te dwingen de aanvalsrol tegen zichzelf te herhalen."
 					]
 				},
 				{
@@ -1253,7 +1253,7 @@
 					},
 					"name": "Wind Form",
 					"entries": [
-						"Als een bonus actie, krijg je een vliegsnelheid van 60 voet, die duurt tot je concentratie ophoudt."
+						"Als bonusactie krijg je een vliegsnelheid van 60 voet, die duurt tot je {@status concentration} eindigt."
 					]
 				},
 				{
@@ -1267,7 +1267,7 @@
 					},
 					"name": "Misty Form",
 					"entries": [
-						"Als actie verandert je lichaam in een mistige wolk totdat je concentratie ophoudt. In deze vorm krijg je weerstand tegen knuppel-, doorsteek- en hakschade en kun je geen andere acties uitvoeren dan de Dash-actie. Je kunt door openingen die niet meer dan 2,5 cm breed zijn zonder te knijpen."
+						"Als een actie, wordt je lichaam als een mistige wolk tot je {@status concentration} eindigt. In deze vorm krijg je weerstand tegen slag-, stoot- en steekschade en kun je geen andere acties ondernemen dan de actie Dash. Je kunt door openingen van niet meer dan 1 inch breed zonder te knijpen."
 					]
 				},
 				{
@@ -1281,7 +1281,7 @@
 					},
 					"name": "Animate Air",
 					"entries": [
-						"Als actie laat je een luchtelementaal verschijnen in een onbezette ruimte die je kunt zien binnen een straal van 120 meter van jou. De elemental blijft tot je concentratie ophoudt, en hij gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Als dit effect eindigt, verdwijnt de elemental. Zie de Monster Manual voor zijn stat block."
+						"Als een actie laat je een luchtelement verschijnen in een onbezette ruimte die je kunt zien binnen 120 voet van je. De elemental blijft bestaan tot je {@status concentration} eindigt, en het gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Wanneer dit effect eindigt, verdwijnt de elementaal. Zie het Monsterhandboek voor zijn statistiekblok."
 					]
 				}
 			]
@@ -1308,7 +1308,7 @@
 					},
 					"name": "Combustion",
 					"entries": [
-						"Als actie kies je een wezen of voorwerp dat je kunt zien binnen een straal van 120 meter. Het doelwit moet een grondwettelijke redding maken. Als je dat niet doet, loopt het doelwit {@scaledamage 1d10|1-7|1d10|psi} brandschade op per uitgegeven psi-punt en vliegt het in brand. Het loopt {@damage 1d6} brandschade op aan het eind van elke beurt totdat je concentratie ophoudt of totdat het doelwit of een aangrenzend wezen de vlammen dooft met een actie. Bij een succesvolle save, neemt het doelwit de helft van de schade op en vliegt het niet in brand."
+						"Kies als actie één wezen of voorwerp dat je kunt zien binnen 120 voet van je. Het doelwit moet een levensreddende reddingsactie uitvoeren. Als de redding mislukt, krijgt het doelwit {@scaledamage 1d10|1-7|1d10|psi} brandschade per uitgegeven psi-punt en vliegt het in brand, waarbij het aan het eind van elke beurt {@damage 1d6} brandschade oploopt totdat je {@status concentration} eindigt of totdat het of een wezen in de buurt de vlammen dooft met een actie. Bij een succesvolle redding krijgt het doelwit half zoveel schade en vliegt het niet in brand."
 					]
 				},
 				{
@@ -1322,7 +1322,7 @@
 					},
 					"name": "Rolling Flame",
 					"entries": [
-						"Als actie maak je vuur in een kubus van 20 voet bij 20 voet binnen een straal van 5 voet van je. Het vuur duurt tot je concentratie ophoudt. Elk wezen dat zich in dat gebied bevindt wanneer je deze vaardigheid gebruikt en elk wezen dat zijn beurt daar beëindigt, loopt 5 brandschade op."
+						"Als een actie, creëer je vuur in een kubus van 20 voet bij 20 voet binnen 5 voet van je. Het vuur duurt totdat je {@status concentration} eindigt. Elk wezen in dat gebied wanneer je deze vaardigheid gebruikt en elk wezen dat daar zijn beurt eindigt, krijgt 5 brandschade."
 					]
 				},
 				{
@@ -1346,7 +1346,7 @@
 					},
 					"name": "Fire Form",
 					"entries": [
-						"Als een bonus actie, word je omhuld door vlammen tot je concentratie eindigt. Elk wezen dat zijn beurt beëindigt binnen 5 voet van jou neemt {@damage 3d6} vuurschade."
+						"Als bonusactie word je in vlammen gehuld totdat je {@status concentration} eindigt. Elk wezen dat zijn beurt eindigt binnen 5 voet van je krijgt {@damage 3d6} brandschade."
 					]
 				},
 				{
@@ -1360,7 +1360,7 @@
 					},
 					"name": "Animate Fire",
 					"entries": [
-						"Als een actie laat je een vuurelemental verschijnen in een onbezette ruimte die je kunt zien binnen 120 voet van je. De elemental blijft tot je concentratie ophoudt, en hij gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Als dit effect eindigt, verdwijnt de elemental. Zie de Monster Manual voor zijn stat block."
+						"Als een actie laat je een vuurelement verschijnen in een onbezette ruimte die je kunt zien binnen 120 voet van je. Het element blijft bestaan tot je {@status concentration} eindigt, en het gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Wanneer dit effect eindigt, verdwijnt de elementaal. Zie het Monsterhandboek voor zijn statistiekblok."
 					]
 				}
 			]
@@ -1458,7 +1458,7 @@
 					},
 					"name": "Telekinetic Barrier",
 					"entries": [
-						"Als actie creëer je een transparante muur van telekinetische energie, waarvan ten minste één deel zich binnen een straal van 60 voet van jou moet bevinden. De muur is 3 meter lang, 3 meter hoog en 2,5 cm dik. De muur blijft bestaan tot je concentratie ophoudt. Elke 10 voet sectie van de muur heeft een AC van 10 en 10 hit points."
+						"Als actie creëer je een transparante muur van telekinetische energie, waarvan ten minste één deel zich binnen 60 voet van je moet bevinden. De muur is 40 voet lang, 10 voet hoog en 1 duim dik. De muur blijft bestaan totdat je {@status concentration} eindigt. Elke sectie van 10 voet van de muur heeft een AC van 10 en 10 trefpunten."
 					]
 				},
 				{
@@ -1472,7 +1472,7 @@
 					},
 					"name": "Grasp",
 					"entries": [
-						"Je probeert een wezen in telekinetische energie te grijpen en gevangen te houden. Als actie kies je een wezen dat je kunt zien binnen 60 meter van je. Het doelwit moet slagen op een Sterkte-sparingsworp of {@condition grappled} door jou worden vastgehouden totdat je concentratie ophoudt of totdat het doelwit je bereik verlaat, dat is 60 voet voor deze greep.",
+						"Je probeert een wezen in telekinetische energie te vangen en gevangen te houden. Kies als actie een wezen dat je kunt zien binnen 60 meter van je. Het doelwit moet slagen in een Sterkte-reddende worp of {@condition grappled} door jou vastgehouden worden tot je {@status concentration} eindigt of tot het doelwit je bereik verlaat, wat voor deze greep 60 voet is.",
 						"Het {@condition grappled} doelwit kan ontsnappen door te slagen voor een Strength (Athletics) of Dexterity (Acrobatics) check die wordt betwist door je psionische vaardigheid plus je vaardigheidsbonus. Wanneer een doelwit op deze manier probeert te ontsnappen, kun je psi-punten uitgeven om je check te verbeteren, waarbij je je aan je psi-limiet houdt. Je krijgt een bonus van +1 per uitgegeven psi punt.",
 						"Terwijl een doelwit {@condition grappled} op deze manier is, creëer je een van de volgende effecten als een actie:"
 					]
@@ -1551,7 +1551,7 @@
 					},
 					"name": "Frozen Rain",
 					"entries": [
-						"Als actie kies je een punt dat je kunt zien binnen een straal van 3 meter van jou. De lucht in een straal van 20 voet rond dat punt wordt dodelijk koud en verzadigd met vocht. Elk wezen in dat gebied moet een grondwettelijke reddingsworp doen. Als je niet slaagt, loopt het doelwit {@damage 6d6} koude schade op en is zijn snelheid tot 0 gereduceerd tot je concentratie ophoudt. Als je succes hebt, loopt het doelwit half zoveel schade op.",
+						"Kies als actie een punt dat je binnen 120 voet van je kunt zien. De lucht in een straal van 20 voet rond dat punt wordt dodelijk koud en verzadigd met vocht. Elk wezen in dat gebied moet een reddingsoperatie uitvoeren. Als de reddingsslag mislukt, loopt het doelwit {@damage 6d6} koude schade op en wordt zijn snelheid tot 0 gereduceerd totdat je {@status concentration} eindigt. Als de reddingsslag slaagt, krijgt het doelwit half zoveel schade.",
 						"Als actie kan een doelwit waarvan de snelheid is verminderd, het effect voortijdig beëindigen als het slaagt voor een Strength (Athletics) check met een DC gelijk aan de save DC van dit effect.",
 						"Je kunt de schade van dit effect met {@scaledamage 6d6|5-7|1d6|psi} verhogen voor elk extra psi-punt dat je eraan besteedt."
 					]
@@ -1567,7 +1567,7 @@
 					},
 					"name": "Ice Barrier",
 					"entries": [
-						"Als actie creëer je een muur van ijs, waarvan ten minste één deel zich binnen een straal van 60 voet van je moet bevinden. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur blijft bestaan totdat je concentratie ophoudt. Elke 10 voet van de muur heeft AC 12 en 30 hit points. Een schepsel dat de muur met een mêlee-aanval beschadigt, loopt een koude schade op die gelijk is aan de schade die het schepsel aan de muur heeft toegebracht."
+						"Als een actie creëer je een muur van ijs, waarvan ten minste één deel binnen 60 voet van je moet zijn. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur blijft bestaan totdat je {@status concentration} eindigt. Elke sectie van 10 voet van de muur heeft AC 12 en 30 trefpunten. Een wezen dat de muur beschadigt met een melee aanval krijgt koude schade gelijk aan de schade die het wezen aan de muur heeft toegebracht."
 					]
 				}
 			]
@@ -1604,7 +1604,7 @@
 					},
 					"name": "Light",
 					"entries": [
-						"Als actie straalt een voorwerp dat je aanraakt licht uit in een straal van 20 voet en dimt het licht voor nog eens 20 voet. Het licht blijft branden tot je concentratie ophoudt. Als alternatief straalt een voorwerp dat je aanraakt op dezelfde manier licht uit als het niet slaagt voor een Dexterity saving throw. Als het op deze manier verlicht is, kan het zich niet verbergen en zijn aanvalsrollen in het voordeel."
+						"Als een actie straalt een voorwerp dat je aanraakt licht uit in een straal van 20 voet en dimt het licht voor nog eens 20 voet. Het licht duurt totdat je {@status concentration} eindigt. Als alternatief kan een voorwerp dat je aanraakt op dezelfde manier licht uitstralen als het niet slaagt voor een reddingsslag op basis van bekwaamheid. Als het op deze manier verlicht is, kan het zich niet verbergen, en aanvalsrollen tegen het wezen hebben voordeel."
 					]
 				},
 				{
@@ -1618,7 +1618,7 @@
 					},
 					"name": "Shadow Beasts",
 					"entries": [
-						"Als actie laat je twee {@creature shadow||shadows} verschijnen in onbezette ruimtes die je kunt zien binnen 60 voet van je. De {@creature shadow||shadows} blijven tot je concentratie ophoudt, en ze gehoorzamen je verbale commando's. In een gevecht rol je voor hun initiatief, en kies je hun gedrag tijdens hun beurt. Wanneer dit effect eindigt, verdwijnen de {@creature shadow||shadows}. Zie de Monster Manual voor hun stat block."
+						"Als actie laat je twee {@creature shadow||shadows} verschijnen in onbezette ruimten die je kunt zien binnen 60 voet van je. De {@creature shadow||shadows} blijven totdat je {@status concentration} eindigt, en ze gehoorzamen je verbale commando's. In een gevecht rol je voor hun initiatief, en kies je hun gedrag tijdens hun beurten. Wanneer dit effect eindigt, verdwijnt de {@creature shadow||shadows}. Zie het Monsterhandboek voor hun statistiekblok."
 					]
 				},
 				{
@@ -1632,7 +1632,7 @@
 					},
 					"name": "Radiant Beam",
 					"entries": [
-						"Als een actie projecteer je een lichtstraal op een wezen dat je kunt zien binnen 60 meter van je. Het doelwit moet een Dexterity saving throw doen. Als hij niet slaagt, loopt hij {@damage 6d6} stralingsschade op en blijft hij {@condition blinded} staan tot je concentratie ophoudt. Bij een succesvolle save, neemt het de helft van de schade op. Een {@condition blinded} doelwit kan de reddingsworp aan het eind van elke beurt herhalen, en het effect op zichzelf beëindigen als het slaagt.",
+						"Als actie projecteer je een lichtstraal op één wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet een reddingsoefening doen. Als hij niet slaagt, krijgt hij {@damage 6d6} stralingsschade en is hij {@condition blinded} tot je {@status concentration} eindigt. Als het slaagt, krijgt het half zoveel schade. Een {@condition blinded} doelwit kan de reddingsslag aan het eind van elke beurt herhalen, waarbij het effect op hemzelf eindigt als hij slaagt.",
 						"Je kunt de schade van dit effect met {@scaledamage 6d6|5-7|1d6|psi} verhogen voor elk extra psi-punt dat je eraan besteedt."
 					]
 				}
@@ -1700,7 +1700,7 @@
 					},
 					"name": "Water Sphere",
 					"entries": [
-						"Als een actie laat je een bol water rond een wezen vormen. Kies een schepsel dat je kunt zien binnen 60 meter van jou. Het doelwit moet een Dexterity saving throw doen. Als hij niet slaagt, zit hij gevangen in de waterbol tot je concentratie ophoudt. Terwijl het doelwit gevangen is, wordt zijn snelheid gehalveerd, ondervindt het nadeel bij aanvalsrollen en kan het niets zien dat verder dan 3 meter van hem vandaan is. Aanvalrollen tegen het doelwit zijn echter ook nadelig. Het doelwit kan de worp aan het einde van elke beurt herhalen, en het effect op zichzelf beëindigen als het slaagt."
+						"Als een actie veroorzaak je een bol water rond een wezen. Kies een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet een vaardigheidsredding maken. Als hij niet slaagt, raakt hij gevangen in de bol water totdat je {@status concentration} eindigt. Terwijl het doelwit gevangen zit, wordt zijn snelheid gehalveerd, heeft het nadeel bij aanvalsrollen en kan het niets zien op een afstand van meer dan 10 meter. Echter, aanvalsrollen tegen hem lijden ook onder nadeel. Het doelwit kan de reddingsworp aan het eind van elke beurt herhalen, waarbij het effect op zichzelf eindigt als het slaagt."
 					]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					},
 					"name": "Animate Water",
 					"entries": [
-						"Als actie laat je een waterelementaal verschijnen in een onbezette ruimte die je kunt zien binnen 120 meter van je. De elemental blijft tot je concentratie ophoudt, en hij gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Als dit effect eindigt, verdwijnt de elemental. Zie de Monster Manual voor zijn stat block."
+						"Als een actie laat je een waterelement verschijnen in een onbezette ruimte die je kunt zien binnen 120 voet van je. De elemental duurt tot je {@status concentration} eindigt, en het gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Wanneer dit effect eindigt, verdwijnt de elementaal. Zie de Monster Manual voor zijn stat block.d van elk van zijn beurten, het beëindigen van het effect op zichzelf op een succesvolle."
 					]
 				}
 			]
@@ -1741,7 +1741,7 @@
 					},
 					"name": "Cloud Steps",
 					"entries": [
-						"Als een actie tover je wolken tevoorschijn om een stevige, doorschijnende trap te maken die blijft bestaan tot je concentratie ophoudt. De trap vormt een spiraal die een gebied van 10 voet bij 10 voet vult en 20 voet omhoog reikt per uitgegeven psi-punt."
+						"Als een actie tover je wolken tevoorschijn om een solide, doorschijnende trap te maken die duurt tot je {@status concentration} eindigt. De trap vormt een spiraal die een gebied van 10 voet bij 10 voet vult en 20 voet omhoog reikt per uitgegeven psi-punt."
 					]
 				},
 				{
@@ -1765,7 +1765,7 @@
 					},
 					"name": "Wall of Clouds",
 					"entries": [
-						"Als actie creëer je een wolkenmuur, waarvan ten minste één deel zich binnen een straal van 60 voet van jou moet bevinden. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur blijft bestaan totdat je concentratie ophoudt. Wezens kunnen er ongehinderd doorheen, maar de muur blokkeert het zicht."
+						"Als een actie creëer je een muur van wolken, waarvan ten minste één deel binnen 60 voet van jou moet zijn. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur blijft bestaan totdat je {@status concentration} eindigt. Wezens kunnen er ongehinderd doorheen, maar de muur blokkeert het zicht."
 					]
 				},
 				{
@@ -1800,7 +1800,7 @@
 					},
 					"name": "Wall of Thunder",
 					"entries": [
-						"Als actie creëer je een dondermuur, waarvan ten minste één deel zich binnen een straal van 60 voet van jou moet bevinden. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur blijft bestaan totdat je concentratie ophoudt. Elke voet die door de muur wordt bewogen kost 1 voet extra beweging. Als een wezen tijdens een beurt voor het eerst de ruimte van de muur betreedt of zijn beurt daar begint, moet dat wezen slagen op een Sterkte-overlevingsworp, anders krijgt het {@damage 6d6} donderschade, wordt het in een rechte lijn tot 30 voet van de muur weggeduwd en wordt het {@condition prone} geslagen."
+						"Als een actie creëer je een muur van donder, waarvan minstens één deel binnen 60 voet van jou moet zijn. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur duurt tot je {@status concentration} eindigt. Elke voet die door de muur wordt bewogen kost 1 extra voet beweging. Wanneer een wezen zich tijdens een beurt voor het eerst in de ruimte van de muur begeeft of zijn beurt daar begint, moet dat wezen slagen in een Sterkte reddingsworp, of het krijgt {@damage 6d6} donderschade, wordt in een rechte lijn tot 30 voet van de muur geduwd en wordt {@condition prone} geslagen."
 					]
 				},
 				{
@@ -1867,7 +1867,7 @@
 					},
 					"name": "Wall of Wood",
 					"entries": [
-						"Als actie maak je een muur van hout, waarvan tenminste één deel zich binnen 60 voet van jou moet bevinden. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur blijft staan totdat je concentratie ophoudt. Elk deel van de muur van 5 voet breed heeft AC 12 en 100 hit points. Als een deel van de muur wordt afgebroken, ontstaat er een gat van 3 bij 3 meter, maar verder blijft de muur intact."
+						"Als een actie creëer je een muur van hout waarvan minstens één deel zich binnen 60 voet van je moet bevinden. De muur is 60 voet lang, 15 voet hoog en 1 voet dik. De muur duurt tot je {@status concentration} eindigt. Elke sectie van 5 voet breed van de muur heeft AC 12 en 100 trefpunten. Het breken van een sectie creëert een gat van 5 voet bij 5 voet, maar de muur blijft verder intact. wordt geslagen (%2%)."
 					]
 				},
 				{
@@ -1881,7 +1881,7 @@
 					},
 					"name": "Armored Form",
 					"entries": [
-						"Als een bonus actie, krijg je weerstand tegen knuppelen, doorboren, en snijden schade, die duurt tot je concentratie eindigt."
+						"Als bonusactie krijg je weerstand tegen stomp-, steek- en steekschade, die duurt tot je {@status concentration} eindigt."
 					]
 				},
 				{
@@ -1895,7 +1895,7 @@
 					},
 					"name": "Animate Earth",
 					"entries": [
-						"Als actie laat je een aarde-elementaal verschijnen in een onbezette ruimte die je kunt zien binnen een straal van 120 meter van jou. De elemental blijft tot je concentratie eindigt, en hij gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Als dit effect eindigt, verdwijnt de elemental. Zie de Monster Manual voor zijn stat block."
+						"Als actie laat je een aarde-element verschijnen in een onbezette ruimte die je kunt zien binnen 120 voet van je. De elemental blijft bestaan tot je {@status concentration} eindigt, en hij gehoorzaamt je verbale commando's. In een gevecht rol je voor zijn initiatief, en kies je zijn gedrag tijdens zijn beurten. Wanneer dit effect eindigt, verdwijnt de elementaal. Zie het Monsterhandboek voor zijn statistiekblok."
 					]
 				}
 			]
@@ -1992,7 +1992,7 @@
 					},
 					"name": "Faithful Archer",
 					"entries": [
-						"Als bonusactie geef je een wapen met een reikwijdte een beperkte gevoelswaarde. Tot je concentratie ophoudt, kun je aan het begin van elke beurt een extra aanval met het wapen doen (geen actie nodig). Als het een geworpen wapen is, keert het terug naar je greep telkens als je er een aanval mee doet."
+						"Als een bonusactie, doordrenk je een wapen met een beperkte gevoeligheid. Tot je {@status concentration} eindigt, kun je aan het begin van elke beurt een extra aanval doen met het wapen (geen actie vereist). Als het een geworpen wapen is, keert het elke keer dat je er een aanval mee doet terug in je greep."
 					]
 				}
 			]
@@ -2029,7 +2029,7 @@
 					},
 					"name": "Step from Sight",
 					"entries": [
-						"Als een bonus actie, verhul je jezelf aan het zicht. Je kunt één extra wezen als doelwit nemen voor elk extra psi-punt dat je aan deze vaardigheid besteedt. De toegevoegde doelwitten moeten zichtbaar voor je zijn en zich binnen 60 voet van je bevinden. Elk doelwit wordt {@condition invisible} en blijft dat tot je concentratie eindigt of tot onmiddellijk nadat het een wezen met een aanval, een spreuk of een andere vaardigheid heeft aangevallen, beschadigd of op een andere manier heeft beïnvloed."
+						"Als een bonus actie, onttrek je jezelf aan het zicht. Voor elk extra psi-punt dat je aan dit vermogen besteedt, kun je één extra wezen aanvallen. De toegevoegde doelwitten moeten zichtbaar voor je zijn en binnen 60 voet van je verwijderd zijn. Elk doelwit wordt {@condition invisible} en blijft dat tot je {@status concentration} eindigt of tot onmiddellijk nadat het een wezen met een aanval, een spreuk of een ander vermogen aanvalt, beschadigt of anderszins beïnvloedt."
 					]
 				},
 				{
@@ -2043,7 +2043,7 @@
 					},
 					"name": "Enduring Invisibility",
 					"entries": [
-						"Als een bonus actie, draai je {@condition invisible} en blijft zo tot je concentratie eindigt."
+						"Als bonusactie draai je {@condition invisible} en blijf je zo tot je {@status concentration} eindigt."
 					]
 				}
 			]
@@ -2070,7 +2070,7 @@
 					},
 					"name": "Wandering Mind",
 					"entries": [
-						"Je komt in een diepe contemplatie. Als je je concentreert voor de volledige duur van deze optie, dan krijg je vaardigheid met maximaal drie van de volgende vaardigheden (een vaardigheid voor elke 2 gespendeerde psi punten): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion}, en {@skill Survival}. Het voordeel duurt 1 uur, geen concentratie vereist."
+						"Je komt in een diepe contemplatie. Als je je voor de volledige duur van deze optie concentreert, krijg je vaardigheid in maximaal drie van de volgende vaardigheden (één vaardigheid voor elke 2 psi-punten die je uitgeeft): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion} en {@skill Survival}. Het voordeel duurt 1 uur, geen {@status concentration} vereist."
 					]
 				},
 				{
@@ -2122,7 +2122,7 @@
 					},
 					"name": "Wandering Eye",
 					"entries": [
-						"Als een actie, creëer je een psychische sensor binnen 60 voet van je. De sensor duurt tot je concentratie ophoudt. De sensor is onzichtbaar en zweeft in de lucht. Je ontvangt er mentaal visuele informatie van, die normaal zicht en darkvision heeft met een bereik van 60 voet. De sensor kan in alle richtingen kijken. Als actie kun je de sensor tot 30 voet in elke richting verplaatsen. Er is geen limiet aan hoe ver het oog van je af kan bewegen, maar het kan geen ander bestaansvlak betreden. Een stevige barrière blokkeert de beweging van het oog, maar het oog kan door een opening met een diameter van 1 inch."
+						"Als een actie, creëer je een psychische sensor binnen 60 voet van je. De sensor duurt tot je {@status concentration} eindigt. De sensor is onzichtbaar en zweeft in de lucht. Je ontvangt er mentaal visuele informatie van, die normaal zicht en darkvision heeft met een bereik van 60 voet. De sensor kan in alle richtingen kijken. Als actie kun je de sensor tot 30 voet in elke richting verplaatsen. Er is geen limiet aan hoe ver het oog van je af kan bewegen, maar het kan geen ander bestaansvlak betreden. Een stevige barrière blokkeert de beweging van het oog, maar het oog kan door een opening met een diameter van 1 inch."
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					},
 					"name": "Nomad's Gate",
 					"entries": [
-						"Als actie creëer je een kubus van 5 voet van schemerig, grijs licht binnen 5 voet van je. Je creëert een identieke kubus op een willekeurig punt van je keuze binnen 1 mijl dat je in de afgelopen 24 uur hebt bekeken. Totdat je concentratie ophoudt, teleporteert iedereen die een van de kubussen binnengaat onmiddellijk naar de andere kubus en verschijnt in een onbezette ruimte ernaast. De teleportatie mislukt als er geen ruimte is voor het wezen om in te verschijnen."
+						"Als een actie creëer je een kubus van 5 voet dim, grijs licht binnen 5 voet van je. U creëert een identieke kubus op een punt naar keuze binnen 1 mijl dat u in de afgelopen 24 uur hebt bekeken. Tot je {@status concentration} eindigt, teleporteert iedereen die een van de kubussen betreedt onmiddellijk naar de andere kubus en verschijnt in een onbezette ruimte ernaast. De teleportatie mislukt als er geen ruimte is waar het wezen kan verschijnen in de beweging van het oog, maar het oog kan door een opening met een diameter van 1 inch."
 					]
 				}
 			]
@@ -2260,7 +2260,7 @@
 					},
 					"name": "Precognitive Hunch",
 					"entries": [
-						"Als een bonus actie, stel je jezelf open om kortstondige inzichten te ontvangen die je kansen op succes verbeteren; tot je concentratie ophoudt, telkens wanneer je een aanvalsrol, een reddingsworp of een ability check maakt, rol je een {@dice d4} en telt dit op bij het totaal."
+						"Als bonusactie stel je jezelf open voor kortstondige inzichten die je kansen op succes vergroten; totdat je {@status concentration} eindigt, rol je bij elke aanvalsworp, reddingsworp of vaardigheidscontrole een {@dice d4} en voeg je die toe aan het totaal."
 					]
 				},
 				{
@@ -2284,7 +2284,7 @@
 					},
 					"name": "Danger Sense",
 					"entries": [
-						"Als actie creëer je een psychisch model van de werkelijkheid in je geest en stelt het in om je een paar seconden in de toekomst te laten zien. Tot je concentratie eindigt, kun je geen {@quickref Surprise|PHB|3|0|surprised}, aanvalsrollen tegen je krijgen geen voordeel, en krijg je een bonus van +10 op initiatief."
+						"Als actie creëer je een psychisch model van de werkelijkheid in je geest en stelt het in om je een paar seconden in de toekomst te laten zien. Tot uw {@status concentration} eindigt, kunt u niet {@quickref Surprise|PHB|3|0|surprised}, aanvalsrollen tegen u kunnen geen voordeel opleveren, en u krijgt een bonus van +10 op initiatief."
 					]
 				},
 				{
@@ -2394,7 +2394,7 @@
 					},
 					"name": "Augmented Weapon",
 					"entries": [
-						"Als een bonus actie, raak je er een aan {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Totdat je concentratie ophoudt, wordt dat wapen een magisch wapen met een bonus van +3 op de aanvals- en schade worpen."
+						"Als een bonus actie, raak een {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Tot je {@status concentration} eindigt, wordt dat wapen een magisch wapen met een bonus van +3 op zijn aanvals- en schaderollen."
 					]
 				}
 			]
@@ -2484,7 +2484,7 @@
 					},
 					"name": "Distracting Haze",
 					"entries": [
-						"Als actie kies je een wezen dat je kunt zien binnen 60 meter van je. Dat wezen moet een intelligentieworp doen. Als hij niet slaagt, loopt hij {@scaledamage 1d10|1-7|1d10|psi} psychische schade op per gespendeerd psi-punt en kan hij niets meer zien op meer dan 3 meter van hem vandaan, totdat je concentratie ophoudt. Bij een succesvolle redding, neemt het de helft van de schade op."
+						"Kies als actie een wezen dat je binnen 60 voet van je kunt zien. Dat wezen moet zijn intelligentie opslaan. Als het niet slaagt, krijgt het {@scaledamage 1d10|1-7|1d10|psi} psychische schade per uitgegeven psi-punt en kan het niets meer zien op een afstand van meer dan 10 meter totdat je {@status concentration} eindigt. Als het slaagt, krijgt het half zoveel schade."
 					]
 				},
 				{
@@ -2612,7 +2612,7 @@
 					},
 					"name": "Phantom Foe",
 					"entries": [
-						"Kies als actie een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet een intelligentie-toets uitvoeren. Als hij niet slaagt, neemt hij een afschuwelijk wezen naast zich waar tot je concentratie ophoudt. Gedurende deze tijd kan het doelwit niet reageren en krijgt het {@damage 1d8} psychische schade aan het begin van elke beurt. Het doelwit kan de reddingsworp aan het einde van elke beurt herhalen, waarbij het effect op zichzelf eindigt als het slaagt. U kunt de schade verhogen met {@scaledamage 1d8|3-7|1d8|psi} voor elk extra psi-punt dat aan de vaardigheid wordt besteed."
+						"Kies als actie een wezen dat je binnen 60 voet van je kunt zien. Het doelwit moet een intelligentie-toets uitvoeren. Als hij niet slaagt, neemt hij een afschuwelijk wezen naast zich waar totdat je {@status concentration} eindigt. Gedurende deze tijd kan het doelwit niet reageren en krijgt het {@damage 1d8} psychische schade aan het begin van elke beurt. Het doelwit kan de reddingsworp aan het einde van elke beurt herhalen, waarbij het effect op zichzelf eindigt bij succes. U kunt de schade verhogen met {@scaledamage 1d8|3-7|1d8|psi} voor elk extra psi-punt dat aan de vaardigheid wordt besteed."
 					]
 				},
 				{
@@ -2626,7 +2626,7 @@
 					},
 					"name": "Phantom Betrayal",
 					"entries": [
-						"Als actie plant u paranoia waanideeën in de geest van een wezen. Kies een wezen dat je kunt zien binnen 60 meter van jou. Het doelwit moet slagen op een intelligentie saving throw, of totdat je concentratie ophoudt, moet het zijn bondgenoten aanvallen en andere schadelijke effecten toedienen. Het doelwit kan de worp aan het eind van elke beurt herhalen, en het effect op zichzelf beëindigen als hij slaagt. Een wezen is immuun voor deze vaardigheid als het immuun is voor zijn {@condition charmed}."
+						"Als een actie, plant je paranoia waanideeën in de geest van een wezen. Kies een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet slagen in een reddingsworp van intelligentie, of totdat je {@status concentration} eindigt, moet het zijn bondgenoten aanvallen en andere schadelijke effecten toedienen. Het doelwit kan de reddingsslag aan het eind van elke beurt herhalen, waarbij het effect op zichzelf eindigt als het slaagt. Een wezen is immuun voor dit vermogen als het immuun is voor {@condition charmed}.pent op het vermogen."
 					]
 				},
 				{
@@ -2640,7 +2640,7 @@
 					},
 					"name": "Phantom Riches",
 					"entries": [
-						"Als een actie plant je het spook van een zeer begeerd voorwerp in de geest van een wezen. Kies een wezen dat je kunt zien binnen 60 meter van jou. Het doelwit moet een intelligentie-redding doen. Als je niet slaagt, krijg je gedeeltelijke controle over het gedrag van het doelwit tot je concentratie ophoudt; het doelwit beweegt zoals jij wilt in elke beurt, terwijl het denkt dat het het spookobject achtervolgt dat het begeert. Als het geen schade heeft opgelopen sinds zijn laatste beurt, kan het zijn actie alleen gebruiken om het voorwerp te bewonderen dat jij in zijn waarneming hebt gecreëerd. Het doelwit kan aan het einde van elke beurt de worp herhalen, en het effect op zichzelf beëindigen als het slaagt."
+						"Als een actie, plant je het spook van een zeer gewenst object in de geest van een wezen. Kies een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet een intelligentie-toets uitvoeren. Als je niet slaagt, krijg je gedeeltelijke controle over het gedrag van het doelwit totdat je {@status concentration} eindigt; het doelwit beweegt zoals jij wilt op elk van zijn beurten, terwijl het denkt het gewenste spookobject na te jagen. Als het geen schade heeft geleden sinds zijn laatste beurt, kan het zijn actie alleen gebruiken om het door jou gecreëerde object in zijn waarneming te bewonderen. Het doelwit kan de reddingsworp aan het einde van elke beurt herhalen, waarbij het effect op zichzelf eindigt als het slaagt."
 					]
 				}
 			]
@@ -2697,7 +2697,7 @@
 					},
 					"name": "Psychic Grip",
 					"entries": [
-						"Als actie richt je op een wezen dat je kunt zien binnen 60 meter van je. Het doelwit moet slagen op een intelligentie saving throw, of het is {@condition paralyzed} tot uw concentratie eindigt. Aan het eind van elke beurt kan het de worp herhalen. Als hij slaagt, is dit effect afgelopen. Als je faalt, kun je met je reactie het doelwit dwingen zich tot de helft van zijn snelheid te verplaatsen, ook al is het {@condition paralyzed}."
+						"Als een actie, richt je je op een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet slagen in een reddingsworp van intelligentie, of het is {@condition paralyzed} tot je {@status concentration} eindigt. Aan het einde van elke beurt kan het de reddingsslag herhalen. Bij slagen eindigt dit effect. Als je faalt, kun je je reactie gebruiken om het doelwit tot de helft van zijn snelheid te dwingen, ook al is het {@condition paralyzed}. Het doelwit kan de reddingsworp aan het einde van elke beurt herhalen, waarbij het effect op zichzelf eindigt als het slaagt."
 					]
 				},
 				{
@@ -2711,7 +2711,7 @@
 					},
 					"name": "Psychic Domination",
 					"entries": [
-						"Als actie richt je op een wezen dat je kunt zien binnen 60 meter van je. Het doelwit moet slagen op een intelligentie saving throw, of je kiest de acties en bewegingen van het wezen op zijn beurten tot je concentratie eindigt. Aan het eind van elke beurt kan het de worp herhalen, waarbij het effect op zichzelf eindigt als het slaagt. Een wezen is immuun voor deze vaardigheid als het immuun is voor zijn {@condition charmed}."
+						"Als een actie, richt je op een wezen dat je kunt zien binnen 60 voet van je. Het doelwit moet slagen voor een reddingsworp van intelligentie, of je kiest de acties en bewegingen van het wezen tijdens zijn beurten totdat je {@status concentration} eindigt. Aan het einde van elke beurt kan het de reddingsworp herhalen, waarbij het effect op zichzelf eindigt als het slaagt. Een wezen is immuun voor deze vaardigheid als het immuun is voor {@condition charmed}."
 					]
 				}
 			]
@@ -2738,7 +2738,7 @@
 					},
 					"name": "Tremorsense",
 					"entries": [
-						"Als een bonus actie, krijg je tremorsense met een radius van 30 voet, die duurt tot je concentratie eindigt."
+						"Als bonusactie krijg je tremorsense met een straal van 30 voet, die duurt tot je {@status concentration} eindigt."
 					]
 				},
 				{
@@ -2762,7 +2762,7 @@
 					},
 					"name": "Piercing Sight",
 					"entries": [
-						"Als een bonus actie krijg je het vermogen om door objecten te kijken die tot 1 voet dik zijn binnen 30 voet van je. Dit zicht duurt tot je concentratie ophoudt."
+						"Als bonusactie krijg je het vermogen om door voorwerpen tot een meter dik binnen 30 voet van je te kijken. Dit zicht duurt tot je {@status concentration} eindigt."
 					]
 				},
 				{
@@ -2776,7 +2776,7 @@
 					},
 					"name": "Truesight",
 					"entries": [
-						"Als een bonus actie, krijg je een waarheidszicht met een radius van 30 voet, die duurt tot je concentratie eindigt."
+						"Als een bonusactie krijg je truesight met een straal van 30 voet, die duurt tot je {@status concentration} eindigt."
 					]
 				}
 			]

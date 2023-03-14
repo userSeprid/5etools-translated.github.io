@@ -90,7 +90,7 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Vijf aarakocra binnen 30 meter van elkaar kunnen op magische wijze een {@creature air elemental} oproepen. Elk van de vijf moet in drie opeenvolgende beurten zijn actie en beweging gebruiken om een luchtdans uit te voeren en moet daarbij zijn concentratie bewaren (alsof hij zich op een spreuk concentreert). Als alle vijf klaar zijn met hun derde beurt van de dans, verschijnt de elemental in een onbezette ruimte binnen 60 voet van hen. Het is vriendelijk tegen hen en gehoorzaamt hun gesproken commando's. Het blijft 1 uur staan, totdat het zelf of al zijn summoners sterven, of totdat een van zijn summoners het ontslaat als bonusactie. Een summoner kan de dans pas weer uitvoeren na een korte rustperiode. Als het elemental terugkeert naar het Elemental Plane of Air, kan elke aarakocra binnen 5 meter van het elemental terugkeren met het elemental."
+						"Vijf aarakocra binnen 30 voet van elkaar kunnen op magische wijze een {@creature air elemental} oproepen. Elk van de vijf moet zijn actie en beweging in drie opeenvolgende beurten gebruiken om een luchtdans uit te voeren en moet daarbij {@status concentration} handhaven (alsof {@status concentration||concentrating} op een spreuk). Wanneer alle vijf hun derde dansbeurt hebben voltooid, verschijnt de elementaal in een onbezette ruimte binnen 60 voet van hen. Het is vriendelijk tegen hen en gehoorzaamt hun gesproken bevelen. Het blijft 1 uur staan, totdat het of al zijn oproepers sterven, of totdat een van zijn oproepers het als bonusactie afzet. Een summoner kan de dans pas weer uitvoeren na een korte rustperiode. Als het element terugkeert naar het Elemental Plane of Air, kan elke aarakocra binnen een afstand van 5 voet met hem terugkeren."
 					]
 				}
 			],
@@ -15774,7 +15774,7 @@
 							"name": "Wind Aura",
 							"type": "entries",
 							"entries": [
-								"Een magische aura van wind omringt de reus. De aura is een bol met een straal van 3 meter die blijft hangen zolang de reus zich erop concentreert (alsof hij zich op een spreuk concentreert). Als de aura in werking is, krijgt de reus een +2 bonus op zijn AC tegen aanvallen met een gericht wapen, en alle open vlammen binnen de aura gaan uit, tenzij ze magisch zijn."
+								"Een magische aura van wind omringt de reus. De aura is een bol met een straal van 10 voet die duurt zolang de reus er {@status concentration} op houdt (alsof {@status concentration||concentrating} op een spreuk staat). Terwijl de aura van kracht is, krijgt de reus een +2 bonus op zijn AC tegen aanvallen met afstandswapens, en alle open vlammen binnen de aura worden gedoofd, tenzij ze magisch zijn. Een summoner kan de dans pas weer uitvoeren na een korte rustperiode. Als het element terugkeert naar het Elemental Plane of Air, kan elke aarakocra binnen een afstand van 5 voet met hem terugkeren."
 							]
 						}
 					],
@@ -17731,7 +17731,7 @@
 				{
 					"name": "Darkness Aura (1/Day)",
 					"entries": [
-						"Een straal van 15 voet van magische duisternis strekt zich uit van de Darkmantle, beweegt mee en verspreidt zich om hoeken. De duisternis duurt zolang de donkere magiër geconcentreerd blijft, tot 10 minuten (alsof hij zich op een spreuk concentreert). Donker zien kan deze duisternis niet doordringen, en geen natuurlijk licht kan het verlichten. Als een deel van de duisternis overlapt met een lichtgebied dat is gecreëerd door een spreuk van 2e niveau of lager, wordt de spreuk die het licht creëert ongedaan gemaakt."
+						"Een straal van 15 voet magische duisternis strekt zich uit vanaf de donkere mantel, beweegt mee en verspreidt zich rond hoeken. De duisternis duurt zo lang als de donkere mantel {@status concentration} aanhoudt, tot 10 minuten (alsof {@status concentration||concentrating} op een spreuk). Darkvision kan deze duisternis niet doordringen, en geen natuurlijk licht kan het verlichten. Als een deel van de duisternis overlapt met een gebied van licht gecreëerd door een spreuk van 2e niveau of lager, wordt de spreuk die het licht creëert verdreven.Laan van Lucht, elke aarakocra binnen 5 voet ervan kan ermee terugkeren."
 					]
 				}
 			],
@@ -19528,7 +19528,7 @@
 				{
 					"name": "Create Whirlwind",
 					"entries": [
-						"Een 5-voet-radius, 30-voet-top-hoge cilinder van wervelende lucht magisch vormen op een punt de djinni kan zien binnen 120 voet van het. De wervelwind duurt zolang als de djinni geconcentreerd blijft (alsof hij zich concentreert op een spreuk). Elk wezen behalve de djinni dat in de wervelwind terechtkomt, moet slagen op een {@dc 18} Sterkte-spaarworp of er {@condition restrained} door worden geraakt. De djinni kan de wervelwind tot 60 voet verplaatsen als actie, en wezens {@condition restrained} door de wervelwind bewegen met hem mee. De wervelwind eindigt als de djinni hem uit het oog verliest.",
+						"Een cilinder van wervelende lucht met een straal van 5 voet en een hoogte van 30 voet vormt zich op magische wijze op een punt dat de djinni kan zien binnen een straal van 120 voet. De wervelwind duurt zolang de djinni {@status concentration} volhoudt (alsof {@status concentration||concentrating} op een spreuk). Elk wezen behalve de djinni dat in de wervelwind terechtkomt, moet slagen voor een {@dc 18} Sterkte reddingsworp of erdoor geraakt worden {@condition restrained}. De djinni kan de wervelwind tot 60 voet verplaatsen als actie, en wezens {@condition restrained} door de wervelwind bewegen mee. De wervelwind eindigt als de djinni hem uit het oog verliest.",
 						"Een schepsel kan zijn actie gebruiken om een schepsel {@condition restrained} door de wervelwind te bevrijden, inclusief zichzelf, door te slagen voor een {@dc 18} Strength-check. Als de check slaagt, is het wezen niet langer {@condition restrained} en beweegt het zich naar de dichtstbijzijnde ruimte buiten de wervelwind."
 					]
 				}
@@ -19782,7 +19782,7 @@
 				{
 					"name": "Read Thoughts",
 					"entries": [
-						"De dubbelganger leest op magische wijze de oppervlakkige gedachten van één wezen binnen 60 voet van hem. Het effect kan door barrières heen dringen, maar een meter hout of aarde, een meter steen, een centimeter metaal of een dunne laag lood blokkeert het effect. Terwijl het doelwit binnen bereik is, kan de dubbelganger doorgaan met het lezen van zijn gedachten, zolang de concentratie van de dubbelganger niet wordt verbroken (alsof hij zich concentreert op een spreuk). Tijdens het lezen van de gedachten van de dubbelganger, heeft de dubbelganger voordeel op Wisdom ({@skill Insight}) en Charisma ({@skill Deception}, {@skill Intimidation}, en {@skill Persuasion}) controles tegen het doelwit."
+						"De dubbelganger leest op magische wijze de oppervlaktegedachten van één wezen binnen 60 voet van hem. Het effect kan door barrières heen dringen, maar een meter hout of aarde, een meter steen, een centimeter metaal of een dunne laag lood houdt het tegen. Zolang het doelwit binnen bereik is, kan de dubbelganger zijn gedachten blijven lezen, zolang de {@status concentration} van de dubbelganger niet wordt verbroken (alsof {@status concentration||concentrating} op een spreuk staat). Tijdens het lezen van de gedachten van het doelwit heeft de dubbelganger voordeel bij Wisdom ({@skill Insight}) en Charisma ({@skill Deception}, {@skill Intimidation} en {@skill Persuasion}) controles tegen het doelwit."
 					]
 				}
 			],
@@ -21849,7 +21849,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"De duergar wordt {@condition invisible} magisch tot hij aanvalt, een spreuk uitspreekt of zijn Vergroting gebruikt, of tot zijn concentratie wordt verbroken, tot maximaal 1 uur (alsof hij zich op een spreuk concentreert). Alle uitrusting die de duergar draagt of bij zich draagt is {@condition invisible} mee."
+						"De duergar draait magisch {@condition invisible} totdat hij aanvalt, een spreuk uitspreekt of zijn Vergroting gebruikt, of totdat zijn {@status concentration} wordt verbroken, tot 1 uur (alsof {@status concentration||concentrating} op een spreuk). Elke uitrusting die de duergar draagt of bij zich draagt is {@condition invisible} mee. tegen het doelwit."
 					]
 				}
 			],
@@ -23620,7 +23620,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als bonusactie kan de draak {@condition invisible} magisch draaien tot zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
+						"Als bonusactie kan de draak magisch draaien {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				},
 				{
@@ -23780,7 +23780,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als bonusactie kan de draak {@condition invisible} magisch draaien tot zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
+						"Als bonusactie kan de draak magisch draaien {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				},
 				{
@@ -23937,7 +23937,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als bonusactie kan de draak {@condition invisible} magisch draaien tot zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
+						"Als bonusactie kan de draak magisch draaien {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				},
 				{
@@ -24090,7 +24090,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als bonusactie kan de draak {@condition invisible} magisch draaien tot zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
+						"Als bonusactie kan de draak magisch draaien {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				},
 				{
@@ -24246,7 +24246,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als bonusactie kan de draak {@condition invisible} magisch draaien tot zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
+						"Als bonusactie kan de draak magisch draaien {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				},
 				{
@@ -24411,7 +24411,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als bonusactie kan de draak {@condition invisible} magisch draaien tot zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
+						"Als bonusactie kan de draak magisch draaien {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				},
 				{
@@ -24565,7 +24565,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"Als bonusactie kan de draak {@condition invisible} magisch draaien tot zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
+						"Als bonusactie kan de draak magisch draaien {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de draak draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				},
 				{
@@ -26313,7 +26313,7 @@
 				{
 					"name": "Animate Boulders (1/Day)",
 					"entries": [
-						"De galeb duhr bezielt op magische wijze tot twee rotsblokken die hij kan zien binnen 60 meter van hem. Een rotsblok heeft dezelfde statistieken als een galeb duhr, behalve dat het intelligentie 1 en charisma 1 heeft, het kan niet {@condition charmed} of {@condition frightened} zijn, en het mist deze actie optie. Een rotsblok blijft bezield zolang de galeb duhr geconcentreerd blijft, tot 1 minuut (alsof hij zich concentreert op een spreuk)."
+						"De galeb duhr bezielt maximaal twee rotsblokken die hij kan zien binnen 60 voet van hem. Een kei heeft dezelfde statistieken als een galeb duhr, behalve dat hij Intelligentie 1 en Charisma 1 heeft, niet {@condition charmed} of {@condition frightened} kan zijn, en deze actie-optie ontbreekt. Een kei blijft bezield zolang de galeb duhr {@status concentration} behoudt, tot 1 minuut (alsof {@status concentration||concentrating} op een spreuk)."
 					]
 				}
 			],
@@ -33308,7 +33308,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"De heks draait magisch {@condition invisible} totdat ze aanvalt of een spreuk uitspreekt, of totdat haar concentratie ophoudt (alsof ze zich op een spreuk concentreert). Terwijl ze {@condition invisible} is, laat ze geen fysiek bewijs achter van haar overgang, dus kan ze alleen gevolgd worden door magie. Alle uitrusting die ze draagt of bij zich draagt is {@condition invisible} bij haar."
+						"De heks draait magisch {@condition invisible} totdat ze aanvalt of een spreuk uitspreekt, of totdat haar {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Terwijl {@condition invisible} ze geen fysiek bewijs van haar passage achterlaat, kan ze alleen door magie worden opgespoord. Alle uitrusting die ze draagt of bij zich draagt is {@condition invisible} bij haar."
 					]
 				}
 			],
@@ -37733,7 +37733,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"De imp draait magisch {@condition invisible} mee tot hij aanvalt, of tot zijn concentratie ophoudt (alsof hij zich op een spreuk concentreert). Alle uitrusting die de imp draagt of bij zich draagt, is {@condition invisible} mee."
+						"De imp draait magisch {@condition invisible} tot hij aanvalt, of tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de imp draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				}
 			],
@@ -49573,7 +49573,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"De pixie wordt {@condition invisible} magisch tot zijn concentratie eindigt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de pixie draagt of bij zich draagt is {@condition invisible} mee."
+						"De elf draait magisch {@condition invisible} tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de elf draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				}
 			],
@@ -51504,7 +51504,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"De quasit wordt {@condition invisible} magisch totdat hij aanvalt of Scare gebruikt, of totdat zijn concentratie ophoudt (alsof hij zich op een spreuk concentreert). Alle uitrusting die de quasit draagt of bij zich draagt is {@condition invisible} mee."
+						"De quasit draait magisch {@condition invisible} tot hij aanvalt of Scare gebruikt, of tot zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de quasit draagt of bij zich draagt is {@condition invisible} mee."
 					]
 				}
 			],
@@ -57632,7 +57632,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"De sprite wordt magisch {@condition invisible} totdat hij aanvalt of een spreuk uitspreekt, of totdat zijn concentratie ophoudt (alsof hij zich concentreert op een spreuk). Alle uitrusting die de sprite draagt of bij zich draagt is {@condition invisible} mee."
+						"De sprite draait magisch {@condition invisible} totdat hij aanvalt of een spreuk uitspreekt, of totdat zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die de sprite draagt of bij zich draagt, wordt {@condition invisible} mee."
 					]
 				}
 			],
@@ -66267,7 +66267,7 @@
 				{
 					"name": "Invisibility",
 					"entries": [
-						"De will-o'-wisp en zijn licht worden magisch {@condition invisible} totdat hij aanvalt of zijn Consume Life gebruikt, of totdat zijn concentratie eindigt (alsof hij zich concentreert op een spreuk)."
+						"De will-o'-wisp en zijn licht worden magisch {@condition invisible} totdat hij aanvalt of zijn Leven innemen gebruikt, of totdat zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk staat)."
 					]
 				}
 			],

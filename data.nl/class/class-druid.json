@@ -2709,7 +2709,7 @@
 					"items": [
 						"Je gamestatistieken worden vervangen door de statistieken van het beest, maar je behoudt je karakter en je intelligentie-, wijsheids- en charismatescores. Je behoudt ook al je vaardigheden en spaarvaardigheden, naast die van het beest. Als het wezen dezelfde vaardigheid heeft als jij en de bonus in zijn stat block is hoger dan de jouwe, gebruik dan de bonus van het wezen in plaats van de jouwe. Als het wezen een legendarische of hol-actie heeft, kun je die niet gebruiken.",
 						"Wanneer je transformeert, neem je de hit points en Hit Dice van het beest over. Wanneer je terugkeert naar je normale vorm, krijg je het aantal hit points dat je had voordat je transformeerde. Echter, als je terugkeert als gevolg van het dalen tot 0 hit points, wordt alle overtollige schade overgedragen naar je normale vorm. Bijvoorbeeld, als je 10 schade oploopt in dierlijke vorm en je hebt nog maar 1 hit point over, dan keer je terug en neem je 9 schade op. Zolang het teveel aan schade je normale vorm niet reduceert tot 0 hit points, word je niet geklopt {@condition unconscious}.",
-						"Je kunt geen spreuken uitspreken, en je vermogen om te spreken of acties uit te voeren waarvoor je handen nodig hebt, is beperkt tot de mogelijkheden van je beestvorm. Het transformeren verbreekt echter niet je concentratie op een spreuk die je al hebt uitgesproken, en weerhoudt je er ook niet van om acties uit te voeren die deel uitmaken van een spreuk, zoals {@spell call lightning}, die je al hebt uitgesproken.",
+						"Je kunt geen spreuken uitspreken, en je vermogen om te spreken of acties te ondernemen waarvoor je handen nodig hebt, is beperkt tot de mogelijkheden van je beestenvorm. Transformeren verbreekt echter niet je {@status concentration} op een spreuk die je al hebt uitgesproken, of verhindert je niet om acties te ondernemen die deel uitmaken van een spreuk, zoals {@spell call lightning}, die je al hebt uitgesproken.",
 						"Je behoudt het voordeel van alle eigenschappen van je klasse, ras of andere bron en kunt ze gebruiken als de nieuwe vorm daar fysiek toe in staat is. Je kunt echter geen van je speciale zintuigen gebruiken, zoals {@sense darkvision}, tenzij je nieuwe vorm dat zintuig ook heeft.",
 						"Je kiest of je uitrusting in je ruimte op de grond valt, opgaat in je nieuwe gedaante, of door hem gedragen wordt. Gedragen uitrusting functioneert als normaal, maar de DM beslist of het praktisch is voor de nieuwe gedaante om een uitrusting te dragen, gebaseerd op de vorm en grootte van het wezen. Je uitrusting verandert niet van grootte of vorm om bij de nieuwe gedaante te passen, en alle uitrusting die de nieuwe gedaante niet kan dragen moet ofwel op de grond vallen of met de gedaante versmelten. Uitrusting die met de vorm versmelt, heeft geen effect totdat je de vorm verlaat."
 					]
@@ -3797,7 +3797,7 @@
 					"type": "entries",
 					"name": "Dragon",
 					"entries": [
-						"Een sterrenbeeld van een wijze draak verschijnt op je. Wanneer je een Intelligentie- of een Wijsheid-test doet of een grondwettelijke saving throw om je concentratie op een spreuk te houden, kun je een worp van 9 of lager op de {@dice d20} behandelen als een 10."
+						"Een sterrenbeeld van een wijze draak verschijnt op je. Als je een intelligentie- of een wijsheidstoets doet of een reddingsworp om {@status concentration} op een spreuk te behouden, kun je een worp van 9 of lager op de {@dice d20} als een 10 beschouwen."
 					]
 				}
 			]
@@ -4118,7 +4118,7 @@
 						{
 							"type": "item",
 							"name": "Dragon",
-							"entry": "Een sterrenbeeld van een wijze, oude draak verschijnt op je. Wanneer je een intelligentie- of een wijsheids-check doet of een grondwettelijke saving throw om geconcentreerd te blijven op een spreuk, kun je een worp van 9 of lager op de {@dice d20} behandelen als een 10."
+							"entry": "Een sterrenbeeld van een wijze, oude draak verschijnt op je. Als je een intelligentie- of een wijsheidstoets doet of een reddingsworp om {@status concentration} op een spreuk te behouden, kun je een worp van 9 of lager op de {@dice d20} als een 10 beschouwen."
 						}
 					]
 				}
@@ -4874,7 +4874,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Vanaf het 14e niveau beschermen de natuurgeesten waarmee je communiceert je wanneer je het meest weerloos bent. Als je tot 0 hit points bent gereduceerd of {@condition incapacitated} tegen je wil bent, kun je onmiddellijk de voordelen van {@spell conjure animals} krijgen alsof het met een 9e-level spell slot werd gegoten. Deze spreuk roept vier beesten naar keuze op met een uitdagingswaarde van 2 of lager. De opgeroepen beesten verschijnen binnen een straal van 20 meter van je. Als ze geen commando's van je krijgen, beschermen ze je tegen kwaad en vallen ze je vijanden aan. De betovering duurt 1 uur en vereist geen concentratie, of tot je hem afwijst (geen actie nodig).",
+				"Vanaf 14e niveau beschermen de natuurgeesten waarmee je communiceert je wanneer je het meest weerloos bent. Als je tot 0 hitpoints wordt gereduceerd of {@condition incapacitated} tegen je wil, kun je onmiddellijk de voordelen van {@spell conjure animals} krijgen alsof het met een spreukslot van het 9e niveau is uitgesproken. Het roept vier beesten van jouw keuze op die een challenge rating 2 of lager hebben. De opgeroepen beesten verschijnen binnen 20 voet van je. Als ze geen bevelen van je krijgen, beschermen ze je tegen schade en vallen ze je vijanden aan. De spreuk duurt 1 uur en vereist geen {@status concentration}, of totdat je hem uitschakelt (geen actie vereist).",
 				"Als je deze functie eenmaal hebt gebruikt, kun je hem niet meer gebruiken totdat je een lange rustperiode hebt gehad."
 			]
 		},
@@ -5222,7 +5222,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Vanaf het 14e niveau beschermen de natuurgeesten waarmee je communiceert je wanneer je het meest weerloos bent. Als je tot 0 hit points bent gereduceerd of {@condition incapacitated} tegen je wil bent, kun je onmiddellijk de voordelen van {@spell conjure animals} krijgen alsof het met een 9e-level spell slot is gedaan. Deze spreuk roept vier beesten naar keuze op met een uitdagingswaarde van 2 of lager. De opgeroepen beesten verschijnen binnen een straal van 20 meter van je. Als ze geen commando's van je krijgen, beschermen ze je tegen kwaad en vallen ze je vijanden aan. De betovering duurt 1 uur en vereist geen concentratie, of tot je hem afwijst (geen actie nodig).",
+				"Vanaf het 14e niveau beschermen de natuurgeesten waarmee je communiceert je wanneer je het meest weerloos bent. Als je tot 0 hitpoints wordt gereduceerd of {@condition incapacitated} tegen je wil, kun je onmiddellijk de voordelen van {@spell conjure animals} krijgen alsof het met een spreukslot van het 9e niveau is uitgesproken. Het roept vier beesten van jouw keuze op die een uitdagingswaarde van 2 of lager hebben. De getoverde beesten verschijnen binnen 20 voet van je. Als ze geen bevelen van je krijgen, beschermen ze je tegen schade en vallen ze je vijanden aan. De spreuk duurt 1 uur, waarbij geen {@status concentration} nodig is, of tot je hem uitschakelt (geen actie vereist). uur, waarbij geen {@status concentration} nodig is, of tot je hem uitschakelt (geen actie vereist).",
 				"Als je deze functie eenmaal hebt gebruikt, kun je hem niet meer gebruiken totdat je een lange rustperiode hebt gehad."
 			]
 		}

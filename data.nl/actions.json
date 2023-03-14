@@ -33,7 +33,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"Sommige magische voorwerpen staan de gebruiker toe een spreuk uit te spreken met het voorwerp, vaak door er ladingen aan te besteden. De spreuk wordt uitgesproken met het laagst mogelijke spell en caster level, verbruikt geen spell slots van de gebruiker, en vereist geen componenten tenzij de beschrijving van het voorwerp anders zegt. De spreuk gebruikt de normale tijd, het bereik en de duur van de spreuk, en de gebruiker van het voorwerp moet zich concentreren als de spreuk concentratie vereist. Sommige voorwerpen maken uitzonderingen op deze regels en veranderen de uitwerptijd, duur of andere onderdelen van een spreuk.",
+						"Met sommige magische voorwerpen kan de gebruiker een spreuk uitspreken vanaf het voorwerp, vaak door er ladingen van te gebruiken. De spreuk wordt uitgesproken op het laagst mogelijke spreuk- en toverniveau, kost de gebruiker geen spreuksleuven en heeft geen componenten nodig, tenzij de beschrijving van het voorwerp anders vermeldt. De spreuk gebruikt zijn normale spreuktijd, bereik en duur, en de gebruiker van het voorwerp moet zich concentreren als de spreuk {@status concentration} vereist. Bepaalde voorwerpen maken uitzonderingen op deze regels en veranderen de werptijd, duur of andere onderdelen van een spreuk.",
 						"Veel voorwerpen, zoals toverdranken, omzeilen het uitspreken van de spreuk en verlenen de effecten van de spreuk. Zo'n voorwerp gebruikt nog steeds de duur van de spreuk, tenzij in de beschrijving van het voorwerp anders staat.",
 						"Een magisch voorwerp, zoals bepaalde stafen, kan je verplichten je eigen tovervaardigheid te gebruiken als je een spreuk met het voorwerp uitspreekt. Als je meer dan één bezweringsvaardigheid hebt, kies je welke je met het voorwerp gebruikt. Als je geen spellcasting ability hebt - misschien ben je een rogue met de Use Magic Device eigenschap - dan is je spellcasting ability modifier +0 voor het voorwerp, en je proficiency bonus is wel van toepassing."
 					]
@@ -197,7 +197,7 @@
 				"Free"
 			],
 			"entries": [
-				"Als een spreuk met concentratie moet worden onderhouden, staat dat in de vermelding Duur, en de spreuk geeft aan hoe lang je je erop kunt concentreren. Je kunt de concentratie op elk moment beëindigen (geen actie vereist)."
+				"Als een spreuk met {@status concentration} moet worden onderhouden, verschijnt dat feit in de vermelding Duur, en geeft de spreuk aan hoe lang je je erop kunt concentreren. Je kunt {@status concentration} op elk moment beëindigen (geen actie vereist).of andere delen van een spreuk."
 			]
 		},
 		{
@@ -448,7 +448,7 @@
 				"Soms wil je een vijand voor zijn of wachten op een bepaalde omstandigheid voordat je handelt. Om dat te doen, kun je de actie Klaar in je beurt doen, waarmee je met je reactie kunt handelen voordat je volgende beurt begint.",
 				"Eerst beslist u welke waarneembare omstandigheid uw reactie zal uitlokken. Dan kies je de actie die je zal ondernemen in antwoord op die trigger, of je kiest ervoor om je snelheid op te voeren in antwoord op die trigger. Voorbeelden zijn \"Als de sekteloper op het valluik stapt, trek ik aan de hendel die het luik opent,\" en \"Als de kobold naast me komt staan, ga ik weg.\"",
 				"Wanneer de trigger optreedt, kun je je reactie direct na afloop van de trigger uitvoeren of de trigger negeren. Onthoud dat je maar één reactie per ronde kunt doen.",
-				"Als je een spreuk klaarzet, doe je dat op de normale manier, maar je houdt de energie vast, die je met je reactie vrijgeeft als de trigger optreedt. Om klaar te staan moet een spreuk een casting tijd van 1 actie hebben, en het vasthouden van de magie van de spreuk vereist concentratie (uitgelegd in {@book chapter 10|phb|10|concentration}). Als je concentratie verbroken wordt, verdwijnt de spreuk zonder effect. Bijvoorbeeld, als je geconcentreerd bent op de webspreuk en magische raket klaar hebt, eindigt je webspreuk, en als je schade oploopt voordat je magische raket loslaat met je reactie, kan je concentratie verbroken worden.",
+				"Als je een spreuk klaarzet, spreek je hem uit als normaal, maar je houdt de energie ervan vast, die je loslaat met je reactie als de trigger optreedt. Om klaar te staan moet een spreuk een casting time hebben van 1 actie, en het vasthouden van de magie van de spreuk vereist {@status concentration} (uitgelegd in {@book chapter 10|phb|10|concentration}). Als je {@status concentration} wordt verbroken, verdwijnt de spreuk zonder effect. Als je bijvoorbeeld {@status concentration||concentrating} op de webspreuk zit en magische raket klaarzet, eindigt je webspreuk, en als je schade oploopt voordat je magische raket met je reactie loslaat, kan je {@status concentration} verbroken worden.",
 				"Je hebt tot het begin van je volgende beurt om een klaarstaande actie te gebruiken."
 			]
 		},

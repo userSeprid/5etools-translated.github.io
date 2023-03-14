@@ -976,106 +976,36 @@
 			"name": "Dragon Tortoise",
 			"source": "CM",
 			"page": 205,
-			"size": [
-				"G"
-			],
-			"type": "dragon",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"natural armor"
-					]
+			"_copy": {
+				"name": "Dragon Turtle",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "removeArr",
+						"names": "Amphibious"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Steam Breath {@recharge 5}",
+						"items": {
+							"name": "Sand Breath {@recharge 5}",
+							"entries": [
+								"De drakenschildpad blaast schurend zand uit in een kegel van 6 meter. Elk wezen in dat gebied moet een {@dc 18} grondwettelijke worp doen en krijgt 52 ({@damage 15d6}) snijschade als de worp niet slaagt, of de helft als de worp wel slaagt."
+							]
+						}
+					}
 				}
-			],
-			"hp": {
-				"average": 341,
-				"formula": "22d20 + 110"
 			},
 			"speed": {
 				"walk": 20
 			},
-			"str": 25,
-			"dex": 10,
-			"con": 20,
-			"int": 10,
-			"wis": 12,
-			"cha": 12,
-			"save": {
-				"dex": "+6",
-				"con": "+11",
-				"wis": "+7"
-			},
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 11,
-			"resist": [
-				"fire"
-			],
 			"languages": [
 				"Draconic",
 				"Terran"
 			],
-			"cr": "17",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"De drakenschildpad voert drie aanvallen uit: één met de beet en twee met de klauwen. Hij kan een aanval met de staart doen in plaats van de twee klauwaanvallen."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 13} om te raken, bereik 15 ft., één doel. {@h}26 ({@damage 3d12 + 7}) doorborende schade."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 13} om te raken, reikwijdte 10 ft., één doel. {@h}16 ({@damage 2d8 + 7}) snijschade."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 13} om te raken, reikwijdte 15 ft., één doel. {@h}26 ({@damage 3d12 + 7}) knuppelschade. Als het doelwit een wezen is, moet het slagen op een {@dc 20} Sterkte-spaarworp of het wordt tot 10 voet van de drakenschildpad weggeduwd en {@condition prone} neergeslagen."
-					]
-				},
-				{
-					"name": "Steam Breath {@recharge 5}",
-					"entries": [
-						"De drakenschildpad blaast schurend zand uit in een kegel van 6 meter. Elk wezen in dat gebied moet een {@dc 18} grondwettelijke worp doen en krijgt 52 ({@damage 15d6}) snijschade als de worp niet slaagt, of de helft als de worp wel slaagt."
-					]
-				}
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
 			"languageTags": [
 				"DR",
 				"T"
-			],
-			"damageTags": [
-				"B",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"prone"
 			],
 			"hasToken": true,
 			"hasFluff": true

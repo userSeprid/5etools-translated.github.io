@@ -642,8 +642,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Sommige opties vereisen concentratie om hun effecten te behouden. Deze vereiste wordt genoteerd met \"conc.\" na de psi punt kosten van de optie. De \"conc.\" notatie wordt gevolgd door de maximale duur van de concentratie. Bijvoorbeeld, als een optie zegt \"conc., 1 min.\", dan kun je je maximaal 1 minuut concentreren op het effect ervan.",
-								"Concentratie op een discipline volgt dezelfde regels als concentratie op een spreuk. Deze regel betekent dat je je niet tegelijk op een spreuk en een discipline kunt concentreren, en ook niet op twee disciplines tegelijk. Zie {@book chapter 10|PHB|10}, \"Spellcasting,\" in het Player's Handbook voor hoe concentratie werkt."
+								"Sommige opties vereisen {@status concentration} om hun effecten te behouden. Deze eis wordt aangegeven met \"conc.\" na de psi-puntkosten van de optie. De \"conc.\" notatie wordt gevolgd door de maximale duur van de {@status concentration}. Bijvoorbeeld, als er bij een optie \"conc., 1 min.\" staat, kun je je maximaal 1 minuut concentreren op het effect ervan.",
+								"Het concentreren op een discipline volgt dezelfde regels als {@status concentration||concentrating} op een spreuk. Deze regel betekent dat je je niet kunt concentreren op een spreuk en een discipline tegelijk, noch op twee disciplines tegelijk. Zie {@book chapter 10|PHB|10}, \"Spellcasting\", in het Player's Handbook voor hoe {@status concentration} werkt."
 							]
 						}
 					]
@@ -813,7 +813,7 @@
 			"level": 11,
 			"entries": [
 				"Vanaf het 11e niveau kun je met je meesterschap over psionische energie je geest buiten zijn normale grenzen brengen. Als actie krijg je 9 speciale psi punten die je alleen kunt besteden aan disciplines die een actie of een bonus actie vereisen om te gebruiken. Je kunt alle 9 punten aan één discipline besteden, maar je kunt ze ook over meerdere disciplines verdelen. Je kunt niet ook je normale psi-punten aan deze disciplines besteden; je kunt alleen de speciale punten uit deze eigenschap besteden. Wanneer je een lange rustperiode beëindigt, verlies je alle speciale punten die je nog niet hebt besteed.",
-				"Als meer dan één van de disciplines die je met deze punten activeert concentratie vereisen, kun je je op al deze disciplines concentreren. Als je een van deze disciplines activeert, eindigt het effect waarop je je al concentreerde, en als je je gaat concentreren op een effect waarvoor deze speciale punten niet nodig zijn, eindigt de discipline waarop je je concentreert.",
+				"Als meer dan één van de disciplines die je met deze punten activeert {@status concentration} vereist, kun je je op alle disciplines concentreren. Het activeren van een ervan beëindigt elk effect waar je al {@status concentration||concentrating} mee bezig was, en als je {@status concentration||concentrating} begint aan een effect dat deze speciale punten niet gebruikt, eindigen de disciplines waar je {@status concentration||concentrating} mee bezig bent.",
 				"Op 15e niveau stijgt het aantal psi-punten dat je met deze eigenschap wint tot 11.",
 				"Je kunt deze eigenschap één keer gebruiken, en je krijgt elk verbruikt gebruik ervan terug met een lange rust. Je kunt deze eigenschap nog een keer gebruiken op je 13e, 15e en 17e level."
 			]
@@ -1123,7 +1123,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Vanaf het 3e niveau kun je je geest zo concentreren dat je de psionische afdruk op een voorwerp kunt lezen. Als je een voorwerp vasthoudt en je er 10 minuten lang op concentreert (alsof je je concentreert op een psionische discipline), leer je een paar basisfeiten over het voorwerp. Je krijgt een mentaal beeld vanuit het gezichtspunt van het voorwerp, dat het laatste wezen toont dat het voorwerp in de afgelopen 24 uur heeft vastgehouden.",
+				"Vanaf het 3e niveau kun je je geest concentreren om de psionische afdruk op een voorwerp te lezen. Als je een voorwerp vasthoudt en je er 10 minuten op concentreert (alsof {@status concentration||concentrating} op een psionische discipline), leer je er een paar basisfeiten over. Je krijgt een mentaal beeld vanuit het gezichtspunt van het voorwerp, met het laatste wezen dat het voorwerp in de afgelopen 24 uur heeft vastgehouden.",
 				"Je verneemt ook over alle gebeurtenissen die zich het voorbije uur binnen een straal van 20 voet van het voorwerp hebben voorgedaan. De gebeurtenissen die je waarneemt ontvouwen zich vanuit het perspectief van het voorwerp. Je ziet en hoort deze gebeurtenissen alsof je erbij was, maar je kunt geen andere zintuigen gebruiken.",
 				"Bovendien kun je een ontastbare psionische sensor in het voorwerp inbedden. Voor de komende 24 uur kun je een actie gebruiken om de locatie van het voorwerp ten opzichte van jou te leren (afstand en richting) en om de omgeving van het voorwerp vanuit zijn gezichtspunt te bekijken alsof jij erbij was. Deze waarneming duurt tot het begin van je volgende beurt.",
 				"Als je deze functie eenmaal hebt gebruikt, kun je hem niet meer gebruiken totdat je een korte of lange rustpauze hebt genomen."

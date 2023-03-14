@@ -1654,7 +1654,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Als je deze spreuk uitspreekt met een spreukengroef van 4e niveau of hoger, is de duur concentratie, tot 10 minuten. Als je een spreukengroef van 5e niveau of hoger gebruikt, is de duur 8 uur. Als je een spreukengroef van 7e niveau of hoger gebruikt, is de duur 24 uur. Als je een spreukengroef van het 9e niveau gebruikt, duurt de spreuk tot hij wordt weggenomen. Als je een spreukengroef van 5e niveau of hoger gebruikt, is de duur van de spreuk niet afhankelijk van concentratie."
+						"Als je deze spreuk uitspreekt met een spreukslot van 4e niveau of hoger, is de duur {@status concentration}, tot 10 minuten. Als je een spreukslot van 5e niveau of hoger gebruikt, is de duur 8 uur. Als je een spreukslot van 7e niveau of hoger gebruikt, is de duur 24 uur. Als je een spreukslot van 9e niveau gebruikt, duurt de spreuk tot hij wordt verjaagd. Als je een spreukslot van 5e niveau of hoger gebruikt, is de duur {@status concentration} niet nodig."
 					]
 				}
 			],
@@ -3666,7 +3666,7 @@
 			"entries": [
 				"Je roept een elementaire dienaar op. Kies een gebied van lucht, aarde, vuur of water dat een kubus van 10 voet binnen bereik vult. Een {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} die past bij het gebied dat je koos, verschijnt in een onbezette ruimte binnen 10 voet van het gebied. Bijvoorbeeld, een {@creature fire elemental} komt tevoorschijn uit een vreugdevuur, en een {@creature earth elemental} rijst op uit de grond. De elemental verdwijnt als hij tot 0 hit points is gedaald of als de spreuk eindigt.",
 				"De elemental is vriendelijk tegen jou en je metgezellen voor de duur. Rol het initiatief voor de elemental, die zijn eigen beurten heeft. Hij gehoorzaamt alle verbale commando's die je hem geeft (geen actie van jou vereist). Als je geen commando's aan de elemental geeft, verdedigt hij zich tegen vijandige wezens, maar voert verder geen acties uit.",
-				"Als je concentratie wordt verbroken, verdwijnt de elemental niet. In plaats daarvan verlies je de controle over de elemental, wordt hij vijandig tegen jou en je metgezellen, en kan hij aanvallen. Een ongecontroleerde elemental kan niet door jou worden weggestuurd, en het verdwijnt 1 uur nadat je het hebt opgeroepen.",
+				"Als je {@status concentration} gebroken bent, verdwijnt de elemental niet. In plaats daarvan verlies je de controle over het element, wordt het vijandig tegenover jou en je metgezellen, en kan het aanvallen. Een ongecontroleerde elementaal kan niet door jou worden weggestuurd, en hij verdwijnt 1 uur nadat je hem hebt opgeroepen.",
 				"De DM heeft de statistieken van de elemental."
 			],
 			"entriesHigherLevel": [
@@ -3719,7 +3719,7 @@
 			"entries": [
 				"Je roept een {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm} op, of een fey spirit die de vorm aanneemt van een {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. Het verschijnt in een onbezette ruimte die je binnen bereik kunt zien. Het fey wezen verdwijnt als het tot 0 hit points zakt of als de spreuk eindigt.",
 				"Het fey wezen is vriendelijk voor jou en je metgezellen voor de duur. Rol het initiatief voor het wezen, dat zijn eigen beurten heeft. Het gehoorzaamt alle verbale commando's die je het geeft (geen actie van jou vereist), zolang ze niet in strijd zijn met zijn uitlijning. Als je geen commando's geeft aan het fey wezen, verdedigt het zich tegen vijandige wezens, maar onderneemt verder geen acties.",
-				"Als je concentratie verbroken wordt, verdwijnt het fey wezen niet. In plaats daarvan verlies je de controle over het fey wezen, het wordt vijandig tegenover jou en je metgezellen, en het kan aanvallen. Een ongecontroleerd fey creature kan niet door jou worden weggestuurd, en het verdwijnt 1 uur nadat je het hebt opgeroepen.",
+				"Als je {@status concentration} gebroken bent, verdwijnt het fey wezen niet. In plaats daarvan verlies je de controle over het fey wezen, wordt het vijandig tegenover jou en je metgezellen, en kan het aanvallen. Een ongecontroleerd fey wezen kan niet door jou worden afgewezen, en het verdwijnt 1 uur nadat je het hebt opgeroepen.",
 				"De DM heeft de statistieken van het fey wezen."
 			],
 			"entriesHigherLevel": [
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"Een straal geel licht flitst uit je wijzende vinger, en condenseert dan om op een gekozen punt binnen bereik te blijven hangen als een gloeiende kraal voor de duur. Als de spreuk eindigt, hetzij omdat je concentratie is verbroken, hetzij omdat je zelf besluit hem te beëindigen, ontploft de kraal met een laag gebrul in een explosie van vlammen die zich om hoeken verspreidt. Elk wezen dat zich in een straal van 20 voet rond dat punt bevindt, moet een Dexterity saving throw doen. Een schepsel krijgt een vuurschade gelijk aan de totale opgelopen schade bij een mislukte redding, of de helft van de schade bij een succesvolle.",
+				"Een straal geel licht flitst uit je wijzende vinger en condenseert dan om op een gekozen punt binnen bereik te blijven hangen als een gloeiende kraal voor de duur. Wanneer de spreuk eindigt, hetzij omdat je {@status concentration} verbroken wordt, hetzij omdat je besluit hem te beëindigen, bloeit de kraal met een laag gebrul op tot een explosie van vlammen die zich om de hoeken verspreidt. Elk wezen in een straal van 20 voet in het midden van dat punt moet een reddingsoefening doen. Een wezen krijgt brandschade gelijk aan de totale geaccumuleerde schade bij een mislukte reddingsworp, of half zoveel schade bij een geslaagde reddingsworp.",
 				"De basisschade van de spreuk is {@damage 12d6}. Als aan het eind van je beurt de kraal nog niet tot ontploffing is gebracht, neemt de schade toe met {@dice 1d6}.",
 				"Als de gloeiende kraal wordt aangeraakt voordat het interval is verstreken, moet het wezen dat de kraal aanraakt een Dexterity saving throw doen. Als hij niet slaagt, eindigt de betovering onmiddellijk en barst de kraal in vlammen uit. Als de reddingsactie slaagt, kan het wezen de kraal tot 1,5 meter ver gooien. Als de kraal een wezen of een vast voorwerp raakt, eindigt de spreuk en explodeert de kraal.",
 				"Het vuur beschadigt voorwerpen in de omgeving en ontbrandt brandbare voorwerpen die niet worden gedragen of gedragen."
@@ -5906,7 +5906,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Als je deze spreuk uitspreekt met een spreukgleuf van het 5e niveau, is de duur concentratie, tot 10 minuten. Als je een spreuk van het 6e niveau gebruikt, is de duur van de spreuk concentratie, tot 1 uur. Als je een spreukengroef van het 7e niveau of hoger gebruikt, is de duur van de spreuk concentratie, tot 8 uur."
+						"Als je deze spreuk uitspreekt met een 5e niveau spreukslot, is de duur {@status concentration}, tot 10 minuten. Als je een spreukslot van 6e niveau gebruikt, is de duur {@status concentration}, maximaal 1 uur. Als je een spreukslot van 7e niveau of hoger gebruikt, is de duur {@status concentration}, maximaal 8 uur.ed schade bij een mislukte save, of half zoveel schade bij een geslaagde save."
 					]
 				}
 			],
@@ -5972,7 +5972,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Als je deze spreuk uitspreekt met een spreukgleuf van het 9e niveau, is de duur concentratie, tot maximaal 8 uur."
+						"Als je deze spreuk uitspreekt met een spreukslot van 9e niveau, is de duur {@status concentration}, tot 8 uur."
 					]
 				}
 			],
@@ -6035,7 +6035,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Als je deze spreuk uitspreekt met een spreukgleuf van het 6e niveau, is de duur concentratie, tot 10 minuten. Als je een spreuk van het 7e niveau gebruikt, is de duur van de spreuk concentratie, tot 1 uur. Als je een spreuk van het 8e niveau of hoger gebruikt, is de duur van de spreuk concentratie, tot 8 uur."
+						"Als je deze spreuk uitvoert met een spreukslot van 6e niveau, is de duur {@status concentration}, maximaal 10 minuten. Als je een spreukslot van 7e niveau gebruikt, is de duur {@status concentration}, maximaal 1 uur. Als je een spreukslot van 8e niveau of hoger gebruikt, is de duur {@status concentration}, maximaal 8 uur."
 					]
 				}
 			],
@@ -6230,8 +6230,8 @@
 			],
 			"entries": [
 				"Je creëert een seismische verstoring op een punt op de grond dat je binnen je bereik kunt zien. Voor de duur van de storing scheurt er een intense trilling door de grond in een cirkel met een straal van 100 voet rond dat punt en schudt wezens en structuren die in contact komen met de grond in dat gebied.",
-				"De grond in het gebied wordt {@quickref difficult terrain||3}. Elk wezen op de grond dat zich concentreert moet een grondwettelijke reddingsworp doen. Als de test mislukt, is de concentratie van het wezen verbroken.",
-				"Wanneer je deze spreuk uitspreekt en aan het eind van elke beurt dat je je erop concentreert, moet elk wezen op de grond in het gebied een Dexterity saving throw doen. Als je niet slaagt, wordt het wezen neergeslagen {@condition prone}.",
+				"De grond in het gebied wordt {@quickref difficult terrain||3}. Elk wezen op de grond dat {@status concentration||concentrating} is, moet een reddingsslag uitvoeren. Bij een mislukte reddingsslag wordt het wezen {@status concentration} gebroken.",
+				"Wanneer je deze spreuk uitspreekt en aan het einde van elke beurt waaraan je {@status concentration||concentrating} besteedt, moet elk wezen op de grond in het gebied een reddingsworp op basis van handigheid doen. Bij een mislukte worp wordt het wezen {@condition prone} weggeslagen.",
 				"Deze spreuk kan extra effecten hebben afhankelijk van het terrein in het gebied, zoals bepaald door de DM.",
 				{
 					"type": "entries",
@@ -7903,7 +7903,7 @@
 				"Je probeert een wezen dat je kunt zien binnen je bereik in steen te veranderen. Als het lichaam van het doelwit van vlees is gemaakt, moet het wezen een grondwettelijke reddingsworp doen. Bij een mislukte redding wordt het {@condition restrained} als zijn vlees begint te verharden. Bij een succesvolle redding, wordt het wezen niet aangetast.",
 				"Een schepsel {@condition restrained} door deze spreuk moet aan het eind van elke beurt opnieuw een Constitution saving throw doen. Als het drie keer succesvol red tegen deze spreuk, eindigt de spreuk. Als het drie keer niet slaagt, wordt het in steen veranderd en ondergaat het voor de duur de {@condition petrified} conditie. De successen en mislukkingen hoeven niet opeenvolgend te zijn; houd beide bij totdat het doelwit drie van een soort heeft verzameld.",
 				"Als het schepsel lichamelijk gebroken is terwijl {@condition petrified}, lijdt het aan soortgelijke misvormingen als het terugkeert naar zijn oorspronkelijke staat.",
-				"Als je je concentratie op deze spreuk voor de gehele mogelijke duur handhaaft, wordt het schepsel in steen veranderd totdat het effect wordt opgeheven."
+				"Als je je {@status concentration} op deze spreuk voor de gehele mogelijke duur volhoudt, wordt het wezen in steen veranderd totdat het effect wordt verwijderd."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -8653,7 +8653,7 @@
 					"type": "entries",
 					"name": "Spell Glyph",
 					"entries": [
-						"Je kunt een voorbereide spreuk van 3de niveau of lager in de glyph opslaan door hem uit te spreken als onderdeel van het creëren van de glyph. De spreuk moet gericht zijn op een enkel wezen of een gebied. De opgeslagen spreuk heeft geen onmiddellijk effect als hij op deze manier wordt uitgesproken. Als de glyph wordt getriggerd, wordt de opgeslagen spreuk uitgesproken. Als de spreuk een doelwit heeft, is dat het wezen dat de spreuk activeerde. Als de spreuk een gebied beïnvloedt, wordt het gebied gecentreerd op dat wezen. Als de spreuk vijandige wezens oproept of schadelijke voorwerpen of vallen creëert, verschijnen deze zo dicht mogelijk bij de indringer en vallen deze aan. Als de spreuk concentratie vereist, duurt deze tot het einde van zijn volledige duur."
+						"Je kunt een voorbereide spreuk van 3e niveau of lager in de glyph opslaan door hem uit te spreken als onderdeel van het maken van de glyph. De spreuk moet gericht zijn op een enkel wezen of een gebied. De opgeslagen spreuk heeft geen onmiddellijk effect als hij op deze manier wordt uitgesproken. Als de glyph wordt geactiveerd, wordt de opgeslagen spreuk uitgesproken. Als de spreuk een doel heeft, richt hij zich op het wezen dat de glyph activeerde. Als de spreuk een gebied beïnvloedt, wordt het gebied gecentreerd op dat wezen. Als de spreuk vijandige wezens oproept of schadelijke voorwerpen of vallen creëert, verschijnen deze zo dicht mogelijk bij de indringer en vallen deze aan. Als de spreuk {@status concentration} vereist, duurt deze tot het einde van de volledige duur."
 					]
 				}
 			],
@@ -9921,7 +9921,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Als je deze spreuk uitspreekt met een spreukgleuf van het 3e of 4e niveau, kun je je concentratie voor de spreuk tot 8 uur vasthouden. Als je een spreukslot van 5e niveau of hoger gebruikt, kun je je concentratie op de spreuk tot 24 uur vasthouden."
+						"Als je deze spreuk uitspreekt met een spreukslot van 3e of 4e niveau, kun je je {@status concentration} op de spreuk tot 8 uur lang handhaven. Als je een spreukslot van 5e niveau of hoger gebruikt, kun je je {@status concentration} op de spreuk maximaal 24 uur volhouden.e zo mogelijk naar de indringer en val hem aan. Als de spreuk {@status concentration} vereist, duurt deze tot het einde van de volledige duur."
 					]
 				}
 			],
@@ -10225,7 +10225,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Als je deze spreuk uitspreekt met een spreukgleuf van het 3e of 4e niveau, kun je je concentratie voor de spreuk tot 8 uur vasthouden. Als je een spreukslot van 5e niveau of hoger gebruikt, kun je je concentratie op de spreuk tot 24 uur vasthouden."
+						"Als je deze spreuk uitspreekt met een spreukslot van 3e of 4e niveau, kun je je {@status concentration} op de spreuk tot 8 uur lang handhaven. Als je een spreukslot van 5e niveau of hoger gebruikt, kun je je {@status concentration} op de spreuk maximaal 24 uur volhouden.e zo mogelijk naar de indringer en val hem aan. Als de spreuk {@status concentration} vereist, duurt deze tot het einde van de volledige duur."
 					]
 				}
 			],
@@ -11803,7 +11803,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Als je deze spreuk uitspreekt met een spreukgleuf van 6e niveau of hoger, blijft de spreuk bestaan totdat hij wordt opgeheven, zonder dat je je hoeft te concentreren."
+						"Als je deze spreuk uitspreekt met een spreukslot van 6e niveau of hoger, duurt de spreuk tot hij wordt opgeheven, zonder dat je {@status concentration} nodig hebt."
 					]
 				}
 			],
@@ -12961,7 +12961,7 @@
 			],
 			"entries": [
 				"Kies een stuk terrein niet groter dan 40 voet aan een kant binnen bereik. Je kunt het vuil, zand of klei in het gebied voor de duur op elke gewenste manier veranderen. Je kunt de hoogte van het gebied verhogen of verlagen, een geul maken of opvullen, een muur oprichten of afvlakken, of een pilaar vormen. De omvang van deze veranderingen mag niet groter zijn dan de helft van de grootste afmeting van het gebied. Dus, als u een vierkant van 40 voet beïnvloedt, kunt u een pilaar maken tot 20 voet hoog, de hoogte van het vierkant verhogen of verlagen met maximaal 20 voet, een geul graven tot 20 voet diep, enzovoort. Het duurt 10 minuten om deze veranderingen te voltooien.",
-				"Aan het eind van elke 10 minuten dat je geconcentreerd bezig bent met de spreuk, kun je een nieuw gebied kiezen om te beïnvloeden.",
+				"Aan het einde van elke 10 minuten die je {@status concentration||concentrating} aan de spreuk besteedt, kun je een nieuw terreingebied kiezen om te beïnvloeden.",
 				"Omdat de verandering van het terrein langzaam verloopt, kunnen wezens in het gebied gewoonlijk niet worden ingesloten of verwond door de beweging van de grond.",
 				"Deze spreuk kan geen natuursteen of stenen constructie manipuleren. Rotsen en structuren verschuiven om zich aan te passen aan het nieuwe terrein. Als de manier waarop je het terrein vormgeeft een constructie onstabiel zou maken, kan deze instorten.",
 				"Ook heeft deze spreuk geen direct effect op de plantengroei. De verplaatste aarde draagt alle planten met zich mee."
@@ -16458,7 +16458,7 @@
 			"entries": [
 				"Tot de spreuk eindigt, vallen de ijskoude regen en ijzel in een 20 voet hoge cilinder met een straal van 40 voet gecentreerd op een punt dat je binnen bereik kiest. Het gebied is {@quickref Vision and Light|PHB|2||heavily obscured}, en blootgestelde vlammen in het gebied worden gedoofd.",
 				"De grond in het gebied wordt bedekt met glad ijs, waardoor het {@quickref difficult terrain||3}. Als een wezen tijdens een beurt voor het eerst het gebied van de spreuk betreedt of zijn beurt daar begint, moet het een Dexterity saving throw doen. Als hij niet slaagt, valt hij {@condition prone}.",
-				"Als een wezen aan het begin van zijn beurt in het gebied van de spreuk is en zich concentreert op een spreuk, moet het wezen een succesvolle grondwetsredding doen tegen de DC van de spreuk of zijn concentratie verliezen."
+				"Als een wezen zijn beurt begint in het gebied van de spreuk en {@status concentration||concentrating} op een spreuk staat, moet het wezen een succesvolle Constitution saving throw doen tegen je spell save DC of verliest {@status concentration}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -17142,7 +17142,7 @@
 			],
 			"entries": [
 				"Er vormt zich een kolkende onweerswolk, gecentreerd op een punt dat je kunt zien en zich uitbreidend tot een straal van 360 voet. Bliksemflitsen flitsen in het gebied, donder dreunt en sterke winden bulderen. Elk wezen onder de wolk (niet meer dan 5.000 voet onder de wolk) wanneer de wolk verschijnt moet een grondwettelijke reddingsworp doen. Als je niet slaagt, loopt het wezen {@damage 2d6} donderschade op en wordt het {@condition deafened} gedurende 5 minuten.",
-				"Elke ronde dat je geconcentreerd blijft op deze spreuk, produceert de storm andere effecten op jouw beurt.",
+				"Elke ronde dat je {@status concentration} deze spreuk aanhoudt, heeft de storm andere effecten op je beurt.",
 				{
 					"type": "entries",
 					"name": "Round 2",
@@ -17168,7 +17168,7 @@
 					"type": "entries",
 					"name": "Round 5–10",
 					"entries": [
-						"Windvlagen en ijskoude regen overvallen het gebied onder de wolk. Het gebied wordt {@quickref difficult terrain||3} en is {@quickref Vision and Light|PHB|2||heavily obscured}. Elk wezen daar krijgt {@damage 1d6} koude schade. Aanvallen met afstandswapens in het gebied zijn onmogelijk. De wind en regen tellen als een ernstige afleiding voor het handhaven van de concentratie op spreuken. Ten slotte verdrijven sterke windvlagen (tussen 20 en 50 mijl per uur) automatisch mist, nevel en soortgelijke verschijnselen in het gebied, zowel mondain als magisch."
+						"Windvlagen en ijskoude regen overvallen het gebied onder de wolk. Het gebied wordt {@quickref difficult terrain||3} en is {@quickref Vision and Light|PHB|2||heavily obscured}. Elk wezen daar krijgt {@damage 1d6} koude schade. Aanvallen met afstandswapens in het gebied zijn onmogelijk. De wind en regen tellen als ernstige afleiding voor het behoud van {@status concentration} op spreuken. Ten slotte verdrijven sterke windvlagen (tussen 20 en 50 mijl per uur) automatisch mist, nevel en soortgelijke verschijnselen in het gebied, zowel mondain als magisch."
 					]
 				}
 			],
@@ -18912,7 +18912,7 @@
 				"De muur kan elke gewenste vorm hebben, maar hij kan niet dezelfde ruimte innemen als een wezen of voorwerp. De muur hoeft niet verticaal te zijn of op een stevige fundering te rusten. Hij moet echter wel samensmelten met en stevig ondersteund worden door bestaande steen. Je kunt deze spreuk dus gebruiken om een kloof te overbruggen of een helling te maken.",
 				"Als je een overspanning van meer dan 20 voet maakt, moet je elk paneel halveren om steunpunten te maken. Je kunt de muur een ruwe vorm geven om kantelen, kantelen, enzovoort te maken.",
 				"De muur is een object van steen dat beschadigd en dus doorbroken kan worden. Elk paneel heeft AC 15 en 30 hit points per inch dikte. Een paneel tot 0 hit points reduceren vernietigt het en kan verbonden panelen doen instorten naar goeddunken van de DM.",
-				"Als je je concentratie op deze spreuk voor de hele duur vasthoudt, wordt de muur permanent en kan hij niet worden weggenomen. Anders verdwijnt de muur wanneer de spreuk eindigt."
+				"Als je je {@status concentration} op deze spreuk voor de hele duur volhoudt, wordt de muur permanent en kan hij niet worden verdreven. Anders verdwijnt de muur als de spreuk eindigt."
 			],
 			"savingThrow": [
 				"dexterity"

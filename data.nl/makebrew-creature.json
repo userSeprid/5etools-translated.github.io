@@ -1513,7 +1513,7 @@
 		{
 			"name": "Create Whirlwind (Djinni)",
 			"entries": [
-				"Een cilinder van wervelende lucht met een straal van 5 voet en een hoogte van 30 voet vormt zich op magische wijze op een punt dat <$kort_naam$> binnen 120 voet ervan kan zien. De wervelwind duurt zolang <$kort_naam> geconcentreerd blijft (alsof hij zich concentreert op een spreuk). Elk wezen behalve <$kort_naam$> dat in de wervelwind terechtkomt, moet slagen op een DC <$dc__str$> reddingsworp of er {@condition restrained} door geraakt worden. <$title_short_name$> kan de wervelwind tot 60 voet verplaatsen als een actie, en wezens {@condition restrained} door de wervelwind bewegen mee. De wervelwind eindigt als <$kort_naam$> hem uit het oog verliest.",
+				"Een cilinder van wervelende lucht met een straal van 5 voet en een hoogte van 30 voet vormt zich op magische wijze op een punt dat <$short_name$> binnen 120 voet kan zien. De wervelwind duurt zo lang als <$kort_naam$> volhoudt {@status concentration} (alsof {@status concentration||concentrating} op een spreuk). Elk wezen behalve <$short_name$> dat in de wervelwind komt, moet slagen op een DC <$dc__str$> reddingsworp of erdoor geraakt worden {@condition restrained}. <$title_short_name$> kan de wervelwind tot 60 voet verplaatsen als een actie, en wezens {@condition restrained} door de wervelwind bewegen mee. De wervelwind eindigt als <$kort_naam$> hem uit het oog verliest.",
 				"Een wezen kan zijn actie gebruiken om een wezen {@condition restrained} door de wervelwind te bevrijden, inclusief zichzelf, door te slagen op een DC <$dc__str$> Strength check. Als de controle slaagt, is het wezen niet langer {@condition restrained} en gaat het naar de dichtstbijzijnde ruimte buiten de wervelwind."
 			]
 		},
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Darkness Aura (Darkmantle)",
 			"entries": [
-				"Een straal van 15 voet magische duisternis strekt zich uit vanaf <$kort_naam$>, beweegt mee en verspreidt zich rond hoeken. De duisternis duurt zolang <$kort_naam> geconcentreerd blijft, tot 10 minuten (alsof hij zich concentreert op een spreuk). Darkvision kan deze duisternis niet doordringen, en geen natuurlijk licht kan het verlichten. Als een deel van de duisternis overlapt met een gebied van licht dat is gecreëerd door een spreuk van 2e niveau of lager, wordt de spreuk die het licht creëerde verdreven."
+				"Een straal van 15 voet van magische duisternis strekt zich uit van <$kort_naam$>, beweegt mee, en verspreidt zich rond hoeken. De duisternis duurt zo lang als <$kort_naam$> volhoudt {@status concentration}, tot 10 minuten (alsof {@status concentration||concentrating} op een spreuk). Darkvision kan deze duisternis niet doordringen, en geen natuurlijk licht kan het verlichten. Als een deel van de duisternis overlapt met een gebied van licht gecreëerd door een spreuk van 2e niveau of lager, wordt de spreuk die het licht creëert verjaagd.ses zicht erop."
 			]
 		},
 		{
@@ -1709,19 +1709,19 @@
 		{
 			"name": "Invisibility (Duergar)",
 			"entries": [
-				"<$title_short_name$> wordt magisch {@condition invisible} tot hij aanvalt, een spreuk uitspreekt of zijn Vergroting gebruikt, of tot zijn concentratie wordt verbroken, tot 1 uur (alsof hij zich op een spreuk concentreert). Elke uitrusting die <$kort_naam$> draagt of bij zich draagt wordt {@condition invisible} mee."
+				"<$title_short_name$> draait magisch {@condition invisible} totdat het aanvalt, een spreuk uitspreekt, of zijn Vergroting gebruikt, of totdat zijn {@status concentration} gebroken wordt, tot 1 uur (alsof {@status concentration||concentrating} op een spreuk). Elke uitrusting die <$kort_naam$> draagt of bij zich draagt is {@condition invisible} mee."
 			]
 		},
 		{
 			"name": "Invisibility (Quasit)",
 			"entries": [
-				"<$title_short_name$> wordt magisch {@condition invisible} totdat hij aanvalt of Schrik gebruikt, of totdat zijn concentratie eindigt (alsof hij zich concentreert op een spreuk). Alle uitrusting die <$kort_naam$> draagt of bij zich draagt wordt {@condition invisible} mee."
+				"<$title_short_name$> wordt magisch {@condition invisible} totdat het aanvalt of Scare gebruikt, of totdat zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk staat). Alle uitrusting die <$kort_naam$> draagt of bij zich draagt, wordt {@condition invisible} mee."
 			]
 		},
 		{
 			"name": "Invisibility (Sprite)",
 			"entries": [
-				"<$title_short_name$> wordt magisch {@condition invisible} tot hij aanvalt of een spreuk uitspreekt, of tot zijn concentratie eindigt (alsof hij zich concentreert op een spreuk). Elke uitrusting die <$kort_naam$> draagt of bij zich draagt, wordt {@condition invisible} mee."
+				"<$title_short_name$> draait magisch {@condition invisible} totdat het aanvalt of een spreuk uitspreekt, of totdat zijn {@status concentration} eindigt (alsof {@status concentration||concentrating} op een spreuk). Alle uitrusting die <$short_name$> draagt of bij zich draagt is {@condition invisible} mee."
 			]
 		},
 		{
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Read Thoughts (Doppelganger)",
 			"entries": [
-				"<$title_short_name$> leest op magische wijze de oppervlaktegedachten van één wezen binnen 60 voet afstand. Het effect kan door barrières heen dringen, maar een meter hout of vuil, een meter steen, een centimeter metaal of een dunne laag lood houdt het tegen. Terwijl het doelwit binnen bereik is, kan <$kort_naam$> zijn gedachten blijven lezen, zolang <$kort_naam$> zijn concentratie niet verbreekt (alsof hij zich concentreert op een spreuk). Tijdens het lezen van de gedachten van het doelwit heeft <$kort_naam$> voordeel op Wisdom ({@skill Insight}) en Charisma ({@skill Deception}, {@skill Intimidation}, en {@skill Persuasion}) controles tegen het doelwit."
+				"<$title_short_name$> leest op magische wijze de oppervlaktegedachten van één wezen binnen 60 voet afstand. Het effect kan door barrières heen dringen, maar een meter hout of vuil, een meter steen, een centimeter metaal of een dunne laag lood houdt het tegen. Terwijl het doelwit binnen bereik is, kan <$kort_naam$> zijn gedachten blijven lezen, zolang de {@status concentration} van <$kort_naam$> niet wordt verbroken (alsof {@status concentration||concentrating} op een spreuk staat). Tijdens het lezen van de gedachten van het doelwit heeft <$kort_naam$> voordeel op Wisdom ({@skill Insight}) en Charisma ({@skill Deception}, {@skill Intimidation}, en {@skill Persuasion}) controles tegen het doelwit."
 			]
 		},
 		{
