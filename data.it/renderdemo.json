@@ -21,7 +21,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Style tags; {@bold some text to be bolded} (alternative {@b shorthand}), {@italic some text to be italicised} (alternative {@i shorthand}), {@underline some text to be underlined} (alternative {@u shorthand}), {@strike some text to strike-through}, (alternative {@s shorthand}), {@color color|e40707}/{@color color variable|--rgb-name} tags, {@highlight highlight} tags, {@code print(&quot;hello world&quot;)} tags, misc {@style Style|small-caps;small;capitalize;dnd-font} tags",
+						"Style tags; {@bold some text to be bolded} (alternative {@b shorthand}), {@italic some text to be italicised} (alternative {@i shorthand}), {@underline some text to be underlined} (alternative {@u shorthand}), {@strike some text to strike-through}, (alternative {@s shorthand}), {@color color|e40707}/{@color color variable|--rgb-name} tags, {@highlight highlight} tags, {@sup superscript} tags, {@sub subscript} tags, {@kbd keyboard} tags, {@code print(&quot;hello world&quot;)} tags, misc {@style Style|small-caps;small;capitalize;dnd-font} tags",
 						"Inoltre, {@note note tags}, utilizzato per aggiungere errata o note a piè di pagina di Twitter.",
 						"Tag del rullo di dadi; {@dice 1d2-2+2d3+5} per i normali lanci di dadi ({@dice 1d6;2d6} per le opzioni multiple; {@dice 1d6 + #$prompt_number:min=1,title=Enter a Number!,default=123$#} per le richieste di input), con {@dice 1d20+2|display text} e {@dice 1d20+2|display text|rolled by name} estesi, e una versione speciale \"hit\" che assume che un d20 debba essere lanciato {@hit +7} (e lancia vantaggio su shift-click, svantaggio su alt-click). C'è anche {@damage 1d12+3} che tira i colpi critici su shift-click e metà danno (arrotondando per difetto) su alt-click, e {@d20 -4} che tira anche vantaggio/svantaggio, anche se i tag @hit sono preferiti dove appropriato. Gli incantesimi possono avere tag di dado scalare, (danno di 2d6 o 3d6 al livello 1, aggiungere un extra {@scaledice 2d6;3d6|2-9|1d6} per ogni livello oltre il 2°), per quando l'effetto di un incantesimo scala a livelli più alti. {@ability str 20}, {@savingThrow str 5} e {@skillCheck animal_handling 5} sono usati come stenografia interna, ma possono essere utili altrove.",
 						"Tag dadi automatici; come sopra, ma un risultato viene tirato automaticamente al momento del rendering: {@autodice 2d10+2}.",
@@ -284,6 +284,36 @@
 					"footnotes": [
 						"* Optional footer entries",
 						"** As an extension to Bootstrap's 1-to-12 system, 1/10th subdivisions can be used, e.g. col-1-5 for 1.5/12. The total column widths should still sum to exactly 12; enjoy doing the math."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Optional Caption",
+					"colLabelGroups": [
+						{
+							"colLabels": [
+								"Single"
+							]
+						},
+						{
+							"colLabels": [
+								"Stacked Top",
+								"Stacked Bottom"
+							]
+						},
+						{}
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4"
+					],
+					"rows": [
+						[
+							"This table has multiple header rows stacked one atop the other",
+							"Lorem ipsum",
+							"This column has no labels"
+						]
 					]
 				},
 				"Le tabelle arrotolabili possono essere fatte così (notare il 'pad' per formattare i numeri a una cifra, ad esempio '01' per le tabelle con >10 righe):",
@@ -572,7 +602,8 @@
 						"type": "internal",
 						"path": "blank.png"
 					},
-					"title": "Optional Title"
+					"title": "Optional Title",
+					"credit": "Optional credit"
 				},
 				{
 					"type": "entries",
