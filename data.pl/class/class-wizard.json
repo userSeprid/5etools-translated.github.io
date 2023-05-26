@@ -1010,6 +1010,18 @@
 					}
 				}
 			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Onomancy Resonant",
+					"featureType": [
+						"OR"
+					],
+					"progression": {
+						"6": 2,
+						"10": 2
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Onomancy|Wizard||Onomancy (UA)|UAClericDruidWizard|2",
 				"Resonant Utterance|Wizard||Onomancy (UA)|UAClericDruidWizard|6",
@@ -3360,6 +3372,51 @@
 			]
 		},
 		{
+			"name": "Resonant Options",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Oto opcje, jakie można wybrać przy wyborze rezonansu:",
+				{
+					"type": "options",
+					"style": "list-hang-notitle",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Absorption|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Devastation|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dissolution|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Nullification|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Puppetry|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Sympathy|UAClericDruidWizard"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Resonant Utterance",
 			"source": "UAClericDruidWizard",
 			"page": 4,
@@ -3373,57 +3430,45 @@
 				"{@i 6th-level Onomancy feature}",
 				"Uczysz się słów mocy zwanych rezonansami, które pozwalają dostosować zaklęcia do potrzeb celu poprzez użycie jego prawdziwego imienia.",
 				{
-					"type": "entries",
-					"name": "Resonants Known",
-					"entries": [
-						"Kiedy zdobywasz tę cechę, uczysz się dwóch wybranych przez siebie rezonantów, które są opisane w sekcji \"Opcje rezonansów\". Za każdym razem, gdy zdobędziesz poziom w tej klasie, możesz zastąpić jeden znany ci rezonans innym."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonants Known|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Using a Resonant",
-					"entries": [
-						"Możesz użyć jednego Rezonansu podczas rzucania zaklęcia czarodzieja ze slotem na zaklęcie i wypowiedzieć prawdziwe imię jednego stworzenia, na które skierowane jest zaklęcie. Wypowiedzenie imienia jest częścią rzucania zaklęcia. Możesz użyć rezonantów tyle razy, ile wynosi połowa twojego poziomu czarodzieja (zaokrąglając w dół), a wszystkie zużyte rezonanty odzyskujesz po zakończeniu długiego odpoczynku."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Using a Resonant|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Resonant Options",
-					"entries": [
-						"Oto opcje, jakie można wybrać przy wyborze rezonansu:",
-						{
-							"type": "options",
-							"style": "list-hang-notitle",
-							"count": 2,
-							"entries": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Absorption|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Devastation|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Dissolution|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Nullification|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Puppetry|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Sympathy|UAClericDruidWizard"
-								}
-							]
-						}
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonant Options|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				}
+			]
+		},
+		{
+			"name": "Resonants Known",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Kiedy zdobywasz tę cechę, uczysz się dwóch wybranych przez siebie rezonantów, które są opisane w sekcji \"Opcje rezonansów\". Za każdym razem, gdy zdobędziesz poziom w tej klasie, możesz zastąpić jeden znany ci rezonans innym."
+			]
+		},
+		{
+			"name": "Using a Resonant",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Możesz użyć jednego Rezonansu podczas rzucania zaklęcia czarodzieja ze slotem na zaklęcie i wypowiedzieć prawdziwe imię jednego stworzenia, na które skierowane jest zaklęcie. Wypowiedzenie imienia jest częścią rzucania zaklęcia. Możesz użyć rezonantów tyle razy, ile wynosi połowa twojego poziomu czarodzieja (zaokrąglając w dół), a wszystkie zużyte rezonanty odzyskujesz po zakończeniu długiego odpoczynku."
 			]
 		},
 		{
