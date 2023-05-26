@@ -1010,6 +1010,18 @@
 					}
 				}
 			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Onomancy Resonant",
+					"featureType": [
+						"OR"
+					],
+					"progression": {
+						"6": 2,
+						"10": 2
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Onomancy|Wizard||Onomancy (UA)|UAClericDruidWizard|2",
 				"Resonant Utterance|Wizard||Onomancy (UA)|UAClericDruidWizard|6",
@@ -3360,6 +3372,51 @@
 			]
 		},
 		{
+			"name": "Resonant Options",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Estas son sus opciones a la hora de elegir un Resonant:",
+				{
+					"type": "options",
+					"style": "list-hang-notitle",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Absorption|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Devastation|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dissolution|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Nullification|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Puppetry|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Sympathy|UAClericDruidWizard"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Resonant Utterance",
 			"source": "UAClericDruidWizard",
 			"page": 4,
@@ -3373,57 +3430,45 @@
 				"{@i 6th-level Onomancy feature}",
 				"Aprendes palabras de poder llamadas Resonantes, que te permiten adaptar tus hechizos mediante el uso del verdadero nombre de un objetivo.",
 				{
-					"type": "entries",
-					"name": "Resonants Known",
-					"entries": [
-						"Cuando obtienes esta característica, aprendes dos Resonantes a tu elección, que se detallan en la sección \"Opciones de Resonantes\". Cada vez que ganes un nivel en esta clase, puedes sustituir un resonante que conozcas por otro diferente."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonants Known|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Using a Resonant",
-					"entries": [
-						"Puedes usar un Resonante cuando lanzas un hechizo de mago con una ranura de hechizo y dices el nombre verdadero de una criatura objetivo del hechizo. Decir el nombre es parte del lanzamiento del hechizo. Puedes usar Resonantes un número de veces igual a la mitad de tu nivel de mago (redondeado hacia abajo), y recuperas todos los usos gastados cuando terminas un descanso largo."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Using a Resonant|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Resonant Options",
-					"entries": [
-						"Estas son sus opciones a la hora de elegir un Resonant:",
-						{
-							"type": "options",
-							"style": "list-hang-notitle",
-							"count": 2,
-							"entries": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Absorption|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Devastation|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Dissolution|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Nullification|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Puppetry|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Sympathy|UAClericDruidWizard"
-								}
-							]
-						}
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonant Options|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				}
+			]
+		},
+		{
+			"name": "Resonants Known",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Cuando obtienes esta característica, aprendes dos Resonantes a tu elección, que se detallan en la sección \"Opciones de Resonantes\". Cada vez que ganes un nivel en esta clase, puedes sustituir un resonante que conozcas por otro diferente."
+			]
+		},
+		{
+			"name": "Using a Resonant",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Puedes usar un Resonante cuando lanzas un hechizo de mago con una ranura de hechizo y dices el nombre verdadero de una criatura objetivo del hechizo. Decir el nombre es parte del lanzamiento del hechizo. Puedes usar Resonantes un número de veces igual a la mitad de tu nivel de mago (redondeado hacia abajo), y recuperas todos los usos gastados cuando terminas un descanso largo."
 			]
 		},
 		{
