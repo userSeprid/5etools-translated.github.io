@@ -2443,7 +2443,7 @@
 					"type": "list",
 					"items": [
 						"Замените один из вариантов, выбранных вами для свойства \"Метамагия\", на другой {@filter Metamagic option|optionalfeatures|Feature Type=MM}, доступный вам.",
-						"Замените одно заклинание, которое вы выучили в свойстве заклинания этого класса, на другое заклинание из {@filter sorcerer spell list|spells|level=0|class=Cleric}."
+						"Замените одно заклинание, которое вы выучили из свойства \"Заклинание\" этого класса, другим заклинанием из {@filter sorcerer spell list|spells|level=0|class=Sorcerer}."
 					]
 				}
 			]
@@ -2457,7 +2457,7 @@
 			"level": 5,
 			"isClassFeatureVariant": true,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"{@i 5th-level sorcerer {@variantrule optional class features|tce|optional feature}}",
@@ -2653,7 +2653,7 @@
 			"level": 2,
 			"isClassFeatureVariant": true,
 			"consumes": {
-				"name": "Sorcery Points",
+				"name": "Sorcery Point",
 				"amount": 2
 			},
 			"entries": [
@@ -2681,7 +2681,7 @@
 			"level": 2,
 			"isClassFeatureVariant": true,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"В качестве действия вы можете потратить любое количество очков колдовства на бросок {@dice d4} за каждое потраченное очко. Вы получаете количество временных хит-пойнтов, равное сумме бросков."
@@ -2822,7 +2822,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"{@i 6th-Level Lunar Sorcery Feature}",
@@ -3035,7 +3035,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"Начиная с 6-го уровня, когда вы произносите заклинание, наносящее урон того типа, который связан с вашим драконьим происхождением, вы можете добавить свой модификатор харизмы к одному броску урона этого заклинания. В то же время вы можете потратить 1 очко колдовства, чтобы получить сопротивление к этому типу урона на 1 час."
@@ -3069,7 +3069,7 @@
 			"level": 18,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points",
+				"name": "Sorcery Point",
 				"amount": 5
 			},
 			"entries": [
@@ -3355,7 +3355,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points",
+				"name": "Sorcery Point",
 				"amount": 2
 			},
 			"entries": [
@@ -3797,7 +3797,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"{@i 6th-level Clockwork Soul feature}",
@@ -4168,7 +4168,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"{@i 6th-level Clockwork Soul feature}",
@@ -4379,7 +4379,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"{@i 6th-Level Lunar Magic Feature}",
@@ -4755,7 +4755,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points",
+				"name": "Sorcery Point",
 				"amount": 3
 			},
 			"entries": [
@@ -4796,7 +4796,7 @@
 			"level": 18,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points",
+				"name": "Sorcery Point",
 				"amount": 3
 			},
 			"entries": [
@@ -4959,7 +4959,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"Начиная с 6-го уровня, небесная энергия, проходящая через вас, может усилить вашу магию исцеления. Каждый раз, когда вы бросаете кубики, чтобы определить количество хит-пойнтов, восстанавливаемых вашим колдовским заклинанием, вы можете потратить 1 очко колдовства, чтобы перебросить любое количество этих кубиков один раз."
@@ -5972,7 +5972,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points"
+				"name": "Sorcery Point"
 			},
 			"entries": [
 				"Начиная с 6-го уровня, божественная энергия, проходящая через вас, может усиливать исцеляющие заклинания. Каждый раз, когда вы или союзник в радиусе 5 футов от вас бросает кубики, чтобы определить количество хит-поинтов, восстанавливаемых заклинанием, вы можете потратить 1 очко колдовства, чтобы перебросить любое количество этих кубиков один раз, при условии, что вы не {@condition incapacitated}. Вы можете использовать эту способность только один раз за ход."
@@ -6109,7 +6109,7 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points",
+				"name": "Sorcery Point",
 				"amount": 3
 			},
 			"entries": [
@@ -6151,7 +6151,7 @@
 			"level": 18,
 			"header": 2,
 			"consumes": {
-				"name": "Sorcery Points",
+				"name": "Sorcery Point",
 				"amount": 6
 			},
 			"entries": [

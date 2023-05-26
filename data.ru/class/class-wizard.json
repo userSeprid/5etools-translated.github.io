@@ -1010,6 +1010,18 @@
 					}
 				}
 			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Onomancy Resonant",
+					"featureType": [
+						"OR"
+					],
+					"progression": {
+						"6": 2,
+						"10": 2
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Onomancy|Wizard||Onomancy (UA)|UAClericDruidWizard|2",
 				"Resonant Utterance|Wizard||Onomancy (UA)|UAClericDruidWizard|6",
@@ -3360,6 +3372,51 @@
 			]
 		},
 		{
+			"name": "Resonant Options",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Вот ваши возможности при выборе резонатора:",
+				{
+					"type": "options",
+					"style": "list-hang-notitle",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Absorption|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Devastation|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dissolution|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Nullification|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Puppetry|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Sympathy|UAClericDruidWizard"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Resonant Utterance",
 			"source": "UAClericDruidWizard",
 			"page": 4,
@@ -3373,57 +3430,45 @@
 				"{@i 6th-level Onomancy feature}",
 				"Вы изучаете слова силы, называемые резонансами, которые позволяют вам адаптировать ваши заклинания, используя истинное имя цели.",
 				{
-					"type": "entries",
-					"name": "Resonants Known",
-					"entries": [
-						"Когда вы получаете эту способность, вы изучаете два резонанса по вашему выбору, которые подробно описаны в разделе \"Варианты резонансов\". Каждый раз, когда вы получаете уровень в этом классе, вы можете заменить один известный вам резонанс на другой."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonants Known|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Using a Resonant",
-					"entries": [
-						"Вы можете использовать один Резонанс, когда произносите заклинание волшебника со слотом заклинания и произносите истинное имя одного существа, на которое направлено заклинание. Произнесение имени является частью произнесения заклинания. Вы можете использовать резонансы количество раз, равное половине вашего уровня волшебника (округлите вниз), и вы восстанавливаете все израсходованные резонансы, когда завершаете длительный отдых."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Using a Resonant|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Resonant Options",
-					"entries": [
-						"Вот ваши возможности при выборе резонатора:",
-						{
-							"type": "options",
-							"style": "list-hang-notitle",
-							"count": 2,
-							"entries": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Absorption|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Devastation|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Dissolution|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Nullification|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Puppetry|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Sympathy|UAClericDruidWizard"
-								}
-							]
-						}
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonant Options|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				}
+			]
+		},
+		{
+			"name": "Resonants Known",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Когда вы получаете эту способность, вы изучаете два резонанса по вашему выбору, которые подробно описаны в разделе \"Варианты резонансов\". Каждый раз, когда вы получаете уровень в этом классе, вы можете заменить один известный вам резонанс на другой."
+			]
+		},
+		{
+			"name": "Using a Resonant",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Вы можете использовать один Резонанс, когда произносите заклинание волшебника со слотом заклинания и произносите истинное имя одного существа, на которое направлено заклинание. Произнесение имени является частью произнесения заклинания. Вы можете использовать резонансы количество раз, равное половине вашего уровня волшебника (округлите вниз), и вы восстанавливаете все израсходованные резонансы, когда завершаете длительный отдых."
 			]
 		},
 		{
