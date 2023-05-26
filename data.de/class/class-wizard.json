@@ -1010,6 +1010,18 @@
 					}
 				}
 			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Onomancy Resonant",
+					"featureType": [
+						"OR"
+					],
+					"progression": {
+						"6": 2,
+						"10": 2
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Onomancy|Wizard||Onomancy (UA)|UAClericDruidWizard|2",
 				"Resonant Utterance|Wizard||Onomancy (UA)|UAClericDruidWizard|6",
@@ -3360,6 +3372,51 @@
 			]
 		},
 		{
+			"name": "Resonant Options",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Hier sind Ihre Optionen bei der Auswahl eines Resonanzkörpers:",
+				{
+					"type": "options",
+					"style": "list-hang-notitle",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Absorption|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Devastation|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dissolution|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Nullification|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Puppetry|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Sympathy|UAClericDruidWizard"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Resonant Utterance",
 			"source": "UAClericDruidWizard",
 			"page": 4,
@@ -3373,57 +3430,45 @@
 				"{@i 6th-level Onomancy feature}",
 				"Du erlernst Worte der Macht, die Resonanten genannt werden und die es dir ermöglichen, deine Zauber durch die Verwendung des wahren Namens eines Ziels anzupassen.",
 				{
-					"type": "entries",
-					"name": "Resonants Known",
-					"entries": [
-						"Wenn du diese Fähigkeit erlangst, erlernst du zwei Resonanzen deiner Wahl, die im Abschnitt \"Resonanzoptionen\" näher beschrieben werden. Jedes Mal, wenn du eine Stufe in dieser Klasse aufsteigst, kannst du eine Resonanz, die du kennst, durch eine andere ersetzen."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonants Known|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Using a Resonant",
-					"entries": [
-						"Du kannst einen Resonanten benutzen, wenn du einen Zauberspruch mit einem Zauberspruchplatz wirkst und den wahren Namen einer Kreatur sprichst, auf die der Zauber wirkt. Das Sprechen des Namens gehört zum Wirken des Zaubers. Du kannst Resonanten so oft benutzen, wie es deiner halben Zauberstufe entspricht (abrunden), und du erhältst alle verbrauchten Resonanten zurück, wenn du eine lange Pause beendest."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Using a Resonant|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Resonant Options",
-					"entries": [
-						"Hier sind Ihre Optionen bei der Auswahl eines Resonanzkörpers:",
-						{
-							"type": "options",
-							"style": "list-hang-notitle",
-							"count": 2,
-							"entries": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Absorption|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Devastation|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Dissolution|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Nullification|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Puppetry|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Sympathy|UAClericDruidWizard"
-								}
-							]
-						}
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonant Options|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				}
+			]
+		},
+		{
+			"name": "Resonants Known",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Wenn du diese Fähigkeit erlangst, erlernst du zwei Resonanzen deiner Wahl, die im Abschnitt \"Resonanzoptionen\" näher beschrieben werden. Jedes Mal, wenn du eine Stufe in dieser Klasse aufsteigst, kannst du eine Resonanz, die du kennst, durch eine andere ersetzen."
+			]
+		},
+		{
+			"name": "Using a Resonant",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Du kannst einen Resonanten benutzen, wenn du einen Zauberspruch mit einem Zauberspruchplatz wirkst und den wahren Namen einer Kreatur sprichst, auf die der Zauber wirkt. Das Sprechen des Namens gehört zum Wirken des Zaubers. Du kannst Resonanten so oft benutzen, wie es deiner halben Zauberstufe entspricht (abrunden), und du erhältst alle verbrauchten Resonanten zurück, wenn du eine lange Pause beendest."
 			]
 		},
 		{
