@@ -1010,6 +1010,18 @@
 					}
 				}
 			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Onomancy Resonant",
+					"featureType": [
+						"OR"
+					],
+					"progression": {
+						"6": 2,
+						"10": 2
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Onomancy|Wizard||Onomancy (UA)|UAClericDruidWizard|2",
 				"Resonant Utterance|Wizard||Onomancy (UA)|UAClericDruidWizard|6",
@@ -3360,6 +3372,51 @@
 			]
 		},
 		{
+			"name": "Resonant Options",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"以下是您在选择共振器时的选择。",
+				{
+					"type": "options",
+					"style": "list-hang-notitle",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Absorption|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Devastation|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dissolution|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Nullification|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Puppetry|UAClericDruidWizard"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Sympathy|UAClericDruidWizard"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Resonant Utterance",
 			"source": "UAClericDruidWizard",
 			"page": 4,
@@ -3373,57 +3430,45 @@
 				"{@i 6th-level Onomancy feature}",
 				"你学习被称为 \"共鸣 \"的力量之语，它允许你通过使用目标的真实名字来定制你的法术。",
 				{
-					"type": "entries",
-					"name": "Resonants Known",
-					"entries": [
-						"当你获得这个特性时，你会学习两个你选择的共鸣物，这些共鸣物在 \"共鸣物选项 \"部分有详细说明。每当你在这个等级中获得一个等级，你可以用一个不同的共鸣物代替你知道的一个共鸣物。"
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonants Known|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Using a Resonant",
-					"entries": [
-						"当你用一个法术槽施展巫师法术时，你可以使用一个共鸣，并说出法术所针对的一个生物的真实名字。说出这个名字是施法的一部分。你可以使用的共鸣次数等于你的巫师等级的一半（四舍五入），并且当你完成一个长时间的休息时，你会恢复所有已消耗的使用。"
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Using a Resonant|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				},
 				{
-					"type": "entries",
-					"name": "Resonant Options",
-					"entries": [
-						"以下是您在选择共振器时的选择。",
-						{
-							"type": "options",
-							"style": "list-hang-notitle",
-							"count": 2,
-							"entries": [
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Absorption|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Devastation|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Dissolution|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Nullification|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Puppetry|UAClericDruidWizard"
-								},
-								{
-									"type": "refOptionalfeature",
-									"optionalfeature": "Sympathy|UAClericDruidWizard"
-								}
-							]
-						}
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resonant Options|Wizard||Onomancy (UA)|UAClericDruidWizard|6"
 				}
+			]
+		},
+		{
+			"name": "Resonants Known",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你获得这个特性时，你会学习两个你选择的共鸣物，这些共鸣物在 \"共鸣物选项 \"部分有详细说明。每当你在这个等级中获得一个等级，你可以用一个不同的共鸣物代替你知道的一个共鸣物。"
+			]
+		},
+		{
+			"name": "Using a Resonant",
+			"source": "UAClericDruidWizard",
+			"page": 4,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你用一个法术槽施展巫师法术时，你可以使用一个共鸣，并说出法术所针对的一个生物的真实名字。说出这个名字是施法的一部分。你可以使用的共鸣次数等于你的巫师等级的一半（四舍五入），并且当你完成一个长时间的休息时，你会恢复所有已消耗的使用。"
 			]
 		},
 		{
