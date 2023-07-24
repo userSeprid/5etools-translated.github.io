@@ -4192,6 +4192,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"L'abishai lance {@spell darkness} à un point situé à moins de 120 pieds de lui, sans nécessiter de composantes de sort ou de {@status concentration}. La Sagesse est sa capacité de lanceur de sorts pour ce sort. Tant que le sort persiste, l'abishai peut déplacer la zone de ténèbres jusqu'à 60 pieds comme action bonus."
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4223,12 +4241,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 6} pour toucher, portée de 1,5 m, une cible. {@h}6 ({@damage 1d6 + 3}) dégâts de force."
-					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"L'abishai lance {@spell darkness} à un point situé à moins de 120 pieds de lui, sans nécessiter de composantes de sort ou de {@status concentration}. La Sagesse est sa capacité de lanceur de sorts pour ce sort. Tant que le sort persiste, l'abishai peut déplacer la zone de ténèbres jusqu'à 60 pieds comme action bonus."
 					]
 				}
 			],
@@ -7602,6 +7614,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"L'ancien ténébreux lance {@spell darkness}, ne nécessitant aucune composante de sort et utilisant la Sagesse comme capacité de lanceur de sorts."
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7621,12 +7651,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 5} pour toucher, portée de 1,5 m, une cible. {@h}6 ({@damage 1d6 + 3}) dégâts tranchants plus 7 ({@damage 2d6}) dégâts nécrotiques."
-					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"L'ancien ténébreux lance {@spell darkness}, ne nécessitant aucune composante de sort et utilisant la Sagesse comme capacité de lanceur de sorts."
 					]
 				}
 			],
@@ -8370,6 +8394,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"Le rothé lance {@spell dancing lights}, ne nécessitant aucune composante de sort et utilisant la Sagesse comme capacité de lanceur de sorts."
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8383,12 +8423,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6} pour toucher, portée de 1,5 m, une cible. {@h}7 ({@damage 1d6 + 4}) dégâts perforants. Si le rothé s'est déplacé d'au moins 6 mètres en ligne droite vers la cible immédiatement avant le coup, celle-ci subit 7 ({@damage 2d6}) de dégâts perforants supplémentaires."
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"Le rothé lance {@spell dancing lights}, ne nécessitant aucune composante de sort et utilisant la Sagesse comme capacité de lanceur de sorts."
 					]
 				}
 			],
@@ -22853,6 +22887,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"Le marut lance {@spell plane shift}, ne nécessitant aucun composant matériel et utilisant l'Intelligence comme capacité de lanceur de sorts. Le marut peut lancer le sort normalement, ou le lancer sur une créature non consentante qu'il voit dans un rayon de 60 pieds. S'il utilise cette dernière option, la créature ciblée doit réussir un jet de sauvegarde de Charisme {@dc 20} ou être bannie vers un cercle de téléportation dans le Hall de la Concordance à Sigil."
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22896,12 +22948,6 @@
 					"name": "Blazing Edict {@recharge 5}",
 					"entries": [
 						"L'énergie arcanique émane de la poitrine du marut dans un cube de 60 pieds. Chaque créature dans cette zone subit 45 dégâts radiants. Chaque créature qui subit l'un de ces dégâts doit réussir un jet de sauvegarde de Sagesse {@dc 20} ou être {@condition stunned} jusqu'à la fin du prochain tour du marut."
-					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"Le marut lance {@spell plane shift}, ne nécessitant aucun composant matériel et utilisant l'Intelligence comme capacité de lanceur de sorts. Le marut peut lancer le sort normalement, ou le lancer sur une créature non consentante qu'il voit dans un rayon de 60 pieds. S'il utilise cette dernière option, la créature ciblée doit réussir un jet de sauvegarde de Charisme {@dc 20} ou être bannie vers un cercle de téléportation dans le Hall de la Concordance à Sigil."
 					]
 				}
 			],
