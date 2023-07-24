@@ -4192,6 +4192,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"Der Abishai wirkt {@spell darkness} auf einen Punkt in einem Umkreis von 120 Fuß und benötigt keine Zauberkomponenten oder {@status concentration}. Weisheit ist seine Zauberfähigkeit für diesen Zauber. Solange der Zauber andauert, kann der Abishai den Bereich der Dunkelheit als Bonusaktion bis zu 60 Fuß weit bewegen."
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4223,12 +4241,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 6} Treffer, Reichweite 5 ft., ein Ziel. {@h}6 ({@damage 1d6 + 3}) Kraftschaden."
-					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"Der Abishai wirkt {@spell darkness} auf einen Punkt in einem Umkreis von 120 Fuß und benötigt keine Zauberkomponenten oder {@status concentration}. Weisheit ist seine Zauberfähigkeit für diesen Zauber. Solange der Zauber andauert, kann der Abishai den Bereich der Dunkelheit als Bonusaktion bis zu 60 Fuß weit bewegen."
 					]
 				}
 			],
@@ -7602,6 +7614,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"Der Älteste der Finsternis wirkt {@spell darkness}, benötigt keine Zauberkomponenten und verwendet Weisheit als Zauberfähigkeit."
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7621,12 +7651,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 5} bis zum Treffer, Reichweite 5 Fuß, ein Ziel. {@h}6 ({@damage 1d6 + 3}) Hiebschaden plus 7 ({@damage 2d6}) nekrotischer Schaden."
-					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Der Älteste der Finsternis wirkt {@spell darkness}, benötigt keine Zauberkomponenten und verwendet Weisheit als Zauberfähigkeit."
 					]
 				}
 			],
@@ -8370,6 +8394,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"Der Rothé wirkt {@spell dancing lights}, benötigt keine Zauberkomponenten und verwendet Weisheit als Zauberfähigkeit."
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8383,12 +8423,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6} bis zum Treffer, Reichweite 5 ft., ein Ziel. {@h}7 ({@damage 1d6 + 4}) Stich-Schaden. Wenn sich die Rothé unmittelbar vor dem Treffer mindestens 20 Fuß gerade auf das Ziel zubewegt hat, erleidet das Ziel zusätzlich 7 ({@damage 2d6}) Stich-Schaden."
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"Der Rothé wirkt {@spell dancing lights}, benötigt keine Zauberkomponenten und verwendet Weisheit als Zauberfähigkeit."
 					]
 				}
 			],
@@ -22853,6 +22887,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"Der Marut wirkt {@spell plane shift}, benötigt keine materiellen Komponenten und verwendet Intelligenz als Zauberfähigkeit. Der Marut kann den Zauber normal wirken oder auf eine unwillige Kreatur im Umkreis von 60 Fuß, die er sehen kann. In letzterem Fall muss die anvisierte Kreatur einen {@dc 20} Charisma-Rettungswurf bestehen oder in einen Teleportationskreis in der Halle der Konkordanz in Sigil verbannt werden."
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22896,12 +22948,6 @@
 					"name": "Blazing Edict {@recharge 5}",
 					"entries": [
 						"Arkane Energie strömt von der Brust des Maruts in einem 60 Fuß großen Würfel aus. Jede Kreatur in diesem Bereich erleidet 45 Strahlungsschaden. Jede Kreatur, die diesen Schaden erleidet, muss einen {@dc 20} Rettungswurf in Weisheit bestehen oder bis zum Ende des nächsten Zuges des Maruts {@condition stunned} sein."
-					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"Der Marut wirkt {@spell plane shift}, benötigt keine materiellen Komponenten und verwendet Intelligenz als Zauberfähigkeit. Der Marut kann den Zauber normal wirken oder auf eine unwillige Kreatur im Umkreis von 60 Fuß, die er sehen kann. In letzterem Fall muss die anvisierte Kreatur einen {@dc 20} Charisma-Rettungswurf bestehen oder in einen Teleportationskreis in der Halle der Konkordanz in Sigil verbannt werden."
 					]
 				}
 			],
