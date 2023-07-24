@@ -4192,6 +4192,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"abishai对其120英尺范围内的一个点施展（%0%），不需要法术组件或（%1%）。智慧是它对这个法术的施法能力。当咒语持续时，abishai可以将黑暗区域移动到60英尺，作为一个奖励动作。"
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4223,12 +4241,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})武力伤害。"
-					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"abishai对其120英尺范围内的一个点施展（%0%），不需要法术组件或（%1%）。智慧是它对这个法术的施法能力。当咒语持续时，abishai可以将黑暗区域移动到60英尺，作为一个奖励动作。"
 					]
 				}
 			],
@@ -7602,6 +7614,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"黑暗长老施展（%0%），不需要法术组件，以智慧作为施法能力。"
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7621,12 +7651,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})砍击伤害加上7 ({@damage 2d6})坏死伤害。"
-					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"黑暗长老施展（%0%），不需要法术组件，以智慧作为施法能力。"
 					]
 				}
 			],
@@ -8370,6 +8394,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"rothé施展（%0%），不需要法术组件，以智慧作为施法能力。"
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8383,12 +8423,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d6 + 4})穿刺伤害。如果在命中前，罗瑟至少向目标直线移动了20英尺，目标会受到额外的7({@damage 2d6})穿刺伤害。"
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"rothé施展（%0%），不需要法术组件，以智慧作为施法能力。"
 					]
 				}
 			],
@@ -22853,6 +22887,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"玛鲁特施放（%0%），不需要任何物质成分，使用智力作为施法能力。马鲁特可以正常施法，也可以对它周围60英尺范围内看到的不愿意施法的生物施法。如果它使用后一种方法，目标生物必须在一个{@dc 20}的魅力救赎中成功，否则就会被驱逐到Sigil的协和大厅的一个传送圈中。"
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22896,12 +22948,6 @@
 					"name": "Blazing Edict {@recharge 5}",
 					"entries": [
 						"奥术能量从马鲁特的胸口喷出，形成一个60英尺的立方体。该区域内的每个生物都会受到45个辐射伤害。每一个受到这种伤害的生物必须在一个{@dc 20}的智慧救赎中成功，否则就会被{@condition stunned}，直到Marut的下一个回合结束。"
-					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"玛鲁特施放（%0%），不需要任何物质成分，使用智力作为施法能力。马鲁特可以正常施法，也可以对它周围60英尺范围内看到的不愿意施法的生物施法。如果它使用后一种方法，目标生物必须在一个{@dc 20}的魅力救赎中成功，否则就会被驱逐到Sigil的协和大厅的一个传送圈中。"
 					]
 				}
 			],
