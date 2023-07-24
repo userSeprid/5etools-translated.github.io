@@ -4192,6 +4192,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"L'abishai lancia {@spell darkness} in un punto entro 120 piedi da lui, senza richiedere componenti dell'incantesimo o {@status concentration}. La Saggezza è la sua capacità di incantesimo per questo incantesimo. Mentre l'incantesimo persiste, l'abishai può spostare l'area di oscurità fino a 60 piedi come azione bonus."
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4223,12 +4241,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 6} per colpire, portata 5 piedi, un bersaglio. {@h}6 ({@damage 1d6 + 3}) danno da forza."
-					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"L'abishai lancia {@spell darkness} in un punto entro 120 piedi da lui, senza richiedere componenti dell'incantesimo o {@status concentration}. La Saggezza è la sua capacità di incantesimo per questo incantesimo. Mentre l'incantesimo persiste, l'abishai può spostare l'area di oscurità fino a 60 piedi come azione bonus."
 					]
 				}
 			],
@@ -7602,6 +7614,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"L'anziano darkling lancia {@spell darkness}, non richiede componenti di incantesimi e usa la Saggezza come capacità di incantatore."
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7621,12 +7651,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 5} per colpire, portata 5 piedi, un bersaglio. {@h}6 ({@damage 1d6 + 3}) danni da taglio più 7 ({@damage 2d6}) danni necrotici."
-					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"L'anziano darkling lancia {@spell darkness}, non richiede componenti di incantesimi e usa la Saggezza come capacità di incantatore."
 					]
 				}
 			],
@@ -8370,6 +8394,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"Il rothé lancia {@spell dancing lights}, non richiede componenti dell'incantesimo e usa la Saggezza come abilità di incantatore."
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8383,12 +8423,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6} per colpire, portata 5 piedi, un bersaglio. {@h}7 ({@damage 1d6 + 4}) danni perforanti. Se il rothé si è mosso di almeno 20 piedi direttamente verso il bersaglio immediatamente prima del colpo, il bersaglio prende 7 ({@damage 2d6}) danni perforanti extra."
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"Il rothé lancia {@spell dancing lights}, non richiede componenti dell'incantesimo e usa la Saggezza come abilità di incantatore."
 					]
 				}
 			],
@@ -22853,6 +22887,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"Il marut lancia {@spell plane shift}, non richiede componenti materiali e utilizza l'Intelligenza come capacità di incantatore. Il marut può lanciare l'incantesimo normalmente, oppure può lanciare l'incantesimo su una creatura non consenziente che vede entro 60 piedi da lui. Se utilizza quest'ultima opzione, la creatura bersaglio deve riuscire in un tiro salvezza di Carisma {@dc 20} o essere esiliata in un cerchio di teletrasporto nella Sala della Concordia di Sigil."
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22896,12 +22948,6 @@
 					"name": "Blazing Edict {@recharge 5}",
 					"entries": [
 						"L'energia arcana emana dal petto del marut in un cubo di 60 piedi. Ogni creatura in quell'area subisce 45 danni radianti. Ogni creatura che subisce uno di questi danni deve riuscire in un tiro salvezza di Saggezza {@dc 20} o subire {@condition stunned} fino alla fine del prossimo turno del marut."
-					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"Il marut lancia {@spell plane shift}, non richiede componenti materiali e utilizza l'Intelligenza come capacità di incantatore. Il marut può lanciare l'incantesimo normalmente, oppure può lanciare l'incantesimo su una creatura non consenziente che vede entro 60 piedi da lui. Se utilizza quest'ultima opzione, la creatura bersaglio deve riuscire in un tiro salvezza di Carisma {@dc 20} o essere esiliata in un cerchio di teletrasporto nella Sala della Concordia di Sigil."
 					]
 				}
 			],
