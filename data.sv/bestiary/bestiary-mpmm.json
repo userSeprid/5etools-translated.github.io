@@ -4192,6 +4192,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"Abishai kastar {@spell darkness} på en punkt inom 120 fot från den, utan att det krävs några trollformelkomponenter eller {@status concentration}. Visdom är dess trollformelförmåga för den här besvärjelsen. Medan förtrollningen pågår kan abishai flytta området av mörker upp till 60 fot som en bonushandling."
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4223,12 +4241,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 6} för att träffa, räckvidd 1,5 m, ett mål. {@h}6 ({@damage 1d6 + 3}) kraftskada."
-					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"Abishai kastar {@spell darkness} på en punkt inom 120 fot från den, utan att det krävs några trollformelkomponenter eller {@status concentration}. Visdom är dess trollformelförmåga för den här besvärjelsen. Medan förtrollningen pågår kan abishai flytta området av mörker upp till 60 fot som en bonushandling."
 					]
 				}
 			],
@@ -7602,6 +7614,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"Den mörka äldsten kastar {@spell darkness}, vilket inte kräver några spellkomponenter och använder Visdom som trollformelförmåga."
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7621,12 +7651,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 5} för att träffa, räckvidd 1,5 m, ett mål. {@h}6 ({@damage 1d6 + 3}) snittskada plus 7 ({@damage 2d6}) nekrotisk skada."
-					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Den mörka äldsten kastar {@spell darkness}, vilket inte kräver några spellkomponenter och använder Visdom som trollformelförmåga."
 					]
 				}
 			],
@@ -8370,6 +8394,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"Rothé kastar {@spell dancing lights}, vilket inte kräver några komponenter för besvärjelser och använder Visdom som besvärjelseförmåga."
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8383,12 +8423,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6} för att träffa, räckvidd 1,5 m, ett mål. {@h}7 ({@damage 1d6 + 4}) genomträngande skada. Om rothé rörde sig minst 20 fot rakt mot målet omedelbart före träffen tar målet ytterligare 7 ({@damage 2d6}) genomträngande skada."
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"Rothé kastar {@spell dancing lights}, vilket inte kräver några komponenter för besvärjelser och använder Visdom som besvärjelseförmåga."
 					]
 				}
 			],
@@ -22853,6 +22887,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"Marut kastar {@spell plane shift}, som inte kräver några materiella komponenter och som använder intelligens som trollkonstförmåga. Maruten kan kasta besvärjelsen normalt, eller så kan den kasta besvärjelsen på en ovillig varelse som den kan se inom 60 fot från den. Om den använder det sistnämnda alternativet måste den måltavlade varelsen lyckas med ett {@dc 20} Charisma räddningskast eller förvisas till en teleportationscirkel i Hall of Concordance i Sigil."
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22896,12 +22948,6 @@
 					"name": "Blazing Edict {@recharge 5}",
 					"entries": [
 						"Arkan energi utgår från marutens bröst i en sex meter stor kub. Varje varelse i det området tar 45 strålningsskador. Varje varelse som tar någon av denna skada måste lyckas med ett {@dc 20} Visdomsparandekast eller bli {@condition stunned} tills slutet av marutens nästa tur."
-					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"Marut kastar {@spell plane shift}, som inte kräver några materiella komponenter och som använder intelligens som trollkonstförmåga. Maruten kan kasta besvärjelsen normalt, eller så kan den kasta besvärjelsen på en ovillig varelse som den kan se inom 60 fot från den. Om den använder det sistnämnda alternativet måste den måltavlade varelsen lyckas med ett {@dc 20} Charisma räddningskast eller förvisas till en teleportationscirkel i Hall of Concordance i Sigil."
 					]
 				}
 			],
