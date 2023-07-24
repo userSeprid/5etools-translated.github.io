@@ -4192,6 +4192,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"Abishai rzuca {@spell darkness} na punkt w promieniu 120 stóp od niego, nie wymaga składników zaklęcia ani {@status concentration}. Mądrość jest jego zdolnością zaklinania dla tego zaklęcia. Podczas trwania zaklęcia, abishai może przemieścić obszar ciemności do 60 stóp jako akcja bonusowa."
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4223,12 +4241,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}6 ({@damage 1d6 + 3}) obrażeń od siły."
-					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"Abishai rzuca {@spell darkness} na punkt w promieniu 120 stóp od niego, nie wymaga składników zaklęcia ani {@status concentration}. Mądrość jest jego zdolnością zaklinania dla tego zaklęcia. Podczas trwania zaklęcia, abishai może przemieścić obszar ciemności do 60 stóp jako akcja bonusowa."
 					]
 				}
 			],
@@ -7602,6 +7614,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"Mroczny Starszy rzuca {@spell darkness}, nie wymagając żadnych składników zaklęcia i używając Mądrości jako umiejętności rzucania zaklęć."
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7621,12 +7651,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 5} do trafienia, zasięg 5 stóp, jeden cel. {@h}6 ({@damage 1d6 + 3}) obrażeń od cięcia plus 7 ({@damage 2d6}) obrażeń nekrotycznych."
-					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"Mroczny Starszy rzuca {@spell darkness}, nie wymagając żadnych składników zaklęcia i używając Mądrości jako umiejętności rzucania zaklęć."
 					]
 				}
 			],
@@ -8370,6 +8394,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"Rothé rzuca {@spell dancing lights}, nie wymagające komponentów zaklęcia i wykorzystujące Mądrość jako umiejętność rzucania zaklęć."
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8383,12 +8423,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6} do trafienia, zasięg 5 stóp, jeden cel. {@h}7 ({@damage 1d6 + 4}) obrażeń kłutych. Jeśli rothé poruszył się o co najmniej 20 stóp prosto w kierunku celu bezpośrednio przed trafieniem, cel otrzymuje dodatkowe 7 ({@damage 2d6}) obrażeń od przebicia."
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"Rothé rzuca {@spell dancing lights}, nie wymagające komponentów zaklęcia i wykorzystujące Mądrość jako umiejętność rzucania zaklęć."
 					]
 				}
 			],
@@ -22853,6 +22887,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"Marut rzuca zaklęcie {@spell plane shift}, nie wymagające żadnych materialnych składników i wykorzystujące Inteligencję jako umiejętność rzucania zaklęć. Marut może rzucić zaklęcie normalnie lub na niechętną mu istotę, którą widzi w promieniu 60 stóp od siebie. Jeśli skorzysta z tej drugiej opcji, musi udać mu się rzut na {@dc 20} Charyzmy, albo zostanie wygnany do kręgu teleportacyjnego w Sali Zgody w Sigil."
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22896,12 +22948,6 @@
 					"name": "Blazing Edict {@recharge 5}",
 					"entries": [
 						"Energia magiczna emanuje z klatki piersiowej maruta w sześcianie o boku 60 stóp. Każda istota w tym obszarze otrzymuje 45 obrażeń radiacyjnych. Każde stworzenie, które otrzyma te obrażenia, musi wykonać {@dc 20} rzutu obronnego na Mądrość lub stracić {@condition stunned} do końca następnej tury maruta."
-					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"Marut rzuca zaklęcie {@spell plane shift}, nie wymagające żadnych materialnych składników i wykorzystujące Inteligencję jako umiejętność rzucania zaklęć. Marut może rzucić zaklęcie normalnie lub na niechętną mu istotę, którą widzi w promieniu 60 stóp od siebie. Jeśli skorzysta z tej drugiej opcji, musi udać mu się rzut na {@dc 20} Charyzmy, albo zostanie wygnany do kręgu teleportacyjnego w Sali Zgody w Sigil."
 					]
 				}
 			],
