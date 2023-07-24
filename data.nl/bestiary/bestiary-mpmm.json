@@ -4192,6 +4192,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"De abishai spreekt {@spell darkness} uit op een punt binnen 120 voet van hem, waarvoor geen spreukcomponenten of {@status concentration} nodig zijn. Wijsheid is zijn spreukvaardigheid voor deze spreuk. Zolang de spreuk duurt, kan de abishai het duisternisgebied tot 60 voet verplaatsen als bonusactie."
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4223,12 +4241,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 6} om te raken, reikwijdte 5 ft., één doel. {@h}6 ({@damage 1d6 + 3}) krachtschade."
-					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"De abishai spreekt {@spell darkness} uit op een punt binnen 120 voet van hem, waarvoor geen spreukcomponenten of {@status concentration} nodig zijn. Wijsheid is zijn spreukvaardigheid voor deze spreuk. Zolang de spreuk duurt, kan de abishai het duisternisgebied tot 60 voet verplaatsen als bonusactie."
 					]
 				}
 			],
@@ -7602,6 +7614,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"De Darkling Elder cast {@spell darkness}, heeft geen spell components nodig en gebruikt Wisdom als zijn spellcasting ability."
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7621,12 +7651,6 @@
 					"name": "Scimitar",
 					"entries": [
 						"{@atk mw} {@hit 5} om te raken, reikwijdte 5 ft., één doelwit. {@h} 6 ({@damage 1d6 + 3}) snijschade plus 7 ({@damage 2d6}) necrotische schade."
-					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"De Darkling Elder cast {@spell darkness}, heeft geen spell components nodig en gebruikt Wisdom als zijn spellcasting ability."
 					]
 				}
 			],
@@ -8370,6 +8394,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"De rothé cast {@spell dancing lights}, heeft geen spell components nodig en gebruikt Wisdom als zijn spellcasting ability."
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8383,12 +8423,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6} om te raken, reikwijdte 5 ft., één doel. {@h} 7 ({@damage 1d6 + 4}) doordringende schade. Als de rothé ten minste 20 voet recht op het doel af bewoog vlak voor de treffer, loopt het doelwit nog eens 7 ({@damage 2d6}) doordringende schade op."
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"De rothé cast {@spell dancing lights}, heeft geen spell components nodig en gebruikt Wisdom als zijn spellcasting ability."
 					]
 				}
 			],
@@ -22853,6 +22887,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"De maroet spreekt {@spell plane shift} uit, zonder materiële componenten en met intelligentie als tovervaardigheid. De marut kan de spreuk normaal uitspreken, of hij kan de spreuk uitspreken over een onwillig wezen dat hij kan zien binnen 60 meter van hem. Als hij deze laatste optie gebruikt, moet het doelwit slagen op een Charisma saving throw {@dc 20} of verbannen worden naar een teleportatiecirkel in de Hall of Concordance in Sigil."
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22896,12 +22948,6 @@
 					"name": "Blazing Edict {@recharge 5}",
 					"entries": [
 						"Er straalt magische energie uit de borst van de marut in een kubus van 15 meter. Elk wezen in dat gebied ontvangt 45 stralingsschade. Elk wezen dat deze schade oploopt moet slagen op een {@dc 20} Wisdom saving throw of {@condition stunned} worden tot het einde van de volgende beurt van de marut."
-					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"De maroet spreekt {@spell plane shift} uit, zonder materiële componenten en met intelligentie als tovervaardigheid. De marut kan de spreuk normaal uitspreken, of hij kan de spreuk uitspreken over een onwillig wezen dat hij kan zien binnen 60 meter van hem. Als hij deze laatste optie gebruikt, moet het doelwit slagen op een Charisma saving throw {@dc 20} of verbannen worden naar een teleportatiecirkel in de Hall of Concordance in Sigil."
 					]
 				}
 			],
