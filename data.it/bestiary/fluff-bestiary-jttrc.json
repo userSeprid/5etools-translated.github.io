@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Afsoun Ghorbani",
@@ -107,25 +112,58 @@
 		{
 			"name": "Aurumvorax",
 			"source": "JttRC",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"All'inizio della loro vita, gli aurumvorax collaborano con i fratelli e con i genitori capobranco, scavando gallerie alla ricerca di metalli e di altre prede sotterranee. Quando crescono fino all'età adulta, gli aurumvorax cacciano da soli, ritagliandosi territori che difendono ferocemente."
-					]
+			"_copy": {
+				"name": "Aurumvoraxes",
+				"source": "JttRC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"Early in life, aurumvoraxes cooperate with siblings and their den leader parents, digging tunnels in search of metal and other burrowing prey. As they grow to adulthood, aurumvoraxes hunt on their own, carving out territories they viciously defend."
+								]
+							}
+						]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Aurumvorax Den Leader",
 			"source": "JttRC",
-			"entries": [
+			"_copy": {
+				"name": "Aurumvoraxes",
+				"source": "JttRC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"Aurumvoraxes that feed on a steady supply of precious metals gradually grow in size. These aurumvoraxes are faster and deadlier than others of their kind."
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
 				{
-					"type": "entries",
-					"entries": [
-						"Gli aurumvorax che si nutrono di una fornitura costante di metalli preziosi crescono gradualmente di dimensioni. Questi aurumvorax sono più veloci e più letali di altri loro simili."
-					]
-				},
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/JttRC/Aurumvorax Den Leader.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Aurumvoraxes",
+			"source": "JttRC",
+			"entries": [
 				{
 					"type": "section",
 					"entries": [
@@ -138,15 +176,6 @@
 							]
 						}
 					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/JttRC/Aurumvorax Den Leader.webp"
-					}
 				}
 			]
 		},
