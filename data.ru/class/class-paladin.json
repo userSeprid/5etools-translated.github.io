@@ -1866,16 +1866,34 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin||Oathbreaker|DMG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Oathbreaker|DMG|3"
 				}
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Channel Divinity",
+			"source": "DMG",
+			"page": 97,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oathbreaker",
+			"subclassSource": "DMG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Control Undead|Paladin||Oathbreaker|DMG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+				}
+			]
+		},
+		{
+			"name": "Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1889,7 +1907,7 @@
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -2016,16 +2034,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Nature's Wrath|Paladin||Ancients||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Faithless|Paladin||Ancients||3"
+					"subclassFeature": "Channel Divinity|Paladin||Ancients||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2038,11 +2052,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы призвать первобытные силы и заманить врага в ловушку. В качестве действия вы можете вызвать призрачные лианы, которые поднимутся и потянутся к существу в радиусе 10 футов от вас, которое вы можете видеть. Существо должно успешно выполнить бросок на силу или ловкость (на выбор) или быть {@condition restrained}. Пока {@condition restrained} существо находится в лианах, оно повторяет бросок на спасение в конце каждого своего хода. В случае успеха оно освобождается, и лианы исчезают."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2051,13 +2073,8 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы произносить древние слова, которые фей и изверги слышат с болью. В качестве действия вы вручаете свой священный символ, и каждый фей или изверг в радиусе 30 футов от вас, который может вас слышать, должен сделать бросок на спасбросок мудрости. При неудачном спасброске существо будет повернуто на 1 минуту или пока не получит урон.",
-				"Повернутое существо должно потратить свой ход на то, чтобы попытаться отойти от вас как можно дальше, и оно не может добровольно переместиться в пространство в пределах 30 футов от вас. Оно также не может принимать реакции. Для своего действия оно может использовать только действие {@action Dash} или попытаться убежать от эффекта, который мешает ему двигаться. Если двигаться некуда, существо может использовать действие {@action Dodge}.",
-				"Если истинная форма существа скрыта иллюзией, перевертышем или другим эффектом, эта форма проявляется во время превращения."
+				"Вы можете использовать свой канал божественности, чтобы призвать первобытные силы и заманить врага в ловушку. В качестве действия вы можете вызвать призрачные лианы, которые поднимутся и потянутся к существу в радиусе 10 футов от вас, которое вы можете видеть. Существо должно успешно выполнить бросок на силу или ловкость (на выбор) или быть {@condition restrained}. Пока {@condition restrained} существо находится в лианах, оно повторяет бросок на спасение в конце каждого своего хода. В случае успеха оно освобождается, и лианы исчезают."
 			]
 		},
 		{
@@ -2171,6 +2188,22 @@
 			]
 		},
 		{
+			"name": "Turn the Faithless",
+			"source": "PHB",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Вы можете использовать свой канал божественности, чтобы произносить древние слова, которые фей и изверги слышат с болью. В качестве действия вы вручаете свой священный символ, и каждый фей или изверг в радиусе 30 футов от вас, который может вас слышать, должен сделать бросок на спасбросок мудрости. При неудачном спасброске существо будет повернуто на 1 минуту или пока не получит урон.",
+				"Повернутое существо должно потратить свой ход на то, чтобы попытаться отойти от вас как можно дальше, и оно не может добровольно переместиться в пространство в пределах 30 футов от вас. Оно также не может принимать реакции. Для своего действия оно может использовать только действие {@action Dash} или попытаться убежать от эффекта, который мешает ему двигаться. Если двигаться некуда, существо может использовать действие {@action Dodge}.",
+				"Если истинная форма существа скрыта иллюзией, перевертышем или другим эффектом, эта форма проявляется во время превращения."
+			]
+		},
+		{
 			"name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
@@ -2246,16 +2279,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Sacred Weapon|Paladin||Devotion||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Unholy|Paladin||Devotion||3"
+					"subclassFeature": "Channel Divinity|Paladin||Devotion||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2269,27 +2298,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"В качестве действия вы можете напитать одно оружие, которое держите в руках, положительной энергией, используя свой канал божественности. В течение 1 минуты вы добавляете свой модификатор Харизмы к броскам атаки, сделанным этим оружием (минимальный бонус +1). Оружие также излучает яркий свет в радиусе 20 футов и тусклый свет на 20 футов дальше. Если оружие еще не магическое, оно становится магическим на это время.",
-				"Вы можете прекратить этот эффект в свой ход как часть любого другого действия. Если вы больше не держите или не носите это оружие, или если вы падаете {@condition unconscious}, этот эффект заканчивается."
-			]
-		},
-		{
-			"name": "Channel Divinity: Turn the Unholy",
-			"source": "PHB",
-			"page": 85,
-			"srd": true,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Devotion",
-			"subclassSource": "PHB",
-			"level": 3,
-			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"В качестве действия вы вручаете свой святой символ и произносите молитву, порицающую дьяволов и нежить, используя свой канал божественности. Каждый изверг или нежить, которые могут видеть или слышать вас в радиусе 30 футов от вас, должны сделать бросок на спасбросок мудрости. Если существо провалит бросок на спасение, оно будет повернуто на 1 минуту или пока не получит урон.",
-				"Повернутое существо должно потратить свой ход на то, чтобы попытаться отойти от вас как можно дальше, и оно не может добровольно переместиться в пространство в пределах 30 футов от вас. Оно также не может принимать реакции. Для своего действия оно может использовать только действие {@action Dash} или попытаться убежать от эффекта, который мешает ему двигаться. Если двигаться некуда, существо может использовать действие {@action Dodge}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
 			]
 		},
 		{
@@ -2339,6 +2356,22 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"В качестве действия вы можете напитать одно оружие, которое держите в руках, положительной энергией, используя свой канал божественности. В течение 1 минуты вы добавляете свой модификатор Харизмы к броскам атаки, сделанным этим оружием (минимальный бонус +1). Оружие также излучает яркий свет в радиусе 20 футов и тусклый свет на 20 футов дальше. Если оружие еще не магическое, оно становится магическим на это время.",
+				"Вы можете прекратить этот эффект в свой ход как часть любого другого действия. Если вы больше не держите или не носите это оружие, или если вы падаете {@condition unconscious}, этот эффект заканчивается."
 			]
 		},
 		{
@@ -2417,6 +2450,22 @@
 			]
 		},
 		{
+			"name": "Turn the Unholy",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"В качестве действия вы вручаете свой святой символ и произносите молитву, порицающую дьяволов и нежить, используя свой канал божественности. Каждый изверг или нежить, которые могут видеть или слышать вас в радиусе 30 футов от вас, должны сделать бросок на спасбросок мудрости. Если существо провалит бросок на спасение, оно будет повернуто на 1 минуту или пока не получит урон.",
+				"Повернутое существо должно потратить свой ход на то, чтобы попытаться отойти от вас как можно дальше, и оно не может добровольно переместиться в пространство в пределах 30 футов от вас. Оно также не может принимать реакции. Для своего действия оно может использовать только действие {@action Dash} или попытаться убежать от эффекта, который мешает ему двигаться. Если двигаться некуда, существо может использовать действие {@action Dodge}."
+			]
+		},
+		{
 			"name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
@@ -2486,16 +2535,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Abjure Enemy|Paladin||Vengeance||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Vow of Enmity|Paladin||Vengeance||3"
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,9 +2549,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"В качестве действия вы вручаете свой святой символ и произносите молитву обличения, используя свой канал божественности. Выберите одно существо в радиусе 60 футов от вас, которое вы можете видеть. Это существо должно сделать бросок на спасение по Мудрости, если оно не имеет иммунитета к этому {@condition frightened}. Фантомы и нежить имеют недостаток при этом броске.",
 				"При неудачном спасброске существо становится {@condition frightened} на 1 минуту или до тех пор, пока не получит урон. Пока {@condition frightened}, скорость существа равна 0, и оно не может получить бонус к скорости.",
@@ -2514,7 +2556,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2527,7 +2569,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"В качестве бонусного действия вы можете произнести клятву вражды против существа, которое видите в радиусе 10 футов от себя, используя свой канал божественности. Вы получаете преимущество при бросках атаки против этого существа в течение 1 минуты или пока оно не упадет до 0 хит-поинтов или не падет {@condition unconscious}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance||3"
+				}
 			]
 		},
 		{
@@ -2641,6 +2691,20 @@
 			]
 		},
 		{
+			"name": "Vow of Enmity",
+			"source": "PHB",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"В качестве бонусного действия вы можете произнести клятву вражды против существа, которое видите в радиусе 10 футов от себя, используя свой канал божественности. Вы получаете преимущество при бросках атаки против этого существа в течение 1 минуты или пока оно не упадет до 0 хит-поинтов или не падет {@condition unconscious}."
+			]
+		},
+		{
 			"name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
@@ -2711,16 +2775,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Champion Challenge|Paladin||Crown|SCAG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Tide|Paladin||Crown|SCAG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Crown|SCAG|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2729,15 +2789,12 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"В качестве бонусного действия вы бросаете вызов, который заставляет других существ вступить с вами в бой. Каждое существо по вашему выбору, которое вы можете видеть в радиусе 30 футов от вас, должно сделать бросок на спасение мудрости. Если бросок провален, существо не может добровольно отойти от вас более чем на 30 футов. Этот эффект заканчивается на существе, если вы {@condition incapacitated} или умрете, или если существо окажется на расстоянии более 30 футов от вас."
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Channel Divinity",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2750,7 +2807,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"В качестве бонусного действия вы можете поддержать раненых существ с помощью своего канала божественности. Каждое существо по вашему выбору, которое слышит вас в радиусе 30 футов от вас, восстанавливает хит-пойнты, равные {@dice 1d6} + ваш модификатор харизмы (минимум 1), если у него не больше половины хит-пойнтов."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Champion Challenge|Paladin||Crown|SCAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Tide|Paladin||Crown|SCAG|3"
+				}
 			]
 		},
 		{
@@ -2864,6 +2929,20 @@
 			]
 		},
 		{
+			"name": "Turn the Tide",
+			"source": "SCAG",
+			"page": 132,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Crown",
+			"subclassSource": "SCAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"В качестве бонусного действия вы можете поддержать раненых существ с помощью своего канала божественности. Каждое существо по вашему выбору, которое слышит вас в радиусе 30 футов от вас, восстанавливает хит-пойнты, равные {@dice 1d6} + ваш модификатор харизмы (минимум 1), если у него не больше половины хит-пойнтов."
+			]
+		},
+		{
 			"name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
@@ -2969,11 +3048,11 @@
 				"Вы получаете следующие две возможности Канала Божественности. Как работает канал божественности, смотрите в классовой особенности \"Священная клятва\".",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Peerless Athlete|Paladin||Glory|TCE|3"
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Inspiring Smite|Paladin||Glory|TCE|3"
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
 				}
 			]
 		},
@@ -3081,7 +3160,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3101,7 +3180,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Peerless Athlete",
+			"name": "Peerless Athlete",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3203,9 +3282,6 @@
 			"subclassShortName": "Watchers",
 			"subclassSource": "TCE",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Клятва Наблюдателей обязывает паладинов защищать смертные царства от хищничества внепланетных существ, многие из которых способны уничтожить смертных воинов. Таким образом, Наблюдатели оттачивают свой разум, дух и тело, чтобы стать совершенным оружием против таких угроз.",
 				"Паладины, следующие клятве Наблюдателей, всегда бдительны в выявлении влияния внепланетных сил, часто создают сеть шпионов и информаторов для сбора информации о подозреваемых культах. Для Наблюдателя сохранять здоровую настороженность и осведомленность о своем окружении так же естественно, как носить доспехи в бою.",
@@ -3404,9 +3480,6 @@
 			"subclassShortName": "Watchers (UA)",
 			"subclassSource": "UA2020SubclassesPt1",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Паладины, давшие клятву Наблюдателей, стремятся защитить смертное царство от хищничества внепланетных существ, многие из которых способны уничтожить смертных воинов. Таким образом, Наблюдатели оттачивают свой разум, дух и тело, чтобы стать совершенным оружием против таких угроз.",
 				"Паладины, следующие клятве Наблюдателей, всегда бдительны в выявлении влияния внепланетных сил, часто создают сеть шпионов и информаторов для сбора информации о подозреваемых культах. Для Наблюдателя сохранять здоровую настороженность и осведомленность о своем окружении так же естественно, как носить доспехи в бою.",
@@ -3604,9 +3677,6 @@
 			"subclassShortName": "Redemption (UA)",
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Клятва искупления ставит паладина на трудный путь, который требует от святого воина использовать насилие только в крайнем случае. Паладины, посвятившие себя этой клятве, верят, что любой человек может быть искуплен и что путь благожелательности и справедливости может пройти каждый. Эти паладины встречаются со злыми существами в надежде обратить их к свету, и убивают их только тогда, когда такой поступок явно спасет другие жизни. Паладины, которые следуют этому пути, известны как искупители.",
 				"Хотя искупители - идеалисты, они не дураки. Искупители знают, что нежить, демоны, дьяволы и другие сверхъестественные угрозы могут быть по своей сути злом. Против таких врагов паладины обрушивают весь гнев своего оружия и заклинаний. И все же искупители молятся о том, чтобы однажды даже злобные существа сами пришли к искуплению.",
@@ -3628,11 +3698,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
 				}
 			]
 		},
@@ -3651,7 +3717,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3664,11 +3730,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы усилить свое присутствие божественной силой. В качестве бонусного действия вы даете себе бонус +5 к следующей проверке харизмы ({@skill Persuasion}), которую вы сделаете в течение следующей минуты."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3677,11 +3751,8 @@
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Вы можете использовать свой канал Божественности для обличения тех, кто применяет насилие. В качестве реакции, когда враг в радиусе 10 футов от вас наносит урон атакой ближнего боя одному существу, кроме вас, вы заставляете атакующего сделать бросок на спасение мудрости. Если спасбросок провален, атакующий получает урон от излучения, равный только что нанесенному урону. При успешном спасброске он получает вдвое меньше урона."
+				"Вы можете использовать свой канал божественности, чтобы усилить свое присутствие божественной силой. В качестве бонусного действия вы даете себе бонус +5 к следующей проверке харизмы ({@skill Persuasion}), которую вы сделаете в течение следующей минуты."
 			]
 		},
 		{
@@ -3730,6 +3801,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "UAATrioOfSubclasses",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption (UA)",
+			"subclassSource": "UAATrioOfSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Вы можете использовать свой канал Божественности для обличения тех, кто применяет насилие. В качестве реакции, когда враг в радиусе 10 футов от вас наносит урон атакой ближнего боя одному существу, кроме вас, вы заставляете атакующего сделать бросок на спасение мудрости. Если спасбросок провален, атакующий получает урон от излучения, равный только что нанесенному урону. При успешном спасброске он получает вдвое меньше урона."
 			]
 		},
 		{
@@ -4089,16 +4174,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Strike",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4111,11 +4192,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы сломить волю противника. Когда вы поражаете существо атакой оружием ближнего боя в рамках действия {@action Attack}, вы также можете использовать свой канал божественности, чтобы заставить цель сделать бросок на спасбросок мудрости. При неудачном спасброске цель становится {@condition frightened} вас на 1 минуту. Существо {@condition frightened} может повторить этот бросок на спасбросок в конце каждого своего хода, прекратив эффект на себя в случае успеха."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Strike",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4124,9 +4213,20 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Вы можете использовать свой канал божественности, чтобы сломить волю противника. Когда вы поражаете существо атакой оружием ближнего боя в рамках действия {@action Attack}, вы также можете использовать свой канал божественности, чтобы заставить цель сделать бросок на спасбросок мудрости. При неудачном спасброске цель становится {@condition frightened} вас на 1 минуту. Существо {@condition frightened} может повторить этот бросок на спасбросок в конце каждого своего хода, прекратив эффект на себя в случае успеха."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UAPaladin",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Вы можете использовать свой канал божественности, чтобы наносить удары со сверхъестественной точностью. Когда вы делаете бросок атаки, вы можете использовать свою Божественность канала, чтобы получить бонус +10 к броску. Вы делаете этот выбор после того, как видите бросок, но до того, как DM скажет, попала ли атака или промахнулась."
 			]
@@ -4302,16 +4402,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Treachery (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conjure Duplicate",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4324,12 +4420,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"В качестве действия вы создаете визуальную иллюзию себя, которая длится 1 минуту или пока вы не потеряете {@status concentration} (как если бы вы были {@status concentration||concentrating} на заклинании). Иллюзия появляется в незанятом пространстве по вашему выбору, которое вы можете видеть в радиусе 30 футов от себя. Иллюзия выглядит точно так же, как вы; она бесшумна; она вашего размера, бесплотна, не занимает пространство; на нее не действуют атаки и повреждения. В качестве бонусного действия в свой ход вы можете переместить иллюзию на расстояние до 30 футов в видимое вам пространство, но иллюзия должна оставаться в пределах 120 футов от вас.",
-				"В течение всего времени вы можете произносить заклинания, как если бы вы находились в пространстве иллюзии, но при этом вы должны использовать свои собственные органы чувств. Кроме того, когда вы и ваша иллюзия находитесь в пределах 5 футов от существа, которое может видеть иллюзию, вы имеете преимущество при бросках атаки против этого существа, учитывая, насколько иллюзия сверхъестественна."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Poison Strike",
+			"name": "Conjure Duplicate",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4338,11 +4441,9 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы сделать оружие более смертоносным. В качестве бонусного действия вы касаетесь одного оружия или боеприпаса и накладываете на него особый яд. Яд действует в течение 1 минуты. В следующий раз, когда вы поразите цель атакой с использованием этого оружия или боеприпасов, цель получит урон от яда сразу после атаки. Урон от яда равен {@dice 2d10} + ваш уровень паладина, или 20 + ваш уровень паладина, если у вас было преимущество при броске атаки."
+				"В качестве действия вы создаете визуальную иллюзию себя, которая длится 1 минуту или пока вы не потеряете {@status concentration} (как если бы вы были {@status concentration||concentrating} на заклинании). Иллюзия появляется в незанятом пространстве по вашему выбору, которое вы можете видеть в радиусе 30 футов от себя. Иллюзия выглядит точно так же, как вы; она бесшумна; она вашего размера, бесплотна, не занимает пространство; на нее не действуют атаки и повреждения. В качестве бонусного действия в свой ход вы можете переместить иллюзию на расстояние до 30 футов в видимое вам пространство, но иллюзия должна оставаться в пределах 120 футов от вас.",
+				"В течение всего времени вы можете произносить заклинания, как если бы вы находились в пространстве иллюзии, но при этом вы должны использовать свои собственные органы чувств. Кроме того, когда вы и ваша иллюзия находитесь в пределах 5 футов от существа, которое может видеть иллюзию, вы имеете преимущество при бросках атаки против этого существа, учитывая, насколько иллюзия сверхъестественна."
 			]
 		},
 		{
@@ -4391,6 +4492,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Poison Strike",
+			"source": "UAPaladin",
+			"page": 2,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Treachery (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Вы можете использовать свой канал божественности, чтобы сделать оружие более смертоносным. В качестве бонусного действия вы касаетесь одного оружия или боеприпаса и накладываете на него особый яд. Яд действует в течение 1 минуты. В следующий раз, когда вы поразите цель атакой с использованием этого оружия или боеприпасов, цель получит урон от яда сразу после атаки. Урон от яда равен {@dice 2d10} + ваш уровень паладина, или 20 + ваш уровень паладина, если у вас было преимущество при броске атаки."
 			]
 		},
 		{
@@ -4505,16 +4620,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4527,11 +4638,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы источать ужасающее присутствие. В качестве действия вы заставляете каждое существо по вашему выбору, которое вы можете видеть в радиусе 30 футов от вас, сделать бросок на спасбросок мудрости. Если спасбросок провален, существо становится {@condition frightened} от вас на 1 минуту. Существо {@condition frightened} может повторить этот бросок спасброска в конце каждого своего хода, прекратив эффект на себя в случае успеха."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4540,9 +4659,20 @@
 			"subclassSource": "UARevisedClassOptions",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Вы можете использовать свой канал божественности, чтобы источать ужасающее присутствие. В качестве действия вы заставляете каждое существо по вашему выбору, которое вы можете видеть в радиусе 30 футов от вас, сделать бросок на спасбросок мудрости. Если спасбросок провален, существо становится {@condition frightened} от вас на 1 минуту. Существо {@condition frightened} может повторить этот бросок спасброска в конце каждого своего хода, прекратив эффект на себя в случае успеха."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UARevisedClassOptions",
+			"page": 3,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Вы можете использовать свой канал божественности, чтобы наносить удары со сверхъестественной точностью. Когда вы делаете бросок атаки, вы можете использовать свою Божественность канала, чтобы получить бонус +10 к броску. Вы делаете этот выбор после того, как видите бросок, но до того, как DM скажет, попала ли атака или промахнулась."
 			]
@@ -4719,16 +4849,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4741,11 +4867,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы источать ужасающее присутствие. В качестве действия вы заставляете каждое существо по вашему выбору, которое вы можете видеть в радиусе 30 футов от вас, сделать бросок на спасбросок мудрости. Если спасбросок провален, существо становится {@condition frightened} от вас на 1 минуту. Существо {@condition frightened} может повторить этот бросок спасброска в конце каждого своего хода, прекратив эффект на себя в случае успеха."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4754,9 +4888,20 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Вы можете использовать свой канал божественности, чтобы источать ужасающее присутствие. В качестве действия вы заставляете каждое существо по вашему выбору, которое вы можете видеть в радиусе 30 футов от вас, сделать бросок на спасбросок мудрости. Если спасбросок провален, существо становится {@condition frightened} от вас на 1 минуту. Существо {@condition frightened} может повторить этот бросок спасброска в конце каждого своего хода, прекратив эффект на себя в случае успеха."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "XGE",
+			"page": 37,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Вы можете использовать свой канал божественности, чтобы наносить удары со сверхъестественной точностью. Когда вы делаете бросок атаки, вы можете использовать свою Божественность канала, чтобы получить бонус +10 к броску. Вы делаете этот выбор после того, как видите бросок, но до того, как DM скажет, попала ли атака или промахнулась."
 			]
@@ -4924,16 +5069,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4946,11 +5087,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Вы можете использовать свой канал божественности, чтобы усилить свое присутствие божественной силой. В качестве бонусного действия вы даете себе бонус +5 к проверкам харизмы ({@skill Persuasion}) на следующие 10 минут."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4959,11 +5108,8 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Вы можете использовать свой канал божественности для обличения тех, кто применяет насилие. Сразу же после того, как атакующий в радиусе 30 футов от вас нанесет урон атакой против существа, отличного от вас, вы можете использовать свою реакцию, чтобы заставить атакующего сделать бросок на спасбросок мудрости. При неудачном спасброске атакующий получает урон от излучения, равный только что нанесенному урону. При успешном спасброске он получает вдвое меньше урона."
+				"Вы можете использовать свой канал божественности, чтобы усилить свое присутствие божественной силой. В качестве бонусного действия вы даете себе бонус +5 к проверкам харизмы ({@skill Persuasion}) на следующие 10 минут."
 			]
 		},
 		{
@@ -5012,6 +5158,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "XGE",
+			"page": 38,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Вы можете использовать свой канал божественности для обличения тех, кто применяет насилие. Сразу же после того, как атакующий в радиусе 30 футов от вас нанесет урон атакой против существа, отличного от вас, вы можете использовать свою реакцию, чтобы заставить атакующего сделать бросок на спасбросок мудрости. При неудачном спасброске атакующий получает урон от излучения, равный только что нанесенному урону. При успешном спасброске он получает вдвое меньше урона."
 			]
 		},
 		{
