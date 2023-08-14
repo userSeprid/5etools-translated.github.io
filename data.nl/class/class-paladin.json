@@ -1866,16 +1866,34 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin||Oathbreaker|DMG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Oathbreaker|DMG|3"
 				}
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Channel Divinity",
+			"source": "DMG",
+			"page": 97,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oathbreaker",
+			"subclassSource": "DMG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Control Undead|Paladin||Oathbreaker|DMG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+				}
+			]
+		},
+		{
+			"name": "Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1889,7 +1907,7 @@
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -2016,16 +2034,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Nature's Wrath|Paladin||Ancients||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Faithless|Paladin||Ancients||3"
+					"subclassFeature": "Channel Divinity|Paladin||Ancients||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2038,11 +2052,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om oerkrachten op te roepen om een vijand te verstrikken. Als actie kun je spectrale ranken laten opspringen die zich uitstrekken naar een wezen dat zich binnen een straal van 10 meter van je bevindt en dat je kunt zien. Het wezen moet slagen op een Strength of Dexterity saving throw (zijn keuze) of {@condition restrained}. Als het schepsel {@condition restrained} door de lianen wordt geraakt, herhaalt het de reddingsworp aan het eind van elke beurt. Als hij slaagt, bevrijdt hij zich en verdwijnen de ranken."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2051,13 +2073,8 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om oude woorden uit te spreken die voor fey en fiends pijnlijk zijn om te horen. Als actie toon je je heilige symbool, en elke fey of fiend binnen 30 meter van je die je kan horen moet een Wisdom saving throw doen. Als je niet slaagt, is het wezen voor 1 minuut of totdat het schade oploopt, omgedraaid.",
-				"Een gedraaid wezen moet zijn beurten spenderen aan het zo ver mogelijk van je vandaan gaan, en het kan niet vrijwillig naar een ruimte binnen 30 voet van je vandaan gaan. Het kan ook geen reacties uitvoeren. Voor zijn actie kan hij alleen de {@action Dash} actie gebruiken of proberen te ontsnappen aan een effect dat hem verhindert te bewegen. Als het nergens heen kan, kan het wezen de {@action Dodge} actie gebruiken.",
-				"Als de ware gedaante van het wezen verborgen is door een illusie, gedaanteverwisseling of een ander effect, wordt die gedaante onthuld terwijl het gedraaid is."
+				"Je kunt je Channel Divinity gebruiken om oerkrachten op te roepen om een vijand te verstrikken. Als actie kun je spectrale ranken laten opspringen die zich uitstrekken naar een wezen dat zich binnen een straal van 10 meter van je bevindt en dat je kunt zien. Het wezen moet slagen op een Strength of Dexterity saving throw (zijn keuze) of {@condition restrained}. Als het schepsel {@condition restrained} door de lianen wordt geraakt, herhaalt het de reddingsworp aan het eind van elke beurt. Als hij slaagt, bevrijdt hij zich en verdwijnen de ranken."
 			]
 		},
 		{
@@ -2171,6 +2188,22 @@
 			]
 		},
 		{
+			"name": "Turn the Faithless",
+			"source": "PHB",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Je kunt je Channel Divinity gebruiken om oude woorden uit te spreken die voor fey en fiends pijnlijk zijn om te horen. Als actie toon je je heilige symbool, en elke fey of fiend binnen 30 meter van je die je kan horen moet een Wisdom saving throw doen. Als je niet slaagt, is het wezen voor 1 minuut of totdat het schade oploopt, omgedraaid.",
+				"Een gedraaid wezen moet zijn beurten spenderen aan het zo ver mogelijk van je vandaan gaan, en het kan niet vrijwillig naar een ruimte binnen 30 voet van je vandaan gaan. Het kan ook geen reacties uitvoeren. Voor zijn actie kan hij alleen de {@action Dash} actie gebruiken of proberen te ontsnappen aan een effect dat hem verhindert te bewegen. Als het nergens heen kan, kan het wezen de {@action Dodge} actie gebruiken.",
+				"Als de ware gedaante van het wezen verborgen is door een illusie, gedaanteverwisseling of een ander effect, wordt die gedaante onthuld terwijl het gedraaid is."
+			]
+		},
+		{
 			"name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
@@ -2246,16 +2279,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Sacred Weapon|Paladin||Devotion||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Unholy|Paladin||Devotion||3"
+					"subclassFeature": "Channel Divinity|Paladin||Devotion||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2269,27 +2298,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als actie kun je een wapen dat je vasthoudt doordrenken met positieve energie, met behulp van je Channel Divinity. Gedurende 1 minuut voeg je je Charisma toe aan de aanvalsrollen die je met dat wapen maakt (met een minimale bonus van +1). Het wapen straalt ook helder licht uit in een straal van 20 voet en zwak licht op 20 voet daarbuiten. Als het wapen nog niet magisch is, wordt het voor de duur magisch.",
-				"Je kunt dit effect tijdens je beurt beëindigen als onderdeel van een andere actie. Als je dit wapen niet meer vasthoudt of draagt, of als je valt {@condition unconscious}, eindigt dit effect."
-			]
-		},
-		{
-			"name": "Channel Divinity: Turn the Unholy",
-			"source": "PHB",
-			"page": 85,
-			"srd": true,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Devotion",
-			"subclassSource": "PHB",
-			"level": 3,
-			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Als actie toon je je heilige symbool en spreek je een gebed uit waarin je fiends en undead afkeurt, gebruikmakend van je Channel Divinity. Elke duivel of ondode die je kan zien of horen binnen een straal van 30 meter, moet een reddingsworp doen. Als het wezen faalt, wordt het voor 1 minuut of tot het schade oploopt.",
-				"Een gedraaid wezen moet zijn beurten spenderen aan het zo ver mogelijk van je vandaan gaan, en het kan niet vrijwillig naar een ruimte binnen 30 voet van je vandaan gaan. Het kan ook geen reacties uitvoeren. Voor zijn actie kan hij alleen de {@action Dash} actie gebruiken of proberen te ontsnappen aan een effect dat hem verhindert te bewegen. Als het nergens heen kan, kan het wezen de {@action Dodge} actie gebruiken."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
 			]
 		},
 		{
@@ -2339,6 +2356,22 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als actie kun je een wapen dat je vasthoudt doordrenken met positieve energie, met behulp van je Channel Divinity. Gedurende 1 minuut voeg je je Charisma toe aan de aanvalsrollen die je met dat wapen maakt (met een minimale bonus van +1). Het wapen straalt ook helder licht uit in een straal van 20 voet en zwak licht op 20 voet daarbuiten. Als het wapen nog niet magisch is, wordt het voor de duur magisch.",
+				"Je kunt dit effect tijdens je beurt beëindigen als onderdeel van een andere actie. Als je dit wapen niet meer vasthoudt of draagt, of als je valt {@condition unconscious}, eindigt dit effect."
 			]
 		},
 		{
@@ -2417,6 +2450,22 @@
 			]
 		},
 		{
+			"name": "Turn the Unholy",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als actie toon je je heilige symbool en spreek je een gebed uit waarin je fiends en undead afkeurt, gebruikmakend van je Channel Divinity. Elke duivel of ondode die je kan zien of horen binnen een straal van 30 meter, moet een reddingsworp doen. Als het wezen faalt, wordt het voor 1 minuut of tot het schade oploopt.",
+				"Een gedraaid wezen moet zijn beurten spenderen aan het zo ver mogelijk van je vandaan gaan, en het kan niet vrijwillig naar een ruimte binnen 30 voet van je vandaan gaan. Het kan ook geen reacties uitvoeren. Voor zijn actie kan hij alleen de {@action Dash} actie gebruiken of proberen te ontsnappen aan een effect dat hem verhindert te bewegen. Als het nergens heen kan, kan het wezen de {@action Dodge} actie gebruiken."
+			]
+		},
+		{
 			"name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
@@ -2486,16 +2535,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Abjure Enemy|Paladin||Vengeance||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Vow of Enmity|Paladin||Vengeance||3"
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,9 +2549,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Als actie toon je je heilige symbool en spreek je een gebed van veroordeling uit, waarbij je gebruik maakt van je Channel Divinity. Kies een wezen binnen 60 meter van je dat je kunt zien. Dat wezen moet een Wisdom saving throw doen, tenzij het immuun is voor het zijn {@condition frightened}. Feeën en ondoden hebben nadeel bij deze reddingsworp.",
 				"Bij een mislukte save is het wezen {@condition frightened} gedurende 1 minuut of totdat het schade oploopt. Terwijl {@condition frightened}, de snelheid van het schepsel is 0, en het kan niet profiteren van een bonus voor zijn snelheid.",
@@ -2514,7 +2556,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2527,7 +2569,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als een bonus actie kun je een gelofte van vijandschap uitspreken tegen een wezen dat je kunt zien binnen een straal van 10 meter van je, met gebruik van je Channel Divinity. Je krijgt voordeel op aanvalsrollen tegen het wezen gedurende 1 minuut of totdat het tot 0 hit points zakt of valt {@condition unconscious}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance||3"
+				}
 			]
 		},
 		{
@@ -2641,6 +2691,20 @@
 			]
 		},
 		{
+			"name": "Vow of Enmity",
+			"source": "PHB",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als een bonus actie kun je een gelofte van vijandschap uitspreken tegen een wezen dat je kunt zien binnen een straal van 10 meter van je, met gebruik van je Channel Divinity. Je krijgt voordeel op aanvalsrollen tegen het wezen gedurende 1 minuut of totdat het tot 0 hit points zakt of valt {@condition unconscious}."
+			]
+		},
+		{
 			"name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
@@ -2711,16 +2775,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Champion Challenge|Paladin||Crown|SCAG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Tide|Paladin||Crown|SCAG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Crown|SCAG|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2729,15 +2789,12 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Als een bonus actie, geef je een uitdaging die andere wezens dwingt om met je te strijden. Elk wezen van je keuze dat je binnen een straal van 30 meter kunt zien, moet een Wisdom saving throw doen. Als je niet slaagt, kan het wezen niet vrijwillig meer dan 30 meter bij je vandaan gaan. Dit effect eindigt op het wezen als je {@condition incapacitated} of dood bent of als het wezen meer dan 30 voet van je verwijderd is."
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Channel Divinity",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2750,7 +2807,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als bonusactie kun je gewonde wezens versterken met je Channel Divinity. Elk wezen van je keuze dat je kan horen binnen een straal van 30 meter van je, krijgt een aantal hit points terug gelijk aan {@dice 1d6} + je Charisma modifier (minimum van 1) als het niet meer dan de helft van zijn hit points heeft."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Champion Challenge|Paladin||Crown|SCAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Tide|Paladin||Crown|SCAG|3"
+				}
 			]
 		},
 		{
@@ -2864,6 +2929,20 @@
 			]
 		},
 		{
+			"name": "Turn the Tide",
+			"source": "SCAG",
+			"page": 132,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Crown",
+			"subclassSource": "SCAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als bonusactie kun je gewonde wezens versterken met je Channel Divinity. Elk wezen van je keuze dat je kan horen binnen een straal van 30 meter van je, krijgt een aantal hit points terug gelijk aan {@dice 1d6} + je Charisma modifier (minimum van 1) als het niet meer dan de helft van zijn hit points heeft."
+			]
+		},
+		{
 			"name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
@@ -2969,11 +3048,11 @@
 				"Je krijgt de volgende twee opties voor Channel Divinity. Zie de klasse-eigenschap Heilige eed voor hoe Channel Divinity werkt.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Peerless Athlete|Paladin||Glory|TCE|3"
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Inspiring Smite|Paladin||Glory|TCE|3"
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
 				}
 			]
 		},
@@ -3081,7 +3160,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3101,7 +3180,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Peerless Athlete",
+			"name": "Peerless Athlete",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3203,9 +3282,6 @@
 			"subclassShortName": "Watchers",
 			"subclassSource": "TCE",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"De Eed van de Hoeders bindt paladijnen om sterfelijke rijken te beschermen tegen de plunderingen van buitenplanse wezens, waarvan er vele sterfelijke soldaten kunnen verwoesten. Daarom scherpen de Hoeders hun geest, hun ziel en hun lichaam aan om de ultieme wapens tegen dergelijke bedreigingen te zijn.",
 				"Paladijnen die de eed van de Hoeders afleggen zijn altijd waakzaam in het opsporen van de invloed van buitenplanse krachten, en zetten vaak een netwerk van spionnen en informanten op om informatie te verzamelen over verdachte sektes. Voor een Wachter is een gezonde achterdocht en opmerkzaamheid voor zijn omgeving net zo natuurlijk als het dragen van een wapenrusting in de strijd.",
@@ -3404,9 +3480,6 @@
 			"subclassShortName": "Watchers (UA)",
 			"subclassSource": "UA2020SubclassesPt1",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Paladijnen die de Eed van de Hoeders afleggen, proberen het sterfelijke rijk te beschermen tegen de predatie van buitenplanse wezens, waarvan er vele een verwoestende uitwerking kunnen hebben op sterfelijke soldaten. Daarom scherpen de Hoeders hun geest, hun ziel en hun lichaam aan om de ultieme wapens tegen dergelijke bedreigingen te zijn.",
 				"Paladijnen die de eed van de Hoeders afleggen zijn altijd waakzaam in het opsporen van de invloed van buitenplanse krachten, en zetten vaak een netwerk van spionnen en informanten op om informatie te verzamelen over verdachte sektes. Voor een Wachter is een gezonde achterdocht en opmerkzaamheid voor zijn omgeving net zo natuurlijk als het dragen van een wapenrusting in de strijd.",
@@ -3604,9 +3677,6 @@
 			"subclassShortName": "Redemption (UA)",
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"De eed van verlossing zet een paladijn op een moeilijk pad, een pad dat van een heilige krijger vereist dat hij geweld alleen als laatste redmiddel gebruikt. Paladijnen die deze eed afleggen geloven dat ieder mens verlost kan worden en dat het pad van welwillendheid en gerechtigheid door iedereen bewandeld kan worden. Deze paladijnen staan tegenover kwaadaardige wezens in de hoop ze naar het licht te doen keren, en de paladijnen doden ze alleen als zo'n daad duidelijk andere levens zal redden. Paladijnen die dit pad bewandelen staan bekend als verlossers.",
 				"Hoewel verlossers idealisten zijn, zijn ze niet gek. Verlossers weten dat ondoden, demonen, duivels, en andere bovennatuurlijke bedreigingen inherent kwaad kunnen zijn. Tegen zulke vijanden brengen de paladijnen de volle woede van hun wapens en spreuken in stelling. Toch bidden de verlossers dat op een dag zelfs wezens van slechtheid om hun eigen verlossing zullen vragen.",
@@ -3628,11 +3698,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
 				}
 			]
 		},
@@ -3651,7 +3717,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3664,11 +3730,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om je aanwezigheid met goddelijke kracht te versterken. Als bonusactie geef je jezelf een bonus van +5 bij de volgende Charisma ({@skill Persuasion}) check die je in de volgende minuut doet."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3677,11 +3751,8 @@
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om degenen die geweld gebruiken te berispen. Als reactie wanneer een vijand binnen 10 meter van jou schade toebrengt met een mêlee aanval aan een ander wezen dan jij, dwing je die aanvaller om een Wisdom saving throw te doen. Als je niet slaagt, krijgt de aanvaller een stralingsschade gelijk aan de schade die hij zojuist heeft geleden. Bij een succesvolle save, neemt hij de helft van de schade op."
+				"Je kunt je Channel Divinity gebruiken om je aanwezigheid met goddelijke kracht te versterken. Als bonusactie geef je jezelf een bonus van +5 bij de volgende Charisma ({@skill Persuasion}) check die je in de volgende minuut doet."
 			]
 		},
 		{
@@ -3730,6 +3801,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "UAATrioOfSubclasses",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption (UA)",
+			"subclassSource": "UAATrioOfSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Je kunt je Channel Divinity gebruiken om degenen die geweld gebruiken te berispen. Als reactie wanneer een vijand binnen 10 meter van jou schade toebrengt met een mêlee aanval aan een ander wezen dan jij, dwing je die aanvaller om een Wisdom saving throw te doen. Als je niet slaagt, krijgt de aanvaller een stralingsschade gelijk aan de schade die hij zojuist heeft geleden. Bij een succesvolle save, neemt hij de helft van de schade op."
 			]
 		},
 		{
@@ -4089,16 +4174,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Strike",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4111,11 +4192,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om de wil van een vijand te breken. Als je een wezen raakt met een aanval met een {@action Attack} mêlee-wapen, dan kun je ook je Channel Divinity gebruiken om het doelwit te dwingen een Wisdom saving throw te doen. Als je niet slaagt, wordt het doelwit {@condition frightened} van jou voor 1 minuut. Het {@condition frightened} wezen kan deze reddingsworp aan het eind van elke beurt herhalen, en het effect op zichzelf beëindigen als het slaagt."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Strike",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4124,9 +4213,20 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Je kunt je Channel Divinity gebruiken om de wil van een vijand te breken. Als je een wezen raakt met een aanval met een {@action Attack} mêlee-wapen, dan kun je ook je Channel Divinity gebruiken om het doelwit te dwingen een Wisdom saving throw te doen. Als je niet slaagt, wordt het doelwit {@condition frightened} van jou voor 1 minuut. Het {@condition frightened} wezen kan deze reddingsworp aan het eind van elke beurt herhalen, en het effect op zichzelf beëindigen als het slaagt."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UAPaladin",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Je kunt je Channel Divinity gebruiken om met bovennatuurlijke nauwkeurigheid toe te slaan. Wanneer je een aanvalsrol maakt, kun je je Channel Divinity gebruiken om een bonus van +10 op de rol te krijgen. Je maakt deze keuze nadat je de worp gezien hebt, maar voordat de DM zegt of de aanval raak of mis is."
 			]
@@ -4302,16 +4402,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Treachery (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conjure Duplicate",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4324,12 +4420,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als actie creëer je een visuele illusie van jezelf die 1 minuut duurt, of tot je {@status concentration} verliest (alsof je {@status concentration||concentrating} op een spreuk zit). De illusie verschijnt in een onbezette ruimte van jouw keuze die je binnen 30 voet van je kunt zien. De illusie lijkt precies op jou; hij is stil; hij heeft jouw grootte, is niet-substantieel, neemt zijn ruimte niet in; en hij wordt niet beïnvloed door aanvallen en schade. Als bonusactie tijdens je beurt kun je de illusie tot 30 voet verplaatsen naar een ruimte die je kunt zien, maar de illusie moet binnen 120 voet van je blijven.",
-				"Voor de duur van de illusie kun je betoveringen uitspreken alsof je in de illusieruimte bent, maar je moet je eigen zintuigen gebruiken. Bovendien, als zowel jij als je illusie zich binnen 2 meter van een wezen bevinden dat de illusie kan zien, heb je voordeel bij aanvalsrollen tegen dat wezen, gezien hoe griezelig de illusie is."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Poison Strike",
+			"name": "Conjure Duplicate",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4338,11 +4441,9 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om een wapen dodelijker te maken. Als bonusactie raak je een wapen of stuk munitie aan en tover je er een speciaal vergif op. Het gif blijft 1 minuut aanwezig. De volgende keer dat je een doelwit raakt met een aanval met dat wapen of die munitie, krijgt het doelwit onmiddellijk na de aanval gifschade. De gifschade is gelijk aan {@dice 2d10} + je paladijn level, of 20 + je paladijn level als je voordeel had bij de aanvalsrol."
+				"Als actie creëer je een visuele illusie van jezelf die 1 minuut duurt, of tot je {@status concentration} verliest (alsof je {@status concentration||concentrating} op een spreuk zit). De illusie verschijnt in een onbezette ruimte van jouw keuze die je binnen 30 voet van je kunt zien. De illusie lijkt precies op jou; hij is stil; hij heeft jouw grootte, is niet-substantieel, neemt zijn ruimte niet in; en hij wordt niet beïnvloed door aanvallen en schade. Als bonusactie tijdens je beurt kun je de illusie tot 30 voet verplaatsen naar een ruimte die je kunt zien, maar de illusie moet binnen 120 voet van je blijven.",
+				"Voor de duur van de illusie kun je betoveringen uitspreken alsof je in de illusieruimte bent, maar je moet je eigen zintuigen gebruiken. Bovendien, als zowel jij als je illusie zich binnen 2 meter van een wezen bevinden dat de illusie kan zien, heb je voordeel bij aanvalsrollen tegen dat wezen, gezien hoe griezelig de illusie is."
 			]
 		},
 		{
@@ -4391,6 +4492,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Poison Strike",
+			"source": "UAPaladin",
+			"page": 2,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Treachery (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Je kunt je Channel Divinity gebruiken om een wapen dodelijker te maken. Als bonusactie raak je een wapen of stuk munitie aan en tover je er een speciaal vergif op. Het gif blijft 1 minuut aanwezig. De volgende keer dat je een doelwit raakt met een aanval met dat wapen of die munitie, krijgt het doelwit onmiddellijk na de aanval gifschade. De gifschade is gelijk aan {@dice 2d10} + je paladijn level, of 20 + je paladijn level als je voordeel had bij de aanvalsrol."
 			]
 		},
 		{
@@ -4505,16 +4620,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4527,11 +4638,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om een angstaanjagende aanwezigheid uit te stralen. Als actie dwing je elk schepsel van je keuze dat je kunt zien binnen een straal van 30 meter van je af om een Wisdom saving throw te doen. Als je niet slaagt, wordt het wezen {@condition frightened} van jou voor 1 minuut. Het {@condition frightened} wezen kan deze worp herhalen aan het einde van elke beurt, en het effect op zichzelf beëindigen als het slaagt."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4540,9 +4659,20 @@
 			"subclassSource": "UARevisedClassOptions",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Je kunt je Channel Divinity gebruiken om een angstaanjagende aanwezigheid uit te stralen. Als actie dwing je elk schepsel van je keuze dat je kunt zien binnen een straal van 30 meter van je af om een Wisdom saving throw te doen. Als je niet slaagt, wordt het wezen {@condition frightened} van jou voor 1 minuut. Het {@condition frightened} wezen kan deze worp herhalen aan het einde van elke beurt, en het effect op zichzelf beëindigen als het slaagt."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UARevisedClassOptions",
+			"page": 3,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Je kunt je Channel Divinity gebruiken om met bovennatuurlijke nauwkeurigheid toe te slaan. Wanneer je een aanvalsrol maakt, kun je je Channel Divinity gebruiken om een bonus van +10 op de rol te krijgen. Je maakt deze keuze nadat je de worp gezien hebt, maar voordat de DM zegt of de aanval raak of mis is."
 			]
@@ -4719,16 +4849,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4741,11 +4867,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om een angstaanjagende aanwezigheid uit te stralen. Als actie dwing je elk schepsel van je keuze dat je kunt zien binnen een straal van 30 meter van je af om een Wisdom saving throw te doen. Als je niet slaagt, wordt het wezen {@condition frightened} van jou voor 1 minuut. Het {@condition frightened} wezen kan deze worp herhalen aan het einde van elke beurt, en het effect op zichzelf beëindigen als het slaagt."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4754,9 +4888,20 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Je kunt je Channel Divinity gebruiken om een angstaanjagende aanwezigheid uit te stralen. Als actie dwing je elk schepsel van je keuze dat je kunt zien binnen een straal van 30 meter van je af om een Wisdom saving throw te doen. Als je niet slaagt, wordt het wezen {@condition frightened} van jou voor 1 minuut. Het {@condition frightened} wezen kan deze worp herhalen aan het einde van elke beurt, en het effect op zichzelf beëindigen als het slaagt."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "XGE",
+			"page": 37,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Je kunt je Channel Divinity gebruiken om met bovennatuurlijke nauwkeurigheid toe te slaan. Wanneer je een aanvalsrol maakt, kun je je Channel Divinity gebruiken om een bonus van +10 op de rol te krijgen. Je maakt deze keuze nadat je de worp gezien hebt, maar voordat de DM zegt of de aanval raak of mis is."
 			]
@@ -4924,16 +5069,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4946,11 +5087,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om je aanwezigheid met goddelijke kracht te versterken. Als bonusactie geef je jezelf de komende 10 minuten een bonus van +5 op Charisma-checks ({@skill Persuasion})."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4959,11 +5108,8 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Je kunt je Channel Divinity gebruiken om degenen die geweld gebruiken te berispen. Onmiddellijk nadat een aanvaller binnen 30 meter van jou schade toebrengt met een aanval op een ander wezen dan jijzelf, kun je je reactie gebruiken om de aanvaller te dwingen een Wisdom saving throw te doen. Als je niet slaagt, krijgt de aanvaller een stralingsschade die gelijk is aan de schade die hij zojuist heeft opgelopen. Bij een succesvolle redding neemt hij de helft van de schade op."
+				"Je kunt je Channel Divinity gebruiken om je aanwezigheid met goddelijke kracht te versterken. Als bonusactie geef je jezelf de komende 10 minuten een bonus van +5 op Charisma-checks ({@skill Persuasion})."
 			]
 		},
 		{
@@ -5012,6 +5158,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "XGE",
+			"page": 38,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Je kunt je Channel Divinity gebruiken om degenen die geweld gebruiken te berispen. Onmiddellijk nadat een aanvaller binnen 30 meter van jou schade toebrengt met een aanval op een ander wezen dan jijzelf, kun je je reactie gebruiken om de aanvaller te dwingen een Wisdom saving throw te doen. Als je niet slaagt, krijgt de aanvaller een stralingsschade die gelijk is aan de schade die hij zojuist heeft opgelopen. Bij een succesvolle redding neemt hij de helft van de schade op."
 			]
 		},
 		{
