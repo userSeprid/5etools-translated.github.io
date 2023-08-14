@@ -1866,16 +1866,34 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin||Oathbreaker|DMG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Oathbreaker|DMG|3"
 				}
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Channel Divinity",
+			"source": "DMG",
+			"page": 97,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oathbreaker",
+			"subclassSource": "DMG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Control Undead|Paladin||Oathbreaker|DMG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+				}
+			]
+		},
+		{
+			"name": "Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1889,7 +1907,7 @@
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -2016,16 +2034,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Nature's Wrath|Paladin||Ancients||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Faithless|Paladin||Ancients||3"
+					"subclassFeature": "Channel Divinity|Paladin||Ancients||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2038,11 +2052,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"你可以使用你的 \"通道神性 \"来召唤原始的力量，使敌人陷入其中。作为一个动作，你可以使幽灵般的藤蔓弹起，伸向你身边10英尺内你能看到的生物。该生物必须在力量或灵巧的投掷中获得成功（由其选择），或者被（%0%）。在被藤蔓缠住的时候，该生物在每个回合结束时都会重复这个蓄力动作。如果成功，它就会解脱，而藤蔓也会消失。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2051,13 +2073,8 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"你可以使用你的 \"神性通道\"，说出让异族和魔族听起来很痛苦的古语。作为一个行动，你展示你的神圣符号，在你周围30英尺内的每个能听到你的异族或魔族必须做一个智慧救赎动作。如果救赎失败，该生物将被转化1分钟或直到它受到伤害。",
-				"一个被转化的生物必须花它的回合试图尽可能地远离你，而且它不能自愿地移动到离你30英尺以内的空间。它也不能做出反应。对于它的行动，它只能使用（%0%）行动，或者试图从阻止它移动的效果中逃脱。如果没有地方可以移动，该生物可以使用（%1%）动作。",
-				"如果该生物的真实形态被幻觉、变形术或其他效果所掩盖，那么该形态会在它转身时显现。"
+				"你可以使用你的 \"通道神性 \"来召唤原始的力量，使敌人陷入其中。作为一个动作，你可以使幽灵般的藤蔓弹起，伸向你身边10英尺内你能看到的生物。该生物必须在力量或灵巧的投掷中获得成功（由其选择），或者被（%0%）。在被藤蔓缠住的时候，该生物在每个回合结束时都会重复这个蓄力动作。如果成功，它就会解脱，而藤蔓也会消失。"
 			]
 		},
 		{
@@ -2171,6 +2188,22 @@
 			]
 		},
 		{
+			"name": "Turn the Faithless",
+			"source": "PHB",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以使用你的 \"神性通道\"，说出让异族和魔族听起来很痛苦的古语。作为一个行动，你展示你的神圣符号，在你周围30英尺内的每个能听到你的异族或魔族必须做一个智慧救赎动作。如果救赎失败，该生物将被转化1分钟或直到它受到伤害。",
+				"一个被转化的生物必须花它的回合试图尽可能地远离你，而且它不能自愿地移动到离你30英尺以内的空间。它也不能做出反应。对于它的行动，它只能使用（%0%）行动，或者试图从阻止它移动的效果中逃脱。如果没有地方可以移动，该生物可以使用（%1%）动作。",
+				"如果该生物的真实形态被幻觉、变形术或其他效果所掩盖，那么该形态会在它转身时显现。"
+			]
+		},
+		{
 			"name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
@@ -2246,16 +2279,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Sacred Weapon|Paladin||Devotion||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Unholy|Paladin||Devotion||3"
+					"subclassFeature": "Channel Divinity|Paladin||Devotion||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2269,27 +2298,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"作为一个动作，你可以使用你的通道神性，给你持有的一件武器注入正能量。在1分钟内，你在用该武器进行的攻击卷中加入你的魅力修正值（最低奖励为+1）。该武器还能在20英尺的范围内发出亮光，并在20英尺以外发出暗光。如果该武器还没有魔力，它将在持续时间内变成魔力。",
-				"你可以在你的回合中结束这个效果，作为任何其他行动的一部分。如果你不再持有或携带此武器，或者你跌倒（%0%），此效果就会结束。"
-			]
-		},
-		{
-			"name": "Channel Divinity: Turn the Unholy",
-			"source": "PHB",
-			"page": 85,
-			"srd": true,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Devotion",
-			"subclassSource": "PHB",
-			"level": 3,
-			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"作为一个行动，你展示你的神圣符号，并使用你的通道神性说出一个谴责恶魔和亡灵的祷告。在你周围30英尺内能看到或听到你的每个魔物或亡灵都必须做一个智慧救赎。如果该生物没有完成蓄力动作，它将在1分钟内被转化，或者直到它受到伤害。",
-				"一个被转化的生物必须花它的回合试图尽可能地远离你，而且它不能自愿地移动到离你30英尺以内的空间。它也不能做出反应。对于它的行动，它只能使用（%0%）行动，或者试图从阻止它移动的效果中逃脱。如果没有地方可以移动，该生物可以使用（%1%）动作。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
 			]
 		},
 		{
@@ -2339,6 +2356,22 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"作为一个动作，你可以使用你的通道神性，给你持有的一件武器注入正能量。在1分钟内，你在用该武器进行的攻击卷中加入你的魅力修正值（最低奖励为+1）。该武器还能在20英尺的范围内发出亮光，并在20英尺以外发出暗光。如果该武器还没有魔力，它将在持续时间内变成魔力。",
+				"你可以在你的回合中结束这个效果，作为任何其他行动的一部分。如果你不再持有或携带此武器，或者你跌倒（%0%），此效果就会结束。"
 			]
 		},
 		{
@@ -2417,6 +2450,22 @@
 			]
 		},
 		{
+			"name": "Turn the Unholy",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"作为一个行动，你展示你的神圣符号，并使用你的通道神性说出一个谴责恶魔和亡灵的祷告。在你周围30英尺内能看到或听到你的每个魔物或亡灵都必须做一个智慧救赎。如果该生物没有完成蓄力动作，它将在1分钟内被转化，或者直到它受到伤害。",
+				"一个被转化的生物必须花它的回合试图尽可能地远离你，而且它不能自愿地移动到离你30英尺以内的空间。它也不能做出反应。对于它的行动，它只能使用（%0%）行动，或者试图从阻止它移动的效果中逃脱。如果没有地方可以移动，该生物可以使用（%1%）动作。"
+			]
+		},
+		{
 			"name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
@@ -2486,16 +2535,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Abjure Enemy|Paladin||Vengeance||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Vow of Enmity|Paladin||Vengeance||3"
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,9 +2549,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"作为一个行动，你出示你的神圣标志，并使用你的通道神性说出一个谴责的祈祷。在你60英尺范围内选择一个你能看到的生物。该生物必须做一个智慧救赎动作，除非它对被救赎有免疫力（%0%）。恶魔和亡灵在这个蓄力动作上有劣势。",
 				"在拯救失败的情况下，该生物在1分钟内或在它受到任何伤害之前，会有{@condition frightened}。当{@condition frightened}时，该生物的速度为0，并且不能从任何速度的奖励中获益。",
@@ -2514,7 +2556,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2527,7 +2569,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"作为一个额外的行动，你可以使用你的通道神性，对你周围10英尺内你能看到的生物发出敌意的誓言。你在对该生物的攻击卷轴上获得优势，持续1分钟或直到它下降到0命中率或下降（%0%）。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance||3"
+				}
 			]
 		},
 		{
@@ -2641,6 +2691,20 @@
 			]
 		},
 		{
+			"name": "Vow of Enmity",
+			"source": "PHB",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"作为一个额外的行动，你可以使用你的通道神性，对你周围10英尺内你能看到的生物发出敌意的誓言。你在对该生物的攻击卷轴上获得优势，持续1分钟或直到它下降到0命中率或下降（%0%）。"
+			]
+		},
+		{
 			"name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
@@ -2711,16 +2775,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Champion Challenge|Paladin||Crown|SCAG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Tide|Paladin||Crown|SCAG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Crown|SCAG|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2729,15 +2789,12 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"作为一个额外的行动，你发出一个挑战，迫使其他生物与你战斗。在你周围30英尺范围内，你所选择的每个生物都必须做一个智慧救赎动作。拯救失败时，生物不能自愿地离开你超过30英尺。如果你是（%0%）或死亡，或者如果该生物离你超过30英尺，这个效果就会对该生物结束。"
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Channel Divinity",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2750,7 +2807,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"作为一个额外动作，你可以用你的通道神性支持受伤的生物。每个在你30英尺范围内能听到你的声音的生物，如果它的命中率不超过一半，就会恢复等于（%0%）+你的魅力修改器（最小为1）的命中率。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Champion Challenge|Paladin||Crown|SCAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Tide|Paladin||Crown|SCAG|3"
+				}
 			]
 		},
 		{
@@ -2864,6 +2929,20 @@
 			]
 		},
 		{
+			"name": "Turn the Tide",
+			"source": "SCAG",
+			"page": 132,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Crown",
+			"subclassSource": "SCAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"作为一个额外动作，你可以用你的通道神性支持受伤的生物。每个在你30英尺范围内能听到你的声音的生物，如果它的命中率不超过一半，就会恢复等于（%0%）+你的魅力修改器（最小为1）的命中率。"
+			]
+		},
+		{
 			"name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
@@ -2969,11 +3048,11 @@
 				"你获得以下两个通道神性选项。关于通道神性的作用，请参见神圣誓言类特征。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Peerless Athlete|Paladin||Glory|TCE|3"
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Inspiring Smite|Paladin||Glory|TCE|3"
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
 				}
 			]
 		},
@@ -3081,7 +3160,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3101,7 +3180,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Peerless Athlete",
+			"name": "Peerless Athlete",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3203,9 +3282,6 @@
 			"subclassShortName": "Watchers",
 			"subclassSource": "TCE",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"守望者之誓约束圣骑士保护凡人领域免受星外生物的掠夺，许多星外生物可以浪费凡人士兵。因此，守望者磨练自己的思想、精神和身体，使之成为对抗此类威胁的终极武器。",
 				"遵循守望者誓言的圣骑士在发现星外势力的影响方面始终保持警惕，经常建立一个间谍和线人网络来收集可疑邪教的信息。对守望者来说，保持对周围环境的健康怀疑和意识，就像在战斗中穿戴盔甲一样自然。",
@@ -3404,9 +3480,6 @@
 			"subclassShortName": "Watchers (UA)",
 			"subclassSource": "UA2020SubclassesPt1",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"发誓遵守守望者誓言的圣骑士寻求保护凡人界免受星外生物的掠夺，其中许多生物可以浪费凡人士兵。因此，守望者磨练自己的思想、精神和身体，使之成为对抗此类威胁的终极武器。",
 				"遵循守望者誓言的圣骑士在发现星外势力的影响方面始终保持警惕，经常建立一个间谍和线人网络来收集可疑邪教的信息。对守望者来说，保持对周围环境的健康怀疑和意识，就像在战斗中穿戴盔甲一样自然。",
@@ -3604,9 +3677,6 @@
 			"subclassShortName": "Redemption (UA)",
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"救赎之誓使圣骑士走上了一条艰难的道路，这条道路要求圣武士只在不得已的情况下使用暴力。献身于这个誓言的圣骑士相信任何人都可以被救赎，仁慈和正义的道路是任何人都可以走的。这些圣骑士面对邪恶的生物，希望能让他们转向光明，只有在这种行为能明显拯救其他生命时，圣骑士才会杀死他们。走这条路的圣骑士被称为救赎者。",
 				"虽然救赎者是理想主义者，但他们也不是傻瓜。赎罪者知道，亡灵、恶魔、魔鬼和其他超自然的威胁可能是内在的邪恶。对付这样的敌人，圣骑士们会将他们的武器和法术的愤怒完全发挥出来。然而，救赎者仍然祈祷，有一天，即使是邪恶的生物也会邀请他们自己进行救赎。",
@@ -3628,11 +3698,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
 				}
 			]
 		},
@@ -3651,7 +3717,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3664,11 +3730,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"你可以使用你的 \"神性通道\"，用神力增强你的存在。作为一个额外的行动，你在下一分钟内进行的下一次魅力（（%0%））检查中给予自己+5的奖励。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3677,11 +3751,8 @@
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"你可以使用你的通道神性来斥责那些使用暴力的人。作为反应，当在你10英尺范围内的敌人对你以外的一个生物进行近身攻击造成伤害时，你会强迫那个攻击者做一个智慧救赎动作。如果救赎失败，攻击者会受到与刚才的伤害相等的辐射伤害。拯救成功时，它将受到一半的伤害。"
+				"你可以使用你的 \"神性通道\"，用神力增强你的存在。作为一个额外的行动，你在下一分钟内进行的下一次魅力（（%0%））检查中给予自己+5的奖励。"
 			]
 		},
 		{
@@ -3730,6 +3801,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "UAATrioOfSubclasses",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption (UA)",
+			"subclassSource": "UAATrioOfSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以使用你的通道神性来斥责那些使用暴力的人。作为反应，当在你10英尺范围内的敌人对你以外的一个生物进行近身攻击造成伤害时，你会强迫那个攻击者做一个智慧救赎动作。如果救赎失败，攻击者会受到与刚才的伤害相等的辐射伤害。拯救成功时，它将受到一半的伤害。"
 			]
 		},
 		{
@@ -4089,16 +4174,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Strike",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4111,11 +4192,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"你可以使用你的通道神性来打破敌人的意志。当你用近战武器攻击击中一个生物作为{@action Attack}行动的一部分时，你也可以用你的通道神性迫使目标做出智慧救赎。拯救失败时，目标会变成你的（%1%），持续1分钟。2%）的生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Strike",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4124,9 +4213,20 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"你可以使用你的通道神性来打破敌人的意志。当你用近战武器攻击击中一个生物作为{@action Attack}行动的一部分时，你也可以用你的通道神性迫使目标做出智慧救赎。拯救失败时，目标会变成你的（%1%），持续1分钟。2%）的生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。"
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UAPaladin",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"你可以使用你的通道神性，以超自然的准确性进行攻击。当你做攻击卷时，你可以使用你的通道神性来获得+10的奖励。你在看到卷子之后，但在DM说攻击是命中还是不中之前做出这个选择。"
 			]
@@ -4302,16 +4402,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Treachery (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conjure Duplicate",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4324,12 +4420,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"作为一个动作，你创造一个自己的视觉幻象，持续1分钟，或者直到你失去你的（%0%）（就像你的（%1%）的法术）。幻象出现在一个你选择的、你能看到的30英尺范围内的无人空间。幻象看起来和你一模一样；它是无声的；它和你一样大小，没有实体，不占据它的空间；而且它不受攻击和伤害的影响。作为你回合的额外行动，你可以将幻象移动到一个你能看到的空间，最多 30 英尺，但幻象必须保持在你的 120 英尺范围内。",
-				"在持续时间内，你可以像在幻象的空间内一样施法，但你必须使用自己的感官。此外，当你和你的幻象都在一个能看到幻象的生物的5英尺范围内时，考虑到幻象的不可思议，你在对该生物的攻击卷中具有优势。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Poison Strike",
+			"name": "Conjure Duplicate",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4338,11 +4441,9 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"你可以使用你的通道神性使武器更致命。作为一个额外的动作，你接触一件武器或弹药，并在其上施展一种特殊的毒药。该毒药持续1分钟。下次你用该武器或弹药攻击目标时，该目标会在攻击后立即受到毒药伤害。毒药伤害等于（%0%）+你的圣骑士等级，或者20+你的圣骑士等级，如果你在攻击卷上有优势。"
+				"作为一个动作，你创造一个自己的视觉幻象，持续1分钟，或者直到你失去你的（%0%）（就像你的（%1%）的法术）。幻象出现在一个你选择的、你能看到的30英尺范围内的无人空间。幻象看起来和你一模一样；它是无声的；它和你一样大小，没有实体，不占据它的空间；而且它不受攻击和伤害的影响。作为你回合的额外行动，你可以将幻象移动到一个你能看到的空间，最多 30 英尺，但幻象必须保持在你的 120 英尺范围内。",
+				"在持续时间内，你可以像在幻象的空间内一样施法，但你必须使用自己的感官。此外，当你和你的幻象都在一个能看到幻象的生物的5英尺范围内时，考虑到幻象的不可思议，你在对该生物的攻击卷中具有优势。"
 			]
 		},
 		{
@@ -4391,6 +4492,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Poison Strike",
+			"source": "UAPaladin",
+			"page": 2,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Treachery (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以使用你的通道神性使武器更致命。作为一个额外的动作，你接触一件武器或弹药，并在其上施展一种特殊的毒药。该毒药持续1分钟。下次你用该武器或弹药攻击目标时，该目标会在攻击后立即受到毒药伤害。毒药伤害等于（%0%）+你的圣骑士等级，或者20+你的圣骑士等级，如果你在攻击卷上有优势。"
 			]
 		},
 		{
@@ -4505,16 +4620,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4527,11 +4638,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"你可以使用你的 \"通道神性 \"来散发出一种可怕的存在。作为一个行动，你强迫你所选择的30英尺范围内的每个生物做一个智慧拯救动作。如果拯救失败，一个生物会在1分钟内变成你的（%0%）。1%）的生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4540,9 +4659,20 @@
 			"subclassSource": "UARevisedClassOptions",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"你可以使用你的 \"通道神性 \"来散发出一种可怕的存在。作为一个行动，你强迫你所选择的30英尺范围内的每个生物做一个智慧拯救动作。如果拯救失败，一个生物会在1分钟内变成你的（%0%）。1%）的生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。"
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UARevisedClassOptions",
+			"page": 3,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"你可以使用你的通道神性，以超自然的准确性进行攻击。当你做攻击卷时，你可以使用你的通道神性来获得+10的奖励。你在看到卷子之后，但在DM说攻击是命中还是不中之前做出这个选择。"
 			]
@@ -4719,16 +4849,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4741,11 +4867,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"你可以使用你的 \"通道神性 \"来散发出一种可怕的存在。作为一个行动，你强迫你所选择的30英尺范围内的每个生物做一个智慧拯救动作。如果拯救失败，一个生物会在1分钟内变成你的（%0%）。1%）的生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4754,9 +4888,20 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"你可以使用你的 \"通道神性 \"来散发出一种可怕的存在。作为一个行动，你强迫你所选择的30英尺范围内的每个生物做一个智慧拯救动作。如果拯救失败，一个生物会在1分钟内变成你的（%0%）。1%）的生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。"
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "XGE",
+			"page": 37,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"你可以使用你的通道神性，以超自然的准确性进行攻击。当你做攻击卷时，你可以使用你的通道神性来获得+10的奖励。你在看到卷子之后，但在DM说攻击是命中还是不中之前做出这个选择。"
 			]
@@ -4924,16 +5069,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4946,11 +5087,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"你可以使用你的 \"神性通道\"，用神力增强你的存在。作为一个额外的行动，你在接下来的10分钟内给予自己一个+5的魅力（{@skill Persuasion}）检查奖励。"
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4959,11 +5108,8 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"你可以使用你的通道神性来斥责那些使用暴力的人。在你周围30英尺内的攻击者对你以外的生物造成攻击伤害后，你可以立即使用你的反应来迫使攻击者做一个智慧救赎动作。如果救赎失败，攻击者会受到与刚才的伤害相等的辐射伤害。拯救成功时，它将受到一半的伤害。"
+				"你可以使用你的 \"神性通道\"，用神力增强你的存在。作为一个额外的行动，你在接下来的10分钟内给予自己一个+5的魅力（{@skill Persuasion}）检查奖励。"
 			]
 		},
 		{
@@ -5012,6 +5158,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "XGE",
+			"page": 38,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以使用你的通道神性来斥责那些使用暴力的人。在你周围30英尺内的攻击者对你以外的生物造成攻击伤害后，你可以立即使用你的反应来迫使攻击者做一个智慧救赎动作。如果救赎失败，攻击者会受到与刚才的伤害相等的辐射伤害。拯救成功时，它将受到一半的伤害。"
 			]
 		},
 		{
