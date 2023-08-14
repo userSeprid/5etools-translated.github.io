@@ -1866,16 +1866,34 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin||Oathbreaker|DMG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Oathbreaker|DMG|3"
 				}
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Channel Divinity",
+			"source": "DMG",
+			"page": 97,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oathbreaker",
+			"subclassSource": "DMG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Control Undead|Paladin||Oathbreaker|DMG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+				}
+			]
+		},
+		{
+			"name": "Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1889,7 +1907,7 @@
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -2016,16 +2034,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Nature's Wrath|Paladin||Ancients||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Faithless|Paladin||Ancients||3"
+					"subclassFeature": "Channel Divinity|Paladin||Ancients||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2038,11 +2052,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per invocare forze primordiali per intrappolare un nemico. Come azione, puoi far scaturire delle liane spettrali che raggiungono una creatura entro 3 metri da te e che puoi vedere. La creatura deve riuscire in un tiro salvezza di Forza o Destrezza (a sua scelta) o essere {@condition restrained}. Mentre {@condition restrained} dai rampicanti, la creatura ripete il tiro salvezza alla fine di ogni suo turno. In caso di successo, si libera e le liane svaniscono."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2051,13 +2073,8 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per pronunciare parole antiche che sono dolorose da sentire per i fey e i demoni. Come azione, presenterai il tuo simbolo sacro e ogni fey o demone entro 30 piedi da te che possa sentirti dovrà effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, la creatura viene trasformata per 1 minuto o finché non subisce danni.",
-				"Una creatura trasformata deve passare i suoi turni cercando di allontanarsi il più possibile da te, e non può spostarsi volontariamente in uno spazio entro 30 piedi da te. Inoltre, non può effettuare reazioni. Per la sua azione, può usare solo l'azione {@action Dash} o cercare di fuggire da un effetto che le impedisce di muoversi. Se non c'è nessun posto dove muoversi, la creatura può usare l'azione {@action Dodge}.",
-				"Se la vera forma della creatura è nascosta da un'illusione, un mutaforma o un altro effetto, quella forma viene rivelata mentre è trasformata."
+				"Puoi usare il tuo Canale Divinità per invocare forze primordiali per intrappolare un nemico. Come azione, puoi far scaturire delle liane spettrali che raggiungono una creatura entro 3 metri da te e che puoi vedere. La creatura deve riuscire in un tiro salvezza di Forza o Destrezza (a sua scelta) o essere {@condition restrained}. Mentre {@condition restrained} dai rampicanti, la creatura ripete il tiro salvezza alla fine di ogni suo turno. In caso di successo, si libera e le liane svaniscono."
 			]
 		},
 		{
@@ -2171,6 +2188,22 @@
 			]
 		},
 		{
+			"name": "Turn the Faithless",
+			"source": "PHB",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puoi usare il tuo Canale Divinità per pronunciare parole antiche che sono dolorose da sentire per i fey e i demoni. Come azione, presenterai il tuo simbolo sacro e ogni fey o demone entro 30 piedi da te che possa sentirti dovrà effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, la creatura viene trasformata per 1 minuto o finché non subisce danni.",
+				"Una creatura trasformata deve passare i suoi turni cercando di allontanarsi il più possibile da te, e non può spostarsi volontariamente in uno spazio entro 30 piedi da te. Inoltre, non può effettuare reazioni. Per la sua azione, può usare solo l'azione {@action Dash} o cercare di fuggire da un effetto che le impedisce di muoversi. Se non c'è nessun posto dove muoversi, la creatura può usare l'azione {@action Dodge}.",
+				"Se la vera forma della creatura è nascosta da un'illusione, un mutaforma o un altro effetto, quella forma viene rivelata mentre è trasformata."
+			]
+		},
+		{
 			"name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
@@ -2246,16 +2279,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Sacred Weapon|Paladin||Devotion||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Unholy|Paladin||Devotion||3"
+					"subclassFeature": "Channel Divinity|Paladin||Devotion||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2269,27 +2298,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Come azione, puoi impregnare di energia positiva un'arma che hai in mano, usando il tuo Canale Divinità. Per 1 minuto, aggiungerai il tuo modificatore di Carisma ai tiri di attacco effettuati con quell'arma (con un bonus minimo di +1). L'arma emette anche una luce brillante in un raggio di 6 metri e una luce fioca a 6 metri di distanza. Se l'arma non è già magica, diventa magica per tutta la durata.",
-				"Puoi terminare questo effetto nel tuo turno come parte di qualsiasi altra azione. Se non stai più tenendo o portando quest'arma, o se cadi {@condition unconscious}, questo effetto finisce."
-			]
-		},
-		{
-			"name": "Channel Divinity: Turn the Unholy",
-			"source": "PHB",
-			"page": 85,
-			"srd": true,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Devotion",
-			"subclassSource": "PHB",
-			"level": 3,
-			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Come azione, presenterai il tuo simbolo sacro e pronuncerai una preghiera per censurare demoni e non morti, usando il tuo Canale Divinità. Ogni demone o non-morto che può vederti o sentirti entro 30 piedi da te deve effettuare un tiro salvezza di Saggezza. Se la creatura fallisce il tiro salvezza, viene trasformata per 1 minuto o finché non subisce danni.",
-				"Una creatura trasformata deve passare i suoi turni cercando di allontanarsi il più possibile da te, e non può spostarsi volontariamente in uno spazio entro 30 piedi da te. Inoltre, non può effettuare reazioni. Per la sua azione, può usare solo l'azione {@action Dash} o cercare di fuggire da un effetto che le impedisce di muoversi. Se non c'è nessun posto dove muoversi, la creatura può usare l'azione {@action Dodge}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
 			]
 		},
 		{
@@ -2339,6 +2356,22 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Come azione, puoi impregnare di energia positiva un'arma che hai in mano, usando il tuo Canale Divinità. Per 1 minuto, aggiungerai il tuo modificatore di Carisma ai tiri di attacco effettuati con quell'arma (con un bonus minimo di +1). L'arma emette anche una luce brillante in un raggio di 6 metri e una luce fioca a 6 metri di distanza. Se l'arma non è già magica, diventa magica per tutta la durata.",
+				"Puoi terminare questo effetto nel tuo turno come parte di qualsiasi altra azione. Se non stai più tenendo o portando quest'arma, o se cadi {@condition unconscious}, questo effetto finisce."
 			]
 		},
 		{
@@ -2417,6 +2450,22 @@
 			]
 		},
 		{
+			"name": "Turn the Unholy",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Come azione, presenterai il tuo simbolo sacro e pronuncerai una preghiera per censurare demoni e non morti, usando il tuo Canale Divinità. Ogni demone o non-morto che può vederti o sentirti entro 30 piedi da te deve effettuare un tiro salvezza di Saggezza. Se la creatura fallisce il tiro salvezza, viene trasformata per 1 minuto o finché non subisce danni.",
+				"Una creatura trasformata deve passare i suoi turni cercando di allontanarsi il più possibile da te, e non può spostarsi volontariamente in uno spazio entro 30 piedi da te. Inoltre, non può effettuare reazioni. Per la sua azione, può usare solo l'azione {@action Dash} o cercare di fuggire da un effetto che le impedisce di muoversi. Se non c'è nessun posto dove muoversi, la creatura può usare l'azione {@action Dodge}."
+			]
+		},
+		{
 			"name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
@@ -2486,16 +2535,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Abjure Enemy|Paladin||Vengeance||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Vow of Enmity|Paladin||Vengeance||3"
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,9 +2549,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Come azione, presenti il tuo simbolo sacro e pronunci una preghiera di denuncia, usando il tuo Canale Divinità. Scegli una creatura entro 60 piedi da te che puoi vedere. Quella creatura deve effettuare un tiro salvezza di Saggezza, a meno che non sia immune all'essere {@condition frightened}. I demoni e i non morti hanno svantaggio in questo tiro salvezza.",
 				"Con un tiro salvezza fallito, la creatura è {@condition frightened} per 1 minuto o finché non subisce danni. Mentre {@condition frightened}, la velocità della creatura è 0 e non può beneficiare di alcun bonus alla sua velocità.",
@@ -2514,7 +2556,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2527,7 +2569,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Come azione bonus, puoi pronunciare un voto di inimicizia contro una creatura che puoi vedere entro 3 metri da te, usando il tuo Canale Divinità. Otterrai un vantaggio sui tiri di attacco contro la creatura per 1 minuto o fino a quando non scenderà a 0 punti ferita o cadrà {@condition unconscious}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance||3"
+				}
 			]
 		},
 		{
@@ -2641,6 +2691,20 @@
 			]
 		},
 		{
+			"name": "Vow of Enmity",
+			"source": "PHB",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Come azione bonus, puoi pronunciare un voto di inimicizia contro una creatura che puoi vedere entro 3 metri da te, usando il tuo Canale Divinità. Otterrai un vantaggio sui tiri di attacco contro la creatura per 1 minuto o fino a quando non scenderà a 0 punti ferita o cadrà {@condition unconscious}."
+			]
+		},
+		{
 			"name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
@@ -2711,16 +2775,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Champion Challenge|Paladin||Crown|SCAG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Tide|Paladin||Crown|SCAG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Crown|SCAG|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2729,15 +2789,12 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Come azione bonus, lanci una sfida che costringe altre creature a combattere con te. Ogni creatura di tua scelta che puoi vedere entro 30 piedi da te deve effettuare un tiro salvezza di Saggezza. Con un tiro salvezza fallito, la creatura non può volontariamente allontanarsi più di 30 piedi da te. Questo effetto termina sulla creatura se tu sei {@condition incapacitated} o muori o se la creatura è a più di 30 piedi da te."
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Channel Divinity",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2750,7 +2807,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Come azione bonus, puoi sostenere le creature ferite con il tuo Canale della Divinità. Ogni creatura a tua scelta che può sentirti entro 30 piedi da te recupera punti ferita pari a {@dice 1d6} + il tuo modificatore di Carisma (minimo 1) se non ha più della metà dei suoi punti ferita."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Champion Challenge|Paladin||Crown|SCAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Tide|Paladin||Crown|SCAG|3"
+				}
 			]
 		},
 		{
@@ -2864,6 +2929,20 @@
 			]
 		},
 		{
+			"name": "Turn the Tide",
+			"source": "SCAG",
+			"page": 132,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Crown",
+			"subclassSource": "SCAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Come azione bonus, puoi sostenere le creature ferite con il tuo Canale della Divinità. Ogni creatura a tua scelta che può sentirti entro 30 piedi da te recupera punti ferita pari a {@dice 1d6} + il tuo modificatore di Carisma (minimo 1) se non ha più della metà dei suoi punti ferita."
+			]
+		},
+		{
 			"name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
@@ -2969,11 +3048,11 @@
 				"Guadagni le seguenti due opzioni di Canale Divinità. Vedi la caratteristica di classe Sacred Oath per sapere come funziona Channel Divinity.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Peerless Athlete|Paladin||Glory|TCE|3"
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Inspiring Smite|Paladin||Glory|TCE|3"
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
 				}
 			]
 		},
@@ -3081,7 +3160,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3101,7 +3180,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Peerless Athlete",
+			"name": "Peerless Athlete",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3203,9 +3282,6 @@
 			"subclassShortName": "Watchers",
 			"subclassSource": "TCE",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Il Giuramento degli Osservatori vincola i paladini a proteggere i regni mortali dalle predazioni delle creature extraplanari, molte delle quali possono distruggere i soldati mortali. Così, gli Osservatori affinano le loro menti, i loro spiriti e i loro corpi per essere le armi migliori contro tali minacce.",
 				"I paladini che seguono il giuramento degli Osservatori sono sempre vigili nell'individuare l'influenza di forze extraplanari, spesso stabilendo una rete di spie e informatori per raccogliere informazioni sui culti sospetti. Per un Osservatore, mantenere un sano sospetto e la consapevolezza di ciò che lo circonda è naturale come indossare un'armatura in battaglia.",
@@ -3404,9 +3480,6 @@
 			"subclassShortName": "Watchers (UA)",
 			"subclassSource": "UA2020SubclassesPt1",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"I paladini che prestano il giuramento degli Osservatori cercano di proteggere il regno mortale dalle predazioni delle creature extraplanari, molte delle quali possono distruggere i soldati mortali. Così, gli Osservatori affinano le loro menti, i loro spiriti e i loro corpi per essere le armi migliori contro tali minacce.",
 				"I paladini che seguono il giuramento degli Osservatori sono sempre vigili nell'individuare l'influenza di forze extraplanari, spesso stabilendo una rete di spie e informatori per raccogliere informazioni sui culti sospetti. Per un Osservatore, mantenere un sano sospetto e la consapevolezza di ciò che lo circonda è naturale come indossare un'armatura in battaglia.",
@@ -3604,9 +3677,6 @@
 			"subclassShortName": "Redemption (UA)",
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Il Giuramento di Redenzione pone un paladino su un percorso difficile, che richiede al guerriero santo di usare la violenza solo come ultima risorsa. I paladini che si dedicano a questo giuramento credono che ogni persona possa essere redenta e che il sentiero della benevolenza e della giustizia sia percorribile da chiunque. Questi paladini affrontano le creature malvagie nella speranza di portarle alla luce, e le uccidono solo quando tale azione salverà chiaramente altre vite. I paladini che seguono questo percorso sono conosciuti come redentori.",
 				"Mentre i redentori sono idealisti, non sono sciocchi. I redentori sanno che non-morti, demoni, diavoli e altre minacce soprannaturali possono essere intrinsecamente malvagi. Contro questi nemici, i paladini portano tutta l'ira delle loro armi e dei loro incantesimi. Eppure i redentori pregano ancora che, un giorno, anche le creature della malvagità inviteranno alla loro redenzione.",
@@ -3628,11 +3698,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
 				}
 			]
 		},
@@ -3651,7 +3717,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3664,11 +3730,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per aumentare la tua presenza con il potere divino. Come azione bonus, ti concederai un bonus di +5 alla prossima prova di Carisma ({@skill Persuasion}) che effettuerai entro il minuto successivo."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3677,11 +3751,8 @@
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per rimproverare coloro che usano la violenza. Come reazione, quando un nemico entro 3 metri da te infligge danni con un attacco in mischia contro una creatura diversa da te, costringi quell'attaccante a effettuare un tiro salvezza di Saggezza. Con un tiro salvezza fallito, l'attaccante subisce un danno radiante pari al danno appena inflitto. Con un tiro salvezza riuscito, prende la metà dei danni."
+				"Puoi usare il tuo Canale Divinità per aumentare la tua presenza con il potere divino. Come azione bonus, ti concederai un bonus di +5 alla prossima prova di Carisma ({@skill Persuasion}) che effettuerai entro il minuto successivo."
 			]
 		},
 		{
@@ -3730,6 +3801,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "UAATrioOfSubclasses",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption (UA)",
+			"subclassSource": "UAATrioOfSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puoi usare il tuo Canale Divinità per rimproverare coloro che usano la violenza. Come reazione, quando un nemico entro 3 metri da te infligge danni con un attacco in mischia contro una creatura diversa da te, costringi quell'attaccante a effettuare un tiro salvezza di Saggezza. Con un tiro salvezza fallito, l'attaccante subisce un danno radiante pari al danno appena inflitto. Con un tiro salvezza riuscito, prende la metà dei danni."
 			]
 		},
 		{
@@ -4089,16 +4174,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Strike",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4111,11 +4192,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Puoi usare la tua Divinità del Canale per spezzare la volontà di un nemico. Quando colpisci una creatura con un attacco con un'arma da mischia come parte dell'azione {@action Attack}, puoi anche usare la tua Divinità del Canale per costringere il bersaglio a effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, il bersaglio diventa {@condition frightened} di te per 1 minuto. La creatura {@condition frightened} può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Strike",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4124,9 +4213,20 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Puoi usare la tua Divinità del Canale per spezzare la volontà di un nemico. Quando colpisci una creatura con un attacco con un'arma da mischia come parte dell'azione {@action Attack}, puoi anche usare la tua Divinità del Canale per costringere il bersaglio a effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, il bersaglio diventa {@condition frightened} di te per 1 minuto. La creatura {@condition frightened} può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UAPaladin",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Puoi usare la tua Divinità del Canale per colpire con una precisione soprannaturale. Quando effettui un tiro di attacco, puoi usare la tua Divinità del Canale per ottenere un bonus di +10 al tiro. Fai questa scelta dopo aver visto il tiro, ma prima che il DM dica se l'attacco colpisce o manca."
 			]
@@ -4302,16 +4402,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Treachery (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conjure Duplicate",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4324,12 +4420,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Come azione, si crea un'illusione visiva di se stessi che dura per 1 minuto, o finché non si perde il {@status concentration} (come se si fosse al {@status concentration||concentrating} su un incantesimo). L'illusione appare in uno spazio non occupato a vostra scelta che potete vedere entro 9 metri da voi. L'illusione ha il vostro stesso aspetto, è silenziosa, ha la vostra taglia, è inconsistente, non occupa il suo spazio e non subisce attacchi e danni. Come azione bonus nel vostro turno, potete spostare l'illusione fino a 9 metri in uno spazio che potete vedere, ma l'illusione deve rimanere entro 9 metri da voi.",
-				"Per tutta la durata, puoi lanciare incantesimi come se fossi nello spazio dell'illusione, ma devi usare i tuoi sensi. Inoltre, quando sia tu che la tua illusione siete entro un raggio di 5 piedi da una creatura che può vedere l'illusione, hai un vantaggio nei tiri di attacco contro quella creatura, dato che l'illusione è inquietante."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Poison Strike",
+			"name": "Conjure Duplicate",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4338,11 +4441,9 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per rendere un'arma più letale. Come azione bonus, tocchi un'arma o un pezzo di munizione ed evoca un veleno speciale su di essa. Il veleno dura per 1 minuto. La prossima volta che colpisci un bersaglio con un attacco utilizzando quell'arma o munizione, il bersaglio subisce danni da veleno immediatamente dopo l'attacco. Il danno da veleno è pari a {@dice 2d10} + il tuo livello da paladino, o 20 + il tuo livello da paladino se hai avuto vantaggio sul tiro per l'attacco."
+				"Come azione, si crea un'illusione visiva di se stessi che dura per 1 minuto, o finché non si perde il {@status concentration} (come se si fosse al {@status concentration||concentrating} su un incantesimo). L'illusione appare in uno spazio non occupato a vostra scelta che potete vedere entro 9 metri da voi. L'illusione ha il vostro stesso aspetto, è silenziosa, ha la vostra taglia, è inconsistente, non occupa il suo spazio e non subisce attacchi e danni. Come azione bonus nel vostro turno, potete spostare l'illusione fino a 9 metri in uno spazio che potete vedere, ma l'illusione deve rimanere entro 9 metri da voi.",
+				"Per tutta la durata, puoi lanciare incantesimi come se fossi nello spazio dell'illusione, ma devi usare i tuoi sensi. Inoltre, quando sia tu che la tua illusione siete entro un raggio di 5 piedi da una creatura che può vedere l'illusione, hai un vantaggio nei tiri di attacco contro quella creatura, dato che l'illusione è inquietante."
 			]
 		},
 		{
@@ -4391,6 +4492,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Poison Strike",
+			"source": "UAPaladin",
+			"page": 2,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Treachery (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puoi usare il tuo Canale Divinità per rendere un'arma più letale. Come azione bonus, tocchi un'arma o un pezzo di munizione ed evoca un veleno speciale su di essa. Il veleno dura per 1 minuto. La prossima volta che colpisci un bersaglio con un attacco utilizzando quell'arma o munizione, il bersaglio subisce danni da veleno immediatamente dopo l'attacco. Il danno da veleno è pari a {@dice 2d10} + il tuo livello da paladino, o 20 + il tuo livello da paladino se hai avuto vantaggio sul tiro per l'attacco."
 			]
 		},
 		{
@@ -4505,16 +4620,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4527,11 +4638,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per trasudare una presenza terrificante. Come azione, costringi ogni creatura di tua scelta che puoi vedere entro 30 piedi da te a effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, la creatura diventa {@condition frightened} di te per 1 minuto. La creatura {@condition frightened} può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4540,9 +4659,20 @@
 			"subclassSource": "UARevisedClassOptions",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Puoi usare il tuo Canale Divinità per trasudare una presenza terrificante. Come azione, costringi ogni creatura di tua scelta che puoi vedere entro 30 piedi da te a effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, la creatura diventa {@condition frightened} di te per 1 minuto. La creatura {@condition frightened} può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UARevisedClassOptions",
+			"page": 3,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Puoi usare la tua Divinità del Canale per colpire con una precisione soprannaturale. Quando effettui un tiro di attacco, puoi usare la tua Divinità del Canale per ottenere un bonus di +10 al tiro. Fai questa scelta dopo aver visto il tiro, ma prima che il DM dica se l'attacco colpisce o manca."
 			]
@@ -4719,16 +4849,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4741,11 +4867,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per trasudare una presenza terrificante. Come azione, costringi ogni creatura di tua scelta che puoi vedere entro 30 piedi da te a effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, la creatura diventa {@condition frightened} di te per 1 minuto. La creatura {@condition frightened} può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4754,9 +4888,20 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Puoi usare il tuo Canale Divinità per trasudare una presenza terrificante. Come azione, costringi ogni creatura di tua scelta che puoi vedere entro 30 piedi da te a effettuare un tiro salvezza di Saggezza. Se il tiro salvezza viene fallito, la creatura diventa {@condition frightened} di te per 1 minuto. La creatura {@condition frightened} può ripetere questo tiro salvezza alla fine di ogni suo turno, terminando l'effetto su se stessa con un successo."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "XGE",
+			"page": 37,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Puoi usare la tua Divinità del Canale per colpire con una precisione soprannaturale. Quando effettui un tiro di attacco, puoi usare la tua Divinità del Canale per ottenere un bonus di +10 al tiro. Fai questa scelta dopo aver visto il tiro, ma prima che il DM dica se l'attacco colpisce o manca."
 			]
@@ -4924,16 +5069,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4946,11 +5087,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per aumentare la tua presenza con il potere divino. Come azione bonus, ti garantisci un bonus di +5 alle prove di Carisma ({@skill Persuasion}) per i prossimi 10 minuti."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4959,11 +5108,8 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Puoi usare il tuo Canale Divinità per rimproverare coloro che usano la violenza. Immediatamente dopo che un attaccante entro 30 piedi da te infligge danni con un attacco contro una creatura diversa da te, puoi usare la tua reazione per costringere l'attaccante a effettuare un tiro salvezza di Saggezza. Con un tiro salvezza fallito, l'attaccante subisce un danno radiante pari al danno appena inflitto. Con un tiro salvezza riuscito, prende la metà dei danni."
+				"Puoi usare il tuo Canale Divinità per aumentare la tua presenza con il potere divino. Come azione bonus, ti garantisci un bonus di +5 alle prove di Carisma ({@skill Persuasion}) per i prossimi 10 minuti."
 			]
 		},
 		{
@@ -5012,6 +5158,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "XGE",
+			"page": 38,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puoi usare il tuo Canale Divinità per rimproverare coloro che usano la violenza. Immediatamente dopo che un attaccante entro 30 piedi da te infligge danni con un attacco contro una creatura diversa da te, puoi usare la tua reazione per costringere l'attaccante a effettuare un tiro salvezza di Saggezza. Con un tiro salvezza fallito, l'attaccante subisce un danno radiante pari al danno appena inflitto. Con un tiro salvezza riuscito, prende la metà dei danni."
 			]
 		},
 		{
