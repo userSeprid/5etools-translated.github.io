@@ -1866,16 +1866,34 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin||Oathbreaker|DMG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Oathbreaker|DMG|3"
 				}
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Channel Divinity",
+			"source": "DMG",
+			"page": 97,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oathbreaker",
+			"subclassSource": "DMG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Control Undead|Paladin||Oathbreaker|DMG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+				}
+			]
+		},
+		{
+			"name": "Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1889,7 +1907,7 @@
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -2016,16 +2034,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Nature's Wrath|Paladin||Ancients||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Faithless|Paladin||Ancients||3"
+					"subclassFeature": "Channel Divinity|Paladin||Ancients||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2038,11 +2052,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att åberopa urkrafter för att fånga en fiende. Som en handling kan du få spektrala vinrankor att växa upp och sträcka sig efter en varelse inom tre meter från dig som du kan se. Varelsen måste lyckas med ett räddningskast i styrka eller smidighet (valfritt) eller bli {@condition restrained}. Medan {@condition restrained} av vinrankorna upprepar varelsen räddningskastet i slutet av var och en av sina turer. Om den lyckas frigör den sig och vinrankorna försvinner."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2051,13 +2073,8 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att uttala uråldriga ord som är smärtsamma att höra för fey och fiends. Som en handling presenterar du din heliga symbol, och varje fey eller fiend inom 30 fot från dig som kan höra dig måste göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök förvandlas varelsen i 1 minut eller tills den tar skada.",
-				"En förvandlad varelse måste spendera sina vändor med att försöka flytta så långt bort från dig som möjligt, och den kan inte frivilligt flytta sig till ett utrymme inom 30 fot från dig. Den kan inte heller ta reaktioner. För sin handling kan den bara använda {@action Dash} handlingen eller försöka fly från en effekt som hindrar den från att röra sig. Om det inte finns någonstans att röra sig kan varelsen använda handlingen {@action Dodge}.",
-				"Om varelsens sanna form är dold av en illusion, formskiftning eller annan effekt, avslöjas den formen när den förvandlas."
+				"Du kan använda din Channel Divinity för att åberopa urkrafter för att fånga en fiende. Som en handling kan du få spektrala vinrankor att växa upp och sträcka sig efter en varelse inom tre meter från dig som du kan se. Varelsen måste lyckas med ett räddningskast i styrka eller smidighet (valfritt) eller bli {@condition restrained}. Medan {@condition restrained} av vinrankorna upprepar varelsen räddningskastet i slutet av var och en av sina turer. Om den lyckas frigör den sig och vinrankorna försvinner."
 			]
 		},
 		{
@@ -2171,6 +2188,22 @@
 			]
 		},
 		{
+			"name": "Turn the Faithless",
+			"source": "PHB",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kan använda din Channel Divinity för att uttala uråldriga ord som är smärtsamma att höra för fey och fiends. Som en handling presenterar du din heliga symbol, och varje fey eller fiend inom 30 fot från dig som kan höra dig måste göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök förvandlas varelsen i 1 minut eller tills den tar skada.",
+				"En förvandlad varelse måste spendera sina vändor med att försöka flytta så långt bort från dig som möjligt, och den kan inte frivilligt flytta sig till ett utrymme inom 30 fot från dig. Den kan inte heller ta reaktioner. För sin handling kan den bara använda {@action Dash} handlingen eller försöka fly från en effekt som hindrar den från att röra sig. Om det inte finns någonstans att röra sig kan varelsen använda handlingen {@action Dodge}.",
+				"Om varelsens sanna form är dold av en illusion, formskiftning eller annan effekt, avslöjas den formen när den förvandlas."
+			]
+		},
+		{
 			"name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
@@ -2246,16 +2279,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Sacred Weapon|Paladin||Devotion||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Unholy|Paladin||Devotion||3"
+					"subclassFeature": "Channel Divinity|Paladin||Devotion||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2269,27 +2298,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Som en handling kan du genomsyra ett vapen som du håller i med positiv energi med hjälp av din Channel Divinity. I 1 minut lägger du till din Charisma-modifierare till attackkast som görs med det vapnet (med en minsta bonus på +1). Vapnet avger också starkt ljus i en radie på 20 fot och svagt ljus 20 fot bortom den. Om vapnet inte redan är magiskt blir det magiskt under hela tiden.",
-				"Du kan avsluta denna effekt på din tur som en del av en annan åtgärd. Om du inte längre håller eller bär det här vapnet, eller om du faller {@condition unconscious}, upphör den här effekten."
-			]
-		},
-		{
-			"name": "Channel Divinity: Turn the Unholy",
-			"source": "PHB",
-			"page": 85,
-			"srd": true,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Devotion",
-			"subclassSource": "PHB",
-			"level": 3,
-			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Som en handling visar du din heliga symbol och talar en bön som förbannar djävlar och odöda med hjälp av din Channel Divinity. Varje djävul eller odöd som kan se eller höra dig inom 30 fot från dig måste göra ett visdomssparande kast. Om varelsen misslyckas med sitt räddningskast blir den förvandlad i 1 minut eller tills den tar skada.",
-				"En förvandlad varelse måste spendera sina vändor med att försöka flytta så långt bort från dig som möjligt, och den kan inte frivilligt flytta sig till ett utrymme inom 30 fot från dig. Den kan inte heller ta reaktioner. För sin handling kan den bara använda {@action Dash} handlingen eller försöka fly från en effekt som hindrar den från att röra sig. Om det inte finns någonstans att röra sig kan varelsen använda handlingen {@action Dodge}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
 			]
 		},
 		{
@@ -2339,6 +2356,22 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Som en handling kan du genomsyra ett vapen som du håller i med positiv energi med hjälp av din Channel Divinity. I 1 minut lägger du till din Charisma-modifierare till attackkast som görs med det vapnet (med en minsta bonus på +1). Vapnet avger också starkt ljus i en radie på 20 fot och svagt ljus 20 fot bortom den. Om vapnet inte redan är magiskt blir det magiskt under hela tiden.",
+				"Du kan avsluta denna effekt på din tur som en del av en annan åtgärd. Om du inte längre håller eller bär det här vapnet, eller om du faller {@condition unconscious}, upphör den här effekten."
 			]
 		},
 		{
@@ -2417,6 +2450,22 @@
 			]
 		},
 		{
+			"name": "Turn the Unholy",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Som en handling visar du din heliga symbol och talar en bön som förbannar djävlar och odöda med hjälp av din Channel Divinity. Varje djävul eller odöd som kan se eller höra dig inom 30 fot från dig måste göra ett visdomssparande kast. Om varelsen misslyckas med sitt räddningskast blir den förvandlad i 1 minut eller tills den tar skada.",
+				"En förvandlad varelse måste spendera sina vändor med att försöka flytta så långt bort från dig som möjligt, och den kan inte frivilligt flytta sig till ett utrymme inom 30 fot från dig. Den kan inte heller ta reaktioner. För sin handling kan den bara använda {@action Dash} handlingen eller försöka fly från en effekt som hindrar den från att röra sig. Om det inte finns någonstans att röra sig kan varelsen använda handlingen {@action Dodge}."
+			]
+		},
+		{
 			"name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
@@ -2486,16 +2535,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Abjure Enemy|Paladin||Vengeance||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Vow of Enmity|Paladin||Vengeance||3"
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,9 +2549,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Som en handling visar du din heliga symbol och talar en fördömande bön med hjälp av din Channel Divinity. Välj en varelse inom 60 fot från dig som du kan se. Den varelsen måste göra ett räddningskast i Visdom, om den inte är immun mot att bli {@condition frightened}. Djävlar och odöda har nackdel på detta räddningskast.",
 				"Om räddningen misslyckas är varelsen {@condition frightened} i 1 minut eller tills den tar skada. Medan {@condition frightened} är varelsens hastighet 0, och den kan inte dra nytta av någon bonus för sin hastighet.",
@@ -2514,7 +2556,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2527,7 +2569,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Som en bonusåtgärd kan du uttala ett löfte om fiendskap mot en varelse som du kan se inom tre meter från dig, med hjälp av din Channel Divinity. Du får fördel på attackkast mot varelsen i 1 minut eller tills den sjunker till 0 träffpunkter eller faller {@condition unconscious}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance||3"
+				}
 			]
 		},
 		{
@@ -2641,6 +2691,20 @@
 			]
 		},
 		{
+			"name": "Vow of Enmity",
+			"source": "PHB",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Som en bonusåtgärd kan du uttala ett löfte om fiendskap mot en varelse som du kan se inom tre meter från dig, med hjälp av din Channel Divinity. Du får fördel på attackkast mot varelsen i 1 minut eller tills den sjunker till 0 träffpunkter eller faller {@condition unconscious}."
+			]
+		},
+		{
 			"name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
@@ -2711,16 +2775,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Champion Challenge|Paladin||Crown|SCAG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Tide|Paladin||Crown|SCAG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Crown|SCAG|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2729,15 +2789,12 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Som en bonusåtgärd kan du ge en utmaning som tvingar andra varelser att slåss mot dig. Varje varelse av ditt val som du kan se inom 30 fot från dig måste göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök kan en varelse inte frivilligt röra sig mer än 30 fot bort från dig. Den här effekten upphör på varelsen om du är {@condition incapacitated} eller dör eller om varelsen befinner sig mer än 30 fot från dig."
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Channel Divinity",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2750,7 +2807,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Som en bonusåtgärd kan du hjälpa skadade varelser med din Channel Divinity. Varje varelse av ditt val som kan höra dig inom 30 fot från dig återfår träffpoäng lika med {@dice 1d6} + din Charisma-modifierare (minst 1) om den inte har mer än hälften av sina träffpoäng."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Champion Challenge|Paladin||Crown|SCAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Tide|Paladin||Crown|SCAG|3"
+				}
 			]
 		},
 		{
@@ -2864,6 +2929,20 @@
 			]
 		},
 		{
+			"name": "Turn the Tide",
+			"source": "SCAG",
+			"page": 132,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Crown",
+			"subclassSource": "SCAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Som en bonusåtgärd kan du hjälpa skadade varelser med din Channel Divinity. Varje varelse av ditt val som kan höra dig inom 30 fot från dig återfår träffpoäng lika med {@dice 1d6} + din Charisma-modifierare (minst 1) om den inte har mer än hälften av sina träffpoäng."
+			]
+		},
+		{
 			"name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
@@ -2969,11 +3048,11 @@
 				"Du får följande två alternativ för Channel Divinity. Se klassegenskapen Sacred Oath för hur Channel Divinity fungerar.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Peerless Athlete|Paladin||Glory|TCE|3"
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Inspiring Smite|Paladin||Glory|TCE|3"
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
 				}
 			]
 		},
@@ -3081,7 +3160,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3101,7 +3180,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Peerless Athlete",
+			"name": "Peerless Athlete",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3203,9 +3282,6 @@
 			"subclassShortName": "Watchers",
 			"subclassSource": "TCE",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Watchers ed binder paladiner till att skydda dödliga riken från utomjordiska varelser, av vilka många kan ödelägga dödliga soldater. Därför finslipar Watchers sina sinnen, andar och kroppar för att bli de ultimata vapnen mot sådana hot.",
 				"Paladiner som följer Watchers ed är ständigt vaksamma när det gäller att upptäcka inflytande från utomjordiska krafter och upprättar ofta ett nätverk av spioner och informatörer för att samla in information om misstänkta kulter. För en Watcher är det lika naturligt att hålla en sund misstänksamhet och medvetenhet om sin omgivning som att bära rustning i strid.",
@@ -3404,9 +3480,6 @@
 			"subclassShortName": "Watchers (UA)",
 			"subclassSource": "UA2020SubclassesPt1",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Paladiner som svär Watchers ed försöker skydda den dödliga världen från utomjordiska varelser, av vilka många kan ödelägga dödliga soldater. Därför finslipar Watchers sina sinnen, andar och kroppar för att bli de ultimata vapnen mot sådana hot.",
 				"Paladiner som följer Watchers ed är ständigt vaksamma när det gäller att upptäcka inflytande från utomjordiska krafter och upprättar ofta ett nätverk av spioner och informatörer för att samla in information om misstänkta kulter. För en Watcher är det lika naturligt att hålla en sund misstänksamhet och medvetenhet om sin omgivning som att bära rustning i strid.",
@@ -3604,9 +3677,6 @@
 			"subclassShortName": "Redemption (UA)",
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Oath of Redemption ger en paladin en svår väg, en väg som kräver att en helig krigare endast använder våld som en sista utväg. Paladiner som ägnar sig åt denna ed tror att alla människor kan bli förlösta och att välviljans och rättvisans väg är en väg som vem som helst kan vandra. Dessa paladiner möter onda varelser i hopp om att vända dem till ljuset, och paladinerna dödar dem endast när ett sådant dåd uppenbarligen kommer att rädda andra liv. Paladiner som följer den här vägen är kända som förlösare.",
 				"Även om återlösarna är idealister är de inte dumma. Återlösare vet att odöda, demoner, djävlar och andra övernaturliga hot kan vara onda i sig själva. Mot sådana fiender använder paladinerna hela vreden från sina vapen och trollformler. Ändå ber förlösarna fortfarande att en dag kommer även de onda varelserna att bjuda in till sin egen förlösning.",
@@ -3628,11 +3698,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
 				}
 			]
 		},
@@ -3651,7 +3717,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3664,11 +3730,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att förstärka din närvaro med gudomlig kraft. Som en bonusåtgärd ger du dig själv en +5 bonus på nästa Charisma ({@skill Persuasion})-kontroll du gör inom den närmaste minuten."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3677,11 +3751,8 @@
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att tillrättavisa dem som använder våld. Som en reaktion när en fiende inom tre meter från dig orsakar skada med en närstridsattack mot en annan varelse än du, tvingar du den angriparen att göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök tar angriparen strålningsskada som är lika stor som den skada som han just fick. Vid ett lyckat räddningsförsök tar den hälften så mycket skada."
+				"Du kan använda din Channel Divinity för att förstärka din närvaro med gudomlig kraft. Som en bonusåtgärd ger du dig själv en +5 bonus på nästa Charisma ({@skill Persuasion})-kontroll du gör inom den närmaste minuten."
 			]
 		},
 		{
@@ -3730,6 +3801,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "UAATrioOfSubclasses",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption (UA)",
+			"subclassSource": "UAATrioOfSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kan använda din Channel Divinity för att tillrättavisa dem som använder våld. Som en reaktion när en fiende inom tre meter från dig orsakar skada med en närstridsattack mot en annan varelse än du, tvingar du den angriparen att göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök tar angriparen strålningsskada som är lika stor som den skada som han just fick. Vid ett lyckat räddningsförsök tar den hälften så mycket skada."
 			]
 		},
 		{
@@ -4089,16 +4174,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Strike",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4111,11 +4192,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att bryta fiendens vilja. När du träffar en varelse med en närstridsattack som en del av {@action Attack} handlingen kan du också använda din Channel Divinity för att tvinga målet att göra ett Visdomsbesparingskast. Vid ett misslyckat räddningsförsök blir målet {@condition frightened} av dig i 1 minut. {@condition frightened}-varelsen kan upprepa detta räddningskast i slutet av var och en av sina vändor, och avsluta effekten på sig själv om den lyckas."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Strike",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4124,9 +4213,20 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Du kan använda din Channel Divinity för att bryta fiendens vilja. När du träffar en varelse med en närstridsattack som en del av {@action Attack} handlingen kan du också använda din Channel Divinity för att tvinga målet att göra ett Visdomsbesparingskast. Vid ett misslyckat räddningsförsök blir målet {@condition frightened} av dig i 1 minut. {@condition frightened}-varelsen kan upprepa detta räddningskast i slutet av var och en av sina vändor, och avsluta effekten på sig själv om den lyckas."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UAPaladin",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Du kan använda din Channel Divinity för att slå till med övernaturlig precision. När du gör en anfallsrulle kan du använda din Channel Divinity för att få en +10-bonus på rullen. Du gör detta val efter att du har sett kastet, men innan DM säger om attacken träffar eller missar."
 			]
@@ -4302,16 +4402,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Treachery (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conjure Duplicate",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4324,12 +4420,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Som en handling skapar du en visuell illusion av dig själv som varar i 1 minut, eller tills du förlorar din {@status concentration} (som om du var {@status concentration||concentrating} på en besvärjelse). Illusionen visas i ett obebott utrymme som du väljer och som du kan se inom 30 fot från dig. Illusionen ser exakt ut som du; den är tyst; den har din storlek, är substanslös, upptar inte sitt utrymme; och den påverkas inte av attacker och skada. Som en bonushandling på din tur kan du flytta illusionen upp till 30 fot till ett utrymme du kan se, men illusionen måste förbli inom 120 fot från dig.",
-				"Under den tiden kan du kasta trollformler som om du befann dig i illusionens rum, men du måste använda dina egna sinnen. Dessutom, när både du och din illusion är inom 5 fot från en varelse som kan se illusionen, har du fördel på attackkast mot den varelsen, med tanke på hur kuslig illusionen är."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Poison Strike",
+			"name": "Conjure Duplicate",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4338,11 +4441,9 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att göra ett vapen dödligare. Som en bonusåtgärd rör du vid ett vapen eller en ammunitionsbit och trollar fram ett speciellt gift på det. Giftet varar i 1 minut. Nästa gång du träffar ett mål med en attack med det vapnet eller den ammunitionen tar målet giftskada direkt efter attacken. Giftskadan är lika med {@dice 2d10} + din paladinnivå, eller 20 + din paladinnivå om du hade fördel på attackkastet."
+				"Som en handling skapar du en visuell illusion av dig själv som varar i 1 minut, eller tills du förlorar din {@status concentration} (som om du var {@status concentration||concentrating} på en besvärjelse). Illusionen visas i ett obebott utrymme som du väljer och som du kan se inom 30 fot från dig. Illusionen ser exakt ut som du; den är tyst; den har din storlek, är substanslös, upptar inte sitt utrymme; och den påverkas inte av attacker och skada. Som en bonushandling på din tur kan du flytta illusionen upp till 30 fot till ett utrymme du kan se, men illusionen måste förbli inom 120 fot från dig.",
+				"Under den tiden kan du kasta trollformler som om du befann dig i illusionens rum, men du måste använda dina egna sinnen. Dessutom, när både du och din illusion är inom 5 fot från en varelse som kan se illusionen, har du fördel på attackkast mot den varelsen, med tanke på hur kuslig illusionen är."
 			]
 		},
 		{
@@ -4391,6 +4492,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Poison Strike",
+			"source": "UAPaladin",
+			"page": 2,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Treachery (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kan använda din Channel Divinity för att göra ett vapen dödligare. Som en bonusåtgärd rör du vid ett vapen eller en ammunitionsbit och trollar fram ett speciellt gift på det. Giftet varar i 1 minut. Nästa gång du träffar ett mål med en attack med det vapnet eller den ammunitionen tar målet giftskada direkt efter attacken. Giftskadan är lika med {@dice 2d10} + din paladinnivå, eller 20 + din paladinnivå om du hade fördel på attackkastet."
 			]
 		},
 		{
@@ -4505,16 +4620,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4527,11 +4638,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att utstråla en skrämmande närvaro. Som en handling tvingar du varje varelse av ditt val som du kan se inom 30 fot från dig att göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök blir en varelse {@condition frightened} av dig i 1 minut. Den {@condition frightened} varelsen kan upprepa detta räddningskast i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv om den lyckas."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4540,9 +4659,20 @@
 			"subclassSource": "UARevisedClassOptions",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Du kan använda din Channel Divinity för att utstråla en skrämmande närvaro. Som en handling tvingar du varje varelse av ditt val som du kan se inom 30 fot från dig att göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök blir en varelse {@condition frightened} av dig i 1 minut. Den {@condition frightened} varelsen kan upprepa detta räddningskast i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv om den lyckas."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UARevisedClassOptions",
+			"page": 3,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Du kan använda din Channel Divinity för att slå till med övernaturlig precision. När du gör en anfallsrulle kan du använda din Channel Divinity för att få en +10-bonus på rullen. Du gör detta val efter att du har sett kastet, men innan DM säger om attacken träffar eller missar."
 			]
@@ -4719,16 +4849,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4741,11 +4867,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att utstråla en skrämmande närvaro. Som en handling tvingar du varje varelse av ditt val som du kan se inom 30 fot från dig att göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök blir en varelse {@condition frightened} av dig i 1 minut. Den {@condition frightened} varelsen kan upprepa detta räddningskast i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv om den lyckas."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4754,9 +4888,20 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Du kan använda din Channel Divinity för att utstråla en skrämmande närvaro. Som en handling tvingar du varje varelse av ditt val som du kan se inom 30 fot från dig att göra ett räddningskast i visdom. Vid ett misslyckat räddningsförsök blir en varelse {@condition frightened} av dig i 1 minut. Den {@condition frightened} varelsen kan upprepa detta räddningskast i slutet av var och en av sina vändor, vilket avslutar effekten på sig själv om den lyckas."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "XGE",
+			"page": 37,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Du kan använda din Channel Divinity för att slå till med övernaturlig precision. När du gör en anfallsrulle kan du använda din Channel Divinity för att få en +10-bonus på rullen. Du gör detta val efter att du har sett kastet, men innan DM säger om attacken träffar eller missar."
 			]
@@ -4924,16 +5069,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4946,11 +5087,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att förstärka din närvaro med gudomlig kraft. Som en bonusåtgärd ger du dig själv en +5 bonus på Charisma ({@skill Persuasion})-kontroller under de kommande 10 minuterna."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4959,11 +5108,8 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kan använda din Channel Divinity för att tillrättavisa dem som använder våld. Omedelbart efter att en angripare inom 30 fot från dig orsakar skada med en attack mot en annan varelse än du, kan du använda din reaktion för att tvinga angriparen att göra ett räddningskast för visdom. Vid ett misslyckat räddningsförsök tar angriparen strålningsskada som är lika stor som den skada som han just fick. Vid ett lyckat räddningsförsök tar den hälften så mycket skada."
+				"Du kan använda din Channel Divinity för att förstärka din närvaro med gudomlig kraft. Som en bonusåtgärd ger du dig själv en +5 bonus på Charisma ({@skill Persuasion})-kontroller under de kommande 10 minuterna."
 			]
 		},
 		{
@@ -5012,6 +5158,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "XGE",
+			"page": 38,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kan använda din Channel Divinity för att tillrättavisa dem som använder våld. Omedelbart efter att en angripare inom 30 fot från dig orsakar skada med en attack mot en annan varelse än du, kan du använda din reaktion för att tvinga angriparen att göra ett räddningskast för visdom. Vid ett misslyckat räddningsförsök tar angriparen strålningsskada som är lika stor som den skada som han just fick. Vid ett lyckat räddningsförsök tar den hälften så mycket skada."
 			]
 		},
 		{
