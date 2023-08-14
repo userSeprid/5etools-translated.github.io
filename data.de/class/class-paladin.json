@@ -1866,16 +1866,34 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin||Oathbreaker|DMG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Oathbreaker|DMG|3"
 				}
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Channel Divinity",
+			"source": "DMG",
+			"page": 97,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oathbreaker",
+			"subclassSource": "DMG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Control Undead|Paladin||Oathbreaker|DMG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+				}
+			]
+		},
+		{
+			"name": "Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1889,7 +1907,7 @@
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -2016,16 +2034,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Nature's Wrath|Paladin||Ancients||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Faithless|Paladin||Ancients||3"
+					"subclassFeature": "Channel Divinity|Paladin||Ancients||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2038,11 +2052,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um urzeitliche Kräfte zu beschwören und einen Feind zu umgarnen. Als Aktion kannst du geisterhafte Ranken entstehen lassen, die nach einer Kreatur im Umkreis von 10 Fuß greifen, die du sehen kannst. Die Kreatur muss einen Rettungswurf in Stärke oder Geschicklichkeit bestehen (je nach Wahl) oder {@condition restrained} leiden. Solange sie sich {@condition restrained} in den Ranken befindet, wiederholt die Kreatur den Rettungswurf am Ende jeder ihrer Runden. Bei einem Erfolg befreit sie sich und die Ranken verschwinden."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2051,13 +2073,8 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kannst deine Kanalgöttlichkeit einsetzen, um uralte Worte zu sprechen, die für Feen und Unholde schmerzhaft zu hören sind. Als Aktion präsentierst du dein heiliges Symbol, und jede Fee oder jeder Unhold im Umkreis von 30 Fuß, der dich hören kann, muss einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf wird die Kreatur für 1 Minute oder so lange, bis sie Schaden nimmt, verwandelt.",
-				"Eine umgedrehte Kreatur muss ihre Runden damit verbringen, sich so weit wie möglich von dir wegzubewegen, und sie kann sich nicht freiwillig in einen Raum innerhalb von 30 Fuß von dir bewegen. Sie kann auch keine Reaktionen ausführen. Für ihre Aktion kann sie nur die Aktion {@action Dash} verwenden oder versuchen, einem Effekt zu entkommen, der sie an der Bewegung hindert. Wenn sie sich nirgendwo hinbewegen kann, kann die Kreatur die Aktion {@action Dodge} verwenden.",
-				"Wenn die wahre Form der Kreatur durch eine Illusion, eine Gestaltveränderung oder einen anderen Effekt verborgen ist, wird diese Form offenbart, während sie sich verwandelt."
+				"Du kannst deine Channel Divinity einsetzen, um urzeitliche Kräfte zu beschwören und einen Feind zu umgarnen. Als Aktion kannst du geisterhafte Ranken entstehen lassen, die nach einer Kreatur im Umkreis von 10 Fuß greifen, die du sehen kannst. Die Kreatur muss einen Rettungswurf in Stärke oder Geschicklichkeit bestehen (je nach Wahl) oder {@condition restrained} leiden. Solange sie sich {@condition restrained} in den Ranken befindet, wiederholt die Kreatur den Rettungswurf am Ende jeder ihrer Runden. Bei einem Erfolg befreit sie sich und die Ranken verschwinden."
 			]
 		},
 		{
@@ -2171,6 +2188,22 @@
 			]
 		},
 		{
+			"name": "Turn the Faithless",
+			"source": "PHB",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kannst deine Kanalgöttlichkeit einsetzen, um uralte Worte zu sprechen, die für Feen und Unholde schmerzhaft zu hören sind. Als Aktion präsentierst du dein heiliges Symbol, und jede Fee oder jeder Unhold im Umkreis von 30 Fuß, der dich hören kann, muss einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf wird die Kreatur für 1 Minute oder so lange, bis sie Schaden nimmt, verwandelt.",
+				"Eine umgedrehte Kreatur muss ihre Runden damit verbringen, sich so weit wie möglich von dir wegzubewegen, und sie kann sich nicht freiwillig in einen Raum innerhalb von 30 Fuß von dir bewegen. Sie kann auch keine Reaktionen ausführen. Für ihre Aktion kann sie nur die Aktion {@action Dash} verwenden oder versuchen, einem Effekt zu entkommen, der sie an der Bewegung hindert. Wenn sie sich nirgendwo hinbewegen kann, kann die Kreatur die Aktion {@action Dodge} verwenden.",
+				"Wenn die wahre Form der Kreatur durch eine Illusion, eine Gestaltveränderung oder einen anderen Effekt verborgen ist, wird diese Form offenbart, während sie sich verwandelt."
+			]
+		},
+		{
 			"name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
@@ -2246,16 +2279,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Sacred Weapon|Paladin||Devotion||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Unholy|Paladin||Devotion||3"
+					"subclassFeature": "Channel Divinity|Paladin||Devotion||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2269,27 +2298,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als Aktion kannst du eine Waffe, die du in der Hand hältst, mit positiver Energie durchdringen, indem du deine Channel Divinity einsetzt. 1 Minute lang addierst du deinen Charisma-Modifikator zu Angriffswürfen mit dieser Waffe (mit einem Mindestbonus von +1). Die Waffe strahlt außerdem helles Licht in einem Radius von 20 Fuß und schwaches Licht 20 Fuß darüber hinaus aus. Wenn die Waffe nicht bereits magisch ist, wird sie für die Dauer magisch.",
-				"Du kannst diesen Effekt in deinem Zug als Teil einer beliebigen anderen Aktion beenden. Wenn du diese Waffe nicht mehr hältst oder trägst oder wenn du fällst {@condition unconscious}, endet dieser Effekt."
-			]
-		},
-		{
-			"name": "Channel Divinity: Turn the Unholy",
-			"source": "PHB",
-			"page": 85,
-			"srd": true,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Devotion",
-			"subclassSource": "PHB",
-			"level": 3,
-			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Als Aktion präsentierst du dein heiliges Symbol und sprichst ein Gebet, das Unholde und Untote tadelt, indem du deine Kanalgöttlichkeit benutzt. Jeder Unhold oder Untote, der dich im Umkreis von 30 Fuß sehen oder hören kann, muss einen Rettungswurf in Weisheit ablegen. Wenn der Rettungswurf misslingt, wird die Kreatur für 1 Minute oder so lange, bis sie Schaden nimmt, verwandelt.",
-				"Eine umgedrehte Kreatur muss ihre Runden damit verbringen, sich so weit wie möglich von dir wegzubewegen, und sie kann sich nicht freiwillig in einen Raum innerhalb von 30 Fuß von dir bewegen. Sie kann auch keine Reaktionen ausführen. Für ihre Aktion kann sie nur die Aktion {@action Dash} verwenden oder versuchen, einem Effekt zu entkommen, der sie an der Bewegung hindert. Wenn sie sich nirgendwo hinbewegen kann, kann die Kreatur die Aktion {@action Dodge} verwenden."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
 			]
 		},
 		{
@@ -2339,6 +2356,22 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als Aktion kannst du eine Waffe, die du in der Hand hältst, mit positiver Energie durchdringen, indem du deine Channel Divinity einsetzt. 1 Minute lang addierst du deinen Charisma-Modifikator zu Angriffswürfen mit dieser Waffe (mit einem Mindestbonus von +1). Die Waffe strahlt außerdem helles Licht in einem Radius von 20 Fuß und schwaches Licht 20 Fuß darüber hinaus aus. Wenn die Waffe nicht bereits magisch ist, wird sie für die Dauer magisch.",
+				"Du kannst diesen Effekt in deinem Zug als Teil einer beliebigen anderen Aktion beenden. Wenn du diese Waffe nicht mehr hältst oder trägst oder wenn du fällst {@condition unconscious}, endet dieser Effekt."
 			]
 		},
 		{
@@ -2417,6 +2450,22 @@
 			]
 		},
 		{
+			"name": "Turn the Unholy",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als Aktion präsentierst du dein heiliges Symbol und sprichst ein Gebet, das Unholde und Untote tadelt, indem du deine Kanalgöttlichkeit benutzt. Jeder Unhold oder Untote, der dich im Umkreis von 30 Fuß sehen oder hören kann, muss einen Rettungswurf in Weisheit ablegen. Wenn der Rettungswurf misslingt, wird die Kreatur für 1 Minute oder so lange, bis sie Schaden nimmt, verwandelt.",
+				"Eine umgedrehte Kreatur muss ihre Runden damit verbringen, sich so weit wie möglich von dir wegzubewegen, und sie kann sich nicht freiwillig in einen Raum innerhalb von 30 Fuß von dir bewegen. Sie kann auch keine Reaktionen ausführen. Für ihre Aktion kann sie nur die Aktion {@action Dash} verwenden oder versuchen, einem Effekt zu entkommen, der sie an der Bewegung hindert. Wenn sie sich nirgendwo hinbewegen kann, kann die Kreatur die Aktion {@action Dodge} verwenden."
+			]
+		},
+		{
 			"name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
@@ -2486,16 +2535,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Abjure Enemy|Paladin||Vengeance||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Vow of Enmity|Paladin||Vengeance||3"
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,9 +2549,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Als Aktion präsentierst du dein heiliges Symbol und sprichst ein Gebet der Anprangerung, indem du deine Channel Divinity einsetzt. Wähle eine Kreatur im Umkreis von 60 Fuß von dir, die du sehen kannst. Diese Kreatur muss einen Rettungswurf in Weisheit ablegen, es sei denn, sie ist immun gegen das Wesen {@condition frightened}. Unholde und Untote haben bei diesem Rettungswurf einen Nachteil.",
 				"Bei einem fehlgeschlagenen Schutzversuch ist die Kreatur für 1 Minute oder bis sie Schaden erleidet {@condition frightened}. Während {@condition frightened} ist die Geschwindigkeit der Kreatur 0 und sie kann keinen Bonus auf ihre Geschwindigkeit erhalten.",
@@ -2514,7 +2556,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2527,7 +2569,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als Bonusaktion kannst du einen Feindschaftsschwur gegen eine Kreatur sprechen, die du im Umkreis von 10 Fuß sehen kannst, indem du deine Channel Divinity einsetzt. 1 Minute lang oder bis sie auf 0 Trefferpunkte fällt oder {@condition unconscious} fällt, erhältst du Vorteil bei Angriffswürfen gegen die Kreatur."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance||3"
+				}
 			]
 		},
 		{
@@ -2641,6 +2691,20 @@
 			]
 		},
 		{
+			"name": "Vow of Enmity",
+			"source": "PHB",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als Bonusaktion kannst du einen Feindschaftsschwur gegen eine Kreatur sprechen, die du im Umkreis von 10 Fuß sehen kannst, indem du deine Channel Divinity einsetzt. 1 Minute lang oder bis sie auf 0 Trefferpunkte fällt oder {@condition unconscious} fällt, erhältst du Vorteil bei Angriffswürfen gegen die Kreatur."
+			]
+		},
+		{
 			"name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
@@ -2711,16 +2775,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Champion Challenge|Paladin||Crown|SCAG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Tide|Paladin||Crown|SCAG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Crown|SCAG|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2729,15 +2789,12 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Als Bonusaktion kannst du eine Herausforderung aussprechen, die andere Kreaturen dazu zwingt, mit dir zu kämpfen. Jede Kreatur deiner Wahl, die du im Umkreis von 30 Fuß um dich herum sehen kannst, muss einen Rettungswurf in Weisheit ablegen. Bei einem misslungenen Schutzwurf kann sich die Kreatur nicht freiwillig mehr als 30 Fuß von dir wegbewegen. Dieser Effekt endet für die Kreatur, wenn du {@condition incapacitated} bist oder stirbst oder wenn die Kreatur mehr als 30 Fuß von dir entfernt ist."
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Channel Divinity",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2750,7 +2807,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als Bonusaktion kannst du verletzte Kreaturen mit deiner Channel Divinity stärken: Jede Kreatur deiner Wahl, die dich im Umkreis von 30 Fuß hören kann, erhält Trefferpunkte in Höhe von {@dice 1d6} + deinem Charisma-Modifikator (mindestens 1) zurück, wenn sie nicht mehr als die Hälfte ihrer Trefferpunkte hat."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Champion Challenge|Paladin||Crown|SCAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Tide|Paladin||Crown|SCAG|3"
+				}
 			]
 		},
 		{
@@ -2864,6 +2929,20 @@
 			]
 		},
 		{
+			"name": "Turn the Tide",
+			"source": "SCAG",
+			"page": 132,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Crown",
+			"subclassSource": "SCAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Als Bonusaktion kannst du verletzte Kreaturen mit deiner Channel Divinity stärken: Jede Kreatur deiner Wahl, die dich im Umkreis von 30 Fuß hören kann, erhält Trefferpunkte in Höhe von {@dice 1d6} + deinem Charisma-Modifikator (mindestens 1) zurück, wenn sie nicht mehr als die Hälfte ihrer Trefferpunkte hat."
+			]
+		},
+		{
 			"name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
@@ -2969,11 +3048,11 @@
 				"Du erhältst die folgenden zwei Optionen, um Göttlichkeit zu kanalisieren (siehe Klassenmerkmal Heiliger Schwur).",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Peerless Athlete|Paladin||Glory|TCE|3"
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Inspiring Smite|Paladin||Glory|TCE|3"
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
 				}
 			]
 		},
@@ -3081,7 +3160,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3101,7 +3180,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Peerless Athlete",
+			"name": "Peerless Athlete",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3203,9 +3282,6 @@
 			"subclassShortName": "Watchers",
 			"subclassSource": "TCE",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Der Eid der Wächter verpflichtet die Paladine, die Reiche der Sterblichen vor den Angriffen interdimensionaler Kreaturen zu schützen, von denen viele sterbliche Soldaten vernichten können. Daher schärfen die Wächter ihren Verstand, ihren Geist und ihren Körper, um die ultimativen Waffen gegen solche Bedrohungen zu sein.",
 				"Paladine, die dem Eid der Wächter folgen, sind stets wachsam, wenn es darum geht, den Einfluss interdimensionaler Kräfte aufzuspüren, und bauen oft ein Netzwerk von Spionen und Informanten auf, um Informationen über verdächtige Sekten zu sammeln. Für einen Wächter ist ein gesundes Misstrauen und ein wachsames Auge auf seine Umgebung so selbstverständlich wie das Tragen einer Rüstung im Kampf.",
@@ -3404,9 +3480,6 @@
 			"subclassShortName": "Watchers (UA)",
 			"subclassSource": "UA2020SubclassesPt1",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Paladine, die den Eid der Wächter schwören, versuchen, das Reich der Sterblichen vor den Angriffen interdimensionaler Kreaturen zu schützen, von denen viele sterbliche Soldaten vernichten können. Daher schärfen die Wächter ihren Verstand, ihren Geist und ihren Körper, um die ultimativen Waffen gegen solche Bedrohungen zu sein.",
 				"Paladine, die dem Eid der Wächter folgen, sind stets wachsam, wenn es darum geht, den Einfluss interdimensionaler Kräfte aufzuspüren, und bauen oft ein Netzwerk von Spionen und Informanten auf, um Informationen über verdächtige Sekten zu sammeln. Für einen Wächter ist ein gesundes Misstrauen und ein wachsames Auge auf seine Umgebung so selbstverständlich wie das Tragen einer Rüstung im Kampf.",
@@ -3604,9 +3677,6 @@
 			"subclassShortName": "Redemption (UA)",
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Der Eid der Erlösung führt einen Paladin auf einen schwierigen Weg, der von einem heiligen Krieger verlangt, Gewalt nur als letzten Ausweg anzuwenden. Paladine, die sich diesem Eid widmen, glauben, dass jeder Mensch erlöst werden kann und dass der Weg der Güte und Gerechtigkeit einer ist, den jeder gehen kann. Diese Paladine stellen sich bösen Kreaturen in der Hoffnung, sie zum Licht zu bekehren, und die Paladine töten sie nur, wenn eine solche Tat eindeutig andere Leben rettet. Paladine, die diesem Weg folgen, sind als Erlöser bekannt.",
 				"Erlöser sind zwar Idealisten, aber keine Dummköpfe. Erlöser wissen, dass Untote, Dämonen, Teufel und andere übernatürliche Bedrohungen von Natur aus böse sein können. Gegen solche Feinde setzen die Paladine den ganzen Zorn ihrer Waffen und Zauber ein. Dennoch beten die Erlöser, dass eines Tages auch die Kreaturen der Bosheit ihre eigene Erlösung einfordern.",
@@ -3628,11 +3698,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
 				}
 			]
 		},
@@ -3651,7 +3717,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3664,11 +3730,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um deine Präsenz mit göttlicher Macht zu verstärken. Als Bonusaktion gewährst du dir einen Bonus von +5 auf die nächste Charisma-Überprüfung ({@skill Persuasion}), die du innerhalb der nächsten Minute machst."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3677,11 +3751,8 @@
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um diejenigen zurechtzuweisen, die Gewalt anwenden. Wenn ein Feind im Umkreis von 10 Fuß von dir mit einem Nahkampfangriff gegen eine Kreatur außer dir Schaden verursacht, zwingst du diesen Angreifer als Reaktion zu einem Rettungswurf in Weisheit. Bei einem misslungenen Schutzwurf erleidet der Angreifer Strahlungsschaden in Höhe des gerade zugefügten Schadens. Bei einem erfolgreichen Schutzwurf erleidet er nur halb so viel Schaden."
+				"Du kannst deine Channel Divinity einsetzen, um deine Präsenz mit göttlicher Macht zu verstärken. Als Bonusaktion gewährst du dir einen Bonus von +5 auf die nächste Charisma-Überprüfung ({@skill Persuasion}), die du innerhalb der nächsten Minute machst."
 			]
 		},
 		{
@@ -3730,6 +3801,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "UAATrioOfSubclasses",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption (UA)",
+			"subclassSource": "UAATrioOfSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kannst deine Channel Divinity einsetzen, um diejenigen zurechtzuweisen, die Gewalt anwenden. Wenn ein Feind im Umkreis von 10 Fuß von dir mit einem Nahkampfangriff gegen eine Kreatur außer dir Schaden verursacht, zwingst du diesen Angreifer als Reaktion zu einem Rettungswurf in Weisheit. Bei einem misslungenen Schutzwurf erleidet der Angreifer Strahlungsschaden in Höhe des gerade zugefügten Schadens. Bei einem erfolgreichen Schutzwurf erleidet er nur halb so viel Schaden."
 			]
 		},
 		{
@@ -4089,16 +4174,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Strike",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4111,11 +4192,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kannst deine Kanalgöttlichkeit einsetzen, um den Willen eines Gegners zu brechen. Wenn du eine Kreatur mit einem Nahkampfangriff als Teil der {@action Attack}-Aktion triffst, kannst du deine Kanalgöttlichkeit auch einsetzen, um das Ziel zu einem Rettungswurf in Weisheit zu zwingen. Bei einem misslungenen Schutzwurf wird das Ziel für 1 Minute zu {@condition frightened} von dir. Die {@condition frightened} Kreatur kann diesen Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Strike",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4124,9 +4213,20 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Du kannst deine Kanalgöttlichkeit einsetzen, um den Willen eines Gegners zu brechen. Wenn du eine Kreatur mit einem Nahkampfangriff als Teil der {@action Attack}-Aktion triffst, kannst du deine Kanalgöttlichkeit auch einsetzen, um das Ziel zu einem Rettungswurf in Weisheit zu zwingen. Bei einem misslungenen Schutzwurf wird das Ziel für 1 Minute zu {@condition frightened} von dir. Die {@condition frightened} Kreatur kann diesen Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UAPaladin",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Du kannst deine Kanalgöttlichkeit einsetzen, um mit übernatürlicher Genauigkeit zuzuschlagen. Wenn du einen Angriffswurf machst, kannst du deine Kanalgöttlichkeit einsetzen, um einen Bonus von +10 auf den Wurf zu erhalten. Du triffst diese Wahl, nachdem du den Wurf gesehen hast, aber bevor der DM sagt, ob der Angriff trifft oder verfehlt."
 			]
@@ -4302,16 +4402,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Treachery (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conjure Duplicate",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4324,12 +4420,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Als Aktion erschaffst du eine visuelle Illusion von dir selbst, die 1 Minute lang anhält oder bis du deine {@status concentration} verlierst (als ob du {@status concentration||concentrating} auf einem Zauber wärst). Die Illusion erscheint in einem unbesetzten Raum deiner Wahl, den du im Umkreis von 30 Fuß um dich herum sehen kannst. Die Illusion sieht genauso aus wie du; sie ist stumm; sie hat deine Größe, ist substanzlos, nimmt ihren Platz nicht ein und ist von Angriffen und Schaden unberührt. Als Bonusaktion in deinem Zug kannst du die Illusion bis zu 30 Fuß in einen Raum bewegen, den du sehen kannst, aber die Illusion muss innerhalb von 120 Fuß um dich herum bleiben.",
-				"Wenn du dich mit deiner Illusion in einem Umkreis von 5 Fuß von einer Kreatur befindest, die die Illusion sehen kann, hast du außerdem einen Vorteil bei Angriffswürfen gegen diese Kreatur, da die Illusion so unheimlich ist."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Poison Strike",
+			"name": "Conjure Duplicate",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4338,11 +4441,9 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um eine Waffe tödlicher zu machen. Als Bonusaktion berührst du eine Waffe oder ein Stück Munition und beschwörst ein spezielles Gift darauf. Das Gift hält 1 Minute lang an. Wenn du das nächste Mal ein Ziel mit einem Angriff mit dieser Waffe oder Munition triffst, erleidet das Ziel sofort nach dem Angriff Giftschaden. Der Giftschaden entspricht {@dice 2d10} + deiner Paladinstufe oder 20 + deiner Paladinstufe, wenn du beim Angriffswurf Vorteil hattest."
+				"Als Aktion erschaffst du eine visuelle Illusion von dir selbst, die 1 Minute lang anhält oder bis du deine {@status concentration} verlierst (als ob du {@status concentration||concentrating} auf einem Zauber wärst). Die Illusion erscheint in einem unbesetzten Raum deiner Wahl, den du im Umkreis von 30 Fuß um dich herum sehen kannst. Die Illusion sieht genauso aus wie du; sie ist stumm; sie hat deine Größe, ist substanzlos, nimmt ihren Platz nicht ein und ist von Angriffen und Schaden unberührt. Als Bonusaktion in deinem Zug kannst du die Illusion bis zu 30 Fuß in einen Raum bewegen, den du sehen kannst, aber die Illusion muss innerhalb von 120 Fuß um dich herum bleiben.",
+				"Wenn du dich mit deiner Illusion in einem Umkreis von 5 Fuß von einer Kreatur befindest, die die Illusion sehen kann, hast du außerdem einen Vorteil bei Angriffswürfen gegen diese Kreatur, da die Illusion so unheimlich ist."
 			]
 		},
 		{
@@ -4391,6 +4492,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Poison Strike",
+			"source": "UAPaladin",
+			"page": 2,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Treachery (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kannst deine Channel Divinity einsetzen, um eine Waffe tödlicher zu machen. Als Bonusaktion berührst du eine Waffe oder ein Stück Munition und beschwörst ein spezielles Gift darauf. Das Gift hält 1 Minute lang an. Wenn du das nächste Mal ein Ziel mit einem Angriff mit dieser Waffe oder Munition triffst, erleidet das Ziel sofort nach dem Angriff Giftschaden. Der Giftschaden entspricht {@dice 2d10} + deiner Paladinstufe oder 20 + deiner Paladinstufe, wenn du beim Angriffswurf Vorteil hattest."
 			]
 		},
 		{
@@ -4505,16 +4620,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4527,11 +4638,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um eine furchterregende Präsenz auszustrahlen. Als Aktion zwingst du jede Kreatur deiner Wahl, die du im Umkreis von 30 Fuß sehen kannst, einen Rettungswurf in Weisheit zu machen. Bei einem misslungenen Schutzwurf wird die Kreatur für 1 Minute zu {@condition frightened} von dir. Die {@condition frightened} Kreatur kann diesen Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4540,9 +4659,20 @@
 			"subclassSource": "UARevisedClassOptions",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Du kannst deine Channel Divinity einsetzen, um eine furchterregende Präsenz auszustrahlen. Als Aktion zwingst du jede Kreatur deiner Wahl, die du im Umkreis von 30 Fuß sehen kannst, einen Rettungswurf in Weisheit zu machen. Bei einem misslungenen Schutzwurf wird die Kreatur für 1 Minute zu {@condition frightened} von dir. Die {@condition frightened} Kreatur kann diesen Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UARevisedClassOptions",
+			"page": 3,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Du kannst deine Kanalgöttlichkeit einsetzen, um mit übernatürlicher Genauigkeit zuzuschlagen. Wenn du einen Angriffswurf machst, kannst du deine Kanalgöttlichkeit einsetzen, um einen Bonus von +10 auf den Wurf zu erhalten. Du triffst diese Wahl, nachdem du den Wurf gesehen hast, aber bevor der DM sagt, ob der Angriff trifft oder verfehlt."
 			]
@@ -4719,16 +4849,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4741,11 +4867,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um eine furchterregende Präsenz auszustrahlen. Als Aktion zwingst du jede Kreatur deiner Wahl, die du im Umkreis von 30 Fuß sehen kannst, einen Rettungswurf in Weisheit zu machen. Bei einem misslungenen Schutzwurf wird die Kreatur für 1 Minute zu {@condition frightened} von dir. Die {@condition frightened} Kreatur kann diesen Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4754,9 +4888,20 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Du kannst deine Channel Divinity einsetzen, um eine furchterregende Präsenz auszustrahlen. Als Aktion zwingst du jede Kreatur deiner Wahl, die du im Umkreis von 30 Fuß sehen kannst, einen Rettungswurf in Weisheit zu machen. Bei einem misslungenen Schutzwurf wird die Kreatur für 1 Minute zu {@condition frightened} von dir. Die {@condition frightened} Kreatur kann diesen Rettungswurf am Ende jeder ihrer Runden wiederholen, wobei der Effekt bei einem Erfolg für sie selbst endet."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "XGE",
+			"page": 37,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Du kannst deine Kanalgöttlichkeit einsetzen, um mit übernatürlicher Genauigkeit zuzuschlagen. Wenn du einen Angriffswurf machst, kannst du deine Kanalgöttlichkeit einsetzen, um einen Bonus von +10 auf den Wurf zu erhalten. Du triffst diese Wahl, nachdem du den Wurf gesehen hast, aber bevor der DM sagt, ob der Angriff trifft oder verfehlt."
 			]
@@ -4924,16 +5069,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4946,11 +5087,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um deine Präsenz mit göttlicher Macht zu verstärken. Als Bonusaktion gewährst du dir für die nächsten 10 Minuten einen Bonus von +5 auf Charisma ({@skill Persuasion})-Prüfungen."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4959,11 +5108,8 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Du kannst deine Channel Divinity einsetzen, um diejenigen zurechtzuweisen, die Gewalt anwenden. Unmittelbar nachdem ein Angreifer im Umkreis von 30 Fuß von dir mit einem Angriff gegen eine andere Kreatur als dich Schaden verursacht hat, kannst du deine Reaktion nutzen, um den Angreifer zu einem Rettungswurf in Weisheit zu zwingen. Bei einem misslungenen Schutzwurf erleidet der Angreifer Strahlungsschaden in Höhe des gerade zugefügten Schadens. Bei einem erfolgreichen Schutzwurf erleidet er nur halb so viel Schaden."
+				"Du kannst deine Channel Divinity einsetzen, um deine Präsenz mit göttlicher Macht zu verstärken. Als Bonusaktion gewährst du dir für die nächsten 10 Minuten einen Bonus von +5 auf Charisma ({@skill Persuasion})-Prüfungen."
 			]
 		},
 		{
@@ -5012,6 +5158,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "XGE",
+			"page": 38,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Du kannst deine Channel Divinity einsetzen, um diejenigen zurechtzuweisen, die Gewalt anwenden. Unmittelbar nachdem ein Angreifer im Umkreis von 30 Fuß von dir mit einem Angriff gegen eine andere Kreatur als dich Schaden verursacht hat, kannst du deine Reaktion nutzen, um den Angreifer zu einem Rettungswurf in Weisheit zu zwingen. Bei einem misslungenen Schutzwurf erleidet der Angreifer Strahlungsschaden in Höhe des gerade zugefügten Schadens. Bei einem erfolgreichen Schutzwurf erleidet er nur halb so viel Schaden."
 			]
 		},
 		{
