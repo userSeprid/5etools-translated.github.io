@@ -1866,16 +1866,34 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin||Oathbreaker|DMG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Oathbreaker|DMG|3"
 				}
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Channel Divinity",
+			"source": "DMG",
+			"page": 97,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oathbreaker",
+			"subclassSource": "DMG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Control Undead|Paladin||Oathbreaker|DMG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Aspect|Paladin||Oathbreaker|DMG|3"
+				}
+			]
+		},
+		{
+			"name": "Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1889,7 +1907,7 @@
 			]
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -2016,16 +2034,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Nature's Wrath|Paladin||Ancients||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Faithless|Paladin||Ancients||3"
+					"subclassFeature": "Channel Divinity|Paladin||Ancients||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2038,11 +2052,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Możesz użyć Kanału Boskości, aby przywołać pierwotne siły i uwięzić przeciwnika. Jako akcję, możesz sprawić, że widmowe pnącza wyrosną i sięgną po istotę w promieniu 10 stóp od ciebie, którą widzisz. Stworzeniu musi udać się rzut ratunkowy na siłę lub zręczność (do wyboru) albo zostanie {@condition restrained}. Podczas gdy {@condition restrained} jest otoczone przez pnącza, na koniec każdej swojej tury powtarza rzut ratujący. Jeśli mu się powiedzie, uwalnia się, a pnącza znikają."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2051,13 +2073,8 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Możesz użyć Kanału Boskości, aby wypowiedzieć starożytne słowa, które są bolesne dla feyów i fiendów. Jako akcję, prezentujesz swój święty symbol, a każdy słyszący fey lub fiend w promieniu 30 stóp od ciebie musi wykonać rzut na przetrwanie mądrości. W przypadku nieudanego testu, stworzenie jest odwracane na 1 minutę lub do momentu otrzymania obrażeń.",
-				"Przemienione stworzenie musi spędzić swoją turę próbując oddalić się od ciebie tak daleko, jak to tylko możliwe, i nie może dobrowolnie przenieść się do przestrzeni w promieniu 30 stóp od ciebie. Nie może też podejmować reakcji. Do wykonania swojej akcji może użyć tylko akcji {@action Dash} lub spróbować uciec przed efektem, który uniemożliwia mu ruch. Jeśli nie ma się gdzie ruszyć, stworzenie może użyć akcji {@action Dodge}.",
-				"Jeśli prawdziwa forma stworzenia jest ukryta przez iluzję, zmianę kształtu lub inny efekt, forma ta zostaje ujawniona podczas przemiany."
+				"Możesz użyć Kanału Boskości, aby przywołać pierwotne siły i uwięzić przeciwnika. Jako akcję, możesz sprawić, że widmowe pnącza wyrosną i sięgną po istotę w promieniu 10 stóp od ciebie, którą widzisz. Stworzeniu musi udać się rzut ratunkowy na siłę lub zręczność (do wyboru) albo zostanie {@condition restrained}. Podczas gdy {@condition restrained} jest otoczone przez pnącza, na koniec każdej swojej tury powtarza rzut ratujący. Jeśli mu się powiedzie, uwalnia się, a pnącza znikają."
 			]
 		},
 		{
@@ -2171,6 +2188,22 @@
 			]
 		},
 		{
+			"name": "Turn the Faithless",
+			"source": "PHB",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Możesz użyć Kanału Boskości, aby wypowiedzieć starożytne słowa, które są bolesne dla feyów i fiendów. Jako akcję, prezentujesz swój święty symbol, a każdy słyszący fey lub fiend w promieniu 30 stóp od ciebie musi wykonać rzut na przetrwanie mądrości. W przypadku nieudanego testu, stworzenie jest odwracane na 1 minutę lub do momentu otrzymania obrażeń.",
+				"Przemienione stworzenie musi spędzić swoją turę próbując oddalić się od ciebie tak daleko, jak to tylko możliwe, i nie może dobrowolnie przenieść się do przestrzeni w promieniu 30 stóp od ciebie. Nie może też podejmować reakcji. Do wykonania swojej akcji może użyć tylko akcji {@action Dash} lub spróbować uciec przed efektem, który uniemożliwia mu ruch. Jeśli nie ma się gdzie ruszyć, stworzenie może użyć akcji {@action Dodge}.",
+				"Jeśli prawdziwa forma stworzenia jest ukryta przez iluzję, zmianę kształtu lub inny efekt, forma ta zostaje ujawniona podczas przemiany."
+			]
+		},
+		{
 			"name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
@@ -2246,16 +2279,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Sacred Weapon|Paladin||Devotion||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Unholy|Paladin||Devotion||3"
+					"subclassFeature": "Channel Divinity|Paladin||Devotion||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2269,27 +2298,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Jako akcję, możesz nasycić jedną broń, którą trzymasz w ręku, pozytywną energią, używając swojego kanału boskości. Przez 1 minutę dodajesz swój modyfikator Charyzmy do ataków wykonywanych tą bronią (minimalna premia wynosi +1). Broń emituje również jasne światło w promieniu 20 stóp i przyćmione światło 20 stóp dalej. Jeśli broń nie jest jeszcze magiczna, staje się magiczna na ten czas.",
-				"Możesz zakończyć ten efekt w swojej turze, w ramach dowolnej innej akcji. Jeśli nie trzymasz już tej broni lub nie masz jej przy sobie, albo jeśli upadniesz {@condition unconscious}, efekt ten wygasa."
-			]
-		},
-		{
-			"name": "Channel Divinity: Turn the Unholy",
-			"source": "PHB",
-			"page": 85,
-			"srd": true,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Devotion",
-			"subclassSource": "PHB",
-			"level": 3,
-			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"Jako akcję, prezentujesz swój święty symbol i wypowiadasz modlitwę cenzurującą potwory i nieumarłych, używając swojego kanału boskości. Każdy potwór lub nieumarły, który widzi lub słyszy cię w promieniu 30 stóp od ciebie, musi wykonać rzut na mądrość. Jeśli stwór nie zda rzutu, jest odwrócony na 1 minutę lub do momentu otrzymania obrażeń.",
-				"Przemienione stworzenie musi spędzić swoją turę próbując oddalić się od ciebie tak daleko, jak to tylko możliwe, i nie może dobrowolnie przenieść się do przestrzeni w promieniu 30 stóp od ciebie. Nie może też podejmować reakcji. Do wykonania swojej akcji może użyć tylko akcji {@action Dash} lub spróbować uciec przed efektem, który uniemożliwia mu ruch. Jeśli nie ma się gdzie ruszyć, stworzenie może użyć akcji {@action Dodge}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
 			]
 		},
 		{
@@ -2339,6 +2356,22 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Jako akcję, możesz nasycić jedną broń, którą trzymasz w ręku, pozytywną energią, używając swojego kanału boskości. Przez 1 minutę dodajesz swój modyfikator Charyzmy do ataków wykonywanych tą bronią (minimalna premia wynosi +1). Broń emituje również jasne światło w promieniu 20 stóp i przyćmione światło 20 stóp dalej. Jeśli broń nie jest jeszcze magiczna, staje się magiczna na ten czas.",
+				"Możesz zakończyć ten efekt w swojej turze, w ramach dowolnej innej akcji. Jeśli nie trzymasz już tej broni lub nie masz jej przy sobie, albo jeśli upadniesz {@condition unconscious}, efekt ten wygasa."
 			]
 		},
 		{
@@ -2417,6 +2450,22 @@
 			]
 		},
 		{
+			"name": "Turn the Unholy",
+			"source": "PHB",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Jako akcję, prezentujesz swój święty symbol i wypowiadasz modlitwę cenzurującą potwory i nieumarłych, używając swojego kanału boskości. Każdy potwór lub nieumarły, który widzi lub słyszy cię w promieniu 30 stóp od ciebie, musi wykonać rzut na mądrość. Jeśli stwór nie zda rzutu, jest odwrócony na 1 minutę lub do momentu otrzymania obrażeń.",
+				"Przemienione stworzenie musi spędzić swoją turę próbując oddalić się od ciebie tak daleko, jak to tylko możliwe, i nie może dobrowolnie przenieść się do przestrzeni w promieniu 30 stóp od ciebie. Nie może też podejmować reakcji. Do wykonania swojej akcji może użyć tylko akcji {@action Dash} lub spróbować uciec przed efektem, który uniemożliwia mu ruch. Jeśli nie ma się gdzie ruszyć, stworzenie może użyć akcji {@action Dodge}."
+			]
+		},
+		{
 			"name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
@@ -2486,16 +2535,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Abjure Enemy|Paladin||Vengeance||3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Vow of Enmity|Paladin||Vengeance||3"
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance||3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,9 +2549,6 @@
 			"subclassSource": "PHB",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Jako akcję, prezentujesz swój święty symbol i wypowiadasz modlitwę potępienia, używając swojego kanału boskości. Wybierz jedną istotę w promieniu 60 stóp od ciebie, którą widzisz. Stworzenie to musi wykonać rzut ratujący mądrość, chyba że jest odporne na bycie {@condition frightened}. Czary i nieumarli mają minusy do tego rzutu.",
 				"W przypadku nieudanego ataku, stworzenie jest {@condition frightened} przez 1 minutę lub do momentu otrzymania obrażeń. Podczas {@condition frightened} szybkość stworzenia wynosi 0 i nie może ono korzystać z żadnych premii do szybkości.",
@@ -2514,7 +2556,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Channel Divinity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2527,7 +2569,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Jako akcję dodatkową możesz wypowiedzieć przysięgę wrogości wobec istoty, którą widzisz w promieniu 10 stóp od siebie, używając swojego kanału boskości. Zyskujesz przewagę w walce na atak przeciwko temu stworzeniu przez 1 minutę lub do momentu, gdy spadnie ono do 0 punktów trafień lub padnie {@condition unconscious}."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance||3"
+				}
 			]
 		},
 		{
@@ -2641,6 +2691,20 @@
 			]
 		},
 		{
+			"name": "Vow of Enmity",
+			"source": "PHB",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Jako akcję dodatkową możesz wypowiedzieć przysięgę wrogości wobec istoty, którą widzisz w promieniu 10 stóp od siebie, używając swojego kanału boskości. Zyskujesz przewagę w walce na atak przeciwko temu stworzeniu przez 1 minutę lub do momentu, gdy spadnie ono do 0 punktów trafień lub padnie {@condition unconscious}."
+			]
+		},
+		{
 			"name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
@@ -2711,16 +2775,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Champion Challenge|Paladin||Crown|SCAG|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Turn the Tide|Paladin||Crown|SCAG|3"
+					"subclassFeature": "Channel Divinity|Paladin||Crown|SCAG|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2729,15 +2789,12 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Jako dodatkową akcję rzucasz wyzwanie, które zmusza inne istoty do walki z tobą. Każde wybrane przez ciebie stworzenie, które widzisz w promieniu 30 stóp od ciebie, musi wykonać rzut na przetrwanie mądrości. W przypadku nieudanego testu, stworzenie nie może dobrowolnie oddalić się od ciebie na więcej niż 30 stóp. Efekt ten kończy się na stworzeniu, jeśli zostaniesz {@condition incapacitated} lub zginiesz, albo jeśli stworzenie znajdzie się w odległości większej niż 30 stóp od ciebie."
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Channel Divinity",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2750,7 +2807,15 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Jako akcję dodatkową możesz wzmocnić ranne stworzenia za pomocą swojego Kanału Boskości. Każde wybrane przez ciebie stworzenie, które słyszy cię w promieniu 30 stóp od ciebie, odzyskuje punkty trafień równe {@dice 1d6} + twój modyfikator Charyzmy (minimum 1), jeśli ma nie więcej niż połowę swoich punktów trafień."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Champion Challenge|Paladin||Crown|SCAG|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Tide|Paladin||Crown|SCAG|3"
+				}
 			]
 		},
 		{
@@ -2864,6 +2929,20 @@
 			]
 		},
 		{
+			"name": "Turn the Tide",
+			"source": "SCAG",
+			"page": 132,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Crown",
+			"subclassSource": "SCAG",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Jako akcję dodatkową możesz wzmocnić ranne stworzenia za pomocą swojego Kanału Boskości. Każde wybrane przez ciebie stworzenie, które słyszy cię w promieniu 30 stóp od ciebie, odzyskuje punkty trafień równe {@dice 1d6} + twój modyfikator Charyzmy (minimum 1), jeśli ma nie więcej niż połowę swoich punktów trafień."
+			]
+		},
+		{
 			"name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
@@ -2969,11 +3048,11 @@
 				"Zyskujesz dwie następujące opcje Kanału Boskości. Zobacz cechę klasy Sacred Oath, aby dowiedzieć się, jak działa kanał boskości.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Peerless Athlete|Paladin||Glory|TCE|3"
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Inspiring Smite|Paladin||Glory|TCE|3"
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
 				}
 			]
 		},
@@ -3081,7 +3160,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3101,7 +3180,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Peerless Athlete",
+			"name": "Peerless Athlete",
 			"source": "TCE",
 			"page": 53,
 			"otherSources": [
@@ -3203,9 +3282,6 @@
 			"subclassShortName": "Watchers",
 			"subclassSource": "TCE",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Przysięga Strażników zobowiązuje paladynów do ochrony królestw śmiertelnych przed drapieżnymi istotami pozaplanarnymi, z których wiele może zniszczyć śmiertelnych żołnierzy. Dlatego też Strażnicy doskonalą swoje umysły, duchy i ciała, aby były najlepszą bronią przeciwko takim zagrożeniom.",
 				"Paladyni, którzy postępują zgodnie z przysięgą Strażników, są czujni w wykrywaniu wpływów sił pozaplanarnych, często tworząc sieć szpiegów i informatorów w celu zbierania informacji o podejrzanych kultach. Dla Strażnika zachowanie zdrowej podejrzliwości i świadomości otoczenia jest tak naturalne, jak noszenie zbroi podczas bitwy.",
@@ -3404,9 +3480,6 @@
 			"subclassShortName": "Watchers (UA)",
 			"subclassSource": "UA2020SubclassesPt1",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Paladyni, którzy składają przysięgę Strażników, starają się chronić królestwo śmiertelników przed drapieżnymi istotami pozaplanarnymi, z których wiele może zniszczyć śmiertelnych żołnierzy. Dlatego Strażnicy doskonalą swoje umysły, duchy i ciała, aby stały się najlepszą bronią przeciwko takim zagrożeniom.",
 				"Paladyni, którzy postępują zgodnie z przysięgą Strażników, są czujni w wykrywaniu wpływów sił pozaplanarnych, często tworząc sieć szpiegów i informatorów w celu zbierania informacji o podejrzanych kultach. Dla Strażnika zachowanie zdrowej podejrzliwości i świadomości otoczenia jest tak naturalne, jak noszenie zbroi podczas bitwy.",
@@ -3604,9 +3677,6 @@
 			"subclassShortName": "Redemption (UA)",
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
 				"Przysięga Odkupienia wprowadza paladyna na trudną ścieżkę, która wymaga od świętego wojownika stosowania przemocy tylko w ostateczności. Paladyni, którzy poświęcają się tej przysiędze, wierzą, że każdy człowiek może zostać odkupiony i że każdy może kroczyć ścieżką dobroci i sprawiedliwości. Paladyni ci stawiają czoła złym istotom w nadziei, że uda im się zwrócić je ku światłu, a zabijają je tylko wtedy, gdy taki czyn w oczywisty sposób ocali życie innych. Paladyni, którzy podążają tą ścieżką, są znani jako odkupiciele.",
 				"Choć odkupiciele są idealistami, nie są głupcami. Odkupiciele wiedzą, że nieumarli, demony, diabły i inne nadprzyrodzone zagrożenia mogą być z natury złe. Przeciwko takim wrogom paladyni wykorzystują cały gniew swojej broni i zaklęć. Odkupiciele modlą się jednak o to, by pewnego dnia nawet niegodziwe istoty zaprosiły ich do własnego odkupienia.",
@@ -3628,11 +3698,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
 				}
 			]
 		},
@@ -3651,7 +3717,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3664,11 +3730,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Możesz użyć Kanału Boskości, aby wzmocnić swoją obecność boską mocą. Jako działanie dodatkowe, dajesz sobie premię +5 do następnego testu Charyzmy ({@skill Persuasion}), który wykonasz w ciągu najbliższej minuty."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption (UA)|UAATrioOfSubclasses|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "UAATrioOfSubclasses",
 			"page": 1,
 			"className": "Paladin",
@@ -3677,11 +3751,8 @@
 			"subclassSource": "UAATrioOfSubclasses",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Możesz użyć swojej Kanałowej Boskości, aby upomnieć tych, którzy stosują przemoc. Kiedy wróg w promieniu 10 stóp od ciebie zada obrażenia atakiem w walce wręcz jednemu stworzeniu innemu niż ty, zmuszasz go do wykonania rzutu obronnego na mądrość. W przypadku nieudanego ataku, atakujący otrzymuje obrażenia radiacyjne równe obrażeniom, które właśnie otrzymał. W przypadku powodzenia, otrzymuje o połowę mniej obrażeń."
+				"Możesz użyć Kanału Boskości, aby wzmocnić swoją obecność boską mocą. Jako działanie dodatkowe, dajesz sobie premię +5 do następnego testu Charyzmy ({@skill Persuasion}), który wykonasz w ciągu najbliższej minuty."
 			]
 		},
 		{
@@ -3730,6 +3801,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "UAATrioOfSubclasses",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption (UA)",
+			"subclassSource": "UAATrioOfSubclasses",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Możesz użyć swojej Kanałowej Boskości, aby upomnieć tych, którzy stosują przemoc. Kiedy wróg w promieniu 10 stóp od ciebie zada obrażenia atakiem w walce wręcz jednemu stworzeniu innemu niż ty, zmuszasz go do wykonania rzutu obronnego na mądrość. W przypadku nieudanego ataku, atakujący otrzymuje obrażenia radiacyjne równe obrażeniom, które właśnie otrzymał. W przypadku powodzenia, otrzymuje o połowę mniej obrażeń."
 			]
 		},
 		{
@@ -4089,16 +4174,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Strike",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4111,11 +4192,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Możesz użyć swojej Kanałowej Boskości, aby złamać wolę przeciwnika. Kiedy trafisz istotę atakiem z użyciem broni do walki wręcz w ramach akcji {@action Attack}, możesz również użyć swojej Boskiej Magii, aby zmusić cel do wykonania rzutu na przetrwanie. W przypadku nieudanego ataku, cel staje się {@condition frightened} tobą przez 1 minutę. Stworzenie {@condition frightened} może powtórzyć ten rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Strike",
 			"source": "UAPaladin",
 			"page": 1,
 			"className": "Paladin",
@@ -4124,9 +4213,20 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Możesz użyć swojej Kanałowej Boskości, aby złamać wolę przeciwnika. Kiedy trafisz istotę atakiem z użyciem broni do walki wręcz w ramach akcji {@action Attack}, możesz również użyć swojej Boskiej Magii, aby zmusić cel do wykonania rzutu na przetrwanie. W przypadku nieudanego ataku, cel staje się {@condition frightened} tobą przez 1 minutę. Stworzenie {@condition frightened} może powtórzyć ten rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UAPaladin",
+			"page": 1,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Możesz użyć swojej Kanałowej Boskości, aby uderzać z nadnaturalną celnością. Kiedy wykonujesz rzut ataku, możesz użyć swojej Boskości Kanału, aby uzyskać premię +10 do tego rzutu. Dokonujesz tego wyboru po zobaczeniu wyniku, ale zanim DM powie, czy atak trafił, czy nie."
 			]
@@ -4302,16 +4402,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+					"subclassFeature": "Channel Divinity|Paladin||Treachery (UA)|UAPaladin|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conjure Duplicate",
+			"name": "Channel Divinity",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4324,12 +4420,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Jako akcja, tworzysz wizualną iluzję siebie, która trwa przez 1 minutę lub do momentu, gdy stracisz swoje {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęciu). Iluzja pojawia się w wybranej przez ciebie niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie. Iluzja wygląda dokładnie tak jak ty; jest bezgłośna; ma twój rozmiar, jest niesubstancjalna, nie zajmuje swojej przestrzeni; nie działają na nią ataki i obrażenia. Jako akcja bonusowa w swojej turze, możesz przenieść iluzję do 30 stóp w przestrzeń, którą widzisz, ale iluzja musi pozostać w promieniu 120 stóp od ciebie.",
-				"Przez cały czas trwania iluzji możesz rzucać zaklęcia tak, jakbyś znajdował się w jej przestrzeni, ale musisz używać własnych zmysłów. Dodatkowo, gdy zarówno ty, jak i twoja iluzja znajdujecie się w odległości 5 stóp od istoty, która widzi iluzję, masz przewagę w walce na atak przeciwko tej istocie, biorąc pod uwagę, jak niesamowita jest iluzja."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Duplicate|Paladin||Treachery (UA)|UAPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poison Strike|Paladin||Treachery (UA)|UAPaladin|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Poison Strike",
+			"name": "Conjure Duplicate",
 			"source": "UAPaladin",
 			"page": 2,
 			"className": "Paladin",
@@ -4338,11 +4441,9 @@
 			"subclassSource": "UAPaladin",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Możesz użyć swojej Kanałowej Boskości, aby uczynić broń bardziej śmiercionośną. Jako dodatkową akcję, dotykasz jednej broni lub sztuki amunicji i wyczarowujesz na niej specjalną truciznę. Trucizna utrzymuje się przez 1 minutę. Następnym razem, gdy trafisz cel atakiem przy użyciu tej broni lub amunicji, cel otrzymuje obrażenia od trucizny natychmiast po ataku. Obrażenia od trucizny są równe {@dice 2d10} + twój poziom paladyna lub 20 + twój poziom paladyna, jeśli miałeś przewagę w ataku."
+				"Jako akcja, tworzysz wizualną iluzję siebie, która trwa przez 1 minutę lub do momentu, gdy stracisz swoje {@status concentration} (tak jakbyś był {@status concentration||concentrating} na zaklęciu). Iluzja pojawia się w wybranej przez ciebie niezajętej przestrzeni, którą widzisz w promieniu 30 stóp od siebie. Iluzja wygląda dokładnie tak jak ty; jest bezgłośna; ma twój rozmiar, jest niesubstancjalna, nie zajmuje swojej przestrzeni; nie działają na nią ataki i obrażenia. Jako akcja bonusowa w swojej turze, możesz przenieść iluzję do 30 stóp w przestrzeń, którą widzisz, ale iluzja musi pozostać w promieniu 120 stóp od ciebie.",
+				"Przez cały czas trwania iluzji możesz rzucać zaklęcia tak, jakbyś znajdował się w jej przestrzeni, ale musisz używać własnych zmysłów. Dodatkowo, gdy zarówno ty, jak i twoja iluzja znajdujecie się w odległości 5 stóp od istoty, która widzi iluzję, masz przewagę w walce na atak przeciwko tej istocie, biorąc pod uwagę, jak niesamowita jest iluzja."
 			]
 		},
 		{
@@ -4391,6 +4492,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Poison Strike",
+			"source": "UAPaladin",
+			"page": 2,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Treachery (UA)",
+			"subclassSource": "UAPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Możesz użyć swojej Kanałowej Boskości, aby uczynić broń bardziej śmiercionośną. Jako dodatkową akcję, dotykasz jednej broni lub sztuki amunicji i wyczarowujesz na niej specjalną truciznę. Trucizna utrzymuje się przez 1 minutę. Następnym razem, gdy trafisz cel atakiem przy użyciu tej broni lub amunicji, cel otrzymuje obrażenia od trucizny natychmiast po ataku. Obrażenia od trucizny są równe {@dice 2d10} + twój poziom paladyna lub 20 + twój poziom paladyna, jeśli miałeś przewagę w ataku."
 			]
 		},
 		{
@@ -4505,16 +4620,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4527,11 +4638,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Możesz użyć Kanału Boskości, aby emanować przerażającą obecnością. Jako akcję, zmuszasz każdą wybraną przez siebie istotę, którą widzisz w promieniu 30 stóp od siebie, do wykonania rzutu ratującego przed utratą mądrości. W przypadku nieudanego testu, stworzenie staje się {@condition frightened} tobą na 1 minutę. Stworzenie {@condition frightened} może powtórzyć ten rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest v2 (UA)|UARevisedClassOptions|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "UARevisedClassOptions",
 			"page": 3,
 			"className": "Paladin",
@@ -4540,9 +4659,20 @@
 			"subclassSource": "UARevisedClassOptions",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Możesz użyć Kanału Boskości, aby emanować przerażającą obecnością. Jako akcję, zmuszasz każdą wybraną przez siebie istotę, którą widzisz w promieniu 30 stóp od siebie, do wykonania rzutu ratującego przed utratą mądrości. W przypadku nieudanego testu, stworzenie staje się {@condition frightened} tobą na 1 minutę. Stworzenie {@condition frightened} może powtórzyć ten rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "UARevisedClassOptions",
+			"page": 3,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest v2 (UA)",
+			"subclassSource": "UARevisedClassOptions",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Możesz użyć swojej Kanałowej Boskości, aby uderzać z nadnaturalną celnością. Kiedy wykonujesz rzut ataku, możesz użyć swojej Boskości Kanału, aby uzyskać premię +10 do tego rzutu. Dokonujesz tego wyboru po zobaczeniu wyniku, ale zanim DM powie, czy atak trafił, czy nie."
 			]
@@ -4719,16 +4849,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Conquering Presence|Paladin||Conquest|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guided Strike|Paladin||Conquest|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Conquest|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4741,11 +4867,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Możesz użyć Kanału Boskości, aby emanować przerażającą obecnością. Jako akcję, zmuszasz każdą wybraną przez siebie istotę, którą widzisz w promieniu 30 stóp od siebie, do wykonania rzutu ratującego przed utratą mądrości. W przypadku nieudanego testu, stworzenie staje się {@condition frightened} tobą na 1 minutę. Stworzenie {@condition frightened} może powtórzyć ten rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Paladin||Conquest|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Strike|Paladin||Conquest|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Guided Strike",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4754,9 +4888,20 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
+			"entries": [
+				"Możesz użyć Kanału Boskości, aby emanować przerażającą obecnością. Jako akcję, zmuszasz każdą wybraną przez siebie istotę, którą widzisz w promieniu 30 stóp od siebie, do wykonania rzutu ratującego przed utratą mądrości. W przypadku nieudanego testu, stworzenie staje się {@condition frightened} tobą na 1 minutę. Stworzenie {@condition frightened} może powtórzyć ten rzut na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu."
+			]
+		},
+		{
+			"name": "Guided Strike",
+			"source": "XGE",
+			"page": 37,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Conquest",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
 			"entries": [
 				"Możesz użyć swojej Kanałowej Boskości, aby uderzać z nadnaturalną celnością. Kiedy wykonujesz rzut ataku, możesz użyć swojej Boskości Kanału, aby uzyskać premię +10 do tego rzutu. Dokonujesz tego wyboru po zobaczeniu wyniku, ale zanim DM powie, czy atak trafił, czy nie."
 			]
@@ -4924,16 +5069,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Emissary of Peace|Paladin||Redemption|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin||Redemption|XGE|3"
+					"subclassFeature": "Channel Divinity|Paladin||Redemption|XGE|3"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Emissary of Peace",
+			"name": "Channel Divinity",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4946,11 +5087,19 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Możesz użyć Kanału Boskości, aby wzmocnić swoją obecność boską mocą. Jako dodatkowe działanie, przez następne 10 minut dajesz sobie premię +5 do testów Charyzmy ({@skill Persuasion})."
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emissary of Peace|Paladin||Redemption|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rebuke the Violent|Paladin||Redemption|XGE|3"
+				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4959,11 +5108,8 @@
 			"subclassSource": "XGE",
 			"level": 3,
 			"header": 1,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
 			"entries": [
-				"Możesz użyć swojej Kanałowej Boskości, aby upomnieć tych, którzy stosują przemoc. Natychmiast po tym, jak napastnik w promieniu 30 stóp od ciebie zada obrażenia atakiem przeciwko stworzeniu innemu niż ty, możesz użyć swojej reakcji, aby zmusić go do wykonania rzutu ratującego z Mądrości. W przypadku niepowodzenia ataku, atakujący otrzymuje obrażenia radiacyjne równe obrażeniom, które właśnie zadał. Jeśli atak się powiedzie, otrzymuje o połowę mniej obrażeń."
+				"Możesz użyć Kanału Boskości, aby wzmocnić swoją obecność boską mocą. Jako dodatkowe działanie, przez następne 10 minut dajesz sobie premię +5 do testów Charyzmy ({@skill Persuasion})."
 			]
 		},
 		{
@@ -5012,6 +5158,20 @@
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Rebuke the Violent",
+			"source": "XGE",
+			"page": 38,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Redemption",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Możesz użyć swojej Kanałowej Boskości, aby upomnieć tych, którzy stosują przemoc. Natychmiast po tym, jak napastnik w promieniu 30 stóp od ciebie zada obrażenia atakiem przeciwko stworzeniu innemu niż ty, możesz użyć swojej reakcji, aby zmusić go do wykonania rzutu ratującego z Mądrości. W przypadku niepowodzenia ataku, atakujący otrzymuje obrażenia radiacyjne równe obrażeniom, które właśnie zadał. Jeśli atak się powiedzie, otrzymuje o połowę mniej obrażeń."
 			]
 		},
 		{
