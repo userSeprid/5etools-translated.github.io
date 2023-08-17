@@ -769,6 +769,36 @@
 			}
 		},
 		{
+			"name": "Armor of Safeguarding",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "HA"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Safeguarding",
+				"source": "BGG",
+				"page": 111,
+				"rarity": "very rare",
+				"reqAttune": true,
+				"entries": [
+					"Set in the center of this armor's chest is a citrine engraved with the shield rune.",
+					"While wearing this armor, your hit point maximum increases by an amount equal to 10 + your level.",
+					{
+						"type": "entries",
+						"name": "Invoking the Rune",
+						"entries": [
+							"As an action, you can invoke the armor's rune to cast the {@spell beacon of hope} spell with it; the spell has a duration of 1 minute and doesn't require {@status concentration}. Once the rune has been invoked, it can't be invoked again until the next dawn."
+						]
+					}
+				],
+				"attachedSpells": [
+					"beacon of hope"
+				]
+			}
+		},
+		{
 			"name": "Armor of Thunder Resistance",
 			"type": "GV",
 			"requires": [
@@ -936,6 +966,36 @@
 						"type": "entries",
 						"entries": [
 							"这把武器被诅咒了，成为它的附属品会使诅咒延伸到你身上。在用{@spell remove curse}的咒语或类似的魔法解除诅咒之前，你不愿意和这个武器分开。每当你用这个武器攻击一个生物，并在攻击卷上掷出1，你必须在DC15宪法救赎上成功，否则会被（%1%）并被迫对（%2%）进行额外的救赎，如上所述。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloodshed Blade",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Bloodshed ",
+				"source": "BGG",
+				"page": 111,
+				"rarity": "very rare",
+				"reqAttune": true,
+				"bonusWeaponDamage": "+1",
+				"entries": [
+					"The hilt of this sword bears a carnelian engraved with the blood rune.",
+					"You can add your Constitution modifier (minimum of {=bonusWeaponDamage}) to the damage rolls of attacks made with this weapon.",
+					{
+						"type": "entries",
+						"name": "Invoking the Rune",
+						"entries": [
+							"When you target a creature with an attack using this weapon, you can invoke the sword's rune, causing it to flare with crimson light and infusing your attack with bloodthirsty precision. You then spend and roll one of your unspent Hit Dice and add the number rolled to the attack roll. You can choose to invoke the rune after rolling the {@dice d20}.",
+							"If this attack hits, you can also spend and roll any number of your unspent Hit Dice and add the total rolled to the weapon's damage.",
+							"Once the rune has been invoked, it can't be invoked again until the next dawn."
 						]
 					}
 				]
@@ -2967,6 +3027,36 @@
 				]
 			},
 			"hasFluffImages": true
+		},
+		{
+			"name": "Zephyr Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "LA"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Zephyr ",
+				"source": "BGG",
+				"page": 117,
+				"rarity": "rare",
+				"reqAttune": true,
+				"entries": [
+					"This fine set of white-and-silver armor bears the wind rune upon its chest.",
+					"While wearing this armor, you have advantage on Dexterity ({@skill Acrobatics}) checks and Dexterity saving throws as your movements are bolstered by gentle currents of wind.",
+					{
+						"type": "entries",
+						"name": "Invoking the Rune",
+						"entries": [
+							"As an action, you can invoke the armor's rune to cast the {@spell wind wall} spell (save DC 15) with it. Once the rune has been invoked, it can't be invoked again until the next dawn."
+						]
+					}
+				],
+				"attachedSpells": [
+					"wind wall"
+				]
+			}
 		}
 	],
 	"linkedLootTables": {

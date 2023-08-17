@@ -3336,6 +3336,57 @@
 		},
 		{
 			"name": "Ember of the Fire Giant",
+			"source": "BGG",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 4,
+					"feat": [
+						"strike of the giants|BGG|strike of the giants (fire strike)"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"resist": [
+				"fire"
+			],
+			"entries": [
+				"你展现了火巨人的火热战斗力，使你获得以下好处。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Born of Flame",
+							"entries": [
+								"你对火灾伤害有抵抗力。"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Searing Ignition",
+							"entries": [
+								"When you take the {@action Attack} action on your turn, you can replace a single attack with a magical burst of flame. Each creature of your choice in a 15-foot-radius sphere centered on you must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, a creature takes fire damage equal to {@dice 1d8} + your proficiency bonus, and it has the blinded condition until the start of your next turn. On a successful save, the creature takes half as much damage only. You can use your Searing Ignition a number of times equal to your proficiency bonus (but no more than once per turn), and you regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ember of the Fire Giant",
 			"source": "UA2022GiantOptions",
 			"page": 5,
 			"prerequisite": [
@@ -3878,6 +3929,58 @@
 		},
 		{
 			"name": "Fury of the Frost Giant",
+			"source": "BGG",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 4,
+					"feat": [
+						"strike of the giants|BGG|strike of the giants (frost strike)"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"resist": [
+				"cold"
+			],
+			"entries": [
+				"你展现了冰霜巨人的冰冷力量，使你获得以下好处。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Born of Ice",
+							"entries": [
+								"你对寒冷伤害有抵抗力。"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Frigid Retaliation",
+							"entries": [
+								"Immediately after a creature you can see within 30 feet of you hits you with an attack roll and deals damage, you can use your reaction to retaliate with a conjured blast of ice. The creature must make a Constitution saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, the creature takes cold damage equal to {@dice 1d8} + your proficiency bonus, and its speed is reduced to 0 until the end of its next turn. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Fury of the Frost Giant",
 			"source": "UA2022GiantOptions",
 			"page": 4,
 			"prerequisite": [
@@ -4247,6 +4350,47 @@
 						"在与你选择的敌人的任何战斗的第一轮中，你对他们中的任何一个人的攻击卷都有优势。",
 						"当你选择的任何一个敌人对你进行机会攻击时，它的攻击卷轴会处于劣势。",
 						"每当你进行智力（{@skill Arcana}, {@skill History}, {@skill Nature}, 或{@skill Religion}）检查以回忆你所选择的敌人的信息时，你会在检查中加入双倍的熟练度加成，即使你通常不熟练。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Guile of the Cloud Giant",
+			"source": "BGG",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 4,
+					"feat": [
+						"strike of the giants|BGG|strike of the giants (cloud strike)"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You've manifested the confounding magic emblematic of cloud giants, granting you the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Cloudy Escape",
+							"entries": [
+								"When a creature you can see hits you with an attack roll, you can use your reaction to give yourself resistance to that attack's damage. You then teleport to an unoccupied space that you can see within 30 feet of yourself. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
 					]
 				}
 			]
@@ -5128,6 +5272,54 @@
 						"你总是知道哪条路是北。",
 						"你总是知道离下一次日出或日落还有多少个小时。",
 						"你能准确地回忆起过去一个月内看到或听到的任何事情。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Keenness of the Stone Giant",
+			"source": "BGG",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 4,
+					"feat": [
+						"strike of the giants|BGG|strike of the giants (stone strike)"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你已经展现了石巨人的身体天赋，赋予你以下的好处。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Cavernous Sight",
+							"entries": [
+								"You gain {@sense darkvision} with a range of 60 feet. If you already have {@sense darkvision} from another source, its range increases by 60 feet."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Stone Throw",
+							"entries": [
+								"As a bonus action, you can take a rock and make a magical attack with it. The attack is a ranged spell attack with a range of 60 feet that uses the ability score you increased with this feat as the spellcasting ability. On a hit, the rock deals {@damage 1d10} force damage, and the target must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + the spellcasting ability modifier) or have the prone condition. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
 					]
 				}
 			]
@@ -7369,6 +7561,127 @@
 			]
 		},
 		{
+			"name": "Rune Shaper",
+			"source": "BGG",
+			"page": 18,
+			"prerequisite": [
+				{
+					"spellcastingFeature": true
+				},
+				{
+					"background": [
+						{
+							"name": "Rune Carver",
+							"displayEntry": "{@background Rune Carver|BGG}"
+						}
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"comprehend languages"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"You've studied the magic of Giant runes, granting you the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Comprehend Languages",
+							"entries": [
+								"You learn the {@spell comprehend languages} spell. You can cast this spell without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using any spell slots you have."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Rune Magic",
+							"entries": [
+								"You know a number of runes equal to half your proficiency bonus (rounded down), chosen from the Rune Spells table. Whenever you finish a long rest, you can inscribe each rune you know onto one nonmagical weapon, armor, piece of clothing, or other object you touch. You temporarily learn the 1st-level spells that correspond to the runes you inscribed, as specified on the Rune Spells table, and you know those spells until you finish a long rest, when the runes fade. While you are wearing or carrying any rune-marked object, you can cast the spells associated with those runes using any spell slots you have.",
+								"You can also invoke a rune inscribed on an object you are wearing or carrying and cast its associated spell without expending a spell slot or using material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Your spellcasting ability for this feat is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
+								"Each time you gain a level, you can replace one of the runes you know with another one from the Rune Spells table.",
+								{
+									"type": "table",
+									"colStyles": [
+										"col-2",
+										"col-10"
+									],
+									"colLabels": [
+										"Rune",
+										"Spell"
+									],
+									"rows": [
+										[
+											"云",
+											"{@spell Fog cloud}"
+										],
+										[
+											"死亡",
+											"{@spell Inflict wounds}"
+										],
+										[
+											"蜻蜓点水",
+											"{@spell Chromatic orb}"
+										],
+										[
+											"敌人",
+											"{@spell Disguise self}"
+										],
+										[
+											"Fire",
+											"{@spell Burning hands}"
+										],
+										[
+											"朋友",
+											"{@spell Speak with animals}"
+										],
+										[
+											"霜冻",
+											"{@spell Armor of Agathys}"
+										],
+										[
+											"Hill",
+											"{@spell Goodberry}"
+										],
+										[
+											"旅程",
+											"{@spell Longstrider}"
+										],
+										[
+											"King",
+											"{@spell Command}"
+										],
+										[
+											"山地",
+											"{@spell Entangle}"
+										],
+										[
+											"石头",
+											"{@spell Sanctuary}"
+										],
+										[
+											"风暴",
+											"{@spell Thunderwave}"
+										]
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Savage Attacker",
 			"source": "PHB",
 			"page": 169,
@@ -8083,6 +8396,47 @@
 		},
 		{
 			"name": "Soul of the Storm Giant",
+			"source": "BGG",
+			"page": 19,
+			"prerequisite": [
+				{
+					"level": 4,
+					"feat": [
+						"strike of the giants|BGG|strike of the giants (storm strike)"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You've manifested the tempest magic emblematic of storm giants, granting you the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Maelstrom Aura",
+							"entries": [
+								"As a bonus action, you surround yourself with an aura of magical wind and lightning that extends 10 feet from you in every direction but not through total cover. The aura lasts until the start of your next turn or until you are incapacitated. While the aura is active, you have resistance to lightning and thunder damage. In addition, attack rolls against you have disadvantage, and whenever another creature starts its turn within the aura, you can force the creature to make a Strength saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, the creature's speed is halved until the start of its next turn. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Soul of the Storm Giant",
 			"source": "UA2022GiantOptions",
 			"page": 5,
 			"prerequisite": [
@@ -8574,6 +8928,75 @@
 					"items": [
 						"你获得对{@skill Stealth}技能的熟练度。如果你已经精通该技能，你在使用该技能进行检查时将获得双倍的精通奖励。",
 						"如果你是隐藏的，你可以在空地上移动10英尺而不暴露自己，如果你在一个不明显可见的位置结束移动。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Strike of the Giants",
+			"source": "BGG",
+			"page": 19,
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weaponGroup": "martial"
+						}
+					]
+				},
+				{
+					"background": [
+						{
+							"name": "Giant Foundling",
+							"displayEntry": "{@background Giant Foundling|BGG}"
+						}
+					]
+				}
+			],
+			"entries": [
+				"You have absorbed primeval magic that gives you an echo of the might of giants. When you take this feat, choose one of the benefits listed below. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose:",
+				{
+					"type": "entries",
+					"name": "Cloud Strike",
+					"entries": [
+						"The target takes an extra {@damage 1d4} thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become invisible to it until the start of your next turn or until immediately after you make an attack roll or cast a spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire Strike",
+					"entries": [
+						"The target takes an extra {@damage 1d10} fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frost Strike",
+					"entries": [
+						"目标会受到额外的{@damage 1d6}寒冷伤害。如果目标是生物，它必须在宪法规定的救赎中成功，否则它的速度将被降低到0，直到你下一个回合开始。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hill Strike",
+					"entries": [
+						"The target takes an extra {@damage 1d6} damage of the weapon's type. If the target is a creature, it must succeed on a Strength saving throw or have the prone condition."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stone Strike",
+					"entries": [
+						"The target takes an extra {@damage 1d6} force damage. If the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet from you in a straight line."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Storm Strike",
+					"entries": [
+						"目标会受到额外的{@damage 1d6}雷电伤害。如果目标是生物，它必须在宪法规定的救赎中成功，否则在你下一回合开始前，它在攻击卷中处于不利地位。",
+						"这些效果的蓄力DC等于8+你的熟练度加成+你的力量或体质修正值。",
+						"You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 					]
 				}
 			]
@@ -9598,6 +10021,54 @@
 			],
 			"entries": [
 				"作为一个动作，你可以将你的下半身变成一个墨黑色的水汽，让你在空中漂浮。在变身时，你的飞行速度为30英尺。你可以保持这种形态达10分钟之久。一旦你使用这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Vigor of the Hill Giant",
+			"source": "BGG",
+			"page": 19,
+			"prerequisite": [
+				{
+					"level": 4,
+					"feat": [
+						"strike of the giants|BGG|strike of the giants (hill strike)"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你已经表现出山丘巨人的弹性，赋予你以下的好处。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Bulwark",
+							"entries": [
+								"When you are subjected to an effect that would move you at least 5 feet or give you the prone condition, you can use your reaction to steady yourself. You aren't moved and don't have the prone condition."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Iron Stomach",
+							"entries": [
+								"每当你在短时休息中吃了食物，并花费一个或多个命中率骰子来恢复命中率时，你就会恢复相当于你的体质修正因子+你的熟练度加成的额外命中率。"
+							]
+						}
+					]
+				}
 			]
 		},
 		{

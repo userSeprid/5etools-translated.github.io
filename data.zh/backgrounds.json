@@ -8756,6 +8756,185 @@
 		},
 		{
 			"name": "Giant Foundling",
+			"source": "BGG",
+			"feats": [
+				{
+					"strike of the giants|bgg": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"giant": true,
+					"anyStandard": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"backpack|phb",
+						"traveler's clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				},
+				{
+					"a": [
+						{
+							"special": "small stone that reminds you of home"
+						}
+					],
+					"b": [
+						{
+							"special": "sprig that reminds you of home"
+						}
+					]
+				}
+			],
+			"fromFeature": {
+				"feats": true
+			},
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Intimidation}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "巨人和你选择的另一种语言"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item backpack|phb}, a set of {@item traveler's clothes|phb}, a small stone or sprig that reminds you of home, and a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Origin Stories",
+					"entries": [
+						"你是如何生活在巨大的生物中的，这要由你来决定，但创始者起源表显示了各种可能性。",
+						{
+							"type": "table",
+							"caption": "Foundling Origin",
+							"colLabels": [
+								"d6",
+								"Origin"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"你是一个婴儿，被一个游牧巨人家庭发现，他们把你当作自己人养大。"
+								],
+								[
+									"2",
+									"A family of stone giants rescued you when you fell into a mountain chasm, and you have lived with them underground ever since."
+								],
+								[
+									"3",
+									"You were lost or abandoned as a child in a jungle that teemed with ravenous dinosaurs. There, you found an equally lost frost giant; together, you survived."
+								],
+								[
+									"4",
+									"你的农场被粉碎了，你的家人在一群交战的巨人之间的战斗中被杀。由于对这次破坏感到内疚，一个富有同情心的巨人士兵答应照顾你。"
+								],
+								[
+									"5",
+									"在你小时候做了一系列奇怪的梦之后，你迷信的父母把你送到一个强大但冷漠的风暴巨人神谕处学习。"
+								],
+								[
+									"6",
+									"While playing hide-and-seek with your friends, you stumbled into the castle of a cloud giant, who immediately adopted you."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Building a Giant Foundling Character",
+					"entries": [
+						"Your life among giants has given you a unique perspective. Though you are unusually large for your kind, you're no larger than a giant child, so you might be very mindful of your size."
+					]
+				},
+				{
+					"name": "Feature: Strike of the Giants",
+					"type": "entries",
+					"entries": [
+						"You gain the {@feat Strike of the Giants|BGG} feat."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"The Giant Foundling Personality Traits table suggests a variety of traits you might adopt for your character.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"What I lack in stature compared to giants, I make up for with sheer spite."
+								],
+								[
+									"2",
+									"I insist on being taken seriously as a full-grown adult. Nobody talks down to me!"
+								],
+								[
+									"3",
+									"Crowded spaces make me uncomfortable. I'd much rather be in an open field than a bustling tavern."
+								],
+								[
+									"4",
+									"I embrace my shorter stature. It helps me stay unnoticed—and underestimated."
+								],
+								[
+									"5",
+									"Every avalanche begins as a single pebble."
+								],
+								[
+									"6",
+									"世界总是感觉太大，我担心我永远无法在其中找到自己的位置。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Giant Foundling",
 			"source": "UA2022WondersOfTheMultiverse",
 			"page": 4,
 			"feats": [
@@ -19005,6 +19184,188 @@
 				}
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Rune Carver",
+			"source": "BGG",
+			"feats": [
+				{
+					"rune shaper|bgg": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true,
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"giant": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"equipmentType": "toolArtisan"
+						},
+						{
+							"special": "small knife"
+						},
+						"whetstone|phb",
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"fromFeature": {
+				"feats": true
+			},
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill History}, {@skill Perception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "巨人"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "一套{@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}(任选其一)，一把小刀，一个{@item whetstone|phb}，一套{@item common clothes|phb}，和一个{@item pouch|phb}，含10个Gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rune Styles",
+					"entries": [
+						"Each rune carver has a unique style and preferred medium. To determine how you make your runes, you can roll on the Rune Style table.",
+						{
+							"type": "table",
+							"caption": "Rune Style",
+							"colLabels": [
+								"d6",
+								"Style"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"You inscribe runes in wax or clay with a fine metal needle."
+								],
+								[
+									"2",
+									"You whittle pieces of wood into small figurines you mark with runes."
+								],
+								[
+									"3",
+									"你把符文刻在玻璃珠子上，然后把它们穿在项链和手镯上。"
+								],
+								[
+									"4",
+									"You stitch runes into the hems of clothing."
+								],
+								[
+									"5",
+									"你在一组动物骨头上雕刻符文，你可以把它们扔在不同的阵型里。"
+								],
+								[
+									"6",
+									"You draw runes into candles, melting the wax to smooth over the engravings."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Building a Rune Carver Character",
+					"entries": [
+						"Scholarly pursuits, ancient mysteries, or a fateful encounter might inspire a character to pursue the secrets of a rune carver."
+					]
+				},
+				{
+					"name": "Feature: Rune Shaper",
+					"type": "entries",
+					"entries": [
+						"You gain the {@feat Rune Shaper|BGG} feat."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"符文雕刻师的性格特征表建议你可以为你的角色采用各种特征。",
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Is it practical to learn an ancient language that is rarely spoken? No. But is it fun? Very."
+								],
+								[
+									"2",
+									"我了解到我的一位祖先是一位受人称赞的符文雕刻家，他的故事已被时间淹没。我寻求重新点燃这一遗产。"
+								],
+								[
+									"3",
+									"The old, traditional markings of runecraft look so boring. Why not give my runes some flair?"
+								],
+								[
+									"4",
+									"In my studies of runes, I strive to understand how great civilizations of the past fell, so I can prevent it from happening to societies of the present."
+								],
+								[
+									"5",
+									"Life may be a whirlwind of chaos, but whenever I create my runes, I feel at peace."
+								],
+								[
+									"6",
+									"My brain struggles to process words written in ink, but the feeling of carved runes makes my mind sing."
+								]
+							]
+						}
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Rune Carver",
