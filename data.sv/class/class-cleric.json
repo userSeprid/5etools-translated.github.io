@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Den värdiga ska sträva efter storhet - överlägsenhet i livet leder till överlägsenhet i livet efter döden.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"Bontu har helt och hållet anammat detta diktum, och även om hon inte lägger ner så mycket kraft på att lära ut det, föregår hon med gott exempel. Hennes vizirer planterar subtilt de frön som blommar ut till den ambition som gudfadern önskar. Genom insinuationer påminner de både akoliter och invigda om att det inte är skamligt att uppnå sin plats i livet efter detta på andras bekostnad, utan att det är ett bevis på den invigdes beslutsamhet och drivkraft. Ingenting är viktigare än den drivkraften, antyder de - inte band till en gröda, inte vänskap eller kärlek. Inte ens hängivenhet till en gudom.",
 				"Vid varje angiven nivå för prästvigare lägger du till de angivna trollformlerna till dina förberedda trollformler.",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Den värdiga ska kultivera ett smidigt sinne som kan uppfatta de underverk bortom fantasin som väntar i livet efter döden.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"Kefnets uppgift är att föra vidare denna gud-faraohs lära och förklara dess innebörd. Han lär att livet efter döden endast kommer att bebos av dem som genom sitt intellekt har bevisat att de är värdiga att bo i Gud-Farasos härliga närvaro. Han tränar akoliter och invigda att tänja på sina gränser och utmana sin mentala kapacitet med trollformler av allt större kraft.",
-				"Kefnets domän är identisk med kunskapsdomänen i Spelarhandboken."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"Se kunskapsdomänen."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Se kunskapsdomänen."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Se kunskapsdomänen."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Se kunskapsdomänen."
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"De värdiga måste känna och respektera alla andra som Gud-Faraohen anser värdiga, för i livet efter detta kommer alla att förenas i syfte och handling.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"Oketra har till uppgift att förklara denna undervisning från Gud-Faraohen och att ingjuta solidaritetens dygd i varje initierad. Hon formar varje grupp barn till en skara akoliter med ett enda syfte: att bli bedömd värdig ett härligt liv efter döden. Och hon ingjuter i varje grupp förmågan att förenas i en enda handling för att uppnå detta syfte. Hon är förtjust i poetiska bilder för att förmedla sina ideal.",
 				"Vid varje angiven nivå för prästvigare lägger du till de angivna trollformlerna till dina förberedda trollformler.",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Den värdiga ska finslipa en stark kropp som kan stå emot de gränslösa energierna i livet efter döden.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"Det är Rhonas uppgift att ge denna undervisning till dem som kommer in i livet efter döden - men för honom spelar orden i sig ingen roll. Styrka kan inte läras ut. Den måste byggas upp genom övning och träning. Rhonas visar sin undervisning genom sitt exempel, snarare än genom att ge sina elever någon form av akademisk undervisning. Han välkomnar folket i Naktamun att stå vid Hekma och se honom när han stormar ut i öknen för att bekämpa de största fasorna. Han uppmuntrar dem att observera hans okuvliga styrka, för även om de aldrig kommer att kunna mäta sig med den kan de sträva efter att efterlikna den. Han uppmanar dem att granska varje rörelse och praktisera det de ser.",
 				"Vid varje angiven nivå för prästvigare lägger du till de angivna trollformlerna till dina förberedda trollformler.",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"De värdiga ska rusa till Gud-Faraohs sida med obeveklig iver och övervinna varje hinder i deras väg.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"Gud-Faraohen förväntar sig att de som han välkomnar till livet efter detta ska önska det framför alla andra nöjen och prestationer, och att de ska visa sin hängivenhet, passion och glöd genom sina handlingar. Hazoret har till uppgift att odla denna iver hos de invigda som kommer under hennes vård, och hon har åtagit sig uppgiften med lämplig entusiasm. Hon inser dock att det bästa sättet att lära ut iver är att demonstrera den.",
 				"Vid varje angiven nivå för prästvigare lägger du till de angivna trollformlerna till dina förberedda trollformler.",
 				{

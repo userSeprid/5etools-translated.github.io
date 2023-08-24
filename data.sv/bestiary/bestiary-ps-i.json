@@ -9,6 +9,71 @@
 	},
 	"monster": [
 		{
+			"name": "Avacyn",
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Solar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Solar",
+						"with": "Avacyn",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Moonsilver Spear",
+							"entries": [
+								"An angel of the Flight of Moonsilver wields a spear made from a shard of the Helvault. Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when the angel hits a creature with an attack using this weapon, it can wound the target. At the start of each of the wounded creature's turns, it takes {@damage 1d4} necrotic damage for each time the angel has wounded it, and it can then make a {@dc 15} Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a {@dc 15} Wisdom ({@skill Medicine}) check, ending the effect of such wounds on it on a success."
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Bruna",
+			"alias": [
+				"Light of Alabaster"
+			],
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Planetar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "planetar",
+						"with": "Bruna",
+						"flags": "i"
+					},
+					"_": {
+						"mode": "addSpells",
+						"will": [
+							"{@spell protection from evil and good}"
+						],
+						"daily": {
+							"1e": [
+								"{@spell dispel evil and good}"
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Creepy Doll",
 			"source": "PSI",
 			"page": 25,
@@ -124,7 +189,9 @@
 			"savingThrowForced": [
 				"intelligence"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Demonlord of Ashmouth",
@@ -196,7 +263,9 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Flight Goldnight Angel",
@@ -216,14 +285,16 @@
 						"items": {
 							"name": "Goldnight Menace",
 							"entries": [
-								"Som en handling kan en ängel av Flight Goldnight sätta skräck i sina fienders hjärtan. Varje varelse av ängelns val som befinner sig inom 120 fot från den och som är medveten om den måste lyckas med ett räddningskast i Visdom eller bli skrämd i 1 minut. DC:n för detta räddningskast är densamma som för ängelns egenskap Innate Spellcasting. En varelse kan upprepa räddningskastet i slutet av var och en av sina turer, vilket avslutar effekten på henne själv vid en framgång. Om en varelses räddningskast lyckas eller om effekten slutar för den är varelsen immun mot den ängelns Goldnight Menace under de kommande 24 timmarna."
+								"As an action, an angel of Flight Goldnight can strike fear into the hearts of its enemies. Each creature of the angel's choice that is within 120 feet of it and is aware of it must succeed on a Wisdom saving throw or become {@condition frightened} for 1 minute. The DC for this saving throw is the same as for the angel's Innate Spellcasting trait. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to that angel's Goldnight Menace for the next 24 hours."
 							]
 						}
 					}
 				}
 			},
 			"cr": "11",
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Flight of Moonsilver Angel",
@@ -243,7 +314,7 @@
 						"items": {
 							"name": "Moonsilver Spear",
 							"entries": [
-								"En ängel från Flight of Moonsilver svingar ett spjut tillverkat av en skärva från Helvault. Träffpunkter som förlorats genom detta vapens skada kan endast återfås genom en kort eller lång vila, snarare än genom regeneration, magi eller på annat sätt. När ängeln en gång per tur träffar en varelse med en attack med det här vapnet kan den såra målet när den träffar en varelse med en attack med det här vapnet. I början av var och en av den sårade varelsens turer tar den 1d4 nekrotisk skada för varje gång ängeln har sårat den, och den kan sedan göra ett DC 15 Konstitutions räddningskast, vilket avslutar effekten av alla sådana sår på sig själv vid en framgång. Alternativt kan den skadade varelsen, eller en varelse inom en radie på 1,5 meter från den, använda en handling för att göra en DC 15 Visdomskontroll (Medicin), vilket avslutar effekten av sådana sår på den vid en framgång."
+								"An angel of the Flight of Moonsilver wields a spear made from a shard of the Helvault. Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when the angel hits a creature with an attack using this weapon, it can wound the target. At the start of each of the wounded creature's turns, it takes {@damage 1d4} necrotic damage for each time the angel has wounded it, and it can then make a {@dc 15} Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a {@dc 15} Wisdom ({@skill Medicine}) check, ending the effect of such wounds on it on a success."
 							]
 						}
 					}
@@ -254,7 +325,9 @@
 				"N",
 				"R"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Geist",
@@ -322,24 +395,6 @@
 					"entries": [
 						"Geisten kan röra sig genom andra varelser och föremål som om de vore {@quickref difficult terrain||3}. Den tar 5 ({@dice 1d10}) kraftskador om den avslutar sin tur inuti ett objekt."
 					]
-				},
-				{
-					"name": "Geist Powers",
-					"entries": [
-						"Geister är lika varierande som de människor de var i livet. Förutom de egenskaper och handlingar som alla geister har, kan en enskild geist ha någon av följande speciella egenskaper."
-					]
-				},
-				{
-					"name": "Geist Powers: Intangible Virtue",
-					"entries": [
-						"En levande varelse som är besatt av en vitinriktad geist får immunitet mot {@condition charmed} och {@condition frightened} och motståndskraft mot slagskador, piercing och slashing från icke-magiska attacker. Medan varelsen är besatt kan geisten låta den ta kontroll över sin kropp, men geisten kan återta kontrollen när som helst (ingen åtgärd krävs)."
-					]
-				},
-				{
-					"name": "Geist Powers: Horrifying Visage",
-					"entries": [
-						"Geister med svart inriktning kan göra sig själva hemska att se, även när de besitter de levande. Varje icke odöd varelse inom 60 fot från geisten som kan se den måste lyckas med ett {@dc 13} visdomssparkast eller bli {@condition frightened} i 1 minut. Om räddningen misslyckas med 5 eller mer åldras målet också {@dice 1d4 × 10} år. Ett {@condition frightened} mål kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar {@condition frightened} villkoret på sig självt vid en framgång. Om ett måls räddningskast lyckas eller om effekten upphör för det, är målet immunt mot den här geistens Horrifying Visage de kommande 24 timmarna. Åldringseffekten kan upphävas med en {@spell greater restoration} besvärjelse, men endast inom 24 timmar efter att den inträffat."
-					]
 				}
 			],
 			"action": [
@@ -362,6 +417,29 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Geist Powers",
+					"entries": [
+						"Geists are as varied as the humans they were in life. In addition to the traits and actions all geists possess, an individual geist might have any of the following special characteristics.",
+						{
+							"name": "Intangible Virtue",
+							"type": "entries",
+							"entries": [
+								"En levande varelse som är besatt av en vitinriktad geist får immunitet mot {@condition charmed} och {@condition frightened} och motståndskraft mot slagskador, piercing och slashing från icke-magiska attacker. Medan varelsen är besatt kan geisten låta den ta kontroll över sin kropp, men geisten kan återta kontrollen när som helst (ingen åtgärd krävs)."
+							]
+						},
+						{
+							"name": "Horrifying Visage",
+							"type": "entries",
+							"entries": [
+								"Geister med svart inriktning kan göra sig själva hemska att se, även när de besitter de levande. Varje icke odöd varelse inom 60 fot från geisten som kan se den måste lyckas med ett {@dc 13} visdomssparkast eller bli {@condition frightened} i 1 minut. Om räddningen misslyckas med 5 eller mer åldras målet också {@dice 1d4 × 10} år. Ett {@condition frightened} mål kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar {@condition frightened} villkoret på sig självt vid en framgång. Om ett måls räddningskast lyckas eller om effekten upphör för det, är målet immunt mot den här geistens Horrifying Visage de kommande 24 timmarna. Åldringseffekten kan upphävas med en {@spell greater restoration} besvärjelse, men endast inom 24 timmar efter att den inträffat."
+							]
+						}
+					]
+				}
+			],
 			"traitTags": [
 				"Incorporeal Movement"
 			],
@@ -378,14 +456,87 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"frightened",
 				"incapacitated"
 			],
 			"savingThrowForced": [
 				"charisma",
 				"wisdom"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Geist: Horrifying Visage",
+					"source": "PSI",
+					"_mod": {
+						"action": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Horrifying Visage",
+								"entries": [
+									"Geister med svart inriktning kan göra sig själva hemska att se, även när de besitter de levande. Varje icke odöd varelse inom 60 fot från geisten som kan se den måste lyckas med ett {@dc 13} visdomssparkast eller bli {@condition frightened} i 1 minut. Om räddningen misslyckas med 5 eller mer åldras målet också {@dice 1d4 × 10} år. Ett {@condition frightened} mål kan upprepa räddningskastet i slutet av var och en av sina vändor, vilket avslutar {@condition frightened} villkoret på sig självt vid en framgång. Om ett måls räddningskast lyckas eller om effekten upphör för det, är målet immunt mot den här geistens Horrifying Visage de kommande 24 timmarna. Åldringseffekten kan upphävas med en {@spell greater restoration} besvärjelse, men endast inom 24 timmar efter att den inträffat."
+								]
+							}
+						}
+					},
+					"variant": null,
+					"conditionInflict": [
+						"frightened",
+						"incapacitated"
+					]
+				},
+				{
+					"name": "Geist: Intangible Virtue",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Intangible Virtue",
+								"entries": [
+									"En levande varelse som är besatt av en vitinriktad geist får immunitet mot {@condition charmed} och {@condition frightened} och motståndskraft mot slagskador, piercing och slashing från icke-magiska attacker. Medan varelsen är besatt kan geisten låta den ta kontroll över sin kropp, men geisten kan återta kontrollen när som helst (ingen åtgärd krävs)."
+								]
+							}
+						}
+					},
+					"variant": null
+				}
+			]
+		},
+		{
+			"name": "Gisela",
+			"alias": [
+				"Blade of Goldnight",
+				"Blade of the Church"
+			],
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Planetar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Planetar",
+						"with": "Gisela",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Goldnight Menace",
+							"entries": [
+								"As an action, an angel of Flight Goldnight can strike fear into the hearts of its enemies. Each creature of the angel's choice that is within 120 feet of it and is aware of it must succeed on a Wisdom saving throw or become {@condition frightened} for 1 minute. The DC for this saving throw is the same as for the angel's Innate Spellcasting trait. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to that angel's Goldnight Menace for the next 24 hours."
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Host of Herons Angel",
@@ -411,7 +562,9 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Keeper of the Feather",
@@ -489,172 +642,249 @@
 			"hasToken": true
 		},
 		{
+			"name": "Necro-Alchemist",
+			"alias": [
+				"Geistmage"
+			],
+			"source": "PSI",
+			"page": 20,
+			"_copy": {
+				"name": "Mage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "mage",
+						"with": "Necro-Alchemist",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sigarda",
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Planetar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Planetar",
+						"with": "Sigarda",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Heron Protection",
+							"entries": [
+								"Närhelst en ängel från Host of Herons eller en vänskaplig varelse inom tre meter från den gör ett räddningskast, får varelsen en bonus på räddningskastet som är lika med ängelns Charisma-modifierare. Ängeln måste vara vid medvetande för att få eller bevilja denna bonus."
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Skaab",
 			"source": "PSI",
 			"page": 20,
-			"size": [
-				"M"
-			],
-			"type": "construct",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				9
-			],
-			"hp": {
-				"average": 93,
-				"formula": "11d8 + 44"
+			"_copy": {
+				"name": "Flesh Golem",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "golem",
+						"with": "skaab",
+						"flags": "i"
+					}
+				}
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 19,
-			"dex": 9,
-			"con": 18,
-			"int": 6,
-			"wis": 10,
-			"cha": 5,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"lightning",
-				"poison",
+			"variant": [
 				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+					"type": "variant",
+					"name": "Skaabs",
+					"entries": [
+						"The most basic skaabs are simply {@creature flesh golem|MM|flesh golems}, as described in the Monster Manual. But the aspiration of every skaberen is to produce a truly unique masterpiece, a goal that might see a stitcher create golems with one of the following special characteristics.",
+						{
+							"type": "entries",
+							"name": "Armor Plating",
+							"page": 20,
+							"entries": [
+								"Öka skaabs rustningsklass till 14 och öka dess utmaningsklass till 6 (2 300 XP)."
+							]
+						},
+						{
+							"name": "Six Arms",
+							"type": "entries",
+							"entries": [
+								"Skaabens multiattackhandling gör att den kan göra tre slamattacker. Öka dess utmaningsklass till 6 (2 300 XP)."
+							]
+						},
+						{
+							"name": "Three Heads",
+							"type": "entries",
+							"entries": [
+								"Skaab har fördel på visdomskontroller ({@skill Perception}) och på räddningskast mot att bli {@condition blinded}, {@condition deafened}, {@condition stunned} och knockad {@condition unconscious}. (Dess utmaningsvärde ändras inte.)"
+							]
+						},
+						{
+							"name": "Skaab Goliath",
+							"type": "entries",
+							"entries": [
+								"Den här skaaben har tre huvuden, sex armar och pansarplåt. Öka dess utmaningsklass till 7 (2 900 XP)."
+							]
+						},
+						{
+							"name": "Winged Skaab",
+							"type": "entries",
+							"entries": [
+								"Skaab har en flyghastighet på 30 fot."
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"_versions": [
+				{
+					"name": "Skaab: Armor Plating",
+					"source": "PSI",
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"armor plating"
+							]
+						}
 					],
-					"note": "from nonmagical attacks that aren't adamantine",
-					"cond": true
+					"cr": "6",
+					"variant": null
+				},
+				{
+					"name": "Skaab: Goliath",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Three Heads",
+								"entries": [
+									"The skaab has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition deafened}, {@condition stunned}, and knocked {@condition unconscious}."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"The skaab makes three slam attacks."
+								]
+							}
+						}
+					},
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"armor plating"
+							]
+						}
+					],
+					"cr": "7",
+					"variant": null
+				},
+				{
+					"name": "Skaab: Six Arms",
+					"source": "PSI",
+					"_mod": {
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"The skaab makes three slam attacks."
+								]
+							}
+						}
+					},
+					"cr": "6",
+					"variant": null
+				},
+				{
+					"name": "Skaab: Three Heads",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Three Heads",
+								"entries": [
+									"The skaab has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition deafened}, {@condition stunned}, and knocked {@condition unconscious}."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Skaab: Winged",
+					"source": "PSI",
+					"speed": {
+						"walk": 30,
+						"fly": 30
+					},
+					"variant": null
 				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Berserk",
-					"entries": [
-						"När golemmen börjar sin tur med 40 eller färre träffpunkter, kasta en {@dice d6}. På en 6:a blir golemmen berserk. Vid varje tur medan den är berserk attackerar golemmen den närmaste varelse som den kan se. Om ingen varelse är tillräckligt nära för att flytta sig till och attackera, attackerar golemmen ett föremål, med preferens för ett föremål som är mindre än den själv. När golemmen väl har blivit berserk fortsätter den att göra det tills den förstörs eller återfår alla sina träffpunkter.",
-						"Golemens skapare kan, om han befinner sig inom 60 fot från den berserkade golemmen, försöka lugna den genom att tala bestämt och övertygande. Golemmen måste kunna höra sin skapare, som måste ta en handling för att göra en {@dc 15} Charisma (Persuasion) kontroll. Om testet lyckas upphör golemmen att vara berserk. Om den tar skada medan den fortfarande har 40 träffpunkter eller färre kan golemmen bli berserk igen."
-					]
-				},
-				{
-					"name": "Aversion of Fire",
-					"entries": [
-						"Om golemmen tar eldskada har den nackdel på attackkast och förmågaskontroller fram till slutet av nästa vändning."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"Golemmen är immun mot alla besvärjelser eller effekter som kan förändra dess form."
-					]
-				},
-				{
-					"name": "Lightning Absorption",
-					"entries": [
-						"När golemmen utsätts för blixtskador tar den ingen skada och återfår istället ett antal träffpoäng som är lika stort som blixtskadan."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Golemmen har fördel på räddningskast mot trollformler och andra magiska effekter."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"Golemens vapenattacker är magiska."
-					]
-				},
-				{
-					"name": "Skaab Characteristics",
-					"entries": [
-						"De mest grundläggande skaabs är helt enkelt köttgolems, enligt beskrivningen i Monster Manual. Men strävan för varje skaberen är att skapa ett verkligt unikt mästerverk, ett mål som kan leda till att en skaberen skapar golems med någon av följande speciella egenskaper."
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Armor Plating",
-					"entries": [
-						"Öka skaabs rustningsklass till 14 och öka dess utmaningsklass till 6 (2 300 XP)."
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Six Arms",
-					"entries": [
-						"Skaabens multiattackhandling gör att den kan göra tre slamattacker. Öka dess utmaningsklass till 6 (2 300 XP)."
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Three Heads",
-					"entries": [
-						"Skaab har fördel på visdomskontroller ({@skill Perception}) och på räddningskast mot att bli {@condition blinded}, {@condition deafened}, {@condition stunned} och knockad {@condition unconscious}. (Dess utmaningsvärde ändras inte.)"
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Skaab Goliath",
-					"entries": [
-						"Den här skaaben har tre huvuden, sex armar och pansarplåt. Öka dess utmaningsklass till 7 (2 900 XP)."
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Winged Skaab",
-					"entries": [
-						"Skaab har en flyghastighet på 30 fot."
-					]
+			]
+		},
+		{
+			"name": "Strefan Maurer",
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 33,
+			"_copy": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Strahd",
+						"with": "Strefan",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "Vampire Weaknesses",
+						"items": {
+							"type": "entries",
+							"name": "Vampire Vulnerabilities",
+							"source": "PSI",
+							"page": 16,
+							"entries": [
+								"Weapons cut from living wood are particularly effective against vampires, though any weapon can harm or kill them. A vampire can't cross running water that shows the reflection of the moon, and water blessed by Avacyn ({@item Holy Water (flask)|PHB|holy water}) burns vampire flesh like acid. A vampire's reflection in silver (including a silver-backed glass mirror) appears as the vampire would have looked without the vampiric condition—neither its true appearance nor its glamer, but a normal human, flaws and all. For that reason, vampires go to great lengths to avoid mirrors, and the presence of silver in any form is unsettling to them."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Golemmen gör två slamattacker."
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 7} för att träffa, räckvidd 1,5 m, ett mål. {@h}13 ({@damage 2d8 + 4}) blåslagningsskada."
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasToken": true
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Vampire Neonate",
@@ -822,7 +1052,327 @@
 				"HPR",
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Elder Vampire: All Abilities",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Shapechanger",
+									"entries": [
+										"If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.",
+										"While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+										"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+									]
+								},
+								{
+									"name": "Gorger",
+									"entries": [
+										"The vampire has advantage on melee attack rolls, but attack rolls against it have advantage."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Charm",
+								"entries": [
+									"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.",
+									"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+								]
+							}
+						}
+					},
+					"type": {
+						"type": "undead",
+						"tags": [
+							"shapechanger"
+						]
+					},
+					"speed": {
+						"walk": 30,
+						"fly": 30
+					},
+					"spellcasting": [
+						{
+							"name": "Cleric Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Priest|MM} has been used as an example Cleric.}",
+								"The vampire is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The vampire has the following cleric spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell light}",
+										"{@spell sacred flame}",
+										"{@spell thaumaturgy}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell guiding bolt}",
+										"{@spell sanctuary}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell lesser restoration}",
+										"{@spell spiritual weapon}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell dispel magic}",
+										"{@spell spirit guardians}"
+									]
+								}
+							},
+							"ability": "wis"
+						},
+						{
+							"name": "Wizard Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Mage|MM} has been used as an example Wizard.}",
+								"The vampire is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The vampire has the following wizard spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell fire bolt}",
+										"{@spell light}",
+										"{@spell mage hand}",
+										"{@spell prestidigitation}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell detect magic}",
+										"{@spell mage armor}",
+										"{@spell magic missile}",
+										"{@spell shield}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell misty step}",
+										"{@spell suggestion}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell counterspell}",
+										"{@spell fireball}",
+										"{@spell fly}"
+									]
+								},
+								"4": {
+									"slots": 3,
+									"spells": [
+										"{@spell greater invisibility}",
+										"{@spell ice storm}"
+									]
+								},
+								"5": {
+									"slots": 1,
+									"spells": [
+										"{@spell cone of cold}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Charm",
+					"source": "PSI",
+					"_mod": {
+						"action": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Charm",
+								"entries": [
+									"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.",
+									"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Flight",
+					"source": "PSI",
+					"speed": {
+						"walk": 30,
+						"fly": 30
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Gorger",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Gorger",
+								"entries": [
+									"Vampyren har fördel på närkampsattacker, men attacker mot den har fördel."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Shapechanger",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Shapechanger",
+								"entries": [
+									"If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.",
+									"While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+									"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+								]
+							}
+						}
+					},
+					"type": {
+						"type": "undead",
+						"tags": [
+							"shapechanger"
+						]
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Spellcasting—Cleric",
+					"source": "PSI",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Priest|MM} has been used as an example Cleric.}",
+								"The vampire is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The vampire has the following cleric spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell light}",
+										"{@spell sacred flame}",
+										"{@spell thaumaturgy}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell guiding bolt}",
+										"{@spell sanctuary}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell lesser restoration}",
+										"{@spell spiritual weapon}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell dispel magic}",
+										"{@spell spirit guardians}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Spellcasting—Wizard",
+					"source": "PSI",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Mage|MM} has been used as an example Wizard.}",
+								"The vampire is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The vampire has the following wizard spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell fire bolt}",
+										"{@spell light}",
+										"{@spell mage hand}",
+										"{@spell prestidigitation}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell detect magic}",
+										"{@spell mage armor}",
+										"{@spell magic missile}",
+										"{@spell shield}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell misty step}",
+										"{@spell suggestion}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell counterspell}",
+										"{@spell fireball}",
+										"{@spell fly}"
+									]
+								},
+								"4": {
+									"slots": 3,
+									"spells": [
+										"{@spell greater invisibility}",
+										"{@spell ice storm}"
+									]
+								},
+								"5": {
+									"slots": 1,
+									"spells": [
+										"{@spell cone of cold}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Werewolf (Krallenhorde)",
@@ -940,23 +1490,30 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Howlpack",
+					"name": "Howlpack Traits",
 					"entries": [
-						"Den grundläggande varulvsstatistiken representerar en medlem av Krallenhorde, Innistrads största varulvsgrupp. Varulvar i andra flockar kan ha ytterligare förmågor som till exempel följande."
-					]
-				},
-				{
-					"type": "variant",
-					"name": "Mondronen",
-					"entries": [
-						"Mondronen Wounded Fury. Så länge den har 10 eller färre träffpunkter har varulven fördel på attackkast. Dessutom ger den 7 ({@dice 2d6}) extra skada till varje mål som den träffar med en närstridsattack."
-					]
-				},
-				{
-					"type": "variant",
-					"name": "Leeraug",
-					"entries": [
-						"Leeraug Blood Frenzy. Varulven har fördel på närkampsattacker mot alla varelser som inte har alla sina träffpunkter."
+						"Den grundläggande varulvsstatistiken representerar en medlem av Krallenhorde, Innistrads största varulvsgrupp. Varulvar i andra flockar kan ha ytterligare förmågor som till exempel följande.",
+						{
+							"name": "Vildin Rampage (Canid Form Only)",
+							"type": "entries",
+							"entries": [
+								"When the werewolf reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+							]
+						},
+						{
+							"name": "Mondronen Wounded Fury",
+							"type": "entries",
+							"entries": [
+								"While it has 10 hit points or fewer, the werewolf has advantage on attack rolls. In addition, it deals an extra 7 ({@damage 2d6}) damage to any target it hits with a melee attack."
+							]
+						},
+						{
+							"name": "Leeraug Blood Frenzy",
+							"type": "entries",
+							"entries": [
+								"The werewolf has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+							]
+						}
 					]
 				}
 			],
@@ -983,7 +1540,59 @@
 				"RW",
 				"THW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Werewolf (Leeraug)",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Leeraug Blood Frenzy",
+								"entries": [
+									"The werewolf has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Werewolf (Mondronen)",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Mondronen Wounded Fury",
+								"entries": [
+									"While it has 10 hit points or fewer, the werewolf has advantage on attack rolls. In addition, it deals an extra 7 ({@damage 2d6}) damage to any target it hits with a melee attack."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Werewolf (Vildin)",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Vildin Rampage (Canid Form Only)",
+								"entries": [
+									"When the werewolf reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+								]
+							}
+						}
+					},
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Zombie Cat",
@@ -1005,7 +1614,9 @@
 			"traitTags": [
 				"Undead Fortitude"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zombie Rat",
@@ -1027,7 +1638,9 @@
 			"traitTags": [
 				"Undead Fortitude"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zombie Snake",
@@ -1049,7 +1662,9 @@
 			"traitTags": [
 				"Undead Fortitude"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }

@@ -676,13 +676,34 @@
 						"En okänd aetherborn, som desperat sökte efter ett sätt att förlänga sitt korta liv, upptäckte en förvandlingsprocess som förlängde deras existens - genom att ge dem förmågan att livnära sig på andra varelsers livsessens. Sedan dess har andra aetherborn lärt sig och genomfört denna monstruösa förvandling, och aetherborn med denna \"gåva\" har blivit en liten minoritet bland en redan liten population.",
 						"En begåvad aetherborn har förmågan att dränera andra varelsers livsessens. På samma sätt som värme överförs från ett varmt föremål till ett kallt, behöver en begåvad aetherborn bara röra vid en annan levande varelse med en hand med klor för att dra ut livsessens, vilket ger bränsle till deras egen fortsatta existens samtidigt som de dränerar styrka och vitalitet från sitt offer.",
 						"För många aetherborn, som lever som de gör för att njuta och få omedelbar tillfredsställelse, är begreppen \"vilja\" och \"behov\" praktiskt taget synonyma. Men Aetherborn med denna gåva förstår vad det är att verkligen behöva, för de utvecklar en hunger efter livets essens som vida överstiger alla önskningar som de kunde ha känt före sin omvandling. En begåvad aetherborn som avstår från denna utfodring försämras ännu snabbare än andra aetherborn, samtidigt som han eller hon genomlider obeskrivliga plågor orsakade av berövandet av livsenergi.",
-						"På DM:s val kan en aetherborn karaktär undersöka metoder för att uppnå denna mörka \"gåva\". Processen liknar den att uppfinna och tillverka ett sällsynt magiskt föremål (se \"Uppfinna och tillverka anordningar\" tidigare i det här dokumentet). Men istället för aether kräver processen en mängd sällsynta salvor och ovanliga ingredienser som utgör kostnaden för att forska och genomgå förvandlingen.",
+						"At the DM's option, an aetherborn character can research methods of achieving this dark \"gift.\" The process is similar to inventing and manufacturing a rare magic item (see \"{@book Inventing and Manufacturing Devices|PS-K|1|Inventing and Manufacturing Devices}\" earlier in this document). But rather than aether, the process requires a variety of rare unguents and unusual ingredients that make up the cost of researching and undergoing the transformation.",
 						"En aetherborn med den här gåvan får förmågan Drain Life: en naturlig attack som ger {@dice 1d6} nekrotisk skada och återställer samma antal träffpunkter till aetherborn. Men om aetherborn går i 7 dagar utan att orsaka den här skadan, minskas deras maximala antal träffpunkter med {@dice 1d6} per vecka. Denna minskning kan inte tas bort förrän aetherborn har använt sin Drain Life-förmåga och avslutat en lång vila."
 					]
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Variant; Gifted Aetherborn",
+					"source": "PSK",
+					"_mod": {
+						"entries": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Drain Life",
+								"type": "entries",
+								"entries": [
+									"You gain a natural attack that deals {@dice 1d6} necrotic damage and restores the same number of hit points to you. However, if you goes for 7 days without dealing this damage, your hit point maximum is reduced by {@dice 1d6} per week. This reduction can't be removed until you have used your Drain Life ability and completed a long rest."
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Natural Weapon"
+					]
+				}
+			]
 		},
 		{
 			"name": "Astral Elf",
@@ -1217,14 +1238,14 @@
 				{
 					"name": "Flight",
 					"entries": [
-						"Du har en flyghastighet på 30 fot. Du kan inte använda din flyghastighet när du bär medium eller tung rustning. (Om din kampanj använder variantregeln för belastning kan du inte använda din flyghastighet om du är belastad)."
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.) "
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Du kan tala, läsa och skriva Common och Aven."
+						"You can speak, read, and write Common and {@language Aven|PSD}."
 					],
 					"type": "entries"
 				},
@@ -3858,7 +3879,7 @@
 				}
 			],
 			"age": {
-				"mature": 20,
+				"mature": 50,
 				"max": 350
 			},
 			"darkvision": 60,
@@ -3899,7 +3920,7 @@
 				{
 					"name": "Speed",
 					"entries": [
-						"Din hastighet minskar inte om du bär en tung rustning."
+						"Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor."
 					],
 					"type": "entries"
 				},
@@ -3934,7 +3955,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Du kan tala, läsa och skriva vanlig engelska och dvärgiska. Dvärgspråket är fullt av hårda konsonanter och gutturala ljud, och dessa egenskaper spiller över på alla andra språk som en dvärg kan tala."
+						"You can speak, read, and write Common and {@language Dwarvish}. {@language Dwarvish} is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 					],
 					"type": "entries"
 				}
@@ -4243,6 +4264,13 @@
 					"name": "Languages",
 					"entries": [
 						"Du kan tala, läsa och skriva allmänspråket och älvdalska. Elvish är flytande, med subtila intonationer och invecklad grammatik. Elvornas litteratur är rik och varierad, och deras sånger och dikter är kända bland andra raser. Många barder lär sig deras språk så att de kan lägga till elviska ballader i sin repertoar."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Elf Culture",
+					"entries": [
+						"The elves of Kaladesh don't organize themselves into nations or tribes. Still, they recognize three distinct cultural groups among their kind—though in truth these groupings are more like attitudes or alignments with regard to the rest of society and the use of technology. Choose one of these cultures."
 					],
 					"type": "entries"
 				}
@@ -5666,6 +5694,78 @@
 		},
 		{
 			"name": "Goblin",
+			"source": "PSZ",
+			"page": 16,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 16
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"age": {
+				"mature": 12,
+				"max": 50
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Armor"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"goblin": true
+				}
+			],
+			"resist": [
+				"fire",
+				"psychic"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Goblins mognar snabbare än människor och blir vuxna vid 12 års ålder. De åldras också märkbart snabbare än människor, och även de mest försiktiga trollkarlarna lever sällan längre än 50 år."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"De flesta goblins är kaotiska, även om de inte har någon särskild benägenhet för gott eller ont."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Goblins är i genomsnitt ungefär en meter långa och väger ungefär 40 pund. Din storlek är Small."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Tack vare ditt arv har du en överlägsen syn i mörka och svaga förhållanden. Du kan se i svagt ljus inom 60 fot från dig som om det vore starkt ljus, och i mörker som om det vore svagt ljus. Du kan inte urskilja färg i mörker, bara gråtoner."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"Du kan tala, läsa och skriva vanliga språk och Goblin."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Goblin",
 			"source": "VGM",
 			"page": 119,
 			"otherSources": [
@@ -5797,158 +5897,6 @@
 			],
 			"heightAndWeight": null,
 			"hasFluff": true
-		},
-		{
-			"name": "Goblin (Ixalan)",
-			"source": "PSX",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": {
-				"walk": 25,
-				"climb": 25
-			},
-			"ability": [
-				{
-					"dex": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Goblins mognar snabbare än människor och blir vuxna vid 12 års ålder. De åldras märkbart snabbare, och även om få troll lever till hög ålder, lever de mest försiktiga sällan längre än 50 år."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"De flesta goblins är kaotiska, utan någon särskild benägenhet för gott eller ont men med en stark tendens till bus."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Goblins är i genomsnitt ungefär en meter långa och väger ungefär 40 pund. Din storlek är Small."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Agile Climber",
-					"entries": [
-						"Du har en klättringshastighet på 25 fot. Du kan inte använda din klättringshastighet när du bär medium eller tung rustning. (Om din kampanj använder variantregeln för belastning kan du inte använda din klätterhastighet om du är belastad.)"
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Du kan se i svagt ljus inom 60 fot från dig som om det vore starkt ljus, och i mörker som om det vore svagt ljus. Du kan inte urskilja färg i mörker, bara grå nyanser."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Du kan tala, läsa och skriva Common (om det finns i din kampanj) och Goblin."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Goblin (Zendikar)",
-			"source": "PSZ",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": 25,
-			"ability": [
-				{
-					"con": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"traitTags": [
-				"Natural Armor"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"resist": [
-				"fire",
-				"psychic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Goblins mognar snabbare än människor och blir vuxna vid 12 års ålder. De åldras också märkbart snabbare än människor, och även de mest försiktiga trollkarlarna lever sällan längre än 50 år."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"De flesta goblins är kaotiska, även om de inte har någon särskild benägenhet för gott eller ont."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Goblins är i genomsnitt ungefär en meter långa och väger ungefär 40 pund. Din storlek är Small."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Tack vare ditt arv har du en överlägsen syn i mörka och svaga förhållanden. Du kan se i svagt ljus inom 60 fot från dig som om det vore starkt ljus, och i mörker som om det vore svagt ljus. Du kan inte urskilja färg i mörker, bara gråtoner."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Grit",
-					"entries": [
-						"Du är motståndskraftig mot brandskador och psykisk skada. När du inte bär någon rustning är din AC dessutom lika med 11 + din Dexterity-modifierare."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Du kan tala, läsa och skriva vanliga språk och Goblin."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
 		},
 		{
 			"name": "Goliath",
@@ -7490,10 +7438,45 @@
 			"name": "Human (Ixalan)",
 			"source": "PSX",
 			"page": 11,
-			"size": [
-				"M"
-			],
-			"speed": 30,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"Människor tenderar att inte ha någon särskild inriktning. De bästa och de sämsta finns bland dem."
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"Din grundläggande gånghastighet är 30 fot."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write {@language Common} and one extra language of your choice. Or, if your campaign uses the optional rules for languages found in the previous section, your national origin determines your native language: {@language Itzocan|PSX} for the Sun Empire, {@language Coalition pidgin|PSX} for the Brazen Coalition, or {@language Vampire|PSX} for the Legion of Dusk. You still speak one additional language of your choice, and {@language Common Trade Pidgin|PSX|Common} if it exists in your campaign."
+								]
+							}
+						}
+					]
+				}
+			},
 			"ability": [
 				{
 					"str": 1,
@@ -7504,10 +7487,6 @@
 					"cha": 1
 				}
 			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -7519,34 +7498,60 @@
 					"anyStandard": 1
 				}
 			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Human (Kaladesh)",
+			"source": "PSK",
+			"page": 22,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
 					"entries": [
-						"Människor blir vuxna i sena tonåren och lever mindre än ett sekel."
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"Människor tenderar att inte ha någon särskild inriktning."
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"Din grundläggande gånghastighet är 30 fot."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Dwarvish curses, Elvish musical expressions, {@race Vedalken|PSK} scholarly jargon, and so on."
+								]
+							}
+						}
 					]
-				},
+				}
+			},
+			"ability": [
 				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Människor tenderar att inte ha någon särskild inriktning. De bästa och de sämsta finns bland dem."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Människor varierar kraftigt i längd och kroppsbyggnad, från knappt 1,5 meter till långt över 1,80 meter. Oavsett hur du placerar dig i detta intervall är din storlek Medium."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Du kan tala, läsa och skriva det vanliga språket och ett extra språk som du själv väljer. Eller, om din kampanj använder de valfria reglerna för språk som finns i föregående avsnitt, avgör ditt nationella ursprung ditt modersmål: Itzocan för Sun Empire, Coalition pidgin för Brazen Coalition eller Vampire för Legion of Dusk. Du talar fortfarande ett ytterligare språk som du väljer, och Common om det finns i din kampanj."
-					],
-					"type": "entries"
+					"str": 1,
+					"dex": 1,
+					"con": 1,
+					"int": 1,
+					"wis": 1,
+					"cha": 1
 				}
 			],
 			"hasFluff": true,
@@ -9480,86 +9485,15 @@
 			]
 		},
 		{
-			"name": "Merfolk (Ixalan)",
-			"source": "PSX",
-			"page": 12,
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"ability": [
-				{
-					"cha": 1
-				}
-			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
-			"traitTags": [
-				"Amphibious"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true,
-					"anyStandard": 1
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Merfolk mognar i samma takt som människor och blir vuxna vid 20 års ålder. De lever dock betydligt längre än människor, ofta över 100 år."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"De flesta merfolk är neutrala och lever i nära harmoni med naturen."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Merfolk är betydligt längre än de flesta människor, de är mellan två och tre meter långa och väger i genomsnitt omkring 300 pund. Din storlek är Medium."
-					]
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"Du kan andas luft och vatten."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swimming",
-					"entries": [
-						"Du har en simhastighet på 30 fot."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Du kan tala, läsa och skriva Common (om det finns i din kampanj), Merfolk och ytterligare ett språk som du själv väljer."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Merfolk (Zendikar)",
+			"name": "Merfolk",
 			"source": "PSZ",
 			"page": 13,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 12
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -10161,6 +10095,7 @@
 				"max": 100
 			},
 			"traitTags": [
+				"Language Proficiency",
 				"Natural Weapon",
 				"Tool Proficiency"
 			],
@@ -10168,6 +10103,11 @@
 				{
 					"common": true,
 					"other": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
 				}
 			],
 			"immune": [
@@ -10713,7 +10653,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Du kan tala, läsa och skriva Common (om det finns i din kampanj) och Orc."
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Orc|PHB}."
 					],
 					"type": "entries"
 				}
@@ -12350,13 +12290,13 @@
 					"type": "entries",
 					"name": "Flight",
 					"entries": [
-						"Du har en flyghastighet på 30 fot. Du kan inte använda din flyghastighet när du bär medium eller tung rustning. (Om din kampanj använder variantregeln för belastning kan du inte använda din flyghastighet om du är belastad)."
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.)"
 					]
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Du kan tala, läsa och skriva Common (om det finns i din kampanj) och Siren."
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Siren|PSX}."
 					],
 					"type": "entries"
 				}
@@ -13412,101 +13352,21 @@
 			]
 		},
 		{
-			"name": "Vampire (Ixalan)",
-			"source": "PSX",
-			"page": 14,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"cha": 2,
-					"wis": 1
-				}
-			],
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true
-				}
-			],
-			"resist": [
-				"necrotic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Vampyrer mognar och åldras inte på samma sätt som andra raser."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Vampyrer kanske inte har en medfödd tendens till ondska, men många av dem hamnar där. Ondska eller inte, deras strikta hierarkier lutar dem mot en laglig inriktning."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Vampyrer har samma storlek och kroppsbyggnad som människor. Din storlek är Medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Bloodthirst",
-					"entries": [
-						"Du kan dra blod och livsenergi från en villig varelse, eller en som är {@condition grappled} av dig, {@condition incapacitated} eller {@condition restrained}. Gör en närstridsattack mot målet. Om du träffar ger du 1 genomträngande skada och {@dice 1d6} nekrotisk skada. Målets maximala träffpunktsantal minskas med ett belopp som är lika stort som den nekrotiska skadan som tas, och du återfår träffpunkter som är lika stora som det beloppet. Minskningen varar tills målet avslutar en lång vila. Målet dör om den här effekten minskar dess maximala antal träffpunkter till 0."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Feast of Blood",
-					"entries": [
-						"När du suger blod med din förmåga Blodtörst upplever du en ökning av vitalitet. Din hastighet ökar med 10 fot och du får fördel på styrke- och smidighetskontroller och räddningskast i 1 minut."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Vampiric Resistance",
-					"entries": [
-						"Du är motståndskraftig mot nekrotisk skada."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Du kan se i svagt ljus inom 60 fot från dig som om det vore starkt ljus, och i mörker som om det vore svagt ljus. Du kan inte urskilja färg i mörker, bara grå nyanser."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Du kan tala, läsa och skriva Common (om det finns i din kampanj) och Vampire."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Vampire (Zendikar)",
+			"name": "Vampire",
 			"source": "PSZ",
 			"page": 14,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 14
+				}
+			],
 			"size": [
 				"M"
 			],
 			"speed": 30,
 			"ability": [
 				{
-					"int": 1,
 					"cha": 2
 				}
 			],
@@ -13545,7 +13405,7 @@
 				{
 					"name": "Blood Thirst",
 					"entries": [
-						"Du kan dra blod och livsenergi från en villig varelse, eller en som är {@condition grappled} av dig, {@condition incapacitated} eller {@condition restrained}. Gör en närstridsattack mot målet. Om du träffar ger du 1 genomträngande skada och {@dice 1d6} nekrotisk skada. Målets maximala träffpunktsantal minskas med ett belopp som är lika stort som den nekrotiska skadan som tas, och du återfår träffpunkter som är lika stora som det beloppet. Minskningen varar tills målet avslutar en lång vila. Målet dör om den här effekten minskar dess maximala antal träffpunkter till 0. En humanoid som dödas på det här sättet blir en {@creature zombie||null}."
+						"You can drain blood and life energy from a willing creature, or one that is {@condition grappled} by you, {@condition incapacitated}, or {@condition restrained}. Make a melee attack against the target. If you hit, you deal 1 piercing damage and {@dice 1d6} necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and you regain hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
 					],
 					"type": "entries"
 				},
@@ -16813,7 +16673,10 @@
 					"entries": [
 						"Din markhastighet ökar till 35 fot."
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Mask of the Wild",
@@ -16852,7 +16715,10 @@
 					"entries": [
 						"Du kan en valfri trollkonst från {@filter druid spell list|spells|class=druid|level=0}. Visdom är din trolleriförmåga för den."
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Extra Language",
@@ -18275,17 +18141,74 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Grotag Tribe",
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Goblin",
+			"raceSource": "PSZ",
+			"page": 16,
+			"otherSources": null,
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"entries": [
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"De flesta goblins är kaotiska, utan någon särskild benägenhet för gott eller ont men med en stark tendens till bus."
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Agile Climber",
+					"entries": [
+						"You have a climbing speed of 25 feet. You can't use your climbing speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your climbing speed if you are encumbered.)"
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Goblin|PHB}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar; Grotag Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"skillProficiencies": [
 				{
 					"animal handling": true
 				}
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"Du är motståndskraftig mot brandskador och psykisk skada. När du inte bär någon rustning är din AC dessutom lika med 11 + din Dexterity-modifierare."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Grotag Tamer",
 					"entries": [
@@ -18298,12 +18221,25 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Lavastep Tribe",
+			"name": "Zendikar; Lavastep Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"Du är motståndskraftig mot brandskador och psykisk skada. När du inte bär någon rustning är din AC dessutom lika med 11 + din Dexterity-modifierare."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Lavastep Grit",
 					"entries": [
@@ -18316,15 +18252,28 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tuktuk Tribe",
+			"name": "Zendikar; Tuktuk Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"traitTags": [
 				"Tool Proficiency"
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"Du är motståndskraftig mot brandskador och psykisk skada. När du inte bär någon rustning är din AC dessutom lika med 11 + din Dexterity-modifierare."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Tuktuk Cunning",
 					"entries": [
@@ -19664,7 +19613,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Du kan tala, läsa och skriva common och keldon."
+						"You can speak, read, and write Common and {@language Keldon|PSD}."
 					],
 					"type": "entries",
 					"data": {
@@ -19689,7 +19638,7 @@
 					"type": "entries",
 					"name": "Icehaven Born",
 					"entries": [
-						"Du är naturligt anpassad till kallt klimat, vilket beskrivs i kapitel 5 i {@i Dungeon Master's Guide}."
+						"You are naturally adapted to {@hazard Extreme Cold|DMG|cold climates}, as described in chapter 5 of the {@i Dungeon Master's Guide}."
 					]
 				}
 			],
@@ -20547,11 +20496,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Blue",
+			"name": "Ixalan; Blue",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -20561,6 +20511,13 @@
 				{
 					"history": true,
 					"nature": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20591,20 +20548,38 @@
 						"Du får färdigheter i {@skill History} och {@skill Nature}."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Green",
+			"name": "Ixalan; Green",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20635,17 +20610,28 @@
 						"Du kan försöka gömma dig även när du bara är lätt skymd av lövverk, kraftigt regn, fallande snö, dimma och andra naturfenomen."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Cosi Creed",
+			"name": "Zendikar; Cosi Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 1,
@@ -20692,11 +20678,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Emeria Creed",
+			"name": "Zendikar; Emeria Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
@@ -20742,11 +20729,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Ula Creed",
+			"name": "Zendikar; Ula Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -22536,6 +22524,94 @@
 			"overwrite": {
 				"ability": true
 			}
+		},
+		{
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Vampyrer mognar och åldras inte på samma sätt som andra raser."
+					],
+					"data": {
+						"overwrite": "Age"
+					}
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Vampyrer kanske inte har en medfödd tendens till ondska, men många av dem hamnar där. Ondska eller inte, deras strikta hierarkier lutar dem mot en laglig inriktning."
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Vampyrer har samma storlek och kroppsbyggnad som människor. Din storlek är Medium."
+					],
+					"data": {
+						"overwrite": "Size"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Feast of Blood",
+					"entries": [
+						"När du suger blod med din förmåga Blodtörst upplever du en ökning av vitalitet. Din hastighet ökar med 10 fot och du får fördel på styrke- och smidighetskontroller och räddningskast i 1 minut."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Vampire|PSX}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar",
+			"source": "PSZ",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Null Transformation",
+					"entries": [
+						"A humanoid killed with your Bloodthirst ability becomes a {@creature Vampire Null|PSZ|null}."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Envoy",

@@ -7111,6 +7111,23 @@
 					"anyArtisansTool": 1
 				}
 			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				}
+			],
 			"entries": [
 				"Du behärskar konsten att hitta på, förbättra och rigga på en gång. Du kan använda dina talanger för att skapa omedelbara, kortsiktiga magiska effekter som liknar trollformler, om du har tid och tillräckligt med eter.",
 				"När du väljer den här bedriften behärskar du två magiska effekter, som var och en återskapar effekten av en trollformel på 1:a nivån som har ritualmärket. Dessa trollformler kan komma från vilken klasslista som helst, men intelligens är din trollformelseförmåga för dem.",
@@ -8146,7 +8163,8 @@
 				"Du är skicklig på att skapa {@creature servo|psk|servos}-små konstruktioner som fungerar som personliga assistenter. Du kan kasta {@spell find familiar}-besvärjelsen som en ritual och skapa en {@creature servo|psk} som fungerar som din bekant istället för ett djur. En {@creature servo|psk}s statistik visas i avsnittet \"Artefaktvarelser\" i det här dokumentet. På alla andra sätt fungerar en servo familiar på samma sätt som beskrivs i {@spell find familiar}-besvärjelsen.",
 				"Du kan kommunicera telepatiskt med din servo familiar och uppfatta genom dess sinnen så länge ni befinner er på samma existensplan. Du kan tala genom din servo med din egen röst.",
 				"När du gör åtgärden {@action Attack} kan du dessutom avstå från en av dina egna attacker för att låta din servo familiar göra en egen attack."
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Shadow Touched",

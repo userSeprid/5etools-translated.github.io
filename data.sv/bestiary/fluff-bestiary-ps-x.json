@@ -8,17 +8,38 @@
 		{
 			"name": "Aegisaur",
 			"source": "PSX",
-			"entries": [
-				"För dinosaurier utan de framträdande hornen hos cera topses är pansarplåt och dödliga svansar ett effektivt försvar mot rovdjur.",
-				"En aegisaurs rygg är täckt av tjocka, pansrade fjäll som liknar en sköldpaddas skal, medan svansen har en massiv benig klubba som kan slå sönder en aggressors skalle."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Scales, Spikes, and Hammers",
+									"page": 27,
+									"entries": [
+										"For dinosaurs without the prominent horns of the ceratopses, armored plating and deadly tails are an effective defense against predators.",
+										"An aegisaur's back is covered with thick, armored scales that resemble a turtle's shell, while its tail is tipped with a massive bony club that can smash an aggressor's skull. Use the {@creature ankylosaurus|MM} in the {@book Monster Manual|MM} for these creatures."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Aegisaur.webp"
-					}
+					},
+					"title": "Bellowing Aegisaur",
+					"credit": "Craig J. Spearing"
 				}
 			]
 		},
@@ -34,7 +55,7 @@
 			"name": "Aerosaur (Small)",
 			"source": "PSX",
 			"entries": [
-				"Aerosaurier omfattar flera olika sorters stora reptiler med läderartade vingar, inklusive pterodoner och solvingar. Även om de i allmänhet är klumpiga flygare, bättre på att glida från höga platser eller rida på uppåtgående vindar längs kusten än att lyfta sig själva från marken, används aerosaurier ibland som hästar av riddare i Solriket."
+				"Aerosaurs include several varieties of large reptiles with leathery wings, including pterodons and sunwings. Though they are generally clumsy fliers, better at gliding from high perches or riding coastal updrafts than at lifting themselves from the ground, aerosaurs are sometimes used as mounts by knights of the Sun Empire. Smaller aerosaurs can be represented by the {@creature pteranodon|MM} in the {@book Monster Manual|MM}, while larger ones are more like the {@creature quetzalcoatlus|VGM} in {@book Volo's Guide to Monsters|VGM}."
 			],
 			"images": [
 				{
@@ -42,7 +63,18 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Aerosaur.webp"
-					}
+					},
+					"title": "Shining Aerosaur",
+					"credit": "Dan Scott"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PSX/Aerosaur2.webp"
+					},
+					"title": "Sky Terror",
+					"credit": "Johann Bodin"
 				}
 			]
 		},
@@ -59,23 +91,66 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Air Totem Elemental.webp"
-					}
+					},
+					"title": "Air Elemental",
+					"credit": "Tomasz Jedruszek"
+				}
+			]
+		},
+		{
+			"name": "Altisaur",
+			"source": "PSX",
+			"_copy": {
+				"name": "Brontodon",
+				"source": "PSX"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PSX/Altisaur.webp"
+					},
+					"title": "Itlimoc, Cradle of the Sun",
+					"credit": "Grzegorz Rutkowski"
 				}
 			]
 		},
 		{
 			"name": "Armasaur",
 			"source": "PSX",
-			"entries": [
-				"Armasaurier har också plattor på ryggen, men dessa reser sig upp som spikar längs deras ryggar. Deras piskliknande svansar är försedda med vassa spikar som skydd."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Scales, Spikes, and Hammers",
+									"page": 27,
+									"entries": [
+										"For dinosaurs without the prominent horns of the ceratopses, armored plating and deadly tails are an effective defense against predators.",
+										"Armasaurs also have plates on their backs, but these rise up like spikes along their spines. Their whiplike tails bear sharp spikes for protection. Use the {@creature stegosaurus|VGM} in {@book Volo's Guide to Monsters|VGM} for the armasaur."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Armasaur.webp"
-					}
+					},
+					"title": "Steadfast Armasaur",
+					"credit": "Greg Opalanski"
 				}
 			]
 		},
@@ -98,49 +173,105 @@
 		{
 			"name": "Brontodon",
 			"source": "PSX",
-			"entries": [
-				"De största dinosaurierna är enorma, långhalsiga herbi vores som äter löv från höga träd. Den enorma storleken på dessa dinosaurier innebär att ett enda djur - ofta ett ungt, gammalt eller skadat djur som blir avskiljt från flocken - kan föda en hel flock av mindre rovdjur. De magnifika altisaurerna vandrar över slätterna och genom solkustens glesa skogar och betar på trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "The Rumbling Herds",
+									"page": 27,
+									"entries": [
+										"The largest of the dinosaurs are huge, long-necked herbivores that feed on the leaves of tall trees. The enormous size of these dinosaurs means that a single beast—often a young, old, or injured one that becomes separated from the herd—can feed a whole pack of smaller predators. The magnificent Altisaurs wander across the plains and through the sparse forests of the Sun Coast, grazing on the tops of trees. Brontodons travel in herds, causing the ground to thunder beneath their tremendous weight when they build up speed. Use {@creature brontosaurus|VGM} stats from {@book Volo's Guide to Monsters|VGM} for these beasts."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Brontodon.webp"
-					}
+					},
+					"title": "Belligerent Brontodon",
+					"credit": "Dan Scott"
 				}
 			]
 		},
 		{
 			"name": "Ceratops",
 			"source": "PSX",
-			"entries": [
-				"Många mindre växtätare finns på Ix alans slätter. Dessa dinosaurier är inte beroende av sin storlek för att försvara sig, utan skyddas av pläterade fjäll, vassa horn eller spetsiga svansar. De flesta är aggressivt proaktiva och jagar bort rovdjur redan innan de blir attackerade, och människorna i Solriket anser att dessa varelser är bland de svåraste dinosaurierna att kontrollera. nt altisaurer vandrar över slätterna och genom Solkustens glesa skogar och betar på trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten.",
-				"Ceratopses har enorma horn på och runt de stora, fjäderförsedda volanger som skyddar deras halsar. De re laterade snubbhornen saknar sina kusiners vassa spetsiga horn. Trots sitt sura humör är ceratopses utmärkta hästar.urs vandrar över slätterna och genom solkustens glesa skogar och betar på trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Horned Herbivores",
+									"page": 28,
+									"entries": [
+										"Many smaller herbivores are found on the plains of Ixalan. Rather than depending on size for defense, these dinosaurs are protected by plated scales, sharp horns, or spiked tails. Most are aggressively proactive in chasing off predators even before they are attacked, and the people of the Sun Empire find these creatures among the hardest dinosaurs to control.",
+										"Ceratopses sport enormous horns on and around the large, feathered frills that protect their necks. The related snubhorns lack the sharp pointed horns of their cousins. Despite their surly temper, ceratopses make excellent mounts. The {@creature triceratops|MM} in the {@book Monster Manual|MM} can represent all of these dinosaurs."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Ceratops.webp"
-					}
+					},
+					"title": "Goring Ceratops",
+					"credit": "Zezhou Chen"
 				}
 			]
 		},
 		{
 			"name": "Chupacabra",
 			"source": "PSX",
-			"entries": [
-				"Obeskrivliga mardrömsvarelser lurar i Ixalans ruiner och mörka platser. Många tros vara de korrumperade resterna av den livsenergi och det lysande ljus som lämnats kvar på platser som Sun Empire har övergivit. Sådana varelser inkluderar ett monster som lurar i djungelns mörker och livnär sig på blodet från däggdjur och dinosaurier, kallat chupacabra. Det är smygande och svårfångat, känt mer genom de bloddränkta byten det lämnar efter sig än genom faktiska fysiska iakttagelser. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
-			],
+			"_copy": {
+				"name": "Night Terrors",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"Obeskrivliga mardrömsvarelser lurar i Ixalans ruiner och mörka platser. Många tros vara de korrumperade resterna av den livsenergi och det lysande ljus som lämnats kvar på platser som Sun Empire har övergivit. Sådana varelser inkluderar ett monster som lurar i djungelns mörker och livnär sig på blodet från däggdjur och dinosaurier, kallat chupacabra. Det är smygande och svårfångat, känt mer genom de bloddränkta byten det lämnar efter sig än genom faktiska fysiska iakttagelser. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Chupacabra.webp"
-					}
+					},
+					"title": "Lurking Chupacabra",
+					"credit": "YW Tang"
 				}
 			]
 		},
@@ -149,7 +280,7 @@
 			"source": "PSX",
 			"entries": [
 				"River Heralds tror att världens vatten är uppdelade i två sfärer: floden och havet är den nedre halvan, med djungeln och himlen ovanför. De tror att havet besitter en outgrundlig visdom, de djupa funderingarna från den obeskrivligt gamla världen. Men himmelens och flodernas visdom förkroppsligas i de kappsvingade ormar som vrider sig genom luften för att spegla flodernas lopp längs marken. s smygande och svårfångad, känd mer genom de bloddränkta byten den lämnar efter sig än genom faktiska fysiska iakttagelser. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten.",
-				"Coatls är himlens odödliga väktare som alltid bor bland molnen. River Heralds säger att de kan lockas ner till marken genom en uppriktig bön från den klokaste av sjömännens shamaner. Coatls sägs vara kloka bortom alla dödliga mått och oförmögna att tala osanning, så deras råd söks ofta i tider av desperat behov. Synen av en coatl anses förutsäga gynnsamma vindar - en tro som har börjat sprida sig från River Heralds shamaner till piraterna i Brazen Coalition.Lömsk och svårfångad, känd mer genom de bloddränkta byten den lämnar efter sig än genom faktiska fysiska observationer. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
+				"Coatls are immortal guardians of the sky, dwelling always among the clouds. The River Heralds say that they can be enticed to the ground by the earnest supplication of the wisest of merfolk shamans. Coatls are said to be wise beyond mortal measure and incapable of speaking a falsehood, so their advice is often sought in times of desperate need. The sight of a coatl is thought to foretell favorable winds—a belief that has begun to spread from the River Herald shamans to the pirates of the Brazen Coalition. Use the {@creature couatl|MM} statistics in the {@book Monster Manual|MM} for Ixalan's coatls."
 			],
 			"images": [
 				{
@@ -157,39 +288,57 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Coatl.webp"
-					}
-				}
-			]
-		},
-		{
-			"name": "Deinonychus",
-			"source": "PSX",
-			"entries": [
-				"De mest fruktade dinosaurierna är de aggressiva tvåbenta rovdjuren som jagar andra dinosaurier - och ingen av dem är främmande för att äta humanoider när de kan. Trots sin grymhet är köttätare utmärkta hästar, eftersom de inte drar sig för eller skyggar för strid. Dessa dinosaurier inkluderar en stor variation av rovdjur, allt från hundstora varelser som jagar i flock till monster som är stora nog att bära en bepansrad riddare i strid. läs från River Heralds shamaner till piraterna i Brazen Coalition. lömsk och svårfångad, känd mer genom de bloddränkta byten den lämnar efter sig än genom faktiska fysiska iakttagelser. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/PSX/Deinonychus.webp"
-					}
+					},
+					"title": "Favorable Winds",
+					"credit": "Shreya Shetty"
 				}
 			]
 		},
 		{
 			"name": "Demon",
 			"source": "PSX",
-			"entries": [
-				"Ixalans demoner liknar förvridna fladdermöss och är avkommor av en fladdermusgud, källan till allt mörker. Medan solens aspekter inkluderar förstörelse såväl som skapande och tillväxt, representerar demonerna stagnation och förfall. Solen konsumerar i härlig eld; demonerna arbetar genom röta och degeneration. De sägs vara aktiva på natten, när solen är dold, och deras ansträngningar är inriktade på att förhindra att solen går upp igen varje morgon. Under tiden sprider de pest och korruption över landet. m the River Herald shamans to the Brazen Coalition pirates. tealthy and elusive, known more by the blood-drained prey it leaves behind than by actual physical sightings. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
-			],
+			"_copy": {
+				"name": "Night Terrors",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"Resembling twisted bats, the demons of Ixalan are the spawn of a bat-god, the source of all darkness. While the sun's aspects include destruction as well as creation and growth, the demons represent stagnation and decay. The sun consumes in glorious fire; demons work through rot and degeneration. They are said to be active at night, when the sun is hidden, and their efforts are directed toward preventing the sun from rising again each morning. In the meantime, they spread plague and corruption across the land. The {@creature vrock|MM} in the {@book Monster Manual|MM} is a good representation of Ixalan's demons."
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Demon.webp"
-					}
+					},
+					"credit": "Zack Stella"
+				}
+			]
+		},
+		{
+			"name": "Dinosaurs",
+			"source": "PSX",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Dinosaurs",
+							"page": 27,
+							"entries": [
+								"Dinosaurs are the dominant form of animal life in Ixalan—the absolute rulers of the coastal lands held by the Sun Empire, and a force to be reckoned with in the interior jungles. A number of dinosaurs appear in the {@book Monster Manual|MM}, with even more to be found in {@book Volo's Guide to Monsters|VGM}, making that a particularly worthwhile resource for an Ixalan campaign. (Many of the dinosaurs in {@book Volo's Guide|VGM} also appear in {@adventure Tomb of Annihilation|ToA}.)"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -198,7 +347,8 @@
 			"source": "PSX",
 			"entries": [
 				"Det sägs att den enda kraft på Ixalan som inte är intresserad av att hitta den gyllene staden är Ixalan själv. Dryaderna, som inkarnationer av landet och dess vilja, bevisar att ordspråket är sant. Deras enda intresse är skogens hälsa: när träden och ormbunkarna är friska blomstrar dryaderna. Men när vampyrernas skymningsdimma eller en demonens ohälsosamma inflytande gör att djungeln vissnar, lider dryaderna. Därför är de i allmänhet vänligt inställda till River Heralds, som lever i harmoni med naturen, och fientligt inställda till Legion of Dusk.korsar landet.m River Heralds shamaner till piraterna i Brazen Coalition.lurig och svårfångad, känd mer genom de bloddränkta byten den lämnar efter sig än genom faktiska fysiska iakttagelser. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten.",
-				"Dryaderna har i övrigt inget intresse av konflikten mellan folket i Ixalan och inkräktarna, men som varelser av liv och tillväxt hatar de att se någon levande varelse lida. Därför har de varit kända för att ta hand om sårade människor som lämnats i djungeln för att dö, och dela med sig av sin egen rikliga livsenergi till dem som de tar hand om.usk.cross the land.m the River Herald shamans to the Pirates of the Brazen Coalition.tealthy and elusive, known more by the blood-drained prey it leaves behind than by actual physical sightings. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
+				"Dryaderna har i övrigt inget intresse av konflikten mellan folket i Ixalan och inkräktarna, men som varelser av liv och tillväxt hatar de att se någon levande varelse lida. Därför har de varit kända för att ta hand om sårade människor som lämnats i djungeln för att dö, och dela med sig av sin egen rikliga livsenergi till dem som de tar hand om.usk.cross the land.m the River Herald shamans to the Pirates of the Brazen Coalition.tealthy and elusive, known more by the blood-drained prey it leaves behind than by actual physical sightings. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten.",
+				"Ixalan's dryads are identical to the {@creature dryad|MM|dryads} in the {@book Monster Manual|MM}."
 			],
 			"images": [
 				{
@@ -206,7 +356,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Dryad.webp"
-					}
+					},
+					"title": "Old-Growth Dryads",
+					"credit": "Yongjae Choi"
 				}
 			]
 		},
@@ -230,7 +382,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Elder Dinosaur.webp"
-					}
+					},
+					"title": "Regisaur Alpha",
+					"credit": "Jonathan Kuo"
 				}
 			]
 		},
@@ -247,7 +401,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Elder Dinosaur (Etali, Primal Storm).webp"
-					}
+					},
+					"title": "Etali, Primal Storm",
+					"credit": "Raymond Swanland"
 				}
 			]
 		},
@@ -264,7 +420,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Elder Dinosaur (Ghalta, Primal Hunger).webp"
-					}
+					},
+					"title": "Ghalta, Primal Hunger",
+					"credit": "Chase Stone"
 				}
 			]
 		},
@@ -281,7 +439,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Elder Dinosaur (Nezahal, Primal Tide).webp"
-					}
+					},
+					"title": "Nezahal, Primal Tide",
+					"credit": "Sam Burley"
 				}
 			]
 		},
@@ -298,7 +458,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Elder Dinosaur (Tetzimoc, Primal Death).webp"
-					}
+					},
+					"title": "Tetzimoc, Primal Death",
+					"credit": "Zack Stella"
 				}
 			]
 		},
@@ -315,7 +477,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Elder Dinosaur (Zacama, Primal Calamity).webp"
-					}
+					},
+					"title": "Zacama, Primal Calamity",
+					"credit": "Jaime Jones"
 				}
 			]
 		},
@@ -332,15 +496,47 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Elder Dinosaur (Zetalpa, Primal Dawn).webp"
-					}
+					},
+					"title": "Zetalpa, Primal Dawn",
+					"credit": "Chris Rallis"
 				}
 			]
 		},
 		{
 			"name": "Ferocidon",
 			"source": "PSX",
-			"entries": [
-				"Ferocidons är särskilt elaka släktingar till raptorer, specialiserade på att ta ner mycket större byten.Ire krigare som använder den har förmågan att ta dessa äldre dinosaurier under sitt befäl.ive, känd mer genom de blodiga byten den lämnar efter sig än genom faktiska fysiska observationer. Kusten, som betar i trädtopparna. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Teeth and Frills",
+									"page": 30,
+									"entries": [
+										"Ferocidons are particularly vicious relatives of raptors, specialized to take down much larger prey. Use the {@creature allosaurus|MM} statistics in the {@book Monster Manual|MM} for these creatures."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PSX/Ferocidon.webp"
+					},
+					"title": "Thrash of Raptors",
+					"credit": "Jonathan Kuo"
+				}
 			]
 		},
 		{
@@ -354,16 +550,30 @@
 		{
 			"name": "Frilled Deathspitter",
 			"source": "PSX",
-			"entries": [
-				"Dinosaurierna, som kallas för dödspettare, kan spotta gift för att förblinda sitt byte innan de går in för att döda. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"Dinosaurierna, som kallas för dödspettare, kan spotta gift för att förblinda sitt byte innan de går in för att döda. Brontodonerna färdas i flockar och får marken att dundra under deras enorma vikt när de ökar farten."
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Frilled Deathspitter.webp"
-					}
+					},
+					"title": "Frilled Deathspitter",
+					"credit": "Zoltan Boros"
 				}
 			]
 		},
@@ -380,7 +590,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Gishath, Sun's Avatar.webp"
-					}
+					},
+					"title": "Gishath, Sun's Avatar",
+					"credit": "Zack Stella"
 				}
 			]
 		},
@@ -396,7 +608,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Griffin.webp"
-					}
+					},
+					"title": "Resplendent Griffin",
+					"credit": "Sam Rowan"
 				}
 			]
 		},
@@ -410,32 +624,69 @@
 		{
 			"name": "Hammerskull",
 			"source": "PSX",
-			"entries": [
-				"Även om de saknar horn eller spikar kan de skydda sig med sina tjockt pläterade huvuden."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Scales, Spikes, and Hammers",
+									"page": 27,
+									"entries": [
+										"For dinosaurs without the prominent horns of the ceratopses, armored plating and deadly tails are an effective defense against predators.",
+										"Even lacking horns or spikes, hammerskulls can protect themselves with their thickly plated heads. The {@creature giant goat|MM} statistics in the {@book Monster Manual|MM} can represent a hammerskull."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Hammerskull.webp"
-					}
+					},
+					"title": "Territorial Hammerskull",
+					"credit": "Lars Grant-West"
 				}
 			]
 		},
 		{
 			"name": "Harpy",
 			"source": "PSX",
-			"entries": [
-				"Harpies är demonernas dödliga tjänare, och de liknar dem i sina allmänna drag. Deras ansikten liknar ugglarnas och de har stora, fjäderförsedda vingar som tyder på deras korrupta koppling till Solriket - eller kanske deras arv som sirener som fördärvades av demonernas ondska. Harpies har ett fullständigt otäckt temperament och bebor många av öarna i både Stormwreck Sea och Inner Sea, och bor på höga klippor på Ixalans fastland. Deras smutsiga kroppar bär på sjukdomar som de kan sprida genom sina bett."
-			],
+			"_copy": {
+				"name": "Night Terrors",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								"Harpies är demonernas dödliga tjänare, och de liknar dem i sina allmänna drag. Deras ansikten liknar ugglarnas och de har stora, fjäderförsedda vingar som tyder på deras korrupta koppling till Solriket - eller kanske deras arv som sirener som fördärvades av demonernas ondska. Harpies har ett fullständigt otäckt temperament och bebor många av öarna i både Stormwreck Sea och Inner Sea, och bor på höga klippor på Ixalans fastland. Deras smutsiga kroppar bär på sjukdomar som de kan sprida genom sina bett.",
+								"Use the {@creature harpy|MM} statistics in the {@book Monster Manual|MM} for Ixalan's harpies, but replace the club attack with a bite attack."
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Harpy.webp"
-					}
+					},
+					"title": "Mausoleum Harpy",
+					"credit": "Randy Vargas"
 				}
 			]
 		},
@@ -450,7 +701,26 @@
 			"name": "Macaw",
 			"source": "PSX",
 			"entries": [
-				"En mängd olika inhemska fåglar finns i Ixalan och sjunger komplexa sånger som bidrar till ljudkören i djungeln. Kolibrier beskrivs ibland poetiskt som förkroppsligande av frihet och strävan efter njutning. Stora araar och papegojor har sina hem i träden och kan ofta hittas samlade över lerslickar längs flodbäddar och havskusten. De listiga fåglarna tycker om att leka med människor från träden, och många av dem ropar i imitation av humanoida röster för att leda pirater och andra upptäcktsresande vilse. klippor på Ixalans fastland. Deras smutsiga kroppar bär på sjukdomar som de kan sprida genom sina bett."
+				"A wide variety of native birds are found throughout Ixalan, singing complex songs that contribute to the chorus of sounds within the jungle. Hummingbirds are sometimes poetically described as embodiments of freedom and the pursuit of pleasure. Large macaws and parrots (with statistics like those of {@creature raven|MM|ravens}) make their homes in the trees and can often be found gathering over clay licks along riverbeds and the sea coast. The wily birds enjoy toying with people from the trees, with many of them calling out in imitation of humanoid voices to lead pirates and other explorers astray."
+			]
+		},
+		{
+			"name": "Night Terrors",
+			"source": "PSX",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Night Terrors",
+							"page": 36,
+							"entries": [
+								"The legends of the Sun Empire are populated with the enemies of the sun—terrible monsters that threaten to devour its light and undo its work. Unfortunately for the people of Ixalan, these are not just creatures of legend but real monsters with supernatural power, lurking in the darkness of night and the shadows of ancient ruins and crypts."
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -471,16 +741,37 @@
 		{
 			"name": "Sailback",
 			"source": "PSX",
-			"entries": [
-				"Sailbacks är rovdjur som lurar sig fram i sjöar och floder för att lura ett oförsiktigt byte.De är humanoida röster som leder pirater och andra upptäcktsresande vilse.Klippor på Ixalans fastland. Deras smutsiga kroppar bär på sjukdomar som de kan sprida genom sina bett."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Scales, Spikes, and Hammers",
+									"page": 27,
+									"entries": [
+										"Sailbacks are predators that lurk in lakes and rivers to ambush unwary prey. Their statistics are equivalent to those of the {@creature giant crocodile|MM} in the {@book Monster Manual|MM}."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Sailback.webp"
-					}
+					},
+					"title": "Snapping Sailback",
+					"credit": "Dan Scott"
 				}
 			]
 		},
@@ -497,7 +788,8 @@
 			"source": "PSX",
 			"entries": [
 				"Under de år då Solriket styrdes från Orazca tillverkade dess präster enorma stenvakter för att skydda rikets städer och tempel. Den odödliga solens otroliga magi gav ett sken av liv åt dessa konstgjorda varelser och gav dem förmågan att röra sina stenkroppar, ett skarpt medvetande om sin omgivning och en begränsad förmåga att tänka och resonera för att hjälpa dem att utföra sina order. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt.",
-				"De flesta stenvakterna är inaktiva nu. I gamla ruiner som ligger långt från den gamla huvudstaden har magin som gav dem liv försvunnit under århundradenas lopp. Till och med i den gyllene staden har många av dem blivit inaktiva, och de som försöker utforska Orazca eller andra gamla ruiner måste vara på ständig vakt. Varje huggen figur eller staty kan mycket väl vara en stenvakt vars magi har svikit. Men det kan också vara en väktare som helt enkelt väntar på ett hot innan den aktiveras och driver bort det hotet. tänka och resonera för att hjälpa dem att utföra sina order. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt."
+				"De flesta stenvakterna är inaktiva nu. I gamla ruiner som ligger långt från den gamla huvudstaden har magin som gav dem liv försvunnit under århundradenas lopp. Till och med i den gyllene staden har många av dem blivit inaktiva, och de som försöker utforska Orazca eller andra gamla ruiner måste vara på ständig vakt. Varje huggen figur eller staty kan mycket väl vara en stenvakt vars magi har svikit. Men det kan också vara en väktare som helt enkelt väntar på ett hot innan den aktiveras och driver bort det hotet. tänka och resonera för att hjälpa dem att utföra sina order. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt.",
+				"Constructs such as {@creature animated armor|MM}, {@creature helmed horror|MM|helmed horrors}, {@creature shield guardian|MM|shield guardians}, and {@creature stone golem|MM|stone golems} can represent these guardians."
 			],
 			"images": [
 				{
@@ -505,7 +797,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Stone Guardian.webp"
-					}
+					},
+					"title": "Golden Guardian",
+					"credit": "Svetlin Velinov"
 				}
 			]
 		},
@@ -545,7 +839,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Sunbird.webp"
-					}
+					},
+					"title": "Sunbird's Invocation",
+					"credit": "Christine Choi"
 				}
 			]
 		},
@@ -562,7 +858,8 @@
 			"source": "PSX",
 			"entries": [
 				"Elementarvarelser är ett ännu mer ursprungligt förkroppsligande av naturkrafter. De är levande varelser av rå naturenergi, men magi kan forma och binda dem till fysiska former som består av vind, vatten, eld eller skogens grönskande växtlighet. River Heralds konstruerar jade-totem som håller elementarerna i stasis tills de aktiveras av inkräktare. När en totem öppnas samlas elementalens fysiska form, och inkräktarna förpassas snabbt.ths, ofta sätter de träd och sluttningar i brand.hres innan den aktiveras och driver bort hotet.tänka och resonera för att hjälpa dem att utföra sina order. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt.",
-				"River Heralds använder sig också av elementarvarelser som består av luft, vatten eller växtlighet. I gamla tider, när folk från River Heralds och Sun Empire arbetade tillsammans, utnyttjade de eldelementar till väktare som fortfarande håller vakt över vissa glömda ruiner.hed.ths, ofta sätter de träd och sluttningar i brand.hreat innan det aktiveras och driver bort hotet.think and reason in order to help them carry out their orders. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt."
+				"River Heralds använder sig också av elementarvarelser som består av luft, vatten eller växtlighet. I gamla tider, när folk från River Heralds och Sun Empire arbetade tillsammans, utnyttjade de eldelementar till väktare som fortfarande håller vakt över vissa glömda ruiner.hed.ths, ofta sätter de träd och sluttningar i brand.hreat innan det aktiveras och driver bort hotet.think and reason in order to help them carry out their orders. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt.",
+				"Any of the various elemental and plant creatures in the {@book Monster Manual|MM} can represent the elementals of Ixalan. The River Heralds' totem elementals are similar to the basic {@creature air elemental|MM|air}, {@creature earth elemental|MM|earth}, and {@creature water elemental|MM|water elementals}, or to {@creature treant|MM|treants}, blights, {@creature shambling mound|MM|shambling mounds}, or {@creature awakened tree|MM|awakened trees} and {@creature awakened shrub|MM|awakened shrubs}. Fire guardians are similar to {@creature fire elemental|MM|fire elementals}."
 			]
 		},
 		{
@@ -578,6 +875,17 @@
 			"source": "PSX",
 			"entries": [
 				"På stränderna och vid flodernas och havets stränder skuttar krabbor över sanden och fåglar vadar i det grunda vattnet. Trilobiterna är bland de vanligaste strandborna, både rovdjur och asätare och filterätare som äter rester som de hittar i sanden. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PSX/Trilobite.webp"
+					},
+					"title": "Shore Keeper",
+					"credit": "YW Tang"
+				}
 			]
 		},
 		{
@@ -591,26 +899,39 @@
 		{
 			"name": "Tyrant",
 			"source": "PSX",
-			"entries": [
-				"Ixalans största rovdjur består av en familj dinosaurier med stora huvuden, bladliknande tänder och korta, nästan rudimentära framben. Dessa skräckinjagande varelser bär namn som monstrosaurier, dreadmaws, swordtooths, regisaurs och tyranner, och deras vrål inger skräck hos dem som hör dem. De flesta av dessa dinosaurier är ensamma jägare, men särskilt regisaurerna är kända för att jaga i små flockar. De är kända för att hjälpa dem att utföra sina order. Dessa stenväktare hade till uppgift att stå vakt - ständigt alerta, vaksamma inför alla faror, aldrig sovande och orubbliga i sin plikt."
-			],
+			"_copy": {
+				"name": "Dinosaurs",
+				"source": "PSX",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Dinosaur Tyrants",
+									"page": 31,
+									"entries": [
+										"Ixalan's largest predators comprise a family of dinosaurs with large heads, blade-like teeth, and short, almost vestigial front legs. These terrifying creatures bear names like monstrosaurs, dreadmaws, swordtooths, regisaurs, and tyrants, and their roars inspire terror in those who hear them. Most of these dinosaurs are solitary hunters, but regisaurs in particular are known for hunting in small packs. Use the {@creature tyrannosaurus rex|MM} statistics in the {@book Monster Manual|MM} for all these giant predators."
+									]
+								}
+							]
+						}
+					}
+				}
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSX/Tyrant.webp"
-					}
+					},
+					"title": "Regisaur Alpha",
+					"credit": "Jonathan Kuo"
 				}
 			]
-		},
-		{
-			"name": "Velociraptor",
-			"source": "PSX",
-			"_copy": {
-				"name": "Deinonychus",
-				"source": "PSX"
-			}
 		},
 		{
 			"name": "Water Totem Elemental",

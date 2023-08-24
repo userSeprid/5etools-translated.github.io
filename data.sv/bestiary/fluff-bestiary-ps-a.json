@@ -36,7 +36,8 @@
 									"name": "Demons",
 									"entries": [
 										"Djupt i öknen, långt från Hekmas skydd och Naktamuns säkerhet, ligger en plats som kallas Ifnir, demonernas näste. Folket i Amonkhet tror att Gud-Pharaoh förvisade alla demoner på det här planet till Ifnirs ödemark som straff när de reste sig i uppror mot honom. Vissa säger att änglarna bär de värsta oliktänkande in i Ifnirs hjärta, vilket är ett öde som är mycket värre än att bara bli övergiven bland den skurande sanden.",
-										"Ifnirs demoner har vissa likheter med Bolas, med långa lemmar och svansar, enorma vingar och magra kroppar prydda med horn och blad. Andra demoniska varelser har mer bestialiska drag, inklusive {@creature ammit|PSA|ammits}-krokodiliska demoner som ibland används som utmaningar i de fem gudarnas prövningar - och skorpiondemonerna som kallas {@creature soulstinger demon|PSA|soulstingers}, vars gift orsakar olidlig smärta hos sina offer."
+										"Ifnirs demoner har vissa likheter med Bolas, med långa lemmar och svansar, enorma vingar och magra kroppar prydda med horn och blad. Andra demoniska varelser har mer bestialiska drag, inklusive {@creature ammit|PSA|ammits}-krokodiliska demoner som ibland används som utmaningar i de fem gudarnas prövningar - och skorpiondemonerna som kallas {@creature soulstinger demon|PSA|soulstingers}, vars gift orsakar olidlig smärta hos sina offer.",
+										"Use the statistics of a {@creature nalfeshnee|MM} for a demon such as an {@creature Archfiend of Ifnir|PSA}. The statistics of a {@creature giant crocodile|MM} can model an {@creature ammit|PSA}, and those of a {@creature bone devil|MM} work well for a {@creature soulstinger demon|PSA}."
 									]
 								}
 							]
@@ -50,7 +51,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Archfiend of Ifnir.webp"
-					}
+					},
+					"title": "Archfiend of Ifnir",
+					"credit": "Slawomir Maniak"
 				}
 			]
 		},
@@ -66,9 +69,9 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "Dragons",
 									"entries": [
-										"Drakar är våldsamma monster med tunga reptilkroppar, krokodilhuvuden och läderartade vingar, och skiljer sig från andra monster genom sin förmåga att andas eld. Även om Nicol Bolas också är en drake känner han inget släktskap med dessa vilda, dumma bestar. De lever mestadels i öknens avlägsna delar och svävar i lata cirklar genom himlen när de söker efter byten. Ibland fångas de och förs in i Hekma, där de används i de fem gudarnas prövningar - särskilt i de klimatiska striderna under den sista Trial of Zeal."
+										"Drakar är våldsamma monster med tunga reptilkroppar, krokodilhuvuden och läderartade vingar, och skiljer sig från andra monster genom sin förmåga att andas eld. Även om Nicol Bolas också är en drake känner han inget släktskap med dessa vilda, dumma bestar. De lever mestadels i öknens avlägsna delar och svävar i lata cirklar genom himlen när de söker efter byten. Ibland fångas de och förs in i Hekma, där de används i de fem gudarnas prövningar - särskilt i de klimatiska striderna under den sista Trial of Zeal.",
+										"The dragons of Amonkhet are {@b red dragons}, though they lack the high Intelligence of the red dragons in the {@book Monster Manual|PHB}."
 									]
 								}
 							]
@@ -82,7 +85,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Dragon.webp"
-					}
+					},
+					"title": "Glorybringer",
+					"credit": "Sam Burley"
 				}
 			]
 		},
@@ -97,47 +102,30 @@
 		{
 			"name": "Amonkhet Hydra",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"Hydran är en reptilskräck med en krokodilkropp och flera huvuden på långa, ormformade halsar. Även om dess huvuden kan avskiljas kan hydraen magiskt återskapa dem på kort tid. Ett typiskt exemplar har fem huvuden. I tidernas begynnelse dödade {@deity Tiamat|dawn war|dmg}, de onda drakarnas drottning, en rivaliserande drakgud vid namn Lernaea och kastade hennes blod över multiversum. Varje droppe som föll på en värld gav upphov till en hydra med flera huvuden som slukades av en hunger som var lika stor som den fallna gudens hat. Stora mästare är kända för att testa sin förmåga mot dessa fruktansvärda varelser.",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"Den ödsliga vildmarken utanför Hekmas skydd är till stor del okänd. Omedelbart bortom den skyddande slöjan finns ett kaotiskt dynhav som kallas Shefet, den skurande sanden. Öknen sliter ut kanterna på de bördiga marker som omger Naktamun, och fungerar som en ständig påminnelse om att endast Gud-Pharaohs gåva och skydd står mellan stadsstatens folk och en gräslig död i sanden bortom. Bortom Shefet finns torra, spruckna områden som kallas Ramunap, det trasiga landet. Det sägs att ruinerna av forntida civilisationer ligger i det trasiga landet, även om ingen någonsin har utforskat sådana ruiner och återvänt till Naktamun för att berätta om dem."
-									]
-								},
-								{
-									"name": "Everlasting Hunger",
-									"type": "entries",
-									"entries": [
-										"En hydra är ett rovgirigt och glupskt monster som sliter och sliter sönder sitt byte i ett frenetiskt ätande. När en hydra har rensat ett område från mat och drivit bort alla varelser som är smarta nog att undvika den, går den vidare för att söka sin mat på andra ställen. En hydra är så hungrig att om den inte kan äta kan den vända sig mot sig själv, och dess huvuden attackerar varandra medan varelsen äter sig själv levande."
-									]
-								},
-								{
-									"name": "Hardy Water Dwellers",
-									"type": "entries",
-									"entries": [
-										"Hydror är naturliga simmare och lever i floder, längs sjöstränder, i grunda havsområden och i våtmarksmossar. En hydra behöver sällan skydd mot elementen, så den har normalt ingen lya. Endast i kallare klimat dras hydror till skyddade grottor och ruiner. När en hydra sover förblir minst ett av dess huvuden vaket och alert, vilket gör det svårt att överraska varelsen."
-									]
-								}
+								"The hydras of Amonkhet have heads like those of a cobra. A successful bite attack from one of these heads deals 7 ({@damage 1d4 + 5}) piercing damage, and the target must make a {@dc 16} Constitution saving throw, taking 7 ({@damage 2d6}) poison damage on a failed save, or half as much damage on a successful one."
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Hydra.webp"
-					}
+					},
+					"title": "Honored Hydra",
+					"credit": "Todd Lockwood"
 				}
 			]
 		},
@@ -158,7 +146,7 @@
 									"type": "entries",
 									"name": "The Curse of Wandering",
 									"entries": [
-										"Vandringens förbannelse är den största faran i ökenlandet. En varelse som dödas i öknen återuppstår som en {@creature zombie} så snart fukten har torkat från dess kött. Som ett resultat av detta skuttar liken av alla sorters ökenvarelser över sanddynerna tillsammans med humanoida {@creature zombie||zombies} av {@background dissenter|PSA|dissenters} och blivande upptäcktsresande. De flesta av dessa före detta humanoider är tanklösa marodörer, även om vissa berättelser talar om {@creature amonkhet mummy|PSA|mummies} som har behållit en ondskefull intelligens och till och med magisk förmåga och blivit {@creature amonkhet mummy lord|PSA|mummy lords}."
+										"The Curse of Wandering is the greatest danger of the desert lands. A creature killed in the desert rises again as a {@creature zombie} as soon as the moisture has dried from its flesh. As a result, the corpses of every kind of desert creature shamble across the dunes alongside the humanoid {@creature zombie||zombies} of {@filter dissenters|backgrounds|source=psa|search=dissenter} and would-be explorers. Most of these former humanoids are mindless marauders, though some tales speak of {@creature amonkhet mummy|PSA|mummies} that have retained a sinister intelligence and even magical ability, becoming {@creature amonkhet mummy lord|PSA|mummy lords}."
 									]
 								}
 							]
@@ -172,7 +160,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Mummy Lord.webp"
-					}
+					},
+					"title": "Lord of the Accursed",
+					"credit": "Grzegorz Rutkowski"
 				}
 			]
 		},
@@ -195,7 +185,8 @@
 							"type": "entries",
 							"entries": [
 								"Sfinxer är outgrundliga varelser och väktare av hemligheter och mysterier. De har lejonliknande kroppar, höklika vingar och ansikten som liknar människor, inramade av stora krusiduller eller manar av fjädrar. Deras kraftiga underarmar är också befjädrade, och fläktar av långa fjädrar bildar deras svansar.",
-								"Sfinxerna i Amonkhet är kanske de enda varelser som inte har blivit fördärvade av Nicol Bolas inflytande på det här planet. Deras ogenomträngliga sinnen visade sig vara bortom till och med Bolas förmåga att kontrollera - men trots det kunde han placera dem under en förbannelse för att garantera deras tystnad. En sfinx är helt oförmögen att kommunicera - verbalt eller icke-verbalt, till och med skriftligt - så länge förbannelsen är i kraft. På detta sätt har Bolas hindrat sfinxerna från att avslöja sitt system av lögner för folket eller gudarna i Naktamun."
+								"Sfinxerna i Amonkhet är kanske de enda varelser som inte har blivit fördärvade av Nicol Bolas inflytande på det här planet. Deras ogenomträngliga sinnen visade sig vara bortom till och med Bolas förmåga att kontrollera - men trots det kunde han placera dem under en förbannelse för att garantera deras tystnad. En sfinx är helt oförmögen att kommunicera - verbalt eller icke-verbalt, till och med skriftligt - så länge förbannelsen är i kraft. På detta sätt har Bolas hindrat sfinxerna från att avslöja sitt system av lögner för folket eller gudarna i Naktamun.",
+								"Use the statistics of an {@creature androsphinx|MM} for the common sphinxes of Amonkhet."
 							]
 						}
 					]
@@ -207,7 +198,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Sphinx.webp"
-					}
+					},
+					"title": "Ominous Sphinx",
+					"credit": "Lars Grant-West"
 				}
 			]
 		},
@@ -230,7 +223,8 @@
 							"type": "entries",
 							"entries": [
 								"Vad än deras ursprungliga former än må ha varit har änglarna på Amonkhet förvrängts till förvrängda återspeglingar av Nicol Bolas. Deras lemmar är långa och tunna, med förlängda skenben och underarmar. Deras enorma vingar är prydda med vita och svarta fjädrar. Ljus lyser genom deras leder och bröst som om det kommer från en inre eld, och deras ögon glöder med ett guld- eller orangefärgat ljus.",
-								"Bolas änglar är hans personliga agenter under hans frånvaro från Amonkhet. Deras uppdrag, som de fullföljer med orubblig hängivenhet, är att hålla Naktamun fritt från avvikande röster. De står som vaktposter över staden och utökar övernaturliga sinnen för att upptäcka närvaron av {@background dissenter|psa|dissenters}. De använder sina långa, krokiga {@item staff|phb|staffs} för att fånga dem som ifrågasätter gudfaderns styre, och har till uppgift att utföra det straff som Bolas lag kräver. {@background dissenter|PSA|Dissenters} binds i sarkofager - Tombs of Disgrace - och utsätts för medborgarnas hån i Display of Doubt. Följande morgon bär änglarna sarkofagerna ut i öknen och överlåter {@background dissenter|PSA|dissenters} till sandens fasor - och vandringens förbannelse."
+								"Bolas's angels are his personal agents during his absence from Amonkhet. Their mission, which they pursue with unwavering devotion, is to keep Naktamun free of dissenting voices. They stand as sentinels over the city, extending supernatural senses to detect the presence of {@filter dissenters|backgrounds|source=psa|search=dissenter}. They use their long, hooked {@item staff|PHB|staffs} to capture those who question the God-Pharaoh's rule, and are tasked with carrying out the punishment that Bolas's law demands. {@filter Dissenters|backgrounds|source=psa|search=dissenter} are bound into sarcophagi—the Tombs of Disgrace—and exposed to the mockery of fellow citizens in the Display of Doubt. On the following morning, the angels carry the sarcophagi into the desert and abandon the {@filter dissenters|backgrounds|source=psa|search=dissenter} to the horrors of the sands—and the Curse of Wandering.",
+								"Use the statistics of a {@creature deva|MM} for an angel on Amonkhet, replacing its mace attack with a staff attack. When the angel hits with a melee attack using its staff, the target is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained} and the angel can't attack another target with its staff."
 							]
 						}
 					]
@@ -242,7 +236,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Angel of Amonkhet.webp"
-					}
+					},
+					"title": "Seraph of the Suns",
+					"credit": "Winona Nelson"
 				}
 			]
 		},
@@ -252,16 +248,7 @@
 			"_copy": {
 				"name": "Amonkhet Mummy",
 				"source": "PSA"
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/PSA/Anointed.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Archfiend of Ifnir",
@@ -274,33 +261,42 @@
 		{
 			"name": "Cerodon",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"Cerodons misstas ibland för växtätare på grund av att de liknar tjurar, men de misstas aldrig för att vara ofarliga. De är över tre meter långa vid axlarna och deras huvuden är krönta med enorma horn som sticker fram från näsan och sedan sträcker sig bakåt nästan hela kroppslängden. Hornstrukturen liknar en sandstensklippa, och en cerodon kan använda den för att förstöra byggnader eller monument med ett minimum av ansträngning. Cerodons är extremt aggressiva och förväxlar ofta den skimrande Hekma med en inkräktare i sitt revir.",
+								"Cerodons are sometimes mistaken for herbivores because of their resemblance to bulls, but they are never mistaken for harmless. They stand over thirty feet tall at the shoulder, and their heads are crowned with enormous horns that jut forward from the nose, then extend backward almost the entire length of their bodies. The horn structure resembles a sandstone cliff, and a cerodon can use it to ruin buildings or monuments with a minimum of effort. Cerodons are extremely aggressive, and often mistake the shimmering Hekma for an intruder into their territory. Use the statistics of a {@creature mammoth} for these creatures, with the following additional trait:",
 								{
 									"type": "entries",
-									"name": "The Desert Lands",
 									"entries": [
-										"Den ödsliga vildmarken utanför Hekmas skydd är till stor del okänd. Omedelbart bortom den skyddande slöjan finns ett kaotiskt dynhav som kallas Shefet, den skurande sanden. Öknen sliter ut kanterna på de bördiga marker som omger Naktamun, och fungerar som en ständig påminnelse om att endast Gud-Pharaohs gåva och skydd står mellan stadsstatens folk och en gräslig död i sanden bortom. Bortom Shefet finns torra, spruckna områden som kallas Ramunap, det trasiga landet. Det sägs att ruinerna av forntida civilisationer ligger i det trasiga landet, även om ingen någonsin har utforskat sådana ruiner och återvänt till Naktamun för att berätta om dem."
+										{
+											"type": "entries",
+											"name": "Siege Monster",
+											"entries": [
+												"The cerodon deals double damage to objects and structures."
+											]
+										}
 									]
 								}
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Cerodon.webp"
-					}
+					},
+					"title": "Desert Cerodon",
+					"credit": "Igor Kieryluk"
 				}
 			]
 		},
@@ -334,7 +330,27 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Criosphinx.webp"
-					}
+					},
+					"title": "Unesh, Criosphinx Sovereign",
+					"credit": "Adrian Majkrzak"
+				}
+			]
+		},
+		{
+			"name": "Desert Lands",
+			"source": "PSA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "The Desert Lands",
+							"entries": [
+								"Den ödsliga vildmarken utanför Hekmas skydd är till stor del okänd. Omedelbart bortom den skyddande slöjan finns ett kaotiskt dynhav som kallas Shefet, den skurande sanden. Öknen sliter ut kanterna på de bördiga marker som omger Naktamun, och fungerar som en ständig påminnelse om att endast Gud-Pharaohs gåva och skydd står mellan stadsstatens folk och en gräslig död i sanden bortom. Bortom Shefet finns torra, spruckna områden som kallas Ramunap, det trasiga landet. Det sägs att ruinerna av forntida civilisationer ligger i det trasiga landet, även om ingen någonsin har utforskat sådana ruiner och återvänt till Naktamun för att berätta om dem."
+							]
+						}
+					]
 				}
 			]
 		},
@@ -348,7 +364,8 @@
 						{
 							"type": "entries",
 							"entries": [
-								"Drakar liknar drakar, men de saknar förmågan att andas eld och har bara två ben utöver sina enorma vingar. De är mindre aggressiva än drakar och möjligen något mer intelligenta. De lockas av lazoteps glitter i gruvorna, guldets glans i Naktamun och solens skimmer på vattnet i Luxafloden. De gillar också att sitta på obelisker och andra torn på stadens byggnader."
+								"Drakar liknar drakar, men de saknar förmågan att andas eld och har bara två ben utöver sina enorma vingar. De är mindre aggressiva än drakar och möjligen något mer intelligenta. De lockas av lazoteps glitter i gruvorna, guldets glans i Naktamun och solens skimmer på vattnet i Luxafloden. De gillar också att sitta på obelisker och andra torn på stadens byggnader.",
+								"A {@creature pteranodon} can represent a smaller drake, while a larger one is more like a {@creature giant eagle}."
 							]
 						}
 					]
@@ -360,7 +377,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Drake.webp"
-					}
+					},
+					"title": "Angler Drake",
+					"credit": "Svetlin Velinov"
 				}
 			]
 		},
@@ -376,25 +395,10 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "The Curse of Wandering",
-									"entries": [
-										"Vandringens förbannelse är den största faran i ökenlandet. En varelse som dödas i öknen återuppstår som en {@creature zombie} så snart fukten har torkat från dess kött. Som ett resultat av detta skuttar liken av alla sorters ökenvarelser över sanddynerna tillsammans med humanoida {@creature zombie||zombies} av {@background dissenter|PSA|dissenters} och blivande upptäcktsresande. De flesta av dessa före detta humanoider är tanklösa marodörer, även om vissa berättelser talar om {@creature amonkhet mummy|PSA|mummies} som har behållit en ondskefull intelligens och till och med magisk förmåga och blivit {@creature amonkhet mummy lord|PSA|mummy lords}."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "The Anointed",
-									"entries": [
-										"Inte alla medborgare i Naktamun visar sig vara värda livet efter döden. Acolytes dör ibland före mätceremonin, kanske i träningsolyckor. Många {@background initiate|PSA|initiates} omkommer i någon av de fyra första prövningarna, innan de tjänar sina fem kartuscher. {@background vizier|PSA|Viziers} dör ibland innan de verkligen har förtjänat en plats i livet efter döden för att tjäna sina gudar. Utan att ha visat sig värdiga har dessa stackars själar ingen plats som Eviga i livet efter döden - men de har inte heller begått någon allvarlig synd som skulle motivera att de överges till förbannelsen vandring som marodörer {@creature amonkhet mummy|PSA|mummies}.",
-										"Lyckligtvis är Gud-Faraohs välvilja tillräckligt stor för att ge dessa människor en roll. De kallas {@creature anointed|PSA} och är noggrant balsamerade, skyddade från vandringens förbannelse och får tillbringa ytterligare en livstid i tjänst för de värdiga. Gud-Faraohen lovar att de som troget tjänar som {@creature anointed|PSA} också kommer att förtjäna en plats som ledsagare i livet efter döden, och även en evighet av tjänst i livet efter döden är att föredra framför en evighet som är utsatt för vandringens förbannelse.",
-										"De smorda kropparna är noggrant insvepta i tyg och prydda med kartuscher. I motsats till kartuscherna i {@background initiate|PSA|initiates} och {@background vizier|PSA|viziers} innehåller dessa inte den avlidnes livsessens när den är som bäst. I stället coachar de {@creature anointed|PSA} för en särskild form av tjänst. Med sina kartuscher på plats reser sig {@creature anointed|PSA} och ansluter sig till de tjänande mumier som sköter det dagliga livets behov i Amonkhet."
-									]
-								},
-								{
-									"type": "entries",
 									"name": "An Eternal Army",
 									"entries": [
-										"En så mäktig och storslagen varelse som Nicol Bolas kräver en stridsstyrka av högsta kaliber, så en vanlig armé av zombier skulle aldrig kunna vara värdig Gud-Faraohen. De Eviga är elitsoldater med alla färdigheter och förmågor som levande soldater har, men utan de nackdelar som uppstår hos levande varelser, såsom känslor, tvekan eller illojalitet. Bolas har personligen skapat hela Amonkhet för att skapa just en sådan armé."
+										"En så mäktig och storslagen varelse som Nicol Bolas kräver en stridsstyrka av högsta kaliber, så en vanlig armé av zombier skulle aldrig kunna vara värdig Gud-Faraohen. De Eviga är elitsoldater med alla färdigheter och förmågor som levande soldater har, men utan de nackdelar som uppstår hos levande varelser, såsom känslor, tvekan eller illojalitet. Bolas har personligen skapat hela Amonkhet för att skapa just en sådan armé.",
+										"Eternals have the statistics of {@creature wight|MM|wights}—individually fearsome, and terrifying as they march in endless ranks."
 									]
 								}
 							]
@@ -408,7 +412,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Eternal.webp"
-					}
+					},
+					"title": "Wildfire Eternal",
+					"credit": "Magali Villeneuve"
 				}
 			]
 		},
@@ -431,33 +437,30 @@
 		{
 			"name": "Manticore, Heart-Piercer",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"Manticores är kattliknande varelser med en kattliknande kropp, svansar som {@creature scorpion||scorpions} och kritinplattor på underbenen och fötterna. Giftet från deras svansstingers är det mest giftiga giftet som är känt på Amonkhet, och de kan sticka med blixtens hastighet även när de sliter på en fiende med klor och tänder. Deras dödlighet gör dem uppskattade för användning i Trial of Zeal, där de ger många initierade en glorifierad död.",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"Den ödsliga vildmarken utanför Hekmas skydd är till stor del okänd. Omedelbart bortom den skyddande slöjan finns ett kaotiskt dynhav som kallas Shefet, den skurande sanden. Öknen sliter ut kanterna på de bördiga marker som omger Naktamun, och fungerar som en ständig påminnelse om att endast Gud-Pharaohs gåva och skydd står mellan stadsstatens folk och en gräslig död i sanden bortom. Bortom Shefet finns torra, spruckna områden som kallas Ramunap, det trasiga landet. Det sägs att ruinerna av forntida civilisationer ligger i det trasiga landet, även om ingen någonsin har utforskat sådana ruiner och återvänt till Naktamun för att berätta om dem."
-									]
-								}
+								"Manticores är kattliknande varelser med en kattliknande kropp, svansar som {@creature scorpion||scorpions} och kritinplattor på underbenen och fötterna. Giftet från deras svansstingers är det mest giftiga giftet som är känt på Amonkhet, och de kan sticka med blixtens hastighet även när de sliter på en fiende med klor och tänder. Deras dödlighet gör dem uppskattade för användning i Trial of Zeal, där de ger många initierade en glorifierad död."
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Manticore, Heart-Piercer.webp"
-					}
+					},
+					"title": "Heart-Piercer Manticore",
+					"credit": "Scott Murphy"
 				}
 			]
 		},
@@ -473,9 +476,10 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "The Luxa River",
 									"entries": [
-										"Luxafloden är en riklig källa till liv, som göder den frodiga dalen runt Naktamun och förser både människor och djur med vatten. Den är också en livlig livsmiljö för otaliga varelser, inklusive många arter av fåglar, fiskar och grodor. {@creature crocodile||Crocodiles} och {@creature hippopotamus|PSA|hippopotamuses} kan utgöra en fara för båtar och pråmar, men de kanske mest fruktade invånarna i floden är de {@creature giant river serpent|PSA|giant serpents} som är kända för att lurar nära dess botten. När de blir arga kan de sänka dussintals fiskebåtar och översvämma stranden."
+										"Luxafloden är en riklig källa till liv, som göder den frodiga dalen runt Naktamun och förser både människor och djur med vatten. Den är också en livlig livsmiljö för otaliga varelser, inklusive många arter av fåglar, fiskar och grodor. {@creature crocodile||Crocodiles} och {@creature hippopotamus|PSA|hippopotamuses} kan utgöra en fara för båtar och pråmar, men de kanske mest fruktade invånarna i floden är de {@creature giant river serpent|PSA|giant serpents} som är kända för att lurar nära dess botten. När de blir arga kan de sänka dussintals fiskebåtar och översvämma stranden.",
+										"Monsters found in the river include fish such as {@creature quipper|MM|quippers}, {@creature giant frog|MM|giant frogs}, and {@creature crocodile|MM|crocodiles}.",
+										"River serpents range from fairly mundane specimens that resemble {@creature giant constrictor snake|MM|giant constrictor snakes} to more monstrous versions with the statistics of a {@creature behir} (but without lightning immunity or lightning breath)."
 									]
 								}
 							]
@@ -489,73 +493,69 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/River Serpent.webp"
-					}
+					},
+					"title": "River Serpent",
+					"credit": "Christopher Moeller"
 				}
 			]
 		},
 		{
 			"name": "Sandwurm",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"Sandmaskar är de största rovdjuren i Shefet och simmar genom sanddynerna som {@creature river serpent|PSA|serpents} genom vatten. De är kapabla till en otrolig hastighet och kan lyfta sina lampyrliknande huvuden långt över marken för att fånga även flygande varelser. Men de kan också ligga på lur under sanden i åratal, tills minsta lilla skakning gör dem uppmärksamma på att det finns ett byte.",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"Den ödsliga vildmarken utanför Hekmas skydd är till stor del okänd. Omedelbart bortom den skyddande slöjan finns ett kaotiskt dynhav som kallas Shefet, den skurande sanden. Öknen sliter ut kanterna på de bördiga marker som omger Naktamun, och fungerar som en ständig påminnelse om att endast Gud-Pharaohs gåva och skydd står mellan stadsstatens folk och en gräslig död i sanden bortom. Bortom Shefet finns torra, spruckna områden som kallas Ramunap, det trasiga landet. Det sägs att ruinerna av forntida civilisationer ligger i det trasiga landet, även om ingen någonsin har utforskat sådana ruiner och återvänt till Naktamun för att berätta om dem."
-									]
-								}
+								"Sandmaskar är de största rovdjuren i Shefet och simmar genom sanddynerna som {@creature river serpent|PSA|serpents} genom vatten. De är kapabla till en otrolig hastighet och kan lyfta sina lampyrliknande huvuden långt över marken för att fånga även flygande varelser. Men de kan också ligga på lur under sanden i åratal, tills minsta lilla skakning gör dem uppmärksamma på att det finns ett byte."
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Sandwurm.webp"
-					}
+					},
+					"title": "Sandwurm Convergence",
+					"credit": "Slawomir Maniak"
 				}
 			]
 		},
 		{
 			"name": "Serpopard",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"Serpoparder är märkliga kattdjur med ormliknande drag, inklusive långa, flexibla kroppar, giftiga tänder och känsliga tungor som de kan använda för att känna lukten av ett byte på långt avstånd. De gillar att sitta i träd nära ökenoaser eller längs Luxafloden, inne i Hekma, för att släppa ner sig på varelser som kommer i närheten av vattnet.",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"Den ödsliga vildmarken utanför Hekmas skydd är till stor del okänd. Omedelbart bortom den skyddande slöjan finns ett kaotiskt dynhav som kallas Shefet, den skurande sanden. Öknen sliter ut kanterna på de bördiga marker som omger Naktamun, och fungerar som en ständig påminnelse om att endast Gud-Pharaohs gåva och skydd står mellan stadsstatens folk och en gräslig död i sanden bortom. Bortom Shefet finns torra, spruckna områden som kallas Ramunap, det trasiga landet. Det sägs att ruinerna av forntida civilisationer ligger i det trasiga landet, även om ingen någonsin har utforskat sådana ruiner och återvänt till Naktamun för att berätta om dem."
-									]
-								}
+								"Serpoparder är märkliga kattdjur med ormliknande drag, inklusive långa, flexibla kroppar, giftiga tänder och känsliga tungor som de kan använda för att känna lukten av ett byte på långt avstånd. De gillar att sitta i träd nära ökenoaser eller längs Luxafloden, inne i Hekma, för att släppa ner sig på varelser som kommer i närheten av vattnet."
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Serpopard.webp"
-					}
+					},
+					"title": "Prowling Serpopard",
+					"credit": "Tyler Jacobson"
 				}
 			]
 		},

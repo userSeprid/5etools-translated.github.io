@@ -655,34 +655,6 @@
 			]
 		},
 		{
-			"name": "Dissenter",
-			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"Till och med i den omsorgsfullt byggda och kurerade stadsstaten Naktamun, och i de fem gudarnas närvaro, gör vissa människor uppror mot Gud-Pharaos doktriner. De ifrågasätter naturligtvis inte gudarnas existens, för dessa gudar är synliga nästan varje dag på stadens gator. De ifrågasätter inte heller det faktum att det finns ett liv efter döden, vilket är uppenbart i de smorda mumier som omger dem, liksom de marodörerande mumierna utanför Hekma. Snarare vägrar dessa oliktänkande helt enkelt att följa den föreskrivna livskursen som leder till det härliga livet efter döden.",
-								"En del oliktänkande drivs av rädsla, eftersom de inte vill utsätta sig för en våldsam död under rättegångarna (eller under träningen inför rättegångarna). En del drivs av samvete och vill inte döda sina grödor i försöken. För även om de inte kan förneka att gudarna existerar kan de förneka att gudarna är rättvisa - och de kan kämpa för att bevisa att en orättvis guds diktat inte behöver följas. Vissa tror att en gud (förmodligen Bontu) har fördärvat processen med prövningarna och vägen till livet efter döden. Andra anar korrekt att gud-faraohen faktiskt inte hade folkets bästa i åtanke när han beordrade deras samhälle.",
-								"En karaktär som identifieras som en dissident förlorar fördelen av initiatens eller visirens bakgrundsegenskaper. I stället får karaktären egenskapen Shelter of Dissenters."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/PSA/Dissenter.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Dragon Casualty",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -1301,7 +1273,7 @@
 							"type": "entries",
 							"entries": [
 								"Du är en initierad, på väg att fullfölja de fem gudarnas prövningar i hopp om att få en förhärligad död i den slutliga Trial of Zeal. Någon kombination av din naturliga begåvning, din grödas behov och dina lärares bedömning när du var akolyt ledde till att du inriktade din träning på ett särskilt specialområde - hand-till-hand-strid, långdistansstrid eller trollkonst. Men endast en väl avrundad invigd kan kallas verkligt värdig för livet efter döden.",
-								"Om du är en specialist på hand-till-hand-tekniker kan du överväga klasserna barbar, kämpe, munk, paladin eller rogue. Om du är specialist på långdistansstrider kan du vara en fighter, en ranger eller en rogue. Om du är specialist på trollkonster kan du vara en bard, trollkarl eller trollkarl. Utöver detta första val kan du överväga att kombinera flera klasser eller använda feats för att komplettera dina färdigheter inom alla tre områdena."
+								"If you are a hand-to-hand specialist, consider the {@class barbarian}, {@class fighter}, {@class monk}, {@class paladin}, or {@class rogue} classes. As a long-range combat specialist, you might be a {@class fighter}, a {@class ranger}, or a {@class rogue}. If you are a spellcasting specialist, you might be a {@class bard}, {@class sorcerer}, or {@class wizard}. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas."
 							]
 						}
 					]
@@ -1313,16 +1285,61 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate.webp"
-					}
+					},
+					"title": "Unwavering Initiate",
+					"credit": "Greg Opalinski"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate2.webp"
-					}
+					},
+					"title": "Gust Walker",
+					"credit": "Jason Rainville"
 				}
 			]
+		},
+		{
+			"name": "Initiate (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Initiate",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Till och med i den omsorgsfullt byggda och kurerade stadsstaten Naktamun, och i de fem gudarnas närvaro, gör vissa människor uppror mot Gud-Pharaos doktriner. De ifrågasätter naturligtvis inte gudarnas existens, för dessa gudar är synliga nästan varje dag på stadens gator. De ifrågasätter inte heller det faktum att det finns ett liv efter döden, vilket är uppenbart i de smorda mumier som omger dem, liksom de marodörerande mumierna utanför Hekma. Snarare vägrar dessa oliktänkande helt enkelt att följa den föreskrivna livskursen som leder till det härliga livet efter döden.",
+										"En del oliktänkande drivs av rädsla, eftersom de inte vill utsätta sig för en våldsam död under rättegångarna (eller under träningen inför rättegångarna). En del drivs av samvete och vill inte döda sina grödor i försöken. För även om de inte kan förneka att gudarna existerar kan de förneka att gudarna är rättvisa - och de kan kämpa för att bevisa att en orättvis guds diktat inte behöver följas. Vissa tror att en gud (förmodligen Bontu) har fördärvat processen med prövningarna och vägen till livet efter döden. Andra anar korrekt att gud-faraohen faktiskt inte hade folkets bästa i åtanke när han beordrade deras samhälle.",
+										"En karaktär som identifieras som en dissident förlorar fördelen av initiatens eller visirens bakgrundsegenskaper. I stället får karaktären egenskapen Shelter of Dissenters.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Inquisitor",
@@ -1346,7 +1363,9 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSI/Inquisitor.webp"
-					}
+					},
+					"title": "Moorland Inquisitor",
+					"credit": "David Palumbo"
 				}
 			]
 		},
@@ -2316,7 +2335,7 @@
 							"type": "entries",
 							"entries": [
 								"Du är en visir, en tjänare till din gud. Du utför uppgifter som är viktiga för att underlätta de initierades resa, så att gudarna belönar dig med inträde i livet efter detta med gud-faraohs välsignelse. Du hoppas kunna uppnå den mest ärade statusen i livet efter detta genom att vara den bästa möjliga tjänaren för din gud.",
-								"Som vizier kan du ha vilken klass som helst, men det är särskilt troligt att du är en präst, en druid (särskilt om du tjänar Rhonas) eller en paladin."
+								"As a vizier, you can have any class, but you are especially likely to be a {@class cleric}, a {@class druid} (particularly if you serve Rhonas), or a {@class paladin}."
 							]
 						}
 					]
@@ -2328,9 +2347,52 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Vizier.webp"
-					}
+					},
+					"title": "Shadowstorm Vizier",
+					"credit": "Yongjae Choi"
 				}
 			]
+		},
+		{
+			"name": "Vizier (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Vizier",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Till och med i den omsorgsfullt byggda och kurerade stadsstaten Naktamun, och i de fem gudarnas närvaro, gör vissa människor uppror mot Gud-Pharaos doktriner. De ifrågasätter naturligtvis inte gudarnas existens, för dessa gudar är synliga nästan varje dag på stadens gator. De ifrågasätter inte heller det faktum att det finns ett liv efter döden, vilket är uppenbart i de smorda mumier som omger dem, liksom de marodörerande mumierna utanför Hekma. Snarare vägrar dessa oliktänkande helt enkelt att följa den föreskrivna livskursen som leder till det härliga livet efter döden.",
+										"En del oliktänkande drivs av rädsla, eftersom de inte vill utsätta sig för en våldsam död under rättegångarna (eller under träningen inför rättegångarna). En del drivs av samvete och vill inte döda sina grödor i försöken. För även om de inte kan förneka att gudarna existerar kan de förneka att gudarna är rättvisa - och de kan kämpa för att bevisa att en orättvis guds diktat inte behöver följas. Vissa tror att en gud (förmodligen Bontu) har fördärvat processen med prövningarna och vägen till livet efter döden. Andra anar korrekt att gud-faraohen faktiskt inte hade folkets bästa i åtanke när han beordrade deras samhälle.",
+										"En karaktär som identifieras som en dissident förlorar fördelen av initiatens eller visirens bakgrundsegenskaper. I stället får karaktären egenskapen Shelter of Dissenters.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Volstrucker Agent",
