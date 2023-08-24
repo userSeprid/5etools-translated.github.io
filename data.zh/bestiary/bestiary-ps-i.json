@@ -9,6 +9,71 @@
 	},
 	"monster": [
 		{
+			"name": "Avacyn",
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Solar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Solar",
+						"with": "Avacyn",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Moonsilver Spear",
+							"entries": [
+								"An angel of the Flight of Moonsilver wields a spear made from a shard of the Helvault. Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when the angel hits a creature with an attack using this weapon, it can wound the target. At the start of each of the wounded creature's turns, it takes {@damage 1d4} necrotic damage for each time the angel has wounded it, and it can then make a {@dc 15} Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a {@dc 15} Wisdom ({@skill Medicine}) check, ending the effect of such wounds on it on a success."
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Bruna",
+			"alias": [
+				"Light of Alabaster"
+			],
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Planetar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "planetar",
+						"with": "Bruna",
+						"flags": "i"
+					},
+					"_": {
+						"mode": "addSpells",
+						"will": [
+							"{@spell protection from evil and good}"
+						],
+						"daily": {
+							"1e": [
+								"{@spell dispel evil and good}"
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Creepy Doll",
 			"source": "PSI",
 			"page": 25,
@@ -124,7 +189,9 @@
 			"savingThrowForced": [
 				"intelligence"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Demonlord of Ashmouth",
@@ -196,7 +263,9 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Flight Goldnight Angel",
@@ -216,14 +285,16 @@
 						"items": {
 							"name": "Goldnight Menace",
 							"entries": [
-								"作为一个行动，金夜飞行的天使可以让它的敌人感到恐惧。每个在它120英尺范围内的天使所选择的生物，如果意识到它，就必须成功地进行智慧救赎，否则就会被吓倒，持续1分钟。这个蓄力动作的DC和天使的先天法术特质相同。一个生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。如果一个生物的救赎成功或效果结束，该生物在接下来的24小时内对该天使的金夜威胁免疫。"
+								"As an action, an angel of Flight Goldnight can strike fear into the hearts of its enemies. Each creature of the angel's choice that is within 120 feet of it and is aware of it must succeed on a Wisdom saving throw or become {@condition frightened} for 1 minute. The DC for this saving throw is the same as for the angel's Innate Spellcasting trait. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to that angel's Goldnight Menace for the next 24 hours."
 							]
 						}
 					}
 				}
 			},
 			"cr": "11",
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Flight of Moonsilver Angel",
@@ -243,7 +314,7 @@
 						"items": {
 							"name": "Moonsilver Spear",
 							"entries": [
-								"一个月银飞行团的天使挥舞着一把由地狱之门的碎片制成的长矛。因这种武器的伤害而损失的命中率只能通过短期或长期休息来恢复，而不是通过再生、魔法或任何其他方式。每回合一次，当天使用此武器的攻击击中一个生物时，它可以使目标受伤。在受伤的生物的每个回合开始时，天使每次伤害它都会受到1d4的坏死伤害，然后它可以做一个DC15的宪法救赎，如果成功，则结束所有这些伤口对它的影响。或者，受伤的生物或者它周围5英尺内的生物可以使用一个动作来进行DC15智慧（医学）检查，成功后结束这种伤口对它的影响。"
+								"An angel of the Flight of Moonsilver wields a spear made from a shard of the Helvault. Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when the angel hits a creature with an attack using this weapon, it can wound the target. At the start of each of the wounded creature's turns, it takes {@damage 1d4} necrotic damage for each time the angel has wounded it, and it can then make a {@dc 15} Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a {@dc 15} Wisdom ({@skill Medicine}) check, ending the effect of such wounds on it on a success."
 							]
 						}
 					}
@@ -254,7 +325,9 @@
 				"N",
 				"R"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Geist",
@@ -322,24 +395,6 @@
 					"entries": [
 						"地师可以在其他生物和物体中移动，就像他们是（%0%）一样。如果它在一个物体内结束它的回合，它会受到5（（%1%））的力量伤害。"
 					]
-				},
-				{
-					"name": "Geist Powers",
-					"entries": [
-						"地质学家就像他们生前的人类一样多种多样。除了所有地质学家拥有的特征和行动外，个别地质学家可能有以下任何一个特殊的特征。"
-					]
-				},
-				{
-					"name": "Geist Powers: Intangible Virtue",
-					"entries": [
-						"被白衣天使附身的生物会获得对{@condition charmed}和{@condition frightened}条件的免疫，以及对来自非魔法攻击的重击、穿刺和切割伤害的抵抗。当生物被附身时，地质学家可以让它控制自己的身体，但地质学家可以在任何时候重新获得控制权（不需要行动）。"
-					]
-				},
-				{
-					"name": "Geist Powers: Horrifying Visage",
-					"entries": [
-						"与黑人结盟的地师可以使自己变得可怕，即使他们附身在活人身上。每个在地精60英尺范围内的非亡灵生物，如果能看到它，就必须成功地进行一次智慧救赎，否则就会在1分钟内变成{@condition frightened}。如果救赎失败5次或以上，目标也会衰老{@dice 1d4 × 10}年。一个{@condition frightened}的目标可以在它的每个回合结束时重复蓄力，在成功后结束对自己的{@condition frightened}条件。如果一个目标的自救成功或效果结束，该目标在接下来的24小时内对这个地师的恐怖面容免疫。衰老的效果可以用{@spell greater restoration}的法术逆转，但只能在它发生的24小时内逆转。"
-					]
 				}
 			],
 			"action": [
@@ -362,6 +417,29 @@
 					]
 				}
 			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Geist Powers",
+					"entries": [
+						"Geists are as varied as the humans they were in life. In addition to the traits and actions all geists possess, an individual geist might have any of the following special characteristics.",
+						{
+							"name": "Intangible Virtue",
+							"type": "entries",
+							"entries": [
+								"被白衣天使附身的生物会获得对{@condition charmed}和{@condition frightened}条件的免疫，以及对来自非魔法攻击的重击、穿刺和切割伤害的抵抗。当生物被附身时，地质学家可以让它控制自己的身体，但地质学家可以在任何时候重新获得控制权（不需要行动）。"
+							]
+						},
+						{
+							"name": "Horrifying Visage",
+							"type": "entries",
+							"entries": [
+								"与黑人结盟的地师可以使自己变得可怕，即使他们附身在活人身上。每个在地精60英尺范围内的非亡灵生物，如果能看到它，就必须成功地进行一次智慧救赎，否则就会在1分钟内变成{@condition frightened}。如果救赎失败5次或以上，目标也会衰老{@dice 1d4 × 10}年。一个{@condition frightened}的目标可以在它的每个回合结束时重复蓄力，在成功后结束对自己的{@condition frightened}条件。如果一个目标的自救成功或效果结束，该目标在接下来的24小时内对这个地师的恐怖面容免疫。衰老的效果可以用{@spell greater restoration}的法术逆转，但只能在它发生的24小时内逆转。"
+							]
+						}
+					]
+				}
+			],
 			"traitTags": [
 				"Incorporeal Movement"
 			],
@@ -378,14 +456,87 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"frightened",
 				"incapacitated"
 			],
 			"savingThrowForced": [
 				"charisma",
 				"wisdom"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Geist: Horrifying Visage",
+					"source": "PSI",
+					"_mod": {
+						"action": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Horrifying Visage",
+								"entries": [
+									"与黑人结盟的地师可以使自己变得可怕，即使他们附身在活人身上。每个在地精60英尺范围内的非亡灵生物，如果能看到它，就必须成功地进行一次智慧救赎，否则就会在1分钟内变成{@condition frightened}。如果救赎失败5次或以上，目标也会衰老{@dice 1d4 × 10}年。一个{@condition frightened}的目标可以在它的每个回合结束时重复蓄力，在成功后结束对自己的{@condition frightened}条件。如果一个目标的自救成功或效果结束，该目标在接下来的24小时内对这个地师的恐怖面容免疫。衰老的效果可以用{@spell greater restoration}的法术逆转，但只能在它发生的24小时内逆转。"
+								]
+							}
+						}
+					},
+					"variant": null,
+					"conditionInflict": [
+						"frightened",
+						"incapacitated"
+					]
+				},
+				{
+					"name": "Geist: Intangible Virtue",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Intangible Virtue",
+								"entries": [
+									"被白衣天使附身的生物会获得对{@condition charmed}和{@condition frightened}条件的免疫，以及对来自非魔法攻击的重击、穿刺和切割伤害的抵抗。当生物被附身时，地质学家可以让它控制自己的身体，但地质学家可以在任何时候重新获得控制权（不需要行动）。"
+								]
+							}
+						}
+					},
+					"variant": null
+				}
+			]
+		},
+		{
+			"name": "Gisela",
+			"alias": [
+				"Blade of Goldnight",
+				"Blade of the Church"
+			],
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Planetar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Planetar",
+						"with": "Gisela",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Goldnight Menace",
+							"entries": [
+								"As an action, an angel of Flight Goldnight can strike fear into the hearts of its enemies. Each creature of the angel's choice that is within 120 feet of it and is aware of it must succeed on a Wisdom saving throw or become {@condition frightened} for 1 minute. The DC for this saving throw is the same as for the angel's Innate Spellcasting trait. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to that angel's Goldnight Menace for the next 24 hours."
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Host of Herons Angel",
@@ -411,7 +562,9 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Keeper of the Feather",
@@ -489,172 +642,249 @@
 			"hasToken": true
 		},
 		{
+			"name": "Necro-Alchemist",
+			"alias": [
+				"Geistmage"
+			],
+			"source": "PSI",
+			"page": 20,
+			"_copy": {
+				"name": "Mage",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "mage",
+						"with": "Necro-Alchemist",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sigarda",
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 26,
+			"_copy": {
+				"name": "Planetar",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Planetar",
+						"with": "Sigarda",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Heron Protection",
+							"entries": [
+								"每当鹭之宿主的天使或其10英尺范围内的友好生物进行救赎时，该生物就会获得相当于天使魅力修正值的救赎奖励。天使必须有意识才能接受或给予这个奖励。"
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Skaab",
 			"source": "PSI",
 			"page": 20,
-			"size": [
-				"M"
-			],
-			"type": "construct",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				9
-			],
-			"hp": {
-				"average": 93,
-				"formula": "11d8 + 44"
+			"_copy": {
+				"name": "Flesh Golem",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "golem",
+						"with": "skaab",
+						"flags": "i"
+					}
+				}
 			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 19,
-			"dex": 9,
-			"con": 18,
-			"int": 6,
-			"wis": 10,
-			"cha": 5,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"lightning",
-				"poison",
+			"variant": [
 				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+					"type": "variant",
+					"name": "Skaabs",
+					"entries": [
+						"The most basic skaabs are simply {@creature flesh golem|MM|flesh golems}, as described in the Monster Manual. But the aspiration of every skaberen is to produce a truly unique masterpiece, a goal that might see a stitcher create golems with one of the following special characteristics.",
+						{
+							"type": "entries",
+							"name": "Armor Plating",
+							"page": 20,
+							"entries": [
+								"将Skaab的装甲等级提高到14，并将其挑战等级提高到6（2,300XP）。"
+							]
+						},
+						{
+							"name": "Six Arms",
+							"type": "entries",
+							"entries": [
+								"斯卡布的多重攻击动作允许它进行三次猛烈攻击。将其挑战等级提高到6（2,300 XP）。"
+							]
+						},
+						{
+							"name": "Three Heads",
+							"type": "entries",
+							"entries": [
+								"在智慧（（%0%））检查和对被（%1%）、（%2%）、（%3%）和被击倒（%4%）的拯救动作上，Skaab有优势。(它的挑战等级不会改变。)"
+							]
+						},
+						{
+							"name": "Skaab Goliath",
+							"type": "entries",
+							"entries": [
+								"这个Skaab有三个头，六条胳膊，还有装甲。将其挑战等级提高到7级（2,900 XP）。"
+							]
+						},
+						{
+							"name": "Winged Skaab",
+							"type": "entries",
+							"entries": [
+								"斯卡布的飞行速度为30英尺。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"_versions": [
+				{
+					"name": "Skaab: Armor Plating",
+					"source": "PSI",
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"armor plating"
+							]
+						}
 					],
-					"note": "from nonmagical attacks that aren't adamantine",
-					"cond": true
+					"cr": "6",
+					"variant": null
+				},
+				{
+					"name": "Skaab: Goliath",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Three Heads",
+								"entries": [
+									"The skaab has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition deafened}, {@condition stunned}, and knocked {@condition unconscious}."
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"The skaab makes three slam attacks."
+								]
+							}
+						}
+					},
+					"ac": [
+						{
+							"ac": 14,
+							"from": [
+								"armor plating"
+							]
+						}
+					],
+					"cr": "7",
+					"variant": null
+				},
+				{
+					"name": "Skaab: Six Arms",
+					"source": "PSI",
+					"_mod": {
+						"action": {
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"The skaab makes three slam attacks."
+								]
+							}
+						}
+					},
+					"cr": "6",
+					"variant": null
+				},
+				{
+					"name": "Skaab: Three Heads",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Three Heads",
+								"entries": [
+									"The skaab has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition deafened}, {@condition stunned}, and knocked {@condition unconscious}."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Skaab: Winged",
+					"source": "PSI",
+					"speed": {
+						"walk": 30,
+						"fly": 30
+					},
+					"variant": null
 				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Berserk",
-					"entries": [
-						"每当巨魔以40点或更少的命中率开始它的回合时，掷一个（%0%）。如果是6，巨魔就会狂暴。在狂暴状态下的每个回合，巨魔都会攻击它能看到的最近的生物。如果没有足够近的生物可以移动和攻击，巨魔会攻击一个物体，优先选择比自己小的物体。一旦魔像狂暴起来，它就会继续这样做，直到它被摧毁或恢复所有的命中率。",
-						"如果巨魔的创造者在狂暴巨魔的60英尺范围内，可以通过坚定而有说服力的说话来试图使它平静下来。巨魔必须能够听到它的创造者，创造者必须采取一个行动，进行一个{@dc 15}魅力(说服力)检查。如果检定成功，巨魔将不再狂暴。如果它在40点或更少的命中率下受到伤害，巨魔可能会再次狂暴。"
-					]
-				},
-				{
-					"name": "Aversion of Fire",
-					"entries": [
-						"如果巨魔受到火的伤害，它在攻击卷和能力检查上会处于劣势，直到下一回合结束。"
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"傀儡对任何会改变其形态的法术或效果都是免疫的。"
-					]
-				},
-				{
-					"name": "Lightning Absorption",
-					"entries": [
-						"每当巨魔受到雷电伤害时，它不会受到任何伤害，反而会重新获得与所受雷电伤害相等的命中率。"
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"傀儡在对抗法术和其他魔法效果时有优势。"
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"傀儡的武器攻击是有魔法的。"
-					]
-				},
-				{
-					"name": "Skaab Characteristics",
-					"entries": [
-						"正如《怪物手册》所描述的那样，最基本的skaabs是简单的肉体甲虫。但每一个skaberen的愿望是制作一个真正独特的杰作，这个目标可能会看到一个缝合师创造出具有以下特殊特征的甲虫。"
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Armor Plating",
-					"entries": [
-						"将Skaab的装甲等级提高到14，并将其挑战等级提高到6（2,300XP）。"
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Six Arms",
-					"entries": [
-						"斯卡布的多重攻击动作允许它进行三次猛烈攻击。将其挑战等级提高到6（2,300 XP）。"
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Three Heads",
-					"entries": [
-						"在智慧（（%0%））检查和对被（%1%）、（%2%）、（%3%）和被击倒（%4%）的拯救动作上，Skaab有优势。(它的挑战等级不会改变。)"
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Skaab Goliath",
-					"entries": [
-						"这个Skaab有三个头，六条胳膊，还有装甲。将其挑战等级提高到7级（2,900 XP）。"
-					]
-				},
-				{
-					"name": "Skaab Characteristic: Winged Skaab",
-					"entries": [
-						"斯卡布的飞行速度为30英尺。"
-					]
+			]
+		},
+		{
+			"name": "Strefan Maurer",
+			"isNamedCreature": true,
+			"source": "PSI",
+			"page": 33,
+			"_copy": {
+				"name": "Strahd von Zarovich",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "Strahd",
+						"with": "Strefan",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "Vampire Weaknesses",
+						"items": {
+							"type": "entries",
+							"name": "Vampire Vulnerabilities",
+							"source": "PSI",
+							"page": 16,
+							"entries": [
+								"Weapons cut from living wood are particularly effective against vampires, though any weapon can harm or kill them. A vampire can't cross running water that shows the reflection of the moon, and water blessed by Avacyn ({@item Holy Water (flask)|PHB|holy water}) burns vampire flesh like acid. A vampire's reflection in silver (including a silver-backed glass mirror) appears as the vampire would have looked without the vampiric condition—neither its true appearance nor its glamer, but a normal human, flaws and all. For that reason, vampires go to great lengths to avoid mirrors, and the presence of silver in any form is unsettling to them."
+							]
+						}
+					}
 				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"巨魔进行了两次猛烈的攻击。"
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d8 + 4})重击伤害。"
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasToken": true
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Vampire Neonate",
@@ -822,7 +1052,327 @@
 				"HPR",
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Elder Vampire: All Abilities",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Shapechanger",
+									"entries": [
+										"If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.",
+										"While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+										"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+									]
+								},
+								{
+									"name": "Gorger",
+									"entries": [
+										"The vampire has advantage on melee attack rolls, but attack rolls against it have advantage."
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Charm",
+								"entries": [
+									"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.",
+									"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+								]
+							}
+						}
+					},
+					"type": {
+						"type": "undead",
+						"tags": [
+							"shapechanger"
+						]
+					},
+					"speed": {
+						"walk": 30,
+						"fly": 30
+					},
+					"spellcasting": [
+						{
+							"name": "Cleric Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Priest|MM} has been used as an example Cleric.}",
+								"The vampire is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The vampire has the following cleric spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell light}",
+										"{@spell sacred flame}",
+										"{@spell thaumaturgy}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell guiding bolt}",
+										"{@spell sanctuary}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell lesser restoration}",
+										"{@spell spiritual weapon}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell dispel magic}",
+										"{@spell spirit guardians}"
+									]
+								}
+							},
+							"ability": "wis"
+						},
+						{
+							"name": "Wizard Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Mage|MM} has been used as an example Wizard.}",
+								"The vampire is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The vampire has the following wizard spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell fire bolt}",
+										"{@spell light}",
+										"{@spell mage hand}",
+										"{@spell prestidigitation}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell detect magic}",
+										"{@spell mage armor}",
+										"{@spell magic missile}",
+										"{@spell shield}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell misty step}",
+										"{@spell suggestion}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell counterspell}",
+										"{@spell fireball}",
+										"{@spell fly}"
+									]
+								},
+								"4": {
+									"slots": 3,
+									"spells": [
+										"{@spell greater invisibility}",
+										"{@spell ice storm}"
+									]
+								},
+								"5": {
+									"slots": 1,
+									"spells": [
+										"{@spell cone of cold}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Charm",
+					"source": "PSI",
+					"_mod": {
+						"action": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Charm",
+								"entries": [
+									"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.",
+									"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Flight",
+					"source": "PSI",
+					"speed": {
+						"walk": 30,
+						"fly": 30
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Gorger",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Gorger",
+								"entries": [
+									"吸血鬼在近战攻击卷上有优势，但对它的攻击卷有优势。"
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Shapechanger",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Shapechanger",
+								"entries": [
+									"If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.",
+									"While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+									"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+								]
+							}
+						}
+					},
+					"type": {
+						"type": "undead",
+						"tags": [
+							"shapechanger"
+						]
+					},
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Spellcasting—Cleric",
+					"source": "PSI",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Priest|MM} has been used as an example Cleric.}",
+								"The vampire is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The vampire has the following cleric spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell light}",
+										"{@spell sacred flame}",
+										"{@spell thaumaturgy}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell cure wounds}",
+										"{@spell guiding bolt}",
+										"{@spell sanctuary}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell lesser restoration}",
+										"{@spell spiritual weapon}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell dispel magic}",
+										"{@spell spirit guardians}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"name": "Elder Vampire: Spellcasting—Wizard",
+					"source": "PSI",
+					"spellcasting": [
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"{@note The {@creature Mage|MM} has been used as an example Wizard.}",
+								"The vampire is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The vampire has the following wizard spells prepared:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell fire bolt}",
+										"{@spell light}",
+										"{@spell mage hand}",
+										"{@spell prestidigitation}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell detect magic}",
+										"{@spell mage armor}",
+										"{@spell magic missile}",
+										"{@spell shield}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell misty step}",
+										"{@spell suggestion}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell counterspell}",
+										"{@spell fireball}",
+										"{@spell fly}"
+									]
+								},
+								"4": {
+									"slots": 3,
+									"spells": [
+										"{@spell greater invisibility}",
+										"{@spell ice storm}"
+									]
+								},
+								"5": {
+									"slots": 1,
+									"spells": [
+										"{@spell cone of cold}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Werewolf (Krallenhorde)",
@@ -940,23 +1490,30 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Howlpack",
+					"name": "Howlpack Traits",
 					"entries": [
-						"狼人的基本统计资料代表了Krallenhorde的成员，Innistrad最大的狼人群体。其他族群的狼人可能会有额外的能力，如以下。"
-					]
-				},
-				{
-					"type": "variant",
-					"name": "Mondronen",
-					"entries": [
-						"蒙卓宁受伤的愤怒。当它有10点或更少的命中率时，狼人在攻击卷上有优势。此外，它对它用近战攻击击中的任何目标造成额外的7（（%0%））伤害。"
-					]
-				},
-				{
-					"type": "variant",
-					"name": "Leeraug",
-					"entries": [
-						"Leeraug Blood Frenzy. 狼人在对任何没有全部命中的生物进行近战攻击时具有优势。"
+						"狼人的基本统计资料代表了Krallenhorde的成员，Innistrad最大的狼人群体。其他族群的狼人可能会有额外的能力，如以下。",
+						{
+							"name": "Vildin Rampage (Canid Form Only)",
+							"type": "entries",
+							"entries": [
+								"When the werewolf reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+							]
+						},
+						{
+							"name": "Mondronen Wounded Fury",
+							"type": "entries",
+							"entries": [
+								"While it has 10 hit points or fewer, the werewolf has advantage on attack rolls. In addition, it deals an extra 7 ({@damage 2d6}) damage to any target it hits with a melee attack."
+							]
+						},
+						{
+							"name": "Leeraug Blood Frenzy",
+							"type": "entries",
+							"entries": [
+								"The werewolf has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+							]
+						}
 					]
 				}
 			],
@@ -983,7 +1540,59 @@
 				"RW",
 				"THW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Werewolf (Leeraug)",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Leeraug Blood Frenzy",
+								"entries": [
+									"The werewolf has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Werewolf (Mondronen)",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Mondronen Wounded Fury",
+								"entries": [
+									"While it has 10 hit points or fewer, the werewolf has advantage on attack rolls. In addition, it deals an extra 7 ({@damage 2d6}) damage to any target it hits with a melee attack."
+								]
+							}
+						}
+					},
+					"variant": null
+				},
+				{
+					"name": "Werewolf (Vildin)",
+					"source": "PSI",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Vildin Rampage (Canid Form Only)",
+								"entries": [
+									"When the werewolf reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack."
+								]
+							}
+						}
+					},
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Zombie Cat",
@@ -1005,7 +1614,9 @@
 			"traitTags": [
 				"Undead Fortitude"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zombie Rat",
@@ -1027,7 +1638,9 @@
 			"traitTags": [
 				"Undead Fortitude"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zombie Snake",
@@ -1049,7 +1662,9 @@
 			"traitTags": [
 				"Undead Fortitude"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }

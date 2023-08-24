@@ -36,7 +36,8 @@
 									"name": "Demons",
 									"entries": [
 										"在沙漠深处，远离赫克马的保护和纳克塔蒙的安全，有一个叫做伊夫尼尔的地方，即恶魔之巢。阿蒙凯特的人们相信，神-法老将这个位面的所有恶魔放逐到伊夫尼尔的荒芜之地，作为对他们起义的惩罚。有些人说，天使将最严重的异议者带入伊夫尼尔的中心，这比仅仅被遗弃在冲刷的沙地上的命运要糟糕得多。",
-										"伊夫尼尔的恶魔与博拉斯有些相似，有长长的四肢和尾巴，巨大的翅膀，以及装饰有角和刀刃的憔悴身体。其他恶魔生物具有更多的兽性特征，包括{@creature ammit|PSA|ammits}--有时被用作五神审判中的挑战，以及被称为{@creature soulstinger demon|PSA|soulstingers}的蝎子恶魔，其毒液会给受害者带来极大的痛苦。"
+										"伊夫尼尔的恶魔与博拉斯有些相似，有长长的四肢和尾巴，巨大的翅膀，以及装饰有角和刀刃的憔悴身体。其他恶魔生物具有更多的兽性特征，包括{@creature ammit|PSA|ammits}--有时被用作五神审判中的挑战，以及被称为{@creature soulstinger demon|PSA|soulstingers}的蝎子恶魔，其毒液会给受害者带来极大的痛苦。",
+										"Use the statistics of a {@creature nalfeshnee|MM} for a demon such as an {@creature Archfiend of Ifnir|PSA}. The statistics of a {@creature giant crocodile|MM} can model an {@creature ammit|PSA}, and those of a {@creature bone devil|MM} work well for a {@creature soulstinger demon|PSA}."
 									]
 								}
 							]
@@ -50,7 +51,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Archfiend of Ifnir.webp"
-					}
+					},
+					"title": "Archfiend of Ifnir",
+					"credit": "Slawomir Maniak"
 				}
 			]
 		},
@@ -66,9 +69,9 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "Dragons",
 									"entries": [
-										"龙是一种凶猛的怪物，有着沉重的爬行动物的身体、鳄鱼的头和皮质的翅膀，并因其能够喷火而与众不同。虽然尼科尔-博拉斯也是龙，但他对这些野蛮的、愚蠢的野兽并不感到亲近。它们主要生活在沙漠的偏远地区，在天空中懒洋洋地盘旋，寻找猎物。有时它们被捕获并带入希克玛，在那里它们被用于五神的审判--特别是在最后的狂热审判的高潮战斗中。"
+										"龙是一种凶猛的怪物，有着沉重的爬行动物的身体、鳄鱼的头和皮质的翅膀，并因其能够喷火而与众不同。虽然尼科尔-博拉斯也是龙，但他对这些野蛮的、愚蠢的野兽并不感到亲近。它们主要生活在沙漠的偏远地区，在天空中懒洋洋地盘旋，寻找猎物。有时它们被捕获并带入希克玛，在那里它们被用于五神的审判--特别是在最后的狂热审判的高潮战斗中。",
+										"The dragons of Amonkhet are {@b red dragons}, though they lack the high Intelligence of the red dragons in the {@book Monster Manual|PHB}."
 									]
 								}
 							]
@@ -82,7 +85,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Dragon.webp"
-					}
+					},
+					"title": "Glorybringer",
+					"credit": "Sam Burley"
 				}
 			]
 		},
@@ -97,47 +102,30 @@
 		{
 			"name": "Amonkhet Hydra",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"九头蛇是一种恐怖的爬行动物，拥有鳄鱼般的身体和长长的蛇形脖子上的多个头。虽然它的头可以被砍掉，但九头蛇会在短时间内神奇地重新长出头来。一个典型的标本有五个头。在时间的黎明，{@deity Tiamat|dawn war|dmg}，恶龙的女王，杀死了一个名叫Lernaea的对手龙神，并将她的血投向整个多元宇宙。每一滴落在一个世界上都会产生一个多头的九头蛇，它被一种与堕落之神的仇恨一样巨大的饥饿感所吞噬。众所周知，伟大的冠军们会在这些可怕的生物面前测试他们的能力。",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"在赫克马的保护范围之外的荒凉旷野，基本上是无人知晓的。紧邻保护面纱的是一片混乱的沙丘海，被称为 \"Shefet\"，即 \"冲刷的沙子\"。沙漠侵蚀着纳克塔蒙周围肥沃土地的边缘，不断提醒人们，只有上帝-法老的赏赐和保护，才能让城邦的人民在沙地上惨遭杀害。在Shefet之外，是被称为Ramunap（破碎之地）的干涸、开裂的大片土地。古代文明的遗迹据说就在破碎之地，尽管从来没有人探索过这些遗迹并回到纳克塔蒙讲述它们。"
-									]
-								},
-								{
-									"name": "Everlasting Hunger",
-									"type": "entries",
-									"entries": [
-										"九头蛇是一种贪婪和贪吃的怪物，它在狂热的进食中抢夺并撕碎它的猎物。当九头蛇清除了一个地区的食物，并赶走了任何足够聪明的生物，以避免它，它继续寻找其他地方的食物。九头蛇的饥饿感是如此之强，以至于如果它不能进食，它可能会自相残杀，当它活生生地吃掉自己的时候，它的头会互相攻击。"
-									]
-								},
-								{
-									"name": "Hardy Water Dwellers",
-									"type": "entries",
-									"entries": [
-										"水螅是天然的游泳者，居住在河流、湖岸、海洋浅滩和湿地沼泽中。水螅很少需要避风的地方，所以它通常没有巢穴。只有在较冷的气候下，水螅才会被吸引到有保护的洞穴和废墟中。当水螅睡觉时，它至少有一个头保持清醒和警惕，这使得它很难被突然抓住。"
-									]
-								}
+								"The hydras of Amonkhet have heads like those of a cobra. A successful bite attack from one of these heads deals 7 ({@damage 1d4 + 5}) piercing damage, and the target must make a {@dc 16} Constitution saving throw, taking 7 ({@damage 2d6}) poison damage on a failed save, or half as much damage on a successful one."
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Hydra.webp"
-					}
+					},
+					"title": "Honored Hydra",
+					"credit": "Todd Lockwood"
 				}
 			]
 		},
@@ -158,7 +146,7 @@
 									"type": "entries",
 									"name": "The Curse of Wandering",
 									"entries": [
-										"漫游的诅咒是沙漠地带最大的危险。在沙漠中被杀死的生物，一旦其肉体上的水分干涸，就会重新复活为{@creature zombie}。因此，每一种沙漠生物的尸体都会在沙丘上晃动，与{@background dissenter|PSA|dissenters}的人形{@creature zombie||zombies}和可能的探险者一起晃动。这些曾经的人形生物大多是无意识的掠夺者，不过有些传说中的{@creature amonkhet mummy|PSA|mummies}保留了邪恶的智慧，甚至是魔法能力，成为{@creature amonkhet mummy lord|PSA|mummy lords}。"
+										"The Curse of Wandering is the greatest danger of the desert lands. A creature killed in the desert rises again as a {@creature zombie} as soon as the moisture has dried from its flesh. As a result, the corpses of every kind of desert creature shamble across the dunes alongside the humanoid {@creature zombie||zombies} of {@filter dissenters|backgrounds|source=psa|search=dissenter} and would-be explorers. Most of these former humanoids are mindless marauders, though some tales speak of {@creature amonkhet mummy|PSA|mummies} that have retained a sinister intelligence and even magical ability, becoming {@creature amonkhet mummy lord|PSA|mummy lords}."
 									]
 								}
 							]
@@ -172,7 +160,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Mummy Lord.webp"
-					}
+					},
+					"title": "Lord of the Accursed",
+					"credit": "Grzegorz Rutkowski"
 				}
 			]
 		},
@@ -195,7 +185,8 @@
 							"type": "entries",
 							"entries": [
 								"斯芬克斯是难以捉摸的生物，是秘密和神秘的守护者。他们有瘦长的身体，鹰一样的翅膀，脸部类似于人类，被巨大的褶皱或羽毛的鬃毛所包围。他们强大的前臂也有羽毛，长长的羽毛扇构成他们的尾巴。",
-								"阿蒙凯特的狮身人面像也许是这个星球上唯一没有被尼科尔-博拉斯的影响所侵蚀的生物。他们坚不可摧的思想甚至被证明是博拉斯无法控制的--但即便如此，他还是能够将他们置于一个诅咒之下，以保证他们的沉默。只要诅咒仍然有效，狮身人面像就完全无法进行交流--口头的或非口头的，甚至是书面的。通过这种方式，博拉斯阻止了狮身人面像向纳克塔蒙的人民或神明透露他的谎言体系。"
+								"阿蒙凯特的狮身人面像也许是这个星球上唯一没有被尼科尔-博拉斯的影响所侵蚀的生物。他们坚不可摧的思想甚至被证明是博拉斯无法控制的--但即便如此，他还是能够将他们置于一个诅咒之下，以保证他们的沉默。只要诅咒仍然有效，狮身人面像就完全无法进行交流--口头的或非口头的，甚至是书面的。通过这种方式，博拉斯阻止了狮身人面像向纳克塔蒙的人民或神明透露他的谎言体系。",
+								"Use the statistics of an {@creature androsphinx|MM} for the common sphinxes of Amonkhet."
 							]
 						}
 					]
@@ -207,7 +198,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Amonkhet Sphinx.webp"
-					}
+					},
+					"title": "Ominous Sphinx",
+					"credit": "Lars Grant-West"
 				}
 			]
 		},
@@ -230,7 +223,8 @@
 							"type": "entries",
 							"entries": [
 								"无论他们的原始形态是什么，阿蒙凯特的天使已经被扭曲成了尼科尔-博拉斯的扭曲反映。他们的四肢又长又细，胫骨和前臂都被拉长了。他们巨大的翅膀上装饰着白色和黑色的羽毛。光线穿过他们的关节和胸部，仿佛来自内部的火焰，他们的眼睛发出金色或橙色的光芒。",
-								"博拉斯的天使是他离开阿蒙凯特期间的私人代理人。他们的任务是保持纳克塔蒙没有不同的声音，这一点他们是坚定不移地追求的。他们作为哨兵站在城市上空，用超自然的感觉来探测（%0%）的存在。他们用长长的钩子（%%1%）来捕捉那些质疑神-法老统治的人，并负责执行博拉斯法律要求的惩罚。{@background dissenter|PSA|Dissenters}被捆绑在石棺中--耻辱之墓--并在怀疑的展示中暴露在同胞的嘲弄之下。第二天早上，天使们把石棺抬到沙漠里，把(3%)的人遗弃在恐怖的沙地上，并受到流浪的诅咒。"
+								"Bolas's angels are his personal agents during his absence from Amonkhet. Their mission, which they pursue with unwavering devotion, is to keep Naktamun free of dissenting voices. They stand as sentinels over the city, extending supernatural senses to detect the presence of {@filter dissenters|backgrounds|source=psa|search=dissenter}. They use their long, hooked {@item staff|PHB|staffs} to capture those who question the God-Pharaoh's rule, and are tasked with carrying out the punishment that Bolas's law demands. {@filter Dissenters|backgrounds|source=psa|search=dissenter} are bound into sarcophagi—the Tombs of Disgrace—and exposed to the mockery of fellow citizens in the Display of Doubt. On the following morning, the angels carry the sarcophagi into the desert and abandon the {@filter dissenters|backgrounds|source=psa|search=dissenter} to the horrors of the sands—and the Curse of Wandering.",
+								"Use the statistics of a {@creature deva|MM} for an angel on Amonkhet, replacing its mace attack with a staff attack. When the angel hits with a melee attack using its staff, the target is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained} and the angel can't attack another target with its staff."
 							]
 						}
 					]
@@ -242,7 +236,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Angel of Amonkhet.webp"
-					}
+					},
+					"title": "Seraph of the Suns",
+					"credit": "Winona Nelson"
 				}
 			]
 		},
@@ -252,16 +248,7 @@
 			"_copy": {
 				"name": "Amonkhet Mummy",
 				"source": "PSA"
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/PSA/Anointed.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Archfiend of Ifnir",
@@ -274,33 +261,42 @@
 		{
 			"name": "Cerodon",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"Cerodons有时会被误认为是食草动物，因为它们与公牛很相似，但它们绝不会被误认为是无害的。它们肩高超过30英尺，头顶有巨大的角，从鼻子向前突出，然后几乎向后延伸到身体的整个长度。角的结构类似于砂岩悬崖，Cerodon可以用它来破坏建筑物或纪念碑，而不费吹灰之力。角龙的攻击性极强，常常把闪闪发光的海克玛误认为是闯入它们领地的人。",
+								"Cerodons are sometimes mistaken for herbivores because of their resemblance to bulls, but they are never mistaken for harmless. They stand over thirty feet tall at the shoulder, and their heads are crowned with enormous horns that jut forward from the nose, then extend backward almost the entire length of their bodies. The horn structure resembles a sandstone cliff, and a cerodon can use it to ruin buildings or monuments with a minimum of effort. Cerodons are extremely aggressive, and often mistake the shimmering Hekma for an intruder into their territory. Use the statistics of a {@creature mammoth} for these creatures, with the following additional trait:",
 								{
 									"type": "entries",
-									"name": "The Desert Lands",
 									"entries": [
-										"在赫克马的保护范围之外的荒凉旷野，基本上是无人知晓的。紧邻保护面纱的是一片混乱的沙丘海，被称为 \"Shefet\"，即 \"冲刷的沙子\"。沙漠侵蚀着纳克塔蒙周围肥沃土地的边缘，不断提醒人们，只有上帝-法老的赏赐和保护，才能让城邦的人民在沙地上惨遭杀害。在Shefet之外，是被称为Ramunap（破碎之地）的干涸、开裂的大片土地。古代文明的遗迹据说就在破碎之地，尽管从来没有人探索过这些遗迹并回到纳克塔蒙讲述它们。"
+										{
+											"type": "entries",
+											"name": "Siege Monster",
+											"entries": [
+												"The cerodon deals double damage to objects and structures."
+											]
+										}
 									]
 								}
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Cerodon.webp"
-					}
+					},
+					"title": "Desert Cerodon",
+					"credit": "Igor Kieryluk"
 				}
 			]
 		},
@@ -334,7 +330,27 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Criosphinx.webp"
-					}
+					},
+					"title": "Unesh, Criosphinx Sovereign",
+					"credit": "Adrian Majkrzak"
+				}
+			]
+		},
+		{
+			"name": "Desert Lands",
+			"source": "PSA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "The Desert Lands",
+							"entries": [
+								"在赫克马的保护范围之外的荒凉旷野，基本上是无人知晓的。紧邻保护面纱的是一片混乱的沙丘海，被称为 \"Shefet\"，即 \"冲刷的沙子\"。沙漠侵蚀着纳克塔蒙周围肥沃土地的边缘，不断提醒人们，只有上帝-法老的赏赐和保护，才能让城邦的人民在沙地上惨遭杀害。在Shefet之外，是被称为Ramunap（破碎之地）的干涸、开裂的大片土地。古代文明的遗迹据说就在破碎之地，尽管从来没有人探索过这些遗迹并回到纳克塔蒙讲述它们。"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -348,7 +364,8 @@
 						{
 							"type": "entries",
 							"entries": [
-								"德拉克斯与龙相似，尽管它们没有任何喷火的能力，而且除了巨大的翅膀外，只有两条腿。它们没有龙那么好斗，而且可能稍微聪明一些。它们被矿井中闪烁的拉索特普、纳克塔蒙的黄金光泽以及卢克萨河水上的太阳光芒所吸引。它们也喜欢栖息在方尖碑和城市建筑的其他尖顶上。"
+								"德拉克斯与龙相似，尽管它们没有任何喷火的能力，而且除了巨大的翅膀外，只有两条腿。它们没有龙那么好斗，而且可能稍微聪明一些。它们被矿井中闪烁的拉索特普、纳克塔蒙的黄金光泽以及卢克萨河水上的太阳光芒所吸引。它们也喜欢栖息在方尖碑和城市建筑的其他尖顶上。",
+								"A {@creature pteranodon} can represent a smaller drake, while a larger one is more like a {@creature giant eagle}."
 							]
 						}
 					]
@@ -360,7 +377,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Drake.webp"
-					}
+					},
+					"title": "Angler Drake",
+					"credit": "Svetlin Velinov"
 				}
 			]
 		},
@@ -376,25 +395,10 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "The Curse of Wandering",
-									"entries": [
-										"漫游的诅咒是沙漠地带最大的危险。在沙漠中被杀死的生物，一旦其肉体上的水分干涸，就会重新复活为{@creature zombie}。因此，每一种沙漠生物的尸体都会在沙丘上晃动，与{@background dissenter|PSA|dissenters}的人形{@creature zombie||zombies}和可能的探险者一起晃动。这些曾经的人形生物大多是无意识的掠夺者，不过有些传说中的{@creature amonkhet mummy|PSA|mummies}保留了邪恶的智慧，甚至是魔法能力，成为{@creature amonkhet mummy lord|PSA|mummy lords}。"
-									]
-								},
-								{
-									"type": "entries",
-									"name": "The Anointed",
-									"entries": [
-										"并非每一个纳克塔蒙的公民都被证明是值得来世的。圣徒们有时会在测量仪式前死去，也许是在训练中发生意外。许多人{@background initiate|PSA|initiates}在前四次试验中丧生，在获得他们的五个卡图章之前。{@background vizier|PSA|Viziers}有时在他们真正赢得在来世为他们的神灵服务的位置之前就死了。由于没有证明自己的价值，这些可怜的灵魂在来世没有永恒的位置--但他们也没有犯下严重的罪过，以至于要把他们抛弃在流浪的诅咒中，成为掠夺者（%2%）。",
-										"幸运的是，上帝-法老的仁慈足以为这些人提供一个角色。他们被称为{@creature anointed|PSA}，被小心翼翼地防腐，免受流浪的诅咒，并被允许用另一个一生来为有价值的人服务。神-法老承诺，那些忠实于（1%）服务的人在来世也会赢得一个侍者的位置，甚至在来世服务的永恒也比受流浪的诅咒的永恒要好。",
-										"受膏者的尸体被小心翼翼地用布包裹起来，并饰以卡图。与{@background initiate|PSA|initiates}和{@background vizier|PSA|viziers}的卡图相比，这些卡图并不蕴含死者最佳的生命本质。相反，它们是为某一特定形式的服务提供指导的（%2%）。有了他们的卡图，{@creature anointed|PSA}就会上升，加入服务木乃伊的行列，满足阿蒙凯特日常生活的需要。"
-									]
-								},
-								{
-									"type": "entries",
 									"name": "An Eternal Army",
 									"entries": [
-										"像尼科尔-博拉斯这样强大而壮丽的存在，需要一支最高水准的战斗部队，因此，一支普通的僵尸军队永远无法配得上神-法老。永恒者是精英士兵，拥有活人士兵的所有技能和能力，但没有活人身上出现的缺点，如情感、犹豫不决或不忠诚。博拉斯亲手打造了整个阿蒙凯特，就是为了创造这样一支军队。"
+										"像尼科尔-博拉斯这样强大而壮丽的存在，需要一支最高水准的战斗部队，因此，一支普通的僵尸军队永远无法配得上神-法老。永恒者是精英士兵，拥有活人士兵的所有技能和能力，但没有活人身上出现的缺点，如情感、犹豫不决或不忠诚。博拉斯亲手打造了整个阿蒙凯特，就是为了创造这样一支军队。",
+										"Eternals have the statistics of {@creature wight|MM|wights}—individually fearsome, and terrifying as they march in endless ranks."
 									]
 								}
 							]
@@ -408,7 +412,9 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Eternal.webp"
-					}
+					},
+					"title": "Wildfire Eternal",
+					"credit": "Magali Villeneuve"
 				}
 			]
 		},
@@ -431,33 +437,30 @@
 		{
 			"name": "Manticore, Heart-Piercer",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"刺尾狮是一种猫科动物，有着猫科动物的身体，尾巴像{@creature scorpion||scorpions}，小腿和脚上有壳质板。它们尾巴上的毒刺是阿蒙凯特已知的最剧烈的毒药，即使在用爪子和牙齿撕咬敌人的时候，它们也能以闪电般的速度刺痛敌人。它们的致命性使它们在 \"狂热审判 \"中受到珍视，在那里它们给许多入会者带来荣耀的死亡。",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"在赫克马的保护范围之外的荒凉旷野，基本上是无人知晓的。紧邻保护面纱的是一片混乱的沙丘海，被称为 \"Shefet\"，即 \"冲刷的沙子\"。沙漠侵蚀着纳克塔蒙周围肥沃土地的边缘，不断提醒人们，只有上帝-法老的赏赐和保护，才能让城邦的人民在沙地上惨遭杀害。在Shefet之外，是被称为Ramunap（破碎之地）的干涸、开裂的大片土地。古代文明的遗迹据说就在破碎之地，尽管从来没有人探索过这些遗迹并回到纳克塔蒙讲述它们。"
-									]
-								}
+								"刺尾狮是一种猫科动物，有着猫科动物的身体，尾巴像{@creature scorpion||scorpions}，小腿和脚上有壳质板。它们尾巴上的毒刺是阿蒙凯特已知的最剧烈的毒药，即使在用爪子和牙齿撕咬敌人的时候，它们也能以闪电般的速度刺痛敌人。它们的致命性使它们在 \"狂热审判 \"中受到珍视，在那里它们给许多入会者带来荣耀的死亡。"
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Manticore, Heart-Piercer.webp"
-					}
+					},
+					"title": "Heart-Piercer Manticore",
+					"credit": "Scott Murphy"
 				}
 			]
 		},
@@ -473,9 +476,10 @@
 							"entries": [
 								{
 									"type": "entries",
-									"name": "The Luxa River",
 									"entries": [
-										"卢萨河是一个丰富的生命之源，它使纳克塔蒙周围郁郁葱葱的山谷肥沃起来，为人类和动物提供水。它也是无数生物充满活力的栖息地，包括许多种鸟类、鱼类和青蛙。{@creature crocodile||Crocodiles}和{@creature hippopotamus|PSA|hippopotamuses}会对船只和驳船造成危险，但也许最令人恐惧的是潜伏在河底的{@creature giant river serpent|PSA|giant serpents}。当它们被激怒时，可以击沉几十艘渔船并淹没海岸。"
+										"卢萨河是一个丰富的生命之源，它使纳克塔蒙周围郁郁葱葱的山谷肥沃起来，为人类和动物提供水。它也是无数生物充满活力的栖息地，包括许多种鸟类、鱼类和青蛙。{@creature crocodile||Crocodiles}和{@creature hippopotamus|PSA|hippopotamuses}会对船只和驳船造成危险，但也许最令人恐惧的是潜伏在河底的{@creature giant river serpent|PSA|giant serpents}。当它们被激怒时，可以击沉几十艘渔船并淹没海岸。",
+										"Monsters found in the river include fish such as {@creature quipper|MM|quippers}, {@creature giant frog|MM|giant frogs}, and {@creature crocodile|MM|crocodiles}.",
+										"River serpents range from fairly mundane specimens that resemble {@creature giant constrictor snake|MM|giant constrictor snakes} to more monstrous versions with the statistics of a {@creature behir} (but without lightning immunity or lightning breath)."
 									]
 								}
 							]
@@ -489,73 +493,69 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/River Serpent.webp"
-					}
+					},
+					"title": "River Serpent",
+					"credit": "Christopher Moeller"
 				}
 			]
 		},
 		{
 			"name": "Sandwurm",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"沙虫是谢菲特最大的掠食者，它们在沙丘中游动，就像在水中游动一样（%0%）。它们有惊人的速度，可以把它们灯笼般的头抬到离地面很远的地方，甚至可以抓住飞行生物。但它们也可以在沙地下等待多年，直到最轻微的震颤提醒它们猎物的存在。",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"在赫克马的保护范围之外的荒凉旷野，基本上是无人知晓的。紧邻保护面纱的是一片混乱的沙丘海，被称为 \"Shefet\"，即 \"冲刷的沙子\"。沙漠侵蚀着纳克塔蒙周围肥沃土地的边缘，不断提醒人们，只有上帝-法老的赏赐和保护，才能让城邦的人民在沙地上惨遭杀害。在Shefet之外，是被称为Ramunap（破碎之地）的干涸、开裂的大片土地。古代文明的遗迹据说就在破碎之地，尽管从来没有人探索过这些遗迹并回到纳克塔蒙讲述它们。"
-									]
-								}
+								"沙虫是谢菲特最大的掠食者，它们在沙丘中游动，就像在水中游动一样（%0%）。它们有惊人的速度，可以把它们灯笼般的头抬到离地面很远的地方，甚至可以抓住飞行生物。但它们也可以在沙地下等待多年，直到最轻微的震颤提醒它们猎物的存在。"
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Sandwurm.webp"
-					}
+					},
+					"title": "Sandwurm Convergence",
+					"credit": "Slawomir Maniak"
 				}
 			]
 		},
 		{
 			"name": "Serpopard",
 			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
+			"_copy": {
+				"name": "Desert Lands",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
 							"type": "entries",
 							"entries": [
-								"蛇豹是一种具有蛇形特征的奇怪猫科动物，包括长而灵活的身体、毒牙和敏感的舌头，它们可以用来从很远的地方探测猎物的气味。它们喜欢栖息在沙漠绿洲附近的树上，或沿着赫克马河内的卢克萨河，对靠近水面的生物落井下石。",
-								{
-									"type": "entries",
-									"name": "The Desert Lands",
-									"entries": [
-										"在赫克马的保护范围之外的荒凉旷野，基本上是无人知晓的。紧邻保护面纱的是一片混乱的沙丘海，被称为 \"Shefet\"，即 \"冲刷的沙子\"。沙漠侵蚀着纳克塔蒙周围肥沃土地的边缘，不断提醒人们，只有上帝-法老的赏赐和保护，才能让城邦的人民在沙地上惨遭杀害。在Shefet之外，是被称为Ramunap（破碎之地）的干涸、开裂的大片土地。古代文明的遗迹据说就在破碎之地，尽管从来没有人探索过这些遗迹并回到纳克塔蒙讲述它们。"
-									]
-								}
+								"蛇豹是一种具有蛇形特征的奇怪猫科动物，包括长而灵活的身体、毒牙和敏感的舌头，它们可以用来从很远的地方探测猎物的气味。它们喜欢栖息在沙漠绿洲附近的树上，或沿着赫克马河内的卢克萨河，对靠近水面的生物落井下石。"
 							]
 						}
-					]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "bestiary/PSA/Serpopard.webp"
-					}
+					},
+					"title": "Prowling Serpopard",
+					"credit": "Tyler Jacobson"
 				}
 			]
 		},

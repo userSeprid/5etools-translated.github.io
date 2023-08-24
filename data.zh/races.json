@@ -676,13 +676,34 @@
 						"一个不知名的乙木人，急切地寻求一种延长他们短暂生命的方法，发现了一个延长他们存在的转化过程--让他们有能力吸食其他生命的生命精华。从那时起，其他的太生者已经学会并实施了这种可怕的转变，而拥有这种 \"天赋 \"的太生者已经成为本就不多的人口中的一小部分。",
 						"一个有天赋的太生者有能力吸取其他生命的生命精华。就像热量从一个温暖的物体转移到一个寒冷的物体一样，一个有天赋的太生者只需要用爪子触摸另一个生命体，就可以吸取生命精华，为他们自己的继续存在提供燃料，同时从他们的受害者身上榨取力量和活力。",
 						"对许多乙未人来说，他们的生活是为了放纵和即时满足，\"想要 \"和 \"需要 \"的概念几乎是同义词。但是，具有这种天赋的乙太人明白什么是真正的需要，因为他们对生命本质的渴望远远超过了他们在转变之前可能感受到的任何欲望。一个有天赋的Aetherborn如果放弃了这种喂养，会比其他Aetherborn恶化得更快，同时忍受着因生命能量被剥夺而造成的难以言喻的痛苦。",
-						"在DM的选择下，一个以太坊的角色可以研究实现这种黑暗 \"天赋 \"的方法。这个过程类似于发明和制造一个稀有的魔法物品（见本文前面的 \"发明和制造装置\"）。但这个过程需要的不是乙醚，而是各种稀有的药水和不寻常的成分，这些成分构成了研究和进行转化的成本。",
+						"At the DM's option, an aetherborn character can research methods of achieving this dark \"gift.\" The process is similar to inventing and manufacturing a rare magic item (see \"{@book Inventing and Manufacturing Devices|PS-K|1|Inventing and Manufacturing Devices}\" earlier in this document). But rather than aether, the process requires a variety of rare unguents and unusual ingredients that make up the cost of researching and undergoing the transformation.",
 						"拥有这种天赋的乙女获得了吸干生命的能力：一种自然攻击，造成{@dice 1d6}坏死伤害，并为乙女恢复相同数量的生命值。然而，如果太生者连续7天没有造成这种伤害，他们的最大命中率就会每周减少（%1%）。这个减少的数值不能被移除，直到太生者使用了他们的 \"耗尽生命 \"能力并完成了一次长时间的休息。"
 					]
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Variant; Gifted Aetherborn",
+					"source": "PSK",
+					"_mod": {
+						"entries": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Drain Life",
+								"type": "entries",
+								"entries": [
+									"You gain a natural attack that deals {@dice 1d6} necrotic damage and restores the same number of hit points to you. However, if you goes for 7 days without dealing this damage, your hit point maximum is reduced by {@dice 1d6} per week. This reduction can't be removed until you have used your Drain Life ability and completed a long rest."
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Natural Weapon"
+					]
+				}
+			]
 		},
 		{
 			"name": "Astral Elf",
@@ -1217,14 +1238,14 @@
 				{
 					"name": "Flight",
 					"entries": [
-						"你有一个30英尺的飞行速度。当你穿着中型或重型盔甲时，你不能使用你的飞行速度。(如果你的竞选活动使用了负担的变体规则，那么如果你有负担，你就不能使用你的飞行速度）。"
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.) "
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"你能说、读、写普通话和阿文。"
+						"You can speak, read, and write Common and {@language Aven|PSD}."
 					],
 					"type": "entries"
 				},
@@ -3858,7 +3879,7 @@
 				}
 			],
 			"age": {
-				"mature": 20,
+				"mature": 50,
 				"max": 350
 			},
 			"darkvision": 60,
@@ -3899,7 +3920,7 @@
 				{
 					"name": "Speed",
 					"entries": [
-						"你的速度不会因为穿着重甲而降低。"
+						"Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor."
 					],
 					"type": "entries"
 				},
@@ -3934,7 +3955,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"你可以说、读、写普通话和矮人语。矮人语充满了硬辅音和阴阳怪气的声音，这些特征会蔓延到矮人可能说的其他语言中。"
+						"You can speak, read, and write Common and {@language Dwarvish}. {@language Dwarvish} is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 					],
 					"type": "entries"
 				}
@@ -4243,6 +4264,13 @@
 					"name": "Languages",
 					"entries": [
 						"你可以说、读、写普通话和精灵语。精灵语很流畅，有微妙的语调和复杂的语法。精灵文学丰富多样，他们的歌曲和诗歌在其他种族中很有名。许多吟游诗人学习他们的语言，以便在他们的剧目中加入精灵民谣。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Elf Culture",
+					"entries": [
+						"The elves of Kaladesh don't organize themselves into nations or tribes. Still, they recognize three distinct cultural groups among their kind—though in truth these groupings are more like attitudes or alignments with regard to the rest of society and the use of technology. Choose one of these cultures."
 					],
 					"type": "entries"
 				}
@@ -5666,6 +5694,78 @@
 		},
 		{
 			"name": "Goblin",
+			"source": "PSZ",
+			"page": 16,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 16
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"age": {
+				"mature": 12,
+				"max": 50
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Armor"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"goblin": true
+				}
+			],
+			"resist": [
+				"fire",
+				"psychic"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"妖精的成熟速度比人类快，在12岁左右就能达到成年。他们的衰老速度也明显快于人类，即使是最谨慎的妖精也很少能活过50岁。"
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"大多数妖精都是疯狂的混沌状态，尽管他们没有特别的善恶倾向。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"妖精平均身高约3英尺，体重约40磅。你的体型是小。"
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"由于你的遗产，你在黑暗和昏暗的条件下有卓越的视觉。你可以在60英尺内的昏暗光线下看清东西，就像亮光一样，在黑暗中看清东西，就像暗光一样。你在黑暗中无法辨别颜色，只有灰色的阴影。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"你能说、读、写普通话和哥布林语。"
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Goblin",
 			"source": "VGM",
 			"page": 119,
 			"otherSources": [
@@ -5797,158 +5897,6 @@
 			],
 			"heightAndWeight": null,
 			"hasFluff": true
-		},
-		{
-			"name": "Goblin (Ixalan)",
-			"source": "PSX",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": {
-				"walk": 25,
-				"climb": 25
-			},
-			"ability": [
-				{
-					"dex": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"妖精比人类成熟得更快，在12岁左右达到成年。他们的衰老速度明显加快，虽然很少有妖精能活到老，但最谨慎的妖精很少能活过50岁。"
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"大多数妖精都是疯狂的混沌，没有特别的善恶倾向，但有强烈的恶作剧倾向。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"妖精平均身高约3英尺，体重约40磅。你的体型是小。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Agile Climber",
-					"entries": [
-						"你有一个25英尺的攀爬速度。当你穿着中型或重型盔甲时，你不能使用你的攀爬速度。(如果你的竞选活动使用了负担的变体规则，那么如果你有负担，你就不能使用你的攀爬速度）。"
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"你能在60英尺内的昏暗光线下看东西，就像亮光一样，在黑暗中看东西，就像暗光一样。你在黑暗中不能辨别颜色，只能辨别灰色的深浅。"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"你能说、读、写普通话（如果你的竞选活动中存在这种语言）和哥布林语。"
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Goblin (Zendikar)",
-			"source": "PSZ",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": 25,
-			"ability": [
-				{
-					"con": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"traitTags": [
-				"Natural Armor"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"resist": [
-				"fire",
-				"psychic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"妖精的成熟速度比人类快，在12岁左右就能达到成年。他们的衰老速度也明显快于人类，即使是最谨慎的妖精也很少能活过50岁。"
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"大多数妖精都是疯狂的混沌状态，尽管他们没有特别的善恶倾向。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"妖精平均身高约3英尺，体重约40磅。你的体型是小。"
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"由于你的遗产，你在黑暗和昏暗的条件下有卓越的视觉。你可以在60英尺内的昏暗光线下看清东西，就像亮光一样，在黑暗中看清东西，就像暗光一样。你在黑暗中无法辨别颜色，只有灰色的阴影。"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Grit",
-					"entries": [
-						"你对火灾伤害和精神伤害有抵抗力。此外，当你没有穿戴盔甲时，你的攻击力等于11+你的灵巧修正值。"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"你能说、读、写普通话和哥布林语。"
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
 		},
 		{
 			"name": "Goliath",
@@ -7490,10 +7438,45 @@
 			"name": "Human (Ixalan)",
 			"source": "PSX",
 			"page": 11,
-			"size": [
-				"M"
-			],
-			"speed": 30,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"人类倾向于没有特定的排列组合。最好的和最坏的都在他们中间找到。"
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"你的基本行走速度是30英尺。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write {@language Common} and one extra language of your choice. Or, if your campaign uses the optional rules for languages found in the previous section, your national origin determines your native language: {@language Itzocan|PSX} for the Sun Empire, {@language Coalition pidgin|PSX} for the Brazen Coalition, or {@language Vampire|PSX} for the Legion of Dusk. You still speak one additional language of your choice, and {@language Common Trade Pidgin|PSX|Common} if it exists in your campaign."
+								]
+							}
+						}
+					]
+				}
+			},
 			"ability": [
 				{
 					"str": 1,
@@ -7504,10 +7487,6 @@
 					"cha": 1
 				}
 			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -7519,34 +7498,60 @@
 					"anyStandard": 1
 				}
 			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Human (Kaladesh)",
+			"source": "PSK",
+			"page": 22,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
 					"entries": [
-						"人类在十几岁时达到成年，寿命不到一个世纪。"
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"人类倾向于没有特定的排列组合。"
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"你的基本行走速度是30英尺。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Dwarvish curses, Elvish musical expressions, {@race Vedalken|PSK} scholarly jargon, and so on."
+								]
+							}
+						}
 					]
-				},
+				}
+			},
+			"ability": [
 				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"人类倾向于没有特定的排列组合。最好的和最坏的都在他们中间找到。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"人类的身高和体型差别很大，从不到5英尺到远远超过6英尺高。无论你在这个范围内的位置如何，你的体型都是中等。"
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"你可以说、读、写普通话和一种你选择的额外语言。或者，如果你的竞选活动使用了上一节中关于语言的可选规则，那么你的国家起源决定了你的母语。太阳帝国的语言是伊佐坎语，勇敢联盟的语言是联盟方言，黄昏军团的语言是吸血鬼语。你仍然会说一种你选择的额外语言，如果你的战役中存在通用语言，你也会说通用语言。"
-					],
-					"type": "entries"
+					"str": 1,
+					"dex": 1,
+					"con": 1,
+					"int": 1,
+					"wis": 1,
+					"cha": 1
 				}
 			],
 			"hasFluff": true,
@@ -9480,86 +9485,15 @@
 			]
 		},
 		{
-			"name": "Merfolk (Ixalan)",
-			"source": "PSX",
-			"page": 12,
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"ability": [
-				{
-					"cha": 1
-				}
-			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
-			"traitTags": [
-				"Amphibious"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true,
-					"anyStandard": 1
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"人鱼的成熟速度与人类相同，在20岁左右达到成年。不过，他们的寿命比人类要长得多，经常达到100岁以上。"
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"大多数人鱼是中立的，与自然界紧密和谐地生活在一起。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"人鱼族明显比大多数人类高，身高在七到八英尺之间，平均体重约300磅。你的体型是中等。"
-					]
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"你可以呼吸空气和水。"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swimming",
-					"entries": [
-						"你的游泳速度为30英尺。"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"你可以说、读、写普通话（如果在你的活动中存在的话）、人鱼族，以及你选择的一种额外语言。"
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Merfolk (Zendikar)",
+			"name": "Merfolk",
 			"source": "PSZ",
 			"page": 13,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 12
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -10161,6 +10095,7 @@
 				"max": 100
 			},
 			"traitTags": [
+				"Language Proficiency",
 				"Natural Weapon",
 				"Tool Proficiency"
 			],
@@ -10168,6 +10103,11 @@
 				{
 					"common": true,
 					"other": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
 				}
 			],
 			"immune": [
@@ -10713,7 +10653,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"你可以说、读、写普通话（如果你的活动中存在这种语言）和半兽人。"
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Orc|PHB}."
 					],
 					"type": "entries"
 				}
@@ -12350,13 +12290,13 @@
 					"type": "entries",
 					"name": "Flight",
 					"entries": [
-						"你有一个30英尺的飞行速度。当你穿着中型或重型盔甲时，你不能使用你的飞行速度。(如果你的竞选活动使用了负担的变体规则，那么如果你有负担，你就不能使用你的飞行速度）。"
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.)"
 					]
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"你可以说、读、写普通话（如果你的活动中存在这种语言的话）和塞壬语。"
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Siren|PSX}."
 					],
 					"type": "entries"
 				}
@@ -13412,101 +13352,21 @@
 			]
 		},
 		{
-			"name": "Vampire (Ixalan)",
-			"source": "PSX",
-			"page": 14,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"cha": 2,
-					"wis": 1
-				}
-			],
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true
-				}
-			],
-			"resist": [
-				"necrotic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"吸血鬼不会像其他种族那样成熟和衰老。"
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"吸血鬼可能没有与生俱来的邪恶倾向，但他们中的许多人最终会走向邪恶。无论是否邪恶，他们严格的等级制度使他们倾向于合法的结盟。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"吸血鬼的体型和身材与人类相同。你的体型是中等。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Bloodthirst",
-					"entries": [
-						"你可以从一个自愿的生物，或一个被你、{@condition incapacitated}或{@condition restrained}的生物身上抽取血液和生命能量。对目标进行一次近身攻击。如果你击中，你会造成1个穿刺伤害和{@dice 1d6}坏死伤害。目标的最大命中率会减少，减少的量等于所受的坏死伤害，并且你会重新获得与该量相等的命中率。减少的效果会持续到目标完成长时间休息。如果该效果将目标的最大命中率降低至0，则目标死亡。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Feast of Blood",
-					"entries": [
-						"当你用你的嗜血能力吸血时，你会体验到活力的激增。你的速度增加了10英尺，并且在1分钟内获得力量和灵巧检查及蓄力攻击的优势。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Vampiric Resistance",
-					"entries": [
-						"你对坏死性的伤害有抵抗力。"
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"你能在60英尺内的昏暗光线下看东西，就像亮光一样，在黑暗中看东西，就像暗光一样。你在黑暗中不能辨别颜色，只能辨别灰色的深浅。"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"你可以说、读、写普通话（如果在你的活动中存在）和吸血鬼。"
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Vampire (Zendikar)",
+			"name": "Vampire",
 			"source": "PSZ",
 			"page": 14,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 14
+				}
+			],
 			"size": [
 				"M"
 			],
 			"speed": 30,
 			"ability": [
 				{
-					"int": 1,
 					"cha": 2
 				}
 			],
@@ -13545,7 +13405,7 @@
 				{
 					"name": "Blood Thirst",
 					"entries": [
-						"你可以从一个自愿的生物，或一个被你、{@condition incapacitated}或{@condition restrained}的生物身上抽取血液和生命能量。对目标进行一次近身攻击。如果你击中，你会造成1个穿刺伤害和{@dice 1d6}坏死伤害。目标的最大命中率会减少，减少的量等于所受的坏死伤害，并且你会重新获得与该量相等的命中率。该减少持续到目标完成长时间休息。如果这个效果使目标的最大命中率降低到0，那么目标就会死亡。以这种方式杀死的人形生物会变成（4%）。"
+						"You can drain blood and life energy from a willing creature, or one that is {@condition grappled} by you, {@condition incapacitated}, or {@condition restrained}. Make a melee attack against the target. If you hit, you deal 1 piercing damage and {@dice 1d6} necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and you regain hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
 					],
 					"type": "entries"
 				},
@@ -16813,7 +16673,10 @@
 					"entries": [
 						"你的地面速度增加到35英尺。"
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Mask of the Wild",
@@ -16852,7 +16715,10 @@
 					"entries": [
 						"你知道你选择的一个咒语（%0%）。智慧是你对它的施法能力。"
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Extra Language",
@@ -18275,17 +18141,74 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Grotag Tribe",
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Goblin",
+			"raceSource": "PSZ",
+			"page": 16,
+			"otherSources": null,
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"entries": [
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"大多数妖精都是疯狂的混沌，没有特别的善恶倾向，但有强烈的恶作剧倾向。"
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Agile Climber",
+					"entries": [
+						"You have a climbing speed of 25 feet. You can't use your climbing speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your climbing speed if you are encumbered.)"
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Goblin|PHB}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar; Grotag Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"skillProficiencies": [
 				{
 					"animal handling": true
 				}
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"你对火灾伤害和精神伤害有抵抗力。此外，当你没有穿戴盔甲时，你的攻击力等于11+你的灵巧修正值。"
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Grotag Tamer",
 					"entries": [
@@ -18298,12 +18221,25 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Lavastep Tribe",
+			"name": "Zendikar; Lavastep Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"你对火灾伤害和精神伤害有抵抗力。此外，当你没有穿戴盔甲时，你的攻击力等于11+你的灵巧修正值。"
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Lavastep Grit",
 					"entries": [
@@ -18316,15 +18252,28 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tuktuk Tribe",
+			"name": "Zendikar; Tuktuk Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"traitTags": [
 				"Tool Proficiency"
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"你对火灾伤害和精神伤害有抵抗力。此外，当你没有穿戴盔甲时，你的攻击力等于11+你的灵巧修正值。"
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Tuktuk Cunning",
 					"entries": [
@@ -19664,7 +19613,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"你能说、读、写普通话和凯尔登语。"
+						"You can speak, read, and write Common and {@language Keldon|PSD}."
 					],
 					"type": "entries",
 					"data": {
@@ -19689,7 +19638,7 @@
 					"type": "entries",
 					"name": "Icehaven Born",
 					"entries": [
-						"你天生就适应寒冷的气候，如{@i Dungeon Master's Guide}的第五章所述。"
+						"You are naturally adapted to {@hazard Extreme Cold|DMG|cold climates}, as described in chapter 5 of the {@i Dungeon Master's Guide}."
 					]
 				}
 			],
@@ -20547,11 +20496,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Blue",
+			"name": "Ixalan; Blue",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -20561,6 +20511,13 @@
 				{
 					"history": true,
 					"nature": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20591,20 +20548,38 @@
 						"你获得{@skill History}和{@skill Nature}技能的熟练度。"
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Green",
+			"name": "Ixalan; Green",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20635,17 +20610,28 @@
 						"即使你只是被树叶、大雨、落雪、薄雾和其他自然现象轻度遮挡，你也可以尝试隐藏。"
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Cosi Creed",
+			"name": "Zendikar; Cosi Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 1,
@@ -20692,11 +20678,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Emeria Creed",
+			"name": "Zendikar; Emeria Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
@@ -20742,11 +20729,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Ula Creed",
+			"name": "Zendikar; Ula Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -22536,6 +22524,94 @@
 			"overwrite": {
 				"ability": true
 			}
+		},
+		{
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"吸血鬼不会像其他种族那样成熟和衰老。"
+					],
+					"data": {
+						"overwrite": "Age"
+					}
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"吸血鬼可能没有与生俱来的邪恶倾向，但他们中的许多人最终会走向邪恶。无论是否邪恶，他们严格的等级制度使他们倾向于合法的结盟。"
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"吸血鬼的体型和身材与人类相同。你的体型是中等。"
+					],
+					"data": {
+						"overwrite": "Size"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Feast of Blood",
+					"entries": [
+						"当你用你的嗜血能力吸血时，你会体验到活力的激增。你的速度增加了10英尺，并且在1分钟内获得力量和灵巧检查及蓄力攻击的优势。"
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Vampire|PSX}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar",
+			"source": "PSZ",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Null Transformation",
+					"entries": [
+						"A humanoid killed with your Bloodthirst ability becomes a {@creature Vampire Null|PSZ|null}."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Envoy",

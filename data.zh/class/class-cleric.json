@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"有价值的人应努力追求伟大--生活中的至高无上导致来世的至高无上。\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"邦图已经完全接受了这一箴言，虽然她没有花什么力气来教导它，但她肯定以身作则。她的大臣们巧妙地播下种子，使其开花结果，成为神-法老所期望的雄心壮志。通过暗示，他们提醒信徒和入门者，以牺牲他人的利益来实现自己在来世的地位并不可耻，而是证明了入门者的决心和动力。他们建议，没有什么比这种动力更重要，不是作物的纽带，不是友谊或爱情。甚至对神灵的奉献也不重要。",
 				"在每个指定的牧师级别，将所列的法术加入你的法术准备中。",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"有价值的人应培养一个灵活的头脑，能够感知在来世等待的超出想象的奇迹。\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"Kefnet的任务是传递神-法老的这一教导，并阐明其含义。他教导说，来世将只居住在那些用智慧证明他们值得居住在神-法老的光辉面前的人。他训练信徒和入门者挑战他们的极限，用越来越大的法术来挑战他们的心理能力。",
-				"Kefnet的领域与《玩家手册》中的知识领域相同。"
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"见知识领域。"
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"见知识领域。"
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"见知识领域。"
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"见知识领域。"
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"有价值的人必须了解和尊重所有上帝-法老认为有价值的其他人，因为在来世，所有人都将在目的和行动上团结一致。\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"奥克拉负责阐释神-法老的这一教导，向每一个入门者灌输团结的美德。她把每一群孩子锻造成一茬一茬的信徒，目的只有一个：被判定为有资格获得光荣的来世。她还向每一茬人灌输了团结一致追求这一目标的能力。她喜欢用诗意的想象来传达她的理想。",
 				"在每个指定的牧师级别，将所列的法术加入你的法术准备中。",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"有价值的人应磨练出强壮的身体，能够承受来世的无尽能量。\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"向那些将进入来世的人灌输这一教导的任务落在了罗纳斯身上--但在他看来，这些话本身并不重要。力量是教不来的。它必须通过实践和训练来建立。罗纳斯通过他的榜样来证明他的教义，而不是给他的学生任何形式的学术指导。他欢迎纳克塔蒙的人们站在赫克马身边，看着他冲进沙漠与最可怕的东西战斗。他鼓励他们观察他不屈不挠的力量，因为虽然他们永远无法与之相比，但他们可以渴望模仿。他邀请他们仔细观察每一个动作，并实践他们所看到的东西。",
 				"在每个指定的牧师级别，将所列的法术加入你的法术准备中。",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"有价值的人应以无情的热情冲向神-法老的身边，起身克服他们道路上的每一个障碍。\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"神-法老期望那些他欢迎进入来世的人对它的渴望超过所有其他的快乐和成就，并期望他们通过他们的行动来显示他们的奉献、激情和狂热。哈佐雷特负责培养在她照料下的入门者的这种热情，她以适当的热情承担了这项任务。然而，她认识到，教导热情的最佳方式是通过展示它。",
 				"在每个指定的牧师级别，将所列的法术加入你的法术准备中。",
 				{
