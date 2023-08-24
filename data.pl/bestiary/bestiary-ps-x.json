@@ -5,7 +5,10 @@
 				"MM",
 				"VGM"
 			]
-		}
+		},
+		"internalCopies": [
+			"monster"
+		]
 	},
 	"monster": [
 		{
@@ -72,6 +75,18 @@
 						"with": "totem elemental"
 					}
 				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Altisaur",
+			"source": "PSX",
+			"page": 27,
+			"_copy": {
+				"name": "Brontosaurus",
+				"source": "VGM"
 			},
 			"hasToken": true,
 			"hasFluff": true,
@@ -158,6 +173,9 @@
 		},
 		{
 			"name": "Chupacabra",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 9,
 			"size": [
@@ -284,18 +302,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Deinonychus",
-			"source": "PSX",
-			"page": 30,
-			"_copy": {
-				"name": "Deinonychus",
-				"source": "VGM"
-			},
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
 			"name": "Demon",
 			"source": "PSX",
 			"page": 36,
@@ -346,6 +352,9 @@
 		},
 		{
 			"name": "Elder Dinosaur",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 33,
 			"size": [
@@ -501,155 +510,47 @@
 		{
 			"name": "Elder Dinosaur (Etali, Primal Storm)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Lightning Storm",
+							"entries": [
+								"Starszemu dinozaurowi zawsze towarzyszy szalejąca burza z piorunami, podobna do efektu zaklęcia {@spell call lightning}. Chmura burzowa w kształcie walca o wysokości 10 stóp i promieniu 60 stóp natychmiast tworzy się 100 stóp w powietrzu nad starszym dinozaurem, gdy ten się zdenerwuje lub stanie się agresywny, o ile znajduje się na zewnątrz. W każdej swojej turze, jako akcję, starszy dinozaur może wybrać punkt, który widzi w promieniu 120 stóp od siebie. Z chmury w ten punkt spada błyskawica. Każde stworzenie w promieniu 10 stóp od tego punktu musi wykonać {@dc 20} rzut na Zręczność, otrzymując 21 ({@damage 6d6}) obrażeń od błyskawic w przypadku nieudanego testu lub połowę tych obrażeń w przypadku udanego testu."
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence and call down two lightning strikes from its Lightning Storm. It then makes three attacks: one with its bite and two with its claws."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Claw",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}28 ({@damage 4d8 + 10}) slashing damage."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Jeśli starszy dinozaur nie zdoła wykonać rzutu ratunkowego, może zdecydować się na sukces."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Starszy dinozaur ma przewagę w rzutach ratunkowych przeciwko zaklęciom i innym magicznym efektom."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Starszy dinozaur zadaje podwójne obrażenia przedmiotom i konstrukcjom."
-					]
-				},
-				{
-					"name": "Lightning Storm",
-					"entries": [
-						"Starszemu dinozaurowi zawsze towarzyszy szalejąca burza z piorunami, podobna do efektu zaklęcia {@spell call lightning}. Chmura burzowa w kształcie walca o wysokości 10 stóp i promieniu 60 stóp natychmiast tworzy się 100 stóp w powietrzu nad starszym dinozaurem, gdy ten się zdenerwuje lub stanie się agresywny, o ile znajduje się na zewnątrz. W każdej swojej turze, jako akcję, starszy dinozaur może wybrać punkt, który widzi w promieniu 120 stóp od siebie. Z chmury w ten punkt spada błyskawica. Każde stworzenie w promieniu 10 stóp od tego punktu musi wykonać {@dc 20} rzut na Zręczność, otrzymując 21 ({@damage 6d6}) obrażeń od błyskawic w przypadku nieudanego testu lub połowę tych obrażeń w przypadku udanego testu."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Starszy dinozaur może użyć swojej Przerażającej Obecności i przywołać dwie błyskawice ze swojej Burzy Błyskawic. Następnie wykonuje trzy ataki: jeden ugryzieniem i dwa pazurami."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 10 stóp, jeden cel. {@h}36 ({@damage 4d12 + 10}) obrażeń od przeszywających. Jeśli cel jest stworzeniem, otrzymuje {@condition grappled} (ucieczka {@dc 20}). Do czasu zakończenia tego chwytu, cel jest {@condition restrained}, a starszy dinozaur nie może ugryźć innego celu."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 15 stóp, jeden cel. {@h}28 ({@damage 4d8 + 10}) obrażeń od cięcia."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Każda istota wybrana przez starszego dinozaura w promieniu 120 stóp od niego i świadoma jego obecności musi wykonać {@dc 17} rzutu na Mądrość, aby przetrwać, albo stanie się {@condition frightened} na 1 minutę. Stworzenie może powtórzyć rzut ratujący na koniec każdej swojej tury, z minusem, jeśli starszy dinozaur znajduje się na linii wzroku, kończąc efekt na sobie w przypadku powodzenia. Jeśli rzut ratunkowy stworzenia się powiedzie lub efekt na nim zakończy, jest ono odporne na Przerażającą Obecność Starego Dinozaura przez następne 24 godziny."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak ugryzienia przeciwko dużemu lub mniejszemu stworzeniu, które chwyta. Jeśli atak trafi, stworzenie otrzymuje obrażenia od ugryzienia, cel zostaje połknięty, a chwytanie kończy się. Podczas połknięcia, stworzenie jest {@condition blinded} i {@condition restrained}, ma całkowitą osłonę przed atakami i innymi efektami spoza starszego dinozaura i otrzymuje 56 ({@damage 16d6}) obrażeń od kwasu na początku każdej tury starszego dinozaura. Jeśli podczas jednej tury starszy dinozaur otrzyma 60 lub więcej obrażeń od znajdującego się w nim stworzenia, to na koniec tej tury musi wykonać {@dc 20} rzutu ratunkowego na Konstytucję lub wypluć wszystkie połknięte stworzenia, które spadną {@condition prone} na obszar w promieniu 10 stóp od niego. Jeśli starszy dinozaur umrze, połknięte stworzenie nie jest już {@condition restrained} przez niego atakowane i może uciec od zwłok, poruszając się na odległość 20 stóp i wychodząc {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak pazurami, atak ogonem, atak skrzydłami lub płetwami."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Starszy dinozaur porusza się z połową swojej prędkości."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak gryzący lub używa swojej Jaskółki."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -684,155 +585,44 @@
 		{
 			"name": "Elder Dinosaur (Ghalta, Primal Hunger)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes three attacks: one with its bite, one with its stomp, and one with its tail. It can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}62 ({@damage 8d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Stomp",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 5 ft., one target. {@h}46 ({@damage 8d8 + 10}) bludgeoning damage."
+									]
+								},
+								{
+									"name": "Tail",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 20 ft., one target. {@h}38 ({@damage 8d6 + 10}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 20} Strength saving throw or be knocked {@condition prone}."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Jeśli starszy dinozaur nie zdoła wykonać rzutu ratunkowego, może zdecydować się na sukces."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Starszy dinozaur ma przewagę w rzutach ratunkowych przeciwko zaklęciom i innym magicznym efektom."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Starszy dinozaur zadaje podwójne obrażenia przedmiotom i konstrukcjom."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Starszy dinozaur może użyć swojej Przerażającej Obecności. Następnie wykonuje trzy ataki: jeden gryzieniem, jeden tupnięciem i jeden ogonem. Zamiast gryzienia może użyć Jaskółki."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 10 stóp, jeden cel. {@h}62 ({@damage 8d12 + 10}) obrażeń od przeszywających. Jeśli cel jest stworzeniem, otrzymuje {@condition grappled} (ucieczka {@dc 20}). Do czasu zakończenia tego chwytu, cel jest {@condition restrained}, a starszy dinozaur nie może ugryźć innego celu."
-					]
-				},
-				{
-					"name": "Stomp",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 5 stóp, jeden cel. {@h}46 ({@damage 8d8 + 10}) obrażeń od obrażeń kłutych."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 20 stóp, jeden cel. {@h}38 ({@damage 8d6 + 10}) obrażeń od obrażeń kłutych. Jeśli celem jest stworzenie, musi udać mu się rzut ratunkowy na {@dc 20} Wytrzymałość lub zostanie powalony {@condition prone}."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Każda istota wybrana przez starszego dinozaura w promieniu 120 stóp od niego i świadoma jego obecności musi wykonać {@dc 17} rzutu na Mądrość, aby przetrwać, albo stanie się {@condition frightened} na 1 minutę. Stworzenie może powtórzyć rzut ratujący na koniec każdej swojej tury, z minusem, jeśli starszy dinozaur znajduje się na linii wzroku, kończąc efekt na sobie w przypadku powodzenia. Jeśli rzut ratunkowy stworzenia się powiedzie lub efekt na nim zakończy, jest ono odporne na Przerażającą Obecność Starego Dinozaura przez następne 24 godziny."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak ugryzienia przeciwko dużemu lub mniejszemu stworzeniu, które chwyta. Jeśli atak trafi, stworzenie otrzymuje obrażenia od ugryzienia, cel zostaje połknięty, a chwytanie kończy się. Podczas połknięcia, stworzenie jest {@condition blinded} i {@condition restrained}, ma całkowitą osłonę przed atakami i innymi efektami spoza starszego dinozaura i otrzymuje 56 ({@damage 16d6}) obrażeń od kwasu na początku każdej tury starszego dinozaura. Jeśli podczas jednej tury starszy dinozaur otrzyma 60 lub więcej obrażeń od znajdującego się w nim stworzenia, to na koniec tej tury musi wykonać {@dc 20} rzutu ratunkowego na Konstytucję lub wypluć wszystkie połknięte stworzenia, które spadną {@condition prone} na obszar w promieniu 10 stóp od niego. Jeśli starszy dinozaur umrze, połknięte stworzenie nie jest już {@condition restrained} przez niego atakowane i może uciec od zwłok, poruszając się na odległość 20 stóp i wychodząc {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak pazurami, atak ogonem, atak skrzydłami lub płetwami."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Starszy dinozaur porusza się z połową swojej prędkości."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak gryzący lub używa swojej Jaskółki."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -866,156 +656,56 @@
 		{
 			"name": "Elder Dinosaur (Nezahal, Primal Tide)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
-			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Hold Breath",
+							"entries": [
+								"Starszy dinozaur może wstrzymać oddech na 4 godziny."
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: one with its bite and four with its flippers. No two flipper attacks can target the same creature. It can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Flipper",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 5 ft., one target. {@h}28 ({@damage 4d8 + 10}) bludgeoning damage."
+									]
+								}
+							]
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
 			},
 			"speed": {
 				"walk": 20,
 				"swim": 60
 			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Jeśli starszy dinozaur nie zdoła wykonać rzutu ratunkowego, może zdecydować się na sukces."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Starszy dinozaur ma przewagę w rzutach ratunkowych przeciwko zaklęciom i innym magicznym efektom."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Starszy dinozaur zadaje podwójne obrażenia przedmiotom i konstrukcjom."
-					]
-				},
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"Starszy dinozaur może wstrzymać oddech na 4 godziny."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Starszy dinozaur może użyć swojej Przerażającej Obecności. Następnie wykonuje pięć ataków: jeden ugryzieniem i cztery płetwami. Żadne dwa ataki płetwami nie mogą być wymierzone w to samo stworzenie. Zamiast gryzienia może użyć Jaskółki."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 10 stóp, jeden cel. {@h}36 ({@damage 4d12 + 10}) obrażeń od przeszywających. Jeśli cel jest stworzeniem, otrzymuje {@condition grappled} (ucieczka {@dc 20}). Do czasu zakończenia tego chwytu, cel jest {@condition restrained}, a starszy dinozaur nie może ugryźć innego celu."
-					]
-				},
-				{
-					"name": "Flipper",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 5 stóp, jeden cel. {@h}28 ({@damage 4d8 + 10}) obrażeń od obrażeń kłutych."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Każda istota wybrana przez starszego dinozaura w promieniu 120 stóp od niego i świadoma jego obecności musi wykonać {@dc 17} rzutu na Mądrość, aby przetrwać, albo stanie się {@condition frightened} na 1 minutę. Stworzenie może powtórzyć rzut ratujący na koniec każdej swojej tury, z minusem, jeśli starszy dinozaur znajduje się na linii wzroku, kończąc efekt na sobie w przypadku powodzenia. Jeśli rzut ratunkowy stworzenia się powiedzie lub efekt na nim zakończy, jest ono odporne na Przerażającą Obecność Starego Dinozaura przez następne 24 godziny."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak ugryzienia przeciwko dużemu lub mniejszemu stworzeniu, które chwyta. Jeśli atak trafi, stworzenie otrzymuje obrażenia od ugryzienia, cel zostaje połknięty, a chwytanie kończy się. Podczas połknięcia, stworzenie jest {@condition blinded} i {@condition restrained}, ma całkowitą osłonę przed atakami i innymi efektami spoza starszego dinozaura i otrzymuje 56 ({@damage 16d6}) obrażeń od kwasu na początku każdej tury starszego dinozaura. Jeśli podczas jednej tury starszy dinozaur otrzyma 60 lub więcej obrażeń od znajdującego się w nim stworzenia, to na koniec tej tury musi wykonać {@dc 20} rzutu ratunkowego na Konstytucję lub wypluć wszystkie połknięte stworzenia, które spadną {@condition prone} na obszar w promieniu 10 stóp od niego. Jeśli starszy dinozaur umrze, połknięte stworzenie nie jest już {@condition restrained} przez niego atakowane i może uciec od zwłok, poruszając się na odległość 20 stóp i wychodząc {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak pazurami, atak ogonem, atak skrzydłami lub płetwami."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Starszy dinozaur porusza się z połową swojej prędkości."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak gryzący lub używa swojej Jaskółki."
-					]
-				}
-			],
 			"traitTags": [
 				"Hold Breath",
 				"Legendary Resistances",
 				"Magic Resistance",
 				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
 			],
 			"actionTags": [
 				"Frightful Presence",
@@ -1037,10 +727,6 @@
 				"grappled",
 				"restrained"
 			],
-			"savingThrowForced": [
-				"constitution",
-				"wisdom"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1048,179 +734,73 @@
 		{
 			"name": "Elder Dinosaur (Tetzimoc, Primal Death)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Spiny Carapace",
+								"entries": [
+									"The elder dinosaur is covered in an armored carapace bristling with thick, sharp spines. Any creature that hits or misses Tetzimoc with a melee attack takes 7 ({@damage 2d6}) piercing damage."
+								]
+							},
+							{
+								"name": "Tail Spike Regrowth",
+								"entries": [
+									"The elder dinosaur has forty tail spikes. Used spikes regrow when the elder dinosaur finishes a long rest."
+								]
+							}
+						]
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail. It can use its tail spikes in place of any or all of those attacks, and it can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Claw",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}28 ({@damage 4d8 + 10}) slashing damage."
+									]
+								},
+								{
+									"name": "Horns",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d10 + 10}) piercing damage."
+									]
+								},
+								{
+									"name": "Tail",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 20 ft., one target. {@h}24 ({@damage 4d6 + 10}) piercing damage. If the target is a creature, it must succeed on a {@dc 20} Strength saving throw or be knocked {@condition prone}."
+									]
+								},
+								{
+									"name": "Tail Spikes",
+									"entries": [
+										"{@atk rw} {@hit 9} to hit, range 100/300 ft., two targets. {@h}7 ({@damage 2d6}) piercing damage."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Jeśli starszy dinozaur nie zdoła wykonać rzutu ratunkowego, może zdecydować się na sukces."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Starszy dinozaur ma przewagę w rzutach ratunkowych przeciwko zaklęciom i innym magicznym efektom."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Starszy dinozaur zadaje podwójne obrażenia przedmiotom i konstrukcjom."
-					]
-				},
-				{
-					"name": "Spiny Carapace",
-					"entries": [
-						"Starszy dinozaur jest pokryty pancerzem z grubymi, ostrymi kolcami. Każda istota, która trafi lub nie trafi Tetzimoca atakiem w walce wręcz, otrzymuje 7 ({@damage 2d6}) obrażeń od przebicia."
-					]
-				},
-				{
-					"name": "Tail Spike Regrowth",
-					"entries": [
-						"Starszy dinozaur ma czterdzieści kolców ogonowych. Zużyte kolce odrastają, gdy starszy dinozaur zakończy długi odpoczynek."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Starszy dinozaur może użyć swojej Przerażającej Obecności. Następnie wykonuje pięć ataków: jeden ugryzieniem, dwa pazurami, jeden rogami i jeden ogonem. Zamiast jednego lub wszystkich ataków może użyć kolców ogonowych, a zamiast ugryzienia może użyć Jaskółki."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 10 stóp, jeden cel. {@h}36 ({@damage 4d12 + 10}) obrażeń od przeszywających. Jeśli cel jest stworzeniem, otrzymuje {@condition grappled} (ucieczka {@dc 20}). Do czasu zakończenia tego chwytu, cel jest {@condition restrained}, a starszy dinozaur nie może ugryźć innego celu."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 15 stóp, jeden cel. {@h}28 ({@damage 4d8 + 10}) obrażeń od cięcia."
-					]
-				},
-				{
-					"name": "Horns",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 10 stóp, jeden cel. {@h}32 ({@damage 4d10 + 10}) obrażeń przebijających."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 20 stóp, jeden cel. {@h}24 ({@damage 4d6 + 10}) obrażeń od przeszywających. Jeśli celem jest stworzenie, musi udać mu się {@dc 20} rzut ratunkowy na Wytrzymałość albo zostanie powalony {@condition prone}."
-					]
-				},
-				{
-					"name": "Tail Spikes",
-					"entries": [
-						"{@atk rw} {@hit 9} do trafienia, zasięg 100/300 stóp, dwa cele. {@h}7 ({@damage 2d6}) obrażeń przebijających."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Każda istota wybrana przez starszego dinozaura w promieniu 120 stóp od niego i świadoma jego obecności musi wykonać {@dc 17} rzutu na Mądrość, aby przetrwać, albo stanie się {@condition frightened} na 1 minutę. Stworzenie może powtórzyć rzut ratujący na koniec każdej swojej tury, z minusem, jeśli starszy dinozaur znajduje się na linii wzroku, kończąc efekt na sobie w przypadku powodzenia. Jeśli rzut ratunkowy stworzenia się powiedzie lub efekt na nim zakończy, jest ono odporne na Przerażającą Obecność Starego Dinozaura przez następne 24 godziny."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak ugryzienia przeciwko dużemu lub mniejszemu stworzeniu, które chwyta. Jeśli atak trafi, stworzenie otrzymuje obrażenia od ugryzienia, cel zostaje połknięty, a chwytanie kończy się. Podczas połknięcia, stworzenie jest {@condition blinded} i {@condition restrained}, ma całkowitą osłonę przed atakami i innymi efektami spoza starszego dinozaura i otrzymuje 56 ({@damage 16d6}) obrażeń od kwasu na początku każdej tury starszego dinozaura. Jeśli podczas jednej tury starszy dinozaur otrzyma 60 lub więcej obrażeń od znajdującego się w nim stworzenia, to na koniec tej tury musi wykonać {@dc 20} rzutu ratunkowego na Konstytucję lub wypluć wszystkie połknięte stworzenia, które spadną {@condition prone} na obszar w promieniu 10 stóp od niego. Jeśli starszy dinozaur umrze, połknięte stworzenie nie jest już {@condition restrained} przez niego atakowane i może uciec od zwłok, poruszając się na odległość 20 stóp i wychodząc {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak pazurami, atak ogonem, atak skrzydłami lub płetwami."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Starszy dinozaur porusza się z połową swojej prędkości."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak gryzący lub używa swojej Jaskółki."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -1255,155 +835,32 @@
 		{
 			"name": "Elder Dinosaur (Zacama, Primal Calamity)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: three with its bite, {@footnote one with its stomp, and one with its tail|{@note This statblock does not have these actions available.}}. It can use its Swallow instead of a bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}. If the elder dinosaur has three targets {@condition restrained} in this way, it can't bite another target."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Jeśli starszy dinozaur nie zdoła wykonać rzutu ratunkowego, może zdecydować się na sukces."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Starszy dinozaur ma przewagę w rzutach ratunkowych przeciwko zaklęciom i innym magicznym efektom."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Starszy dinozaur zadaje podwójne obrażenia przedmiotom i konstrukcjom."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Starszy dinozaur może użyć swojej Przerażającej Obecności. Następnie wykonuje pięć ataków: trzy gryzieniem, jeden tupnięciem i jeden ogonem. Zamiast ugryzienia może użyć Połknięcia."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 10 stóp, jeden cel. {@h}36 ({@damage 4d12 + 10}) obrażeń od przeszywających. Jeśli cel jest stworzeniem, otrzymuje {@condition grappled} (ucieczka {@dc 20}). Do czasu zakończenia tego chwytu, cel ma {@condition restrained}. Jeśli starszy dinozaur ma w ten sposób trzy cele {@condition restrained}, nie może ugryźć kolejnego celu."
-					]
-				},
-				{
-					"name": "Stomp",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 5 stóp, jeden cel. {@h}46 ({@damage 8d8 + 10}) obrażeń od obrażeń kłutych."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 20 stóp, jeden cel. {@h}38 ({@damage 8d6 + 10}) obrażeń od obrażeń kłutych. Jeśli celem jest stworzenie, musi udać mu się rzut ratunkowy na {@dc 20} Wytrzymałość lub zostanie powalony {@condition prone}."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Każda istota wybrana przez starszego dinozaura w promieniu 120 stóp od niego i świadoma jego obecności musi wykonać {@dc 17} rzutu na Mądrość, aby przetrwać, albo stanie się {@condition frightened} na 1 minutę. Stworzenie może powtórzyć rzut ratujący na koniec każdej swojej tury, z minusem, jeśli starszy dinozaur znajduje się na linii wzroku, kończąc efekt na sobie w przypadku powodzenia. Jeśli rzut ratunkowy stworzenia się powiedzie lub efekt na nim zakończy, jest ono odporne na Przerażającą Obecność Starego Dinozaura przez następne 24 godziny."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak ugryzienia przeciwko dużemu lub mniejszemu stworzeniu, które chwyta. Jeśli atak trafi, stworzenie otrzymuje obrażenia od ugryzienia, cel zostaje połknięty, a chwytanie kończy się. Podczas połknięcia, stworzenie jest {@condition blinded} i {@condition restrained}, ma całkowitą osłonę przed atakami i innymi efektami spoza starszego dinozaura i otrzymuje 56 ({@damage 16d6}) obrażeń od kwasu na początku każdej tury starszego dinozaura. Jeśli podczas jednej tury starszy dinozaur otrzyma 60 lub więcej obrażeń od znajdującego się w nim stworzenia, to na koniec tej tury musi wykonać {@dc 20} rzutu ratunkowego na Konstytucję lub wypluć wszystkie połknięte stworzenia, które spadną {@condition prone} na obszar w promieniu 10 stóp od niego. Jeśli starszy dinozaur umrze, połknięte stworzenie nie jest już {@condition restrained} przez niego atakowane i może uciec od zwłok, poruszając się na odległość 20 stóp i wychodząc {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak pazurami, atak ogonem, atak skrzydłami lub płetwami."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Starszy dinozaur porusza się z połową swojej prędkości."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak gryzący lub używa swojej Jaskółki."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -1422,7 +879,6 @@
 				"blinded",
 				"frightened",
 				"grappled",
-				"prone",
 				"restrained"
 			],
 			"savingThrowForced": [
@@ -1437,164 +893,50 @@
 		{
 			"name": "Elder Dinosaur (Zetalpa, Primal Dawn)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
-			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, and two with its wings. It can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Claw",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}28 ({@damage 4d8 + 10}) slashing damage."
+									]
+								},
+								{
+									"name": "Wing",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 20 ft., one target. {@h}28 ({@damage 4d8 + 10}) bludgeoning damage."
+									]
+								}
+							]
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
 			},
 			"speed": {
 				"walk": 20,
 				"fly": 60
 			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
 			"resist": [
 				"radiant"
-			],
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Jeśli starszy dinozaur nie zdoła wykonać rzutu ratunkowego, może zdecydować się na sukces."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Starszy dinozaur ma przewagę w rzutach ratunkowych przeciwko zaklęciom i innym magicznym efektom."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Starszy dinozaur zadaje podwójne obrażenia przedmiotom i konstrukcjom."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Starszy dinozaur może użyć swojej Przerażającej Obecności. Następnie wykonuje pięć ataków: jeden gryzieniem, dwa pazurami i dwa skrzydłami. Zamiast gryzienia może użyć Jaskółki."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 10 stóp, jeden cel. {@h}36 ({@damage 4d12 + 10}) obrażeń od przeszywających. Jeśli cel jest stworzeniem, otrzymuje {@condition grappled} (ucieczka {@dc 20}). Do czasu zakończenia tego chwytu, cel jest {@condition restrained}, a starszy dinozaur nie może ugryźć innego celu."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 15 stóp, jeden cel. {@h}28 ({@damage 4d8 + 10}) obrażeń od cięcia."
-					]
-				},
-				{
-					"name": "Wing",
-					"entries": [
-						"{@atk mw} {@hit 19} do trafienia, zasięg 20 stóp, jeden cel. {@h}28 ({@damage 4d8 + 10}) obrażeń od obrażeń kłutych."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 11} do trafienia, zasięg 15 stóp, jeden cel. {@h}25 ({@damage 4d8 + 7}) obrażeń od uderzeń."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Każda istota wybrana przez starszego dinozaura w promieniu 120 stóp od niego i świadoma jego obecności musi wykonać {@dc 17} rzutu na Mądrość, aby przetrwać, albo stanie się {@condition frightened} na 1 minutę. Stworzenie może powtórzyć rzut ratujący na koniec każdej swojej tury, z minusem, jeśli starszy dinozaur znajduje się na linii wzroku, kończąc efekt na sobie w przypadku powodzenia. Jeśli rzut ratunkowy stworzenia się powiedzie lub efekt na nim zakończy, jest ono odporne na Przerażającą Obecność Starego Dinozaura przez następne 24 godziny."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak ugryzienia przeciwko dużemu lub mniejszemu stworzeniu, które chwyta. Jeśli atak trafi, stworzenie otrzymuje obrażenia od ugryzienia, cel zostaje połknięty, a chwytanie kończy się. Podczas połknięcia, stworzenie jest {@condition blinded} i {@condition restrained}, ma całkowitą osłonę przed atakami i innymi efektami spoza starszego dinozaura i otrzymuje 56 ({@damage 16d6}) obrażeń od kwasu na początku każdej tury starszego dinozaura. Jeśli podczas jednej tury starszy dinozaur otrzyma 60 lub więcej obrażeń od znajdującego się w nim stworzenia, to na koniec tej tury musi wykonać {@dc 20} rzutu ratunkowego na Konstytucję lub wypluć wszystkie połknięte stworzenia, które spadną {@condition prone} na obszar w promieniu 10 stóp od niego. Jeśli starszy dinozaur umrze, połknięte stworzenie nie jest już {@condition restrained} przez niego atakowane i może uciec od zwłok, poruszając się na odległość 20 stóp i wychodząc {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak pazurami, atak ogonem, atak skrzydłami lub płetwami."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Starszy dinozaur porusza się z połową swojej prędkości."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Starszy dinozaur wykonuje jeden atak gryzący lub używa swojej Jaskółki."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
 			],
 			"actionTags": [
 				"Frightful Presence",
@@ -1617,10 +959,6 @@
 				"grappled",
 				"restrained"
 			],
-			"savingThrowForced": [
-				"constitution",
-				"wisdom"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1641,7 +979,8 @@
 				}
 			},
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Fire Guardian",
@@ -1663,6 +1002,9 @@
 		},
 		{
 			"name": "Frilled Deathspitter",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 30,
 			"size": [
@@ -1748,6 +1090,9 @@
 		},
 		{
 			"name": "Gishath, Sun's Avatar",
+			"group": [
+				"Dinosaurs"
+			],
 			"isNamedCreature": true,
 			"source": "PSX",
 			"page": 32,
@@ -1910,6 +1255,9 @@
 		},
 		{
 			"name": "Hammerskull",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 29,
 			"_copy": {
@@ -1935,16 +1283,28 @@
 				"name": "Harpy",
 				"source": "MM",
 				"_mod": {
-					"action": {
-						"mode": "replaceArr",
-						"replace": "Club",
-						"items": {
-							"name": "Bite",
-							"entries": [
-								"{@atk mw} {@hit 3} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d4 + 1}) obrażeń od cięcia. Jeśli celem jest stworzenie, musi mu się udać rzut na przetrwanie Konstytucji DC 11 lub zachorować. Dopóki choroba nie zostanie wyleczona, cel nie może odzyskać punktów życia, chyba że za pomocą magicznych środków, a jego maksymalna liczba punktów życia spada o 3 ({@dice 1d6}) co 24 godziny. Jeśli w wyniku tej choroby maksymalna liczba punktów trafień spadnie do 0, cel umiera."
-							]
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Club",
+							"items": {
+								"name": "Bite",
+								"entries": [
+									"{@atk mw} {@hit 3} do trafienia, zasięg 5 stóp, jeden cel. {@h}3 ({@damage 1d4 + 1}) obrażeń od cięcia. Jeśli celem jest stworzenie, musi mu się udać rzut na przetrwanie Konstytucji DC 11 lub zachorować. Dopóki choroba nie zostanie wyleczona, cel nie może odzyskać punktów życia, chyba że za pomocą magicznych środków, a jego maksymalna liczba punktów życia spada o 3 ({@dice 1d6}) co 24 godziny. Jeśli w wyniku tej choroby maksymalna liczba punktów trafień spadnie do 0, cel umiera."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"Harpia wykonuje dwa ataki: jeden pazurami i jeden ukąszeniem."
+								]
+							}
 						}
-					}
+					]
 				}
 			},
 			"hasToken": true,
@@ -2018,6 +1378,9 @@
 		},
 		{
 			"name": "Sailback",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 30,
 			"_copy": {
@@ -2322,7 +1685,8 @@
 				}
 			},
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Trilobite (Giant)",
@@ -2340,7 +1704,8 @@
 				}
 			},
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Tyrant",
@@ -2362,18 +1727,6 @@
 						"with": "tyrant"
 					}
 				}
-			},
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Velociraptor",
-			"source": "PSX",
-			"page": 30,
-			"_copy": {
-				"name": "Velociraptor",
-				"source": "VGM"
 			},
 			"hasToken": true,
 			"hasFluff": true,

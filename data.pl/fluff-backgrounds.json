@@ -655,34 +655,6 @@
 			]
 		},
 		{
-			"name": "Dissenter",
-			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"Nawet w starannie zbudowanym i zadbanym mieście-państwie Naktamun, w obecności pięciu bogów, niektórzy ludzie buntują się przeciwko doktrynom Boga-Faraona. Oczywiście nie kwestionują oni istnienia bogów, ponieważ są oni widoczni niemal codziennie na ulicach miasta. Nie kwestionują też faktu istnienia życia po śmierci, które jest widoczne w namaszczonych mumiach, które ich otaczają, a także w mumiach grasujących poza Hekmą. Ci dezerterzy po prostu nie chcą podążać wyznaczoną drogą życia, która prowadzi do wspaniałego życia pozagrobowego.",
-								"Niektórych przeciwników napędza strach, nie chcą narażać się na brutalną śmierć w czasie prób (lub w czasie treningu przed próbami). Niektórych porusza sumienie, nie chcą zabijać swoich kolegów z uprawy podczas prób. Bo choć nie mogą zaprzeczyć, że bogowie istnieją, mogą zaprzeczyć, że bogowie są sprawiedliwi - i mogą walczyć, aby udowodnić, że nie należy słuchać nakazów niesprawiedliwego boga. Niektórzy wierzą, że jeden bóg (prawdopodobnie Bontu) zepsuł proces prób i drogę do życia pozagrobowego. Inni trafnie wyczuwają, że bóg-faraon nie miał na uwadze dobra ludzi, kiedy zarządzał ich społeczeństwem.",
-								"Postać, która została zidentyfikowana jako innowierca, traci przywilej cechy tła inicjusza lub wezyra. W jej miejsce postać zyskuje cechę Schronienie Dysydentów."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/PSA/Dissenter.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Dragon Casualty",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -1301,7 +1273,7 @@
 							"type": "entries",
 							"entries": [
 								"Jesteś wtajemniczony, na drodze do ukończenia prób pięciu bogów w nadziei na uzyskanie chwalebnej śmierci w ostatecznej Próbie Zeala. Kombinacja twoich naturalnych predyspozycji, potrzeb twojej uprawy i oceny twoich nauczycieli z czasów, gdy byłeś akolitą, sprawiła, że skupiłeś się na szkoleniu w jednej konkretnej dziedzinie - walce wręcz, walce na odległość lub czarach. Ale tylko dobrze wykształcony wtajemniczony może zostać uznany za godnego życia pozagrobowego.",
-								"Jeśli jesteś specjalistą od walki wręcz, rozważ klasy barbarzyńcy, wojownika, mnicha, paladyna lub łotrzyka. Jeśli specjalizujesz się w walce na odległość, możesz być wojownikiem, strażnikiem lub łotrzykiem. Jeśli specjalizujesz się w rzucaniu czarów, możesz być bardem, czarodziejem lub czarnoksiężnikiem. Poza tym początkowym wyborem, możesz rozważyć multiklasowanie lub użycie featów, aby zwiększyć swoje umiejętności we wszystkich trzech dziedzinach."
+								"If you are a hand-to-hand specialist, consider the {@class barbarian}, {@class fighter}, {@class monk}, {@class paladin}, or {@class rogue} classes. As a long-range combat specialist, you might be a {@class fighter}, a {@class ranger}, or a {@class rogue}. If you are a spellcasting specialist, you might be a {@class bard}, {@class sorcerer}, or {@class wizard}. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas."
 							]
 						}
 					]
@@ -1313,16 +1285,61 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate.webp"
-					}
+					},
+					"title": "Unwavering Initiate",
+					"credit": "Greg Opalinski"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate2.webp"
-					}
+					},
+					"title": "Gust Walker",
+					"credit": "Jason Rainville"
 				}
 			]
+		},
+		{
+			"name": "Initiate (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Initiate",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Nawet w starannie zbudowanym i zadbanym mieście-państwie Naktamun, w obecności pięciu bogów, niektórzy ludzie buntują się przeciwko doktrynom Boga-Faraona. Oczywiście nie kwestionują oni istnienia bogów, ponieważ są oni widoczni niemal codziennie na ulicach miasta. Nie kwestionują też faktu istnienia życia po śmierci, które jest widoczne w namaszczonych mumiach, które ich otaczają, a także w mumiach grasujących poza Hekmą. Ci dezerterzy po prostu nie chcą podążać wyznaczoną drogą życia, która prowadzi do wspaniałego życia pozagrobowego.",
+										"Niektórych przeciwników napędza strach, nie chcą narażać się na brutalną śmierć w czasie prób (lub w czasie treningu przed próbami). Niektórych porusza sumienie, nie chcą zabijać swoich kolegów z uprawy podczas prób. Bo choć nie mogą zaprzeczyć, że bogowie istnieją, mogą zaprzeczyć, że bogowie są sprawiedliwi - i mogą walczyć, aby udowodnić, że nie należy słuchać nakazów niesprawiedliwego boga. Niektórzy wierzą, że jeden bóg (prawdopodobnie Bontu) zepsuł proces prób i drogę do życia pozagrobowego. Inni trafnie wyczuwają, że bóg-faraon nie miał na uwadze dobra ludzi, kiedy zarządzał ich społeczeństwem.",
+										"Postać, która została zidentyfikowana jako innowierca, traci przywilej cechy tła inicjusza lub wezyra. W jej miejsce postać zyskuje cechę Schronienie Dysydentów.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Inquisitor",
@@ -1346,7 +1363,9 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSI/Inquisitor.webp"
-					}
+					},
+					"title": "Moorland Inquisitor",
+					"credit": "David Palumbo"
 				}
 			]
 		},
@@ -2316,7 +2335,7 @@
 							"type": "entries",
 							"entries": [
 								"Jesteś wezyrem, sługą swojego boga. Wykonujesz zadania, które są niezbędne do ułatwienia podróży wtajemniczonych, dzięki czemu bogowie nagradzają cię wejściem w zaświaty z błogosławieństwem boga-faraona. Masz nadzieję osiągnąć najbardziej zaszczytny status w życiu pozagrobowym, będąc jak najlepszym sługą swojego boga.",
-								"Jako wezyr możesz mieć dowolną klasę, ale szczególnie prawdopodobne jest, że będziesz klerykiem, druidem (zwłaszcza jeśli służysz Rhonasowi) lub paladynem."
+								"As a vizier, you can have any class, but you are especially likely to be a {@class cleric}, a {@class druid} (particularly if you serve Rhonas), or a {@class paladin}."
 							]
 						}
 					]
@@ -2328,9 +2347,52 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Vizier.webp"
-					}
+					},
+					"title": "Shadowstorm Vizier",
+					"credit": "Yongjae Choi"
 				}
 			]
+		},
+		{
+			"name": "Vizier (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Vizier",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Nawet w starannie zbudowanym i zadbanym mieście-państwie Naktamun, w obecności pięciu bogów, niektórzy ludzie buntują się przeciwko doktrynom Boga-Faraona. Oczywiście nie kwestionują oni istnienia bogów, ponieważ są oni widoczni niemal codziennie na ulicach miasta. Nie kwestionują też faktu istnienia życia po śmierci, które jest widoczne w namaszczonych mumiach, które ich otaczają, a także w mumiach grasujących poza Hekmą. Ci dezerterzy po prostu nie chcą podążać wyznaczoną drogą życia, która prowadzi do wspaniałego życia pozagrobowego.",
+										"Niektórych przeciwników napędza strach, nie chcą narażać się na brutalną śmierć w czasie prób (lub w czasie treningu przed próbami). Niektórych porusza sumienie, nie chcą zabijać swoich kolegów z uprawy podczas prób. Bo choć nie mogą zaprzeczyć, że bogowie istnieją, mogą zaprzeczyć, że bogowie są sprawiedliwi - i mogą walczyć, aby udowodnić, że nie należy słuchać nakazów niesprawiedliwego boga. Niektórzy wierzą, że jeden bóg (prawdopodobnie Bontu) zepsuł proces prób i drogę do życia pozagrobowego. Inni trafnie wyczuwają, że bóg-faraon nie miał na uwadze dobra ludzi, kiedy zarządzał ich społeczeństwem.",
+										"Postać, która została zidentyfikowana jako innowierca, traci przywilej cechy tła inicjusza lub wezyra. W jej miejsce postać zyskuje cechę Schronienie Dysydentów.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Volstrucker Agent",

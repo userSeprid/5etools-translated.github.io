@@ -7111,6 +7111,23 @@
 					"anyArtisansTool": 1
 				}
 			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				}
+			],
 			"entries": [
 				"Opanowałeś sztukę wymyślania, ulepszania i konstruowania w locie. Możesz wykorzystywać swoje talenty do tworzenia natychmiastowych, krótkotrwałych efektów magicznych, podobnych do zaklęć, jeśli tylko masz czas i odpowiednią ilość eteru.",
 				"Po wybraniu tego wyczynu opanowujesz dwa efekty magiczne, z których każdy odtwarza efekt zaklęcia 1. poziomu, posiadającego znacznik rytuału. Zaklęcia te mogą pochodzić z dowolnej listy klas, ale inteligencja jest dla nich twoją umiejętnością rzucania czarów.",
@@ -8146,7 +8163,8 @@
 				"Umiesz tworzyć {@creature servo|psk|servos}-małe konstrukty, które pełnią rolę osobistych asystentów. Możesz rzucić zaklęcie {@spell find familiar} jako rytuał, tworząc {@creature servo|psk}, który będzie służył jako twój przyjaciel zamiast zwierzęcia. Statystyki {@creature servo|psk} znajdują się w sekcji \"Stworzenia artefaktyczne\" tego dokumentu. Pod każdym innym względem seropoznanie działa tak, jak opisano w zaklęciu {@spell find familiar}.",
 				"Możesz komunikować się telepatycznie z serwomechanizmem i postrzegać go za pomocą jego zmysłów, o ile znajdujecie się na tej samej płaszczyźnie egzystencji. Możesz mówić przez serwo swoim własnym głosem.",
 				"Dodatkowo, kiedy wykonujesz akcję {@action Attack}, możesz zrezygnować z jednego z własnych ataków, aby umożliwić swojemu serwoznajomemu wykonanie jednego własnego ataku."
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Shadow Touched",
