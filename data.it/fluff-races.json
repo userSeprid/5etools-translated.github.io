@@ -409,20 +409,31 @@
 			"name": "Aetherborn",
 			"source": "PSK",
 			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"A day not spent indulging the senses is a day wasted"
+					]
+				},
 				"Quando gli eventi di una vita sono ridotti quasi a nulla, ogni attimo fugace deve essere assaporato e svuotato di ogni goccia di piacere che può offrire. Questa è la filosofia che informa le vite e le menti dei nati nell'aldilà. Avendo a disposizione solo pochi anni - o a volte solo pochi mesi - di vita, ogni aetherborn considera il tempo estremamente prezioso. Ogni momento speso in modo non piacevole è un momento sprecato. Sebbene gli aetherborn differiscano per pulsioni e piaceri, quasi tutti condividono il desiderio di sfruttare al massimo il breve tempo a loro disposizione.",
 				"Gli Aetherborn nascono spontaneamente come parte del processo di raffinamento dell'etere. I loro corpi e le loro menti sono apparentemente formati dall'interazione tra gli elementi volatili dell'etere che vengono rimossi durante la raffinazione e le impressioni psichiche create dalle persone coinvolte nel processo. Ma ogni nato dall'etere è un individuo unico, non una semplice copia della mente e della forma di un'altra persona. Questa razza è poco conosciuta e pochi aetherborn sono disposti a sprecare parte della loro breve vita per permettere agli studiosi vedalken di studiare le loro caratteristiche biologiche e psicologiche.",
 				{
 					"type": "entries",
-					"name": "Aetherborn and Gender",
 					"entries": [
-						"Gli Aetherborn sono uno strano sottoprodotto vivente del processo di raffinazione dell'etere, fusi in forma umanoide ma privi delle qualità biologiche delle altre razze. Non mangiano e non dormono, non si riproducono e non hanno caratteristiche fisiche sessuali. Il linguaggio che categorizza le persone in categorie maschili o femminili viene meno quando si parla di aetherborn. La maggior parte degli aetherborn preferisce che gli altri usino il pronome \"loro\" per riferirsi a loro, poiché non attribuisce un genere che non possiedono. Solo pochi preferiscono \"lui\" o \"lei\", avendo scelto di adottare un genere.Gli studiosi di vedalken studiano le loro caratteristiche biologiche e psicologiche. di loro condividono questo desiderio di sfruttare al massimo il breve tempo che viene loro concesso."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Aetherborn Politics",
-					"entries": [
-						"Il rapporto tra gli aetherborn e il Consolato è complicato. Da un lato, gli aetherborn capiscono che la loro razza non esisterebbe senza le operazioni di raffinazione dell'etere del Consolato, quindi sentono almeno una certa motivazione a garantire che tali operazioni continuino a svolgersi senza problemi. D'altra parte, pochi aetherborn hanno pazienza per le noiose e macchinose politiche e regolamentazioni del Consolato, il che li rende almeno un po' solidali con la filosofia dei rinnegati. In genere, gli aetherborn sono attratti da una parte o dall'altra più dal richiamo dell'eccitazione e del divertimento che da convinzioni politiche serie. Solo pochi preferiscono \"lui\" o \"lei\", avendo scelto di adottare un genere.Gli studiosi di vedalken studiano le loro caratteristiche biologiche e psicologiche. di loro condividono questo desiderio di sfruttare al massimo il breve tempo che viene loro concesso."
+						{
+							"type": "entries",
+							"name": "Aetherborn and Gender",
+							"entries": [
+								"Gli Aetherborn sono uno strano sottoprodotto vivente del processo di raffinazione dell'etere, fusi in forma umanoide ma privi delle qualità biologiche delle altre razze. Non mangiano e non dormono, non si riproducono e non hanno caratteristiche fisiche sessuali. Il linguaggio che categorizza le persone in categorie maschili o femminili viene meno quando si parla di aetherborn. La maggior parte degli aetherborn preferisce che gli altri usino il pronome \"loro\" per riferirsi a loro, poiché non attribuisce un genere che non possiedono. Solo pochi preferiscono \"lui\" o \"lei\", avendo scelto di adottare un genere.Gli studiosi di vedalken studiano le loro caratteristiche biologiche e psicologiche. di loro condividono questo desiderio di sfruttare al massimo il breve tempo che viene loro concesso."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Aetherborn Politics",
+							"entries": [
+								"Il rapporto tra gli aetherborn e il Consolato è complicato. Da un lato, gli aetherborn capiscono che la loro razza non esisterebbe senza le operazioni di raffinazione dell'etere del Consolato, quindi sentono almeno una certa motivazione a garantire che tali operazioni continuino a svolgersi senza problemi. D'altra parte, pochi aetherborn hanno pazienza per le noiose e macchinose politiche e regolamentazioni del Consolato, il che li rende almeno un po' solidali con la filosofia dei rinnegati. In genere, gli aetherborn sono attratti da una parte o dall'altra più dal richiamo dell'eccitazione e del divertimento che da convinzioni politiche serie. Solo pochi preferiscono \"lui\" o \"lei\", avendo scelto di adottare un genere.Gli studiosi di vedalken studiano le loro caratteristiche biologiche e psicologiche. di loro condividono questo desiderio di sfruttare al massimo il breve tempo che viene loro concesso."
+							]
+						}
 					]
 				}
 			],
@@ -432,14 +443,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Aetherborn.webp"
-					}
+					},
+					"title": "On Kaladesh, an aether-powered {@item arrow of slaying (*)|DMG|arrow of slaying} can be launched without a bow.",
+					"credit": "Tidy Conclusion by Bastien L. Deharme"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Aetherborn2.webp"
-					}
+					},
+					"title": "Essence Extraction",
+					"credit": "Min Yum"
 				}
 			]
 		},
@@ -595,9 +610,9 @@
 							"type": "entries",
 							"name": "Combat Classes",
 							"entries": [
-								"Gli incantatori sono comuni tra gli aven dalla testa d'ibis, attirati a seguire gli insegnamenti di Kefnet. La loro somiglianza fisica con il dio della conoscenza si riflette nella disciplina metallica, nella concentrazione e nella sicurezza per cui gli incantatori aven sono noti. Esercitano la magia dell'aria, del vento e a volte dell'acqua per abbattere i loro nemici, migliorare il loro volo e contrastare gli attacchi nemici. Gli aven dalla testa di falco che seguono il percorso del mago hanno maggiori probabilità di imparare la magia basata sulla sabbia che può intorbidire l'aria, far esplodere i nemici o seppellirli in dune viventi.",
-								"Gli Aven dalla testa di falco sono spesso attratti dalle tecniche di combattimento a lungo raggio, sia che si tratti del giavellotto, l'arma preferita di molti, dell'arco o di altre armi da lancio. Qualunque sia l'arma che usano, gli aven si librano e si librano in aria sopra la mischia, cercando il momento opportuno per colpire esattamente nel posto giusto. In linea con gli insegnamenti del dio della solidarietà, spesso volano in formazioni strette con altri aven nei loro raccolti, sostenendosi e proteggendosi a vicenda. Gli aven sono molto orgogliosi della precisione dei loro attacchi, facendo affidamento sulla loro visione acuta e sui loro punti di vista superiori. Considerano la punta affilata di una {@item javelin|phb} o di una {@item arrow|phb} come un simbolo del loro amore per la precisione, e alcuni iniziati mantengono collezioni accuratamente curate di punte di lancia o di freccia.",
-								"Un numero relativamente piccolo di aven di entrambe le varietà finisce per concentrarsi sul combattimento corpo a corpo. Anche lì, usano la loro capacità di volare con grande vantaggio, spesso piombando sui loro nemici da una grande altezza. La velocità e la potenza di un colpo sferrato da un aven in picchiata può essere assolutamente devastante, ma tale colpo comporta un rischio enorme sia per l'aven che per il bersaglio. Un aven che non riesce a tirarsi su dal tuffo in tempo può subire ferite anche peggiori del bersaglio dell'attacco. I vendicatori spesso minimizzano questo rischio lanciando {@item javelin|phb|javelins} mentre si tuffano, per poi tirarsi su presto dopo un lancio riuscito."
+								"Spellcasters are common among {@race Aven (Ibis-Headed)|PSA|ibis-headed aven} drawn to follow the teachings of Kefnet. Their physical resemblance to the god of knowledge is reflected in the metal discipline, focus, and confidence for which aven spellcasters are known. They wield magic of air, wind, and sometimes water to buffet their foes, enhance their own flight, and counter enemy attacks. Hawk-headed aven who follow the path of the mage are more likely to learn sand-based magic that can cloud the air, blast their foes, or bury enemies in living dunes.",
+								"{@race Aven (Hawk-Headed)|PSA|Hawk-headed aven} are often drawn to master techniques of long-range combat, whether the {@item javelin|PHB} that is the preferred weapon of many, the bow, or other thrown weapons. Whatever weapon they use, aven hover and swoop in the air above the fray, seeking the opportune moment to strike in exactly the right place. In line with the teachings of the god of solidarity, they often fly in tight formations with other aven in their crops, supporting and protecting each other. Aven take great pride in the precision of their attacks, relying on their keen vision and superior vantage points. They view the sharp tip of a {@item javelin|PHB} or {@item arrow|PHB} as a symbol of their love for precision, and some initiates maintain carefully tended collections of spearheads or arrowheads.",
+								"A relatively small number of aven of both varieties end up focusing on hand-to-hand combat. Even there, they use their ability to fly to great advantage, often swooping down on their foes from a great height. The speed and power of a blow from a diving aven can be utterly devastating, but such a strike poses a tremendous risk to the aven as well as the target. An aven who fails to pull up from the dive in time can suffer even worse injuries than the target of the attack. Aven often minimize this risk by hurling {@item javelin|PHB|javelins} while they dive, then pulling up early after a successful throw."
 							]
 						}
 					]
@@ -609,14 +624,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Aven.webp"
-					}
+					},
+					"title": "Tah-Crop Elite",
+					"credit": "Raoul Vitale"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Aven2.webp"
-					}
+					},
+					"title": "Companion of the Trials",
+					"credit": "Aaron Miller"
 				}
 			]
 		},
@@ -634,7 +653,9 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSD/Aven.webp"
-					}
+					},
+					"title": "Aven Sentry",
+					"credit": "Dan Scott"
 				}
 			]
 		},
@@ -655,6 +676,9 @@
 									"entries": [
 										"Seguendo l'esempio di Oketra, gli aven dalla testa di falco si concentrano spesso sulle tecniche di combattimento a lungo raggio. La maggior parte preferisce il {@item javelin|phb|javelins}, ma alcuni sono abili con archi, {@item spear|phb|spears} e {@item handaxe|phb|throwing axes}."
 									]
+								},
+								{
+									"type": "hr"
 								}
 							]
 						}
@@ -679,6 +703,9 @@
 									"entries": [
 										"La maggior parte degli aven con la testa di ibis, attratti dagli insegnamenti di Kefnet, sono specializzati nell'incantesimo. Sono molto orgogliosi di tutte le qualità che condividono con il dio della conoscenza: non solo le loro teste aviarie, ma anche il loro spirito veloce, la fiducia in se stessi, l'astuzia e l'abilità nell'incantesimo."
 									]
+								},
+								{
+									"type": "hr"
 								}
 							]
 						}
@@ -691,7 +718,9 @@
 								"href": {
 									"type": "internal",
 									"path": "races/PSA/Aven (Ibis-Headed).webp"
-								}
+								},
+								"title": "Zenith Seeker",
+								"credit": "Jason Kang"
 							}
 						]
 					}
@@ -1716,15 +1745,26 @@
 			"name": "Dwarf (Kaladesh)",
 			"source": "PSK",
 			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"It's dwarf built. There is no finer mark of quality."
+					]
+				},
 				"Per gli artigiani di Kaladesh, la bellezza di un dispositivo è importante quasi quanto la sua funzione. Tuttavia, artisti diversi hanno definizioni diverse di bellezza, e per la maggior parte dei nani il più alto segno di bellezza è la qualità. Non c'è niente di più bello di una macchina che dura nel tempo, che funziona perfettamente, con una manutenzione minima, nonostante il passare degli anni.",
 				"I nani non capiscono la pigrizia o le scorciatoie. Come una macchina deve funzionare sempre senza intoppi, così un artigiano deve lavorare con costanza e attenzione. I nani sono orgogliosi della loro etica lavorativa e aborriscono qualsiasi atteggiamento o comportamento che possa minare la qualità del loro lavoro. Sono più scrupolosi che veloci, e anche se il lavoro di un nano può richiedere più tempo per essere completato, la sua qualità rende il tempo utile. Se un lavoro deve essere fatto, un nano si assicurerà che sia fatto correttamente. E quando un nano ripara una macchina, questa funzionerà bene come quando è stata costruita, se non meglio, e durerà nel tempo.",
 				"Tra i popoli di altre razze, i nani hanno la reputazione di essere assolutamente impavidi. Ciò è dovuto in gran parte al fatto che il loro lavoro li vede spesso scalare edifici altissimi o appendersi alla parte inferiore di dirigibili. Tuttavia, lungi dall'essere imprudenti, i nani entrano in qualsiasi situazione potenzialmente pericolosa con delle solide protezioni, preparati a fondo per evitare qualsiasi incidente. Con un'incrollabile fiducia nella qualità delle imbracature, delle impalcature e del lavoro manuale, un nano non ha bisogno di temere di cadere.",
 				{
 					"type": "entries",
-					"name": "Dwarf Politics",
 					"entries": [
-						"I nani gravitano dove c'è lavoro. Di conseguenza, molti nani apprezzano il Consolato come fonte inesauribile di opportunità di lavoro. Da parte sua, il Consolato apprezza i nani per il loro approccio scrupoloso e perfezionista alla costruzione e alla manutenzione. Di conseguenza, i nani sono impiegati a ogni livello del governo del Consolato, compresi i rappresentanti dei Custodi Illuminati, i consoli stessi. I nani costruttori mantengono il funzionamento dei macchinari delle città, mentre i nani esecutori proteggono la proprietà e aiutano a mantenere la pace. Tuttavia, è il potenziale per la realizzazione di grandi cose, più di qualsiasi inclinazione filosofica, che lega la maggior parte dei nani al Consolato.ork come quando fu costruito, se non meglio, e durerà.",
-						"I nani non sono tipicamente attratti dalla politica, ma alcuni si oppongono a ciò che considerano una costruzione approssimativa realizzata nelle fonderie del Consolato. La produzione di massa sulla scala degli sforzi del Consolato è un affronto agli ideali di vero artigianato, sostengono, e coloro che sono più offesi da questo insulto a volte si schierano con gruppi rinnegati.moothly, mentre gli esecutori nani proteggono la proprietà e aiutano a mantenere la pace. Tuttavia, è il potenziale per la realizzazione di grandi cose, più di qualsiasi inclinazione filosofica, che lega la maggior parte dei nani al Consolato.ork come quando fu costruito, se non meglio, e durerà."
+						{
+							"type": "entries",
+							"name": "Dwarf Politics",
+							"entries": [
+								"I nani gravitano dove c'è lavoro. Di conseguenza, molti nani apprezzano il Consolato come fonte inesauribile di opportunità di lavoro. Da parte sua, il Consolato apprezza i nani per il loro approccio scrupoloso e perfezionista alla costruzione e alla manutenzione. Di conseguenza, i nani sono impiegati a ogni livello del governo del Consolato, compresi i rappresentanti dei Custodi Illuminati, i consoli stessi. I nani costruttori mantengono il funzionamento dei macchinari delle città, mentre i nani esecutori proteggono la proprietà e aiutano a mantenere la pace. Tuttavia, è il potenziale per la realizzazione di grandi cose, più di qualsiasi inclinazione filosofica, che lega la maggior parte dei nani al Consolato.ork come quando fu costruito, se non meglio, e durerà.",
+								"I nani non sono tipicamente attratti dalla politica, ma alcuni si oppongono a ciò che considerano una costruzione approssimativa realizzata nelle fonderie del Consolato. La produzione di massa sulla scala degli sforzi del Consolato è un affronto agli ideali di vero artigianato, sostengono, e coloro che sono più offesi da questo insulto a volte si schierano con gruppi rinnegati.moothly, mentre gli esecutori nani proteggono la proprietà e aiutano a mantenere la pace. Tuttavia, è il potenziale per la realizzazione di grandi cose, più di qualsiasi inclinazione filosofica, che lega la maggior parte dei nani al Consolato.ork come quando fu costruito, se non meglio, e durerà."
+							]
+						}
 					]
 				}
 			],
@@ -1734,14 +1774,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Dwarf.webp"
-					}
+					},
+					"title": "Inspired Charge",
+					"credit": "Deruchenko Alexander"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Dwarf2.webp"
-					}
+					},
+					"title": "Acrobatic Maneuver",
+					"credit": "Winona Nelson"
 				}
 			]
 		},
@@ -2282,6 +2326,12 @@
 			"name": "Elf (Kaladesh)",
 			"source": "PSK",
 			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Everything is connected, and aether flows through it all."
+					]
+				},
 				"Il movimento dell'etere attraverso il mondo è visibile e ovvio laddove scorre in fiumi incandescenti attraverso il cielo, spazia su pianure scolpite o si riversa attraverso grandi condutture urbane. Ma gli elfi di Kaladesh sono in sintonia unica con il flusso dell'etere in tutto il piano, sia visibile che invisibile, e con i modi sottili in cui soffoca e influenza tutta la vita. Chiamano questo flusso il Grande Condotto e credono che l'unico modo per afferrarlo davvero sia farne parte, plasmandolo ed essendone plasmati a loro volta. più di ogni altra convinzione filosofica, questo lega la maggior parte dei nani al Consolato.ork così bene come quando fu costruito, se non meglio, e durerà.",
 				"Grazie a questa sensibilità, gli elfi sentono un profondo legame con gli altri esseri viventi. Si impegnano profondamente con il mondo che li circonda, apprezzando sia i sistemi naturali che le interazioni sociali. Si divertono a esplorare l'interconnessione della natura e della società, vedendo il flusso di etere dalla natura all'invenzione, da una persona all'altra, dal corpo alla mente e al cuore e venendo plasmati a loro volta. più di qualsiasi orientamento filosofico, ciò che lega la maggior parte dei nani al Consolato.ork come quando fu costruito per la prima volta, se non meglio, e durerà.",
 				"Gli elfi vivono in armonia sia con la natura che con la tecnologia. Essi credono che la natura ispiri la tecnologia: ogni pezzo di artificio è un'espressione delle leggi e dei principi naturali e cattura un elemento del flusso dell'etere in una sorta di sistema microcosmico. La tecnologia, a sua volta, può nutrire il mondo naturale, aiutando la vita a crescere e fiorire in luoghi e modi che altrimenti sarebbero impossibili, non migliori, e durerà."
@@ -2292,14 +2342,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Elf.webp"
-					}
+					},
+					"title": "Wild Wanderer",
+					"credit": "Sidharth Chaturvedi"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Elf2.webp"
-					}
+					},
+					"title": "Cultivator's Caravan",
+					"credit": "Mark Zug"
 				}
 			]
 		},
@@ -2311,12 +2365,13 @@
 				"source": "PSK",
 				"_mod": {
 					"entries": {
-						"mode": "prependArr",
+						"mode": "appendArr",
 						"items": {
-							"type": "section",
+							"type": "entries",
 							"entries": [
 								{
 									"type": "entries",
+									"name": "Bishtahar and Tirahar",
 									"entries": [
 										"Gli elfi che vivono nella foresta e nella campagna sono conosciuti come Bishtahar. La maggior parte di loro vive in comunità isolate, lontane dalle altre razze, anche se continuano a commerciare con loro. In effetti, gran parte delle scorte alimentari di Kaladesh sono coltivate dagli elfi. I coltivatori Bishtahar coltivano cibo, fiori decorativi, legno per le costruzioni ed elaborate sculture viventi nei loro giardini e campi serpeggianti. Usano l'onnipresente tecnologia del piano per favorire la crescita di piante e animali, utilizzando automi come giardinieri e pastori e impiegando sistemi elaborati e quasi invisibili per controllare il calore, l'acqua e i nutrienti.",
 										"Un giardino curato dagli elfi sembra crescere naturalmente in modo esteticamente gradevole. In effetti, anche molte delle foreste e delle pianure di Kaladesh sono piantate e curate dagli elfi. Ciò che a prima vista può sembrare una campagna selvaggia è più probabilmente un paesaggio attentamente pianificato per soddisfare i bisogni delle persone e degli animali che vi abitano, e che impiega sistemi elaborati e quasi invisibili per controllare il calore, l'acqua e i nutrienti.",
@@ -2337,12 +2392,13 @@
 				"source": "PSK",
 				"_mod": {
 					"entries": {
-						"mode": "prependArr",
+						"mode": "appendArr",
 						"items": {
-							"type": "section",
+							"type": "entries",
 							"entries": [
 								{
 									"type": "entries",
+									"name": "Vahadar",
 									"entries": [
 										"I Vahadar sono elfi che abitano nelle città di Kaladesh. Si trovano a loro agio con la tecnologia e lavorano come progettisti, architetti, veggenti o inventori. Alcuni di loro utilizzano le tecniche dei coltivatori Bishtahar per coltivare cibo sui tetti, sulle torri e sulle vie verdi. I Vahadar sono generalmente integrati nel resto della società di Kaladesh, vivono in città dominate dalle altre razze (anche se, come a Ghirapur, molti di loro vivono in quartieri specifici simili a giardini) e si dedicano al commercio."
 									]
@@ -2484,14 +2540,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Elf.webp"
-					}
+					},
+					"title": "Turntimber Ranger",
+					"credit": "Wayne Reynolds"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Elf2.webp"
-					}
+					},
+					"title": "Lifespring Druid",
+					"credit": "Willian Murai"
 				}
 			]
 		},
@@ -2517,23 +2577,7 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Elf.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Elf2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Elf (Zendikar; Mul Daya Nation)",
@@ -2558,23 +2602,7 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Elf.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Elf2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Elf (Zendikar; Tajuru Nation)",
@@ -2598,23 +2626,7 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Elf.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Elf2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Fairy",
@@ -3659,6 +3671,47 @@
 		},
 		{
 			"name": "Goblin",
+			"source": "PSZ",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"I goblin sono una razza curiosa e adattabile, ostacolata dalle loro piccole dimensioni, dalla loro naturale codardia e da una grave carenza di buon senso. Esplorano avidamente aree in cui gli altri esitano a entrare, e giocherellano ossessivamente con la magia con cui persone più ragionevoli prenderebbero attente precauzioni. Apprezzano i manufatti antichi non per il loro valore intrinseco, ma soprattutto come segno di status: un prezioso trofeo dimostra che il suo proprietario è sopravvissuto a un'immersione in una profonda e pericolosa rovina.",
+						"I goblin sono associati al mana rosso. I loro sciamani sono appassionati di incantesimi che creano o controllano il fuoco e i fulmini per colpire i loro nemici, e sono veloci a seguire i loro impulsi e le loro passioni in azione senza molta lungimiranza. La vita per un goblin è un'avventura piena di nuove cose da esplorare e sperimentare.",
+						{
+							"type": "entries",
+							"name": "Long Arms and Stony Skin",
+							"entries": [
+								"Un tipico goblin è alto tra il metro e mezzo e il metro e mezzo, con una corporatura snella e allungata. Le braccia dei goblin sono insolitamente lunghe e sottili, il che li rende abili a scalare scogliere e alberi. La loro pelle ha una consistenza pietrosa, di colore che va dal rosso-marrone al verde muschio o al grigio. Le loro orecchie sono grandi e spazzate all'indietro, i loro occhi sono intensamente rossi, e molti sfoggiano pesanti sporgenze ossee sulla spina dorsale o sui gomiti. I maschi hanno escrescenze simili che sporgono dal mento, mentre le femmine hanno escrescenze più pesanti sulla fronte.",
+								"Questo aspetto distintivo è un risultato diretto dell'insolita dieta dei goblin. Prima dell'ascesa degli Eldrazi, i goblin integravano la loro normale dieta con un tipo di roccia che pestavano a pezzi e chiamavano \"grana\". La presenza degli Eldrazi a Zendikar ha avvelenato questa roccia, per cui i goblin hanno iniziato a mangiare, invece, edroni in polvere. Mangiare questa pietra infusa di magia ha dato ai goblin resistenza alle folli emanazioni psichiche degli Eldrazi. Come ulteriore beneficio, indurisce la loro pelle, proteggendoli dagli elementi e dai pericoli fisici."
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSZ/Goblin.webp"
+					},
+					"title": "Zada, Hedron Grinder",
+					"credit": "Chris Rallis"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSZ/Goblin2.webp"
+					},
+					"title": "Slab Hammer",
+					"credit": "Joeseph Meehan"
+				}
+			]
+		},
+		{
+			"name": "Goblin",
 			"source": "VGM",
 			"monstrous": true,
 			"images": [
@@ -3709,44 +3762,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSX/Goblin.webp"
-					}
-				}
-			]
-		},
-		{
-			"name": "Goblin (Zendikar)",
-			"source": "PSZ",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"I goblin sono una razza curiosa e adattabile, ostacolata dalle loro piccole dimensioni, dalla loro naturale codardia e da una grave carenza di buon senso. Esplorano avidamente aree in cui gli altri esitano a entrare, e giocherellano ossessivamente con la magia con cui persone più ragionevoli prenderebbero attente precauzioni. Apprezzano i manufatti antichi non per il loro valore intrinseco, ma soprattutto come segno di status: un prezioso trofeo dimostra che il suo proprietario è sopravvissuto a un'immersione in una profonda e pericolosa rovina.",
-						"I goblin sono associati al mana rosso. I loro sciamani sono appassionati di incantesimi che creano o controllano il fuoco e i fulmini per colpire i loro nemici, e sono veloci a seguire i loro impulsi e le loro passioni in azione senza molta lungimiranza. La vita per un goblin è un'avventura piena di nuove cose da esplorare e sperimentare.",
-						{
-							"type": "entries",
-							"name": "Long Arms and Stony Skin",
-							"entries": [
-								"Un tipico goblin è alto tra il metro e mezzo e il metro e mezzo, con una corporatura snella e allungata. Le braccia dei goblin sono insolitamente lunghe e sottili, il che li rende abili a scalare scogliere e alberi. La loro pelle ha una consistenza pietrosa, di colore che va dal rosso-marrone al verde muschio o al grigio. Le loro orecchie sono grandi e spazzate all'indietro, i loro occhi sono intensamente rossi, e molti sfoggiano pesanti sporgenze ossee sulla spina dorsale o sui gomiti. I maschi hanno escrescenze simili che sporgono dal mento, mentre le femmine hanno escrescenze più pesanti sulla fronte.",
-								"Questo aspetto distintivo è un risultato diretto dell'insolita dieta dei goblin. Prima dell'ascesa degli Eldrazi, i goblin integravano la loro normale dieta con un tipo di roccia che pestavano a pezzi e chiamavano \"grana\". La presenza degli Eldrazi a Zendikar ha avvelenato questa roccia, per cui i goblin hanno iniziato a mangiare, invece, edroni in polvere. Mangiare questa pietra infusa di magia ha dato ai goblin resistenza alle folli emanazioni psichiche degli Eldrazi. Come ulteriore beneficio, indurisce la loro pelle, proteggendoli dagli elementi e dai pericoli fisici."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Goblin.webp"
-					}
+					},
+					"title": "Firecannon Blast",
+					"credit": "Svetlin Velinov"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "races/PSZ/Goblin2.webp"
-					}
+						"path": "races/PSX/Goblin2.webp"
+					},
+					"title": "Goblin Trailblazer",
+					"credit": "Josh Hass"
 				}
 			]
 		},
@@ -3754,7 +3781,7 @@
 			"name": "Goblin (Zendikar; Grotag Tribe)",
 			"source": "PSZ",
 			"_copy": {
-				"name": "Goblin (Zendikar)",
+				"name": "Goblin",
 				"source": "PSZ",
 				"_mod": {
 					"entries": {
@@ -3772,29 +3799,13 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Goblin.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Goblin2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Goblin (Zendikar; Lavastep Tribe)",
 			"source": "PSZ",
 			"_copy": {
-				"name": "Goblin (Zendikar)",
+				"name": "Goblin",
 				"source": "PSZ",
 				"_mod": {
 					"entries": {
@@ -3812,29 +3823,13 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Goblin.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Goblin2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Goblin (Zendikar; Tuktuk Tribe)",
 			"source": "PSZ",
 			"_copy": {
-				"name": "Goblin (Zendikar)",
+				"name": "Goblin",
 				"source": "PSZ",
 				"_mod": {
 					"entries": {
@@ -3852,23 +3847,7 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Goblin.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Goblin2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Goliath",
@@ -4842,7 +4821,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"Delle cinque razze umanoidi di Amonkhet, gli umani sono le più diverse e adattabili. Diversi umani si allenano in un'ampia varietà di stili di combattimento, compresi quelli particolarmente favoriti dalle altre razze. Un mago umano può utilizzare uno qualsiasi dei cinque colori del mana, mentre i maghi delle altre razze si concentrano su uno solo dei due colori. Gli umani {@background vizier|psa|viziers} servono tutti e cinque gli dei, e diversi umani {@background initiate|psa|initiates} eccellono in diverse prove. Gli umani sfidano le tendenze e le categorizzazioni, e gli avversari che affrontano un umano in un combattimento uno contro uno non possono sapere che tipo di lotta aspettarsi: dalla lungimiranza e l'astuzia spesso associate a Kefnet, a una spietatezza che emula Bontu. All'inizio di un tale combattimento, questa incertezza può dare un vantaggio al combattente umano.",
+						"Of the five humanoid races of Amonkhet, humans are the most diverse and adaptable. Different humans train in a wide variety of fighting styles, including those particularly favored by other races. A human mage might use any of the five colors of mana, while mages of other races focus on one of only two colors. Human {@background vizier|PSA|viziers} serve all five gods, and different human {@background initiate|PSA|initiates} excel in different trials. Humans defy trends and categorization, and opponents who face a human in one-on-one combat can't know what kind of fight to expect—from the foresight and cunning often associated with Kefnet, to a ruthlessness that emulates Bontu. At the beginning of such a fight, this uncertainty can give an edge to the human combatant.",
 						"Una volta che la lotta è iniziata, naturalmente, la vittoria si basa su fattori diversi. Ma qui, la spinta umana verso la perfezione fa pendere ancora una volta la bilancia a loro favore. Gli uomini sono disposti ad andare fino in fondo, esaurendo tutte le opzioni disponibili, per raggiungere l'apice del successo e conquistare il favore del Dio-Faraone.",
 						{
 							"type": "entries",
@@ -4853,7 +4832,7 @@
 									"type": "entries",
 									"name": "Perfection through Specialization",
 									"entries": [
-										"Gli umani che scelgono un percorso di specializzazione spesso si identificano devotamente con una delle cinque divinità (spesso come un {@background vizier|psa}), e quindi si concentrano su un aspetto della perfezione. Per loro, il modo migliore per guadagnarsi un posto nell'aldilà è quello di affinare una singola sfaccettatura del loro carattere alla massima qualità, e come {@background initiate|psa|initiates}, sperano di mettere quella qualità a frutto in tutte e cinque le prove. Un mago {@background initiate|psa} che si identifica con Hazoret potrebbe coltivare lo zelo al di sopra di tutte le altre virtù, padroneggiare incantesimi di magia infuocata per incanalare quella potente emozione, e fare affidamento sull'energia pura e sull'entusiasmo per superare le quattro prove che portano alla prova finale di Hazoret. Un {@background initiate|psa} dedicato a Oketra, invece, si affida alla cooperazione, alla solidarietà e al lavoro di squadra per superare le prove - anche la Prova dell'Ambizione di Bontu, che cerca di spezzare tali legami. Per il discepolo di Oketra, l'ambizione significa una spinta ad aiutare un intero gruppo di iniziati a raggiungere la gloria insieme, piuttosto che esaltare se stessi sugli altri. Gli umani con questo punto di vista vedono la loro virtù scelta colorare tutte le altre, e credono che i cinque dei offrano al loro popolo la scelta di quale virtù emulare ed enfatizzare."
+										"Humans who choose a path of specialization often piously identify with one of the five gods (often as a {@background vizier|PSA}), and thus focus on one aspect of perfection. For them, the best way to earn a place in the afterlife is to hone a single facet of their character to the utmost quality, and as {@background initiate|PSA|initiates}, they hope to put that quality to use in all five trials. A mage {@background initiate|PSA} who identifies with Hazoret might cultivate zeal above all other virtues, master spells of fiery magic to channel that powerful emotion, and rely on raw energy and enthusiasm to get through the four trials leading up to Hazoret's final test. An {@background initiate|PSA} dedicated to Oketra, on the other hand, relies on cooperation, solidarity, and teamwork to get through the trials—even Bontu's Trial of Ambition, which attempts to break down such bonds. To Oketra's disciple, ambition means a drive to help an entire crop of initiates achieve glory together, rather than exalting oneself over others. Humans with this viewpoint see their chosen virtue coloring all others, and believe that the five gods offer their people a choice of which virtue to emulate and emphasize."
 									]
 								},
 								{
@@ -4871,9 +4850,10 @@
 							"name": "Combat Classes",
 							"entries": [
 								"La maggior parte degli iniziati umani concentra i propri studi su un'unica specializzazione: combattimento a mani nude, combattimento a distanza o combattimento magico. Gli umani che scelgono il combattimento a mani nude possono concentrarsi con devozione unica sull'uso del khopesh con la lama a falce (trattare come un {@item longsword|phb}). Altri specialisti del corpo a corpo hanno una prospettiva più ampia e studiano l'uso di tutte le armi allo stesso modo.",
-								"Alcuni umani, tuttavia, applicano l'idea della perfezione attraverso l'equilibrio anche a queste specializzazioni di combattimento, fondendo più stili insieme in una miscela unica. Per esempio, un iniziato umano potrebbe usare incantesimi per modellare la sabbia in una spada o per avvolgere le frecce con una magia che toglie la vita. Altri iniziati colpiscono con un'ascia in una mano mentre con l'altra lanciano asce più piccole, impiegando tecniche di combattimento sia a mani nude che a distanza. Alcuni umani usano fionde per lanciare palle di fuoco, creano reti illusorie per trattenere i loro avversari, o fabbricano le loro lame da tossine solide."
+								"Some humans, however, apply the idea of perfection through balance to these combat specializations as well, fusing multiple styles together into a unique blend. For example, a human {@background initiate|PSA} might use spells to shape sand into a sword or to wreathe arrows with life-draining magic. Other {@background initiate|PSA|initiates} strike with an axe in one hand while throwing smaller axes with the other, employing techniques of both hand-to-hand and long-range combat. Some humans use slings to launch fireballs, create illusory nets to restrain their opponents, or craft their blades from solid toxins."
 							]
-						}
+						},
+						"The humans of Amonkhet use the {@race Human (Variant)|PHB|variant human} traits presented in the {@book Player's Handbook|PHB}. This allows them greater specialization from the very beginning of their careers, and emphasizes the diversity of the human race."
 					]
 				}
 			],
@@ -4883,14 +4863,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Human (Amonkhet).webp"
-					}
+					},
+					"title": "Soul-Scar Mage",
+					"credit": "Steve Argyle"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Human (Amonkhet)2.webp"
-					}
+					},
+					"title": "Victory",
+					"credit": "Grzegorz Rutkowski"
 				}
 			]
 		},
@@ -4914,21 +4898,27 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSI/Innistrad.webp"
-					}
+					},
+					"title": "Diregraf Escort",
+					"credit": "Ryan Pancoast"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSI/Innistrad2.webp"
-					}
+					},
+					"title": "Silverblade Paladin",
+					"credit": "Jason Chan"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSI/Innistrad3.webp"
-					}
+					},
+					"title": "Lunar Mystic",
+					"credit": "Wesley Burt"
 				}
 			]
 		},
@@ -5040,21 +5030,52 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSX/Human.webp"
-					}
+					},
+					"title": "Ixalli's Keeper",
+					"credit": "Lake Hurwitz"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSX/Human2.webp"
-					}
+					},
+					"title": "Navigator's Ruin",
+					"credit": "Zoltan Boros"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSX/Human3.webp"
-					}
+					},
+					"title": "Seeker's Squire",
+					"credit": "Anthony Palumbo"
+				}
+			]
+		},
+		{
+			"name": "Human (Kaladesh)",
+			"source": "PSK",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Curiosity is an itch that must be scratched."
+					]
+				},
+				"The humans of Kaladesh are a race full of passionate aspiration. At their best, humans attempt grand and expansive endeavors, driven to strive after the loftiest and most impossible goals. At their worst, humans are superficial, impractical dreamers who are blind to the consequences of their misguided actions. However, there can be no denying that the best and the worst of humankind—along with the vast swath of humanity in between—have been instrumental in shaping the history of Kaladesh, and continue to shape the destiny of the plane. Their curiosity, their ambition, their apparently boundless energy, and the scope of their vision are powerful forces that drive invention forward.",
+				"Human characters thrive on variety and crave new experiences. It's not uncommon for humans to explore several different fields and disciplines in their lifetimes, sometimes abandoning years of accomplishments in one pursuit for the sake of pursuing something new and exciting. This tendency often produces characters who have just enough knowledge of many different fields to be dangerous in all of them. But at the same time, many humans excel at creating synthesis and finding connections between apparently disparate disciplines, bringing a cross-pollination to the process of invention that drives innovation across every field."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSK/Human.webp"
+					},
+					"title": "Artificer's Epiphany",
+					"credit": "Kieran Yanner"
 				}
 			]
 		},
@@ -5062,7 +5083,9 @@
 			"name": "Human (Keldon)",
 			"source": "PSD",
 			"entries": [
-				"Provenienti dalla spietata e arida terra di Keld, nell'estremo nord del continente di Icehaven, i brutali Keldon sono umani massicci e dalla pelle grigia. Sebbene siano spesso percepiti come un'orda di barbari brutali e sconsiderati e come una minaccia per la civiltà in tutte le sue forme, i Keldon hanno una cultura profonda e ricca che risale a molti secoli fa. Dopo aver sopportato devastazioni su vasta scala e aver vissuto il proprio profetizzato giudizio apocalittico, i Keldon di oggi lottano per essere degni dei loro gloriosi antenati, della loro spietata casa e dei loro più forti campioni."
+				"The people of Keld are human, but they are like no other humans anywhere. Nearly all adults stand over six feet tall, and heights above seven feet are not uncommon. They are massively muscled and have gray skin, ranging from an ashy gray-white to a deeper bluegray. The typical {@race Human (Keldon)|PSD}'s hairline points sharply down in the middle of the forehead and at either temple, but recedes elsewhere—sometimes dramatically. {@race Human (Keldon)|PSD|Keldons} are remarkably resistant to the cold of their homeland, baring skin even in near-freezing temperatures without discomfort.",
+				"Keldons value self-reliance, strength, and courage above all else. Anything that is the product of their own labor is a fine thing. Anything else is treated with a healthy dose of skepticism. At best, they are a proud, pragmatic, passionate people, and their loyalty is fierce once earned. At worst, they can be reckless, hot-tempered, and violent—and no small number of Keldons still consider these qualities virtues rather than vices.",
+				"Because of their many exploits as both conquerors and mercenaries, Keldons appear in the legends and histories of other peoples across the world. Sometimes these tales are exaggerated—but many that sound exaggerated are not."
 			],
 			"images": [
 				{
@@ -5070,14 +5093,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSD/Keldon.webp"
-					}
+					},
+					"title": "Garna, the Bloodflame",
+					"credit": "Winona Nelson"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSD/Keldon2.webp"
-					}
+					},
+					"title": "Grand Warlord Radha",
+					"credit": "Anna Steinbauer"
 				}
 			]
 		},
@@ -5119,28 +5146,36 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Human.webp"
-					}
+					},
+					"title": "Dragonmaster Outcast",
+					"credit": "Raymond Swanland"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Human2.webp"
-					}
+					},
+					"title": "Kazandu Blademaster",
+					"credit": "Michael Komarck"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Human3.webp"
-					}
+					},
+					"title": "Serene Steward",
+					"credit": "Magali Villeneuve"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Human4.webp"
-					}
+					},
+					"title": "Sea Gate Oracle",
+					"credit": "Daniel Ljunggren"
 				}
 			]
 		},
@@ -5414,14 +5449,14 @@
 					"type": "entries",
 					"entries": [
 						"I khenra di Amonkhet sono alti e snelli, con corpi aggraziati e teste che ricordano fortemente il {@creature jackal||jackals}. I loro musi sono lunghi e affilati, e le loro orecchie angolari si ergono dritte sopra la testa. I loro corpi sono coperti da peli scuri e lisci che vanno dal marrone delle sabbie del deserto al nero ebano. Nonostante i loro denti affilati, considerano il morso una tattica di combattimento rozza e indegna.",
-						"Quasi ogni khenra nasce come gemello fraterno o identico, e una coppia di gemelli khenra forma un legame emotivo estremamente stretto, sconosciuto alla maggior parte degli altri abitanti di Amonkhet. La morte di un gemello durante l'addestramento o le prove provoca uno shock tremendo al sopravvissuto, che tipicamente diventa più aggressivo e temerario in battaglia. I rari khenra che nascono senza gemelli si crede che abbiano ucciso i loro fratelli nel grembo materno, e sono quindi visti come iniziati naturali, sicuri di ottenere una morte glorificata nella Prova dello Zelo.",
+						"Nearly every khenra is born a fraternal or identical twin, and a pair of khenra twins forms an extremely close emotional bond unknown to most other residents of Amonkhet. The death of one twin in training or the trials causes a tremendous shock to the survivor, who typically grows more aggressive and foolhardy in battle. The rare khenra who are born without twins are believed to have killed their siblings in the womb, and are thus viewed as natural-born {@background initiate|PSA|initiates}, sure to achieve a glorified death in the Trial of Zeal.",
 						{
 							"type": "entries",
 							"name": "Strength and Zeal",
 							"entries": [
 								"Molti khenra credono di essere stati creati a immagine e somiglianza di Hazoret, e anche se venerano tutti e cinque gli dei come tutti i cittadini di Naktamun, hanno una particolare affinità con gli insegnamenti e la filosofia del dio dello zelo. Questi khenra condividono un profondo amore per il combattimento, soprattutto quello corpo a corpo, e si dedicano al loro allenamento con particolare intensità.",
-								"Il legame familiare sperimentato nel Tempio della Famiglia del monumento di Hazoret fa parte dell'esperienza di ogni khenra come uno di una coppia di gemelli. Per questo motivo, questi khenra a volte si considerano come figli di Hazoret anche prima di finire la quarta prova. Da parte sua, Hazoret sembra favorire i khenra tra i suoi {@background vizier|psa|viziers}, e alcuni dicono che mostra particolare favore ai khenra {@background initiate|psa|initiates} che sopravvivono per raggiungere la Prova dello Zelo.",
-								"Altri khenra scelgono di prendere le distanze da Hazoret e dalla sconsiderata frenesia della battaglia che lei incoraggia. Si dedicano invece ad affinare la loro forza fisica, la resistenza e la capacità di adattamento, ispirati e guidati dagli insegnamenti di Rhonas. Questi khenra hanno una grande passione per il wrestling (o tussling, come spesso lo chiamano), e tengono attentamente traccia degli incontri che vincono e perdono contro altri {@background initiate|psa|initiates}. Spesso cercano incontri contro {@race minotaur (amonkhet)|psa|minotaurs}, godendo della sfida di mettere la loro forza muscolare contro i muscoli bruti di avversari più grandi e pesanti."
+								"The familial bond experienced in the Family Temple of Hazoret's monument is a part of every khenra's experience as one of a pair of twins. As such, these khenra sometimes think of themselves as Hazoret's children even before they finish the fourth trial. For her part, Hazoret seems to favor khenra among her {@background vizier|PSA|viziers}, and some say that she shows particular favor to khenra {@background initiate|PSA|initiates} who survive to reach the Trial of Zeal.",
+								"Other khenra choose to distance themselves from Hazoret and the reckless battle frenzy she encourages. They devote themselves instead to honing their physical strength, resilience, and adaptability, inspired and guided by the teachings of Rhonas. These khenra have a great fondness for wrestling (or tussling, as they often call it), and they keep careful track of the matches they win and lose against other {@background initiate|PSA|initiates}. They often seek out matches against {@race minotaur (amonkhet)|PSA|minotaurs}, enjoying the challenge of pitting their sinewy strength against the brute muscle of larger and heavier opponents."
 							]
 						},
 						{
@@ -5430,7 +5465,7 @@
 							"entries": [
 								"I khenra, specialmente quelli devoti ad Hazoret, sono particolarmente attratti dagli stili di combattimento a mani nude. Ma anche gli altri stili hanno il loro fascino, e gli iniziati khenra possono specializzarsi in uno qualsiasi dei tre.",
 								"I Khenra che si concentrano sul combattimento corpo a corpo spesso brandiscono la khopesh, una grande spada a lama di falce, come arma preferita (trattare come un {@item longsword|phb}). I Khenra brandiscono queste lame con una precisione e una potenza devastanti, sferrando un colpo schiacciante dopo l'altro in una pioggia di attacchi furiosi. Prediligono le armature leggere che non impediscono i loro movimenti, spesso paragonando il combattimento in file organizzate all'indossare un guinzaglio che limita la loro capacità di caricare, affondare e rotolare via dal pericolo. La loro naturale aggressività li rende truppe d'assalto ideali, esploratori e schermagliatori. E questa aggressività è ancora più pronunciata nei khenra che hanno già perso il loro gemello, e che a volte perdono ogni senso di autoconservazione come risultato.",
-								"I Khenra che si concentrano sul combattimento a lungo raggio preferiscono le armi scagliate - sciabole e giavellotti - agli archi e alle fionde, e sono conosciuti e temuti per la loro precisione mortale. Portano piccole casse di {@item javelin|phb|javelins} in combattimento e si vergognano se arrivano alla fine di una battaglia con qualche arma non lanciata. Un khenra potrebbe cavalcare un {@item chariot|phb} come lanciatore di {@item spear|phb}, aumentando talvolta gli attacchi con piccoli incantesimi di magia del fuoco.",
+								"Khenra who focus on long-range combat prefer hurled weapons—spears and javelins—over bows and slings, and they are known and feared for their deadly accuracy. They carry small cases of {@item javelin|PHB|javelins} into combat, and feel ashamed if they reach the end of a battle with any weapons left unthrown. A khenra might ride on a {@item chariot|PHB} as a {@item spear|PHB} thrower, sometimes augmenting attacks with minor spells of fire magic.",
 								"Molti maghi khenra sono specializzati in incantesimi di fuoco, creando lame o grandinate di fiamme per bruciare i loro nemici. La loro strategia enfatizza i travolgenti assalti iniziali, nell'emulazione magica della frenesia di battaglia di Hazoret. Altri preferiscono la magia che aumenta la loro velocità e forza naturale, rafforza la loro resistenza o prosciuga la forza dei loro nemici. Lavorano per affinare i loro incantesimi insieme ai loro corpi, incorporando elementi di combattimento corpo a corpo nel loro incantesimo."
 							]
 						}
@@ -5443,14 +5478,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Khenra.webp"
-					}
+					},
+					"title": "Trueheart Twins",
+					"credit": "Matt Stewart"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Khenra2.webp"
-					}
+					},
+					"title": "Nimble-Blade Khenra",
+					"credit": "Tomasz Jedruszek"
 				}
 			]
 		},
@@ -5519,14 +5558,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Kor.webp"
-					}
+					},
+					"title": "Kor Sanctifiers",
+					"credit": "Dan Scott"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Kor2.webp"
-					}
+					},
+					"title": "Kor Entanglers",
+					"credit": "Jason Rainville"
 				}
 			]
 		},
@@ -5988,6 +6031,47 @@
 			]
 		},
 		{
+			"name": "Merfolk",
+			"source": "PSZ",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Curiosi, riflessivi e analitici, i merfolk di Zendikar sono studiosi ed esploratori naturali. In passato, la società dei merfolk era organizzata intorno alla loro fede in tre divinità. Ma sulla scia della ricomparsa degli Eldrazi, i merfolk hanno capito che la loro fede era una rete di bugie, costruita su una memoria corrotta dei titani Eldrazi tramandata di generazione in generazione. In tempi pacifici, i merfolk avrebbero potuto combattere sul significato ultimo di questa rivelazione. Ma di fronte al pericolo presentato dalle nidiate degli Eldrazi, gli abitanti della terra hanno in gran parte messo da parte le loro differenze e si sono uniti in una forza unita. I vecchi rancori persistono ancora, ma il benessere della razza dei merfolk - e del mondo - supera di gran lunga gli antichi conflitti tra le fedi.",
+						"I merfolk sono associati al mana blu, anche se i credo tradizionali dei merfolk esprimono questa connessione in modi diversi.",
+						{
+							"type": "entries",
+							"name": "Born of the Sea",
+							"entries": [
+								"I Merfolk sono una razza anfibia, nati e cresciuti nell'acqua ma a loro agio sulla terraferma. Di forma umanoide, hanno la pelle color avorio, argento, ruggine, blu o viola intenso. Lunghe pinne si estendono dalla parte posteriore dei loro avambracci e polpacci, e le loro dita delle mani e dei piedi sono palmate. Le escrescenze pelose sulle loro teste sono spesse e setose come gli aghi di un riccio di mare, o lunghe e ondulate, simili a sottili alghe. In entrambi i casi, queste escrescenze sono tipicamente di colore rosso, marrone caldo o nero. I maschi hanno escrescenze simili che si estendono dai loro zigomi.",
+								"I Merfolk indossano pochi vestiti, a meno che non siano corazzati per la battaglia. Anche in quel caso, si drappeggiano con reti e un minimo di stoffa, indossando un'armatura fatta di grandi conchiglie sbiancate e arricchita di pelle."
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSZ/Merfolk.webp"
+					},
+					"title": "Enclave Elite",
+					"credit": "Igor Kieryluk"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSZ/Merfolk2.webp"
+					},
+					"title": "Coralhelm Commander",
+					"credit": "Jaime Jones"
+				}
+			]
+		},
+		{
 			"name": "Merfolk (Ixalan)",
 			"source": "PSX",
 			"entries": [
@@ -5999,7 +6083,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSX/Merfolk.webp"
-					}
+					},
+					"title": "Vineshaper Mystic",
+					"credit": "Kieran Yanner"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSX/Merfolk2.webp"
+					},
+					"title": "Coralhelm Commander",
+					"credit": "Jaime Jones"
 				}
 			]
 		},
@@ -6052,47 +6147,10 @@
 			}
 		},
 		{
-			"name": "Merfolk (Zendikar)",
-			"source": "PSZ",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Curiosi, riflessivi e analitici, i merfolk di Zendikar sono studiosi ed esploratori naturali. In passato, la società dei merfolk era organizzata intorno alla loro fede in tre divinità. Ma sulla scia della ricomparsa degli Eldrazi, i merfolk hanno capito che la loro fede era una rete di bugie, costruita su una memoria corrotta dei titani Eldrazi tramandata di generazione in generazione. In tempi pacifici, i merfolk avrebbero potuto combattere sul significato ultimo di questa rivelazione. Ma di fronte al pericolo presentato dalle nidiate degli Eldrazi, gli abitanti della terra hanno in gran parte messo da parte le loro differenze e si sono uniti in una forza unita. I vecchi rancori persistono ancora, ma il benessere della razza dei merfolk - e del mondo - supera di gran lunga gli antichi conflitti tra le fedi.",
-						"I merfolk sono associati al mana blu, anche se i credo tradizionali dei merfolk esprimono questa connessione in modi diversi.",
-						{
-							"type": "entries",
-							"name": "Born of the Sea",
-							"entries": [
-								"I Merfolk sono una razza anfibia, nati e cresciuti nell'acqua ma a loro agio sulla terraferma. Di forma umanoide, hanno la pelle color avorio, argento, ruggine, blu o viola intenso. Lunghe pinne si estendono dalla parte posteriore dei loro avambracci e polpacci, e le loro dita delle mani e dei piedi sono palmate. Le escrescenze pelose sulle loro teste sono spesse e setose come gli aghi di un riccio di mare, o lunghe e ondulate, simili a sottili alghe. In entrambi i casi, queste escrescenze sono tipicamente di colore rosso, marrone caldo o nero. I maschi hanno escrescenze simili che si estendono dai loro zigomi.",
-								"I Merfolk indossano pochi vestiti, a meno che non siano corazzati per la battaglia. Anche in quel caso, si drappeggiano con reti e un minimo di stoffa, indossando un'armatura fatta di grandi conchiglie sbiancate e arricchita di pelle."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk2.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Merfolk (Zendikar; Cosi Creed)",
 			"source": "PSZ",
 			"_copy": {
-				"name": "Merfolk (Zendikar)",
+				"name": "Merfolk",
 				"source": "PSZ",
 				"_mod": {
 					"entries": {
@@ -6110,29 +6168,13 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Merfolk (Zendikar; Emeria Creed)",
 			"source": "PSZ",
 			"_copy": {
-				"name": "Merfolk (Zendikar)",
+				"name": "Merfolk",
 				"source": "PSZ",
 				"_mod": {
 					"entries": {
@@ -6150,29 +6192,13 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Merfolk (Zendikar; Ula Creed)",
 			"source": "PSZ",
 			"_copy": {
-				"name": "Merfolk (Zendikar)",
+				"name": "Merfolk",
 				"source": "PSZ",
 				"_mod": {
 					"entries": {
@@ -6190,23 +6216,7 @@
 						}
 					}
 				}
-			},
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSZ/Merfolk2.webp"
-					}
-				}
-			]
+			}
 		},
 		{
 			"name": "Minotaur",
@@ -6444,7 +6454,7 @@
 					"entries": [
 						"I minotauri sono umanoidi dal corpo possente e dal petto grosso, con teste che ricordano i montoni. Le loro corna si arricciano strettamente contro i lati della testa per circondare le orecchie e le criniere di pelo ispido, più corte nelle femmine, ricadono sulle loro ampie spalle. Come suggerisce il loro aspetto, combinano la forza fisica con la testardaggine, la spavalderia e la temerarietà. Si divertono a combattere, specialmente quando le probabilità contro di loro sembrano schiaccianti.",
 						"I minotauri sono chiassosi, esuberanti e diretti fino alla maleducazione. Non si fanno scrupoli a dichiarare ciò che vogliono e a sfidare gli altri perché glielo impediscano. In combattimento, lanciano sfide ad alta voce per sfidare i loro nemici, e ruggiscono con risate quando trionfano.",
-						"I minotauri credono di avere un posto unico tra le razze di Amonkhet. Il {@race khenra|psa} può guardare ad Hazoret, il {@race naga|psa} a Rhonas, e il {@race aven|psa} a Kefnet per vedersi rappresentato tra gli dei. Gli umani non hanno un solo dio a cui guardare, il che spiega perché dimostrano una tale varietà. Ma solo un dio porta un paio di corna ricurve: il Dio-Faraone stesso, che ha un posto speciale per molti dei minotauri di Amonkhet.",
+						"Minotaurs believe they hold a unique place among the races of Amonkhet. The {@race khenra|PSA} can look to Hazoret, the {@race naga|PSA} to Rhonas, and the {@race aven|PSA} to Kefnet to see themselves represented among the gods. Humans have no single god to look to, which explains why they demonstrate such variety. But only one god bears a pair of curving horns: the God-Pharaoh himself, who holds a special place for many of the minotaurs of Amonkhet.",
 						{
 							"type": "entries",
 							"name": "Ruthless and Reckless",
@@ -6456,7 +6466,7 @@
 							"type": "entries",
 							"name": "Combat Classes",
 							"entries": [
-								"Le loro dimensioni e la loro forza rendono i minotauri ideali per il combattimento corpo a corpo. Sono più efficaci sull'offensiva, sferrando una raffica infinita di attacchi che tengono i loro nemici fuori equilibrio, frantumano scudi e armi e inevitabilmente spezzano i loro avversari. Questi minotauri prediligono armi grandi e pesanti come asce, {@item maul|phb|mauls}, e khopeshes a due mani (considerate come un {@item greatsword|phb}), ma sono anche amanti del combattimento disarmato. Molti amano mettere da parte le loro armi in favore della sottomissione degli avversari con le loro corna e le mani nude, credendo che una tale vittoria sia più gloriosa e più umiliante per il perdente.",
+								"Their size and strength makes minotaurs ideally suited for hand-to-hand combat. They are most effective on the offensive, delivering an endless barrage of attacks that keep their foes off balance, shatter shields and weapons, and inevitably break their opponents. These minotaurs favor large, heavy weapons such as axes, {@item maul|PHB|mauls}, and two-handed khopeshes (treat as a {@item greatsword|phb}), but they are also fond of unarmed combat. Many love to throw their weapons aside in favor of pummeling opponents into submission with their horns and bare hands, believing that such a victory is more glorious—and more humiliating to the loser.",
 								"Ma anche se i minotauri sono noti per la loro grandezza fisica e la loro forza, ciò non esclude la presenza di menti acute e potenti incantatori tra di loro. Anche se sono meno numerosi degli specialisti del corpo a corpo, i maghi minotauri attingono alla loro naturale ferocia per instillare il terrore nel cuore dei loro avversari con un terribile ruggito. Manifestano la loro furia sotto forma di esplosioni di fiamme, o infondono le loro corna e i loro pugni di calore bruciante per rendere i loro attacchi fisici più letali.",
 								"I relativamente pochi minotauri che si specializzano nel combattimento a lungo raggio godono di un aspetto particolare di questo stile: l'opportunità di far scorrere il primo sangue, segnando il momento in cui una battaglia è veramente iniziata. I minotauri usano il {@item longbow|phb|heavy bows} e il {@item javelin|phb|javelins}, e provano particolare piacere a sparare in mezzo alle formazioni nemiche per seminare più caos e confusione possibile."
 							]
@@ -6470,14 +6480,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Minotaur (Amonkhet).webp"
-					}
+					},
+					"title": "Neheb, the Worthy",
+					"credit": "Chris Rahn"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Minotaur (Amonkhet)2.webp"
-					}
+					},
+					"title": "Minotaur Sureshot",
+					"credit": "Joseph Meehan"
 				}
 			]
 		},
@@ -6496,8 +6510,8 @@
 							"name": "Combat Classes",
 							"entries": [
 								"A beneficio di quei naga che lottano con l'ideale della più dolce armonia, la formazione degli accoliti incoraggia la specializzazione. Così, i naga che seguono il percorso del dio dalla testa di serpente Rhonas possono coltivare la loro forza fisica specializzandosi in stili di combattimento corpo a corpo, mentre altri naga favoriscono gli insegnamenti di Kefnet e altri stili di combattimento.",
-								"I Naga specializzati nel combattimento corpo a corpo fanno affidamento su asce, {@item dagger|phb|daggers} e {@item shortsword|phb|shortswords}, ma anche sulle loro zanne e sulla forza costrittiva dei loro corpi serpentini. Fanno largo uso di veleno, rivestendo le loro armi con strati multipli di sostanze mortali, incluso, ma non solo, il loro stesso veleno. Colpi veloci, tempestivi e ben piazzati, seguiti da una ritirata altrettanto agile, permettono a molti naga di trionfare su avversari che potrebbero sembrare più forti. Con il riconoscimento della Dolcissima Armonia, questi naga coltivano una comprensione della strategia e della tattica che migliora il loro allenamento fisico.",
-								"La velocità e la precisione sono altrettanto importanti per i naga specializzati nel combattimento a lungo raggio. Alcuni preferiscono analizzare una battaglia dalla distanza e scegliere gli avversari più forti con le loro armi a distanza, compresi i {@item spear|phb|spears} e {@item arrow|phb|arrows} avvelenati. Altri cavalcano in {@item chariot|phb|chariots} guidati da piloti fidati (di solito altri naga) e lanciano il loro {@item spear|phb|spears} dal mezzo della battaglia. In ogni caso, eccellono nel trovare e sfruttare vantaggi strategici.",
+								"Naga who specialize in hand-to-hand combat rely on axes, {@item dagger|PHB|daggers}, and {@item shortsword|PHB|shortswords}—but also on their own fangs and the constricting strength of their serpentine bodies. They make extensive use of poison, coating their weapons with multiple layers of deadly substances—including, but by no means limited to, their own venom. Quick, well-timed, and well-placed blows, followed by an equally nimble retreat, allow many naga to triumph over opponents who might seem stronger. With acknowledgment of the Sweetest Harmony, these naga cultivate an understanding of strategy and tactics that enhances their physical training.",
+								"Speed and accuracy are equally important to naga who specialize in long-range combat. Some prefer to analyze a battle from a distance and pick off the strongest opponents with their ranged weapons, including poisoned {@item spear|PHB|spears} and {@item arrow|PHB|arrows}. Others ride in {@item chariot|PHB|chariots} driven by trusted drivers (usually other naga) and throw their {@item spear|PHB|spears} from the midst of battle. In any case, they excel at finding and exploiting strategic advantages.",
 								"Alcuni maghi naga, ispirati dall'esempio di Kefnet, fanno largo uso della magia dell'illusione per ingannare e fuorviare i loro avversari. Altri applicano gli insegnamenti di Rhonas ai loro studi, brandendo una magia velenosa che indebolisce gli avversari o li uccide completamente con nuvole o dardi di tossine mortali. Altri ancora, al servizio dell'ideale di equilibrio, usano il potere magico delle loro menti per migliorare la loro forza fisica e la loro velocità."
 							]
 						}
@@ -6510,14 +6524,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Naga.webp"
-					}
+					},
+					"title": "Naga Oracle",
+					"credit": "Deruchenko Alexander"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSA/Naga2.webp"
-					}
+					},
+					"title": "Tah-Crop Skirmisher",
+					"credit": "Victor Adame Minguez"
 				}
 			]
 		},
@@ -6565,7 +6583,9 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSX/Orc.webp"
-					}
+					},
+					"title": "Dire Fleet Ravager",
+					"credit": "Bram Sels"
 				}
 			]
 		},
@@ -7376,7 +7396,7 @@
 			"source": "PSX",
 			"entries": [
 				"Le sirene sono di casa lungo le acque del Mare dei Relitti. Si stabiliscono su coste rocciose e isole remote, e persino su cumuli galleggianti di kelp. Le sirene sono creature mercuriali che possono trasformarsi in un istante da solitarie a respinte, da desiderose a odiose, da accoglienti a irritate, da amorevoli a assassine, e poi di nuovo. Sono affascinate dalle navi e si divertono a giocare con loro. Una sirena potrebbe chiamare l'equipaggio di passaggio per avere compagnia, solo per attirare capricciosamente la nave in una massa impigliante di alghe. Un'altra potrebbe attirare un vascello su rocce frastagliate per studiare il relitto e saperne di più sullo strano marchingegno. Ma con l'aumento del numero di navi della Coalizione Brazen che attraversano le acque controllate dalle sirene, un numero crescente di sirene ha deciso di soddisfare la propria curiosità prendendo posto negli equipaggi delle navi, compreso, in almeno un caso, il ruolo di capitano.",
-				"Le sirene sono creature umanoidi con sembianze di uccelli. Le loro lunghe e sottili braccia si estendono in potenti ali che trasportano facilmente in aria la loro struttura leggera. Le loro dita portano artigli affilati, ma sono abbastanza agili per brandire armi ed eseguire manipolazioni di precisione. Un'altra nave potrebbe essere attirata su rocce frastagliate per studiare il relitto e saperne di più sullo strano congegno. Ma con l'aumento del numero di navi della Coalizione Brazen che attraversano le acque controllate dalle sirene, un numero crescente di sirene ha deciso di soddisfare la propria curiosità prendendo posto negli equipaggi delle navi, compreso, in almeno un caso, il ruolo di capitano."
+				"Sirens are humanoid creatures with birdlike features. Their long, slender arms extend into powerful wings that easily carry their light frames into the air. Their fingers bear sharp claws but are nimble enough to wield weapons and perform fine manipulation. Crests of feathery plumage start between their eyes and cover the backs of their heads."
 			],
 			"images": [
 				{
@@ -7384,7 +7404,9 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSX/Siren.webp"
-					}
+					},
+					"title": "Dreamcaller Siren",
+					"credit": "Eric Deschamps"
 				}
 			]
 		},
@@ -8336,33 +8358,7 @@
 			]
 		},
 		{
-			"name": "Vampire (Ixalan)",
-			"source": "PSX",
-			"entries": [
-				"La Legione del Crepuscolo è dominata da una classe aristocratica composta da vampiri. Sono più veloci e più forti della maggior parte degli umani e dotati di capacità soprannaturali che li hanno resi la forza più formidabile della loro patria. Ora, mentre si spingono nelle profondità di Ixalan alla ricerca del Sole Immortale, mettono in campo questa forza contro tutti coloro che si oppongono alla loro avanzata.Aumentato nel corso degli anni, un numero crescente di sirene ha deciso di soddisfare la propria curiosità assumendo posizioni negli equipaggi delle navi, compresa, in almeno un caso, la posizione di capitano.",
-				"Per molti vampiri, il Rito della Redenzione che trasforma un umano in un vampiro è un atto di sacrificio personale, che apre la strada a un'era gloriosa promessa. Questi vampiri incarnano la nobile tradizione di Torrezon in Ixalan. Spesso sono guidati dalla loro duplice lealtà alla chiesa e alla corona, credendo che il monarca agisca con uno scopo retto. Per questo motivo, questi vampiri si comportano con una sicurezza di sé imponente e imperiale. Le altre società sembrano inferiori e impure rispetto alla loro, il che li porta a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano.",
-				"Altri vampiri vedono il vampirismo solo come un mezzo per ottenere un potente vantaggio sugli altri. Questi vampiri sono feroci, spietati e spesso crudeli, e amano il conflitto, sia esso politico o armato, come mezzo per dimostrare la loro superiorità. Molti sono ambiziosi dal punto di vista politico, invocano la gerarchia di Torrezon quando serve ai loro interessi, ma ignorano tutte le regole della Chiesa, dello Stato e della morale quando queste regole diventano un peso. Quando questi vampiri arrivano a Ixalan, sono conquistatori, motivati dalla prospettiva della gloria personale e dall'accumulo di ricchezze. Coloro che ottengono ricchezza e potere li ostentano, portandoli a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano.",
-				"Il nucleo della natura di ogni vampiro è la festa del sangue. Sebbene sia vietato nutrirsi dei cittadini umani di Torrezon, compresi i marinai e i servitori umani che accompagnano i conquistatori vampiri a Ixalan, i vampiri sono incoraggiati a nutrirsi degli stranieri e degli eretici. La Festa del Sangue fa fluire una nuova essenza vitale nel vampiro che ne fa parte, che si manifesta come forza e velocità ancora maggiori.d dalla prospettiva della gloria personale e dell'accumulo di ricchezze. Coloro che ottengono ricchezza e potere li ostentano, portandoli a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSX/Vampire.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSX/Vampire2.webp"
-					}
-				}
-			]
-		},
-		{
-			"name": "Vampire (Zendikar)",
+			"name": "Vampire",
 			"source": "PSZ",
 			"entries": [
 				{
@@ -8387,16 +8383,67 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Vampire.webp"
-					}
+					},
+					"title": "Kalitas, Bloodchief of Ghet",
+					"credit": "Todd Lockwood"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSZ/Vampire2.webp"
-					}
+					},
+					"title": "Vampire Nighthawk",
+					"credit": "Jason Chan"
 				}
 			]
+		},
+		{
+			"name": "Vampire (Ixalan)",
+			"source": "PSX",
+			"entries": [
+				"La Legione del Crepuscolo è dominata da una classe aristocratica composta da vampiri. Sono più veloci e più forti della maggior parte degli umani e dotati di capacità soprannaturali che li hanno resi la forza più formidabile della loro patria. Ora, mentre si spingono nelle profondità di Ixalan alla ricerca del Sole Immortale, mettono in campo questa forza contro tutti coloro che si oppongono alla loro avanzata.Aumentato nel corso degli anni, un numero crescente di sirene ha deciso di soddisfare la propria curiosità assumendo posizioni negli equipaggi delle navi, compresa, in almeno un caso, la posizione di capitano.",
+				"Per molti vampiri, il Rito della Redenzione che trasforma un umano in un vampiro è un atto di sacrificio personale, che apre la strada a un'era gloriosa promessa. Questi vampiri incarnano la nobile tradizione di Torrezon in Ixalan. Spesso sono guidati dalla loro duplice lealtà alla chiesa e alla corona, credendo che il monarca agisca con uno scopo retto. Per questo motivo, questi vampiri si comportano con una sicurezza di sé imponente e imperiale. Le altre società sembrano inferiori e impure rispetto alla loro, il che li porta a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano.",
+				"Altri vampiri vedono il vampirismo solo come un mezzo per ottenere un potente vantaggio sugli altri. Questi vampiri sono feroci, spietati e spesso crudeli, e amano il conflitto, sia esso politico o armato, come mezzo per dimostrare la loro superiorità. Molti sono ambiziosi dal punto di vista politico, invocano la gerarchia di Torrezon quando serve ai loro interessi, ma ignorano tutte le regole della Chiesa, dello Stato e della morale quando queste regole diventano un peso. Quando questi vampiri arrivano a Ixalan, sono conquistatori, motivati dalla prospettiva della gloria personale e dall'accumulo di ricchezze. Coloro che ottengono ricchezza e potere li ostentano, portandoli a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano.",
+				"Il nucleo della natura di ogni vampiro è la festa del sangue. Sebbene sia vietato nutrirsi dei cittadini umani di Torrezon, compresi i marinai e i servitori umani che accompagnano i conquistatori vampiri a Ixalan, i vampiri sono incoraggiati a nutrirsi degli stranieri e degli eretici. La Festa del Sangue fa fluire una nuova essenza vitale nel vampiro che ne fa parte, che si manifesta come forza e velocità ancora maggiori.d dalla prospettiva della gloria personale e dell'accumulo di ricchezze. Coloro che ottengono ricchezza e potere li ostentano, portandoli a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSX/Vampire.webp"
+					},
+					"title": "Vicious Conquistador",
+					"credit": "Kieran Yanner"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSX/Vampire2.webp"
+					},
+					"title": "Glorifier of Dusk",
+					"credit": "Viktor Titov"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "races/PSX/Vampire3.webp"
+					},
+					"title": "Arterial Flow",
+					"credit": "Josh Hass"
+				}
+			]
+		},
+		{
+			"name": "Vampire (Zendikar)",
+			"source": "PSZ",
+			"_copy": {
+				"name": "Vampire",
+				"source": "PSZ"
+			}
 		},
 		{
 			"name": "Vedalken",
@@ -8474,14 +8521,25 @@
 			"name": "Vedalken",
 			"source": "PSK",
 			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Of course it's flawed. Everything is. And it's a good thing, too! Can you imagine how dreadful it would be if everything was already perfect?"
+					]
+				},
 				"I Vedalken hanno una visione insolita del progresso. Credono che nulla sia perfetto, né potrà mai esserlo, e se ne rallegrano. Ogni imperfezione è un'opportunità di miglioramento e il progresso è una marcia infinita verso uno stato di perfezione che in realtà non potrà mai essere raggiunto. Per questo, evidenziare le imperfezioni non è affatto un insulto, il che porta i vedalken a notare difetti e problemi con un entusiasmo che i membri di altre razze a volte trovano esasperante.",
 				"Questo entusiasmo si estende a ogni aspetto del lavoro dei vedalken, sia pratico che teorico. Sono curiosi ed eccitabili e spesso si lasciano coinvolgere profondamente nelle loro attività. Non è raro che un vedalken passi ore e ore immerso nei dettagli di una questione astratta o di un minuscolo problema di ingegneria. I Vedalken possono essere completamente dimentichi di ciò che li circonda mentre meditano su questioni spinose e sono inclini a lanciarsi in lunghe spiegazioni sulle loro ricerche in corso, poiché la maggior parte di loro ritiene che parlare di un problema spesso porti a una soluzione.",
 				"Di norma, i vedalken sono socievoli nella conversazione. Tuttavia, sono piuttosto circospetti per quanto riguarda la loro vita personale e si impegnano più con le idee che con le persone. Formano amicizie strette basate su interessi reciproci o su disaccordi importanti, e le loro interazioni si concentrano sui loro pensieri in merito a tali questioni piuttosto che sui loro sentimenti. Le dinamiche emotive non interessano particolarmente ai vedalken, né come argomento di conversazione né come campo di studio. Quando parlano dei loro sentimenti, è soprattutto per fornire informazioni che potrebbero essere utili agli altri. Per esempio, una vedalken potrebbe dire ai suoi colleghi: \"In questo momento mi sento irritata, quindi potrei non reagire in modo appropriato. Forse dovremmo continuare più tardi\". Ma qualsiasi domanda sulla causa dell'irritazione è probabile che venga spazzata via in quanto irrilevante per la situazione.d che parlare di un problema spesso porta a una soluzione.potere esibirlo in maniera ostentata.i propri, portandoli a sentirsi in diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano.d che, in almeno un caso, la posizione di capitano.",
 				{
 					"type": "entries",
-					"name": "Vedalken Politics",
 					"entries": [
-						"La maggior parte dei vedalken è molto più interessata all'invenzione e alla ricerca che alla politica. Preferirebbero sbloccare il potenziale nascosto dei dispositivi basati sull'etere piuttosto che soffermarsi sulla questione di come l'etere debba essere distribuito ai cittadini del Consolato. Per questo motivo, sebbene i vedalken si trovino sia tra i funzionari del Consolato che tra i rinnegati, la loro dedizione a una delle due cause spesso non ha il fervore partigiano che si riscontra nei membri di altre razze, che probabilmente vengono ignorati in quanto irrilevanti per la situazione.d che parlare di un problema spesso porta a una soluzione.potere ostentato, che li porta a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano.d, in almeno un caso, la posizione di capitano."
+						{
+							"type": "entries",
+							"name": "Vedalken Politics",
+							"entries": [
+								"La maggior parte dei vedalken è molto più interessata all'invenzione e alla ricerca che alla politica. Preferirebbero sbloccare il potenziale nascosto dei dispositivi basati sull'etere piuttosto che soffermarsi sulla questione di come l'etere debba essere distribuito ai cittadini del Consolato. Per questo motivo, sebbene i vedalken si trovino sia tra i funzionari del Consolato che tra i rinnegati, la loro dedizione a una delle due cause spesso non ha il fervore partigiano che si riscontra nei membri di altre razze, che probabilmente vengono ignorati in quanto irrilevanti per la situazione.d che parlare di un problema spesso porta a una soluzione.potere ostentato, che li porta a ritenere di avere il diritto di rivendicare nuove terre nonostante la presenza di persone che già le abitano.d, in almeno un caso, la posizione di capitano."
+							]
+						}
 					]
 				}
 			],
@@ -8491,14 +8549,18 @@
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Vedalken.webp"
-					}
+					},
+					"title": "A flash of genius—resulting in a {@item wand of binding}, a {@item crystal ball}, or a {@item sphere of annihilation}?",
+					"credit": "Glimmer of Genius by Tommy Arnold"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "races/PSK/Vedalken2.webp"
-					}
+					},
+					"title": "Curio Vendor",
+					"credit": "Igor Kieryluk"
 				}
 			]
 		},

@@ -655,34 +655,6 @@
 			]
 		},
 		{
-			"name": "Dissenter",
-			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"Anche nella città-stato di Naktamun, accuratamente costruita e curata, e in presenza dei cinque dei, alcune persone si ribellano alle dottrine del Dio-Faraone. Non contestano l'esistenza degli dèi, naturalmente, perché quegli dèi sono visibili quasi ogni giorno per le strade della città. Né mettono in discussione il fatto della vita dopo la morte, che è evidente nelle mummie unte che li circondano, così come le mummie predoni fuori dall'Hekma. Piuttosto, questi dissidenti semplicemente rifiutano di seguire il corso ordinato della vita che porta alla gloriosa vita dopo la morte.",
-								"Alcuni dissidenti sono spinti dalla paura, non volendo sottoporsi ad una morte violenta nelle prove (o nell'allenamento per le prove). Alcuni sono mossi dalla coscienza, non volendo uccidere i loro compagni di coltura nelle prove. Perché mentre non possono negare che gli dei esistano, possono negare che gli dei siano giusti - e possono combattere per dimostrare che i dettami di un dio ingiusto non devono essere obbediti. Alcuni credono che un dio (probabilmente Bontu) abbia corrotto il processo delle prove e il percorso verso l'aldilà. Altri intuiscono correttamente che il Dio-Faraone non aveva in realtà in mente i migliori interessi del popolo quando ha ordinato la loro società.",
-								"Un personaggio che viene identificato come dissenziente perde il beneficio della caratteristica di fondo dell'iniziato o del visir. Al suo posto, il personaggio guadagna la caratteristica Rifugio dei dissidenti."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/PSA/Dissenter.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Dragon Casualty",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -1301,7 +1273,7 @@
 							"type": "entries",
 							"entries": [
 								"Sei un iniziato, sulla strada per completare le prove dei cinque dei nella speranza di guadagnare una morte glorificata nella prova finale di Zeal. Una combinazione delle tue attitudini naturali, delle esigenze della tua coltura e della valutazione dei tuoi insegnanti mentre eri un accolito ti ha portato a concentrare il tuo addestramento in una particolare area di specializzazione nel combattimento a mani nude, nel combattimento a lungo raggio o nel lancio di incantesimi. Ma solo un iniziato a tutto tondo può essere definito veramente degno dell'aldilà.",
-								"Se sei uno specialista del corpo a corpo, considera le classi barbaro, combattente, monaco, paladino o ladro. Come specialista del combattimento a distanza, potresti essere un combattente, un ranger o un ladro. Se sei uno specialista in incantesimi, potresti essere un bardo, uno stregone o un mago. E oltre a questa scelta iniziale, potresti considerare il multiclassamento o l'uso di talenti per completare le tue abilità in tutte e tre le aree."
+								"If you are a hand-to-hand specialist, consider the {@class barbarian}, {@class fighter}, {@class monk}, {@class paladin}, or {@class rogue} classes. As a long-range combat specialist, you might be a {@class fighter}, a {@class ranger}, or a {@class rogue}. If you are a spellcasting specialist, you might be a {@class bard}, {@class sorcerer}, or {@class wizard}. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas."
 							]
 						}
 					]
@@ -1313,16 +1285,61 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate.webp"
-					}
+					},
+					"title": "Unwavering Initiate",
+					"credit": "Greg Opalinski"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate2.webp"
-					}
+					},
+					"title": "Gust Walker",
+					"credit": "Jason Rainville"
 				}
 			]
+		},
+		{
+			"name": "Initiate (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Initiate",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Anche nella città-stato di Naktamun, accuratamente costruita e curata, e in presenza dei cinque dei, alcune persone si ribellano alle dottrine del Dio-Faraone. Non contestano l'esistenza degli dèi, naturalmente, perché quegli dèi sono visibili quasi ogni giorno per le strade della città. Né mettono in discussione il fatto della vita dopo la morte, che è evidente nelle mummie unte che li circondano, così come le mummie predoni fuori dall'Hekma. Piuttosto, questi dissidenti semplicemente rifiutano di seguire il corso ordinato della vita che porta alla gloriosa vita dopo la morte.",
+										"Alcuni dissidenti sono spinti dalla paura, non volendo sottoporsi ad una morte violenta nelle prove (o nell'allenamento per le prove). Alcuni sono mossi dalla coscienza, non volendo uccidere i loro compagni di coltura nelle prove. Perché mentre non possono negare che gli dei esistano, possono negare che gli dei siano giusti - e possono combattere per dimostrare che i dettami di un dio ingiusto non devono essere obbediti. Alcuni credono che un dio (probabilmente Bontu) abbia corrotto il processo delle prove e il percorso verso l'aldilà. Altri intuiscono correttamente che il Dio-Faraone non aveva in realtà in mente i migliori interessi del popolo quando ha ordinato la loro società.",
+										"Un personaggio che viene identificato come dissenziente perde il beneficio della caratteristica di fondo dell'iniziato o del visir. Al suo posto, il personaggio guadagna la caratteristica Rifugio dei dissidenti.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Inquisitor",
@@ -1346,7 +1363,9 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSI/Inquisitor.webp"
-					}
+					},
+					"title": "Moorland Inquisitor",
+					"credit": "David Palumbo"
 				}
 			]
 		},
@@ -2316,7 +2335,7 @@
 							"type": "entries",
 							"entries": [
 								"Sei un visir, un servitore del tuo dio. Svolgi compiti che sono essenziali per facilitare il viaggio degli iniziati, così gli dei ti ricompensano con l'ingresso nell'aldilà con la benedizione del Dio-Faraone. Speri di ottenere lo status più onorato nell'aldilà essendo il miglior servitore possibile del tuo dio.",
-								"Come visir, puoi avere qualsiasi classe, ma è particolarmente probabile che tu sia un chierico, un druido (soprattutto se servi Rhonas) o un paladino."
+								"As a vizier, you can have any class, but you are especially likely to be a {@class cleric}, a {@class druid} (particularly if you serve Rhonas), or a {@class paladin}."
 							]
 						}
 					]
@@ -2328,9 +2347,52 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Vizier.webp"
-					}
+					},
+					"title": "Shadowstorm Vizier",
+					"credit": "Yongjae Choi"
 				}
 			]
+		},
+		{
+			"name": "Vizier (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Vizier",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Anche nella città-stato di Naktamun, accuratamente costruita e curata, e in presenza dei cinque dei, alcune persone si ribellano alle dottrine del Dio-Faraone. Non contestano l'esistenza degli dèi, naturalmente, perché quegli dèi sono visibili quasi ogni giorno per le strade della città. Né mettono in discussione il fatto della vita dopo la morte, che è evidente nelle mummie unte che li circondano, così come le mummie predoni fuori dall'Hekma. Piuttosto, questi dissidenti semplicemente rifiutano di seguire il corso ordinato della vita che porta alla gloriosa vita dopo la morte.",
+										"Alcuni dissidenti sono spinti dalla paura, non volendo sottoporsi ad una morte violenta nelle prove (o nell'allenamento per le prove). Alcuni sono mossi dalla coscienza, non volendo uccidere i loro compagni di coltura nelle prove. Perché mentre non possono negare che gli dei esistano, possono negare che gli dei siano giusti - e possono combattere per dimostrare che i dettami di un dio ingiusto non devono essere obbediti. Alcuni credono che un dio (probabilmente Bontu) abbia corrotto il processo delle prove e il percorso verso l'aldilà. Altri intuiscono correttamente che il Dio-Faraone non aveva in realtà in mente i migliori interessi del popolo quando ha ordinato la loro società.",
+										"Un personaggio che viene identificato come dissenziente perde il beneficio della caratteristica di fondo dell'iniziato o del visir. Al suo posto, il personaggio guadagna la caratteristica Rifugio dei dissidenti.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Volstrucker Agent",

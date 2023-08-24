@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"I degni devono lottare per la grandezza - la supremazia nella vita porta alla supremazia nell'aldilà\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"Bontu ha abbracciato pienamente questo dettame, e anche se spende pochi sforzi per insegnarlo, sicuramente dà l'esempio. I suoi visir piantano sottilmente i semi che fioriscono nell'ambizione che il Dio-Faraone desidera. Attraverso l'insinuazione, ricordano agli accoliti e agli iniziati che raggiungere il proprio posto nell'aldilà a spese degli altri non è vergognoso, ma è la prova della determinazione e della volontà dell'iniziato. Nulla è più importante di quella spinta, suggeriscono - non i legami di un raccolto, non l'amicizia o l'amore. Nemmeno la devozione a una divinità.",
 				"Ad ogni livello di chierico indicato, aggiungi gli incantesimi elencati ai tuoi incantesimi preparati.",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Il degno deve coltivare una mente agile che possa percepire le meraviglie oltre l'immaginazione che attendono nell'aldilà\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"Il compito di Kefnet è di trasmettere questo insegnamento del Dio-Faraone e di chiarirne il significato. Egli insegna che l'aldilà sarà abitato solo da coloro che hanno dimostrato con il loro ingegno di essere degni di abitare alla gloriosa presenza del Dio-Pharaoh. Addestra gli accoliti e gli iniziati a superare i loro limiti e a sfidare la loro capacità mentale con incantesimi di potenza sempre maggiore.",
-				"Il dominio di Kefnet è identico al dominio di Conoscenze del Manuale del Giocatore."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"Vedere il dominio Conoscenza."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Vedere il dominio Conoscenza."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Vedere il dominio Conoscenza."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Vedere il dominio Conoscenza."
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"I degni devono conoscere e rispettare tutti gli altri che il Dio-Faraone ritiene degni, perché nell'aldilà, tutti saranno uniti nello scopo e nell'azione\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"Oketra è incaricata di esporre questo insegnamento del Dio-Faraone, instillando in ogni iniziato la virtù della solidarietà. Lei forgia ogni gruppo di bambini in un raccolto di accoliti con un solo scopo: essere giudicati degni di una gloriosa vita ultraterrena. E inculca in ogni raccolto la capacità di unirsi in un'unica azione per perseguire quello scopo. È appassionata di immagini poetiche per comunicare i suoi ideali.",
 				"Ad ogni livello di chierico indicato, aggiungi gli incantesimi elencati ai tuoi incantesimi preparati.",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Il degno dovrà affinare un corpo forte che possa resistere alle energie sconfinate dell'aldilà\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"Spetta a Rhonas inculcare questo insegnamento a coloro che entreranno nell'aldilà, ma per lui le parole stesse non hanno importanza. La forza non può essere insegnata. Deve essere costruita attraverso la pratica e l'allenamento. Rhonas dimostra i suoi insegnamenti con il suo esempio, piuttosto che dando ai suoi studenti qualsiasi tipo di istruzione accademica. Accoglie la gente di Naktamun per stare accanto all'Hekma e guardarlo mentre sfreccia nel deserto per combattere gli orrori più grandi. Li incoraggia ad osservare la sua forza indomabile, perché anche se non la eguaglieranno mai, possono aspirare ad imitarla. Li invita a scrutare ogni mossa e a mettere in pratica ciò che vedono.",
 				"Ad ogni livello di chierico indicato, aggiungi gli incantesimi elencati ai tuoi incantesimi preparati.",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"I degni accorreranno al fianco del Dio-Faraone con zelo implacabile, alzandosi per superare ogni ostacolo sulla loro strada\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"Il Dio-Faraone si aspetta che coloro che accoglie nell'aldilà lo desiderino al di sopra di tutti gli altri piaceri e conquiste, e che mostrino la loro dedizione, passione e fervore attraverso le loro azioni. Hazoret è incaricata di coltivare questo zelo negli iniziati che passano sotto le sue cure, e ha intrapreso il compito con l'entusiasmo appropriato. Riconosce, tuttavia, che il modo migliore per insegnare lo zelo è dimostrarlo.",
 				"Ad ogni livello di chierico indicato, aggiungi gli incantesimi elencati ai tuoi incantesimi preparati.",
 				{

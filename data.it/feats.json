@@ -7111,6 +7111,23 @@
 					"anyArtisansTool": 1
 				}
 			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				}
+			],
 			"entries": [
 				"Hai padroneggiato l'arte dell'invenzione, del miglioramento e della manipolazione al volo. Puoi usare i tuoi talenti per creare effetti magici immediati e a breve termine simili agli incantesimi, se hai tempo e una scorta adeguata di etere.",
 				"Quando scegli questo talento, padroneggi due effetti magici, ognuno dei quali ricrea l'effetto di un incantesimo di 1° livello con l'etichetta rituale. Questi incantesimi possono provenire da qualsiasi lista di classi, ma l'Intelligenza è la tua capacità di incantatore per essi.",
@@ -8146,7 +8163,8 @@
 				"Sei abile nella creazione di {@creature servo|psk|servos} piccoli costrutti che fungono da assistenti personali. Puoi lanciare l'incantesimo {@spell find familiar} come rituale, creando un {@creature servo|psk} che funga da tuo familiare al posto di un animale. Le statistiche di un {@creature servo|psk} appaiono nella sezione \"Creature artificiali\" di questo documento. In ogni altro modo, un servo familiare funziona come descritto nell'incantesimo {@spell find familiar}.",
 				"Puoi comunicare telepaticamente con il tuo servo familiare e percepire attraverso i suoi sensi finché siete sullo stesso piano di esistenza. Puoi parlare attraverso il tuo servo con la tua voce.",
 				"Inoltre, quando esegui l'azione {@action Attack}, puoi rinunciare a uno dei tuoi attacchi per permettere al tuo servo familiare di effettuare un attacco da solo."
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Shadow Touched",
