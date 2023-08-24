@@ -655,34 +655,6 @@
 			]
 		},
 		{
-			"name": "Dissenter",
-			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"Selbst in dem sorgfältig errichteten und gepflegten Stadtstaat Naktamun und in der Gegenwart der fünf Götter gibt es Menschen, die sich gegen die Lehren des Gott-Pharaos auflehnen. Sie stellen nicht die Existenz der Götter in Frage, denn diese sind fast jeden Tag in den Straßen der Stadt zu sehen. Sie stellen auch nicht die Tatsache des Lebens nach dem Tod in Frage, was an den gesalbten Mumien, die sie umgeben, sowie an den marodierenden Mumien außerhalb der Hekma deutlich zu sehen ist. Vielmehr weigern sich diese Abweichler einfach, dem vorgeschriebenen Lebensweg zu folgen, der zum glorreichen Leben nach dem Tod führt.",
-								"Einige Abweichler werden von Angst getrieben, weil sie sich nicht einem gewaltsamen Tod in den Prüfungen (oder in der Ausbildung für die Prüfungen) aussetzen wollen. Andere werden vom Gewissen getrieben, weil sie nicht bereit sind, ihre Erntegenossen in den Prüfungen zu töten. Sie können zwar nicht leugnen, dass die Götter existieren, aber sie können leugnen, dass die Götter gerecht sind - und sie können kämpfen, um zu beweisen, dass man dem Diktat eines ungerechten Gottes nicht zu gehorchen braucht. Einige glauben, dass ein Gott (wahrscheinlich Bontu) den Ablauf der Prüfungen und den Weg ins Jenseits korrumpiert hat. Andere haben die richtige Intuition, dass der Gott-Pharao nicht wirklich das Beste für die Menschen im Sinn hatte, als er ihre Gesellschaft befahl.",
-								"Ein Charakter, der als Abweichler identifiziert wird, verliert den Vorteil des Hintergrundmerkmals des Eingeweihten oder Wesirs. Stattdessen erhält der Charakter die Eigenschaft \"Schutz der Dissidenten\"."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/PSA/Dissenter.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Dragon Casualty",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -1301,7 +1273,7 @@
 							"type": "entries",
 							"entries": [
 								"Du bist ein Eingeweihter, der auf dem Weg ist, die Prüfungen der fünf Götter zu bestehen, in der Hoffnung, in der letzten Prüfung des Eifers einen glorreichen Tod zu erlangen. Eine Kombination aus deiner natürlichen Begabung, den Erfordernissen deiner Kultur und der Einschätzung deiner Lehrer während deiner Zeit als Akolyth hat dich dazu gebracht, deine Ausbildung auf ein bestimmtes Spezialgebiet zu konzentrieren: Nahkampf, Fernkampf oder Zauberei. Aber nur ein gut ausgebildeter Eingeweihter kann als wahrhaft würdig für das Leben nach dem Tod bezeichnet werden.",
-								"Wenn Sie ein Nahkampfspezialist sind, sollten Sie die Klassen Barbar, Kämpfer, Mönch, Paladin oder Schurke in Betracht ziehen. Als Fernkampfspezialist könntest du ein Kämpfer, ein Waldläufer oder ein Schurke sein. Wenn Sie ein Spezialist für Zauberei sind, könnten Sie ein Barde, ein Hexenmeister oder ein Zauberer sein. Und über diese anfängliche Wahl hinaus könntest du in Erwägung ziehen, deine Fertigkeiten in allen drei Bereichen durch Mehrfachklassifizierung oder Feats zu vervollständigen."
+								"If you are a hand-to-hand specialist, consider the {@class barbarian}, {@class fighter}, {@class monk}, {@class paladin}, or {@class rogue} classes. As a long-range combat specialist, you might be a {@class fighter}, a {@class ranger}, or a {@class rogue}. If you are a spellcasting specialist, you might be a {@class bard}, {@class sorcerer}, or {@class wizard}. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas."
 							]
 						}
 					]
@@ -1313,16 +1285,61 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate.webp"
-					}
+					},
+					"title": "Unwavering Initiate",
+					"credit": "Greg Opalinski"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate2.webp"
-					}
+					},
+					"title": "Gust Walker",
+					"credit": "Jason Rainville"
 				}
 			]
+		},
+		{
+			"name": "Initiate (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Initiate",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Selbst in dem sorgfältig errichteten und gepflegten Stadtstaat Naktamun und in der Gegenwart der fünf Götter gibt es Menschen, die sich gegen die Lehren des Gott-Pharaos auflehnen. Sie stellen nicht die Existenz der Götter in Frage, denn diese sind fast jeden Tag in den Straßen der Stadt zu sehen. Sie stellen auch nicht die Tatsache des Lebens nach dem Tod in Frage, was an den gesalbten Mumien, die sie umgeben, sowie an den marodierenden Mumien außerhalb der Hekma deutlich zu sehen ist. Vielmehr weigern sich diese Abweichler einfach, dem vorgeschriebenen Lebensweg zu folgen, der zum glorreichen Leben nach dem Tod führt.",
+										"Einige Abweichler werden von Angst getrieben, weil sie sich nicht einem gewaltsamen Tod in den Prüfungen (oder in der Ausbildung für die Prüfungen) aussetzen wollen. Andere werden vom Gewissen getrieben, weil sie nicht bereit sind, ihre Erntegenossen in den Prüfungen zu töten. Sie können zwar nicht leugnen, dass die Götter existieren, aber sie können leugnen, dass die Götter gerecht sind - und sie können kämpfen, um zu beweisen, dass man dem Diktat eines ungerechten Gottes nicht zu gehorchen braucht. Einige glauben, dass ein Gott (wahrscheinlich Bontu) den Ablauf der Prüfungen und den Weg ins Jenseits korrumpiert hat. Andere haben die richtige Intuition, dass der Gott-Pharao nicht wirklich das Beste für die Menschen im Sinn hatte, als er ihre Gesellschaft befahl.",
+										"Ein Charakter, der als Abweichler identifiziert wird, verliert den Vorteil des Hintergrundmerkmals des Eingeweihten oder Wesirs. Stattdessen erhält der Charakter die Eigenschaft \"Schutz der Dissidenten\".",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Inquisitor",
@@ -1346,7 +1363,9 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSI/Inquisitor.webp"
-					}
+					},
+					"title": "Moorland Inquisitor",
+					"credit": "David Palumbo"
 				}
 			]
 		},
@@ -2316,7 +2335,7 @@
 							"type": "entries",
 							"entries": [
 								"Du bist ein Wesir, ein Diener deines Gottes. Du erfüllst Aufgaben, die wichtig sind, um die Reise der Eingeweihten zu erleichtern, damit die Götter dich mit dem Segen des Gott-Pharaos mit dem Eintritt ins Jenseits belohnen. Du hoffst, den ehrenvollsten Status im Jenseits zu erlangen, indem du der bestmögliche Diener deines Gottes bist.",
-								"Als Wesir kann man jede Klasse haben, aber besonders wahrscheinlich ist es, dass man ein Kleriker, ein Druide (besonders wenn man Rhonas dient) oder ein Paladin ist."
+								"As a vizier, you can have any class, but you are especially likely to be a {@class cleric}, a {@class druid} (particularly if you serve Rhonas), or a {@class paladin}."
 							]
 						}
 					]
@@ -2328,9 +2347,52 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Vizier.webp"
-					}
+					},
+					"title": "Shadowstorm Vizier",
+					"credit": "Yongjae Choi"
 				}
 			]
+		},
+		{
+			"name": "Vizier (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Vizier",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Selbst in dem sorgfältig errichteten und gepflegten Stadtstaat Naktamun und in der Gegenwart der fünf Götter gibt es Menschen, die sich gegen die Lehren des Gott-Pharaos auflehnen. Sie stellen nicht die Existenz der Götter in Frage, denn diese sind fast jeden Tag in den Straßen der Stadt zu sehen. Sie stellen auch nicht die Tatsache des Lebens nach dem Tod in Frage, was an den gesalbten Mumien, die sie umgeben, sowie an den marodierenden Mumien außerhalb der Hekma deutlich zu sehen ist. Vielmehr weigern sich diese Abweichler einfach, dem vorgeschriebenen Lebensweg zu folgen, der zum glorreichen Leben nach dem Tod führt.",
+										"Einige Abweichler werden von Angst getrieben, weil sie sich nicht einem gewaltsamen Tod in den Prüfungen (oder in der Ausbildung für die Prüfungen) aussetzen wollen. Andere werden vom Gewissen getrieben, weil sie nicht bereit sind, ihre Erntegenossen in den Prüfungen zu töten. Sie können zwar nicht leugnen, dass die Götter existieren, aber sie können leugnen, dass die Götter gerecht sind - und sie können kämpfen, um zu beweisen, dass man dem Diktat eines ungerechten Gottes nicht zu gehorchen braucht. Einige glauben, dass ein Gott (wahrscheinlich Bontu) den Ablauf der Prüfungen und den Weg ins Jenseits korrumpiert hat. Andere haben die richtige Intuition, dass der Gott-Pharao nicht wirklich das Beste für die Menschen im Sinn hatte, als er ihre Gesellschaft befahl.",
+										"Ein Charakter, der als Abweichler identifiziert wird, verliert den Vorteil des Hintergrundmerkmals des Eingeweihten oder Wesirs. Stattdessen erhält der Charakter die Eigenschaft \"Schutz der Dissidenten\".",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Volstrucker Agent",

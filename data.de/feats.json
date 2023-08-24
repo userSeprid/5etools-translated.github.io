@@ -7111,6 +7111,23 @@
 					"anyArtisansTool": 1
 				}
 			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				}
+			],
 			"entries": [
 				"Du beherrschst die Kunst des spontanen Erfindens, Verbesserns und Bastelns. Du kannst deine Talente nutzen, um sofortige, kurzfristige magische Effekte zu erzeugen, die Zaubern ähneln, wenn du Zeit und einen ausreichenden Vorrat an Äther hast.",
 				"Wenn du diese Fähigkeit wählst, beherrschst du zwei magische Effekte, von denen jeder den Effekt eines Zaubers der Stufe 1 mit dem Attribut Ritual nachbildet. Diese Zauber können aus jeder Klassenliste stammen, aber Intelligenz ist deine Zauberfähigkeit für sie.",
@@ -8146,7 +8163,8 @@
 				"Du bist geübt in der Erschaffung von {@creature servo|psk|servos}- winzigen Konstrukten, die als persönliche Assistenten fungieren. Du kannst den Zauber {@spell find familiar} als Ritual wirken, um einen {@creature servo|psk} zu erschaffen, der anstelle eines Tieres als dein Vertrauter dient. Die Statistiken eines {@creature servo|psk} erscheinen im Abschnitt \"Artefaktkreaturen\" dieses Dokuments. In jeder anderen Hinsicht funktioniert ein Servo-Vertrauter wie im Zauber {@spell find familiar} beschrieben.",
 				"Du kannst telepathisch mit deinem Servo-Vertrauten kommunizieren und ihn mit seinen Sinnen wahrnehmen, solange ihr euch auf derselben Dimension der Existenz befindet. Du kannst durch deinen Servo mit deiner eigenen Stimme sprechen.",
 				"Wenn du die Aktion {@action Attack} ausführst, kannst du außerdem auf eine deiner eigenen Attacken verzichten, damit dein Servo-Vertrauter eine eigene Attacke ausführen kann."
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Shadow Touched",

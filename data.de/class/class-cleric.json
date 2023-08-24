@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Der Würdige soll nach Größe streben - Überlegenheit im Leben führt zu Überlegenheit im Jenseits.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"Bontu hat sich dieses Diktum zu eigen gemacht, und obwohl sie sich wenig Mühe gibt, es zu lehren, geht sie mit gutem Beispiel voran. Ihre Wesire pflanzen auf subtile Weise die Samen, die zu dem Ehrgeiz erblühen, den sich der Gott-Pharao wünscht. Durch Andeutungen erinnern sie Akolythen und Eingeweihte gleichermaßen daran, dass es keine Schande ist, seinen Platz im Jenseits auf Kosten anderer zu erreichen, sondern ein Beweis für die Entschlossenheit und den Tatendrang des Eingeweihten. Nichts ist wichtiger als dieser Tatendrang, suggerieren sie - nicht die Bande einer Ernte, nicht Freundschaft oder Liebe, nicht einmal die Hingabe an eine Gottheit.",
 				"Auf jeder angegebenen Klerikerstufe kannst du die aufgelisteten Zaubersprüche zu deinen vorbereiteten Zaubern hinzufügen.",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Der Würdige soll einen wachen Geist kultivieren, der die Wunder jenseits der Vorstellungskraft wahrnehmen kann, die im Jenseits warten.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"Kefnets Aufgabe ist es, diese Lehre des Gott-Pharao weiterzugeben und ihre Bedeutung zu erläutern. Er lehrt, dass das Jenseits nur von jenen bewohnt wird, die durch ihren Verstand bewiesen haben, dass sie würdig sind, in der glorreichen Gegenwart des Gott-Pharao zu verweilen. Er schult Akolythen und Eingeweihte, um ihre Grenzen zu erweitern und ihre geistigen Fähigkeiten mit immer mächtigeren Zaubern herauszufordern.",
-				"Die Domäne von Kefnet ist identisch mit der Domäne Wissen im Spielerhandbuch."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"Siehe den Bereich Wissen."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Siehe den Bereich Wissen."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Siehe den Bereich Wissen."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Siehe den Bereich Wissen."
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Die Würdigen müssen alle anderen kennen und respektieren, die der Gott-Pharao für würdig hält, denn im Jenseits werden alle in ihren Zielen und Handlungen vereint sein.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"Oketra hat die Aufgabe, diese Lehre des Gott-Pharaos zu erläutern und jedem Eingeweihten die Tugend der Solidarität einzuflößen. Sie schmiedet jede Gruppe von Kindern zu einem Jahrgang von Akolythen, die nur ein Ziel haben: ein glorreiches Leben nach dem Tod. Und sie flößt jedem Jahrgang die Fähigkeit ein, sich in einer einzigen Aktion zu vereinen, um dieses Ziel zu erreichen. Sie liebt poetische Bilder, um ihre Ideale zu vermitteln.",
 				"Auf jeder angegebenen Klerikerstufe kannst du die aufgelisteten Zaubersprüche zu deinen vorbereiteten Zaubern hinzufügen.",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Der Würdige soll sich einen starken Körper aneignen, der den grenzenlosen Energien des Jenseits standhalten kann.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"Es ist Rhonas' Aufgabe, denjenigen, die ins Jenseits gehen, diese Lehre zu vermitteln - aber seiner Meinung nach sind die Worte selbst nicht wichtig. Stärke kann nicht gelehrt werden. Sie muss durch Übung und Training aufgebaut werden. Rhonas demonstriert seine Lehren durch sein Beispiel, anstatt seinen Schülern irgendeine Art von akademischer Unterweisung zu geben. Er lädt die Menschen von Naktamun ein, am Hekma zu stehen und ihm zuzusehen, wie er in die Wüste stürmt, um die größten Schrecken zu bekämpfen. Er ermutigt sie, seine unbezwingbare Stärke zu beobachten, denn obwohl sie sie niemals erreichen werden, können sie danach streben, sie nachzuahmen. Er fordert sie auf, jede Bewegung zu prüfen und zu üben, was sie sehen.",
 				"Auf jeder angegebenen Klerikerstufe kannst du die aufgelisteten Zaubersprüche zu deinen vorbereiteten Zaubern hinzufügen.",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Die Würdigen werden dem Gott-Pharao mit unerbittlichem Eifer zur Seite eilen und jedes Hindernis auf ihrem Weg überwinden.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"Der Gott-Pharao erwartet von denjenigen, die er im Jenseits willkommen heißt, dass sie es sich mehr wünschen als alle anderen Freuden und Errungenschaften und dass sie ihre Hingabe, ihre Leidenschaft und ihren Eifer durch ihre Handlungen zeigen. Hazoret ist damit beauftragt, diesen Eifer in den Eingeweihten, die unter ihre Obhut kommen, zu kultivieren, und sie hat diese Aufgabe mit angemessenem Enthusiasmus übernommen. Sie erkennt jedoch, dass der beste Weg, Eifer zu lehren, darin besteht, ihn zu demonstrieren.",
 				"Auf jeder angegebenen Klerikerstufe kannst du die aufgelisteten Zaubersprüche zu deinen vorbereiteten Zaubern hinzufügen.",
 				{
