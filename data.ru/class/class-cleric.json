@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Достойные должны стремиться к величию - превосходство в жизни ведет к превосходству в загробной жизни\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"Бонту полностью приняла эту сентенцию, и хотя она тратит мало усилий на то, чтобы научить ее, она, несомненно, подает пример. Ее визири тонко сеют семена, из которых вырастает честолюбие, желаемое богом-фараоном. Путем инсинуаций они напоминают и аколитам, и посвященным, что добиться своего места в загробной жизни за счет других не зазорно, а является доказательством решимости и стремления посвященного. Ничто не может быть важнее этого стремления, говорят они, - ни узы культуры, ни дружба или любовь. Даже преданность божеству.",
 				"На каждом указанном уровне клерика добавьте перечисленные заклинания к своим подготовленным заклинаниям.",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Достойные должны воспитывать в себе проворный ум, способный постигать чудеса, превосходящие воображение, которые ждут в загробной жизни\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"Задача Кефнета - передать это учение Бога-Фараона и разъяснить его смысл. Он учит, что в загробную жизнь попадут только те, кто своим умом доказал, что достоин обитать в славном присутствии Бога-Фараона. Он обучает аколитов и посвященных расширять свои границы и бросать вызов своим умственным способностям, используя заклинания все большей силы.",
-				"Домен Кефнета идентичен домену Знания в Справочнике игрока."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"См. область \"Знания\"."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"См. область \"Знания\"."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"См. область \"Знания\"."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"См. область \"Знания\"."
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Достойные должны знать и уважать всех остальных, кого Бог-Фараон считает достойными, ибо в загробной жизни все будут едины в целях и действиях\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"Окетре поручено разъяснять это учение бога-фараона, прививая каждому посвященному добродетель солидарности. Она формирует из каждой группы детей аколитов с единственной целью: быть признанными достойными славной загробной жизни. И она прививает каждой группе способность объединяться в едином действии для достижения этой цели. Она любит поэтические образы для передачи своих идеалов.",
 				"На каждом указанном уровне клерика добавьте перечисленные заклинания к своим подготовленным заклинаниям.",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Достойные должны оттачивать сильное тело, способное противостоять безграничным энергиям загробного мира\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"Ронас должен привить это учение тем, кто попадет в загробную жизнь, но, по его мнению, сами слова не имеют значения. Силе нельзя научить. Ее нужно нарабатывать практикой и тренировками. Ронас демонстрирует свое учение на собственном примере, а не дает своим ученикам какие-либо академические наставления. Он приглашает жителей Нактамуна встать рядом с Хекмой и наблюдать за ним, когда он мчится в пустыню, чтобы сразиться с величайшими ужасами. Он призывает их наблюдать за его неукротимой силой, ибо, хотя они никогда не сравнятся с ним, они могут стремиться к подражанию. Он призывает их внимательно следить за каждым движением и практиковать то, что они видят.",
 				"На каждом указанном уровне клерика добавьте перечисленные заклинания к своим подготовленным заклинаниям.",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Достойные устремятся на сторону Бога-фараона с неустанным рвением, поднимаясь, чтобы преодолеть любое препятствие на своем пути\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"Бог-фараон ожидает, что те, кого он принимает в загробную жизнь, будут желать ее превыше всех других удовольствий и достижений, и что они покажут свою преданность, страсть и рвение своими действиями. Хазорет поручено культивировать это рвение в посвященных, которые попадают под ее опеку, и она взялась за эту задачу с должным энтузиазмом. Однако она понимает, что лучший способ научить рвению - это продемонстрировать его на деле.",
 				"На каждом указанном уровне клерика добавьте перечисленные заклинания к своим подготовленным заклинаниям.",
 				{

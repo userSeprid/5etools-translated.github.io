@@ -676,13 +676,34 @@
 						"Неизвестный эфиророжденный, отчаянно искавший способ продлить свою короткую жизнь, открыл процесс трансформации, который продлил его существование, дав ему способность питаться жизненной сущностью других существ. С тех пор другие эфиророжденные научились и осуществили эту чудовищную трансформацию, и эфиророжденные с таким \"даром\" стали незначительным меньшинством среди и без того немногочисленной популяции.",
 						"Одаренный эфирнорожденный обладает способностью высасывать жизненную сущность из других существ. Подобно тому, как тепло передается от теплого предмета к холодному, одаренному эфирнорожденному достаточно прикоснуться когтистой рукой к другому живому существу, чтобы вытянуть из него жизненную сущность, подпитывая собственное существование и вытягивая силу и жизненную энергию из своей жертвы.",
 						"Для многих эфирнорожденных, живущих, как и они, ради поблажек и мгновенного удовлетворения, понятия \"хотеть\" и \"нуждаться\" практически синонимы. Но эфирнорожденные с этим даром понимают, что такое настоящая нужда, ибо у них развивается голод по жизненной сущности, намного превосходящий любые желания, которые они могли испытывать до своей трансформации. Одаренный эфирнорожденный, воздерживающийся от такого питания, деградирует еще быстрее, чем другие эфирнорожденные, испытывая при этом невыразимые муки, вызванные лишением жизненной энергии.",
-						"По желанию ДМа, эфирнорожденный персонаж может исследовать методы получения этого темного \"дара\". Процесс похож на изобретение и изготовление редкого магического предмета (см. раздел \"Изобретение и изготовление устройств\" ранее в этом документе). Но вместо эфира для этого процесса требуется множество редких приправ и необычных ингредиентов, которые составляют стоимость исследования и прохождения трансформации.",
+						"At the DM's option, an aetherborn character can research methods of achieving this dark \"gift.\" The process is similar to inventing and manufacturing a rare magic item (see \"{@book Inventing and Manufacturing Devices|PS-K|1|Inventing and Manufacturing Devices}\" earlier in this document). But rather than aether, the process requires a variety of rare unguents and unusual ingredients that make up the cost of researching and undergoing the transformation.",
 						"Эфиророжденный с этим даром получает способность \"Высасывать жизнь\": естественная атака, наносящая {@dice 1d6} некротического урона и восстанавливающая такое же количество хит-пойнтов. Однако если эфирнорожденный в течение 7 дней не наносит этот урон, его максимальное количество хит-пойнтов уменьшается на {@dice 1d6} в неделю. Это снижение не может быть снято, пока эфирнорожденный не использует способность Drain Life и не завершит длительный отдых."
 					]
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Variant; Gifted Aetherborn",
+					"source": "PSK",
+					"_mod": {
+						"entries": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Drain Life",
+								"type": "entries",
+								"entries": [
+									"You gain a natural attack that deals {@dice 1d6} necrotic damage and restores the same number of hit points to you. However, if you goes for 7 days without dealing this damage, your hit point maximum is reduced by {@dice 1d6} per week. This reduction can't be removed until you have used your Drain Life ability and completed a long rest."
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Natural Weapon"
+					]
+				}
+			]
 		},
 		{
 			"name": "Astral Elf",
@@ -1217,14 +1238,14 @@
 				{
 					"name": "Flight",
 					"entries": [
-						"Ваша скорость полета составляет 30 футов. Вы не можете использовать свою скорость полета, пока на вас надеты средние или тяжелые доспехи. (Если в вашей кампании используется правило варианта для обременения, вы не можете использовать свою скорость полета, если вы обременены)."
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.) "
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Вы можете говорить, читать и писать на общем и авенском языках."
+						"You can speak, read, and write Common and {@language Aven|PSD}."
 					],
 					"type": "entries"
 				},
@@ -3858,7 +3879,7 @@
 				}
 			],
 			"age": {
-				"mature": 20,
+				"mature": 50,
 				"max": 350
 			},
 			"darkvision": 60,
@@ -3899,7 +3920,7 @@
 				{
 					"name": "Speed",
 					"entries": [
-						"Ваша скорость не уменьшается при ношении тяжелых доспехов."
+						"Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor."
 					],
 					"type": "entries"
 				},
@@ -3934,7 +3955,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Вы можете говорить, читать и писать на общем и дварфийском языках. Дварфийский язык полон твердых согласных и гортанных звуков, и эти особенности перетекают в любой другой язык, на котором может говорить гном."
+						"You can speak, read, and write Common and {@language Dwarvish}. {@language Dwarvish} is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 					],
 					"type": "entries"
 				}
@@ -4243,6 +4264,13 @@
 					"name": "Languages",
 					"entries": [
 						"Вы можете говорить, читать и писать на общем и эльфийском языках. Эльфийский язык плавный, с тонкими интонациями и сложной грамматикой. Эльфийская литература богата и разнообразна, а их песни и стихи известны среди других рас. Многие барды изучают их язык, чтобы добавить в свой репертуар эльфийские баллады."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Elf Culture",
+					"entries": [
+						"The elves of Kaladesh don't organize themselves into nations or tribes. Still, they recognize three distinct cultural groups among their kind—though in truth these groupings are more like attitudes or alignments with regard to the rest of society and the use of technology. Choose one of these cultures."
 					],
 					"type": "entries"
 				}
@@ -5666,6 +5694,78 @@
 		},
 		{
 			"name": "Goblin",
+			"source": "PSZ",
+			"page": 16,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 16
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"age": {
+				"mature": 12,
+				"max": 50
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Armor"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"goblin": true
+				}
+			],
+			"resist": [
+				"fire",
+				"psychic"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Гоблины взрослеют быстрее людей, достигая совершеннолетия примерно в 12 лет. Они также стареют заметно быстрее людей, и даже самые осторожные гоблины редко живут дольше 50 лет."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Большинство гоблинов - дикие хаотики, хотя у них нет особой склонности к добру или злу."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Гоблины в среднем имеют рост около 3 футов и вес около 40 фунтов. Ваш размер - маленький."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Благодаря своему наследию вы обладаете превосходным зрением в темных и тусклых условиях. Вы можете видеть при тусклом свете в радиусе 60 футов от вас, как при ярком свете, а в темноте - как при тусклом свете. Вы не можете различать цвета в темноте, только оттенки серого."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"Вы можете говорить, читать и писать на общем и гоблинском языках."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Goblin",
 			"source": "VGM",
 			"page": 119,
 			"otherSources": [
@@ -5797,158 +5897,6 @@
 			],
 			"heightAndWeight": null,
 			"hasFluff": true
-		},
-		{
-			"name": "Goblin (Ixalan)",
-			"source": "PSX",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": {
-				"walk": 25,
-				"climb": 25
-			},
-			"ability": [
-				{
-					"dex": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Гоблины созревают быстрее людей, достигая совершеннолетия примерно в 12 лет. Они стареют заметно быстрее, и хотя немногие гоблины доживают до старости, самые осторожные редко живут дольше 50 лет."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Большинство гоблинов - дикие хаотики, не склонные к добру или злу, но имеющие сильную склонность к озорству."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Гоблины в среднем имеют рост около 3 футов и вес около 40 фунтов. Ваш размер - маленький."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Agile Climber",
-					"entries": [
-						"Ваша скорость лазания составляет 25 футов. Вы не можете использовать свою скорость лазания, пока носите средние или тяжелые доспехи. (Если в вашей кампании используется вариант правила для обременения, вы не можете использовать свою скорость лазания, если вы обременены)."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Вы можете видеть при тусклом свете в радиусе 60 футов от вас, как при ярком свете, и в темноте, как при тусклом свете. Вы не можете различать цвета в темноте, только оттенки серого."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Вы можете говорить, читать и писать на общем языке (если он существует в вашей кампании) и на гоблинском."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Goblin (Zendikar)",
-			"source": "PSZ",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": 25,
-			"ability": [
-				{
-					"con": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"traitTags": [
-				"Natural Armor"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"resist": [
-				"fire",
-				"psychic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Гоблины взрослеют быстрее людей, достигая совершеннолетия примерно в 12 лет. Они также стареют заметно быстрее людей, и даже самые осторожные гоблины редко живут дольше 50 лет."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Большинство гоблинов - дикие хаотики, хотя у них нет особой склонности к добру или злу."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Гоблины в среднем имеют рост около 3 футов и вес около 40 фунтов. Ваш размер - маленький."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Благодаря своему наследию вы обладаете превосходным зрением в темных и тусклых условиях. Вы можете видеть при тусклом свете в радиусе 60 футов от вас, как при ярком свете, а в темноте - как при тусклом свете. Вы не можете различать цвета в темноте, только оттенки серого."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Grit",
-					"entries": [
-						"У вас есть сопротивление к урону от огня и психическому урону. Кроме того, когда на вас нет доспехов, ваш AC равен 11 + ваш модификатор ловкости."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Вы можете говорить, читать и писать на общем и гоблинском языках."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
 		},
 		{
 			"name": "Goliath",
@@ -7490,10 +7438,45 @@
 			"name": "Human (Ixalan)",
 			"source": "PSX",
 			"page": 11,
-			"size": [
-				"M"
-			],
-			"speed": 30,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"Люди не склонны к какому-либо определенному распределению. Среди них встречаются как лучшие, так и худшие."
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"Ваша базовая скорость ходьбы составляет 30 футов."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write {@language Common} and one extra language of your choice. Or, if your campaign uses the optional rules for languages found in the previous section, your national origin determines your native language: {@language Itzocan|PSX} for the Sun Empire, {@language Coalition pidgin|PSX} for the Brazen Coalition, or {@language Vampire|PSX} for the Legion of Dusk. You still speak one additional language of your choice, and {@language Common Trade Pidgin|PSX|Common} if it exists in your campaign."
+								]
+							}
+						}
+					]
+				}
+			},
 			"ability": [
 				{
 					"str": 1,
@@ -7504,10 +7487,6 @@
 					"cha": 1
 				}
 			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -7519,34 +7498,60 @@
 					"anyStandard": 1
 				}
 			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Human (Kaladesh)",
+			"source": "PSK",
+			"page": 22,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
 					"entries": [
-						"Люди достигают зрелого возраста в конце подросткового периода и живут менее ста лет."
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"Люди не склонны к какому-либо определенному выравниванию."
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"Ваша базовая скорость ходьбы составляет 30 футов."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Dwarvish curses, Elvish musical expressions, {@race Vedalken|PSK} scholarly jargon, and so on."
+								]
+							}
+						}
 					]
-				},
+				}
+			},
+			"ability": [
 				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Люди не склонны к какому-либо определенному распределению. Среди них встречаются как лучшие, так и худшие."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Рост и телосложение людей сильно варьируются: от едва достигающих 5 футов до более чем 6 футов. Независимо от вашего положения в этом диапазоне, ваш размер - средний."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Вы можете говорить, читать и писать на общем и одном дополнительном языке по вашему выбору. Или, если в вашей кампании используются дополнительные правила для языков, приведенные в предыдущем разделе, ваше национальное происхождение определяет ваш родной язык: Ицокан для Империи Солнца, пиджин Коалиции для Дерзкой Коалиции или вампирский язык для Легиона Сумрака. Вы по-прежнему говорите на одном дополнительном языке по своему выбору, а также на Общем, если он существует в вашей кампании."
-					],
-					"type": "entries"
+					"str": 1,
+					"dex": 1,
+					"con": 1,
+					"int": 1,
+					"wis": 1,
+					"cha": 1
 				}
 			],
 			"hasFluff": true,
@@ -9480,86 +9485,15 @@
 			]
 		},
 		{
-			"name": "Merfolk (Ixalan)",
-			"source": "PSX",
-			"page": 12,
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"ability": [
-				{
-					"cha": 1
-				}
-			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
-			"traitTags": [
-				"Amphibious"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true,
-					"anyStandard": 1
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Мерфолки взрослеют так же, как и люди, и достигают зрелого возраста около 20 лет. Однако живут они значительно дольше людей, часто достигая более 100 лет."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Большинство мерфолков нейтральны, живут в тесной гармонии с природой."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Мерфолки значительно выше большинства людей, их рост составляет от семи до восьми футов, а средний вес - около 300 фунтов. Ваш размер - средний."
-					]
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"Вы можете дышать воздухом и водой."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swimming",
-					"entries": [
-						"Ваша скорость плавания составляет 30 футов."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Вы можете говорить, читать и писать на общем языке (если он существует в вашей кампании), языке мерфолков и одном дополнительном языке по вашему выбору."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Merfolk (Zendikar)",
+			"name": "Merfolk",
 			"source": "PSZ",
 			"page": 13,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 12
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -10161,6 +10095,7 @@
 				"max": 100
 			},
 			"traitTags": [
+				"Language Proficiency",
 				"Natural Weapon",
 				"Tool Proficiency"
 			],
@@ -10168,6 +10103,11 @@
 				{
 					"common": true,
 					"other": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
 				}
 			],
 			"immune": [
@@ -10713,7 +10653,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Вы можете говорить, читать и писать на общем (если он существует в вашей кампании) и оркском языках."
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Orc|PHB}."
 					],
 					"type": "entries"
 				}
@@ -12350,13 +12290,13 @@
 					"type": "entries",
 					"name": "Flight",
 					"entries": [
-						"Ваша скорость полета составляет 30 футов. Вы не можете использовать свою скорость полета, пока на вас надеты средние или тяжелые доспехи. (Если в вашей кампании используется правило варианта для обременения, вы не можете использовать свою скорость полета, если вы обременены)."
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.)"
 					]
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Вы можете говорить, читать и писать на общем языке (если он существует в вашей кампании) и на языке сирен."
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Siren|PSX}."
 					],
 					"type": "entries"
 				}
@@ -13412,101 +13352,21 @@
 			]
 		},
 		{
-			"name": "Vampire (Ixalan)",
-			"source": "PSX",
-			"page": 14,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"cha": 2,
-					"wis": 1
-				}
-			],
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true
-				}
-			],
-			"resist": [
-				"necrotic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Вампиры не созревают и не стареют так, как другие расы."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Вампиры могут не иметь врожденной склонности к злу, но многие из них в итоге становятся таковыми. Злые они или нет, их строгая иерархия склоняет их к законопослушному поведению."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Вампиры такого же роста и телосложения, как и люди. Ваш размер - средний."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Bloodthirst",
-					"entries": [
-						"Вы можете высасывать кровь и жизненную энергию из желающего существа или того, которое находится на {@condition grappled} от вас, {@condition incapacitated} или {@condition restrained}. Сделайте атаку в ближнем бою против цели. Если вы попали, вы наносите 1 колющий урон и {@dice 1d6} некротический урон. Максимальное количество хит-пойнтов цели уменьшается на величину, равную полученному некротическому урону, а вы восстанавливаете хит-пойнты на эту величину. Снижение длится до тех пор, пока цель не закончит длительный отдых. Цель умирает, если этот эффект снижает ее максимальное количество хит-пойнтов до 0."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Feast of Blood",
-					"entries": [
-						"Когда вы высасываете кровь с помощью способности \"Жажда крови\", вы испытываете прилив жизненных сил. Ваша скорость увеличивается на 10 футов, и вы получаете преимущество при проверке силы и ловкости, а также при бросках спасбросков на 1 минуту."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Vampiric Resistance",
-					"entries": [
-						"У вас есть устойчивость к некротическим повреждениям."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Вы можете видеть при тусклом свете в радиусе 60 футов от вас, как при ярком свете, и в темноте, как при тусклом свете. Вы не можете различать цвета в темноте, только оттенки серого."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Вы можете говорить, читать и писать на общем языке (если он существует в вашей кампании) и на языке вампиров."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Vampire (Zendikar)",
+			"name": "Vampire",
 			"source": "PSZ",
 			"page": 14,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 14
+				}
+			],
 			"size": [
 				"M"
 			],
 			"speed": 30,
 			"ability": [
 				{
-					"int": 1,
 					"cha": 2
 				}
 			],
@@ -13545,7 +13405,7 @@
 				{
 					"name": "Blood Thirst",
 					"entries": [
-						"Вы можете высасывать кровь и жизненную энергию из желающего существа или того, которое находится на {@condition grappled} от вас, {@condition incapacitated} или {@condition restrained}. Сделайте атаку в ближнем бою против цели. Если вы попали, вы наносите 1 колющий урон и {@dice 1d6} некротический урон. Максимальное количество хит-пойнтов цели уменьшается на величину, равную полученному некротическому урону, а вы восстанавливаете хит-пойнты на эту величину. Снижение длится до тех пор, пока цель не закончит длительный отдых. Цель умирает, если этот эффект снижает ее максимальное количество хит-пойнтов до 0. Убитый таким образом гуманоид становится {@creature zombie||null}."
+						"You can drain blood and life energy from a willing creature, or one that is {@condition grappled} by you, {@condition incapacitated}, or {@condition restrained}. Make a melee attack against the target. If you hit, you deal 1 piercing damage and {@dice 1d6} necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and you regain hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
 					],
 					"type": "entries"
 				},
@@ -16813,7 +16673,10 @@
 					"entries": [
 						"Ваша скорость передвижения по земле увеличивается до 35 футов."
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Mask of the Wild",
@@ -16852,7 +16715,10 @@
 					"entries": [
 						"Вы знаете одно заклинание по вашему выбору из {@filter druid spell list|spells|class=druid|level=0}. Мудрость - ваша способность заклинания для него."
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Extra Language",
@@ -18275,17 +18141,74 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Grotag Tribe",
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Goblin",
+			"raceSource": "PSZ",
+			"page": 16,
+			"otherSources": null,
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"entries": [
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Большинство гоблинов - дикие хаотики, не склонные к добру или злу, но имеющие сильную склонность к озорству."
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Agile Climber",
+					"entries": [
+						"You have a climbing speed of 25 feet. You can't use your climbing speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your climbing speed if you are encumbered.)"
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Goblin|PHB}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar; Grotag Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"skillProficiencies": [
 				{
 					"animal handling": true
 				}
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"У вас есть сопротивление к урону от огня и психическому урону. Кроме того, когда на вас нет доспехов, ваш AC равен 11 + ваш модификатор ловкости."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Grotag Tamer",
 					"entries": [
@@ -18298,12 +18221,25 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Lavastep Tribe",
+			"name": "Zendikar; Lavastep Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"У вас есть сопротивление к урону от огня и психическому урону. Кроме того, когда на вас нет доспехов, ваш AC равен 11 + ваш модификатор ловкости."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Lavastep Grit",
 					"entries": [
@@ -18316,15 +18252,28 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tuktuk Tribe",
+			"name": "Zendikar; Tuktuk Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"traitTags": [
 				"Tool Proficiency"
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"У вас есть сопротивление к урону от огня и психическому урону. Кроме того, когда на вас нет доспехов, ваш AC равен 11 + ваш модификатор ловкости."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Tuktuk Cunning",
 					"entries": [
@@ -19664,7 +19613,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Вы умеете говорить, читать и писать на общем и келдонском языках."
+						"You can speak, read, and write Common and {@language Keldon|PSD}."
 					],
 					"type": "entries",
 					"data": {
@@ -19689,7 +19638,7 @@
 					"type": "entries",
 					"name": "Icehaven Born",
 					"entries": [
-						"Вы от природы приспособлены к холодному климату, как описано в главе 5 {@i Dungeon Master's Guide}."
+						"You are naturally adapted to {@hazard Extreme Cold|DMG|cold climates}, as described in chapter 5 of the {@i Dungeon Master's Guide}."
 					]
 				}
 			],
@@ -20547,11 +20496,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Blue",
+			"name": "Ixalan; Blue",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -20561,6 +20511,13 @@
 				{
 					"history": true,
 					"nature": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20591,20 +20548,38 @@
 						"Вы получаете навыки {@skill History} и {@skill Nature}."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Green",
+			"name": "Ixalan; Green",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20635,17 +20610,28 @@
 						"Вы можете попытаться спрятаться, даже если вас лишь слегка заслоняет листва, сильный дождь, падающий снег, туман и другие природные явления."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Cosi Creed",
+			"name": "Zendikar; Cosi Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 1,
@@ -20692,11 +20678,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Emeria Creed",
+			"name": "Zendikar; Emeria Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
@@ -20742,11 +20729,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Ula Creed",
+			"name": "Zendikar; Ula Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -22536,6 +22524,94 @@
 			"overwrite": {
 				"ability": true
 			}
+		},
+		{
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Вампиры не созревают и не стареют так, как другие расы."
+					],
+					"data": {
+						"overwrite": "Age"
+					}
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Вампиры могут не иметь врожденной склонности к злу, но многие из них в итоге становятся таковыми. Злые они или нет, их строгая иерархия склоняет их к законопослушному поведению."
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Вампиры такого же роста и телосложения, как и люди. Ваш размер - средний."
+					],
+					"data": {
+						"overwrite": "Size"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Feast of Blood",
+					"entries": [
+						"Когда вы высасываете кровь с помощью способности \"Жажда крови\", вы испытываете прилив жизненных сил. Ваша скорость увеличивается на 10 футов, и вы получаете преимущество при проверке силы и ловкости, а также при бросках спасбросков на 1 минуту."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Vampire|PSX}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar",
+			"source": "PSZ",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Null Transformation",
+					"entries": [
+						"A humanoid killed with your Bloodthirst ability becomes a {@creature Vampire Null|PSZ|null}."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Envoy",

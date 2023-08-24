@@ -5,7 +5,10 @@
 				"MM",
 				"VGM"
 			]
-		}
+		},
+		"internalCopies": [
+			"monster"
+		]
 	},
 	"monster": [
 		{
@@ -72,6 +75,18 @@
 						"with": "totem elemental"
 					}
 				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Altisaur",
+			"source": "PSX",
+			"page": 27,
+			"_copy": {
+				"name": "Brontosaurus",
+				"source": "VGM"
 			},
 			"hasToken": true,
 			"hasFluff": true,
@@ -158,6 +173,9 @@
 		},
 		{
 			"name": "Chupacabra",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 9,
 			"size": [
@@ -284,18 +302,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Deinonychus",
-			"source": "PSX",
-			"page": 30,
-			"_copy": {
-				"name": "Deinonychus",
-				"source": "VGM"
-			},
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
 			"name": "Demon",
 			"source": "PSX",
 			"page": 36,
@@ -346,6 +352,9 @@
 		},
 		{
 			"name": "Elder Dinosaur",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 33,
 			"size": [
@@ -501,155 +510,47 @@
 		{
 			"name": "Elder Dinosaur (Etali, Primal Storm)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Lightning Storm",
+							"entries": [
+								"Старшего динозавра всегда сопровождает бушующая гроза, подобная эффекту заклинания {@spell call lightning}. Грозовая туча в форме цилиндра высотой 10 футов и радиусом 60 футов мгновенно формируется в воздухе на расстоянии 100 футов над старшим динозавром, когда он злится или начинает бушевать, пока он находится на открытом воздухе. На каждом своем ходу в качестве действия старший динозавр может выбрать точку, которую он может видеть в радиусе 120 футов от себя. Из облака в эту точку сверкнет молния. Каждое существо в радиусе 10 футов от этой точки должно сделать {@dc 20} бросок на ловкость, получив 21 ({@damage 6d6}) урон от молнии при неудачном броске, или вдвое меньше при удачном."
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence and call down two lightning strikes from its Lightning Storm. It then makes three attacks: one with its bite and two with its claws."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Claw",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}28 ({@damage 4d8 + 10}) slashing damage."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Если старший динозавр провалил бросок спасения, он может выбрать вместо него успех."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Старший динозавр имеет преимущество при бросках спасбросков против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Старший динозавр наносит двойной урон объектам и строениям."
-					]
-				},
-				{
-					"name": "Lightning Storm",
-					"entries": [
-						"Старшего динозавра всегда сопровождает бушующая гроза, подобная эффекту заклинания {@spell call lightning}. Грозовая туча в форме цилиндра высотой 10 футов и радиусом 60 футов мгновенно формируется в воздухе на расстоянии 100 футов над старшим динозавром, когда он злится или начинает бушевать, пока он находится на открытом воздухе. На каждом своем ходу в качестве действия старший динозавр может выбрать точку, которую он может видеть в радиусе 120 футов от себя. Из облака в эту точку сверкнет молния. Каждое существо в радиусе 10 футов от этой точки должно сделать {@dc 20} бросок на ловкость, получив 21 ({@damage 6d6}) урон от молнии при неудачном броске, или вдвое меньше при удачном."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Старший динозавр может использовать свое устрашающее присутствие и вызвать два удара молнии из своей молнии. Затем он делает три атаки: одну укусом и две когтями."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 10 футов, одна цель. {@h}36 ({@damage 4d12 + 10}) колющего урона. Если цель - существо, то {@condition grappled} (побег {@dc 20}). Пока захват не закончится, цель получает {@condition restrained}, и старший динозавр не может укусить другую цель."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 15 футов, одна цель. {@h}28 ({@damage 4d8 + 10}) косой урон."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Каждое существо по выбору старшего динозавра в радиусе 120 футов от него и знающее об этом, должно успешно выполнить бросок спасброска на {@dc 17} Мудрости или стать {@condition frightened} на 1 минуту. Существо может повторить бросок спасброска в конце каждого своего хода, с недостатком, если старший динозавр находится в пределах прямой видимости, прекращая эффект на себя в случае успеха. Если бросок спасброска существа успешен или эффект заканчивается для него, существо становится невосприимчивым к Страшному присутствию старшего динозавра на следующие 24 часа."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом против большого или меньшего существа, которое он хватает. Если атака попадает, существо получает урон от укуса, цель проглатывается, и захват заканчивается. Пока существо проглочено, оно имеет рост {@condition blinded} и {@condition restrained}, полностью закрыто от атак и других эффектов, исходящих от старшего динозавра, и получает 56 ({@damage 16d6}) урона кислотой в начале каждого хода старшего динозавра. Если в течение одного хода динозавр получает 60 или более урона от существа, находящегося внутри него, то в конце хода он должен успешно выполнить бросок спасброска на {@dc 20} конституцию или срыгнуть всех проглоченных существ, которые падают {@condition prone} в пространстве в радиусе 10 футов от него. Если старший динозавр умирает, проглоченное существо больше {@condition restrained} не находится рядом с ним и может выбраться из трупа, используя 20 футов движения, выходя {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Старший динозавр делает одну атаку когтями, атаку хвостом, атаку крыльями или атаку ластами."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Старший динозавр двигается с половинной скоростью."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом или использует свою \"Глотку\"."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -684,155 +585,44 @@
 		{
 			"name": "Elder Dinosaur (Ghalta, Primal Hunger)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes three attacks: one with its bite, one with its stomp, and one with its tail. It can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}62 ({@damage 8d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Stomp",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 5 ft., one target. {@h}46 ({@damage 8d8 + 10}) bludgeoning damage."
+									]
+								},
+								{
+									"name": "Tail",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 20 ft., one target. {@h}38 ({@damage 8d6 + 10}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 20} Strength saving throw or be knocked {@condition prone}."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Если старший динозавр провалил бросок спасения, он может выбрать вместо него успех."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Старший динозавр имеет преимущество при бросках спасбросков против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Старший динозавр наносит двойной урон объектам и строениям."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Старший динозавр может использовать свое устрашающее присутствие. Затем он делает три атаки: одну укусом, одну топтанием и одну хвостом. Вместо укуса он может использовать глотку."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 10 футов, одна цель. {@h}62 ({@damage 8d12 + 10}) колющего урона. Если цель - существо, то {@condition grappled} (побег {@dc 20}). Пока захват не закончится, цель получает {@condition restrained}, и старший динозавр не может укусить другую цель."
-					]
-				},
-				{
-					"name": "Stomp",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 5 футов, одна цель. {@h}46 ({@damage 8d8 + 10}) урон от удара."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 20 футов, одна цель. {@h}38 ({@damage 8d6 + 10}) повреждений от удара. Если цель - существо, оно должно успешно выполнить бросок на спасбросок силы {@dc 20} или быть сбито с ног {@condition prone}."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Каждое существо по выбору старшего динозавра в радиусе 120 футов от него и знающее об этом, должно успешно выполнить бросок спасброска на {@dc 17} Мудрости или стать {@condition frightened} на 1 минуту. Существо может повторить бросок спасброска в конце каждого своего хода, с недостатком, если старший динозавр находится в пределах прямой видимости, прекращая эффект на себя в случае успеха. Если бросок спасброска существа успешен или эффект заканчивается для него, существо становится невосприимчивым к Страшному присутствию старшего динозавра на следующие 24 часа."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом против большого или меньшего существа, которое он хватает. Если атака попадает, существо получает урон от укуса, цель проглатывается, и захват заканчивается. Пока существо проглочено, оно имеет рост {@condition blinded} и {@condition restrained}, полностью закрыто от атак и других эффектов, исходящих от старшего динозавра, и получает 56 ({@damage 16d6}) урона кислотой в начале каждого хода старшего динозавра. Если в течение одного хода динозавр получает 60 или более урона от существа, находящегося внутри него, то в конце хода он должен успешно выполнить бросок спасброска на {@dc 20} конституцию или срыгнуть всех проглоченных существ, которые падают {@condition prone} в пространстве в радиусе 10 футов от него. Если старший динозавр умирает, проглоченное существо больше {@condition restrained} не находится рядом с ним и может выбраться из трупа, используя 20 футов движения, выходя {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Старший динозавр делает одну атаку когтями, атаку хвостом, атаку крыльями или атаку ластами."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Старший динозавр двигается с половинной скоростью."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом или использует свою \"Глотку\"."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -866,156 +656,56 @@
 		{
 			"name": "Elder Dinosaur (Nezahal, Primal Tide)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
-			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"name": "Hold Breath",
+							"entries": [
+								"Старший динозавр может задерживать дыхание на 4 часа."
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: one with its bite and four with its flippers. No two flipper attacks can target the same creature. It can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Flipper",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 5 ft., one target. {@h}28 ({@damage 4d8 + 10}) bludgeoning damage."
+									]
+								}
+							]
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
 			},
 			"speed": {
 				"walk": 20,
 				"swim": 60
 			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Если старший динозавр провалил бросок спасения, он может выбрать вместо него успех."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Старший динозавр имеет преимущество при бросках спасбросков против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Старший динозавр наносит двойной урон объектам и строениям."
-					]
-				},
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"Старший динозавр может задерживать дыхание на 4 часа."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Старший динозавр может использовать свое устрашающее присутствие. Затем он совершает пять атак: одну с помощью укуса и четыре с помощью ласт. Две атаки ластами не могут быть направлены на одно и то же существо. Вместо укуса он может использовать \"Глотку\"."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 10 футов, одна цель. {@h}36 ({@damage 4d12 + 10}) колющего урона. Если цель - существо, то {@condition grappled} (побег {@dc 20}). Пока захват не закончится, цель получает {@condition restrained}, и старший динозавр не может укусить другую цель."
-					]
-				},
-				{
-					"name": "Flipper",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, досягаемость 5 футов, одна цель. {@h}28 ({@damage 4d8 + 10}) урон от удара."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Каждое существо по выбору старшего динозавра в радиусе 120 футов от него и знающее об этом, должно успешно выполнить бросок спасброска на {@dc 17} Мудрости или стать {@condition frightened} на 1 минуту. Существо может повторить бросок спасброска в конце каждого своего хода, с недостатком, если старший динозавр находится в пределах прямой видимости, прекращая эффект на себя в случае успеха. Если бросок спасброска существа успешен или эффект заканчивается для него, существо становится невосприимчивым к Страшному присутствию старшего динозавра на следующие 24 часа."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом против большого или меньшего существа, которое он хватает. Если атака попадает, существо получает урон от укуса, цель проглатывается, и захват заканчивается. Пока существо проглочено, оно имеет рост {@condition blinded} и {@condition restrained}, полностью закрыто от атак и других эффектов, исходящих от старшего динозавра, и получает 56 ({@damage 16d6}) урона кислотой в начале каждого хода старшего динозавра. Если в течение одного хода динозавр получает 60 или более урона от существа, находящегося внутри него, то в конце хода он должен успешно выполнить бросок спасброска на {@dc 20} конституцию или срыгнуть всех проглоченных существ, которые падают {@condition prone} в пространстве в радиусе 10 футов от него. Если старший динозавр умирает, проглоченное существо больше {@condition restrained} не находится рядом с ним и может выбраться из трупа, используя 20 футов движения, выходя {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Старший динозавр делает одну атаку когтями, атаку хвостом, атаку крыльями или атаку ластами."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Старший динозавр двигается с половинной скоростью."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом или использует свою \"Глотку\"."
-					]
-				}
-			],
 			"traitTags": [
 				"Hold Breath",
 				"Legendary Resistances",
 				"Magic Resistance",
 				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
 			],
 			"actionTags": [
 				"Frightful Presence",
@@ -1037,10 +727,6 @@
 				"grappled",
 				"restrained"
 			],
-			"savingThrowForced": [
-				"constitution",
-				"wisdom"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1048,179 +734,73 @@
 		{
 			"name": "Elder Dinosaur (Tetzimoc, Primal Death)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Spiny Carapace",
+								"entries": [
+									"The elder dinosaur is covered in an armored carapace bristling with thick, sharp spines. Any creature that hits or misses Tetzimoc with a melee attack takes 7 ({@damage 2d6}) piercing damage."
+								]
+							},
+							{
+								"name": "Tail Spike Regrowth",
+								"entries": [
+									"The elder dinosaur has forty tail spikes. Used spikes regrow when the elder dinosaur finishes a long rest."
+								]
+							}
+						]
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail. It can use its tail spikes in place of any or all of those attacks, and it can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Claw",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}28 ({@damage 4d8 + 10}) slashing damage."
+									]
+								},
+								{
+									"name": "Horns",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d10 + 10}) piercing damage."
+									]
+								},
+								{
+									"name": "Tail",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 20 ft., one target. {@h}24 ({@damage 4d6 + 10}) piercing damage. If the target is a creature, it must succeed on a {@dc 20} Strength saving throw or be knocked {@condition prone}."
+									]
+								},
+								{
+									"name": "Tail Spikes",
+									"entries": [
+										"{@atk rw} {@hit 9} to hit, range 100/300 ft., two targets. {@h}7 ({@damage 2d6}) piercing damage."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Если старший динозавр провалил бросок спасения, он может выбрать вместо него успех."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Старший динозавр имеет преимущество при бросках спасбросков против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Старший динозавр наносит двойной урон объектам и строениям."
-					]
-				},
-				{
-					"name": "Spiny Carapace",
-					"entries": [
-						"Старший динозавр покрыт бронированным панцирем, ощетинившимся толстыми острыми шипами. Любое существо, попавшее в Тецимока или промахнувшееся по нему атакой ближнего боя, получает 7 ({@damage 2d6}) колющих повреждений."
-					]
-				},
-				{
-					"name": "Tail Spike Regrowth",
-					"entries": [
-						"У старшего динозавра сорок хвостовых шипов. Использованные шипы отрастают, когда старший динозавр завершает длительный отдых."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Старший динозавр может использовать свое устрашающее присутствие. Затем он совершает пять атак: одну - укусом, две - когтями, одну - рогами и одну - хвостом. Вместо любой или всех этих атак он может использовать шипы хвоста, а вместо укуса - глотку."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 10 футов, одна цель. {@h}36 ({@damage 4d12 + 10}) колющего урона. Если цель - существо, то {@condition grappled} (побег {@dc 20}). Пока захват не закончится, цель получает {@condition restrained}, и старший динозавр не может укусить другую цель."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 15 футов, одна цель. {@h}28 ({@damage 4d8 + 10}) косой урон."
-					]
-				},
-				{
-					"name": "Horns",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 10 футов, одна цель. {@h}32 ({@damage 4d10 + 10}) колющий урон."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 20 футов, одна цель. {@h}24 ({@damage 4d6 + 10}) колющего урона. Если цель - существо, оно должно успешно выполнить бросок на сохранение силы {@dc 20} или быть сбито с ног {@condition prone}."
-					]
-				},
-				{
-					"name": "Tail Spikes",
-					"entries": [
-						"{@atk rw} {@hit 9} попадание, дальность 100/300 футов, две цели. {@h}7 ({@damage 2d6}) колющего урона."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Каждое существо по выбору старшего динозавра в радиусе 120 футов от него и знающее об этом, должно успешно выполнить бросок спасброска на {@dc 17} Мудрости или стать {@condition frightened} на 1 минуту. Существо может повторить бросок спасброска в конце каждого своего хода, с недостатком, если старший динозавр находится в пределах прямой видимости, прекращая эффект на себя в случае успеха. Если бросок спасброска существа успешен или эффект заканчивается для него, существо становится невосприимчивым к Страшному присутствию старшего динозавра на следующие 24 часа."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом против большого или меньшего существа, которое он хватает. Если атака попадает, существо получает урон от укуса, цель проглатывается, и захват заканчивается. Пока существо проглочено, оно имеет рост {@condition blinded} и {@condition restrained}, полностью закрыто от атак и других эффектов, исходящих от старшего динозавра, и получает 56 ({@damage 16d6}) урона кислотой в начале каждого хода старшего динозавра. Если в течение одного хода динозавр получает 60 или более урона от существа, находящегося внутри него, то в конце хода он должен успешно выполнить бросок спасброска на {@dc 20} конституцию или срыгнуть всех проглоченных существ, которые падают {@condition prone} в пространстве в радиусе 10 футов от него. Если старший динозавр умирает, проглоченное существо больше {@condition restrained} не находится рядом с ним и может выбраться из трупа, используя 20 футов движения, выходя {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Старший динозавр делает одну атаку когтями, атаку хвостом, атаку крыльями или атаку ластами."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Старший динозавр двигается с половинной скоростью."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом или использует свою \"Глотку\"."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -1255,155 +835,32 @@
 		{
 			"name": "Elder Dinosaur (Zacama, Primal Calamity)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: three with its bite, {@footnote one with its stomp, and one with its tail|{@note This statblock does not have these actions available.}}. It can use its Swallow instead of a bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}. If the elder dinosaur has three targets {@condition restrained} in this way, it can't bite another target."
+									]
+								}
+							]
+						}
+					]
+				}
 			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Если старший динозавр провалил бросок спасения, он может выбрать вместо него успех."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Старший динозавр имеет преимущество при бросках спасбросков против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Старший динозавр наносит двойной урон объектам и строениям."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Старший динозавр может использовать свое устрашающее присутствие. Затем он совершает пять атак: три - укусом, одну - топтанием и одну - хвостом. Вместо укуса он может использовать глотку."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 10 футов, одна цель. {@h}36 ({@damage 4d12 + 10}) колющего урона. Если цель - существо, то {@condition grappled} (побег {@dc 20}). Пока захват не закончится, цель получает {@condition restrained}. Если старший динозавр укусил таким образом три цели {@condition restrained}, он не может укусить другую цель."
-					]
-				},
-				{
-					"name": "Stomp",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 5 футов, одна цель. {@h}46 ({@damage 8d8 + 10}) урон от удара."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 20 футов, одна цель. {@h}38 ({@damage 8d6 + 10}) повреждений от удара. Если цель - существо, оно должно успешно выполнить бросок на спасбросок силы {@dc 20} или быть сбито с ног {@condition prone}."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Каждое существо по выбору старшего динозавра в радиусе 120 футов от него и знающее об этом, должно успешно выполнить бросок спасброска на {@dc 17} Мудрости или стать {@condition frightened} на 1 минуту. Существо может повторить бросок спасброска в конце каждого своего хода, с недостатком, если старший динозавр находится в пределах прямой видимости, прекращая эффект на себя в случае успеха. Если бросок спасброска существа успешен или эффект заканчивается для него, существо становится невосприимчивым к Страшному присутствию старшего динозавра на следующие 24 часа."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом против большого или меньшего существа, которое он хватает. Если атака попадает, существо получает урон от укуса, цель проглатывается, и захват заканчивается. Пока существо проглочено, оно имеет рост {@condition blinded} и {@condition restrained}, полностью закрыто от атак и других эффектов, исходящих от старшего динозавра, и получает 56 ({@damage 16d6}) урона кислотой в начале каждого хода старшего динозавра. Если в течение одного хода динозавр получает 60 или более урона от существа, находящегося внутри него, то в конце хода он должен успешно выполнить бросок спасброска на {@dc 20} конституцию или срыгнуть всех проглоченных существ, которые падают {@condition prone} в пространстве в радиусе 10 футов от него. Если старший динозавр умирает, проглоченное существо больше {@condition restrained} не находится рядом с ним и может выбраться из трупа, используя 20 футов движения, выходя {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Старший динозавр делает одну атаку когтями, атаку хвостом, атаку крыльями или атаку ластами."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Старший динозавр двигается с половинной скоростью."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом или использует свою \"Глотку\"."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
-			],
 			"actionTags": [
 				"Frightful Presence",
 				"Multiattack",
@@ -1422,7 +879,6 @@
 				"blinded",
 				"frightened",
 				"grappled",
-				"prone",
 				"restrained"
 			],
 			"savingThrowForced": [
@@ -1437,164 +893,50 @@
 		{
 			"name": "Elder Dinosaur (Zetalpa, Primal Dawn)",
 			"source": "PSX",
-			"page": 33,
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"titan"
-				]
-			},
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 25,
-					"from": [
-						"natural armor"
+			"page": 34,
+			"_copy": {
+				"name": "Elder Dinosaur",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The elder dinosaur can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, and two with its wings. It can use its Swallow instead of its bite."
+									]
+								},
+								{
+									"name": "Bite",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the elder dinosaur can't bite another target."
+									]
+								},
+								{
+									"name": "Claw",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}28 ({@damage 4d8 + 10}) slashing damage."
+									]
+								},
+								{
+									"name": "Wing",
+									"entries": [
+										"{@atk mw} {@hit 19} to hit, reach 20 ft., one target. {@h}28 ({@damage 4d8 + 10}) bludgeoning damage."
+									]
+								}
+							]
+						}
 					]
 				}
-			],
-			"hp": {
-				"average": 676,
-				"formula": "33d20 + 330"
 			},
 			"speed": {
 				"walk": 20,
 				"fly": 60
 			},
-			"str": 30,
-			"dex": 11,
-			"con": 30,
-			"int": 3,
-			"wis": 11,
-			"cha": 11,
-			"save": {
-				"int": "+5",
-				"wis": "+9",
-				"cha": "+9"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 10,
 			"resist": [
 				"radiant"
-			],
-			"immune": [
-				"fire",
-				"poison",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"cr": "30",
-			"trait": [
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"Если старший динозавр провалил бросок спасения, он может выбрать вместо него успех."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Старший динозавр имеет преимущество при бросках спасбросков против заклинаний и других магических эффектов."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"Старший динозавр наносит двойной урон объектам и строениям."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Старший динозавр может использовать свое устрашающее присутствие. Затем он совершает пять атак: одну укусом, две когтями и две крыльями. Вместо укуса он может использовать глотку."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 10 футов, одна цель. {@h}36 ({@damage 4d12 + 10}) колющего урона. Если цель - существо, то {@condition grappled} (побег {@dc 20}). Пока захват не закончится, цель получает {@condition restrained}, и старший динозавр не может укусить другую цель."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 15 футов, одна цель. {@h}28 ({@damage 4d8 + 10}) косой урон."
-					]
-				},
-				{
-					"name": "Wing",
-					"entries": [
-						"{@atk mw} {@hit 19} попадание, радиус действия 20 футов, одна цель. {@h}28 ({@damage 4d8 + 10}) урон от удара."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 11} попадание, радиус действия 15 футов, одна цель. {@h}25 ({@damage 4d8 + 7}) урон от удара."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Каждое существо по выбору старшего динозавра в радиусе 120 футов от него и знающее об этом, должно успешно выполнить бросок спасброска на {@dc 17} Мудрости или стать {@condition frightened} на 1 минуту. Существо может повторить бросок спасброска в конце каждого своего хода, с недостатком, если старший динозавр находится в пределах прямой видимости, прекращая эффект на себя в случае успеха. Если бросок спасброска существа успешен или эффект заканчивается для него, существо становится невосприимчивым к Страшному присутствию старшего динозавра на следующие 24 часа."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом против большого или меньшего существа, которое он хватает. Если атака попадает, существо получает урон от укуса, цель проглатывается, и захват заканчивается. Пока существо проглочено, оно имеет рост {@condition blinded} и {@condition restrained}, полностью закрыто от атак и других эффектов, исходящих от старшего динозавра, и получает 56 ({@damage 16d6}) урона кислотой в начале каждого хода старшего динозавра. Если в течение одного хода динозавр получает 60 или более урона от существа, находящегося внутри него, то в конце хода он должен успешно выполнить бросок спасброска на {@dc 20} конституцию или срыгнуть всех проглоченных существ, которые падают {@condition prone} в пространстве в радиусе 10 футов от него. Если старший динозавр умирает, проглоченное существо больше {@condition restrained} не находится рядом с ним и может выбраться из трупа, используя 20 футов движения, выходя {@condition prone}."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Attack",
-					"entries": [
-						"Старший динозавр делает одну атаку когтями, атаку хвостом, атаку крыльями или атаку ластами."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"Старший динозавр двигается с половинной скоростью."
-					]
-				},
-				{
-					"name": "Chomp (Costs 2 Actions)",
-					"entries": [
-						"Старший динозавр делает одну атаку укусом или использует свою \"Глотку\"."
-					]
-				}
-			],
-			"traitTags": [
-				"Legendary Resistances",
-				"Magic Resistance",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"B"
 			],
 			"actionTags": [
 				"Frightful Presence",
@@ -1617,10 +959,6 @@
 				"grappled",
 				"restrained"
 			],
-			"savingThrowForced": [
-				"constitution",
-				"wisdom"
-			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1641,7 +979,8 @@
 				}
 			},
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Fire Guardian",
@@ -1663,6 +1002,9 @@
 		},
 		{
 			"name": "Frilled Deathspitter",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 30,
 			"size": [
@@ -1748,6 +1090,9 @@
 		},
 		{
 			"name": "Gishath, Sun's Avatar",
+			"group": [
+				"Dinosaurs"
+			],
 			"isNamedCreature": true,
 			"source": "PSX",
 			"page": 32,
@@ -1910,6 +1255,9 @@
 		},
 		{
 			"name": "Hammerskull",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 29,
 			"_copy": {
@@ -1935,16 +1283,28 @@
 				"name": "Harpy",
 				"source": "MM",
 				"_mod": {
-					"action": {
-						"mode": "replaceArr",
-						"replace": "Club",
-						"items": {
-							"name": "Bite",
-							"entries": [
-								"{@atk mw} {@hit 3} попадание, радиус действия 5 футов, одна цель. {@h}3 ({@damage 1d4 + 1}) косой урон. Если цель - существо, оно должно успешно пройти бросок спасброска на конституцию DC 11 или заразиться болезнью. Пока болезнь не будет излечена, цель не может восстановить хит-пойнты, кроме как магическими средствами, а максимальное количество хит-пойнтов цели уменьшается на 3 ({@dice 1d6}) каждые 24 часа. Если в результате этой болезни максимальное количество хит-пойнтов цели упадет до 0, цель умрет."
-							]
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Club",
+							"items": {
+								"name": "Bite",
+								"entries": [
+									"{@atk mw} {@hit 3} попадание, радиус действия 5 футов, одна цель. {@h}3 ({@damage 1d4 + 1}) косой урон. Если цель - существо, оно должно успешно пройти бросок спасброска на конституцию DC 11 или заразиться болезнью. Пока болезнь не будет излечена, цель не может восстановить хит-пойнты, кроме как магическими средствами, а максимальное количество хит-пойнтов цели уменьшается на 3 ({@dice 1d6}) каждые 24 часа. Если в результате этой болезни максимальное количество хит-пойнтов цели упадет до 0, цель умрет."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Multiattack",
+							"items": {
+								"name": "Multiattack",
+								"entries": [
+									"Гарпия делает две атаки: одну когтями и одну укусом."
+								]
+							}
 						}
-					}
+					]
 				}
 			},
 			"hasToken": true,
@@ -2018,6 +1378,9 @@
 		},
 		{
 			"name": "Sailback",
+			"group": [
+				"Dinosaurs"
+			],
 			"source": "PSX",
 			"page": 30,
 			"_copy": {
@@ -2322,7 +1685,8 @@
 				}
 			},
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Trilobite (Giant)",
@@ -2340,7 +1704,8 @@
 				}
 			},
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Tyrant",
@@ -2362,18 +1727,6 @@
 						"with": "tyrant"
 					}
 				}
-			},
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Velociraptor",
-			"source": "PSX",
-			"page": 30,
-			"_copy": {
-				"name": "Velociraptor",
-				"source": "VGM"
 			},
 			"hasToken": true,
 			"hasFluff": true,
