@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"El digno se esforzará por la grandeza: la supremacía en la vida lleva a la supremacía en el más allá\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"Bontu ha abrazado plenamente este dictado y, aunque se esfuerza poco en enseñarlo, sin duda predica con el ejemplo. Sus visires plantan sutilmente las semillas que florecen en la ambición que el Dios-Faraón desea. A través de la insinuación, recuerdan a los acólitos y a los iniciados por igual que lograr el propio lugar en la otra vida a expensas de los demás no es vergonzoso, sino que es una prueba de la determinación y el impulso del iniciado. No hay nada más importante que ese impulso, sugieren, ni los lazos de un cultivo, ni la amistad o el amor. Ni siquiera la devoción a una deidad.",
 				"En cada nivel de clérigo indicado, añade los hechizos de la lista a tus hechizos preparados.",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"El digno cultivará una mente ágil que pueda percibir las maravillas más allá de la imaginación que esperan en el más allá\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"La tarea de Kefnet es transmitir esta enseñanza del Dios-Faraón y dilucidar su significado. Enseña que en la otra vida sólo vivirán aquellos que hayan demostrado con su ingenio que son dignos de morar en la gloriosa presencia del Dios-Faraón. Entrena a los acólitos e iniciados para que superen sus límites y desafíen su capacidad mental con hechizos cada vez más poderosos.",
-				"El dominio de Kefnet es idéntico al dominio de Conocimiento del Manual del Jugador."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"Véase el dominio del conocimiento."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Véase el dominio del conocimiento."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Véase el dominio del conocimiento."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Véase el dominio del conocimiento."
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"El digno debe conocer y respetar a todos los demás que el Dios-Faraón considere dignos, pues en la otra vida, todos estarán unidos en propósito y acción\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"Oketra se encarga de exponer esta enseñanza del Dios-Faraón, inculcando en cada iniciado la virtud de la solidaridad. Ella forja cada grupo de niños en una cosecha de acólitos con un solo propósito: ser juzgados dignos de una gloriosa vida después de la muerte. E inculca en cada cosecha la capacidad de unirse en una sola acción en pos de ese propósito. Le gustan las imágenes poéticas para comunicar sus ideales.",
 				"En cada nivel de clérigo indicado, añade los hechizos de la lista a tus hechizos preparados.",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"El digno perfeccionará un cuerpo fuerte que pueda soportar las energías ilimitadas del más allá\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"Corresponde a Rhonas inculcar esta enseñanza a los que entrarán en la otra vida, pero para él, las palabras en sí no importan. La fuerza no se puede enseñar. Debe construirse mediante la práctica y el entrenamiento. Rhonas demuestra sus enseñanzas con su ejemplo, en lugar de dar a sus alumnos cualquier tipo de instrucción académica. Acoge a los habitantes de Naktamun para que permanezcan junto a la Hekma y le observen mientras se adentra en el desierto para luchar contra los mayores horrores. Les anima a que observen su indomable fuerza, pues aunque nunca la igualarán, pueden aspirar a imitarla. Les invita a escudriñar cada movimiento y a practicar lo que ven.",
 				"En cada nivel de clérigo indicado, añade los hechizos de la lista a tus hechizos preparados.",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Los dignos se precipitarán al lado del Dios-Faraón con un celo implacable, levantándose para superar cualquier obstáculo en su camino\".",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"El Dios-Faraón espera que aquellos a los que acoge en la otra vida lo deseen por encima de todos los demás placeres y logros, y que muestren su dedicación, pasión y fervor a través de sus acciones. Hazoret está encargada de cultivar este celo en los iniciados que están a su cargo, y ha emprendido la tarea con el entusiasmo adecuado. Sin embargo, reconoce que la mejor manera de enseñar el celo es demostrándolo.",
 				"En cada nivel de clérigo indicado, añade los hechizos de la lista a tus hechizos preparados.",
 				{

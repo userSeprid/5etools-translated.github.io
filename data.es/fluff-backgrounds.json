@@ -655,34 +655,6 @@
 			]
 		},
 		{
-			"name": "Dissenter",
-			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"Incluso en la cuidadosamente construida y cuidada ciudad-estado de Naktamun, y en presencia de los cinco dioses, algunas personas se rebelan contra las doctrinas del Dios-Faraón. No cuestionan la existencia de los dioses, por supuesto, ya que éstos son visibles casi todos los días en las calles de la ciudad. Tampoco cuestionan el hecho de la vida después de la muerte, que es evidente en las momias ungidas que los rodean, así como en las momias merodeadoras fuera de la Hekma. Más bien, estos disidentes simplemente se niegan a seguir el curso ordenado de la vida que conduce a la gloriosa otra vida.",
-								"Algunos disidentes están estimulados por el miedo, no queriendo someterse a una muerte violenta en las pruebas (o en el entrenamiento para las pruebas). A otros les mueve la conciencia y no quieren matar a sus compañeros de cultivo en las pruebas. Porque aunque no pueden negar que los dioses existen, sí pueden negar que los dioses son justos, y pueden luchar para demostrar que los dictados de un dios injusto no tienen por qué ser obedecidos. Algunos creen que un dios (probablemente Bontu) ha corrompido el proceso de las pruebas y el camino a la otra vida. Otros intuyen correctamente que el dios-faraón no tenía realmente en cuenta los intereses del pueblo cuando ordenaba su sociedad.",
-								"Un personaje identificado como disidente pierde el beneficio del rasgo de trasfondo de iniciado o visir. En su lugar, el personaje gana el rasgo Refugio de los disidentes."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/PSA/Dissenter.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Dragon Casualty",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -1301,7 +1273,7 @@
 							"type": "entries",
 							"entries": [
 								"Eres un iniciado, en el camino de completar las pruebas de los cinco dioses con la esperanza de ganar una muerte glorificada en la Prueba final del Celo. Una combinación de tu aptitud natural, las necesidades de tu cosecha y la evaluación de tus maestros mientras eras acólito te llevó a centrar tu entrenamiento en un área concreta de especialización: el combate cuerpo a cuerpo, el combate a distancia o el lanzamiento de hechizos. Pero sólo un iniciado completo puede ser considerado verdaderamente digno de la otra vida.",
-								"Si eres un especialista en el cuerpo a cuerpo, considera las clases bárbaro, luchador, monje, paladín o pícaro. Si eres un especialista en el combate a distancia, podrías ser un luchador, un guardabosques o un pícaro. Si eres un especialista en hechizos, puedes ser un bardo, un brujo o un mago. Y más allá de esta elección inicial, puedes considerar la posibilidad de hacer varias clases o utilizar proezas para completar tus habilidades en las tres áreas."
+								"If you are a hand-to-hand specialist, consider the {@class barbarian}, {@class fighter}, {@class monk}, {@class paladin}, or {@class rogue} classes. As a long-range combat specialist, you might be a {@class fighter}, a {@class ranger}, or a {@class rogue}. If you are a spellcasting specialist, you might be a {@class bard}, {@class sorcerer}, or {@class wizard}. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas."
 							]
 						}
 					]
@@ -1313,16 +1285,61 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate.webp"
-					}
+					},
+					"title": "Unwavering Initiate",
+					"credit": "Greg Opalinski"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate2.webp"
-					}
+					},
+					"title": "Gust Walker",
+					"credit": "Jason Rainville"
 				}
 			]
+		},
+		{
+			"name": "Initiate (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Initiate",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Incluso en la cuidadosamente construida y cuidada ciudad-estado de Naktamun, y en presencia de los cinco dioses, algunas personas se rebelan contra las doctrinas del Dios-Faraón. No cuestionan la existencia de los dioses, por supuesto, ya que éstos son visibles casi todos los días en las calles de la ciudad. Tampoco cuestionan el hecho de la vida después de la muerte, que es evidente en las momias ungidas que los rodean, así como en las momias merodeadoras fuera de la Hekma. Más bien, estos disidentes simplemente se niegan a seguir el curso ordenado de la vida que conduce a la gloriosa otra vida.",
+										"Algunos disidentes están estimulados por el miedo, no queriendo someterse a una muerte violenta en las pruebas (o en el entrenamiento para las pruebas). A otros les mueve la conciencia y no quieren matar a sus compañeros de cultivo en las pruebas. Porque aunque no pueden negar que los dioses existen, sí pueden negar que los dioses son justos, y pueden luchar para demostrar que los dictados de un dios injusto no tienen por qué ser obedecidos. Algunos creen que un dios (probablemente Bontu) ha corrompido el proceso de las pruebas y el camino a la otra vida. Otros intuyen correctamente que el dios-faraón no tenía realmente en cuenta los intereses del pueblo cuando ordenaba su sociedad.",
+										"Un personaje identificado como disidente pierde el beneficio del rasgo de trasfondo de iniciado o visir. En su lugar, el personaje gana el rasgo Refugio de los disidentes.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Inquisitor",
@@ -1346,7 +1363,9 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSI/Inquisitor.webp"
-					}
+					},
+					"title": "Moorland Inquisitor",
+					"credit": "David Palumbo"
 				}
 			]
 		},
@@ -2316,7 +2335,7 @@
 							"type": "entries",
 							"entries": [
 								"Eres un visir, un servidor de tu dios. Realizas tareas esenciales para facilitar el viaje de los iniciados, por lo que los dioses te recompensan con la entrada en la otra vida con la bendición del dios-faraón. Esperas alcanzar el estatus más honrado en la otra vida siendo el mejor sirviente posible de tu dios.",
-								"Como visir, puedes tener cualquier clase, pero es especialmente probable que seas un clérigo, un druida (sobre todo si sirves a Rhonas) o un paladín."
+								"As a vizier, you can have any class, but you are especially likely to be a {@class cleric}, a {@class druid} (particularly if you serve Rhonas), or a {@class paladin}."
 							]
 						}
 					]
@@ -2328,9 +2347,52 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Vizier.webp"
-					}
+					},
+					"title": "Shadowstorm Vizier",
+					"credit": "Yongjae Choi"
 				}
 			]
+		},
+		{
+			"name": "Vizier (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Vizier",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Incluso en la cuidadosamente construida y cuidada ciudad-estado de Naktamun, y en presencia de los cinco dioses, algunas personas se rebelan contra las doctrinas del Dios-Faraón. No cuestionan la existencia de los dioses, por supuesto, ya que éstos son visibles casi todos los días en las calles de la ciudad. Tampoco cuestionan el hecho de la vida después de la muerte, que es evidente en las momias ungidas que los rodean, así como en las momias merodeadoras fuera de la Hekma. Más bien, estos disidentes simplemente se niegan a seguir el curso ordenado de la vida que conduce a la gloriosa otra vida.",
+										"Algunos disidentes están estimulados por el miedo, no queriendo someterse a una muerte violenta en las pruebas (o en el entrenamiento para las pruebas). A otros les mueve la conciencia y no quieren matar a sus compañeros de cultivo en las pruebas. Porque aunque no pueden negar que los dioses existen, sí pueden negar que los dioses son justos, y pueden luchar para demostrar que los dictados de un dios injusto no tienen por qué ser obedecidos. Algunos creen que un dios (probablemente Bontu) ha corrompido el proceso de las pruebas y el camino a la otra vida. Otros intuyen correctamente que el dios-faraón no tenía realmente en cuenta los intereses del pueblo cuando ordenaba su sociedad.",
+										"Un personaje identificado como disidente pierde el beneficio del rasgo de trasfondo de iniciado o visir. En su lugar, el personaje gana el rasgo Refugio de los disidentes.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Volstrucker Agent",

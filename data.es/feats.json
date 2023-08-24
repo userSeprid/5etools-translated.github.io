@@ -7111,6 +7111,23 @@
 					"anyArtisansTool": 1
 				}
 			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				}
+			],
 			"entries": [
 				"Dominas el arte de la invención, la mejora y la manipulación sobre la marcha. Puedes utilizar tus talentos para crear efectos mágicos inmediatos y a corto plazo, similares a los hechizos, si tienes tiempo y un suministro adecuado de éter.",
 				"Cuando eliges esta proeza, dominas dos efectos mágicos, cada uno de los cuales recrea el efecto de un hechizo de 1er nivel que tenga la etiqueta ritual. Estos conjuros pueden proceder de cualquier lista de clase, pero la Inteligencia es tu capacidad de lanzamiento de conjuros para ellos.",
@@ -8146,7 +8163,8 @@
 				"Eres hábil en la creación de {@creature servo|psk|servos}-construcciones diminutas que funcionan como asistentes personales. Puedes lanzar el hechizo {@spell find familiar} como un ritual, creando un {@creature servo|psk} que te sirva de familiar en lugar de un animal. Las estadísticas de un {@creature servo|psk} aparecen en la sección de \"Criaturas Artificiales\" de este documento. En todos los demás aspectos, un servofamiliar funciona como se describe en el hechizo {@spell find familiar}.",
 				"Puedes comunicarte telepáticamente con tu servo familiar y percibir a través de sus sentidos siempre que estéis en el mismo plano de existencia. Puedes hablar a través de tu servo con tu propia voz.",
 				"Además, cuando realizas la acción {@action Attack}, puedes renunciar a uno de tus propios ataques para permitir que tu servofamiliar realice un ataque propio."
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Shadow Touched",
