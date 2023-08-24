@@ -655,34 +655,6 @@
 			]
 		},
 		{
-			"name": "Dissenter",
-			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"Même dans la cité-état de Naktamun, soigneusement construite et entretenue, et en présence des cinq dieux, certaines personnes se rebellent contre les doctrines du Dieu-Pharaon. Ils ne contestent pas l'existence des dieux, bien sûr, car ceux-ci sont visibles presque tous les jours dans les rues de la ville. Ils ne remettent pas non plus en question le fait de la vie après la mort, qui est clairement visible dans les momies ointes qui les entourent, ainsi que dans les momies en maraude à l'extérieur de l'Hekma. Au contraire, ces dissidents refusent simplement de suivre le cours ordonné de la vie qui mène à l'au-delà glorieux.",
-								"Certains dissidents sont poussés par la peur, ne voulant pas se soumettre à une mort violente lors des épreuves (ou lors de l'entraînement pour les épreuves). D'autres sont mus par la conscience, ne voulant pas tuer leurs compagnons de culture lors des épreuves. En effet, s'ils ne peuvent nier l'existence des dieux, ils peuvent nier que les dieux sont justes et se battre pour prouver qu'il ne faut pas obéir aux ordres d'un dieu injuste. Certains croient qu'un dieu (probablement Bontu) a corrompu le processus des épreuves et le chemin vers l'au-delà. D'autres ont l'intuition correcte que le Dieu-Pharaon n'a pas réellement eu à l'esprit les meilleurs intérêts du peuple lorsqu'il a ordonné leur société.",
-								"Un personnage identifié comme dissident perd le bénéfice de la caractéristique d'arrière-plan de l'initié ou du vizir. A la place, le personnage gagne le trait Shelter of Dissenters."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/PSA/Dissenter.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Dragon Casualty",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -1301,7 +1273,7 @@
 							"type": "entries",
 							"entries": [
 								"Vous êtes un initié, sur la voie de l'achèvement des épreuves des cinq dieux dans l'espoir de gagner une mort glorifiée lors de l'épreuve finale de Zeal. Une combinaison de vos aptitudes naturelles, des besoins de votre culture et de l'évaluation de vos professeurs lorsque vous étiez acolyte vous a conduit à concentrer votre formation dans un domaine de spécialisation particulier : le combat à mains nues, le combat à distance ou la magie. Mais seul un initié bien équilibré peut être considéré comme vraiment digne de l'au-delà.",
-								"Si vous êtes un spécialiste du corps à corps, envisagez les classes de barbare, de combattant, de moine, de paladin ou de voleur. Si vous êtes un spécialiste du combat à distance, vous pourriez être un combattant, un ranger ou un voleur. Si vous êtes un spécialiste du lancer de sorts, vous pourriez être un barde, un sorcier ou un magicien. Et au-delà de ce choix initial, vous pouvez envisager le multiclassage ou l'utilisation d'exploits pour compléter vos compétences dans ces trois domaines."
+								"If you are a hand-to-hand specialist, consider the {@class barbarian}, {@class fighter}, {@class monk}, {@class paladin}, or {@class rogue} classes. As a long-range combat specialist, you might be a {@class fighter}, a {@class ranger}, or a {@class rogue}. If you are a spellcasting specialist, you might be a {@class bard}, {@class sorcerer}, or {@class wizard}. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas."
 							]
 						}
 					]
@@ -1313,16 +1285,61 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate.webp"
-					}
+					},
+					"title": "Unwavering Initiate",
+					"credit": "Greg Opalinski"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate2.webp"
-					}
+					},
+					"title": "Gust Walker",
+					"credit": "Jason Rainville"
 				}
 			]
+		},
+		{
+			"name": "Initiate (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Initiate",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Même dans la cité-état de Naktamun, soigneusement construite et entretenue, et en présence des cinq dieux, certaines personnes se rebellent contre les doctrines du Dieu-Pharaon. Ils ne contestent pas l'existence des dieux, bien sûr, car ceux-ci sont visibles presque tous les jours dans les rues de la ville. Ils ne remettent pas non plus en question le fait de la vie après la mort, qui est clairement visible dans les momies ointes qui les entourent, ainsi que dans les momies en maraude à l'extérieur de l'Hekma. Au contraire, ces dissidents refusent simplement de suivre le cours ordonné de la vie qui mène à l'au-delà glorieux.",
+										"Certains dissidents sont poussés par la peur, ne voulant pas se soumettre à une mort violente lors des épreuves (ou lors de l'entraînement pour les épreuves). D'autres sont mus par la conscience, ne voulant pas tuer leurs compagnons de culture lors des épreuves. En effet, s'ils ne peuvent nier l'existence des dieux, ils peuvent nier que les dieux sont justes et se battre pour prouver qu'il ne faut pas obéir aux ordres d'un dieu injuste. Certains croient qu'un dieu (probablement Bontu) a corrompu le processus des épreuves et le chemin vers l'au-delà. D'autres ont l'intuition correcte que le Dieu-Pharaon n'a pas réellement eu à l'esprit les meilleurs intérêts du peuple lorsqu'il a ordonné leur société.",
+										"Un personnage identifié comme dissident perd le bénéfice de la caractéristique d'arrière-plan de l'initié ou du vizir. A la place, le personnage gagne le trait Shelter of Dissenters.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Inquisitor",
@@ -1346,7 +1363,9 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSI/Inquisitor.webp"
-					}
+					},
+					"title": "Moorland Inquisitor",
+					"credit": "David Palumbo"
 				}
 			]
 		},
@@ -2316,7 +2335,7 @@
 							"type": "entries",
 							"entries": [
 								"Vous êtes un vizir, un serviteur de votre dieu. Vous accomplissez des tâches essentielles pour faciliter le voyage des initiés, de sorte que les dieux vous récompensent en vous faisant entrer dans l'au-delà avec la bénédiction du Dieu-Pharaon. Vous espérez obtenir le statut le plus honoré dans l'au-delà en étant le meilleur serviteur possible de votre dieu.",
-								"En tant que vizir, vous pouvez avoir n'importe quelle classe, mais vous êtes particulièrement susceptible d'être un clerc, un druide (en particulier si vous servez Rhonas), ou un paladin."
+								"As a vizier, you can have any class, but you are especially likely to be a {@class cleric}, a {@class druid} (particularly if you serve Rhonas), or a {@class paladin}."
 							]
 						}
 					]
@@ -2328,9 +2347,52 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Vizier.webp"
-					}
+					},
+					"title": "Shadowstorm Vizier",
+					"credit": "Yongjae Choi"
 				}
 			]
+		},
+		{
+			"name": "Vizier (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Vizier",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Même dans la cité-état de Naktamun, soigneusement construite et entretenue, et en présence des cinq dieux, certaines personnes se rebellent contre les doctrines du Dieu-Pharaon. Ils ne contestent pas l'existence des dieux, bien sûr, car ceux-ci sont visibles presque tous les jours dans les rues de la ville. Ils ne remettent pas non plus en question le fait de la vie après la mort, qui est clairement visible dans les momies ointes qui les entourent, ainsi que dans les momies en maraude à l'extérieur de l'Hekma. Au contraire, ces dissidents refusent simplement de suivre le cours ordonné de la vie qui mène à l'au-delà glorieux.",
+										"Certains dissidents sont poussés par la peur, ne voulant pas se soumettre à une mort violente lors des épreuves (ou lors de l'entraînement pour les épreuves). D'autres sont mus par la conscience, ne voulant pas tuer leurs compagnons de culture lors des épreuves. En effet, s'ils ne peuvent nier l'existence des dieux, ils peuvent nier que les dieux sont justes et se battre pour prouver qu'il ne faut pas obéir aux ordres d'un dieu injuste. Certains croient qu'un dieu (probablement Bontu) a corrompu le processus des épreuves et le chemin vers l'au-delà. D'autres ont l'intuition correcte que le Dieu-Pharaon n'a pas réellement eu à l'esprit les meilleurs intérêts du peuple lorsqu'il a ordonné leur société.",
+										"Un personnage identifié comme dissident perd le bénéfice de la caractéristique d'arrière-plan de l'initié ou du vizir. A la place, le personnage gagne le trait Shelter of Dissenters.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Volstrucker Agent",

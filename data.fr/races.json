@@ -676,13 +676,34 @@
 						"Un aetherborn inconnu, cherchant désespérément un moyen de prolonger sa courte vie, a découvert un processus de transformation qui prolongeait son existence en lui donnant la capacité de se nourrir de l'essence vitale d'autres êtres. Depuis, d'autres aetherborn ont appris et réalisé cette monstrueuse transformation, et les aetherborn dotés de ce \"don\" sont devenus une petite minorité au sein d'une population déjà réduite.",
 						"Un aetherborn doué a la capacité de drainer l'essence de vie d'autres êtres. De la même manière que la chaleur est transférée d'un objet chaud à un objet froid, un aetherborn doué n'a qu'à toucher un autre être vivant avec sa main griffue pour en extraire l'essence vitale, alimentant ainsi sa propre existence tout en drainant la force et la vitalité de sa victime.",
 						"Pour beaucoup d'Aetherborn, qui vivent comme ils le font pour l'indulgence et la gratification instantanée, les concepts de \"besoin\" et \"envie\" sont pratiquement synonymes. Mais les aetherborn avec ce don comprennent ce que c'est que d'avoir vraiment besoin, car ils développent une faim d'essence de vie qui dépasse de loin tous les désirs qu'ils auraient pu ressentir avant leur transformation. Un aetherborn doué qui s'abstient de se nourrir se détériore encore plus rapidement que les autres aetherborn, tout en endurant une agonie indescriptible causée par la privation d'énergie vitale.",
-						"Au choix du MJ, un personnage né aether peut rechercher des méthodes pour réaliser ce \"don\" obscur. Le processus est similaire à l'invention et à la fabrication d'un objet magique rare (voir \"Inventer et fabriquer des dispositifs\" plus haut dans ce document). Mais plutôt que de l'éther, le processus nécessite une variété d'onguents rares et d'ingrédients inhabituels qui représentent le coût de la recherche et de la transformation.",
+						"At the DM's option, an aetherborn character can research methods of achieving this dark \"gift.\" The process is similar to inventing and manufacturing a rare magic item (see \"{@book Inventing and Manufacturing Devices|PS-K|1|Inventing and Manufacturing Devices}\" earlier in this document). But rather than aether, the process requires a variety of rare unguents and unusual ingredients that make up the cost of researching and undergoing the transformation.",
 						"Un aetherborn doté de ce don gagne la capacité Drain de vie : une attaque naturelle qui inflige {@dice 1d6} de dégâts nécrotiques et redonne le même nombre de points de vie à l'aetherborn. Cependant, si l'aetherborn passe 7 jours sans infliger ces dégâts, son maximum de points de vie est réduit de {@dice 1d6} par semaine. Cette réduction ne peut pas être supprimée tant que l'aetherborn n'a pas utilisé sa capacité Drain de vie et effectué un long repos."
 					]
 				}
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Variant; Gifted Aetherborn",
+					"source": "PSK",
+					"_mod": {
+						"entries": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Drain Life",
+								"type": "entries",
+								"entries": [
+									"You gain a natural attack that deals {@dice 1d6} necrotic damage and restores the same number of hit points to you. However, if you goes for 7 days without dealing this damage, your hit point maximum is reduced by {@dice 1d6} per week. This reduction can't be removed until you have used your Drain Life ability and completed a long rest."
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Natural Weapon"
+					]
+				}
+			]
 		},
 		{
 			"name": "Astral Elf",
@@ -1217,14 +1238,14 @@
 				{
 					"name": "Flight",
 					"entries": [
-						"Vous avez une vitesse de vol de 30 pieds. Vous ne pouvez pas utiliser votre vitesse de vol si vous portez une armure moyenne ou lourde. (Si votre campagne utilise la règle de variante pour l'encombrement, vous ne pouvez pas utiliser votre vitesse de vol si vous êtes encombré)."
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.) "
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Vous pouvez parler, lire et écrire le commun et l'Aven."
+						"You can speak, read, and write Common and {@language Aven|PSD}."
 					],
 					"type": "entries"
 				},
@@ -3858,7 +3879,7 @@
 				}
 			],
 			"age": {
-				"mature": 20,
+				"mature": 50,
 				"max": 350
 			},
 			"darkvision": 60,
@@ -3899,7 +3920,7 @@
 				{
 					"name": "Speed",
 					"entries": [
-						"Votre vitesse n'est pas réduite par le port d'une armure lourde."
+						"Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor."
 					],
 					"type": "entries"
 				},
@@ -3934,7 +3955,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Vous pouvez parler, lire et écrire le commun et le nain. Le nain est plein de consonnes dures et de sons gutturaux, et ces caractéristiques se retrouvent dans toutes les autres langues qu'un nain peut parler."
+						"You can speak, read, and write Common and {@language Dwarvish}. {@language Dwarvish} is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 					],
 					"type": "entries"
 				}
@@ -4243,6 +4264,13 @@
 					"name": "Languages",
 					"entries": [
 						"Vous pouvez parler, lire et écrire le commun et l'elfique. L'elfique est fluide, avec des intonations subtiles et une grammaire complexe. La littérature elfique est riche et variée, et leurs chansons et poèmes sont célèbres parmi les autres races. De nombreux bardes apprennent leur langue pour pouvoir ajouter des ballades en elfique à leur répertoire."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Elf Culture",
+					"entries": [
+						"The elves of Kaladesh don't organize themselves into nations or tribes. Still, they recognize three distinct cultural groups among their kind—though in truth these groupings are more like attitudes or alignments with regard to the rest of society and the use of technology. Choose one of these cultures."
 					],
 					"type": "entries"
 				}
@@ -5666,6 +5694,78 @@
 		},
 		{
 			"name": "Goblin",
+			"source": "PSZ",
+			"page": 16,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 16
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"age": {
+				"mature": 12,
+				"max": 50
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Armor"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"goblin": true
+				}
+			],
+			"resist": [
+				"fire",
+				"psychic"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Les gobelins mûrissent plus vite que les humains, atteignant l'âge adulte vers 12 ans. Ils vieillissent aussi sensiblement plus vite que les humains, et même les gobelins les plus prudents vivent rarement plus de 50 ans."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"La plupart des gobelins sont sauvagement chaotiques, bien qu'ils n'aient pas de penchant particulier pour le bien ou le mal."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Les gobelins mesurent en moyenne 1 mètre et pèsent environ 40 livres. Votre taille est Petite."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Grâce à votre héritage, vous avez une vision supérieure dans l'obscurité et la pénombre. Vous pouvez voir dans une faible lumière à moins de 60 pieds de vous comme si c'était une lumière vive, et dans l'obscurité comme si c'était une faible lumière. Vous ne pouvez pas discerner les couleurs dans l'obscurité, seulement les nuances de gris."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"Vous pouvez parler, lire et écrire le commun et le gobelin."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Goblin",
 			"source": "VGM",
 			"page": 119,
 			"otherSources": [
@@ -5797,158 +5897,6 @@
 			],
 			"heightAndWeight": null,
 			"hasFluff": true
-		},
-		{
-			"name": "Goblin (Ixalan)",
-			"source": "PSX",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": {
-				"walk": 25,
-				"climb": 25
-			},
-			"ability": [
-				{
-					"dex": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Les gobelins mûrissent plus vite que les humains, atteignant l'âge adulte vers 12 ans. Ils vieillissent sensiblement plus vite, et bien que peu de gobelins vivent jusqu'à un âge avancé, les plus prudents vivent rarement plus de 50 ans."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"La plupart des gobelins sont sauvagement chaotiques, sans penchant particulier pour le bien ou le mal mais avec une forte tendance à la malice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Les gobelins mesurent en moyenne 1 mètre et pèsent environ 40 livres. Votre taille est Petite."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Agile Climber",
-					"entries": [
-						"Vous avez une vitesse d'escalade de 25 pieds. Vous ne pouvez pas utiliser votre vitesse d'escalade lorsque vous portez une armure moyenne ou lourde. (Si votre campagne utilise la règle de variante pour l'encombrement, vous ne pouvez pas utiliser votre vitesse d'escalade si vous êtes encombré)."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Vous pouvez voir dans une faible lumière à moins de 60 pieds de vous comme si c'était une lumière vive, et dans l'obscurité comme si c'était une faible lumière. Vous ne pouvez pas discerner les couleurs dans l'obscurité, seulement les nuances de gris."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Vous pouvez parler, lire et écrire le commun (s'il existe dans votre campagne) et le gobelin."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Goblin (Zendikar)",
-			"source": "PSZ",
-			"page": 16,
-			"size": [
-				"S"
-			],
-			"speed": 25,
-			"ability": [
-				{
-					"con": 2
-				}
-			],
-			"age": {
-				"mature": 12,
-				"max": 50
-			},
-			"darkvision": 60,
-			"traitTags": [
-				"Natural Armor"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"goblin": true
-				}
-			],
-			"resist": [
-				"fire",
-				"psychic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Les gobelins mûrissent plus vite que les humains, atteignant l'âge adulte vers 12 ans. Ils vieillissent aussi sensiblement plus vite que les humains, et même les gobelins les plus prudents vivent rarement plus de 50 ans."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"La plupart des gobelins sont sauvagement chaotiques, bien qu'ils n'aient pas de penchant particulier pour le bien ou le mal."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Les gobelins mesurent en moyenne 1 mètre et pèsent environ 40 livres. Votre taille est Petite."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Grâce à votre héritage, vous avez une vision supérieure dans l'obscurité et la pénombre. Vous pouvez voir dans une faible lumière à moins de 60 pieds de vous comme si c'était une lumière vive, et dans l'obscurité comme si c'était une faible lumière. Vous ne pouvez pas discerner les couleurs dans l'obscurité, seulement les nuances de gris."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Grit",
-					"entries": [
-						"Vous avez une résistance aux dégâts de feu et aux dégâts psychiques. De plus, lorsque vous ne portez pas d'armure, votre CA est égale à 11 + votre modificateur de Dextérité."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Vous pouvez parler, lire et écrire le commun et le gobelin."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
 		},
 		{
 			"name": "Goliath",
@@ -7490,10 +7438,45 @@
 			"name": "Human (Ixalan)",
 			"source": "PSX",
 			"page": 11,
-			"size": [
-				"M"
-			],
-			"speed": 30,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"Les humains ne tendent vers aucun alignement particulier. On trouve parmi eux le meilleur et le pire."
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"Votre vitesse de marche de base est de 30 pieds."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write {@language Common} and one extra language of your choice. Or, if your campaign uses the optional rules for languages found in the previous section, your national origin determines your native language: {@language Itzocan|PSX} for the Sun Empire, {@language Coalition pidgin|PSX} for the Brazen Coalition, or {@language Vampire|PSX} for the Legion of Dusk. You still speak one additional language of your choice, and {@language Common Trade Pidgin|PSX|Common} if it exists in your campaign."
+								]
+							}
+						}
+					]
+				}
+			},
 			"ability": [
 				{
 					"str": 1,
@@ -7504,10 +7487,6 @@
 					"cha": 1
 				}
 			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
 			"languageProficiencies": [
 				{
 					"common": true,
@@ -7519,34 +7498,60 @@
 					"anyStandard": 1
 				}
 			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Human (Kaladesh)",
+			"source": "PSK",
+			"page": 22,
+			"_copy": {
+				"name": "Human",
+				"source": "PHB",
+				"_mod": {
 					"entries": [
-						"Les humains atteignent l'âge adulte à la fin de leur adolescence et vivent moins d'un siècle."
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Alignment",
+								"type": "entries",
+								"entries": [
+									"Les humains ne tendent vers aucun alignement particulier."
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": {
+								"name": "Speed",
+								"type": "entries",
+								"entries": [
+									"Votre vitesse de marche de base est de 30 pieds."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Languages",
+							"items": {
+								"name": "Languages",
+								"type": "entries",
+								"entries": [
+									"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Dwarvish curses, Elvish musical expressions, {@race Vedalken|PSK} scholarly jargon, and so on."
+								]
+							}
+						}
 					]
-				},
+				}
+			},
+			"ability": [
 				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Les humains ne tendent vers aucun alignement particulier. On trouve parmi eux le meilleur et le pire."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Les humains sont de taille et de corpulence très variables, allant d'à peine 1,5 mètre à plus de 1,80 mètre. Quelle que soit votre position dans cette fourchette, votre taille est moyenne."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Vous pouvez parler, lire et écrire le commun et une autre langue de votre choix. Ou, si votre campagne utilise les règles optionnelles pour les langues trouvées dans la section précédente, votre origine nationale détermine votre langue maternelle : Itzocan pour l'Empire du Soleil, pidgin de la Coalition pour la Coalition de l'Effronterie, ou Vampire pour la Légion du Crépuscule. Vous parlez toujours une langue supplémentaire de votre choix, et le commun s'il existe dans votre campagne."
-					],
-					"type": "entries"
+					"str": 1,
+					"dex": 1,
+					"con": 1,
+					"int": 1,
+					"wis": 1,
+					"cha": 1
 				}
 			],
 			"hasFluff": true,
@@ -9480,86 +9485,15 @@
 			]
 		},
 		{
-			"name": "Merfolk (Ixalan)",
-			"source": "PSX",
-			"page": 12,
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"ability": [
-				{
-					"cha": 1
-				}
-			],
-			"age": {
-				"mature": 20,
-				"max": 100
-			},
-			"traitTags": [
-				"Amphibious"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true,
-					"anyStandard": 1
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Les merfolks grandissent au même rythme que les humains et atteignent l'âge adulte vers 20 ans. Ils vivent cependant beaucoup plus longtemps que les humains, atteignant souvent plus de 100 ans."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"La plupart des merfolk sont neutres, vivant en étroite harmonie avec la nature."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Les Merfolk sont nettement plus grands que la plupart des humains, mesurant entre 2 et 3 mètres et pesant en moyenne 300 livres. Votre taille est moyenne."
-					]
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"Vous pouvez respirer de l'air et de l'eau."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swimming",
-					"entries": [
-						"Vous avez une vitesse de nage de 30 pieds."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Vous pouvez parler, lire et écrire le commun (s'il existe dans votre campagne), le merfolk et une autre langue de votre choix."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Merfolk (Zendikar)",
+			"name": "Merfolk",
 			"source": "PSZ",
 			"page": 13,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 12
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -10161,6 +10095,7 @@
 				"max": 100
 			},
 			"traitTags": [
+				"Language Proficiency",
 				"Natural Weapon",
 				"Tool Proficiency"
 			],
@@ -10168,6 +10103,11 @@
 				{
 					"common": true,
 					"other": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
 				}
 			],
 			"immune": [
@@ -10713,7 +10653,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Vous pouvez parler, lire et écrire le commun (s'il existe dans votre campagne) et l'orque."
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Orc|PHB}."
 					],
 					"type": "entries"
 				}
@@ -12350,13 +12290,13 @@
 					"type": "entries",
 					"name": "Flight",
 					"entries": [
-						"Vous avez une vitesse de vol de 30 pieds. Vous ne pouvez pas utiliser votre vitesse de vol si vous portez une armure moyenne ou lourde. (Si votre campagne utilise la règle de variante pour l'encombrement, vous ne pouvez pas utiliser votre vitesse de vol si vous êtes encombré)."
+						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your flying speed if you are encumbered.)"
 					]
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Vous pouvez parler, lire et écrire le Common (s'il existe dans votre campagne) et le Siren."
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Siren|PSX}."
 					],
 					"type": "entries"
 				}
@@ -13412,101 +13352,21 @@
 			]
 		},
 		{
-			"name": "Vampire (Ixalan)",
-			"source": "PSX",
-			"page": 14,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"cha": 2,
-					"wis": 1
-				}
-			],
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true
-				}
-			],
-			"resist": [
-				"necrotic"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Les vampires ne mûrissent pas et ne vieillissent pas de la même manière que les autres races."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Les vampires n'ont peut-être pas une tendance innée au mal, mais beaucoup d'entre eux y finissent. Qu'ils soient maléfiques ou non, leur hiérarchie stricte les incline vers un alignement légal."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Les vampires ont la même taille et la même corpulence que les humains. Votre taille est moyenne."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Bloodthirst",
-					"entries": [
-						"Vous pouvez drainer le sang et l'énergie vitale d'une créature consentante, ou qui est {@condition grappled} par vous, {@condition incapacitated}, ou {@condition restrained}. Effectuez une attaque de mêlée contre la cible. Si vous touchez, vous infligez 1 dégât perforant et {@dice 1d6} de dégâts nécrotiques. Le maximum de points de vie de la cible est réduit d'un montant égal aux dégâts nécrotiques subis, et vous regagnez un nombre de points de vie égal à ce montant. La réduction dure jusqu'à ce que la cible termine un long repos. La cible meurt si cet effet réduit son maximum de points de vie à 0."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Feast of Blood",
-					"entries": [
-						"Lorsque vous drainez du sang avec votre capacité Bloodthirst, vous ressentez une poussée de vitalité. Votre vitesse augmente de 10 pieds, et vous bénéficiez d'un avantage sur les tests de Force et de Dextérité et les jets de sauvegarde pendant 1 minute."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Vampiric Resistance",
-					"entries": [
-						"Vous avez une résistance aux dégâts nécrotiques."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Vous pouvez voir dans une faible lumière à moins de 60 pieds de vous comme si c'était une lumière vive, et dans l'obscurité comme si c'était une faible lumière. Vous ne pouvez pas discerner les couleurs dans l'obscurité, seulement les nuances de gris."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"Vous pouvez parler, lire et écrire le Common (s'il existe dans votre campagne) et le Vampire."
-					],
-					"type": "entries"
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Vampire (Zendikar)",
+			"name": "Vampire",
 			"source": "PSZ",
 			"page": 14,
+			"otherSources": [
+				{
+					"source": "PSX",
+					"page": 14
+				}
+			],
 			"size": [
 				"M"
 			],
 			"speed": 30,
 			"ability": [
 				{
-					"int": 1,
 					"cha": 2
 				}
 			],
@@ -13545,7 +13405,7 @@
 				{
 					"name": "Blood Thirst",
 					"entries": [
-						"Vous pouvez drainer le sang et l'énergie vitale d'une créature consentante, ou qui est {@condition grappled} par vous, {@condition incapacitated}, ou {@condition restrained}. Effectuez une attaque de mêlée contre la cible. Si vous touchez, vous infligez 1 dégât perforant et {@dice 1d6} de dégâts nécrotiques. Le maximum de points de vie de la cible est réduit d'un montant égal aux dégâts nécrotiques subis, et vous regagnez un nombre de points de vie égal à ce montant. La réduction dure jusqu'à ce que la cible termine un long repos. La cible meurt si cet effet réduit son maximum de points de vie à 0. Un humanoïde tué de cette façon devient un {@creature zombie||null}."
+						"You can drain blood and life energy from a willing creature, or one that is {@condition grappled} by you, {@condition incapacitated}, or {@condition restrained}. Make a melee attack against the target. If you hit, you deal 1 piercing damage and {@dice 1d6} necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and you regain hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
 					],
 					"type": "entries"
 				},
@@ -16813,7 +16673,10 @@
 					"entries": [
 						"Votre vitesse de déplacement augmente à 35 pieds."
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Mask of the Wild",
@@ -16852,7 +16715,10 @@
 					"entries": [
 						"Vous connaissez un cantrip de votre choix parmi les {@filter druid spell list|spells|class=druid|level=0}. La Sagesse est votre capacité de lanceur de sorts pour celui-ci."
 					],
-					"type": "entries"
+					"type": "entries",
+					"data": {
+						"overwrite": "Elf Culture"
+					}
 				},
 				{
 					"name": "Extra Language",
@@ -18275,17 +18141,74 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Grotag Tribe",
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Goblin",
+			"raceSource": "PSZ",
+			"page": 16,
+			"otherSources": null,
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"entries": [
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"La plupart des gobelins sont sauvagement chaotiques, sans penchant particulier pour le bien ou le mal mais avec une forte tendance à la malice."
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Agile Climber",
+					"entries": [
+						"You have a climbing speed of 25 feet. You can't use your climbing speed while you wear medium or heavy armor. (If your campaign uses the variant rule for {@variantrule encumbrance|PHB}, you can't use your climbing speed if you are encumbered.)"
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Goblin|PHB}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar; Grotag Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"skillProficiencies": [
 				{
 					"animal handling": true
 				}
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"Vous avez une résistance aux dégâts de feu et aux dégâts psychiques. De plus, lorsque vous ne portez pas d'armure, votre CA est égale à 11 + votre modificateur de Dextérité."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Grotag Tamer",
 					"entries": [
@@ -18298,12 +18221,25 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Lavastep Tribe",
+			"name": "Zendikar; Lavastep Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"Vous avez une résistance aux dégâts de feu et aux dégâts psychiques. De plus, lorsque vous ne portez pas d'armure, votre CA est égale à 11 + votre modificateur de Dextérité."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Lavastep Grit",
 					"entries": [
@@ -18316,15 +18252,28 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tuktuk Tribe",
+			"name": "Zendikar; Tuktuk Tribe",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin",
 			"raceSource": "PSZ",
 			"page": 17,
+			"otherSources": null,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
 			"traitTags": [
 				"Tool Proficiency"
 			],
 			"entries": [
+				{
+					"name": "Grit",
+					"entries": [
+						"Vous avez une résistance aux dégâts de feu et aux dégâts psychiques. De plus, lorsque vous ne portez pas d'armure, votre CA est égale à 11 + votre modificateur de Dextérité."
+					],
+					"type": "entries"
+				},
 				{
 					"name": "Tuktuk Cunning",
 					"entries": [
@@ -19664,7 +19613,7 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"Vous pouvez parler, lire et écrire le commun et le keldon."
+						"You can speak, read, and write Common and {@language Keldon|PSD}."
 					],
 					"type": "entries",
 					"data": {
@@ -19689,7 +19638,7 @@
 					"type": "entries",
 					"name": "Icehaven Born",
 					"entries": [
-						"Vous êtes naturellement adapté aux climats froids, comme le décrit le chapitre 5 du {@i Dungeon Master's Guide}."
+						"You are naturally adapted to {@hazard Extreme Cold|DMG|cold climates}, as described in chapter 5 of the {@i Dungeon Master's Guide}."
 					]
 				}
 			],
@@ -20547,11 +20496,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Blue",
+			"name": "Ixalan; Blue",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -20561,6 +20511,13 @@
 				{
 					"history": true,
 					"nature": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20591,20 +20548,38 @@
 						"Vous gagnez la maîtrise des compétences {@skill History} et {@skill Nature}."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Green",
+			"name": "Ixalan; Green",
 			"source": "PSX",
-			"raceName": "Merfolk (Ixalan)",
-			"raceSource": "PSX",
+			"raceName": "Merfolk",
+			"raceSource": "PSZ",
 			"page": 12,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true,
+					"anyStandard": 1
 				}
 			],
 			"additionalSpells": [
@@ -20635,17 +20610,28 @@
 						"Vous pouvez tenter de vous cacher même si vous n'êtes que légèrement obscurci par du feuillage, une forte pluie, une chute de neige, de la brume et d'autres phénomènes naturels."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign), {@language Merfolk|PSX}, and one additional language of your choice."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
 				}
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
-			"name": "Cosi Creed",
+			"name": "Zendikar; Cosi Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 1,
@@ -20692,11 +20678,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Emeria Creed",
+			"name": "Zendikar; Emeria Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"wis": 2
@@ -20742,11 +20729,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Ula Creed",
+			"name": "Zendikar; Ula Creed",
 			"source": "PSZ",
-			"raceName": "Merfolk (Zendikar)",
+			"raceName": "Merfolk",
 			"raceSource": "PSZ",
 			"page": 13,
+			"otherSources": null,
 			"ability": [
 				{
 					"int": 2
@@ -22536,6 +22524,94 @@
 			"overwrite": {
 				"ability": true
 			}
+		},
+		{
+			"name": "Ixalan",
+			"source": "PSX",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Les vampires ne mûrissent pas et ne vieillissent pas de la même manière que les autres races."
+					],
+					"data": {
+						"overwrite": "Age"
+					}
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Les vampires n'ont peut-être pas une tendance innée au mal, mais beaucoup d'entre eux y finissent. Qu'ils soient maléfiques ou non, leur hiérarchie stricte les incline vers un alignement légal."
+					],
+					"data": {
+						"overwrite": "Alignment"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Les vampires ont la même taille et la même corpulence que les humains. Votre taille est moyenne."
+					],
+					"data": {
+						"overwrite": "Size"
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Feast of Blood",
+					"entries": [
+						"Lorsque vous drainez du sang avec votre capacité Bloodthirst, vous ressentez une poussée de vitalité. Votre vitesse augmente de 10 pieds, et vous bénéficiez d'un avantage sur les tests de Force et de Dextérité et les jets de sauvegarde pendant 1 minute."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Vampire|PSX}."
+					],
+					"type": "entries",
+					"data": {
+						"overwrite": "Languages"
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Zendikar",
+			"source": "PSZ",
+			"raceName": "Vampire",
+			"raceSource": "PSZ",
+			"page": 14,
+			"otherSources": null,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Null Transformation",
+					"entries": [
+						"A humanoid killed with your Bloodthirst ability becomes a {@creature Vampire Null|PSZ|null}."
+					],
+					"type": "entries"
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Envoy",

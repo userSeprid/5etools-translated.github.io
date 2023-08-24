@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Le digne doit s'efforcer d'être grand - la suprématie dans la vie mène à la suprématie dans l'au-delà.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"Bontu a pleinement adopté ce dicton et, bien qu'elle ne s'efforce guère de l'enseigner, elle montre certainement l'exemple. Ses vizirs plantent subtilement les graines qui fleurissent pour donner l'ambition que le Dieu-Pharaon désire. Par le biais d'insinuations, ils rappellent aux acolytes et aux initiés qu'il n'est pas honteux d'obtenir sa place dans l'au-delà aux dépens des autres, mais que cela prouve la détermination et la volonté de l'initié. Rien n'est plus important que cette volonté, suggèrent-ils - pas les liens d'une culture, pas l'amitié ou l'amour. Ni même la dévotion à une divinité.",
 				"A chaque niveau de clerc indiqué, ajoutez les sorts listés à vos sorts préparés.",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Le digne doit cultiver un esprit agile capable de percevoir les merveilles au-delà de l'imagination qui attendent dans l'au-delà.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"La tâche de Kefnet est de transmettre cet enseignement du Dieu-Pharaon et d'en élucider le sens. Il enseigne que l'au-delà ne sera habité que par ceux qui auront prouvé par leur intelligence qu'ils sont dignes de séjourner en la glorieuse présence du Dieu-Pharaon. Il entraîne les acolytes et les initiés à repousser leurs limites et à défier leur capacité mentale avec des sorts de plus en plus puissants.",
-				"Le domaine de Kefnet est identique au domaine de connaissance du Manuel du joueur."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"Voir le domaine \"Connaissances\"."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Voir le domaine \"Connaissances\"."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Voir le domaine \"Connaissances\"."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Voir le domaine \"Connaissances\"."
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Le digne doit connaître et respecter tous les autres que le Dieu-Pharaon juge dignes, car dans l'au-delà, tous seront unis dans le but et l'action.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"Oketra est chargée d'approfondir cet enseignement du Dieu-Pharaon, en inculquant à chaque initié la vertu de la solidarité. Elle forge chaque groupe d'enfants en un groupe d'acolytes qui n'a qu'un seul but : être jugé digne d'une vie glorieuse après la mort. Et elle inculque à chaque groupe la capacité de s'unir dans une seule action pour atteindre ce but. Elle aime utiliser des images poétiques pour communiquer ses idéaux.",
 				"A chaque niveau de clerc indiqué, ajoutez les sorts listés à vos sorts préparés.",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Les dignes se forgeront un corps solide capable de résister aux énergies illimitées de l'au-delà.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"Il revient à Rhonas d'inculquer cet enseignement à ceux qui entreront dans l'au-delà, mais pour lui, les mots eux-mêmes n'ont pas d'importance. La force ne s'enseigne pas. Elle doit être construite par la pratique et l'entraînement. Rhonas démontre ses enseignements par l'exemple, plutôt qu'en donnant à ses étudiants une quelconque instruction académique. Il invite les habitants de Naktamun à se tenir près de l'Hekma et à le regarder lorsqu'il part à l'assaut du désert pour combattre les plus grandes horreurs. Il les encourage à observer sa force indomptable, car même s'ils ne pourront jamais l'égaler, ils peuvent aspirer à l'imiter. Il les invite à scruter chaque mouvement et à pratiquer ce qu'ils voient.",
 				"A chaque niveau de clerc indiqué, ajoutez les sorts listés à vos sorts préparés.",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"Les dignes se précipiteront aux côtés du Dieu-Pharaon avec un zèle implacable, se levant pour surmonter tous les obstacles sur leur chemin.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"Le Dieu-Pharaon attend de ceux qu'il accueille dans l'au-delà qu'ils le désirent plus que tous les autres plaisirs et réalisations, et qu'ils montrent leur dévouement, leur passion et leur ferveur par leurs actions. Hazoret est chargée de cultiver ce zèle chez les initiés qui lui sont confiés, et elle a entrepris cette tâche avec l'enthousiasme qui convient. Elle reconnaît cependant que la meilleure façon d'enseigner le zèle est d'en faire la démonstration.",
 				"A chaque niveau de clerc indiqué, ajoutez les sorts listés à vos sorts préparés.",
 				{

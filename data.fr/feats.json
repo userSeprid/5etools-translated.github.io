@@ -7111,6 +7111,23 @@
 					"anyArtisansTool": 1
 				}
 			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				}
+			],
 			"entries": [
 				"Vous êtes passé maître dans l'art de l'invention, de l'amélioration et du bricolage à la volée. Vous pouvez utiliser vos talents pour créer des effets magiques immédiats et à court terme semblables à des sorts, à condition d'avoir le temps et une quantité suffisante d'éther.",
 				"Lorsque vous choisissez cet exploit, vous maîtrisez deux effets magiques, chacun d'entre eux recréant l'effet d'un sort de 1er niveau qui possède l'étiquette rituel. Ces sorts peuvent provenir de n'importe quelle liste de classe, mais l'Intelligence est votre capacité de lanceur de sorts pour eux.",
@@ -8146,7 +8163,8 @@
 				"Vous êtes compétent dans la création de {@creature servo|psk|servos}-petites constructions qui fonctionnent comme des assistants personnels. Vous pouvez lancer le sort {@spell find familiar} comme un rituel, en créant un {@creature servo|psk} qui vous servira de familier au lieu d'un animal. Les statistiques d'un {@creature servo|psk} apparaissent dans la section \"Créatures artefactes\" de ce document. À tous les autres égards, un servo-familier fonctionne comme décrit dans le sort {@spell find familiar}.",
 				"Vous pouvez communiquer par télépathie avec votre servo familier et percevoir par ses sens tant que vous êtes sur le même plan d'existence. Vous pouvez parler à travers votre servo avec votre propre voix.",
 				"De plus, lorsque vous effectuez l'action {@action Attack}, vous pouvez renoncer à l'une de vos propres attaques pour permettre à votre servo familier d'effectuer une attaque de son côté."
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Shadow Touched",
