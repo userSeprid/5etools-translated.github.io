@@ -655,34 +655,6 @@
 			]
 		},
 		{
-			"name": "Dissenter",
-			"source": "PSA",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"Zelfs in de zorgvuldig opgebouwde en gecureerde stadstaat Naktamun, en in de aanwezigheid van de vijf goden, komen sommige mensen in opstand tegen de doctrines van de God-Pharaoh. Zij betwisten natuurlijk niet het bestaan van de goden, want die goden zijn bijna dagelijks zichtbaar in de straten van de stad. Evenmin betwisten zij het feit van het leven na de dood, dat duidelijk te zien is aan de gezalfde mummies die hen omringen, evenals de plunderende mummies buiten de Hekma. Deze andersdenkenden weigeren eenvoudigweg de gewijde levenswandel te volgen die naar het glorieuze hiernamaals leidt.",
-								"Sommige andersdenkenden worden gedreven door angst, omdat zij zichzelf niet willen onderwerpen aan een gewelddadige dood tijdens de proeven (of tijdens de training voor de proeven). Sommigen worden bewogen door hun geweten en willen hun oogstgenoten niet doden tijdens de beproevingen. Want hoewel zij niet kunnen ontkennen dat de goden bestaan, kunnen zij wel ontkennen dat de goden rechtvaardig zijn - en kunnen zij strijden om te bewijzen dat de dictaten van een onrechtvaardige god niet hoeven te worden gehoorzaamd. Sommigen geloven dat één god (waarschijnlijk Bontu) het proces van de beproevingen en de weg naar het hiernamaals heeft bedorven. Anderen voelen juist aan dat de God-Pharao niet het beste met de mensen voorhad toen hij hun samenleving beval.",
-								"Een personage dat als andersdenkende wordt geïdentificeerd, verliest het voordeel van de achtergrondkenmerken van de ingewijde of de vizier. In plaats daarvan krijgt het karakter de eigenschap Schuilplaats van andersdenkenden."
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/PSA/Dissenter.webp"
-					}
-				}
-			]
-		},
-		{
 			"name": "Dragon Casualty",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -1301,7 +1273,7 @@
 							"type": "entries",
 							"entries": [
 								"U bent een ingewijde, op weg om de beproevingen van de vijf goden te volbrengen in de hoop een verheerlijkte dood te verdienen in de laatste Beproeving van Zeal. Een combinatie van je natuurlijke aanleg, de behoeften van je oogst en de beoordeling van je leraren toen je nog een acoliet was, heeft ertoe geleid dat je je training hebt gericht op een bepaald gebied van specialisatie: een gevecht met de hand, een gevecht over lange afstand of een toverspreuk. Maar alleen een goed opgeleide ingewijde kan het hiernamaals waardig worden genoemd.",
-								"Als je een hand-to-hand specialist bent, overweeg dan de barbarian, fighter, monk, paladin, of rogue classes. Als je gespecialiseerd bent in langeafstandsgevechten, kun je een fighter, ranger of rogue zijn. Als je een spellcasting specialist bent, zou je een bard, sorcerer, of wizard kunnen zijn. En naast deze eerste keuze, zou je kunnen overwegen om multiclassing te gebruiken of feats om je vaardigheden op alle drie de gebieden aan te vullen."
+								"If you are a hand-to-hand specialist, consider the {@class barbarian}, {@class fighter}, {@class monk}, {@class paladin}, or {@class rogue} classes. As a long-range combat specialist, you might be a {@class fighter}, a {@class ranger}, or a {@class rogue}. If you are a spellcasting specialist, you might be a {@class bard}, {@class sorcerer}, or {@class wizard}. And beyond this initial choice, you might consider multiclassing or using feats to round out your skills in all three areas."
 							]
 						}
 					]
@@ -1313,16 +1285,61 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate.webp"
-					}
+					},
+					"title": "Unwavering Initiate",
+					"credit": "Greg Opalinski"
 				},
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Initiate2.webp"
-					}
+					},
+					"title": "Gust Walker",
+					"credit": "Jason Rainville"
 				}
 			]
+		},
+		{
+			"name": "Initiate (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Initiate",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Zelfs in de zorgvuldig opgebouwde en gecureerde stadstaat Naktamun, en in de aanwezigheid van de vijf goden, komen sommige mensen in opstand tegen de doctrines van de God-Pharaoh. Zij betwisten natuurlijk niet het bestaan van de goden, want die goden zijn bijna dagelijks zichtbaar in de straten van de stad. Evenmin betwisten zij het feit van het leven na de dood, dat duidelijk te zien is aan de gezalfde mummies die hen omringen, evenals de plunderende mummies buiten de Hekma. Deze andersdenkenden weigeren eenvoudigweg de gewijde levenswandel te volgen die naar het glorieuze hiernamaals leidt.",
+										"Sommige andersdenkenden worden gedreven door angst, omdat zij zichzelf niet willen onderwerpen aan een gewelddadige dood tijdens de proeven (of tijdens de training voor de proeven). Sommigen worden bewogen door hun geweten en willen hun oogstgenoten niet doden tijdens de beproevingen. Want hoewel zij niet kunnen ontkennen dat de goden bestaan, kunnen zij wel ontkennen dat de goden rechtvaardig zijn - en kunnen zij strijden om te bewijzen dat de dictaten van een onrechtvaardige god niet hoeven te worden gehoorzaamd. Sommigen geloven dat één god (waarschijnlijk Bontu) het proces van de beproevingen en de weg naar het hiernamaals heeft bedorven. Anderen voelen juist aan dat de God-Pharao niet het beste met de mensen voorhad toen hij hun samenleving beval.",
+										"Een personage dat als andersdenkende wordt geïdentificeerd, verliest het voordeel van de achtergrondkenmerken van de ingewijde of de vizier. In plaats daarvan krijgt het karakter de eigenschap Schuilplaats van andersdenkenden.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Inquisitor",
@@ -1346,7 +1363,9 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSI/Inquisitor.webp"
-					}
+					},
+					"title": "Moorland Inquisitor",
+					"credit": "David Palumbo"
 				}
 			]
 		},
@@ -2316,7 +2335,7 @@
 							"type": "entries",
 							"entries": [
 								"Je bent een vizier, een dienaar van je god. Je voert taken uit die essentieel zijn om de reis van de ingewijden te vergemakkelijken, zodat de goden je belonen met toegang tot het hiernamaals met de zegen van de God-Pharao. Je hoopt de meest geëerde status in het hiernamaals te bereiken door de best mogelijke dienaar van je god te zijn.",
-								"Als vizier kun je elke klasse hebben, maar de kans is groot dat je een cleric, een druid (vooral als je Rhonas dient) of een paladin bent."
+								"As a vizier, you can have any class, but you are especially likely to be a {@class cleric}, a {@class druid} (particularly if you serve Rhonas), or a {@class paladin}."
 							]
 						}
 					]
@@ -2328,9 +2347,52 @@
 					"href": {
 						"type": "internal",
 						"path": "backgrounds/PSA/Vizier.webp"
-					}
+					},
+					"title": "Shadowstorm Vizier",
+					"credit": "Yongjae Choi"
 				}
 			]
+		},
+		{
+			"name": "Vizier (Dissenter)",
+			"source": "PSA",
+			"_copy": {
+				"name": "Vizier",
+				"source": "PSA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Zelfs in de zorgvuldig opgebouwde en gecureerde stadstaat Naktamun, en in de aanwezigheid van de vijf goden, komen sommige mensen in opstand tegen de doctrines van de God-Pharaoh. Zij betwisten natuurlijk niet het bestaan van de goden, want die goden zijn bijna dagelijks zichtbaar in de straten van de stad. Evenmin betwisten zij het feit van het leven na de dood, dat duidelijk te zien is aan de gezalfde mummies die hen omringen, evenals de plunderende mummies buiten de Hekma. Deze andersdenkenden weigeren eenvoudigweg de gewijde levenswandel te volgen die naar het glorieuze hiernamaals leidt.",
+										"Sommige andersdenkenden worden gedreven door angst, omdat zij zichzelf niet willen onderwerpen aan een gewelddadige dood tijdens de proeven (of tijdens de training voor de proeven). Sommigen worden bewogen door hun geweten en willen hun oogstgenoten niet doden tijdens de beproevingen. Want hoewel zij niet kunnen ontkennen dat de goden bestaan, kunnen zij wel ontkennen dat de goden rechtvaardig zijn - en kunnen zij strijden om te bewijzen dat de dictaten van een onrechtvaardige god niet hoeven te worden gehoorzaamd. Sommigen geloven dat één god (waarschijnlijk Bontu) het proces van de beproevingen en de weg naar het hiernamaals heeft bedorven. Anderen voelen juist aan dat de God-Pharao niet het beste met de mensen voorhad toen hij hun samenleving beval.",
+										"Een personage dat als andersdenkende wordt geïdentificeerd, verliest het voordeel van de achtergrondkenmerken van de ingewijde of de vizier. In plaats daarvan krijgt het karakter de eigenschap Schuilplaats van andersdenkenden.",
+										{
+											"type": "hr"
+										}
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "backgrounds/PSA/Dissenter.webp"
+							},
+							"title": "Samut, Voice of Dissent",
+							"credit": "Aleksi Briclot"
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Volstrucker Agent",

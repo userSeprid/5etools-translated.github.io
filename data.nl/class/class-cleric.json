@@ -1488,10 +1488,12 @@
 			],
 			"subclassFeatures": [
 				"Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|2",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|6",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|8",
-				"Subclass Feature|Cleric||Knowledge (PSA)|PSA|17"
+				"Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+				"Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+				"Potent Spellcasting|Cleric||Knowledge||8",
+				"Blessed Strikes|Cleric||Knowledge||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Knowledge||8|TCE",
+				"Visions of the Past|Cleric||Knowledge||17"
 			]
 		},
 		{
@@ -4093,7 +4095,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"De waardige zal streven naar grootheid - superioriteit in het leven leidt tot suprematie in het hiernamaals.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife."
+					]
+				},
 				"Bontu heeft dit dictaat volledig omarmd, en hoewel ze weinig moeite doet om het te onderwijzen, geeft ze zeker het goede voorbeeld. Haar viziers planten subtiel de zaadjes die uitgroeien tot de ambitie die de God-Pharaoh verlangt. Door insinuatie herinneren zij zowel acolieten als ingewijden eraan dat het bereiken van een plaats in het hiernamaals ten koste van anderen geen schande is, maar een bewijs van de vastberadenheid en gedrevenheid van de ingewijde. Niets is belangrijker dan die gedrevenheid, suggereren zij - niet de banden van een gewas, niet vriendschap of liefde. Zelfs niet de toewijding aan een godheid.",
 				"Op elk aangegeven cleric level, voeg je de opgesomde spreuken toe aan je spells prepared.",
 				{
@@ -4257,65 +4264,18 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"De waardige zal een scherp verstand ontwikkelen dat de wonderen kan waarnemen die in het hiernamaals wachten.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall cultivate a nimble mind that can perceive the wonders beyond imagination that wait in the afterlife."
+					]
+				},
 				"Het is de taak van Kefnet deze leer van de God-Pharao door te geven en de betekenis ervan te verduidelijken. Hij leert dat het hiernamaals alleen zal worden bewoond door hen die met hun verstand hebben bewezen dat zij het waard zijn om in de glorieuze aanwezigheid van de God-Pharaoh te vertoeven. Hij traint acolieten en ingewijden om hun grenzen te verleggen en hun geestelijk vermogen uit te dagen met spreuken van steeds grotere kracht.",
-				"Het domein van Kefnet is identiek aan het domein Kennis in het Handboek voor Spelers."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"Zie het kennisdomein."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Zie het kennisdomein."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Zie het kennisdomein."
-			]
-		},
-		{
-			"name": "Subclass Feature",
-			"source": "PSA",
-			"page": 25,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Knowledge (PSA)",
-			"subclassSource": "PSA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Zie het kennisdomein."
+				"Kefnet's domain is identical to the {@class Cleric|PHB|Knowledge domain in the Player's Handbook|Knowledge|PHB}.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain|Cleric||Knowledge||1"
+				}
 			]
 		},
 		{
@@ -4328,7 +4288,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"De waardige moet alle anderen kennen en respecteren die de God-Pharao waardig acht, want in het hiernamaals zullen allen verenigd zijn in doel en handeling.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action."
+					]
+				},
 				"Oketra is belast met het uitleggen van deze leer van de God-Pharaoh, door iedere ingewijde de deugd van solidariteit bij te brengen. Zij smeedt elke groep kinderen tot een oogst van acolieten met slechts één doel: waardig bevonden te worden voor een glorieus hiernamaals. En ze brengt in elke oogst het vermogen bij om zich te verenigen in een enkele actie om dat doel te bereiken. Ze houdt van poëtische beeldspraak om haar idealen over te brengen.",
 				"Op elk aangegeven cleric level, voeg je de opgesomde spreuken toe aan je spells prepared.",
 				{
@@ -4505,7 +4470,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"De waardige zal een sterk lichaam ontwikkelen dat de grenzeloze energieën van het hiernamaals kan weerstaan.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife."
+					]
+				},
 				"Het is aan Rhonas om dit onderricht te geven aan hen die het hiernamaals willen betreden, maar voor hem doen de woorden er niet toe. Kracht kan niet worden geleerd. Het moet worden opgebouwd door oefening en training. Rhonas demonstreert zijn leer door zijn voorbeeld, eerder dan door zijn studenten enige vorm van academische instructie te geven. Hij nodigt het volk van Naktamun uit om bij de Hekma te staan en toe te kijken hoe hij de woestijn in stormt om de grootste verschrikkingen te bestrijden. Hij moedigt hen aan zijn ontembare kracht te observeren, want hoewel zij die nooit zullen evenaren, kunnen zij ernaar streven die na te bootsen. Hij nodigt hen uit elke beweging nauwkeurig te bekijken en te oefenen wat zij zien.",
 				"Op elk aangegeven cleric level, voeg je de opgesomde spreuken toe aan je spells prepared.",
 				{
@@ -4681,7 +4651,12 @@
 			"subclassSource": "PSA",
 			"level": 1,
 			"entries": [
-				"\"De waardigen zullen zich naar de zijde van de God-Pharao haasten met onophoudelijke ijver, oprijzend om elk obstakel op hun weg te overwinnen.\"",
+				{
+					"type": "quote",
+					"entries": [
+						"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way."
+					]
+				},
 				"De God-Pharao verwacht van degenen die hij in het hiernamaals verwelkomt, dat zij daarnaar verlangen boven alle andere genoegens en prestaties, en dat zij hun toewijding, hartstocht en vurigheid tonen door hun daden. Hazoret is belast met het cultiveren van deze ijver in de ingewijden die onder haar hoede komen, en zij heeft deze taak met gepast enthousiasme op zich genomen. Zij erkent echter dat de beste manier om ijver bij te brengen is door het te demonstreren.",
 				"Op elk aangegeven cleric level, voeg je de opgesomde spreuken toe aan je spells prepared.",
 				{
