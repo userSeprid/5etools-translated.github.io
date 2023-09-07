@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Abhorrent Overlord",
@@ -24,62 +29,26 @@
 		{
 			"name": "Akroan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Akroanska hopliter, även kallade stratianer, är bland de hårdaste soldaterna på Theros. De tränar obevekligt och har en orubblig beslutsamhet. I Akros annaler finns det gott om berättelser om grupper av stratianer som försvarade en viktig plats mot en mycket större styrka eller smög sig bakom fiendens linjer och orsakade förödelse i motståndararmén.",
-						"Hopliterna är välutbildade krigare, som inte bara är insatta i strategi och taktik utan också i att förhärliga krigarandan, som är grunden för ett etos som skapar ett obrytbart band mellan medlemmarna i ett militärt förband. I strid arbetar hopliterna vanligtvis i grupper och använder sig av samordnade taktiker för att vinna segrar.",
-						"I de tre tabellerna med namn på hopliteenheter presenteras de typer av titlar som används av hoplitkontingenter från Theros stora poleis. Överväg att använda dessa namn för militära styrkor som karaktärerna möter under sina äventyr eller som de en gång var en del av.",
-						{
-							"type": "table",
-							"caption": "Akroan Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Iroas spjut"
-								],
-								[
-									"2",
-									"Järntänder"
-								],
-								[
-									"3",
-									"Anax' pilar"
-								],
-								[
-									"4",
-									"Den obrutna"
-								],
-								[
-									"5",
-									"Purphoros' bål"
-								],
-								[
-									"6",
-									"Spettgrupp"
-								],
-								[
-									"7",
-									"Sköld av Akros"
-								],
-								[
-									"8",
-									"Cymedes hjärta"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Akroanska hopliter, även kallade stratianer, är bland de hårdaste soldaterna på Theros. De tränar obevekligt och har en orubblig beslutsamhet. I Akros annaler finns det gott om berättelser om grupper av stratianer som försvarade en viktig plats mot en mycket större styrka eller smög sig bakom fiendens linjer och orsakade förödelse i motståndararmén."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Alseid",
@@ -477,6 +446,162 @@
 			]
 		},
 		{
+			"name": "Hoplite",
+			"source": "MOT",
+			"entries": [
+				"Hopliterna är välutbildade krigare, som inte bara är insatta i strategi och taktik utan också i att förhärliga krigarandan, som är grunden för ett etos som skapar ett obrytbart band mellan medlemmarna i ett militärt förband. I strid arbetar hopliterna vanligtvis i grupper och använder sig av samordnade taktiker för att vinna segrar.",
+				"I de tre tabellerna med namn på hopliteenheter presenteras de typer av titlar som används av hoplitkontingenter från Theros stora poleis. Överväg att använda dessa namn för militära styrkor som karaktärerna möter under sina äventyr eller som de en gång var en del av.",
+				{
+					"type": "table",
+					"caption": "Akroan Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Iroas spjut"
+						],
+						[
+							"2",
+							"Järntänder"
+						],
+						[
+							"3",
+							"Anax' pilar"
+						],
+						[
+							"4",
+							"Den obrutna"
+						],
+						[
+							"5",
+							"Purphoros' bål"
+						],
+						[
+							"6",
+							"Spettgrupp"
+						],
+						[
+							"7",
+							"Sköld av Akros"
+						],
+						[
+							"8",
+							"Cymedes hjärta"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Meletian Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Kraken's Claw"
+						],
+						[
+							"2",
+							"Rättvisans händer"
+						],
+						[
+							"3",
+							"Thassas spjut"
+						],
+						[
+							"4",
+							"Efaras sköld"
+						],
+						[
+							"5",
+							"Djupets släktingar"
+						],
+						[
+							"6",
+							"Heliods ryttare"
+						],
+						[
+							"7",
+							"Väktarna av Pyrgnos"
+						],
+						[
+							"8",
+							"De skysvornade"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Setessan Hoplite Unit Names",
+					"colLabels": [
+						"d8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Nyleas pilar"
+						],
+						[
+							"2",
+							"Övervakarna"
+						],
+						[
+							"3",
+							"Ophis huggtänder"
+						],
+						[
+							"4",
+							"Swiftswords"
+						],
+						[
+							"5",
+							"Karametras vargar"
+						],
+						[
+							"6",
+							"Lundens försvarare"
+						],
+						[
+							"7",
+							"Bronsblad"
+						],
+						[
+							"8",
+							"Schakalerna"
+						]
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Hoplite.webp"
+					},
+					"credit": "Raymond Swanland"
+				}
+			]
+		},
+		{
 			"name": "Hundred-Handed One",
 			"source": "MOT",
 			"entries": [
@@ -620,62 +745,26 @@
 		{
 			"name": "Meletian Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Meletiska hopliter använder en kombination av list, tro och magi för att försvara sitt hem vid kusten. De flesta av dessa skickliga soldater tjänar i den vördnadsfulla armén, Meletis försvarare, som använder en rad beprövade strategier och flexibla truppformationer för att få ett övertag över fienden. Med stöd av tränade griffon- och pegasushästen slår de till mot fiender där de minst anar det.",
-						"Hopliterna är välutbildade krigare, som inte bara är insatta i strategi och taktik utan också i att förhärliga krigarandan, som är grunden för ett etos som skapar ett obrytbart band mellan medlemmarna i ett militärt förband. I strid arbetar hopliterna vanligtvis i grupper och använder sig av samordnade taktiker för att vinna segrar.",
-						"I de tre tabellerna med namn på hopliteenheter presenteras de typer av titlar som används av hoplitkontingenter från Theros stora poleis. Överväg att använda dessa namn för militära styrkor som karaktärerna möter under sina äventyr eller som de en gång var en del av.",
-						{
-							"type": "table",
-							"caption": "Meletian Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Kraken's Claw"
-								],
-								[
-									"2",
-									"Rättvisans händer"
-								],
-								[
-									"3",
-									"Thassas spjut"
-								],
-								[
-									"4",
-									"Efaras sköld"
-								],
-								[
-									"5",
-									"Djupets släktingar"
-								],
-								[
-									"6",
-									"Heliods ryttare"
-								],
-								[
-									"7",
-									"Väktarna av Pyrgnos"
-								],
-								[
-									"8",
-									"De skysvornade"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Meletiska hopliter använder en kombination av list, tro och magi för att försvara sitt hem vid kusten. De flesta av dessa skickliga soldater tjänar i den vördnadsfulla armén, Meletis försvarare, som använder en rad beprövade strategier och flexibla truppformationer för att få ett övertag över fienden. Med stöd av tränade griffon- och pegasushästen slår de till mot fiender där de minst anar det."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Naiad",
@@ -893,60 +982,118 @@
 			]
 		},
 		{
-			"name": "Returned Drifter",
+			"name": "Returned",
 			"source": "MOT",
 			"entries": [
+				"De återvändande har flytt från underjorden och bor bland de levande igen, men deras andra liv är sällan vad de förväntade sig - inte för att de minns vad de förväntade sig. Som ett resultat av att ha följt Phenax väg (se kapitel 4) förlorar de återvändande sina identiteter, vilka manifesteras som separata varelser som kallas eidoloner. Erfarenheten av att fly från Underjorden gör också att de förlorar sina ansikten, som blir uttryckslösa ytor med tomma ögonhålor och gapande munnar. Dessa tomma ytor täcker de med distinkta gyllene masker.",
+				"De återvänder till världen igen, tomma och odöda. Eftersom de inte längre har förmågan att skapa långtidsminnen kan de i allmänhet inte bygga upp meningsfulla relationer eller skapa nya liv. Istället upplever de flesta flyktiga känslor och följer ihåliga rutiner, deras existenser reduceras till skuggspel utan tyngd eller substans."
+			],
+			"images": [
 				{
-					"type": "entries",
-					"entries": [
-						"Många återvändare är ömkliga själar som lyckades fly från underjorden men som nu har förlorat de passioner som motiverade deras flykt. Eftersom de saknar syfte och undviks av de levande söker dessa återvändande vanligtvis platser där de lämnas i fred, såsom ensamma gravar eller Asphodels och Odunos nekropoleis. Där går de igenom halvhjärtade parodier av livet, hindrade av distraktion och ennui. Trots detta försvarar sig även de mest slöa återvändarna om de blir hotade och kan tvingas i tjänst hos sina mer egensinniga bröder.",
-						"De återvändande har flytt från underjorden och bor bland de levande igen, men deras andra liv är sällan vad de förväntade sig - inte för att de minns vad de förväntade sig. Som ett resultat av att ha följt Phenax väg (se kapitel 4) förlorar de återvändande sina identiteter, vilka manifesteras som separata varelser som kallas eidoloner. Erfarenheten av att fly från Underjorden gör också att de förlorar sina ansikten, som blir uttryckslösa ytor med tomma ögonhålor och gapande munnar. Dessa tomma ytor täcker de med distinkta gyllene masker.",
-						"De återvänder till världen igen, tomma och odöda. Eftersom de inte längre har förmågan att skapa långtidsminnen kan de i allmänhet inte bygga upp meningsfulla relationer eller skapa nya liv. Istället upplever de flesta flyktiga känslor och följer ihåliga rutiner, deras existenser reduceras till skuggspel utan tyngd eller substans."
-					]
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Returned.webp"
+					},
+					"credit": "Emrah Elmasli"
 				}
 			]
+		},
+		{
+			"name": "Returned Drifter",
+			"source": "MOT",
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Många återvändare är ömkliga själar som lyckades fly från underjorden men som nu har förlorat de passioner som motiverade deras flykt. Eftersom de saknar syfte och undviks av de levande söker dessa återvändande vanligtvis platser där de lämnas i fred, såsom ensamma gravar eller Asphodels och Odunos nekropoleis. Där går de igenom halvhjärtade parodier av livet, hindrade av distraktion och ennui. Trots detta försvarar sig även de mest slöa återvändarna om de blir hotade och kan tvingas i tjänst hos sina mer egensinniga bröder."
+									]
+								}
+							]
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Returned Kakomantis",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Även om de döda vanligtvis inte minns mycket av sina liv, har vissa en besatthet av magi som överlever både död och återfödelse som en återvändare. Dessa återvändare, som kallas kakomanteis, använder sina magiska färdigheter för att kontrollera den energi som genomsyrar underjorden.",
-						"De återvändande har flytt från underjorden och bor bland de levande igen, men deras andra liv är sällan vad de förväntade sig - inte för att de minns vad de förväntade sig. Som ett resultat av att ha följt Phenax väg (se kapitel 4) förlorar de återvändande sina identiteter, vilka manifesteras som separata varelser som kallas eidoloner. Erfarenheten av att fly från Underjorden gör också att de förlorar sina ansikten, som blir uttryckslösa ytor med tomma ögonhålor och gapande munnar. Dessa tomma ytor täcker de med distinkta gyllene masker.",
-						"De återvänder till världen igen, tomma och odöda. Eftersom de inte längre har förmågan att skapa långtidsminnen kan de i allmänhet inte bygga upp meningsfulla relationer eller skapa nya liv. Istället upplever de flesta flyktiga känslor och följer ihåliga rutiner, deras existenser reduceras till skuggspel utan tyngd eller substans."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Även om de döda vanligtvis inte minns mycket av sina liv, har vissa en besatthet av magi som överlever både död och återfödelse som en återvändare. Dessa återvändare, som kallas kakomanteis, använder sina magiska färdigheter för att kontrollera den energi som genomsyrar underjorden."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Palamnite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Inte ens döden och förlusten av deras identiteter kan utplåna det raseri som inspirerar återvändande palamniter. Dessa återvändare har levt våldsamma liv, existenser fyllda av sådan smärta och hat att våldet nu genomsyrar deras dödliga kroppar. Detta gör dem exceptionellt farliga för de levande, eftersom dessa planlösa mördare bara känner till lidande och försöker sprida det närhelst tillfälle ges. Medan palamniter kan vandra runt i världen som farliga, ensamma mördare, dras många till Odunos, där de tjänar Mordkungen Tymarets ondskefulla vilja (se kapitel 3).",
-						"De återvändande har flytt från underjorden och bor bland de levande igen, men deras andra liv är sällan vad de förväntade sig - inte för att de minns vad de förväntade sig. Som ett resultat av att ha följt Phenax väg (se kapitel 4) förlorar de återvändande sina identiteter, vilka manifesteras som separata varelser som kallas eidoloner. Erfarenheten av att fly från Underjorden gör också att de förlorar sina ansikten, som blir uttryckslösa ytor med tomma ögonhålor och gapande munnar. Dessa tomma ytor täcker de med distinkta gyllene masker.",
-						"De återvänder till världen igen, tomma och odöda. Eftersom de inte längre har förmågan att skapa långtidsminnen kan de i allmänhet inte bygga upp meningsfulla relationer eller skapa nya liv. Istället upplever de flesta flyktiga känslor och följer ihåliga rutiner, deras existenser reduceras till skuggspel utan tyngd eller substans."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Inte ens döden och förlusten av deras identiteter kan utplåna det raseri som inspirerar återvändande palamniter. Dessa återvändare har levt våldsamma liv, existenser fyllda av sådan smärta och hat att våldet nu genomsyrar deras dödliga kroppar. Detta gör dem exceptionellt farliga för de levande, eftersom dessa planlösa mördare bara känner till lidande och försöker sprida det närhelst tillfälle ges. Medan palamniter kan vandra runt i världen som farliga, ensamma mördare, dras många till Odunos, där de tjänar Mordkungen Tymarets ondskefulla vilja (se kapitel 3)."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Sentry",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"De flesta nya eller ändamålslösa återvändare är lätta att manipulera till att tjäna sina mer kraftfulla bröder. Efter att ha tvingats till ett syfte utför dessa återvändare enkla, konstlösa uppgifter med medelmåttig effektivitet. Deras enda dygd är deras outtröttlighet, vilket gör dem till exceptionella vakter. I necropoleis arbetar många återvändare som vaktposter, även om de också kan vara budbärare eller arbetare. Om de hotas arbetar grupper av dessa återvändare bra tillsammans och delar de gemensamma målen att övervinna sina fiender och återgå till sin uppgift.",
-						"De återvändande har flytt från underjorden och bor bland de levande igen, men deras andra liv är sällan vad de förväntade sig - inte för att de minns vad de förväntade sig. Som ett resultat av att ha följt Phenax väg (se kapitel 4) förlorar de återvändande sina identiteter, vilka manifesteras som separata varelser som kallas eidoloner. Erfarenheten av att fly från Underjorden gör också att de förlorar sina ansikten, som blir uttryckslösa ytor med tomma ögonhålor och gapande munnar. Dessa tomma ytor täcker de med distinkta gyllene masker.",
-						"De återvänder till världen igen, tomma och odöda. Eftersom de inte längre har förmågan att skapa långtidsminnen kan de i allmänhet inte bygga upp meningsfulla relationer eller skapa nya liv. Istället upplever de flesta flyktiga känslor och följer ihåliga rutiner, deras existenser reduceras till skuggspel utan tyngd eller substans."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"De flesta nya eller ändamålslösa återvändare är lätta att manipulera till att tjäna sina mer kraftfulla bröder. Efter att ha tvingats till ett syfte utför dessa återvändare enkla, konstlösa uppgifter med medelmåttig effektivitet. Deras enda dygd är deras outtröttlighet, vilket gör dem till exceptionella vakter. I necropoleis arbetar många återvändare som vaktposter, även om de också kan vara budbärare eller arbetare. Om de hotas arbetar grupper av dessa återvändare bra tillsammans och delar de gemensamma målen att övervinna sina fiender och återgå till sin uppgift."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Satyr Reveler",
@@ -995,62 +1142,26 @@
 		{
 			"name": "Setessan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"De flesta setessiska hopliter börjar sin utbildning som jägare, vilket gör dem skickliga på att ta sig fram i skogen och skickliga på både gerillataktik och bågskytte. Deras strategier efterliknar ofta Nyleas favoriserade tjänare - särskilt vilda djur som vargar och lodjur. Vanligtvis är det några få soldater som trakasserar en fiende medan resten utnyttjar fiendens distraktion.",
-						"Hopliterna är välutbildade krigare, som inte bara är insatta i strategi och taktik utan också i att förhärliga krigarandan, som är grunden för ett etos som skapar ett obrytbart band mellan medlemmarna i ett militärt förband. I strid arbetar hopliterna vanligtvis i grupper och använder sig av samordnade taktiker för att vinna segrar.",
-						"I de tre tabellerna med namn på hopliteenheter presenteras de typer av titlar som används av hoplitkontingenter från Theros stora poleis. Överväg att använda dessa namn för militära styrkor som karaktärerna möter under sina äventyr eller som de en gång var en del av.",
-						{
-							"type": "table",
-							"caption": "Setessan Hoplite Unit Names",
-							"colLabels": [
-								"d8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Nyleas pilar"
-								],
-								[
-									"2",
-									"Övervakarna"
-								],
-								[
-									"3",
-									"Ophis huggtänder"
-								],
-								[
-									"4",
-									"Swiftswords"
-								],
-								[
-									"5",
-									"Karametras vargar"
-								],
-								[
-									"6",
-									"Lundens försvarare"
-								],
-								[
-									"7",
-									"Bronsblad"
-								],
-								[
-									"8",
-									"Schakalerna"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"De flesta setessiska hopliter börjar sin utbildning som jägare, vilket gör dem skickliga på att ta sig fram i skogen och skickliga på både gerillataktik och bågskytte. Deras strategier efterliknar ofta Nyleas favoriserade tjänare - särskilt vilda djur som vargar och lodjur. Vanligtvis är det några få soldater som trakasserar en fiende medan resten utnyttjar fiendens distraktion."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Theran Chimera",
