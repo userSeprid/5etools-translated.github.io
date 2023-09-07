@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Abhorrent Overlord",
@@ -24,62 +29,26 @@
 		{
 			"name": "Akroan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Akroaanse hoplieten, ook wel stratianen genoemd, behoren tot de felste soldaten op Theros. Ze trainen meedogenloos en zijn onverzettelijk. In de annalen van Akros doen verhalen de ronde over groepen stratianen die een belangrijke plaats verdedigden tegen een veel grotere strijdmacht of achter de vijandelijke linies kropen en het leger van de tegenpartij een ravage toebrachten.",
-						"Hoplieten zijn hoog opgeleide krijgers, niet alleen bedreven in strategie en tactiek maar ook in de verheerlijking van de krijgersgeest, de basis van een ethos dat een onverbrekelijke band smeedt tussen de leden van een militaire eenheid. In de strijd werken hoplieten gewoonlijk in groepen en gebruiken zij gecoördineerde tactieken om overwinningen te behalen.",
-						"De drie Hopliet Eenheid Namen tabellen geven de titels weer die gebruikt worden door Hopliet contingenten afkomstig van de grote Poleis van Theros. Overweeg om deze namen te gebruiken voor strijdkrachten die personages tijdens hun avonturen tegenkomen of waar ze ooit deel van uitmaakten.",
-						{
-							"type": "table",
-							"caption": "Akroan Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Speren van Iroas"
-								],
-								[
-									"2",
-									"Iron Fangs"
-								],
-								[
-									"3",
-									"Pijlen van Anax"
-								],
-								[
-									"4",
-									"De Ongebroken"
-								],
-								[
-									"5",
-									"Aambeeld van Purphoros"
-								],
-								[
-									"6",
-									"Spiesen Squad"
-								],
-								[
-									"7",
-									"Schild van Akros"
-								],
-								[
-									"8",
-									"Cymede's Hart"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Akroaanse hoplieten, ook wel stratianen genoemd, behoren tot de felste soldaten op Theros. Ze trainen meedogenloos en zijn onverzettelijk. In de annalen van Akros doen verhalen de ronde over groepen stratianen die een belangrijke plaats verdedigden tegen een veel grotere strijdmacht of achter de vijandelijke linies kropen en het leger van de tegenpartij een ravage toebrachten."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Alseid",
@@ -477,6 +446,162 @@
 			]
 		},
 		{
+			"name": "Hoplite",
+			"source": "MOT",
+			"entries": [
+				"Hoplieten zijn hoog opgeleide krijgers, niet alleen bedreven in strategie en tactiek maar ook in de verheerlijking van de krijgersgeest, de basis van een ethos dat een onverbrekelijke band smeedt tussen de leden van een militaire eenheid. In de strijd werken hoplieten gewoonlijk in groepen en gebruiken zij gecoördineerde tactieken om overwinningen te behalen.",
+				"De drie Hopliet Eenheid Namen tabellen geven de titels weer die gebruikt worden door Hopliet contingenten afkomstig van de grote Poleis van Theros. Overweeg om deze namen te gebruiken voor strijdkrachten die personages tijdens hun avonturen tegenkomen of waar ze ooit deel van uitmaakten.",
+				{
+					"type": "table",
+					"caption": "Akroan Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Speren van Iroas"
+						],
+						[
+							"2",
+							"Iron Fangs"
+						],
+						[
+							"3",
+							"Pijlen van Anax"
+						],
+						[
+							"4",
+							"De Ongebroken"
+						],
+						[
+							"5",
+							"Aambeeld van Purphoros"
+						],
+						[
+							"6",
+							"Spiesen Squad"
+						],
+						[
+							"7",
+							"Schild van Akros"
+						],
+						[
+							"8",
+							"Cymede's Hart"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Meletian Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Kraken's Claw"
+						],
+						[
+							"2",
+							"Handen van Gerechtigheid"
+						],
+						[
+							"3",
+							"Thassa's Speer"
+						],
+						[
+							"4",
+							"Ephara's Schild"
+						],
+						[
+							"5",
+							"Bloedverwanten van de diepte"
+						],
+						[
+							"6",
+							"Ruiters van Heliod"
+						],
+						[
+							"7",
+							"Bewaarders van Pyrgnos."
+						],
+						[
+							"8",
+							"The Skysworn"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Setessan Hoplite Unit Names",
+					"colLabels": [
+						"d8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Nylea's pijlen"
+						],
+						[
+							"2",
+							"De Wachters"
+						],
+						[
+							"3",
+							"Fangs of Ophis"
+						],
+						[
+							"4",
+							"De Swiftswords"
+						],
+						[
+							"5",
+							"Karametra's Wolven"
+						],
+						[
+							"6",
+							"Verdedigers van het bos"
+						],
+						[
+							"7",
+							"Bronzen Bladen"
+						],
+						[
+							"8",
+							"De Jakhalzen"
+						]
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Hoplite.webp"
+					},
+					"credit": "Raymond Swanland"
+				}
+			]
+		},
+		{
 			"name": "Hundred-Handed One",
 			"source": "MOT",
 			"entries": [
@@ -620,62 +745,26 @@
 		{
 			"name": "Meletian Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Meletische hoplieten gebruiken een combinatie van sluwheid, geloof en magie om hun kustgebied te verdedigen. De meeste van deze bekwame soldaten dienen in het Eerbiedige Leger, de verdedigers van Meletis, dat een reeks beproefde strategieën en flexibele troepenformaties gebruikt om een voordeel op de vijand te behalen. Gesteund door getrainde griffioenen en pegasus rossen, vallen ze de vijand aan waar deze het minst verwacht.",
-						"Hoplieten zijn hoog opgeleide krijgers, niet alleen bedreven in strategie en tactiek maar ook in de verheerlijking van de krijgersgeest, de basis van een ethos dat een onverbrekelijke band smeedt tussen de leden van een militaire eenheid. In de strijd werken hoplieten gewoonlijk in groepen en gebruiken zij gecoördineerde tactieken om overwinningen te behalen.",
-						"De drie Hopliet Eenheid Namen tabellen geven de titels weer die gebruikt worden door Hopliet contingenten afkomstig van de grote Poleis van Theros. Overweeg om deze namen te gebruiken voor strijdkrachten die personages tijdens hun avonturen tegenkomen of waar ze ooit deel van uitmaakten.",
-						{
-							"type": "table",
-							"caption": "Meletian Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Kraken's Claw"
-								],
-								[
-									"2",
-									"Handen van Gerechtigheid"
-								],
-								[
-									"3",
-									"Thassa's Speer"
-								],
-								[
-									"4",
-									"Ephara's Schild"
-								],
-								[
-									"5",
-									"Bloedverwanten van de diepte"
-								],
-								[
-									"6",
-									"Ruiters van Heliod"
-								],
-								[
-									"7",
-									"Bewaarders van Pyrgnos."
-								],
-								[
-									"8",
-									"The Skysworn"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Meletische hoplieten gebruiken een combinatie van sluwheid, geloof en magie om hun kustgebied te verdedigen. De meeste van deze bekwame soldaten dienen in het Eerbiedige Leger, de verdedigers van Meletis, dat een reeks beproefde strategieën en flexibele troepenformaties gebruikt om een voordeel op de vijand te behalen. Gesteund door getrainde griffioenen en pegasus rossen, vallen ze de vijand aan waar deze het minst verwacht."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Naiad",
@@ -893,60 +982,118 @@
 			]
 		},
 		{
-			"name": "Returned Drifter",
+			"name": "Returned",
 			"source": "MOT",
 			"entries": [
+				"Teruggekeerden zijn ontsnapt uit de Onderwereld en leven weer onder de levenden, maar hun tweede leven is zelden wat zij verwachtten - niet dat zij zich herinneren wat zij verwachtten. Als gevolg van het volgen van het Pad van Phenax (zie hoofdstuk 4), verliezen de Teruggekeerden hun identiteit, die zich manifesteert als aparte wezens die eidolonen worden genoemd. De ervaring van het ontsnappen uit de Onderwereld zorgt er ook voor dat zij hun gezichten verliezen, die uitdrukkingsloze oppervlakken worden met lege oogkassen en gapende monden. Deze lege oppervlakken bedekken zij met opvallende gouden maskers.",
+				"Teruggekeerden komen blanco en ondood terug in de wereld. Omdat ze geen langetermijngeheugen meer hebben, kunnen ze over het algemeen geen zinvolle relaties opbouwen of een nieuw leven opbouwen. In plaats daarvan ervaren de meesten vluchtige emoties en volgen ze holle routines, hun bestaan gereduceerd tot schimmenspel zonder gewicht of inhoud."
+			],
+			"images": [
 				{
-					"type": "entries",
-					"entries": [
-						"Veel Teruggekeerden zijn zielige zielen die uit de Onderwereld zijn ontsnapt en nu de passies kwijt zijn die hun vlucht hebben gemotiveerd. Zonder doel en gemeden door de levenden, zoeken deze Teruggekeerden gewoonlijk plaatsen waar zij met rust gelaten worden, zoals eenzame graven of de necropoleis van Asphodel en Odunos. Daar maken zij halfslachtige parodieën van het leven, gehinderd door afleiding en verveling. Desondanks verdedigen zelfs de meest smachtende Teruggekeerden zich als zij bedreigd worden en kunnen zij in dienst worden gedrongen van hun meer eigenzinnige broeders.",
-						"Teruggekeerden zijn ontsnapt uit de Onderwereld en leven weer onder de levenden, maar hun tweede leven is zelden wat zij verwachtten - niet dat zij zich herinneren wat zij verwachtten. Als gevolg van het volgen van het Pad van Phenax (zie hoofdstuk 4), verliezen de Teruggekeerden hun identiteit, die zich manifesteert als aparte wezens die eidolonen worden genoemd. De ervaring van het ontsnappen uit de Onderwereld zorgt er ook voor dat zij hun gezichten verliezen, die uitdrukkingsloze oppervlakken worden met lege oogkassen en gapende monden. Deze lege oppervlakken bedekken zij met opvallende gouden maskers.",
-						"Teruggekeerden komen blanco en ondood terug in de wereld. Omdat ze geen langetermijngeheugen meer hebben, kunnen ze over het algemeen geen zinvolle relaties opbouwen of een nieuw leven opbouwen. In plaats daarvan ervaren de meesten vluchtige emoties en volgen ze holle routines, hun bestaan gereduceerd tot schimmenspel zonder gewicht of inhoud."
-					]
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Returned.webp"
+					},
+					"credit": "Emrah Elmasli"
 				}
 			]
+		},
+		{
+			"name": "Returned Drifter",
+			"source": "MOT",
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Veel Teruggekeerden zijn zielige zielen die uit de Onderwereld zijn ontsnapt en nu de passies kwijt zijn die hun vlucht hebben gemotiveerd. Zonder doel en gemeden door de levenden, zoeken deze Teruggekeerden gewoonlijk plaatsen waar zij met rust gelaten worden, zoals eenzame graven of de necropoleis van Asphodel en Odunos. Daar maken zij halfslachtige parodieën van het leven, gehinderd door afleiding en verveling. Desondanks verdedigen zelfs de meest smachtende Teruggekeerden zich als zij bedreigd worden en kunnen zij in dienst worden gedrongen van hun meer eigenzinnige broeders."
+									]
+								}
+							]
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Returned Kakomantis",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Hoewel de doden zich over het algemeen weinig van hun leven herinneren, hebben sommigen een obsessie voor magie die zowel de dood als de wedergeboorte als een Teruggekeerde overleeft. Deze Teruggekeerden, kakomanteis genoemd, gebruiken hun magische bekwaamheid om de energie te beheersen die de Onderwereld doordrenkt.",
-						"Teruggekeerden zijn ontsnapt uit de Onderwereld en leven weer onder de levenden, maar hun tweede leven is zelden wat zij verwachtten - niet dat zij zich herinneren wat zij verwachtten. Als gevolg van het volgen van het Pad van Phenax (zie hoofdstuk 4), verliezen de Teruggekeerden hun identiteit, die zich manifesteert als aparte wezens die eidolonen worden genoemd. De ervaring van het ontsnappen uit de Onderwereld zorgt er ook voor dat zij hun gezichten verliezen, die uitdrukkingsloze oppervlakken worden met lege oogkassen en gapende monden. Deze lege oppervlakken bedekken zij met opvallende gouden maskers.",
-						"Teruggekeerden komen blanco en ondood terug in de wereld. Omdat ze geen langetermijngeheugen meer hebben, kunnen ze over het algemeen geen zinvolle relaties opbouwen of een nieuw leven opbouwen. In plaats daarvan ervaren de meesten vluchtige emoties en volgen ze holle routines, hun bestaan gereduceerd tot schimmenspel zonder gewicht of inhoud."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Hoewel de doden zich over het algemeen weinig van hun leven herinneren, hebben sommigen een obsessie voor magie die zowel de dood als de wedergeboorte als een Teruggekeerde overleeft. Deze Teruggekeerden, kakomanteis genoemd, gebruiken hun magische bekwaamheid om de energie te beheersen die de Onderwereld doordrenkt."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Palamnite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Zelfs de dood en het verlies van hun identiteit kan de woede niet uitwissen die de Teruggekeerde palamnieten bezielt. Deze Teruggekeerden hebben een gewelddadig leven geleid, een leven gevuld met zoveel pijn en haat dat geweld nu hun doodloze lichamen doordrenkt. Dat maakt hen uitzonderlijk gevaarlijk voor de levenden, want deze doelloze moordenaars kennen alleen lijden en proberen het te verspreiden wanneer de gelegenheid zich voordoet. Terwijl palamnieten als gevaarlijke, eenzame moordenaars over de wereld zwerven, trekken velen naar Odunos, waar ze de wrede wil van Tymaret de Moordenaarskoning dienen (zie hoofdstuk 3).",
-						"Teruggekeerden zijn ontsnapt uit de Onderwereld en leven weer onder de levenden, maar hun tweede leven is zelden wat zij verwachtten - niet dat zij zich herinneren wat zij verwachtten. Als gevolg van het volgen van het Pad van Phenax (zie hoofdstuk 4), verliezen de Teruggekeerden hun identiteit, die zich manifesteert als aparte wezens die eidolonen worden genoemd. De ervaring van het ontsnappen uit de Onderwereld zorgt er ook voor dat zij hun gezichten verliezen, die uitdrukkingsloze oppervlakken worden met lege oogkassen en gapende monden. Deze lege oppervlakken bedekken zij met opvallende gouden maskers.",
-						"Teruggekeerden komen blanco en ondood terug in de wereld. Omdat ze geen langetermijngeheugen meer hebben, kunnen ze over het algemeen geen zinvolle relaties opbouwen of een nieuw leven opbouwen. In plaats daarvan ervaren de meesten vluchtige emoties en volgen ze holle routines, hun bestaan gereduceerd tot schimmenspel zonder gewicht of inhoud."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Zelfs de dood en het verlies van hun identiteit kan de woede niet uitwissen die de Teruggekeerde palamnieten bezielt. Deze Teruggekeerden hebben een gewelddadig leven geleid, een leven gevuld met zoveel pijn en haat dat geweld nu hun doodloze lichamen doordrenkt. Dat maakt hen uitzonderlijk gevaarlijk voor de levenden, want deze doelloze moordenaars kennen alleen lijden en proberen het te verspreiden wanneer de gelegenheid zich voordoet. Terwijl palamnieten als gevaarlijke, eenzame moordenaars over de wereld zwerven, trekken velen naar Odunos, waar ze de wrede wil van Tymaret de Moordenaarskoning dienen (zie hoofdstuk 3)."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Sentry",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"De meeste nieuwe of doelloze Teruggekeerden worden gemakkelijk gemanipuleerd om hun krachtigere broeders te dienen. Als ze een doel opgedrongen krijgen, voeren deze Teruggekeerden simpele, ongekunstelde taken uit met middelmatige efficiëntie. Hun enige deugd is hun onvermoeibaarheid, wat hen tot uitzonderlijke bewakers maakt. In de necropoleis worden veel Teruggekeerden ingezet als wachters, maar ze kunnen ook boodschappers of arbeiders zijn. Als ze bedreigd worden, werken groepen van deze Teruggekeerden goed samen. Ze delen het doel om hun vijanden te verslaan en terug te keren naar hun taak.",
-						"Teruggekeerden zijn ontsnapt uit de Onderwereld en leven weer onder de levenden, maar hun tweede leven is zelden wat zij verwachtten - niet dat zij zich herinneren wat zij verwachtten. Als gevolg van het volgen van het Pad van Phenax (zie hoofdstuk 4), verliezen de Teruggekeerden hun identiteit, die zich manifesteert als aparte wezens die eidolonen worden genoemd. De ervaring van het ontsnappen uit de Onderwereld zorgt er ook voor dat zij hun gezichten verliezen, die uitdrukkingsloze oppervlakken worden met lege oogkassen en gapende monden. Deze lege oppervlakken bedekken zij met opvallende gouden maskers.",
-						"Teruggekeerden komen blanco en ondood terug in de wereld. Omdat ze geen langetermijngeheugen meer hebben, kunnen ze over het algemeen geen zinvolle relaties opbouwen of een nieuw leven opbouwen. In plaats daarvan ervaren de meesten vluchtige emoties en volgen ze holle routines, hun bestaan gereduceerd tot schimmenspel zonder gewicht of inhoud."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"De meeste nieuwe of doelloze Teruggekeerden worden gemakkelijk gemanipuleerd om hun krachtigere broeders te dienen. Als ze een doel opgedrongen krijgen, voeren deze Teruggekeerden simpele, ongekunstelde taken uit met middelmatige efficiëntie. Hun enige deugd is hun onvermoeibaarheid, wat hen tot uitzonderlijke bewakers maakt. In de necropoleis worden veel Teruggekeerden ingezet als wachters, maar ze kunnen ook boodschappers of arbeiders zijn. Als ze bedreigd worden, werken groepen van deze Teruggekeerden goed samen. Ze delen het doel om hun vijanden te verslaan en terug te keren naar hun taak."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Satyr Reveler",
@@ -995,62 +1142,26 @@
 		{
 			"name": "Setessan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"De meeste Setessan hoplieten beginnen hun training als jagers, waardoor ze bedreven zijn in het doorkruisen van de bossen en bedreven zijn in zowel guerrillatactieken als boogschieten. Hun strategieën bootsen vaak de favoriete dienaren van Nyle na, vooral wilde beesten zoals wolven en lynxen. Gewoonlijk jagen een paar soldaten de vijand op, terwijl de rest profiteert van de afleiding van de vijand.",
-						"Hoplieten zijn hoog opgeleide krijgers, niet alleen bedreven in strategie en tactiek maar ook in de verheerlijking van de krijgersgeest, de basis van een ethos dat een onverbrekelijke band smeedt tussen de leden van een militaire eenheid. In de strijd werken hoplieten gewoonlijk in groepen en gebruiken zij gecoördineerde tactieken om overwinningen te behalen.",
-						"De drie Hopliet Eenheid Namen tabellen geven de titels weer die gebruikt worden door Hopliet contingenten afkomstig van de grote Poleis van Theros. Overweeg om deze namen te gebruiken voor strijdkrachten die personages tijdens hun avonturen tegenkomen of waar ze ooit deel van uitmaakten.",
-						{
-							"type": "table",
-							"caption": "Setessan Hoplite Unit Names",
-							"colLabels": [
-								"d8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Nylea's pijlen"
-								],
-								[
-									"2",
-									"De Wachters"
-								],
-								[
-									"3",
-									"Fangs of Ophis"
-								],
-								[
-									"4",
-									"De Swiftswords"
-								],
-								[
-									"5",
-									"Karametra's Wolven"
-								],
-								[
-									"6",
-									"Verdedigers van het bos"
-								],
-								[
-									"7",
-									"Bronzen Bladen"
-								],
-								[
-									"8",
-									"De Jakhalzen"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"De meeste Setessan hoplieten beginnen hun training als jagers, waardoor ze bedreven zijn in het doorkruisen van de bossen en bedreven zijn in zowel guerrillatactieken als boogschieten. Hun strategieën bootsen vaak de favoriete dienaren van Nyle na, vooral wilde beesten zoals wolven en lynxen. Gewoonlijk jagen een paar soldaten de vijand op, terwijl de rest profiteert van de afleiding van de vijand."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Theran Chimera",
