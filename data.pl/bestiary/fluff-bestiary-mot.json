@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Abhorrent Overlord",
@@ -24,62 +29,26 @@
 		{
 			"name": "Akroan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Akroańscy hoplici, zwani też stratianami, należą do najzacieklejszych żołnierzy na Theros. Trenują bez wytchnienia i mają niezłomną determinację. W kronikach Akros krąży wiele opowieści o oddziałach stratianów, które broniły kluczowych miejsc przed znacznie większymi siłami lub zakradały się za linie wroga i siały spustoszenie w armii przeciwnika.",
-						"Hoplici to doskonale wyszkoleni wojownicy, obeznani nie tylko ze strategią i taktyką, ale także z gloryfikacją ducha wojownika, stanowiącego podstawę etosu, który tworzy nierozerwalną więź między członkami jednostki wojskowej. W walce hoplici zazwyczaj działają w grupach i stosują skoordynowaną taktykę, aby odnosić zwycięstwa.",
-						"Trzy tabele z nazwami jednostek hoplitów przedstawiają rodzaje tytułów używanych przez kontyngenty hoplitów z wielkich poleis Therosa. Rozważ użycie tych nazw dla sił wojskowych, które bohaterowie napotkają podczas swoich przygód lub do których kiedyś należeli.",
-						{
-							"type": "table",
-							"caption": "Akroan Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Włócznie Iroasa"
-								],
-								[
-									"2",
-									"Żelazne Kły"
-								],
-								[
-									"3",
-									"Strzały Anaksa"
-								],
-								[
-									"4",
-									"Niezłomny"
-								],
-								[
-									"5",
-									"Kowadło Purphorosa"
-								],
-								[
-									"6",
-									"Drużyna Szaszłyków"
-								],
-								[
-									"7",
-									"Tarcza Akrosa"
-								],
-								[
-									"8",
-									"Serce Cymede"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Akroańscy hoplici, zwani też stratianami, należą do najzacieklejszych żołnierzy na Theros. Trenują bez wytchnienia i mają niezłomną determinację. W kronikach Akros krąży wiele opowieści o oddziałach stratianów, które broniły kluczowych miejsc przed znacznie większymi siłami lub zakradały się za linie wroga i siały spustoszenie w armii przeciwnika."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Alseid",
@@ -477,6 +446,162 @@
 			]
 		},
 		{
+			"name": "Hoplite",
+			"source": "MOT",
+			"entries": [
+				"Hoplici to doskonale wyszkoleni wojownicy, obeznani nie tylko ze strategią i taktyką, ale także z gloryfikacją ducha wojownika, stanowiącego podstawę etosu, który tworzy nierozerwalną więź między członkami jednostki wojskowej. W walce hoplici zazwyczaj działają w grupach i stosują skoordynowaną taktykę, aby odnosić zwycięstwa.",
+				"Trzy tabele z nazwami jednostek hoplitów przedstawiają rodzaje tytułów używanych przez kontyngenty hoplitów z wielkich poleis Therosa. Rozważ użycie tych nazw dla sił wojskowych, które bohaterowie napotkają podczas swoich przygód lub do których kiedyś należeli.",
+				{
+					"type": "table",
+					"caption": "Akroan Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Włócznie Iroasa"
+						],
+						[
+							"2",
+							"Żelazne Kły"
+						],
+						[
+							"3",
+							"Strzały Anaksa"
+						],
+						[
+							"4",
+							"Niezłomny"
+						],
+						[
+							"5",
+							"Kowadło Purphorosa"
+						],
+						[
+							"6",
+							"Drużyna Szaszłyków"
+						],
+						[
+							"7",
+							"Tarcza Akrosa"
+						],
+						[
+							"8",
+							"Serce Cymede"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Meletian Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Pazur Krakena"
+						],
+						[
+							"2",
+							"Ręce sprawiedliwości"
+						],
+						[
+							"3",
+							"Włócznia Thassy"
+						],
+						[
+							"4",
+							"Tarcza Efary"
+						],
+						[
+							"5",
+							"Zwierzęta z głębin"
+						],
+						[
+							"6",
+							"Jeźdźcy Helioda"
+						],
+						[
+							"7",
+							"Opiekunowie z Pyrgnos"
+						],
+						[
+							"8",
+							"Zniewoleni"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Setessan Hoplite Unit Names",
+					"colLabels": [
+						"d8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Strzały Nylei"
+						],
+						[
+							"2",
+							"Strażnicy"
+						],
+						[
+							"3",
+							"Kły Ophisa"
+						],
+						[
+							"4",
+							"Miecze jerzyków"
+						],
+						[
+							"5",
+							"Wilki Karametry"
+						],
+						[
+							"6",
+							"Obrońcy Gaju"
+						],
+						[
+							"7",
+							"Ostrza z brązu"
+						],
+						[
+							"8",
+							"Szakale"
+						]
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Hoplite.webp"
+					},
+					"credit": "Raymond Swanland"
+				}
+			]
+		},
+		{
 			"name": "Hundred-Handed One",
 			"source": "MOT",
 			"entries": [
@@ -620,62 +745,26 @@
 		{
 			"name": "Meletian Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Melecjańscy hoplici używają kombinacji sprytu, wiary i magii, aby bronić swojego nadmorskiego domu. Większość z tych wykwalifikowanych żołnierzy służy w armii czcigodnych obrońców Meletis, która wykorzystuje szereg sprawdzonych strategii i elastyczne formacje oddziałów, by zyskać przewagę nad wrogami. Wspierani przez wyszkolone gryfy i pegazy, uderzają na wrogów tam, gdzie najmniej się tego spodziewają.",
-						"Hoplici to doskonale wyszkoleni wojownicy, obeznani nie tylko ze strategią i taktyką, ale także z gloryfikacją ducha wojownika, stanowiącego podstawę etosu, który tworzy nierozerwalną więź między członkami jednostki wojskowej. W walce hoplici zazwyczaj działają w grupach i stosują skoordynowaną taktykę, aby odnosić zwycięstwa.",
-						"Trzy tabele z nazwami jednostek hoplitów przedstawiają rodzaje tytułów używanych przez kontyngenty hoplitów z wielkich poleis Therosa. Rozważ użycie tych nazw dla sił wojskowych, które bohaterowie napotkają podczas swoich przygód lub do których kiedyś należeli.",
-						{
-							"type": "table",
-							"caption": "Meletian Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Pazur Krakena"
-								],
-								[
-									"2",
-									"Ręce sprawiedliwości"
-								],
-								[
-									"3",
-									"Włócznia Thassy"
-								],
-								[
-									"4",
-									"Tarcza Efary"
-								],
-								[
-									"5",
-									"Zwierzęta z głębin"
-								],
-								[
-									"6",
-									"Jeźdźcy Helioda"
-								],
-								[
-									"7",
-									"Opiekunowie z Pyrgnos"
-								],
-								[
-									"8",
-									"Zniewoleni"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Melecjańscy hoplici używają kombinacji sprytu, wiary i magii, aby bronić swojego nadmorskiego domu. Większość z tych wykwalifikowanych żołnierzy służy w armii czcigodnych obrońców Meletis, która wykorzystuje szereg sprawdzonych strategii i elastyczne formacje oddziałów, by zyskać przewagę nad wrogami. Wspierani przez wyszkolone gryfy i pegazy, uderzają na wrogów tam, gdzie najmniej się tego spodziewają."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Naiad",
@@ -893,60 +982,118 @@
 			]
 		},
 		{
-			"name": "Returned Drifter",
+			"name": "Returned",
 			"source": "MOT",
 			"entries": [
+				"Powróceni wydostali się z podziemi i ponownie zamieszkali wśród żywych, ale ich drugie życie rzadko jest takie, jakiego oczekiwali - nie żeby pamiętali, czego oczekiwali. W wyniku podążania Ścieżką Feniksa (patrz rozdział 4), Powróceni tracą swoją tożsamość, która manifestuje się jako odrębne istoty zwane eidolonami. Doświadczenie ucieczki z podziemi powoduje również utratę twarzy, które stają się pozbawionymi wyrazu powierzchniami z pustymi oczodołami i rozdziawionymi ustami. Te puste powierzchnie pokrywają charakterystycznymi złotymi maskami.",
+				"Powracający wracają do świata puste i nieumarłe. Nie posiadając już zdolności do tworzenia długotrwałych wspomnień, zazwyczaj nie są w stanie nawiązać znaczących relacji ani rozpocząć nowego życia. Większość z nich doświadcza przelotnych emocji i podąża za pustą rutyną, a ich egzystencja sprowadza się do gry cieni, pozbawionej wagi i treści."
+			],
+			"images": [
 				{
-					"type": "entries",
-					"entries": [
-						"Wielu Powracających to godne pożałowania dusze, którym udało się uciec z podziemi i które zostały pozbawione namiętności, które były motywem ich ucieczki. Pozbawieni celu i odrzuceni przez żywych, Powróceni zazwyczaj szukają miejsc, w których będą mogli zaznać spokoju, takich jak samotne grobowce czy nekropole Asphodel i Odunos. Tam oddają się połowicznym parodiom życia, w których przeszkadzają im rozproszenie i znużenie. Mimo to nawet najbardziej leniwi Powróceni bronią się w razie zagrożenia i mogą zostać wepchnięci na służbę do swoich bardziej zdecydowanych braci.",
-						"Powróceni wydostali się z podziemi i ponownie zamieszkali wśród żywych, ale ich drugie życie rzadko jest takie, jakiego oczekiwali - nie żeby pamiętali, czego oczekiwali. W wyniku podążania Ścieżką Feniksa (patrz rozdział 4), Powróceni tracą swoją tożsamość, która manifestuje się jako odrębne istoty zwane eidolonami. Doświadczenie ucieczki z podziemi powoduje również utratę twarzy, które stają się pozbawionymi wyrazu powierzchniami z pustymi oczodołami i rozdziawionymi ustami. Te puste powierzchnie pokrywają charakterystycznymi złotymi maskami.",
-						"Powracający wracają do świata puste i nieumarłe. Nie posiadając już zdolności do tworzenia długotrwałych wspomnień, zazwyczaj nie są w stanie nawiązać znaczących relacji ani rozpocząć nowego życia. Większość z nich doświadcza przelotnych emocji i podąża za pustą rutyną, a ich egzystencja sprowadza się do gry cieni, pozbawionej wagi i treści."
-					]
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Returned.webp"
+					},
+					"credit": "Emrah Elmasli"
 				}
 			]
+		},
+		{
+			"name": "Returned Drifter",
+			"source": "MOT",
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Wielu Powracających to godne pożałowania dusze, którym udało się uciec z podziemi i które zostały pozbawione namiętności, które były motywem ich ucieczki. Pozbawieni celu i odrzuceni przez żywych, Powróceni zazwyczaj szukają miejsc, w których będą mogli zaznać spokoju, takich jak samotne grobowce czy nekropole Asphodel i Odunos. Tam oddają się połowicznym parodiom życia, w których przeszkadzają im rozproszenie i znużenie. Mimo to nawet najbardziej leniwi Powróceni bronią się w razie zagrożenia i mogą zostać wepchnięci na służbę do swoich bardziej zdecydowanych braci."
+									]
+								}
+							]
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Returned Kakomantis",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Chociaż zmarli zazwyczaj niewiele pamiętają ze swojego życia, niektórzy mają obsesję na punkcie magii, która pozwala im przetrwać śmierć i odrodzić się jako Powróceni. Ci Powróceni, zwani kakomanteis, używają swoich magicznych zdolności do kontrolowania energii, która przepełnia Podziemie.",
-						"Powróceni wydostali się z podziemi i ponownie zamieszkali wśród żywych, ale ich drugie życie rzadko jest takie, jakiego oczekiwali - nie żeby pamiętali, czego oczekiwali. W wyniku podążania Ścieżką Feniksa (patrz rozdział 4), Powróceni tracą swoją tożsamość, która manifestuje się jako odrębne istoty zwane eidolonami. Doświadczenie ucieczki z podziemi powoduje również utratę twarzy, które stają się pozbawionymi wyrazu powierzchniami z pustymi oczodołami i rozdziawionymi ustami. Te puste powierzchnie pokrywają charakterystycznymi złotymi maskami.",
-						"Powracający wracają do świata puste i nieumarłe. Nie posiadając już zdolności do tworzenia długotrwałych wspomnień, zazwyczaj nie są w stanie nawiązać znaczących relacji ani rozpocząć nowego życia. Większość z nich doświadcza przelotnych emocji i podąża za pustą rutyną, a ich egzystencja sprowadza się do gry cieni, pozbawionej wagi i treści."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Chociaż zmarli zazwyczaj niewiele pamiętają ze swojego życia, niektórzy mają obsesję na punkcie magii, która pozwala im przetrwać śmierć i odrodzić się jako Powróceni. Ci Powróceni, zwani kakomanteis, używają swoich magicznych zdolności do kontrolowania energii, która przepełnia Podziemie."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Palamnite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Nawet śmierć i utrata tożsamości nie są w stanie wymazać wściekłości, która inspiruje Powróconych Palamnitów. Ci Powróceni wiedli brutalne życie, wypełnione bólem i nienawiścią do tego stopnia, że przemoc przesiąkła ich pozbawione śmierci ciała. To czyni ich wyjątkowo niebezpiecznymi dla żywych, ponieważ ci pozbawieni celu zabójcy znają tylko cierpienie i starają się je rozprzestrzeniać, kiedy tylko nadarzy się okazja. Choć palamnici mogą przemierzać świat jako niebezpieczni, samotni mordercy, wielu z nich trafia do Odunos, gdzie służą okrutnej woli Tymareta, Króla Morderców (patrz rozdział 3).",
-						"Powróceni wydostali się z podziemi i ponownie zamieszkali wśród żywych, ale ich drugie życie rzadko jest takie, jakiego oczekiwali - nie żeby pamiętali, czego oczekiwali. W wyniku podążania Ścieżką Feniksa (patrz rozdział 4), Powróceni tracą swoją tożsamość, która manifestuje się jako odrębne istoty zwane eidolonami. Doświadczenie ucieczki z podziemi powoduje również utratę twarzy, które stają się pozbawionymi wyrazu powierzchniami z pustymi oczodołami i rozdziawionymi ustami. Te puste powierzchnie pokrywają charakterystycznymi złotymi maskami.",
-						"Powracający wracają do świata puste i nieumarłe. Nie posiadając już zdolności do tworzenia długotrwałych wspomnień, zazwyczaj nie są w stanie nawiązać znaczących relacji ani rozpocząć nowego życia. Większość z nich doświadcza przelotnych emocji i podąża za pustą rutyną, a ich egzystencja sprowadza się do gry cieni, pozbawionej wagi i treści."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Nawet śmierć i utrata tożsamości nie są w stanie wymazać wściekłości, która inspiruje Powróconych Palamnitów. Ci Powróceni wiedli brutalne życie, wypełnione bólem i nienawiścią do tego stopnia, że przemoc przesiąkła ich pozbawione śmierci ciała. To czyni ich wyjątkowo niebezpiecznymi dla żywych, ponieważ ci pozbawieni celu zabójcy znają tylko cierpienie i starają się je rozprzestrzeniać, kiedy tylko nadarzy się okazja. Choć palamnici mogą przemierzać świat jako niebezpieczni, samotni mordercy, wielu z nich trafia do Odunos, gdzie służą okrutnej woli Tymareta, Króla Morderców (patrz rozdział 3)."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Sentry",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Większość nowych lub bezcelowych Powracających łatwo daje się zmanipulować, by służyć swoim silniejszym braciom. Mając narzucony cel, tacy Powróceni wykonują proste, pozbawione sztuki zadania ze średnią wydajnością. Ich jedyną zaletą jest niezmordowanie, co czyni z nich wyjątkowych strażników. W nekropoli wielu Powróconych pracuje jako wartownicy, choć mogą też być posłańcami lub robotnikami. W razie zagrożenia grupy takich Powróconych dobrze współpracują, mając wspólny cel - pokonać wroga i wrócić do swoich zadań.",
-						"Powróceni wydostali się z podziemi i ponownie zamieszkali wśród żywych, ale ich drugie życie rzadko jest takie, jakiego oczekiwali - nie żeby pamiętali, czego oczekiwali. W wyniku podążania Ścieżką Feniksa (patrz rozdział 4), Powróceni tracą swoją tożsamość, która manifestuje się jako odrębne istoty zwane eidolonami. Doświadczenie ucieczki z podziemi powoduje również utratę twarzy, które stają się pozbawionymi wyrazu powierzchniami z pustymi oczodołami i rozdziawionymi ustami. Te puste powierzchnie pokrywają charakterystycznymi złotymi maskami.",
-						"Powracający wracają do świata puste i nieumarłe. Nie posiadając już zdolności do tworzenia długotrwałych wspomnień, zazwyczaj nie są w stanie nawiązać znaczących relacji ani rozpocząć nowego życia. Większość z nich doświadcza przelotnych emocji i podąża za pustą rutyną, a ich egzystencja sprowadza się do gry cieni, pozbawionej wagi i treści."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Większość nowych lub bezcelowych Powracających łatwo daje się zmanipulować, by służyć swoim silniejszym braciom. Mając narzucony cel, tacy Powróceni wykonują proste, pozbawione sztuki zadania ze średnią wydajnością. Ich jedyną zaletą jest niezmordowanie, co czyni z nich wyjątkowych strażników. W nekropoli wielu Powróconych pracuje jako wartownicy, choć mogą też być posłańcami lub robotnikami. W razie zagrożenia grupy takich Powróconych dobrze współpracują, mając wspólny cel - pokonać wroga i wrócić do swoich zadań."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Satyr Reveler",
@@ -995,62 +1142,26 @@
 		{
 			"name": "Setessan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Większość setessańskich hoplitów rozpoczyna szkolenie jako myśliwi, co czyni ich biegłymi w przemierzaniu lasów, taktyce partyzanckiej i strzelaniu z łuku. Ich strategie często naśladują ulubione sługi Nylea - zwłaszcza dzikie bestie, takie jak wilki i rysie. Zazwyczaj kilku żołnierzy nęka przeciwnika, podczas gdy reszta wykorzystuje jego rozproszenie.",
-						"Hoplici to doskonale wyszkoleni wojownicy, obeznani nie tylko ze strategią i taktyką, ale także z gloryfikacją ducha wojownika, stanowiącego podstawę etosu, który tworzy nierozerwalną więź między członkami jednostki wojskowej. W walce hoplici zazwyczaj działają w grupach i stosują skoordynowaną taktykę, aby odnosić zwycięstwa.",
-						"Trzy tabele z nazwami jednostek hoplitów przedstawiają rodzaje tytułów używanych przez kontyngenty hoplitów z wielkich poleis Therosa. Rozważ użycie tych nazw dla sił wojskowych, które bohaterowie napotkają podczas swoich przygód lub do których kiedyś należeli.",
-						{
-							"type": "table",
-							"caption": "Setessan Hoplite Unit Names",
-							"colLabels": [
-								"d8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Strzały Nylei"
-								],
-								[
-									"2",
-									"Strażnicy"
-								],
-								[
-									"3",
-									"Kły Ophisa"
-								],
-								[
-									"4",
-									"Miecze jerzyków"
-								],
-								[
-									"5",
-									"Wilki Karametry"
-								],
-								[
-									"6",
-									"Obrońcy Gaju"
-								],
-								[
-									"7",
-									"Ostrza z brązu"
-								],
-								[
-									"8",
-									"Szakale"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Większość setessańskich hoplitów rozpoczyna szkolenie jako myśliwi, co czyni ich biegłymi w przemierzaniu lasów, taktyce partyzanckiej i strzelaniu z łuku. Ich strategie często naśladują ulubione sługi Nylea - zwłaszcza dzikie bestie, takie jak wilki i rysie. Zazwyczaj kilku żołnierzy nęka przeciwnika, podczas gdy reszta wykorzystuje jego rozproszenie."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Theran Chimera",
