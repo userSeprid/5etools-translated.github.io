@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Abhorrent Overlord",
@@ -24,62 +29,26 @@
 		{
 			"name": "Akroan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Gli opliti di Akroan, chiamati anche stratiani, sono tra i soldati più feroci di Theros. Si addestrano senza sosta e possiedono una determinazione inflessibile. Negli annali di Akros, abbondano i racconti di squadroni di stratiani che hanno difeso un luogo chiave contro una forza molto più grande o si sono insinuati dietro le linee nemiche e hanno portato scompiglio nell'esercito avversario.",
-						"Gli opliti sono guerrieri altamente addestrati, versati non solo nella strategia e nella tattica, ma nella glorificazione dello spirito del guerriero, la base di un ethos che forgia un legame indissolubile tra i membri di un'unità militare. In combattimento, gli opliti lavorano tipicamente in gruppo e usano tattiche coordinate per ottenere vittorie.",
-						"Le tre tabelle dei nomi delle unità oplita presentano i tipi di titoli usati dai contingenti opliti provenienti dalle grandi poleis di Theros. Considerate di usare questi nomi per le forze militari che i personaggi incontrano durante le loro avventure o di cui hanno fatto parte in passato.",
-						{
-							"type": "table",
-							"caption": "Akroan Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Lance di Iroas"
-								],
-								[
-									"2",
-									"Zanne di ferro"
-								],
-								[
-									"3",
-									"Frecce di Anax"
-								],
-								[
-									"4",
-									"L'infrangibile"
-								],
-								[
-									"5",
-									"Incudine di Purphoros"
-								],
-								[
-									"6",
-									"Squadra di spiedini"
-								],
-								[
-									"7",
-									"Scudo di Akros"
-								],
-								[
-									"8",
-									"Il cuore di Cymede"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Gli opliti di Akroan, chiamati anche stratiani, sono tra i soldati più feroci di Theros. Si addestrano senza sosta e possiedono una determinazione inflessibile. Negli annali di Akros, abbondano i racconti di squadroni di stratiani che hanno difeso un luogo chiave contro una forza molto più grande o si sono insinuati dietro le linee nemiche e hanno portato scompiglio nell'esercito avversario."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Alseid",
@@ -477,6 +446,162 @@
 			]
 		},
 		{
+			"name": "Hoplite",
+			"source": "MOT",
+			"entries": [
+				"Gli opliti sono guerrieri altamente addestrati, versati non solo nella strategia e nella tattica, ma nella glorificazione dello spirito del guerriero, la base di un ethos che forgia un legame indissolubile tra i membri di un'unità militare. In combattimento, gli opliti lavorano tipicamente in gruppo e usano tattiche coordinate per ottenere vittorie.",
+				"Le tre tabelle dei nomi delle unità oplita presentano i tipi di titoli usati dai contingenti opliti provenienti dalle grandi poleis di Theros. Considerate di usare questi nomi per le forze militari che i personaggi incontrano durante le loro avventure o di cui hanno fatto parte in passato.",
+				{
+					"type": "table",
+					"caption": "Akroan Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Lance di Iroas"
+						],
+						[
+							"2",
+							"Zanne di ferro"
+						],
+						[
+							"3",
+							"Frecce di Anax"
+						],
+						[
+							"4",
+							"L'infrangibile"
+						],
+						[
+							"5",
+							"Incudine di Purphoros"
+						],
+						[
+							"6",
+							"Squadra di spiedini"
+						],
+						[
+							"7",
+							"Scudo di Akros"
+						],
+						[
+							"8",
+							"Il cuore di Cymede"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Meletian Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Artiglio del Kraken"
+						],
+						[
+							"2",
+							"Mani di giustizia"
+						],
+						[
+							"3",
+							"Lancia di Thassa"
+						],
+						[
+							"4",
+							"Scudo di Ephara"
+						],
+						[
+							"5",
+							"I parenti degli abissi"
+						],
+						[
+							"6",
+							"Cavalieri di Heliod"
+						],
+						[
+							"7",
+							"Custodi di Pyrgnos"
+						],
+						[
+							"8",
+							"Il disincantato"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Setessan Hoplite Unit Names",
+					"colLabels": [
+						"d8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Le frecce di Nylea"
+						],
+						[
+							"2",
+							"Gli osservatori"
+						],
+						[
+							"3",
+							"Zanne di Ophis"
+						],
+						[
+							"4",
+							"Le parole d'ordine"
+						],
+						[
+							"5",
+							"I lupi di Karametra"
+						],
+						[
+							"6",
+							"Difensori del boschetto"
+						],
+						[
+							"7",
+							"Lame di bronzo"
+						],
+						[
+							"8",
+							"Gli sciacalli"
+						]
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Hoplite.webp"
+					},
+					"credit": "Raymond Swanland"
+				}
+			]
+		},
+		{
 			"name": "Hundred-Handed One",
 			"source": "MOT",
 			"entries": [
@@ -620,62 +745,26 @@
 		{
 			"name": "Meletian Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Gli opliti meletiani usano una combinazione di astuzia, fede e magia per difendere la loro casa costiera. La maggior parte di questi abili soldati serve nell'Esercito Reverente, i difensori di Meletis, che utilizza una serie di strategie collaudate e formazioni di truppe flessibili per ottenere il vantaggio sui nemici. Sostenuti da grifoni e pegaso addestrati, colpiscono i nemici dove meno se lo aspettano.",
-						"Gli opliti sono guerrieri altamente addestrati, versati non solo nella strategia e nella tattica, ma nella glorificazione dello spirito del guerriero, la base di un ethos che forgia un legame indissolubile tra i membri di un'unità militare. In combattimento, gli opliti lavorano tipicamente in gruppo e usano tattiche coordinate per ottenere vittorie.",
-						"Le tre tabelle dei nomi delle unità oplita presentano i tipi di titoli usati dai contingenti opliti provenienti dalle grandi poleis di Theros. Considerate di usare questi nomi per le forze militari che i personaggi incontrano durante le loro avventure o di cui hanno fatto parte in passato.",
-						{
-							"type": "table",
-							"caption": "Meletian Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Artiglio del Kraken"
-								],
-								[
-									"2",
-									"Mani di giustizia"
-								],
-								[
-									"3",
-									"Lancia di Thassa"
-								],
-								[
-									"4",
-									"Scudo di Ephara"
-								],
-								[
-									"5",
-									"I parenti degli abissi"
-								],
-								[
-									"6",
-									"Cavalieri di Heliod"
-								],
-								[
-									"7",
-									"Custodi di Pyrgnos"
-								],
-								[
-									"8",
-									"Il disincantato"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Gli opliti meletiani usano una combinazione di astuzia, fede e magia per difendere la loro casa costiera. La maggior parte di questi abili soldati serve nell'Esercito Reverente, i difensori di Meletis, che utilizza una serie di strategie collaudate e formazioni di truppe flessibili per ottenere il vantaggio sui nemici. Sostenuti da grifoni e pegaso addestrati, colpiscono i nemici dove meno se lo aspettano."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Naiad",
@@ -893,60 +982,118 @@
 			]
 		},
 		{
-			"name": "Returned Drifter",
+			"name": "Returned",
 			"source": "MOT",
 			"entries": [
+				"I Ritornati sono sfuggiti al Mondo Sotterraneo e abitano di nuovo tra i vivi, ma le loro seconde vite sono raramente quello che si aspettavano - non che si ricordino cosa si aspettavano. Come risultato di aver seguito il Sentiero di Phenax (vedi capitolo 4), i Ritornati perdono le loro identità, che si manifestano come esseri separati conosciuti come eidolons. L'esperienza della fuga dagli Inferi fa anche perdere loro il volto, che diventa una superficie inespressiva con orbite vuote e bocche spalancate. Queste superfici vuote sono coperte da maschere dorate distintive.",
+				"I ritornati rientrano nel mondo vuoti e non morti. Non possedendo più la capacità di formare ricordi a lungo termine, generalmente non possono costruire relazioni significative o stabilire nuove vite. Invece, la maggior parte sperimenta emozioni fugaci e segue vuote routine, le loro esistenze ridotte a giochi d'ombra senza peso o sostanza."
+			],
+			"images": [
 				{
-					"type": "entries",
-					"entries": [
-						"Molti Ritornati sono anime pietose che sono riuscite a fuggire dagli Inferi solo per ritrovarsi spogliate delle passioni che hanno motivato la loro fuga. Privi di uno scopo ed evitati dai vivi, questi Ritornati cercano tipicamente luoghi dove saranno lasciati in pace, come tombe solitarie o le necropoli di Asphodel e Odunos. Lì, essi passano attraverso mezze parodie della vita, ostacolati dalla distrazione e dalla noia. Nonostante ciò, anche i più languidi Ritornati si difendono se minacciati e potrebbero essere spinti al servizio dei loro fratelli più volitivi.",
-						"I Ritornati sono sfuggiti al Mondo Sotterraneo e abitano di nuovo tra i vivi, ma le loro seconde vite sono raramente quello che si aspettavano - non che si ricordino cosa si aspettavano. Come risultato di aver seguito il Sentiero di Phenax (vedi capitolo 4), i Ritornati perdono le loro identità, che si manifestano come esseri separati conosciuti come eidolons. L'esperienza della fuga dagli Inferi fa anche perdere loro il volto, che diventa una superficie inespressiva con orbite vuote e bocche spalancate. Queste superfici vuote sono coperte da maschere dorate distintive.",
-						"I ritornati rientrano nel mondo vuoti e non morti. Non possedendo più la capacità di formare ricordi a lungo termine, generalmente non possono costruire relazioni significative o stabilire nuove vite. Invece, la maggior parte sperimenta emozioni fugaci e segue vuote routine, le loro esistenze ridotte a giochi d'ombra senza peso o sostanza."
-					]
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Returned.webp"
+					},
+					"credit": "Emrah Elmasli"
 				}
 			]
+		},
+		{
+			"name": "Returned Drifter",
+			"source": "MOT",
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Molti Ritornati sono anime pietose che sono riuscite a fuggire dagli Inferi solo per ritrovarsi spogliate delle passioni che hanno motivato la loro fuga. Privi di uno scopo ed evitati dai vivi, questi Ritornati cercano tipicamente luoghi dove saranno lasciati in pace, come tombe solitarie o le necropoli di Asphodel e Odunos. Lì, essi passano attraverso mezze parodie della vita, ostacolati dalla distrazione e dalla noia. Nonostante ciò, anche i più languidi Ritornati si difendono se minacciati e potrebbero essere spinti al servizio dei loro fratelli più volitivi."
+									]
+								}
+							]
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Returned Kakomantis",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Anche se i morti in genere ricordano poco della loro vita, alcuni hanno un'ossessione per la magia che sopravvive sia alla morte che alla rinascita come un ritornato. Questi Ritornati, chiamati kakomanteis, usano la loro abilità magica per controllare l'energia che soffonde il mondo sotterraneo.",
-						"I Ritornati sono sfuggiti al Mondo Sotterraneo e abitano di nuovo tra i vivi, ma le loro seconde vite sono raramente quello che si aspettavano - non che si ricordino cosa si aspettavano. Come risultato di aver seguito il Sentiero di Phenax (vedi capitolo 4), i Ritornati perdono le loro identità, che si manifestano come esseri separati conosciuti come eidolons. L'esperienza della fuga dagli Inferi fa anche perdere loro il volto, che diventa una superficie inespressiva con orbite vuote e bocche spalancate. Queste superfici vuote sono coperte da maschere dorate distintive.",
-						"I ritornati rientrano nel mondo vuoti e non morti. Non possedendo più la capacità di formare ricordi a lungo termine, generalmente non possono costruire relazioni significative o stabilire nuove vite. Invece, la maggior parte sperimenta emozioni fugaci e segue vuote routine, le loro esistenze ridotte a giochi d'ombra senza peso o sostanza."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Anche se i morti in genere ricordano poco della loro vita, alcuni hanno un'ossessione per la magia che sopravvive sia alla morte che alla rinascita come un ritornato. Questi Ritornati, chiamati kakomanteis, usano la loro abilità magica per controllare l'energia che soffonde il mondo sotterraneo."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Palamnite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Nemmeno la morte e la perdita delle loro identità possono cancellare la rabbia che ispira i palamniti del Ritorno. Questi Ritornati hanno condotto vite violente, esistenze piene di dolore e di odio tali che la violenza ora soffonde i loro corpi senza morte. Ciò li rende eccezionalmente pericolosi per i vivi, poiché questi assassini senza meta conoscono solo la sofferenza e cercano di diffonderla ogni volta che se ne presenta l'occasione. Mentre i palamniti possono vagare per il mondo come pericolosi assassini solitari, molti gravitano su Odunos, dove servono la volontà viziosa di Tymaret il Re Assassino (vedi capitolo 3).",
-						"I Ritornati sono sfuggiti al Mondo Sotterraneo e abitano di nuovo tra i vivi, ma le loro seconde vite sono raramente quello che si aspettavano - non che si ricordino cosa si aspettavano. Come risultato di aver seguito il Sentiero di Phenax (vedi capitolo 4), i Ritornati perdono le loro identità, che si manifestano come esseri separati conosciuti come eidolons. L'esperienza della fuga dagli Inferi fa anche perdere loro il volto, che diventa una superficie inespressiva con orbite vuote e bocche spalancate. Queste superfici vuote sono coperte da maschere dorate distintive.",
-						"I ritornati rientrano nel mondo vuoti e non morti. Non possedendo più la capacità di formare ricordi a lungo termine, generalmente non possono costruire relazioni significative o stabilire nuove vite. Invece, la maggior parte sperimenta emozioni fugaci e segue vuote routine, le loro esistenze ridotte a giochi d'ombra senza peso o sostanza."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Nemmeno la morte e la perdita delle loro identità possono cancellare la rabbia che ispira i palamniti del Ritorno. Questi Ritornati hanno condotto vite violente, esistenze piene di dolore e di odio tali che la violenza ora soffonde i loro corpi senza morte. Ciò li rende eccezionalmente pericolosi per i vivi, poiché questi assassini senza meta conoscono solo la sofferenza e cercano di diffonderla ogni volta che se ne presenta l'occasione. Mentre i palamniti possono vagare per il mondo come pericolosi assassini solitari, molti gravitano su Odunos, dove servono la volontà viziosa di Tymaret il Re Assassino (vedi capitolo 3)."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Sentry",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"La maggior parte dei Ritornati nuovi o senza scopo sono facilmente manipolati per servire i loro fratelli più forti. Avendo uno scopo forzato su di loro, questi Ritornati eseguono compiti semplici e senza arte né parte con un'efficienza mediocre. La loro unica virtù è la loro instancabilità, che li rende guardie eccezionali. Nelle necropoli, questo vede molti Ritornati impiegati come sentinelle, sebbene possano essere anche messaggeri o operai. Se minacciati, i gruppi di questi Ritornati lavorano bene insieme, condividendo gli obiettivi unificati di sconfiggere i loro nemici e tornare al compito in questione.",
-						"I Ritornati sono sfuggiti al Mondo Sotterraneo e abitano di nuovo tra i vivi, ma le loro seconde vite sono raramente quello che si aspettavano - non che si ricordino cosa si aspettavano. Come risultato di aver seguito il Sentiero di Phenax (vedi capitolo 4), i Ritornati perdono le loro identità, che si manifestano come esseri separati conosciuti come eidolons. L'esperienza della fuga dagli Inferi fa anche perdere loro il volto, che diventa una superficie inespressiva con orbite vuote e bocche spalancate. Queste superfici vuote sono coperte da maschere dorate distintive.",
-						"I ritornati rientrano nel mondo vuoti e non morti. Non possedendo più la capacità di formare ricordi a lungo termine, generalmente non possono costruire relazioni significative o stabilire nuove vite. Invece, la maggior parte sperimenta emozioni fugaci e segue vuote routine, le loro esistenze ridotte a giochi d'ombra senza peso o sostanza."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"La maggior parte dei Ritornati nuovi o senza scopo sono facilmente manipolati per servire i loro fratelli più forti. Avendo uno scopo forzato su di loro, questi Ritornati eseguono compiti semplici e senza arte né parte con un'efficienza mediocre. La loro unica virtù è la loro instancabilità, che li rende guardie eccezionali. Nelle necropoli, questo vede molti Ritornati impiegati come sentinelle, sebbene possano essere anche messaggeri o operai. Se minacciati, i gruppi di questi Ritornati lavorano bene insieme, condividendo gli obiettivi unificati di sconfiggere i loro nemici e tornare al compito in questione."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Satyr Reveler",
@@ -995,62 +1142,26 @@
 		{
 			"name": "Setessan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"La maggior parte degli opliti setessani iniziano il loro addestramento come cacciatori, rendendoli abili nell'attraversare i boschi e abili sia nelle tattiche di guerriglia che nel tiro con l'arco. Le loro strategie spesso emulano i servitori preferiti di Nylea, specialmente le bestie selvatiche come i lupi e le linci. In genere, pochi soldati danno la caccia al nemico mentre gli altri sfruttano la distrazione del nemico.",
-						"Gli opliti sono guerrieri altamente addestrati, versati non solo nella strategia e nella tattica, ma nella glorificazione dello spirito del guerriero, la base di un ethos che forgia un legame indissolubile tra i membri di un'unità militare. In combattimento, gli opliti lavorano tipicamente in gruppo e usano tattiche coordinate per ottenere vittorie.",
-						"Le tre tabelle dei nomi delle unità oplita presentano i tipi di titoli usati dai contingenti opliti provenienti dalle grandi poleis di Theros. Considerate di usare questi nomi per le forze militari che i personaggi incontrano durante le loro avventure o di cui hanno fatto parte in passato.",
-						{
-							"type": "table",
-							"caption": "Setessan Hoplite Unit Names",
-							"colLabels": [
-								"d8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Le frecce di Nylea"
-								],
-								[
-									"2",
-									"Gli osservatori"
-								],
-								[
-									"3",
-									"Zanne di Ophis"
-								],
-								[
-									"4",
-									"Le parole d'ordine"
-								],
-								[
-									"5",
-									"I lupi di Karametra"
-								],
-								[
-									"6",
-									"Difensori del boschetto"
-								],
-								[
-									"7",
-									"Lame di bronzo"
-								],
-								[
-									"8",
-									"Gli sciacalli"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"La maggior parte degli opliti setessani iniziano il loro addestramento come cacciatori, rendendoli abili nell'attraversare i boschi e abili sia nelle tattiche di guerriglia che nel tiro con l'arco. Le loro strategie spesso emulano i servitori preferiti di Nylea, specialmente le bestie selvatiche come i lupi e le linci. In genere, pochi soldati danno la caccia al nemico mentre gli altri sfruttano la distrazione del nemico."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Theran Chimera",
