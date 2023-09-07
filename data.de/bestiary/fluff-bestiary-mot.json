@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Abhorrent Overlord",
@@ -24,62 +29,26 @@
 		{
 			"name": "Akroan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Akroanische Hopliten, auch Stratianer genannt, gehören zu den kampfstärksten Soldaten auf Theros. Sie trainieren unermüdlich und besitzen eine unerschütterliche Entschlossenheit. In den Annalen von Akros gibt es viele Geschichten über Trupps von Stratianern, die einen wichtigen Ort gegen eine viel größere Streitmacht verteidigten oder sich hinter die feindlichen Linien schlichen und in der gegnerischen Armee Verwüstung anrichteten.",
-						"Hopliten sind hervorragend ausgebildete Krieger, die nicht nur in Strategie und Taktik bewandert sind, sondern auch in der Verherrlichung des Kriegergeistes, der die Grundlage für ein Ethos bildet, das ein unzerstörbares Band zwischen den Mitgliedern einer militärischen Einheit schmiedet. Im Kampf arbeiten Hopliten in der Regel in Gruppen und nutzen koordinierte Taktiken, um Siege zu erringen.",
-						"Die drei Tabellen mit den Namen der Hopliteneinheiten zeigen die Arten von Titeln, die von Hoplitenkontingenten aus den großen Poleis von Theros verwendet werden. Ziehe in Erwägung, diese Namen für militärische Truppen zu verwenden, denen die Charaktere in ihren Abenteuern begegnen oder denen sie einst angehörten.",
-						{
-							"type": "table",
-							"caption": "Akroan Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Die Speere des Iroas"
-								],
-								[
-									"2",
-									"Eiserne Reißzähne"
-								],
-								[
-									"3",
-									"Pfeile von Anax"
-								],
-								[
-									"4",
-									"Die Ungebrochenen"
-								],
-								[
-									"5",
-									"Amboss des Purphoros"
-								],
-								[
-									"6",
-									"Spießrutenlauf"
-								],
-								[
-									"7",
-									"Schild von Akros"
-								],
-								[
-									"8",
-									"Das Herz von Cymede"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Akroanische Hopliten, auch Stratianer genannt, gehören zu den kampfstärksten Soldaten auf Theros. Sie trainieren unermüdlich und besitzen eine unerschütterliche Entschlossenheit. In den Annalen von Akros gibt es viele Geschichten über Trupps von Stratianern, die einen wichtigen Ort gegen eine viel größere Streitmacht verteidigten oder sich hinter die feindlichen Linien schlichen und in der gegnerischen Armee Verwüstung anrichteten."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Alseid",
@@ -477,6 +446,162 @@
 			]
 		},
 		{
+			"name": "Hoplite",
+			"source": "MOT",
+			"entries": [
+				"Hopliten sind hervorragend ausgebildete Krieger, die nicht nur in Strategie und Taktik bewandert sind, sondern auch in der Verherrlichung des Kriegergeistes, der die Grundlage für ein Ethos bildet, das ein unzerstörbares Band zwischen den Mitgliedern einer militärischen Einheit schmiedet. Im Kampf arbeiten Hopliten in der Regel in Gruppen und nutzen koordinierte Taktiken, um Siege zu erringen.",
+				"Die drei Tabellen mit den Namen der Hopliteneinheiten zeigen die Arten von Titeln, die von Hoplitenkontingenten aus den großen Poleis von Theros verwendet werden. Ziehe in Erwägung, diese Namen für militärische Truppen zu verwenden, denen die Charaktere in ihren Abenteuern begegnen oder denen sie einst angehörten.",
+				{
+					"type": "table",
+					"caption": "Akroan Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Die Speere des Iroas"
+						],
+						[
+							"2",
+							"Eiserne Reißzähne"
+						],
+						[
+							"3",
+							"Pfeile von Anax"
+						],
+						[
+							"4",
+							"Die Ungebrochenen"
+						],
+						[
+							"5",
+							"Amboss des Purphoros"
+						],
+						[
+							"6",
+							"Spießrutenlauf"
+						],
+						[
+							"7",
+							"Schild von Akros"
+						],
+						[
+							"8",
+							"Das Herz von Cymede"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Meletian Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Krakenklaue"
+						],
+						[
+							"2",
+							"Die Hände der Gerechtigkeit"
+						],
+						[
+							"3",
+							"Thassas Speer"
+						],
+						[
+							"4",
+							"Epharas Schild"
+						],
+						[
+							"5",
+							"Verwandte in der Tiefe"
+						],
+						[
+							"6",
+							"Die Reiter des Heliod"
+						],
+						[
+							"7",
+							"Die Hüter von Pyrgnos"
+						],
+						[
+							"8",
+							"Die Himmelsgeweihten"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Setessan Hoplite Unit Names",
+					"colLabels": [
+						"d8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Nyleas Pfeile"
+						],
+						[
+							"2",
+							"Die Beobachter"
+						],
+						[
+							"3",
+							"Die Reißzähne des Ophis"
+						],
+						[
+							"4",
+							"Die Mauersegler"
+						],
+						[
+							"5",
+							"Karamentras Wölfe"
+						],
+						[
+							"6",
+							"Die Verteidiger des Hains"
+						],
+						[
+							"7",
+							"Bronzeklingen"
+						],
+						[
+							"8",
+							"Die Schakale"
+						]
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Hoplite.webp"
+					},
+					"credit": "Raymond Swanland"
+				}
+			]
+		},
+		{
 			"name": "Hundred-Handed One",
 			"source": "MOT",
 			"entries": [
@@ -620,62 +745,26 @@
 		{
 			"name": "Meletian Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Die melethischen Hopliten verteidigen ihre Heimat an der Küste mit einer Kombination aus List, Glauben und Magie. Die meisten dieser fähigen Soldaten dienen in der Ehrwürdigen Armee, den Verteidigern von Meletis, die eine Reihe bewährter Strategien und flexibler Truppenformationen einsetzt, um sich einen Vorteil gegenüber ihren Feinden zu verschaffen. Unterstützt von trainierten Greifen- und Pegasus-Rössern schlagen sie dort zu, wo die Feinde am wenigsten damit rechnen.",
-						"Hopliten sind hervorragend ausgebildete Krieger, die nicht nur in Strategie und Taktik bewandert sind, sondern auch in der Verherrlichung des Kriegergeistes, der die Grundlage für ein Ethos bildet, das ein unzerstörbares Band zwischen den Mitgliedern einer militärischen Einheit schmiedet. Im Kampf arbeiten Hopliten in der Regel in Gruppen und nutzen koordinierte Taktiken, um Siege zu erringen.",
-						"Die drei Tabellen mit den Namen der Hopliteneinheiten zeigen die Arten von Titeln, die von Hoplitenkontingenten aus den großen Poleis von Theros verwendet werden. Ziehe in Erwägung, diese Namen für militärische Truppen zu verwenden, denen die Charaktere in ihren Abenteuern begegnen oder denen sie einst angehörten.",
-						{
-							"type": "table",
-							"caption": "Meletian Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Krakenklaue"
-								],
-								[
-									"2",
-									"Die Hände der Gerechtigkeit"
-								],
-								[
-									"3",
-									"Thassas Speer"
-								],
-								[
-									"4",
-									"Epharas Schild"
-								],
-								[
-									"5",
-									"Verwandte in der Tiefe"
-								],
-								[
-									"6",
-									"Die Reiter des Heliod"
-								],
-								[
-									"7",
-									"Die Hüter von Pyrgnos"
-								],
-								[
-									"8",
-									"Die Himmelsgeweihten"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Die melethischen Hopliten verteidigen ihre Heimat an der Küste mit einer Kombination aus List, Glauben und Magie. Die meisten dieser fähigen Soldaten dienen in der Ehrwürdigen Armee, den Verteidigern von Meletis, die eine Reihe bewährter Strategien und flexibler Truppenformationen einsetzt, um sich einen Vorteil gegenüber ihren Feinden zu verschaffen. Unterstützt von trainierten Greifen- und Pegasus-Rössern schlagen sie dort zu, wo die Feinde am wenigsten damit rechnen."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Naiad",
@@ -893,60 +982,118 @@
 			]
 		},
 		{
-			"name": "Returned Drifter",
+			"name": "Returned",
 			"source": "MOT",
 			"entries": [
+				"Die Zurückgekehrten sind der Unterwelt entkommen und leben nun wieder unter den Lebenden, aber ihr zweites Leben ist selten so, wie sie es erwartet haben - auch wenn sie sich nicht daran erinnern, was sie erwartet haben. Als Folge des Pfades von Phenax (siehe Kapitel 4) verlieren die Zurückgekehrten ihre Identität, die sich als separate Wesen manifestiert, die als Eidolons bekannt sind. Die Erfahrung, der Unterwelt entkommen zu sein, führt auch dazu, dass sie ihre Gesichter verlieren, die zu ausdruckslosen Flächen mit leeren Augenhöhlen und klaffenden Mündern werden. Diese leeren Flächen bedecken sie mit unverwechselbaren goldenen Masken.",
+				"Zurückgekehrte kehren leer und untot in die Welt zurück. Da sie nicht mehr in der Lage sind, ein Langzeitgedächtnis zu entwickeln, können sie im Allgemeinen keine bedeutungsvollen Beziehungen aufbauen oder ein neues Leben beginnen. Stattdessen erleben die meisten flüchtige Emotionen und folgen hohlen Routinen, ihre Existenzen reduzieren sich auf Schattenspiele ohne Gewicht und Substanz."
+			],
+			"images": [
 				{
-					"type": "entries",
-					"entries": [
-						"Viele Zurückgekehrte sind bemitleidenswerte Seelen, denen die Flucht aus der Unterwelt gelungen ist und die nun ohne die Leidenschaften dastehen, die sie zur Flucht bewogen haben. Ohne Ziel und von den Lebenden gemieden, suchen diese Zurückgekehrten typischerweise Orte auf, an denen sie in Ruhe gelassen werden, wie einsame Gräber oder die Nekropolen von Asphodel und Odunos. Dort führen sie halbherzige Parodien des Lebens durch, die durch Ablenkung und Langeweile behindert werden. Trotzdem verteidigen sich selbst die trägesten Zurückgekehrten, wenn sie bedroht werden, und können in den Dienst ihrer eigensinnigeren Brüder gezwungen werden.",
-						"Die Zurückgekehrten sind der Unterwelt entkommen und leben nun wieder unter den Lebenden, aber ihr zweites Leben ist selten so, wie sie es erwartet haben - auch wenn sie sich nicht daran erinnern, was sie erwartet haben. Als Folge des Pfades von Phenax (siehe Kapitel 4) verlieren die Zurückgekehrten ihre Identität, die sich als separate Wesen manifestiert, die als Eidolons bekannt sind. Die Erfahrung, der Unterwelt entkommen zu sein, führt auch dazu, dass sie ihre Gesichter verlieren, die zu ausdruckslosen Flächen mit leeren Augenhöhlen und klaffenden Mündern werden. Diese leeren Flächen bedecken sie mit unverwechselbaren goldenen Masken.",
-						"Zurückgekehrte kehren leer und untot in die Welt zurück. Da sie nicht mehr in der Lage sind, ein Langzeitgedächtnis zu entwickeln, können sie im Allgemeinen keine bedeutungsvollen Beziehungen aufbauen oder ein neues Leben beginnen. Stattdessen erleben die meisten flüchtige Emotionen und folgen hohlen Routinen, ihre Existenzen reduzieren sich auf Schattenspiele ohne Gewicht und Substanz."
-					]
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Returned.webp"
+					},
+					"credit": "Emrah Elmasli"
 				}
 			]
+		},
+		{
+			"name": "Returned Drifter",
+			"source": "MOT",
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Viele Zurückgekehrte sind bemitleidenswerte Seelen, denen die Flucht aus der Unterwelt gelungen ist und die nun ohne die Leidenschaften dastehen, die sie zur Flucht bewogen haben. Ohne Ziel und von den Lebenden gemieden, suchen diese Zurückgekehrten typischerweise Orte auf, an denen sie in Ruhe gelassen werden, wie einsame Gräber oder die Nekropolen von Asphodel und Odunos. Dort führen sie halbherzige Parodien des Lebens durch, die durch Ablenkung und Langeweile behindert werden. Trotzdem verteidigen sich selbst die trägesten Zurückgekehrten, wenn sie bedroht werden, und können in den Dienst ihrer eigensinnigeren Brüder gezwungen werden."
+									]
+								}
+							]
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Returned Kakomantis",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Obwohl sich die Toten in der Regel nur an wenig aus ihrem Leben erinnern können, haben einige eine Besessenheit von der Magie, die sowohl den Tod als auch die Wiedergeburt als Zurückgekehrter überlebt. Diese Wiederkehrer, die Kakomanteis genannt werden, nutzen ihre magischen Fähigkeiten, um die Energie zu kontrollieren, die die Unterwelt durchdringt.",
-						"Die Zurückgekehrten sind der Unterwelt entkommen und leben nun wieder unter den Lebenden, aber ihr zweites Leben ist selten so, wie sie es erwartet haben - auch wenn sie sich nicht daran erinnern, was sie erwartet haben. Als Folge des Pfades von Phenax (siehe Kapitel 4) verlieren die Zurückgekehrten ihre Identität, die sich als separate Wesen manifestiert, die als Eidolons bekannt sind. Die Erfahrung, der Unterwelt entkommen zu sein, führt auch dazu, dass sie ihre Gesichter verlieren, die zu ausdruckslosen Flächen mit leeren Augenhöhlen und klaffenden Mündern werden. Diese leeren Flächen bedecken sie mit unverwechselbaren goldenen Masken.",
-						"Zurückgekehrte kehren leer und untot in die Welt zurück. Da sie nicht mehr in der Lage sind, ein Langzeitgedächtnis zu entwickeln, können sie im Allgemeinen keine bedeutungsvollen Beziehungen aufbauen oder ein neues Leben beginnen. Stattdessen erleben die meisten flüchtige Emotionen und folgen hohlen Routinen, ihre Existenzen reduzieren sich auf Schattenspiele ohne Gewicht und Substanz."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Obwohl sich die Toten in der Regel nur an wenig aus ihrem Leben erinnern können, haben einige eine Besessenheit von der Magie, die sowohl den Tod als auch die Wiedergeburt als Zurückgekehrter überlebt. Diese Wiederkehrer, die Kakomanteis genannt werden, nutzen ihre magischen Fähigkeiten, um die Energie zu kontrollieren, die die Unterwelt durchdringt."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Palamnite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Selbst der Tod und der Verlust ihrer Identität können die Wut, die die zurückgekehrten Palamniten beseelt, nicht auslöschen. Diese Zurückgekehrten haben ein gewalttätiges Leben geführt, ein Leben, das so sehr von Schmerz und Hass erfüllt war, dass die Gewalt nun ihre todlosen Körper durchdringt. Das macht sie für die Lebenden außerordentlich gefährlich, denn diese ziellosen Killer kennen nur Leid und versuchen, es zu verbreiten, wann immer sich die Gelegenheit bietet. Während Palamniten als gefährliche, einsame Mörder durch die Welt ziehen, zieht es viele nach Odunos, wo sie dem bösartigen Willen von Tymaret, dem Mörderkönig, dienen (siehe Kapitel 3).",
-						"Die Zurückgekehrten sind der Unterwelt entkommen und leben nun wieder unter den Lebenden, aber ihr zweites Leben ist selten so, wie sie es erwartet haben - auch wenn sie sich nicht daran erinnern, was sie erwartet haben. Als Folge des Pfades von Phenax (siehe Kapitel 4) verlieren die Zurückgekehrten ihre Identität, die sich als separate Wesen manifestiert, die als Eidolons bekannt sind. Die Erfahrung, der Unterwelt entkommen zu sein, führt auch dazu, dass sie ihre Gesichter verlieren, die zu ausdruckslosen Flächen mit leeren Augenhöhlen und klaffenden Mündern werden. Diese leeren Flächen bedecken sie mit unverwechselbaren goldenen Masken.",
-						"Zurückgekehrte kehren leer und untot in die Welt zurück. Da sie nicht mehr in der Lage sind, ein Langzeitgedächtnis zu entwickeln, können sie im Allgemeinen keine bedeutungsvollen Beziehungen aufbauen oder ein neues Leben beginnen. Stattdessen erleben die meisten flüchtige Emotionen und folgen hohlen Routinen, ihre Existenzen reduzieren sich auf Schattenspiele ohne Gewicht und Substanz."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Selbst der Tod und der Verlust ihrer Identität können die Wut, die die zurückgekehrten Palamniten beseelt, nicht auslöschen. Diese Zurückgekehrten haben ein gewalttätiges Leben geführt, ein Leben, das so sehr von Schmerz und Hass erfüllt war, dass die Gewalt nun ihre todlosen Körper durchdringt. Das macht sie für die Lebenden außerordentlich gefährlich, denn diese ziellosen Killer kennen nur Leid und versuchen, es zu verbreiten, wann immer sich die Gelegenheit bietet. Während Palamniten als gefährliche, einsame Mörder durch die Welt ziehen, zieht es viele nach Odunos, wo sie dem bösartigen Willen von Tymaret, dem Mörderkönig, dienen (siehe Kapitel 3)."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Sentry",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Die meisten neuen oder zwecklosen Zurückgekehrten lassen sich leicht dazu bringen, ihren stärkeren Brüdern zu dienen. Da ihnen eine Aufgabe aufgezwungen wird, führen diese Zurückgekehrten einfache, kunstlose Aufgaben mit mittelmäßiger Effizienz aus. Ihre einzige Tugend ist ihre Unermüdlichkeit, die sie zu hervorragenden Wächtern macht. In der Nekropole werden viele Wiederkehrer als Wachen eingesetzt, obwohl sie auch als Boten oder Arbeiter arbeiten können. Wenn sie bedroht werden, arbeiten Gruppen dieser Zurückgekehrten gut zusammen und verfolgen gemeinsam das Ziel, ihre Feinde zu besiegen und sich wieder der eigentlichen Aufgabe zu widmen.",
-						"Die Zurückgekehrten sind der Unterwelt entkommen und leben nun wieder unter den Lebenden, aber ihr zweites Leben ist selten so, wie sie es erwartet haben - auch wenn sie sich nicht daran erinnern, was sie erwartet haben. Als Folge des Pfades von Phenax (siehe Kapitel 4) verlieren die Zurückgekehrten ihre Identität, die sich als separate Wesen manifestiert, die als Eidolons bekannt sind. Die Erfahrung, der Unterwelt entkommen zu sein, führt auch dazu, dass sie ihre Gesichter verlieren, die zu ausdruckslosen Flächen mit leeren Augenhöhlen und klaffenden Mündern werden. Diese leeren Flächen bedecken sie mit unverwechselbaren goldenen Masken.",
-						"Zurückgekehrte kehren leer und untot in die Welt zurück. Da sie nicht mehr in der Lage sind, ein Langzeitgedächtnis zu entwickeln, können sie im Allgemeinen keine bedeutungsvollen Beziehungen aufbauen oder ein neues Leben beginnen. Stattdessen erleben die meisten flüchtige Emotionen und folgen hohlen Routinen, ihre Existenzen reduzieren sich auf Schattenspiele ohne Gewicht und Substanz."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Die meisten neuen oder zwecklosen Zurückgekehrten lassen sich leicht dazu bringen, ihren stärkeren Brüdern zu dienen. Da ihnen eine Aufgabe aufgezwungen wird, führen diese Zurückgekehrten einfache, kunstlose Aufgaben mit mittelmäßiger Effizienz aus. Ihre einzige Tugend ist ihre Unermüdlichkeit, die sie zu hervorragenden Wächtern macht. In der Nekropole werden viele Wiederkehrer als Wachen eingesetzt, obwohl sie auch als Boten oder Arbeiter arbeiten können. Wenn sie bedroht werden, arbeiten Gruppen dieser Zurückgekehrten gut zusammen und verfolgen gemeinsam das Ziel, ihre Feinde zu besiegen und sich wieder der eigentlichen Aufgabe zu widmen."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Satyr Reveler",
@@ -995,62 +1142,26 @@
 		{
 			"name": "Setessan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Die meisten Hopliten der Setessaner beginnen ihre Ausbildung als Jäger, wodurch sie geschickt im Durchqueren der Wälder und geschickt in Guerillataktik und Bogenschießen werden. Ihre Strategien orientieren sich oft an den bevorzugten Dienern von Nylea - insbesondere an wilden Tieren wie Wölfen und Luchsen. In der Regel verfolgen einige wenige Soldaten einen Feind, während der Rest die Ablenkung des Gegners ausnutzt.",
-						"Hopliten sind hervorragend ausgebildete Krieger, die nicht nur in Strategie und Taktik bewandert sind, sondern auch in der Verherrlichung des Kriegergeistes, der die Grundlage für ein Ethos bildet, das ein unzerstörbares Band zwischen den Mitgliedern einer militärischen Einheit schmiedet. Im Kampf arbeiten Hopliten in der Regel in Gruppen und nutzen koordinierte Taktiken, um Siege zu erringen.",
-						"Die drei Tabellen mit den Namen der Hopliteneinheiten zeigen die Arten von Titeln, die von Hoplitenkontingenten aus den großen Poleis von Theros verwendet werden. Ziehe in Erwägung, diese Namen für militärische Truppen zu verwenden, denen die Charaktere in ihren Abenteuern begegnen oder denen sie einst angehörten.",
-						{
-							"type": "table",
-							"caption": "Setessan Hoplite Unit Names",
-							"colLabels": [
-								"d8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Nyleas Pfeile"
-								],
-								[
-									"2",
-									"Die Beobachter"
-								],
-								[
-									"3",
-									"Die Reißzähne des Ophis"
-								],
-								[
-									"4",
-									"Die Mauersegler"
-								],
-								[
-									"5",
-									"Karamentras Wölfe"
-								],
-								[
-									"6",
-									"Die Verteidiger des Hains"
-								],
-								[
-									"7",
-									"Bronzeklingen"
-								],
-								[
-									"8",
-									"Die Schakale"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Die meisten Hopliten der Setessaner beginnen ihre Ausbildung als Jäger, wodurch sie geschickt im Durchqueren der Wälder und geschickt in Guerillataktik und Bogenschießen werden. Ihre Strategien orientieren sich oft an den bevorzugten Dienern von Nylea - insbesondere an wilden Tieren wie Wölfen und Luchsen. In der Regel verfolgen einige wenige Soldaten einen Feind, während der Rest die Ablenkung des Gegners ausnutzt."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Theran Chimera",
