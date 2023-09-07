@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Abhorrent Overlord",
@@ -24,62 +29,26 @@
 		{
 			"name": "Akroan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Los hoplitas akroanos, también llamados estratianos, se cuentan entre los soldados más feroces de Theros. Se entrenan sin descanso y poseen una resolución inquebrantable. En los anales de Akros, abundan las historias de escuadrones de estratianos que defendieron un lugar clave contra una fuerza mucho mayor o que se arrastraron tras las líneas enemigas y causaron estragos en el ejército contrario.",
-						"Los hoplitas son guerreros altamente entrenados, versados no sólo en estrategia y táctica, sino en la glorificación del espíritu guerrero, base de un ethos que forja un vínculo inquebrantable entre los miembros de una unidad militar. En el combate, los hoplitas suelen trabajar en grupo y utilizar tácticas coordinadas para conseguir victorias.",
-						"Las tres tablas de nombres de unidades hoplitas presentan los tipos de títulos utilizados por los contingentes hoplitas procedentes de las grandes polis de Theros. Considera la posibilidad de utilizar estos nombres para las fuerzas militares que los personajes encuentran durante sus aventuras o de las que formaron parte en su día.",
-						{
-							"type": "table",
-							"caption": "Akroan Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Lanza de Iroas"
-								],
-								[
-									"2",
-									"Colmillos de hierro"
-								],
-								[
-									"3",
-									"Flechas de Anax"
-								],
-								[
-									"4",
-									"Lo intacto"
-								],
-								[
-									"5",
-									"Yunque de Purphoros"
-								],
-								[
-									"6",
-									"Escuadra de pinchos"
-								],
-								[
-									"7",
-									"Escudo de Akros"
-								],
-								[
-									"8",
-									"Corazón de Cymede"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Los hoplitas akroanos, también llamados estratianos, se cuentan entre los soldados más feroces de Theros. Se entrenan sin descanso y poseen una resolución inquebrantable. En los anales de Akros, abundan las historias de escuadrones de estratianos que defendieron un lugar clave contra una fuerza mucho mayor o que se arrastraron tras las líneas enemigas y causaron estragos en el ejército contrario."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Alseid",
@@ -477,6 +446,162 @@
 			]
 		},
 		{
+			"name": "Hoplite",
+			"source": "MOT",
+			"entries": [
+				"Los hoplitas son guerreros altamente entrenados, versados no sólo en estrategia y táctica, sino en la glorificación del espíritu guerrero, base de un ethos que forja un vínculo inquebrantable entre los miembros de una unidad militar. En el combate, los hoplitas suelen trabajar en grupo y utilizar tácticas coordinadas para conseguir victorias.",
+				"Las tres tablas de nombres de unidades hoplitas presentan los tipos de títulos utilizados por los contingentes hoplitas procedentes de las grandes polis de Theros. Considera la posibilidad de utilizar estos nombres para las fuerzas militares que los personajes encuentran durante sus aventuras o de las que formaron parte en su día.",
+				{
+					"type": "table",
+					"caption": "Akroan Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Lanza de Iroas"
+						],
+						[
+							"2",
+							"Colmillos de hierro"
+						],
+						[
+							"3",
+							"Flechas de Anax"
+						],
+						[
+							"4",
+							"Lo intacto"
+						],
+						[
+							"5",
+							"Yunque de Purphoros"
+						],
+						[
+							"6",
+							"Escuadra de pinchos"
+						],
+						[
+							"7",
+							"Escudo de Akros"
+						],
+						[
+							"8",
+							"Corazón de Cymede"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Meletian Hoplite Unit Names",
+					"colLabels": [
+						"D8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Garra del Kraken"
+						],
+						[
+							"2",
+							"Manos de la Justicia"
+						],
+						[
+							"3",
+							"Lanza de Thassa"
+						],
+						[
+							"4",
+							"Escudo de Ephara"
+						],
+						[
+							"5",
+							"Los amigos de las profundidades"
+						],
+						[
+							"6",
+							"Jinetes de Heliodoro"
+						],
+						[
+							"7",
+							"Guardianes de Pyrgnos"
+						],
+						[
+							"8",
+							"El Cielorraso"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Setessan Hoplite Unit Names",
+					"colLabels": [
+						"d8",
+						"Name"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Flechas de Nylea"
+						],
+						[
+							"2",
+							"Los vigilantes"
+						],
+						[
+							"3",
+							"Colmillos de Ophis"
+						],
+						[
+							"4",
+							"Los Swiftswords"
+						],
+						[
+							"5",
+							"Lobos de Karametra"
+						],
+						[
+							"6",
+							"Defensores de la Arboleda"
+						],
+						[
+							"7",
+							"Cuchillas de bronce"
+						],
+						[
+							"8",
+							"Los chacales"
+						]
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Hoplite.webp"
+					},
+					"credit": "Raymond Swanland"
+				}
+			]
+		},
+		{
 			"name": "Hundred-Handed One",
 			"source": "MOT",
 			"entries": [
@@ -620,62 +745,26 @@
 		{
 			"name": "Meletian Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Los hoplitas de Meletis utilizan una combinación de astucia, fe y magia para defender su hogar costero. La mayoría de estos hábiles soldados sirven en el Ejército Reverente, los defensores de Meletis, que utiliza una serie de estrategias probadas y formaciones de tropas flexibles para obtener ventaja sobre los enemigos. Reforzados por corceles grifones y pegasos entrenados, atacan a los enemigos donde menos lo esperan.",
-						"Los hoplitas son guerreros altamente entrenados, versados no sólo en estrategia y táctica, sino en la glorificación del espíritu guerrero, base de un ethos que forja un vínculo inquebrantable entre los miembros de una unidad militar. En el combate, los hoplitas suelen trabajar en grupo y utilizar tácticas coordinadas para conseguir victorias.",
-						"Las tres tablas de nombres de unidades hoplitas presentan los tipos de títulos utilizados por los contingentes hoplitas procedentes de las grandes polis de Theros. Considera la posibilidad de utilizar estos nombres para las fuerzas militares que los personajes encuentran durante sus aventuras o de las que formaron parte en su día.",
-						{
-							"type": "table",
-							"caption": "Meletian Hoplite Unit Names",
-							"colLabels": [
-								"D8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Garra del Kraken"
-								],
-								[
-									"2",
-									"Manos de la Justicia"
-								],
-								[
-									"3",
-									"Lanza de Thassa"
-								],
-								[
-									"4",
-									"Escudo de Ephara"
-								],
-								[
-									"5",
-									"Los amigos de las profundidades"
-								],
-								[
-									"6",
-									"Jinetes de Heliodoro"
-								],
-								[
-									"7",
-									"Guardianes de Pyrgnos"
-								],
-								[
-									"8",
-									"El Cielorraso"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Los hoplitas de Meletis utilizan una combinación de astucia, fe y magia para defender su hogar costero. La mayoría de estos hábiles soldados sirven en el Ejército Reverente, los defensores de Meletis, que utiliza una serie de estrategias probadas y formaciones de tropas flexibles para obtener ventaja sobre los enemigos. Reforzados por corceles grifones y pegasos entrenados, atacan a los enemigos donde menos lo esperan."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Naiad",
@@ -893,60 +982,118 @@
 			]
 		},
 		{
-			"name": "Returned Drifter",
+			"name": "Returned",
 			"source": "MOT",
 			"entries": [
+				"Los retornados han escapado del Inframundo y habitan de nuevo entre los vivos, pero sus segundas vidas rara vez son lo que esperaban, aunque no recuerdan qué era lo que esperaban. Como resultado de haber seguido el Camino de Phenax (véase el capítulo 4), los Retornados pierden sus identidades, que se manifiestan como seres separados conocidos como eidolones. La experiencia de escapar del Inframundo también les hace perder sus rostros, que se convierten en superficies inexpresivas con cuencas oculares vacías y bocas abiertas. Estas superficies vacías se cubren con unas máscaras doradas distintivas.",
+				"Los retornados vuelven a entrar en el mundo en blanco y no muertos. Al no poseer ya la capacidad de formar recuerdos a largo plazo, generalmente no pueden entablar relaciones significativas ni establecer nuevas vidas. En cambio, la mayoría experimenta emociones fugaces y sigue rutinas huecas, sus existencias se reducen a juegos de sombras sin peso ni sustancia."
+			],
+			"images": [
 				{
-					"type": "entries",
-					"entries": [
-						"Muchos Retornados son almas lamentables que lograron escapar del Inframundo sólo para encontrarse despojados de las pasiones que motivaron su huida. Carentes de propósito y rechazados por los vivos, estos Retornados suelen buscar lugares donde se les deje en paz, como tumbas solitarias o las necrópolis de Asfódelo y Odunos. Allí realizan parodias de la vida a medias, impedidos por la distracción y el hastío. A pesar de ello, incluso los Retornados más lánguidos se defienden si se ven amenazados y pueden ser presionados al servicio de sus hermanos más voluntariosos.",
-						"Los retornados han escapado del Inframundo y habitan de nuevo entre los vivos, pero sus segundas vidas rara vez son lo que esperaban, aunque no recuerdan qué era lo que esperaban. Como resultado de haber seguido el Camino de Phenax (véase el capítulo 4), los Retornados pierden sus identidades, que se manifiestan como seres separados conocidos como eidolones. La experiencia de escapar del Inframundo también les hace perder sus rostros, que se convierten en superficies inexpresivas con cuencas oculares vacías y bocas abiertas. Estas superficies vacías se cubren con unas máscaras doradas distintivas.",
-						"Los retornados vuelven a entrar en el mundo en blanco y no muertos. Al no poseer ya la capacidad de formar recuerdos a largo plazo, generalmente no pueden entablar relaciones significativas ni establecer nuevas vidas. En cambio, la mayoría experimenta emociones fugaces y sigue rutinas huecas, sus existencias se reducen a juegos de sombras sin peso ni sustancia."
-					]
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MOT/Returned.webp"
+					},
+					"credit": "Emrah Elmasli"
 				}
 			]
+		},
+		{
+			"name": "Returned Drifter",
+			"source": "MOT",
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Muchos Retornados son almas lamentables que lograron escapar del Inframundo sólo para encontrarse despojados de las pasiones que motivaron su huida. Carentes de propósito y rechazados por los vivos, estos Retornados suelen buscar lugares donde se les deje en paz, como tumbas solitarias o las necrópolis de Asfódelo y Odunos. Allí realizan parodias de la vida a medias, impedidos por la distracción y el hastío. A pesar de ello, incluso los Retornados más lánguidos se defienden si se ven amenazados y pueden ser presionados al servicio de sus hermanos más voluntariosos."
+									]
+								}
+							]
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Returned Kakomantis",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Aunque los muertos suelen recordar poco de sus vidas, algunos tienen una obsesión por la magia que sobrevive tanto a la muerte como al renacimiento como retornados. Estos retornados, denominados kakomanteis, utilizan su destreza mágica para controlar la energía que inunda el Inframundo.",
-						"Los retornados han escapado del Inframundo y habitan de nuevo entre los vivos, pero sus segundas vidas rara vez son lo que esperaban, aunque no recuerdan qué era lo que esperaban. Como resultado de haber seguido el Camino de Phenax (véase el capítulo 4), los Retornados pierden sus identidades, que se manifiestan como seres separados conocidos como eidolones. La experiencia de escapar del Inframundo también les hace perder sus rostros, que se convierten en superficies inexpresivas con cuencas oculares vacías y bocas abiertas. Estas superficies vacías se cubren con unas máscaras doradas distintivas.",
-						"Los retornados vuelven a entrar en el mundo en blanco y no muertos. Al no poseer ya la capacidad de formar recuerdos a largo plazo, generalmente no pueden entablar relaciones significativas ni establecer nuevas vidas. En cambio, la mayoría experimenta emociones fugaces y sigue rutinas huecas, sus existencias se reducen a juegos de sombras sin peso ni sustancia."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Aunque los muertos suelen recordar poco de sus vidas, algunos tienen una obsesión por la magia que sobrevive tanto a la muerte como al renacimiento como retornados. Estos retornados, denominados kakomanteis, utilizan su destreza mágica para controlar la energía que inunda el Inframundo."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Palamnite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"Ni siquiera la muerte y la pérdida de sus identidades pueden borrar la rabia que inspira a los palamnitas retornados. Estos retornados llevaron vidas violentas, existencias llenas de tanto dolor y odio que la violencia ahora impregna sus cuerpos inmortales. Esto los hace excepcionalmente peligrosos para los vivos, ya que estos asesinos sin rumbo sólo conocen el sufrimiento y tratan de propagarlo siempre que se presenta la oportunidad. Mientras que los palamnitas pueden vagar por el mundo como peligrosos asesinos solitarios, muchos gravitan en Odunos, donde sirven a la viciosa voluntad de Tymaret, el Rey Asesino (véase el capítulo 3).",
-						"Los retornados han escapado del Inframundo y habitan de nuevo entre los vivos, pero sus segundas vidas rara vez son lo que esperaban, aunque no recuerdan qué era lo que esperaban. Como resultado de haber seguido el Camino de Phenax (véase el capítulo 4), los Retornados pierden sus identidades, que se manifiestan como seres separados conocidos como eidolones. La experiencia de escapar del Inframundo también les hace perder sus rostros, que se convierten en superficies inexpresivas con cuencas oculares vacías y bocas abiertas. Estas superficies vacías se cubren con unas máscaras doradas distintivas.",
-						"Los retornados vuelven a entrar en el mundo en blanco y no muertos. Al no poseer ya la capacidad de formar recuerdos a largo plazo, generalmente no pueden entablar relaciones significativas ni establecer nuevas vidas. En cambio, la mayoría experimenta emociones fugaces y sigue rutinas huecas, sus existencias se reducen a juegos de sombras sin peso ni sustancia."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Ni siquiera la muerte y la pérdida de sus identidades pueden borrar la rabia que inspira a los palamnitas retornados. Estos retornados llevaron vidas violentas, existencias llenas de tanto dolor y odio que la violencia ahora impregna sus cuerpos inmortales. Esto los hace excepcionalmente peligrosos para los vivos, ya que estos asesinos sin rumbo sólo conocen el sufrimiento y tratan de propagarlo siempre que se presenta la oportunidad. Mientras que los palamnitas pueden vagar por el mundo como peligrosos asesinos solitarios, muchos gravitan en Odunos, donde sirven a la viciosa voluntad de Tymaret, el Rey Asesino (véase el capítulo 3)."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Returned Sentry",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"La mayoría de los retornados nuevos o sin propósito son fácilmente manipulados para que sirvan a sus hermanos más fuertes. Cuando se les impone un propósito, estos retornados realizan tareas sencillas y sin arte con una eficiencia media. Su única virtud es su incansabilidad, que los convierte en guardianes excepcionales. En las necrópolis, muchos retornados trabajan como centinelas, aunque también pueden ser mensajeros o trabajadores. Si se ven amenazados, los grupos de estos retornados trabajan bien juntos, compartiendo los objetivos unificados de vencer a sus enemigos y volver a la tarea que tienen entre manos.",
-						"Los retornados han escapado del Inframundo y habitan de nuevo entre los vivos, pero sus segundas vidas rara vez son lo que esperaban, aunque no recuerdan qué era lo que esperaban. Como resultado de haber seguido el Camino de Phenax (véase el capítulo 4), los Retornados pierden sus identidades, que se manifiestan como seres separados conocidos como eidolones. La experiencia de escapar del Inframundo también les hace perder sus rostros, que se convierten en superficies inexpresivas con cuencas oculares vacías y bocas abiertas. Estas superficies vacías se cubren con unas máscaras doradas distintivas.",
-						"Los retornados vuelven a entrar en el mundo en blanco y no muertos. Al no poseer ya la capacidad de formar recuerdos a largo plazo, generalmente no pueden entablar relaciones significativas ni establecer nuevas vidas. En cambio, la mayoría experimenta emociones fugaces y sigue rutinas huecas, sus existencias se reducen a juegos de sombras sin peso ni sustancia."
-					]
+			"_copy": {
+				"name": "Returned",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"La mayoría de los retornados nuevos o sin propósito son fácilmente manipulados para que sirvan a sus hermanos más fuertes. Cuando se les impone un propósito, estos retornados realizan tareas sencillas y sin arte con una eficiencia media. Su única virtud es su incansabilidad, que los convierte en guardianes excepcionales. En las necrópolis, muchos retornados trabajan como centinelas, aunque también pueden ser mensajeros o trabajadores. Si se ven amenazados, los grupos de estos retornados trabajan bien juntos, compartiendo los objetivos unificados de vencer a sus enemigos y volver a la tarea que tienen entre manos."
+									]
+								}
+							]
+						}
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Satyr Reveler",
@@ -995,62 +1142,26 @@
 		{
 			"name": "Setessan Hoplite",
 			"source": "MOT",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"La mayoría de los hoplitas de Setessan comienzan su entrenamiento como cazadores, lo que los convierte en hábiles para atravesar los bosques y adeptos a las tácticas de guerrilla y al tiro con arco. Sus estrategias suelen emular a los sirvientes favoritos de Nylea, especialmente a las bestias salvajes como los lobos y los linces. Normalmente, unos pocos soldados acosan al enemigo mientras el resto aprovecha la distracción del mismo.",
-						"Los hoplitas son guerreros altamente entrenados, versados no sólo en estrategia y táctica, sino en la glorificación del espíritu guerrero, base de un ethos que forja un vínculo inquebrantable entre los miembros de una unidad militar. En el combate, los hoplitas suelen trabajar en grupo y utilizar tácticas coordinadas para conseguir victorias.",
-						"Las tres tablas de nombres de unidades hoplitas presentan los tipos de títulos utilizados por los contingentes hoplitas procedentes de las grandes polis de Theros. Considera la posibilidad de utilizar estos nombres para las fuerzas militares que los personajes encuentran durante sus aventuras o de las que formaron parte en su día.",
-						{
-							"type": "table",
-							"caption": "Setessan Hoplite Unit Names",
-							"colLabels": [
-								"d8",
-								"Name"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"Flechas de Nylea"
-								],
-								[
-									"2",
-									"Los vigilantes"
-								],
-								[
-									"3",
-									"Colmillos de Ophis"
-								],
-								[
-									"4",
-									"Los Swiftswords"
-								],
-								[
-									"5",
-									"Lobos de Karametra"
-								],
-								[
-									"6",
-									"Defensores de la Arboleda"
-								],
-								[
-									"7",
-									"Cuchillas de bronce"
-								],
-								[
-									"8",
-									"Los chacales"
-								]
+			"_copy": {
+				"name": "Hoplite",
+				"source": "MOT",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"La mayoría de los hoplitas de Setessan comienzan su entrenamiento como cazadores, lo que los convierte en hábiles para atravesar los bosques y adeptos a las tácticas de guerrilla y al tiro con arco. Sus estrategias suelen emular a los sirvientes favoritos de Nylea, especialmente a las bestias salvajes como los lobos y los linces. Normalmente, unos pocos soldados acosan al enemigo mientras el resto aprovecha la distracción del mismo."
+									]
+								}
 							]
 						}
-					]
+					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Theran Chimera",
