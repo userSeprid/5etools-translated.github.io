@@ -2442,7 +2442,7 @@
 					"type": "list",
 					"items": [
 						"该地区居住着大量的蛇类。",
-						"巢穴1英里内的树木是（%0%）木头。在巢穴500英尺内停留1天的植物会变成石头。",
+						"Trees within 1 mile of the lair are petrified wood. Plants that stay within 500 feet of the lair for 1 day turn to stone.",
 						"巢穴周围1英里内的小水体会变成有毒的。喝了这些水的生物必须成功地进行宪法规定的投掷，否则就会在8小时内变成（1%）。受影响的生物可以在每小时结束时重复这个蓄力动作。"
 					]
 				}
@@ -3954,6 +3954,30 @@
 					]
 				},
 				"If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in {@dice 1d10} days."
+			]
+		},
+		{
+			"name": "Solar Dragon",
+			"source": "BAM",
+			"page": 50,
+			"regionalEffects": [
+				"A solar dragon customarily lairs in a star's radiant core or nests in a gigantic, hollowed-out rock engulfed by the star's blinding radiance. A star in which a solar dragon makes its lair has the following effects on creatures:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Blinding Radiance.",
+							"entry": "A creature that is within 10 miles of the star or inside it is blinded by its intense light unless the creature has protective gear to shield its eyes, such as goggles of night or a similar form of eyewear."
+						},
+						{
+							"type": "item",
+							"name": "Stellar Incineration.",
+							"entry": "Any creature that enters the star or starts its turn inside it takes 132 ({@dice 24d10}) radiant damage."
+						}
+					]
+				}
 			]
 		},
 		{
