@@ -383,6 +383,7 @@
 		{
 			"name": "+2 Ring of Protection",
 			"source": "TDCSR",
+			"page": 263,
 			"_copy": {
 				"name": "Ring of Protection",
 				"source": "DMG",
@@ -6032,6 +6033,18 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Bracers of Celerity",
+			"source": "PaBTSO",
+			"page": 217,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This pair of lightweight bronze bracers is lined with soft, purple velvet and engraved with swirling designs.",
+				"While you're wearing these bracers, all your speeds increase by 10 feet, and you have advantage on saving throws you make to avoid or end the paralyzed or restrained condition on yourself."
+			]
+		},
+		{
 			"name": "Bracers of Defense",
 			"source": "DMG",
 			"page": 156,
@@ -6819,6 +6832,30 @@
 			],
 			"lootTables": [
 				"Magic Item Table B"
+			]
+		},
+		{
+			"name": "Cape of Enlargement",
+			"source": "PaBTSO",
+			"page": 217,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"Ancient runes are stitched in silver thread along the hem of this grayish-purple cape.",
+				"The cape has 3 charges. As a bonus action while wearing the cape, you can expend 1 of its charges to enlarge yourself, granting yourself the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your size increases by one category—from Medium to Large, for example. If there isn't enough room for your size to increase by one category, you instead become the maximum possible size in the space available.",
+						"Du har fördel på styrkekontroller och räddningsprov med styrka.",
+						"When you hit with an attack roll using a weapon or an unarmed strike, you can add your proficiency bonus to the attack's damage."
+					]
+				},
+				"These benefits last for 10 minutes or until you use another bonus action to dismiss them. The cape regains {@dice 1d3} expended charges daily at dawn."
 			]
 		},
 		{
@@ -12110,6 +12147,9 @@
 			"name": "Dragonguard",
 			"source": "LMoP",
 			"page": 48,
+			"reprintedAs": [
+				"Dragonguard|PaBTSO"
+			],
 			"type": "MA",
 			"rarity": "rare",
 			"weight": 20,
@@ -12118,6 +12158,22 @@
 			"entries": [
 				"Du har en +1 bonus på AC när du bär den här rustningen.",
 				"Denna +1 bröstplatta har ett drakmotiv i guld som är inarbetat i designen. Det skapades för en mänsklig hjälte i Neverwinter vid namn Tergon och ger sin bärare fördel på räddningskast mot andningsvapen från varelser av draktyp."
+			]
+		},
+		{
+			"name": "Dragonguard",
+			"source": "PaBTSO",
+			"page": 72,
+			"baseItem": "breastplate|PHB",
+			"type": "MA",
+			"rarity": "rare",
+			"weight": 20,
+			"ac": 14,
+			"bonusAc": "+1",
+			"entries": [
+				"Du har en +1 bonus på AC när du bär den här rustningen.",
+				"This breastplate has a gold dragon motif worked into its design. Created for a human hero of old Neverwinter named Tergon, it grants its wearer advantage on saving throws against the breath weapons of Dragons.",
+				"This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
 			]
 		},
 		{
@@ -15148,6 +15204,28 @@
 			]
 		},
 		{
+			"name": "Flayer Slayer",
+			"source": "PaBTSO",
+			"page": 217,
+			"baseItem": "greataxe|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"entries": [
+				"Carvings of decapitated mind flayers adorn this greataxe's metal blade. You gain a +1 bonus to attack and damage rolls made with this greataxe.",
+				"An Aberration hit with this greataxe takes an extra {@damage 1d12} slashing damage. If the Aberration is currently grappling a creature, the Aberration must succeed on a DC 15 Strength saving throw or release each creature it is grappling."
+			]
+		},
+		{
 			"name": "Flensing Claws (Huge)",
 			"source": "VGM",
 			"page": 81,
@@ -18019,6 +18097,9 @@
 			"name": "Hew",
 			"source": "LMoP",
 			"page": 33,
+			"reprintedAs": [
+				"Hew|PaBTSO"
+			],
 			"baseItem": "battleaxe|phb",
 			"type": "M",
 			"rarity": "unknown (magic)",
@@ -18033,6 +18114,27 @@
 			"bonusWeapon": "+1",
 			"entries": [
 				"Den här +1 stridsyxan ger maximal skada när han eller hon träffar en växtvarelse eller ett föremål av trä. Yxans skapare var en dvärgsmid som slogs med dryaderna i en skog där han högg ved. Den som bär yxan känner sig orolig när han eller hon reser genom en skog."
+			]
+		},
+		{
+			"name": "Hew",
+			"source": "PaBTSO",
+			"page": 54,
+			"baseItem": "battleaxe|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 4,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"Du har en +1 bonus på attacker och skador med det här magiska vapnet.",
+				"Hew is a +1 battleaxe that deals maximum damage when the wielder attacks a Plant creature or an object made of wood. The axe's creator used it for protection in the forest while he cut firewood."
 			]
 		},
 		{
@@ -22469,6 +22571,9 @@
 			"name": "Lightbringer",
 			"source": "LMoP",
 			"page": 48,
+			"reprintedAs": [
+				"Lightbringer|PaBTSO"
+			],
 			"baseItem": "mace|phb",
 			"type": "M",
 			"rarity": "uncommon",
@@ -22479,6 +22584,23 @@
 			"bonusWeapon": "+1",
 			"entries": [
 				"Den här +1 stridsklubben gjordes för en präst av Lathander, gryningsguden. Huvudet på stridsklubben är formad som en solbränna och tillverkad av solid mässing. Med namnet Lightbringer lyser det här vapnet lika starkt som en {@item torch|phb} när dess bärare beordrar det. Medan den lyser ger klubban extra {@damage 1d6} strålningsskada till odöda varelser."
+			]
+		},
+		{
+			"name": "Lightbringer",
+			"source": "PaBTSO",
+			"page": 72,
+			"baseItem": "mace|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 4,
+			"weaponCategory": "simple",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"bonusWeapon": "+1",
+			"entries": [
+				"Du har en +1 bonus på attacker och skador med det här magiska vapnet.",
+				"This weapon, known as Lightbringer, was made for a cleric of Lathander, the god of dawn. The head of the mace is shaped like a sunburst and is made of solid brass. The mace glows as bright as a torch when its wielder commands. While glowing, the mace deals an extra {@damage 1d6} radiant damage to Undead creatures."
 			]
 		},
 		{
@@ -23146,6 +23268,28 @@
 				"dancing lights",
 				"sunbeam"
 			]
+		},
+		{
+			"name": "Luminous War Pick",
+			"source": "PaBTSO",
+			"page": 217,
+			"baseItem": "war pick|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 2,
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"entries": [
+				"The haft of this war pick is inlaid with crushed pearlescent stones that imbue the weapon with a faint luminescence. You gain a +1 bonus to attack and damage rolls made with this war pick.",
+				"While wielding the war pick, you can use a bonus action to cast the {@spell daylight} spell, choosing a point on the war pick. Once you use this bonus action, it can't be used again until the next dawn."
+			],
+			"attachedSpells": [
+				"daylight"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Lute",
@@ -24300,6 +24444,139 @@
 			]
 		},
 		{
+			"name": "Mind Crystal (Careful)",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This gemstone contains a crystallized bit of spellcasting magic.",
+				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				{
+					"type": "entries",
+					"name": "Modify Spell",
+					"entries": [
+						"Choose up to three creatures affected by the spell. The chosen creatures automatically succeed on their saving throws against the spell."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mind Crystal (Distant)",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This gemstone contains a crystallized bit of spellcasting magic.",
+				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				{
+					"type": "entries",
+					"name": "Modify Spell",
+					"entries": [
+						"If the spell has a range of 5 feet or more and doesn't have a range of self, the spell's range increases by 100 feet. If the spell has a range of touch, its range becomes 30 feet."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mind Crystal (Empowered)",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This gemstone contains a crystallized bit of spellcasting magic.",
+				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				{
+					"type": "entries",
+					"name": "Modify Spell",
+					"entries": [
+						"When you roll damage for the spell, you can reroll up to three damage dice. You must use the new rolls."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mind Crystal (Extended)",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This gemstone contains a crystallized bit of spellcasting magic.",
+				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				{
+					"type": "entries",
+					"name": "Modify Spell",
+					"entries": [
+						"If the spell has a duration of 1 minute or longer, double the spell's duration, to a maximum duration of 24 hours."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mind Crystal (Heightened)",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This gemstone contains a crystallized bit of spellcasting magic.",
+				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				{
+					"type": "entries",
+					"name": "Modify Spell",
+					"entries": [
+						"Choose one creature affected by the spell. That creature has disadvantage on the first saving throw it makes against the spell."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mind Crystal (Quickened)",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This gemstone contains a crystallized bit of spellcasting magic.",
+				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				{
+					"type": "entries",
+					"name": "Modify Spell",
+					"entries": [
+						"You change the spell's casting time to 1 bonus action for this casting."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mind Crystal (Subtle)",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This gemstone contains a crystallized bit of spellcasting magic.",
+				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				{
+					"type": "entries",
+					"name": "Modify Spell",
+					"entries": [
+						"You cast the spell without any somatic or verbal components for this casting."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Mind Flayer Skull",
 			"source": "WDMM",
 			"page": 197,
@@ -24326,6 +24603,34 @@
 			"entries": [
 				"I händerna på en varelse som inte är en {@creature mind flayer} fungerar en mind lash som en vanlig piska. I händerna på en illithid, tar det här magiska vapnet bort en varelses vilja att överleva som det också tar bort köttet, och ger en extra {@damage 2d4} psykisk skada till varje mål det träffar. Varje varelse som tar psykisk skada av sinnespiskan måste också lyckas med ett DC 15 Visdomsbesparingskast eller ha nackdel på intelligens-, visdoms- och karismabesparingskast i 1 minut. Varelsen kan upprepa räddningskastet i slutet av var och en av sina turer, och avslutar effekten på sig själv om den lyckas."
 			]
+		},
+		{
+			"name": "Mindblasting Cap",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This soft, violet cap bears stitching in the pattern of folds on a brain.",
+				"As a bonus action while wearing the cap, you can project psychic energy in a 60-foot cone. Each creature in that area must make a DC 15 Intelligence saving throw. On a failed save, a creature takes {@damage 5d8} psychic damage and has the stunned condition for 1 minute. On a successful save, the creature takes half as much damage only. At the end of each of its turns, a stunned creature can repeat the saving throw, ending the stunned condition on itself on a success.",
+				"Once this bonus action is used, it can't be used again until the next dawn."
+			]
+		},
+		{
+			"name": "Mindguard Crown",
+			"source": "PaBTSO",
+			"page": 218,
+			"resist": [
+				"psychic"
+			],
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While you wear this adamantine crown, you have advantage on Intelligence, Wisdom, and Charisma saving throws, and you have resistance to psychic damage."
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Miner's Pick",
@@ -24939,6 +25244,21 @@
 			"entries": [
 				"En genomskinlig rosa eller gulvit med mossiga grå eller gröna markeringar."
 			]
+		},
+		{
+			"name": "Mudslick Tower",
+			"source": "PaBTSO",
+			"page": 219,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"You can use an action to place this 1-inch-diameter granite sphere on the ground and speak its command word, which is \"petrification\" in Terran. The sphere rapidly grows into a stout tower that remains until you use an action to touch the tower and speak the command word again, whereupon the tower shrinks back to a 1-inch-diameter granite sphere. The tower must be empty to shrink in this way. The tower bristles with muddy knobs that constantly extrude and retract across its surface, as though the tower were breathing through a coating of thick mud.",
+				"Each creature in the area where the tower appears must make a DC 15 Dexterity saving throw, taking {@damage 10d10} bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the tower. Objects in the area that aren't being worn or carried take this damage and are pushed automatically.",
+				"Whenever it expands, the mudslick tower merges with any natural stone it touches, awkwardly tipping and wedging itself to touch as much natural stone as it can.",
+				"The tower is 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the {@spell knock} spell and similar magic, such as that of a chime of opening.",
+				"Although it looks like stone, the tower is made of adamantine, and its magic prevents creatures from tipping it over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. While merged with natural stone, the mudslick tower has immunity to all damage. Only a {@spell wish} spell can repair the tower (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of {@spell wish} causes the roof, the door, or one wall to regain 50 hit points."
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Mule",
@@ -25577,6 +25897,20 @@
 					]
 				},
 				"När du får rullens fördelar dyker en {@creature stone golem} magiskt upp i ett obebott utrymme inom 60 fot från dig och agerar som din allierade. Om du dör förvandlas golemmen till stoft."
+			]
+		},
+		{
+			"name": "Netherese Ring of Protection",
+			"source": "PaBTSO",
+			"page": 50,
+			"type": "RG",
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusAc": "+1",
+			"bonusSavingThrow": "+4",
+			"entries": [
+				"Du får en +1 bonus på AC och räddningskast när du bär den här ringen.",
+				"The ring is made from a single piece of mystical green glass that's stronger than steel. It has the added property of making the wearer less likely to drop or lose anything held in the hand the ring is on. The wearer receives a +4 bonus to saving throws or checks made to avoid dropping or being disarmed of any item held in that hand."
 			]
 		},
 		{
@@ -28853,6 +29187,17 @@
 			]
 		},
 		{
+			"name": "Potion of Psionic Fortitude",
+			"source": "PaBTSO",
+			"page": 219,
+			"type": "P",
+			"rarity": "uncommon",
+			"entries": [
+				"When you drink this potion, you have advantage for 1 hour on saving throws you make to avoid or end the charmed or stunned condition on yourself.",
+				"This black potion swirls with shimmering flecks of pink and purple."
+			]
+		},
+		{
 			"name": "Potion of Psychic Resistance",
 			"source": "DMG",
 			"page": 188,
@@ -31224,6 +31569,21 @@
 			"entries": [
 				"Om du dör när du bär den här grå kristallringen försvinner du och dyker upp igen i ett obebott utrymme inom 5 fot från det utrymme du lämnade (eller det närmaste obebodda utrymmet). Du har ett antal träffpunkter som är lika med {@dice 3d6} + din konstitutionsmodifierare. Om ditt maximum av träffpoäng är lägre än det antal träffpoäng du återfår, ökar ditt maximum av träffpoäng till ett liknande antal. Om du har några nivåer av {@condition exhaustion}, minska din nivå av {@condition exhaustion} med 1. När ringen används förvandlas den till damm och förstörs."
 			]
+		},
+		{
+			"name": "Ring of the Orator",
+			"source": "PaBTSO",
+			"page": 219,
+			"type": "RG",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"This ring has 6 charges. While you wear it, you can expend 1 of its charges to project your voice to be heard clearly by all creatures within 1 mile of yourself, regardless of intervening noise, for 1 minute. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks this projection. If you project your voice while speaking a language the listening creatures don't understand, you can make the creatures understand what you're saying. You must be able to see the creatures to make them understand. The ring regains {@dice 1d6} expended charges daily at dawn."
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Ring of the Ram",
@@ -35740,6 +36100,9 @@
 			"name": "Spider Staff",
 			"source": "LMoP",
 			"page": 53,
+			"reprintedAs": [
+				"Spider Staff|PaBTSO"
+			],
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 6,
@@ -35758,6 +36121,58 @@
 				"Toppen på den här svarta staven av adamantin är formad som en spindel. Staven väger 6 pund. Du måste vara inställd på staven för att få dess fördelar och kasta dess trollformler. Staven kan hanteras som en kvartsstav. Den ger {@dice 1d6} extra giftskada vid en träff när den används för att göra en vapenattack.",
 				"Staven har 10 laddningar, som används för att ge bränsle till trollformlerna i den. Med staven i handen kan du använda din handling för att kasta en av följande trollformler från staven om trollformeln finns på din klass' trollformellista: {@spell spider climb} (1 laddning) eller {@spell web} (2 laddningar, trollformelräddning DC 15). Inga komponenter krävs.",
 				"Staven återfår {@dice 1d6 + 4} förbrukade laddningar varje dag i skymningen. Om du förbrukar stavens sista laddning, kasta en {@dice d20}. Vid en 1 faller staven sönder till stoft och förstörs."
+			],
+			"attachedSpells": [
+				"spider climb",
+				"web"
+			]
+		},
+		{
+			"name": "Spider Staff",
+			"source": "PaBTSO",
+			"page": 220,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "by a bard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				},
+				{
+					"class": "bard"
+				},
+				{
+					"class": "sorcerer"
+				},
+				{
+					"class": "warlock"
+				},
+				{
+					"class": "wizard"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"recharge": "dusk",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"The top of this magic quarterstaff is shaped like a spider. It deals an extra {@damage 1d6} poison damage on a hit when used to make a weapon attack.",
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"The staff has 10 charges. While holding it, you can expend the requisite number of charges to cast one of the following spells from the staff: {@spell spider climb} (1 charge) or {@spell web} (2 charges; spell save DC 15).",
+						"The staff regains {@dice 1d6 + 4} expended charges daily at dusk. If you expend the staff's last charge, roll a {@dice d20}. On a 1, the staff crumbles to dust and is destroyed."
+					]
+				}
 			],
 			"attachedSpells": [
 				"spider climb",
@@ -36102,6 +36517,9 @@
 			"name": "Staff of Defense",
 			"source": "LMoP",
 			"page": 53,
+			"reprintedAs": [
+				"Staff of Defense|PaBTSO"
+			],
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 3,
@@ -36122,6 +36540,56 @@
 				"När du håller i staven har du en +1 bonus på din rustningsklass.",
 				"Staven har 10 laddningar, som används för att ge bränsle till trollformlerna i den. Med staven i handen kan du använda din handling för att kasta en av följande trollformler från staven om trollformeln finns på din klass' trollformellista: {@spell mage armor} (1 laddning) eller {@spell shield} (2 laddningar). Inga komponenter krävs.",
 				"Personalen får tillbaka {@dice 1d6 + 4} av sina förbrukade laddningar varje dag i gryningen. Om du förbrukar stavens sista laddning, kasta en {@dice d20}. Vid en 1 splittras staven och förstörs."
+			],
+			"attachedSpells": [
+				"mage armor",
+				"shield"
+			]
+		},
+		{
+			"name": "Staff of Defense",
+			"source": "PaBTSO",
+			"page": 220,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "by a bard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				},
+				{
+					"class": "sorcerer"
+				},
+				{
+					"class": "warlock"
+				},
+				{
+					"class": "wizard"
+				}
+			],
+			"weight": 3,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusAc": "+1",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"This slender, hollow staff is made of glass yet is as strong as oak. It weighs 3 pounds. While holding the staff, you have a +1 bonus to your Armor Class.",
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"The staff has 10 charges. While holding it, you can expend the requisite number of charges to cast one of the following spells from the staff: {@spell mage armor} (1 charge) or {@spell shield} (2 charges).",
+						"The staff regains {@dice 1d6 + 4} expended charges daily at dawn. If you expend the staff's last charge, roll a {@dice d20}. On a 1, the staff shatters and is destroyed."
+					]
+				}
 			],
 			"attachedSpells": [
 				"mage armor",
@@ -37234,6 +37702,19 @@
 			"value": 100000,
 			"entries": [
 				"En genomskinlig blå safir med vit stjärnformad ädelsten i mitten."
+			]
+		},
+		{
+			"name": "Statuette of Augury",
+			"source": "PaBTSO",
+			"page": 62,
+			"rarity": "unknown (magic)",
+			"wondrous": true,
+			"entries": [
+				"This gold statuette of an elf is worth 100 gp, and is imbued with divination magic. A non-evil creature grasping the statue can ask it a question and receive a telepathic response, as though the creature had cast {@spell augury}. Once a creature has asked its question and received a response, it can never activate the statuette again."
+			],
+			"attachedSpells": [
+				"augury"
 			]
 		},
 		{
@@ -39990,9 +40471,6 @@
 				"daylight",
 				"light",
 				"divination",
-				"remove curse",
-				"lesser restoration",
-				"greater restoration",
 				"invisibility",
 				"teleport",
 				"haste",
@@ -46907,6 +47385,27 @@
 			],
 			"lootTables": [
 				"Magic Item Table H"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mind Crystal",
+			"source": "PaBTSO",
+			"page": 218,
+			"rarity": "varies",
+			"wondrous": true,
+			"entries": [
+				"These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.",
+				"When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp."
+			],
+			"items": [
+				"Mind Crystal (Careful)|PaBTSO",
+				"Mind Crystal (Distant)|PaBTSO",
+				"Mind Crystal (Empowered)|PaBTSO",
+				"Mind Crystal (Extended)|PaBTSO",
+				"Mind Crystal (Heightened)|PaBTSO",
+				"Mind Crystal (Quickened)|PaBTSO",
+				"Mind Crystal (Subtle)|PaBTSO"
 			],
 			"hasFluffImages": true
 		},

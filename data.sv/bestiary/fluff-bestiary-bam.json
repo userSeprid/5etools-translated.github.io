@@ -1,4 +1,9 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
 		{
 			"name": "Aartuk Elder",
@@ -108,45 +113,10 @@
 		{
 			"name": "Adult Solar Dragon",
 			"source": "BAM",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"En soldrake (även känd som en strålande drake eller en soldrake) föds i hjärtat av en stjärna. Den delar sin tid utanför sin lya mellan att patrullera sitt territorium och jaga efter mat. Draken har en ormformad kropp, ett par ventrala lemmar som slutar i långa fenor, nebulösa vingar som avger ljus och glänsande, mångfärgade fjäll. Den kan se tydligt även i bländande starkt ljus.",
-						"Soldrakar är förtjusta i skatter precis som alla andra drakar, men i det luftlösa tomrummet i Wildspace värdesätter de mat ännu mer. Solar drakar livnär sig vanligtvis på kindori, scavvers och andra former av vilda djur som lever i rymden. En soldrake kan missta ett avlägset stavningsstörande skepp för ett möjligt byte och komma inom räckhåll för skeppets vapen innan den inser sitt misstag och vänder bort. En klok eller erfaren kapten kommer inte att ta drakens närmande som ett tecken på fientlighet. Soldrakar som blir beskjutna har varit kända för att slå sönder de förargade fartygen.",
-						"Solvaraner är territoriella köttätare och beter sig därefter. En ung soldrake kan göra anspråk på ett asteroidbälte där det finns relativt mycket mat, medan en gammal soldrake kan betrakta ett helt Wildspace-system som sin jaktmark. De tenderar att ge ett stort avstånd till humanoida människor, som de finner våldsamma och tröttsamma. Inkräktare som upptäcks i en soldrakes lya kan räkna med att mötas av motstånd, följt av fientlighet, särskilt om lyan innehåller ägg.",
-						"Ett soldrakägg har ett obsidianskal, som är svartglänsande och ogenomskinligt. När ägget är nära att kläckas blir skalet genomskinligt, vilket gör att ljuset från den ofödda wyrmlingens vingar kan lysa igenom."
-					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "A Solar Dragon's Lair",
-							"entries": [
-								"En soldrake har vanligtvis sin boning i stjärnans strålande kärna eller i en gigantisk, urholkad sten som är uppslukad av stjärnans bländande strålning. En stjärna där en soldrake har sin lya har följande effekter på varelser:",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"type": "item",
-											"name": "Blinding Radiance.",
-											"entry": "En varelse som befinner sig inom 15 km från stjärnan eller inuti den förblindas av det intensiva ljuset om inte varelsen har skyddsutrustning för att skydda ögonen, t.ex. nattglasögon eller liknande."
-										},
-										{
-											"type": "item",
-											"name": "Stellar Incineration.",
-											"entry": "Alla varelser som går in i stjärnan eller börjar sin tur i den tar 132 ({@dice 24d10}) strålningsskador."
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
+			"_copy": {
+				"name": "Solar Dragon",
+				"source": "BAM"
+			}
 		},
 		{
 			"name": "Ancient Lunar Dragon",
@@ -187,54 +157,24 @@
 		{
 			"name": "Ancient Solar Dragon",
 			"source": "BAM",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"En soldrake (även känd som en strålande drake eller en soldrake) föds i hjärtat av en stjärna. Den delar sin tid utanför sin lya mellan att patrullera sitt territorium och jaga efter mat. Draken har en ormformad kropp, ett par ventrala lemmar som slutar i långa fenor, nebulösa vingar som avger ljus och glänsande, mångfärgade fjäll. Den kan se tydligt även i bländande starkt ljus.",
-						"Soldrakar är förtjusta i skatter precis som alla andra drakar, men i det luftlösa tomrummet i Wildspace värdesätter de mat ännu mer. Solar drakar livnär sig vanligtvis på kindori, scavvers och andra former av vilda djur som lever i rymden. En soldrake kan missta ett avlägset stavningsstörande skepp för ett möjligt byte och komma inom räckhåll för skeppets vapen innan den inser sitt misstag och vänder bort. En klok eller erfaren kapten kommer inte att ta drakens närmande som ett tecken på fientlighet. Soldrakar som blir beskjutna har varit kända för att slå sönder de förargade fartygen.",
-						"Solvaraner är territoriella köttätare och beter sig därefter. En ung soldrake kan göra anspråk på ett asteroidbälte där det finns relativt mycket mat, medan en gammal soldrake kan betrakta ett helt Wildspace-system som sin jaktmark. De tenderar att ge ett stort avstånd till humanoida människor, som de finner våldsamma och tröttsamma. Inkräktare som upptäcks i en soldrakes lya kan räkna med att mötas av motstånd, följt av fientlighet, särskilt om lyan innehåller ägg.",
-						"Ett soldrakägg har ett obsidianskal, som är svartglänsande och ogenomskinligt. När ägget är nära att kläckas blir skalet genomskinligt, vilket gör att ljuset från den ofödda wyrmlingens vingar kan lysa igenom."
-					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "A Solar Dragon's Lair",
-							"entries": [
-								"En soldrake har vanligtvis sin boning i stjärnans strålande kärna eller i en gigantisk, urholkad sten som är uppslukad av stjärnans bländande strålning. En stjärna där en soldrake har sin lya har följande effekter på varelser:",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"type": "item",
-											"name": "Blinding Radiance.",
-											"entry": "En varelse som befinner sig inom 15 km från stjärnan eller inuti den förblindas av det intensiva ljuset om inte varelsen har skyddsutrustning för att skydda ögonen, t.ex. nattglasögon eller liknande."
-										},
-										{
-											"type": "item",
-											"name": "Stellar Incineration.",
-											"entry": "Alla varelser som går in i stjärnan eller börjar sin tur i den tar 132 ({@dice 24d10}) strålningsskador."
-										}
-									]
+			"_copy": {
+				"name": "Solar Dragon",
+				"source": "BAM",
+				"_mod": {
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "internal",
+									"path": "bestiary/BAM/Ancient Solar Dragon.webp"
 								}
-							]
-						}
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "bestiary/BAM/Ancient Solar Dragon.webp"
+							}
+						]
 					}
 				}
-			]
+			}
 		},
 		{
 			"name": "Astral Elf Aristocrat",
@@ -1307,11 +1247,19 @@
 						"type": "internal",
 						"path": "bestiary/BAM/Reigar.webp"
 					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Reigar-2.webp"
+					},
+					"credit": "Simon Dominic"
 				}
 			]
 		},
 		{
-			"name": "Solar Dragon Wyrmling",
+			"name": "Solar Dragon",
 			"source": "BAM",
 			"entries": [
 				{
@@ -1329,10 +1277,33 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "bestiary/BAM/Solar Dragon Wyrmling.webp"
-					}
+						"path": "bestiary/BAM/Solar Dragon Eggs.webp"
+					},
+					"credit": "Olga Drebas"
 				}
 			]
+		},
+		{
+			"name": "Solar Dragon Wyrmling",
+			"source": "BAM",
+			"_copy": {
+				"name": "Solar Dragon",
+				"source": "BAM",
+				"_mod": {
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "internal",
+									"path": "bestiary/BAM/Solar Dragon Wyrmling.webp"
+								}
+							}
+						]
+					}
+				}
+			}
 		},
 		{
 			"name": "Space Clown",
@@ -1672,17 +1643,10 @@
 		{
 			"name": "Young Solar Dragon",
 			"source": "BAM",
-			"entries": [
-				{
-					"type": "entries",
-					"entries": [
-						"En soldrake (även känd som en strålande drake eller en soldrake) föds i hjärtat av en stjärna. Den delar sin tid utanför sin lya mellan att patrullera sitt territorium och jaga efter mat. Draken har en ormformad kropp, ett par ventrala lemmar som slutar i långa fenor, nebulösa vingar som avger ljus och glänsande, mångfärgade fjäll. Den kan se tydligt även i bländande starkt ljus.",
-						"Soldrakar är förtjusta i skatter precis som alla andra drakar, men i det luftlösa tomrummet i Wildspace värdesätter de mat ännu mer. Solar drakar livnär sig vanligtvis på kindori, scavvers och andra former av vilda djur som lever i rymden. En soldrake kan missta ett avlägset stavningsstörande skepp för ett möjligt byte och komma inom räckhåll för skeppets vapen innan den inser sitt misstag och vänder bort. En klok eller erfaren kapten kommer inte att ta drakens närmande som ett tecken på fientlighet. Soldrakar som blir beskjutna har varit kända för att slå sönder de förargade fartygen.",
-						"Solvaraner är territoriella köttätare och beter sig därefter. En ung soldrake kan göra anspråk på ett asteroidbälte där det finns relativt mycket mat, medan en gammal soldrake kan betrakta ett helt Wildspace-system som sin jaktmark. De tenderar att ge ett stort avstånd till humanoida människor, som de finner våldsamma och tröttsamma. Inkräktare som upptäcks i en soldrakes lya kan räkna med att mötas av motstånd, följt av fientlighet, särskilt om lyan innehåller ägg.",
-						"Ett soldrakägg har ett obsidianskal, som är svartglänsande och ogenomskinligt. När ägget är nära att kläckas blir skalet genomskinligt, vilket gör att ljuset från den ofödda wyrmlingens vingar kan lysa igenom."
-					]
-				}
-			]
+			"_copy": {
+				"name": "Solar Dragon",
+				"source": "BAM"
+			}
 		},
 		{
 			"name": "Zodar",

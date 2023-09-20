@@ -1909,67 +1909,6 @@
 			]
 		}
 	],
-	"itemEntry": [
-		{
-			"name": "Ring of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"You have resistance to {{item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
-			]
-		},
-		{
-			"name": "Armor of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"You have resistance to {{item.resist}} damage while you wear this armor."
-			]
-		},
-		{
-			"name": "Potion of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"When you drink this potion, you gain resistance to {{item.resist}} damage for 1 hour."
-			]
-		},
-		{
-			"name": "Absorbing Tattoo",
-			"source": "TCE",
-			"entriesTemplate": [
-				"Produced by a special needle, this magic tattoo features designs that emphasize one color ({{item.detail1}}).",
-				{
-					"type": "entries",
-					"name": "Tattoo Attunement",
-					"entries": [
-						"För att stämma av denna sak håller du nålen mot huden där du vill att tatueringen ska visas och trycker på nålen där under hela stämningsprocessen. När intoningen är avslutad förvandlas nålen till bläck som blir till tatueringen, som syns på huden.",
-						"Om din avstämning till tatueringen upphör, försvinner tatueringen och nålen dyker upp i ditt rum igen."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Damage Resistance",
-					"entries": [
-						"Så länge tatueringen finns på din hud är du motståndskraftig mot {{item.resist}} skada."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Damage Absorption",
-					"entries": [
-						"När du tar {{item.resist}} skada kan du använda din reaktion för att få immunitet mot denna del av skadan, och du återfår ett antal träffpunkter som är lika med hälften av den skada du skulle ha tagit. När den här reaktionen har använts kan den inte användas igen förrän nästa gryning."
-					]
-				}
-			]
-		},
-		{
-			"name": "Chromatic Rose",
-			"source": "WBtW",
-			"entriesTemplate": [
-				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
-				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
-				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
-			]
-		}
-	],
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
@@ -2076,6 +2015,67 @@
 						]
 					]
 				}
+			]
+		}
+	],
+	"itemEntry": [
+		{
+			"name": "Ring of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"You have resistance to {{item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
+			]
+		},
+		{
+			"name": "Armor of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"You have resistance to {{item.resist}} damage while you wear this armor."
+			]
+		},
+		{
+			"name": "Potion of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"When you drink this potion, you gain resistance to {{item.resist}} damage for 1 hour."
+			]
+		},
+		{
+			"name": "Absorbing Tattoo",
+			"source": "TCE",
+			"entriesTemplate": [
+				"Produced by a special needle, this magic tattoo features designs that emphasize one color ({{item.detail1}}).",
+				{
+					"type": "entries",
+					"name": "Tattoo Attunement",
+					"entries": [
+						"För att stämma av denna sak håller du nålen mot huden där du vill att tatueringen ska visas och trycker på nålen där under hela stämningsprocessen. När intoningen är avslutad förvandlas nålen till bläck som blir till tatueringen, som syns på huden.",
+						"Om din avstämning till tatueringen upphör, försvinner tatueringen och nålen dyker upp i ditt rum igen."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Resistance",
+					"entries": [
+						"Så länge tatueringen finns på din hud är du motståndskraftig mot {{item.resist}} skada."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Absorption",
+					"entries": [
+						"När du tar {{item.resist}} skada kan du använda din reaktion för att få immunitet mot denna del av skadan, och du återfår ett antal träffpunkter som är lika med hälften av den skada du skulle ha tagit. När den här reaktionen har använts kan den inte användas igen förrän nästa gryning."
+					]
+				}
+			]
+		},
+		{
+			"name": "Chromatic Rose",
+			"source": "WBtW",
+			"entriesTemplate": [
+				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
+				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
+				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
 			]
 		}
 	]
