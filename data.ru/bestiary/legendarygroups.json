@@ -2442,7 +2442,7 @@
 					"type": "list",
 					"items": [
 						"В регионе обитает большая популяция змей.",
-						"Деревья в радиусе 1 мили от логова становятся {@condition petrified} деревянными. Растения, находящиеся в радиусе 500 футов от логова в течение 1 дня, превращаются в камень.",
+						"Trees within 1 mile of the lair are petrified wood. Plants that stay within 500 feet of the lair for 1 day turn to stone.",
 						"Небольшие водоемы в радиусе 1 мили от логова становятся ядовитыми. Существо, которое выпьет воду, должно успешно выполнить бросок на спасбросок {@dc 19} конституции или стать {@condition poisoned} на 8 часов. Пострадавшее существо может повторить бросок спасброска в конце каждого часа."
 					]
 				}
@@ -3954,6 +3954,30 @@
 					]
 				},
 				"If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in {@dice 1d10} days."
+			]
+		},
+		{
+			"name": "Solar Dragon",
+			"source": "BAM",
+			"page": 50,
+			"regionalEffects": [
+				"A solar dragon customarily lairs in a star's radiant core or nests in a gigantic, hollowed-out rock engulfed by the star's blinding radiance. A star in which a solar dragon makes its lair has the following effects on creatures:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Blinding Radiance.",
+							"entry": "A creature that is within 10 miles of the star or inside it is blinded by its intense light unless the creature has protective gear to shield its eyes, such as goggles of night or a similar form of eyewear."
+						},
+						{
+							"type": "item",
+							"name": "Stellar Incineration.",
+							"entry": "Any creature that enters the star or starts its turn inside it takes 132 ({@dice 24d10}) radiant damage."
+						}
+					]
+				}
 			]
 		},
 		{

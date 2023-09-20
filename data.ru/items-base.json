@@ -1909,67 +1909,6 @@
 			]
 		}
 	],
-	"itemEntry": [
-		{
-			"name": "Ring of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"You have resistance to {{item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
-			]
-		},
-		{
-			"name": "Armor of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"You have resistance to {{item.resist}} damage while you wear this armor."
-			]
-		},
-		{
-			"name": "Potion of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"When you drink this potion, you gain resistance to {{item.resist}} damage for 1 hour."
-			]
-		},
-		{
-			"name": "Absorbing Tattoo",
-			"source": "TCE",
-			"entriesTemplate": [
-				"Produced by a special needle, this magic tattoo features designs that emphasize one color ({{item.detail1}}).",
-				{
-					"type": "entries",
-					"name": "Tattoo Attunement",
-					"entries": [
-						"Чтобы настроиться на этот предмет, прижмите иглу к коже в том месте, где вы хотите, чтобы появилась татуировка, и нажимайте на нее в течение всего процесса настройки. Когда настройка завершена, игла превращается в чернила, которые становятся татуировкой, появляющейся на коже.",
-						"Если ваша сонастройка с татуировкой заканчивается, татуировка исчезает, а игла снова появляется в вашем пространстве."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Damage Resistance",
-					"entries": [
-						"Пока татуировка находится на вашей коже, вы устойчивы к {{item.resist}} повреждениям."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Damage Absorption",
-					"entries": [
-						"Когда вы получаете {{item.resist}} урона, вы можете использовать свою реакцию, чтобы получить иммунитет против этого вида урона, и вы восстанавливаете количество хит-пойнтов, равное половине урона, который вы бы получили. После использования этой реакции она не может быть использована снова до следующего рассвета."
-					]
-				}
-			]
-		},
-		{
-			"name": "Chromatic Rose",
-			"source": "WBtW",
-			"entriesTemplate": [
-				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
-				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
-				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
-			]
-		}
-	],
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
@@ -2076,6 +2015,67 @@
 						]
 					]
 				}
+			]
+		}
+	],
+	"itemEntry": [
+		{
+			"name": "Ring of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"You have resistance to {{item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
+			]
+		},
+		{
+			"name": "Armor of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"You have resistance to {{item.resist}} damage while you wear this armor."
+			]
+		},
+		{
+			"name": "Potion of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"When you drink this potion, you gain resistance to {{item.resist}} damage for 1 hour."
+			]
+		},
+		{
+			"name": "Absorbing Tattoo",
+			"source": "TCE",
+			"entriesTemplate": [
+				"Produced by a special needle, this magic tattoo features designs that emphasize one color ({{item.detail1}}).",
+				{
+					"type": "entries",
+					"name": "Tattoo Attunement",
+					"entries": [
+						"Чтобы настроиться на этот предмет, прижмите иглу к коже в том месте, где вы хотите, чтобы появилась татуировка, и нажимайте на нее в течение всего процесса настройки. Когда настройка завершена, игла превращается в чернила, которые становятся татуировкой, появляющейся на коже.",
+						"Если ваша сонастройка с татуировкой заканчивается, татуировка исчезает, а игла снова появляется в вашем пространстве."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Resistance",
+					"entries": [
+						"Пока татуировка находится на вашей коже, вы устойчивы к {{item.resist}} повреждениям."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Absorption",
+					"entries": [
+						"Когда вы получаете {{item.resist}} урона, вы можете использовать свою реакцию, чтобы получить иммунитет против этого вида урона, и вы восстанавливаете количество хит-пойнтов, равное половине урона, который вы бы получили. После использования этой реакции она не может быть использована снова до следующего рассвета."
+					]
+				}
+			]
+		},
+		{
+			"name": "Chromatic Rose",
+			"source": "WBtW",
+			"entriesTemplate": [
+				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
+				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
+				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
 			]
 		}
 	]
