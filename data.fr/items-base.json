@@ -1909,67 +1909,6 @@
 			]
 		}
 	],
-	"itemEntry": [
-		{
-			"name": "Ring of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"You have resistance to {{item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
-			]
-		},
-		{
-			"name": "Armor of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"You have resistance to {{item.resist}} damage while you wear this armor."
-			]
-		},
-		{
-			"name": "Potion of Resistance",
-			"source": "DMG",
-			"entriesTemplate": [
-				"When you drink this potion, you gain resistance to {{item.resist}} damage for 1 hour."
-			]
-		},
-		{
-			"name": "Absorbing Tattoo",
-			"source": "TCE",
-			"entriesTemplate": [
-				"Produced by a special needle, this magic tattoo features designs that emphasize one color ({{item.detail1}}).",
-				{
-					"type": "entries",
-					"name": "Tattoo Attunement",
-					"entries": [
-						"Pour s'accorder avec cet objet, il faut tenir l'aiguille contre la peau, à l'endroit où l'on souhaite que le tatouage apparaisse, et appuyer sur l'aiguille tout au long du processus d'accord. Lorsque la syntonisation est terminée, l'aiguille se transforme en encre qui devient le tatouage, qui apparaît sur la peau.",
-						"Si votre accord avec le tatouage prend fin, le tatouage disparaît et l'aiguille réapparaît dans votre espace."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Damage Resistance",
-					"entries": [
-						"Tant que le tatouage est sur votre peau, vous avez une résistance aux dégâts de {{item.resist}}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Damage Absorption",
-					"entries": [
-						"Lorsque vous subissez {{item.resist}} de dégâts, vous pouvez utiliser votre réaction pour gagner une immunité contre cet exemple de dégâts, et vous regagnez un nombre de points de vie égal à la moitié des dégâts que vous auriez subis. Une fois que cette réaction est utilisée, elle ne peut plus l'être avant l'aube suivante."
-					]
-				}
-			]
-		},
-		{
-			"name": "Chromatic Rose",
-			"source": "WBtW",
-			"entriesTemplate": [
-				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
-				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
-				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
-			]
-		}
-	],
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
@@ -2076,6 +2015,67 @@
 						]
 					]
 				}
+			]
+		}
+	],
+	"itemEntry": [
+		{
+			"name": "Ring of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"You have resistance to {{item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
+			]
+		},
+		{
+			"name": "Armor of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"You have resistance to {{item.resist}} damage while you wear this armor."
+			]
+		},
+		{
+			"name": "Potion of Resistance",
+			"source": "DMG",
+			"entriesTemplate": [
+				"When you drink this potion, you gain resistance to {{item.resist}} damage for 1 hour."
+			]
+		},
+		{
+			"name": "Absorbing Tattoo",
+			"source": "TCE",
+			"entriesTemplate": [
+				"Produced by a special needle, this magic tattoo features designs that emphasize one color ({{item.detail1}}).",
+				{
+					"type": "entries",
+					"name": "Tattoo Attunement",
+					"entries": [
+						"Pour s'accorder avec cet objet, il faut tenir l'aiguille contre la peau, à l'endroit où l'on souhaite que le tatouage apparaisse, et appuyer sur l'aiguille tout au long du processus d'accord. Lorsque la syntonisation est terminée, l'aiguille se transforme en encre qui devient le tatouage, qui apparaît sur la peau.",
+						"Si votre accord avec le tatouage prend fin, le tatouage disparaît et l'aiguille réapparaît dans votre espace."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Resistance",
+					"entries": [
+						"Tant que le tatouage est sur votre peau, vous avez une résistance aux dégâts de {{item.resist}}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Absorption",
+					"entries": [
+						"Lorsque vous subissez {{item.resist}} de dégâts, vous pouvez utiliser votre réaction pour gagner une immunité contre cet exemple de dégâts, et vous regagnez un nombre de points de vie égal à la moitié des dégâts que vous auriez subis. Une fois que cette réaction est utilisée, elle ne peut plus l'être avant l'aube suivante."
+					]
+				}
+			]
+		},
+		{
+			"name": "Chromatic Rose",
+			"source": "WBtW",
+			"entriesTemplate": [
+				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
+				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
+				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
 			]
 		}
 	]
